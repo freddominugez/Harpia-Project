@@ -1,0 +1,16 @@
+{
+  "id": "gMOAud7hZg4",
+  "titulo": "FlashAttention - Tri Dao | Stanford MLSys #67",
+  "canal": "Stanford MLSys Seminars",
+  "modulo": 4,
+  "nivel": "Avançado",
+  "resumo": "Seminário em que Tri Dao, autor do FlashAttention, explica como reorganizar o cálculo da atenção em blocos para explorar a SRAM e reduzir leituras na HBM, obtendo atenção exata mais rápida e com menos memória.",
+  "catalogo": 35,
+  "trilha": "llm",
+  "ordem": 41,
+  "fonte_url": "https://www.youtube.com/watch?v=gMOAud7hZg4",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

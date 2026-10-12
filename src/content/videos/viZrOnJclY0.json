@@ -1,0 +1,16 @@
+{
+  "id": "viZrOnJclY0",
+  "titulo": "Word Embedding and Word2Vec, Clearly Explained!!!",
+  "canal": "StatQuest with Josh Starmer",
+  "modulo": 2,
+  "nivel": "Intermediário",
+  "resumo": "Josh Starmer explica a intuição e a matemática do Word2Vec, com as variantes Continuous Bag of Words e Skip-gram.",
+  "catalogo": 12,
+  "trilha": "llm",
+  "ordem": 18,
+  "fonte_url": "https://www.youtube.com/watch?v=viZrOnJclY0",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

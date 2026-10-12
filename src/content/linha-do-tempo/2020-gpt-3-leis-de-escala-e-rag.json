@@ -1,0 +1,12 @@
+{
+  "ano": 2020,
+  "titulo": "GPT-3, leis de escala e RAG",
+  "texto": "Desempenho cresce como lei de potência do tamanho; a recuperação vetorial passa a alimentar a geração.",
+  "marco": true,
+  "era": "Transformers",
+  "ordem": 15,
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

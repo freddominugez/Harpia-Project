@@ -1,0 +1,16 @@
+{
+  "id": "QXVCqtAZAn4",
+  "titulo": "Aligning LLMs with Direct Preference Optimization",
+  "canal": "DeepLearningAI",
+  "modulo": 6,
+  "nivel": "Avançado",
+  "resumo": "Workshop da DeepLearningAI com a Hugging Face sobre alinhamento de LLMs com Direct Preference Optimization, que dispensa o modelo de recompensa separado usado no RLHF com PPO.",
+  "catalogo": 54,
+  "trilha": "llm",
+  "ordem": 60,
+  "fonte_url": "https://www.youtube.com/watch?v=QXVCqtAZAn4",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

@@ -1,0 +1,12 @@
+{
+  "nome": "Aleksa Gordić - The AI Epiphany",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSHZKyawb77ixDdsGog4iWA",
+  "pagina": "https://www.youtube.com/@TheAIEpiphany",
+  "tema": "Multimodalidade (Visão, Áudio e Vídeo)",
+  "relacionados": [
+    "modulo-09"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

@@ -1,0 +1,12 @@
+{
+  "nome": "Shaw Talebi",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCa9gErQ9AE5jT2DZLjXBIdA",
+  "pagina": "https://www.youtube.com/@ShawhinTalebi",
+  "tema": "Alinhamento, RLHF e Segurança",
+  "relacionados": [
+    "modulo-07"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

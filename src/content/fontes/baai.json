@@ -1,0 +1,13 @@
+{
+  "nome": "BAAI",
+  "url": "https://www.baai.ac.cn",
+  "descricao": "Embeddings BGE",
+  "grupo": "Laboratórios chineses",
+  "grupo_ordem": 6,
+  "ordem": 27,
+  "fonte_url": "https://www.baai.ac.cn",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

@@ -1,0 +1,12 @@
+{
+  "nome": "AI Engineer",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCLKPca3kwwd-B59HNr-_lvA",
+  "pagina": "https://www.youtube.com/@aiDotEngineer",
+  "tema": "RAG (Retrieval-Augmented Generation)",
+  "relacionados": [
+    "modulo-03"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

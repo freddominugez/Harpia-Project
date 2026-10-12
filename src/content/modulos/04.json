@@ -1,0 +1,6 @@
+{
+  "numero": 4,
+  "titulo": "Arquiteturas e Modelos Densos (Transformers)",
+  "subtitulo": "A arquitetura padrão onde todos os parâmetros são ativados durante a inferência.",
+  "icone": "brain"
+}

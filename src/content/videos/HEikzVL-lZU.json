@@ -1,0 +1,16 @@
+{
+  "id": "HEikzVL-lZU",
+  "titulo": "Byte Pair Encoding Tokenization",
+  "canal": "Hugging Face",
+  "modulo": 1,
+  "nivel": "Intermediário",
+  "resumo": "Como o BPE monta o vocabulário de subpalavras fundindo os pares mais frequentes, o algoritmo usado pelo GPT e por muitos outros modelos.",
+  "catalogo": 4,
+  "trilha": "llm",
+  "ordem": 10,
+  "fonte_url": "https://www.youtube.com/watch?v=HEikzVL-lZU",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

@@ -60,7 +60,7 @@ const faixa = [...EVENTOS, ...EVENTOS];
         </div>
         <div class="orig-ruler-dots">
           {EVENTOS.map((e, i) => (
-            <a class={`orig-dot t-${e.tipo}`} href={`#${slug(e)}`} style={`left:${posicao(e.ano)}%;--i:${i};--c:${era(e.era).cor}`} aria-label={`${e.ano}: ${e.titulo}`} data-tip={`${e.ano} · ${e.titulo}`}></a>
+            <a class={`orig-dot t-${e.tipo}`} href={`#${slug(e)}`} style={`left:${posicao(e.ano)}%;--i:${i};--c:${era(e.era).cor}`} aria-hidden="true" tabindex="-1" data-tip={`${e.ano} · ${e.titulo}`}></a>
           ))}
         </div>
       </div>

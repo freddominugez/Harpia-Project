@@ -1,0 +1,12 @@
+{
+  "nome": "Asianometry",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbGy2YOZaQ2ZqCkixSokTKQ",
+  "pagina": "https://www.youtube.com/@Asianometry",
+  "tema": "Otimização de Inferência e Deploy",
+  "relacionados": [
+    "modulo-10"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

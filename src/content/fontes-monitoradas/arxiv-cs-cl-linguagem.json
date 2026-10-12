@@ -1,0 +1,14 @@
+{
+  "nome": "arXiv cs.CL (Linguagem)",
+  "tipo": "site",
+  "feed": "https://rss.arxiv.org/rss/cs.CL",
+  "pagina": "https://arxiv.org/list/cs.CL/recent",
+  "tema": "tokens, LLMs, embeddings de texto",
+  "relacionados": [
+    "modulo-01",
+    "modulo-02",
+    "modulo-04"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

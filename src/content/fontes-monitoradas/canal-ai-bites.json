@@ -1,0 +1,13 @@
+{
+  "nome": "AI Bites",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCCW0ICn8IMRsgnJhCLAuClA",
+  "pagina": "https://www.youtube.com/@AIBites",
+  "tema": "Fine-Tuning e PeFT (Parameter-Efficient Fine-Tuning); Multimodalidade (Visão, Áudio e Vídeo)",
+  "relacionados": [
+    "modulo-06",
+    "modulo-09"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

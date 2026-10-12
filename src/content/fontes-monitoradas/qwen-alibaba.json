@@ -1,0 +1,13 @@
+{
+  "nome": "Qwen (Alibaba)",
+  "tipo": "site",
+  "feed": "https://qwenlm.github.io/blog/index.xml",
+  "pagina": "https://qwenlm.github.io",
+  "tema": "modelos abertos chineses",
+  "relacionados": [
+    "modulo-04",
+    "modulo-05"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

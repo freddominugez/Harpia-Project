@@ -1,6 +1,6 @@
 """Robô de news do Harpya.
 
-Lê os feeds listados em src/data/feeds.json, mantém só itens ligados aos caminhos
+Lê os feeds listados em src/content/feeds/*.json, mantém só itens ligados aos caminhos
 do projeto e grava public/data/news.json. Roda no GitHub Actions a cada 6 horas.
 
 Uso local:
@@ -18,7 +18,7 @@ from pathlib import Path
 import feedparser
 
 RAIZ = Path(__file__).resolve().parent.parent
-FEEDS = RAIZ / "src" / "data" / "feeds.json"
+FEEDS = RAIZ / "src" / "content" / "feeds"
 SAIDA = RAIZ / "public" / "data" / "news.json"
 MAX_ITENS = 40
 MAX_DIAS = 30
@@ -39,7 +39,7 @@ def data_do(item) -> int:
 
 
 def coletar() -> list[dict]:
-    feeds = json.loads(FEEDS.read_text(encoding="utf-8"))
+    feeds = sorted((json.loads(a.read_text(encoding="utf-8")) for a in FEEDS.glob("*.json")), key=lambda f: f.get("ordem", 999))
     limite = time.time() - MAX_DIAS * 86400
     vistos: set[str] = set()
     saida: list[dict] = []

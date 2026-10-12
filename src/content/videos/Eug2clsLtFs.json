@@ -1,0 +1,16 @@
+{
+  "id": "Eug2clsLtFs",
+  "titulo": "Understanding ReACT with LangChain",
+  "canal": "Sam Witteveen",
+  "modulo": 8,
+  "nivel": "Intermediário",
+  "resumo": "Explica o padrão ReAct (Pensamento, Ação, Observação em loop) e mostra como ele é implementado em agentes com LangChain.",
+  "catalogo": 69,
+  "trilha": "llm",
+  "ordem": 75,
+  "fonte_url": "https://www.youtube.com/watch?v=Eug2clsLtFs",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

@@ -1,0 +1,13 @@
+{
+  "nome": "CERN Open Data",
+  "url": "https://opendata.cern.ch",
+  "descricao": "Dados e código abertos do LHC",
+  "grupo": "Grandes projetos",
+  "grupo_ordem": 3,
+  "ordem": 11,
+  "fonte_url": "https://opendata.cern.ch",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

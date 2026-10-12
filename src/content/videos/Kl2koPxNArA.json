@@ -1,0 +1,16 @@
+{
+  "id": "Kl2koPxNArA",
+  "titulo": "Jamba: A Hybrid Transformer-Mamba Language Model (White Paper Explained)",
+  "canal": "AI21 Labs",
+  "modulo": 11,
+  "nivel": "Intermediário",
+  "resumo": "A própria AI21 Labs explica o white paper do Jamba, arquitetura híbrida que intercala camadas Transformer e Mamba com Mixture of Experts para obter alta eficiência e janela de contexto de 256 mil tokens.",
+  "catalogo": 97,
+  "trilha": "llm",
+  "ordem": 103,
+  "fonte_url": "https://www.youtube.com/watch?v=Kl2koPxNArA",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

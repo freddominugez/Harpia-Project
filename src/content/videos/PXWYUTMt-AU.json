@@ -1,0 +1,16 @@
+{
+  "id": "PXWYUTMt-AU",
+  "titulo": "LoRA: Low-Rank Adaptation of Large Language Models - Explained visually + PyTorch code from scratch",
+  "canal": "Umar Jamil",
+  "modulo": 6,
+  "nivel": "Avançado",
+  "resumo": "Explicação visual e matemática do artigo do LoRA, com implementação do zero em PyTorch da adaptação de baixo posto.",
+  "catalogo": 53,
+  "trilha": "llm",
+  "ordem": 59,
+  "fonte_url": "https://www.youtube.com/watch?v=PXWYUTMt-AU",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

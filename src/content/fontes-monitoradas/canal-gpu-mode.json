@@ -1,0 +1,12 @@
+{
+  "nome": "GPU MODE",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCJgIbYl6C5no72a0NUAPcTA",
+  "pagina": "https://www.youtube.com/@GPUMODE",
+  "tema": "Otimização de Inferência e Deploy",
+  "relacionados": [
+    "modulo-10"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "tOMjTCO0htA",
+  "titulo": "1 5 Byte Pair Encoding",
+  "canal": "From Languages to Information",
+  "modulo": 1,
+  "nivel": "Avançado",
+  "resumo": "Aula acadêmica de Dan Jurafsky (Stanford, From Languages to Information) que detalha o algoritmo Byte Pair Encoding passo a passo e por que a tokenização por subpalavras resolve o problema de palavras fora do vocabulário.",
+  "catalogo": 8,
+  "trilha": "llm",
+  "ordem": 14,
+  "fonte_url": "https://www.youtube.com/watch?v=tOMjTCO0htA",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

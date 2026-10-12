@@ -1,0 +1,12 @@
+{
+  "nome": "Robert Miles AI Safety ",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UC4qH2AHly_RSRze1bUqSSNw",
+  "pagina": "https://www.youtube.com/@RobertMilesAI",
+  "tema": "Alinhamento, RLHF e Segurança",
+  "relacionados": [
+    "modulo-07"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

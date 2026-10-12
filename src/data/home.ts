@@ -1,14 +1,11 @@
 // Conteúdo editorial da página inicial, separado dos componentes.
 // Os números vêm do inventário real do site (coleções e JSONs), nunca de métricas de demonstração.
-import livros from "./livros.json";
-import artigos from "./artigos.json";
-import videos from "./videos.json";
-import ml from "./ml.json";
+import { LIVROS as livros, ARTIGOS as artigos, APRENDIZADO as ml } from "../lib/conteudo";
+import { VIDEOS as videos } from "../lib/videos";
 
 export type Kpi = { valor: string; rotulo: string; detalhe: string; icone: string; href: string };
 export type Trilha = { titulo: string; resumo: string; icone: string; href: string; meta: string; metaIcone: string; nivel: string };
 export type ArtigoDestaque = { slug: string; imagem: string; tags: string[] };
-export type TopicoForum = { titulo: string; iniciais: string; categoria: string; href: string };
 
 // Camadas documentadas em /equacoes/ (seções 1 a 16).
 export const CAMADAS = 16;
@@ -38,12 +35,3 @@ export const ARTIGOS_DESTAQUE: ArtigoDestaque[] = [
   { slug: "raio-probabilistico", imagem: "/img/article-books.webp", tags: ["Teoria"] },
 ];
 
-// Pautas propostas pelo projeto enquanto o fórum (Giscus) não está ativo.
-// Não são discussões existentes e aparecem identificadas como propostas.
-export const TOPICOS_PROPOSTOS: TopicoForum[] = [
-  { titulo: "Quantos bits ler na primeira passagem?", iniciais: "CI", categoria: "Caminhos", href: "/estudos/caminhos/certificado-inteiro/" },
-  { titulo: "Escala diagonal sob rotação aleatória", iniciais: "ED", categoria: "Resultados", href: "/estudos/caminhos/escala-diagonal/" },
-  { titulo: "Como calibrar o raio probabilístico?", iniciais: "RP", categoria: "Perguntas", href: "/estudos/caminhos/raio-probabilistico/" },
-  { titulo: "Comparações justas para Tensor-Train", iniciais: "TT", categoria: "Propostas", href: "/estudos/caminhos/tensor-train-na-cabeca/" },
-  { titulo: "Controle por Bellman e regra de parada", iniciais: "BL", categoria: "Caminhos", href: "/estudos/caminhos/controle-bellman/" },
-];

@@ -1,0 +1,16 @@
+{
+  "id": "S-8yr_RibJ4",
+  "titulo": "Speculative Decoding: When Two LLMs are Faster than One",
+  "canal": "Efficient NLP",
+  "modulo": 10,
+  "nivel": "Intermediário",
+  "resumo": "Explica a decodificação especulativa: um modelo pequeno e rápido rascunha vários tokens e o modelo grande apenas os verifica em paralelo, acelerando a geração sem alterar a distribuição da saída.",
+  "catalogo": 89,
+  "trilha": "llm",
+  "ordem": 95,
+  "fonte_url": "https://www.youtube.com/watch?v=S-8yr_RibJ4",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

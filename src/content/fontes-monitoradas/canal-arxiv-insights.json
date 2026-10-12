@@ -1,0 +1,12 @@
+{
+  "nome": "Arxiv Insights",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCNIkB2IeJ-6AmZv7bQ1oBYg",
+  "pagina": "https://www.youtube.com/@ArxivInsights",
+  "tema": "Alinhamento, RLHF e Segurança",
+  "relacionados": [
+    "modulo-07"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

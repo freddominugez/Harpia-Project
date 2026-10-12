@@ -1,0 +1,16 @@
+{
+  "id": "vrF3MtGwD0Y",
+  "titulo": "MAMBA and State Space Models explained | SSM explained",
+  "canal": "AI Coffee Break with Letitia",
+  "modulo": 11,
+  "nivel": "Intermediário",
+  "resumo": "Explica a intuição por trás dos State Space Models e do Mamba, que processa sequências de forma recorrente como uma RNN, mas pode ser treinado de forma paralela, com custo linear no tamanho da sequência.",
+  "catalogo": 95,
+  "trilha": "llm",
+  "ordem": 101,
+  "fonte_url": "https://www.youtube.com/watch?v=vrF3MtGwD0Y",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

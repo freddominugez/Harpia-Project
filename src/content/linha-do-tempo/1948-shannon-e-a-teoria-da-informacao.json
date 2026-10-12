@@ -1,0 +1,13 @@
+{
+  "ano": 1948,
+  "titulo": "Shannon e a teoria da informação",
+  "texto": "Entropia e os primeiros modelos de linguagem por n-gramas de letras.",
+  "eq": "H=-\\textstyle\\sum_x p(x)\\log_2 p(x)",
+  "era": "Fundamentos",
+  "marco": false,
+  "ordem": 2,
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

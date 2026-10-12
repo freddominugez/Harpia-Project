@@ -1,0 +1,16 @@
+{
+  "id": "KnSIZ83iPKs",
+  "titulo": "How DeepSeek rewrote Mixture of Experts (MoE)?",
+  "canal": "Vizuara",
+  "modulo": 5,
+  "nivel": "Avançado",
+  "resumo": "Aula sobre as inovações do DeepSeek em MoE, com foco no problema de balanceamento de carga e na alternativa à perda auxiliar (balanceamento sem perda auxiliar), além de especialistas compartilhados e de granularidade fina.",
+  "catalogo": 45,
+  "trilha": "llm",
+  "ordem": 51,
+  "fonte_url": "https://www.youtube.com/watch?v=KnSIZ83iPKs",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

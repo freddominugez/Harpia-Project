@@ -1,0 +1,16 @@
+{
+  "id": "BaNXYqcfDyo",
+  "titulo": "Defending against AI jailbreaks",
+  "canal": "Anthropic",
+  "modulo": 7,
+  "nivel": "Intermediário",
+  "resumo": "Pesquisadores da Anthropic discutem como atacam seus próprios modelos de forma estruturada (red teaming, bug bounty) e como os classificadores constitucionais defendem contra jailbreaks.",
+  "catalogo": 61,
+  "trilha": "llm",
+  "ordem": 67,
+  "fonte_url": "https://www.youtube.com/watch?v=BaNXYqcfDyo",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

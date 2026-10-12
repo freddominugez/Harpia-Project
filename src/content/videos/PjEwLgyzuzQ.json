@@ -1,0 +1,16 @@
+{
+  "id": "PjEwLgyzuzQ",
+  "titulo": "Part 10: PyTorch FSDP, End to End Walkthrough",
+  "canal": "PyTorch",
+  "modulo": 6,
+  "nivel": "Avançado",
+  "resumo": "Parte final da série oficial do PyTorch sobre FSDP, com um passo a passo completo de como treinar e ajustar modelos grandes fragmentando parâmetros, gradientes e estados do otimizador entre GPUs.",
+  "catalogo": 55,
+  "trilha": "llm",
+  "ordem": 61,
+  "fonte_url": "https://www.youtube.com/watch?v=PjEwLgyzuzQ",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

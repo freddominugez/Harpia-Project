@@ -1,0 +1,16 @@
+{
+  "id": "vlcQV4j2kTo",
+  "titulo": "What are text embeddings?",
+  "canal": "Google Cloud Tech",
+  "modulo": 2,
+  "nivel": "Intermediário",
+  "resumo": "Explicação do Google Cloud sobre o que são embeddings de texto, como gerá-los com APIs de nuvem e como aplicá-los em busca, recomendação e outros casos práticos.",
+  "catalogo": 14,
+  "trilha": "llm",
+  "ordem": 20,
+  "fonte_url": "https://www.youtube.com/watch?v=vlcQV4j2kTo",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

@@ -1,0 +1,11 @@
+{
+  "ano": 1995,
+  "titulo": "Máquinas de vetores de suporte",
+  "texto": "Cortes e Vapnik: separar com a maior margem possível.",
+  "eq": "\\min\\tfrac12\\|w\\|^2\\ \\text{s.a.}\\ y_i(w^\\top x_i+b)\\ge1",
+  "ordem": 8,
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

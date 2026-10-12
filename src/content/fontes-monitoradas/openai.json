@@ -1,0 +1,13 @@
+{
+  "nome": "OpenAI",
+  "tipo": "site",
+  "feed": "https://openai.com/news/rss.xml",
+  "pagina": "https://openai.com/news",
+  "tema": "modelos e pesquisa",
+  "relacionados": [
+    "modulo-04",
+    "modulo-11"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

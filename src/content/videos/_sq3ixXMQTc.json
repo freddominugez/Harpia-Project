@@ -1,0 +1,16 @@
+{
+  "id": "_sq3ixXMQTc",
+  "titulo": "Back to Basics: Understanding Retrieval Augmented Generation (RAG)",
+  "canal": "Amazon Web Services",
+  "modulo": 3,
+  "nivel": "Iniciante",
+  "resumo": "Episódio Back to Basics da AWS sobre como o RAG resolve conhecimento desatualizado e acesso a dados privados em aplicações de IA generativa corporativas.",
+  "catalogo": 20,
+  "trilha": "llm",
+  "ordem": 26,
+  "fonte_url": "https://www.youtube.com/watch?v=_sq3ixXMQTc",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

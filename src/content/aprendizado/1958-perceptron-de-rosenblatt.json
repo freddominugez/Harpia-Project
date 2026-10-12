@@ -1,0 +1,11 @@
+{
+  "ano": 1958,
+  "titulo": "Perceptron de Rosenblatt",
+  "texto": "O primeiro classificador que aprende com os próprios erros.",
+  "eq": "w\\leftarrow w+\\eta\\,(y-\\hat y)\\,x",
+  "ordem": 2,
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

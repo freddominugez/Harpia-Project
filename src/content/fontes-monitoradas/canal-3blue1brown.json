@@ -1,0 +1,14 @@
+{
+  "nome": "3Blue1Brown",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UC1_uAIS3r8Vu6JjXWvastJg",
+  "pagina": "https://www.youtube.com/@3blue1brown",
+  "tema": "Fundamentos: matemática e redes neurais; Embeddings (Vetores e Representação Espacial); Arquiteturas e Modelos Densos (Transformers)",
+  "relacionados": [
+    "modulo-00",
+    "modulo-02",
+    "modulo-04"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

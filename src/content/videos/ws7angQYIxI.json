@@ -1,0 +1,16 @@
+{
+  "id": "ws7angQYIxI",
+  "titulo": "Lecture 13: Ring Attention",
+  "canal": "GPU MODE",
+  "modulo": 10,
+  "nivel": "Avançado",
+  "resumo": "Aula técnica sobre Ring Attention: a sequência é dividida em blocos distribuídos entre várias GPUs em anel, que trocam chaves e valores enquanto calculam a atenção, permitindo contextos da ordem de milhões de tokens.",
+  "catalogo": 91,
+  "trilha": "llm",
+  "ordem": 97,
+  "fonte_url": "https://www.youtube.com/watch?v=ws7angQYIxI",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

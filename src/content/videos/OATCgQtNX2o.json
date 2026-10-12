@@ -1,0 +1,16 @@
+{
+  "id": "OATCgQtNX2o",
+  "titulo": "Text embeddings & semantic search",
+  "canal": "Hugging Face",
+  "modulo": 2,
+  "nivel": "Intermediário",
+  "resumo": "Vídeo do curso da Hugging Face sobre como gerar embeddings para frases e textos inteiros (via pooling) e usá-los em busca semântica por similaridade.",
+  "catalogo": 13,
+  "trilha": "llm",
+  "ordem": 19,
+  "fonte_url": "https://www.youtube.com/watch?v=OATCgQtNX2o",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

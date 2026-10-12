@@ -1,0 +1,27 @@
+# Avisa Bing, Yandex e demais buscadores do protocolo IndexNow depois de cada deploy de produção
+# na Vercel. A chave é pública por desenho: fica em https://www.harpya.org/cbf6854fd7740a5bba6db5c714140b4b.txt.
+name: indexnow
+on:
+  deployment_status:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  avisar:
+    if: github.event_name == 'workflow_dispatch' || (github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'Production')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enviar URLs do sitemap
+        env:
+          CHAVE: cbf6854fd7740a5bba6db5c714140b4b
+        run: |
+          python3 - <<'PY'
+          import json, os, re, urllib.request
+          site = "https://www.harpya.org"
+          xml = urllib.request.urlopen(f"{site}/sitemap.xml", timeout=30).read().decode()
+          urls = re.findall(r"<loc>(https://www\.harpya\.org/[^<]*)</loc>", xml)
+          corpo = json.dumps({"host": "www.harpya.org", "key": os.environ["CHAVE"], "keyLocation": f"{site}/{os.environ['CHAVE']}.txt", "urlList": urls}).encode()
+          req = urllib.request.Request("https://api.indexnow.org/IndexNow", data=corpo, headers={"Content-Type": "application/json; charset=utf-8"})
+          with urllib.request.urlopen(req, timeout=30) as r:
+              print(r.status, len(urls), "URLs enviadas")
+          PY

@@ -1,0 +1,16 @@
+{
+  "id": "UPtG_38Oq8o",
+  "titulo": "The math behind Attention: Keys, Queries, and Values matrices",
+  "canal": "Luis Serrano Academy",
+  "modulo": 4,
+  "nivel": "Intermediário",
+  "resumo": "Luis Serrano desmonta as matrizes de consulta, chave e valor e a fórmula softmax(QKᵀ/√d)V da atenção.",
+  "catalogo": 30,
+  "trilha": "llm",
+  "ordem": 36,
+  "fonte_url": "https://www.youtube.com/watch?v=UPtG_38Oq8o",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

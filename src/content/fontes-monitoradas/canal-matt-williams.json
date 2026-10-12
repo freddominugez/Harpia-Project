@@ -1,0 +1,12 @@
+{
+  "nome": "Matt Williams",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCHaF9kM2wn8C3CLRwLkC2GQ",
+  "pagina": "https://www.youtube.com/@technovangelist",
+  "tema": "Otimização de Inferência e Deploy",
+  "relacionados": [
+    "modulo-10"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

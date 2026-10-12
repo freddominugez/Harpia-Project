@@ -1,0 +1,16 @@
+{
+  "id": "1c9iyoVIwDs",
+  "titulo": "4 Methods of Prompt Engineering",
+  "canal": "IBM Technology",
+  "modulo": 11,
+  "nivel": "Iniciante",
+  "resumo": "Apresenta quatro técnicas de engenharia de prompt, entre elas o Chain of Thought, que pede ao modelo para raciocinar passo a passo, além de RAG, ReAct e Directional Stimulus Prompting.",
+  "catalogo": 94,
+  "trilha": "llm",
+  "ordem": 100,
+  "fonte_url": "https://www.youtube.com/watch?v=1c9iyoVIwDs",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

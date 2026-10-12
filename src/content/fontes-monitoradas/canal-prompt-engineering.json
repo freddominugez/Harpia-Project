@@ -1,0 +1,12 @@
+{
+  "nome": "Prompt Engineering",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCDq7SjbgRKty5TgGafW8Clg",
+  "pagina": "https://www.youtube.com/@engineerprompt",
+  "tema": "Fine-Tuning e PeFT (Parameter-Efficient Fine-Tuning)",
+  "relacionados": [
+    "modulo-06"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "wd7TZ4w1mSw",
+  "titulo": "RAG From Scratch: Part 1 (Overview)",
+  "canal": "LangChain",
+  "modulo": 3,
+  "nivel": "Intermediário",
+  "resumo": "Primeira parte da série oficial RAG From Scratch do LangChain (apresentada por Lance Martin), com visão geral da arquitetura de indexação, recuperação e geração e código em Python.",
+  "catalogo": 21,
+  "trilha": "llm",
+  "ordem": 27,
+  "fonte_url": "https://www.youtube.com/watch?v=wd7TZ4w1mSw",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

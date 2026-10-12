@@ -1,0 +1,13 @@
+{
+  "nome": "Google Research",
+  "tipo": "site",
+  "feed": "https://research.google/blog/rss/",
+  "pagina": "https://research.google/blog",
+  "tema": "pesquisa de laboratório, busca, eficiência",
+  "relacionados": [
+    "caminhos",
+    "modulo-10"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

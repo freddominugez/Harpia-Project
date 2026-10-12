@@ -1,0 +1,16 @@
+{
+  "id": "zHvTiHr506c",
+  "titulo": "Subword-based tokenizers",
+  "canal": "Hugging Face",
+  "modulo": 1,
+  "nivel": "Iniciante",
+  "resumo": "Vídeo curto do curso da Hugging Face que explica por que a tokenização por subpalavras existe, comparando-a com as abordagens por palavras inteiras e por caracteres.",
+  "catalogo": 2,
+  "trilha": "llm",
+  "ordem": 8,
+  "fonte_url": "https://www.youtube.com/watch?v=zHvTiHr506c",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

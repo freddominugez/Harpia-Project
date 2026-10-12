@@ -1,0 +1,12 @@
+{
+  "nome": "Vizuara",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCdEov4L0bpJ_h6W3sJxkfUA",
+  "pagina": "https://www.youtube.com/@vizuara",
+  "tema": "Mixture of Experts (MoE)",
+  "relacionados": [
+    "modulo-05"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

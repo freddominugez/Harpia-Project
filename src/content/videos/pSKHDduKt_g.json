@@ -1,0 +1,16 @@
+{
+  "id": "pSKHDduKt_g",
+  "titulo": "Deep Papers Episode 3 - Toolformer: Training LLMs To Use Tools",
+  "canal": "Arize AI",
+  "modulo": 8,
+  "nivel": "Avançado",
+  "resumo": "Discussão aprofundada do artigo Toolformer da Meta, que mostra como um modelo aprende de forma autossupervisionada quando e como chamar APIs como calculadora e calendário.",
+  "catalogo": 73,
+  "trilha": "llm",
+  "ordem": 79,
+  "fonte_url": "https://www.youtube.com/watch?v=pSKHDduKt_g",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

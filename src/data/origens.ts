@@ -1,8 +1,8 @@
-// Conteúdo da página /origens/: eras, "sóis" (marcos celebrados, de src/data/timeline.json)
+// Conteúdo da página /origens/: eras, "sóis" (marcos celebrados, de src/content/linha-do-tempo)
 // e "eclipses" (fundações que ficaram na sombra), com personagens e referências primárias.
 // Fonte editorial: dossiê "O Eclipse da Inteligência Artificial", revisado em 12/10/2026
 // contra os artigos originais. Fotos: Wikimedia Commons, com autor e licença de cada uma.
-import timeline from "./timeline.json";
+import { LINHA_DO_TEMPO } from "../lib/conteudo";
 
 export type Era = { id: string; nome: string; de: number; ate: number; cor: string; suave: string };
 export type Evento = { ano: number; titulo: string; texto: string; tipo: "sol" | "marco" | "eclipse"; eq?: string; era: string };
@@ -37,7 +37,7 @@ const ECLIPSES_LINHA: Omit<Evento, "era">[] = [
 ];
 
 type Linha = { ano?: number; titulo?: string; texto?: string; eq?: string; marco?: boolean; era?: string };
-const SOIS: Omit<Evento, "era">[] = (timeline as Linha[])
+const SOIS: Omit<Evento, "era">[] = (LINHA_DO_TEMPO as Linha[])
   .filter((i) => typeof i.ano === "number")
   .map((i) => ({ ano: i.ano!, titulo: i.titulo!, texto: i.texto!, eq: i.eq, tipo: i.marco ? "sol" : "marco" }));
 

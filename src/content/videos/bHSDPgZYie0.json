@@ -1,0 +1,16 @@
+{
+  "id": "bHSDPgZYie0",
+  "titulo": "Stanford CS25: Transformers United V6 I Overview of Transformers",
+  "canal": "Stanford Online",
+  "modulo": 4,
+  "nivel": "Avançado",
+  "resumo": "Aula de abertura do curso CS25 de Stanford que revisa o mecanismo de auto-atenção, a arquitetura Transformer e seus limites e evoluções recentes, incluindo o custo de escalar o contexto.",
+  "catalogo": 34,
+  "trilha": "llm",
+  "ordem": 40,
+  "fonte_url": "https://www.youtube.com/watch?v=bHSDPgZYie0",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

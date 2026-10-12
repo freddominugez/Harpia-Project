@@ -1,0 +1,16 @@
+{
+  "id": "eMlx5fFNoYc",
+  "titulo": "Attention in transformers, step-by-step | Deep Learning Chapter 6",
+  "canal": "3Blue1Brown",
+  "modulo": 2,
+  "nivel": "Iniciante",
+  "resumo": "A animação mais clara de como palavras viram vetores em alta dimensão e de como a atenção ajusta cada vetor pelo contexto.",
+  "catalogo": 9,
+  "trilha": "llm",
+  "ordem": 15,
+  "fonte_url": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

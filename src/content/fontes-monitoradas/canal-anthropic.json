@@ -1,0 +1,12 @@
+{
+  "nome": "Anthropic",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCrDwWp7EBBv4NwvScIpBDOA",
+  "pagina": "https://www.youtube.com/@anthropic-ai",
+  "tema": "Alinhamento, RLHF e Segurança",
+  "relacionados": [
+    "modulo-07"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

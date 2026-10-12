@@ -1,0 +1,16 @@
+{
+  "id": "6l8GZDPbFn8",
+  "titulo": "QLoRA paper explained (Efficient Finetuning of Quantized LLMs)",
+  "canal": "AI Bites",
+  "modulo": 6,
+  "nivel": "Intermediário",
+  "resumo": "Explicação do paper QLoRA, que combina quantização em 4 bits com adaptadores LoRA para permitir o fine-tuning de LLMs grandes em uma única GPU.",
+  "catalogo": 50,
+  "trilha": "llm",
+  "ordem": 56,
+  "fonte_url": "https://www.youtube.com/watch?v=6l8GZDPbFn8",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

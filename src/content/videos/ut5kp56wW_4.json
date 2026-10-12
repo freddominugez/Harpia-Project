@@ -1,0 +1,16 @@
+{
+  "id": "ut5kp56wW_4",
+  "titulo": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models (Full Paper Review)",
+  "canal": "Yannic Kilcher",
+  "modulo": 11,
+  "nivel": "Intermediário",
+  "resumo": "Revisão completa do paper Tree of Thoughts, evolução do Chain of Thought em que o modelo explora vários caminhos de raciocínio, avalia estados intermediários e faz retrocesso antes de decidir a resposta.",
+  "catalogo": 96,
+  "trilha": "llm",
+  "ordem": 102,
+  "fonte_url": "https://www.youtube.com/watch?v=ut5kp56wW_4",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

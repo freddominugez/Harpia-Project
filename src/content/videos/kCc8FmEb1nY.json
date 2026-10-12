@@ -1,0 +1,16 @@
+{
+  "id": "kCc8FmEb1nY",
+  "titulo": "Let's build GPT: from scratch, in code, spelled out.",
+  "canal": "Andrej Karpathy",
+  "modulo": 4,
+  "nivel": "Avançado",
+  "resumo": "Aula em que Karpathy treina um modelo denso no estilo GPT sobre textos de Shakespeare, explicando cada bloco em código.",
+  "catalogo": 33,
+  "trilha": "llm",
+  "ordem": 39,
+  "fonte_url": "https://www.youtube.com/watch?v=kCc8FmEb1nY",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

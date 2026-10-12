@@ -1,0 +1,16 @@
+{
+  "id": "7yR5ScbK1qk",
+  "titulo": "Mixture of Experts: How LLMs get bigger without getting slower",
+  "canal": "Julia Turc",
+  "modulo": 5,
+  "nivel": "Intermediário",
+  "resumo": "Comparação entre modelos densos e esparsos (MoE), mostrando como o MoE aumenta o número de parâmetros sem aumentar proporcionalmente o custo de inferência e discutindo se os especialistas realmente se especializam.",
+  "catalogo": 42,
+  "trilha": "llm",
+  "ordem": 48,
+  "fonte_url": "https://www.youtube.com/watch?v=7yR5ScbK1qk",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

@@ -1,0 +1,12 @@
+{
+  "nome": "Samuel Albanie",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCMtxPy2z1qzwvP7wiarkoaw",
+  "pagina": "https://www.youtube.com/@SamuelAlbanie1",
+  "tema": "Multimodalidade (Visão, Áudio e Vídeo)",
+  "relacionados": [
+    "modulo-09"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

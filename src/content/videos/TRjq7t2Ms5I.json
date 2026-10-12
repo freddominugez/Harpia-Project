@@ -1,0 +1,16 @@
+{
+  "id": "TRjq7t2Ms5I",
+  "titulo": "Building Production-Ready RAG Applications: Jerry Liu",
+  "canal": "AI Engineer",
+  "modulo": 3,
+  "nivel": "Avançado",
+  "resumo": "Palestra de Jerry Liu, criador do LlamaIndex, sobre como levar RAG para produção: chunking, recuperação avançada, roteamento, agentes e avaliação de pipelines.",
+  "catalogo": 24,
+  "trilha": "llm",
+  "ordem": 30,
+  "fonte_url": "https://www.youtube.com/watch?v=TRjq7t2Ms5I",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "myFtp5zMv8U",
+  "titulo": "Kolmogorov-Arnold Networks (KANs) - What are they and how do they work?",
+  "canal": "Luis Serrano Academy",
+  "modulo": 11,
+  "nivel": "Avançado",
+  "resumo": "Explica as Kolmogorov-Arnold Networks (KANs), que trocam os pesos fixos e ativações dos perceptrons multicamadas (MLPs) por funções aprendíveis nas arestas, com base no teorema de representação de Kolmogorov-Arnold.",
+  "catalogo": 100,
+  "trilha": "llm",
+  "ordem": 106,
+  "fonte_url": "https://www.youtube.com/watch?v=myFtp5zMv8U",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

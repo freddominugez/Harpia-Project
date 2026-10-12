@@ -1,0 +1,13 @@
+{
+  "nome": "Stanford Online",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBa5G_ESCn8Yd4vw5U-gIcg",
+  "pagina": "https://www.youtube.com/@stanfordonline",
+  "tema": "Embeddings (Vetores e Representação Espacial); Arquiteturas e Modelos Densos (Transformers)",
+  "relacionados": [
+    "modulo-02",
+    "modulo-04"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

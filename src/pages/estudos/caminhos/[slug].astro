@@ -91,6 +91,7 @@ const relacionados: Relacionado[] = [...vizinhos, ...mesmos].map((x) => ({
             <ul>{d.arte_previa.map((a) => <li>{a}</li>)}</ul>
           </>
         )}
+        <p class="cite"><b>Como citar.</b> {SITE.autor} ({d.atualizado.slice(0, 4)}). <i>{d.titulo}</i>. {SITE.nome}. <a href={`https://www.harpya.org/estudos/caminhos/${c.id}/`}>https://www.harpya.org/estudos/caminhos/{c.id}/</a>. Texto em markdown: <a href={`/estudos/caminhos/${c.id}.md`}>{c.id}.md</a>. Licença CC BY 4.0.</p>
         <h2 id="discussao">Discussão</h2>
       </div>
       <Giscus />

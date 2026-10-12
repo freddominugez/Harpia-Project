@@ -1,0 +1,16 @@
+{
+  "id": "LZFriJ85BfM",
+  "titulo": "NLP Demystified 2: Text Tokenization",
+  "canal": "Future Mojo",
+  "modulo": 1,
+  "nivel": "Intermediário",
+  "resumo": "Aula da série NLP Demystified que conecta a tokenização ao pré-processamento real de texto em pipelines de Processamento de Linguagem Natural.",
+  "catalogo": 6,
+  "trilha": "llm",
+  "ordem": 12,
+  "fonte_url": "https://www.youtube.com/watch?v=LZFriJ85BfM",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

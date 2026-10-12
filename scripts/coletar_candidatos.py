@@ -20,7 +20,7 @@ import requests
 
 RAIZ = Path(__file__).resolve().parent.parent
 SAIDA = RAIZ / "curadoria" / "candidatos.json"
-DADOS = RAIZ / "src" / "data"
+CONTEUDO = RAIZ / "src" / "content"
 UA = {"User-Agent": "harpya-project-curadoria/1.0"}
 
 # Consultas ligadas aos caminhos. Edite à vontade.
@@ -42,12 +42,11 @@ LIVROS = ["information retrieval", "deep learning mathematics", "lattice quantiz
 
 def ja_publicados() -> set[str]:
     chaves: set[str] = set()
-    for nome, campo in (("videos.json", "id"), ("artigos.json", "url"), ("livros.json", "titulo")):
-        try:
-            for item in json.loads((DADOS / nome).read_text(encoding="utf-8")):
-                chaves.add(str(item.get(campo, "")).lower())
-        except FileNotFoundError:
-            pass
+    # Um arquivo por item em src/content/<coleção>/ (rascunhos também contam).
+    for pasta, campo in (("videos", "id"), ("artigos", "url"), ("livros", "titulo")):
+        for arq in sorted((CONTEUDO / pasta).glob("*.json")):
+            item = json.loads(arq.read_text(encoding="utf-8"))
+            chaves.add(str(item.get(campo, "")).lower())
     return chaves
 
 

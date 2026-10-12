@@ -1,0 +1,12 @@
+{
+  "nome": "arXiv cs.DS (Estruturas de dados e algoritmos)",
+  "tipo": "site",
+  "feed": "https://rss.arxiv.org/rss/cs.DS",
+  "pagina": "https://arxiv.org/list/cs.DS/recent",
+  "tema": "busca do vizinho mais próximo, poda exata, limites",
+  "relacionados": [
+    "caminhos"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

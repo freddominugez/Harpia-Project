@@ -1,0 +1,37 @@
+# Cria no GitHub Discussions as pautas que Fred aprovou no painel (/admin).
+# Dispara quando uma pauta muda em main; grava a URL de volta e marca a pauta como "criada".
+name: discussoes
+on:
+  push:
+    branches: [main]
+    paths: ["src/content/pautas/**"]
+  workflow_dispatch:
+permissions:
+  contents: write
+  discussions: write
+concurrency:
+  group: discussoes
+  cancel-in-progress: false
+jobs:
+  criar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r scripts/requirements.txt
+      - name: Criar discussões aprovadas
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/criar_discussoes.py
+      - name: Gravar URLs de volta
+        if: always()
+        run: |
+          git config user.name "harpya-bot"
+          git config user.email "harpya-bot@users.noreply.github.com"
+          git add src/content/pautas
+          git diff --cached --quiet && echo "nada a gravar" && exit 0
+          git commit -m "pautas: discussões criadas no GitHub"
+          git pull --rebase origin main
+          git push

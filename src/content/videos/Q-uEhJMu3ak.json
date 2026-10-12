@@ -1,0 +1,16 @@
+{
+  "id": "Q-uEhJMu3ak",
+  "titulo": "Making Retrieval Augmented Generation Better with @jamesbriggs",
+  "canal": "Pinecone",
+  "modulo": 3,
+  "nivel": "Intermediário",
+  "resumo": "Sessão do canal da Pinecone com James Briggs sobre como melhorar a etapa de recuperação do RAG usando bancos de dados vetoriais e técnicas práticas de produção.",
+  "catalogo": 22,
+  "trilha": "llm",
+  "ordem": 28,
+  "fonte_url": "https://www.youtube.com/watch?v=Q-uEhJMu3ak",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "K75j8MkwgJ0",
+  "titulo": "Optimize Your AI - Quantization Explained",
+  "canal": "Matt Williams",
+  "modulo": 10,
+  "nivel": "Iniciante",
+  "resumo": "Explica de forma acessível o que é quantização, como reduzir a precisão dos pesos (por exemplo de 16 para 4 bits) encolhe o modelo para caber em hardware comum, e quais são os custos em qualidade.",
+  "catalogo": 86,
+  "trilha": "llm",
+  "ordem": 92,
+  "fonte_url": "https://www.youtube.com/watch?v=K75j8MkwgJ0",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "y4QljAMsXr0",
+  "titulo": "Demo: Optimizing Gemma inference on NVIDIA GPUs with TensorRT-LLM",
+  "canal": "Google for Developers",
+  "modulo": 10,
+  "nivel": "Intermediário",
+  "resumo": "Demonstração prática de como usar o TensorRT-LLM, a biblioteca da NVIDIA, para compilar e otimizar a inferência do modelo Gemma em GPUs NVIDIA.",
+  "catalogo": 88,
+  "trilha": "llm",
+  "ordem": 94,
+  "fonte_url": "https://www.youtube.com/watch?v=y4QljAMsXr0",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

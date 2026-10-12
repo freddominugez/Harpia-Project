@@ -1,0 +1,14 @@
+{
+  "nome": "arXiv cs.IR (Recuperação de informação)",
+  "tipo": "site",
+  "feed": "https://rss.arxiv.org/rss/cs.IR",
+  "pagina": "https://arxiv.org/list/cs.IR/recent",
+  "tema": "busca vetorial, embeddings, recuperação",
+  "relacionados": [
+    "caminhos",
+    "modulo-02",
+    "modulo-03"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

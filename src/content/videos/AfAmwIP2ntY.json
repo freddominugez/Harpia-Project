@@ -1,0 +1,16 @@
+{
+  "id": "AfAmwIP2ntY",
+  "titulo": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters (Paper)",
+  "canal": "Yannic Kilcher",
+  "modulo": 11,
+  "nivel": "Avançado",
+  "resumo": "Análise do paper do Google DeepMind que mostra como gastar mais computação na inferência, com busca guiada por verificadores e revisões sequenciais, pode superar o ganho de simplesmente aumentar os parâmetros do modelo.",
+  "catalogo": 99,
+  "trilha": "llm",
+  "ordem": 105,
+  "fonte_url": "https://www.youtube.com/watch?v=AfAmwIP2ntY",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

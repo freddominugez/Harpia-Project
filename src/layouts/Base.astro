@@ -1,15 +1,34 @@
 ---
 import "katex/dist/katex.min.css";
+import "@fontsource-variable/inter/wght.css";
+import interLatin from "@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url";
 import "../styles/global.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { SITE } from "../config";
+import { SITE, VERIFICACAO } from "../config";
+import { rotaDe, entidades, trilha, abs, ogDe, mdDe } from "../lib/rotas";
 
-interface Props { titulo?: string; descricao?: string; home?: boolean }
-const { titulo, descricao = SITE.descricao, home = false } = Astro.props;
+interface Props { titulo?: string; descricao?: string; home?: boolean; noindex?: boolean }
+const { titulo, descricao = SITE.descricao, home = false, noindex = false } = Astro.props;
 const tituloFinal = titulo ? `${titulo} · ${SITE.nome}` : `${SITE.nome} · ${SITE.lema}`;
-const canonical = new URL(Astro.url.pathname, Astro.site);
-const og = new URL("/img/og.png", Astro.site);
+const path = Astro.url.pathname;
+const canonical = abs(path);
+const rota = noindex ? undefined : await rotaDe(path);
+const og = rota ? abs(ogDe(path)) : abs("/img/og.png");
+const especificos = rota?.schema?.() ?? [];
+const artigo = especificos.some((n) => /Article$/.test(String(n["@type"])));
+const migalhas = rota && path !== "/" ? await trilha(path) : [];
+const grafo = {
+  "@context": "https://schema.org",
+  "@graph": [
+    ...entidades(),
+    ...(rota ? [{ "@type": "WebPage", "@id": `${canonical}#webpage`, url: canonical, name: tituloFinal, description: descricao, inLanguage: "pt-BR", isPartOf: { "@id": `${abs("/")}#website` }, dateModified: rota.atualizado, primaryImageOfPage: og, ...(migalhas.length ? { breadcrumb: { "@id": `${canonical}#trilha` } } : {}) }] : []),
+    ...(migalhas.length ? [{ "@type": "BreadcrumbList", "@id": `${canonical}#trilha`, itemListElement: migalhas.map((m, i) => ({ "@type": "ListItem", position: i + 1, name: m.nome, item: m.url })) }] : []),
+    ...especificos,
+  ],
+};
+// JSON-LD dentro de <script>: escapar "<" impede fechar a tag por engano.
+const jsonld = JSON.stringify(grafo).replace(/</g, "\\u003c");
 ---
 <!doctype html>
 <html lang="pt-BR">
@@ -20,25 +39,41 @@ const og = new URL("/img/og.png", Astro.site);
     <title>{tituloFinal}</title>
     <meta name="description" content={descricao} />
     <meta name="author" content={SITE.autor} />
-    <link rel="canonical" href={canonical} />
+    {noindex ? <meta name="robots" content="noindex, follow" /> : <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />}
+    {!noindex && <link rel="canonical" href={canonical} />}
+    {!noindex && <link rel="alternate" hreflang="pt-BR" href={canonical} />}
+    {!noindex && <link rel="alternate" hreflang="x-default" href={canonical} />}
+    {rota && <link rel="alternate" type="text/markdown" href={mdDe(path)} title="Versão em markdown" />}
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" title={`${SITE.nome}: novidades`} />
+    {VERIFICACAO.google && <meta name="google-site-verification" content={VERIFICACAO.google} />}
+    {VERIFICACAO.bing && <meta name="msvalidate.01" content={VERIFICACAO.bing} />}
+    <link rel="preload" href={interLatin} as="font" type="font/woff2" crossorigin />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <meta name="theme-color" content="#282d33" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={artigo ? "article" : "website"} />
     <meta property="og:site_name" content={SITE.nome} />
     <meta property="og:title" content={tituloFinal} />
     <meta property="og:description" content={descricao} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={og} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={titulo ?? SITE.nome} />
     <meta property="og:locale" content="pt_BR" />
+    {artigo && rota && <meta property="article:modified_time" content={rota.atualizado} />}
+    {artigo && <meta property="article:author" content={abs("/sobre/")} />}
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap" rel="stylesheet" />
+    <meta name="twitter:title" content={tituloFinal} />
+    <meta name="twitter:description" content={descricao} />
+    <meta name="twitter:image" content={og} />
+    <meta name="twitter:image:alt" content={titulo ?? SITE.nome} />
+    <script type="application/ld+json" set:html={jsonld} />
     {home && <link rel="preload" as="image" href="/img/harpya-original.webp" type="image/webp" />}
   </head>
   <body class={home ? "is-home" : "is-internal"}>

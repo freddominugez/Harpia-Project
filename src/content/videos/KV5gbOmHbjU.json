@@ -1,0 +1,16 @@
+{
+  "id": "KV5gbOmHbjU",
+  "titulo": "A Walkthrough of A Mathematical Framework for Transformer Circuits",
+  "canal": "Neel Nanda",
+  "modulo": 7,
+  "nivel": "Avançado",
+  "resumo": "Neel Nanda percorre o artigo A Mathematical Framework for Transformer Circuits, mostrando como fazer engenharia reversa de circuitos dentro de transformers (interpretabilidade mecanicista).",
+  "catalogo": 64,
+  "trilha": "llm",
+  "ordem": 70,
+  "fonte_url": "https://www.youtube.com/watch?v=KV5gbOmHbjU",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

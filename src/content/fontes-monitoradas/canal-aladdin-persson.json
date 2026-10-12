@@ -1,0 +1,12 @@
+{
+  "nome": "Aladdin Persson",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCZHmQk67mSJgfCCTn7xBfew",
+  "pagina": "https://www.youtube.com/@AladdinPersson",
+  "tema": "Arquiteturas e Modelos Densos (Transformers)",
+  "relacionados": [
+    "modulo-04"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

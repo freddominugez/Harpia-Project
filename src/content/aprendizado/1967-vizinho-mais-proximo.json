@@ -1,0 +1,11 @@
+{
+  "ano": 1967,
+  "titulo": "Vizinho mais próximo",
+  "texto": "Cover e Hart: classificar pelo exemplo mais parecido. É o ancestral direto da busca vetorial.",
+  "eq": "\\hat y(q)=y_{\\arg\\min_i\\|q-x_i\\|}",
+  "ordem": 5,
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

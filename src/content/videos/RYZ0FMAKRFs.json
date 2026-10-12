@@ -1,0 +1,16 @@
+{
+  "id": "RYZ0FMAKRFs",
+  "titulo": "Mistral 8x7B Part 1- So What is a Mixture of Experts Model?",
+  "canal": "Sam Witteveen",
+  "modulo": 5,
+  "nivel": "Iniciante",
+  "resumo": "Visão geral, feita no lançamento do Mixtral 8x7B, do que é um modelo Mixture of Experts e por que ele roda mais rápido do que um modelo denso de tamanho equivalente.",
+  "catalogo": 37,
+  "trilha": "llm",
+  "ordem": 43,
+  "fonte_url": "https://www.youtube.com/watch?v=RYZ0FMAKRFs",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

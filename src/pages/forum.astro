@@ -3,7 +3,7 @@ import Base from "../layouts/Base.astro";
 import PageIntro from "../components/PageIntro.astro";
 import ForumList from "../components/ForumList.astro";
 import Giscus from "../components/Giscus.astro";
-import { TOPICOS_PROPOSTOS } from "../data/home";
+import { PAUTAS } from "../lib/pautas";
 ---
 <Base titulo="Fórum" descricao="Fórum do Harpya: perguntas, reproduções e propostas, via GitHub Discussions.">
   <PageIntro trilha={[{ rotulo: "Fórum" }]} eyebrow="Comunidade" titulo="Discuta, reproduza, conteste" lead="As conversas ficam no GitHub Discussions do repositório. Cada página de caminho tem a sua própria discussão; esta página é o espaço geral." />
@@ -16,7 +16,7 @@ import { TOPICOS_PROPOSTOS } from "../data/home";
       <div class="section-head" style="margin-top:28px">
         <div><h2 id="pautas">Pautas propostas</h2><p>Temas que o projeto quer discutir primeiro. Não são conversas existentes: cada uma leva à ficha do caminho.</p></div>
       </div>
-      <ForumList topicos={TOPICOS_PROPOSTOS} />
+      <ForumList itens={PAUTAS} limite={50} />
     </div>
     <aside aria-label="Sobre o fórum">
       <div class="surface aside-panel">

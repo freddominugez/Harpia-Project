@@ -1,0 +1,12 @@
+{
+  "nome": "Efficient NLP",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCVm5B8leEcAeeUmd8P2AliQ",
+  "pagina": "https://www.youtube.com/@EfficientNLP",
+  "tema": "Otimização de Inferência e Deploy",
+  "relacionados": [
+    "modulo-10"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

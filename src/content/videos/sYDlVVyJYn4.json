@@ -1,0 +1,16 @@
+{
+  "id": "sYDlVVyJYn4",
+  "titulo": "What is Mixture of Experts?",
+  "canal": "IBM Technology",
+  "modulo": 5,
+  "nivel": "Iniciante",
+  "resumo": "Introdução conceitual da IBM a Mixture of Experts, com a ideia de um painel de especialistas ativados seletivamente em vez de um único modelo generalista.",
+  "catalogo": 36,
+  "trilha": "llm",
+  "ordem": 42,
+  "fonte_url": "https://www.youtube.com/watch?v=sYDlVVyJYn4",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

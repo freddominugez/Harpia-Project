@@ -4,6 +4,7 @@ titulo: "Sobre o Harpya"
 kicker: "Sobre"
 lead: "Pesquisa aberta, conduzida por Carlos Frederico Domínguez, sobre onde a matemática dos modelos de linguagem ainda pode ceder velocidade, memória ou exatidão."
 descricao: "Autoria, método, licença e como contribuir com o Harpya."
+atualizado: "2026-10-12"
 relacionados:
   - { href: "/forum/", titulo: "Fórum", sub: "Discuta, reproduza, conteste", icone: "messages" }
   - { href: "/estudos/", titulo: "Estudos", sub: "Os 12 caminhos válidos", icone: "file" }
@@ -31,7 +32,7 @@ Analogias físicas não contam como prova. Cada mecanismo precisa virar equaçã
 
 - **Discussões:** no [fórum](/forum/) ou na página de cada caminho.
 - **Reproduções:** abra uma discussão em *Resultados e reproduções* com código, hardware, lote e latência p95.
-- **Correções e conteúdo:** pull request no repositório. Vídeos, livros e artigos ficam em `src/data/*.json`; caminhos em `src/content/caminhos/*.md`.
+- **Correções e conteúdo:** pull request no repositório. Cada vídeo, livro, artigo e caminho é um arquivo em `src/content/`.
 
 ## Licença
 

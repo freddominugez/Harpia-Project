@@ -1,0 +1,14 @@
+{
+  "nome": "arXiv cs.LG (Aprendizado de máquina)",
+  "tipo": "site",
+  "feed": "https://rss.arxiv.org/rss/cs.LG",
+  "pagina": "https://arxiv.org/list/cs.LG/recent",
+  "tema": "quantização, eficiência, arquiteturas",
+  "relacionados": [
+    "caminhos",
+    "modulo-10",
+    "modulo-11"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

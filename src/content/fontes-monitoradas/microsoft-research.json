@@ -1,0 +1,12 @@
+{
+  "nome": "Microsoft Research",
+  "tipo": "site",
+  "feed": "https://www.microsoft.com/en-us/research/feed/",
+  "pagina": "https://www.microsoft.com/en-us/research",
+  "tema": "pesquisa de laboratório (feed bloqueia robôs: 403 em 12/10/2026)",
+  "relacionados": [
+    "modulo-10"
+  ],
+  "ativo": false,
+  "verificado_em": "2026-10-12"
+}

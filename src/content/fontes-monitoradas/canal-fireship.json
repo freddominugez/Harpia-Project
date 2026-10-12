@@ -1,0 +1,12 @@
+{
+  "nome": "Fireship",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UC2Xd-TjJByJyK2w1zNwY0zQ",
+  "pagina": "https://www.youtube.com/@Fireship",
+  "tema": "O Futuro, Mamba (SSMs) e Raciocínio (System 2)",
+  "relacionados": [
+    "modulo-11"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

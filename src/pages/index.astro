@@ -9,7 +9,8 @@ import VideoFeature from "../components/VideoFeature.astro";
 import ForumList from "../components/ForumList.astro";
 import JoinCommunityCard from "../components/JoinCommunityCard.astro";
 import { getCollection } from "astro:content";
-import { kpis, trilhas, ARTIGOS_DESTAQUE, TOPICOS_PROPOSTOS } from "../data/home";
+import { kpis, trilhas, ARTIGOS_DESTAQUE } from "../data/home";
+import { PAUTAS } from "../lib/pautas";
 import { VIDEOS, selecaoDaSemana } from "../lib/videos";
 import { dataCurta, ROTULO_ESTATUTO } from "../lib/format";
 
@@ -79,7 +80,7 @@ const destaque = selecaoDaSemana();
             <div><h2 id="h-forum">Fórum da Comunidade</h2></div>
             <a href="/forum/">Ver fórum <span aria-hidden="true">→</span></a>
           </div>
-          <ForumList topicos={TOPICOS_PROPOSTOS} />
+          <ForumList itens={PAUTAS} />
         </section>
         <JoinCommunityCard />
       </div>

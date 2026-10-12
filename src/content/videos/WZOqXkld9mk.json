@@ -1,0 +1,16 @@
+{
+  "id": "WZOqXkld9mk",
+  "titulo": "Lec 18 | Pre-Training Strategies: ELMo, BERT",
+  "canal": "NPTEL IIT Delhi",
+  "modulo": 2,
+  "nivel": "Avançado",
+  "resumo": "Aula acadêmica do NPTEL (IIT Delhi) sobre estratégias de pré-treinamento com ELMo e BERT, cobrindo a passagem de embeddings estáticos para representações contextuais.",
+  "catalogo": 17,
+  "trilha": "llm",
+  "ordem": 23,
+  "fonte_url": "https://www.youtube.com/watch?v=WZOqXkld9mk",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

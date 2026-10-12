@@ -1,0 +1,12 @@
+{
+  "nome": "Jia-Bin Huang",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCkQS_dP6GJTmYnMlox-YiKQ",
+  "pagina": "https://www.youtube.com/@jbhuang0604",
+  "tema": "Mixture of Experts (MoE)",
+  "relacionados": [
+    "modulo-05"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

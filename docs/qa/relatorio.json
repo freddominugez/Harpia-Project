@@ -30,6 +30,7 @@
  ],
  "links_quebrados": [],
  "arquivos_faltando": [],
+ "seo_geo": [],
  "viewports": {
   "1672x941": {
    "/404.html": {
@@ -1293,6 +1294,7 @@
   "links_quebrados": 0,
   "arquivos_faltando": 0,
   "imagens_quebradas": 0,
-  "rotas_com_erro_console": 0
+  "rotas_com_erro_console": 0,
+  "problemas_seo_geo": []
  }
 }

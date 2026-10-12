@@ -1,13 +1,16 @@
 // Catálogo de vídeos: tipos, ordem dos níveis e a seleção semanal da página inicial.
-import lista from "../data/videos.json";
-import modulos from "../data/modulos.json";
+import { lista } from "./conteudo";
 
 export type Nivel = "Iniciante" | "Intermediário" | "Avançado";
 export type Video = { id: string; titulo: string; canal: string; modulo: number; nivel: Nivel; resumo: string; catalogo: number | null; trilha: string };
 export type Modulo = { numero: number; titulo: string; subtitulo: string; icone: string };
 
-export const VIDEOS = lista as Video[];
-export const MODULOS = modulos as Modulo[];
+export const VIDEOS = lista<Video & { status?: string; ordem?: number }>(import.meta.glob("../content/videos/*.json", { eager: true }))
+  .map((v) => ({ ...v, modulo: Number(v.modulo) })) as Video[];
+export const MODULOS = (Object.values(import.meta.glob("../content/modulos/*.json", { eager: true })) as { default: Modulo }[])
+  .map((m) => m.default ?? (m as unknown as Modulo))
+  .map((m) => ({ ...m, numero: Number(m.numero) }))
+  .sort((a, b) => a.numero - b.numero);
 export const NIVEIS: Nivel[] = ["Iniciante", "Intermediário", "Avançado"];
 export const NIVEL_SLUG: Record<Nivel, string> = { Iniciante: "iniciante", "Intermediário": "intermediario", "Avançado": "avancado" };
 

@@ -1,0 +1,16 @@
+{
+  "id": "GMOREHJTbR4",
+  "titulo": "LLaVA - the first instruction following multi-modal model (paper explained)",
+  "canal": "AI Bites",
+  "modulo": 9,
+  "nivel": "Intermediário",
+  "resumo": "Explicação do artigo do LLaVA, mostrando como projetar as features de um encoder de visão no espaço de embedding de um LLM e treinar com instruções visuais.",
+  "catalogo": 80,
+  "trilha": "llm",
+  "ordem": 86,
+  "fonte_url": "https://www.youtube.com/watch?v=GMOREHJTbR4",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

@@ -1,0 +1,12 @@
+{
+  "nome": "Anyscale",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UC7L1tZw52rtgmIB4fr_f40w",
+  "pagina": "https://www.youtube.com/@anyscale",
+  "tema": "Otimização de Inferência e Deploy",
+  "relacionados": [
+    "modulo-10"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

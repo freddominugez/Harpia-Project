@@ -1,0 +1,17 @@
+{
+  "nome": "Hugging Face",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCHlNU7kIZhRgSbhHvFoy72w",
+  "pagina": "https://www.youtube.com/@HuggingFace",
+  "tema": "Tokens e Tokenização; Embeddings (Vetores e Representação Espacial); Arquiteturas e Modelos Densos (Transformers); Mixture of Experts (MoE);",
+  "relacionados": [
+    "modulo-01",
+    "modulo-02",
+    "modulo-04",
+    "modulo-05",
+    "modulo-06",
+    "modulo-07"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

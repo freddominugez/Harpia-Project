@@ -1,0 +1,12 @@
+{
+  "nome": "Maarten Grootendorst",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCewHz0nV5-F05-2lEHkm4EQ",
+  "pagina": "https://www.youtube.com/@MaartenGrootendorst",
+  "tema": "Mixture of Experts (MoE)",
+  "relacionados": [
+    "modulo-05"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

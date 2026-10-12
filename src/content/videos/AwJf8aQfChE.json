@@ -1,0 +1,16 @@
+{
+  "id": "AwJf8aQfChE",
+  "titulo": "OpenAI Whisper: Robust Speech Recognition via Large-Scale Weak Supervision | Paper and Code",
+  "canal": "Aleksa Gordić - The AI Epiphany",
+  "modulo": 9,
+  "nivel": "Intermediário",
+  "resumo": "Análise do artigo e do código do Whisper, mostrando como a OpenAI alcançou reconhecimento de fala robusto com treinamento fracamente supervisionado em grande escala.",
+  "catalogo": 81,
+  "trilha": "llm",
+  "ordem": 87,
+  "fonte_url": "https://www.youtube.com/watch?v=AwJf8aQfChE",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

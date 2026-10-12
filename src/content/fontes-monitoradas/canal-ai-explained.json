@@ -1,0 +1,12 @@
+{
+  "nome": "AI Explained",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCNJ1Ymd5yFuUPtn21xtRbbw",
+  "pagina": "https://www.youtube.com/@aiexplained-official",
+  "tema": "Multimodalidade (Visão, Áudio e Vídeo)",
+  "relacionados": [
+    "modulo-09"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

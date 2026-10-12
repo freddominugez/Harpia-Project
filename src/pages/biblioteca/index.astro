@@ -2,9 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import PageIntro from "../../components/PageIntro.astro";
 import Tag from "../../components/Tag.astro";
-import livros from "../../data/livros.json";
-import artigos from "../../data/artigos.json";
-import fontes from "../../data/fontes.json";
+import { LIVROS as livros, ARTIGOS as artigos, FONTES_POR_GRUPO as fontes } from "../../lib/conteudo";
 const nFontes = fontes.reduce((s, g) => s + g.itens.length, 0);
 const ordenados = [...artigos].sort((a, b) => a.ano - b.ano);
 ---

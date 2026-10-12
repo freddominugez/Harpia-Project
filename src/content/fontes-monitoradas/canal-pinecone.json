@@ -1,0 +1,12 @@
+{
+  "nome": "Pinecone",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UC02IWPisqHk2nsWfurnl-mQ",
+  "pagina": "https://www.youtube.com/@pinecone-io",
+  "tema": "RAG (Retrieval-Augmented Generation)",
+  "relacionados": [
+    "modulo-03"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

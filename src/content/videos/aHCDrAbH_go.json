@@ -1,0 +1,16 @@
+{
+  "id": "aHCDrAbH_go",
+  "titulo": "Building Effective Agents with LangGraph",
+  "canal": "LangChain",
+  "modulo": 8,
+  "nivel": "Avançado",
+  "resumo": "Vídeo oficial da LangChain sobre como construir agentes eficazes com LangGraph, organizando fluxos como grafos de estado em vez de loops livres.",
+  "catalogo": 74,
+  "trilha": "llm",
+  "ordem": 80,
+  "fonte_url": "https://www.youtube.com/watch?v=aHCDrAbH_go",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

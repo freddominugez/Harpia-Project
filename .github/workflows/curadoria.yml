@@ -27,6 +27,6 @@ jobs:
           commit-message: "curadoria: candidatos da semana"
           body: |
             Candidatos coletados automaticamente em `curadoria/candidatos.json`.
-            Para publicar, mova os aprovados para `src/data/videos.json`, `artigos.json` ou `livros.json`.
+            Para publicar, mova os aprovados para `src/content/videos/`, `src/content/artigos/` ou `src/content/livros/` (um arquivo por item).
             Régua de pontuação em `docs/CURADORIA.md`.
           add-paths: curadoria/candidatos.json

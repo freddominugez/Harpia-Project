@@ -1,0 +1,13 @@
+{
+  "ano": 1943,
+  "titulo": "Neurônio de McCulloch e Pitts",
+  "texto": "Um neurônio como porta lógica com limiar.",
+  "eq": "y=\\mathbb 1\\big[\\textstyle\\sum_i w_ix_i\\ge\\theta\\big]",
+  "marco": true,
+  "era": "Fundamentos",
+  "ordem": 1,
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

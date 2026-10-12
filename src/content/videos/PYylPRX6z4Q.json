@@ -1,0 +1,16 @@
+{
+  "id": "PYylPRX6z4Q",
+  "titulo": "Training AI Without Writing A Reward Function, with Reward Modelling",
+  "canal": "Robert Miles AI Safety ",
+  "modulo": 7,
+  "nivel": "Intermediário",
+  "resumo": "Robert Miles explica a modelagem de recompensa: treinar um modelo a partir de preferências humanas para servir de crítico que pontua o comportamento do agente durante o aprendizado por reforço.",
+  "catalogo": 60,
+  "trilha": "llm",
+  "ordem": 66,
+  "fonte_url": "https://www.youtube.com/watch?v=PYylPRX6z4Q",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

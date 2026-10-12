@@ -1,0 +1,12 @@
+{
+  "nome": "AAIF Live",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCLAh-x7caEkg2jsbhNmg-3Q",
+  "pagina": "https://www.youtube.com/@AAIFLive-x1r",
+  "tema": "Mixture of Experts (MoE)",
+  "relacionados": [
+    "modulo-05"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

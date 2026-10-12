@@ -1,0 +1,16 @@
+{
+  "id": "bbVoDXoPrPM",
+  "titulo": "Fine-tuning LLMs on Human Feedback (RLHF + DPO)",
+  "canal": "Shaw Talebi",
+  "modulo": 7,
+  "nivel": "Intermediário",
+  "resumo": "Tutorial prático de ajuste fino com feedback humano, cobrindo RLHF e DPO com datasets de preferência (chosen/rejected) para alinhar um modelo.",
+  "catalogo": 62,
+  "trilha": "llm",
+  "ordem": 68,
+  "fonte_url": "https://www.youtube.com/watch?v=bbVoDXoPrPM",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

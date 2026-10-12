@@ -1,0 +1,16 @@
+{
+  "id": "nKSk_TiR8YA",
+  "titulo": "Most devs don't understand how LLM tokens work",
+  "canal": "Matt Pocock",
+  "modulo": 1,
+  "nivel": "Iniciante",
+  "resumo": "Explicação visual e acessível de como os LLMs leem texto quebrando-o em tokens (pedaços de palavras), e por que isso afeta custo, limites de contexto e comportamentos estranhos dos modelos.",
+  "catalogo": 1,
+  "trilha": "llm",
+  "ordem": 7,
+  "fonte_url": "https://www.youtube.com/watch?v=nKSk_TiR8YA",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

@@ -1,0 +1,14 @@
+{
+  "nome": "Stanford MLSys Seminars",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCzz6ructab1U44QPI3HpZEQ",
+  "pagina": "https://www.youtube.com/@StanfordMLSysSeminars",
+  "tema": "Arquiteturas e Modelos Densos (Transformers); Agentes Autônomos e Uso de Ferramentas (Tool Use); O Futuro, Mamba (SSMs) e Raciocínio (System",
+  "relacionados": [
+    "modulo-04",
+    "modulo-08",
+    "modulo-11"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

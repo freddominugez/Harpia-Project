@@ -1,0 +1,13 @@
+{
+  "ano": 2017,
+  "titulo": "Attention Is All You Need",
+  "texto": "O transformer descarta a recorrência.",
+  "eq": "\\mathrm{softmax}\\big(QK^\\top/\\sqrt{d_k}\\big)V",
+  "marco": true,
+  "era": "Transformers",
+  "ordem": 12,
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

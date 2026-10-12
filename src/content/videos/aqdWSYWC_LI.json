@@ -1,0 +1,16 @@
+{
+  "id": "aqdWSYWC_LI",
+  "titulo": "OpenAI Function Calling - Full Beginner Tutorial",
+  "canal": "Dave Ebbelaar",
+  "modulo": 8,
+  "nivel": "Intermediário",
+  "resumo": "Tutorial completo de function calling da OpenAI: como descrever funções e usar a API para que o modelo retorne argumentos estruturados que invocam funções do sistema.",
+  "catalogo": 71,
+  "trilha": "llm",
+  "ordem": 77,
+  "fonte_url": "https://www.youtube.com/watch?v=aqdWSYWC_LI",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

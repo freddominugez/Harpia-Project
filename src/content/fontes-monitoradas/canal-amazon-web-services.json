@@ -1,0 +1,12 @@
+{
+  "nome": "Amazon Web Services",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCdoadna9HFHsxXWhafhNvKw",
+  "pagina": "https://www.youtube.com/@amazonwebservices",
+  "tema": "RAG (Retrieval-Augmented Generation)",
+  "relacionados": [
+    "modulo-03"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

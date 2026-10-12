@@ -1,0 +1,16 @@
+{
+  "id": "ISPId9Lhc1g",
+  "titulo": "The Illustrated Word2vec - A Gentle Intro to Word Embeddings in Machine Learning",
+  "canal": "Jay Alammar",
+  "modulo": 2,
+  "nivel": "Iniciante",
+  "resumo": "Introdução visual e sem código de Jay Alammar à intuição do Word2vec: como palavras viram pontos em um espaço vetorial contínuo onde proximidade indica semelhança de sentido.",
+  "catalogo": 11,
+  "trilha": "llm",
+  "ordem": 17,
+  "fonte_url": "https://www.youtube.com/watch?v=ISPId9Lhc1g",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

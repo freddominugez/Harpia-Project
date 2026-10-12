@@ -1,0 +1,16 @@
+{
+  "id": "mwO6v4BlgZQ",
+  "titulo": "Mixtral of Experts (Paper Explained)",
+  "canal": "Yannic Kilcher",
+  "modulo": 5,
+  "nivel": "Intermediário",
+  "resumo": "Análise detalhada do artigo do Mixtral, da Mistral AI, cobrindo como as camadas de especialistas substituem o bloco feed-forward e como os parâmetros são compartilhados e divididos.",
+  "catalogo": 39,
+  "trilha": "llm",
+  "ordem": 45,
+  "fonte_url": "https://www.youtube.com/watch?v=mwO6v4BlgZQ",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

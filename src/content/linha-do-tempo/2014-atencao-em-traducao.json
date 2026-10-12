@@ -1,0 +1,12 @@
+{
+  "ano": 2014,
+  "titulo": "Atenção em tradução",
+  "texto": "Bahdanau, Cho e Bengio deixam o decodificador olhar para toda a frase de entrada.",
+  "era": "Redes e sequências",
+  "marco": false,
+  "ordem": 11,
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

@@ -1,4 +1,4 @@
-"""QA do redesign: rolagem horizontal, imagens, links internos, console e interações.
+"""QA do redesign: rolagem horizontal, imagens, links internos, console, interações e SEO/GEO.
 
 Uso (com o site gerado em dist/ e servido localmente):
     npm run build
@@ -41,11 +41,111 @@ class Links(HTMLParser):
 
 
 def pages():
+    """Rotas HTML do site. O painel /admin/ (Sveltia CMS) fica fora: exige HTTPS e rede."""
     out = []
     for f in sorted(DIST.rglob("*.html")):
         rel = "/" + str(f.relative_to(DIST)).replace("index.html", "")
-        out.append(rel)
+        if not rel.startswith("/admin/"):
+            out.append(rel)
     return out
+
+
+SITE = "https://www.harpya.org"
+ROBOS_IA = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot",
+            "Perplexity-User", "Google-Extended", "Applebot-Extended", "CCBot", "meta-externalagent", "Amazonbot", "DuckAssistBot", "Bingbot"]
+
+
+def seo_checks():
+    """SEO técnico e GEO, direto no HTML gerado: um problema por linha (vazio = passou)."""
+    import xml.etree.ElementTree as ET
+    prob, titulos, descricoes = [], {}, {}
+    sm = ET.parse(DIST / "sitemap.xml").getroot()
+    ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+    no_sitemap = {u.find("s:loc", ns).text for u in sm.findall("s:url", ns)}
+    for u in sm.findall("s:url", ns):
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", (u.findtext("s:lastmod", "", ns) or "")):
+            prob.append(f"sitemap: lastmod inválido em {u.findtext('s:loc', '', ns)}")
+    for rota in pages():
+        html = (DIST / rota.lstrip("/") / ("" if rota.endswith(".html") else "index.html")).read_text("utf-8")
+        head = html.split("</head>", 1)[0]
+        meta = lambda attr, nome: (re.search(rf'<meta {attr}="{re.escape(nome)}" content="([^"]*)"', head) or [None, None])[1]
+        if rota == "/404.html":
+            if 'name="robots" content="noindex' not in head:
+                prob.append("404: falta noindex")
+            continue
+        url = SITE + rota
+        t = re.findall(r"<title>(.*?)</title>", head)
+        d = meta("name", "description")
+        if len(t) != 1:
+            prob.append(f"{rota}: {len(t)} <title>")
+        else:
+            titulos.setdefault(t[0], []).append(rota)
+        if not d or not (50 <= len(d) <= 200):
+            prob.append(f"{rota}: description ausente ou fora de 50 a 200 caracteres ({len(d or '')})")
+        else:
+            descricoes.setdefault(d, []).append(rota)
+        if f'<link rel="canonical" href="{url}">' not in head:
+            prob.append(f"{rota}: canonical diferente de {url}")
+        for hl in ("pt-BR", "x-default"):
+            if f'hreflang="{hl}" href="{url}"' not in head:
+                prob.append(f"{rota}: falta hreflang {hl}")
+        if url not in no_sitemap:
+            prob.append(f"{rota}: fora do sitemap")
+        og = meta("property", "og:image") or ""
+        if not og.startswith(SITE) or not (DIST / urlparse(og).path.lstrip("/")).exists():
+            prob.append(f"{rota}: og:image ausente ou sem arquivo ({og})")
+        for prop in ("og:title", "og:description", "og:url", "og:image:width", "og:image:alt"):
+            if not meta("property", prop):
+                prob.append(f"{rota}: falta {prop}")
+        for nome in ("twitter:card", "twitter:title", "twitter:image"):
+            if not meta("name", nome):
+                prob.append(f"{rota}: falta {nome}")
+        md = re.search(r'<link rel="alternate" type="text/markdown" href="([^"]+)"', head)
+        if not md or not (DIST / md.group(1).lstrip("/")).exists():
+            prob.append(f"{rota}: gêmeo markdown ausente")
+        if len(re.findall(r"<h1[\s>]", html)) != 1:
+            prob.append(f"{rota}: precisa de exatamente um <h1>")
+        ld = re.search(r'<script type="application/ld\+json">(.*?)</script>', head, re.S)
+        try:
+            tipos = [n.get("@type") for n in json.loads(ld.group(1))["@graph"]]
+        except Exception as erro:  # noqa: BLE001
+            prob.append(f"{rota}: JSON-LD inválido ({erro})")
+            continue
+        for tipo in ("WebSite", "Organization", "Person", "WebPage"):
+            if tipo not in tipos:
+                prob.append(f"{rota}: JSON-LD sem {tipo}")
+        if rota != "/" and "BreadcrumbList" not in tipos:
+            prob.append(f"{rota}: JSON-LD sem BreadcrumbList")
+        if "VideoObject" in tipos:
+            prob.append(f"{rota}: VideoObject não é usado (decisão 4)")
+    for valor, rotas_ in {**titulos, **descricoes}.items():
+        if len(rotas_) > 1:
+            prob.append(f"repetido em {rotas_}: {valor[:60]}")
+    for u in no_sitemap:
+        alvo = DIST / urlparse(u).path.lstrip("/") / "index.html"
+        if not alvo.exists():
+            prob.append(f"sitemap aponta para página inexistente: {u}")
+        if "/admin" in u:
+            prob.append("sitemap inclui /admin")
+    robots = (DIST / "robots.txt").read_text("utf-8")
+    if "Disallow: /admin/" not in robots or f"Sitemap: {SITE}/sitemap.xml" not in robots:
+        prob.append("robots.txt sem Disallow /admin/ ou sem Sitemap")
+    for bot in ROBOS_IA:
+        if f"User-agent: {bot}\nAllow: /" not in robots:
+            prob.append(f"robots.txt sem regra explícita para {bot}")
+    for link in re.findall(r"\]\((https://www\.harpya\.org/[^)]+)\)", (DIST / "llms.txt").read_text("utf-8")):
+        if not (DIST / urlparse(link).path.lstrip("/")).exists():
+            prob.append(f"llms.txt aponta para arquivo inexistente: {link}")
+    if (DIST / "llms-full.txt").stat().st_size < 20000:
+        prob.append("llms-full.txt pequeno demais")
+    try:
+        ET.parse(DIST / "rss.xml")
+    except ET.ParseError as erro:
+        prob.append(f"rss.xml inválido: {erro}")
+    admin = (DIST / "admin" / "index.html").read_text("utf-8")
+    if 'name="robots" content="noindex' not in admin:
+        prob.append("/admin/ sem meta noindex")
+    return prob
 
 
 def static_checks():
@@ -90,8 +190,9 @@ def main():
     Path(args.shots).mkdir(parents=True, exist_ok=True)
 
     broken, missing = static_checks()
+    seo = seo_checks()
     rotas = pages()
-    report = {"rotas": rotas, "links_quebrados": broken, "arquivos_faltando": missing, "viewports": {}, "console": {}, "imagens_quebradas": [], "interacoes": {}}
+    report = {"rotas": rotas, "links_quebrados": broken, "arquivos_faltando": missing, "seo_geo": seo, "viewports": {}, "console": {}, "imagens_quebradas": [], "interacoes": {}}
 
     proxy = os.environ.get("HTTPS_PROXY")
     host = urlparse(args.base).hostname
@@ -198,11 +299,12 @@ def main():
         "arquivos_faltando": len(missing),
         "imagens_quebradas": len(report["imagens_quebradas"]),
         "rotas_com_erro_console": len(report["console"]),
+        "problemas_seo_geo": seo,
     }
     Path(args.shots, "relatorio.json").write_text(json.dumps(report, ensure_ascii=False, indent=1), "utf-8")
     print(json.dumps(report["resumo"], ensure_ascii=False, indent=1))
     print(json.dumps(report["interacoes"], ensure_ascii=False, indent=1))
-    ok = not fails and not broken and not missing and not report["imagens_quebradas"] and not report["console"]
+    ok = not fails and not broken and not missing and not report["imagens_quebradas"] and not report["console"] and not seo
     sys.exit(0 if ok else 1)
 
 

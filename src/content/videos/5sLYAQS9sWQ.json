@@ -1,0 +1,16 @@
+{
+  "id": "5sLYAQS9sWQ",
+  "titulo": "How Large Language Models Work",
+  "canal": "IBM Technology",
+  "modulo": 4,
+  "nivel": "Iniciante",
+  "resumo": "Introdução da IBM ao funcionamento dos grandes modelos de linguagem: dados de treinamento, arquitetura Transformer e como o modelo prevê a próxima palavra para gerar respostas fluentes.",
+  "catalogo": 28,
+  "trilha": "llm",
+  "ordem": 34,
+  "fonte_url": "https://www.youtube.com/watch?v=5sLYAQS9sWQ",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

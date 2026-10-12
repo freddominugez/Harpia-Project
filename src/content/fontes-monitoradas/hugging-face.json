@@ -1,0 +1,14 @@
+{
+  "nome": "Hugging Face",
+  "tipo": "site",
+  "feed": "https://huggingface.co/blog/feed.xml",
+  "pagina": "https://huggingface.co/blog",
+  "tema": "modelos abertos, embeddings, quantização",
+  "relacionados": [
+    "modulo-02",
+    "modulo-06",
+    "modulo-10"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

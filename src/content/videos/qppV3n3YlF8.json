@@ -1,0 +1,16 @@
+{
+  "id": "qppV3n3YlF8",
+  "titulo": "RAG Explained",
+  "canal": "IBM Technology",
+  "modulo": 3,
+  "nivel": "Iniciante",
+  "resumo": "Explicação conceitual da IBM sobre o ciclo do RAG: a pergunta dispara uma busca em uma base de conhecimento, o contexto recuperado é anexado ao prompt e o LLM gera a resposta.",
+  "catalogo": 19,
+  "trilha": "llm",
+  "ordem": 25,
+  "fonte_url": "https://www.youtube.com/watch?v=qppV3n3YlF8",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

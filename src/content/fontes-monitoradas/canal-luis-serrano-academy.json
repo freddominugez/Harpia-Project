@@ -1,0 +1,13 @@
+{
+  "nome": "Luis Serrano Academy",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCvnzQ7-7MrsC6AVo5LxnQWw",
+  "pagina": "https://www.youtube.com/@SerranoAcademy",
+  "tema": "Arquiteturas e Modelos Densos (Transformers); O Futuro, Mamba (SSMs) e Raciocínio (System 2)",
+  "relacionados": [
+    "modulo-04",
+    "modulo-11"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

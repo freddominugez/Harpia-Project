@@ -1,0 +1,12 @@
+{
+  "nome": "Google Cloud Tech",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCTMRxtyHoE3LPcrl-kT4AQQ",
+  "pagina": "https://www.youtube.com/@googlecloudtech",
+  "tema": "Embeddings (Vetores e Representação Espacial)",
+  "relacionados": [
+    "modulo-02"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

@@ -1,0 +1,13 @@
+{
+  "nome": "Google DeepMind",
+  "tipo": "site",
+  "feed": "https://deepmind.google/blog/rss.xml",
+  "pagina": "https://deepmind.google/discover/blog",
+  "tema": "pesquisa de laboratório",
+  "relacionados": [
+    "modulo-04",
+    "modulo-11"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

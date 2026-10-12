@@ -1,0 +1,12 @@
+{
+  "nome": "Julia Turc",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCMUy_WsUIYbM_hKR9drb9dA",
+  "pagina": "https://www.youtube.com/@juliaturc1",
+  "tema": "Mixture of Experts (MoE)",
+  "relacionados": [
+    "modulo-05"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

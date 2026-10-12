@@ -1,0 +1,12 @@
+{
+  "nome": "Jay Alammar",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCmOwsoHty5PrmE-3QhUBfPQ",
+  "pagina": "https://www.youtube.com/@arp_ai",
+  "tema": "Embeddings (Vetores e Representação Espacial)",
+  "relacionados": [
+    "modulo-02"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

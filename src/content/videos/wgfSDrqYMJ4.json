@@ -1,0 +1,16 @@
+{
+  "id": "wgfSDrqYMJ4",
+  "titulo": "What are Word Embeddings?",
+  "canal": "IBM Technology",
+  "modulo": 2,
+  "nivel": "Iniciante",
+  "resumo": "Explicação de quadro branco da IBM sobre como palavras são convertidas em vetores numéricos que capturam significado e semelhança, com métodos clássicos e contextuais.",
+  "catalogo": 10,
+  "trilha": "llm",
+  "ordem": 16,
+  "fonte_url": "https://www.youtube.com/watch?v=wgfSDrqYMJ4",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

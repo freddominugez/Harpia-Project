@@ -1,0 +1,16 @@
+{
+  "id": "cntxC3g22oU",
+  "titulo": "Large Model Training and Inference with DeepSpeed // Samyam Rajbhandari // LLMs in Prod Conference",
+  "canal": "AAIF Live",
+  "modulo": 5,
+  "nivel": "Avançado",
+  "resumo": "Palestra de Samyam Rajbhandari, da equipe DeepSpeed da Microsoft, sobre as técnicas para treinar e servir modelos gigantes (ZeRO, paralelismo 3D, offload, DeepSpeed-Inference), incluindo o suporte a MoE para escalar com esparsidade.",
+  "catalogo": 44,
+  "trilha": "llm",
+  "ordem": 50,
+  "fonte_url": "https://www.youtube.com/watch?v=cntxC3g22oU",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

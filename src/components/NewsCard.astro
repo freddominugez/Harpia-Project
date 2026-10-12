@@ -2,7 +2,7 @@
 // Lê public/data/news.json no build. O robô (scripts/coletar_news.py) atualiza o arquivo
 // a cada 6 horas pelo GitHub Actions, e cada commit dispara um novo deploy na Vercel.
 import fs from "node:fs";
-import feeds from "../data/feeds.json";
+import { FEEDS as feeds } from "../lib/conteudo";
 interface Props { limite?: number }
 const { limite = 6 } = Astro.props;
 let itens: { fonte: string; titulo: string; url: string; data: string }[] = [];

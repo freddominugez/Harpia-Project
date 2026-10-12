@@ -14,6 +14,14 @@ export const SITE = {
   repositorioPublico: true,
 };
 
+// Verificação de propriedade nos buscadores. Cole só o valor do atributo content da meta
+// que o Google Search Console ou o Bing Webmaster Tools mostrar (passo a passo em docs/SEO_GEO.md).
+// Vazio: a meta não é gerada. Se a verificação for por DNS (registro TXT), deixe vazio.
+export const VERIFICACAO = {
+  google: "",
+  bing: "",
+};
+
 // Fórum: Giscus (GitHub Discussions). Gratuito, sem servidor e sem banco.
 // Preencha os quatro campos com os valores gerados em https://giscus.app/pt
 // depois de: (1) tornar o repositório público, (2) ativar Discussions,

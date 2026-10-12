@@ -1,0 +1,16 @@
+{
+  "id": "fNxaJsNG3-s",
+  "titulo": "Natural Language Processing - Tokenization (NLP Zero to Hero - Part 1)",
+  "canal": "TensorFlow",
+  "modulo": 1,
+  "nivel": "Iniciante",
+  "resumo": "Introdução suave, da série NLP Zero to Hero do TensorFlow, sobre como transformar texto bruto em números (tokens e índices) antes de alimentar uma rede neural.",
+  "catalogo": 3,
+  "trilha": "llm",
+  "ordem": 9,
+  "fonte_url": "https://www.youtube.com/watch?v=fNxaJsNG3-s",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

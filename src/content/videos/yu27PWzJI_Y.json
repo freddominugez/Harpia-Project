@@ -1,0 +1,16 @@
+{
+  "id": "yu27PWzJI_Y",
+  "titulo": "What is Prompt Tuning?",
+  "canal": "IBM Technology",
+  "modulo": 6,
+  "nivel": "Intermediário",
+  "resumo": "Explicação da IBM sobre prompt tuning, em que soft prompts (embeddings contínuos treináveis) adaptam um modelo de base sem alterar seus pesos, comparado a prompt engineering e fine-tuning.",
+  "catalogo": 52,
+  "trilha": "llm",
+  "ordem": 58,
+  "fonte_url": "https://www.youtube.com/watch?v=yu27PWzJI_Y",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

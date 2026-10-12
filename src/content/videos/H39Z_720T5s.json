@@ -1,0 +1,16 @@
+{
+  "id": "H39Z_720T5s",
+  "titulo": "The Transformer architecture",
+  "canal": "Hugging Face",
+  "modulo": 4,
+  "nivel": "Intermediário",
+  "resumo": "Aula do curso da Hugging Face que apresenta a arquitetura Transformer e compara encoders (estilo BERT), decoders (estilo GPT) e encoder-decoders, indicando quando usar cada um.",
+  "catalogo": 31,
+  "trilha": "llm",
+  "ordem": 37,
+  "fonte_url": "https://www.youtube.com/watch?v=H39Z_720T5s",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

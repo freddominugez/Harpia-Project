@@ -1,0 +1,14 @@
+{
+  "nome": "Sam Witteveen",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UC55ODQSvARtgSyc8ThfiepQ",
+  "pagina": "https://www.youtube.com/@samwitteveenai",
+  "tema": "RAG (Retrieval-Augmented Generation); Mixture of Experts (MoE); Agentes Autônomos e Uso de Ferramentas (Tool Use)",
+  "relacionados": [
+    "modulo-03",
+    "modulo-05",
+    "modulo-08"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

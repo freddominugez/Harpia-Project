@@ -1,0 +1,16 @@
+{
+  "id": "wBPZNhw1LV4",
+  "titulo": "Collin Burns - Weak-to-Strong Generalization",
+  "canal": "FAR․AI",
+  "modulo": 7,
+  "nivel": "Avançado",
+  "resumo": "Collin Burns, autor principal do artigo da OpenAI, apresenta a generalização de fraco para forte: como supervisores mais fracos podem orientar modelos mais capazes, um análogo do problema da supervisão escalável.",
+  "catalogo": 65,
+  "trilha": "llm",
+  "ordem": 71,
+  "fonte_url": "https://www.youtube.com/watch?v=wBPZNhw1LV4",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

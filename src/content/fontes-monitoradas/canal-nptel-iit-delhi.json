@@ -1,0 +1,12 @@
+{
+  "nome": "NPTEL IIT Delhi",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UC640y4UvDAlya_WOj5U4pfA",
+  "pagina": "https://www.youtube.com/@npteliitd",
+  "tema": "Embeddings (Vetores e Representação Espacial)",
+  "relacionados": [
+    "modulo-02"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

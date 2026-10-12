@@ -1,0 +1,13 @@
+{
+  "nome": "Meta AI",
+  "url": "https://ai.meta.com/research",
+  "descricao": "Llama e Faiss",
+  "grupo": "Laboratórios de IA",
+  "grupo_ordem": 5,
+  "ordem": 23,
+  "fonte_url": "https://ai.meta.com/research",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

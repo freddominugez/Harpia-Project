@@ -1,0 +1,16 @@
+{
+  "id": "XtT5i0ZeHHE",
+  "titulo": "AI Inference: The Secret to AI's Superpowers",
+  "canal": "IBM Technology",
+  "modulo": 10,
+  "nivel": "Iniciante",
+  "resumo": "Explica o que é inferência em IA, a fase em que um modelo já treinado aplica o que aprendeu para responder a dados novos, em contraste com o treinamento, e por que ela concentra a maior parte do custo de operação.",
+  "catalogo": 84,
+  "trilha": "llm",
+  "ordem": 90,
+  "fonte_url": "https://www.youtube.com/watch?v=XtT5i0ZeHHE",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "5P7I-xPq8u8",
+  "titulo": "An introduction to Policy Gradient methods - Deep Reinforcement Learning",
+  "canal": "Arxiv Insights",
+  "modulo": 7,
+  "nivel": "Avançado",
+  "resumo": "Introdução aos métodos de gradiente de política em aprendizado por reforço, a família de algoritmos de onde vem o PPO.",
+  "catalogo": 63,
+  "trilha": "llm",
+  "ordem": 69,
+  "fonte_url": "https://www.youtube.com/watch?v=5P7I-xPq8u8",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

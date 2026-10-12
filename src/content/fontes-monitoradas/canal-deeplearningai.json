@@ -1,0 +1,13 @@
+{
+  "nome": "DeepLearningAI",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCcIXc5mJsHVYTZR1maL5l9w",
+  "pagina": "https://www.youtube.com/@Deeplearningai",
+  "tema": "Fine-Tuning e PeFT (Parameter-Efficient Fine-Tuning); Agentes Autônomos e Uso de Ferramentas (Tool Use)",
+  "relacionados": [
+    "modulo-06",
+    "modulo-08"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

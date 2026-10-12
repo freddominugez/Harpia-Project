@@ -1,0 +1,1048 @@
+# GERADO por scripts/gerar_config_cms.py a partir de scripts/cms-config.fonte.yml.
+# Não edite aqui: edite a fonte e rode o script.
+# Painel de conteúdo do Harpya (Sveltia CMS). Documentação: docs/PAINEL_ADMIN.md.
+
+backend:
+  name: github
+  repo: freddominugez/Harpia-Project
+  branch: main
+  commit_messages:
+    create: 'Painel: cria {{collection}} {{slug}}'
+    update: 'Painel: atualiza {{collection}} {{slug}}'
+    delete: 'Painel: remove {{collection}} {{slug}}'
+    uploadMedia: 'Painel: envia mídia {{path}}'
+    deleteMedia: 'Painel: remove mídia {{path}}'
+publish_mode: editorial_workflow
+site_url: https://www.harpya.org
+display_url: https://www.harpya.org
+logo_url: https://www.harpya.org/img/harpya-mark-head.png
+media_folder: public/img/conteudo
+public_folder: /img/conteudo
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: '-'
+collections:
+- name: caminhos
+  label: Caminhos de pesquisa
+  label_singular: Caminho
+  folder: src/content/caminhos
+  extension: md
+  format: frontmatter
+  create: true
+  slug: '{{titulo}}'
+  identifier_field: titulo
+  summary: '{{numero}}. {{titulo}} · {{estatuto}}'
+  sortable_fields:
+  - numero
+  - titulo
+  - atualizado
+  fields:
+  - label: Número
+    name: numero
+    widget: number
+    value_type: int
+  - label: Título
+    name: titulo
+    widget: string
+  - widget: select
+    options:
+    - label: medido no projeto
+      value: medido
+    - label: arte prévia
+      value: arte
+    - label: lacuna
+      value: lacuna
+    - label: teste ou enquadramento
+      value: teste
+    label: Estatuto
+    name: estatuto
+  - label: Selo (texto curto)
+    name: selo
+    widget: string
+    hint: 'Ex.: arte prévia: VA-file, FEXIPRO'
+  - label: Resumo
+    name: resumo
+    widget: text
+  - label: Equação central (LaTeX)
+    name: equacao
+    widget: string
+    required: false
+  - label: Arte prévia
+    name: arte_previa
+    widget: list
+    field:
+      label: Referência
+      name: ref
+      widget: string
+  - label: Próximo teste
+    name: proximo_teste
+    widget: text
+  - label: Parar se
+    name: parar_se
+    widget: text
+  - label: Linha principal
+    name: principal
+    widget: boolean
+    default: false
+  - widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    label: Atualizado em
+    name: atualizado
+  - label: Texto (markdown com LaTeX entre $ e $$)
+    name: body
+    widget: markdown
+    modes:
+    - raw
+- name: pautas
+  label: Pautas do fórum
+  label_singular: Pauta
+  folder: src/content/pautas
+  extension: md
+  format: frontmatter
+  create: true
+  slug: '{{year}}-{{month}}-{{day}}-{{titulo}}'
+  identifier_field: titulo
+  summary: '{{titulo}} · {{status}}'
+  sortable_fields:
+  - proposta_em
+  - titulo
+  - status
+  view_filters:
+  - label: Propostas
+    field: status
+    pattern: ^proposta$
+  - label: Aprovadas
+    field: status
+    pattern: ^aprovada$
+  - label: Criadas
+    field: status
+    pattern: ^criada$
+  fields:
+  - label: Título da discussão
+    name: titulo
+    widget: string
+  - label: Categoria no fórum
+    name: categoria
+    widget: select
+    options:
+    - Caminhos
+    - Perguntas
+    - Resultados e reproduções
+    - Propostas novas
+  - label: Caminho relacionado (slug)
+    name: caminho
+    widget: relation
+    collection: caminhos
+    value_field: '{{slug}}'
+    search_fields:
+    - titulo
+    display_fields:
+    - titulo
+    required: false
+  - label: Links de origem
+    name: links
+    widget: list
+    field:
+      label: URL
+      name: url
+      widget: string
+    required: false
+  - label: Status
+    name: status
+    widget: select
+    options:
+    - label: Proposta (aguardando revisão)
+      value: proposta
+    - label: Aprovada (será criada no fórum)
+      value: aprovada
+    - label: Criada no fórum
+      value: criada
+    - label: Descartada
+      value: descartada
+    default: proposta
+    hint: Ao marcar Aprovada e publicar, a automação cria a discussão no GitHub.
+  - label: Link da discussão
+    name: discussao_url
+    widget: string
+    required: false
+    default: ''
+    hint: Preenchido pela automação.
+  - widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    label: Proposta em
+    name: proposta_em
+  - label: Origem
+    name: origem
+    widget: select
+    options:
+    - label: Manual
+      value: manual
+    - label: Curadoria diária
+      value: curadoria-diaria
+    default: manual
+  - label: Texto de abertura
+    name: body
+    widget: markdown
+    modes:
+    - raw
+- name: videos
+  label: Vídeos
+  label_singular: Vídeo
+  folder: src/content/videos
+  extension: json
+  format: json
+  create: true
+  slug: '{{id}}'
+  identifier_field: titulo
+  summary: '{{titulo}} · {{canal}} · {{nivel}} · {{status}}'
+  sortable_fields:
+  - ordem
+  - titulo
+  - modulo
+  - adicionado_em
+  view_filters:
+  - label: Rascunhos
+    field: status
+    pattern: ^rascunho$
+  - label: Publicados
+    field: status
+    pattern: ^publicado$
+  - label: Da curadoria diária
+    field: origem
+    pattern: curadoria-diaria
+  view_groups:
+  - label: Nível
+    field: nivel
+  - label: Módulo
+    field: modulo
+  fields:
+  - label: ID do YouTube
+    name: id
+    widget: string
+    pattern:
+    - ^[A-Za-z0-9_-]{11}$
+    - O ID tem 11 caracteres (o trecho depois de v= no link).
+  - label: Título real do vídeo
+    name: titulo
+    widget: string
+  - label: Canal
+    name: canal
+    widget: string
+  - label: Módulo
+    name: modulo
+    widget: relation
+    collection: modulos
+    value_field: numero
+    search_fields:
+    - titulo
+    display_fields:
+    - '{{numero}} · {{titulo}}'
+  - label: Nível
+    name: nivel
+    widget: select
+    options:
+    - Iniciante
+    - Intermediário
+    - Avançado
+  - label: Resumo em português
+    name: resumo
+    widget: text
+  - label: Número no catálogo original
+    name: catalogo
+    widget: number
+    value_type: int
+    required: false
+  - label: Trilha
+    name: trilha
+    widget: select
+    options:
+    - label: Matemática
+      value: mat
+    - label: Redes neurais
+      value: redes
+    - label: LLMs
+      value: llm
+    default: llm
+  - label: URL de origem
+    name: fonte_url
+    widget: string
+    pattern:
+    - ^https?://
+    - Use um endereço completo, começando com http.
+  - label: Status
+    name: status
+    widget: select
+    options:
+    - label: Rascunho (não aparece no site)
+      value: rascunho
+    - label: Publicado
+      value: publicado
+    default: rascunho
+  - label: Origem
+    name: origem
+    widget: select
+    options:
+    - label: Manual
+      value: manual
+    - label: Curadoria diária
+      value: curadoria-diaria
+    default: manual
+  - widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    label: Adicionado em
+    name: adicionado_em
+  - widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    label: Link verificado em
+    name: verificado_em
+    hint: Data em que o link foi conferido.
+  - label: Ordem
+    name: ordem
+    widget: number
+    value_type: int
+    default: 999
+    hint: Posição na lista (menor aparece primeiro).
+- name: modulos
+  label: Módulos do catálogo de vídeos
+  label_singular: Módulo
+  folder: src/content/modulos
+  extension: json
+  format: json
+  create: true
+  slug: '{{numero}}'
+  identifier_field: titulo
+  summary: '{{numero}} · {{titulo}}'
+  fields:
+  - label: Número
+    name: numero
+    widget: number
+    value_type: int
+  - label: Título
+    name: titulo
+    widget: string
+  - label: Subtítulo
+    name: subtitulo
+    widget: text
+  - label: Ícone
+    name: icone
+    widget: select
+    options:
+    - arrow
+    - book
+    - brain
+    - chart
+    - file
+    - globe
+    - home
+    - info
+    - lock
+    - menu
+    - messages
+    - network
+    - play
+    - rss
+    - search
+    - sigma
+- name: artigos
+  label: Artigos acadêmicos
+  label_singular: Artigo
+  folder: src/content/artigos
+  extension: json
+  format: json
+  create: true
+  slug: '{{ano}}-{{titulo}}'
+  identifier_field: titulo
+  summary: '{{ano}} · {{titulo}} · {{status}}'
+  sortable_fields:
+  - ano
+  - titulo
+  - ordem
+  view_filters:
+  - label: Rascunhos
+    field: status
+    pattern: ^rascunho$
+  fields:
+  - label: Ano
+    name: ano
+    widget: number
+    value_type: int
+  - label: Título
+    name: titulo
+    widget: string
+  - label: Autores e evento
+    name: autores
+    widget: string
+    hint: 'Ex.: Weber, Schek, Blott · VLDB'
+  - label: URL (DOI, arXiv ou PDF oficial)
+    name: url
+    widget: string
+    pattern:
+    - ^https?://
+    - Endereço completo.
+  - label: Grupo
+    name: grupo
+    widget: select
+    options:
+    - label: Fundamentos
+      value: fund
+    - label: Busca e quantização
+      value: busca
+    - label: Arte prévia
+      value: arte
+  - widget: select
+    options:
+    - label: medido no projeto
+      value: medido
+    - label: arte prévia
+      value: arte
+    - label: lacuna
+      value: lacuna
+    - label: teste ou enquadramento
+      value: teste
+    label: Selo
+    name: selo
+  - label: Rótulo (qual caminho sustenta)
+    name: rotulo
+    widget: string
+  - label: URL de origem
+    name: fonte_url
+    widget: string
+    pattern:
+    - ^https?://
+    - Use um endereço completo, começando com http.
+  - label: Status
+    name: status
+    widget: select
+    options:
+    - label: Rascunho (não aparece no site)
+      value: rascunho
+    - label: Publicado
+      value: publicado
+    default: rascunho
+  - label: Origem
+    name: origem
+    widget: select
+    options:
+    - label: Manual
+      value: manual
+    - label: Curadoria diária
+      value: curadoria-diaria
+    default: manual
+  - widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    label: Adicionado em
+    name: adicionado_em
+  - widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    label: Link verificado em
+    name: verificado_em
+    hint: Data em que o link foi conferido.
+  - label: Ordem
+    name: ordem
+    widget: number
+    value_type: int
+    default: 999
+    hint: Posição na lista (menor aparece primeiro).
+- name: livros
+  label: Livros
+  label_singular: Livro
+  folder: src/content/livros
+  extension: json
+  format: json
+  create: true
+  slug: '{{titulo}}'
+  identifier_field: titulo
+  summary: '{{titulo}} · {{autores}}'
+  fields:
+  - label: Título
+    name: titulo
+    widget: string
+  - label: Autores
+    name: autores
+    widget: string
+  - label: Nota (ano, acesso)
+    name: nota
+    widget: string
+    hint: 'Ex.: 2020 · gratuito'
+  - label: Uso no projeto
+    name: uso
+    widget: string
+    hint: 'Ex.: Caminho 3: concentração de medida'
+  - label: URL
+    name: url
+    widget: string
+    required: false
+    default: ''
+  - label: Cor da capa
+    name: cor
+    widget: select
+    options:
+    - c1
+    - c2
+    - c3
+    - c4
+    - c5
+    - c6
+    default: c1
+  - label: URL de origem
+    name: fonte_url
+    widget: string
+    required: false
+    default: ''
+  - label: Status
+    name: status
+    widget: select
+    options:
+    - label: Rascunho (não aparece no site)
+      value: rascunho
+    - label: Publicado
+      value: publicado
+    default: rascunho
+  - label: Origem
+    name: origem
+    widget: select
+    options:
+    - label: Manual
+      value: manual
+    - label: Curadoria diária
+      value: curadoria-diaria
+    default: manual
+  - widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    label: Adicionado em
+    name: adicionado_em
+  - widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    label: Link verificado em
+    name: verificado_em
+    hint: Data em que o link foi conferido.
+  - label: Ordem
+    name: ordem
+    widget: number
+    value_type: int
+    default: 999
+    hint: Posição na lista (menor aparece primeiro).
+- name: fontes
+  label: Fontes de pesquisa
+  label_singular: Fonte
+  folder: src/content/fontes
+  extension: json
+  format: json
+  create: true
+  slug: '{{nome}}'
+  identifier_field: nome
+  summary: '{{grupo}} · {{nome}}'
+  view_groups:
+  - label: Grupo
+    field: grupo
+  fields:
+  - label: Nome
+    name: nome
+    widget: string
+  - label: URL
+    name: url
+    widget: string
+    pattern:
+    - ^https?://
+    - Endereço completo.
+  - label: Descrição curta
+    name: descricao
+    widget: string
+  - label: Grupo
+    name: grupo
+    widget: string
+  - label: Ordem do grupo
+    name: grupo_ordem
+    widget: number
+    value_type: int
+  - label: URL de origem
+    name: fonte_url
+    widget: string
+    pattern:
+    - ^https?://
+    - Use um endereço completo, começando com http.
+  - label: Status
+    name: status
+    widget: select
+    options:
+    - label: Rascunho (não aparece no site)
+      value: rascunho
+    - label: Publicado
+      value: publicado
+    default: rascunho
+  - label: Origem
+    name: origem
+    widget: select
+    options:
+    - label: Manual
+      value: manual
+    - label: Curadoria diária
+      value: curadoria-diaria
+    default: manual
+  - widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    label: Adicionado em
+    name: adicionado_em
+  - widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    label: Link verificado em
+    name: verificado_em
+    hint: Data em que o link foi conferido.
+  - label: Ordem
+    name: ordem
+    widget: number
+    value_type: int
+    default: 999
+    hint: Posição na lista (menor aparece primeiro).
+- name: linha-do-tempo
+  label: Linha do tempo (Origens)
+  label_singular: Evento
+  folder: src/content/linha-do-tempo
+  extension: json
+  format: json
+  create: true
+  slug: '{{ano}}-{{titulo}}'
+  identifier_field: titulo
+  summary: '{{ano}} · {{titulo}}'
+  sortable_fields:
+  - ano
+  - ordem
+  fields:
+  - label: Ano
+    name: ano
+    widget: number
+    value_type: int
+  - label: Título
+    name: titulo
+    widget: string
+  - label: Texto
+    name: texto
+    widget: text
+  - label: Equação (LaTeX)
+    name: eq
+    widget: string
+    required: false
+  - label: Marco (sol)
+    name: marco
+    widget: boolean
+    default: false
+  - label: Era
+    name: era
+    widget: select
+    options:
+    - Fundamentos
+    - Redes e sequências
+    - Transformers
+    - Eficiência
+  - label: Status
+    name: status
+    widget: select
+    options:
+    - label: Rascunho (não aparece no site)
+      value: rascunho
+    - label: Publicado
+      value: publicado
+    default: rascunho
+  - label: Origem
+    name: origem
+    widget: select
+    options:
+    - label: Manual
+      value: manual
+    - label: Curadoria diária
+      value: curadoria-diaria
+    default: manual
+  - widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    label: Adicionado em
+    name: adicionado_em
+  - widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    label: Link verificado em
+    name: verificado_em
+    hint: Data em que o link foi conferido.
+  - label: Ordem
+    name: ordem
+    widget: number
+    value_type: int
+    default: 999
+    hint: Posição na lista (menor aparece primeiro).
+- name: aprendizado
+  label: Aprendizado de máquina (marcos)
+  label_singular: Marco
+  folder: src/content/aprendizado
+  extension: json
+  format: json
+  create: true
+  slug: '{{ano}}-{{titulo}}'
+  identifier_field: titulo
+  summary: '{{ano}} · {{titulo}}'
+  fields:
+  - label: Ano
+    name: ano
+    widget: number
+    value_type: int
+  - label: Título
+    name: titulo
+    widget: string
+  - label: Texto
+    name: texto
+    widget: text
+  - label: Regra de atualização (LaTeX)
+    name: eq
+    widget: string
+    required: false
+  - label: Status
+    name: status
+    widget: select
+    options:
+    - label: Rascunho (não aparece no site)
+      value: rascunho
+    - label: Publicado
+      value: publicado
+    default: rascunho
+  - label: Origem
+    name: origem
+    widget: select
+    options:
+    - label: Manual
+      value: manual
+    - label: Curadoria diária
+      value: curadoria-diaria
+    default: manual
+  - widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    label: Adicionado em
+    name: adicionado_em
+  - widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    label: Link verificado em
+    name: verificado_em
+    hint: Data em que o link foi conferido.
+  - label: Ordem
+    name: ordem
+    widget: number
+    value_type: int
+    default: 999
+    hint: Posição na lista (menor aparece primeiro).
+- name: fontes-monitoradas
+  label: Fontes monitoradas (curadoria diária)
+  label_singular: Fonte monitorada
+  folder: src/content/fontes-monitoradas
+  extension: json
+  format: json
+  create: true
+  slug: '{{nome}}'
+  identifier_field: nome
+  summary: '{{tipo}} · {{nome}} · ativo: {{ativo}}'
+  view_groups:
+  - label: Tipo
+    field: tipo
+  fields:
+  - label: Nome
+    name: nome
+    widget: string
+  - label: Tipo
+    name: tipo
+    widget: select
+    options:
+    - label: Site
+      value: site
+    - label: Canal de vídeo
+      value: canal
+  - label: URL do feed (RSS ou Atom)
+    name: feed
+    widget: string
+    pattern:
+    - ^https?://
+    - Endereço completo.
+    hint: 'Canal do YouTube: https://www.youtube.com/feeds/videos.xml?channel_id=...'
+  - label: Página
+    name: pagina
+    widget: string
+    pattern:
+    - ^https?://
+    - Endereço completo.
+  - label: Tema
+    name: tema
+    widget: string
+  - label: Caminhos ou módulos relacionados
+    name: relacionados
+    widget: list
+    field:
+      label: Item
+      name: item
+      widget: string
+    required: false
+  - label: Ativo
+    name: ativo
+    widget: boolean
+    default: true
+  - widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    label: Feed verificado em
+    name: verificado_em
+- name: feeds
+  label: Feeds de News
+  label_singular: Feed
+  folder: src/content/feeds
+  extension: json
+  format: json
+  create: true
+  slug: '{{nome}}'
+  identifier_field: nome
+  fields:
+  - label: Nome
+    name: nome
+    widget: string
+  - label: URL do feed
+    name: url
+    widget: string
+    required: false
+    default: ''
+  - label: Nota (quando não há feed)
+    name: nota
+    widget: string
+    required: false
+  - label: Filtrar só pelo título
+    name: so_titulo
+    widget: boolean
+    required: false
+    default: false
+  - label: Ordem
+    name: ordem
+    widget: number
+    value_type: int
+    default: 999
+    hint: Posição na lista (menor aparece primeiro).
+- name: paginas
+  label: Páginas de texto
+  label_singular: Página
+  files:
+  - name: sobre
+    label: Sobre
+    file: src/pages/sobre.md
+    fields:
+    - label: Layout
+      name: layout
+      widget: hidden
+    - label: Título
+      name: titulo
+      widget: string
+    - label: Sobretítulo
+      name: kicker
+      widget: string
+    - label: Abertura
+      name: lead
+      widget: text
+    - label: Descrição (SEO)
+      name: descricao
+      widget: text
+      hint: Até cerca de 155 caracteres.
+    - widget: datetime
+      date_format: YYYY-MM-DD
+      time_format: false
+      format: YYYY-MM-DD
+      label: Atualizado em
+      name: atualizado
+      hint: Vai para o sitemap (lastmod). Mude quando o texto mudar de verdade.
+    - label: Veja também
+      name: relacionados
+      widget: list
+      required: false
+      fields:
+      - label: Endereço
+        name: href
+        widget: string
+      - label: Título
+        name: titulo
+        widget: string
+      - label: Linha de apoio
+        name: sub
+        widget: string
+      - label: Ícone
+        name: icone
+        widget: string
+    - label: Texto (markdown com LaTeX)
+      name: body
+      widget: markdown
+      modes:
+      - raw
+  - name: glossario
+    label: Glossário
+    file: src/pages/biblioteca/glossario.md
+    fields:
+    - label: Layout
+      name: layout
+      widget: hidden
+    - label: Título
+      name: titulo
+      widget: string
+    - label: Sobretítulo
+      name: kicker
+      widget: string
+    - label: Abertura
+      name: lead
+      widget: text
+    - label: Descrição (SEO)
+      name: descricao
+      widget: text
+      hint: Até cerca de 155 caracteres.
+    - widget: datetime
+      date_format: YYYY-MM-DD
+      time_format: false
+      format: YYYY-MM-DD
+      label: Atualizado em
+      name: atualizado
+      hint: Vai para o sitemap (lastmod). Mude quando o texto mudar de verdade.
+    - label: Veja também
+      name: relacionados
+      widget: list
+      required: false
+      fields:
+      - label: Endereço
+        name: href
+        widget: string
+      - label: Título
+        name: titulo
+        widget: string
+      - label: Linha de apoio
+        name: sub
+        widget: string
+      - label: Ícone
+        name: icone
+        widget: string
+    - label: Texto (markdown com LaTeX)
+      name: body
+      widget: markdown
+      modes:
+      - raw
+  - name: arquivados
+    label: Arquivados
+    file: src/pages/estudos/arquivados.md
+    fields:
+    - label: Layout
+      name: layout
+      widget: hidden
+    - label: Título
+      name: titulo
+      widget: string
+    - label: Sobretítulo
+      name: kicker
+      widget: string
+    - label: Abertura
+      name: lead
+      widget: text
+    - label: Descrição (SEO)
+      name: descricao
+      widget: text
+      hint: Até cerca de 155 caracteres.
+    - widget: datetime
+      date_format: YYYY-MM-DD
+      time_format: false
+      format: YYYY-MM-DD
+      label: Atualizado em
+      name: atualizado
+      hint: Vai para o sitemap (lastmod). Mude quando o texto mudar de verdade.
+    - label: Veja também
+      name: relacionados
+      widget: list
+      required: false
+      fields:
+      - label: Endereço
+        name: href
+        widget: string
+      - label: Título
+        name: titulo
+        widget: string
+      - label: Linha de apoio
+        name: sub
+        widget: string
+      - label: Ícone
+        name: icone
+        widget: string
+    - label: Texto (markdown com LaTeX)
+      name: body
+      widget: markdown
+      modes:
+      - raw
+  - name: equacoes
+    label: Equações
+    file: src/pages/equacoes.md
+    fields:
+    - label: Layout
+      name: layout
+      widget: hidden
+    - label: Título
+      name: titulo
+      widget: string
+    - label: Sobretítulo
+      name: kicker
+      widget: string
+    - label: Abertura
+      name: lead
+      widget: text
+    - label: Descrição (SEO)
+      name: descricao
+      widget: text
+      hint: Até cerca de 155 caracteres.
+    - widget: datetime
+      date_format: YYYY-MM-DD
+      time_format: false
+      format: YYYY-MM-DD
+      label: Atualizado em
+      name: atualizado
+      hint: Vai para o sitemap (lastmod). Mude quando o texto mudar de verdade.
+    - label: Veja também
+      name: relacionados
+      widget: list
+      required: false
+      fields:
+      - label: Endereço
+        name: href
+        widget: string
+      - label: Título
+        name: titulo
+        widget: string
+      - label: Linha de apoio
+        name: sub
+        widget: string
+      - label: Ícone
+        name: icone
+        widget: string
+    - label: Texto (markdown com LaTeX)
+      name: body
+      widget: markdown
+      modes:
+      - raw

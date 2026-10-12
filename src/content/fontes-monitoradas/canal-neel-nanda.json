@@ -1,0 +1,12 @@
+{
+  "nome": "Neel Nanda",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBMJ0D-omcRay8dh4QT0doQ",
+  "pagina": "https://www.youtube.com/@neelnanda2469",
+  "tema": "Alinhamento, RLHF e Segurança",
+  "relacionados": [
+    "modulo-07"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

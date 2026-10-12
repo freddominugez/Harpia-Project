@@ -1,0 +1,16 @@
+{
+  "id": "KEv-F5UkhxU",
+  "titulo": "What is LoRA? Low-Rank Adaptation for finetuning LLMs EXPLAINED",
+  "canal": "AI Coffee Break with Letitia",
+  "modulo": 6,
+  "nivel": "Intermediário",
+  "resumo": "Explicação acessível de como o LoRA decompõe a atualização de pesos em matrizes de baixo posto, tornando o ajuste fino de LLMs muito mais eficiente.",
+  "catalogo": 49,
+  "trilha": "llm",
+  "ordem": 55,
+  "fonte_url": "https://www.youtube.com/watch?v=KEv-F5UkhxU",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

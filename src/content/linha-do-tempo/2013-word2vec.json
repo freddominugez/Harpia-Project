@@ -1,0 +1,13 @@
+{
+  "ano": 2013,
+  "titulo": "word2vec",
+  "texto": "Embeddings baratos em escala; analogias viram aritmética de vetores.",
+  "eq": "\\vec{\\text{rei}}-\\vec{\\text{homem}}+\\vec{\\text{mulher}}\\approx\\vec{\\text{rainha}}",
+  "marco": true,
+  "era": "Redes e sequências",
+  "ordem": 10,
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

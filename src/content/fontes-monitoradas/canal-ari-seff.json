@@ -1,0 +1,12 @@
+{
+  "nome": "Ari Seff",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCIxertsVDip8QHpnhinkAow",
+  "pagina": "https://www.youtube.com/@ariseffai",
+  "tema": "Alinhamento, RLHF e Segurança",
+  "relacionados": [
+    "modulo-07"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

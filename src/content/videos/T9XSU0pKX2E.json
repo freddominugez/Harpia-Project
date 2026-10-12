@@ -1,0 +1,16 @@
+{
+  "id": "T9XSU0pKX2E",
+  "titulo": "OpenAI CLIP: ConnectingText and Images (Paper Explained)",
+  "canal": "Yannic Kilcher",
+  "modulo": 2,
+  "nivel": "Avançado",
+  "resumo": "Análise do paper do CLIP, da OpenAI, mostrando como o aprendizado contrastivo coloca texto e imagem no mesmo espaço de embedding, base de vários sistemas multimodais.",
+  "catalogo": 16,
+  "trilha": "llm",
+  "ordem": 22,
+  "fonte_url": "https://www.youtube.com/watch?v=T9XSU0pKX2E",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

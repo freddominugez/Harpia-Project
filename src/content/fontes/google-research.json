@@ -1,0 +1,13 @@
+{
+  "nome": "Google Research",
+  "url": "https://research.google/blog",
+  "descricao": "Blog de pesquisa",
+  "grupo": "Laboratórios de IA",
+  "grupo_ordem": 5,
+  "ordem": 20,
+  "fonte_url": "https://research.google/blog",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

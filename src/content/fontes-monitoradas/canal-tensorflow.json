@@ -1,0 +1,12 @@
+{
+  "nome": "TensorFlow",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_x5XG1OV2P6uZZ5FSM9Ttw",
+  "pagina": "https://www.youtube.com/@TensorFlow",
+  "tema": "Tokens e Tokenização",
+  "relacionados": [
+    "modulo-01"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

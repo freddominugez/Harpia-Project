@@ -1,0 +1,16 @@
+{
+  "id": "zduSFxRajkE",
+  "titulo": "Let's build the GPT Tokenizer",
+  "canal": "Andrej Karpathy",
+  "modulo": 1,
+  "nivel": "Avançado",
+  "resumo": "Aula de mais de duas horas em que Karpathy constrói do zero o tokenizador do GPT em Python e mostra as falhas que a tokenização causa nos modelos.",
+  "catalogo": 7,
+  "trilha": "llm",
+  "ordem": 13,
+  "fonte_url": "https://www.youtube.com/watch?v=zduSFxRajkE",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

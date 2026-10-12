@@ -1,0 +1,14 @@
+{
+  "nome": "AI Coffee Break with Letitia",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCMLtBahI5DMrt0NPvDSoIRQ",
+  "pagina": "https://www.youtube.com/@AICoffeeBreak",
+  "tema": "Fine-Tuning e PeFT (Parameter-Efficient Fine-Tuning); Multimodalidade (Visão, Áudio e Vídeo); O Futuro, Mamba (SSMs) e Raciocínio (System 2)",
+  "relacionados": [
+    "modulo-06",
+    "modulo-09",
+    "modulo-11"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "WAvO8FTDJ8M",
+  "titulo": "Teaching LLMs to Use Tools at Scale - Shishir Patil | Stanford MLSys #98",
+  "canal": "Stanford MLSys Seminars",
+  "modulo": 8,
+  "nivel": "Avançado",
+  "resumo": "Shishir Patil, autor do Gorilla, apresenta no seminário Stanford MLSys como ensinar LLMs a usar milhares de APIs com precisão, incluindo a arquitetura e a avaliação do Gorilla.",
+  "catalogo": 75,
+  "trilha": "llm",
+  "ordem": 81,
+  "fonte_url": "https://www.youtube.com/watch?v=WAvO8FTDJ8M",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

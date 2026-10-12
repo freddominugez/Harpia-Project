@@ -1,0 +1,16 @@
+{
+  "id": "CDnkFbW-uEQ",
+  "titulo": "MoE Token Routing Explained: How Mixture of Experts Works (with Code)",
+  "canal": "Hugging Face",
+  "modulo": 5,
+  "nivel": "Intermediário",
+  "resumo": "Vídeo da Hugging Face que explica o roteamento de tokens em modelos MoE e mostra em código como os tokens são despachados aos especialistas e recombinados.",
+  "catalogo": 40,
+  "trilha": "llm",
+  "ordem": 46,
+  "fonte_url": "https://www.youtube.com/watch?v=CDnkFbW-uEQ",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

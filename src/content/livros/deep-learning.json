@@ -1,0 +1,14 @@
+{
+  "titulo": "Deep Learning",
+  "autores": "Goodfellow, Bengio, Courville",
+  "nota": "2016 · gratuito online",
+  "uso": "Base: redes profundas",
+  "url": "https://www.deeplearningbook.org/",
+  "cor": "c2",
+  "ordem": 2,
+  "fonte_url": "https://www.deeplearningbook.org/",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

@@ -10,7 +10,11 @@ Pesquisa aberta sobre eficiência de LLMs: embeddings, tokens, pesos e busca vet
 |---|---|
 | Site estático (Astro 5, sem servidor) | `src/` |
 | 12 caminhos válidos, um arquivo por caminho | `src/content/caminhos/*.md` |
-| Catálogo de 106 vídeos em 12 módulos e 3 níveis, livros, artigos, 30 fontes, feeds, linha do tempo | `src/data/*.json` |
+| Catálogo de vídeos, módulos, livros, artigos, fontes, feeds, linha do tempo, pautas: um arquivo por item | `src/content/*/` (esquemas em `src/content.config.ts`) |
+| Painel de conteúdo (Sveltia CMS) em `/admin` | `public/admin/`, `docs/PAINEL_ADMIN.md` |
+| Curadoria diária (tarefa agendada do Claude) e lista de fontes monitoradas | `scripts/curadoria_diaria.py`, `src/content/fontes-monitoradas/`, `docs/TAREFA_CURADORIA.md` |
+| Robô de discussões (pauta aprovada vira discussão no GitHub) | `scripts/criar_discussoes.py`, `.github/workflows/discussoes.yml` |
+| SEO técnico e GEO (sitemap, robots, JSON-LD, OG, RSS, llms.txt, gêmeos .md, IndexNow, Lighthouse CI) | `src/lib/rotas.ts`, `docs/SEO_GEO.md`, `docs/GEO_MONITORAMENTO.md` |
 | Equações das 16 camadas (KaTeX renderizado no build) | `src/pages/equacoes.md` |
 | Fórum (Giscus, GitHub Discussions) | `src/components/Giscus.astro`, configuração em `src/config.ts` |
 | Robô de news por RSS, a cada 6 horas | `scripts/coletar_news.py`, `.github/workflows/news.yml` |
@@ -19,7 +23,7 @@ Pesquisa aberta sobre eficiência de LLMs: embeddings, tokens, pesos e busca vet
 | Passo a passo de publicação | `docs/DEPLOY.md` |
 | Sistema visual (tokens, componentes, responsivo) | `src/styles/global.css` |
 | Componentes do redesign | `src/components/` (Header, Hero, Kpi, StudyTrackCard, ArticleCard, VideoFeature, ForumList, JoinCommunityCard, Footer, Breadcrumb, PageIntro, ArticleSidebar, Tag, ResponsiveGrid) |
-| Conteúdo editorial da home | `src/data/home.ts` |
+| Conteúdo editorial da home e de Origens | `src/data/home.ts`, `src/data/origens.ts` |
 | Busca do site (índice gerado no build) | `src/lib/search.ts` → `/busca.json`; interações em `src/scripts/site.ts` |
 | QA do redesign e capturas | `scripts/qa_redesign.py`, `docs/QA_REDESSIGN.md`, `docs/qa/` |
 
@@ -43,7 +47,7 @@ pip install playwright && python3 -m playwright install chromium
 python3 scripts/qa_redesign.py --base http://localhost:4321 --shots docs/qa
 ```
 
-O script confere 9 larguras (1672 a 320 px) em todas as rotas, links internos e âncoras, imagens, erros de console, menu, busca e índice lateral. Sai com código 1 se algum gate falhar.
+O script confere 9 larguras (1672 a 320 px) em todas as rotas, links internos e âncoras, imagens, erros de console, menu, busca e índice lateral, e o SEO de cada página (título e descrição únicos, canonical, hreflang, Open Graph, JSON-LD, sitemap, gêmeo .md, robots.txt, llms.txt, RSS). Sai com código 1 se algum gate falhar. O painel é validado à parte com `python3 scripts/validar_cms.py`.
 
 ## Sistema visual
 
@@ -58,10 +62,13 @@ Veja `docs/DEPLOY.md`. Resumo: criar o repositório no GitHub, fazer push, impor
 ## Editar conteúdo
 
 - **Novo caminho:** copie um arquivo de `src/content/caminhos/`, mude o nome e o frontmatter. A página e o card aparecem sozinhos.
-- **Novo vídeo:** acrescente um item em `src/data/videos.json` com `id`, `titulo`, `canal`, `modulo` (0 a 11, ver `src/data/modulos.json`), `nivel` e `resumo`. Confira o ID antes (regra em `docs/CURADORIA.md`). A página `/videos/` organiza por módulo e nível, e a home mostra uma seleção da semana, um vídeo por nível.
-- **Novo artigo ou livro:** `src/data/artigos.json` e `src/data/livros.json`.
+- **Pelo painel (recomendado):** https://www.harpya.org/admin/, login com token do GitHub. Passo a passo em `docs/PAINEL_ADMIN.md`.
+- **Novo vídeo à mão:** crie `src/content/videos/<ID>.json` com `id`, `titulo`, `canal`, `modulo` (0 a 11, ver `src/content/modulos/`), `nivel`, `resumo`, `status` e as datas. Confira o ID antes (regra em `docs/CURADORIA.md`). A página `/videos/` organiza por módulo e nível, e a home mostra uma seleção da semana, um vídeo por nível.
+- **Novo artigo ou livro à mão:** um arquivo em `src/content/artigos/` ou `src/content/livros/`.
+- **Rascunho:** `status: "rascunho"` guarda o item no repositório sem mostrar em lugar nenhum do site.
 - **Matemática:** em markdown use `$...$` e `$$...$$`; em páginas `.astro` use ``<M t={String.raw`...`} />`` (com aspas comuns, as barras invertidas se perdem).
-- **Home:** trilhas, artigos em destaque, vídeo e pautas do fórum ficam em `src/data/home.ts`. Os números dos indicadores são calculados do acervo.
+- **Home:** trilhas e artigos em destaque ficam em `src/data/home.ts`; as pautas do fórum vêm de `src/content/pautas/`. Os números dos indicadores são calculados do acervo.
+- **Página nova:** acrescente a rota em `src/lib/rotas.ts` para entrar no sitemap, no llms.txt e ganhar imagem OG e versão .md (ver `docs/SEO_GEO.md`).
 
 ## Regras editoriais
 

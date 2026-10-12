@@ -1,0 +1,16 @@
+{
+  "id": "EvQ3ncuriCM",
+  "titulo": "Efficiently Modeling Long Sequences with Structured State Spaces - Albert Gu | Stanford MLSys #46",
+  "canal": "Stanford MLSys Seminars",
+  "modulo": 11,
+  "nivel": "Avançado",
+  "resumo": "Albert Gu, criador do S4 e coautor do Mamba, apresenta a formulação matemática dos State Space Models estruturados: a equação diferencial contínua, a discretização e as visões recorrente e convolucional que permitem modelar sequências longas.",
+  "catalogo": 98,
+  "trilha": "llm",
+  "ordem": 104,
+  "fonte_url": "https://www.youtube.com/watch?v=EvQ3ncuriCM",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

@@ -1,0 +1,12 @@
+{
+  "nome": "Edward Hu",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UC2SAJYajB1fKUXVXGKoJslQ",
+  "pagina": "https://www.youtube.com/@edwardjhu",
+  "tema": "Fine-Tuning e PeFT (Parameter-Efficient Fine-Tuning)",
+  "relacionados": [
+    "modulo-06"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

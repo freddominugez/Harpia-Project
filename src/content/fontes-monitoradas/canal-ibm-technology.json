@@ -1,0 +1,20 @@
+{
+  "nome": "IBM Technology",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UC8cc4pVKVHG7A9fbNsRNrLQ",
+  "pagina": "https://www.youtube.com/@IBMTechnology",
+  "tema": "Embeddings (Vetores e Representação Espacial); RAG (Retrieval-Augmented Generation); Arquiteturas e Modelos Densos (Transformers); Mixture o",
+  "relacionados": [
+    "modulo-02",
+    "modulo-03",
+    "modulo-04",
+    "modulo-05",
+    "modulo-06",
+    "modulo-08",
+    "modulo-09",
+    "modulo-10",
+    "modulo-11"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

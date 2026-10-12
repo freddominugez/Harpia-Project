@@ -1,0 +1,12 @@
+{
+  "nome": "Dave Ebbelaar",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCn8ujwUInbJkBhffxqAPBVQ",
+  "pagina": "https://www.youtube.com/@daveebbelaar",
+  "tema": "Agentes Autônomos e Uso de Ferramentas (Tool Use)",
+  "relacionados": [
+    "modulo-08"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

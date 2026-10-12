@@ -86,3 +86,19 @@ Commit `b3395b9` publicado pela integração Git da Vercel (deploy `dpl_A3YwQFNL
 - Home: o card do centro virou "Vídeos em Destaque", com três vídeos empilhados (miniatura, nível, módulo, título, resumo e canal), um por nível, de módulos diferentes. A seleção gira a cada semana; o site é reconstruído várias vezes por dia pelo robô de news. Para caber na altura da referência, a citação saiu da home.
 - A busca do site também encontra os 12 módulos e os 106 vídeos.
 - QA após a mudança: 27 rotas × 9 larguras sem rolagem horizontal, 0 links quebrados, 0 imagens faltando, 0 erros de console; filtros testados (Avançado = 29; Avançado + módulo 03 = 2; módulo 03 = 8). Capturas: `qa/videos-desktop-1440.png`, `qa/videos-mobile-390.png`.
+
+## SEO e GEO (rodada de 12/10/2026, contrato do painel e da curadoria)
+
+| Verificação | Resultado |
+|---|---|
+| Páginas indexáveis com título e descrição únicos, canonical, hreflang, Open Graph, Twitter Card, `<h1>` único | 26 de 26 |
+| JSON-LD válido com WebSite, Organization, Person e WebPage (BreadcrumbList fora da home) | 26 de 26 |
+| Imagem OG própria (1200 × 630) existente no build | 26 de 26 |
+| Gêmeo `.md` ligado por `rel="alternate"` | 26 de 26 |
+| Sitemap: URLs = páginas indexáveis, `lastmod` AAAA-MM-DD, sem `/admin` | 26 URLs, 11 imagens |
+| robots.txt com `Disallow: /admin/`, `Sitemap` e regra explícita para cada robô de IA | ok |
+| llms.txt sem link quebrado; llms-full.txt; rss.xml válido | ok |
+| 404 com `noindex` e status 404; `/admin/` com `noindex` | ok |
+| Lighthouse desktop (home, caminho, vídeos, origens, biblioteca) | 100 / 100 / 100 / 100 nas cinco |
+
+Para chegar a 100 em acessibilidade foram escurecidos o dourado de fundo dos botões e etiquetas (`--gold-btn` #8f6614, texto branco 5,1:1) e o dourado de texto (`--gold-strong` #8a6214), os cinzas de legendas pequenas (#666e78, #6a717c), sublinhado o link de crédito do rodapé, e os pontos da régua de Origens passaram a ser decorativos (`aria-hidden`), já que os mesmos eventos estão na lista navegável logo abaixo.

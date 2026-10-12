@@ -1,0 +1,16 @@
+{
+  "id": "H82s6BrJduM",
+  "titulo": "Flamingo: a Visual Language Model for Few-Shot Learning",
+  "canal": "Samuel Albanie",
+  "modulo": 9,
+  "nivel": "Avançado",
+  "resumo": "Dissecação detalhada do Flamingo da DeepMind, que injeta camadas de atenção cruzada com portas em um LLM pré-treinado congelado para aprendizado few-shot com imagens e texto.",
+  "catalogo": 82,
+  "trilha": "llm",
+  "ordem": 88,
+  "fonte_url": "https://www.youtube.com/watch?v=H82s6BrJduM",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

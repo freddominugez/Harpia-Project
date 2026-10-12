@@ -1,0 +1,16 @@
+{
+  "id": "iAR8LkkMMIM",
+  "titulo": "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity",
+  "canal": "Yannic Kilcher",
+  "modulo": 5,
+  "nivel": "Avançado",
+  "resumo": "Dissecação do paper Switch Transformers do Google, que simplificou o roteamento para um único especialista e escalou a arquitetura MoE para trilhões de parâmetros.",
+  "catalogo": 43,
+  "trilha": "llm",
+  "ordem": 49,
+  "fonte_url": "https://www.youtube.com/watch?v=iAR8LkkMMIM",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

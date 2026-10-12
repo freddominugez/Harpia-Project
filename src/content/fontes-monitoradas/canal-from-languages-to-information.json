@@ -1,0 +1,12 @@
+{
+  "nome": "From Languages to Information",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_48v322owNVtORXuMeRmpA",
+  "pagina": "https://www.youtube.com/@fromlanguagestoinformation4012",
+  "tema": "Tokens e Tokenização",
+  "relacionados": [
+    "modulo-01"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

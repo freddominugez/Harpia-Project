@@ -1,0 +1,16 @@
+{
+  "id": "DhRoTONcyZE",
+  "titulo": "What is Low-Rank Adaptation (LoRA) | explained by the inventor",
+  "canal": "Edward Hu",
+  "modulo": 6,
+  "nivel": "Iniciante",
+  "resumo": "Explicação curta do próprio criador do LoRA sobre o que é a adaptação de baixo posto e por que ela tornou o ajuste fino de grandes modelos acessível.",
+  "catalogo": 47,
+  "trilha": "llm",
+  "ordem": 53,
+  "fonte_url": "https://www.youtube.com/watch?v=DhRoTONcyZE",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

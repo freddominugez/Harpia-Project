@@ -1,0 +1,16 @@
+{
+  "id": "GchC5WxeXGc",
+  "titulo": "Advanced RAG 06 - RAG Fusion",
+  "canal": "Sam Witteveen",
+  "modulo": 3,
+  "nivel": "Intermediário",
+  "resumo": "Tutorial prático de RAG Fusion, que gera múltiplas variações da pergunta (expansão de query) e reordena os resultados com Reciprocal Rank Fusion para melhorar a recuperação.",
+  "catalogo": 23,
+  "trilha": "llm",
+  "ordem": 29,
+  "fonte_url": "https://www.youtube.com/watch?v=GchC5WxeXGc",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

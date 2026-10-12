@@ -1,0 +1,12 @@
+{
+  "nome": "AI21 Labs",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCoqHrjrnbO08brm9DInBkFg",
+  "pagina": "https://www.youtube.com/@ai21labs",
+  "tema": "O Futuro, Mamba (SSMs) e Raciocínio (System 2)",
+  "relacionados": [
+    "modulo-11"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

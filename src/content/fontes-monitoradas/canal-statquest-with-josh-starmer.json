@@ -1,0 +1,13 @@
+{
+  "nome": "StatQuest with Josh Starmer",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCtYLUTtgS3k1Fg4y5tAhLbw",
+  "pagina": "https://www.youtube.com/@statquest",
+  "tema": "Embeddings (Vetores e Representação Espacial); Arquiteturas e Modelos Densos (Transformers)",
+  "relacionados": [
+    "modulo-02",
+    "modulo-04"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

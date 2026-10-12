@@ -1,0 +1,12 @@
+{
+  "nome": "Quanta Magazine",
+  "tipo": "site",
+  "feed": "https://www.quantamagazine.org/feed/",
+  "pagina": "https://www.quantamagazine.org",
+  "tema": "divulgação de matemática e computação",
+  "relacionados": [
+    "modulo-00"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

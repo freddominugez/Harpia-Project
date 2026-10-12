@@ -1,0 +1,16 @@
+{
+  "id": "rmVRLeJRkl4",
+  "titulo": "Stanford CS224N: NLP with Deep Learning | Winter 2021 | Lecture 1 - Intro & Word Vectors",
+  "canal": "Stanford Online",
+  "modulo": 2,
+  "nivel": "Avançado",
+  "resumo": "Primeira aula do CS224N de Stanford (2021) com Christopher Manning: vetores de palavras, Word2Vec e a probabilidade condicional que ele otimiza.",
+  "catalogo": 15,
+  "trilha": "llm",
+  "ordem": 21,
+  "fonte_url": "https://www.youtube.com/watch?v=rmVRLeJRkl4",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

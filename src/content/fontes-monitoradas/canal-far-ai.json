@@ -1,0 +1,12 @@
+{
+  "nome": "FAR․AI",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCCV6kbjBZje3LPxRp0NHfxg",
+  "pagina": "https://www.youtube.com/@FARAIResearch",
+  "tema": "Alinhamento, RLHF e Segurança",
+  "relacionados": [
+    "modulo-07"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

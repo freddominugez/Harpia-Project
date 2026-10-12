@@ -1,0 +1,6 @@
+{
+  "numero": 5,
+  "titulo": "Mixture of Experts (MoE)",
+  "subtitulo": "Como modelos como o Mixtral escalam dividindo a rede em especialistas e ativando só alguns por token.",
+  "icone": "network"
+}

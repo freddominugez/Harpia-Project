@@ -1,0 +1,13 @@
+{
+  "nome": "Umar Jamil",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCtAcpQcYerN8xxZJYTfWBMw",
+  "pagina": "https://www.youtube.com/@umarjamilai",
+  "tema": "Fine-Tuning e PeFT (Parameter-Efficient Fine-Tuning); Otimização de Inferência e Deploy",
+  "relacionados": [
+    "modulo-06",
+    "modulo-10"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

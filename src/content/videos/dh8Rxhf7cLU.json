@@ -1,0 +1,16 @@
+{
+  "id": "dh8Rxhf7cLU",
+  "titulo": "OpenAI’s CLIP explained! | Examples, links to code and pretrained model",
+  "canal": "AI Coffee Break with Letitia",
+  "modulo": 9,
+  "nivel": "Intermediário",
+  "resumo": "Explica o CLIP da OpenAI e como ele alinha imagens e textos em um espaço latente compartilhado por meio de aprendizado contrastivo.",
+  "catalogo": 79,
+  "trilha": "llm",
+  "ordem": 85,
+  "fonte_url": "https://www.youtube.com/watch?v=dh8Rxhf7cLU",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

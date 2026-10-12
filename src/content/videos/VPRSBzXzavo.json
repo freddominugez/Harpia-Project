@@ -1,0 +1,16 @@
+{
+  "id": "VPRSBzXzavo",
+  "titulo": "How ChatGPT is Trained",
+  "canal": "Ari Seff",
+  "modulo": 7,
+  "nivel": "Intermediário",
+  "resumo": "Explica as três fases de treinamento herdadas do InstructGPT (ajuste supervisionado, modelo de recompensa e PPO) que transformaram o GPT-3 no ChatGPT.",
+  "catalogo": 59,
+  "trilha": "llm",
+  "ordem": 65,
+  "fonte_url": "https://www.youtube.com/watch?v=VPRSBzXzavo",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

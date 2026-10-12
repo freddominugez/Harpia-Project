@@ -1,0 +1,15 @@
+{
+  "nome": "Yannic Kilcher",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCHmD-oSpV0sNfAUnpYpj8KA",
+  "pagina": "https://www.youtube.com/@YannicKilcher",
+  "tema": "Embeddings (Vetores e Representação Espacial); Arquiteturas e Modelos Densos (Transformers); Mixture of Experts (MoE); O Futuro, Mamba (SSMs",
+  "relacionados": [
+    "modulo-02",
+    "modulo-04",
+    "modulo-05",
+    "modulo-11"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "T-D1OfcDW1M",
+  "titulo": "What is Retrieval-Augmented Generation (RAG)?",
+  "canal": "IBM Technology",
+  "modulo": 3,
+  "nivel": "Iniciante",
+  "resumo": "Introdução em quadro branco a como o RAG reduz alucinações ao ligar o LLM a uma base externa consultada na hora da pergunta.",
+  "catalogo": 18,
+  "trilha": "llm",
+  "ordem": 24,
+  "fonte_url": "https://www.youtube.com/watch?v=T-D1OfcDW1M",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

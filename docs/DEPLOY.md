@@ -58,7 +58,7 @@ export const GISCUS = {
 
 Anthropic e CERN não oferecem feed RSS confirmado. Opções:
 
-- **RSSHub** (código aberto) gera feeds para sites sem RSS; depois é só acrescentar a URL em `src/data/feeds.json`.
+- **RSSHub** (código aberto) gera feeds para sites sem RSS; depois é só acrescentar a URL em `src/content/feeds/`.
 - **Crawl4AI** (código aberto, Python) raspa a página de notícias; pode virar um terceiro script no mesmo padrão.
 
 Respeite os termos de uso de cada site. Para YouTube, use sempre a API oficial, nunca raspagem.

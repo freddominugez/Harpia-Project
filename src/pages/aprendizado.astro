@@ -4,7 +4,7 @@ import PageIntro from "../components/PageIntro.astro";
 import ResponsiveGrid from "../components/ResponsiveGrid.astro";
 import Tag from "../components/Tag.astro";
 import M from "../components/M.astro";
-import ml from "../data/ml.json";
+import { APRENDIZADO as ml } from "../lib/conteudo";
 ---
 <Base titulo="Aprendizado de Máquina" descricao="As primeiras tentativas de fazer a máquina aprender, com a regra de atualização de cada uma.">
   <PageIntro trilha={[{ rotulo: "Aprendizado de Máquina" }]} eyebrow="Antes das LLMs" titulo="As primeiras tentativas de fazer a máquina aprender" lead="Quase toda ideia de hoje tem um ancestral simples. Algumas falharam por motivos que ainda valem." />

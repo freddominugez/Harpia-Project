@@ -1,0 +1,14 @@
+{
+  "nome": "Andrej Karpathy",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCYO_jab_esuFRV4b17AJtAw",
+  "pagina": "https://www.youtube.com/@AndrejKarpathy",
+  "tema": "Fundamentos: matemática e redes neurais; Tokens e Tokenização; Arquiteturas e Modelos Densos (Transformers)",
+  "relacionados": [
+    "modulo-00",
+    "modulo-01",
+    "modulo-04"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

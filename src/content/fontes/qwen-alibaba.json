@@ -1,0 +1,13 @@
+{
+  "nome": "Qwen (Alibaba)",
+  "url": "https://qwenlm.github.io",
+  "descricao": "Modelos Qwen e embeddings",
+  "grupo": "Laboratórios chineses",
+  "grupo_ordem": 6,
+  "ordem": 26,
+  "fonte_url": "https://qwenlm.github.io",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

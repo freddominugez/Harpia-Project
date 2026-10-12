@@ -1,0 +1,12 @@
+{
+  "nome": "PyTorch",
+  "tipo": "canal",
+  "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWXI5YeOsh03QvJ59PMaXFw",
+  "pagina": "https://www.youtube.com/@PyTorch",
+  "tema": "Fine-Tuning e PeFT (Parameter-Efficient Fine-Tuning)",
+  "relacionados": [
+    "modulo-06"
+  ],
+  "ativo": true,
+  "verificado_em": "2026-10-12"
+}

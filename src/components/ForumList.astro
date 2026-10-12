@@ -1,18 +1,19 @@
 ---
-// Lista do fórum. Sem integração ativa, mostra pautas propostas identificadas como tal,
-// ou um estado vazio. Nunca exibe autores, contagens ou discussões inventadas.
-import type { TopicoForum } from "../data/home";
-import { giscusConfigurado } from "../config";
-interface Props { topicos: TopicoForum[] }
-const { topicos } = Astro.props;
-const aviso = giscusConfigurado() ? "Pautas sugeridas pelo projeto" : "Pautas propostas · fórum aguardando ativação";
+// Lista do fórum: discussões reais (já criadas no GitHub) primeiro; depois pautas
+// propostas, identificadas como tal. Nunca exibe autores, contagens ou discussões inventadas.
+import type { ItemForum } from "../lib/pautas";
+interface Props { itens: ItemForum[]; limite?: number }
+const { itens, limite = 5 } = Astro.props;
+const lista = itens.slice(0, limite);
+const nCriadas = lista.filter((i) => i.criada).length;
+const aviso = nCriadas ? "Discussões no GitHub e pautas propostas" : "Pautas propostas pelo projeto";
 ---
 <div class="ref-forum-box">
   <span class="ref-forum-notice">{aviso}</span>
-  {topicos.length ? topicos.map((t) => (
-    <a class="ref-forum-topic" href={t.href}>
+  {lista.length ? lista.map((t) => (
+    <a class="ref-forum-topic" href={t.href} {...(t.criada ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
       <span class="ref-avatar" aria-hidden="true">{t.iniciais}</span>
-      <span class="ref-forum-title"><b>{t.titulo}</b><small>Pauta proposta · {t.categoria}</small></span>
+      <span class="ref-forum-title"><b>{t.titulo}</b><small>{t.criada ? "Discussão" : "Pauta proposta"} · {t.categoria}</small></span>
       <span class="ref-topic-chevron" aria-hidden="true">↗</span>
     </a>
   )) : (

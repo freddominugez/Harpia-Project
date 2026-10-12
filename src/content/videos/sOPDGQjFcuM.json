@@ -1,0 +1,16 @@
+{
+  "id": "sOPDGQjFcuM",
+  "titulo": "A Visual Guide to Mixture of Experts (MoE) in LLMs",
+  "canal": "Maarten Grootendorst",
+  "modulo": 5,
+  "nivel": "Iniciante",
+  "resumo": "Guia visual de Mixture of Experts em LLMs que mostra de forma simples como a rede de roteamento escolhe quais especialistas processam cada token.",
+  "catalogo": 38,
+  "trilha": "llm",
+  "ordem": 44,
+  "fonte_url": "https://www.youtube.com/watch?v=sOPDGQjFcuM",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}
