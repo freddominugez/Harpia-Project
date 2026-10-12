@@ -70,3 +70,11 @@ Comparação lado a lado: `qa/comparacao-home-1672.jpg` e `qa/comparacao-artigo-
 - Giscus: tornar o repositório público, ativar Discussions, instalar o app e preencher os IDs em `src/config.ts` (passo a passo em `docs/DEPLOY.md`). Até lá, o site mostra o estado vazio.
 - Fonte Inter vem do Google Fonts; sem rede, o navegador usa a fonte do sistema.
 - Miniaturas da página `/videos/` vêm de `img.youtube.com`.
+
+## Verificação pós-deploy (www.harpya.org)
+
+Commit `b3395b9` publicado pela integração Git da Vercel (deploy `dpl_A3YwQFNLHaLhdYN4kJfinqo3YjsV`, estado READY, aliases `www.harpya.org` e `harpya.org`).
+
+- 16 rotas e `/busca.json` responderam 200 em 1672 × 941 e 390 × 844, todas com `scrollWidth <= innerWidth`.
+- A home em produção é idêntica à captura local.
+- No teste a partir do ambiente de QA, o ícone `/icons/rss.svg` recebeu duas vezes um 502 do proxy de saída desse ambiente; o mesmo arquivo respondeu 200 em três requisições diretas logo depois. Não é falha do site, mas fica registrado.
