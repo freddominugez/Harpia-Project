@@ -1,0 +1,32 @@
+# Toda segunda-feira coleta candidatos (artigos, vídeos, livros) e abre um pull request.
+# Nada entra no site sem aprovação. O agente de curadoria (docs/CURADORIA.md) pontua os itens.
+name: curadoria
+on:
+  schedule:
+    - cron: "41 11 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  candidatos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r scripts/requirements.txt
+      - run: python scripts/coletar_candidatos.py
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: curadoria/semanal
+          title: "Curadoria: candidatos da semana"
+          commit-message: "curadoria: candidatos da semana"
+          body: |
+            Candidatos coletados automaticamente em `curadoria/candidatos.json`.
+            Para publicar, mova os aprovados para `src/data/videos.json`, `artigos.json` ou `livros.json`.
+            Régua de pontuação em `docs/CURADORIA.md`.
+          add-paths: curadoria/candidatos.json

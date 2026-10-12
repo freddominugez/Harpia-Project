@@ -1,0 +1,30 @@
+---
+// Lê public/data/news.json no build. O robô (scripts/coletar_news.py) atualiza o arquivo
+// a cada 6 horas pelo GitHub Actions, e cada commit dispara um novo deploy na Vercel.
+import fs from "node:fs";
+import feeds from "../data/feeds.json";
+interface Props { limite?: number }
+const { limite = 6 } = Astro.props;
+let itens: { fonte: string; titulo: string; url: string; data: string }[] = [];
+try { itens = JSON.parse(fs.readFileSync("public/data/news.json", "utf-8")); } catch (e) { itens = []; }
+const lista = itens.slice(0, limite);
+const host = (u: string) => u.replace(/^https?:\/\//, "");
+---
+<div class="news">
+  <div>
+    <span class="live"><i></i>News</span>
+    <h2 style="margin-top:10px;font-size:1.7rem">O que saiu esta semana</h2>
+    <p style="margin-top:6px">Atualizado por robô de RSS a cada 6 horas. Só entram itens ligados a embeddings, busca vetorial, quantização e eficiência.</p>
+    <div style="margin-top:14px">
+      {lista.length ? lista.map((n) => (
+        <a class="ni" href={n.url} target="_blank" rel="noopener"><small>{n.fonte}{n.data && ` · ${n.data}`}</small><b>{n.titulo}</b></a>
+      )) : (
+        <div class="empty">O robô ainda não rodou. Quando <code>public/data/news.json</code> tiver itens, as manchetes aparecem aqui.</div>
+      )}
+    </div>
+  </div>
+  <div class="feeds">
+    <div class="t">Feeds monitorados</div>
+    {feeds.map((f: any) => <div><span>{f.nome}</span><code class={f.url ? undefined : "no"}>{f.url ? host(f.url) : f.nota}</code></div>)}
+  </div>
+</div>

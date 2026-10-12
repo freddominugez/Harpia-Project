@@ -1,0 +1,51 @@
+---
+import Base from "../../../layouts/Base.astro";
+import M from "../../../components/M.astro";
+import Status from "../../../components/Status.astro";
+import Giscus from "../../../components/Giscus.astro";
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+  const caminhos = (await getCollection("caminhos")).sort((a, b) => a.data.numero - b.data.numero);
+  return caminhos.map((c, i) => ({
+    params: { slug: c.id },
+    props: { c, ant: caminhos[i - 1] ?? null, prox: caminhos[i + 1] ?? null },
+  }));
+}
+const { c, ant, prox } = Astro.props;
+const d = c.data;
+const { Content } = await render(c);
+---
+<Base titulo={d.titulo} descricao={d.resumo}>
+  <div class="container page-head">
+    <div class="eyebrow">Caminho {String(d.numero).padStart(2, "0")}{d.principal ? " · linha principal" : ""}</div>
+    <h1>{d.titulo}</h1>
+    <p class="lead">{d.resumo}</p>
+    <div class="meta-row" style="margin-top:14px"><Status tipo={d.estatuto} texto={d.selo} /><span>Atualizado em {d.atualizado.split("-").reverse().join("/")}</span></div>
+  </div>
+  <section>
+    <div class="container layout-side">
+      <article class="prose">
+        {d.equacao && <M t={d.equacao} d />}
+        <Content />
+        <h2>Teste e regra de parada</h2>
+        <p><b>Próximo teste.</b> {d.proximo_teste}</p>
+        <p><b>Parar se.</b> {d.parar_se}</p>
+        <hr />
+        <h2>Discussão</h2>
+        <Giscus />
+      </article>
+      <aside class="aside">
+        <div class="panel">
+          <h3>Arte prévia</h3>
+          <ul style="margin:10px 0 0;padding-left:18px;font-size:.92rem;line-height:1.7">{d.arte_previa.map((a) => <li>{a}</li>)}</ul>
+        </div>
+        <div class="facts">
+          {ant && <a class="fact" href={`/estudos/caminhos/${ant.id}/`}><b>Anterior</b>{ant.data.titulo}</a>}
+          {prox && <a class="fact" href={`/estudos/caminhos/${prox.id}/`}><b>Próximo</b>{prox.data.titulo}</a>}
+          <a class="fact" href="/estudos/"><b>Todos</b>Voltar aos caminhos</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+</Base>

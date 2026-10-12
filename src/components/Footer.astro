@@ -1,0 +1,51 @@
+---
+import { SITE } from "../config";
+const ano = new Date().getFullYear();
+---
+<footer class="site">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="/img/harpia-logo-512.png" alt="" width="56" height="56" />
+          <div>
+            <strong style="display:block;font-size:1.3rem;letter-spacing:-0.03em;color:#fff">Harpia Project</strong>
+            <span style="color:rgba(255,255,255,.72)">{SITE.lema}.</span>
+          </div>
+        </div>
+        <p>Pesquisa aberta sobre eficiência de modelos de linguagem. Só entram caminhos com equação, custo conhecido e teste refutável.</p>
+      </div>
+      <div>
+        <h4>Explorar</h4>
+        <div class="footer-links">
+          <a href="/origens/">Origens</a>
+          <a href="/aprendizado/">Aprendizado de Máquina</a>
+          <a href="/videos/">Vídeos</a>
+          <a href="/equacoes/">Equações</a>
+        </div>
+      </div>
+      <div>
+        <h4>Pesquisa</h4>
+        <div class="footer-links">
+          <a href="/estudos/">Caminhos válidos</a>
+          <a href="/estudos/arquivados/">Arquivados</a>
+          <a href="/biblioteca/">Livros e artigos</a>
+          <a href="/biblioteca/glossario/">Glossário</a>
+        </div>
+      </div>
+      <div>
+        <h4>Comunidade</h4>
+        <div class="footer-links">
+          <a href="/forum/">Fórum</a>
+          <a href="/news/">News</a>
+          <a href={SITE.repositorio} rel="noopener">GitHub</a>
+          <a href="/sobre/">Sobre e como contribuir</a>
+        </div>
+      </div>
+    </div>
+    <div class="signature">
+      <span><b>{SITE.autor}</b> - <a class="vulcan" href={SITE.assinaturaUrl} rel="noopener">{SITE.assinatura}</a></span>
+      <span>© {ano} · Conteúdo sob CC BY 4.0 · Código sob MIT</span>
+    </div>
+  </div>
+</footer>

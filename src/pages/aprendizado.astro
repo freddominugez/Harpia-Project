@@ -1,0 +1,24 @@
+---
+import Base from "../layouts/Base.astro";
+import M from "../components/M.astro";
+import ml from "../data/ml.json";
+---
+<Base titulo="Aprendizado de Máquina" descricao="As primeiras tentativas de fazer a máquina aprender, com a regra de atualização de cada uma.">
+  <div class="container page-head">
+    <div class="eyebrow">Antes das LLMs</div>
+    <h1>As primeiras tentativas de fazer a máquina aprender</h1>
+    <p class="lead">Quase toda ideia de hoje tem um ancestral simples. Algumas falharam por motivos que ainda valem.</p>
+  </div>
+  <section>
+    <div class="container grid g3">
+      {ml.map((i: any) => (
+        <article class="card">
+          <span class="chip" style="align-self:flex-start">{i.ano}</span>
+          <h3>{i.titulo}</h3>
+          <p>{i.texto}</p>
+          {i.eq && <div class="eq"><M t={i.eq} /></div>}
+        </article>
+      ))}
+    </div>
+  </section>
+</Base>

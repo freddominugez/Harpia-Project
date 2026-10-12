@@ -1,0 +1,29 @@
+---
+import Base from "../../layouts/Base.astro";
+import PathCard from "../../components/PathCard.astro";
+import IdeaCard from "../../components/IdeaCard.astro";
+import { getCollection } from "astro:content";
+const caminhos = (await getCollection("caminhos")).sort((a, b) => a.data.numero - b.data.numero);
+---
+<Base titulo="Estudos" descricao="Os caminhos válidos de eficiência em embeddings, tokens e busca vetorial.">
+  <div class="container page-head">
+    <div class="eyebrow">Estudos</div>
+    <h1>Por que este projeto existe</h1>
+  </div>
+  <section>
+    <div class="container">
+      <p class="origin">Este projeto nasceu da inferência lógica sobre o que poderia ser acionável naquilo que chamamos de cronologia de desenvolvimento da IA. Para isso, partimos de inferências lógicas para achar relações matemáticas.</p>
+    </div>
+  </section>
+  <section><div class="container"><IdeaCard /></div></section>
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div><h2>Caminhos válidos</h2><p>Critério de entrada: mecanismo em equação, custo conhecido e teste refutável. Ter arte prévia não exclui; a página diz o que já existe e o que pode ser novo.</p></div>
+        <a class="btn btn-secondary" href="/estudos/arquivados/">Ver arquivados</a>
+      </div>
+      <div class="legend"><span class="chip medido">medido no projeto</span><span class="chip arte">arte prévia</span><span class="chip lacuna">lacuna</span><span class="chip teste">teste ou enquadramento</span></div>
+      <div class="paths">{caminhos.map((c) => <PathCard c={c} />)}</div>
+    </div>
+  </section>
+</Base>

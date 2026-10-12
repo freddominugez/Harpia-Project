@@ -1,0 +1,48 @@
+---
+import "katex/dist/katex.min.css";
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE } from "../config";
+
+interface Props { titulo?: string; descricao?: string }
+const { titulo, descricao = SITE.descricao } = Astro.props;
+const tituloFinal = titulo ? `${titulo} · ${SITE.nome}` : `${SITE.nome} · ${SITE.lema}`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const og = new URL("/img/og.png", Astro.site);
+---
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{tituloFinal}</title>
+    <meta name="description" content={descricao} />
+    <meta name="author" content={SITE.autor} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="theme-color" content="#252f36" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={tituloFinal} />
+    <meta property="og:description" content={descricao} />
+    <meta property="og:image" content={og} />
+    <meta property="og:locale" content="pt_BR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script is:inline>
+      try { const t = localStorage.getItem("harpia-tema"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+    <Header />
+    <main id="conteudo">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

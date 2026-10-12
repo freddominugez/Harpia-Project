@@ -1,0 +1,32 @@
+---
+import Base from "../layouts/Base.astro";
+import Giscus from "../components/Giscus.astro";
+---
+<Base titulo="Fórum" descricao="Fórum do Harpia Project: perguntas, reproduções e propostas, via GitHub Discussions.">
+  <div class="container page-head">
+    <div class="eyebrow">Comunidade</div>
+    <h1>Discuta, reproduza, conteste</h1>
+    <p class="lead">As conversas ficam no GitHub Discussions do repositório. Cada página de caminho tem a sua própria discussão; esta página é o espaço geral.</p>
+  </div>
+  <section>
+    <div class="container layout-side">
+      <div class="panel">
+        <h2 style="font-size:1.5rem">Discussão geral</h2>
+        <Giscus geral />
+      </div>
+      <aside class="aside">
+        <div class="panel">
+          <h3>Categorias</h3>
+          <div class="cat"><div class="icon-box">C</div><div><b>Caminhos</b><span>Uma discussão por caminho.</span></div></div>
+          <div class="cat"><div class="icon-box">?</div><div><b>Perguntas</b><span>Matemática, código ou método.</span></div></div>
+          <div class="cat"><div class="icon-box">R</div><div><b>Resultados</b><span>Números com código e hardware.</span></div></div>
+          <div class="cat"><div class="icon-box">+</div><div><b>Propostas</b><span>Equação, custo e teste.</span></div></div>
+        </div>
+        <div class="panel">
+          <h3>Regras</h3>
+          <p style="margin-top:8px">Toda medida de velocidade informa hardware, lote e latência p95. Toda proposta traz equação e regra de parada. Discordar é bem-vindo; com argumento.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+</Base>

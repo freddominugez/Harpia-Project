@@ -1,0 +1,79 @@
+---
+import Base from "../../layouts/Base.astro";
+import livros from "../../data/livros.json";
+import artigos from "../../data/artigos.json";
+import fontes from "../../data/fontes.json";
+const nFontes = fontes.reduce((s, g) => s + g.itens.length, 0);
+const ordenados = [...artigos].sort((a, b) => a.ano - b.ano);
+---
+<Base titulo="Biblioteca" descricao="Livros, artigos acadêmicos e fontes de alta qualidade sobre matemática, física e IA.">
+  <div class="container page-head">
+    <div class="eyebrow">Biblioteca</div>
+    <h1>Livros, artigos e onde pesquisar</h1>
+    <p class="lead">Cada item indica o caminho do projeto que ele sustenta. Vários livros têm edição gratuita oficial.</p>
+    <div class="meta-row" style="margin-top:14px"><a class="chip" href="#livros">{livros.length} livros</a><a class="chip" href="#artigos">{artigos.length} artigos</a><a class="chip" href="#fontes">{nFontes} fontes</a><a class="chip" href="/biblioteca/glossario/">Glossário</a></div>
+  </div>
+
+  <section id="livros">
+    <div class="container">
+      <div class="section-head"><div><h2>Livros</h2><p>Da álgebra linear aos reticulados.</p></div></div>
+      <div class="shelf">
+        {livros.map((l) => (
+          <div class="book">
+            {l.url ? (
+              <a class={`cover ${l.cor}`} href={l.url} target="_blank" rel="noopener"><small>{l.nota.toUpperCase()}</small><b>{l.titulo}</b><small>{l.autores}</small></a>
+            ) : (
+              <div class={`cover ${l.cor}`}><small>{l.nota.toUpperCase()}</small><b>{l.titulo}</b><small>{l.autores}</small></div>
+            )}
+            <div class="info"><strong>{l.uso.split(":")[0]}</strong>{l.uso.includes(":") ? ` · ${l.uso.split(":")[1].trim()}` : ""}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section id="artigos">
+    <div class="container">
+      <div class="section-head"><div><h2>Artigos acadêmicos</h2><p>Os trabalhos que definem a base a bater e a arte prévia de cada caminho.</p></div></div>
+      <div class="filters" role="group" aria-label="Filtrar artigos">
+        <button type="button" data-grupo="todos" aria-pressed="true">Todos</button>
+        <button type="button" data-grupo="fund" aria-pressed="false">Fundamentos</button>
+        <button type="button" data-grupo="busca" aria-pressed="false">Busca e quantização</button>
+        <button type="button" data-grupo="arte" aria-pressed="false">Arte prévia</button>
+      </div>
+      <div class="papers">
+        {ordenados.map((p) => (
+          <div class="paper" data-grupo={p.grupo}>
+            <div class="ano">{p.ano}</div>
+            <div><a href={p.url} target="_blank" rel="noopener">{p.titulo}</a><div class="v">{p.autores}</div></div>
+            <span class={`chip ${p.selo}`}>{p.rotulo}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section id="fontes">
+    <div class="container">
+      <div class="section-head"><div><h2>{nFontes} fontes de alta qualidade</h2><p>Institutos de matemática e física, grandes projetos, repositórios de artigos, laboratórios de IA dos Estados Unidos e da China, e o código aberto que roda tudo.</p></div></div>
+      <div class="srcs">
+        {fontes.map((g) => (
+          <div class="panel sg">
+            <h3>{g.grupo}<small>{g.itens.length}</small></h3>
+            <ul>{g.itens.map(([n, u, d]) => <li><a href={u} target="_blank" rel="noopener">{n}</a><span>{d}</span></li>)}</ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>
+<script>
+  document.querySelectorAll<HTMLButtonElement>(".filters button[data-grupo]").forEach((b, _, todos) => {
+    b.addEventListener("click", () => {
+      todos.forEach((x) => x.setAttribute("aria-pressed", "false"));
+      b.setAttribute("aria-pressed", "true");
+      const g = b.dataset.grupo;
+      document.querySelectorAll<HTMLElement>(".paper[data-grupo]").forEach((p) => { p.hidden = !(g === "todos" || p.dataset.grupo === g); });
+    });
+  });
+</script>

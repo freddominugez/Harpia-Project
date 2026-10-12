@@ -1,0 +1,40 @@
+---
+import { NAV } from "../config";
+const atual = Astro.url.pathname;
+const ativo = (href: string) => (href === "/" ? atual === "/" : atual.startsWith(href));
+---
+<header class="topbar">
+  <div class="container nav">
+    <a href="/" class="brand" aria-label="Harpia Project, página inicial">
+      <img src="/img/harpia-logo-512.png" alt="" width="50" height="50" />
+      <div class="brand-wordmark">HARPIA <span>PROJECT</span></div>
+    </a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      {NAV.map((i) => <a href={i.href} aria-current={ativo(i.href) ? "page" : undefined}>{i.rotulo}</a>)}
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="tema" type="button" aria-label="Alternar tema claro e escuro"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg></button>
+      <a class="btn btn-primary cta-top" href="/forum/">Participar</a>
+      <button class="icon-btn mobile-toggle" id="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">☰</button>
+    </div>
+  </div>
+  <div class="container mobile-menu" id="menu-mobile">
+    {NAV.map((i) => <a href={i.href} aria-current={ativo(i.href) ? "page" : undefined}>{i.rotulo}</a>)}
+  </div>
+</header>
+<script>
+  const btn = document.getElementById("menu-btn");
+  const menu = document.getElementById("menu-mobile");
+  btn?.addEventListener("click", () => {
+    const aberto = menu?.classList.toggle("open") ?? false;
+    btn.setAttribute("aria-expanded", String(aberto));
+  });
+  document.getElementById("tema")?.addEventListener("click", () => {
+    const r = document.documentElement;
+    const atual = r.getAttribute("data-theme");
+    const escuro = atual ? atual === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+    const novo = escuro ? "light" : "dark";
+    r.setAttribute("data-theme", novo);
+    try { localStorage.setItem("harpia-tema", novo); } catch (e) {}
+  });
+</script>

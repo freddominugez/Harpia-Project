@@ -1,0 +1,62 @@
+[
+ {
+  "id": "fNk_zzaMoSs",
+  "titulo": "Vectors | Essence of linear algebra, cap. 1",
+  "canal": "3Blue1Brown",
+  "trilha": "mat"
+ },
+ {
+  "id": "aircAruvnKk",
+  "titulo": "But what is a neural network?",
+  "canal": "3Blue1Brown",
+  "trilha": "redes"
+ },
+ {
+  "id": "IHZwWFHWa-w",
+  "titulo": "Gradient descent, how neural networks learn",
+  "canal": "3Blue1Brown",
+  "trilha": "redes"
+ },
+ {
+  "id": "Ilg3gGewQ5U",
+  "titulo": "Backpropagation, intuitively",
+  "canal": "3Blue1Brown",
+  "trilha": "mat"
+ },
+ {
+  "id": "VMj-3S1tku0",
+  "titulo": "Building micrograd: neural networks and backpropagation",
+  "canal": "Andrej Karpathy",
+  "trilha": "redes"
+ },
+ {
+  "id": "wjZofJX0v4M",
+  "titulo": "Transformers, the tech behind LLMs",
+  "canal": "3Blue1Brown",
+  "trilha": "llm"
+ },
+ {
+  "id": "eMlx5fFNoYc",
+  "titulo": "Attention in transformers, step-by-step",
+  "canal": "3Blue1Brown",
+  "trilha": "llm"
+ },
+ {
+  "id": "zduSFxRajkE",
+  "titulo": "Let's build the GPT Tokenizer",
+  "canal": "Andrej Karpathy",
+  "trilha": "llm"
+ },
+ {
+  "id": "kCc8FmEb1nY",
+  "titulo": "Let's build GPT: from scratch, in code",
+  "canal": "Andrej Karpathy",
+  "trilha": "llm"
+ },
+ {
+  "id": "zjkBMFhNj_g",
+  "titulo": "Intro to Large Language Models",
+  "canal": "Andrej Karpathy",
+  "trilha": "llm"
+ }
+]

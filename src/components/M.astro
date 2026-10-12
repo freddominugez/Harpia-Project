@@ -1,0 +1,7 @@
+---
+// Matemática renderizada no build. Uso: <M t="E=mc^2" /> ou <M t="..." d /> para bloco.
+import { tex } from "../lib/tex";
+interface Props { t: string; d?: boolean }
+const { t, d = false } = Astro.props;
+---
+{d ? <div class="eqbox" set:html={tex(t, true)} /> : <span set:html={tex(t, false)} />}

@@ -1,0 +1,139 @@
+---
+import Base from "../layouts/Base.astro";
+import PathCard from "../components/PathCard.astro";
+import IdeaCard from "../components/IdeaCard.astro";
+import NewsCard from "../components/NewsCard.astro";
+import VideoGrid from "../components/VideoGrid.astro";
+import Timeline from "../components/Timeline.astro";
+import { getCollection } from "astro:content";
+import fontes from "../data/fontes.json";
+import videos from "../data/videos.json";
+import artigos from "../data/artigos.json";
+
+const caminhos = (await getCollection("caminhos")).sort((a, b) => a.data.numero - b.data.numero);
+const nFontes = fontes.reduce((s, g) => s + g.itens.length, 0);
+---
+<Base>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-card">
+        <div class="hero-copy">
+          <div class="eyebrow">Conhecimento transforma horizontes</div>
+          <h1>Harpia <em>Project</em></h1>
+          <p class="lead">Pesquisa aberta sobre eficiência de LLMs: embeddings, tokens, pesos e busca vetorial, examinados um a um. Aqui ficam só os caminhos que resistiram à prova, com equação, custo conhecido e um teste que pode dar errado.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/estudos/">Ver os {caminhos.length} caminhos →</a>
+            <a class="btn btn-secondary" href="/origens/">Começar pela história</a>
+          </div>
+          <div class="hero-points">
+            <div class="mini-stat"><strong>{caminhos.length}</strong><p>caminhos válidos em estudo</p></div>
+            <div class="mini-stat"><strong>16</strong><p>camadas de um LLM com equações</p></div>
+            <div class="mini-stat"><strong>99%</strong><p>da latência de um embedding está no encoder</p></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-quote">
+            <h2>Disciplina<br />gera<br />descobertas</h2>
+            <p>Tecnologia a serviço do conhecimento.</p>
+          </div>
+          <img class="hero-figure" src="/img/harpia-logo.png" alt="Harpia geométrica em cinza e dourado, símbolo do projeto" width="1000" height="1000" fetchpriority="high" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container grid g4">
+      <a class="card" href="/estudos/"><div class="icon-box">◈</div><h3>{caminhos.length} caminhos válidos</h3><p>Cada um com equação, arte prévia, teste e regra de parada.</p></a>
+      <a class="card" href="/equacoes/"><div class="icon-box">Σ</div><h3>16 camadas</h3><p>Do token à probabilidade do próximo token, e o caminho dos embeddings.</p></a>
+      <a class="card" href="/biblioteca/"><div class="icon-box">π</div><h3>{artigos.length} artigos e {nFontes} fontes</h3><p>A base a bater e a arte prévia de cada caminho.</p></a>
+      <a class="card" href="/videos/"><div class="icon-box">▶</div><h3>{videos.length} vídeos</h3><p>Curadoria de matemática, redes neurais e LLMs.</p></a>
+    </div>
+  </section>
+
+  <section id="estudos">
+    <div class="container">
+      <div class="eyebrow">Estudos</div>
+      <p class="origin">Este projeto nasceu da inferência lógica sobre o que poderia ser acionável naquilo que chamamos de cronologia de desenvolvimento da IA. Para isso, partimos de inferências lógicas para achar relações matemáticas.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container"><IdeaCard /></div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div><h2>O que segue aberto</h2><p>Inclui caminhos com trabalho publicado. Cada página diz o que já existe e o que pode ser novo.</p></div>
+        <a href="/estudos/" class="btn btn-secondary">Ver todos</a>
+      </div>
+      <div class="paths">{caminhos.slice(0, 6).map((c) => <PathCard c={c} />)}</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div><h2>Marcos da história</h2><p>Os pontos que mudaram a forma de representar palavras ou de calcular com elas.</p></div>
+        <a href="/origens/" class="btn btn-secondary">Linha do tempo completa</a>
+      </div>
+      <div class="panel"><Timeline limite={6} /></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div><h2>Para estudar</h2><p>Vídeos selecionados. Novas sugestões chegam toda semana e entram depois de revisão.</p></div>
+        <a href="/videos/" class="btn btn-secondary">Todos os vídeos</a>
+      </div>
+      <VideoGrid limite={4} filtros={false} />
+    </div>
+  </section>
+
+  <section>
+    <div class="container quote-band">
+      <div>
+        <p class="quote-big">“Conhecimento e disciplina constroem um futuro mais inteligente.”</p>
+        <div class="meta-row" style="margin-top:16px">
+          <span class="chip">Pesquisar</span><span class="chip">Medir</span><span class="chip">Compartilhar</span><span class="chip">Evoluir</span>
+        </div>
+      </div>
+      <div class="brand-watermark"><img src="/img/harpia-logo-512.png" alt="" width="150" height="150" loading="lazy" /></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container"><NewsCard limite={5} /></div>
+  </section>
+
+  <section>
+    <div class="container grid g2">
+      <div class="panel">
+        <h2 style="font-size:1.8rem">Fórum da comunidade</h2>
+        <p style="margin-top:8px">Discuta, reproduza, conteste. Cada caminho tem a sua própria conversa, com login pelo GitHub.</p>
+        <div style="margin-top:12px">
+          <div class="cat"><div class="icon-box">C</div><div><b>Caminhos</b><span>Uma discussão por caminho válido.</span></div></div>
+          <div class="cat"><div class="icon-box">?</div><div><b>Perguntas</b><span>Matemática, código ou método.</span></div></div>
+          <div class="cat"><div class="icon-box">R</div><div><b>Resultados e reproduções</b><span>Números, com código e hardware.</span></div></div>
+          <div class="cat"><div class="icon-box">+</div><div><b>Propostas novas</b><span>Com equação, custo e teste refutável.</span></div></div>
+        </div>
+        <a class="btn btn-primary" href="/forum/" style="margin-top:16px">Ir para o fórum</a>
+      </div>
+      <div class="panel">
+        <h2 style="font-size:1.8rem">Como um caminho entra</h2>
+        <p style="margin-top:8px">Analogia física não é prova. Um caminho só entra no Harpia quando vira:</p>
+        <ol style="margin-top:12px;padding-left:20px;line-height:1.9">
+          <li>uma <b>equação</b> com o mecanismo de economia;</li>
+          <li>um <b>custo</b> em bytes, operações ou latência;</li>
+          <li>uma <b>previsão refutável</b> com regra de parada;</li>
+          <li>a lista do que <b>já existe publicado</b> sobre ele.</li>
+        </ol>
+        <div class="legend" style="margin-top:16px">
+          <span class="chip medido">medido no projeto</span><span class="chip arte">arte prévia</span><span class="chip lacuna">lacuna</span><span class="chip teste">teste ou enquadramento</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

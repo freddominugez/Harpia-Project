@@ -1,0 +1,146 @@
+[
+ {
+  "ano": 1998,
+  "titulo": "A Quantitative Analysis and Performance Study for Similarity-Search Methods in High-Dimensional Spaces (VA-file)",
+  "autores": "Weber, Schek, Blott · VLDB",
+  "url": "https://www.vldb.org/conf/1998/p194.pdf",
+  "grupo": "arte",
+  "selo": "arte",
+  "rotulo": "arte prévia · caminho 1"
+ },
+ {
+  "ano": 2003,
+  "titulo": "A Neural Probabilistic Language Model",
+  "autores": "Bengio, Ducharme, Vincent, Jauvin · JMLR",
+  "url": "https://www.jmlr.org/papers/v3/bengio03a.html",
+  "grupo": "fund",
+  "selo": "medido",
+  "rotulo": "fundamento"
+ },
+ {
+  "ano": 2013,
+  "titulo": "Efficient Estimation of Word Representations in Vector Space (word2vec)",
+  "autores": "Mikolov et al. · arXiv",
+  "url": "https://arxiv.org/abs/1301.3781",
+  "grupo": "fund",
+  "selo": "medido",
+  "rotulo": "fundamento"
+ },
+ {
+  "ano": 2017,
+  "titulo": "Attention Is All You Need",
+  "autores": "Vaswani et al. · NeurIPS",
+  "url": "https://arxiv.org/abs/1706.03762",
+  "grupo": "fund",
+  "selo": "medido",
+  "rotulo": "fundamento"
+ },
+ {
+  "ano": 2017,
+  "titulo": "Poincaré Embeddings for Learning Hierarchical Representations",
+  "autores": "Nickel, Kiela · NeurIPS",
+  "url": "https://arxiv.org/abs/1705.08039",
+  "grupo": "fund",
+  "selo": "teste",
+  "rotulo": "a ideia interessante"
+ },
+ {
+  "ano": 2017,
+  "titulo": "To Index or Not to Index: Optimizing Exact Maximum Inner Product Search (FEXIPRO e LEMP)",
+  "autores": "Abuzaid et al. · arXiv",
+  "url": "https://arxiv.org/abs/1706.01449",
+  "grupo": "arte",
+  "selo": "arte",
+  "rotulo": "arte prévia · caminho 1"
+ },
+ {
+  "ano": 2021,
+  "titulo": "RoFormer: Enhanced Transformer with Rotary Position Embedding",
+  "autores": "Su et al. · arXiv",
+  "url": "https://arxiv.org/abs/2104.09864",
+  "grupo": "fund",
+  "selo": "medido",
+  "rotulo": "fundamento"
+ },
+ {
+  "ano": 2022,
+  "titulo": "Matryoshka Representation Learning",
+  "autores": "Kusupati et al. · NeurIPS",
+  "url": "https://arxiv.org/abs/2205.13147",
+  "grupo": "busca",
+  "selo": "arte",
+  "rotulo": "base a bater"
+ },
+ {
+  "ano": 2023,
+  "titulo": "High-Dimensional Approximate Nearest Neighbor Search: with Reliable and Efficient Distance Comparison Operations (ADSampling)",
+  "autores": "Gao, Long · SIGMOD",
+  "url": "https://arxiv.org/abs/2303.09855",
+  "grupo": "arte",
+  "selo": "arte",
+  "rotulo": "arte prévia · caminho 3"
+ },
+ {
+  "ano": 2024,
+  "titulo": "RaBitQ: Quantizing High-Dimensional Vectors with a Theoretical Error Bound",
+  "autores": "Gao, Long · SIGMOD",
+  "url": "https://arxiv.org/abs/2405.12497",
+  "grupo": "busca",
+  "selo": "arte",
+  "rotulo": "arte prévia · caminho 3"
+ },
+ {
+  "ano": 2025,
+  "titulo": "TurboQuant: Online Vector Quantization with Near-optimal Distortion Rate",
+  "autores": "Zandieh, Daliri, Hadian, Mirrokni · arXiv",
+  "url": "https://arxiv.org/abs/2504.19874",
+  "grupo": "busca",
+  "selo": "arte",
+  "rotulo": "limite teórico"
+ },
+ {
+  "ano": 2025,
+  "titulo": "NestQuant: Nested Lattice Quantization for Matrix Products and LLMs",
+  "autores": "Savkin, Porat, Ordentlich, Polyanskiy · arXiv",
+  "url": "https://arxiv.org/abs/2502.09720",
+  "grupo": "busca",
+  "selo": "lacuna",
+  "rotulo": "caminho 5"
+ },
+ {
+  "ano": 2025,
+  "titulo": "PDX: A Data Layout for Vector Similarity Search",
+  "autores": "Kuffo, Krippner, Boncz · arXiv",
+  "url": "https://arxiv.org/abs/2503.04422",
+  "grupo": "arte",
+  "selo": "arte",
+  "rotulo": "arte prévia · caminho 4"
+ },
+ {
+  "ano": 2025,
+  "titulo": "On the Theoretical Limitations of Embedding-Based Retrieval (LIMIT)",
+  "autores": "Weller et al. · arXiv",
+  "url": "https://arxiv.org/abs/2508.21038",
+  "grupo": "busca",
+  "selo": "teste",
+  "rotulo": "limite teórico"
+ },
+ {
+  "ano": 2025,
+  "titulo": "SAQ: Pushing the Limits of Vector Quantization through Code Adjustment and Dimension Segmentation",
+  "autores": "Li, Deng, Yan, Zhi, Cheng · arXiv",
+  "url": "https://arxiv.org/abs/2509.12086",
+  "grupo": "arte",
+  "selo": "arte",
+  "rotulo": "arte prévia · caminho 6"
+ },
+ {
+  "ano": 2025,
+  "titulo": "Panorama: Fast-Track Nearest Neighbors",
+  "autores": "Ramani, Schlomer, Nayar, Ranu, Patel, Karras · arXiv",
+  "url": "https://arxiv.org/abs/2510.00566",
+  "grupo": "arte",
+  "selo": "arte",
+  "rotulo": "arte prévia · caminho 4"
+ }
+]

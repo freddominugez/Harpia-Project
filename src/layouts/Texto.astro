@@ -1,0 +1,13 @@
+---
+// Layout das páginas em markdown (equações, glossário, arquivados, sobre, ideia).
+import Base from "./Base.astro";
+const { frontmatter } = Astro.props;
+---
+<Base titulo={frontmatter.titulo} descricao={frontmatter.descricao}>
+  <div class="container page-head">
+    {frontmatter.kicker && <div class="eyebrow">{frontmatter.kicker}</div>}
+    <h1>{frontmatter.titulo}</h1>
+    {frontmatter.lead && <p class="lead">{frontmatter.lead}</p>}
+  </div>
+  <section><div class="container prose"><slot /></div></section>
+</Base>

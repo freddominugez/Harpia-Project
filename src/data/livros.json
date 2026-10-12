@@ -1,0 +1,66 @@
+[
+ {
+  "titulo": "Mathematics for Machine Learning",
+  "autores": "Deisenroth, Faisal, Ong",
+  "nota": "2020 · gratuito",
+  "uso": "Base: álgebra linear, cálculo e probabilidade",
+  "url": "https://mml-book.github.io/",
+  "cor": "c1"
+ },
+ {
+  "titulo": "Deep Learning",
+  "autores": "Goodfellow, Bengio, Courville",
+  "nota": "2016 · gratuito online",
+  "uso": "Base: redes profundas",
+  "url": "https://www.deeplearningbook.org/",
+  "cor": "c2"
+ },
+ {
+  "titulo": "Understanding Deep Learning",
+  "autores": "Simon J. D. Prince",
+  "nota": "2023 · gratuito",
+  "uso": "Base: transformers explicados",
+  "url": "https://udlbook.github.io/udlbook/",
+  "cor": "c3"
+ },
+ {
+  "titulo": "Speech and Language Processing",
+  "autores": "Jurafsky, Martin",
+  "nota": "rascunho da 3ª ed. online",
+  "uso": "Base: linguagem, tokens e embeddings",
+  "url": "https://web.stanford.edu/~jurafsky/slp3/",
+  "cor": "c4"
+ },
+ {
+  "titulo": "Introduction to Information Retrieval",
+  "autores": "Manning, Raghavan, Schütze",
+  "nota": "2008 · gratuito online",
+  "uso": "Caminhos 1 a 4: índices e busca",
+  "url": "https://nlp.stanford.edu/IR-book/",
+  "cor": "c5"
+ },
+ {
+  "titulo": "Sphere Packings, Lattices and Groups",
+  "autores": "Conway, Sloane",
+  "nota": "clássico",
+  "uso": "Caminho 5: reticulados E8 e Leech",
+  "url": "",
+  "cor": "c6"
+ },
+ {
+  "titulo": "Concentration Inequalities",
+  "autores": "Boucheron, Lugosi, Massart",
+  "nota": "2013",
+  "uso": "Caminho 3: raio probabilístico",
+  "url": "",
+  "cor": "c1"
+ },
+ {
+  "titulo": "Elements of Information Theory",
+  "autores": "Cover, Thomas",
+  "nota": "2ª ed.",
+  "uso": "Caminho 5: taxa e distorção",
+  "url": "",
+  "cor": "c2"
+ }
+]

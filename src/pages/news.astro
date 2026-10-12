@@ -1,0 +1,12 @@
+---
+import Base from "../layouts/Base.astro";
+import NewsCard from "../components/NewsCard.astro";
+---
+<Base titulo="News" descricao="Manchetes de laboratórios de IA e do arXiv ligadas a embeddings, busca vetorial e eficiência.">
+  <div class="container page-head">
+    <div class="eyebrow">News</div>
+    <h1>O que saiu sobre eficiência</h1>
+    <p class="lead">Coletado de feeds RSS de laboratórios de IA, do arXiv e de divulgação científica, filtrado pelos termos do projeto.</p>
+  </div>
+  <section><div class="container"><NewsCard limite={40} /></div></section>
+</Base>

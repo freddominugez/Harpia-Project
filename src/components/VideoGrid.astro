@@ -1,0 +1,35 @@
+---
+import videos from "../data/videos.json";
+interface Props { limite?: number; filtros?: boolean }
+const { limite, filtros = true } = Astro.props;
+const lista = limite ? videos.slice(0, limite) : videos;
+const trilhas = [["todos", "Todos"], ["mat", "Matemática"], ["redes", "Redes neurais"], ["llm", "LLMs"]];
+---
+{filtros && (
+  <div class="filters" role="group" aria-label="Filtrar vídeos por trilha">
+    {trilhas.map(([v, r], i) => <button type="button" data-trilha={v} aria-pressed={i === 0 ? "true" : "false"}>{r}</button>)}
+  </div>
+)}
+<div class="vgrid">
+  {lista.map((v) => (
+    <a class="vid" data-trilha={v.trilha} href={`https://www.youtube.com/watch?v=${v.id}`} target="_blank" rel="noopener">
+      <div class="th">
+        <img loading="lazy" decoding="async" alt="" width="480" height="360" src={`https://img.youtube.com/vi/${v.id}/hqdefault.jpg`} />
+        <span class="play" aria-hidden="true"></span>
+      </div>
+      <div class="m"><b>{v.titulo}</b><span>{v.canal}</span></div>
+    </a>
+  ))}
+</div>
+<script>
+  document.querySelectorAll<HTMLButtonElement>(".filters button[data-trilha]").forEach((b, _, todos) => {
+    b.addEventListener("click", () => {
+      todos.forEach((x) => x.setAttribute("aria-pressed", "false"));
+      b.setAttribute("aria-pressed", "true");
+      const t = b.dataset.trilha;
+      document.querySelectorAll<HTMLElement>(".vid[data-trilha]").forEach((v) => {
+        v.hidden = !(t === "todos" || v.dataset.trilha === t);
+      });
+    });
+  });
+</script>

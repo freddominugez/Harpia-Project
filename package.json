@@ -1,0 +1,24 @@
+{
+  "name": "harpia-project",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Projeto Harpia: pesquisa aberta sobre eficiência de LLMs, embeddings, tokens e busca vetorial.",
+  "author": "Carlos Frederico Domínguez",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check"
+  },
+  "engines": {
+    "node": ">=20.3.0"
+  },
+  "dependencies": {
+    "astro": "5.18.2",
+    "@astrojs/sitemap": "3.7.4",
+    "katex": "0.16.47",
+    "rehype-katex": "7.0.1",
+    "remark-math": "6.0.0"
+  }
+}

@@ -1,0 +1,205 @@
+[
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Beyond the Final Embedding: Retrieving Memories from Token-Level Evidence",
+  "url": "https://arxiv.org/abs/2610.13277",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "PRIME: Pre-Retrieval Index Modeling Enhancement for Structured Document Retrieval-Real",
+  "url": "https://arxiv.org/abs/2610.13296",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "NEAR: Neighborhood-Aware Residuals for Memory Retrieval",
+  "url": "https://arxiv.org/abs/2610.13314",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "GeopoliticalQA: Benchmarking Retrieval and Generation over Intelligence Reports",
+  "url": "https://arxiv.org/abs/2610.12617",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "RATED: Reliability-Aware AI Agent Tool Retrieval via Execution Dynamics",
+  "url": "https://arxiv.org/abs/2610.13889",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "CRM: Retrieval Model with Controllable Condition",
+  "url": "https://arxiv.org/abs/2412.13844",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Differentiable Retrieval-Augmented Generation for Predicting Cellular Responses to Gene Perturbation",
+  "url": "https://arxiv.org/abs/2603.07233",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Algebraic Integer Quantization for Machine Learning Applications",
+  "url": "https://arxiv.org/abs/2610.12494",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "STAPLE: Static Sparse Upcycling of Pretrained Checkpoints via Embedding Modules",
+  "url": "https://arxiv.org/abs/2610.12599",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "CAST: Credit Alignment for Cross-Tokenizer On-Policy Distillation",
+  "url": "https://arxiv.org/abs/2610.13257",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "MHR-Router: Multimodal Heterogeneous Retrieval-Enhanced Adaptive Routing for VLM Inference",
+  "url": "https://arxiv.org/abs/2610.13278",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "DualQuant: Dual-scale Calibration-free Weight-and-Activation Quantization for LLMs",
+  "url": "https://arxiv.org/abs/2610.13767",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "TTS-Q: Perception-Guided Post-Training Quantization of Text-to-Speech Diffusion Transformers",
+  "url": "https://arxiv.org/abs/2610.12474",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "CORAL-KV: Compact Cross-Layer Prediction and Residual Coding for Autoregressive Video KV Caches",
+  "url": "https://arxiv.org/abs/2610.12514",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "The Predictability Bias of Joint-Embedding Predictive Learning in Medical Imaging",
+  "url": "https://arxiv.org/abs/2610.13237",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Taking Tokenization off the Host for Agentic LLM Serving",
+  "url": "https://arxiv.org/abs/2610.13325",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "RARA: Robust Policy Fine-Tuning through Retrieval-Anchored Representation Alignment for Robotic Manipulation",
+  "url": "https://arxiv.org/abs/2610.13578",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Shortcut Learning in Geospatial Foundation Model Embeddings for Cross-Disaster Damage Assessment",
+  "url": "https://arxiv.org/abs/2610.13766",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Mixture of Many Zero-Compute Experts: A High-Rate Quantization Theory Perspective",
+  "url": "https://arxiv.org/abs/2510.03151",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "KV-Repurpose: A Testbed for Evaluating Non-Prefix KV-Cache Reuse",
+  "url": "https://arxiv.org/abs/2610.13060",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Verifiable Retrieval for Legal Reasoning through Structure-driven Knowledge Graph",
+  "url": "https://arxiv.org/abs/2610.13695",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Benchmarking Embedding Geometries and Clustering Algorithms for Unsupervised Patent Claim Classification",
+  "url": "https://arxiv.org/abs/2610.12997",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "O\\'ido: Open-Vocabulary Speech Recognition on a $5 Microcontroller without a Neural Accelerator",
+  "url": "https://arxiv.org/abs/2610.13447",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Retrieval-Augmented Multimodal Language Model with Heterogeneous Evidence Integration for Clinical Prognosis",
+  "url": "https://arxiv.org/abs/2610.13510",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Lychee-Reranker: Fast but Not Late Interaction for Compressed Document Reranking",
+  "url": "https://arxiv.org/abs/2606.22807",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "TRACE: Rollout-Guided Quantization-Aware Training for FP4 Reinforcement Learning of MoE Language Models",
+  "url": "https://arxiv.org/abs/2610.07767",
+  "data": "12/10/2026",
+  "ts": 1791777600
+ },
+ {
+  "fonte": "Google DeepMind",
+  "titulo": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+  "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+  "data": "06/10/2026",
+  "ts": 1791316624
+ },
+ {
+  "fonte": "Hugging Face",
+  "titulo": "tokenizers v1: encode, decode and scaling, measured",
+  "url": "https://huggingface.co/blog/tokenizers-v1",
+  "data": "21/09/2026",
+  "ts": 1789948800
+ },
+ {
+  "fonte": "Google Research",
+  "titulo": "Bypassing inference bottlenecks: Accelerating complex AI search with Retrieve-for-Train",
+  "url": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
+  "data": "15/09/2026",
+  "ts": 1789502400
+ }
+]

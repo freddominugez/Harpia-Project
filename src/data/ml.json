@@ -1,0 +1,52 @@
+[
+ {
+  "ano": 1949,
+  "titulo": "Regra de Hebb",
+  "texto": "Neurônios que disparam juntos reforçam a ligação.",
+  "eq": "\\Delta w_{ij}=\\eta\\,x_i\\,y_j"
+ },
+ {
+  "ano": 1958,
+  "titulo": "Perceptron de Rosenblatt",
+  "texto": "O primeiro classificador que aprende com os próprios erros.",
+  "eq": "w\\leftarrow w+\\eta\\,(y-\\hat y)\\,x"
+ },
+ {
+  "ano": 1959,
+  "titulo": "Samuel e as damas",
+  "texto": "Um programa que melhora jogando contra si mesmo dá nome ao aprendizado de máquina."
+ },
+ {
+  "ano": 1960,
+  "titulo": "ADALINE e a regra LMS",
+  "texto": "Widrow e Hoff descem o gradiente do erro quadrático, a semente do treino atual.",
+  "eq": "w\\leftarrow w+\\eta\\,(y-w^\\top x)\\,x"
+ },
+ {
+  "ano": 1967,
+  "titulo": "Vizinho mais próximo",
+  "texto": "Cover e Hart: classificar pelo exemplo mais parecido. É o ancestral direto da busca vetorial.",
+  "eq": "\\hat y(q)=y_{\\arg\\min_i\\|q-x_i\\|}"
+ },
+ {
+  "ano": 1969,
+  "titulo": "O limite do XOR",
+  "texto": "Minsky e Papert mostram o que um perceptron de uma camada não separa. Segue-se um inverno de financiamento."
+ },
+ {
+  "ano": 1989,
+  "titulo": "Redes convolucionais",
+  "texto": "LeCun lê dígitos de cheques com pesos compartilhados."
+ },
+ {
+  "ano": 1995,
+  "titulo": "Máquinas de vetores de suporte",
+  "texto": "Cortes e Vapnik: separar com a maior margem possível.",
+  "eq": "\\min\\tfrac12\\|w\\|^2\\ \\text{s.a.}\\ y_i(w^\\top x_i+b)\\ge1"
+ },
+ {
+  "ano": 1998,
+  "titulo": "VA-file",
+  "texto": "Busca em alta dimensão lendo primeiro uma aproximação em poucos bits de cada vetor. É arte prévia direta da linha principal deste projeto."
+ }
+]

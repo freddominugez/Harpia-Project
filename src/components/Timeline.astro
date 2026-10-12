@@ -1,0 +1,21 @@
+---
+import dados from "../data/timeline.json";
+import M from "./M.astro";
+interface Props { limite?: number }
+const { limite } = Astro.props;
+const itens = limite ? dados.filter((d: any) => d.marco) .slice(0, limite) : dados;
+---
+<ol class="timeline">
+  {itens.map((i: any) => i.era ? (
+    <li class="era">{i.era}</li>
+  ) : (
+    <li class={i.marco ? "marco" : undefined}>
+      <div class="ano">{i.ano}</div>
+      <div>
+        <h3>{i.titulo}</h3>
+        <p>{i.texto}</p>
+        {i.eq && <div class="eq"><M t={i.eq} /></div>}
+      </div>
+    </li>
+  ))}
+</ol>

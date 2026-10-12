@@ -1,0 +1,133 @@
+[
+ {
+  "era": "Fundamentos"
+ },
+ {
+  "ano": 1943,
+  "titulo": "Neurônio de McCulloch e Pitts",
+  "texto": "Um neurônio como porta lógica com limiar.",
+  "eq": "y=\\mathbb 1\\big[\\textstyle\\sum_i w_ix_i\\ge\\theta\\big]",
+  "marco": true
+ },
+ {
+  "ano": 1948,
+  "titulo": "Shannon e a teoria da informação",
+  "texto": "Entropia e os primeiros modelos de linguagem por n-gramas de letras.",
+  "eq": "H=-\\textstyle\\sum_x p(x)\\log_2 p(x)"
+ },
+ {
+  "ano": 1950,
+  "titulo": "Turing pergunta se máquinas podem pensar",
+  "texto": "O jogo da imitação define a meta conversacional."
+ },
+ {
+  "ano": 1956,
+  "titulo": "Conferência de Dartmouth",
+  "texto": "O termo inteligência artificial passa a nomear um campo."
+ },
+ {
+  "ano": 1957,
+  "titulo": "Hipótese distribucional",
+  "texto": "Firth: conhecemos uma palavra pela companhia que ela mantém. É a ideia por trás de todo embedding.",
+  "marco": true
+ },
+ {
+  "ano": 1966,
+  "titulo": "ELIZA",
+  "texto": "Conversa por regras de padrão, sem aprendizado."
+ },
+ {
+  "era": "Redes e sequências"
+ },
+ {
+  "ano": 1986,
+  "titulo": "Retropropagação",
+  "texto": "Rumelhart, Hinton e Williams tornam treinável a rede de várias camadas.",
+  "eq": "\\partial\\mathcal L/\\partial W^{(\\ell)}=\\delta^{(\\ell)}a^{(\\ell-1)\\top}",
+  "marco": true
+ },
+ {
+  "ano": 1997,
+  "titulo": "LSTM",
+  "texto": "Hochreiter e Schmidhuber resolvem a memória de longo prazo em redes recorrentes."
+ },
+ {
+  "ano": 2003,
+  "titulo": "Modelo neural de linguagem",
+  "texto": "Bengio e coautores aprendem ao mesmo tempo um vetor por palavra e a probabilidade da próxima.",
+  "marco": true
+ },
+ {
+  "ano": 2013,
+  "titulo": "word2vec",
+  "texto": "Embeddings baratos em escala; analogias viram aritmética de vetores.",
+  "eq": "\\vec{\\text{rei}}-\\vec{\\text{homem}}+\\vec{\\text{mulher}}\\approx\\vec{\\text{rainha}}",
+  "marco": true
+ },
+ {
+  "ano": 2014,
+  "titulo": "Atenção em tradução",
+  "texto": "Bahdanau, Cho e Bengio deixam o decodificador olhar para toda a frase de entrada."
+ },
+ {
+  "era": "Transformers"
+ },
+ {
+  "ano": 2017,
+  "titulo": "Attention Is All You Need",
+  "texto": "O transformer descarta a recorrência.",
+  "eq": "\\mathrm{softmax}\\big(QK^\\top/\\sqrt{d_k}\\big)V",
+  "marco": true
+ },
+ {
+  "ano": 2018,
+  "titulo": "GPT e BERT",
+  "texto": "Pré-treino em texto bruto vira a regra: um gera, o outro codifica."
+ },
+ {
+  "ano": 2019,
+  "titulo": "GPT-2 e Sentence-BERT",
+  "texto": "Geração convincente e embeddings de frase prontos para busca."
+ },
+ {
+  "ano": 2020,
+  "titulo": "GPT-3, leis de escala e RAG",
+  "texto": "Desempenho cresce como lei de potência do tamanho; a recuperação vetorial passa a alimentar a geração.",
+  "marco": true
+ },
+ {
+  "ano": 2021,
+  "titulo": "RoPE",
+  "texto": "Posição codificada por rotação de pares de coordenadas."
+ },
+ {
+  "ano": 2022,
+  "titulo": "ChatGPT e embeddings Matryoshka",
+  "texto": "LLMs chegam ao público; prefixos de um vetor passam a ser vetores válidos.",
+  "marco": true
+ },
+ {
+  "ano": 2023,
+  "titulo": "Modelos abertos",
+  "texto": "Llama e sucessores tornam a arquitetura auditável por qualquer um."
+ },
+ {
+  "era": "Eficiência"
+ },
+ {
+  "ano": 2024,
+  "titulo": "RaBitQ",
+  "texto": "Um bit por dimensão com estimador não viesado e limite de erro."
+ },
+ {
+  "ano": 2025,
+  "titulo": "Limites do vetor único",
+  "texto": "Prova-se que um embedding de dimensão fixa não representa todas as combinações de relevância."
+ },
+ {
+  "ano": 2026,
+  "titulo": "Harpia Project",
+  "texto": "Auditoria pública dos caminhos de eficiência que ainda têm espaço.",
+  "marco": true
+ }
+]

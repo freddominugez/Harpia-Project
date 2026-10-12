@@ -1,0 +1,55 @@
+[
+ {
+  "nome": "arXiv cs.IR",
+  "url": "https://rss.arxiv.org/rss/cs.IR",
+  "so_titulo": true
+ },
+ {
+  "nome": "arXiv cs.LG",
+  "url": "https://rss.arxiv.org/rss/cs.LG",
+  "so_titulo": true
+ },
+ {
+  "nome": "arXiv cs.CL",
+  "url": "https://rss.arxiv.org/rss/cs.CL",
+  "so_titulo": true
+ },
+ {
+  "nome": "OpenAI",
+  "url": "https://openai.com/news/rss.xml"
+ },
+ {
+  "nome": "Google Research",
+  "url": "https://research.google/blog/rss/"
+ },
+ {
+  "nome": "Google DeepMind",
+  "url": "https://deepmind.google/blog/rss.xml"
+ },
+ {
+  "nome": "Microsoft Research",
+  "url": "https://www.microsoft.com/en-us/research/feed/"
+ },
+ {
+  "nome": "Hugging Face",
+  "url": "https://huggingface.co/blog/feed.xml"
+ },
+ {
+  "nome": "Qwen",
+  "url": "https://qwenlm.github.io/blog/index.xml"
+ },
+ {
+  "nome": "Quanta Magazine",
+  "url": "https://www.quantamagazine.org/feed/"
+ },
+ {
+  "nome": "Anthropic",
+  "url": "",
+  "nota": "sem RSS: coletor de página"
+ },
+ {
+  "nome": "CERN",
+  "url": "",
+  "nota": "sem RSS confirmado: coletor de página"
+ }
+]

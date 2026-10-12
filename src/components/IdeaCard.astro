@@ -1,0 +1,28 @@
+---
+interface Props { completo?: boolean }
+const { completo = false } = Astro.props;
+---
+<article class="idea">
+  <div class="t">
+    <span class="tag">A ideia mais interessante que não serve para nada</span>
+    <h2 style="font-size:clamp(1.6rem,2.6vw,2.1rem)">E se o espaço não fosse euclidiano?</h2>
+    <blockquote>A primeira ideia que tive quando comecei a entender os multivetores e a lógica de posicionamento de tokens foi: se nossa vetorização ocorre em um espaço euclidiano, o que aconteceria se ocorresse em um espaço não euclidiano?</blockquote>
+    <p class="ans">A resposta é: não acrescenta nada. Mas é muito interessante.</p>
+    <p>Medimos curvatura constante e variável sob comparação justa e não houve ganho. A literatura concorda: a vantagem aparece em poucas dimensões e some perto de 500.</p>
+    <div class="real"><b>Registro:</b> a geometria hiperbólica é uma linha de pesquisa real e ativa. Ela representa bem hierarquias, como taxonomias e grafos de conhecimento, sobretudo em dimensão baixa.</div>
+    {!completo && <a class="btn btn-primary" style="align-self:flex-start" href="/estudos/a-ideia-mais-interessante/">Ler a história completa</a>}
+  </div>
+  <div class="v" aria-hidden="true">
+    <svg viewBox="0 0 300 300">
+      <defs><clipPath id="disco"><circle cx="150" cy="150" r="130" /></clipPath></defs>
+      <circle cx="150" cy="150" r="130" fill="#141a1e" stroke="#ece9e2" stroke-width="1.4" />
+      <g clip-path="url(#disco)" fill="none" stroke-width="1.1">
+        <g stroke="#e0b866"><circle cx="150" cy="-30" r="124" /><circle cx="150" cy="330" r="124" /><circle cx="-30" cy="150" r="124" /><circle cx="330" cy="150" r="124" /></g>
+        <g stroke="#e0b866" opacity=".55"><circle cx="22" cy="22" r="130" /><circle cx="278" cy="22" r="130" /><circle cx="22" cy="278" r="130" /><circle cx="278" cy="278" r="130" /></g>
+        <g stroke="#93b8d8" opacity=".7"><circle cx="150" cy="-130" r="252" /><circle cx="150" cy="430" r="252" /><circle cx="-130" cy="150" r="252" /><circle cx="430" cy="150" r="252" /></g>
+      </g>
+      <circle cx="150" cy="150" r="4" fill="#ece9e2" />
+      <text x="150" y="296" text-anchor="middle" font-size="11" fill="#9aa1a8">disco de Poincaré</text>
+    </svg>
+  </div>
+</article>
