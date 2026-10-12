@@ -4,6 +4,10 @@ titulo: "Camadas de um LLM e as equações de cada uma"
 kicker: "Equações"
 lead: "Do texto ao token, do token ao vetor, do vetor à probabilidade do próximo token, e o caminho paralelo dos modelos de embedding. Arquitetura de referência: transformer decodificador com RMSNorm, RoPE, atenção com grupos de chaves e valores e FFN SwiGLU."
 descricao: "As 16 camadas de um LLM e de um modelo de embedding, com as equações que regem cada uma e o custo de cada etapa."
+relacionados:
+  - { href: "/estudos/", titulo: "Os 12 caminhos", sub: "Onde cada camada vira pesquisa", icone: "file" }
+  - { href: "/biblioteca/glossario/", titulo: "Glossário", sub: "Termos em uma ou duas linhas", icone: "book" }
+  - { href: "/aprendizado/", titulo: "Aprendizado de Máquina", sub: "As regras que vieram antes", icone: "brain" }
 ---
 
 **Notação.** $V$ tamanho do vocabulário, $n$ tokens no contexto, $d$ dimensão do modelo, $L$ número de blocos, $h$ e $h_{kv}$ cabeças de consulta e de chave e valor, $d_h=d/h$, $d_{ff}$ largura da FFN, $N$ documentos no índice. FLOPs contam multiplicação e soma como 2.

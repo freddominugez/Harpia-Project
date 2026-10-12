@@ -1,0 +1,32 @@
+---
+// Hero da home: texto à esquerda (52,5%) e a harpia original à direita (47,5%).
+// A arte é exibida no ângulo original, sem espelhar, girar ou substituir.
+import { SITE } from "../config";
+---
+<section class="ref-hero" aria-labelledby="titulo-home">
+  <div class="container ref-hero-wrap">
+    <div class="ref-hero-copy">
+      <span class="ref-eyebrow">{SITE.lema}</span>
+      <h1 id="titulo-home">Harp<span>ya</span></h1>
+      <strong class="ref-hero-sub">Pesquisa. Tecnologia. Conhecimento.</strong>
+      <p>Um espaço dedicado ao estudo, à pesquisa e à aplicação prática de aprendizado de máquina, com foco na eficiência de embeddings, tokens e modelos de linguagem de grande escala (LLMs).</p>
+      <div class="ref-hero-cta">
+        <a href="/estudos/" class="btn gold"><img class="icon white" src="/icons/book.svg" alt="" aria-hidden="true" width="15" height="15" /> Começar a explorar <span aria-hidden="true">→</span></a>
+        <a href="/videos/" class="btn outline"><img class="icon" src="/icons/play.svg" alt="" aria-hidden="true" width="15" height="15" /> Assistir aos vídeos</a>
+      </div>
+    </div>
+    <div class="ref-hero-art">
+      <div class="ref-mountain" aria-hidden="true"></div>
+      <div class="ref-angle" aria-hidden="true"></div>
+      <picture class="ref-eagle">
+        <source srcset="/img/harpya-original.webp" type="image/webp" />
+        <img src="/img/harpya-original.png" alt="Harpia geométrica original do Harpya, em dourado e grafite" width="1254" height="1254" fetchpriority="high" decoding="async" />
+      </picture>
+      <div class="ref-manifesto">
+        <b>Disciplina<br />gera<br />descobertas</b>
+        <span></span>
+        <small>“Tecnologia a serviço<br />do conhecimento.”</small>
+      </div>
+    </div>
+  </div>
+</section>

@@ -4,6 +4,10 @@ titulo: "Arquivados"
 kicker: "Estudos"
 lead: "O que foi avaliado e saiu da lista, com o motivo em uma linha. Arquivar não é esquecer: qualquer item volta se aparecer um mecanismo com equação, custo e teste."
 descricao: "Linhas de pesquisa avaliadas e arquivadas pelo Harpya, com o motivo."
+relacionados:
+  - { href: "/estudos/", titulo: "Caminhos válidos", sub: "Os 12 que seguem abertos", icone: "file" }
+  - { href: "/estudos/a-ideia-mais-interessante/", titulo: "A ideia mais interessante", sub: "Espaço não euclidiano", icone: "globe" }
+  - { href: "/biblioteca/", titulo: "Biblioteca", sub: "Livros e artigos", icone: "book" }
 ---
 
 ## Geometria

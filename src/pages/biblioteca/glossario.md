@@ -4,6 +4,10 @@ titulo: "Glossário"
 kicker: "Biblioteca"
 lead: "Os termos que aparecem no site, em uma ou duas linhas cada."
 descricao: "Glossário do Harpya: embeddings, quantização, busca vetorial e medição."
+relacionados:
+  - { href: "/equacoes/", titulo: "Equações", sub: "As 16 camadas de um LLM", icone: "sigma" }
+  - { href: "/biblioteca/", titulo: "Livros e artigos", sub: "O acervo do projeto", icone: "book" }
+  - { href: "/biblioteca/fontes/", titulo: "Fontes", sub: "Onde pesquisar", icone: "globe" }
 ---
 
 **Arte prévia.** Trabalho já publicado que contém a ideia ou parte dela. Todo caminho lista a sua.

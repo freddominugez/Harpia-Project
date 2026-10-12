@@ -1,0 +1,14 @@
+---
+// Trilha de navegação. O último item é a página atual.
+import type { Crumb } from "../lib/types";
+interface Props { itens: Crumb[] }
+const { itens } = Astro.props;
+---
+<nav aria-label="Localização">
+  <ol class="breadcrumb">
+    <li><a href="/" aria-label="Início"><img class="icon" src="/icons/home.svg" alt="" aria-hidden="true" width="15" height="15" /></a></li>
+    {itens.map((c, i) => (
+      <li>{c.href && i < itens.length - 1 ? <a href={c.href}>{c.rotulo}</a> : <span aria-current="page">{c.rotulo}</span>}</li>
+    ))}
+  </ol>
+</nav>

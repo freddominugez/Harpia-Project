@@ -1,13 +1,27 @@
 ---
-// Layout das páginas em markdown (equações, glossário, arquivados, sobre, ideia).
+// Layout das páginas em markdown (equações, glossário, arquivados, sobre).
+// Mesmo padrão editorial das fichas: trilha, H1, descrição, leitura e índice lateral fixo.
 import Base from "./Base.astro";
-const { frontmatter } = Astro.props;
+import PageIntro from "../components/PageIntro.astro";
+import ArticleSidebar from "../components/ArticleSidebar.astro";
+import { NAV } from "../config";
+import type { Crumb, Relacionado } from "../lib/types";
+
+const { frontmatter, headings = [] } = Astro.props;
+const partes = Astro.url.pathname.split("/").filter(Boolean);
+const trilha: Crumb[] = [];
+if (partes.length > 1) {
+  const pai = NAV.find((n) => n.href === `/${partes[0]}/`);
+  if (pai) trilha.push({ rotulo: pai.rotulo, href: pai.href });
+}
+trilha.push({ rotulo: frontmatter.titulo });
+const toc = headings.filter((h: { depth: number }) => h.depth === 2).map((h: { slug: string; text: string }) => ({ id: h.slug, texto: h.text }));
+const relacionados: Relacionado[] = (frontmatter.relacionados ?? []).map((r: Relacionado) => r);
 ---
 <Base titulo={frontmatter.titulo} descricao={frontmatter.descricao}>
-  <div class="container page-head">
-    {frontmatter.kicker && <div class="eyebrow">{frontmatter.kicker}</div>}
-    <h1>{frontmatter.titulo}</h1>
-    {frontmatter.lead && <p class="lead">{frontmatter.lead}</p>}
+  <PageIntro trilha={trilha} eyebrow={frontmatter.kicker} titulo={frontmatter.titulo} lead={frontmatter.lead} />
+  <div class="container page-layout">
+    <article class="article prose"><slot /></article>
+    <ArticleSidebar toc={toc} relacionados={relacionados} tituloRelacionados="Veja também" />
   </div>
-  <section><div class="container prose"><slot /></div></section>
 </Base>

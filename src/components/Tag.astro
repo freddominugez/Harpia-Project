@@ -1,0 +1,7 @@
+---
+// Etiqueta/chip do sistema visual. Variantes: neutra, gold, soft-gold e os estatutos de evidência.
+interface Props { variante?: "neutra" | "gold" | "soft-gold" | "medido" | "arte" | "lacuna" | "teste"; href?: string }
+const { variante = "neutra", href } = Astro.props;
+const cls = variante === "neutra" ? "tag" : `tag ${variante}`;
+---
+{href ? <a class={cls} href={href}><slot /></a> : <span class={cls}><slot /></span>}

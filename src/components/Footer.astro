@@ -1,51 +1,31 @@
 ---
-import { SITE } from "../config";
+// Rodapé compacto em faixa grafite, como na referência aprovada.
+import { NAV, SITE } from "../config";
 const ano = new Date().getFullYear();
 ---
-<footer class="site">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand">
-          <img src="/img/harpya-logo-512.png" alt="" width="56" height="56" />
-          <div>
-            <strong style="display:block;font-size:1.3rem;letter-spacing:-0.03em;color:#fff">Harpya</strong>
-            <span style="color:rgba(255,255,255,.72)">{SITE.lema}.</span>
-          </div>
-        </div>
-        <p>Pesquisa aberta sobre eficiência de modelos de linguagem. Só entram caminhos com equação, custo conhecido e teste refutável.</p>
+<footer class="site-footer">
+  <div class="container wide footer-row">
+    <a class="footer-brand" href="/" aria-label={`${SITE.nome}, página inicial`}>
+      <picture>
+        <source srcset="/img/harpya-mark-head.webp" type="image/webp" />
+        <img src="/img/harpya-mark-head.png" alt="" width="40" height="37" loading="lazy" />
+      </picture>
+      <span><b>HARPYA</b><small>{SITE.subtitulo.toUpperCase()}</small></span>
+    </a>
+    <span class="footer-motto">{SITE.lema}.</span>
+    <nav class="footer-nav" aria-label="Links do rodapé">
+      {NAV.map((i) => <a href={i.href}>{i.rotulo}</a>)}
+    </nav>
+    {SITE.repositorioPublico && (
+      <div class="footer-social">
+        <a href={SITE.repositorio} target="_blank" rel="noopener noreferrer" aria-label="Repositório no GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+        </a>
       </div>
-      <div>
-        <h4>Explorar</h4>
-        <div class="footer-links">
-          <a href="/origens/">Origens</a>
-          <a href="/aprendizado/">Aprendizado de Máquina</a>
-          <a href="/videos/">Vídeos</a>
-          <a href="/equacoes/">Equações</a>
-        </div>
-      </div>
-      <div>
-        <h4>Pesquisa</h4>
-        <div class="footer-links">
-          <a href="/estudos/">Caminhos válidos</a>
-          <a href="/estudos/arquivados/">Arquivados</a>
-          <a href="/biblioteca/">Livros e artigos</a>
-          <a href="/biblioteca/glossario/">Glossário</a>
-        </div>
-      </div>
-      <div>
-        <h4>Comunidade</h4>
-        <div class="footer-links">
-          <a href="/forum/">Fórum</a>
-          <a href="/news/">News</a>
-          <a href={SITE.repositorio} rel="noopener">GitHub</a>
-          <a href="/sobre/">Sobre e como contribuir</a>
-        </div>
-      </div>
-    </div>
-    <div class="signature">
-      <span><b>{SITE.autor}</b> - <a class="vulcan" href={SITE.assinaturaUrl} rel="noopener">{SITE.assinatura}</a></span>
-      <span>© {ano} · Conteúdo sob CC BY 4.0 · Código sob MIT</span>
+    )}
+    <div class="footer-credit">
+      <span><b>{SITE.autor}</b> - <a href={SITE.assinaturaUrl} target="_blank" rel="noopener noreferrer">{SITE.assinatura}</a></span>
+      <span>© {ano} {SITE.nome} · Conteúdo CC BY 4.0 · Código MIT</span>
     </div>
   </div>
 </footer>

@@ -1,0 +1,1298 @@
+{
+ "rotas": [
+  "/404.html",
+  "/aprendizado/",
+  "/biblioteca/fontes/",
+  "/biblioteca/glossario/",
+  "/biblioteca/",
+  "/equacoes/",
+  "/estudos/a-ideia-mais-interessante/",
+  "/estudos/arquivados/",
+  "/estudos/caminhos/atalho-entre-camadas/",
+  "/estudos/caminhos/bits-por-coluna/",
+  "/estudos/caminhos/cabeca-de-saida/",
+  "/estudos/caminhos/certificado-bits-dimensoes/",
+  "/estudos/caminhos/certificado-inteiro/",
+  "/estudos/caminhos/controle-bellman/",
+  "/estudos/caminhos/escala-diagonal/",
+  "/estudos/caminhos/pesos-de-fase/",
+  "/estudos/caminhos/raio-probabilistico/",
+  "/estudos/caminhos/reticulados-e8-leech/",
+  "/estudos/caminhos/tensor-train-na-cabeca/",
+  "/estudos/caminhos/valor-e-derivada/",
+  "/estudos/",
+  "/forum/",
+  "/",
+  "/news/",
+  "/origens/",
+  "/sobre/",
+  "/videos/"
+ ],
+ "links_quebrados": [],
+ "arquivos_faltando": [],
+ "viewports": {
+  "1672x941": {
+   "/404.html": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/aprendizado/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/biblioteca/fontes/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/biblioteca/glossario/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/biblioteca/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/equacoes/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/estudos/a-ideia-mais-interessante/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/estudos/arquivados/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/estudos/caminhos/atalho-entre-camadas/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/estudos/caminhos/bits-por-coluna/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/estudos/caminhos/cabeca-de-saida/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/estudos/caminhos/certificado-bits-dimensoes/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/estudos/caminhos/certificado-inteiro/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/estudos/caminhos/controle-bellman/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/estudos/caminhos/escala-diagonal/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/estudos/caminhos/pesos-de-fase/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/estudos/caminhos/raio-probabilistico/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/estudos/caminhos/reticulados-e8-leech/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/estudos/caminhos/tensor-train-na-cabeca/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/estudos/caminhos/valor-e-derivada/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/estudos/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/forum/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/news/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/origens/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/sobre/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/videos/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   }
+  },
+  "1440x900": {
+   "/404.html": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/aprendizado/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/biblioteca/fontes/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/biblioteca/glossario/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/biblioteca/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/equacoes/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/estudos/a-ideia-mais-interessante/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/estudos/arquivados/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/estudos/caminhos/atalho-entre-camadas/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/estudos/caminhos/bits-por-coluna/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/estudos/caminhos/cabeca-de-saida/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/estudos/caminhos/certificado-bits-dimensoes/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/estudos/caminhos/certificado-inteiro/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/estudos/caminhos/controle-bellman/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/estudos/caminhos/escala-diagonal/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/estudos/caminhos/pesos-de-fase/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/estudos/caminhos/raio-probabilistico/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/estudos/caminhos/reticulados-e8-leech/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/estudos/caminhos/tensor-train-na-cabeca/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/estudos/caminhos/valor-e-derivada/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/estudos/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/forum/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/news/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/origens/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/sobre/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/videos/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   }
+  },
+  "1280x800": {
+   "/404.html": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/aprendizado/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/biblioteca/fontes/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/biblioteca/glossario/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/biblioteca/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/equacoes/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/estudos/a-ideia-mais-interessante/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/estudos/arquivados/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/estudos/caminhos/atalho-entre-camadas/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/estudos/caminhos/bits-por-coluna/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/estudos/caminhos/cabeca-de-saida/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/estudos/caminhos/certificado-bits-dimensoes/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/estudos/caminhos/certificado-inteiro/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/estudos/caminhos/controle-bellman/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/estudos/caminhos/escala-diagonal/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/estudos/caminhos/pesos-de-fase/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/estudos/caminhos/raio-probabilistico/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/estudos/caminhos/reticulados-e8-leech/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/estudos/caminhos/tensor-train-na-cabeca/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/estudos/caminhos/valor-e-derivada/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/estudos/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/forum/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/news/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/origens/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/sobre/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/videos/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   }
+  },
+  "1024x768": {
+   "/404.html": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/aprendizado/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/biblioteca/fontes/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/biblioteca/glossario/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/biblioteca/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/equacoes/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/estudos/a-ideia-mais-interessante/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/estudos/arquivados/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/estudos/caminhos/atalho-entre-camadas/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/estudos/caminhos/bits-por-coluna/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/estudos/caminhos/cabeca-de-saida/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/estudos/caminhos/certificado-bits-dimensoes/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/estudos/caminhos/certificado-inteiro/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/estudos/caminhos/controle-bellman/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/estudos/caminhos/escala-diagonal/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/estudos/caminhos/pesos-de-fase/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/estudos/caminhos/raio-probabilistico/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/estudos/caminhos/reticulados-e8-leech/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/estudos/caminhos/tensor-train-na-cabeca/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/estudos/caminhos/valor-e-derivada/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/estudos/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/forum/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/news/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/origens/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/sobre/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/videos/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   }
+  },
+  "768x1024": {
+   "/404.html": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/aprendizado/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/biblioteca/fontes/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/biblioteca/glossario/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/biblioteca/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/equacoes/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/estudos/a-ideia-mais-interessante/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/estudos/arquivados/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/estudos/caminhos/atalho-entre-camadas/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/estudos/caminhos/bits-por-coluna/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/estudos/caminhos/cabeca-de-saida/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/estudos/caminhos/certificado-bits-dimensoes/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/estudos/caminhos/certificado-inteiro/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/estudos/caminhos/controle-bellman/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/estudos/caminhos/escala-diagonal/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/estudos/caminhos/pesos-de-fase/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/estudos/caminhos/raio-probabilistico/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/estudos/caminhos/reticulados-e8-leech/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/estudos/caminhos/tensor-train-na-cabeca/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/estudos/caminhos/valor-e-derivada/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/estudos/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/forum/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/news/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/origens/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/sobre/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/videos/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   }
+  },
+  "430x932": {
+   "/404.html": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/aprendizado/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/biblioteca/fontes/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/biblioteca/glossario/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/biblioteca/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/equacoes/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/estudos/a-ideia-mais-interessante/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/estudos/arquivados/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/estudos/caminhos/atalho-entre-camadas/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/estudos/caminhos/bits-por-coluna/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/estudos/caminhos/cabeca-de-saida/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/estudos/caminhos/certificado-bits-dimensoes/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/estudos/caminhos/certificado-inteiro/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/estudos/caminhos/controle-bellman/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/estudos/caminhos/escala-diagonal/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/estudos/caminhos/pesos-de-fase/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/estudos/caminhos/raio-probabilistico/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/estudos/caminhos/reticulados-e8-leech/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/estudos/caminhos/tensor-train-na-cabeca/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/estudos/caminhos/valor-e-derivada/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/estudos/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/forum/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/news/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/origens/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/sobre/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/videos/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   }
+  },
+  "390x844": {
+   "/404.html": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/aprendizado/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/biblioteca/fontes/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/biblioteca/glossario/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/biblioteca/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/equacoes/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/estudos/a-ideia-mais-interessante/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/estudos/arquivados/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/estudos/caminhos/atalho-entre-camadas/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/estudos/caminhos/bits-por-coluna/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/estudos/caminhos/cabeca-de-saida/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/estudos/caminhos/certificado-bits-dimensoes/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/estudos/caminhos/certificado-inteiro/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/estudos/caminhos/controle-bellman/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/estudos/caminhos/escala-diagonal/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/estudos/caminhos/pesos-de-fase/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/estudos/caminhos/raio-probabilistico/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/estudos/caminhos/reticulados-e8-leech/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/estudos/caminhos/tensor-train-na-cabeca/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/estudos/caminhos/valor-e-derivada/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/estudos/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/forum/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/news/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/origens/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/sobre/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/videos/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   }
+  },
+  "360x780": {
+   "/404.html": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/aprendizado/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/biblioteca/fontes/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/biblioteca/glossario/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/biblioteca/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/equacoes/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/estudos/a-ideia-mais-interessante/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/estudos/arquivados/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/estudos/caminhos/atalho-entre-camadas/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/estudos/caminhos/bits-por-coluna/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/estudos/caminhos/cabeca-de-saida/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/estudos/caminhos/certificado-bits-dimensoes/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/estudos/caminhos/certificado-inteiro/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/estudos/caminhos/controle-bellman/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/estudos/caminhos/escala-diagonal/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/estudos/caminhos/pesos-de-fase/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/estudos/caminhos/raio-probabilistico/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/estudos/caminhos/reticulados-e8-leech/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/estudos/caminhos/tensor-train-na-cabeca/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/estudos/caminhos/valor-e-derivada/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/estudos/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/forum/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/news/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/origens/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/sobre/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/videos/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   }
+  },
+  "320x720": {
+   "/404.html": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/aprendizado/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/biblioteca/fontes/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/biblioteca/glossario/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/biblioteca/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/equacoes/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/estudos/a-ideia-mais-interessante/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/estudos/arquivados/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/estudos/caminhos/atalho-entre-camadas/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/estudos/caminhos/bits-por-coluna/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/estudos/caminhos/cabeca-de-saida/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/estudos/caminhos/certificado-bits-dimensoes/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/estudos/caminhos/certificado-inteiro/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/estudos/caminhos/controle-bellman/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/estudos/caminhos/escala-diagonal/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/estudos/caminhos/pesos-de-fase/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/estudos/caminhos/raio-probabilistico/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/estudos/caminhos/reticulados-e8-leech/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/estudos/caminhos/tensor-train-na-cabeca/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/estudos/caminhos/valor-e-derivada/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/estudos/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/forum/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/news/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/origens/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/sobre/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/videos/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   }
+  }
+ },
+ "console": {},
+ "imagens_quebradas": [],
+ "interacoes": {
+  "menu_visivel_no_celular": true,
+  "menu_abre_aria_expanded": true,
+  "menu_fecha_com_esc": true,
+  "foco_volta_ao_botao": true,
+  "menu_navega_para_news": true,
+  "nav_desktop_visivel": true,
+  "busca_abre_ctrl_k": true,
+  "busca_resultados_bellman": 1,
+  "busca_sem_acento_atencao": 1,
+  "busca_navega": "http://192.0.2.2:4321/estudos/caminhos/controle-bellman/",
+  "busca_fecha_com_esc": true,
+  "toc_itens": 7,
+  "toc_sticky": "sticky",
+  "katex_blocos": 7,
+  "katex_erros_no_site": 0,
+  "skip_link_focavel": true
+ },
+ "resumo": {
+  "rotas": 27,
+  "viewports": 9,
+  "verificacoes_scroll": 243,
+  "rolagem_horizontal": [],
+  "links_quebrados": 0,
+  "arquivos_faltando": 0,
+  "imagens_quebradas": 0,
+  "rotas_com_erro_console": 0
+ }
+}

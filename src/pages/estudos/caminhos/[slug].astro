@@ -1,51 +1,114 @@
 ---
+// Ficha de cada caminho, no padrão editorial de docs/referencia-visual-aprovada.png:
+// trilha, H1, descrição, etiquetas, equação central, blocos numerados, índice lateral fixo,
+// trilhas relacionadas e discussão.
 import Base from "../../../layouts/Base.astro";
+import PageIntro from "../../../components/PageIntro.astro";
+import ArticleSidebar from "../../../components/ArticleSidebar.astro";
 import M from "../../../components/M.astro";
 import Status from "../../../components/Status.astro";
+import Tag from "../../../components/Tag.astro";
 import Giscus from "../../../components/Giscus.astro";
 import { getCollection, render } from "astro:content";
+import { SITE, giscusConfigurado } from "../../../config";
+import { dataNumerica, ROTULO_ESTATUTO } from "../../../lib/format";
+import type { Relacionado, TocItem } from "../../../lib/types";
 
 export async function getStaticPaths() {
   const caminhos = (await getCollection("caminhos")).sort((a, b) => a.data.numero - b.data.numero);
   return caminhos.map((c, i) => ({
     params: { slug: c.id },
-    props: { c, ant: caminhos[i - 1] ?? null, prox: caminhos[i + 1] ?? null },
+    props: { c, todos: caminhos, ant: caminhos[i - 1] ?? null, prox: caminhos[i + 1] ?? null },
   }));
 }
-const { c, ant, prox } = Astro.props;
+const { c, todos, ant, prox } = Astro.props;
 const d = c.data;
-const { Content } = await render(c);
+const { Content, headings } = await render(c);
+const num = String(d.numero).padStart(2, "0");
+const palavras = (c.body ?? "").split(/\s+/).filter(Boolean).length + d.resumo.split(/\s+/).length + 60;
+const minutos = Math.max(1, Math.round(palavras / 200));
+
+const toc: TocItem[] = [
+  ...headings.filter((h) => h.depth === 2).map((h) => ({ id: h.slug, texto: h.text })),
+  { id: "teste", texto: "Teste e regra de parada" },
+  ...(d.arte_previa.length ? [{ id: "arte-previa", texto: "Arte prévia" }] : []),
+  { id: "discussao", texto: "Discussão" },
+];
+
+const icone = { medido: "chart", arte: "book", lacuna: "network", teste: "sigma" } as const;
+const vizinhos = [ant, prox].filter((x): x is NonNullable<typeof x> => !!x);
+const mesmos = todos.filter((x) => x.id !== c.id && x.data.estatuto === d.estatuto && !vizinhos.some((v) => v.id === x.id)).slice(0, 2);
+const relacionados: Relacionado[] = [...vizinhos, ...mesmos].map((x) => ({
+  href: `/estudos/caminhos/${x.id}/`,
+  titulo: x.data.titulo,
+  sub: `Caminho ${String(x.data.numero).padStart(2, "0")} · ${ROTULO_ESTATUTO[x.data.estatuto]}`,
+  icone: icone[x.data.estatuto],
+}));
 ---
 <Base titulo={d.titulo} descricao={d.resumo}>
-  <div class="container page-head">
-    <div class="eyebrow">Caminho {String(d.numero).padStart(2, "0")}{d.principal ? " · linha principal" : ""}</div>
-    <h1>{d.titulo}</h1>
-    <p class="lead">{d.resumo}</p>
-    <div class="meta-row" style="margin-top:14px"><Status tipo={d.estatuto} texto={d.selo} /><span>Atualizado em {d.atualizado.split("-").reverse().join("/")}</span></div>
-  </div>
-  <section>
-    <div class="container layout-side">
-      <article class="prose">
-        {d.equacao && <M t={d.equacao} d />}
-        <Content />
-        <h2>Teste e regra de parada</h2>
-        <p><b>Próximo teste.</b> {d.proximo_teste}</p>
-        <p><b>Parar se.</b> {d.parar_se}</p>
-        <hr />
-        <h2>Discussão</h2>
-        <Giscus />
-      </article>
-      <aside class="aside">
-        <div class="panel">
-          <h3>Arte prévia</h3>
-          <ul style="margin:10px 0 0;padding-left:18px;font-size:.92rem;line-height:1.7">{d.arte_previa.map((a) => <li>{a}</li>)}</ul>
-        </div>
-        <div class="facts">
-          {ant && <a class="fact" href={`/estudos/caminhos/${ant.id}/`}><b>Anterior</b>{ant.data.titulo}</a>}
-          {prox && <a class="fact" href={`/estudos/caminhos/${prox.id}/`}><b>Próximo</b>{prox.data.titulo}</a>}
-          <a class="fact" href="/estudos/"><b>Todos</b>Voltar aos caminhos</a>
-        </div>
-      </aside>
+  <PageIntro
+    trilha={[{ rotulo: "Estudos", href: "/estudos/" }, { rotulo: `Caminho ${num}`, href: "/estudos/#caminhos" }, { rotulo: d.titulo }]}
+    eyebrow={`Caminho ${num}${d.principal ? " · linha principal" : ""}`}
+    titulo={d.titulo}
+    lead={d.resumo}
+  >
+    <div class="tag-row">
+      <Tag variante="gold">Caminho {num}</Tag>
+      <Status tipo={d.estatuto} texto={d.selo} />
+      {d.principal && <Tag variante="soft-gold">Linha principal</Tag>}
     </div>
-  </section>
+    <div class="page-meta">
+      <span class="author">
+        <img src="/img/harpya-mark-head.webp" alt="" width="38" height="38" />
+        <span><b>{SITE.autor}</b>{SITE.nome}</span>
+      </span>
+      <span><img class="icon" src="/icons/file.svg" alt="" aria-hidden="true" width="16" height="16" />Atualizado em <time datetime={d.atualizado}>{dataNumerica(d.atualizado)}</time></span>
+      <span><img class="icon" src="/icons/book.svg" alt="" aria-hidden="true" width="16" height="16" />{minutos} min de leitura</span>
+      <span><img class="icon" src="/icons/messages.svg" alt="" aria-hidden="true" width="16" height="16" />{giscusConfigurado() ? "Discussão aberta" : "Fórum aguardando ativação"}</span>
+    </div>
+  </PageIntro>
+
+  <div class="container page-layout">
+    <article class="article">
+      {d.equacao && (
+        <div class="article-banner">
+          <div>
+            <span class="kicker">Equação central do mecanismo</span>
+            <M t={d.equacao} d />
+          </div>
+          <img src="/img/harpya-mark-head.webp" alt="" width="150" height="140" loading="lazy" />
+        </div>
+      )}
+      <div class="prose numbered">
+        <Content />
+        <h2 id="teste">Teste e regra de parada</h2>
+        <p><b>Próximo teste.</b> {d.proximo_teste}</p>
+        <div class="notice"><p><b>Parar se.</b> {d.parar_se}</p></div>
+        {d.arte_previa.length > 0 && (
+          <>
+            <h2 id="arte-previa">Arte prévia</h2>
+            <p>O que já existe publicado sobre este mecanismo. A ficha diz o que pode ser novo.</p>
+            <ul>{d.arte_previa.map((a) => <li>{a}</li>)}</ul>
+          </>
+        )}
+        <h2 id="discussao">Discussão</h2>
+      </div>
+      <Giscus />
+      <nav class="next-prev" aria-label="Caminhos vizinhos">
+        {ant && <a href={`/estudos/caminhos/${ant.id}/`}><small>← Anterior</small>{ant.data.titulo}</a>}
+        {prox && <a class="next" href={`/estudos/caminhos/${prox.id}/`}><small>Próximo →</small>{prox.data.titulo}</a>}
+      </nav>
+    </article>
+    <ArticleSidebar toc={toc} relacionados={relacionados}>
+      <div class="surface aside-panel">
+        <h3>Discussão no fórum</h3>
+        {giscusConfigurado() ? (
+          <p>Cada caminho tem a sua própria conversa, com login pelo GitHub.</p>
+        ) : (
+          <p>O fórum (GitHub Discussions via Giscus) ainda não foi ativado. Enquanto isso, nenhuma discussão é exibida.</p>
+        )}
+        <a class="card-link" href="#discussao">Ir para a discussão →</a>
+      </div>
+    </ArticleSidebar>
+  </div>
 </Base>

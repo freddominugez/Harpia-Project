@@ -1,0 +1,21 @@
+---
+// Lista do fórum. Sem integração ativa, mostra pautas propostas identificadas como tal,
+// ou um estado vazio. Nunca exibe autores, contagens ou discussões inventadas.
+import type { TopicoForum } from "../data/home";
+import { giscusConfigurado } from "../config";
+interface Props { topicos: TopicoForum[] }
+const { topicos } = Astro.props;
+const aviso = giscusConfigurado() ? "Pautas sugeridas pelo projeto" : "Pautas propostas · fórum aguardando ativação";
+---
+<div class="ref-forum-box">
+  <span class="ref-forum-notice">{aviso}</span>
+  {topicos.length ? topicos.map((t) => (
+    <a class="ref-forum-topic" href={t.href}>
+      <span class="ref-avatar" aria-hidden="true">{t.iniciais}</span>
+      <span class="ref-forum-title"><b>{t.titulo}</b><small>Pauta proposta · {t.categoria}</small></span>
+      <span class="ref-topic-chevron" aria-hidden="true">↗</span>
+    </a>
+  )) : (
+    <p class="forum-empty">Ainda não há discussões. A primeira pode ser a sua.</p>
+  )}
+</div>

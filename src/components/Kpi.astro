@@ -1,0 +1,10 @@
+---
+// Indicador da faixa de quatro cards. Só números verificáveis do acervo.
+import type { Kpi as KpiT } from "../data/home";
+interface Props { k: KpiT }
+const { k } = Astro.props;
+---
+<a class="ref-stat" href={k.href}>
+  <span class="ref-stat-symbol"><img class="icon" src={`/icons/${k.icone}.svg`} alt="" aria-hidden="true" width="34" height="34" /></span>
+  <span class="ref-stat-copy"><b>{k.valor}</b><strong>{k.rotulo}</strong><small>{k.detalhe}</small></span>
+</a>

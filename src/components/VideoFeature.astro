@@ -1,0 +1,20 @@
+---
+// Vídeo em destaque: pôster, play, etiqueta e link real para o YouTube.
+interface Props { id: string; titulo: string; canal: string; resumo: string; poster: string }
+const { id, titulo, canal, resumo, poster } = Astro.props;
+---
+<a class="ref-feature-video" href={`https://www.youtube.com/watch?v=${id}`} target="_blank" rel="noopener noreferrer" aria-label={`Assistir "${titulo}", de ${canal}, no YouTube (abre em nova aba)`}>
+  <div class="ref-video-cover">
+    <img src={poster} alt="" loading="lazy" decoding="async" width="1120" height="620" />
+    <span class="ref-play" aria-hidden="true"></span>
+    <span class="ref-vid-tag">Vídeo</span>
+  </div>
+  <div class="ref-video-text">
+    <h3>{titulo}</h3>
+    <p>{resumo}</p>
+    <div class="ref-video-footer">
+      <span><img class="icon" src="/icons/play.svg" alt="" aria-hidden="true" width="13" height="13" />{canal}</span>
+      <span>YouTube ↗</span>
+    </div>
+  </div>
+</a>

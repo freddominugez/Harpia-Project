@@ -1,5 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
+import PageIntro from "../../components/PageIntro.astro";
+import Tag from "../../components/Tag.astro";
 import livros from "../../data/livros.json";
 import artigos from "../../data/artigos.json";
 import fontes from "../../data/fontes.json";
@@ -7,21 +9,20 @@ const nFontes = fontes.reduce((s, g) => s + g.itens.length, 0);
 const ordenados = [...artigos].sort((a, b) => a.ano - b.ano);
 ---
 <Base titulo="Biblioteca" descricao="Livros, artigos acadêmicos e fontes de alta qualidade sobre matemática, física e IA.">
-  <div class="container page-head">
-    <div class="eyebrow">Biblioteca</div>
-    <h1>Livros, artigos e onde pesquisar</h1>
-    <p class="lead">Cada item indica o caminho do projeto que ele sustenta. Vários livros têm edição gratuita oficial.</p>
-    <div class="meta-row" style="margin-top:14px"><a class="chip" href="#livros">{livros.length} livros</a><a class="chip" href="#artigos">{artigos.length} artigos</a><a class="chip" href="#fontes">{nFontes} fontes</a><a class="chip" href="/biblioteca/glossario/">Glossário</a></div>
-  </div>
+  <PageIntro trilha={[{ rotulo: "Biblioteca" }]} eyebrow="Biblioteca" titulo="Livros, artigos e onde pesquisar" lead="Cada item indica o caminho do projeto que ele sustenta. Vários livros têm edição gratuita oficial.">
+    <div class="tag-row">
+      <Tag href="#livros">{livros.length} livros</Tag><Tag href="#artigos">{artigos.length} artigos</Tag><Tag href="/biblioteca/fontes/">{nFontes} fontes</Tag><Tag href="/biblioteca/glossario/">Glossário</Tag>
+    </div>
+  </PageIntro>
 
-  <section id="livros">
+  <section class="section" id="livros">
     <div class="container">
       <div class="section-head"><div><h2>Livros</h2><p>Da álgebra linear aos reticulados.</p></div></div>
       <div class="shelf">
         {livros.map((l) => (
           <div class="book">
             {l.url ? (
-              <a class={`cover ${l.cor}`} href={l.url} target="_blank" rel="noopener"><small>{l.nota.toUpperCase()}</small><b>{l.titulo}</b><small>{l.autores}</small></a>
+              <a class={`cover ${l.cor}`} href={l.url} target="_blank" rel="noopener noreferrer"><small>{l.nota.toUpperCase()}</small><b>{l.titulo}</b><small>{l.autores}</small></a>
             ) : (
               <div class={`cover ${l.cor}`}><small>{l.nota.toUpperCase()}</small><b>{l.titulo}</b><small>{l.autores}</small></div>
             )}
@@ -32,7 +33,7 @@ const ordenados = [...artigos].sort((a, b) => a.ano - b.ano);
     </div>
   </section>
 
-  <section id="artigos">
+  <section class="section" id="artigos">
     <div class="container">
       <div class="section-head"><div><h2>Artigos acadêmicos</h2><p>Os trabalhos que definem a base a bater e a arte prévia de cada caminho.</p></div></div>
       <div class="filters" role="group" aria-label="Filtrar artigos">
@@ -45,24 +46,19 @@ const ordenados = [...artigos].sort((a, b) => a.ano - b.ano);
         {ordenados.map((p) => (
           <div class="paper" data-grupo={p.grupo}>
             <div class="ano">{p.ano}</div>
-            <div><a href={p.url} target="_blank" rel="noopener">{p.titulo}</a><div class="v">{p.autores}</div></div>
-            <span class={`chip ${p.selo}`}>{p.rotulo}</span>
+            <div><a href={p.url} target="_blank" rel="noopener noreferrer">{p.titulo}</a><div class="v">{p.autores}</div></div>
+            <span class={`tag ${p.selo}`}>{p.rotulo}</span>
           </div>
         ))}
       </div>
     </div>
   </section>
 
-  <section id="fontes">
+  <section class="section" id="fontes">
     <div class="container">
-      <div class="section-head"><div><h2>{nFontes} fontes de alta qualidade</h2><p>Institutos de matemática e física, grandes projetos, repositórios de artigos, laboratórios de IA dos Estados Unidos e da China, e o código aberto que roda tudo.</p></div></div>
-      <div class="srcs">
-        {fontes.map((g) => (
-          <div class="panel sg">
-            <h3>{g.grupo}<small>{g.itens.length}</small></h3>
-            <ul>{g.itens.map(([n, u, d]) => <li><a href={u} target="_blank" rel="noopener">{n}</a><span>{d}</span></li>)}</ul>
-          </div>
-        ))}
+      <div class="panel teaser">
+        <div><h2 style="margin-bottom:4px">{nFontes} fontes de alta qualidade</h2><p>Institutos de matemática e física, grandes projetos, repositórios de artigos, laboratórios de IA dos Estados Unidos e da China, e o código aberto que roda tudo.</p></div>
+        <a class="btn gold slim" href="/biblioteca/fontes/">Ver as fontes →</a>
       </div>
     </div>
   </section>

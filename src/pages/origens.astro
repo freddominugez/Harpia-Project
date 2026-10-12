@@ -1,12 +1,9 @@
 ---
 import Base from "../layouts/Base.astro";
+import PageIntro from "../components/PageIntro.astro";
 import Timeline from "../components/Timeline.astro";
 ---
 <Base titulo="Origens" descricao="Linha do tempo das LLMs, do neurônio de McCulloch e Pitts ao Harpya.">
-  <div class="container page-head">
-    <div class="eyebrow">Origens</div>
-    <h1>De um neurônio lógico a bilhões de pesos</h1>
-    <p class="lead">A cronologia que o projeto usa como mapa. Pontos cheios marcam mudanças na forma de representar palavras ou de calcular com elas.</p>
-  </div>
-  <section><div class="container panel"><Timeline /></div></section>
+  <PageIntro trilha={[{ rotulo: "Origens" }]} eyebrow="Origens" titulo="De um neurônio lógico a bilhões de pesos" lead="A cronologia que o projeto usa como mapa. Pontos cheios marcam mudanças na forma de representar palavras ou de calcular com elas." />
+  <section class="page-body"><div class="container"><div class="panel"><Timeline /></div></div></section>
 </Base>

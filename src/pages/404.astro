@@ -2,10 +2,17 @@
 import Base from "../layouts/Base.astro";
 ---
 <Base titulo="Página não encontrada">
-  <div class="container page-head" style="text-align:center;padding:90px 0">
-    <img src="/img/harpya-logo-512.png" alt="" width="140" height="140" style="margin:0 auto 20px" />
-    <h1>Esta trilha não existe</h1>
-    <p class="lead" style="margin:14px auto">A página pode ter mudado de lugar.</p>
-    <a class="btn btn-primary" href="/">Voltar ao início</a>
-  </div>
+  <section class="container not-found">
+    <picture>
+      <source srcset="/img/harpya-mark-head.webp" type="image/webp" />
+      <img src="/img/harpya-mark-head.png" alt="" width="150" height="140" />
+    </picture>
+    <div class="eyebrow">Erro 404</div>
+    <h1 style="margin-top:12px">Esta trilha não existe</h1>
+    <p>A página pode ter mudado de lugar. Use a busca ou volte para o início.</p>
+    <div class="ref-hero-cta" style="justify-content:center">
+      <a class="btn gold" href="/">Voltar ao início</a>
+      <button type="button" class="btn outline" data-search-open>Pesquisar no site</button>
+    </div>
+  </section>
 </Base>

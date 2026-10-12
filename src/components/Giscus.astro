@@ -21,7 +21,7 @@ const ok = giscusConfigurado();
         data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="top"
-        data-theme="preferred_color_scheme"
+        data-theme="light"
         data-lang="pt"
         data-loading="lazy"
         crossorigin="anonymous"
@@ -29,14 +29,9 @@ const ok = giscusConfigurado();
     </>
   ) : (
     <div class="setup">
-      <strong>O fórum ainda não foi ligado.</strong>
-      <p style="margin-top:6px">As discussões ficam no GitHub Discussions do repositório, via Giscus. Para ativar:</p>
-      <ol>
-        <li>Deixe o repositório público e ative <em>Discussions</em> em Settings.</li>
-        <li>Crie as categorias <em>Caminhos</em>, <em>Perguntas</em>, <em>Resultados e reproduções</em> e <em>Propostas novas</em>.</li>
-        <li>Instale o app em <a href="https://github.com/apps/giscus" rel="noopener">github.com/apps/giscus</a>.</li>
-        <li>Gere os IDs em <a href="https://giscus.app/pt" rel="noopener">giscus.app</a> e preencha <code>GISCUS</code> em <code>src/config.ts</code>.</li>
-      </ol>
+      <strong>O fórum ainda não foi ativado.</strong>
+      <p style="margin:6px 0 0">As discussões vão acontecer no GitHub Discussions, com login pelo GitHub. Enquanto isso, nenhuma conversa é exibida aqui. As pautas propostas estão na página do <a href="/forum/">fórum</a>.</p>
+      {/* Para ativar: docs/DEPLOY.md, seção "Fórum com Giscus". */}
     </div>
   )}
 </div>

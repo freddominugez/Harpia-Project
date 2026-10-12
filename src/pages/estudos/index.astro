@@ -1,29 +1,48 @@
 ---
 import Base from "../../layouts/Base.astro";
+import PageIntro from "../../components/PageIntro.astro";
 import PathCard from "../../components/PathCard.astro";
 import IdeaCard from "../../components/IdeaCard.astro";
+import ResponsiveGrid from "../../components/ResponsiveGrid.astro";
+import Status from "../../components/Status.astro";
 import { getCollection } from "astro:content";
 const caminhos = (await getCollection("caminhos")).sort((a, b) => a.data.numero - b.data.numero);
 ---
 <Base titulo="Estudos" descricao="Os caminhos válidos de eficiência em embeddings, tokens e busca vetorial.">
-  <div class="container page-head">
-    <div class="eyebrow">Estudos</div>
-    <h1>Por que este projeto existe</h1>
-  </div>
-  <section>
+  <PageIntro trilha={[{ rotulo: "Estudos" }]} eyebrow="Estudos" titulo="Por que este projeto existe" lead={`${caminhos.length} caminhos válidos, cada um com equação, custo conhecido, teste refutável e a arte prévia que já existe.`} />
+  <section class="section">
     <div class="container">
       <p class="origin">Este projeto nasceu da inferência lógica sobre o que poderia ser acionável naquilo que chamamos de cronologia de desenvolvimento da IA. Para isso, partimos de inferências lógicas para achar relações matemáticas.</p>
     </div>
   </section>
-  <section><div class="container"><IdeaCard /></div></section>
-  <section>
+  <section class="section"><div class="container"><IdeaCard /></div></section>
+  <section class="section" id="caminhos">
     <div class="container">
       <div class="section-head">
         <div><h2>Caminhos válidos</h2><p>Critério de entrada: mecanismo em equação, custo conhecido e teste refutável. Ter arte prévia não exclui; a página diz o que já existe e o que pode ser novo.</p></div>
-        <a class="btn btn-secondary" href="/estudos/arquivados/">Ver arquivados</a>
+        <a class="btn outline slim" href="/estudos/arquivados/">Ver arquivados</a>
       </div>
-      <div class="legend"><span class="chip medido">medido no projeto</span><span class="chip arte">arte prévia</span><span class="chip lacuna">lacuna</span><span class="chip teste">teste ou enquadramento</span></div>
-      <div class="paths">{caminhos.map((c) => <PathCard c={c} />)}</div>
+      <div class="legend"><Status tipo="medido" /><Status tipo="arte" /><Status tipo="lacuna" /><Status tipo="teste" /></div>
+      <ResponsiveGrid min="300px">{caminhos.map((c) => <PathCard c={c} />)}</ResponsiveGrid>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container grid g2">
+      <div class="panel">
+        <h2>Como um caminho entra</h2>
+        <p style="margin:8px 0 12px">Analogia física não é prova. Um caminho só entra no Harpya quando vira:</p>
+        <ol class="criteria">
+          <li>uma <b>equação</b> com o mecanismo de economia;</li>
+          <li>um <b>custo</b> em bytes, operações ou latência;</li>
+          <li>uma <b>previsão refutável</b> com regra de parada;</li>
+          <li>a lista do que <b>já existe publicado</b> sobre ele.</li>
+        </ol>
+      </div>
+      <div class="panel">
+        <h2>O que ficou de fora</h2>
+        <p style="margin:8px 0 14px">Linhas avaliadas e arquivadas, cada uma com o motivo em uma linha. Qualquer item volta se aparecer um mecanismo com equação, custo e teste.</p>
+        <a class="btn gold slim" href="/estudos/arquivados/">Ver os arquivados →</a>
+      </div>
     </div>
   </section>
 </Base>

@@ -8,23 +8,20 @@ const { limite = 6 } = Astro.props;
 let itens: { fonte: string; titulo: string; url: string; data: string }[] = [];
 try { itens = JSON.parse(fs.readFileSync("public/data/news.json", "utf-8")); } catch (e) { itens = []; }
 const lista = itens.slice(0, limite);
-const host = (u: string) => u.replace(/^https?:\/\//, "");
+const host = (u: string) => u.replace(/^https?:\/\//, "").replace(/\/$/, "");
 ---
 <div class="news">
-  <div>
-    <span class="live"><i></i>News</span>
-    <h2 style="margin-top:10px;font-size:1.7rem">O que saiu esta semana</h2>
-    <p style="margin-top:6px">Atualizado por robô de RSS a cada 6 horas. Só entram itens ligados a embeddings, busca vetorial, quantização e eficiência.</p>
-    <div style="margin-top:14px">
-      {lista.length ? lista.map((n) => (
-        <a class="ni" href={n.url} target="_blank" rel="noopener"><small>{n.fonte}{n.data && ` · ${n.data}`}</small><b>{n.titulo}</b></a>
-      )) : (
-        <div class="empty">O robô ainda não rodou. Quando <code>public/data/news.json</code> tiver itens, as manchetes aparecem aqui.</div>
-      )}
-    </div>
+  <div class="surface news-list">
+    <div style="padding:16px 0 6px"><span class="live"><i></i>Atualizado por robô de RSS a cada 6 horas</span></div>
+    {lista.length ? lista.map((n) => (
+      <a class="ni" href={n.url} target="_blank" rel="noopener noreferrer"><small>{n.fonte}{n.data && ` · ${n.data}`}</small><b>{n.titulo}</b></a>
+    )) : (
+      <div class="empty" style="margin:10px 0 18px">O robô ainda não rodou. Quando <code>public/data/news.json</code> tiver itens, as manchetes aparecem aqui.</div>
+    )}
   </div>
-  <div class="feeds">
-    <div class="t">Feeds monitorados</div>
+  <aside class="surface aside-panel feeds" aria-label="Feeds monitorados">
+    <h3>Feeds monitorados</h3>
+    <p>Só entram itens ligados a embeddings, busca vetorial, quantização e eficiência.</p>
     {feeds.map((f: any) => <div><span>{f.nome}</span><code class={f.url ? undefined : "no"}>{f.url ? host(f.url) : f.nota}</code></div>)}
-  </div>
+  </aside>
 </div>

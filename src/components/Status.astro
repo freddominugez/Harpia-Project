@@ -1,7 +1,8 @@
 ---
 // Selo de estatuto: medido, arte (arte prévia), lacuna, teste.
+import Tag from "./Tag.astro";
 interface Props { tipo: "medido" | "arte" | "lacuna" | "teste"; texto?: string }
 const { tipo, texto } = Astro.props;
 const padrao = { medido: "medido no projeto", arte: "arte prévia", lacuna: "lacuna", teste: "teste ou enquadramento" };
 ---
-<span class={`chip ${tipo}`}>{texto ?? padrao[tipo]}</span>
+<Tag variante={tipo}>{texto ?? padrao[tipo]}</Tag>

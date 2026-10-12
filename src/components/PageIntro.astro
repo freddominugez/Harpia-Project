@@ -1,0 +1,16 @@
+---
+// Abertura das páginas internas: trilha, sobretítulo, H1, descrição e etiquetas.
+import Breadcrumb from "./Breadcrumb.astro";
+import type { Crumb } from "../lib/types";
+interface Props { trilha: Crumb[]; eyebrow?: string; titulo: string; lead?: string }
+const { trilha, eyebrow, titulo, lead } = Astro.props;
+---
+<section class="page-intro">
+  <div class="container">
+    <Breadcrumb itens={trilha} />
+    {eyebrow && <div class="eyebrow">{eyebrow}</div>}
+    <h1>{titulo}</h1>
+    {lead && <p class="intro">{lead}</p>}
+    <slot />
+  </div>
+</section>

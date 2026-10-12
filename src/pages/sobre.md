@@ -4,6 +4,10 @@ titulo: "Sobre o Harpya"
 kicker: "Sobre"
 lead: "Pesquisa aberta, conduzida por Carlos Frederico Domínguez, sobre onde a matemática dos modelos de linguagem ainda pode ceder velocidade, memória ou exatidão."
 descricao: "Autoria, método, licença e como contribuir com o Harpya."
+relacionados:
+  - { href: "/forum/", titulo: "Fórum", sub: "Discuta, reproduza, conteste", icone: "messages" }
+  - { href: "/estudos/", titulo: "Estudos", sub: "Os 12 caminhos válidos", icone: "file" }
+  - { href: "/news/", titulo: "News", sub: "Radar de publicações por RSS", icone: "rss" }
 ---
 
 ## Autor

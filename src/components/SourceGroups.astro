@@ -1,0 +1,12 @@
+---
+// Grupos de fontes de alta qualidade (src/data/fontes.json).
+import fontes from "../data/fontes.json";
+---
+<div class="srcs">
+  {fontes.map((g) => (
+    <div class="panel sg">
+      <h3>{g.grupo}<small>{g.itens.length}</small></h3>
+      <ul>{g.itens.map(([n, u, d]) => <li><a href={u} target="_blank" rel="noopener noreferrer">{n}</a><span>{d}</span></li>)}</ul>
+    </div>
+  ))}
+</div>

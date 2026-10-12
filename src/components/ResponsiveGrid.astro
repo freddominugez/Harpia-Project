@@ -1,0 +1,6 @@
+---
+// Grade que se reorganiza sozinha: colunas com largura mínima "min".
+interface Props { min?: string; class?: string }
+const { min = "260px", class: extra = "" } = Astro.props;
+---
+<div class={`auto-grid ${extra}`.trim()} style={`--min:${min}`}><slot /></div>

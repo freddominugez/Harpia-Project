@@ -1,12 +1,9 @@
 ---
 import Base from "../layouts/Base.astro";
+import PageIntro from "../components/PageIntro.astro";
 import VideoGrid from "../components/VideoGrid.astro";
 ---
 <Base titulo="Vídeos" descricao="Curadoria de vídeos sobre matemática, redes neurais e LLMs.">
-  <div class="container page-head">
-    <div class="eyebrow">Para estudar</div>
-    <h1>Vídeos</h1>
-    <p class="lead">Curadoria em inglês, com legendas automáticas. O agente de curadoria propõe novos vídeos toda semana em um pull request, e só entram depois de aprovação.</p>
-  </div>
-  <section><div class="container"><VideoGrid /></div></section>
+  <PageIntro trilha={[{ rotulo: "Vídeos" }]} eyebrow="Para estudar" titulo="Vídeos" lead="Curadoria em inglês, com legendas automáticas. O agente de curadoria propõe novos vídeos toda semana em um pull request, e só entram depois de aprovação." />
+  <section class="page-body"><div class="container"><VideoGrid /></div></section>
 </Base>

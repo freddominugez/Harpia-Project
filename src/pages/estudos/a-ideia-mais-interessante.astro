@@ -1,33 +1,45 @@
 ---
 import Base from "../../layouts/Base.astro";
+import PageIntro from "../../components/PageIntro.astro";
+import ArticleSidebar from "../../components/ArticleSidebar.astro";
 import IdeaCard from "../../components/IdeaCard.astro";
 import M from "../../components/M.astro";
 import Giscus from "../../components/Giscus.astro";
+import Tag from "../../components/Tag.astro";
+const titulo = "A ideia mais interessante que não serve para nada";
 ---
-<Base titulo="A ideia mais interessante que não serve para nada" descricao="E se a vetorização ocorresse em um espaço não euclidiano? A resposta, as medidas e por que a geometria hiperbólica continua sendo pesquisa real.">
-  <div class="container page-head">
-    <div class="eyebrow">Estudos</div>
-    <h1>A ideia mais interessante que não serve para nada</h1>
-  </div>
-  <section><div class="container"><IdeaCard completo /></div></section>
-  <section>
-    <div class="container prose">
-      <h2>O que medimos</h2>
-      <p>O programa testou curvatura constante (hiperbólica) e curvatura variável aprendida para recuperação, sob comparação justa: mesma dimensão, mesmos bytes, mesmo protocolo. Nenhuma das duas ganhou do espaço euclidiano.</p>
-      <h2>Por que o resultado faz sentido</h2>
-      <p>No modelo de Lorentz, a distância hiperbólica é uma função monótona de um produto interno com um sinal trocado:</p>
-      <M d t="d_{\mathbb H}(x,y)=\operatorname{arcosh}\!\big(-\langle x,y\rangle_{\mathcal L}\big),\qquad \langle x,y\rangle_{\mathcal L}=-x_0y_0+\textstyle\sum_{i\ge1}x_iy_i" />
-      <p>Ordenar por distância hiperbólica é ordenar por um produto interno. Em dimensão alta, os vetores de modelos hiperbólicos pré-treinados ficam numa casca fina, e o cosseno comum reproduz a ordenação geodésica quase por completo.</p>
-      <h2>O que a literatura diz</h2>
-      <ul>
-        <li>Em grafos de conhecimento a 32 dimensões, a vantagem hiperbólica é de décimos de ponto; os próprios autores relatam desempenho similar em 500 dimensões (Chami e coautores, 2020).</li>
-        <li>Uma reavaliação achou um erro no baseline euclidiano de um benchmark muito usado; corrigido, o modelo euclidiano empata ou vence (Katsman e Gilbert, 2025).</li>
-        <li>Em hierarquias puras e poucas dimensões, o ganho é grande: é aí que a linha continua viva (Nickel e Kiela, 2017).</li>
-      </ul>
-      <blockquote><p><b>Registro:</b> a geometria hiperbólica é uma linha de pesquisa real e ativa. Ela não serve para acelerar embeddings de texto de alta dimensão, mas representa bem hierarquias em dimensão baixa.</p></blockquote>
-      <hr />
-      <h2>Discussão</h2>
+<Base titulo={titulo} descricao="E se a vetorização ocorresse em um espaço não euclidiano? A resposta, as medidas e por que a geometria hiperbólica continua sendo pesquisa real.">
+  <PageIntro trilha={[{ rotulo: "Estudos", href: "/estudos/" }, { rotulo: titulo }]} eyebrow="Estudos · arquivado" titulo={titulo} lead="E se a vetorização ocorresse em um espaço não euclidiano? A resposta, as medidas e por que a geometria hiperbólica continua sendo pesquisa real.">
+    <div class="tag-row"><Tag variante="medido">medido no projeto</Tag><Tag>Geometria hiperbólica</Tag><Tag>Arquivado</Tag></div>
+  </PageIntro>
+  <div class="container page-layout">
+    <article class="article">
+      <div style="margin-bottom:26px"><IdeaCard completo /></div>
+      <div class="prose">
+        <h2 id="o-que-medimos">O que medimos</h2>
+        <p>O programa testou curvatura constante (hiperbólica) e curvatura variável aprendida para recuperação, sob comparação justa: mesma dimensão, mesmos bytes, mesmo protocolo. Nenhuma das duas ganhou do espaço euclidiano.</p>
+        <h2 id="por-que">Por que o resultado faz sentido</h2>
+        <p>No modelo de Lorentz, a distância hiperbólica é uma função monótona de um produto interno com um sinal trocado:</p>
+        <M d t={String.raw`d_{\mathbb H}(x,y)=\operatorname{arcosh}\!\big(-\langle x,y\rangle_{\mathcal L}\big),\qquad \langle x,y\rangle_{\mathcal L}=-x_0y_0+\textstyle\sum_{i\ge1}x_iy_i`} />
+        <p>Ordenar por distância hiperbólica é ordenar por um produto interno. Em dimensão alta, os vetores de modelos hiperbólicos pré-treinados ficam numa casca fina, e o cosseno comum reproduz a ordenação geodésica quase por completo.</p>
+        <h2 id="literatura">O que a literatura diz</h2>
+        <ul>
+          <li>Em grafos de conhecimento a 32 dimensões, a vantagem hiperbólica é de décimos de ponto; os próprios autores relatam desempenho similar em 500 dimensões (Chami e coautores, 2020).</li>
+          <li>Uma reavaliação achou um erro no baseline euclidiano de um benchmark muito usado; corrigido, o modelo euclidiano empata ou vence (Katsman e Gilbert, 2025).</li>
+          <li>Em hierarquias puras e poucas dimensões, o ganho é grande: é aí que a linha continua viva (Nickel e Kiela, 2017).</li>
+        </ul>
+        <blockquote><p><b>Registro:</b> a geometria hiperbólica é uma linha de pesquisa real e ativa. Ela não serve para acelerar embeddings de texto de alta dimensão, mas representa bem hierarquias em dimensão baixa.</p></blockquote>
+        <h2 id="discussao">Discussão</h2>
+      </div>
       <Giscus />
-    </div>
-  </section>
+    </article>
+    <ArticleSidebar
+      toc={[{ id: "o-que-medimos", texto: "O que medimos" }, { id: "por-que", texto: "Por que faz sentido" }, { id: "literatura", texto: "O que a literatura diz" }, { id: "discussao", texto: "Discussão" }]}
+      relacionados={[
+        { href: "/estudos/arquivados/", titulo: "Arquivados", sub: "Outras linhas que saíram da lista", icone: "file" },
+        { href: "/estudos/", titulo: "Caminhos válidos", sub: "Os 12 que seguem abertos", icone: "network" },
+        { href: "/biblioteca/", titulo: "Biblioteca", sub: "Artigos citados e arte prévia", icone: "book" },
+      ]}
+    />
+  </div>
 </Base>
