@@ -8,8 +8,8 @@ O código está em https://github.com/freddominugez/harpia-project (branch `main
 
 ```bash
 cd ~/Documents/GitHub
-git clone https://github.com/freddominugez/harpia-project.git "Harpia Project"
-cd "Harpia Project" && npm install && npm run dev
+git clone https://github.com/freddominugez/harpia-project.git "Harpya Project"
+cd "Harpya Project" && npm install && npm run dev
 ```
 
 ## 2. Vercel (plano Hobby, gratuito)
@@ -18,7 +18,7 @@ cd "Harpia Project" && npm install && npm run dev
 2. A Vercel detecta o Astro. Mantenha: build `npm run build`, saída `dist`.
 3. **Deploy.** O endereço inicial será algo como `harpia-project.vercel.app`.
 4. Se o endereço for outro, ajuste `site` em `astro.config.mjs` (usado no sitemap e nos links canônicos).
-5. Domínio próprio (opcional): **Settings > Domains**, por exemplo `harpia.byvulcan.com`, com o CNAME indicado pela Vercel.
+5. Domínio próprio (opcional): **Settings > Domains**, por exemplo `harpya.org`, com o CNAME indicado pela Vercel.
 
 Cada push na branch `main` gera um novo deploy. O robô de news faz até 4 commits por dia, bem dentro do limite do plano gratuito.
 

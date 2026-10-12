@@ -3,7 +3,7 @@ layout: ../../layouts/Texto.astro
 titulo: "Glossário"
 kicker: "Biblioteca"
 lead: "Os termos que aparecem no site, em uma ou duas linhas cada."
-descricao: "Glossário do Harpia Project: embeddings, quantização, busca vetorial e medição."
+descricao: "Glossário do Harpya Project: embeddings, quantização, busca vetorial e medição."
 ---
 
 **Arte prévia.** Trabalho já publicado que contém a ideia ou parte dela. Todo caminho lista a sua.

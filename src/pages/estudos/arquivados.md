@@ -3,7 +3,7 @@ layout: ../../layouts/Texto.astro
 titulo: "Arquivados"
 kicker: "Estudos"
 lead: "O que foi avaliado e saiu da lista, com o motivo em uma linha. Arquivar não é esquecer: qualquer item volta se aparecer um mecanismo com equação, custo e teste."
-descricao: "Linhas de pesquisa avaliadas e arquivadas pelo Harpia Project, com o motivo."
+descricao: "Linhas de pesquisa avaliadas e arquivadas pelo Harpya Project, com o motivo."
 ---
 
 ## Geometria

@@ -5,9 +5,9 @@ const ativo = (href: string) => (href === "/" ? atual === "/" : atual.startsWith
 ---
 <header class="topbar">
   <div class="container nav">
-    <a href="/" class="brand" aria-label="Harpia Project, página inicial">
-      <img src="/img/harpia-logo-512.png" alt="" width="50" height="50" />
-      <div class="brand-wordmark">HARPIA <span>PROJECT</span></div>
+    <a href="/" class="brand" aria-label="Harpya Project, página inicial">
+      <img src="/img/harpya-logo-512.png" alt="" width="50" height="50" />
+      <div class="brand-wordmark">HARPYA <span>PROJECT</span></div>
     </a>
     <nav class="nav-links" aria-label="Navegação principal">
       {NAV.map((i) => <a href={i.href} aria-current={ativo(i.href) ? "page" : undefined}>{i.rotulo}</a>)}
@@ -35,6 +35,6 @@ const ativo = (href: string) => (href === "/" ? atual === "/" : atual.startsWith
     const escuro = atual ? atual === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
     const novo = escuro ? "light" : "dark";
     r.setAttribute("data-theme", novo);
-    try { localStorage.setItem("harpia-tema", novo); } catch (e) {}
+    try { localStorage.setItem("harpya-tema", novo); } catch (e) {}
   });
 </script>

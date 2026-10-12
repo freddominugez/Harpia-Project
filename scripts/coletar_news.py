@@ -1,4 +1,4 @@
-"""Robô de news do Harpia Project.
+"""Robô de news do Harpya Project.
 
 Lê os feeds listados em src/data/feeds.json, mantém só itens ligados aos caminhos
 do projeto e grava public/data/news.json. Roda no GitHub Actions a cada 6 horas.
@@ -23,7 +23,7 @@ SAIDA = RAIZ / "public" / "data" / "news.json"
 MAX_ITENS = 40
 MAX_DIAS = 30
 
-# Termos que ligam um item aos caminhos do Harpia.
+# Termos que ligam um item aos caminhos do Harpya.
 TERMOS = re.compile(
     r"embedding|vector (search|database|index|quantiz)|nearest[- ]neighbo|retriev|rerank|quantiz|"
     r"inner[- ]product|\bMIPS\b|rabitq|matryoshka|lattice|softmax|vocabular|tokeniz|kv[- ]cache|"
@@ -48,7 +48,7 @@ def coletar() -> list[dict]:
         if not url:
             continue  # fontes sem RSS (Anthropic, CERN) ficam para o coletor de página
         try:
-            feed = feedparser.parse(url, agent="harpia-project-news/1.0")
+            feed = feedparser.parse(url, agent="harpya-project-news/1.0")
         except Exception as erro:  # um feed fora do ar não derruba os outros
             print(f"[aviso] {f['nome']}: {erro}")
             continue

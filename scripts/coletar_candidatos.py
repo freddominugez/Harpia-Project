@@ -1,4 +1,4 @@
-"""Coletor de candidatos para a curadoria do Harpia Project.
+"""Coletor de candidatos para a curadoria do Harpya Project.
 
 Busca artigos (arXiv), vídeos (YouTube Data API v3, opcional) e livros (Open Library)
 e grava curadoria/candidatos.json. Nada aqui vai direto para o site: o workflow
@@ -21,7 +21,7 @@ import requests
 RAIZ = Path(__file__).resolve().parent.parent
 SAIDA = RAIZ / "curadoria" / "candidatos.json"
 DADOS = RAIZ / "src" / "data"
-UA = {"User-Agent": "harpia-project-curadoria/1.0"}
+UA = {"User-Agent": "harpya-project-curadoria/1.0"}
 
 # Consultas ligadas aos caminhos. Edite à vontade.
 ARXIV = [

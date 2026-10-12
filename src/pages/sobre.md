@@ -1,9 +1,9 @@
 ---
 layout: ../layouts/Texto.astro
-titulo: "Sobre o Harpia Project"
+titulo: "Sobre o Harpya Project"
 kicker: "Sobre"
 lead: "Pesquisa aberta, conduzida por Carlos Frederico Domínguez, sobre onde a matemática dos modelos de linguagem ainda pode ceder velocidade, memória ou exatidão."
-descricao: "Autoria, método, licença e como contribuir com o Harpia Project."
+descricao: "Autoria, método, licença e como contribuir com o Harpya Project."
 ---
 
 ## Autor
