@@ -79,6 +79,26 @@ def oembed(video_id: str) -> dict | None:
         return None
 
 
+def ler_feed(url: str, tentativas: int = 3):
+    """Baixa o feed com até 3 tentativas. O feed de canais do YouTube às vezes devolve 404 ou 500
+    passageiros; a janela de 3 dias cobre o que ficar de fora num dia ruim."""
+    ultimo = None
+    for espera in (0, 2, 5)[:tentativas]:
+        time.sleep(espera)
+        try:
+            r = requests.get(url, timeout=15, headers={"User-Agent": UA})
+            if r.status_code == 200:
+                feed = feedparser.parse(r.content)
+                if feed.entries or not feed.bozo:
+                    return feed, None
+                ultimo = f"feed ilegível: {feed.bozo_exception}"
+            else:
+                ultimo = f"HTTP {r.status_code}"
+        except requests.RequestException as erro:
+            ultimo = str(erro)
+    return None, (ultimo or "falha")[:200]
+
+
 def http_ok(url: str) -> bool:
     try:
         r = requests.get(url, timeout=20, headers={"User-Agent": UA}, allow_redirects=True, stream=True)
@@ -100,12 +120,16 @@ def main() -> None:
     fontes = [f for f in fontes if f.get("ativo")]
     conhecidos = ja_no_site()
     candidatos, falhas = [], []
+    seguidas = 0
 
     for f in fontes:
-        feed = feedparser.parse(f["feed"], agent=UA)
-        if feed.bozo and not feed.entries:
-            falhas.append({"fonte": f["nome"], "erro": str(feed.bozo_exception)[:200]})
+        # Se o YouTube falhar em sequência, as tentativas extras só atrasam: passa a uma tentativa.
+        feed, erro = ler_feed(f["feed"], 1 if seguidas >= 3 else 3)
+        if erro:
+            falhas.append({"fonte": f["nome"], "erro": erro})
+            seguidas += f["tipo"] == "canal"
             continue
+        seguidas = 0
         n = 0
         for e in feed.entries:
             t = e.get("published_parsed") or e.get("updated_parsed")
@@ -133,7 +157,11 @@ def main() -> None:
                     continue  # privado, removido ou sem incorporação: não entra
                 item.update({"video_id": vid, "titulo": o["title"], "canal": o["author_name"], "verificado": True})
             else:
-                item.update({"titulo": titulo, "verificado": http_ok(link)})
+                # Autores vêm do próprio feed (no arXiv, dc:creator), para a tarefa não precisar abrir a página.
+                nomes = [a.get("name", "") for a in e.get("authors", []) if a.get("name")] or [e.get("author", "")]
+                autores = ", ".join(n.strip() for n in ", ".join(nomes).split(",") if n.strip())
+                item.update({"titulo": titulo, "autores_feed": autores, "ano": int(item["data"][:4]) if item["data"] else None,
+                             "verificado": http_ok(link)})
             candidatos.append(item)
             conhecidos.add(chave)
             n += 1

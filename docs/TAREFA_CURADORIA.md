@@ -42,16 +42,17 @@ Você é o curador diário do Harpya, site de pesquisa aberta sobre eficiência 
 PREPARO
 1. Entre no clone do repositório (se não houver, clone https://github.com/freddominugez/Harpia-Project). Rode: git checkout main && git pull --ff-only origin main.
 2. Leia docs/TAREFA_CURADORIA.md (esta instrução e as regras), docs/CURADORIA.md (régua de qualidade) e os títulos e resumos de src/content/caminhos/*.md e src/content/modulos/*.json.
-3. Instale o que faltar: pip install --break-system-packages -r scripts/requirements.txt; npm ci.
+3. Instale o que faltar: python3 -m venv /tmp/venv-curadoria && /tmp/venv-curadoria/bin/pip install -q -r scripts/requirements.txt pyyaml==6.0.3; npm ci. Rode scripts/curadoria_diaria.py e scripts/validar_cms.py com /tmp/venv-curadoria/bin/python; o QA usa o python3 do sistema (que tem Playwright).
 
 COLETA
-4. Rode: python3 scripts/curadoria_diaria.py
+4. Rode: /tmp/venv-curadoria/bin/python scripts/curadoria_diaria.py
+   Se a maioria dos canais do YouTube falhar (o feed do YouTube devolve 404 ou 500 de vez em quando), siga com o que veio e anote no registro: a janela de 3 dias recupera os vídeos na próxima execução.
    Ele grava curadoria/candidatos-diarios.json (fora do Git). Se "candidatos" vier vazio, pare aqui: não crie arquivo, não faça commit, responda "Sem novidade hoje" com o número de fontes lidas e de falhas.
 
 JULGAMENTO (por candidato)
 5. Abra a página de cada candidato (WebFetch) quando o resumo do feed não bastar. Aceite só o que tem conteúdo técnico ligado a um dos 12 módulos do catálogo de vídeos ou a um dos 12 caminhos. Recuse: anúncio de produto sem técnica, número de desempenho sem hardware nem base de comparação, vídeo curto sem conteúdo, repetição de algo já no site, live sem pauta técnica.
 6. No máximo 10 itens aceitos por dia, somando vídeos e artigos. Se houver mais, fique com os de maior nota na régua de docs/CURADORIA.md.
-7. Nunca invente título, autor, canal, ano, número ou link. Use o título e o canal que o oEmbed devolveu (campos "titulo" e "canal" do candidato). Para artigo do arXiv, tire título, autores e ano da página do arXiv. Se o candidato vier com "verificado": false, abra a URL; se não abrir, recuse.
+7. Nunca invente título, autor, canal, ano, número ou link. Use o título e o canal que o oEmbed devolveu (campos "titulo" e "canal" do candidato). Para artigo, use "titulo", "autores_feed" e "ano" do candidato (vêm do próprio feed do arXiv); se faltar algum, abra a página (WebFetch ou curl) e, se nada funcionar, adie o item: não grave arquivo e deixe-o fora da tabela do registro, para voltar no dia seguinte. Se o candidato vier com "verificado": false, abra a URL; se não abrir, recuse.
 
 ESCRITA (itens aceitos)
 8. Vídeo: crie src/content/videos/<ID>.json com exatamente estes campos:
@@ -85,7 +86,7 @@ PORTÕES (antes do push)
 13. Rode, nesta ordem, e só siga se todos passarem:
     npm run build
     npx astro check
-    python3 scripts/validar_cms.py
+    /tmp/venv-curadoria/bin/python scripts/validar_cms.py
     python3 -m http.server 4321 --directory dist (em segundo plano) e python3 scripts/qa_redesign.py --base http://localhost:4321 --shots /tmp/qa-curadoria
     (se o navegador não alcançar localhost, use o IP do contêiner: --base http://$(hostname -I | cut -d' ' -f1):4321)
     Se um portão falhar por causa de um arquivo seu, corrija ou remova esse item e rode de novo. Se falhar por outro motivo, não faça push: grave o erro no registro e termine relatando a falha.
