@@ -1,9 +1,196 @@
 ---
+// Origens: a linha do tempo dos "sóis" (marcos celebrados) e dos "eclipses"
+// (fundações que ficaram na sombra). Dados em src/data/origens.ts e src/data/timeline.json.
 import Base from "../layouts/Base.astro";
-import PageIntro from "../components/PageIntro.astro";
-import Timeline from "../components/Timeline.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
+import M from "../components/M.astro";
+import { ERAS, EVENTOS, CAPITULOS, PESSOAS, eraDoAno } from "../data/origens";
+
+const era = (id: string) => ERAS.find((e) => e.id === id)!;
+const nSois = EVENTOS.filter((e) => e.tipo !== "eclipse").length;
+const nEclipses = EVENTOS.filter((e) => e.tipo === "eclipse").length;
+const slug = (e: { ano: number; titulo: string }) => `ev-${e.ano}-${e.titulo.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`;
+
+// Régua das eras: cada era ocupa uma fatia fixa da largura e os anos são lineares dentro dela.
+const FATIA: Record<string, [number, number]> = { fundamentos: [0, 30], redes: [30, 66], transformers: [66, 88], eficiencia: [88, 100] };
+const posicao = (ano: number) => {
+  const e = eraDoAno(ano);
+  const [a, b] = FATIA[e.id];
+  const t = e.ate === e.de ? 0 : (ano - e.de) / (e.ate - e.de);
+  return a + (b - a) * (0.04 + 0.92 * t);
+};
+const faixa = [...EVENTOS, ...EVENTOS];
 ---
-<Base titulo="Origens" descricao="Linha do tempo das LLMs, do neurônio de McCulloch e Pitts ao Harpya.">
-  <PageIntro trilha={[{ rotulo: "Origens" }]} eyebrow="Origens" titulo="De um neurônio lógico a bilhões de pesos" lead="A cronologia que o projeto usa como mapa. Pontos cheios marcam mudanças na forma de representar palavras ou de calcular com elas." />
-  <section class="page-body"><div class="container"><div class="panel"><Timeline /></div></div></section>
+<Base titulo="Origens" descricao="A linha do tempo das LLMs em sóis e eclipses: os marcos celebrados e as fundações que ficaram na sombra, de 1943 a 2026.">
+  <div class="orig-marquee" aria-label="Linha do tempo em movimento">
+    <div class="orig-marquee-track">
+      {faixa.map((e, i) => (
+        <a class={`orig-marquee-item t-${e.tipo}`} href={`#${slug(e)}`} tabindex={i < EVENTOS.length ? 0 : -1} aria-hidden={i >= EVENTOS.length ? "true" : undefined}>
+          <span class="orig-glyph" aria-hidden="true"></span><b>{e.ano}</b><span>{e.titulo}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <section class="orig-hero">
+    <div class="container">
+      <Breadcrumb itens={[{ rotulo: "Origens" }]} />
+      <div class="orig-hero-grid">
+        <div>
+          <div class="eyebrow">Origens</div>
+          <h1>De um neurônio lógico a bilhões de pesos</h1>
+          <p class="intro">A história canônica da IA guarda os sóis: o word2vec, o Transformer, o GPT. Esta linha do tempo também mostra os eclipses: os teoremas, os fracassos produtivos e os avanços de hardware que, na sombra, abriram o caminho para eles.</p>
+        </div>
+        <aside class="orig-legend surface" aria-label="Como ler">
+          <div class="orig-stat"><b>{EVENTOS.length}</b><span>eventos de 1943 a 2026</span></div>
+          <ul>
+            <li><span class="orig-glyph t-sol" aria-hidden="true"></span><b>{nSois} sóis e marcos</b><small>o que a história celebra</small></li>
+            <li><span class="orig-glyph t-eclipse" aria-hidden="true"></span><b>{nEclipses} eclipses</b><small>o que ficou na sombra</small></li>
+          </ul>
+        </aside>
+      </div>
+
+      <div class="orig-ruler" aria-label="Régua das eras">
+        <div class="orig-ruler-bar">
+          {ERAS.map((e) => (
+            <span class="orig-era" style={`left:${FATIA[e.id][0]}%;width:${FATIA[e.id][1] - FATIA[e.id][0]}%;--c:${e.cor};--s:${e.suave}`}>
+              <b>{e.nome}</b><small>{e.de}{e.ate !== e.de ? `-${e.ate}` : ""}</small>
+            </span>
+          ))}
+        </div>
+        <div class="orig-ruler-dots">
+          {EVENTOS.map((e, i) => (
+            <a class={`orig-dot t-${e.tipo}`} href={`#${slug(e)}`} style={`left:${posicao(e.ano)}%;--i:${i};--c:${era(e.era).cor}`} aria-label={`${e.ano}: ${e.titulo}`} data-tip={`${e.ano} · ${e.titulo}`}></a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section orig-people-sec" aria-labelledby="h-pessoas">
+    <div class="container">
+      <div class="section-head">
+        <div><h2 id="h-pessoas">Os arquitetos nas sombras</h2><p>Quem assinou os eclipses. Fotos do Wikimedia Commons, com autor e licença em cada uma.</p></div>
+      </div>
+      <div class="orig-people">
+        {PESSOAS.map((p) => (
+          <figure class="orig-person" style={`--c:${era(CAPITULOS.find((c) => c.id === p.capitulo)!.era).cor}`}>
+            <a href={`#${p.capitulo}`} class="orig-person-photo" aria-label={`${p.nome}: ver o capítulo`}>
+              {p.foto ? <img src={`/img/origens/${p.foto}.webp`} alt={`Retrato de ${p.nome}`} width="320" height="320" loading="lazy" decoding="async" /> : <span class="orig-initials" aria-hidden="true">{p.nome.split(" ").map((x) => x[0]).join("")}</span>}
+              <span class="orig-person-year">{p.ano}</span>
+            </a>
+            <figcaption>
+              <b>{p.nome}</b>
+              <span>{p.papel}</span>
+              {p.fonte ? <small><a href={p.fonte} target="_blank" rel="noopener noreferrer">Foto: {p.credito} · {p.licenca}</a></small> : <small>Sem foto de licença livre encontrada.</small>}
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <div class="container page-layout orig-layout">
+    <div class="article">
+      {CAPITULOS.map((c) => {
+        const e = era(c.era);
+        return (
+          <section class="orig-chapter reveal" id={c.id} style={`--c:${e.cor};--s:${e.suave}`} aria-labelledby={`h-${c.id}`}>
+            <header class="orig-chapter-head">
+              <span class="orig-chapter-n">Capítulo {c.n}</span>
+              <span class="orig-chapter-era">{e.nome} · {c.periodo}</span>
+              <h2 id={`h-${c.id}`}>{c.titulo}</h2>
+              <p>{c.abertura}</p>
+              <div class="orig-suns" aria-label="Marcos celebrados deste período">
+                {c.sois.map((s) => {
+                  const [ano, titulo] = s.split(" · ");
+                  const ev = EVENTOS.find((e) => String(e.ano) === ano && e.titulo === titulo);
+                  return <a class="orig-sun" href={ev ? `#${slug(ev)}` : "#linha-completa"}><span class={`orig-glyph t-${ev?.tipo ?? "marco"}`} aria-hidden="true"></span>{s}</a>;
+                })}
+              </div>
+            </header>
+            <div class="orig-eclipses">
+              {c.eclipses.map((x) => (
+                <article class="orig-eclipse">
+                  <div class="orig-eclipse-top"><span class="orig-glyph t-eclipse" aria-hidden="true"></span><b>{x.ano}</b><span>Eclipse</span></div>
+                  <h3>{x.titulo}</h3>
+                  <p class="orig-who">{x.quem}</p>
+                  {x.texto.map((t) => <p>{t}</p>)}
+                  {x.eq && (
+                    <figure class="orig-eq">
+                      <M t={x.eq} d />
+                      {x.eqLegenda && <figcaption>{x.eqLegenda}</figcaption>}
+                    </figure>
+                  )}
+                </article>
+              ))}
+            </div>
+            <details class="orig-refs">
+              <summary>Referências do capítulo {c.n} ({c.refs.length})</summary>
+              <ol>{c.refs.map((r) => <li><a href={r.url} target="_blank" rel="noopener noreferrer">{r.texto}</a></li>)}</ol>
+            </details>
+          </section>
+        );
+      })}
+
+      <section class="orig-full" id="linha-completa" aria-labelledby="h-linha">
+        <div class="section-head"><div><h2 id="h-linha">Linha do tempo completa</h2><p>Sóis, marcos e eclipses em ordem. As cores seguem as eras.</p></div></div>
+        <ol class="orig-timeline">
+          {ERAS.map((er) => (
+            <>
+              <li class="orig-tl-era" style={`--c:${er.cor}`}>{er.nome} <small>{er.de}{er.ate !== er.de ? `-${er.ate}` : ""}</small></li>
+              {EVENTOS.filter((e) => e.era === er.id).map((e) => (
+                <li class={`orig-tl-item t-${e.tipo} reveal`} id={slug(e)} style={`--c:${er.cor};--s:${er.suave}`}>
+                  <span class="orig-tl-year">{e.ano}</span>
+                  <span class="orig-tl-node" aria-hidden="true"></span>
+                  <div class="orig-tl-card">
+                    <span class="orig-tl-kind">{e.tipo === "eclipse" ? "Eclipse" : e.tipo === "sol" ? "Sol" : "Marco"}</span>
+                    <h3>{e.titulo}</h3>
+                    <p>{e.texto}</p>
+                    {e.eq && <div class="eq"><M t={e.eq} /></div>}
+                  </div>
+                </li>
+              ))}
+            </>
+          ))}
+        </ol>
+      </section>
+    </div>
+
+    <aside aria-label="Navegação da página">
+      <div class="surface aside-panel toc-panel">
+        <h3>Capítulos</h3>
+        <nav class="toc" aria-label="Capítulos">
+          {CAPITULOS.map((c) => <a href={`#${c.id}`} style={`--c:${era(c.era).cor}`}>{c.n}. {c.titulo}</a>)}
+          <a href="#linha-completa">Linha do tempo completa</a>
+        </nav>
+      </div>
+      <div class="surface aside-panel">
+        <h3>Eras</h3>
+        <ul class="orig-era-list">
+          {ERAS.map((e) => <li style={`--c:${e.cor}`}><b>{e.nome}</b><span>{e.de}{e.ate !== e.de ? `-${e.ate}` : ""}</span></li>)}
+        </ul>
+      </div>
+      <div class="surface aside-panel">
+        <h3>Sobre este dossiê</h3>
+        <p>Cada eclipse traz a referência primária. Datas, autorias e equações foram conferidas contra os artigos originais.</p>
+        <a class="card-link" href="/aprendizado/">As primeiras regras de aprendizagem →</a>
+      </div>
+    </aside>
+  </div>
 </Base>
+
+<script>
+  // Revela os blocos ao rolar. Sem IntersectionObserver ou com movimento reduzido, tudo já aparece.
+  const itens = document.querySelectorAll<HTMLElement>(".reveal");
+  const reduz = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reduz && "IntersectionObserver" in window) {
+    document.documentElement.classList.add("js-reveal");
+    const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } }), { rootMargin: "0px 0px -8% 0px" });
+    itens.forEach((el) => io.observe(el));
+  }
+  // A faixa animada para quando o mouse ou o foco do teclado está nela.
+  const faixa = document.querySelector<HTMLElement>(".orig-marquee");
+  faixa?.addEventListener("focusin", () => faixa.classList.add("is-paused"));
+  faixa?.addEventListener("focusout", () => faixa.classList.remove("is-paused"));
+</script>
