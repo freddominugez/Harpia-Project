@@ -1,6 +1,6 @@
 # Tarefa agendada: curadoria diária
 
-Uma tarefa agendada do Claude roda todo dia às 06:45 (horário de Fortaleza). Ela lê a lista curada de fontes, separa o que é novo e ligado ao tema, confere cada link, escreve um resumo em português, grava os itens como **rascunho** e propõe até 3 pautas para o fórum. Nada vai ao ar sem Carlos Frederico trocar o status para `publicado` no painel (`/admin`).
+Uma tarefa agendada do Claude roda todo dia às 06:43 (horário de Fortaleza). Ela lê a lista curada de fontes, separa o que é novo e ligado ao tema, confere cada link, escreve um resumo em português, grava os itens como **rascunho** e propõe até 3 pautas para o fórum. Nada vai ao ar sem Carlos Frederico trocar o status para `publicado` no painel (`/admin`).
 
 ## Como a tarefa se conecta
 
@@ -87,6 +87,7 @@ PORTÕES (antes do push)
     npx astro check
     python3 scripts/validar_cms.py
     python3 -m http.server 4321 --directory dist (em segundo plano) e python3 scripts/qa_redesign.py --base http://localhost:4321 --shots /tmp/qa-curadoria
+    (se o navegador não alcançar localhost, use o IP do contêiner: --base http://$(hostname -I | cut -d' ' -f1):4321)
     Se um portão falhar por causa de um arquivo seu, corrija ou remova esse item e rode de novo. Se falhar por outro motivo, não faça push: grave o erro no registro e termine relatando a falha.
 14. git add src/content curadoria/registro && git commit -m "Curadoria diária <hoje>: N itens em rascunho, M pautas" (com a linha Co-Authored-By de praxe) && git push origin main. Se o push for recusado por conflito, faça git pull --rebase origin main e tente uma vez mais.
 
