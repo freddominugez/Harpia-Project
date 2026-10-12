@@ -9,8 +9,8 @@ import VideoFeature from "../components/VideoFeature.astro";
 import ForumList from "../components/ForumList.astro";
 import JoinCommunityCard from "../components/JoinCommunityCard.astro";
 import { getCollection } from "astro:content";
-import videos from "../data/videos.json";
-import { kpis, trilhas, ARTIGOS_DESTAQUE, VIDEO_DESTAQUE, TOPICOS_PROPOSTOS } from "../data/home";
+import { kpis, trilhas, ARTIGOS_DESTAQUE, TOPICOS_PROPOSTOS } from "../data/home";
+import { VIDEOS, selecaoDaSemana } from "../lib/videos";
 import { dataCurta, ROTULO_ESTATUTO } from "../lib/format";
 
 const caminhos = await getCollection("caminhos");
@@ -19,7 +19,7 @@ const artigos = ARTIGOS_DESTAQUE.flatMap((a) => {
   const c = porSlug.get(a.slug);
   return c ? [{ ...a, c }] : [];
 });
-const video = videos.find((v) => v.id === VIDEO_DESTAQUE.id) ?? videos[0];
+const destaque = selecaoDaSemana();
 ---
 <Base home>
   <Hero />
@@ -66,16 +66,11 @@ const video = videos.find((v) => v.id === VIDEO_DESTAQUE.id) ?? videos[0];
       <div class="ref-column ref-middle">
         <section class="ref-section" aria-labelledby="h-video">
           <div class="ref-section-title">
-            <div><h2 id="h-video">Vídeo em Destaque</h2></div>
-            <a href="/videos/">Ver mais vídeos <span aria-hidden="true">→</span></a>
+            <div><h2 id="h-video">Vídeos em Destaque</h2></div>
+            <a href="/videos/">Ver os {VIDEOS.length} vídeos <span aria-hidden="true">→</span></a>
           </div>
-          <VideoFeature id={video.id} titulo={video.titulo} canal={video.canal} resumo={VIDEO_DESTAQUE.resumo} poster={VIDEO_DESTAQUE.poster} />
+          <VideoFeature videos={destaque} />
         </section>
-        <figure class="ref-quote">
-          <span class="ref-quote-glyph" aria-hidden="true">“</span>
-          <blockquote>Conhecimento<br />e disciplina constroem<br />um futuro mais inteligente.</blockquote>
-          <figcaption class="ref-quote-caption">HARPYA</figcaption>
-        </figure>
       </div>
 
       <div class="ref-column ref-right">

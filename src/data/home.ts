@@ -18,7 +18,7 @@ export function kpis(nCaminhos: number): Kpi[] {
     { valor: String(nCaminhos), rotulo: "Caminhos de pesquisa", detalhe: "Mecanismos com teste refutável", icone: "file", href: "/estudos/" },
     { valor: String(CAMADAS), rotulo: "Camadas de LLM", detalhe: "Equações e custo de cada etapa", icone: "network", href: "/equacoes/" },
     { valor: `${livros.length} + ${artigos.length}`, rotulo: "Livros e artigos", detalhe: "Referências do acervo", icone: "book", href: "/biblioteca/" },
-    { valor: String(videos.length), rotulo: "Vídeos curados", detalhe: "Matemática, redes e LLMs", icone: "chart", href: "/videos/" },
+    { valor: String(videos.length), rotulo: "Vídeos curados", detalhe: "12 módulos, 3 níveis, com resumo", icone: "chart", href: "/videos/" },
   ];
 }
 
@@ -37,13 +37,6 @@ export const ARTIGOS_DESTAQUE: ArtigoDestaque[] = [
   { slug: "escala-diagonal", imagem: "/img/article-forest.webp", tags: ["Resultado"] },
   { slug: "raio-probabilistico", imagem: "/img/article-books.webp", tags: ["Teoria"] },
 ];
-
-// Vídeo real da curadoria (src/data/videos.json).
-export const VIDEO_DESTAQUE = {
-  id: "wjZofJX0v4M",
-  poster: "/img/video-destaque.webp",
-  resumo: "Uma introdução visual ao mecanismo central das arquiteturas de linguagem.",
-};
 
 // Pautas propostas pelo projeto enquanto o fórum (Giscus) não está ativo.
 // Não são discussões existentes e aparecem identificadas como propostas.

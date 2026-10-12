@@ -10,7 +10,7 @@ Pesquisa aberta sobre eficiência de LLMs: embeddings, tokens, pesos e busca vet
 |---|---|
 | Site estático (Astro 5, sem servidor) | `src/` |
 | 12 caminhos válidos, um arquivo por caminho | `src/content/caminhos/*.md` |
-| Vídeos, livros, artigos, 30 fontes, feeds, linha do tempo | `src/data/*.json` |
+| Catálogo de 106 vídeos em 12 módulos e 3 níveis, livros, artigos, 30 fontes, feeds, linha do tempo | `src/data/*.json` |
 | Equações das 16 camadas (KaTeX renderizado no build) | `src/pages/equacoes.md` |
 | Fórum (Giscus, GitHub Discussions) | `src/components/Giscus.astro`, configuração em `src/config.ts` |
 | Robô de news por RSS, a cada 6 horas | `scripts/coletar_news.py`, `.github/workflows/news.yml` |
@@ -58,7 +58,7 @@ Veja `docs/DEPLOY.md`. Resumo: criar o repositório no GitHub, fazer push, impor
 ## Editar conteúdo
 
 - **Novo caminho:** copie um arquivo de `src/content/caminhos/`, mude o nome e o frontmatter. A página e o card aparecem sozinhos.
-- **Novo vídeo:** acrescente `{ "id", "titulo", "canal", "trilha" }` em `src/data/videos.json` (trilha: `mat`, `redes` ou `llm`).
+- **Novo vídeo:** acrescente um item em `src/data/videos.json` com `id`, `titulo`, `canal`, `modulo` (0 a 11, ver `src/data/modulos.json`), `nivel` e `resumo`. Confira o ID antes (regra em `docs/CURADORIA.md`). A página `/videos/` organiza por módulo e nível, e a home mostra uma seleção da semana, um vídeo por nível.
 - **Novo artigo ou livro:** `src/data/artigos.json` e `src/data/livros.json`.
 - **Matemática:** em markdown use `$...$` e `$$...$$`; em páginas `.astro` use ``<M t={String.raw`...`} />`` (com aspas comuns, as barras invertidas se perdem).
 - **Home:** trilhas, artigos em destaque, vídeo e pautas do fórum ficam em `src/data/home.ts`. Os números dos indicadores são calculados do acervo.

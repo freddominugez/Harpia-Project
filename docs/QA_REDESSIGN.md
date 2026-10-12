@@ -78,3 +78,11 @@ Commit `b3395b9` publicado pela integração Git da Vercel (deploy `dpl_A3YwQFNL
 - 16 rotas e `/busca.json` responderam 200 em 1672 × 941 e 390 × 844, todas com `scrollWidth <= innerWidth`.
 - A home em produção é idêntica à captura local.
 - No teste a partir do ambiente de QA, o ícone `/icons/rss.svg` recebeu duas vezes um 502 do proxy de saída desse ambiente; o mesmo arquivo respondeu 200 em três requisições diretas logo depois. Não é falha do site, mas fica registrado.
+
+## Catálogo de vídeos (12/10/2026)
+
+- `/videos/` passou a ser o catálogo "LLMs de ponta a ponta": 106 vídeos em 12 módulos (00 a 11) e três níveis (Iniciante, Intermediário, Avançado), cada um com resumo em português. Em cada módulo, os níveis aparecem em colunas e os vídeos ficam empilhados, um acima do outro, com a miniatura real do YouTube. Filtros por nível e por módulo, índice lateral fixo dos módulos e um quadro com os critérios do catálogo.
+- Todos os 106 IDs foram conferidos pelo oEmbed do YouTube, com título e canal reais. Do rascunho de 100 itens, 15 links estavam certos; 85 não existiam, eram placeholders, apontavam para outro vídeo ou tinham a incorporação desativada, e foram trocados (20 pelo mesmo canal e tema, 65 pelo vídeo real mais próximo). Lista completa em `docs/CATALOGO_VIDEOS.md`.
+- Home: o card do centro virou "Vídeos em Destaque", com três vídeos empilhados (miniatura, nível, módulo, título, resumo e canal), um por nível, de módulos diferentes. A seleção gira a cada semana; o site é reconstruído várias vezes por dia pelo robô de news. Para caber na altura da referência, a citação saiu da home.
+- A busca do site também encontra os 12 módulos e os 106 vídeos.
+- QA após a mudança: 27 rotas × 9 larguras sem rolagem horizontal, 0 links quebrados, 0 imagens faltando, 0 erros de console; filtros testados (Avançado = 29; Avançado + módulo 03 = 2; módulo 03 = 8). Capturas: `qa/videos-desktop-1440.png`, `qa/videos-mobile-390.png`.

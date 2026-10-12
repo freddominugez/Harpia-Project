@@ -1,0 +1,22 @@
+---
+// Lista vertical da home: vídeos um acima do outro, cada um com miniatura e resumo.
+import { thumb, urlVideo, NIVEL_SLUG, rotuloModulo, type Video } from "../lib/videos";
+interface Props { videos: Video[] }
+const { videos } = Astro.props;
+---
+<div class="vlist">
+  {videos.map((v) => (
+    <a class="vlist-item" href={urlVideo(v.id)} target="_blank" rel="noopener noreferrer" aria-label={`${v.titulo}, de ${v.canal}. Abre o YouTube em nova aba`}>
+      <span class="vlist-th">
+        <img src={thumb(v.id)} alt="" loading="lazy" decoding="async" width="320" height="180" />
+        <span class="vlist-play" aria-hidden="true"></span>
+      </span>
+      <span class="vlist-body">
+        <span class="vlist-meta"><span class={`vcard-nivel n-${NIVEL_SLUG[v.nivel]}`}>{v.nivel}</span><span>{rotuloModulo(v.modulo)}</span></span>
+        <b>{v.titulo}</b>
+        <span class="vlist-resumo">{v.resumo}</span>
+        <small>{v.canal}</small>
+      </span>
+    </a>
+  ))}
+</div>

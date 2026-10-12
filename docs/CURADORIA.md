@@ -28,11 +28,23 @@ Copie o texto abaixo como instrução da tarefa:
 
 Rejeitar sempre: conteúdo de fornecedor que se coloca em primeiro no próprio ranking, números de desempenho sem hardware nem base de comparação, vídeos sem conteúdo técnico.
 
+## Regra para vídeos
+
+Antes de acrescentar um vídeo, confirme o ID no YouTube:
+
+```bash
+curl -s "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=ID&format=json"
+```
+
+Só entra se a resposta trouxer título e canal (HTTP 200). Use o título e o canal que vierem nela. Em 12/10/2026, 83 dos 100 links do rascunho do catálogo "LLMs de ponta a ponta" não existiam ou apontavam para outro vídeo; todos foram trocados por vídeos reais conferidos dessa forma.
+
 ## Formato dos dados
 
 ```json
-// src/data/videos.json
-{ "id": "ID_DO_YOUTUBE", "titulo": "...", "canal": "...", "trilha": "mat | redes | llm" }
+// src/data/videos.json (módulos em src/data/modulos.json, de 0 a 11)
+{ "id": "ID_DO_YOUTUBE", "titulo": "título real do YouTube", "canal": "canal real",
+  "modulo": 3, "nivel": "Iniciante | Intermediário | Avançado",
+  "resumo": "1 ou 2 frases em português sobre o que o vídeo ensina", "catalogo": null, "trilha": "mat | redes | llm" }
 
 // src/data/artigos.json
 { "ano": 2026, "titulo": "...", "autores": "... · venue", "url": "https://...",

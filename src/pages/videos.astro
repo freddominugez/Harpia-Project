@@ -1,9 +1,135 @@
 ---
+// Catálogo de vídeos "LLMs de ponta a ponta": 12 módulos, três níveis, resumo em português
+// e links conferidos no YouTube. Dados em src/data/videos.json e src/data/modulos.json.
 import Base from "../layouts/Base.astro";
 import PageIntro from "../components/PageIntro.astro";
-import VideoGrid from "../components/VideoGrid.astro";
+import VideoCard from "../components/VideoCard.astro";
+import Tag from "../components/Tag.astro";
+import { VIDEOS, MODULOS, NIVEIS, NIVEL_SLUG, rotuloModulo } from "../lib/videos";
+
+const porModulo = MODULOS.map((m) => ({ m, videos: VIDEOS.filter((v) => v.modulo === m.numero) })).filter((g) => g.videos.length);
+const canais = new Set(VIDEOS.map((v) => v.canal)).size;
+const contaNivel = (n: string) => VIDEOS.filter((v) => v.nivel === n).length;
 ---
-<Base titulo="Vídeos" descricao="Curadoria de vídeos sobre matemática, redes neurais e LLMs.">
-  <PageIntro trilha={[{ rotulo: "Vídeos" }]} eyebrow="Para estudar" titulo="Vídeos" lead="Curadoria em inglês, com legendas automáticas. O agente de curadoria propõe novos vídeos toda semana em um pull request, e só entram depois de aprovação." />
-  <section class="page-body"><div class="container"><VideoGrid /></div></section>
+<Base titulo="Vídeos" descricao={`Catálogo de ${VIDEOS.length} vídeos sobre LLMs, do token ao raciocínio, organizado em ${porModulo.length} módulos e três níveis, com resumo em português.`}>
+  <PageIntro
+    trilha={[{ rotulo: "Vídeos" }]}
+    eyebrow="Catálogo de estudos"
+    titulo="LLMs de ponta a ponta, em vídeo"
+    lead={`${VIDEOS.length} vídeos em ${porModulo.length} módulos, do token ao raciocínio. Cada módulo vai do nível iniciante ao avançado, e cada vídeo tem um resumo em português do que ele ensina.`}
+  >
+    <div class="tag-row">
+      <Tag variante="gold">{VIDEOS.length} vídeos</Tag>
+      <Tag>{porModulo.length} módulos</Tag>
+      <Tag>{canais} canais</Tag>
+      {NIVEIS.map((n) => <Tag>{`${contaNivel(n)} ${n.toLowerCase()}`}</Tag>)}
+    </div>
+  </PageIntro>
+
+  <div class="container page-layout">
+    <div class="article" data-catalogo>
+      <div class="vfilters surface" role="search" aria-label="Filtrar o catálogo">
+        <div class="vfilter-group">
+          <span class="vfilter-label" id="rot-nivel">Nível</span>
+          <div class="filters" role="group" aria-labelledby="rot-nivel">
+            <button type="button" data-f-nivel="todos" aria-pressed="true">Todos</button>
+            {NIVEIS.map((n) => <button type="button" data-f-nivel={NIVEL_SLUG[n]} aria-pressed="false">{n}</button>)}
+          </div>
+        </div>
+        <div class="vfilter-group">
+          <label class="vfilter-label" for="f-modulo">Módulo</label>
+          <select id="f-modulo" data-f-modulo>
+            <option value="todos">Todos os módulos</option>
+            {porModulo.map(({ m }) => <option value={String(m.numero)}>{rotuloModulo(m.numero)} · {m.titulo}</option>)}
+          </select>
+        </div>
+        <p class="vfilter-count" aria-live="polite"><span data-f-total>{VIDEOS.length}</span> vídeos</p>
+      </div>
+
+      {porModulo.map(({ m, videos }) => (
+        <section class="vmod" id={`modulo-${m.numero}`} data-modulo={String(m.numero)} aria-labelledby={`h-mod-${m.numero}`}>
+          <header class="vmod-head">
+            <img class="icon gold" src={`/icons/${m.icone}.svg`} alt="" aria-hidden="true" width="30" height="30" />
+            <div>
+              <span class="vmod-num">{rotuloModulo(m.numero)} · {videos.length} vídeos</span>
+              <h2 id={`h-mod-${m.numero}`}>{m.titulo}</h2>
+              {m.subtitulo && <p>{m.subtitulo}</p>}
+            </div>
+          </header>
+          <div class="vlevels">
+          {NIVEIS.map((n) => {
+            const doNivel = videos.filter((v) => v.nivel === n);
+            return doNivel.length > 0 && (
+              <div class="vlevel" data-nivel={NIVEL_SLUG[n]}>
+                <h3 class="vlevel-title"><span class={`vcard-nivel n-${NIVEL_SLUG[n]}`}>{n}</span><span>{doNivel.length} {doNivel.length === 1 ? "vídeo" : "vídeos"}</span></h3>
+                <div class="vstack">{doNivel.map((v) => <VideoCard v={v} />)}</div>
+              </div>
+            );
+          })}
+          </div>
+        </section>
+      ))}
+      <p class="vempty" data-f-vazio hidden>Nenhum vídeo com esses filtros. Escolha outro nível ou módulo.</p>
+
+      <section class="panel vcriteria" aria-labelledby="h-criterios">
+        <h2 id="h-criterios">Critérios do catálogo</h2>
+        <ul>
+          <li><b>Módulos por tema.</b> Do token e dos embeddings até RAG, arquiteturas densas, Mixture of Experts, fine-tuning, alinhamento, agentes, multimodalidade, inferência e o que vem depois do Transformer. O módulo 00 reúne a matemática e as redes neurais que vêm antes.</li>
+          <li><b>Três níveis.</b> Iniciante: intuição, sem código. Intermediário: matemática acessível ou código prático. Avançado: aulas acadêmicas, leitura de artigos e implementação.</li>
+          <li><b>Resumo em português</b> do que o vídeo realmente ensina. Os vídeos são em inglês, quase todos com legendas automáticas.</li>
+          <li><b>Link conferido.</b> Cada vídeo foi conferido no YouTube em 12/10/2026, com título e canal reais. Quando o vídeo indicado no rascunho do catálogo não existia, entrou o vídeo real mais próximo do mesmo tema e nível, de preferência do mesmo canal ou do autor do trabalho.</li>
+          <li><b>Curadoria contínua.</b> Novas sugestões chegam toda semana em um pull request e só entram depois de revisão.</li>
+        </ul>
+      </section>
+    </div>
+
+    <aside aria-label="Módulos do catálogo">
+      <div class="surface aside-panel toc-panel">
+        <h3>Módulos</h3>
+        <nav class="toc" aria-label="Módulos">
+          {porModulo.map(({ m, videos }) => <a href={`#modulo-${m.numero}`}>{String(m.numero).padStart(2, "0")}. {m.titulo.replace(/\s*\(.*\)$/, "")} <small>({videos.length})</small></a>)}
+        </nav>
+      </div>
+    </aside>
+  </div>
 </Base>
+
+<script>
+  const root = document.querySelector<HTMLElement>("[data-catalogo]");
+  if (root) {
+    const botoes = [...root.querySelectorAll<HTMLButtonElement>("[data-f-nivel]")];
+    const sel = root.querySelector<HTMLSelectElement>("[data-f-modulo]");
+    const total = root.querySelector<HTMLElement>("[data-f-total]");
+    const vazio = root.querySelector<HTMLElement>("[data-f-vazio]");
+    let nivel = "todos";
+
+    function aplicar() {
+      const mod = sel?.value ?? "todos";
+      let n = 0;
+      root!.querySelectorAll<HTMLElement>(".vmod").forEach((sec) => {
+        const okMod = mod === "todos" || sec.dataset.modulo === mod;
+        let visiveisNoModulo = 0;
+        sec.querySelectorAll<HTMLElement>(".vlevel").forEach((lv) => {
+          const ok = okMod && (nivel === "todos" || lv.dataset.nivel === nivel);
+          lv.hidden = !ok;
+          if (ok) visiveisNoModulo += lv.querySelectorAll(".vcard").length;
+        });
+        sec.hidden = visiveisNoModulo === 0;
+        n += visiveisNoModulo;
+      });
+      if (total) total.textContent = String(n);
+      if (vazio) vazio.hidden = n > 0;
+    }
+
+    botoes.forEach((b) => b.addEventListener("click", () => {
+      botoes.forEach((x) => x.setAttribute("aria-pressed", "false"));
+      b.setAttribute("aria-pressed", "true");
+      nivel = b.dataset.fNivel ?? "todos";
+      aplicar();
+    }));
+    sel?.addEventListener("change", () => {
+      aplicar();
+      if (sel.value !== "todos") document.getElementById(`modulo-${sel.value}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
+</script>
