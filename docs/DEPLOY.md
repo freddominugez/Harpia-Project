@@ -4,11 +4,11 @@ Tempo estimado: 20 minutos. Tudo nos planos gratuitos.
 
 ## 1. Repositório no GitHub
 
-O código está em https://github.com/freddominugez/harpia-project (branch `main`). Para trabalhar no computador:
+O código está em https://github.com/freddominugez/Harpia-Project (branch `main`). Para trabalhar no computador:
 
 ```bash
 cd ~/Documents/GitHub
-git clone https://github.com/freddominugez/harpia-project.git "Harpya"
+git clone https://github.com/freddominugez/Harpia-Project.git "Harpya"
 cd "Harpya" && npm install && npm run dev
 ```
 
@@ -33,7 +33,7 @@ Cada push na branch `main` gera um novo deploy. O robô de news faz até 4 commi
 
 ```ts
 export const GISCUS = {
-  repo: "freddominugez/harpia-project",
+  repo: "freddominugez/Harpia-Project",
   repoId: "R_...",
   categoria: "Caminhos",
   categoriaId: "DIC_...",
@@ -42,7 +42,9 @@ export const GISCUS = {
 };
 ```
 
-7. Commit e push. Enquanto os IDs estiverem vazios, o site mostra as instruções no lugar do fórum.
+7. Commit e push. Enquanto os IDs estiverem vazios, o site mostra um aviso de fórum não ativado.
+
+**Estado atual (12/10/2026):** ativo. Repositório público, Discussions ligado, app giscus instalado só neste repositório e IDs preenchidos em `src/config.ts`. Para conferir os IDs a qualquer momento: `https://giscus.app/api/discussions/categories?repo=freddominugez/Harpia-Project`.
 
 ## 4. Robôs (GitHub Actions)
 

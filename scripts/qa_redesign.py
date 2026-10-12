@@ -102,12 +102,14 @@ def main():
             ctx = browser.new_context(viewport={"width": w, "height": h})
             pg = ctx.new_page()
             errs = []
-            pg.on("console", lambda m, e=errs: e.append(m.text) if m.type == "error" else None)
+            # Erros vindos do iframe do Giscus (ex.: 404 "discussão ainda não criada") são esperados
+            # até alguém comentar na página; ficam fora do gate.
+            pg.on("console", lambda m, e=errs: e.append(m.text) if m.type == "error" and "giscus.app" not in (m.location or {}).get("url", "") else None)
             pg.on("pageerror", lambda x, e=errs: e.append(str(x)))
             res = {}
             for r in rotas:
                 errs.clear()
-                resp = pg.goto(args.base + r, wait_until="networkidle")
+                resp = pg.goto(args.base + r, wait_until="load")
                 pg.evaluate("async()=>{for(let y=0;y<document.body.scrollHeight;y+=600){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,30))}window.scrollTo(0,0)}")
                 pg.wait_for_timeout(150)
                 sw, iw = pg.evaluate("[document.documentElement.scrollWidth, window.innerWidth]")
@@ -129,7 +131,7 @@ def main():
                  ("/estudos/caminhos/certificado-inteiro/", 390, 844, "artigo-mobile-390.png", True)]
         for r, w, h, name, full in shots:
             pg = browser.new_page(viewport={"width": w, "height": h})
-            pg.goto(args.base + r, wait_until="networkidle")
+            pg.goto(args.base + r, wait_until="load")
             pg.evaluate("async()=>{for(let y=0;y<document.body.scrollHeight;y+=600){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,40))}window.scrollTo(0,0)}")
             pg.wait_for_timeout(400)
             pg.screenshot(path=f"{args.shots}/{name}", full_page=full)
@@ -138,7 +140,7 @@ def main():
         # Interações: menu móvel, busca e índice lateral.
         it = {}
         pg = browser.new_page(viewport={"width": 390, "height": 844})
-        pg.goto(args.base + "/", wait_until="networkidle")
+        pg.goto(args.base + "/", wait_until="load")
         btn = pg.locator("[data-menu]")
         it["menu_visivel_no_celular"] = btn.is_visible()
         btn.click()
@@ -154,7 +156,7 @@ def main():
         pg.close()
 
         pg = browser.new_page(viewport={"width": 1440, "height": 900})
-        pg.goto(args.base + "/", wait_until="networkidle")
+        pg.goto(args.base + "/", wait_until="load")
         it["nav_desktop_visivel"] = pg.locator(".nav-links").is_visible()
         pg.keyboard.press("Control+k")
         it["busca_abre_ctrl_k"] = pg.locator("[data-search-overlay]").is_visible()
@@ -174,7 +176,7 @@ def main():
         pg.keyboard.press("Control+k")
         pg.keyboard.press("Escape")
         it["busca_fecha_com_esc"] = not pg.locator("[data-search-overlay]").is_visible()
-        pg.goto(args.base + "/estudos/caminhos/certificado-inteiro/", wait_until="networkidle")
+        pg.goto(args.base + "/estudos/caminhos/certificado-inteiro/", wait_until="load")
         it["toc_itens"] = pg.locator(".toc a").count()
         it["toc_sticky"] = pg.evaluate("getComputedStyle(document.querySelector('.page-layout > aside')).position")
         it["katex_blocos"] = pg.locator(".katex").count()

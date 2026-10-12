@@ -60,14 +60,14 @@ Comparação lado a lado: `qa/comparacao-home-1672.jpg` e `qa/comparacao-artigo-
 3. **Números.** Os KPIs fictícios da imagem (1.247, 8.430, 321, 2,8 M e percentuais) não foram copiados.
 4. **Fórum.** Sem autores, horários ou contagens inventados: as pautas são identificadas como propostas até o Giscus ser ativado.
 5. **Botão "Entrar".** Não existe login; o botão virou "Participar", que leva ao fórum.
-6. **Redes sociais no rodapé.** Não há contas confirmadas. O ícone do GitHub só aparece quando `SITE.repositorioPublico` for `true` (o repositório ainda é privado).
+6. **Redes sociais no rodapé.** Não há contas confirmadas além do GitHub; o ícone do repositório público aparece no rodapé.
 7. **Contraste do botão dourado.** Texto branco sobre o dourado da referência fica em cerca de 3:1 (passa para elementos de interface e texto grande, não para texto pequeno). Mantido por fidelidade; textos dourados sobre branco usam `#9a6f17` (4,5:1).
 8. **Imagens dos cards de artigo.** São as ilustrações do pacote, recortadas para remover restos de chips da captura. São editoriais, não figuras dos experimentos.
 9. **Tema escuro.** O alternador antigo foi removido: o sistema aprovado é claro (`color-scheme: light`).
 
 ## Dependências externas (fora do código)
 
-- Giscus: tornar o repositório público, ativar Discussions, instalar o app e preencher os IDs em `src/config.ts` (passo a passo em `docs/DEPLOY.md`). Até lá, o site mostra o estado vazio.
+- Giscus: ativado em 12/10/2026 (repositório público, Discussions, app instalado e IDs em `src/config.ts`).
 - Fonte Inter vem do Google Fonts; sem rede, o navegador usa a fonte do sistema.
 - Miniaturas da página `/videos/` vêm de `img.youtube.com`.
 

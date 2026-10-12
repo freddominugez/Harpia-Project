@@ -9,10 +9,9 @@ export const SITE = {
   autor: "Carlos Frederico Domínguez",
   assinatura: "Apps by Vulcan",
   assinaturaUrl: "https://byvulcan.com",
-  repositorio: "https://github.com/freddominugez/harpia-project",
-  // O repositório ainda é privado. Mude para true quando ele for público:
-  // o ícone do GitHub aparece no rodapé e os links passam a funcionar para visitantes.
-  repositorioPublico: false,
+  repositorio: "https://github.com/freddominugez/Harpia-Project",
+  // Repositório público desde 12/10/2026: o ícone do GitHub aparece no rodapé.
+  repositorioPublico: true,
 };
 
 // Fórum: Giscus (GitHub Discussions). Gratuito, sem servidor e sem banco.
@@ -21,13 +20,13 @@ export const SITE = {
 // (3) instalar o app giscus no repositório. Enquanto "repoId" estiver vazio,
 // o site mostra as instruções no lugar do fórum.
 export const GISCUS = {
-  repo: "freddominugez/harpia-project",
-  repoId: "",
+  repo: "freddominugez/Harpia-Project",
+  repoId: "R_kgDOVGFL8g",
   categoria: "Caminhos",
-  categoriaId: "",
+  categoriaId: "DIC_kwDOVGFL8s4DIHTO",
   // Categoria usada na página /forum (discussão geral).
   categoriaGeral: "Perguntas",
-  categoriaGeralId: "",
+  categoriaGeralId: "DIC_kwDOVGFL8s4DIHTP",
 };
 
 export const giscusConfigurado = () => GISCUS.repoId !== "" && GISCUS.categoriaId !== "";
