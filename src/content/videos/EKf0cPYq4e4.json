@@ -1,0 +1,16 @@
+{
+  "id": "EKf0cPYq4e4",
+  "titulo": "Building a GPU Compiler from Scratch: Lowering PyTorch Graphs to CUDA via Multi-Level IRs",
+  "canal": "GPU MODE",
+  "modulo": 10,
+  "nivel": "Avançado",
+  "resumo": "Mostra como camadas do PyTorch viram kernels de GPU por rebaixamento progressivo entre representações intermediárias. Para quem quer entender compiladores de ML antes de escrever kernels próprios.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=EKf0cPYq4e4",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}

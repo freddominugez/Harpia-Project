@@ -1,0 +1,16 @@
+{
+  "id": "NmyR0gCByoU",
+  "titulo": "Position Embeddings: Learned, Sinusoidal, Relative | The attention family series - Lecture 9",
+  "canal": "Vizuara",
+  "modulo": 4,
+  "nivel": "Intermediário",
+  "resumo": "Explica por que a atenção sozinha ignora a ordem das palavras e compara embeddings de posição aprendidos, senoidais e relativos, com medidas nos pesos do GPT-2. Para quem já conhece Q, K e V.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=NmyR0gCByoU",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}
