@@ -7,7 +7,7 @@ import rehypeKatex from "rehype-katex";
 
 export default defineConfig({
   // Troque pelo domínio final quando ele existir (ex.: https://harpya.org).
-  site: "https://harpia-project.vercel.app",
+  site: "https://harpya.org",
   integrations: [sitemap()],
   markdown: {
     remarkPlugins: [remarkMath],

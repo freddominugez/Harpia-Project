@@ -1,4 +1,4 @@
-"""Robô de news do Harpya Project.
+"""Robô de news do Harpya.
 
 Lê os feeds listados em src/data/feeds.json, mantém só itens ligados aos caminhos
 do projeto e grava public/data/news.json. Roda no GitHub Actions a cada 6 horas.

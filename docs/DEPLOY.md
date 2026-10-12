@@ -8,8 +8,8 @@ O código está em https://github.com/freddominugez/harpia-project (branch `main
 
 ```bash
 cd ~/Documents/GitHub
-git clone https://github.com/freddominugez/harpia-project.git "Harpya Project"
-cd "Harpya Project" && npm install && npm run dev
+git clone https://github.com/freddominugez/harpia-project.git "Harpya"
+cd "Harpya" && npm install && npm run dev
 ```
 
 ## 2. Vercel (plano Hobby, gratuito)

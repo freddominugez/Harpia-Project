@@ -1,4 +1,4 @@
-# Harpya Project
+# Harpya
 
 Pesquisa aberta sobre eficiência de LLMs: embeddings, tokens, pesos e busca vetorial. Só entram caminhos com equação, custo conhecido e teste refutável.
 

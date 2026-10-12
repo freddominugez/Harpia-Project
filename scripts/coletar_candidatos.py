@@ -1,4 +1,4 @@
-"""Coletor de candidatos para a curadoria do Harpya Project.
+"""Coletor de candidatos para a curadoria do Harpya.
 
 Busca artigos (arXiv), vídeos (YouTube Data API v3, opcional) e livros (Open Library)
 e grava curadoria/candidatos.json. Nada aqui vai direto para o site: o workflow

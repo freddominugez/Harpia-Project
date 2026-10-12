@@ -5,9 +5,9 @@ const ativo = (href: string) => (href === "/" ? atual === "/" : atual.startsWith
 ---
 <header class="topbar">
   <div class="container nav">
-    <a href="/" class="brand" aria-label="Harpya Project, página inicial">
+    <a href="/" class="brand" aria-label="Harpya, página inicial">
       <img src="/img/harpya-logo-512.png" alt="" width="50" height="50" />
-      <div class="brand-wordmark">HARPYA <span>PROJECT</span></div>
+      <div class="brand-wordmark">HARPYA</div>
     </a>
     <nav class="nav-links" aria-label="Navegação principal">
       {NAV.map((i) => <a href={i.href} aria-current={ativo(i.href) ? "page" : undefined}>{i.rotulo}</a>)}

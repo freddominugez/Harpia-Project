@@ -1,7 +1,7 @@
 // Configuração central do site. Edite aqui, não espalhe valores pelas páginas.
 
 export const SITE = {
-  nome: "Harpya Project",
+  nome: "Harpya",
   lema: "Conhecimento transforma horizontes",
   descricao:
     "Pesquisa aberta sobre eficiência de LLMs: embeddings, tokens, pesos e busca vetorial. Só entram caminhos com equação, custo e teste refutável.",
