@@ -1,0 +1,16 @@
+{
+  "id": "_cRgl3maiT8",
+  "titulo": "How Inference Keeps Up with Our Insatiable Need for Tokens — Cerebras & Gimlet Labs",
+  "canal": "AI Engineer",
+  "modulo": 10,
+  "nivel": "Intermediário",
+  "resumo": "Panorama das técnicas de servir modelos: por que a decodificação é limitada por memória, batching contínuo, cache KV, paged attention, cache de prompt e prefill em blocos. Para quem começa a otimizar inferência.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=_cRgl3maiT8",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-12",
+  "verificado_em": "2026-10-12"
+}
