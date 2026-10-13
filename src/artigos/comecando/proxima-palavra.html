@@ -1,0 +1,241 @@
+  <p class="series">Como uma máquina aprende a falar · artigo 1 de 10</p>
+  <h1>O truque é um só: adivinhar a próxima palavra</h1>
+  <p class="byline">Carlos Frederico Domínguez · 12 de outubro de 2026</p>
+
+  <p class="lead">Um modelo de linguagem não sabe que Paris é a capital da França. Ele sabe que, depois de "a capital da França é", o token mais provável é Paris. A distância entre essas duas frases parece pequena e explica quase tudo o que esses sistemas fazem de impressionante e de errado.</p>
+
+  <p>Todo o treinamento de base de um modelo como o GPT, o Claude ou o Llama se apoia num único objetivo: dada uma sequência de texto, prever o pedaço seguinte. Não há uma lista de fatos, nem regras gramaticais, nem um humano marcando o que é verdade. Há texto, trilhões de pedaços dele, e a mesma pergunta repetida até a exaustão: e agora, o que vem?</p>
+
+  <p>Não é memória. É previsão. O que chamamos de conhecimento do modelo é o resíduo que sobra quando a previsão fica boa o bastante.</p>
+
+  <p>O mecanismo cabe em quatro passos. O texto é quebrado em tokens, que são pedaços de palavra, não palavras inteiras, e cada token vira um número de identificação num vocabulário fixo de dezenas de milhares de entradas. O modelo lê a sequência de tokens até certo ponto e produz, para cada entrada desse vocabulário, um número que mede a aposta naquele token como continuação. Uma função chamada softmax converte esses números em probabilidades que somam exatamente um. Esse vetor de probabilidades é toda a opinião do modelo sobre o que vem a seguir.</p>
+
+  <!-- Figura 1: tokenização -->
+  <figure>
+    <svg viewBox="0 0 720 240" role="img" aria-label="A frase 'a capital da França é' sendo dividida em seis tokens, cada um com um número de identificação">
+      <defs>
+        <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+          <path d="M0,0 L8,4 L0,8 z" fill="var(--muted)"/>
+        </marker>
+      </defs>
+      <text x="18" y="22" class="lbl">Figura 1. Texto vira tokens, tokens viram inteiros</text>
+
+      <rect x="180" y="40" width="360" height="42" rx="8" class="box"/>
+      <text x="360" y="67" text-anchor="middle" font-size="17" font-family="'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif">"a capital da França é"</text>
+
+      <line x1="360" y1="84" x2="360" y2="118" class="arrow" marker-end="url(#arrowhead)"/>
+      <text x="372" y="106" class="lbl">tokenizador (BPE), treinado antes do modelo</text>
+
+      <g>
+        <rect x="42" y="128" width="96" height="42" rx="7" class="box"/>
+        <text x="90" y="155" text-anchor="middle" class="mono" font-size="15">a</text>
+        <text x="90" y="192" text-anchor="middle" class="mono muted" font-size="13">64</text>
+
+        <rect x="150" y="128" width="96" height="42" rx="7" class="box"/>
+        <text x="198" y="155" text-anchor="middle" class="mono" font-size="15"><tspan class="muted">␣</tspan>capital</text>
+        <text x="198" y="192" text-anchor="middle" class="mono muted" font-size="13">9145</text>
+
+        <rect x="258" y="128" width="96" height="42" rx="7" class="box"/>
+        <text x="306" y="155" text-anchor="middle" class="mono" font-size="15"><tspan class="muted">␣</tspan>da</text>
+        <text x="306" y="192" text-anchor="middle" class="mono muted" font-size="13">1077</text>
+
+        <rect x="366" y="128" width="96" height="42" rx="7" class="box"/>
+        <text x="414" y="155" text-anchor="middle" class="mono" font-size="15"><tspan class="muted">␣</tspan>Fran</text>
+        <text x="414" y="192" text-anchor="middle" class="mono muted" font-size="13">29418</text>
+
+        <rect x="474" y="128" width="96" height="42" rx="7" class="box"/>
+        <text x="522" y="155" text-anchor="middle" class="mono" font-size="15">ça</text>
+        <text x="522" y="192" text-anchor="middle" class="mono muted" font-size="13">3120</text>
+
+        <rect x="582" y="128" width="96" height="42" rx="7" class="box"/>
+        <text x="630" y="155" text-anchor="middle" class="mono" font-size="15"><tspan class="muted">␣</tspan>é</text>
+        <text x="630" y="192" text-anchor="middle" class="mono muted" font-size="13">715</text>
+      </g>
+
+      <text x="42" y="226" class="lbl">6 tokens para 5 palavras. O símbolo ␣ marca o espaço que o tokenizador cola ao início do pedaço.</text>
+    </svg>
+    <figcaption><b>Divisão ilustrativa.</b> O corte real depende do tokenizador de cada modelo: "França" pode sair inteira ou em dois pedaços, e os números de identificação variam de um vocabulário para outro. O que não varia é o princípio: o modelo nunca recebe letras nem palavras, recebe uma sequência de inteiros, cada um apontando para uma entrada de um vocabulário fixo.</figcaption>
+  </figure>
+
+  <!-- Figura 2: embeddings -->
+  <figure>
+    <svg viewBox="0 0 720 262" role="img" aria-label="Três tokens, Paris, Lyon e banana, cada um convertido num vetor de números; Paris e Lyon têm padrões parecidos, banana tem padrão diferente">
+      <text x="18" y="22" class="lbl">Figura 2. Cada inteiro aponta para um vetor: o embedding</text>
+
+      <text x="40" y="58" class="lbl">token</text>
+      <text x="150" y="58" class="lbl">id</text>
+      <text x="238" y="58" class="lbl">embedding: 4.096 números, mostrados 5</text>
+
+      <!-- Paris -->
+      <text x="40" y="92" class="t-paris" font-size="15">Paris</text>
+      <text x="150" y="92" class="mono muted" font-size="13">12050</text>
+      <g class="mono" font-size="12">
+        <rect x="238" y="74" width="56" height="26" rx="4" class="heat-pos" opacity="0.21"/><text x="266" y="92" text-anchor="middle">0,21</text>
+        <rect x="300" y="74" width="56" height="26" rx="4" class="heat-neg" opacity="0.74"/><text x="328" y="92" text-anchor="middle">−0,74</text>
+        <rect x="362" y="74" width="56" height="26" rx="4" class="heat-pos" opacity="0.33"/><text x="390" y="92" text-anchor="middle">0,33</text>
+        <rect x="424" y="74" width="56" height="26" rx="4" class="heat-pos" opacity="0.08"/><text x="452" y="92" text-anchor="middle">0,08</text>
+        <text x="508" y="92" text-anchor="middle" class="muted">…</text>
+        <rect x="536" y="74" width="56" height="26" rx="4" class="heat-neg" opacity="0.19"/><text x="564" y="92" text-anchor="middle">−0,19</text>
+      </g>
+
+      <!-- Lyon -->
+      <text x="40" y="142" class="t-lyon" font-size="15">Lyon</text>
+      <text x="150" y="142" class="mono muted" font-size="13">31977</text>
+      <g class="mono" font-size="12">
+        <rect x="238" y="124" width="56" height="26" rx="4" class="heat-pos" opacity="0.19"/><text x="266" y="142" text-anchor="middle">0,19</text>
+        <rect x="300" y="124" width="56" height="26" rx="4" class="heat-neg" opacity="0.70"/><text x="328" y="142" text-anchor="middle">−0,70</text>
+        <rect x="362" y="124" width="56" height="26" rx="4" class="heat-pos" opacity="0.29"/><text x="390" y="142" text-anchor="middle">0,29</text>
+        <rect x="424" y="124" width="56" height="26" rx="4" class="heat-pos" opacity="0.12"/><text x="452" y="142" text-anchor="middle">0,12</text>
+        <text x="508" y="142" text-anchor="middle" class="muted">…</text>
+        <rect x="536" y="124" width="56" height="26" rx="4" class="heat-neg" opacity="0.22"/><text x="564" y="142" text-anchor="middle">−0,22</text>
+      </g>
+
+      <!-- banana -->
+      <text x="40" y="192" class="t-banana" font-size="15">banana</text>
+      <text x="150" y="192" class="mono muted" font-size="13">20841</text>
+      <g class="mono" font-size="12">
+        <rect x="238" y="174" width="56" height="26" rx="4" class="heat-neg" opacity="0.63"/><text x="266" y="192" text-anchor="middle">−0,63</text>
+        <rect x="300" y="174" width="56" height="26" rx="4" class="heat-pos" opacity="0.15"/><text x="328" y="192" text-anchor="middle">0,15</text>
+        <rect x="362" y="174" width="56" height="26" rx="4" class="heat-neg" opacity="0.41"/><text x="390" y="192" text-anchor="middle">−0,41</text>
+        <rect x="424" y="174" width="56" height="26" rx="4" class="heat-pos" opacity="0.77"/><text x="452" y="192" text-anchor="middle">0,77</text>
+        <text x="508" y="192" text-anchor="middle" class="muted">…</text>
+        <rect x="536" y="174" width="56" height="26" rx="4" class="heat-pos" opacity="0.36"/><text x="564" y="192" text-anchor="middle">0,36</text>
+      </g>
+
+      <line x1="612" y1="74" x2="612" y2="150" class="axis"/>
+      <text x="620" y="100" class="lbl">padrão</text>
+      <text x="620" y="116" class="lbl">parecido</text>
+      <line x1="612" y1="174" x2="612" y2="200" class="axis"/>
+      <text x="620" y="184" class="lbl">padrão</text>
+      <text x="620" y="200" class="lbl">oposto</text>
+
+      <text x="40" y="242" class="lbl">Azul: valor positivo. Laranja: negativo. Intensidade proporcional ao módulo. Valores ilustrativos.</text>
+    </svg>
+    <figcaption><b>Nenhum desses números significa algo sozinho.</b> O que significa é o padrão: Paris e Lyon receberam, ao longo do treinamento, empurrões parecidos, porque apareceram em contextos parecidos, e seus vetores ficaram parecidos. Banana recebeu empurrões de outro tipo de texto. A dimensão 4.096 é típica de um modelo de alguns bilhões de parâmetros. Modelos menores usam centenas, os maiores passam de dez mil.</figcaption>
+  </figure>
+
+  <p>O treinamento compara essa opinião com o que de fato veio. O token seguinte é escondido, o modelo aposta, e a perda mede quanta probabilidade ele deu ao token certo. A fórmula é o logaritmo negativo dessa probabilidade, a chamada entropia cruzada. Se o modelo deu 90% a Paris e Paris era o gabarito, a perda é pequena. Se deu 0,1%, a perda é grande. A perda só olha para o token certo. Os outros são afetados por tabela, porque as probabilidades somam um: subir Paris obriga a descer o resto.</p>
+
+  <!-- Figura 3: distribuição de probabilidade -->
+  <figure>
+    <svg viewBox="0 0 720 236" role="img" aria-label="Barras de probabilidade para o próximo token depois de 'a capital da França é': Paris muito alta, Lyon e Marselha baixas, banana quase zero">
+      <text x="18" y="22" class="lbl">Figura 3. A saída do modelo: uma distribuição sobre o vocabulário inteiro</text>
+      <text x="18" y="46" class="mono" font-size="13">p(próximo token | "a capital da França é")</text>
+
+      <text x="118" y="76" text-anchor="end" class="t-paris" font-size="14">Paris</text>
+      <rect x="130" y="63" width="452" height="18" rx="3" class="bar"/>
+      <text x="590" y="77" class="mono" font-size="13">0,87</text>
+
+      <text x="118" y="106" text-anchor="end" class="t-lyon" font-size="14">Lyon</text>
+      <rect x="130" y="93" width="21" height="18" rx="3" class="bar-soft"/>
+      <text x="159" y="107" class="mono" font-size="13">0,04</text>
+
+      <text x="118" y="136" text-anchor="end" font-size="14">Marselha</text>
+      <rect x="130" y="123" width="10" height="18" rx="3" class="bar-soft"/>
+      <text x="148" y="137" class="mono" font-size="13">0,02</text>
+
+      <text x="118" y="166" text-anchor="end" font-size="14">Berlim</text>
+      <rect x="130" y="153" width="5" height="18" rx="3" class="bar-soft"/>
+      <text x="143" y="167" class="mono" font-size="13">0,01</text>
+
+      <text x="118" y="192" text-anchor="end" class="muted" font-size="14">outros</text>
+      <text x="130" y="192" class="mono muted" font-size="13">≈ 0,06 somados em 99.995 tokens</text>
+
+      <text x="118" y="222" text-anchor="end" class="t-banana" font-size="14">banana</text>
+      <rect x="130" y="209" width="1.5" height="18" class="bar-banana"/>
+      <text x="140" y="223" class="mono" font-size="13">0,0001</text>
+
+      <text x="700" y="222" text-anchor="end" class="lbl">soma = 1, sempre</text>
+    </svg>
+    <figcaption><b>Valores ilustrativos.</b> A perda do treinamento olha só para a barra do gabarito. Com Paris em 0,87, a perda é −ln(0,87) ≈ 0,14. Se o modelo tivesse dado 0,001 a Paris, a perda seria ≈ 6,9. O gradiente empurra os pesos para encolher esse número, e como a soma é fixa em um, subir Paris desce todas as outras barras um pouco.</figcaption>
+  </figure>
+
+  <p>Com a perda calculada, entra o cálculo. A retropropagação computa a derivada da perda em relação a cada um dos bilhões de parâmetros do modelo, e cada parâmetro é deslocado um passo minúsculo na direção que reduz a perda. O tamanho do passo é a taxa de aprendizado. Isso se repete para cada token de cada documento, trilhões de vezes, e o modelo pronto é a soma de todos esses empurrões.</p>
+
+  <p>O detalhe que separa esse treinamento de quase tudo o que se chamava inteligência artificial antes é a origem do gabarito. Ninguém rotulou nada. O gabarito de cada previsão é o token seguinte do próprio documento. O texto se rotula sozinho pelo simples fato de ser sequencial, e é isso que a expressão aprendizado autossupervisionado quer dizer. É também por isso que dá para treinar com a internet inteira: não há limite de gente para anotar.</p>
+
+  <p>Na hora de usar, o processo roda ao contrário. O modelo recebe o começo de um texto, produz a distribuição, um token é escolhido dela, o mais provável ou um sorteado com peso, esse token é anexado ao texto e tudo recomeça. Chama-se geração autorregressiva. Cada palavra que você lê de um modelo foi escolhida assim, uma de cada vez, olhando para tudo o que veio antes.</p>
+
+  <p>Resta explicar por que Paris vence Lyon, e por que Lyon vence banana, sem que exista nenhum lugar onde esses três estejam ordenados.</p>
+
+  <p>Paris vence por frequência. Em milhões de documentos, depois de "a capital da França é" veio Paris, e cada ocorrência foi um empurrão a favor. Banana perde por ausência: nunca apareceu nesse contexto, e os empurrões que recebeu vieram de receitas e feiras, que moram longe. O caso interessante é Lyon, que raramente foi o gabarito nessa posição exata e ainda assim recebe mais probabilidade que banana.</p>
+
+  <p>A razão é que o modelo não consegue decorar. Ele tem bilhões de parâmetros para trilhões de tokens vistos, e precisa reaproveitar os mesmos parâmetros para contextos diferentes. Tudo o que é dito sobre a França, sobre cidades, sobre capitais, passa por representações internas compartilhadas. Lyon aparece no corpus cercada de França, cidade, rio, gastronomia, e acaba representada perto de Paris nesse espaço interno. Quando o contexto pede uma cidade francesa, Lyon herda uma parte da aposta por vizinhança, não por ter sido a resposta certa. É generalização, e é a mesma propriedade que permite ao modelo completar frases que nunca viu.</p>
+
+  <!-- Figura 4: distância no espaço vetorial -->
+  <figure>
+    <svg viewBox="0 0 720 420" role="img" aria-label="Projeção em duas dimensões do espaço de embeddings: o vetor do contexto 'a capital da França é' quase alinhado com Paris, com ângulo pequeno para Lyon e quase perpendicular a banana; cidades francesas agrupadas de um lado, frutas do outro">
+      <defs>
+        <marker id="ah-paris" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--paris)"/></marker>
+        <marker id="ah-lyon" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--lyon)"/></marker>
+        <marker id="ah-banana" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--banana)"/></marker>
+        <marker id="ah-query" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--query)"/></marker>
+        <marker id="ah-soft" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 z" fill="var(--muted)" opacity="0.6"/></marker>
+      </defs>
+      <text x="18" y="22" class="lbl">Figura 4. Distância é ângulo: o espaço vetorial projetado em duas dimensões</text>
+
+      <!-- axes -->
+      <line x1="40" y1="360" x2="700" y2="360" class="axis"/>
+      <line x1="300" y1="60" x2="300" y2="360" class="axis"/>
+      <text x="692" y="376" text-anchor="end" class="lbl">dimensão 1 (de 4.096)</text>
+      <text x="308" y="72" class="lbl">dimensão 2</text>
+
+      <!-- clusters -->
+      <ellipse cx="455" cy="185" rx="150" ry="95" class="cluster-city"/>
+      <text x="545" y="112" class="lbl">cidades francesas</text>
+      <ellipse cx="160" cy="170" rx="95" ry="75" class="cluster-fruit"/>
+      <text x="92" y="100" class="lbl">frutas</text>
+
+      <!-- soft neighbours -->
+      <line x1="300" y1="360" x2="362" y2="170" class="vec-soft" marker-end="url(#ah-soft)"/>
+      <text x="318" y="160" class="muted" font-size="12">Bordeaux</text>
+      <line x1="300" y1="360" x2="554" y2="268" class="vec-soft" marker-end="url(#ah-soft)"/>
+      <text x="560" y="272" class="muted" font-size="12">Marselha</text>
+      <line x1="300" y1="360" x2="147" y2="231" class="vec-soft" marker-end="url(#ah-soft)"/>
+      <text x="96" y="236" class="muted" font-size="12">manga</text>
+      <line x1="300" y1="360" x2="187" y2="148" class="vec-soft" marker-end="url(#ah-soft)"/>
+      <text x="150" y="140" class="muted" font-size="12">maçã</text>
+
+      <!-- main vectors -->
+      <line x1="300" y1="360" x2="165" y2="187" class="vec vec-banana" marker-end="url(#ah-banana)"/>
+      <text x="100" y="180" class="t-banana" font-size="14">banana</text>
+
+      <line x1="300" y1="360" x2="399" y2="175" class="vec vec-lyon" marker-end="url(#ah-lyon)"/>
+      <text x="404" y="168" class="t-lyon" font-size="14">Lyon</text>
+
+      <line x1="300" y1="360" x2="493" y2="235" class="vec vec-paris" marker-end="url(#ah-paris)"/>
+      <text x="500" y="232" class="t-paris" font-size="14">Paris</text>
+
+      <line x1="300" y1="360" x2="453" y2="231" class="vec vec-query" marker-end="url(#ah-query)"/>
+      <text x="440" y="212" class="t-query" font-size="13">contexto: "a capital da França é"</text>
+
+      <!-- angle arcs -->
+      <path d="M 425.8 278.3 A 150 150 0 0 0 414.9 263.6" class="arc"/>
+      <text x="432" y="296" class="small" fill="var(--query)">θ ≈ 7°</text>
+      <path d="M 334.5 331.1 A 45 45 0 0 0 272.3 324.5" class="arc"/>
+      <text x="200" y="342" class="small" fill="var(--query)">θ ≈ 88°</text>
+
+      <!-- cosine table -->
+      <g font-size="12">
+        <text x="548" y="300" class="lbl">cosseno com o contexto</text>
+        <text x="548" y="320" class="t-paris">Paris</text><text x="604" y="320" class="mono">cos 7° ≈ 0,99</text>
+        <text x="548" y="338" class="t-lyon">Lyon</text><text x="604" y="338" class="mono">cos 22° ≈ 0,93</text>
+        <text x="548" y="356" class="t-banana">banana</text><text x="604" y="356" class="mono">cos 88° ≈ 0,03</text>
+      </g>
+
+      <text x="40" y="404" class="lbl">Projeção ilustrativa. Vetores reais têm milhares de dimensões e cossenos menores, com a mesma ordem.</text>
+    </svg>
+    <figcaption><b>Num banco vetorial, a pergunta também vira um vetor</b> e o banco devolve os vizinhos de menor ângulo, ou de menor distância euclidiana, que para vetores normalizados dá a mesma ordem. Paris vence por estar quase alinhada ao contexto. Lyon fica perto por morar no mesmo bairro, o das cidades francesas, mesmo sem nunca ter sido a resposta. Banana está quase perpendicular: similaridade perto de zero. É essa geometria que o produto escalar da última camada do modelo mede antes do softmax, e é a mesma geometria que uma busca semântica usa para encontrar o trecho certo entre milhões de documentos.</figcaption>
+  </figure>
+
+  <p>Há uma forma mais rigorosa de dizer isso. A entropia cruzada, medida em bits, é o número de bits que um compressor construído sobre o modelo gastaria para codificar aquele texto, a menos de uma sobra fixa e pequena. Prever bem e comprimir bem são a mesma tarefa, não uma analogia. Para comprimir "a capital da França é Paris" em milhões de documentos distintos, a solução mais barata em parâmetros é codificar a regularidade uma vez e reutilizá-la. Vista de fora, essa regularidade codificada parece saber. Ninguém ensinou o fato. O fato emergiu porque era a forma mais econômica de errar menos.</p>
+
+  <p>Isso muda o que significa o modelo conter um fato. Não há uma linha num banco de dados dizendo que Paris é a capital da França. Há uma configuração de bilhões de números que, diante daquele contexto, concentra a probabilidade em Paris. O fato está diluído, espalhado e misturado com todos os outros. Apagar ou corrigir um fato não é apagar uma linha, e esse será o assunto do sétimo artigo desta série.</p>
+
+  <p>O limite está escrito no próprio objetivo. As probabilidades somam um, sempre. Não existe no treinamento de base uma opção chamada "não sei". Quando a continuação correta é rara no corpus, ou não está nele, a massa de probabilidade não desaparece: vai para o que for mais plausível naquela vizinhança, uma data que soa certa, um nome que combina com a profissão, um número com a ordem de grandeza típica. O modelo entrega essa resposta com a mesma fluência com que entrega Paris, porque fluência é a única coisa que ele otimizou. A resposta confiantemente errada vem do mesmo mecanismo que produz Paris, operando onde faltava dado.</p>
+
+  <p>A consequência prática é uma regra de proporção. O modelo conhece o mundo na medida em que o mundo escreveu sobre ele. Fatos muito documentados saem sólidos. Fatos raros, recentes, locais ou em línguas com pouco texto saem como palpites com aparência de resposta. É por isso que existe a técnica chamada RAG, recuperação de documentos na hora da pergunta: em vez de confiar na memória estatística, coloca-se o trecho relevante dentro do contexto, e o gabarito volta a estar na frente do modelo em vez de diluído nos pesos.</p>
+
+  <p>Uma ressalva de escopo. O que você usa no dia a dia não é esse preditor cru. Sobre ele vêm camadas posteriores de treinamento que o ensinam a seguir instruções, recusar certas coisas e se comportar como assistente. Essas camadas mudam o comportamento, não a base, e serão tratadas no oitavo artigo. Por baixo de qualquer assistente há um preditor de próximo token, e tudo o que ele faz de bom ou de ruim passa por essa origem.</p>
+
+  <p>Fica uma simplificação a corrigir. Este artigo falou em palavra por conveniência. O modelo nunca vê palavras. Vê tokens, pedaços escolhidos por um algoritmo treinado antes do modelo e congelado para sempre, e essa escolha, feita por frequência e sem qualquer noção de gramática, decide o que o modelo conta bem, o que lê caro e por que o português custa mais que o inglês. É o assunto do próximo artigo.</p>

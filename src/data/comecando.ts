@@ -8,6 +8,13 @@ export type ArtigoSerie = { numero: number; slug: string; titulo: string; descri
 
 export const COMECANDO: ArtigoSerie[] = [
   {
+    numero: 1,
+    slug: "proxima-palavra",
+    titulo: "O truque é um só: adivinhar a próxima palavra",
+    descricao: "Como um modelo de linguagem aprende prevendo o próximo token, por que isso parece conhecimento e de onde vem a resposta confiantemente errada.",
+    data: "2026-10-12",
+  },
+  {
     numero: 2,
     slug: "tokens",
     titulo: "Tokens: o modelo não lê palavras",
