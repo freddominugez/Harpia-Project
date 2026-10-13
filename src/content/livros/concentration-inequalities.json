@@ -3,12 +3,15 @@
   "autores": "Boucheron, Lugosi, Massart",
   "nota": "2013",
   "uso": "Caminho 3: raio probabilístico",
-  "url": "",
+  "url": "https://academic.oup.com/book/26549",
   "cor": "c1",
   "ordem": 7,
-  "fonte_url": "",
+  "fonte_url": "https://academic.oup.com/book/26549",
   "status": "publicado",
   "origem": "manual",
   "adicionado_em": "2026-10-12",
-  "verificado_em": "2026-10-12"
+  "verificado_em": "2026-10-13",
+  "capa": "https://covers.openlibrary.org/b/isbn/9780199535255-M.jpg?default=false",
+  "nivel": "Avançado",
+  "descricao": "Limites não assintóticos para desvios de variáveis aleatórias. Sustenta a discussão de raios probabilísticos, hipóteses de concentração e orçamentos de risco."
 }

@@ -10,5 +10,8 @@
   "status": "publicado",
   "origem": "manual",
   "adicionado_em": "2026-10-12",
-  "verificado_em": "2026-10-12"
+  "verificado_em": "2026-10-13",
+  "capa": "https://covers.openlibrary.org/b/isbn/9780521865715-M.jpg?default=false",
+  "nivel": "Intermediário",
+  "descricao": "Índices, recuperação, ranqueamento e avaliação de resultados. Ajuda a separar a representação de um documento do algoritmo que encontra os candidatos."
 }

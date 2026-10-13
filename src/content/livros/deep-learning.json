@@ -10,5 +10,8 @@
   "status": "publicado",
   "origem": "manual",
   "adicionado_em": "2026-10-12",
-  "verificado_em": "2026-10-12"
+  "verificado_em": "2026-10-13",
+  "capa": "https://covers.openlibrary.org/b/isbn/9780262035613-M.jpg?default=false",
+  "nivel": "Intermediário",
+  "descricao": "Fundamentos de redes profundas, otimização e representação aprendida. Útil para entender como a arquitetura, a perda e o treinamento se relacionam."
 }

@@ -10,5 +10,8 @@
   "status": "publicado",
   "origem": "manual",
   "adicionado_em": "2026-10-12",
-  "verificado_em": "2026-10-12"
+  "verificado_em": "2026-10-13",
+  "capa": "https://mit-press-new-us.imgix.net/covers/9780262377102.jpg?auto=format&w=300",
+  "nivel": "Intermediário",
+  "descricao": "Explicação progressiva de redes neurais, treinamento e arquiteturas modernas, com figuras e exercícios. Uma ponte entre a intuição e a formulação matemática."
 }

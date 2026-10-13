@@ -10,5 +10,8 @@
   "status": "publicado",
   "origem": "manual",
   "adicionado_em": "2026-10-12",
-  "verificado_em": "2026-10-12"
+  "verificado_em": "2026-10-13",
+  "capa": "https://covers.openlibrary.org/b/isbn/9780131873216-M.jpg?default=false",
+  "nivel": "Intermediário",
+  "descricao": "Referência sobre processamento de linguagem, tokenização, representações e modelos. O link aponta para o rascunho atualizado da terceira edição; a imagem é da segunda edição impressa."
 }

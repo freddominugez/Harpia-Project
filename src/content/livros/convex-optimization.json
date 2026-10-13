@@ -1,0 +1,17 @@
+{
+  "titulo": "Convex Optimization",
+  "autores": "Stephen Boyd, Lieven Vandenberghe",
+  "nota": "2004 · gratuito online",
+  "uso": "Base: otimização e dualidade",
+  "url": "https://web.stanford.edu/~boyd/cvxbook/",
+  "cor": "c3",
+  "ordem": 10,
+  "fonte_url": "https://web.stanford.edu/~boyd/cvxbook/",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "capa": "https://covers.openlibrary.org/b/isbn/9780521833783-M.jpg?default=false",
+  "nivel": "Avançado",
+  "descricao": "Conjuntos e funções convexas, dualidade e métodos de otimização. Ajuda a reconhecer quais propriedades permitem provar uma escolha ótima e quais problemas exigem outras hipóteses."
+}

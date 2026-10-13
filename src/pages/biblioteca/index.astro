@@ -15,19 +15,26 @@ const ordenados = [...artigos].sort((a, b) => a.ano - b.ano);
 
   <section class="section" id="livros">
     <div class="container">
-      <div class="section-head"><div><h2>Livros</h2><p>Da álgebra linear aos reticulados.</p></div></div>
-      <div class="shelf">
+      <div class="section-head"><div><h2>Livros</h2><p>Da álgebra linear aos reticulados: capas, referências e um ponto de partida para cada nível de leitura.</p></div></div>
+      <div class="library-books">
         {livros.map((l) => (
-          <div class="book">
-            {l.url ? (
-              <a class={`cover ${l.cor}`} href={l.url} target="_blank" rel="noopener noreferrer"><small>{l.nota.toUpperCase()}</small><b>{l.titulo}</b><small>{l.autores}</small></a>
-            ) : (
-              <div class={`cover ${l.cor}`}><small>{l.nota.toUpperCase()}</small><b>{l.titulo}</b><small>{l.autores}</small></div>
-            )}
-            <div class="info"><strong>{l.uso.split(":")[0]}</strong>{l.uso.includes(":") ? ` · ${l.uso.split(":")[1].trim()}` : ""}</div>
-          </div>
+          <article class="library-book">
+            <a class="library-book-cover" href={l.url} target="_blank" rel="noopener noreferrer" aria-label={`Ver ${l.titulo}`}>
+              <img src={l.capa} alt={`Capa de ${l.titulo}`} width="200" height="300" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+            </a>
+            <div class="library-book-copy">
+              <span class="library-book-level">{l.nivel}</span>
+              <h3><a href={l.url} target="_blank" rel="noopener noreferrer">{l.titulo}</a></h3>
+              <div class="library-book-authors">{l.autores}</div>
+              <div class="library-book-note">{l.nota}</div>
+              <p>{l.descricao}</p>
+              <div class="library-book-use">{l.uso}</div>
+              <a class="btn outline slim" href={l.url} target="_blank" rel="noopener noreferrer">{l.nota.includes("gratuito") || l.nota.includes("online") ? "Ler na fonte oficial" : "Ver na editora"} <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
         ))}
       </div>
+      <p class="library-cover-credit">Capas: Open Library e MIT Press, identificadas por ISBN. A disponibilidade e a edição do texto são indicadas em cada ficha.</p>
     </div>
   </section>
 

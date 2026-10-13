@@ -194,6 +194,9 @@ collections:
       - { label: "Nota (ano, acesso)", name: nota, widget: string, hint: "Ex.: 2020 · gratuito" }
       - { label: "Uso no projeto", name: uso, widget: string, hint: "Ex.: Caminho 3: concentração de medida" }
       - { label: "URL", name: url, widget: string, required: false, default: "" }
+      - { label: "Imagem da capa (URL)", name: capa, widget: string, required: false }
+      - { label: "Nível de leitura", name: nivel, widget: select, options: [Introdução, Intermediário, Avançado], required: false }
+      - { label: "Descrição", name: descricao, widget: text, required: false }
       - { label: "Cor da capa", name: cor, widget: select, options: [c1, c2, c3, c4, c5, c6], default: c1 }
       - { label: "URL de origem", name: fonte_url, widget: string, required: false, default: "" }
       - *status

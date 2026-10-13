@@ -1,0 +1,17 @@
+{
+  "titulo": "Pattern Recognition and Machine Learning",
+  "autores": "Christopher M. Bishop",
+  "nota": "2006 · PDF oficial gratuito",
+  "uso": "Base: reconhecimento de padrões e estatística",
+  "url": "https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/",
+  "cor": "c3",
+  "ordem": 11,
+  "fonte_url": "https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "capa": "https://covers.openlibrary.org/b/isbn/9780387310732-M.jpg?default=false",
+  "nivel": "Intermediário",
+  "descricao": "Fundamentos estatísticos de classificação, regressão, modelos gráficos e métodos aproximados. A página oficial disponibiliza o livro em PDF para aprofundamento matemático."
+}

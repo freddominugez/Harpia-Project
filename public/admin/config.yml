@@ -488,6 +488,22 @@ collections:
     widget: string
     required: false
     default: ''
+  - label: Imagem da capa (URL)
+    name: capa
+    widget: string
+    required: false
+  - label: Nível de leitura
+    name: nivel
+    widget: select
+    options:
+    - Introdução
+    - Intermediário
+    - Avançado
+    required: false
+  - label: Descrição
+    name: descricao
+    widget: text
+    required: false
   - label: Cor da capa
     name: cor
     widget: select

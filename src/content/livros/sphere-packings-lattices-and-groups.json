@@ -3,12 +3,15 @@
   "autores": "Conway, Sloane",
   "nota": "clássico",
   "uso": "Caminho 5: reticulados E8 e Leech",
-  "url": "",
+  "url": "https://link.springer.com/book/10.1007/978-1-4757-6568-7",
   "cor": "c6",
   "ordem": 6,
-  "fonte_url": "",
+  "fonte_url": "https://link.springer.com/book/10.1007/978-1-4757-6568-7",
   "status": "publicado",
   "origem": "manual",
   "adicionado_em": "2026-10-12",
-  "verificado_em": "2026-10-12"
+  "verificado_em": "2026-10-13",
+  "capa": "https://covers.openlibrary.org/b/isbn/9780387985855-M.jpg?default=false",
+  "nivel": "Avançado",
+  "descricao": "Geometria de empacotamentos, reticulados e grupos, incluindo E8 e Leech. Referência especializada para estudar códigos geométricos e suas normalizações."
 }

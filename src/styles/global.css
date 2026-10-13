@@ -929,3 +929,17 @@ small, time, figcaption { font-size: 14px; line-height: 21px; }
   .ref-hero { min-height: 0; }
   .ref-hero-copy { padding-bottom: 24px; }
 }
+
+.library-books { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 26px; }
+.library-book { display: grid; grid-template-columns: 140px minmax(0,1fr); gap: 22px; background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 24px; align-items: start; }
+.library-book-cover { display: block; background: var(--soft); border-radius: 4px; overflow: hidden; }
+.library-book-cover img { display: block; width: 100%; height: 210px; object-fit: contain; }
+.library-book-copy { min-width: 0; }
+.library-book-copy h3 { margin: 7px 0 8px; }
+.library-book-level { font-size: 14px; color: var(--gold-strong); font-weight: 600; }
+.library-book-authors, .library-book-note { font-size: 14px; line-height: 21px; color: var(--muted); }
+.library-book-copy p { margin: 14px 0; }
+.library-book-use { font-size: 14px; line-height: 21px; margin-bottom: 16px; }
+.library-cover-credit { margin-top: 22px; color: var(--muted); }
+@media (max-width: 1000px) { .library-books { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { .library-book { grid-template-columns: 90px minmax(0,1fr); gap: 14px; padding: 16px; } .library-book-cover img { height: 140px; } .library-book-copy .btn { white-space: normal; } }

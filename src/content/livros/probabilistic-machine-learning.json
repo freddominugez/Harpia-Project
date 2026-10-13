@@ -1,0 +1,17 @@
+{
+  "titulo": "Probabilistic Machine Learning: An Introduction",
+  "autores": "Kevin P. Murphy",
+  "nota": "2022 · versão online do autor",
+  "uso": "Base: modelos probabilísticos e inferência",
+  "url": "https://probml.github.io/pml-book/book1.html",
+  "cor": "c3",
+  "ordem": 9,
+  "fonte_url": "https://probml.github.io/pml-book/book1.html",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "capa": "https://covers.openlibrary.org/b/isbn/9780262046824-M.jpg?default=false",
+  "nivel": "Intermediário",
+  "descricao": "Apresenta aprendizado de máquina pela modelagem probabilística, conectando inferência, decisão e redes neurais. A página do autor oferece versão online e materiais complementares."
+}

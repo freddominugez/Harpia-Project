@@ -3,12 +3,15 @@
   "autores": "Cover, Thomas",
   "nota": "2ª ed.",
   "uso": "Caminho 5: taxa e distorção",
-  "url": "",
+  "url": "https://onlinelibrary.wiley.com/doi/book/10.1002/047174882X",
   "cor": "c2",
   "ordem": 8,
-  "fonte_url": "",
+  "fonte_url": "https://onlinelibrary.wiley.com/doi/book/10.1002/047174882X",
   "status": "publicado",
   "origem": "manual",
   "adicionado_em": "2026-10-12",
-  "verificado_em": "2026-10-12"
+  "verificado_em": "2026-10-13",
+  "capa": "https://covers.openlibrary.org/b/isbn/9780471241959-M.jpg?default=false",
+  "nivel": "Avançado",
+  "descricao": "Entropia, informação mútua, codificação e taxa–distorção. Útil para avaliar limites de compressão sem transformá-los em regras universais para qualquer conjunto de vetores."
 }
