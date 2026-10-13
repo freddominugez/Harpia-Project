@@ -1,13 +1,13 @@
 ---
-// Card de artigo com imagem, chips, data, título, resumo e "Ler mais".
-interface Props { href: string; imagem: string; tags: string[]; titulo: string; resumo: string; data?: string; dataISO?: string }
-const { href, imagem, tags, titulo, resumo, data, dataISO } = Astro.props;
+// Card de artigo com imagem, data, título, resumo e "Ler mais".
+interface Props { href: string; imagem: string; titulo: string; resumo: string; data?: string; dataISO?: string }
+const { href, imagem, titulo, resumo, data, dataISO } = Astro.props;
 ---
 <a class="ref-article" href={href}>
   <img class="ref-article-image" src={imagem} alt="" loading="lazy" decoding="async" width="900" height="262" />
   <div class="ref-article-content">
-    <div class="ref-article-tags">{tags.map((t) => <span>{t}</span>)}{data && <time datetime={dataISO}>{data}</time>}</div>
-    <h3>{titulo}</h3>
+    {data && <time class="ref-article-date" datetime={dataISO}>{data}</time>}
+    <h2>{titulo}</h2>
     <p>{resumo}</p>
     <span class="ref-article-more">Ler mais <span aria-hidden="true">→</span></span>
   </div>

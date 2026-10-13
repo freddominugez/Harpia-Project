@@ -2,7 +2,6 @@
 // Página inicial: reprodução da composição aprovada (docs/referencia-home-exata.png).
 import Base from "../layouts/Base.astro";
 import Hero from "../components/Hero.astro";
-import Kpi from "../components/Kpi.astro";
 import StudyTrackCard from "../components/StudyTrackCard.astro";
 import ArticleCard from "../components/ArticleCard.astro";
 import VideoFeature from "../components/VideoFeature.astro";
@@ -10,10 +9,10 @@ import ForumList from "../components/ForumList.astro";
 import JoinCommunityCard from "../components/JoinCommunityCard.astro";
 import StartCard from "../components/StartCard.astro";
 import { getCollection } from "astro:content";
-import { kpis, trilhas, ARTIGOS_DESTAQUE } from "../data/home";
+import { trilhas, ARTIGOS_DESTAQUE } from "../data/home";
 import { PAUTAS } from "../lib/pautas";
 import { VIDEOS, selecaoDaSemana } from "../lib/videos";
-import { dataCurta, ROTULO_ESTATUTO } from "../lib/format";
+import { dataCurta } from "../lib/format";
 
 const caminhos = await getCollection("caminhos");
 const porSlug = new Map(caminhos.map((c) => [c.id, c]));
@@ -25,12 +24,6 @@ const destaque = selecaoDaSemana();
 ---
 <Base home>
   <Hero />
-
-  <section class="ref-stat-section" aria-label="O acervo em números">
-    <div class="container ref-stats">
-      {kpis(caminhos.length).map((k) => <Kpi k={k} />)}
-    </div>
-  </section>
 
   <section class="ref-content">
     <div class="container wide ref-columns">
@@ -50,13 +43,12 @@ const destaque = selecaoDaSemana();
             <a href="/estudos/">Ver todos os estudos <span aria-hidden="true">→</span></a>
           </div>
           <div class="ref-articles">
-            {artigos.map(({ c, imagem, tags }) => (
+            {artigos.map(({ c, imagem, previa }) => (
               <ArticleCard
                 href={`/estudos/caminhos/${c.id}/`}
                 imagem={imagem}
-                tags={[...tags, ROTULO_ESTATUTO[c.data.estatuto]]}
                 titulo={c.data.titulo}
-                resumo={c.data.resumo}
+                resumo={previa}
                 data={dataCurta(c.data.atualizado)}
                 dataISO={c.data.atualizado}
               />
