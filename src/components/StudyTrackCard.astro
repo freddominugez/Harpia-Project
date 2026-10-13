@@ -1,5 +1,5 @@
 ---
-// Card de trilha de estudo: ícone, título, descrição e rodapé com contagem real.
+// Card de trilha de estudo: ícone, título, descrição e rodapé com categoria.
 import type { Trilha } from "../data/home";
 interface Props { t: Trilha }
 const { t } = Astro.props;
@@ -10,7 +10,6 @@ const { t } = Astro.props;
     <span><h3>{t.titulo}</h3><p>{t.resumo}</p></span>
   </span>
   <span class="ref-track-meta">
-    <span><img class="icon" src={`/icons/${t.metaIcone}.svg`} alt="" aria-hidden="true" width="13" height="13" />{t.meta}</span>
     <span class="level"><img class="icon" src="/icons/chart.svg" alt="" aria-hidden="true" width="13" height="13" />{t.nivel}</span>
     <span class="go" aria-hidden="true">→</span>
   </span>
