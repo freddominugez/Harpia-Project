@@ -49,7 +49,7 @@ Em https://console.cloud.google.com/apis/credentials (um projeto "Harpya"):
 
 ### 4. Variáveis do projeto `harpya-forum` na Vercel
 
-Já configuradas (não secretas): `SITE_NAME`, `SITE_URL`, `SERVER_URL`, `SECURE_DOMAINS`, `LOGIN`, `COMMENT_AUDIT`, `DISABLE_REGION`, `DISABLE_USERAGENT`, `OAUTH_URL`, `GRAVATAR_STR`, `AKISMET_KEY`, `IPQPS`, `WALINE_ADMIN_MODULE_ASSET_URL`, `PG_DB`, `PG_PORT`, `PG_SSL`, `PG_USER`.
+Já configuradas (não secretas): `SITE_NAME`, `SITE_URL`, `SERVER_URL`, `SECURE_DOMAINS`, `LOGIN`, `COMMENT_AUDIT`, `DISABLE_REGION`, `DISABLE_USERAGENT`, `OAUTH_URL`, `GRAVATAR_STR`, `AKISMET_KEY`, `IPQPS`, `WALINE_ADMIN_MODULE_ASSET_URL`, `MARKDOWN_TEX` (katex), `PG_DB`, `PG_PORT`, `PG_SSL`, `PG_USER`.
 
 Crie em **Settings → Environment Variables**, ambiente **Production**, marcando **Sensitive**:
 
