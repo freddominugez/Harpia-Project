@@ -1,0 +1,16 @@
+{
+  "id": "EuN8WCWQf7g",
+  "titulo": "How to Build Your Own AI Agent (Like PewDiePie)",
+  "canal": "Hugging Face",
+  "modulo": 8,
+  "nivel": "Intermediário",
+  "resumo": "Mostra como funciona um harness de agente feito do zero, como rodar um modelo local com llama.cpp e como ajustar um modelo pequeno em traços de agente para chamar ferramentas. Para quem já programa e quer montar um agente local.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=EuN8WCWQf7g",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13"
+}
