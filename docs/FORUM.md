@@ -25,7 +25,7 @@ Faça na ordem. Em cada passo, valores secretos ficam só no serviço de destino
 
 Na Cloudflare, zona `harpya.org` → **DNS → Add record**:
 
-- **Type:** CNAME · **Name:** `forum` · **Target:** `cname.vercel-dns.com` · **Proxy status:** DNS only (nuvem cinza)
+- **Type:** CNAME · **Name:** `forum` · **Target:** `1a087360475f784a.vercel-dns-016.com` (valor indicado pela Vercel para este projeto; `cname.vercel-dns.com` também funciona) · **Proxy status:** DNS only (nuvem cinza)
 
 ### 2. Senha do papel do banco
 
