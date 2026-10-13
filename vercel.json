@@ -67,7 +67,7 @@
       ]
     }
   ],
-  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- . ':(exclude)curadoria' ':(exclude)docs' ':(exclude)README.md'",
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- . ':(exclude)curadoria' ':(exclude)docs' ':(exclude)README.md' ':(exclude)forum'",
   "rewrites": [
     {
       "source": "/auth",

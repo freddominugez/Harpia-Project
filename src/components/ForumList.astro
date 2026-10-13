@@ -1,17 +1,19 @@
 ---
-// Lista do fórum: discussões reais (já criadas no GitHub) primeiro; depois pautas
+// Lista do fórum: discussões reais (no fórum próprio ou no GitHub) primeiro; depois pautas
 // propostas, identificadas como tal. Nunca exibe autores, contagens ou discussões inventadas.
 import type { ItemForum } from "../lib/pautas";
+import { forumProprio } from "../config";
 interface Props { itens: ItemForum[]; limite?: number }
 const { itens, limite = 5 } = Astro.props;
 const lista = itens.slice(0, limite);
 const nCriadas = lista.filter((i) => i.criada).length;
-const aviso = nCriadas ? "Discussões no GitHub e pautas propostas" : "Pautas propostas pelo projeto";
+const aviso = nCriadas ? (forumProprio() ? "Discussões abertas e pautas propostas" : "Discussões no GitHub e pautas propostas") : "Pautas propostas pelo projeto";
+const externo = (href: string) => /^https?:/.test(href);
 ---
 <div class="ref-forum-box">
   <span class="ref-forum-notice">{aviso}</span>
   {lista.length ? lista.map((t) => (
-    <a class="ref-forum-topic" href={t.href} {...(t.criada ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
+    <a class="ref-forum-topic" href={t.href} {...(externo(t.href) ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
       <span class="ref-avatar" aria-hidden="true">{t.iniciais}</span>
       <span class="ref-forum-title"><b>{t.titulo}</b><small>{t.criada ? "Discussão" : "Pauta proposta"} · {t.categoria}</small></span>
       <span class="ref-topic-chevron" aria-hidden="true">↗</span>

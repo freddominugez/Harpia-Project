@@ -4,7 +4,7 @@ import PageIntro from "../../components/PageIntro.astro";
 import ArticleSidebar from "../../components/ArticleSidebar.astro";
 import IdeaCard from "../../components/IdeaCard.astro";
 import M from "../../components/M.astro";
-import Giscus from "../../components/Giscus.astro";
+import Forum from "../../components/Forum.astro";
 import Tag from "../../components/Tag.astro";
 const titulo = "A ideia mais interessante que não serve para nada";
 ---
@@ -31,7 +31,7 @@ const titulo = "A ideia mais interessante que não serve para nada";
         <blockquote><p><b>Registro:</b> a geometria hiperbólica é uma linha de pesquisa real e ativa. Ela não serve para acelerar embeddings de texto de alta dimensão, mas representa bem hierarquias em dimensão baixa.</p></blockquote>
         <h2 id="discussao">Discussão</h2>
       </div>
-      <Giscus />
+      <Forum />
     </article>
     <ArticleSidebar
       toc={[{ id: "o-que-medimos", texto: "O que medimos" }, { id: "por-que", texto: "Por que faz sentido" }, { id: "literatura", texto: "O que a literatura diz" }, { id: "discussao", texto: "Discussão" }]}

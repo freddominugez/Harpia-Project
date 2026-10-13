@@ -1,0 +1,56 @@
+---
+// Área de conversa de uma página. Com FORUM.motor = "waline", usa o fórum próprio
+// (forum.harpya.org: login por e-mail e senha ou Google); senão, o Giscus de antes.
+// O Waline só é carregado quando a área chega perto da tela.
+import Giscus from "./Giscus.astro";
+import { FORUM, forumProprio } from "../config";
+interface Props { geral?: boolean; path?: string }
+const { geral = false, path = Astro.url.pathname } = Astro.props;
+---
+{forumProprio() ? (
+  <div class="forum-wrap">
+    <div class="forum-waline" data-forum data-servidor={FORUM.servidor} data-path={path}>
+      <p class="forum-carregando">Carregando a conversa...</p>
+    </div>
+    <p class="forum-nota">Para comentar, entre com e-mail e senha ou com a conta Google. Os comentários passam por moderação. <a href="/sobre/#privacidade">Como tratamos seus dados</a>.</p>
+  </div>
+) : (
+  <Giscus geral={geral} />
+)}
+
+<script>
+  import { init } from "@waline/client";
+  import "@waline/client/style";
+
+  const abrir = (el: HTMLElement) => {
+    if (el.dataset.aberto) return;
+    el.dataset.aberto = "1";
+    el.innerHTML = "";
+    init({
+      el,
+      serverURL: el.dataset.servidor!,
+      path: el.dataset.path,
+      lang: "pt-BR",
+      login: "force",
+      dark: false,
+      emoji: false,
+      search: false,
+      imageUploader: false,
+      reaction: false,
+      pageview: false,
+      comment: false,
+      wordLimit: [0, 6000],
+      locale: { placeholder: "Escreva com argumento: equação, medida, código ou referência. Markdown e LaTeX funcionam." },
+    });
+  };
+
+  const alvos = [...document.querySelectorAll<HTMLElement>("[data-forum]")];
+  if (alvos.length) {
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver((itens) => {
+        for (const i of itens) if (i.isIntersecting) { io.unobserve(i.target); abrir(i.target as HTMLElement); }
+      }, { rootMargin: "400px" });
+      alvos.forEach((a) => io.observe(a));
+    } else alvos.forEach(abrir);
+  }
+</script>

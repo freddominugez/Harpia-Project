@@ -1,0 +1,52 @@
+---
+// Página de discussão de uma pauta aprovada (só com o fórum próprio, FORUM.motor = "waline").
+import Base from "../../layouts/Base.astro";
+import PageIntro from "../../components/PageIntro.astro";
+import Forum from "../../components/Forum.astro";
+import Tag from "../../components/Tag.astro";
+import { getCollection, render } from "astro:content";
+import { temPagina } from "../../lib/pautas";
+import { dataNumerica } from "../../lib/format";
+
+export async function getStaticPaths() {
+  const pautas = (await getCollection("pautas")).filter((p) => temPagina(p.data.status));
+  const caminhos = await getCollection("caminhos");
+  return pautas.map((p) => ({ params: { slug: p.id }, props: { p, caminho: caminhos.find((c) => c.id === p.data.caminho) ?? null } }));
+}
+const { p, caminho } = Astro.props;
+const d = p.data;
+const { Content } = await render(p);
+const externos = d.links.filter((l) => !l.startsWith("https://www.harpya.org/"));
+---
+<Base titulo={d.titulo} descricao={(p.body ?? "").replace(/\s+/g, " ").trim().slice(0, 190) || d.titulo}>
+  <PageIntro trilha={[{ rotulo: "Fórum", href: "/forum/" }, { rotulo: d.titulo }]} eyebrow={`Discussão · ${d.categoria}`} titulo={d.titulo}>
+    <div class="tag-row">
+      <Tag variante="gold">{d.categoria}</Tag>
+      {caminho && <Tag>{`Caminho ${String(caminho.data.numero).padStart(2, "0")}`}</Tag>}
+      <Tag>Aberta em {dataNumerica(d.proposta_em)}</Tag>
+    </div>
+  </PageIntro>
+  <div class="container page-layout">
+    <article class="article">
+      <div class="prose">
+        <Content />
+        {caminho && <p><b>Caminho relacionado:</b> <a href={`/estudos/caminhos/${caminho.id}/`}>{caminho.data.titulo}</a></p>}
+        {externos.length > 0 && (
+          <>
+            <h2 id="referencias">Referências</h2>
+            <ul>{externos.map((l) => <li><a href={l} target="_blank" rel="noopener noreferrer">{l}</a></li>)}</ul>
+          </>
+        )}
+        <h2 id="discussao">Discussão</h2>
+      </div>
+      <Forum />
+    </article>
+    <aside aria-label="Sobre esta discussão">
+      <div class="surface aside-panel">
+        <h3>Regras</h3>
+        <p>Toda medida de velocidade informa hardware, lote e latência p95. Toda proposta traz equação e regra de parada. Discordar é bem-vindo; com argumento.</p>
+        <a class="card-link" href="/forum/">Todas as discussões →</a>
+      </div>
+    </aside>
+  </div>
+</Base>

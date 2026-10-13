@@ -888,3 +888,10 @@ a.cover:hover { transform: translateY(-3px); }
   .orig-era b { display: none; }
   .orig-ruler-bar, .orig-era { height: 34px; }
 }
+
+/* ---------- fórum próprio (Waline) ---------- */
+.forum-wrap { margin-top: 8px; }
+.forum-waline { min-height: 160px; --waline-theme-color: var(--gold-btn); --waline-active-color: var(--gold-strong); --waline-font-size: 15px; --waline-border-color: var(--border); --waline-bg-color: #fff; --waline-bg-color-light: var(--soft); --waline-color: var(--ink); --waline-light-grey: #666e78; --waline-info-color: #666e78; --waline-badge-color: var(--gold-btn); --waline-border-radius: 8px; }
+.forum-waline .wl-panel { margin: 0 0 12px; }
+.forum-carregando { margin: 0; padding: 22px 0; color: var(--muted); font-size: .9rem; }
+.forum-nota { margin: 10px 0 0; font-size: .78rem; color: var(--muted); }

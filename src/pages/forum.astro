@@ -2,19 +2,21 @@
 import Base from "../layouts/Base.astro";
 import PageIntro from "../components/PageIntro.astro";
 import ForumList from "../components/ForumList.astro";
-import Giscus from "../components/Giscus.astro";
+import Forum from "../components/Forum.astro";
+import { forumProprio } from "../config";
+const proprio = forumProprio();
 import { PAUTAS } from "../lib/pautas";
 ---
-<Base titulo="Fórum" descricao="Fórum do Harpya: perguntas, reproduções e propostas, via GitHub Discussions.">
-  <PageIntro trilha={[{ rotulo: "Fórum" }]} eyebrow="Comunidade" titulo="Discuta, reproduza, conteste" lead="As conversas ficam no GitHub Discussions do repositório. Cada página de caminho tem a sua própria discussão; esta página é o espaço geral." />
+<Base titulo="Fórum" descricao={proprio ? "Fórum do Harpya: perguntas, reproduções e propostas sobre eficiência de LLMs, com login por e-mail ou Google." : "Fórum do Harpya: perguntas, reproduções e propostas, via GitHub Discussions."}>
+  <PageIntro trilha={[{ rotulo: "Fórum" }]} eyebrow="Comunidade" titulo="Discuta, reproduza, conteste" lead={proprio ? "Cada página de caminho tem a sua própria conversa, e cada pauta aprovada vira uma discussão. Esta página é o espaço geral. Entre com e-mail e senha ou com a conta Google." : "As conversas ficam no GitHub Discussions do repositório. Cada página de caminho tem a sua própria discussão; esta página é o espaço geral."} />
   <div class="container page-layout">
     <div class="article">
       <div class="panel">
         <h2 id="geral">Discussão geral</h2>
-        <Giscus geral />
+        <Forum geral />
       </div>
       <div class="section-head" style="margin-top:28px">
-        <div><h2 id="pautas">Pautas propostas</h2><p>Temas que o projeto quer discutir primeiro. Não são conversas existentes: cada uma leva à ficha do caminho.</p></div>
+        <div><h2 id="pautas">{proprio ? "Discussões e pautas" : "Pautas propostas"}</h2><p>{proprio ? "Discussões abertas primeiro. As pautas propostas ainda não são conversas: cada uma leva à ficha do caminho." : "Temas que o projeto quer discutir primeiro. Não são conversas existentes: cada uma leva à ficha do caminho."}</p></div>
       </div>
       <ForumList itens={PAUTAS} limite={50} />
     </div>

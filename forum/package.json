@@ -1,0 +1,10 @@
+{
+  "name": "harpya-forum",
+  "private": true,
+  "description": "Servidor do fórum do Harpya (Waline) em forum.harpya.org, com o próprio intermediário de login do Google.",
+  "license": "MIT",
+  "engines": { "node": "22.x" },
+  "dependencies": {
+    "@waline/vercel": "1.43.3"
+  }
+}

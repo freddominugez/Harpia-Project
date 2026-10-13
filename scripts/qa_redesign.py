@@ -203,9 +203,9 @@ def main():
             ctx = browser.new_context(viewport={"width": w, "height": h})
             pg = ctx.new_page()
             errs = []
-            # Erros vindos do iframe do Giscus (ex.: 404 "discussão ainda não criada") são esperados
+            # Erros vindos do fórum (iframe do Giscus ou servidor do Waline) (ex.: 404 "discussão ainda não criada") são esperados
             # até alguém comentar na página; ficam fora do gate.
-            pg.on("console", lambda m, e=errs: e.append(m.text) if m.type == "error" and "giscus.app" not in (m.location or {}).get("url", "") else None)
+            pg.on("console", lambda m, e=errs: e.append(m.text) if m.type == "error" and not any(h in (m.location or {}).get("url", "") for h in ("giscus.app", "forum.harpya.org")) else None)
             pg.on("pageerror", lambda x, e=errs: e.append(str(x)))
             res = {}
             for r in rotas:

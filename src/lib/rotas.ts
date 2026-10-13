@@ -7,7 +7,7 @@ import { SITE } from "../config";
 import { VIDEOS, MODULOS, rotuloModulo, urlVideo } from "./videos";
 import { ARTIGOS, LIVROS, FONTES, FONTES_POR_GRUPO, APRENDIZADO, LINHA_DO_TEMPO } from "./conteudo";
 import { CAPITULOS, EVENTOS, PESSOAS } from "../data/origens";
-import { PAUTAS } from "./pautas";
+import { PAUTAS, temPagina } from "./pautas";
 import { COMECANDO, SERIE, TOTAL_DA_SERIE, corpoDe } from "../data/comecando";
 
 /** HTML de artigo da série em markdown: parágrafos, títulos e figuras (descrição + legenda). */
@@ -83,6 +83,7 @@ let cache: Rota[] | null = null;
 export async function rotas(): Promise<Rota[]> {
   if (cache) return cache;
   const caminhos = (await getCollection("caminhos")).sort((a, b) => a.data.numero - b.data.numero);
+  const pautasComPagina = (await getCollection("pautas")).filter((p) => temPagina(p.data.status));
   const sobre = paginaMd("src/pages/sobre.md");
   const equacoes = paginaMd("src/pages/equacoes.md");
   const glossario = paginaMd("src/pages/biblioteca/glossario.md");
@@ -413,10 +414,30 @@ export async function rotas(): Promise<Rota[]> {
           "@type": "ItemList",
           name: "Discussões",
           numberOfItems: reais.length,
-          itemListElement: reais.map((p, i) => ({ "@type": "ListItem", position: i + 1, item: { "@type": "DiscussionForumPosting", headline: p.titulo, url: p.href, datePublished: p.data, author: { "@id": ID.org } } })),
+          itemListElement: reais.map((p, i) => ({ "@type": "ListItem", position: i + 1, item: { "@type": "DiscussionForumPosting", headline: p.titulo, url: p.href.startsWith("http") ? p.href : abs(p.href), datePublished: p.data, author: { "@id": ID.org } } })),
         })];
       },
     },
+    ...pautasComPagina.map((p): Rota => ({
+      path: `/forum/${p.id}/`,
+      titulo: p.data.titulo,
+      descricao: (p.body ?? "").replace(/\s+/g, " ").trim().slice(0, 190) || p.data.titulo,
+      secao: `Fórum · ${p.data.categoria}`,
+      pai: "/forum/",
+      atualizado: p.data.proposta_em,
+      markdown: () => [`Categoria: ${p.data.categoria}. Aberta em ${p.data.proposta_em}.`, (p.body ?? "").trim(), p.data.links.length ? `Referências:\n\n${lista(p.data.links)}` : ""].filter(Boolean).join("\n\n"),
+      schema: () => [{
+        "@type": "DiscussionForumPosting",
+        "@id": `${abs(`/forum/${p.id}/`)}#discussao`,
+        headline: p.data.titulo,
+        text: (p.body ?? "").trim(),
+        url: abs(`/forum/${p.id}/`),
+        datePublished: p.data.proposta_em,
+        inLanguage: "pt-BR",
+        author: { "@id": ID.org },
+        isPartOf: { "@id": `${abs("/forum/")}#pagina` },
+      }],
+    })),
     {
       path: "/sobre/",
       titulo: sobre.titulo,

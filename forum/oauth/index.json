@@ -1,0 +1,1 @@
+{ "version": "harpya-1", "services": [{ "name": "google", "origin": "accounts.google.com" }] }

@@ -39,6 +39,15 @@ export const GISCUS = {
 
 export const giscusConfigurado = () => GISCUS.repoId !== "" && GISCUS.categoriaId !== "";
 
+// Fórum próprio: Waline (código aberto) em forum.harpya.org, banco no Supabase, login por
+// e-mail e senha ou Google. Troque "motor" para "waline" quando o servidor estiver no ar
+// (passo a passo em docs/FORUM.md). Com "waline", o Giscus sai e o repositório pode ser fechado.
+export const FORUM = {
+  motor: "giscus" as "giscus" | "waline",
+  servidor: "https://forum.harpya.org",
+};
+export const forumProprio = () => FORUM.motor === "waline";
+
 export type NavItem = { href: string; rotulo: string; icone: string; descricao: string; principal: boolean };
 
 // "principal" aparece na barra do desktop (como na referência aprovada).

@@ -8,9 +8,10 @@ import ArticleSidebar from "../../../components/ArticleSidebar.astro";
 import M from "../../../components/M.astro";
 import Status from "../../../components/Status.astro";
 import Tag from "../../../components/Tag.astro";
-import Giscus from "../../../components/Giscus.astro";
+import Forum from "../../../components/Forum.astro";
 import { getCollection, render } from "astro:content";
-import { SITE, giscusConfigurado } from "../../../config";
+import { SITE, giscusConfigurado, forumProprio } from "../../../config";
+const forumAtivo = forumProprio() || giscusConfigurado();
 import { dataNumerica, ROTULO_ESTATUTO } from "../../../lib/format";
 import type { Relacionado, TocItem } from "../../../lib/types";
 
@@ -64,7 +65,7 @@ const relacionados: Relacionado[] = [...vizinhos, ...mesmos].map((x) => ({
       </span>
       <span><img class="icon" src="/icons/file.svg" alt="" aria-hidden="true" width="16" height="16" />Atualizado em <time datetime={d.atualizado}>{dataNumerica(d.atualizado)}</time></span>
       <span><img class="icon" src="/icons/book.svg" alt="" aria-hidden="true" width="16" height="16" />{minutos} min de leitura</span>
-      <span><img class="icon" src="/icons/messages.svg" alt="" aria-hidden="true" width="16" height="16" />{giscusConfigurado() ? "Discussão aberta" : "Fórum aguardando ativação"}</span>
+      <span><img class="icon" src="/icons/messages.svg" alt="" aria-hidden="true" width="16" height="16" />{forumAtivo ? "Discussão aberta" : "Fórum aguardando ativação"}</span>
     </div>
   </PageIntro>
 
@@ -94,7 +95,7 @@ const relacionados: Relacionado[] = [...vizinhos, ...mesmos].map((x) => ({
         <p class="cite"><b>Como citar.</b> {SITE.autor} ({d.atualizado.slice(0, 4)}). <i>{d.titulo}</i>. {SITE.nome}. <a href={`https://www.harpya.org/estudos/caminhos/${c.id}/`}>https://www.harpya.org/estudos/caminhos/{c.id}/</a>. Texto em markdown: <a href={`/estudos/caminhos/${c.id}.md`}>{c.id}.md</a>. Licença CC BY 4.0.</p>
         <h2 id="discussao">Discussão</h2>
       </div>
-      <Giscus />
+      <Forum />
       <nav class="next-prev" aria-label="Caminhos vizinhos">
         {ant && <a href={`/estudos/caminhos/${ant.id}/`}><small>← Anterior</small>{ant.data.titulo}</a>}
         {prox && <a class="next" href={`/estudos/caminhos/${prox.id}/`}><small>Próximo →</small>{prox.data.titulo}</a>}
@@ -103,7 +104,9 @@ const relacionados: Relacionado[] = [...vizinhos, ...mesmos].map((x) => ({
     <ArticleSidebar toc={toc} relacionados={relacionados}>
       <div class="surface aside-panel">
         <h3>Discussão no fórum</h3>
-        {giscusConfigurado() ? (
+        {forumProprio() ? (
+          <p>Cada caminho tem a sua própria conversa. Entre com e-mail e senha ou com a conta Google.</p>
+        ) : giscusConfigurado() ? (
           <p>Cada caminho tem a sua própria conversa, com login pelo GitHub.</p>
         ) : (
           <p>O fórum (GitHub Discussions via Giscus) ainda não foi ativado. Enquanto isso, nenhuma discussão é exibida.</p>
