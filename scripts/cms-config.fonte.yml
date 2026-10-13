@@ -7,8 +7,11 @@ backend:
   name: github
   repo: freddominugez/Harpia-Project
   branch: main
-  # Login: botão "Sign In with Token" com um token fine-grained do GitHub
-  # (só este repositório; Contents e Pull requests em leitura e escrita).
+  # Login: botão "Sign In with GitHub". A troca do código pelo token acontece nas funções
+  # api/auth.js e api/callback.js deste mesmo site (servidas em /auth e /callback).
+  # O botão "Sign In Using Access Token" continua disponível como alternativa.
+  base_url: https://www.harpya.org
+  auth_scope: public_repo
   commit_messages:
     create: "Painel: cria {{collection}} {{slug}}"
     update: "Painel: atualiza {{collection}} {{slug}}"

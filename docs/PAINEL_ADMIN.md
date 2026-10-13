@@ -2,7 +2,7 @@
 
 Endereço: **https://www.harpya.org/admin/**
 
-O painel é o [Sveltia CMS](https://github.com/sveltia/sveltia-cms) 0.221.8, uma biblioteca pública e gratuita que roda inteira no navegador. Não há servidor nem banco: cada alteração vira um commit no repositório `freddominugez/Harpia-Project`, e a Vercel publica o site sozinha depois do commit.
+O painel é o [Sveltia CMS](https://github.com/sveltia/sveltia-cms) 0.221.8, uma biblioteca pública e gratuita que roda inteira no navegador. Não há banco: o único código no servidor são duas funções pequenas que fazem o login pelo GitHub. Cada alteração vira um commit no repositório `freddominugez/Harpia-Project`, e a Vercel publica o site sozinha depois do commit.
 
 | Arquivo | Para que serve |
 |---|---|
@@ -11,29 +11,52 @@ O painel é o [Sveltia CMS](https://github.com/sveltia/sveltia-cms) 0.221.8, uma
 | `public/admin/config.yml` | Configuração gerada a partir da fonte. Não edite à mão |
 | `scripts/gerar_config_cms.py` | Gera `config.yml` a partir da fonte |
 | `scripts/validar_cms.py` | Confere que todo campo dos arquivos de conteúdo existe no painel e vice-versa |
+| `api/_oauth.js`, `api/auth.js`, `api/callback.js` | Login pelo GitHub (funções da Vercel em `/auth` e `/callback`) |
 
 O painel não é indexado: meta `noindex`, cabeçalho `X-Robots-Tag: noindex, nofollow` (em `vercel.json`) e `Disallow: /admin/` no `robots.txt`.
 
 ## Entrar
 
-O login é por **token de acesso do GitHub**. Não há senha do site nem servidor de OAuth.
+Em https://www.harpya.org/admin/, clique em **Sign In with GitHub** e entre com a sua conta do GitHub (e-mail, senha e verificação em duas etapas do próprio GitHub). Na primeira vez, o GitHub pergunta se autoriza o app "Harpya painel": clique em **Authorize**. Trocar a senha ou ativar a verificação em duas etapas se faz no GitHub, em https://github.com/settings/security.
 
-1. Abra https://github.com/settings/personal-access-tokens/new (token *fine-grained*).
-2. **Token name:** `Harpya painel`. **Expiration:** 90 dias.
-3. **Repository access:** *Only select repositories* e escolha `freddominugez/Harpia-Project`.
-4. **Permissions → Repository permissions:**
-   - **Contents:** Read and write
-   - **Pull requests:** Read and write (o fluxo editorial usa pull requests)
-   - **Metadata:** Read-only (já vem marcado)
-5. Clique em **Generate token** e copie o valor.
-6. Em https://www.harpya.org/admin/, clique em **Sign In Using Access Token** (não use "Sign In with GitHub", que exige um servidor de OAuth que o site não tem) e cole o token.
+Só consegue publicar quem tem permissão de escrita no repositório `freddominugez/Harpia-Project`. Outra pessoa até entra, mas o GitHub recusa qualquer gravação.
 
-O token fica só no armazenamento local do seu navegador. Não o coloque em arquivo do repositório, e-mail ou conversa. Para sair, use o menu do avatar → **Sign Out**, que apaga o token do navegador.
+### Como funciona
 
-### Renovar ou revogar
+| Peça | Onde |
+|---|---|
+| Botão "Sign In with GitHub" | Sveltia, com `base_url: https://www.harpya.org` e `auth_scope: public_repo` no `config.yml` |
+| Ida ao GitHub (`/auth`) e volta (`/callback`) | Funções da Vercel `api/auth.js` e `api/callback.js` (código em `api/_oauth.js`), ligadas pelas `rewrites` do `vercel.json` |
+| Credenciais do app | Variáveis de ambiente `GITHUB_CLIENT_ID` e `GITHUB_CLIENT_SECRET` na Vercel. Nunca no repositório |
 
-- Perto do vencimento, o GitHub avisa por e-mail. Gere outro token com as mesmas permissões, saia do painel e entre de novo com o novo.
-- Se o token vazar: https://github.com/settings/personal-access-tokens → o token → **Revoke**. Nada mais no site depende dele.
+Proteções: o pedido de login leva um valor aleatório guardado em cookie `HttpOnly` por 10 minutos e conferido na volta (contra CSRF); o token só é entregue a uma janela aberta por `https://www.harpya.org` ou `https://harpya.org`; o escopo pedido ao GitHub é o mínimo para repositório público (`public_repo`).
+
+### Configuração única (só o dono da conta faz)
+
+1. **Criar o OAuth App no GitHub.** Abra https://github.com/settings/applications/new e preencha:
+   - **Application name:** `Harpya painel`
+   - **Homepage URL:** `https://www.harpya.org`
+   - **Application description:** `Login do painel de conteúdo do Harpya` (opcional)
+   - **Authorization callback URL:** `https://www.harpya.org/callback`
+   - **Enable Device Flow:** deixe desmarcado
+   
+   Clique em **Register application**. Na página do app, copie o **Client ID** e clique em **Generate a new client secret**; copie o segredo na hora (o GitHub não mostra de novo).
+2. **Guardar as credenciais na Vercel.** Projeto do Harpya → **Settings → Environment Variables**. Crie duas variáveis, marcando o ambiente **Production**:
+   - `GITHUB_CLIENT_ID` = o Client ID
+   - `GITHUB_CLIENT_SECRET` = o client secret (marque como **Sensitive**)
+3. **Publicar de novo.** Variável nova só vale para deploys novos: em **Deployments**, no deploy mais recente de produção, menu **⋯ → Redeploy**.
+4. **Testar.** Abra https://www.harpya.org/admin/ numa janela anônima e clique em **Sign In with GitHub**.
+
+Enquanto as duas variáveis não existirem, o botão abre uma janela com o aviso "Login pelo GitHub ainda não configurado". O resto do site não é afetado.
+
+### Revogar acesso
+
+- **Tirar o acesso de uma sessão aberta:** https://github.com/settings/applications → aba **Authorized OAuth Apps** → **Harpya painel** → **Revoke**. O próximo login pede autorização de novo.
+- **Trocar o segredo do app** (se vazar): na página do OAuth App, **Generate a new client secret**, apague o antigo, atualize `GITHUB_CLIENT_SECRET` na Vercel e faça **Redeploy**.
+
+### Alternativa: token de acesso
+
+O botão **Sign In Using Access Token** continua disponível. Crie um token *fine-grained* em https://github.com/settings/personal-access-tokens/new, só para `freddominugez/Harpia-Project`, com **Contents** e **Pull requests** em leitura e escrita, e cole no painel. O token fica só no armazenamento local do navegador; **Sign Out** apaga.
 
 ## Coleções
 

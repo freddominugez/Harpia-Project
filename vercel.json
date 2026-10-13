@@ -19,6 +19,19 @@
       ]
     },
     {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
       "source": "/(.*)\\.md",
       "headers": [
         {
@@ -54,5 +67,23 @@
       ]
     }
   ],
-  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- . ':(exclude)curadoria' ':(exclude)docs' ':(exclude)README.md'"
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- . ':(exclude)curadoria' ':(exclude)docs' ':(exclude)README.md'",
+  "rewrites": [
+    {
+      "source": "/auth",
+      "destination": "/api/auth"
+    },
+    {
+      "source": "/auth/",
+      "destination": "/api/auth"
+    },
+    {
+      "source": "/callback",
+      "destination": "/api/callback"
+    },
+    {
+      "source": "/callback/",
+      "destination": "/api/callback"
+    }
+  ]
 }

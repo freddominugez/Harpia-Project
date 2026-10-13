@@ -62,7 +62,7 @@ Veja `docs/DEPLOY.md`. Resumo: criar o repositório no GitHub, fazer push, impor
 ## Editar conteúdo
 
 - **Novo caminho:** copie um arquivo de `src/content/caminhos/`, mude o nome e o frontmatter. A página e o card aparecem sozinhos.
-- **Pelo painel (recomendado):** https://www.harpya.org/admin/, login com token do GitHub. Passo a passo em `docs/PAINEL_ADMIN.md`.
+- **Pelo painel (recomendado):** https://www.harpya.org/admin/, login com a conta do GitHub. Passo a passo em `docs/PAINEL_ADMIN.md`.
 - **Novo vídeo à mão:** crie `src/content/videos/<ID>.json` com `id`, `titulo`, `canal`, `modulo` (0 a 11, ver `src/content/modulos/`), `nivel`, `resumo`, `status` e as datas. Confira o ID antes (regra em `docs/CURADORIA.md`). A página `/videos/` organiza por módulo e nível, e a home mostra uma seleção da semana, um vídeo por nível.
 - **Novo artigo ou livro à mão:** um arquivo em `src/content/artigos/` ou `src/content/livros/`.
 - **Rascunho:** `status: "rascunho"` guarda o item no repositório sem mostrar em lugar nenhum do site.
