@@ -47,11 +47,13 @@ Em https://console.cloud.google.com/apis/credentials (um projeto "Harpya"):
    - **Authorized redirect URIs:** `https://forum.harpya.org/oauth/google`
 3. Copie o **Client ID** e o **Client secret**.
 
-### 4. Variáveis do projeto `harpya-forum` na Vercel
+### 4. Variáveis do fórum (Doppler, sincronizado com a Vercel)
 
-Já configuradas (não secretas): `SITE_NAME`, `SITE_URL`, `SERVER_URL`, `SECURE_DOMAINS`, `LOGIN`, `COMMENT_AUDIT`, `DISABLE_REGION`, `DISABLE_USERAGENT`, `OAUTH_URL`, `GRAVATAR_STR`, `AKISMET_KEY`, `IPQPS`, `WALINE_ADMIN_MODULE_ASSET_URL`, `MARKDOWN_TEX` (katex), `PG_DB`, `PG_PORT`, `PG_SSL`, `PG_USER`.
+A fonte das variáveis é o **Doppler**, workplace "Vulcan Apps", projeto **`harpya-forum`**, config **`prd`**. Uma sync do tipo **Vercel** leva o `prd` para o projeto `harpya-forum` da Vercel, ambiente **Production**. Depois da sync ligada, edite as variáveis só no Doppler: o que for mudado direto na Vercel é sobrescrito na sync seguinte.
 
-Crie em **Settings → Environment Variables**, ambiente **Production**, marcando **Sensitive**:
+Já cadastradas no `prd` (não secretas): `SITE_NAME`, `SITE_URL`, `SERVER_URL`, `SECURE_DOMAINS`, `LOGIN`, `COMMENT_AUDIT`, `DISABLE_REGION`, `DISABLE_USERAGENT`, `OAUTH_URL`, `GRAVATAR_STR`, `AKISMET_KEY`, `IPQPS`, `WALINE_ADMIN_MODULE_ASSET_URL`, `MARKDOWN_TEX` (katex), `PG_DB`, `PG_PORT`, `PG_SSL`, `PG_USER`.
+
+Acrescente no Doppler (`harpya-forum` → `prd` → **+** → nome e valor → **Save**):
 
 | Nome | Valor |
 |---|---|
@@ -63,7 +65,7 @@ Crie em **Settings → Environment Variables**, ambiente **Production**, marcand
 
 Opcional, para confirmar e-mail no cadastro e permitir "esqueci a senha": `SMTP_SERVICE` (ou `SMTP_HOST` e `SMTP_PORT`), `SMTP_USER`, `SMTP_PASS`, `SENDER_NAME` (Harpya), `SENDER_EMAIL`. Sem SMTP, o cadastro por e-mail funciona sem confirmação.
 
-Depois: **Deployments → ⋯ → Redeploy** no deploy mais recente.
+A sync envia os valores para a Vercel em poucos segundos. Depois: na Vercel, **Deployments → ⋯ → Redeploy** no deploy mais recente (a Vercel só lê variáveis novas num deploy novo).
 
 ### 5. Criar a conta de administrador (logo em seguida)
 
