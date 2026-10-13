@@ -1,12 +1,12 @@
 {
   "ano": 2025,
   "titulo": "Limites do vetor único",
-  "texto": "Prova-se que um embedding de dimensão fixa não representa todas as combinações de relevância.",
+  "texto": "Limites de representação robusta de relevância com vetores unitários e margem positiva; resultados de 2026 distinguem esse caso de top-k exato sem margem fixada.",
   "era": "Eficiência",
   "marco": false,
   "ordem": 20,
   "status": "publicado",
   "origem": "manual",
   "adicionado_em": "2026-10-12",
-  "verificado_em": "2026-10-12"
+  "verificado_em": "2026-10-13"
 }

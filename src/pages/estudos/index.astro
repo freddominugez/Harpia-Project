@@ -45,4 +45,10 @@ const caminhos = (await getCollection("caminhos")).sort((a, b) => a.data.numero 
       </div>
     </div>
   </section>
+  <section class="page-body" id="evidencia-experimental"><div class="container prose">
+    <h2>Estado da evidência experimental</h2>
+    <p>Os números próprios publicados nos caminhos são resultados relatados de ensaios locais, não garantias gerais. O site ainda não oferece um pacote completo de reprodução com hardware, modelo e versão, corpus e divisão de dados, código do experimento, tamanho do lote, aquecimento, repetições e dados brutos. Essa documentação precisa acompanhar cada benchmark antes de permitir verificação independente.</p>
+    <p>Redução de sobreviventes, bytes lidos, memória e latência são métricas diferentes. A participação de aproximadamente 99% do encoder refere-se ao ensaio de 7,1 ms contra 0,075 ms em 5 mil documentos; não se estende automaticamente a outros índices ou tamanhos de corpus. Ausência de falha observada não constitui prova de uma garantia probabilística.</p>
+    <p>Referências: <a href="https://arxiv.org/html/2508.21038v2">LIMIT, margem positiva</a>; <a href="https://arxiv.org/html/2601.20844v3">representação exata versus robusta</a>; <a href="https://doi.org/10.1145/3035918.3064009">FEXIPRO, artigo original</a>. Artigos de comparação não substituem as publicações originais dos métodos.</p>
+  </div></section>
 </Base>

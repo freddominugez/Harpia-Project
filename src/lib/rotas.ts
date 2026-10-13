@@ -104,7 +104,7 @@ export async function rotas(): Promise<Rota[]> {
   const dOrigens = maior(...datasDe(LINHA_DO_TEMPO as ComDatas[]), "2026-10-12");
   const dAprendizado = maior(...datasDe(APRENDIZADO as ComDatas[]));
   const dForum = maior(...PAUTAS.map((p) => p.data));
-  const IDEIA = "A ideia mais interessante que não serve para nada";
+  const IDEIA = "Geometria hiperbólica: um caminho arquivado no projeto";
   const DESC_IDEIA = "E se a vetorização ocorresse em um espaço não euclidiano? A resposta, as medidas e por que a geometria hiperbólica continua sendo pesquisa real.";
 
   const fichaCaminho = (c: CollectionEntry<"caminhos">): Rota => {
@@ -159,7 +159,7 @@ export async function rotas(): Promise<Rota[]> {
         `## Seções\n\n${lista([
           `[Origens](${abs("/origens/")}): linha do tempo das LLMs, de 1943 a 2026`,
           `[Vídeos](${abs("/videos/")}): ${VIDEOS.length} vídeos em ${MODULOS.length} módulos`,
-          `[Equações](${abs("/equacoes/")}): as 16 camadas de um LLM`,
+          `[Equações](${abs("/equacoes/")}): as 16 etapas e componentes de um LLM`,
           `[Biblioteca](${abs("/biblioteca/")}): ${LIVROS.length} livros e ${ARTIGOS.length} artigos`,
           `[Fórum](${abs("/forum/")}): discussões no GitHub Discussions`,
         ])}`,
@@ -270,6 +270,7 @@ export async function rotas(): Promise<Rota[]> {
         `${caminhos.length} caminhos válidos, cada um com equação, custo conhecido, teste refutável e a arte prévia que já existe.`,
         caminhos.map((c) => `- [${c.data.numero}. ${c.data.titulo}](${abs(`/estudos/caminhos/${c.id}/`)}) (${c.data.selo}): ${c.data.resumo}`).join("\n"),
         `Linhas arquivadas: ${abs("/estudos/arquivados/")}`,
+        "## Estado da evidência experimental\n\nOs números próprios são resultados relatados de ensaios locais. O pacote completo de reprodução (hardware, modelo, corpus, código, lote, aquecimento, repetições e dados brutos) permanece pendente. Sobreviventes, bytes, memória e latência são métricas distintas; ausência de falhas observadas não prova uma garantia probabilística.",
       ].join("\n\n"),
       schema: () => [colecao("/estudos/", "Estudos", "Os caminhos válidos de eficiência em embeddings, tokens e busca vetorial.",
         itemList("Caminhos válidos", caminhos.map((c) => ({ name: c.data.titulo, url: abs(`/estudos/caminhos/${c.id}/`) }))))],
@@ -281,21 +282,21 @@ export async function rotas(): Promise<Rota[]> {
       descricao: DESC_IDEIA,
       secao: "Estudos · arquivado",
       pai: "/estudos/",
-      atualizado: "2026-10-12",
+      atualizado: "2026-10-13",
       markdown: () => [
         "## O que medimos",
-        "O programa testou curvatura constante (hiperbólica) e curvatura variável aprendida para recuperação, sob comparação justa: mesma dimensão, mesmos bytes, mesmo protocolo. Nenhuma das duas ganhou do espaço euclidiano.",
+        "O programa testou curvatura constante (hiperbólica) e curvatura variável aprendida para recuperação, sob comparação justa: mesma dimensão, mesmos bytes, mesmo protocolo. Nenhuma das duas ganhou no ensaio local relatado; o protocolo completo de reprodução permanece pendente. Isso não demonstra impossibilidade geral.",
         "## Por que o resultado faz sentido",
         "No modelo de Lorentz, a distância hiperbólica é uma função monótona de um produto interno com um sinal trocado:",
         "$$\nd_{\\mathbb H}(x,y)=\\operatorname{arcosh}\\big(-\\langle x,y\\rangle_{\\mathcal L}\\big),\\qquad \\langle x,y\\rangle_{\\mathcal L}=-x_0y_0+\\sum_{i\\ge1}x_iy_i\n$$",
-        "Ordenar por distância hiperbólica é ordenar por um produto interno. Em dimensão alta, os vetores de modelos hiperbólicos pré-treinados ficam numa casca fina, e o cosseno comum reproduz a ordenação geodésica quase por completo.",
+        "No hiperboloide de curvatura −1, coordenada temporal positiva e norma de Lorentz −1, minimizar a distância equivale a maximizar o produto de Lorentz. A aproximação por cosseno euclidiano requer condições sobre as normas e a concentração radial; dimensão alta sozinha não garante essa equivalência.",
         "## O que a literatura diz",
         lista([
-          "Em grafos de conhecimento a 32 dimensões, a vantagem hiperbólica é de décimos de ponto; os próprios autores relatam desempenho similar em 500 dimensões (Chami e coautores, 2020).",
-          "Uma reavaliação achou um erro no baseline euclidiano de um benchmark muito usado; corrigido, o modelo euclidiano empata ou vence (Katsman e Gilbert, 2025).",
+          "Na Tabela 2 de [Chami et al. (2020)](https://aclanthology.org/2020.acl-main.617.pdf), AttE → AttH melhora o MRR em 1,0, 1,3 e 2,3 pontos em WN18RR, FB15k-237 e YAGO3-10 a 32 dimensões. Desempenho similar a 500 dimensões se refere aos benchmarks do estudo.",
+          "[Katsman e Gilbert (2025)](https://arxiv.org/abs/2411.06688) reavaliam baselines em grafos e encontram cenários em que o modelo euclidiano empata ou vence; não é uma prova geral sobre recuperação de texto.",
           "Em hierarquias puras e poucas dimensões, o ganho é grande: é aí que a linha continua viva (Nickel e Kiela, 2017).",
         ]),
-        "**Registro:** a geometria hiperbólica é uma linha de pesquisa real e ativa. Ela não serve para acelerar embeddings de texto de alta dimensão, mas representa bem hierarquias em dimensão baixa.",
+        "**Registro:** a geometria hiperbólica é uma linha de pesquisa real e ativa. Foi arquivada neste programa por falta de ganho nos ensaios relatados, sem excluir outras aplicações em texto de alta dimensão. Há resultados sobre representação de hierarquias em dimensão baixa.",
       ].join("\n\n"),
       schema: () => [{
         "@type": "ScholarlyArticle",
@@ -304,7 +305,7 @@ export async function rotas(): Promise<Rota[]> {
         description: DESC_IDEIA,
         url: abs("/estudos/a-ideia-mais-interessante/"),
         inLanguage: "pt-BR",
-        dateModified: "2026-10-12",
+        dateModified: "2026-10-13",
         author: { "@id": ID.pessoa },
         publisher: { "@id": ID.org },
         isPartOf: { "@id": ID.site },

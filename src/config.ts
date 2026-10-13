@@ -59,7 +59,7 @@ export const NAV: NavItem[] = [
   { href: "/aprendizado/", rotulo: "Aprendizado de Máquina", icone: "brain", descricao: "As primeiras tentativas de fazer a máquina aprender", principal: true },
   { href: "/videos/", rotulo: "Vídeos", icone: "play", descricao: "Curadoria de matemática, redes neurais e LLMs", principal: true },
   { href: "/estudos/", rotulo: "Estudos", icone: "file", descricao: "Os 12 caminhos válidos de pesquisa", principal: true },
-  { href: "/equacoes/", rotulo: "Equações", icone: "sigma", descricao: "As 16 camadas de um LLM e suas equações", principal: true },
+  { href: "/equacoes/", rotulo: "Equações", icone: "sigma", descricao: "As 16 etapas e componentes de um LLM e suas equações", principal: true },
   { href: "/biblioteca/", rotulo: "Biblioteca", icone: "book", descricao: "Livros, artigos acadêmicos e fontes", principal: true },
   { href: "/news/", rotulo: "News", icone: "rss", descricao: "Radar de publicações por RSS", principal: false },
   { href: "/forum/", rotulo: "Fórum", icone: "messages", descricao: "Discussões via GitHub Discussions", principal: true },

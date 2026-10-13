@@ -4,7 +4,7 @@ titulo: "Sobre o Harpya"
 kicker: "Sobre"
 lead: "Pesquisa aberta, conduzida por Carlos Frederico Domínguez, sobre onde a matemática dos modelos de linguagem ainda pode ceder velocidade, memória ou exatidão."
 descricao: "Autoria, método, licença e como contribuir com o Harpya."
-atualizado: "2026-10-12"
+atualizado: "2026-10-13"
 relacionados:
   - { href: "/forum/", titulo: "Fórum", sub: "Discuta, reproduza, conteste", icone: "messages" }
   - { href: "/estudos/", titulo: "Estudos", sub: "Os 12 caminhos válidos", icone: "file" }
@@ -17,16 +17,16 @@ relacionados:
 
 ## Método
 
-O trabalho segue etapas. Cada etapa termina em um parecer e só depois a seguinte começa. Toda afirmação técnica leva um selo:
+O trabalho segue etapas. Cada etapa termina em um parecer e só depois a seguinte começa. Os selos dos caminhos indicam o tipo de evidência disponível; não certificam automaticamente todas as afirmações do site:
 
 | Selo | Significa |
 |---|---|
-| medido no projeto | número obtido nos experimentos do programa |
+| medido no projeto | resultado relatado de ensaio local; reprodução depende de protocolo e artefatos públicos |
 | arte prévia | já existe publicado; a página diz o que pode ser novo |
-| lacuna | combinação ou aplicação não encontrada nas buscas, com data |
+| lacuna | hipótese ou aplicação a comparar com literatura; ausência de referência não demonstra novidade |
 | teste ou enquadramento | hipótese com teste definido, ou forma de pensar o problema |
 
-Analogias físicas não contam como prova. Cada mecanismo precisa virar equação, custo e previsão refutável. "Nenhum uso encontrado" sempre significa "não encontrado com as buscas feitas até a data indicada".
+Analogias físicas não contam como prova. Cada mecanismo precisa virar equação, custo e previsão refutável. Uma alegação de ausência na literatura exige registro de data, bases e consultas. A data de atualização da página não é esse registro. Sem busca documentada, apresentamos a proposta como hipótese, sem afirmar prioridade. Demonstrações precisam declarar hipóteses; números próprios precisam de protocolo. Veja o [estado da evidência experimental](/estudos/#evidencia-experimental).
 
 ## Como contribuir
 
