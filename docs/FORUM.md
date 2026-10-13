@@ -4,7 +4,7 @@ O fórum sai do GitHub Discussions (Giscus) e passa a ser do próprio Harpya, pa
 
 | Peça | Onde |
 |---|---|
-| Biblioteca | [Waline](https://waline.js.org), código aberto (MIT): servidor `@waline/vercel` 1.43.3, cliente `@waline/client` 3.16.0 |
+| Biblioteca | [Waline](https://waline.js.org), código aberto (MIT): servidor `@waline/vercel` 1.41.6 (com jsdom 26: o runtime da Vercel não aceita `require()` de módulos ESM, de que as versões 1.42 em diante dependem), cliente `@waline/client` 3.15.2 |
 | Servidor | Pasta `forum/` deste repositório, publicada como um segundo projeto na Vercel (`harpya-forum`), no endereço **https://forum.harpya.org** |
 | Banco | Supabase, projeto "By Vulcan", esquema próprio `harpya` (tabelas `wl_comment`, `wl_counter`, `wl_users`), papel próprio `harpya_forum`, RLS ligado, fora da API pública |
 | Login pelo Google | Intermediário próprio em `forum/oauth.js` (`/oauth/google`). Os dados de quem entra não passam por serviço de terceiros |
@@ -87,4 +87,4 @@ O fórum guarda nome, e-mail, o texto dos comentários, a data e o IP de quem co
 ## Limitações conhecidas
 
 - Uma conta criada por e-mail e senha não pode ser criada de novo pelo Google com o mesmo e-mail: entre com a senha e ligue o Google no perfil (https://forum.harpya.org/ui/profile).
-- O painel de moderação do Waline carrega de `unpkg.com` (versão fixa 0.36.0).
+- O painel de moderação do Waline carrega de `unpkg.com` (versão fixa 0.34.2).
