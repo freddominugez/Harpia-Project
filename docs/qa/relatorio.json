@@ -5,6 +5,11 @@
   "/biblioteca/fontes/",
   "/biblioteca/glossario/",
   "/biblioteca/",
+  "/comecando/corpus/",
+  "/comecando/",
+  "/comecando/proxima-palavra/",
+  "/comecando/significado-vira-espaco/",
+  "/comecando/tokens/",
   "/equacoes/",
   "/estudos/a-ideia-mais-interessante/",
   "/estudos/arquivados/",
@@ -54,6 +59,31 @@
     "ok": true
    },
    "/biblioteca/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/comecando/corpus/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/comecando/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/comecando/proxima-palavra/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/comecando/significado-vira-espaco/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/comecando/tokens/": {
     "scrollWidth": 1672,
     "innerWidth": 1672,
     "ok": true
@@ -195,6 +225,31 @@
     "innerWidth": 1440,
     "ok": true
    },
+   "/comecando/corpus/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/comecando/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/comecando/proxima-palavra/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/comecando/significado-vira-espaco/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/comecando/tokens/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
    "/equacoes/": {
     "scrollWidth": 1440,
     "innerWidth": 1440,
@@ -328,6 +383,31 @@
     "ok": true
    },
    "/biblioteca/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/comecando/corpus/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/comecando/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/comecando/proxima-palavra/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/comecando/significado-vira-espaco/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/comecando/tokens/": {
     "scrollWidth": 1280,
     "innerWidth": 1280,
     "ok": true
@@ -469,6 +549,31 @@
     "innerWidth": 1024,
     "ok": true
    },
+   "/comecando/corpus/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/comecando/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/comecando/proxima-palavra/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/comecando/significado-vira-espaco/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/comecando/tokens/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
    "/equacoes/": {
     "scrollWidth": 1024,
     "innerWidth": 1024,
@@ -602,6 +707,31 @@
     "ok": true
    },
    "/biblioteca/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/comecando/corpus/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/comecando/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/comecando/proxima-palavra/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/comecando/significado-vira-espaco/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/comecando/tokens/": {
     "scrollWidth": 768,
     "innerWidth": 768,
     "ok": true
@@ -743,6 +873,31 @@
     "innerWidth": 430,
     "ok": true
    },
+   "/comecando/corpus/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/comecando/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/comecando/proxima-palavra/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/comecando/significado-vira-espaco/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/comecando/tokens/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
    "/equacoes/": {
     "scrollWidth": 430,
     "innerWidth": 430,
@@ -876,6 +1031,31 @@
     "ok": true
    },
    "/biblioteca/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/comecando/corpus/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/comecando/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/comecando/proxima-palavra/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/comecando/significado-vira-espaco/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/comecando/tokens/": {
     "scrollWidth": 390,
     "innerWidth": 390,
     "ok": true
@@ -1017,6 +1197,31 @@
     "innerWidth": 360,
     "ok": true
    },
+   "/comecando/corpus/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/comecando/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/comecando/proxima-palavra/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/comecando/significado-vira-espaco/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/comecando/tokens/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
    "/equacoes/": {
     "scrollWidth": 360,
     "innerWidth": 360,
@@ -1154,6 +1359,31 @@
     "innerWidth": 320,
     "ok": true
    },
+   "/comecando/corpus/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/comecando/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/comecando/proxima-palavra/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/comecando/significado-vira-espaco/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/comecando/tokens/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
    "/equacoes/": {
     "scrollWidth": 320,
     "innerWidth": 320,
@@ -1278,7 +1508,7 @@
   "busca_abre_ctrl_k": true,
   "busca_resultados_bellman": 1,
   "busca_sem_acento_atencao": 1,
-  "busca_navega": "http://192.0.2.2:4321/estudos/caminhos/controle-bellman/",
+  "busca_navega": "http://localhost:4321/estudos/caminhos/controle-bellman/",
   "busca_fecha_com_esc": true,
   "toc_itens": 7,
   "toc_sticky": "sticky",
@@ -1287,9 +1517,9 @@
   "skip_link_focavel": true
  },
  "resumo": {
-  "rotas": 27,
+  "rotas": 32,
   "viewports": 9,
-  "verificacoes_scroll": 243,
+  "verificacoes_scroll": 288,
   "rolagem_horizontal": [],
   "links_quebrados": 0,
   "arquivos_faltando": 0,

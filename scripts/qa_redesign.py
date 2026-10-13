@@ -194,8 +194,9 @@ def main():
     rotas = pages()
     report = {"rotas": rotas, "links_quebrados": broken, "arquivos_faltando": missing, "seo_geo": seo, "viewports": {}, "console": {}, "imagens_quebradas": [], "interacoes": {}}
 
-    proxy = os.environ.get("HTTPS_PROXY")
     host = urlparse(args.base).hostname
+    # Build local: sem proxy (o Chromium mandava localhost para o proxy mesmo com bypass).
+    proxy = None if host in ("localhost", "127.0.0.1") else os.environ.get("HTTPS_PROXY")
     with sync_playwright() as pw:
         browser = pw.chromium.launch(proxy={"server": proxy, "bypass": f"{host},localhost,127.0.0.1"} if proxy else None)
 
