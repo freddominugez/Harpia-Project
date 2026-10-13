@@ -9,18 +9,24 @@ arte_previa:
   - "Normalização por coluna é prática comum em quantização escalar"
 proximo_teste: "Verificar se o ganho sobrevive à rotação aleatória e ao precondicionador em blocos 64x64."
 parar_se: "A rotação necessária para o raio probabilístico desfizer o ganho da escala diagonal."
-atualizado: "2026-10-12"
+atualizado: "2026-10-13"
 ---
 
 ## Mecanismo
 
-O produto interno não muda sob a reparametrização $(W-\mu)D^{-1}\cdot Dh$, mas a quantização em int8 muda. Escolher $D$ altera quanto erro cada coluna recebe.
+A centralização acrescenta um termo comum ao score:
 
-## Resultado demonstrado
+$$
+\langle w_i,h\rangle=\langle\mu,h\rangle+\langle(w_i-\mu)D^{-1},Dh\rangle.
+$$
 
-A razão entre o limite de exclusão e o sinal é proporcional a $\|Dh\|\cdot\max_j(r_j/D_j)$. Ela não muda se $D$ for multiplicado por uma constante e é mínima em $D_j=r_j$ para todo $h$. **Entre as matrizes diagonais, esta escolha já é ótima.**
+O termo $\langle\mu,h\rangle$ não altera a ordenação nem o softmax. Para recuperar scores absolutos e comparar certificados, é preciso incluí-lo ou trabalhar consistentemente com scores centralizados. A reparametrização preserva o produto centralizado; a quantização em int8 pode mudar o erro.
 
-## Medido
+## Resultado demonstrado sob hipóteses
+
+Para faixas $r_j>0$ e escalas $D_j>0$, o limite $\|Dh\|\max_j(r_j/D_j)$ é mínimo em $D_j=r_j$, salvo uma escala comum. Normalizando o máximo para 1, tem-se $D_j\ge r_j$, e essa escolha minimiza a norma. Isso é ótimo para esse limite, não uma prova de ótimo em latência ou erro de quantização. Colunas constantes ($r_j=0$) devem ter sua contribuição separada, sem divisão por zero.
+
+## Medido no ensaio local
 
 | Variante | Sobreviventes |
 |---|---|
@@ -28,6 +34,8 @@ A razão entre o limite de exclusão e o sinal é proporcional a $\|Dh\|\cdot\ma
 | Só centralização | 3,191% |
 | Rotação por autovetores e escala | 5,455% |
 | **Escala diagonal** | **0,397%** |
+
+A redução de candidatos foi de cerca de 83,1%; isso não implica a mesma redução de latência. Veja o [estado da documentação experimental](/estudos/#evidencia-experimental).
 
 ## Próximo passo
 

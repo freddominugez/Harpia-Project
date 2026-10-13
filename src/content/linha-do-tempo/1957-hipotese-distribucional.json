@@ -1,12 +1,12 @@
 {
   "ano": 1957,
   "titulo": "Hipótese distribucional",
-  "texto": "Firth: conhecemos uma palavra pela companhia que ela mantém. É a ideia por trás de todo embedding.",
+  "texto": "Firth: o contexto ajuda a caracterizar uma palavra. É uma referência da hipótese distribucional em representações textuais.",
   "marco": true,
   "era": "Fundamentos",
   "ordem": 5,
   "status": "publicado",
   "origem": "manual",
   "adicionado_em": "2026-10-12",
-  "verificado_em": "2026-10-12"
+  "verificado_em": "2026-10-13"
 }

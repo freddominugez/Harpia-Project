@@ -12,9 +12,9 @@ const host = (u: string) => u.replace(/^https?:\/\//, "").replace(/\/$/, "");
 ---
 <div class="news">
   <div class="surface news-list">
-    <div style="padding:16px 0 6px"><span class="live"><i></i>Atualizado por robô de RSS a cada 6 horas</span></div>
+    <div style="padding:16px 0 6px"><span class="live"><i></i>Atualizado por robô de RSS a cada 6 horas · datas do anúncio ou atualização no feed</span></div>
     {lista.length ? lista.map((n) => (
-      <a class="ni" href={n.url} target="_blank" rel="noopener noreferrer"><small>{n.fonte}{n.data && ` · ${n.data}`}</small><b>{n.titulo}</b></a>
+      <a class="ni" href={n.url} target="_blank" rel="noopener noreferrer"><small>{n.fonte}{n.data && ` · anúncio/atualização: ${n.data}`}</small><b>{n.titulo}</b></a>
     )) : (
       <div class="empty" style="margin:10px 0 18px">O robô ainda não rodou. Quando <code>public/data/news.json</code> tiver itens, as manchetes aparecem aqui.</div>
     )}

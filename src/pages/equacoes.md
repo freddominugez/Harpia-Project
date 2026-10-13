@@ -1,17 +1,17 @@
 ---
 layout: ../layouts/Texto.astro
-titulo: "Camadas de um LLM e as equações de cada uma"
+titulo: "Etapas de um LLM e suas equações"
 kicker: "Equações"
 lead: "Do texto ao token, do token ao vetor, do vetor à probabilidade do próximo token, e o caminho paralelo dos modelos de embedding. Arquitetura de referência: transformer decodificador com RMSNorm, RoPE, atenção com grupos de chaves e valores e FFN SwiGLU."
-descricao: "As 16 camadas de um LLM e de um modelo de embedding, com as equações que regem cada uma e o custo de cada etapa."
-atualizado: "2026-10-12"
+descricao: "As 16 etapas e componentes de um LLM e de um modelo de embedding, com as equações que regem cada uma e o custo de cada etapa."
+atualizado: "2026-10-13"
 relacionados:
   - { href: "/estudos/", titulo: "Os 12 caminhos", sub: "Onde cada camada vira pesquisa", icone: "file" }
   - { href: "/biblioteca/glossario/", titulo: "Glossário", sub: "Termos em uma ou duas linhas", icone: "book" }
   - { href: "/aprendizado/", titulo: "Aprendizado de Máquina", sub: "As regras que vieram antes", icone: "brain" }
 ---
 
-**Notação.** $V$ tamanho do vocabulário, $n$ tokens no contexto, $d$ dimensão do modelo, $L$ número de blocos, $h$ e $h_{kv}$ cabeças de consulta e de chave e valor, $d_h=d/h$, $d_{ff}$ largura da FFN, $N$ documentos no índice. FLOPs contam multiplicação e soma como 2.
+**Notação.** $V$ tamanho do vocabulário, $n$ tokens no contexto, $d$ dimensão do modelo, $L$ número de blocos, $h$ e $h_{kv}$ cabeças de consulta e de chave e valor, $d_h=d/h$, $d_{ff}$ largura da FFN, $N$ documentos no índice. FLOPs contam multiplicação e soma como 2. O mapa reúne componentes e etapas de treinamento, geração e recuperação; não conta blocos Transformer. $B$ é o tamanho do lote e $\beta_{kv}$ os bytes por elemento do cache; $V$ também nomeia a matriz de valores na seção de atenção, por convenção local.
 
 ## 1. Tokenização
 
@@ -21,7 +21,7 @@ $$
 (a,b)^{*}=\arg\max_{(a,b)}\ \mathrm{freq}(a\,b),\qquad \mathcal V\leftarrow\mathcal V\cup\{ab\}
 $$
 
-Na inferência, $\text{texto}\mapsto(t_1,\dots,t_n)$ com $t_i\in\{1,\dots,V\}$. Vocabulário maior encurta $n$ e barateia a atenção, mas aumenta as tabelas $V\times d$ da entrada e da saída.
+Na inferência, $\text{texto}\mapsto(t_1,\dots,t_n)$ com $t_i\in\{1,\dots,V\}$. Um vocabulário maior pode reduzir $n$, dependendo do tokenizer e do texto, e aumenta a tabela de entrada. A saída pode compartilhar essa tabela ou ter pesos separados; a economia de atenção deve ser medida.
 
 ## 2. Tabela de embeddings
 
@@ -29,7 +29,7 @@ $$
 E\in\mathbb R^{V\times d},\qquad x^{(0)}_i=E_{t_i,:}=\mathbf e_{t_i}^{\top}E
 $$
 
-São $Vd$ parâmetros, lidos uma linha por token. Comprimir a tabela economiza memória, não tempo.
+São $Vd$ parâmetros, lidos uma linha por token. Comprimir a tabela reduz armazenamento. O efeito temporal depende do tráfego, do cache e do custo de desquantização: pode acelerar ou retardar a leitura.
 
 ## 3. Posição com RoPE
 
@@ -39,7 +39,7 @@ $$
 \begin{pmatrix}q'_{2j}\\ q'_{2j+1}\end{pmatrix}=\begin{pmatrix}\cos m\theta_j&-\sin m\theta_j\\ \sin m\theta_j&\cos m\theta_j\end{pmatrix}\begin{pmatrix}q_{2j}\\ q_{2j+1}\end{pmatrix},\qquad \theta_j=b^{-2j/d_h}
 $$
 
-A propriedade que interessa: $\langle R_mq,R_{m'}k\rangle=\langle q,R_{m'-m}k\rangle$. O produto depende só da distância. É a mesma operação que a rotação de relação do RotatE e a ligação de fasores em computação hiperdimensional.
+A propriedade que interessa: $\langle R_mq,R_{m'}k\rangle=\langle q,R_{m'-m}k\rangle$. A dependência das posições absolutas se reduz ao deslocamento relativo com sinal; o score continua dependendo do conteúdo de $q$ e $k$. Há uma analogia algébrica com rotações em RotatE e fasores em computação hiperdimensional, não identidade de modelos ou objetivos. [Fonte: RoFormer](https://arxiv.org/abs/2104.09864).
 
 ## 4. RMSNorm
 
@@ -61,15 +61,15 @@ $$
 \mathrm{Attn}(X)=\big[O^{(1)}\,\|\,\cdots\,\|\,O^{(h)}\big]W_O
 $$
 
-Parâmetros: $2d^2+2d\,h_{kv}d_h$. É a única camada cujo custo cresce com $n$: cerca de $4nd$ FLOPs por token para pontuar e combinar.
+Parâmetros: $2d^2+2d\,h_{kv}d_h$. No decode com KV cache, pontuar e combinar um novo token com $n$ posições custa aproximadamente $4nd$ FLOPs, fora as projeções. No prefill, todas as etapas processam $n$ tokens e a atenção densa custa $O(n^2d)$; explorar a máscara causal altera a contagem exata. A dependência por novo token do comprimento do cache é característica da atenção nesse cenário, não de todo regime de execução.
 
 ## 6. Cache de chaves e valores
 
 $$
-o_t=\mathrm{softmax}\!\Big(\frac{q_tK_{1:t}^{\top}}{\sqrt{d_h}}\Big)V_{1:t},\qquad \text{memória}=2\,L\,n\,h_{kv}\,d_h\cdot\text{bytes}
+o_t=\mathrm{softmax}\!\Big(\frac{q_tK_{1:t}^{\top}}{\sqrt{d_h}}\Big)V_{1:t},\qquad \text{memória}=2\,B\,L\,n\,h_{kv}\,d_h\,\beta_{kv}
 $$
 
-Em contexto longo, o cache pesa mais que os pesos.
+O cache pode superar os pesos conforme lote, contexto e precisões. Na configuração de 8B abaixo, com $B=1$ e cache BF16, são 128 KiB por token: 1 GiB em 8.192 tokens, contra aproximadamente 14,96 GiB de pesos BF16. Com a mesma precisão e lote, a igualdade fica perto de 122.528 tokens; quantizar pesos ou aumentar o lote muda esse ponto.
 
 ## 7. FFN SwiGLU
 
@@ -93,7 +93,7 @@ $$
 z=W_U\,h\in\mathbb R^{V},\qquad p(t_{n+1}=v\mid t_{1:n})=\frac{e^{z_v/T}}{\sum_{u}e^{z_u/T}}
 $$
 
-Cada logit é um produto escalar $z_v=\langle w_v,h\rangle$: escolher o token é uma busca de produto interno máximo sobre $V$ linhas, com $2Vd$ FLOPs por token.
+Cada logit é um produto escalar $z_v=\langle w_v,h\rangle$: a avaliação densa das $V$ linhas custa aproximadamente $2Vd$ FLOPs por token. A escolha gulosa equivale a MIPS antes de transformações de logits que alterem a ordenação. Amostrar do softmax exige a distribuição, não apenas o maior score.
 
 ## 10. Decodificação
 
@@ -102,10 +102,10 @@ Guloso: $t_{n+1}=\arg\max_v z_v$. Amostragem: $t_{n+1}\sim p(\cdot\mid t_{1:n})$
 ## 11. Perda e gradiente
 
 $$
-\mathcal L=-\frac1n\sum_{i}\log p(t_{i+1}\mid t_{1:i}),\qquad \frac{\partial\mathcal L_i}{\partial z}=p-\mathbf e_{t_{i+1}}
+\mathcal L=-\frac1n\sum_{i}\log p(t_{i+1}\mid t_{1:i}),\qquad \frac{\partial\mathcal L_i}{\partial z}=\frac{p-\mathbf e_{t_{i+1}}}{T}
 $$
 
-Treinar custa cerca de $6P$ FLOPs por token; inferir, cerca de $2P$.
+O gradiente acima é da perda individual para $p=\mathrm{softmax}(z/T)$; no treinamento usual, $T=1$. A perda média acrescenta o fator $1/n$ às contribuições. As estimativas $6P$ para treino e $2P$ para inferência densa são aproximações, não incluem todo custo de atenção, contexto ou execução.
 
 ## 12. Otimizador AdamW
 
@@ -123,7 +123,7 @@ $$
 e=\frac1n\sum_{i}x^{(L)}_i,\qquad \hat e=\frac{e}{\|e\|_2},\qquad \mathrm{sim}(a,b)=\langle\hat e_a,\hat e_b\rangle
 $$
 
-Quase todo o custo de uma consulta está no encoder: 7,1 ms contra 0,075 ms de varredura em 5 mil documentos, nas medições do projeto.
+No ensaio local com 5 mil documentos, quase todo o custo medido da consulta ficou no encoder: 7,1 ms contra 0,075 ms de varredura em 5 mil documentos, nas medições relatadas pelo projeto. A participação de 98,95% vale para esse ensaio; [o protocolo de reprodução permanece pendente](/estudos/#evidencia-experimental).
 
 ## 14. Perda contrastiva e Matryoshka
 
@@ -137,7 +137,7 @@ $$
 \hat x=\mathrm{clip}\Big(\mathrm{round}\big(\tfrac{x}{s}\big),-2^{b-1},2^{b-1}-1\Big),\qquad \langle q,x\rangle=s\langle q,\hat x\rangle+\langle q,r\rangle,\quad |\langle q,r\rangle|\le\|q\|\,\|r\|
 $$
 
-Binário: $\langle\hat a,\hat b\rangle=d-2\,\mathrm{Hamming}(\hat a,\hat b)$. Piso teórico para vetores unitários: $D_{\text{mse}}\ge 4^{-b}$.
+Aqui $r=x-s\hat x$. Para vetores binários com entradas $\{-1,+1\}$, $\langle\hat a,\hat b\rangle=d-2\,\mathrm{Hamming}(\hat a,\hat b)$. Limites de taxa–distorção exigem distribuição, dimensão e normalização: $4^{-b}$ não é um piso universal para qualquer conjunto unitário. Dois vetores antipodais, por exemplo, admitem representação exata com um bit.
 
 ## 16. Recuperação vetorial
 
@@ -153,4 +153,4 @@ $$
 P\approx Vd+Vd+L\big(2d^2+2d\,h_{kv}d_h+3\,d\,d_{ff}\big)
 $$
 
-Com a configuração pública do Llama 3 8B ($V=128.256$, $d=4.096$, $L=32$, $h_{kv}=8$, $d_h=128$, $d_{ff}=14.336$): tabela de entrada 525 M (6,5%), atenção 1.342 M (16,7%), FFN 5.637 M (70,2%), cabeça de saída 525 M (6,5%), total cerca de 8.030 M. Os valores de configuração estão citados de memória; as parcelas são calculadas com a fórmula.
+Com a configuração pública do Llama 3 8B ($V=128.256$, $d=4.096$, $L=32$, $h_{kv}=8$, $d_h=128$, $d_{ff}=14.336$): tabela de entrada 525 M (6,5%), atenção 1.342 M (16,7%), FFN 5.637 M (70,2%), cabeça de saída 525 M (6,5%), total cerca de 8.030 M. As parcelas são calculadas com a fórmula, desprezando normas e assumindo tabelas de entrada e saída não compartilhadas. Configuração de referência: [Llama 3, implementação oficial](https://github.com/meta-llama/llama3/blob/main/llama/model.py).

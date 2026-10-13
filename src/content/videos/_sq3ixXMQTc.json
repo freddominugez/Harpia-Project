@@ -4,7 +4,7 @@
   "canal": "Amazon Web Services",
   "modulo": 3,
   "nivel": "Iniciante",
-  "resumo": "Episódio Back to Basics da AWS sobre como o RAG resolve conhecimento desatualizado e acesso a dados privados em aplicações de IA generativa corporativas.",
+  "resumo": "Episódio Back to Basics da AWS sobre como o RAG permite consultar fontes atualizadas e dados privados, dependendo da qualidade da recuperação e do uso dessas fontes em aplicações de IA generativa corporativas.",
   "catalogo": 20,
   "trilha": "llm",
   "ordem": 26,

@@ -6,7 +6,7 @@ import IdeaCard from "../../components/IdeaCard.astro";
 import M from "../../components/M.astro";
 import Giscus from "../../components/Giscus.astro";
 import Tag from "../../components/Tag.astro";
-const titulo = "A ideia mais interessante que não serve para nada";
+const titulo = "Geometria hiperbólica: um caminho arquivado no projeto";
 ---
 <Base titulo={titulo} descricao="E se a vetorização ocorresse em um espaço não euclidiano? A resposta, as medidas e por que a geometria hiperbólica continua sendo pesquisa real.">
   <PageIntro trilha={[{ rotulo: "Estudos", href: "/estudos/" }, { rotulo: titulo }]} eyebrow="Estudos · arquivado" titulo={titulo} lead="E se a vetorização ocorresse em um espaço não euclidiano? A resposta, as medidas e por que a geometria hiperbólica continua sendo pesquisa real.">
@@ -17,18 +17,18 @@ const titulo = "A ideia mais interessante que não serve para nada";
       <div style="margin-bottom:26px"><IdeaCard completo /></div>
       <div class="prose">
         <h2 id="o-que-medimos">O que medimos</h2>
-        <p>O programa testou curvatura constante (hiperbólica) e curvatura variável aprendida para recuperação, sob comparação justa: mesma dimensão, mesmos bytes, mesmo protocolo. Nenhuma das duas ganhou do espaço euclidiano.</p>
+        <p>O programa testou curvatura constante (hiperbólica) e curvatura variável aprendida para recuperação, sob comparação justa: mesma dimensão, mesmos bytes, mesmo protocolo. Nenhuma das duas ganhou do espaço euclidiano nos ensaios relatados. O <a href="/estudos/#evidencia-experimental">protocolo completo e os dados de reprodução</a> ainda precisam ser publicados; esse resultado não é uma impossibilidade geral.</p>
         <h2 id="por-que">Por que o resultado faz sentido</h2>
         <p>No modelo de Lorentz, a distância hiperbólica é uma função monótona de um produto interno com um sinal trocado:</p>
         <M d t={String.raw`d_{\mathbb H}(x,y)=\operatorname{arcosh}\!\big(-\langle x,y\rangle_{\mathcal L}\big),\qquad \langle x,y\rangle_{\mathcal L}=-x_0y_0+\textstyle\sum_{i\ge1}x_iy_i`} />
-        <p>Ordenar por distância hiperbólica é ordenar por um produto interno. Em dimensão alta, os vetores de modelos hiperbólicos pré-treinados ficam numa casca fina, e o cosseno comum reproduz a ordenação geodésica quase por completo.</p>
+        <p>A fórmula vale no hiperboloide de curvatura −1, com coordenada temporal positiva e norma de Lorentz −1. Nesse modelo, minimizar a distância equivale a maximizar o produto de Lorentz. A aproximação por cosseno euclidiano depende das normas e da concentração radial observada; dimensão alta sozinha não garante ordenações equivalentes.</p>
         <h2 id="literatura">O que a literatura diz</h2>
         <ul>
-          <li>Em grafos de conhecimento a 32 dimensões, a vantagem hiperbólica é de décimos de ponto; os próprios autores relatam desempenho similar em 500 dimensões (Chami e coautores, 2020).</li>
-          <li>Uma reavaliação achou um erro no baseline euclidiano de um benchmark muito usado; corrigido, o modelo euclidiano empata ou vence (Katsman e Gilbert, 2025).</li>
+          <li>Na Tabela 2 de <a href="https://aclanthology.org/2020.acl-main.617.pdf">Chami et al. (2020)</a>, AttE → AttH em 32 dimensões melhora o MRR em 1,0 ponto em WN18RR, 1,3 em FB15k-237 e 2,3 em YAGO3-10. O desempenho similar a 500 dimensões se refere aos benchmarks e comparações daquele estudo.</li>
+          <li>Uma reavaliação achou um erro no baseline euclidiano de um benchmark muito usado; corrigido, o modelo euclidiano empata ou vence em cenários de grafos estudados por <a href="https://arxiv.org/abs/2411.06688">Katsman e Gilbert (2025)</a>; isso não é uma prova geral sobre recuperação de texto.</li>
           <li>Em hierarquias puras e poucas dimensões, o ganho é grande: é aí que a linha continua viva (Nickel e Kiela, 2017).</li>
         </ul>
-        <blockquote><p><b>Registro:</b> a geometria hiperbólica é uma linha de pesquisa real e ativa. Ela não serve para acelerar embeddings de texto de alta dimensão, mas representa bem hierarquias em dimensão baixa.</p></blockquote>
+        <blockquote><p><b>Registro:</b> a geometria hiperbólica é uma linha de pesquisa real e ativa. Este caminho foi arquivado no programa por falta de ganho nos ensaios relatados. Isso não exclui outras aplicações em texto de alta dimensão; a literatura também estuda sua utilidade para hierarquias em dimensão baixa.</p></blockquote>
         <h2 id="discussao">Discussão</h2>
       </div>
       <Giscus />
