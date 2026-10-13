@@ -23,6 +23,7 @@ Pesquisa aberta sobre eficiência de LLMs: embeddings, tokens, pesos e busca vet
 | Passo a passo de publicação | `docs/DEPLOY.md` |
 | Sistema visual (tokens, componentes, responsivo) | `src/styles/global.css` |
 | Componentes do redesign | `src/components/` (Header, Hero, Kpi, StudyTrackCard, ArticleCard, VideoFeature, ForumList, JoinCommunityCard, Footer, Breadcrumb, PageIntro, ArticleSidebar, Tag, ResponsiveGrid) |
+| Seção Começando (série "Como uma máquina aprende a falar", artigos como o autor entregou) | `src/pages/comecando/`, `src/layouts/Comecando.astro`, `src/artigos/comecando/`, `src/data/comecando.ts` |
 | Conteúdo editorial da home e de Origens | `src/data/home.ts`, `src/data/origens.ts` |
 | Busca do site (índice gerado no build) | `src/lib/search.ts` → `/busca.json`; interações em `src/scripts/site.ts` |
 | QA do redesign e capturas | `scripts/qa_redesign.py`, `docs/QA_REDESSIGN.md`, `docs/qa/` |
@@ -66,6 +67,7 @@ Veja `docs/DEPLOY.md`. Resumo: criar o repositório no GitHub, fazer push, impor
 - **Novo vídeo à mão:** crie `src/content/videos/<ID>.json` com `id`, `titulo`, `canal`, `modulo` (0 a 11, ver `src/content/modulos/`), `nivel`, `resumo`, `status` e as datas. Confira o ID antes (regra em `docs/CURADORIA.md`). A página `/videos/` organiza por módulo e nível, e a home mostra uma seleção da semana, um vídeo por nível.
 - **Novo artigo ou livro à mão:** um arquivo em `src/content/artigos/` ou `src/content/livros/`.
 - **Rascunho:** `status: "rascunho"` guarda o item no repositório sem mostrar em lugar nenhum do site.
+- **Novo artigo da série Começando:** salve o conteúdo de `<main>` do HTML do artigo em `src/artigos/comecando/<slug>.html` e acrescente número, título, descrição e data em `src/data/comecando.ts`. A página, o card da home, o sitemap, o RSS e a versão .md saem sozinhos. O estilo da série fica em `src/artigos/comecando/serie.css`.
 - **Matemática:** em markdown use `$...$` e `$$...$$`; em páginas `.astro` use ``<M t={String.raw`...`} />`` (com aspas comuns, as barras invertidas se perdem).
 - **Home:** trilhas e artigos em destaque ficam em `src/data/home.ts`; as pautas do fórum vêm de `src/content/pautas/`. Os números dos indicadores são calculados do acervo.
 - **Página nova:** acrescente a rota em `src/lib/rotas.ts` para entrar no sitemap, no llms.txt e ganhar imagem OG e versão .md (ver `docs/SEO_GEO.md`).

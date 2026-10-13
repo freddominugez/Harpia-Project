@@ -1,0 +1,169 @@
+/* Estilo dos artigos da série "Como uma máquina aprende a falar", como o autor entregou.
+   Fontes servidas pelo próprio site (@fontsource-variable): Source Serif 4 e Inter. */
+:root {
+    --bg: #faf8f3;
+    --paper: #ffffff;
+    --ink: #1c1a17;
+    --muted: #6b665d;
+    --line: #d9d4c9;
+    --box: #f0ece3;
+    --paris: #1f5fbf;
+    --lyon: #2a8a6e;
+    --banana: #c9641c;
+    --query: #7a4bd6;
+    --pos: #1f5fbf;
+    --neg: #c9641c;
+    --cluster-city: rgba(31, 95, 191, 0.08);
+    --cluster-fruit: rgba(201, 100, 28, 0.09);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15140f;
+      --paper: #1d1b16;
+      --ink: #ece7db;
+      --muted: #a39d90;
+      --line: #3a362e;
+      --box: #26231c;
+      --paris: #6ea0f0;
+      --lyon: #5fc4a3;
+      --banana: #f0924a;
+      --query: #b394f5;
+      --pos: #6ea0f0;
+      --neg: #f0924a;
+      --cluster-city: rgba(110, 160, 240, 0.12);
+      --cluster-fruit: rgba(240, 146, 74, 0.12);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #15140f;
+    --paper: #1d1b16;
+    --ink: #ece7db;
+    --muted: #a39d90;
+    --line: #3a362e;
+    --box: #26231c;
+    --paris: #6ea0f0;
+    --lyon: #5fc4a3;
+    --banana: #f0924a;
+    --query: #b394f5;
+    --pos: #6ea0f0;
+    --neg: #f0924a;
+    --cluster-city: rgba(110, 160, 240, 0.12);
+    --cluster-fruit: rgba(240, 146, 74, 0.12);
+  }
+
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Source Serif 4 Variable", "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 19px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 16px 96px; }
+  .series {
+    font-family: "Inter Variable", Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 18px;
+  }
+  h1 { font-size: clamp(32px, 5.2vw, 44px); line-height: 1.12; font-weight: 600; letter-spacing: -0.01em; margin: 0 0 18px; }
+  .byline {
+    font-family: "Inter Variable", Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 14px; color: var(--muted); margin: 0 0 44px; padding-bottom: 20px; border-bottom: 1px solid var(--line);
+  }
+  p { margin: 0 0 1.25em; }
+  p.lead { font-size: 22px; line-height: 1.5; }
+  figure { margin: 36px 0 40px; padding: 20px 18px 16px; background: var(--paper); border: 1px solid var(--line); border-radius: 12px; }
+  figure svg {
+    display: block; width: 100%; height: auto;
+    font-family: "Inter Variable", Inter, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 13px; fill: var(--ink);
+  }
+  figcaption {
+    font-family: "Inter Variable", Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 14px; line-height: 1.5; color: var(--muted); margin-top: 14px;
+  }
+  figcaption b { color: var(--ink); font-weight: 600; }
+
+  .box { fill: var(--box); stroke: var(--line); stroke-width: 1; }
+  .box-hi { fill: var(--cluster-city); stroke: var(--paris); stroke-width: 1.2; }
+  .box-warn { fill: var(--cluster-fruit); stroke: var(--banana); stroke-width: 1.2; }
+  .mono { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+  .muted { fill: var(--muted); }
+  .small { font-size: 11px; }
+  .lbl { font-size: 12px; fill: var(--muted); }
+  .arrow { stroke: var(--muted); stroke-width: 1.4; fill: none; }
+  .axis { stroke: var(--line); stroke-width: 1; }
+  .vec { stroke-width: 2.2; fill: none; }
+  .vec-soft { stroke-width: 1.4; fill: none; stroke: var(--muted); opacity: 0.6; }
+  .vec-paris { stroke: var(--paris); }
+  .vec-lyon { stroke: var(--lyon); }
+  .vec-banana { stroke: var(--banana); }
+  .vec-query { stroke: var(--query); stroke-dasharray: 6 4; }
+  .t-paris { fill: var(--paris); font-weight: 600; }
+  .t-lyon { fill: var(--lyon); font-weight: 600; }
+  .t-banana { fill: var(--banana); font-weight: 600; }
+  .t-query { fill: var(--query); font-weight: 600; }
+  .pt-paris { fill: var(--paris); }
+  .pt-lyon { fill: var(--lyon); }
+  .pt-banana { fill: var(--banana); }
+  .pt-query { fill: var(--query); }
+  .cluster-city { fill: var(--cluster-city); stroke: var(--paris); stroke-opacity: 0.25; stroke-dasharray: 3 3; }
+  .cluster-fruit { fill: var(--cluster-fruit); stroke: var(--banana); stroke-opacity: 0.25; stroke-dasharray: 3 3; }
+  .arc { fill: none; stroke: var(--query); stroke-width: 1.2; }
+  .bar { fill: var(--paris); }
+  .bar-soft { fill: var(--muted); opacity: 0.55; }
+  .bar-banana { fill: var(--banana); }
+  .bar-lyon { fill: var(--lyon); }
+  .bar-query { fill: var(--query); }
+  .heat-pos { fill: var(--pos); }
+  .heat-neg { fill: var(--neg); }
+  .next {
+    margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line);
+    font-family: "Inter Variable", Inter, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 14px; color: var(--muted);
+  }
+
+
+/* ---------- moldura da seção Começando (cabeçalho com a marca e navegação) ---------- */
+.cm-top { border-bottom: 1px solid var(--line); background: var(--paper); }
+.cm-top-in { max-width: 720px; margin: 0 auto; padding: 14px 16px; display: flex; align-items: center; gap: 14px; }
+.cm-brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; }
+.cm-brand img { display: block; width: 40px; height: 37px; }
+.cm-brand b { font-family: "Inter Variable", Inter, system-ui, sans-serif; font-size: 15px; font-weight: 800; letter-spacing: .14em; }
+.cm-sep { width: 1px; align-self: stretch; background: var(--line); }
+.cm-secao { font-size: 24px; font-weight: 600; color: var(--ink); text-decoration: none; letter-spacing: -0.01em; }
+.cm-site { margin-left: auto; font-family: "Inter Variable", Inter, system-ui, sans-serif; font-size: 14px; color: var(--muted); text-decoration: none; white-space: nowrap; }
+.cm-brand:hover b, .cm-secao:hover, .cm-site:hover { color: var(--paris); }
+.cm-skip { position: absolute; left: -9999px; }
+.cm-skip:focus { left: 16px; top: 8px; z-index: 10; background: var(--paper); color: var(--ink); padding: 6px 10px; border: 1px solid var(--line); border-radius: 6px; }
+main a { color: var(--paris); text-underline-offset: 3px; }
+.cm-nav { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line); display: grid; gap: 12px; grid-template-columns: 1fr 1fr;
+  font-family: "Inter Variable", Inter, system-ui, sans-serif; font-size: 15px; }
+.cm-nav a, .cm-nav span { display: block; padding: 14px 16px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); color: var(--ink); text-decoration: none; line-height: 1.35; }
+.cm-nav a:hover { border-color: var(--paris); }
+.cm-nav small { display: block; font-size: 12px; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+.cm-nav .cm-prox { text-align: right; grid-column: 2; }
+.cm-nav span { color: var(--muted); }
+.cm-cite { margin-top: 28px; font-family: "Inter Variable", Inter, system-ui, sans-serif; font-size: 13px; line-height: 1.5; color: var(--muted); overflow-wrap: anywhere; }
+.cm-foot { border-top: 1px solid var(--line); }
+.cm-foot-in { max-width: 720px; margin: 0 auto; padding: 22px 16px 40px; font-family: "Inter Variable", Inter, system-ui, sans-serif; font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 18px; justify-content: space-between; }
+.cm-foot a { color: var(--muted); }
+.cm-foot b { color: var(--ink); font-weight: 600; }
+
+/* índice da seção */
+.cm-lista { list-style: none; padding: 0; margin: 8px 0 0; display: grid; gap: 14px; }
+.cm-lista a { display: grid; grid-template-columns: 56px 1fr; gap: 4px 16px; padding: 20px 20px; background: var(--paper); border: 1px solid var(--line); border-radius: 12px; color: var(--ink); text-decoration: none; }
+.cm-lista a:hover { border-color: var(--paris); }
+.cm-num { grid-row: span 2; font-family: "Inter Variable", Inter, system-ui, sans-serif; font-size: 30px; font-weight: 700; color: var(--paris); line-height: 1; }
+.cm-lista strong { font-size: 22px; line-height: 1.2; font-weight: 600; }
+.cm-lista p { margin: 4px 0 0; font-size: 16px; line-height: 1.5; color: var(--muted); }
+.cm-breve { margin-top: 28px; font-family: "Inter Variable", Inter, system-ui, sans-serif; font-size: 14px; color: var(--muted); }
+@media (max-width: 560px) {
+  .cm-secao { font-size: 20px; }
+  .cm-site { display: none; }
+  .cm-nav { grid-template-columns: 1fr; }
+  .cm-nav .cm-prox { grid-column: 1; }
+  .cm-lista a { grid-template-columns: 40px 1fr; padding: 16px; }
+  .cm-num { font-size: 24px; }
+}

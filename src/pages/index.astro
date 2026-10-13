@@ -8,6 +8,7 @@ import ArticleCard from "../components/ArticleCard.astro";
 import VideoFeature from "../components/VideoFeature.astro";
 import ForumList from "../components/ForumList.astro";
 import JoinCommunityCard from "../components/JoinCommunityCard.astro";
+import StartCard from "../components/StartCard.astro";
 import { getCollection } from "astro:content";
 import { kpis, trilhas, ARTIGOS_DESTAQUE } from "../data/home";
 import { PAUTAS } from "../lib/pautas";
@@ -71,6 +72,13 @@ const destaque = selecaoDaSemana();
             <a href="/videos/">Ver os {VIDEOS.length} vídeos <span aria-hidden="true">→</span></a>
           </div>
           <VideoFeature videos={destaque} />
+        </section>
+        <section class="ref-section" aria-labelledby="h-comecando">
+          <div class="ref-section-title">
+            <div><h2 id="h-comecando">Para quem está começando</h2></div>
+            <a href="/comecando/">Ver a série <span aria-hidden="true">→</span></a>
+          </div>
+          <StartCard />
         </section>
       </div>
 

@@ -215,6 +215,18 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fo
 .ref-quote-caption { display: flex; align-items: center; gap: 12px; margin-top: 12px; font-size: .56rem; letter-spacing: .32em; color: #6a717c; white-space: nowrap; }
 .ref-quote-caption::before { content: ""; width: 38px; height: 2px; background: var(--gold); }
 
+/* card "Para quem está começando" (home) */
+.ref-middle > .ref-section + .ref-section { margin-top: 18px; }
+.ref-start { padding: 12px 12px 6px; border: 1px solid #e4e6e8; border-radius: 7px; background: #fff; box-shadow: 0 2px 8px rgba(0, 0, 0, .045); }
+.ref-start-serie { margin: 0; font-size: .62rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-strong); }
+.ref-start-lead { margin: 3px 0 6px; font-size: .74rem; line-height: 1.4; color: var(--muted); }
+.ref-start-list { list-style: none; margin: 0; padding: 0; }
+.ref-start-list a { display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; border-top: 1px solid #ebeef1; color: var(--ink); }
+.ref-start-num { flex: none; width: 30px; height: 30px; display: grid; place-items: center; border-radius: 7px; background: var(--gold-soft); color: var(--gold-strong); font-size: .72rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+.ref-start-txt { min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.ref-start-txt b { font-size: .8rem; line-height: 1.25; font-weight: 720; }
+.ref-start-txt small { font-size: .66rem; line-height: 1.35; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.ref-start-list a:hover b { color: var(--gold-strong); }
 .ref-forum-box { padding: 0 12px; border: 1px solid #e4e6e8; border-radius: 7px; background: #fff; box-shadow: 0 2px 8px rgba(0, 0, 0, .045); }
 .ref-forum-notice { display: block; margin: 0 -12px; padding: 5px 12px; border-bottom: 1px solid #eee9db; border-radius: 7px 7px 0 0; background: #fffbf2; font-size: .62rem; font-weight: 600; color: #7d5a14; }
 .ref-forum-topic { display: flex; align-items: center; gap: 10px; min-width: 0; min-height: 43px; padding: 4px 0; border-bottom: 1px solid #ebeef1; }

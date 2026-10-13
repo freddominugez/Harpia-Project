@@ -1,0 +1,16 @@
+{
+  "id": "1hDK7gZbJqQ",
+  "titulo": "Ep. 8 — ColBERT + ColBERTv2: late interaction at a reasonable inference cost",
+  "canal": "Zeta Alpha",
+  "modulo": 3,
+  "nivel": "Avançado",
+  "resumo": "ColBERT e ColBERTv2: um vetor por token e interação tardia, a alternativa ao vetor único por documento.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 235,
+  "fonte_url": "https://www.youtube.com/watch?v=1hDK7gZbJqQ",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13"
+}

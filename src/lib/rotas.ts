@@ -8,6 +8,25 @@ import { VIDEOS, MODULOS, rotuloModulo, urlVideo } from "./videos";
 import { ARTIGOS, LIVROS, FONTES, FONTES_POR_GRUPO, APRENDIZADO, LINHA_DO_TEMPO } from "./conteudo";
 import { CAPITULOS, EVENTOS, PESSOAS } from "../data/origens";
 import { PAUTAS } from "./pautas";
+import { COMECANDO, SERIE, TOTAL_DA_SERIE, corpoDe } from "../data/comecando";
+
+/** HTML de artigo da série em markdown: parágrafos, títulos e figuras (descrição + legenda). */
+function htmlParaMd(html: string) {
+  const texto = (t: string) => t.replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/\s+/g, " ").trim();
+  const partes: string[] = [];
+  const re = /<p class="series">[\s\S]*?<\/p>|<h1>[\s\S]*?<\/h1>|<p class="byline">[\s\S]*?<\/p>|<figure>[\s\S]*?<\/figure>|<p[^>]*>[\s\S]*?<\/p>/g;
+  for (const m of html.matchAll(re)) {
+    const bloco = m[0];
+    if (/^<p class="(series|byline)"/.test(bloco) || bloco.startsWith("<h1>")) continue;
+    if (bloco.startsWith("<figure>")) {
+      const desc = bloco.match(/aria-label="([^"]+)"/)?.[1] ?? "";
+      const tit = texto(bloco.match(/<text[^>]*>(Figura[^<]*)<\/text>/)?.[1] ?? "Figura");
+      const leg = texto(bloco.match(/<figcaption>([\s\S]*?)<\/figcaption>/)?.[1] ?? "");
+      partes.push(`**${tit}** (${desc})\n\n${leg}`);
+    } else partes.push(texto(bloco));
+  }
+  return partes.filter(Boolean).join("\n\n");
+}
 
 export type Rota = {
   path: string;
@@ -145,6 +164,45 @@ export async function rotas(): Promise<Rota[]> {
         ])}`,
       ].join("\n\n"),
     },
+    {
+      path: "/comecando/",
+      titulo: "Começando",
+      descricao: `Para quem está começando: a série "${SERIE}", que explica como funciona um LLM do token ao espaço vetorial, sem pré-requisito.`,
+      secao: "Começando",
+      atualizado: maior(...COMECANDO.map((a) => a.data)),
+      markdown: () => [
+        `Série "${SERIE}", de ${SITE.autor}, em ${TOTAL_DA_SERIE} artigos, do concreto ao abstrato.`,
+        COMECANDO.map((a) => `- [Artigo ${a.numero}: ${a.titulo}](${abs(`/comecando/${a.slug}/`)}): ${a.descricao}`).join("\n"),
+      ].join("\n\n"),
+      schema: () => [colecao("/comecando/", "Começando", `Série "${SERIE}".`,
+        itemList(SERIE, COMECANDO.map((a) => ({ name: `Artigo ${a.numero}: ${a.titulo}`, url: abs(`/comecando/${a.slug}/`) }))))],
+    },
+    ...COMECANDO.map((a): Rota => ({
+      path: `/comecando/${a.slug}/`,
+      titulo: a.titulo,
+      descricao: a.descricao,
+      secao: `Começando · artigo ${a.numero}`,
+      pai: "/comecando/",
+      atualizado: a.data,
+      markdown: () => `*${SERIE}, artigo ${a.numero} de ${TOTAL_DA_SERIE}.*\n\n${htmlParaMd(corpoDe(a.slug))}`,
+      schema: () => [{
+        "@type": "Article",
+        "@id": `${abs(`/comecando/${a.slug}/`)}#artigo`,
+        headline: a.titulo,
+        description: a.descricao,
+        url: abs(`/comecando/${a.slug}/`),
+        inLanguage: "pt-BR",
+        datePublished: a.data,
+        dateModified: a.data,
+        author: { "@id": ID.pessoa },
+        publisher: { "@id": ID.org },
+        isPartOf: [{ "@id": ID.site }, { "@type": "CreativeWorkSeries", name: SERIE, url: abs("/comecando/") }],
+        position: a.numero,
+        image: abs(ogDe(`/comecando/${a.slug}/`)),
+        license: "https://creativecommons.org/licenses/by/4.0/",
+        educationalLevel: "iniciante",
+      }],
+    })),
     {
       path: "/origens/",
       titulo: "Origens",

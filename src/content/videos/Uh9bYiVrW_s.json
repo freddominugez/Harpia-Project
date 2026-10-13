@@ -1,0 +1,16 @@
+{
+  "id": "Uh9bYiVrW_s",
+  "titulo": "RAG But Better: Rerankers with Cohere AI",
+  "canal": "James Briggs",
+  "modulo": 3,
+  "nivel": "Intermediário",
+  "resumo": "Reranking no RAG: um segundo modelo reordena os documentos da busca vetorial antes de entregá-los ao LLM.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 234,
+  "fonte_url": "https://www.youtube.com/watch?v=Uh9bYiVrW_s",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13"
+}

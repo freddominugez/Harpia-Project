@@ -1,0 +1,16 @@
+{
+  "id": "6ArSys5qHAU",
+  "titulo": "Neural Networks Part 6: Cross Entropy",
+  "canal": "StatQuest with Josh Starmer",
+  "modulo": 0,
+  "nivel": "Intermediário",
+  "resumo": "StatQuest explica a entropia cruzada, a função de perda que um LLM minimiza a cada token previsto.",
+  "catalogo": null,
+  "trilha": "redes",
+  "ordem": 221,
+  "fonte_url": "https://www.youtube.com/watch?v=6ArSys5qHAU",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13"
+}

@@ -30,7 +30,7 @@ function semana(d: Date): number {
 
 /**
  * Seleção da semana para a home: um vídeo de cada nível, de módulos diferentes,
- * girando pelos 12 módulos. O site é reconstruído várias vezes por dia pelo robô de
+ * girando pelos módulos. O site é reconstruído várias vezes por dia pelo robô de
  * news, então a seleção muda sozinha a cada semana.
  */
 export function selecaoDaSemana(hoje = new Date(), quantos = 3): Video[] {

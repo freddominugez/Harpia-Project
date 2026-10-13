@@ -1,0 +1,16 @@
+{
+  "id": "JXQT_vxqwIs",
+  "titulo": "Adam Optimization Algorithm (C2W2L08)",
+  "canal": "DeepLearningAI",
+  "modulo": 0,
+  "nivel": "Avançado",
+  "resumo": "Andrew Ng apresenta o otimizador Adam, que combina momento e RMSProp e é o padrão no treino de LLMs.",
+  "catalogo": null,
+  "trilha": "redes",
+  "ordem": 222,
+  "fonte_url": "https://www.youtube.com/watch?v=JXQT_vxqwIs",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13"
+}

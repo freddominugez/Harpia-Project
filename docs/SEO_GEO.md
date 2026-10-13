@@ -8,7 +8,7 @@ Como o site se apresenta para buscadores (Google, Bing) e para assistentes de IA
 |---|---|---|
 | Registro de páginas | `src/lib/rotas.ts` | Título, descrição, seção, data real de atualização, JSON-LD e versão markdown de cada página indexável |
 | Cabeçalho | `src/layouts/Base.astro` | title, description, robots, canonical, hreflang, Open Graph, Twitter Card, JSON-LD, links alternativos |
-| Sitemap | `src/pages/sitemap.xml.ts` → `/sitemap.xml` | 26 URLs com `lastmod` tirado do conteúdo e sitemap de imagens (11 retratos de Origens) |
+| Sitemap | `src/pages/sitemap.xml.ts` → `/sitemap.xml` | Uma URL por página indexável (30 em 13/10/2026), com `lastmod` tirado do conteúdo e sitemap de imagens (11 retratos de Origens) |
 | Índice de sitemap | `/sitemap-index.xml` | Aponta para `/sitemap.xml` (compatibilidade) |
 | robots.txt | `src/pages/robots.txt.ts` | Tudo liberado, `/admin/` fechado, regras explícitas para robôs de IA, linha `Sitemap` |
 | Imagens OG | `src/pages/og/[...rota].png.ts` | Uma imagem 1200 × 630 por página, gerada com satori 0.33.5 e @resvg/resvg-js 2.6.2, fonte Inter local |
@@ -70,7 +70,7 @@ Ao mudar o texto de uma página de verdade, atualize a data. Correção de vírg
 
 ## Core Web Vitals
 
-Metas: LCP abaixo de 2,5 s, CLS abaixo de 0,1, INP abaixo de 200 ms. Na rodada de 12/10/2026 (Lighthouse desktop, build local): desempenho, acessibilidade, boas práticas e SEO em 100 nas cinco páginas medidas; LCP entre 0,5 e 1,0 s; CLS no máximo 0,05. O que sustenta isso: site estático, fonte local com `preload`, imagens com largura e altura, `loading="lazy"` abaixo da dobra, KaTeX renderizado no build, nenhum script de terceiros na carga inicial (o Giscus só carrega na área de discussão).
+Metas: LCP abaixo de 2,5 s, CLS abaixo de 0,1, INP abaixo de 200 ms. Na rodada de 12/10/2026 (Lighthouse desktop, build local): desempenho, acessibilidade, boas práticas e SEO em 100 nas páginas medidas (a seis desde 13/10/2026, com um artigo de Começando); LCP entre 0,5 e 1,0 s; CLS no máximo 0,05. O que sustenta isso: site estático, fonte local com `preload`, imagens com largura e altura, `loading="lazy"` abaixo da dobra, KaTeX renderizado no build, nenhum script de terceiros na carga inicial (o Giscus só carrega na área de discussão).
 
 ## Google Search Console
 

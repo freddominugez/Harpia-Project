@@ -1,0 +1,16 @@
+{
+  "id": "gXbThCXjZFM",
+  "titulo": "Singular Value Decomposition (SVD): Overview",
+  "canal": "Steve Brunton",
+  "modulo": 0,
+  "nivel": "Intermediário",
+  "resumo": "Visão geral da decomposição em valores singulares (SVD), a fatoração por trás da compressão de matrizes e das aproximações de baixo posto, como as usadas no LoRA.",
+  "catalogo": null,
+  "trilha": "mat",
+  "ordem": 216,
+  "fonte_url": "https://www.youtube.com/watch?v=gXbThCXjZFM",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13"
+}

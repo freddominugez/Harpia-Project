@@ -1,7 +1,7 @@
 // Conteúdo editorial da página inicial, separado dos componentes.
 // Os números vêm do inventário real do site (coleções e JSONs), nunca de métricas de demonstração.
 import { LIVROS as livros, ARTIGOS as artigos, APRENDIZADO as ml } from "../lib/conteudo";
-import { VIDEOS as videos } from "../lib/videos";
+import { VIDEOS as videos, MODULOS } from "../lib/videos";
 
 export type Kpi = { valor: string; rotulo: string; detalhe: string; icone: string; href: string };
 export type Trilha = { titulo: string; resumo: string; icone: string; href: string; meta: string; metaIcone: string; nivel: string };
@@ -15,7 +15,7 @@ export function kpis(nCaminhos: number): Kpi[] {
     { valor: String(nCaminhos), rotulo: "Caminhos de pesquisa", detalhe: "Mecanismos com teste refutável", icone: "file", href: "/estudos/" },
     { valor: String(CAMADAS), rotulo: "Camadas de LLM", detalhe: "Equações e custo de cada etapa", icone: "network", href: "/equacoes/" },
     { valor: `${livros.length} + ${artigos.length}`, rotulo: "Livros e artigos", detalhe: "Referências do acervo", icone: "book", href: "/biblioteca/" },
-    { valor: String(videos.length), rotulo: "Vídeos curados", detalhe: "12 módulos, 3 níveis, com resumo", icone: "chart", href: "/videos/" },
+    { valor: String(videos.length), rotulo: "Vídeos curados", detalhe: `${MODULOS.length} módulos, 3 níveis, com resumo`, icone: "chart", href: "/videos/" },
   ];
 }
 

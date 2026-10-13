@@ -1,0 +1,276 @@
+  <p class="series">Como uma máquina aprende a falar · artigo 2 de 10</p>
+  <h1>Tokens: o modelo não lê palavras</h1>
+  <p class="byline">Carlos Frederico Domínguez · 12 de outubro de 2026</p>
+
+  <p class="lead">A palavra não existe para um modelo de linguagem. O que existe é um inteiro, entre zero e algumas dezenas de milhares, apontando para um pedaço de texto que um algoritmo escolheu antes de o modelo nascer. Esse detalhe de engenharia, decidido por frequência e sem nenhuma noção de gramática, explica por que o modelo erra ao contar letras, por que o português custa mais caro que o inglês e por que algumas falhas que parecem de inteligência são falhas de corte.</p>
+  <p>Há razões para não usar palavras. Um vocabulário de palavras não fecha: nomes próprios, erros de digitação, flexões e termos novos ficariam de fora, ou exigiriam um símbolo de "desconhecido" que apaga informação. O extremo oposto, um vocabulário de letras, cobre tudo, mas produz sequências longas em que cada símbolo carrega quase nada, e o custo da atenção cresce com o quadrado do comprimento. O token é o compromisso entre os dois: pedaços maiores que letras e menores que palavras, escolhidos de modo que o frequente vire um pedaço só e o raro seja montado a partir de partes.</p>
+  <p>O algoritmo dominante é o BPE, byte pair encoding. Nasceu em 1994 como técnica de compressão de dados e foi adaptado em 2016 para tradução automática neural. O procedimento cabe em três frases. Começa-se com um alfabeto de 256 bytes, o que garante que qualquer sequência de texto, em qualquer língua ou alfabeto, seja representável. Conta-se, num corpus de amostra, todos os pares de símbolos adjacentes, funde-se o par mais frequente num símbolo novo e guarda-se a regra de fusão numa lista ordenada. Repete-se a contagem e a fusão até o vocabulário atingir o tamanho escolhido.</p>
+  <figure>
+    <svg viewBox="0 0 720 316" role="img" aria-label="Quatro linhas mostrando as fusões sucessivas do BPE sobre as palavras arte, parte, carta e arco">
+      <text x="18" y="22" class="lbl" >Figura 1. Três fusões do BPE numa amostra minúscula</text>
+      <text x="18" y="46" class="mono muted" font-size="12">amostra: arte ×5, parte ×3, carta ×2, arco ×2</text>
+      <text x="18" y="86" class="lbl" >início</text>
+      <rect x="90.0" y="66" width="19.8" height="30" rx="5" class="box"/>
+      <text x="99.9" y="85.7" text-anchor="middle" class="mono" font-size="13">a</text>
+      <rect x="112.8" y="66" width="19.8" height="30" rx="5" class="box"/>
+      <text x="122.7" y="85.7" text-anchor="middle" class="mono" font-size="13">r</text>
+      <rect x="135.6" y="66" width="19.8" height="30" rx="5" class="box"/>
+      <text x="145.5" y="85.7" text-anchor="middle" class="mono" font-size="13">t</text>
+      <rect x="158.4" y="66" width="19.8" height="30" rx="5" class="box"/>
+      <text x="168.3" y="85.7" text-anchor="middle" class="mono" font-size="13">e</text>
+      <rect x="194.2" y="66" width="19.8" height="30" rx="5" class="box"/>
+      <text x="204.1" y="85.7" text-anchor="middle" class="mono" font-size="13">p</text>
+      <rect x="217.0" y="66" width="19.8" height="30" rx="5" class="box"/>
+      <text x="226.9" y="85.7" text-anchor="middle" class="mono" font-size="13">a</text>
+      <rect x="239.8" y="66" width="19.8" height="30" rx="5" class="box"/>
+      <text x="249.7" y="85.7" text-anchor="middle" class="mono" font-size="13">r</text>
+      <rect x="262.6" y="66" width="19.8" height="30" rx="5" class="box"/>
+      <text x="272.5" y="85.7" text-anchor="middle" class="mono" font-size="13">t</text>
+      <rect x="285.4" y="66" width="19.8" height="30" rx="5" class="box"/>
+      <text x="295.3" y="85.7" text-anchor="middle" class="mono" font-size="13">e</text>
+      <rect x="321.2" y="66" width="19.8" height="30" rx="5" class="box"/>
+      <text x="331.1" y="85.7" text-anchor="middle" class="mono" font-size="13">c</text>
+      <rect x="344.0" y="66" width="19.8" height="30" rx="5" class="box"/>
+      <text x="353.9" y="85.7" text-anchor="middle" class="mono" font-size="13">a</text>
+      <rect x="366.8" y="66" width="19.8" height="30" rx="5" class="box"/>
+      <text x="376.7" y="85.7" text-anchor="middle" class="mono" font-size="13">r</text>
+      <rect x="389.6" y="66" width="19.8" height="30" rx="5" class="box"/>
+      <text x="399.5" y="85.7" text-anchor="middle" class="mono" font-size="13">t</text>
+      <rect x="412.4" y="66" width="19.8" height="30" rx="5" class="box"/>
+      <text x="422.3" y="85.7" text-anchor="middle" class="mono" font-size="13">a</text>
+      <rect x="448.2" y="66" width="19.8" height="30" rx="5" class="box"/>
+      <text x="458.1" y="85.7" text-anchor="middle" class="mono" font-size="13">a</text>
+      <rect x="471.0" y="66" width="19.8" height="30" rx="5" class="box"/>
+      <text x="480.9" y="85.7" text-anchor="middle" class="mono" font-size="13">r</text>
+      <rect x="493.8" y="66" width="19.8" height="30" rx="5" class="box"/>
+      <text x="503.7" y="85.7" text-anchor="middle" class="mono" font-size="13">c</text>
+      <rect x="516.6" y="66" width="19.8" height="30" rx="5" class="box"/>
+      <text x="526.5" y="85.7" text-anchor="middle" class="mono" font-size="13">o</text>
+      <text x="556" y="86" class="lbl" >mais frequente: a + r (12)</text>
+      <text x="18" y="140" class="lbl" >fusão 1</text>
+      <rect x="90.0" y="120" width="27.6" height="30" rx="5" class="box-hi"/>
+      <text x="103.8" y="139.7" text-anchor="middle" class="mono" font-size="13">ar</text>
+      <rect x="120.6" y="120" width="19.8" height="30" rx="5" class="box"/>
+      <text x="130.5" y="139.7" text-anchor="middle" class="mono" font-size="13">t</text>
+      <rect x="143.4" y="120" width="19.8" height="30" rx="5" class="box"/>
+      <text x="153.3" y="139.7" text-anchor="middle" class="mono" font-size="13">e</text>
+      <rect x="179.2" y="120" width="19.8" height="30" rx="5" class="box"/>
+      <text x="189.1" y="139.7" text-anchor="middle" class="mono" font-size="13">p</text>
+      <rect x="202.0" y="120" width="27.6" height="30" rx="5" class="box-hi"/>
+      <text x="215.8" y="139.7" text-anchor="middle" class="mono" font-size="13">ar</text>
+      <rect x="232.6" y="120" width="19.8" height="30" rx="5" class="box"/>
+      <text x="242.5" y="139.7" text-anchor="middle" class="mono" font-size="13">t</text>
+      <rect x="255.4" y="120" width="19.8" height="30" rx="5" class="box"/>
+      <text x="265.3" y="139.7" text-anchor="middle" class="mono" font-size="13">e</text>
+      <rect x="291.2" y="120" width="19.8" height="30" rx="5" class="box"/>
+      <text x="301.1" y="139.7" text-anchor="middle" class="mono" font-size="13">c</text>
+      <rect x="314.0" y="120" width="27.6" height="30" rx="5" class="box-hi"/>
+      <text x="327.8" y="139.7" text-anchor="middle" class="mono" font-size="13">ar</text>
+      <rect x="344.6" y="120" width="19.8" height="30" rx="5" class="box"/>
+      <text x="354.5" y="139.7" text-anchor="middle" class="mono" font-size="13">t</text>
+      <rect x="367.4" y="120" width="19.8" height="30" rx="5" class="box"/>
+      <text x="377.3" y="139.7" text-anchor="middle" class="mono" font-size="13">a</text>
+      <rect x="403.2" y="120" width="27.6" height="30" rx="5" class="box-hi"/>
+      <text x="417.0" y="139.7" text-anchor="middle" class="mono" font-size="13">ar</text>
+      <rect x="433.8" y="120" width="19.8" height="30" rx="5" class="box"/>
+      <text x="443.7" y="139.7" text-anchor="middle" class="mono" font-size="13">c</text>
+      <rect x="456.6" y="120" width="19.8" height="30" rx="5" class="box"/>
+      <text x="466.5" y="139.7" text-anchor="middle" class="mono" font-size="13">o</text>
+      <text x="556" y="140" class="lbl" >agora: ar + t (10)</text>
+      <text x="18" y="194" class="lbl" >fusão 2</text>
+      <rect x="90.0" y="174" width="35.4" height="30" rx="5" class="box-hi"/>
+      <text x="107.7" y="193.7" text-anchor="middle" class="mono" font-size="13">art</text>
+      <rect x="128.4" y="174" width="19.8" height="30" rx="5" class="box"/>
+      <text x="138.3" y="193.7" text-anchor="middle" class="mono" font-size="13">e</text>
+      <rect x="164.2" y="174" width="19.8" height="30" rx="5" class="box"/>
+      <text x="174.1" y="193.7" text-anchor="middle" class="mono" font-size="13">p</text>
+      <rect x="187.0" y="174" width="35.4" height="30" rx="5" class="box-hi"/>
+      <text x="204.7" y="193.7" text-anchor="middle" class="mono" font-size="13">art</text>
+      <rect x="225.4" y="174" width="19.8" height="30" rx="5" class="box"/>
+      <text x="235.3" y="193.7" text-anchor="middle" class="mono" font-size="13">e</text>
+      <rect x="261.2" y="174" width="19.8" height="30" rx="5" class="box"/>
+      <text x="271.1" y="193.7" text-anchor="middle" class="mono" font-size="13">c</text>
+      <rect x="284.0" y="174" width="35.4" height="30" rx="5" class="box-hi"/>
+      <text x="301.7" y="193.7" text-anchor="middle" class="mono" font-size="13">art</text>
+      <rect x="322.4" y="174" width="19.8" height="30" rx="5" class="box"/>
+      <text x="332.3" y="193.7" text-anchor="middle" class="mono" font-size="13">a</text>
+      <rect x="358.2" y="174" width="27.6" height="30" rx="5" class="box"/>
+      <text x="372.0" y="193.7" text-anchor="middle" class="mono" font-size="13">ar</text>
+      <rect x="388.8" y="174" width="19.8" height="30" rx="5" class="box"/>
+      <text x="398.7" y="193.7" text-anchor="middle" class="mono" font-size="13">c</text>
+      <rect x="411.6" y="174" width="19.8" height="30" rx="5" class="box"/>
+      <text x="421.5" y="193.7" text-anchor="middle" class="mono" font-size="13">o</text>
+      <text x="556" y="194" class="lbl" >agora: art + e (8)</text>
+      <text x="18" y="248" class="lbl" >fusão 3</text>
+      <rect x="90.0" y="228" width="43.2" height="30" rx="5" class="box-hi"/>
+      <text x="111.6" y="247.7" text-anchor="middle" class="mono" font-size="13">arte</text>
+      <rect x="149.2" y="228" width="19.8" height="30" rx="5" class="box"/>
+      <text x="159.1" y="247.7" text-anchor="middle" class="mono" font-size="13">p</text>
+      <rect x="172.0" y="228" width="43.2" height="30" rx="5" class="box-hi"/>
+      <text x="193.6" y="247.7" text-anchor="middle" class="mono" font-size="13">arte</text>
+      <rect x="231.2" y="228" width="19.8" height="30" rx="5" class="box"/>
+      <text x="241.1" y="247.7" text-anchor="middle" class="mono" font-size="13">c</text>
+      <rect x="254.0" y="228" width="35.4" height="30" rx="5" class="box"/>
+      <text x="271.7" y="247.7" text-anchor="middle" class="mono" font-size="13">art</text>
+      <rect x="292.4" y="228" width="19.8" height="30" rx="5" class="box"/>
+      <text x="302.3" y="247.7" text-anchor="middle" class="mono" font-size="13">a</text>
+      <rect x="328.2" y="228" width="27.6" height="30" rx="5" class="box"/>
+      <text x="342.0" y="247.7" text-anchor="middle" class="mono" font-size="13">ar</text>
+      <rect x="358.8" y="228" width="19.8" height="30" rx="5" class="box"/>
+      <text x="368.7" y="247.7" text-anchor="middle" class="mono" font-size="13">c</text>
+      <rect x="381.6" y="228" width="19.8" height="30" rx="5" class="box"/>
+      <text x="391.5" y="247.7" text-anchor="middle" class="mono" font-size="13">o</text>
+      <text x="556" y="248" class="lbl" >e assim por diante</text>
+      <text x="18" y="300" class="mono" font-size="12">Regras guardadas, nesta ordem: a + r → ar · ar + t → art · art + e → arte · … até o tamanho escolhido</text>
+    </svg>
+    <figcaption><b>Cada fusão é uma regra, e a lista é ordenada.</b> O algoritmo não sabe o que é uma palavra: funde o par de símbolos adjacentes mais frequente, recomeça a contagem e repete. Numa amostra real, com bilhões de caracteres e um alvo de cem mil símbolos, as fusões que vencem são as de palavras inteiras em inglês, terminações comuns e sequências frequentes de código. Tokenizadores atuais começam em bytes, não em letras, o que garante que qualquer texto seja representável.</figcaption>
+  </figure>
+  <p>Na hora de usar, nada é recalculado. O texto novo é quebrado em bytes e as regras de fusão são aplicadas na ordem exata em que foram aprendidas, o que torna o processo determinístico: a mesma sequência de caracteres produz sempre os mesmos tokens. Antes do BPE roda uma expressão regular que pré-separa espaços, pontuação e números, para que uma fusão não atravesse uma vírgula nem cole um dígito a uma letra. Tokenizadores recentes agrupam dígitos de três em três e reservam símbolos especiais para marcar o fim de um texto e os papéis de uma conversa. O tokenizador é treinado uma vez, antes do modelo, e fica congelado. O modelo aprende sobre esse alfabeto e nunca o revisa.</p>
+  <p>O tamanho do vocabulário é uma decisão de engenharia, não uma propriedade da língua. O Llama 2 usava 32 mil tokens, o Llama 3 passou para 128 mil, o GPT-4 trabalha com cerca de 100 mil. Vocabulário maior produz sequências mais curtas, e sequência curta é cálculo mais barato e janela de contexto que rende mais. O custo vem do outro lado: a matriz de embeddings cresce, e tokens raros aparecem tão pouco no treino que seus vetores ficam mal formados. Vocabulário menor inverte a troca. Não há tamanho certo. Há um ponto de equilíbrio que cada laboratório escolhe para a mistura de línguas e domínios que pretende atender.</p>
+  <p>É aí que o português paga. Como as fusões são guiadas por frequência, e a amostra tem muito mais inglês do que qualquer outra língua, as palavras inglesas comuns viram tokens inteiros e as portuguesas são picotadas. "France" é um token. "França" são dois. Um parágrafo em inglês custa um token a cada 1,1 palavra. O mesmo parágrafo em português custa um a cada 1,4. A diferença, medida no tokenizador do GPT-4, fica em torno de 30%, e sobe para línguas com alfabeto próprio ou com ainda menos texto na internet.</p>
+  <figure>
+    <svg viewBox="0 0 720 308" role="img" aria-label="A mesma frase tokenizada em português, 14 tokens, e em inglês, 11 tokens, e um parágrafo com 71 contra 54 tokens">
+      <text x="18" y="22" class="lbl" >Figura 2. A mesma frase, dois alfabetos: contagem real no tokenizador do GPT-4</text>
+      <text x="18" y="50" class="lbl" >português: 6 palavras, 14 tokens</text>
+      <rect x="18.0" y="58" width="26.0" height="30" rx="6" class="box"/>
+      <text x="31.0" y="77.7" text-anchor="middle" class="mono" font-size="13">O</text>
+      <rect x="47.0" y="58" width="68.6" height="30" rx="6" class="box"/>
+      <text x="81.3" y="77.7" text-anchor="middle" class="mono" font-size="13"><tspan class="muted">␣</tspan>modelo</text>
+      <rect x="118.6" y="58" width="45.2" height="30" rx="6" class="box"/>
+      <text x="141.2" y="77.7" text-anchor="middle" class="mono" font-size="13"><tspan class="muted">␣</tspan>não</text>
+      <rect x="166.8" y="58" width="29.6" height="30" rx="6" class="box"/>
+      <text x="181.6" y="77.7" text-anchor="middle" class="mono" font-size="13"><tspan class="muted">␣</tspan>l</text>
+      <rect x="199.4" y="58" width="26.0" height="30" rx="6" class="box"/>
+      <text x="212.4" y="77.7" text-anchor="middle" class="mono" font-size="13">ê</text>
+      <rect x="228.4" y="58" width="45.2" height="30" rx="6" class="box"/>
+      <text x="251.0" y="77.7" text-anchor="middle" class="mono" font-size="13"><tspan class="muted">␣</tspan>pal</text>
+      <rect x="276.6" y="58" width="53.0" height="30" rx="6" class="box"/>
+      <text x="303.1" y="77.7" text-anchor="middle" class="mono" font-size="13">avras</text>
+      <rect x="332.6" y="58" width="26.0" height="30" rx="6" class="box"/>
+      <text x="345.6" y="77.7" text-anchor="middle" class="mono" font-size="13">,</text>
+      <rect x="361.6" y="58" width="29.6" height="30" rx="6" class="box"/>
+      <text x="376.4" y="77.7" text-anchor="middle" class="mono" font-size="13"><tspan class="muted">␣</tspan>l</text>
+      <rect x="394.2" y="58" width="26.0" height="30" rx="6" class="box"/>
+      <text x="407.2" y="77.7" text-anchor="middle" class="mono" font-size="13">ê</text>
+      <rect x="423.2" y="58" width="45.2" height="30" rx="6" class="box"/>
+      <text x="445.8" y="77.7" text-anchor="middle" class="mono" font-size="13"><tspan class="muted">␣</tspan>ped</text>
+      <rect x="471.4" y="58" width="26.0" height="30" rx="6" class="box"/>
+      <text x="484.4" y="77.7" text-anchor="middle" class="mono" font-size="13">a</text>
+      <rect x="500.4" y="58" width="37.4" height="30" rx="6" class="box"/>
+      <text x="519.1" y="77.7" text-anchor="middle" class="mono" font-size="13">ços</text>
+      <rect x="540.8" y="58" width="26.0" height="30" rx="6" class="box"/>
+      <text x="553.8" y="77.7" text-anchor="middle" class="mono" font-size="13">.</text>
+      <text x="18" y="122" class="lbl" >inglês: 9 palavras, 11 tokens</text>
+      <rect x="18.0" y="130" width="37.4" height="30" rx="6" class="box"/>
+      <text x="36.7" y="149.7" text-anchor="middle" class="mono" font-size="13">The</text>
+      <rect x="58.4" y="130" width="60.8" height="30" rx="6" class="box"/>
+      <text x="88.8" y="149.7" text-anchor="middle" class="mono" font-size="13"><tspan class="muted">␣</tspan>model</text>
+      <rect x="122.2" y="130" width="53.0" height="30" rx="6" class="box"/>
+      <text x="148.7" y="149.7" text-anchor="middle" class="mono" font-size="13"><tspan class="muted">␣</tspan>does</text>
+      <rect x="178.2" y="130" width="45.2" height="30" rx="6" class="box"/>
+      <text x="200.8" y="149.7" text-anchor="middle" class="mono" font-size="13"><tspan class="muted">␣</tspan>not</text>
+      <rect x="226.4" y="130" width="53.0" height="30" rx="6" class="box"/>
+      <text x="252.9" y="149.7" text-anchor="middle" class="mono" font-size="13"><tspan class="muted">␣</tspan>read</text>
+      <rect x="282.4" y="130" width="60.8" height="30" rx="6" class="box"/>
+      <text x="312.8" y="149.7" text-anchor="middle" class="mono" font-size="13"><tspan class="muted">␣</tspan>words</text>
+      <rect x="346.2" y="130" width="26.0" height="30" rx="6" class="box"/>
+      <text x="359.2" y="149.7" text-anchor="middle" class="mono" font-size="13">,</text>
+      <rect x="375.2" y="130" width="37.4" height="30" rx="6" class="box"/>
+      <text x="393.9" y="149.7" text-anchor="middle" class="mono" font-size="13"><tspan class="muted">␣</tspan>it</text>
+      <rect x="415.6" y="130" width="60.8" height="30" rx="6" class="box"/>
+      <text x="446.0" y="149.7" text-anchor="middle" class="mono" font-size="13"><tspan class="muted">␣</tspan>reads</text>
+      <rect x="479.4" y="130" width="68.6" height="30" rx="6" class="box"/>
+      <text x="513.7" y="149.7" text-anchor="middle" class="mono" font-size="13"><tspan class="muted">␣</tspan>pieces</text>
+      <rect x="551.0" y="130" width="26.0" height="30" rx="6" class="box"/>
+      <text x="564.0" y="149.7" text-anchor="middle" class="mono" font-size="13">.</text>
+      <text x="18" y="200" class="lbl" >um parágrafo inteiro, 51 palavras em português</text>
+      <rect x="18" y="206" width="398" height="16" rx="3" class="bar-banana"/>
+      <text x="423.59999999999997" y="219" class="mono" font-size="12">71 tokens</text>
+      <text x="18" y="246" class="lbl" >o mesmo parágrafo em inglês, 48 palavras</text>
+      <rect x="18" y="252" width="302" height="16" rx="3" class="bar"/>
+      <text x="328.4" y="265" class="mono" font-size="12">54 tokens</text>
+      <text x="18" y="296" class="lbl" >Tokenizador cl100k_base. A frase ecoa o título deste artigo. O parágrafo é a abertura do artigo 1 e sua tradução.</text>
+    </svg>
+    <figcaption><b>O português paga 31% a mais no parágrafo medido.</b> Não por ser mais longo, mas porque suas palavras foram picotadas: "palavras" virou dois pedaços, "pedaços" virou três, enquanto "words" e "pieces" ficaram inteiras. A proporção varia com o tokenizador e o texto, e cresce em línguas com alfabeto próprio ou com ainda menos presença na amostra de treino.</figcaption>
+  </figure>
+  <p>A sobretaxa tem três efeitos. O primeiro é financeiro, porque o token é a unidade de cobrança. O segundo é de capacidade, porque a janela de contexto é medida em tokens e enche mais rápido. O terceiro é de qualidade, mais sutil: cada token português carrega menos significado e foi visto menos vezes no treino, então o modelo trabalha com peças menores e menos ensaiadas. Nenhum dos três é uma limitação da língua. São consequências de uma contagem feita sobre uma amostra em que o inglês domina.</p>
+  <p>O corte também explica uma família de erros que costuma ser tratada como falha de raciocínio. Perguntado quantas letras r há em "morango", o modelo não vê m, o, r, a, n, g, o. Vê dois inteiros, um para "mor" e outro para "ango". Para contar, precisaria ter aprendido, em algum texto, como cada token se escreve letra a letra, e esse tipo de texto é raro. O mesmo vale para rimas, anagramas e palavras ao contrário, e para a aritmética, em que 12345 chega como "123" seguido de "45" e a conta é feita sobre blocos de dígitos, não sobre dígitos. O modelo é cego para o que está abaixo do token.</p>
+  <figure>
+    <svg viewBox="0 0 720 308" role="img" aria-label="Três exemplos: morango dividido em mor e ango, França em Fran e ça, 12345 em 123 e 45, com os ids que o modelo recebe">
+      <defs>
+        <marker id="ah" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--muted)"/></marker>
+        <marker id="ah-paris" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--paris)"/></marker>
+        <marker id="ah-lyon" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--lyon)"/></marker>
+        <marker id="ah-banana" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--banana)"/></marker>
+        <marker id="ah-query" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--query)"/></marker>
+      </defs>
+      <text x="18" y="22" class="lbl" >Figura 3. O que está abaixo do token é invisível para o modelo</text>
+      <text x="18" y="50" class="lbl" >o que você vê</text>
+      <text x="400" y="50" class="lbl" >o que o modelo vê</text>
+      <rect x="18.0" y="62" width="17.8" height="30" rx="5" class="box"/>
+      <text x="26.9" y="81.7" text-anchor="middle" class="mono" font-size="13">m</text>
+      <rect x="38.8" y="62" width="17.8" height="30" rx="5" class="box"/>
+      <text x="47.7" y="81.7" text-anchor="middle" class="mono" font-size="13">o</text>
+      <rect x="59.6" y="62" width="17.8" height="30" rx="5" class="box"/>
+      <text x="68.5" y="81.7" text-anchor="middle" class="mono" font-size="13">r</text>
+      <rect x="80.4" y="62" width="17.8" height="30" rx="5" class="box"/>
+      <text x="89.3" y="81.7" text-anchor="middle" class="mono" font-size="13">a</text>
+      <rect x="101.2" y="62" width="17.8" height="30" rx="5" class="box"/>
+      <text x="110.1" y="81.7" text-anchor="middle" class="mono" font-size="13">n</text>
+      <rect x="122.0" y="62" width="17.8" height="30" rx="5" class="box"/>
+      <text x="130.9" y="81.7" text-anchor="middle" class="mono" font-size="13">g</text>
+      <rect x="142.8" y="62" width="17.8" height="30" rx="5" class="box"/>
+      <text x="151.7" y="81.7" text-anchor="middle" class="mono" font-size="13">o</text>
+      <line x1="330" y1="77" x2="380" y2="77" class="arrow" marker-end="url(#ah)"/>
+      <rect x="400.0" y="62" width="39.4" height="30" rx="6" class="box"/>
+      <text x="419.7" y="81.7" text-anchor="middle" class="mono" font-size="13">mor</text>
+      <text x="419.7" y="108" text-anchor="middle" class="mono muted" font-size="12">57902</text>
+      <rect x="443.4" y="62" width="47.2" height="30" rx="6" class="box"/>
+      <text x="467.0" y="81.7" text-anchor="middle" class="mono" font-size="13">ango</text>
+      <text x="467.0" y="108" text-anchor="middle" class="mono muted" font-size="12">5281</text>
+      <text x="504.59999999999997" y="82" class="lbl" >quantas letras r?</text>
+      <rect x="18.0" y="138" width="17.8" height="30" rx="5" class="box"/>
+      <text x="26.9" y="157.7" text-anchor="middle" class="mono" font-size="13">F</text>
+      <rect x="38.8" y="138" width="17.8" height="30" rx="5" class="box"/>
+      <text x="47.7" y="157.7" text-anchor="middle" class="mono" font-size="13">r</text>
+      <rect x="59.6" y="138" width="17.8" height="30" rx="5" class="box"/>
+      <text x="68.5" y="157.7" text-anchor="middle" class="mono" font-size="13">a</text>
+      <rect x="80.4" y="138" width="17.8" height="30" rx="5" class="box"/>
+      <text x="89.3" y="157.7" text-anchor="middle" class="mono" font-size="13">n</text>
+      <rect x="101.2" y="138" width="17.8" height="30" rx="5" class="box"/>
+      <text x="110.1" y="157.7" text-anchor="middle" class="mono" font-size="13">ç</text>
+      <rect x="122.0" y="138" width="17.8" height="30" rx="5" class="box"/>
+      <text x="130.9" y="157.7" text-anchor="middle" class="mono" font-size="13">a</text>
+      <line x1="330" y1="153" x2="380" y2="153" class="arrow" marker-end="url(#ah)"/>
+      <rect x="400.0" y="138" width="47.2" height="30" rx="6" class="box"/>
+      <text x="423.6" y="157.7" text-anchor="middle" class="mono" font-size="13">Fran</text>
+      <text x="423.6" y="184" text-anchor="middle" class="mono muted" font-size="12">76431</text>
+      <rect x="451.2" y="138" width="31.6" height="30" rx="6" class="box"/>
+      <text x="467.0" y="157.7" text-anchor="middle" class="mono" font-size="13">ça</text>
+      <text x="467.0" y="184" text-anchor="middle" class="mono muted" font-size="12">17930</text>
+      <text x="496.8" y="158" class="lbl" >um nome, dois pedaços</text>
+      <rect x="18.0" y="214" width="17.8" height="30" rx="5" class="box"/>
+      <text x="26.9" y="233.7" text-anchor="middle" class="mono" font-size="13">1</text>
+      <rect x="38.8" y="214" width="17.8" height="30" rx="5" class="box"/>
+      <text x="47.7" y="233.7" text-anchor="middle" class="mono" font-size="13">2</text>
+      <rect x="59.6" y="214" width="17.8" height="30" rx="5" class="box"/>
+      <text x="68.5" y="233.7" text-anchor="middle" class="mono" font-size="13">3</text>
+      <rect x="80.4" y="214" width="17.8" height="30" rx="5" class="box"/>
+      <text x="89.3" y="233.7" text-anchor="middle" class="mono" font-size="13">4</text>
+      <rect x="101.2" y="214" width="17.8" height="30" rx="5" class="box"/>
+      <text x="110.1" y="233.7" text-anchor="middle" class="mono" font-size="13">5</text>
+      <line x1="330" y1="229" x2="380" y2="229" class="arrow" marker-end="url(#ah)"/>
+      <rect x="400.0" y="214" width="39.4" height="30" rx="6" class="box"/>
+      <text x="419.7" y="233.7" text-anchor="middle" class="mono" font-size="13">123</text>
+      <text x="419.7" y="260" text-anchor="middle" class="mono muted" font-size="12">4513</text>
+      <rect x="443.4" y="214" width="31.6" height="30" rx="6" class="box"/>
+      <text x="459.2" y="233.7" text-anchor="middle" class="mono" font-size="13">45</text>
+      <text x="459.2" y="260" text-anchor="middle" class="mono muted" font-size="12">1774</text>
+      <text x="489.0" y="234" class="lbl" >a conta é feita sobre blocos</text>
+      <text x="18" y="296" class="lbl" >Ids reais do tokenizador cl100k_base. O modelo recebe apenas a coluna da direita.</text>
+    </svg>
+    <figcaption><b>Para contar letras, o modelo precisaria saber como cada token se soletra,</b> e isso só aparece nos pesos se o corpus tiver escrito a soletração vezes suficientes. Para somar, recebe blocos de três dígitos, não dígitos. Para rimar ou inverter uma palavra, precisa reconstruir uma sequência que nunca viu de fato. Nenhum desses erros nasce no raciocínio. Nascem no corte.</figcaption>
+  </figure>
+  <p>Modelos recentes contornam parte disso, seja com mais exemplos de soletração no treino, seja chamando uma ferramenta que conta por eles. A cegueira continua estrutural. Toda percepção do modelo passa pelo alfabeto que um algoritmo de contagem definiu antes de ele existir, e nenhuma quantidade de treinamento posterior lhe dá acesso ao que esse alfabeto apagou.</p>
+  <p>A regra prática segue dessa origem. Instruções fixas, as que entram em todo pedido, saem mais baratas em inglês, mesmo em inglês imperfeito, porque um erro de grafia encarece uma palavra e a sobretaxa do português encarece todas. O limite é a clareza: a economia só vale enquanto a instrução continua inequívoca.</p>
+  <p>Fica a pergunta que este artigo deixou implícita. O tokenizador é treinado por frequência numa amostra, o modelo é treinado por frequência num corpus, e os dois herdam o que esse corpus contém, na proporção em que contém. Esse corpus, o que entra nele, o que é descartado e quantas vezes cada parte é lida, é a única fonte de verdade que o modelo conhece. É o próximo artigo.</p>

@@ -1,0 +1,16 @@
+{
+  "id": "FThvfkXWqtE",
+  "titulo": "MedAI #54: FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness | Tri Dao",
+  "canal": "Stanford MedAI",
+  "modulo": 10,
+  "nivel": "Avançado",
+  "resumo": "Tri Dao, autor do FlashAttention, explica a atenção exata que respeita a hierarquia de memória da GPU.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 245,
+  "fonte_url": "https://www.youtube.com/watch?v=FThvfkXWqtE",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13"
+}

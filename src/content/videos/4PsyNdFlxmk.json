@@ -1,0 +1,16 @@
+{
+  "id": "4PsyNdFlxmk",
+  "titulo": "Graph-Based Approximate Nearest Neighbors (ANN) and HNSW",
+  "canal": "Pinecone",
+  "modulo": 3,
+  "nivel": "Intermediário",
+  "resumo": "Como funciona o HNSW, o índice em grafo que faz a busca aproximada de vizinhos em milhões de vetores.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 233,
+  "fonte_url": "https://www.youtube.com/watch?v=4PsyNdFlxmk",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13"
+}

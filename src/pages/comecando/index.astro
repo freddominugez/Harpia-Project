@@ -1,0 +1,24 @@
+---
+// Índice da seção "Começando": a série para quem está chegando agora.
+import Comecando from "../../layouts/Comecando.astro";
+import { COMECANDO, SERIE, TOTAL_DA_SERIE } from "../../data/comecando";
+const n2 = (n: number) => String(n).padStart(2, "0");
+---
+<Comecando titulo="Começando" descricao={`Para quem está começando: a série "${SERIE}", que explica como funciona um LLM do token ao espaço vetorial, sem pré-requisito.`}>
+  <p class="series">{SERIE} · série em {TOTAL_DA_SERIE} artigos</p>
+  <h1>Começando</h1>
+  <p class="byline">Carlos Frederico Domínguez</p>
+  <p class="lead">Para quem está chegando agora. Uma série que explica, do concreto ao abstrato, como uma máquina aprende a falar: o que ela lê, como corta o texto, onde guarda o significado e por que erra do jeito que erra. Sem pré-requisito além de curiosidade.</p>
+  <ol class="cm-lista">
+    {COMECANDO.map((a) => (
+      <li>
+        <a href={`/comecando/${a.slug}/`}>
+          <span class="cm-num" aria-hidden="true">{n2(a.numero)}</span>
+          <strong>{a.titulo}</strong>
+          <p>{a.descricao}</p>
+        </a>
+      </li>
+    ))}
+  </ol>
+  <p class="cm-breve">Os próximos artigos entram aqui à medida que forem publicados. Para ir além da série, veja os <a href="/videos/">vídeos</a> por módulo e nível, o <a href="/biblioteca/glossario/">glossário</a> e as <a href="/equacoes/">equações</a> de cada camada.</p>
+</Comecando>

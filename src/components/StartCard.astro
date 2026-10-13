@@ -1,0 +1,19 @@
+---
+// Card da home "Para quem está começando": a série da seção /comecando/.
+import { COMECANDO, SERIE } from "../data/comecando";
+const n2 = (n: number) => String(n).padStart(2, "0");
+---
+<div class="ref-start">
+  <p class="ref-start-serie">{SERIE}</p>
+  <p class="ref-start-lead">Do token ao espaço vetorial, em artigos curtos e ilustrados. Sem pré-requisito.</p>
+  <ol class="ref-start-list">
+    {COMECANDO.map((a) => (
+      <li>
+        <a href={`/comecando/${a.slug}/`}>
+          <span class="ref-start-num" aria-hidden="true">{n2(a.numero)}</span>
+          <span class="ref-start-txt"><b>{a.titulo}</b><small>{a.descricao}</small></span>
+        </a>
+      </li>
+    ))}
+  </ol>
+</div>

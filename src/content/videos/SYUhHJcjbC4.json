@@ -1,0 +1,16 @@
+{
+  "id": "SYUhHJcjbC4",
+  "titulo": "ROUGE, BLEU, BERTScore, Avaliação Humana, Perplexidade, F1Score, Conjuntos de dados de Referência",
+  "canal": "Grazi Cunha - Computação & Informática",
+  "modulo": 6,
+  "nivel": "Intermediário",
+  "resumo": "Aula em português sobre como avaliar modelos de linguagem: ROUGE, BLEU, BERTScore, perplexidade, F1 e avaliação humana.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 240,
+  "fonte_url": "https://www.youtube.com/watch?v=SYUhHJcjbC4",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13"
+}

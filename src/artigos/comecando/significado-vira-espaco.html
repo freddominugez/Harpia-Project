@@ -1,0 +1,183 @@
+  <p class="series">Como uma máquina aprende a falar · artigo 4 de 10</p>
+  <h1>Significado vira espaço</h1>
+  <p class="byline">Carlos Frederico Domínguez · 12 de outubro de 2026</p>
+
+  <p class="lead">Um significado, para um modelo, é um lugar. Não uma definição, não uma lista de atributos: uma posição num espaço de milhares de dimensões, e a única coisa que esse espaço sabe fazer é medir distâncias. Tudo o que o modelo faz de semântico, reconhecer sinônimos, completar analogias, achar o documento certo, é consequência dessa escolha. Os limites também.</p>
+  <p>O mecanismo é uma tabela. A primeira camada de qualquer modelo é uma matriz com uma linha por token do vocabulário e uma coluna por dimensão do espaço. No GPT-3, 50.257 linhas por 12.288 colunas. Quando um token entra, seu inteiro serve de índice: a linha correspondente é copiada e vira o vetor de entrada. A matriz começa aleatória e é ajustada por gradiente como todo o resto da rede. Ao fim do treino, tokens que apareceram em contextos parecidos têm linhas parecidas, porque receberam empurrões parecidos. É a hipótese distribucional, formulada em 1957 pelo linguista John Firth: conhece-se uma palavra pela companhia que ela mantém. O que a rede faz é transformar essa frase em coordenadas.</p>
+  <figure>
+    <svg viewBox="0 0 720 318" role="img" aria-label="Um token com id 12050 apontando para uma linha destacada de uma matriz de 50.257 por 12.288, que é copiada como vetor de entrada">
+      <defs>
+        <marker id="ah" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--muted)"/></marker>
+        <marker id="ah-paris" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--paris)"/></marker>
+        <marker id="ah-lyon" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--lyon)"/></marker>
+        <marker id="ah-banana" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--banana)"/></marker>
+        <marker id="ah-query" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--query)"/></marker>
+      </defs>
+      <text x="18" y="22" class="lbl" >Figura 1. A primeira camada é uma tabela: uma linha por token, uma coluna por dimensão</text>
+      <rect x="18" y="140" width="110" height="40" rx="7" class="box"/>
+      <text x="73" y="158" class="mono" text-anchor="middle" font-size="14">Paris</text>
+      <text x="73" y="174" class="mono muted" text-anchor="middle" font-size="11">id 12050</text>
+      <line x1="132" y1="160" x2="186" y2="160" class="arrow" marker-end="url(#ah)"/>
+      <text x="136" y="150" class="lbl" font-size="11">índice</text>
+      <rect x="196" y="56" width="230" height="206" rx="4" class="box"/>
+      <line x1="196" y1="68.9" x2="426" y2="68.9" class="axis"/>
+      <line x1="196" y1="81.8" x2="426" y2="81.8" class="axis"/>
+      <line x1="196" y1="94.6" x2="426" y2="94.6" class="axis"/>
+      <line x1="196" y1="107.5" x2="426" y2="107.5" class="axis"/>
+      <line x1="196" y1="120.4" x2="426" y2="120.4" class="axis"/>
+      <line x1="196" y1="133.2" x2="426" y2="133.2" class="axis"/>
+      <line x1="196" y1="146.1" x2="426" y2="146.1" class="axis"/>
+      <line x1="196" y1="159.0" x2="426" y2="159.0" class="axis"/>
+      <line x1="196" y1="171.9" x2="426" y2="171.9" class="axis"/>
+      <line x1="196" y1="184.8" x2="426" y2="184.8" class="axis"/>
+      <line x1="196" y1="197.6" x2="426" y2="197.6" class="axis"/>
+      <line x1="196" y1="210.5" x2="426" y2="210.5" class="axis"/>
+      <line x1="196" y1="223.4" x2="426" y2="223.4" class="axis"/>
+      <line x1="196" y1="236.2" x2="426" y2="236.2" class="axis"/>
+      <line x1="196" y1="249.1" x2="426" y2="249.1" class="axis"/>
+      <rect x="196" y="159.0" width="230" height="12.9" class="box-hi"/>
+      <text x="311.0" y="282" class="lbl" text-anchor="middle">50.257 linhas (tokens)</text>
+      <text x="311.0" y="46" class="lbl" text-anchor="middle">12.288 colunas (dimensões), no GPT-3</text>
+      <text x="202" y="70" class="muted" >…</text>
+      <line x1="432" y1="165.0" x2="476" y2="165.0" class="arrow" marker-end="url(#ah)"/>
+      <text x="436" y="155.0" class="lbl" font-size="11">copia a linha</text>
+      <rect x="478" y="153.0" width="42" height="24" rx="4" class="heat-pos" opacity="0.21"/>
+      <text x="499" y="170.0" class="mono" text-anchor="middle" font-size="12">0,21</text>
+      <rect x="524" y="153.0" width="42" height="24" rx="4" class="heat-neg" opacity="0.74"/>
+      <text x="545" y="170.0" class="mono" text-anchor="middle" font-size="12">−0,74</text>
+      <rect x="570" y="153.0" width="42" height="24" rx="4" class="heat-pos" opacity="0.33"/>
+      <text x="591" y="170.0" class="mono" text-anchor="middle" font-size="12">0,33</text>
+      <text x="637" y="170.0" class="mono" text-anchor="middle" font-size="12">…</text>
+      <rect x="662" y="153.0" width="42" height="24" rx="4" class="heat-neg" opacity="0.19"/>
+      <text x="683" y="170.0" class="mono" text-anchor="middle" font-size="12">−0,19</text>
+      <text x="478" y="199.0" class="lbl" font-size="11">vetor de entrada: 12.288 números</text>
+      <text x="478" y="215.0" class="lbl" font-size="11">(valores ilustrativos)</text>
+      <text x="18" y="306" class="lbl" >A matriz começa aleatória e é ajustada por gradiente. Ninguém escreve uma linha dela à mão.</text>
+    </svg>
+    <figcaption><b>O inteiro do token é só um endereço.</b> A linha que ele aponta é o que o modelo de fato recebe, e essa linha foi moldada por cada contexto em que o token apareceu no corpus. Dois tokens que viveram em contextos parecidos acabam com linhas parecidas: é a hipótese distribucional de Firth, de 1957, convertida em coordenadas. O tamanho da matriz é o produto do vocabulário pela dimensão, e é por isso que vocabulários maiores custam memória.</figcaption>
+  </figure>
+  <p>Entre dois vetores há três medidas comuns. O produto escalar soma os produtos coordenada a coordenada e cresce quando os vetores apontam na mesma direção e quando são longos. A distância euclidiana mede o segmento entre as duas pontas. A similaridade de cosseno divide o produto escalar pelo comprimento dos dois vetores e fica só com o ângulo: 1 para a mesma direção, 0 para perpendiculares, −1 para opostos. É a medida padrão porque, nesses espaços, a direção carrega o significado e o comprimento carrega outras coisas, como a frequência do token, que atrapalham a comparação. Dentro do modelo, o produto escalar é o que a atenção usa e o que a última camada calcula antes do softmax. Fora dele, o cosseno é o que um banco vetorial usa para dizer quais documentos estão perto de uma pergunta.</p>
+  <p>Em 2013, uma equipe do Google publicou o word2vec, um método barato para treinar esses vetores a partir de texto, e mostrou algo que ninguém tinha desenhado: rei menos homem mais mulher caía perto de rainha. A aritmética funciona porque o treino, ao empurrar os vetores por contexto, produz deslocamentos consistentes. A diferença entre rei e rainha aponta na mesma direção que a diferença entre homem e mulher, ou entre ator e atriz. O espaço ganhou eixos que ninguém definiu, e eles se repetem. Convém não exagerar: a analogia é aproximada, o vizinho mais próximo nem sempre é o esperado, e a demonstração costuma excluir as próprias palavras da conta. A regularidade, porém, é real, e foi a primeira evidência de que a geometria codificava estrutura, não só proximidade.</p>
+  <figure>
+    <svg viewBox="0 0 720 340" role="img" aria-label="Seis pontos num plano, homem, mulher, rei, rainha, ator, atriz, com setas paralelas entre cada par e uma seta tracejada de rei até perto de rainha">
+      <defs>
+        <marker id="ah" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--muted)"/></marker>
+        <marker id="ah-paris" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--paris)"/></marker>
+        <marker id="ah-lyon" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--lyon)"/></marker>
+        <marker id="ah-banana" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--banana)"/></marker>
+        <marker id="ah-query" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--query)"/></marker>
+      </defs>
+      <text x="18" y="22" class="lbl" >Figura 2. Deslocamentos que se repetem: rei − homem + mulher ≈ rainha</text>
+      <line x1="156.0" y1="242.0" x2="232.8" y2="139.6" class="vec vec-paris" marker-end="url(#ah-paris)"/>
+      <line x1="426.0" y1="222.0" x2="502.8" y2="119.6" class="vec vec-lyon" marker-end="url(#ah-lyon)"/>
+      <line x1="296.0" y1="282.0" x2="372.8" y2="179.6" class="vec-soft" marker-end="url(#ah)"/>
+      <circle cx="150" cy="250" r="5" class="pt-paris"/>
+      <text x="140" y="255" text-anchor="end" font-size="14" font-weight="600">homem</text>
+      <circle cx="240" cy="130" r="5" class="pt-paris"/>
+      <text x="250" y="135" text-anchor="start" font-size="14" font-weight="600">mulher</text>
+      <circle cx="420" cy="230" r="5" class="pt-lyon"/>
+      <text x="410" y="235" text-anchor="end" font-size="14" font-weight="600">rei</text>
+      <circle cx="510" cy="110" r="5" class="pt-lyon"/>
+      <text x="520" y="115" text-anchor="start" font-size="14" font-weight="600">rainha</text>
+      <circle cx="290" cy="290" r="5" class="muted"/>
+      <text x="280" y="295" text-anchor="end" font-size="14" font-weight="600">ator</text>
+      <circle cx="380" cy="170" r="5" class="muted"/>
+      <text x="390" y="175" text-anchor="start" font-size="14" font-weight="600">atriz</text>
+      <path d="M 420 230 l 98 -110" class="vec vec-query" marker-end="url(#ah-query)"/>
+      <text x="536" y="140" class="t-query" font-size="12">rei + (mulher − homem)</text>
+      <text x="536" y="156" class="t-query" font-size="12">cai ao lado de rainha</text>
+      <text x="18" y="328" class="lbl" >Projeção ilustrativa em duas dimensões. Nos vetores reais, as setas são paralelas só aproximadamente.</text>
+    </svg>
+    <figcaption><b>A diferença entre dois vetores é ela mesma um vetor,</b> e no espaço treinado essa diferença se repete: homem para mulher, rei para rainha, ator para atriz apontam quase na mesma direção. Somar esse deslocamento a rei leva a uma região onde rainha é a vizinha mais próxima. O resultado do word2vec, de 2013, foi a primeira demonstração pública de que a geometria codificava estrutura, não só proximidade. Funciona de forma aproximada, e a demonstração clássica exclui as palavras de entrada da busca pelo vizinho.</figcaption>
+  </figure>
+  <p>O word2vec dá um vetor por palavra, fixo. "Banco" ganha um ponto só, estacionado entre a agência e a praça, e serve mal aos dois sentidos. O transformer começa igual, com a linha da matriz, e depois reescreve o vetor camada a camada, misturando nele os vizinhos da frase. Ao fim, "banco" em "sentei no banco da praça" está perto de cadeira, e "banco" em "o banco cobrou juros" está perto de crédito. O vetor deixou de representar a palavra e passou a representar a palavra naquela frase. Isso se chama representação contextual, e o mecanismo que a produz, a atenção, é o assunto do sexto artigo.</p>
+  <figure>
+    <svg viewBox="0 0 720 286" role="img" aria-label="Dois painéis: à esquerda, banco como um único ponto entre o grupo de assentos e o grupo financeiro; à direita, dois pontos banco, cada um dentro do grupo que a frase pede">
+      <text x="18" y="22" class="lbl" >Figura 3. Um vetor por palavra, ou um vetor por palavra naquela frase</text>
+      <text x="18" y="52" class="lbl" >estático (word2vec): "banco" tem um ponto só</text>
+      <ellipse cx="90" cy="150" rx="62" ry="48" class="cluster-city"/>
+      <ellipse cx="270" cy="150" rx="62" ry="48" class="cluster-fruit"/>
+      <circle cx="70" cy="130" r="4" class="pt-paris"/>
+      <text x="77" y="134" font-size="11">cadeira</text>
+      <circle cx="100" cy="175" r="4" class="pt-paris"/>
+      <text x="107" y="179" font-size="11">assento</text>
+      <circle cx="120" cy="140" r="4" class="pt-paris"/>
+      <text x="127" y="144" font-size="11">praça</text>
+      <circle cx="262" cy="128" r="4" class="pt-banana"/>
+      <text x="269" y="132" font-size="11">crédito</text>
+      <circle cx="290" cy="170" r="4" class="pt-banana"/>
+      <text x="297" y="174" font-size="11">juros</text>
+      <circle cx="235" cy="182" r="4" class="pt-banana"/>
+      <text x="242" y="186" font-size="11">agência</text>
+      <circle cx="180" cy="150" r="6" class="pt-query"/>
+      <text x="180" y="136" class="t-query" text-anchor="middle" font-size="13">banco</text>
+      <text x="60" y="232" class="lbl" font-size="11">parado no meio, serve mal aos dois</text>
+      <line x1="360" y1="44" x2="360" y2="250" class="axis" />
+      <text x="380" y="52" class="lbl" >contextual (transformer): o contexto move o ponto</text>
+      <ellipse cx="452" cy="150" rx="62" ry="48" class="cluster-city"/>
+      <ellipse cx="632" cy="150" rx="62" ry="48" class="cluster-fruit"/>
+      <circle cx="432" cy="130" r="4" class="pt-paris"/>
+      <text x="439" y="134" font-size="11">cadeira</text>
+      <circle cx="462" cy="175" r="4" class="pt-paris"/>
+      <text x="469" y="179" font-size="11">assento</text>
+      <circle cx="482" cy="140" r="4" class="pt-paris"/>
+      <text x="489" y="144" font-size="11">praça</text>
+      <circle cx="624" cy="128" r="4" class="pt-banana"/>
+      <text x="631" y="132" font-size="11">crédito</text>
+      <circle cx="652" cy="170" r="4" class="pt-banana"/>
+      <text x="659" y="174" font-size="11">juros</text>
+      <circle cx="597" cy="182" r="4" class="pt-banana"/>
+      <text x="604" y="186" font-size="11">agência</text>
+      <circle cx="445" cy="155" r="6" class="pt-query"/>
+      <text x="445" y="196" class="t-query" text-anchor="middle" font-size="13">banco</text>
+      <text x="445" y="210" class="lbl" text-anchor="middle" font-size="11">"sentei no banco da praça"</text>
+      <circle cx="628" cy="152" r="6" class="pt-query"/>
+      <text x="628" y="196" class="t-query" text-anchor="middle" font-size="13">banco</text>
+      <text x="628" y="210" class="lbl" text-anchor="middle" font-size="11">"o banco cobrou juros"</text>
+      <text x="380" y="240" class="lbl" font-size="11">mesmo token de entrada, dois vetores depois das camadas</text>
+      <text x="18" y="274" class="lbl" >Projeção ilustrativa. Os vetores contextuais vivem nas camadas intermediárias e finais do modelo.</text>
+    </svg>
+    <figcaption><b>O transformer começa com a linha da matriz, igual ao word2vec,</b> e depois reescreve o vetor camada a camada, misturando nele os vizinhos da frase. No fim, o vetor não representa mais a palavra. Representa a palavra naquela frase. É o que se chama representação contextual, e o mecanismo que faz a mistura, a atenção, é o assunto do sexto artigo.</figcaption>
+  </figure>
+  <p>A geometria não foi a primeira resposta à pergunta sobre o que é significado para uma máquina. Foi a terceira. A tradição simbólica, dominante nos anos 1970 e 1980, representava significado como definição e regra: ontologias, sistemas especialistas, o projeto Cyc, iniciado em 1984 para escrever à mão o senso comum. É precisa e auditável, e frágil de um jeito específico: duas coisas que não compartilham símbolo ficam infinitamente longe, mesmo que sejam parecidas na prática, e nada nela pode ser treinado, só escrito. A tradição relacional, das redes semânticas de 1968 aos grafos de conhecimento que o Google adotou em 2012, representa significado como posição num grafo. É boa para fatos nomeados e cadeias de relações, e ruim para similaridade entre coisas que ninguém ligou.</p>
+  <p>A tradição geométrica veio em três passos. A análise semântica latente, de 1990, contava coocorrências de palavras em documentos numa matriz e a comprimia. O word2vec, de 2013, aprendeu os vetores por previsão, em vez de contagem. O transformer, de 2017, tornou os vetores contextuais. Venceu por uma razão de engenharia: vetores são contínuos, têm derivada, e tudo o que tem derivada pode ser treinado por gradiente e escalado em GPU. Uma ontologia não tem derivada. O preço foi perder o que as outras duas faziam bem: composição explícita, garantias lógicas e a possibilidade de abrir o sistema e ler o que ele sabe. Os sistemas híbridos de hoje, grafos acoplados a modelos, modelos gerando código para motores lógicos, são tentativas de recuperar essa camada sem sair do espaço vetorial.</p>
+  <figure>
+    <svg viewBox="0 0 720 310" role="img" aria-label="Linha do tempo com três faixas, simbólico, relacional e geométrico, marcando Firth 1957, Quillian 1968, Cyc 1984, LSA 1990, Knowledge Graph 2012, word2vec 2013 e Transformer 2017">
+      <text x="18" y="22" class="lbl" >Figura 4. Três maneiras de representar significado, e quando cada uma apareceu</text>
+      <line x1="200" y1="96" x2="690" y2="96" class="axis" />
+      <text x="18" y="88" font-size="12" font-weight="600">simbólico</text>
+      <text x="18" y="104" class="lbl" font-size="10">significado como definição e regra</text>
+      <line x1="200" y1="176" x2="690" y2="176" class="axis" />
+      <text x="18" y="168" font-size="12" font-weight="600">relacional</text>
+      <text x="18" y="184" class="lbl" font-size="10">significado como posição num grafo</text>
+      <line x1="200" y1="256" x2="690" y2="256" class="axis" />
+      <text x="18" y="248" font-size="12" font-weight="600">geométrico</text>
+      <text x="18" y="264" class="lbl" font-size="10">significado como posição num espaço</text>
+      <text x="270.0" y="296" class="lbl" text-anchor="middle" font-size="11">1960</text>
+      <line x1="270.0" y1="284" x2="270.0" y2="290" class="axis" />
+      <text x="410.0" y="296" class="lbl" text-anchor="middle" font-size="11">1980</text>
+      <line x1="410.0" y1="284" x2="410.0" y2="290" class="axis" />
+      <text x="550.0" y="296" class="lbl" text-anchor="middle" font-size="11">2000</text>
+      <line x1="550.0" y1="284" x2="550.0" y2="290" class="axis" />
+      <text x="690.0" y="296" class="lbl" text-anchor="middle" font-size="11">2020</text>
+      <line x1="690.0" y1="284" x2="690.0" y2="290" class="axis" />
+      <circle cx="249" cy="256" r="5" class="pt-lyon"/>
+      <text x="257" y="242" text-anchor="start" font-size="11">1957 · Firth, hipótese distribucional</text>
+      <circle cx="326" cy="176" r="5" class="pt-query"/>
+      <text x="334" y="200" text-anchor="start" font-size="11">1968 · redes semânticas (Quillian)</text>
+      <circle cx="438" cy="96" r="5" class="pt-banana"/>
+      <text x="446" y="82" text-anchor="start" font-size="11">1984 · Cyc e os sistemas especialistas</text>
+      <circle cx="480" cy="256" r="5" class="pt-lyon"/>
+      <text x="488" y="280" text-anchor="start" font-size="11">1990 · LSA</text>
+      <circle cx="634" cy="176" r="5" class="pt-query"/>
+      <text x="626" y="162" text-anchor="end" font-size="11">2012 · Knowledge Graph</text>
+      <circle cx="641" cy="256" r="5" class="pt-lyon"/>
+      <text x="633" y="242" text-anchor="end" font-size="11">2013 · word2vec</text>
+      <circle cx="669" cy="256" r="5" class="pt-lyon"/>
+      <text x="661" y="280" text-anchor="end" font-size="11">2017 · Transformer</text>
+    </svg>
+    <figcaption><b>O geométrico venceu por uma razão de engenharia, não de filosofia:</b> vetores são contínuos, têm derivada, e por isso podem ser treinados por gradiente e multiplicados em GPU. Uma ontologia não tem derivada. Um grafo sabe que "capital de" é uma relação com nome, e o vetor só sabe que Paris está perto de França. O que o simbólico e o relacional ainda fazem melhor, composição explícita, garantias lógicas e auditoria, é o que os sistemas híbridos de hoje tentam trazer de volta por cima do modelo.</figcaption>
+  </figure>
+  <p>O banco vetorial é a mesma geometria aplicada fora do modelo. Um modelo de embeddings, treinado para produzir um vetor por frase ou por documento, converte um acervo inteiro em pontos. A pergunta do usuário vira um ponto também, e o banco devolve os vizinhos de maior cosseno. Com milhões de documentos, comparar a pergunta com todos é lento, e os índices aproximados, como o HNSW, que organiza os pontos num grafo navegável, trocam uma fração pequena de precisão por uma busca milhares de vezes mais rápida. É esse mecanismo que a recuperação de documentos usa para encontrar o trecho que vai entrar no contexto.</p>
+  <p>O limite está no que a distância não mede. Proximidade não é verdade. "Paris é a capital da França" e "Paris não é a capital da França" ocupam quase o mesmo lugar, porque diferem num token curto e frequente que o treino aprendeu a pesar pouco. Números vizinhos ficam vizinhos, mesmo quando a diferença entre 2019 e 2020 é a diferença entre certo e errado. E, em milhares de dimensões, todos os pontos ficam mais ou menos à mesma distância uns dos outros, o que comprime os cossenos numa faixa estreita e torna qualquer limiar de similaridade uma escolha arbitrária. A geometria mede parentesco. O que ela não mede, alguém tem de verificar.</p>
+  <p>Resta a pergunta de como esse espaço se move. Os vetores começam aleatórios e terminam organizados, e a força que os arrasta é a mesma em todas as camadas: a derivada do erro em relação a cada número da rede. É a matemática mínima que o próximo artigo apresenta, derivada, integral e gradiente, sem fórmula além da necessária.</p>

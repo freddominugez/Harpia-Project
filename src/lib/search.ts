@@ -5,6 +5,7 @@ import GithubSlugger from "github-slugger";
 import { getCollection } from "astro:content";
 import { NAV } from "../config";
 import { VIDEOS, MODULOS, rotuloModulo } from "./videos";
+import { COMECANDO } from "../data/comecando";
 
 export type SearchItem = { title: string; url: string; section: string; description?: string };
 
@@ -48,8 +49,10 @@ export async function buildSearchIndex(): Promise<SearchItem[]> {
   }));
   const modulos: SearchItem[] = MODULOS.map((m) => ({ title: `${rotuloModulo(m.numero)}: ${m.titulo}`, url: `/videos/#modulo-${m.numero}`, section: "Vídeos", description: m.subtitulo }));
   const videos: SearchItem[] = VIDEOS.map((v) => ({ title: v.titulo, url: `/videos/#modulo-${v.modulo}`, section: `Vídeo · ${v.nivel} · ${v.canal}`, description: v.resumo }));
+  const comecando: SearchItem[] = COMECANDO.map((a) => ({ title: a.titulo, url: `/comecando/${a.slug}/`, section: `Começando · artigo ${a.numero}`, description: a.descricao }));
   return [
     ...pages,
+    ...comecando,
     ...estudos,
     ...modulos,
     ...headings("src/pages/equacoes.md", "/equacoes/", "Equações"),

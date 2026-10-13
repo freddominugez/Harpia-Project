@@ -1,0 +1,16 @@
+{
+  "id": "mNE_d-C82lI",
+  "titulo": "Which Quantization Method is Right for You? (GPTQ vs. GGUF vs. AWQ)",
+  "canal": "Maarten Grootendorst",
+  "modulo": 10,
+  "nivel": "Intermediário",
+  "resumo": "Comparação dos métodos de quantização de LLMs, GPTQ, GGUF e AWQ, e quando usar cada um.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 246,
+  "fonte_url": "https://www.youtube.com/watch?v=mNE_d-C82lI",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13"
+}

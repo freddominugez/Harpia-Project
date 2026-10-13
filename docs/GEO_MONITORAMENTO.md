@@ -32,7 +32,7 @@ curl -sI https://www.harpya.org/admin/ | grep -i x-robots-tag    # espera noinde
 
 **Search Console** (depois do cadastro descrito em `docs/SEO_GEO.md`):
 
-- **Indexação → Páginas:** quantas das 26 URLs estão indexadas e por que as outras não estão.
+- **Indexação → Páginas:** quantas das URLs do sitemap (30 em 13/10/2026) estão indexadas e por que as outras não estão.
 - **Sitemaps:** status "Sucesso" e número de URLs descobertas.
 - **Desempenho:** consultas, impressões e cliques. Filtre por página para ver quais caminhos atraem busca.
 - **Melhorias:** trilha (breadcrumb) e dados estruturados sem erro.
@@ -60,7 +60,7 @@ Para cada resposta, anote: o Harpya aparece como fonte? Em que posição? A info
 ```bash
 curl -s https://www.harpya.org/llms.txt | head -30
 curl -s https://www.harpya.org/estudos/caminhos/raio-probabilistico.md | head -15
-curl -s https://www.harpya.org/sitemap.xml | grep -c "<loc>"     # espera 26
+curl -s https://www.harpya.org/sitemap.xml | grep -c "<loc>"     # 30 em 13/10/2026
 curl -s https://www.harpya.org/rss.xml | head -c 300
 ```
 

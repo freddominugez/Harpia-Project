@@ -1,0 +1,16 @@
+{
+  "id": "e9U0QAFbfLI",
+  "titulo": "Cosine Similarity, Clearly Explained!!!",
+  "canal": "StatQuest with Josh Starmer",
+  "modulo": 2,
+  "nivel": "Iniciante",
+  "resumo": "StatQuest explica a similaridade de cosseno passo a passo: por que o ângulo entre vetores é a medida padrão para comparar embeddings.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 229,
+  "fonte_url": "https://www.youtube.com/watch?v=e9U0QAFbfLI",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13"
+}

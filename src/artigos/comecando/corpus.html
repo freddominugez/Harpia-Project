@@ -1,0 +1,131 @@
+  <p class="series">Como uma máquina aprende a falar · artigo 3 de 10</p>
+  <h1>Corpus: a única fonte de verdade</h1>
+  <p class="byline">Carlos Frederico Domínguez · 12 de outubro de 2026</p>
+
+  <p class="lead">O modelo sabe o que o mundo escreveu, na proporção em que escreveu. A frase soa como limitação e é a definição mais exata do que um corpus faz. Tudo o que o modelo chama de conhecimento foi lido em algum lugar, e a lista desses lugares, com o peso de cada um, é a decisão mais consequente e menos divulgada de um laboratório.</p>
+  <p>O corpus é o conjunto de textos sobre o qual o modelo pratica a única tarefa que conhece, prever o próximo token. Para os modelos atuais, são trilhões de tokens, o equivalente a dezenas de milhões de livros. A maior parte vem da web, e a fonte mais usada é o Common Crawl, um projeto sem fins lucrativos que captura páginas desde 2008 e publica, a cada mês ou dois, um retrato de bilhões delas. Em volta disso entram livros, artigos científicos, código de repositórios públicos, a Wikipédia, fóruns de perguntas e respostas, dados licenciados e, cada vez mais, texto sintético gerado por outros modelos.</p>
+  <p>O bruto é lixo em grande parte. Uma página capturada traz menu, rodapé, aviso de cookies, anúncios, texto gerado por máquina para enganar buscadores, cópias de outras páginas e, muitas vezes, nenhum conteúdo. Por isso o corpus não é coletado. É construído, numa sequência de filtros em que cada etapa descarta uma fração grande do que recebe.</p>
+  <p>A sequência costuma ser esta. A extração separa o texto principal do esqueleto HTML. A identificação de idioma atribui uma língua a cada documento e descarta o que não interessa, e é aqui que a proporção do português no modelo fica decidida, porque ninguém a escolhe: ela é contada. Os filtros de qualidade vêm em duas camadas, heurísticas simples, como tamanho do documento, proporção de símbolos, presença de palavras funcionais e linhas repetidas, e classificadores treinados para distinguir texto do tipo Wikipédia e livro de texto do tipo lista de preços. A deduplicação remove cópias. Os filtros finais tiram dados pessoais e conteúdo tóxico, e a descontaminação retira do corpus os textos usados nos testes que depois avaliam o modelo, para que a nota não seja decorada.</p>
+  <figure>
+    <svg viewBox="0 0 720 352" role="img" aria-label="Funil com seis etapas de filtragem de um corpus, de páginas brutas a texto final, com a fração que sobra em cada uma">
+      <text x="18" y="22" class="lbl" >Figura 1. O corpus não é coletado, é construído: cada etapa descarta</text>
+      <text x="18" y="67" class="lbl" >páginas brutas</text>
+      <rect x="200" y="50" width="360" height="22" rx="3" class="bar-soft"/>
+      <text x="568.0" y="66" class="mono" font-size="12">100%</text>
+      <text x="18" y="113" class="lbl" >extração de texto</text>
+      <rect x="200" y="96" width="180" height="22" rx="3" class="bar-soft"/>
+      <text x="388.0" y="112" class="mono" font-size="12">50%</text>
+      <text x="200" y="132" class="lbl" font-size="11">retira: menus, scripts, rodapés e anúncios fora</text>
+      <text x="18" y="159" class="lbl" >filtro de idioma</text>
+      <rect x="200" y="142" width="126" height="22" rx="3" class="bar-soft"/>
+      <text x="334.0" y="158" class="mono" font-size="12">35%</text>
+      <text x="200" y="178" class="lbl" font-size="11">mantém só as línguas escolhidas, na proporção em que aparecem</text>
+      <text x="18" y="205" class="lbl" >filtros de qualidade</text>
+      <rect x="200" y="188" width="65" height="22" rx="3" class="bar-soft"/>
+      <text x="272.8" y="204" class="mono" font-size="12">18%</text>
+      <text x="200" y="224" class="lbl" font-size="11">retira: spam, listas sem contexto, texto quebrado, páginas vazias</text>
+      <text x="18" y="251" class="lbl" >deduplicação</text>
+      <rect x="200" y="234" width="36" height="22" rx="3" class="bar-soft"/>
+      <text x="244.0" y="250" class="mono" font-size="12">10%</text>
+      <text x="200" y="270" class="lbl" font-size="11">retira: cópias exatas e quase-cópias</text>
+      <text x="18" y="297" class="lbl" >segurança e descontaminação</text>
+      <rect x="200" y="280" width="32" height="22" rx="3" class="bar"/>
+      <text x="240.4" y="296" class="mono" font-size="12">9%</text>
+      <text x="200" y="316" class="lbl" font-size="11">retira: dados pessoais, conteúdo tóxico, textos dos testes de avaliação</text>
+      <text x="18" y="340" class="lbl" >Proporções ilustrativas. O que sobra é uma fração pequena do que entrou, e a ordem das etapas varia entre laboratórios.</text>
+    </svg>
+    <figcaption><b>A proporção do português é decidida no segundo e no terceiro passo,</b> quando o classificador de idioma conta o que existe e o filtro de qualidade, treinado sobretudo com exemplos em inglês, decide o que presta. Cada filtro é uma opinião sobre o que é texto bom, e o modelo herda essas opiniões sem saber que existiram.</figcaption>
+  </figure>
+  <p>A deduplicação merece parágrafo próprio. Texto repetido muitas vezes é decorado: estudos de 2021 e 2022 mostraram que a chance de o modelo reproduzir um trecho literalmente cresce com o número de cópias dele no corpus. Além de desperdiçar cálculo, isso cria o risco de vazar dados pessoais e trechos protegidos. A deduplicação exata, por hash do documento inteiro, pega cópias idênticas. As quase-cópias, uma notícia republicada com um parágrafo a mais, uma página com a data trocada, exigem comparação aproximada: cada documento é reduzido a um conjunto de fragmentos curtos, e dois conjuntos com sobreposição alta são tratados como um só.</p>
+  <figure>
+    <svg viewBox="0 0 720 312" role="img" aria-label="Dois documentos quase iguais reduzidos a pares de palavras, com os fragmentos em comum destacados e o cálculo do índice de Jaccard igual a 0,75">
+      <text x="18" y="22" class="lbl" >Figura 3. Quase-cópias: fragmentos em comum e o índice de Jaccard</text>
+      <text x="18" y="50" class="lbl" >documento A</text>
+      <text x="18" y="70" font-size="14" font-family="'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif">o modelo não lê palavras lê pedaços</text>
+      <text x="18" y="98" class="lbl" >documento B</text>
+      <text x="18" y="118" font-size="14" font-family="'Source Serif 4 Variable', 'Source Serif 4', Georgia, serif">o modelo não lê palavras lê pedaços de texto</text>
+      <text x="18" y="154" class="lbl" >fragmentos de A (pares de palavras)</text>
+      <rect x="18" y="162" width="72" height="26" rx="5" class="box-hi"/>
+      <text x="54" y="179" text-anchor="middle" font-size="12" class="mono">o modelo</text>
+      <rect x="95" y="162" width="86" height="26" rx="5" class="box-hi"/>
+      <text x="138" y="179" text-anchor="middle" font-size="12" class="mono">modelo não</text>
+      <rect x="186" y="162" width="57" height="26" rx="5" class="box-hi"/>
+      <text x="214" y="179" text-anchor="middle" font-size="12" class="mono">não lê</text>
+      <rect x="248" y="162" width="93" height="26" rx="5" class="box-hi"/>
+      <text x="294" y="179" text-anchor="middle" font-size="12" class="mono">lê palavras</text>
+      <rect x="346" y="162" width="93" height="26" rx="5" class="box-hi"/>
+      <text x="393" y="179" text-anchor="middle" font-size="12" class="mono">palavras lê</text>
+      <rect x="444" y="162" width="86" height="26" rx="5" class="box-hi"/>
+      <text x="487" y="179" text-anchor="middle" font-size="12" class="mono">lê pedaços</text>
+      <text x="18" y="212" class="lbl" >fragmentos de B</text>
+      <rect x="18" y="220" width="72" height="26" rx="5" class="box-hi"/>
+      <text x="54" y="237" text-anchor="middle" font-size="12" class="mono">o modelo</text>
+      <rect x="95" y="220" width="86" height="26" rx="5" class="box-hi"/>
+      <text x="138" y="237" text-anchor="middle" font-size="12" class="mono">modelo não</text>
+      <rect x="186" y="220" width="57" height="26" rx="5" class="box-hi"/>
+      <text x="214" y="237" text-anchor="middle" font-size="12" class="mono">não lê</text>
+      <rect x="248" y="220" width="93" height="26" rx="5" class="box-hi"/>
+      <text x="294" y="237" text-anchor="middle" font-size="12" class="mono">lê palavras</text>
+      <rect x="346" y="220" width="93" height="26" rx="5" class="box-hi"/>
+      <text x="393" y="237" text-anchor="middle" font-size="12" class="mono">palavras lê</text>
+      <rect x="444" y="220" width="86" height="26" rx="5" class="box-hi"/>
+      <text x="487" y="237" text-anchor="middle" font-size="12" class="mono">lê pedaços</text>
+      <rect x="535" y="220" width="86" height="26" rx="5" class="box-warn"/>
+      <text x="578" y="237" text-anchor="middle" font-size="12" class="mono">pedaços de</text>
+      <rect x="626" y="220" width="72" height="26" rx="5" class="box-warn"/>
+      <text x="662" y="237" text-anchor="middle" font-size="12" class="mono">de texto</text>
+      <text x="18" y="276" class="mono" font-size="14">Jaccard = |A ∩ B| ÷ |A ∪ B| = 6 ÷ 8 = 0,75</text>
+      <text x="18" y="300" class="lbl" >Limiares comuns: 0,7 a 0,9. Acima disso, os dois viram um só. Azul: em comum. Laranja: só de um lado.</text>
+    </svg>
+    <figcaption><b>Comparar todos os pares de bilhões de documentos é impossível,</b> então os pipelines usam MinHash: cada documento vira uma assinatura curta, construída de modo que a chance de duas assinaturas coincidirem seja igual ao índice de Jaccard entre os conjuntos. Assinaturas parecidas caem no mesmo balde, e só os pares do mesmo balde são comparados de fato. O exemplo usa pares de palavras por clareza. Pipelines reais usam janelas maiores, de cinco a treze tokens.</figcaption>
+  </figure>
+  <p>Depois dos filtros vem a decisão política: quanto de cada fonte entra, e quantas vezes. Isso se chama mistura de dados, e poucos laboratórios a publicaram em detalhe. A OpenAI fez isso no artigo do GPT-3, em 2020, e a Meta no primeiro Llama, em 2023. No GPT-3, a web filtrada era 60% dos tokens vistos, mas foi lida menos da metade de uma vez. A Wikipédia era 3% e foi lida mais de três vezes. O texto de páginas linkadas no Reddit foi lido quase três vezes, e dos dois acervos de livros, um passou quase duas vezes e o outro menos da metade. O princípio é que fonte de qualidade alta vale repetição, e a web comum, não. Modelos posteriores acrescentaram código em peso, porque há evidência de que treinar em código melhora o raciocínio em etapas, e artigos científicos. Os modelos mais recentes divulgam, no máximo, proporções grosseiras.</p>
+  <figure>
+    <svg viewBox="0 0 720 310" role="img" aria-label="Barra empilhada com a parcela de cada fonte no GPT-3 e tabela com o número de épocas de cada uma">
+      <text x="18" y="22" class="lbl" >Figura 2. A mistura publicada do GPT-3 (2020): parcela de cada fonte e quantas vezes foi lida</text>
+      <rect x="18" y="52" width="408" height="30" class="bar-soft"/>
+      <text x="222" y="72" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">60%</text>
+      <rect x="426" y="52" width="150" height="30" class="bar"/>
+      <text x="501" y="72" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">22%</text>
+      <rect x="576" y="52" width="54" height="30" class="bar-lyon"/>
+      <text x="603" y="72" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">8%</text>
+      <rect x="630" y="52" width="54" height="30" class="bar-query"/>
+      <text x="657" y="72" text-anchor="middle" font-size="12" fill="#fff" font-weight="600">8%</text>
+      <rect x="684" y="52" width="20" height="30" class="bar-banana"/>
+      <text x="18" y="104" class="lbl" >parcela dos tokens vistos no treino</text>
+      <text x="18" y="136" class="lbl" >fonte</text>
+      <text x="330" y="136" class="lbl" >parcela</text>
+      <text x="420" y="136" class="lbl" >vezes lida (épocas)</text>
+      <rect x="18" y="148" width="12" height="12" rx="2" class="bar-soft"/>
+      <text x="38" y="160" font-size="13">Common Crawl filtrado</text>
+      <text x="330" y="160" class="mono" font-size="13">60%</text>
+      <rect x="420" y="149" width="26" height="12" rx="2" class="bar-soft"/>
+      <text x="454.4" y="160" class="mono" font-size="12">0,44</text>
+      <rect x="18" y="174" width="12" height="12" rx="2" class="bar"/>
+      <text x="38" y="186" font-size="13">WebText2 (páginas linkadas no Reddit)</text>
+      <text x="330" y="186" class="mono" font-size="13">22%</text>
+      <rect x="420" y="175" width="174" height="12" rx="2" class="bar"/>
+      <text x="602.0" y="186" class="mono" font-size="12">2,90</text>
+      <rect x="18" y="200" width="12" height="12" rx="2" class="bar-lyon"/>
+      <text x="38" y="212" font-size="13">Books1</text>
+      <text x="330" y="212" class="mono" font-size="13">8%</text>
+      <rect x="420" y="201" width="114" height="12" rx="2" class="bar-lyon"/>
+      <text x="542.0" y="212" class="mono" font-size="12">1,90</text>
+      <rect x="18" y="226" width="12" height="12" rx="2" class="bar-query"/>
+      <text x="38" y="238" font-size="13">Books2</text>
+      <text x="330" y="238" class="mono" font-size="13">8%</text>
+      <rect x="420" y="227" width="26" height="12" rx="2" class="bar-query"/>
+      <text x="453.8" y="238" class="mono" font-size="12">0,43</text>
+      <rect x="18" y="252" width="12" height="12" rx="2" class="bar-banana"/>
+      <text x="38" y="264" font-size="13">Wikipédia</text>
+      <text x="330" y="264" class="mono" font-size="13">3%</text>
+      <rect x="420" y="253" width="204" height="12" rx="2" class="bar-banana"/>
+      <text x="632.0" y="264" class="mono" font-size="12">3,40</text>
+      <text x="18" y="296" class="lbl" >Fonte: Brown et al., "Language Models are Few-Shot Learners", 2020, tabela 2.2.</text>
+    </svg>
+    <figcaption><b>A web é a maior parte e a menos repetida.</b> Lida menos da metade de uma vez, enquanto a Wikipédia, com 3% dos tokens, passou mais de três vezes pelo modelo. Repetir uma fonte é dizer ao modelo que ela importa. Modelos posteriores acrescentaram código e artigos científicos em peso, e passaram a divulgar, no máximo, proporções grosseiras.</figcaption>
+  </figure>
+  <p>Há ainda a ordem. Alguns laboratórios terminam o pré-treinamento com uma fase curta em que a mistura muda para dados de qualidade mais alta, o que tem efeito desproporcional sobre o modelo final, porque os últimos empurrões são os que menos se diluem. A sequência em que o modelo lê o corpus é outra escolha, e outra que não aparece na ficha técnica.</p>
+  <p>As consequências seguem a regra da proporção. O que foi muito escrito sai sólido. O que foi pouco escrito sai como palpite. Línguas com pouca presença na web, como o português diante do inglês, recebem modelos piores, não por decisão, mas por aritmética. O corpus também tem data: a coleta termina num mês, o modelo é treinado nos meses seguintes, e o que acontece depois não existe para ele, o que se chama data de corte do conhecimento. E o corpus tem viés, porque reflete quem escreve na internet, em que língua e sobre o quê, e não quem existe.</p>
+  <p>Há um limite novo. A web pública já foi lida inteira pelos maiores modelos, e os laboratórios passaram a gerar texto sintético, com modelos escrevendo para treinar modelos. Funciona quando o texto gerado é filtrado por um critério externo, como código que passa em testes ou soluções matemáticas conferidas. Sem esse filtro, modelos treinados na saída de modelos degradam a cada geração, porque cada rodada perde a cauda rara da distribuição e reforça o comum.</p>
+  <p>Ninguém de fora audita um corpus. Os laboratórios não publicam a lista de fontes, em parte por vantagem competitiva, em parte pelas disputas judiciais sobre direitos autorais em curso em vários países. O que se pode fazer é inferir, pelo comportamento do modelo, o que ele leu e o que não leu, e, quando um fato é raro demais para ter sido escrito muitas vezes, trazê-lo de volta pelo contexto, que é o que a recuperação de documentos faz. Como todo esse texto vira geometria, posições num espaço onde parecido é perto, é o assunto do próximo artigo.</p>

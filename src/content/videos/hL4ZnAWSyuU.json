@@ -1,0 +1,16 @@
+{
+  "id": "hL4ZnAWSyuU",
+  "titulo": "LLM Tokenizers Explained: BPE Encoding, WordPiece and SentencePiece",
+  "canal": "DataMListic",
+  "modulo": 1,
+  "nivel": "Intermediário",
+  "resumo": "Comparação entre os três tokenizadores mais usados, BPE, WordPiece e SentencePiece: como cada um quebra o texto e por que isso muda o modelo.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 227,
+  "fonte_url": "https://www.youtube.com/watch?v=hL4ZnAWSyuU",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13"
+}

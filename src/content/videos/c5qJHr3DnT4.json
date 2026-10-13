@@ -1,0 +1,16 @@
+{
+  "id": "c5qJHr3DnT4",
+  "titulo": "GraphRAG methods to create optimized LLM context windows for Retrieval — Jonathan Larson, Microsoft",
+  "canal": "AI Engineer",
+  "modulo": 3,
+  "nivel": "Avançado",
+  "resumo": "Jonathan Larson, da Microsoft, apresenta o GraphRAG: grafo de conhecimento extraído por LLM para montar o contexto da recuperação.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 236,
+  "fonte_url": "https://www.youtube.com/watch?v=c5qJHr3DnT4",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13"
+}

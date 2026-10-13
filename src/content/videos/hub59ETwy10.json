@@ -1,0 +1,16 @@
+{
+  "id": "hub59ETwy10",
+  "titulo": "Modelos Escondidos de Markov (HMMs) e Filtragem de Partículas",
+  "canal": "Sergio Ricardo de Melo Queiroz",
+  "modulo": 0,
+  "nivel": "Avançado",
+  "resumo": "Aula em português sobre modelos ocultos de Markov e filtragem de partículas, a modelagem de sequências que veio antes das redes recorrentes e dos transformers.",
+  "catalogo": null,
+  "trilha": "redes",
+  "ordem": 226,
+  "fonte_url": "https://www.youtube.com/watch?v=hub59ETwy10",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13"
+}

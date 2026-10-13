@@ -1,0 +1,66 @@
+---
+// Cabeçalho de SEO comum a todos os layouts: título, descrição, robots, canonical, hreflang,
+// Open Graph, Twitter Card, links alternativos (markdown e RSS) e JSON-LD.
+// Os dados de cada página vêm do registro em src/lib/rotas.ts.
+import { SITE, VERIFICACAO } from "../config";
+import { rotaDe, entidades, trilha, abs, ogDe, mdDe } from "../lib/rotas";
+
+interface Props { titulo?: string; descricao?: string; noindex?: boolean; tituloCompleto?: string }
+const { titulo, descricao = SITE.descricao, noindex = false, tituloCompleto } = Astro.props;
+const tituloFinal = tituloCompleto ?? (titulo ? `${titulo} · ${SITE.nome}` : `${SITE.nome} · ${SITE.lema}`);
+const path = Astro.url.pathname;
+const canonical = abs(path);
+const rota = noindex ? undefined : await rotaDe(path);
+const og = rota ? abs(ogDe(path)) : abs("/img/og.png");
+const especificos = rota?.schema?.() ?? [];
+const artigo = especificos.some((n) => /Article$/.test(String(n["@type"])));
+const migalhas = rota && path !== "/" ? await trilha(path) : [];
+const grafo = {
+  "@context": "https://schema.org",
+  "@graph": [
+    ...entidades(),
+    ...(rota ? [{ "@type": "WebPage", "@id": `${canonical}#webpage`, url: canonical, name: tituloFinal, description: descricao, inLanguage: "pt-BR", isPartOf: { "@id": `${abs("/")}#website` }, dateModified: rota.atualizado, primaryImageOfPage: og, ...(migalhas.length ? { breadcrumb: { "@id": `${canonical}#trilha` } } : {}) }] : []),
+    ...(migalhas.length ? [{ "@type": "BreadcrumbList", "@id": `${canonical}#trilha`, itemListElement: migalhas.map((m, i) => ({ "@type": "ListItem", position: i + 1, name: m.nome, item: m.url })) }] : []),
+    ...especificos,
+  ],
+};
+// JSON-LD dentro de <script>: escapar "<" impede fechar a tag por engano.
+const jsonld = JSON.stringify(grafo).replace(/</g, "\\u003c");
+---
+<title>{tituloFinal}</title>
+<meta name="description" content={descricao} />
+<meta name="author" content={SITE.autor} />
+{noindex ? <meta name="robots" content="noindex, follow" /> : <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />}
+{!noindex && <link rel="canonical" href={canonical} />}
+{!noindex && <link rel="alternate" hreflang="pt-BR" href={canonical} />}
+{!noindex && <link rel="alternate" hreflang="x-default" href={canonical} />}
+{rota && <link rel="alternate" type="text/markdown" href={mdDe(path)} title="Versão em markdown" />}
+<link rel="alternate" type="application/rss+xml" href="/rss.xml" title={`${SITE.nome}: novidades`} />
+{VERIFICACAO.google && <meta name="google-site-verification" content={VERIFICACAO.google} />}
+{VERIFICACAO.bing && <meta name="msvalidate.01" content={VERIFICACAO.bing} />}
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16.png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+<meta name="theme-color" content="#282d33" />
+<meta property="og:type" content={artigo ? "article" : "website"} />
+<meta property="og:site_name" content={SITE.nome} />
+<meta property="og:title" content={tituloFinal} />
+<meta property="og:description" content={descricao} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={og} />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content={titulo ?? SITE.nome} />
+<meta property="og:locale" content="pt_BR" />
+{artigo && rota && <meta property="article:modified_time" content={rota.atualizado} />}
+{artigo && <meta property="article:author" content={abs("/sobre/")} />}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={tituloFinal} />
+<meta name="twitter:description" content={descricao} />
+<meta name="twitter:image" content={og} />
+<meta name="twitter:image:alt" content={titulo ?? SITE.nome} />
+<script type="application/ld+json" set:html={jsonld} />

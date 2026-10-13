@@ -1,0 +1,20 @@
+---
+// Um artigo da série, publicado como o autor entregou, dentro da moldura "Começando".
+import Comecando from "../../layouts/Comecando.astro";
+import { COMECANDO, SERIE, corpoDe } from "../../data/comecando";
+import { SITE } from "../../config";
+
+export function getStaticPaths() {
+  return COMECANDO.map((a, i) => ({ params: { slug: a.slug }, props: { a, ant: COMECANDO[i - 1] ?? null, prox: COMECANDO[i + 1] ?? null } }));
+}
+const { a, ant, prox } = Astro.props;
+const url = `https://www.harpya.org/comecando/${a.slug}/`;
+---
+<Comecando titulo={a.titulo} descricao={a.descricao}>
+  <Fragment set:html={corpoDe(a.slug)} />
+  <nav class="cm-nav" aria-label="Artigos da série">
+    {ant ? <a href={`/comecando/${ant.slug}/`}><small>← Artigo {ant.numero}</small>{ant.titulo}</a> : <a href="/comecando/"><small>← Começando</small>Todos os artigos</a>}
+    {prox ? <a class="cm-prox" href={`/comecando/${prox.slug}/`}><small>Artigo {prox.numero} →</small>{prox.titulo}</a> : <span class="cm-prox"><small>Próximo</small>Artigo {a.numero + 1} em breve</span>}
+  </nav>
+  <p class="cm-cite">Como citar: {SITE.autor} ({a.data.slice(0, 4)}). {a.titulo}. {SERIE}, artigo {a.numero}. {SITE.nome}. <a href={url}>{url}</a>. Texto em markdown: <a href={`/comecando/${a.slug}.md`}>{a.slug}.md</a>. Licença CC BY 4.0.</p>
+</Comecando>

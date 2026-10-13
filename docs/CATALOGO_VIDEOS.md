@@ -112,3 +112,81 @@ Motivos das trocas: o ID não existia (404), era um placeholder, apontava para o
 | 98 | The Math of State Space Models (SSMs) (Stanford CS25) | [Efficiently Modeling Long Sequences with Structured State Spaces - Albert Gu | Stanford MLSys #46](https://www.youtube.com/watch?v=EvQ3ncuriCM) · Stanford MLSys Seminars | Avançado | trocado: vídeo real mais próximo (rascunho tinha placeholder) |
 | 99 | Test-Time Compute (Scaling Laws of Reasoning) (Yannic Kilcher) | [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters (Paper)](https://www.youtube.com/watch?v=AfAmwIP2ntY) · Yannic Kilcher | Avançado | trocado: mesmo canal e tema (rascunho tinha placeholder) |
 | 100 | Grokfast / KAN (Kolmogorov-Arnold Networks) (Arxiv Insights) | [Kolmogorov-Arnold Networks (KANs) - What are they and how do they work?](https://www.youtube.com/watch?v=myFtp5zMv8U) · Luis Serrano Academy | Avançado | trocado: vídeo real mais próximo (rascunho tinha placeholder) |
+
+## Segunda leva (13/10/2026): matemática, física, IMPA e trilha iniciante
+
+Rascunhos de origem: "Catálogo de Estudos: Matemática, Física e Fundamentos de LLMs" (itens A1 a A15) e "parte 3" (itens B41 a B65), 40 itens. Mesma conferência pelo oEmbed.
+
+| Situação | Itens |
+|---|---|
+| Link do rascunho correto, mantido | 9 |
+| Já estava no site | 2 |
+| Trocado pelo vídeo real mais próximo | 28 |
+| Não publicado | 1 |
+
+Dos 40 links, 12 abriam um vídeo real e só 6 eram o vídeo descrito. Três itens "Derivando" apontavam para vídeos do 3Blue1Brown, e o canal Derivando é de língua espanhola, sem os vídeos citados; entraram aulas em português da UNIVESP e de um professor de cálculo, mais os dois capítulos do 3Blue1Brown que os links de fato abriam. Os demais eram IDs inexistentes ou nomes de placeholder no lugar do ID.
+
+### Módulo 12: IMPA
+
+Módulo novo, só com vídeos do canal oficial do Instituto de Matemática Pura e Aplicada (13 vídeos):
+
+- [(05/01/2026) - Mestrado: Machine Learning - Paulo Orenstein - Aula 01](https://www.youtube.com/watch?v=dLLw6QjADjo) · Avançado
+- [(07/01/2026) - Mestrado: Machine Learning - Paulo Orenstein - Aula 02](https://www.youtube.com/watch?v=h_8fUxdA0QU) · Avançado
+- [(09/01/2026) - Mestrado: Machine Learning - Paulo Orenstein - Aula 03](https://www.youtube.com/watch?v=P5HASTfCXwQ) · Avançado
+- [(12/01/2026) - Mestrado: Machine Learning - Paulo Orenstein - Aula 04](https://www.youtube.com/watch?v=Bfm9w3NEiNU) · Avançado
+- [Palestra especial: LLMs e Matemática - João Pedro Ramos e Felipe Gonçalves](https://www.youtube.com/watch?v=2hkXQKCh1cE) · Intermediário
+- [Palestra especial - Deep Learning e Aplicações - Francisco Ganacim (IMPA)](https://www.youtube.com/watch?v=n3hJbbAizQ8) · Iniciante
+- [PAPMEM - Janeiro de 2026 - Uma Introdução à Inteligência Artificial para Professores: Desvendando...](https://www.youtube.com/watch?v=c2ila2fg1rk) · Iniciante
+- [Palestra especial - Redes neurais para representação de objetos de mídia - Tiago Novello (IMPA)](https://www.youtube.com/watch?v=S9JvCkMi9MI) · Avançado
+- [Programa de Iniciação Científica: Introdução à Álgebra Linear - Aula 01](https://www.youtube.com/watch?v=-SU5GH4kBtE) · Iniciante
+- [V Simpósio Nacional / Jornadas de Iniciação Científica - Tópicos de Teoria de Matrizes - Aula 01](https://www.youtube.com/watch?v=Cz8OZ9PCtO0) · Intermediário
+- [O que é Otimização? - Alfredo Iusem](https://www.youtube.com/watch?v=f3hxAky4F04) · Iniciante
+- [(24/09/2025) - Métodos Computacionais de Otimização - Di Liu - Aula 01](https://www.youtube.com/watch?v=h_-gT0vzYAM) · Avançado
+- [1º Workshop Matemática e Indústria - Ciência de dados e aprendizado de máquina](https://www.youtube.com/watch?v=_7ZDhHgiHL8) · Iniciante
+
+O curso de mestrado em Machine Learning de Paulo Orenstein tem 21 aulas na playlist oficial; entraram as quatro primeiras. As demais podem ser acrescentadas pelo painel.
+
+### Item a item
+
+| # | Sugerido no rascunho | Vídeo publicado | Nível | Situação |
+|---|---|---|---|---|
+| A1 | Machine Learning - Aula 01 (Prof. Paulo Orenstein) (IMPA) | [(05/01/2026) - Mestrado: Machine Learning - Paulo Orenstein - Aula 01](https://www.youtube.com/watch?v=dLLw6QjADjo) · Instituto de Matemática Pura e Aplicada | Avançado | link do rascunho mantido |
+| A2 | Machine Learning - Aula 02: Regressão Linear e Otimização (IMPA) | [(07/01/2026) - Mestrado: Machine Learning - Paulo Orenstein - Aula 02](https://www.youtube.com/watch?v=h_8fUxdA0QU) · Instituto de Matemática Pura e Aplicada | Avançado | trocado: vídeo real mais próximo |
+| A3 | Colóquio: O Impacto dos LLMs na Pesquisa Matemática (IMPA) | [Palestra especial: LLMs e Matemática - João Pedro Ramos e Felipe Gonçalves](https://www.youtube.com/watch?v=2hkXQKCh1cE) · Instituto de Matemática Pura e Aplicada | Intermediário | link do rascunho mantido |
+| A4 | Álgebra Linear Computacional - Decomposição em Valores Singulares (SVD) (IMPA) | [Singular Value Decomposition (SVD): Overview](https://www.youtube.com/watch?v=gXbThCXjZFM) · Steve Brunton | Intermediário | link do rascunho mantido |
+| A5 | O que é um Vetor de verdade? (Derivando) | [Geometria analítica e álgebra linear - Vetores no Plano e no Espaço](https://www.youtube.com/watch?v=IQW5bj4Yxlc) · UNIVESP | Iniciante | trocado: vídeo real mais próximo |
+| A6 | Matrizes e Transformações Lineares (Derivando) | [Linear transformations and matrices / Chapter 3, Essence of linear algebra](https://www.youtube.com/watch?v=kYB8IZa5AuE) · 3Blue1Brown | Iniciante | link do rascunho mantido |
+| A7 | O que é a Derivada? (E o Gradiente) (Derivando) | [The paradox of the derivative / Chapter 2, Essence of calculus](https://www.youtube.com/watch?v=9vKqVkMQHKk) · 3Blue1Brown | Iniciante | link do rascunho mantido |
+| A8 | Física Estatística e Redes Neurais (Colóquio IFUSP) (Instituto de Física da USP (IFUSP)) | [Mecânica Estatística, Informação e Física de Redes Neurais](https://www.youtube.com/watch?v=o6KxJwQthPw) · Instituto de Física USP | Avançado | trocado: vídeo real mais próximo |
+| A9 | Inteligência Artificial: Perspectivas da Física Computacional (IFSC USP) | nenhum | | não publicado: nenhum vídeo real encontrado com esse tema |
+| A10 | What are Tokens in AI? (EN) (IBM Technology) | [LLM Tokenizers Explained: BPE Encoding, WordPiece and SentencePiece](https://www.youtube.com/watch?v=hL4ZnAWSyuU) · DataMListic | Intermediário | trocado: vídeo real mais próximo |
+| A11 | Word Embeddings: Como a IA entende o significado? (PT) (Sandeco) | [Você Não Sabe Como o GPT Processa Cada Palavra](https://www.youtube.com/watch?v=_G_--YC5Xd4) · Sandeco | Intermediário | trocado: vídeo real mais próximo |
+| A12 | Visualizing Attention, a Transformer's Heart (EN) (3Blue1Brown) | [Attention in transformers, step-by-step / Deep Learning Chapter 6](https://www.youtube.com/watch?v=eMlx5fFNoYc) · 3Blue1Brown | Iniciante | já estava no site |
+| A13 | What is RAG? (Retrieval-Augmented Generation) (EN) (IBM Technology) | [What is Retrieval-Augmented Generation (RAG)?](https://www.youtube.com/watch?v=T-D1OfcDW1M) · IBM Technology | Iniciante | já estava no site |
+| A14 | Construindo seu primeiro RAG na prática (PT) (Programação Dinâmica) | [Converse com seus PDFs usando IA / RAG com Python, LangChain, OpenAI e Chroma](https://www.youtube.com/watch?v=ZOFcW8kvP5k) · DATA DT | Intermediário | trocado: vídeo real mais próximo |
+| A15 | Fine-Tuning vs Prompt Engineering (EN) (AssemblyAI) | [RAG vs Fine-Tuning vs Prompt Engineering: Optimizing AI Models](https://www.youtube.com/watch?v=zYGDpG-pTho) · IBM Technology | Iniciante | trocado: vídeo real mais próximo |
+| B41 | Softmax e Cross-Entropy, Clearly Explained!!! (StatQuest with Josh Starmer) | [Neural Networks Part 6: Cross Entropy](https://www.youtube.com/watch?v=6ArSys5qHAU) · StatQuest with Josh Starmer | Intermediário | link do rascunho mantido |
+| B42 | Funções de Ativação (ReLU, Sigmoid, Tanh) (Didática Tech) | [Redes Neurais Artificiais #04: Funções de ativação - Parte 1](https://www.youtube.com/watch?v=cVVO3yl1tx8) · Machine Learning para humanos | Intermediário | trocado: vídeo real mais próximo |
+| B43 | Otimizador Adam e RMSProp (Deep Learning Specialization) (DeepLearningAI (Andrew Ng)) | [Adam Optimization Algorithm (C2W2L08)](https://www.youtube.com/watch?v=JXQT_vxqwIs) · DeepLearningAI | Avançado | link do rascunho mantido |
+| B44 | Layer Normalization e Batch Normalization (Stanford CS224N) | [What is Layer Normalization? / Deep Learning Fundamentals](https://www.youtube.com/watch?v=2V3Uduw1zwQ) · AssemblyAI | Intermediário | trocado: vídeo real mais próximo |
+| B45 | Information Theory, Claude Shannon e Entropia (3Blue1Brown) | [Solving Wordle using information theory](https://www.youtube.com/watch?v=v68zYyaEmEA) · 3Blue1Brown | Intermediário | link do rascunho mantido |
+| B46 | The Memory Wall: Why LLMs are Memory Bound (Asianometry) | [The Special Memory Powering the AI Revolution](https://www.youtube.com/watch?v=yAw63F1W_Us) · Asianometry | Intermediário | trocado: vídeo real mais próximo |
+| B47 | FlashAttention: Explicando a Matemática da Eficiência de Memória (AI Hacker / Stanford Hazy Research) | [MedAI #54: FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness / Tri Dao](https://www.youtube.com/watch?v=FThvfkXWqtE) · Stanford MedAI | Avançado | trocado: vídeo real mais próximo |
+| B48 | Quantization (GGUF) e o Fim do Ponto Flutuante (Yannic Kilcher) | [Which Quantization Method is Right for You? (GPTQ vs. GGUF vs. AWQ)](https://www.youtube.com/watch?v=mNE_d-C82lI) · Maarten Grootendorst | Intermediário | trocado: vídeo real mais próximo |
+| B49 | GPU Architecture and CUDA Programming for AI (NVIDIA Developer) | [How do Graphics Cards Work? Exploring GPU Architecture](https://www.youtube.com/watch?v=h9Z4oGN89MU) · Branch Education | Iniciante | trocado: vídeo real mais próximo |
+| B50 | Redes de Kolmogorov-Arnold (KAN) vs Redes Densas (Arxiv Insights) | [KAN: Kolmogorov-Arnold Networks](https://www.youtube.com/watch?v=JuPwfQlPUt0) · Google TechTalks | Avançado | trocado: vídeo real mais próximo |
+| B51 | Processamento de Linguagem Natural (Prof. Thiago Pardo - USP) (ICMC USP) | [Abertura (Helena Caseli), Aula 1. Introdução: definições, história, aplicações, PLN-PT Thiago Pardo](https://www.youtube.com/watch?v=wD7AuZ8tE9M) · Brasileiras em PLN | Intermediário | trocado: vídeo real mais próximo |
+| B52 | Mineração de Dados Complexos (Prof. Eduardo Valle - Unicamp) (Eduardo Valle / Unicamp) | [Aula 09 - Redução de Dimensionalidade](https://www.youtube.com/watch?v=ZqEhn1l_PlQ) · Data ICMC | Intermediário | trocado: vídeo real mais próximo |
+| B53 | Introdução ao Aprendizado Profundo e Visão Computacional (ICMC USP) | [#DATAICMC Understanding Deep Learning - Lecture 1](https://www.youtube.com/watch?v=uevf_l47Fp0) · ICMC TV | Avançado | trocado: vídeo real mais próximo |
+| B54 | Modelos Ocultos de Markov (HMM) para Sequências (USP Online) | [Modelos Escondidos de Markov (HMMs) e Filtragem de Partículas](https://www.youtube.com/watch?v=hub59ETwy10) · Sergio Ricardo de Melo Queiroz | Avançado | trocado: vídeo real mais próximo |
+| B55 | Avaliação Métrica de IA (BLEU, ROUGE e Perplexidade) (ICMC USP) | [ROUGE, BLEU, BERTScore, Avaliação Humana, Perplexidade, F1Score, Conjuntos de dados de Referência](https://www.youtube.com/watch?v=SYUhHJcjbC4) · Grazi Cunha - Computação & Informática | Intermediário | trocado: vídeo real mais próximo |
+| B56 | A Matemática da Distância e Similaridade do Cosseno (StatQuest with Josh Starmer) | [Cosine Similarity, Clearly Explained!!!](https://www.youtube.com/watch?v=e9U0QAFbfLI) · StatQuest with Josh Starmer | Iniciante | link do rascunho mantido |
+| B57 | Approximate Nearest Neighbors (ANN) & Algoritmo HNSW (Pinecone) | [Graph-Based Approximate Nearest Neighbors (ANN) and HNSW](https://www.youtube.com/watch?v=4PsyNdFlxmk) · Pinecone | Intermediário | trocado: vídeo real mais próximo |
+| B58 | Bi-Encoders vs Cross-Encoders (Sentence Transformers) (Hugging Face) | [RAG But Better: Rerankers with Cohere AI](https://www.youtube.com/watch?v=Uh9bYiVrW_s) · James Briggs | Intermediário | trocado: vídeo real mais próximo |
+| B59 | ColBERT e Late Interaction (AI Explained / Standford Seminars) | [Ep. 8 — ColBERT + ColBERTv2: late interaction at a reasonable inference cost](https://www.youtube.com/watch?v=1hDK7gZbJqQ) · Zeta Alpha | Avançado | trocado: vídeo real mais próximo |
+| B60 | Graph RAG (Grafos de Conhecimento com LLMs) (Microsoft Research) | [GraphRAG methods to create optimized LLM context windows for Retrieval — Jonathan Larson, Microsoft](https://www.youtube.com/watch?v=c5qJHr3DnT4) · AI Engineer | Avançado | trocado: vídeo real mais próximo |
+| B61 | O que é LangChain? (Para Iniciantes) (Programação Dinâmica) | [Langchain em menos de 10 minutos](https://www.youtube.com/watch?v=GCQl9RFns_0) · Asimov Academy | Iniciante | trocado: vídeo real mais próximo |
+| B62 | Entendendo Alucinação em IA (E como evitar) (Peixe Babel / Let's Data) | [Por que a IA inventa mentiras? Entenda o mistério por trás da Alucinação](https://www.youtube.com/watch?v=1OG5LJ8iA80) · Sandeco | Iniciante | trocado: vídeo real mais próximo |
+| B63 | Chain of Thought (Cadeia de Pensamento) e Prompts (Universo Programado) | [Aula Gratuita: Chain of Thought Prompting (passo a passo) - Domine a Técnica / Curso IA na Prática](https://www.youtube.com/watch?v=CU9cbg_D8RU) · Trybe | Iniciante | trocado: vídeo real mais próximo |
+| B64 | O que é um Vector Database? (Banco Vetorial Explicado) (Fabrício Carraro) | [Bancos de Dados Vetoriais, Embeddings e Busca por Similaridade – NLP na Engenharia de Software 2025](https://www.youtube.com/watch?v=4n26QMxeA38) · André Santanchè | Intermediário | trocado: vídeo real mais próximo |
+| B65 | O que são Agentes de IA Autônomos? (Didática Tech) | [O que são Agentes de Inteligência Artificial e como funcionam? / IA na Prática](https://www.youtube.com/watch?v=EL8LhsJSTCg) · Programação Dinâmica | Iniciante | trocado: vídeo real mais próximo |
