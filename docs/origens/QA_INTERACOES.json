@@ -1,0 +1,18 @@
+{
+  "tests": [
+    "34 events without JavaScript",
+    "progressive controls",
+    "12 eclipses",
+    "22 suns/milestones",
+    "search by year",
+    "accent-independent search",
+    "researcher search",
+    "empty state",
+    "reset",
+    "hidden anchor reveal",
+    "native details content"
+  ],
+  "passed": 11,
+  "failed": 0,
+  "visual_browser_qa": false
+}

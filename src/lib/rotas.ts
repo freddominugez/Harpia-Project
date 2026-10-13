@@ -7,6 +7,7 @@ import { SITE } from "../config";
 import { VIDEOS, MODULOS, rotuloModulo, urlVideo } from "./videos";
 import { ARTIGOS, LIVROS, FONTES, FONTES_POR_GRUPO, APRENDIZADO, LINHA_DO_TEMPO } from "./conteudo";
 import { CAPITULOS, EVENTOS, PESSOAS } from "../data/origens";
+import { INTRODUCAO, aprofundamentoDe, slugEvento } from "../data/origens-aprofundamentos";
 import { PAUTAS } from "./pautas";
 
 export type Rota = {
@@ -30,7 +31,6 @@ export const ogDe = (path: string) => (path === "/" ? "/og/index.png" : `/og${pa
 const maior = (...datas: (string | undefined)[]) => datas.filter(Boolean).sort().at(-1) ?? "2026-10-12";
 const datasDe = (itens: { adicionado_em?: string; verificado_em?: string }[]) => itens.map((i) => i.adicionado_em);
 type ComDatas = { adicionado_em?: string };
-const tex = (s: string) => `$${s}$`;
 
 /** Frontmatter e corpo de uma página markdown em src/pages. */
 function paginaMd(arquivo: string) {
@@ -153,8 +153,19 @@ export async function rotas(): Promise<Rota[]> {
       atualizado: dOrigens,
       imagens: PESSOAS.filter((p) => p.foto).map((p) => ({ url: abs(`/img/origens/${p.foto}.webp`), titulo: p.nome, legenda: `${p.nome}, ${p.papel}. ${p.credito ?? ""} ${p.licenca ?? ""}`.trim() })),
       markdown: () => [
+        "# A odisseia da cognição sintética",
+        INTRODUCAO,
         "Sóis são os marcos celebrados. Eclipses são as fundações que ficaram na sombra deles.",
-        `## Linha do tempo\n\n${EVENTOS.map((e) => `- **${e.ano}, ${e.titulo}** (${e.tipo === "eclipse" ? "eclipse" : "marco"}). ${e.texto}${e.eq ? ` ${tex(e.eq)}` : ""}`).join("\n")}`,
+        "## Linha do tempo",
+        ...EVENTOS.map((e) => {
+          const a = aprofundamentoDe(e);
+          return [
+            `### ${e.ano}: ${a?.titulo ?? e.titulo}`,
+            `${e.tipo === "eclipse" ? "Eclipse" : "Sol ou marco"}. ${e.texto}`,
+            e.eq ? `$$\n${e.eq}\n$$` : "",
+            ...(a ? [`*${a.quem}*`, ...a.texto, `**O que este passo abriu.** ${a.legado}`, a.nota ?? "", `**Fontes.**\n\n${lista(a.refs.map((r) => `[${r.texto}](${r.url.startsWith("/") ? abs(r.url) : r.url})`))}`] : []),
+          ].filter(Boolean).join("\n\n");
+        }),
         ...CAPITULOS.map((c) => [
           `## ${c.n}. ${c.titulo} (${c.periodo})`,
           c.abertura,
@@ -174,8 +185,8 @@ export async function rotas(): Promise<Rota[]> {
         publisher: { "@id": ID.org },
         isPartOf: { "@id": ID.site },
         image: abs(ogDe("/origens/")),
-        citation: CAPITULOS.flatMap((c) => c.refs.map((x) => x.url)),
-        hasPart: itemList("Linha do tempo das LLMs", EVENTOS.map((e) => ({ name: `${e.ano}: ${e.titulo}`, url: `${abs("/origens/")}#linha` }))),
+        citation: [...new Set([...CAPITULOS.flatMap((c) => c.refs.map((x) => x.url)), ...EVENTOS.flatMap((e) => aprofundamentoDe(e)?.refs.map((r) => r.url.startsWith("/") ? abs(r.url) : r.url) ?? [])])],
+        hasPart: itemList("Linha do tempo das LLMs", EVENTOS.map((e) => ({ name: `${e.ano}: ${e.titulo}`, url: `${abs("/origens/")}#${slugEvento(e)}` }))),
       }],
     },
     {

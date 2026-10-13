@@ -168,7 +168,7 @@ export const CAPITULOS: Capitulo[] = [
       {
         ano: "2020", titulo: "ColBERT: além do vetor único", quem: "Omar Khattab e Matei Zaharia",
         texto: [
-          "Em vez de comprimir o documento num vetor, o ColBERT guarda um vetor por token e pontua com interação tardia: cada token da pergunta procura o token mais parecido do documento. A prova de 2025 sobre os limites do vetor único dá fundamento teórico a essa escolha.",
+          "Em vez de comprimir o documento num vetor, o ColBERT guarda um vetor por token e pontua com interação tardia: cada token da pergunta procura o token mais parecido do documento. O debate de 2025 e 2026 sobre o vetor único reforça a necessidade de distinguir capacidade geométrica, aprendibilidade e qualidade de recuperação; não estabelece uma impossibilidade universal para embeddings.",
         ],
         eq: "S_{q,d}=\\textstyle\\sum_{i=1}^{|q|}\\ \\max_{1\\le j\\le |d|}\\ E_{q_i}\\cdot E_{d_j}",
         eqLegenda: "MaxSim: soma, sobre os tokens da pergunta, da melhor semelhança no documento.",

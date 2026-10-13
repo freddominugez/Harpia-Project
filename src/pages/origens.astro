@@ -1,196 +1,242 @@
 ---
-// Origens: a linha do tempo dos "sóis" (marcos celebrados) e dos "eclipses"
-// (fundações que ficaram na sombra). Dados em src/data/origens.ts e src/data/timeline.json.
-import Base from "../layouts/Base.astro";
-import Breadcrumb from "../components/Breadcrumb.astro";
-import M from "../components/M.astro";
-import { ERAS, EVENTOS, CAPITULOS, PESSOAS, eraDoAno } from "../data/origens";
+import Base from '../layouts/Base.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import M from '../components/M.astro';
+import { ERAS, EVENTOS, CAPITULOS, PESSOAS } from '../data/origens';
+import { aprofundamentoDe, slugEvento, INTRODUCAO } from '../data/origens-aprofundamentos';
+import '../styles/origens-atlas.css';
 
-const era = (id: string) => ERAS.find((e) => e.id === id)!;
-const nSois = EVENTOS.filter((e) => e.tipo !== "eclipse").length;
-const nEclipses = EVENTOS.filter((e) => e.tipo === "eclipse").length;
-const slug = (e: { ano: number; titulo: string }) => `ev-${e.ano}-${e.titulo.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`;
-
-// Régua das eras: cada era ocupa uma fatia fixa da largura e os anos são lineares dentro dela.
-const FATIA: Record<string, [number, number]> = { fundamentos: [0, 30], redes: [30, 66], transformers: [66, 88], eficiencia: [88, 100] };
-const posicao = (ano: number) => {
-  const e = eraDoAno(ano);
-  const [a, b] = FATIA[e.id];
-  const t = e.ate === e.de ? 0 : (ano - e.de) / (e.ate - e.de);
-  return a + (b - a) * (0.04 + 0.92 * t);
+const nEclipses = EVENTOS.filter((e) => e.tipo === 'eclipse').length;
+const nMarcos = EVENTOS.length - nEclipses;
+const nLeituras = EVENTOS.filter((e) => aprofundamentoDe(e)).length;
+const destaques = [
+  { foto: 'rosenblatt', ano: 1958, nota: 'O perceptron' },
+  { foto: 'hinton', ano: 1986, nota: 'Aprender com o erro' },
+  { foto: 'bengio', ano: 2003, nota: 'A linguagem em vetores' },
+].map((d) => ({ ...d, pessoa: PESSOAS.find((p) => p.foto === d.foto)!, evento: EVENTOS.find((e) => e.ano === d.ano && e.tipo !== 'eclipse')! }));
+const coresEra: Record<string, { cor: string; suave: string }> = {
+  fundamentos: { cor: '#536b89', suave: '#e9eef3' },
+  redes: { cor: '#4d725d', suave: '#eaf0e8' },
+  transformers: { cor: '#9d513a', suave: '#f7eae2' },
+  eficiencia: { cor: '#725477', suave: '#eee8f0' },
 };
-const faixa = [...EVENTOS, ...EVENTOS];
+const descricaoEra: Record<string, string> = {
+  fundamentos: 'Da lógica do neurônio à linguagem como probabilidade.',
+  redes: 'Aprender, lembrar e representar o significado.',
+  transformers: 'A atenção muda a arquitetura. A escala muda o alcance.',
+  eficiencia: 'Menos memória, melhores buscas, hipóteses em teste.',
+};
+const capituloDe = (ano: number) => CAPITULOS.find((c) => c.eclipses.some((e) => e.ano.includes(String(ano))));
 ---
 <Base titulo="Origens" descricao="A linha do tempo das LLMs em sóis e eclipses: os marcos celebrados e as fundações que ficaram na sombra, de 1943 a 2026.">
-  <div class="orig-marquee" aria-label="Linha do tempo em movimento">
-    <div class="orig-marquee-track">
-      {faixa.map((e, i) => (
-        <a class={`orig-marquee-item t-${e.tipo}`} href={`#${slug(e)}`} tabindex={i < EVENTOS.length ? 0 : -1} aria-hidden={i >= EVENTOS.length ? "true" : undefined}>
-          <span class="orig-glyph" aria-hidden="true"></span><b>{e.ano}</b><span>{e.titulo}</span>
-        </a>
-      ))}
-    </div>
-  </div>
-
-  <section class="orig-hero">
-    <div class="container">
-      <Breadcrumb itens={[{ rotulo: "Origens" }]} />
-      <div class="orig-hero-grid">
-        <div>
-          <div class="eyebrow">Origens</div>
-          <h1>De um neurônio lógico a bilhões de pesos</h1>
-          <p class="intro">A história canônica da IA guarda os sóis: o word2vec, o Transformer, o GPT. Esta linha do tempo também mostra os eclipses: os teoremas, os fracassos produtivos e os avanços de hardware que, na sombra, abriram o caminho para eles.</p>
-        </div>
-        <aside class="orig-legend surface" aria-label="Como ler">
-          <div class="orig-stat"><b>{EVENTOS.length}</b><span>eventos de 1943 a 2026</span></div>
-          <ul>
-            <li><span class="orig-glyph t-sol" aria-hidden="true"></span><b>{nSois} sóis e marcos</b><small>o que a história celebra</small></li>
-            <li><span class="orig-glyph t-eclipse" aria-hidden="true"></span><b>{nEclipses} eclipses</b><small>o que ficou na sombra</small></li>
-          </ul>
-        </aside>
-      </div>
-
-      <div class="orig-ruler" aria-label="Régua das eras">
-        <div class="orig-ruler-bar">
-          {ERAS.map((e) => (
-            <span class="orig-era" style={`left:${FATIA[e.id][0]}%;width:${FATIA[e.id][1] - FATIA[e.id][0]}%;--c:${e.cor};--s:${e.suave}`}>
-              <b>{e.nome}</b><small>{e.de}{e.ate !== e.de ? `-${e.ate}` : ""}</small>
-            </span>
-          ))}
-        </div>
-        <div class="orig-ruler-dots">
-          {EVENTOS.map((e, i) => (
-            <a class={`orig-dot t-${e.tipo}`} href={`#${slug(e)}`} style={`left:${posicao(e.ano)}%;--i:${i};--c:${era(e.era).cor}`} aria-hidden="true" tabindex="-1" data-tip={`${e.ano} · ${e.titulo}`}></a>
-          ))}
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section orig-people-sec" aria-labelledby="h-pessoas">
-    <div class="container">
-      <div class="section-head">
-        <div><h2 id="h-pessoas">Os arquitetos nas sombras</h2><p>Quem assinou os eclipses. Fotos do Wikimedia Commons, com autor e licença em cada uma.</p></div>
-      </div>
-      <div class="orig-people">
-        {PESSOAS.map((p) => (
-          <figure class="orig-person" style={`--c:${era(CAPITULOS.find((c) => c.id === p.capitulo)!.era).cor}`}>
-            <a href={`#${p.capitulo}`} class="orig-person-photo" aria-label={`${p.nome}: ver o capítulo`}>
-              {p.foto ? <img src={`/img/origens/${p.foto}.webp`} alt={`Retrato de ${p.nome}`} width="320" height="320" loading="lazy" decoding="async" /> : <span class="orig-initials" aria-hidden="true">{p.nome.split(" ").map((x) => x[0]).join("")}</span>}
-              <span class="orig-person-year">{p.ano}</span>
-            </a>
-            <figcaption>
-              <b>{p.nome}</b>
-              <span>{p.papel}</span>
-              {p.fonte ? <small><a href={p.fonte} target="_blank" rel="noopener noreferrer">Foto: {p.credito} · {p.licenca}</a></small> : <small>Sem foto de licença livre encontrada.</small>}
-            </figcaption>
-          </figure>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <div class="container page-layout orig-layout">
-    <div class="article">
-      {CAPITULOS.map((c) => {
-        const e = era(c.era);
-        return (
-          <section class="orig-chapter reveal" id={c.id} style={`--c:${e.cor};--s:${e.suave}`} aria-labelledby={`h-${c.id}`}>
-            <header class="orig-chapter-head">
-              <span class="orig-chapter-n">Capítulo {c.n}</span>
-              <span class="orig-chapter-era">{e.nome} · {c.periodo}</span>
-              <h2 id={`h-${c.id}`}>{c.titulo}</h2>
-              <p>{c.abertura}</p>
-              <div class="orig-suns" aria-label="Marcos celebrados deste período">
-                {c.sois.map((s) => {
-                  const [ano, titulo] = s.split(" · ");
-                  const ev = EVENTOS.find((e) => String(e.ano) === ano && e.titulo === titulo);
-                  return <a class="orig-sun" href={ev ? `#${slug(ev)}` : "#linha-completa"}><span class={`orig-glyph t-${ev?.tipo ?? "marco"}`} aria-hidden="true"></span>{s}</a>;
-                })}
-              </div>
-            </header>
-            <div class="orig-eclipses">
-              {c.eclipses.map((x) => (
-                <article class="orig-eclipse">
-                  <div class="orig-eclipse-top"><span class="orig-glyph t-eclipse" aria-hidden="true"></span><b>{x.ano}</b><span>Eclipse</span></div>
-                  <h3>{x.titulo}</h3>
-                  <p class="orig-who">{x.quem}</p>
-                  {x.texto.map((t) => <p>{t}</p>)}
-                  {x.eq && (
-                    <figure class="orig-eq">
-                      <M t={x.eq} d />
-                      {x.eqLegenda && <figcaption>{x.eqLegenda}</figcaption>}
-                    </figure>
-                  )}
-                </article>
+  <div class="atlas" data-origens>
+    <section class="atlas-hero" aria-labelledby="atlas-titulo">
+      <div class="container">
+        <Breadcrumb itens={[{ rotulo: 'Origens' }]} />
+        <div class="atlas-hero-grid">
+          <div class="atlas-hero-copy">
+            <div class="atlas-eyebrow">Harpya · 1943–2026</div>
+            <h1 id="atlas-titulo">Origens da<br /><em>inteligência artificial.</em></h1>
+            <p class="atlas-lead">Antes dos modelos que usamos hoje, houve décadas de perguntas, descobertas e tentativas. Esta é a história das ideias e das pessoas que abriram esse caminho.</p>
+            <div class="atlas-actions">
+              <a class="atlas-button" href="#linha-completa">Percorrer a história <span aria-hidden="true">↓</span></a>
+              <a class="atlas-text-link" href="#capitulos">Os cinco capítulos</a>
+            </div>
+            <div class="atlas-hero-meta"><span>1943–2026</span><span>{EVENTOS.length} eventos</span><span>Pesquisa aberta</span></div>
+          </div>
+          <div class="atlas-portrait-montage" aria-label="Três pesquisadores desta história">
+            <div class="atlas-portrait-row">
+              {destaques.map((d) => (
+                <figure class="atlas-portrait-note">
+                  <a href={`#${slugEvento(d.evento)}`} aria-label={`${d.pessoa.nome}: ${d.nota}, ${d.ano}`}><img src={`/img/origens/${d.foto}.webp`} width="320" height="320" alt={`Retrato de ${d.pessoa.nome}`} /></a>
+                  <figcaption><span>{d.ano}</span><b>{d.pessoa.nome}</b><small>{d.nota}</small></figcaption>
+                </figure>
               ))}
             </div>
-            <details class="orig-refs">
-              <summary>Referências do capítulo {c.n} ({c.refs.length})</summary>
-              <ol>{c.refs.map((r) => <li><a href={r.url} target="_blank" rel="noopener noreferrer">{r.texto}</a></li>)}</ol>
-            </details>
-          </section>
-        );
-      })}
+            <p class="atlas-montage-caption">Três gerações de pesquisa. <a href="#pessoas">Ver retratos e créditos</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <section class="orig-full" id="linha-completa" aria-labelledby="h-linha">
-        <div class="section-head"><div><h2 id="h-linha">Linha do tempo completa</h2><p>Sóis, marcos e eclipses em ordem. As cores seguem as eras.</p></div></div>
-        <ol class="orig-timeline">
-          {ERAS.map((er) => (
-            <>
-              <li class="orig-tl-era" style={`--c:${er.cor}`}>{er.nome} <small>{er.de}{er.ate !== er.de ? `-${er.ate}` : ""}</small></li>
-              {EVENTOS.filter((e) => e.era === er.id).map((e) => (
-                <li class={`orig-tl-item t-${e.tipo} reveal`} id={slug(e)} style={`--c:${er.cor};--s:${er.suave}`}>
-                  <span class="orig-tl-year">{e.ano}</span>
-                  <span class="orig-tl-node" aria-hidden="true"></span>
-                  <div class="orig-tl-card">
-                    <span class="orig-tl-kind">{e.tipo === "eclipse" ? "Eclipse" : e.tipo === "sol" ? "Sol" : "Marco"}</span>
-                    <h3>{e.titulo}</h3>
-                    <p>{e.texto}</p>
-                    {e.eq && <div class="eq"><M t={e.eq} /></div>}
-                  </div>
-                </li>
-              ))}
-            </>
+    <nav class="container atlas-era-nav" aria-label="Escolha uma era">
+      {ERAS.map((e, i) => (
+        <a href={`#era-${e.id}`} class="atlas-era-card" style={`--era:${coresEra[e.id].cor};--era-soft:${coresEra[e.id].suave}`}>
+          <span class="atlas-era-top"><span>0{i + 1}</span><span>{e.de}–{e.ate}</span><span aria-hidden="true">↗</span></span>
+          <b>{e.nome}</b><p>{descricaoEra[e.id]}</p>
+        </a>
+      ))}
+    </nav>
+
+    <section class="container atlas-introduction" aria-label="Apresentação do dossiê">
+      <div><span class="atlas-eyebrow">Sóis e eclipses</span><h2>Os marcos e<br />seus bastidores.</h2></div>
+      <div><p>{INTRODUCAO}</p><p>Leia o percurso em ordem ou abra cada marco para conhecer o mecanismo, o legado e suas fontes. Os eclipses levam aos cinco capítulos dedicados às fundações menos visíveis.</p></div>
+    </section>
+
+    <div class="container atlas-layout">
+      <aside class="atlas-sidebar" aria-label="Índice do dossiê">
+        <div class="atlas-sidebar-top"><span class="atlas-eyebrow">Neste atlas</span><span class="atlas-reading-progress" aria-hidden="true"></span></div>
+        <nav class="atlas-index" aria-label="Eras e seções">
+          {ERAS.map((e, i) => <a href={`#era-${e.id}`} data-era-link={e.id}><span>0{i + 1}</span>{e.nome}</a>)}
+          <a href="#capitulos"><span>05</span>As fundações ocultas</a>
+          <a href="#pessoas"><span>06</span>Quem abriu o caminho</a>
+        </nav>
+        <div class="atlas-sidebar-counts"><b>{EVENTOS.length}<small>eventos</small></b><b>{nLeituras}<small>aprofundamentos</small></b></div>
+        <div class="atlas-key"><p><i class="atlas-symbol atlas-symbol-sol" aria-hidden="true"></i><b>{nMarcos} sóis e marcos</b><span>As descobertas celebradas.</span></p><p><i class="atlas-symbol atlas-symbol-eclipse" aria-hidden="true"></i><b>{nEclipses} eclipses</b><span>As fundações nos bastidores.</span></p></div>
+        <a class="atlas-download" href="/origens.md">Ler em Markdown <span aria-hidden="true">↗</span></a>
+      </aside>
+
+      <div class="atlas-main">
+        <section id="linha-completa" aria-labelledby="atlas-linha-titulo">
+          <span id="linha" class="atlas-anchor" aria-hidden="true"></span>
+          <div class="atlas-section-title"><div><span class="atlas-eyebrow">1943 a 2026</span><h2 id="atlas-linha-titulo">Linha do tempo</h2></div></div>
+          <div class="atlas-tools" hidden data-atlas-tools>
+            <div class="atlas-filter-group" role="group" aria-label="Filtrar eventos por perspectiva">
+              <button type="button" data-filter="todos" aria-pressed="true">Todos</button><button type="button" data-filter="marcos" aria-pressed="false">Sóis e marcos</button><button type="button" data-filter="eclipses" aria-pressed="false">Eclipses</button>
+            </div>
+            <label class="atlas-search"><span class="sr-only">Pesquisar nesta linha do tempo</span><span aria-hidden="true">⌕</span><input type="search" data-atlas-search placeholder="Ano, ideia ou pesquisador" aria-controls="atlas-eventos" /></label>
+          </div>
+          <p class="atlas-results" data-atlas-results role="status" aria-live="polite" aria-atomic="true" hidden></p>
+          <p class="atlas-empty" data-atlas-empty hidden>Nenhum evento encontrado. Tente outra palavra ou <button type="button" data-atlas-reset>limpe os filtros</button>.</p>
+          <div id="atlas-eventos">
+            {ERAS.map((er, i) => (
+              <section class="atlas-period" id={`era-${er.id}`} data-atlas-era={er.id} style={`--era:${coresEra[er.id].cor};--era-soft:${coresEra[er.id].suave}`} aria-labelledby={`titulo-era-${er.id}`}>
+                <header class="atlas-period-head"><span class="atlas-period-number">0{i + 1}</span><div><span class="atlas-eyebrow">{er.de}–{er.ate}</span><h3 id={`titulo-era-${er.id}`}>{er.nome}</h3></div><span class="atlas-period-line" aria-hidden="true"></span></header>
+                <ol class="atlas-timeline">
+                  {EVENTOS.filter((e) => e.era === er.id).map((e) => {
+                    const leitura = aprofundamentoDe(e);
+                    const cap = e.tipo === 'eclipse' ? capituloDe(e.ano) : undefined;
+                    return (
+                      <li class={`atlas-event atlas-event-${e.tipo}${e.tipo === 'sol' && [1943, 2013, 2017, 2022].includes(e.ano) ? ' is-landmark' : ''}`} id={slugEvento(e)} data-atlas-event data-kind={e.tipo === 'eclipse' ? 'eclipses' : 'marcos'}>
+                        <div class="atlas-event-date"><span>{e.ano}</span><i class={`atlas-symbol atlas-symbol-${e.tipo === 'eclipse' ? 'eclipse' : 'sol'}`} aria-hidden="true"></i></div>
+                        <article class="atlas-event-body" aria-labelledby={`titulo-${slugEvento(e)}`}>
+                          <span class="atlas-event-kind">{e.tipo === 'eclipse' ? 'Eclipse' : e.tipo === 'sol' ? 'Sol' : 'Marco'}</span>
+                          <h4 id={`titulo-${slugEvento(e)}`}>{leitura?.titulo ?? e.titulo}</h4>
+                          {leitura && <span class="sr-only">{e.titulo}</span>}
+                          <p class="atlas-event-summary">{e.texto}</p>
+                          {e.eq && <div class="atlas-equation"><M t={e.eq} d /></div>}
+                          {leitura ? (
+                            <details class="atlas-deep">
+                              <summary><span>Ler a história</span><span class="atlas-summary-icon" aria-hidden="true">+</span></summary>
+                              <div class="atlas-deep-content"><p class="atlas-byline">{leitura.quem}</p>{leitura.texto.map((p) => <p>{p}</p>)}
+                                <div class="atlas-legacy"><span>O que mudou</span><p>{leitura.legado}</p></div>
+                                {leitura.nota && <p class="atlas-editorial-note">{leitura.nota}</p>}
+                                <div class="atlas-sources"><h5>Fontes</h5><ul>{leitura.refs.map((r) => <li><a href={r.url} target={r.url.startsWith('/') ? undefined : '_blank'} rel={r.url.startsWith('/') ? undefined : 'noopener noreferrer'}>{r.texto}</a></li>)}</ul></div>
+                              </div>
+                            </details>
+                          ) : cap && <a class="atlas-eclipse-link" href={`#${cap.id}`}>Conhecer esta fundação <span aria-hidden="true">↗</span></a>}
+                        </article>
+                      </li>
+                    );
+                  })}
+                </ol>
+              </section>
+            ))}
+          </div>
+        </section>
+
+        <section class="atlas-foundations" id="capitulos" aria-labelledby="atlas-capitulos-titulo">
+          <div class="atlas-section-title"><div><span class="atlas-eyebrow">O outro lado da história</span><h2 id="atlas-capitulos-titulo">As fundações ocultas</h2></div></div>
+          <p class="atlas-section-intro">Cinco capítulos sobre os limites, diagnósticos e soluções que sustentam os marcos da linha do tempo.</p>
+          {CAPITULOS.map((c) => (
+            <section class="atlas-chapter" id={c.id} style={`--era:${coresEra[c.era].cor};--era-soft:${coresEra[c.era].suave}`} aria-labelledby={`h-${c.id}`}>
+              <header class="atlas-chapter-head"><span class="atlas-chapter-number">0{c.n}</span><div><span class="atlas-eyebrow">{c.periodo} · Capítulo {c.n}</span><h3 id={`h-${c.id}`}>{c.titulo}</h3></div></header>
+              <p class="atlas-chapter-lead">{c.abertura}</p>
+              {c.n === 5 && <p class="atlas-chapter-update">O debate sobre o vetor único recebeu novos resultados em 2026. <a href="#ev-2025-limites-do-vetor-unico">Leia a atualização no marco de 2025</a> para distinguir capacidade geométrica de aprendibilidade.</p>}
+              <div class="atlas-chapter-milestones" aria-label="Marcos relacionados">{c.sois.map((s) => {const [ano, titulo] = s.split(' · '); const ev = EVENTOS.find((e) => String(e.ano) === ano && e.titulo === titulo); return <a href={ev ? `#${slugEvento(ev)}` : '#linha-completa'}>{s} <span aria-hidden="true">↗</span></a>;})}</div>
+              <div class="atlas-chapter-entries">{c.eclipses.map((x) => (
+                <article class="atlas-foundation"><div class="atlas-foundation-label"><i class="atlas-symbol atlas-symbol-eclipse" aria-hidden="true"></i><span>{x.ano} · Eclipse</span></div><h4>{x.titulo}</h4><p class="atlas-byline">{x.quem}</p>{x.texto.map((t) => <p>{t}</p>)}{x.eq && <figure class="atlas-equation"><M t={x.eq} d />{x.eqLegenda && <figcaption>{x.eqLegenda}</figcaption>}</figure>}</article>
+              ))}</div>
+              <details class="atlas-chapter-refs"><summary>Referências do capítulo {c.n} <span>({c.refs.length})</span></summary><ol>{c.refs.map((r) => <li><a href={r.url} target="_blank" rel="noopener noreferrer">{r.texto}</a></li>)}</ol></details>
+            </section>
           ))}
-        </ol>
-      </section>
+        </section>
+      </div>
     </div>
 
-    <aside aria-label="Navegação da página">
-      <div class="surface aside-panel toc-panel">
-        <h3>Capítulos</h3>
-        <nav class="toc" aria-label="Capítulos">
-          {CAPITULOS.map((c) => <a href={`#${c.id}`} style={`--c:${era(c.era).cor}`}>{c.n}. {c.titulo}</a>)}
-          <a href="#linha-completa">Linha do tempo completa</a>
-        </nav>
-      </div>
-      <div class="surface aside-panel">
-        <h3>Eras</h3>
-        <ul class="orig-era-list">
-          {ERAS.map((e) => <li style={`--c:${e.cor}`}><b>{e.nome}</b><span>{e.de}{e.ate !== e.de ? `-${e.ate}` : ""}</span></li>)}
-        </ul>
-      </div>
-      <div class="surface aside-panel">
-        <h3>Sobre este dossiê</h3>
-        <p>Cada eclipse traz a referência primária. Datas, autorias e equações foram conferidas contra os artigos originais.</p>
-        <a class="card-link" href="/aprendizado/">As primeiras regras de aprendizagem →</a>
-      </div>
-    </aside>
+    <section class="atlas-people-section" id="pessoas" aria-labelledby="atlas-pessoas-titulo"><div class="container">
+      <div class="atlas-section-title"><div><span class="atlas-eyebrow">Pesquisadores</span><h2 id="atlas-pessoas-titulo">Quem abriu o caminho</h2></div></div>
+      <p class="atlas-section-intro">Os arquitetos presentes nos capítulos deste dossiê. Retratos do Wikimedia Commons, com autoria e licença preservadas.</p>
+      <div class="atlas-people">{PESSOAS.map((p) => (
+        <figure class="atlas-person"><a href={`#${p.capitulo}`} class="atlas-person-image" aria-label={`${p.nome}: ler o capítulo`}>
+          {p.foto ? <img src={`/img/origens/${p.foto}.webp`} alt={`Retrato de ${p.nome}`} width="320" height="320" loading="lazy" decoding="async" /> : <span class="atlas-person-initials" aria-hidden="true">{p.nome.split(' ').map((x) => x[0]).join('')}</span>}
+          <span>{p.ano}</span><span class="atlas-person-arrow" aria-hidden="true">↗</span></a>
+          <figcaption><b>{p.nome}</b><p>{p.papel}</p>{p.fonte ? <a class="atlas-photo-credit" href={p.fonte} target="_blank" rel="noopener noreferrer">Foto: {p.credito} · {p.licenca}</a> : <span class="atlas-photo-credit">Retrato não disponível com licença livre.</span>}</figcaption>
+        </figure>
+      ))}</div>
+    </div></section>
+
+    <section class="container atlas-end" aria-labelledby="atlas-end-titulo"><div><span class="atlas-eyebrow">Pesquisa no Harpya</span><h2 id="atlas-end-titulo">A investigação continua.</h2><p>Conheça os estudos sobre eficiência, embeddings e busca vetorial, com equações e testes que permitem avaliar cada hipótese.</p></div><a class="atlas-button" href="/estudos/">Ver os estudos <span aria-hidden="true">↗</span></a></section>
   </div>
 </Base>
 
 <script>
-  // Revela os blocos ao rolar. Sem IntersectionObserver ou com movimento reduzido, tudo já aparece.
-  const itens = document.querySelectorAll<HTMLElement>(".reveal");
-  const reduz = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (!reduz && "IntersectionObserver" in window) {
-    document.documentElement.classList.add("js-reveal");
-    const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } }), { rootMargin: "0px 0px -8% 0px" });
-    itens.forEach((el) => io.observe(el));
+  const atlas = document.querySelector<HTMLElement>('[data-origens]');
+  if (atlas) {
+    const tools = atlas.querySelector<HTMLElement>('[data-atlas-tools]');
+    const search = atlas.querySelector<HTMLInputElement>('[data-atlas-search]');
+    const buttons = Array.from(atlas.querySelectorAll<HTMLButtonElement>('[data-filter]'));
+    const events = Array.from(atlas.querySelectorAll<HTMLElement>('[data-atlas-event]'));
+    const eras = Array.from(atlas.querySelectorAll<HTMLElement>('[data-atlas-era]'));
+    const status = atlas.querySelector<HTMLElement>('[data-atlas-results]');
+    const empty = atlas.querySelector<HTMLElement>('[data-atlas-empty]');
+    const normalize = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('pt-BR');
+    const index = new Map(events.map((event) => [event, normalize(event.textContent ?? '')]));
+    let kind = 'todos';
+    const applyFilters = () => {
+      const term = normalize(search?.value.trim() ?? '');
+      let count = 0;
+      events.forEach((event) => {
+        event.hidden = !(kind === 'todos' || event.dataset.kind === kind) || !index.get(event)?.includes(term);
+        if (!event.hidden) count++;
+      });
+      eras.forEach((era) => { era.hidden = !era.querySelector('[data-atlas-event]:not([hidden])'); });
+      buttons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.filter === kind)));
+      if (status) { status.hidden = false; status.textContent = `${count} de ${events.length} eventos${term || kind !== 'todos' ? ' encontrados' : ' no percurso'}.`; }
+      if (empty) empty.hidden = count > 0;
+    };
+    const resetFilters = () => { kind = 'todos'; if (search) search.value = ''; applyFilters(); };
+    buttons.forEach((button) => button.addEventListener('click', () => { kind = button.dataset.filter ?? 'todos'; applyFilters(); }));
+    search?.addEventListener('input', applyFilters);
+    atlas.querySelector('[data-atlas-reset]')?.addEventListener('click', () => { resetFilters(); search?.focus(); });
+    if (tools) tools.hidden = false;
+    applyFilters();
+
+    // Uma âncora continua acessível se o filtro ocultou o evento.
+    const revealHash = () => {
+      const id = location.hash.slice(1);
+      const target = document.getElementById(id);
+      if (target?.matches('[data-atlas-event], [data-atlas-era]')) {
+        const wasHidden = target.hidden || Boolean(target.closest('[hidden]'));
+        if (wasHidden) { resetFilters(); target.scrollIntoView({ behavior: 'instant', block: 'start' }); }
+      }
+    };
+    atlas.addEventListener('click', (event) => {
+      const link = event.target instanceof Element ? event.target.closest<HTMLAnchorElement>('a[href^="#"]') : null;
+      if (!link) return;
+      const target = document.getElementById(link.hash.slice(1));
+      if (target?.matches('[data-atlas-event], [data-atlas-era]')) resetFilters();
+    });
+    window.addEventListener('hashchange', revealHash);
+    revealHash();
+
+    // Um único item ativo no índice; a leitura não depende de animações.
+    const indexLinks = Array.from(atlas.querySelectorAll<HTMLAnchorElement>('.atlas-index a'));
+    const progress = atlas.querySelector<HTMLElement>('.atlas-reading-progress');
+    const sections = indexLinks.map((link) => document.getElementById(link.hash.slice(1))).filter((el): el is HTMLElement => Boolean(el));
+    let scheduled = false;
+    const updatePosition = () => {
+      scheduled = false;
+      const visible = sections.filter((section) => !section.hidden);
+      const current = [...visible].reverse().find((section) => section.getBoundingClientRect().top <= 150);
+      indexLinks.forEach((link) => { if (link.hash === `#${current?.id}`) link.setAttribute('aria-current', 'location'); else link.removeAttribute('aria-current'); });
+      const rect = atlas.getBoundingClientRect();
+      const distance = Math.max(1, atlas.offsetHeight - window.innerHeight);
+      const percent = Math.max(0, Math.min(100, -rect.top / distance * 100));
+      if (progress) progress.style.setProperty('--progress', `${percent}%`);
+    };
+    window.addEventListener('scroll', () => { if (!scheduled) { scheduled = true; requestAnimationFrame(updatePosition); } }, { passive: true });
+    window.addEventListener('resize', updatePosition);
+    updatePosition();
   }
-  // A faixa animada para quando o mouse ou o foco do teclado está nela.
-  const faixa = document.querySelector<HTMLElement>(".orig-marquee");
-  faixa?.addEventListener("focusin", () => faixa.classList.add("is-paused"));
-  faixa?.addEventListener("focusout", () => faixa.classList.remove("is-paused"));
 </script>
