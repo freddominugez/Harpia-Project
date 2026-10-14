@@ -1,0 +1,16 @@
+{
+  "id": "TzYie8xC-K0",
+  "titulo": "Interchangeable KV Importance Signals under One Compiled FlexAttention Budget with FlexBudget",
+  "canal": "PyTorch",
+  "modulo": 10,
+  "nivel": "Avançado",
+  "resumo": "Apresenta um arranjo que compara regras de descarte do cache KV sob o mesmo núcleo FlexAttention e o mesmo orçamento, separando o efeito da regra do efeito do código. Para quem estuda contexto longo.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=TzYie8xC-K0",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-14",
+  "verificado_em": "2026-10-14"
+}
