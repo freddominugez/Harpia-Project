@@ -2,6 +2,7 @@
 // gêmeos em markdown (/<rota>.md), /llms.txt, /llms-full.txt e /rss.xml.
 // Página nova: acrescente aqui. O QA (scripts/qa_redesign.py) acusa página fora do registro.
 import fs from "node:fs";
+import { fontesDoSite, markdownDasFontes } from "./fontes-site";
 import { getCollection, type CollectionEntry } from "astro:content";
 import { SITE } from "../config";
 import { VIDEOS, MODULOS, rotuloModulo, urlVideo } from "./videos";
@@ -85,6 +86,9 @@ export async function rotas(): Promise<Rota[]> {
   const caminhos = (await getCollection("caminhos")).sort((a, b) => a.data.numero - b.data.numero);
   const pautasComPagina = (await getCollection("pautas")).filter((p) => temPagina(p.data.status));
   const sobre = paginaMd("src/pages/sobre.md");
+  const termosDeUso = paginaMd("src/pages/termos-de-uso.md");
+  const gruposFontes = await fontesDoSite();
+  const todasFontes = gruposFontes.flatMap((g) => g.itens);
   const equacoes = paginaMd("src/pages/equacoes.md");
   const glossario = paginaMd("src/pages/biblioteca/glossario.md");
   const arquivados = paginaMd("src/pages/estudos/arquivados.md");
@@ -364,14 +368,14 @@ export async function rotas(): Promise<Rota[]> {
     },
     {
       path: "/biblioteca/fontes/",
-      titulo: "Fontes",
-      descricao: `${FONTES.length} fontes de alta qualidade: institutos de matemática e física, grandes projetos, repositórios de artigos e laboratórios de IA.`,
+      titulo: "Fontes do site",
+      descricao: "Fontes do Harpya, uma a uma: instituições, artigos, livros, vídeos, referências, créditos de imagens, feeds e licenças.",
       secao: "Biblioteca",
       pai: "/biblioteca/",
-      atualizado: dFontes,
-      markdown: () => FONTES_POR_GRUPO.map((g) => `## ${g.grupo}\n\n${g.itens.map(([n, u, d]) => `- [${n}](${u}): ${d}`).join("\n")}`).join("\n\n"),
-      schema: () => [colecao("/biblioteca/fontes/", "Fontes", "Fontes de alta qualidade sobre matemática, física e IA.",
-        itemList("Fontes", FONTES.map((f) => ({ name: f.nome, url: f.url }))))],
+      atualizado: maior(dFontes, dVideos, dBiblioteca, dOrigens, dCaminhos, dataNews, "2026-10-13"),
+      markdown: () => markdownDasFontes(gruposFontes),
+      schema: () => [colecao("/biblioteca/fontes/", "Fontes do site", "Referências, fontes e créditos do Harpya.",
+        itemList("Fontes do site", todasFontes.map((f) => ({ name: f.nome, url: f.url }))))],
     },
     {
       path: "/biblioteca/glossario/",
@@ -438,6 +442,14 @@ export async function rotas(): Promise<Rota[]> {
         isPartOf: { "@id": `${abs("/forum/")}#pagina` },
       }],
     })),
+    {
+      path: "/termos-de-uso/",
+      titulo: termosDeUso.titulo,
+      descricao: termosDeUso.descricao,
+      secao: "Mindscope Labs",
+      atualizado: termosDeUso.atualizado,
+      markdown: () => termosDeUso.corpo,
+    },
     {
       path: "/sobre/",
       titulo: sobre.titulo,

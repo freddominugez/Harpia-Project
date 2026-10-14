@@ -15,6 +15,8 @@ const ano = new Date().getFullYear();
     <span class="footer-motto">{SITE.lema}.</span>
     <nav class="footer-nav" aria-label="Links do rodapé">
       {NAV.map((i) => <a href={i.href}>{i.rotulo}</a>)}
+      <a href="/termos-de-uso/">Termos de Uso</a>
+      <a href="/biblioteca/fontes/">Fontes do site</a>
     </nav>
     {SITE.repositorioPublico && (
       <div class="footer-social">
@@ -24,8 +26,9 @@ const ano = new Date().getFullYear();
       </div>
     )}
     <div class="footer-credit">
-      <span><b>{SITE.autor}</b> - <a href={SITE.assinaturaUrl} target="_blank" rel="noopener noreferrer">{SITE.assinatura}</a></span>
-      <span>© {ano} {SITE.nome} · Conteúdo CC BY 4.0 · Código MIT</span>
+      <span><b>{SITE.assinatura}</b></span>
+      <span>© {ano} {SITE.nome}. Todos os direitos reservados.</span>
+      <span>Ressalvadas as licenças CC BY 4.0 e MIT.</span>
     </div>
   </div>
 </footer>

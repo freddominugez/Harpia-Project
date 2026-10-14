@@ -1,11 +1,50 @@
 ---
 import Base from "../../layouts/Base.astro";
 import PageIntro from "../../components/PageIntro.astro";
-import SourceGroups from "../../components/SourceGroups.astro";
-import { FONTES_POR_GRUPO as fontes } from "../../lib/conteudo";
-const nFontes = fontes.reduce((s, g) => s + g.itens.length, 0);
+import { fontesDoSite } from "../../lib/fontes-site";
+const grupos = await fontesDoSite();
+const nFontes = grupos.reduce((s, g) => s + g.itens.length, 0);
+const descricao = "Fontes do Harpya, uma a uma: instituições, artigos, livros, vídeos, referências, créditos de imagens, feeds e licenças.";
 ---
-<Base titulo="Fontes" descricao={`${nFontes} fontes de alta qualidade: institutos de matemática e física, grandes projetos, repositórios de artigos e laboratórios de IA.`}>
-  <PageIntro trilha={[{ rotulo: "Biblioteca", href: "/biblioteca/" }, { rotulo: "Fontes" }]} eyebrow="Biblioteca" titulo={`${nFontes} fontes de alta qualidade`} lead="Institutos de matemática e física no Brasil e no exterior, grandes projetos, repositórios de artigos, laboratórios de IA dos Estados Unidos e da China, e o código aberto que roda tudo." />
-  <section class="page-body"><div class="container"><SourceGroups /></div></section>
+<Base titulo="Fontes do site" descricao={descricao}>
+  <PageIntro trilha={[{ rotulo: "Biblioteca", href: "/biblioteca/" }, { rotulo: "Fontes do site" }]} eyebrow="Referências e créditos" titulo="Fontes do site" lead={`${nFontes} links reunidos em um só lugar, com os nomes, créditos disponíveis e páginas em que são utilizados. Cada fonte conserva os direitos e a licença de seu titular.`} />
+  <section class="page-body"><div class="container fontes-site">
+    <p class="fontes-nota">A lista acompanha o acervo publicado e a curadoria. Referências de leitura e de compra estão identificadas separadamente. Consulte os <a href="/termos-de-uso/">Termos de Uso</a> para conhecer as permissões de reutilização.</p>
+    <nav class="fontes-indice" aria-label="Categorias de fontes">
+      {grupos.map((g) => <a href={`#${g.id}`}>{g.titulo} <small>({g.itens.length})</small></a>)}
+    </nav>
+    {grupos.map((g) => (
+      <section class="fontes-grupo" aria-labelledby={g.id}>
+        <h2 id={g.id}>{g.titulo} <small>{g.itens.length}</small></h2>
+        <ol class="fontes-lista">
+          {g.itens.map((f) => (
+            <li>
+              <a class="fonte-titulo" href={f.url} target="_blank" rel="noopener noreferrer">{f.nome}<span class="sr-only"> (abre em nova aba)</span></a>
+              {f.credito && <p class="fonte-credito">{f.credito}</p>}
+              <a class="fonte-url" href={f.url} target="_blank" rel="noopener noreferrer">{f.url}</a>
+              {f.paginas.length > 0 && <p class="fonte-origem">No site: {f.paginas.map((p, i) => <>{i > 0 && ", "}<a href={p.href}>{p.titulo}</a></>)}</p>}
+            </li>
+          ))}
+        </ol>
+      </section>
+    ))}
+  </div></section>
 </Base>
+<style>
+  .fontes-site { max-width: 1000px; }
+  .fontes-nota { max-width: 75ch; color: var(--muted); margin: 0 0 24px; }
+  .fontes-nota a, .fonte-origem a { text-decoration: underline; text-underline-offset: 3px; }
+  .fontes-indice { display: flex; flex-wrap: wrap; gap: 8px; padding: 18px; border: 1px solid var(--border); border-radius: 12px; background: var(--white, #fff); margin-bottom: 36px; }
+  .fontes-indice a { font-size: .85rem; padding: 6px 10px; border-radius: 6px; background: var(--bg, #f8f9fa); }
+  .fontes-indice a:hover { color: var(--gold-strong); }
+  .fontes-grupo { margin-bottom: 40px; }
+  .fontes-grupo h2 { font-size: 1.35rem; scroll-margin-top: 100px; }
+  .fontes-grupo h2 small { font-size: .8rem; font-weight: 500; color: var(--muted); margin-left: 8px; }
+  .fontes-lista { padding-left: 26px; }
+  .fontes-lista li { padding: 14px 8px; border-bottom: 1px solid var(--border); overflow-wrap: anywhere; }
+  .fontes-lista li::marker { color: var(--muted); font-size: .85rem; }
+  .fonte-titulo { font-weight: 650; }
+  .fonte-titulo:hover { color: var(--gold-strong); }
+  .fonte-credito, .fonte-origem { color: var(--muted); font-size: .82rem; margin: 4px 0; }
+  .fonte-url { display: block; font-size: .8rem; color: var(--gold-strong); margin-top: 5px; }
+</style>

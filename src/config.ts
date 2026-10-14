@@ -7,8 +7,7 @@ export const SITE = {
   descricao:
     "Pesquisa aberta sobre eficiência de LLMs: embeddings, tokens, pesos e busca vetorial. Só entram caminhos com equação, custo e teste refutável.",
   autor: "Carlos Frederico Domínguez",
-  assinatura: "Apps by Vulcan",
-  assinaturaUrl: "https://byvulcan.com",
+  assinatura: "Mindscope Labs",
   repositorio: "https://github.com/freddominugez/Harpia-Project",
   // Repositório público desde 12/10/2026: o ícone do GitHub aparece no rodapé.
   repositorioPublico: true,
