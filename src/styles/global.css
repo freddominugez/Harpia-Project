@@ -359,7 +359,7 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fo
 .footer-social { display: flex; align-items: center; gap: 10px; padding-right: 18px; border-right: 1px solid #6b5a33; }
 .footer-social a { display: grid; place-items: center; width: 32px; height: 32px; color: #e6e8ea; border-radius: 6px; }
 .footer-social svg { width: 18px; height: 18px; }
-.footer-credit { display: flex; flex-direction: column; gap: 2px; font-size: .62rem; line-height: 1.35; color: #b5bcc2; text-align: right; white-space: nowrap; }
+.footer-credit { display: flex; flex-direction: column; gap: 2px; font-size: .62rem; line-height: 1.35; color: #b5bcc2; text-align: right; max-width: 310px; flex-shrink: 0; }
 .footer-credit b { color: #fff; font-weight: 650; }
 .footer-credit a { color: #d8aa50; text-decoration: underline; text-underline-offset: 2px; }
 

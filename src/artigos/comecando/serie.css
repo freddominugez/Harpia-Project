@@ -148,6 +148,7 @@ main a { color: var(--paris); text-underline-offset: 3px; }
 .cm-cite { margin-top: 28px; font-family: "Inter Variable", Inter, system-ui, sans-serif; font-size: 13px; line-height: 1.5; color: var(--muted); overflow-wrap: anywhere; }
 .cm-foot { border-top: 1px solid var(--line); }
 .cm-foot-in { max-width: 720px; margin: 0 auto; padding: 22px 16px 40px; font-family: "Inter Variable", Inter, system-ui, sans-serif; font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 18px; justify-content: space-between; }
+.cm-foot-links { display: flex; flex-wrap: wrap; gap: 8px 18px; width: 100%; }
 .cm-foot a { color: var(--muted); }
 .cm-foot b { color: var(--ink); font-weight: 600; }
 

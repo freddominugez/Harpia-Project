@@ -40,8 +40,13 @@ const ano = new Date().getFullYear();
     </main>
     <footer class="cm-foot">
       <div class="cm-foot-in">
-        <span><b>{SITE.autor}</b> - <a href={SITE.assinaturaUrl} target="_blank" rel="noopener noreferrer">{SITE.assinatura}</a></span>
-        <span>© {ano} {SITE.nome} · Conteúdo CC BY 4.0 · <a href="/">harpya.org</a></span>
+        <span><b>{SITE.assinatura}</b></span>
+        <span>© {ano} {SITE.nome}. Todos os direitos reservados, ressalvadas as licenças CC BY 4.0 e MIT.</span>
+        <nav class="cm-foot-links" aria-label="Links do rodapé">
+          <a href="/termos-de-uso/">Termos de Uso</a>
+          <a href="/biblioteca/fontes/">Fontes do site</a>
+          <a href="/">harpya.org</a>
+        </nav>
       </div>
     </footer>
   </body>
