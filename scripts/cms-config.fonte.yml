@@ -126,6 +126,8 @@ collections:
       - { label: "Resumo em português", name: resumo, widget: text }
       - { label: "Número no catálogo original", name: catalogo, widget: number, value_type: int, required: false }
       - { label: "Trilha", name: trilha, widget: select, options: [{ label: "Matemática", value: mat }, { label: "Redes neurais", value: redes }, { label: "LLMs", value: llm }], default: llm }
+      - { label: "Idioma", name: idioma, widget: select, options: [{ label: "Português", value: pt }, { label: "Inglês", value: en }, { label: "Espanhol", value: es }], default: en, hint: "Idioma falado no vídeo (confira pela legenda automática)" }
+      - { label: "Tem dublagem automática em português", name: dublagem_pt, widget: boolean, default: false, required: false }
       - *fonte
       - *status
       - *origem
@@ -168,6 +170,8 @@ collections:
       - { label: "Título", name: titulo, widget: string }
       - { label: "Autores e evento", name: autores, widget: string, hint: "Ex.: Weber, Schek, Blott · VLDB" }
       - { label: "URL (DOI, arXiv ou PDF oficial)", name: url, widget: string, pattern: ["^https?://", "Endereço completo."] }
+      - { label: "PDF do próprio artigo", name: pdf_url, widget: string, required: false, hint: "Link direto para o PDF. No arXiv: arxiv.org/pdf/NÚMERO. O título passa a abrir o PDF." }
+      - { label: "Idioma", name: idioma, widget: select, options: [{ label: "Português", value: pt }, { label: "Inglês", value: en }, { label: "Espanhol", value: es }], default: en }
       - { label: "Grupo", name: grupo, widget: select, options: [{ label: "Fundamentos", value: fund }, { label: "Busca e quantização", value: busca }, { label: "Arte prévia", value: arte }] }
       - { label: "Selo", name: selo, <<: *selo }
       - { label: "Rótulo (qual caminho sustenta)", name: rotulo, widget: string }
@@ -199,6 +203,8 @@ collections:
       - { label: "Capa", name: capa, widget: image, required: false, default: "", media_folder: /public/img/livros, public_folder: /img/livros, hint: "Imagem 360 px de largura, proporção 2:3" }
       - { label: "Link da edição online oficial", name: url, widget: string, required: false, default: "" }
       - { label: "Link de compra", name: compra_url, widget: string, required: false, default: "" }
+      - { label: "Idioma", name: idioma, widget: select, options: [{ label: "Português", value: pt }, { label: "Inglês", value: en }, { label: "Espanhol", value: es }], default: en, hint: "Idioma da edição listada" }
+      - { label: "Edição em português", name: edicao_pt, widget: object, required: false, collapsed: true, fields: [{ label: "Título em português", name: titulo, widget: string }, { label: "Editora", name: editora, widget: string }, { label: "Ano", name: ano, widget: number, value_type: int, required: false }] }
       - { label: "Cor da capa", name: cor, widget: select, options: [c1, c2, c3, c4, c5, c6], default: c1 }
       - { label: "URL de origem", name: fonte_url, widget: string, required: false, default: "" }
       - *status

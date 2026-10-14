@@ -15,5 +15,11 @@
   "resenha": "Itens curtos com regras práticas para usar C++ bem: construtores, gestão de recursos, herança, templates e armadilhas comuns.",
   "categoria": "comp",
   "capa": "/img/livros/effective-c.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Effective%20C%2B%2B"
+  "compra_url": "https://www.amazon.com.br/s?k=Effective%20C%2B%2B",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "C++ Eficaz: 55 maneiras de aprimorar seus programas e projetos",
+    "editora": "Bookman",
+    "ano": 2011
+  }
 }

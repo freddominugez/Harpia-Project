@@ -15,5 +15,6 @@
   "resenha": "Visão computacional moderna: formação de imagem, atributos, geometria de múltiplas vistas, reconstrução 3D e reconhecimento.",
   "categoria": "ml",
   "capa": "/img/livros/computer-vision.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Computer%20Vision%20Szeliski"
+  "compra_url": "https://www.amazon.com.br/s?k=Computer%20Vision%20Szeliski",
+  "idioma": "en"
 }

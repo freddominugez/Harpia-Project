@@ -9,8 +9,8 @@ const lista = <T extends Status>(mods: Record<string, unknown>, todos = false): 
     .filter((x) => todos || x.status === undefined || x.status === "publicado")
     .sort((a, b) => Number(a.ordem ?? 999) - Number(b.ordem ?? 999));
 
-export type Artigo = { ano: number; titulo: string; autores: string; url: string; grupo: string; selo: "medido" | "arte" | "lacuna" | "teste"; rotulo: string };
-export type Livro = { titulo: string; autores: string; nota: string; uso: string; url: string; cor: string; ano?: number; resenha?: string; categoria?: string; capa?: string; compra_url?: string };
+export type Artigo = { ano: number; titulo: string; autores: string; url: string; pdf_url?: string; idioma?: string; grupo: string; selo: "medido" | "arte" | "lacuna" | "teste"; rotulo: string };
+export type Livro = { titulo: string; autores: string; nota: string; uso: string; url: string; cor: string; ano?: number; resenha?: string; categoria?: string; capa?: string; compra_url?: string; idioma?: string; edicao_pt?: { titulo: string; editora: string; ano?: number } };
 export const CATEGORIAS_LIVRO: [string, string][] = [["mat", "Matemática e estatística"], ["ml", "Aprendizado de máquina"], ["ling", "Linguagem e informação"], ["ia", "IA e sociedade"], ["comp", "Ciência da computação"], ["eng", "Engenharia de software e dados"]];
 export type Fonte = { nome: string; url: string; descricao: string; grupo: string; grupo_ordem: number };
 export type Feed = { nome: string; url: string; nota?: string; so_titulo?: boolean };
@@ -46,3 +46,6 @@ export const LINHA_COM_ERAS = (() => {
 })();
 
 export { lista };
+
+/** Nomes dos idiomas usados nos filtros de biblioteca, artigos e vídeos. */
+export const IDIOMAS: Record<string, string> = { pt: "Português", en: "Inglês", es: "Espanhol" };

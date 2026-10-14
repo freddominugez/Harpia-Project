@@ -15,5 +15,11 @@
   "resenha": "Referência ampla de matemática para engenharia: equações diferenciais, álgebra linear, análise complexa e métodos numéricos.",
   "categoria": "mat",
   "capa": "/img/livros/advanced-engineering-mathematics.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Advanced%20Engineering%20Mathematics"
+  "compra_url": "https://www.amazon.com.br/s?k=Advanced%20Engineering%20Mathematics",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Matemática Superior para Engenharia",
+    "editora": "LTC",
+    "ano": 2009
+  }
 }

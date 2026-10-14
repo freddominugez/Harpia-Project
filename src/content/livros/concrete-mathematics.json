@@ -15,5 +15,11 @@
   "resenha": "A matemática por trás da análise de algoritmos: somas, recorrências, coeficientes binomiais, funções geradoras e teoria dos números.",
   "categoria": "mat",
   "capa": "/img/livros/concrete-mathematics.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Concrete%20Mathematics%20%28Knuth%29"
+  "compra_url": "https://www.amazon.com.br/s?k=Concrete%20Mathematics%20%28Knuth%29",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Matemática Concreta: fundamentos para a ciência da computação",
+    "editora": "LTC",
+    "ano": 1995
+  }
 }

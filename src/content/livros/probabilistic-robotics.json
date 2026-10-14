@@ -15,5 +15,6 @@
   "resenha": "Técnicas probabilísticas para robôs que percebem e agem sob incerteza: filtros de Kalman e de partículas, localização e SLAM.",
   "categoria": "ml",
   "capa": "/img/livros/probabilistic-robotics.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Probabilistic%20Robotics"
+  "compra_url": "https://www.amazon.com.br/s?k=Probabilistic%20Robotics",
+  "idioma": "en"
 }

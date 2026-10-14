@@ -15,5 +15,11 @@
   "resenha": "Uma introdução visual, amigável e ilustrada aos algoritmos clássicos de programação.",
   "categoria": "comp",
   "capa": "/img/livros/grokking-algorithms.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Grokking+Algorithms"
+  "compra_url": "https://www.amazon.com.br/s?k=Grokking+Algorithms",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Entendendo Algoritmos: um guia ilustrado para programadores e outros curiosos",
+    "editora": "Novatec",
+    "ano": 2017
+  }
 }

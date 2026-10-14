@@ -15,5 +15,6 @@
   "resenha": "Curso de estatística bayesiana construído com modelos causais e simulação, com exemplos em R e Stan.",
   "categoria": "mat",
   "capa": "/img/livros/statistical-rethinking.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Statistical%20Rethinking"
+  "compra_url": "https://www.amazon.com.br/s?k=Statistical%20Rethinking",
+  "idioma": "en"
 }

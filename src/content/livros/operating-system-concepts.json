@@ -15,5 +15,11 @@
   "resenha": "O texto clássico de sistemas operacionais: processos, threads, escalonamento, memória virtual, sistemas de arquivos e concorrência.",
   "categoria": "comp",
   "capa": "/img/livros/operating-system-concepts.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Operating%20System%20Concepts"
+  "compra_url": "https://www.amazon.com.br/s?k=Operating%20System%20Concepts",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Fundamentos de Sistemas Operacionais",
+    "editora": "LTC",
+    "ano": 2015
+  }
 }

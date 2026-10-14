@@ -15,5 +15,11 @@
   "resenha": "O melhor livro atual sobre arquitetura de sistemas distribuídos, bancos de dados e escalabilidade.",
   "categoria": "eng",
   "capa": "/img/livros/designing-data-intensive-applications.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Designing+Data-Intensive"
+  "compra_url": "https://www.amazon.com.br/s?k=Designing+Data-Intensive",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Projetando Aplicações com Uso Intensivo de Dados: os pilares para construir sistemas confiáveis, escaláveis e fáceis de manter",
+    "editora": "Novatec",
+    "ano": 2026
+  }
 }

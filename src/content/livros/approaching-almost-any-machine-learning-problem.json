@@ -15,5 +15,6 @@
   "resenha": "Guia prático, centrado em código, para estruturar projetos de aprendizado de máquina: validação cruzada, atributos, avaliação e reprodutibilidade.",
   "categoria": "ml",
   "capa": "/img/livros/approaching-almost-any-machine-learning-problem.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Approaching%20Any%20Machine%20Learning%20Problem"
+  "compra_url": "https://www.amazon.com.br/s?k=Approaching%20Any%20Machine%20Learning%20Problem",
+  "idioma": "en"
 }

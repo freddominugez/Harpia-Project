@@ -15,5 +15,6 @@
   "resenha": "O curso clássico do MIT sobre abstração e construção de programas, ensinado em Scheme.",
   "categoria": "comp",
   "capa": "/img/livros/structure-and-interpretation-of-computer-programs.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Structure%20and%20Interpretation%20of%20Computer%20Programs"
+  "compra_url": "https://www.amazon.com.br/s?k=Structure%20and%20Interpretation%20of%20Computer%20Programs",
+  "idioma": "en"
 }

@@ -15,5 +15,6 @@
   "resenha": "Fundamentos de como sistemas de busca funcionam: índice invertido, ranqueamento, avaliação, classificação de texto e busca na web.",
   "categoria": "ling",
   "capa": "/img/livros/introduction-to-information-retrieval.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Introduction+to+Information+Retrieval"
+  "compra_url": "https://www.amazon.com.br/s?k=Introduction+to+Information+Retrieval",
+  "idioma": "en"
 }

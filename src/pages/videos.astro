@@ -10,6 +10,9 @@ import { VIDEOS, MODULOS, NIVEIS, NIVEL_SLUG, rotuloModulo } from "../lib/videos
 const porModulo = MODULOS.map((m) => ({ m, videos: VIDEOS.filter((v) => v.modulo === m.numero) })).filter((g) => g.videos.length);
 const canais = new Set(VIDEOS.map((v) => v.canal)).size;
 const contaNivel = (n: string) => VIDEOS.filter((v) => v.nivel === n).length;
+const nPt = VIDEOS.filter((v) => v.idioma === "pt").length;
+const nEn = VIDEOS.filter((v) => (v.idioma ?? "en") === "en").length;
+const nDub = VIDEOS.filter((v) => v.dublagem_pt).length;
 ---
 <Base titulo="Vídeos" descricao={`Catálogo de ${VIDEOS.length} vídeos sobre LLMs, do token ao raciocínio, organizado em ${porModulo.length} módulos e três níveis, com resumo em português.`}>
   <PageIntro
@@ -22,6 +25,7 @@ const contaNivel = (n: string) => VIDEOS.filter((v) => v.nivel === n).length;
       <Tag variante="gold">{VIDEOS.length} vídeos</Tag>
       <Tag>{porModulo.length} módulos</Tag>
       <Tag>{canais} canais</Tag>
+      <Tag>{`${nPt} em português`}</Tag>
       {NIVEIS.map((n) => <Tag>{`${contaNivel(n)} ${n.toLowerCase()}`}</Tag>)}
     </div>
   </PageIntro>
@@ -34,6 +38,15 @@ const contaNivel = (n: string) => VIDEOS.filter((v) => v.nivel === n).length;
           <div class="filters" role="group" aria-labelledby="rot-nivel">
             <button type="button" data-f-nivel="todos" aria-pressed="true">Todos</button>
             {NIVEIS.map((n) => <button type="button" data-f-nivel={NIVEL_SLUG[n]} aria-pressed="false">{n}</button>)}
+          </div>
+        </div>
+        <div class="vfilter-group">
+          <span class="vfilter-label" id="rot-idioma">Idioma</span>
+          <div class="filters" role="group" aria-labelledby="rot-idioma">
+            <button type="button" data-f-idioma="todos" aria-pressed="true">Todos</button>
+            <button type="button" data-f-idioma="pt" aria-pressed="false">Português <span>{nPt}</span></button>
+            <button type="button" data-f-idioma="en" aria-pressed="false">Inglês <span>{nEn}</span></button>
+            <button type="button" data-f-idioma="dub" aria-pressed="false">Dublagem em português <span>{nDub}</span></button>
           </div>
         </div>
         <div class="vfilter-group">
@@ -51,7 +64,7 @@ const contaNivel = (n: string) => VIDEOS.filter((v) => v.nivel === n).length;
           <header class="vmod-head">
             <img class="icon gold" src={`/icons/${m.icone}.svg`} alt="" aria-hidden="true" width="30" height="30" />
             <div>
-              <span class="vmod-num">{rotuloModulo(m.numero)} · {videos.length} vídeos</span>
+              <span class="vmod-num">{rotuloModulo(m.numero)} · <span data-conta-mod>{videos.length}</span> vídeos</span>
               <h2 id={`h-mod-${m.numero}`}>{m.titulo}</h2>
               {m.subtitulo && <p>{m.subtitulo}</p>}
             </div>
@@ -61,7 +74,7 @@ const contaNivel = (n: string) => VIDEOS.filter((v) => v.nivel === n).length;
             const doNivel = videos.filter((v) => v.nivel === n);
             return doNivel.length > 0 && (
               <div class="vlevel" data-nivel={NIVEL_SLUG[n]}>
-                <h3 class="vlevel-title"><span class={`vcard-nivel n-${NIVEL_SLUG[n]}`}>{n}</span><span>{doNivel.length} {doNivel.length === 1 ? "vídeo" : "vídeos"}</span></h3>
+                <h3 class="vlevel-title"><span class={`vcard-nivel n-${NIVEL_SLUG[n]}`}>{n}</span><span data-conta>{doNivel.length} {doNivel.length === 1 ? "vídeo" : "vídeos"}</span></h3>
                 <div class="vstack">{doNivel.map((v) => <VideoCard v={v} />)}</div>
               </div>
             );
@@ -69,14 +82,14 @@ const contaNivel = (n: string) => VIDEOS.filter((v) => v.nivel === n).length;
           </div>
         </section>
       ))}
-      <p class="vempty" data-f-vazio hidden>Nenhum vídeo com esses filtros. Escolha outro nível ou módulo.</p>
+      <p class="vempty" data-f-vazio hidden>Nenhum vídeo com esses filtros. Escolha outro nível, idioma ou módulo.</p>
 
       <section class="panel vcriteria" aria-labelledby="h-criterios">
         <h2 id="h-criterios">Critérios do catálogo</h2>
         <ul>
           <li><b>Módulos por tema.</b> Do token e dos embeddings até RAG, arquiteturas densas, Mixture of Experts, fine-tuning, alinhamento, agentes, multimodalidade, inferência e o que vem depois do Transformer. O módulo 00 reúne a matemática e as redes neurais que vêm antes.</li>
           <li><b>Três níveis.</b> Iniciante: intuição, sem código. Intermediário: matemática acessível ou código prático. Avançado: aulas acadêmicas, leitura de artigos e implementação.</li>
-          <li><b>Resumo em português</b> do que o vídeo realmente ensina. Os vídeos são em inglês, quase todos com legendas automáticas.</li>
+          <li><b>Resumo em português</b> do que o vídeo realmente ensina. {nPt} vídeos são falados em português e {nEn} em inglês, quase todos com legendas automáticas; {nDub} dos vídeos em inglês têm dublagem automática em português no YouTube (menu de engrenagem, faixa de áudio). O idioma foi conferido pela legenda automática de cada vídeo em 14/10/2026.</li>
           <li><b>Link conferido.</b> Cada vídeo foi conferido no YouTube em 12/10/2026, com título e canal reais. Quando o vídeo indicado no rascunho do catálogo não existia, entrou o vídeo real mais próximo do mesmo tema e nível, de preferência do mesmo canal ou do autor do trabalho.</li>
           <li><b>Curadoria contínua.</b> Novas sugestões chegam toda semana em um pull request e só entram depois de revisão.</li>
         </ul>
@@ -97,11 +110,16 @@ const contaNivel = (n: string) => VIDEOS.filter((v) => v.nivel === n).length;
 <script>
   const root = document.querySelector<HTMLElement>("[data-catalogo]");
   if (root) {
-    const botoes = [...root.querySelectorAll<HTMLButtonElement>("[data-f-nivel]")];
+    const botoesNivel = [...root.querySelectorAll<HTMLButtonElement>("[data-f-nivel]")];
+    const botoesIdioma = [...root.querySelectorAll<HTMLButtonElement>("[data-f-idioma]")];
     const sel = root.querySelector<HTMLSelectElement>("[data-f-modulo]");
     const total = root.querySelector<HTMLElement>("[data-f-total]");
     const vazio = root.querySelector<HTMLElement>("[data-f-vazio]");
     let nivel = "todos";
+    let idioma = "todos";
+
+    const idiomaOk = (c: HTMLElement) =>
+      idioma === "todos" || (idioma === "dub" ? c.dataset.dub === "sim" : c.dataset.idioma === idioma);
 
     function aplicar() {
       const mod = sel?.value ?? "todos";
@@ -110,23 +128,37 @@ const contaNivel = (n: string) => VIDEOS.filter((v) => v.nivel === n).length;
         const okMod = mod === "todos" || sec.dataset.modulo === mod;
         let visiveisNoModulo = 0;
         sec.querySelectorAll<HTMLElement>(".vlevel").forEach((lv) => {
-          const ok = okMod && (nivel === "todos" || lv.dataset.nivel === nivel);
-          lv.hidden = !ok;
-          if (ok) visiveisNoModulo += lv.querySelectorAll(".vcard").length;
+          const okNivel = okMod && (nivel === "todos" || lv.dataset.nivel === nivel);
+          let visiveis = 0;
+          lv.querySelectorAll<HTMLElement>(".vcard").forEach((c) => {
+            const ok = okNivel && idiomaOk(c);
+            c.hidden = !ok;
+            if (ok) visiveis++;
+          });
+          lv.hidden = visiveis === 0;
+          const conta = lv.querySelector<HTMLElement>("[data-conta]");
+          if (conta) conta.textContent = `${visiveis} ${visiveis === 1 ? "vídeo" : "vídeos"}`;
+          visiveisNoModulo += visiveis;
         });
         sec.hidden = visiveisNoModulo === 0;
+        const contaMod = sec.querySelector<HTMLElement>("[data-conta-mod]");
+        if (contaMod) contaMod.textContent = String(visiveisNoModulo);
         n += visiveisNoModulo;
       });
       if (total) total.textContent = String(n);
       if (vazio) vazio.hidden = n > 0;
     }
 
-    botoes.forEach((b) => b.addEventListener("click", () => {
-      botoes.forEach((x) => x.setAttribute("aria-pressed", "false"));
-      b.setAttribute("aria-pressed", "true");
-      nivel = b.dataset.fNivel ?? "todos";
-      aplicar();
-    }));
+    function grupo(botoes: HTMLButtonElement[], definir: (v: string) => void, chave: "fNivel" | "fIdioma") {
+      botoes.forEach((b) => b.addEventListener("click", () => {
+        botoes.forEach((x) => x.setAttribute("aria-pressed", "false"));
+        b.setAttribute("aria-pressed", "true");
+        definir(b.dataset[chave] ?? "todos");
+        aplicar();
+      }));
+    }
+    grupo(botoesNivel, (v) => (nivel = v), "fNivel");
+    grupo(botoesIdioma, (v) => (idioma = v), "fIdioma");
     sel?.addEventListener("change", () => {
       aplicar();
       if (sel.value !== "todos") document.getElementById(`modulo-${sel.value}`)?.scrollIntoView({ behavior: "smooth", block: "start" });

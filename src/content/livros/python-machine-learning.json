@@ -15,5 +15,6 @@
   "resenha": "Aprendizado de máquina com Python, da intuição de cada algoritmo ao código, passando por avaliação de modelos e redes neurais.",
   "categoria": "ml",
   "capa": "/img/livros/python-machine-learning.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Python%20Machine%20Learning"
+  "compra_url": "https://www.amazon.com.br/s?k=Python%20Machine%20Learning",
+  "idioma": "en"
 }

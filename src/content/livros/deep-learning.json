@@ -15,5 +15,6 @@
   "resenha": "A 'Bíblia' do Deep Learning, cobrindo desde conceitos básicos até arquiteturas complexas de redes neurais.",
   "categoria": "ml",
   "capa": "/img/livros/deep-learning.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Deep+Learning+Goodfellow"
+  "compra_url": "https://www.amazon.com.br/s?k=Deep+Learning+Goodfellow",
+  "idioma": "en"
 }

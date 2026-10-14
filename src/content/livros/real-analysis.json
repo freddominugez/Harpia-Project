@@ -15,5 +15,6 @@
   "resenha": "Análise real com espaços métricos, continuidade, sequências de funções e uma introdução à integral de Lebesgue.",
   "categoria": "mat",
   "capa": "/img/livros/real-analysis.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Real%20Analysis%20%28Carothers%29"
+  "compra_url": "https://www.amazon.com.br/s?k=Real%20Analysis%20%28Carothers%29",
+  "idioma": "en"
 }

@@ -15,5 +15,6 @@
   "resenha": "Tratamento bayesiano e rigoroso de reconhecimento de padrões: modelos lineares, redes neurais, métodos de núcleo e modelos gráficos.",
   "categoria": "ml",
   "capa": "/img/livros/pattern-recognition-and-machine-learning.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Pattern%20Recognition%20and%20Machine%20Learning%20%28Bishop%29"
+  "compra_url": "https://www.amazon.com.br/s?k=Pattern%20Recognition%20and%20Machine%20Learning%20%28Bishop%29",
+  "idioma": "en"
 }

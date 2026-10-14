@@ -15,5 +15,11 @@
   "resenha": "Guia indispensável sobre visualização de dados e como comunicar insights numéricos de forma clara.",
   "categoria": "eng",
   "capa": "/img/livros/storytelling-with-data.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Storytelling+with+Data"
+  "compra_url": "https://www.amazon.com.br/s?k=Storytelling+with+Data",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Storytelling com Dados: um guia sobre visualização de dados para profissionais de negócios",
+    "editora": "Alta Books",
+    "ano": 2019
+  }
 }

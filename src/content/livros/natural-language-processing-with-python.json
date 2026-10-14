@@ -15,5 +15,6 @@
   "resenha": "Processamento de linguagem natural com Python e a biblioteca NLTK: tokenização, marcação gramatical, classificação de texto e análise sintática.",
   "categoria": "ling",
   "capa": "/img/livros/natural-language-processing-with-python.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Natural%20Language%20Processing%20with%20Python"
+  "compra_url": "https://www.amazon.com.br/s?k=Natural%20Language%20Processing%20with%20Python",
+  "idioma": "en"
 }

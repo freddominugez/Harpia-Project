@@ -15,5 +15,11 @@
   "resenha": "O livro do dragão: análise léxica e sintática, tradução dirigida por sintaxe, otimização e geração de código.",
   "categoria": "comp",
   "capa": "/img/livros/compilers.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Compilers%3A%20Principles%2C%20Techniques%2C%20Tools"
+  "compra_url": "https://www.amazon.com.br/s?k=Compilers%3A%20Principles%2C%20Techniques%2C%20Tools",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Compiladores: princípios, técnicas e ferramentas",
+    "editora": "Pearson",
+    "ano": 2008
+  }
 }

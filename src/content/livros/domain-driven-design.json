@@ -15,5 +15,11 @@
   "resenha": "Lidando com a complexidade no coração do software focando no modelo de domínio e linguagem ubíqua.",
   "categoria": "eng",
   "capa": "/img/livros/domain-driven-design.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Domain-Driven+Design"
+  "compra_url": "https://www.amazon.com.br/s?k=Domain-Driven+Design",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Domain-Driven Design: atacando as complexidades no coração do software",
+    "editora": "Alta Books",
+    "ano": 2010
+  }
 }

@@ -15,5 +15,11 @@
   "resenha": "O livro de Kernighan e Ritchie que definiu a linguagem C: curto, preciso e com exercícios que ainda servem de referência.",
   "categoria": "comp",
   "capa": "/img/livros/the-c-programming-language.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=The%20C%20Programming%20Language"
+  "compra_url": "https://www.amazon.com.br/s?k=The%20C%20Programming%20Language",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "C: a linguagem de programação",
+    "editora": "Campus",
+    "ano": 1986
+  }
 }

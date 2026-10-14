@@ -15,5 +15,6 @@
   "resenha": "Deep learning explicado pelo criador do Keras, com ênfase em intuição, boas práticas e código executável.",
   "categoria": "ml",
   "capa": "/img/livros/deep-learning-with-python.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Deep%20Learning%20with%20Python"
+  "compra_url": "https://www.amazon.com.br/s?k=Deep%20Learning%20with%20Python",
+  "idioma": "en"
 }

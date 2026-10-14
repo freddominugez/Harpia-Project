@@ -15,5 +15,6 @@
   "resenha": "Livro online que constrói do zero uma rede neural para reconhecer dígitos e explica a retropropagação com clareza rara.",
   "categoria": "ml",
   "capa": "",
-  "compra_url": "https://www.amazon.com.br/s?k=Neural%20Networks%20and%20Deep%20Learning"
+  "compra_url": "https://www.amazon.com.br/s?k=Neural%20Networks%20and%20Deep%20Learning",
+  "idioma": "en"
 }

@@ -15,5 +15,11 @@
   "resenha": "Redes de computadores explicadas de cima para baixo, da camada de aplicação (HTTP, DNS) até o enlace, com foco na Internet.",
   "categoria": "comp",
   "capa": "/img/livros/computer-networking.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Computer%20Networking%20Top-Down"
+  "compra_url": "https://www.amazon.com.br/s?k=Computer%20Networking%20Top-Down",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Redes de Computadores e a Internet: uma abordagem top-down",
+    "editora": "Pearson",
+    "ano": 2013
+  }
 }

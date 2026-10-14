@@ -1,17 +1,20 @@
 ---
-// Item de vídeo do catálogo, empilhado na coluna do seu nível: miniatura real do YouTube, título, canal e resumo.
+// Item de vídeo do catálogo, empilhado na coluna do seu nível: miniatura real do YouTube, título, canal, idioma e resumo.
 import { thumb, urlVideo, NIVEL_SLUG, type Video } from "../lib/videos";
+import { IDIOMAS } from "../lib/conteudo";
 interface Props { v: Video }
 const { v } = Astro.props;
+const idioma = v.idioma ?? "en";
+const rotuloIdioma = idioma === "pt" ? "Em português" : `Em ${IDIOMAS[idioma].toLowerCase()}${v.dublagem_pt ? " · dublagem em português" : ""}`;
 ---
-<a class="vcard" href={urlVideo(v.id)} target="_blank" rel="noopener noreferrer" data-nivel={NIVEL_SLUG[v.nivel]} aria-label={`${v.titulo}, de ${v.canal}. Nível ${v.nivel}. Abre o YouTube em nova aba`}>
+<a class="vcard" href={urlVideo(v.id)} target="_blank" rel="noopener noreferrer" data-nivel={NIVEL_SLUG[v.nivel]} data-idioma={idioma} data-dub={v.dublagem_pt ? "sim" : "nao"} aria-label={`${v.titulo}, de ${v.canal}. Nível ${v.nivel}. ${rotuloIdioma}. Abre o YouTube em nova aba`}>
   <span class="vcard-th">
     <img src={thumb(v.id)} alt="" loading="lazy" decoding="async" width="320" height="180" />
     <span class="vcard-play" aria-hidden="true"></span>
   </span>
   <span class="vcard-body">
     <b>{v.titulo}</b>
-    <small>{v.canal}</small>
+    <small>{v.canal} · <span class={`vcard-idioma i-${idioma}`}>{rotuloIdioma}</span></small>
     <span class="vcard-resumo">{v.resumo}</span>
   </span>
 </a>

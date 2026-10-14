@@ -15,5 +15,11 @@
   "resenha": "Manipulação e análise de dados com pandas, NumPy e Jupyter, escrito pelo criador do pandas.",
   "categoria": "eng",
   "capa": "/img/livros/python-for-data-analysis.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Python%20for%20Data%20Analysis"
+  "compra_url": "https://www.amazon.com.br/s?k=Python%20for%20Data%20Analysis",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Python para Análise de Dados: tratamento de dados com pandas, NumPy & Jupyter",
+    "editora": "Novatec",
+    "ano": 2023
+  }
 }

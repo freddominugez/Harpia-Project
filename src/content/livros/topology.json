@@ -15,5 +15,6 @@
   "resenha": "O texto padrão de topologia geral, com uma introdução à topologia algébrica pelo grupo fundamental.",
   "categoria": "mat",
   "capa": "/img/livros/topology.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Topology%20%28Munkres%29"
+  "compra_url": "https://www.amazon.com.br/s?k=Topology%20%28Munkres%29",
+  "idioma": "en"
 }

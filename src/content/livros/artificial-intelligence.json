@@ -15,5 +15,11 @@
   "resenha": "O livro-texto de referência em inteligência artificial: busca, lógica, planejamento, raciocínio sob incerteza, aprendizado e percepção.",
   "categoria": "ia",
   "capa": "/img/livros/artificial-intelligence.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Artificial%20Intelligence%3A%20A%20Modern%20Approach"
+  "compra_url": "https://www.amazon.com.br/s?k=Artificial%20Intelligence%3A%20A%20Modern%20Approach",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Inteligência Artificial",
+    "editora": "Elsevier",
+    "ano": 2013
+  }
 }

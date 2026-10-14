@@ -15,5 +15,11 @@
   "resenha": "A referência padrão de algoritmos e estruturas de dados, com análise de complexidade e provas de correção.",
   "categoria": "comp",
   "capa": "/img/livros/introduction-to-algorithms.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Introduction%20to%20Algorithms%20%28Cormen%29"
+  "compra_url": "https://www.amazon.com.br/s?k=Introduction%20to%20Algorithms%20%28Cormen%29",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Algoritmos: Teoria e Prática",
+    "editora": "GEN LTC",
+    "ano": 2024
+  }
 }

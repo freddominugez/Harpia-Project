@@ -15,5 +15,11 @@
   "resenha": "Princípios de design de arquitetura de software para isolar dependências e criar sistemas robustos.",
   "categoria": "eng",
   "capa": "/img/livros/clean-architecture.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Clean+Architecture"
+  "compra_url": "https://www.amazon.com.br/s?k=Clean+Architecture",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Arquitetura Limpa: o guia do artesão para estrutura e design de software",
+    "editora": "Alta Books",
+    "ano": 2019
+  }
 }

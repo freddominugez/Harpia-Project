@@ -270,6 +270,23 @@ collections:
     - label: LLMs
       value: llm
     default: llm
+  - label: Idioma
+    name: idioma
+    widget: select
+    options:
+    - label: Português
+      value: pt
+    - label: Inglês
+      value: en
+    - label: Espanhol
+      value: es
+    default: en
+    hint: Idioma falado no vídeo (confira pela legenda automática)
+  - label: Tem dublagem automática em português
+    name: dublagem_pt
+    widget: boolean
+    default: false
+    required: false
   - label: URL de origem
     name: fonte_url
     widget: string
@@ -390,6 +407,22 @@ collections:
     pattern:
     - ^https?://
     - Endereço completo.
+  - label: PDF do próprio artigo
+    name: pdf_url
+    widget: string
+    required: false
+    hint: 'Link direto para o PDF. No arXiv: arxiv.org/pdf/NÚMERO. O título passa a abrir o PDF.'
+  - label: Idioma
+    name: idioma
+    widget: select
+    options:
+    - label: Português
+      value: pt
+    - label: Inglês
+      value: en
+    - label: Espanhol
+      value: es
+    default: en
   - label: Grupo
     name: grupo
     widget: select
@@ -531,6 +564,35 @@ collections:
     widget: string
     required: false
     default: ''
+  - label: Idioma
+    name: idioma
+    widget: select
+    options:
+    - label: Português
+      value: pt
+    - label: Inglês
+      value: en
+    - label: Espanhol
+      value: es
+    default: en
+    hint: Idioma da edição listada
+  - label: Edição em português
+    name: edicao_pt
+    widget: object
+    required: false
+    collapsed: true
+    fields:
+    - label: Título em português
+      name: titulo
+      widget: string
+    - label: Editora
+      name: editora
+      widget: string
+    - label: Ano
+      name: ano
+      widget: number
+      value_type: int
+      required: false
   - label: Cor da capa
     name: cor
     widget: select

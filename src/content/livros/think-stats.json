@@ -15,5 +15,11 @@
   "resenha": "Estatística exploratória e probabilidade aprendidas programando em Python, com dados reais.",
   "categoria": "mat",
   "capa": "/img/livros/think-stats.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Think%20Stats"
+  "compra_url": "https://www.amazon.com.br/s?k=Think%20Stats",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Pense em Estatística",
+    "editora": "Novatec",
+    "ano": 2025
+  }
 }

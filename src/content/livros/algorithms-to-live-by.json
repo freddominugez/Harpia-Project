@@ -15,5 +15,11 @@
   "resenha": "Aplica conceitos da ciência da computação para resolver problemas do dia a dia humano.",
   "categoria": "ia",
   "capa": "/img/livros/algorithms-to-live-by.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Algorithms+to+Live+By"
+  "compra_url": "https://www.amazon.com.br/s?k=Algorithms+to+Live+By",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Algoritmos para viver: a ciência exata das decisões humanas",
+    "editora": "Companhia das Letras",
+    "ano": 2017
+  }
 }

@@ -15,5 +15,6 @@
   "resenha": "A referência em análise bayesiana aplicada: modelos hierárquicos, computação por MCMC e verificação de modelos.",
   "categoria": "mat",
   "capa": "/img/livros/bayesian-data-analysis.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Bayesian%20Data%20Analysis"
+  "compra_url": "https://www.amazon.com.br/s?k=Bayesian%20Data%20Analysis",
+  "idioma": "en"
 }

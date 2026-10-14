@@ -15,5 +15,11 @@
   "resenha": "Análise dos caminhos, perigos e estratégias em relação à criação de uma IA que supera a inteligência humana.",
   "categoria": "ia",
   "capa": "/img/livros/superintelligence.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Superintelligence"
+  "compra_url": "https://www.amazon.com.br/s?k=Superintelligence",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Superinteligência: caminhos, perigos e estratégias para um novo mundo",
+    "editora": "DarkSide Books",
+    "ano": 2018
+  }
 }

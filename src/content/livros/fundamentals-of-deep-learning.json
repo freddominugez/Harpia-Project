@@ -15,5 +15,6 @@
   "resenha": "Introdução às arquiteturas de deep learning, de redes convolucionais e recorrentes a embeddings, com implementações comentadas.",
   "categoria": "ml",
   "capa": "/img/livros/fundamentals-of-deep-learning.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Fundamentals%20of%20Deep%20Learning"
+  "compra_url": "https://www.amazon.com.br/s?k=Fundamentals%20of%20Deep%20Learning",
+  "idioma": "en"
 }

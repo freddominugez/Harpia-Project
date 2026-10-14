@@ -15,5 +15,6 @@
   "resenha": "Aprendizado de máquina apresentado de forma unificada pela ótica probabilística, com amplo uso de modelos gráficos.",
   "categoria": "ml",
   "capa": "/img/livros/machine-learning.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Machine%20Learning%3A%20A%20Probabilistic%20Perspective"
+  "compra_url": "https://www.amazon.com.br/s?k=Machine%20Learning%3A%20A%20Probabilistic%20Perspective",
+  "idioma": "en"
 }

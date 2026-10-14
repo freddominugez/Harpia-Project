@@ -15,5 +15,11 @@
   "resenha": "Exploração filosófica e científica sobre o futuro da humanidade na era da inteligência artificial geral.",
   "categoria": "ia",
   "capa": "/img/livros/life-3-0.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Life+3.0"
+  "compra_url": "https://www.amazon.com.br/s?k=Life+3.0",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Vida 3.0: o ser humano na era da inteligência artificial",
+    "editora": "Benvirá",
+    "ano": 2020
+  }
 }

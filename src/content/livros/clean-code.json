@@ -15,5 +15,11 @@
   "resenha": "Práticas essenciais de engenharia de software para escrever códigos legíveis, manuteníveis e limpos.",
   "categoria": "eng",
   "capa": "/img/livros/clean-code.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Clean+Code"
+  "compra_url": "https://www.amazon.com.br/s?k=Clean+Code",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Código Limpo: habilidades práticas do Agile Software",
+    "editora": "Alta Books",
+    "ano": 2009
+  }
 }

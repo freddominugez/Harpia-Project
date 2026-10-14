@@ -15,5 +15,11 @@
   "resenha": "Conselhos práticos, atemporais e filosóficos para se tornar um desenvolvedor de software mais eficiente.",
   "categoria": "eng",
   "capa": "/img/livros/the-pragmatic-programmer.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=The+Pragmatic+Programmer"
+  "compra_url": "https://www.amazon.com.br/s?k=The+Pragmatic+Programmer",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "O Programador Pragmático",
+    "editora": "Bookman",
+    "ano": 2026
+  }
 }

@@ -15,5 +15,11 @@
   "resenha": "Aprendizado de máquina na prática com Scikit-Learn, Keras e TensorFlow, do modelo linear às redes profundas, com notebooks completos.",
   "categoria": "ml",
   "capa": "/img/livros/hands-on-machine-learning-with-scikit-learn-keras-and-tensorflow.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Hands-On%20Machine%20Learning"
+  "compra_url": "https://www.amazon.com.br/s?k=Hands-On%20Machine%20Learning",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Mãos à Obra: Aprendizado de Máquina com Scikit-Learn, Keras & TensorFlow",
+    "editora": "Alta Books",
+    "ano": 2021
+  }
 }

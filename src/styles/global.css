@@ -311,6 +311,9 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fo
 .vlevel-title .vcard-nivel { font-size: .7rem; padding: 2px 9px; }
 .vstack { display: flex; flex-direction: column; }
 .vcard { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 10px; align-items: start; padding: 10px 2px; border-bottom: 1px solid #eceef0; min-width: 0; }
+.vcard[hidden] { display: none; }
+.vcard-idioma { white-space: nowrap; }
+.vcard-idioma.i-pt { color: var(--gold-strong); font-weight: 650; }
 .vcard:last-child { border-bottom: 0; padding-bottom: 2px; }
 .vcard-th { position: relative; aspect-ratio: 16 / 9; border-radius: 5px; background: #263038; overflow: hidden; }
 .vcard-th img { width: 100%; height: 100%; object-fit: cover; transition: transform .25s; }
@@ -502,6 +505,18 @@ div.livro-capa small { font-size: .56rem; letter-spacing: .02em; }
 .livro-links a:hover { border-color: var(--gold); }
 .livro-links a.online { background: var(--gold-soft); border-color: transparent; color: var(--gold-strong); }
 .livros-vazio { color: var(--muted); }
+.livro-pt { margin: 0 0 7px; font-size: .78rem; color: #4f5964; }
+.livro-pt b { color: #2f6b4f; font-weight: 700; }
+.livro-pt cite { font-style: italic; }
+.livro-lang { white-space: nowrap; }
+.filter-row { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin-bottom: 4px; }
+.filter-row .filters { margin-bottom: 10px; }
+.filter-label { min-width: 52px; font-size: .72rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.filters button:disabled { opacity: .45; cursor: not-allowed; }
+.paper[hidden] { display: none; }
+.paper-pagina { font-weight: 600; }
+.paper-pdf { display: inline-block; margin-left: 8px; padding: 0 6px; border-radius: 4px; background: var(--gold-soft); font-size: .66rem; font-weight: 800; letter-spacing: .04em; color: var(--gold-strong); vertical-align: 2px; }
+.paper .paper-pagina { font-weight: 600; color: #4f5964; }
 @media (max-width: 540px) {
   .livros { grid-template-columns: 1fr; }
   .livro { gap: 12px; padding: 12px; }

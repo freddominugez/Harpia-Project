@@ -15,5 +15,11 @@
   "resenha": "Uma jornada brilhante de como a linguagem de máquina, binários e hardware funcionam a partir de conceitos simples.",
   "categoria": "comp",
   "capa": "/img/livros/code.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Code+Charles+Petzold"
+  "compra_url": "https://www.amazon.com.br/s?k=Code+Charles+Petzold",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Código: a vida secreta dos computadores",
+    "editora": "Bookman",
+    "ano": 2023
+  }
 }

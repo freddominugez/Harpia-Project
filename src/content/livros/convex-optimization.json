@@ -15,5 +15,6 @@
   "resenha": "Teoria e prática de otimização convexa: conjuntos e funções convexas, dualidade e algoritmos de ponto interior.",
   "categoria": "mat",
   "capa": "/img/livros/convex-optimization.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Convex%20Optimization%20%28Boyd%29"
+  "compra_url": "https://www.amazon.com.br/s?k=Convex%20Optimization%20%28Boyd%29",
+  "idioma": "en"
 }

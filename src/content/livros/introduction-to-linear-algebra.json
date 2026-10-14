@@ -15,5 +15,6 @@
   "resenha": "Álgebra linear ensinada a partir de matrizes e dos quatro subespaços fundamentais, com a didática das aulas do MIT.",
   "categoria": "mat",
   "capa": "/img/livros/introduction-to-linear-algebra.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Introduction%20to%20Linear%20Algebra%20%28Strang%29"
+  "compra_url": "https://www.amazon.com.br/s?k=Introduction%20to%20Linear%20Algebra%20%28Strang%29",
+  "idioma": "en"
 }

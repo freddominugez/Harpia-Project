@@ -15,5 +15,11 @@
   "resenha": "Catálogo de refatorações com exemplos passo a passo para melhorar o desenho de um código que já funciona, sempre protegido por testes.",
   "categoria": "eng",
   "capa": "/img/livros/refactoring.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Refactoring%20%28Martin%20Fowler%29"
+  "compra_url": "https://www.amazon.com.br/s?k=Refactoring%20%28Martin%20Fowler%29",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Refatoração: aperfeiçoando o design de códigos existentes",
+    "editora": "Novatec",
+    "ano": 2020
+  }
 }

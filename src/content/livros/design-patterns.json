@@ -15,5 +15,11 @@
   "resenha": "O clássico do GoF que catalogou os padrões fundamentais de arquitetura orientada a objetos.",
   "categoria": "eng",
   "capa": "/img/livros/design-patterns.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Design+Patterns+Gamma"
+  "compra_url": "https://www.amazon.com.br/s?k=Design+Patterns+Gamma",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Padrões de Projeto: soluções reutilizáveis de software orientado a objetos",
+    "editora": "Bookman",
+    "ano": 2000
+  }
 }

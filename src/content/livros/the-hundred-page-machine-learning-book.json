@@ -15,5 +15,10 @@
   "resenha": "Resumo denso e direto ao ponto cobrindo o que você realmente precisa saber sobre ML.",
   "categoria": "ml",
   "capa": "/img/livros/the-hundred-page-machine-learning-book.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=The+Hundred-Page+Machine+Learning"
+  "compra_url": "https://www.amazon.com.br/s?k=The+Hundred-Page+Machine+Learning",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "versão em português",
+    "editora": "edição do autor, Kindle"
+  }
 }

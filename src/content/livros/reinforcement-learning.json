@@ -15,5 +15,6 @@
   "resenha": "A introdução de referência ao aprendizado por reforço: processos de decisão de Markov, diferença temporal e gradiente de política.",
   "categoria": "ml",
   "capa": "/img/livros/reinforcement-learning.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Reinforcement%20Learning%20%28Sutton%29"
+  "compra_url": "https://www.amazon.com.br/s?k=Reinforcement%20Learning%20%28Sutton%29",
+  "idioma": "en"
 }

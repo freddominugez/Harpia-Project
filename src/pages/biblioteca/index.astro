@@ -2,9 +2,12 @@
 import Base from "../../layouts/Base.astro";
 import PageIntro from "../../components/PageIntro.astro";
 import Tag from "../../components/Tag.astro";
-import { LIVROS as livros, ARTIGOS as artigos, FONTES_POR_GRUPO as fontes, CATEGORIAS_LIVRO } from "../../lib/conteudo";
+import { LIVROS as livros, ARTIGOS as artigos, FONTES_POR_GRUPO as fontes, CATEGORIAS_LIVRO, IDIOMAS } from "../../lib/conteudo";
 const nOnline = livros.filter((l) => l.url).length;
 const porCategoria = (c: string) => livros.filter((l) => l.categoria === c).length;
+const nTraduzidos = livros.filter((l) => l.edicao_pt).length;
+const idiomasArtigos = [...new Set(artigos.map((a) => a.idioma ?? "en"))].sort((a, b) => (a === "pt" ? -1 : b === "pt" ? 1 : a.localeCompare(b)));
+const contaIdiomaArtigo = (i: string) => artigos.filter((a) => (a.idioma ?? "en") === i).length;
 const nFontes = fontes.reduce((s, g) => s + g.itens.length, 0);
 const ordenados = [...artigos].sort((a, b) => a.ano - b.ano);
 ---
@@ -18,14 +21,21 @@ const ordenados = [...artigos].sort((a, b) => a.ano - b.ano);
   <section class="section" id="livros">
     <div class="container">
       <div class="section-head"><div><h2>Livros</h2><p>Da álgebra linear aos reticulados, com os clássicos de computação e engenharia de software.</p></div></div>
-      <div class="filters" role="group" aria-label="Filtrar livros">
+      <div class="filter-row"><span class="filter-label" id="rot-area">Área</span>
+      <div class="filters" role="group" aria-labelledby="rot-area" data-livros-area>
         <button type="button" data-cat="todos" aria-pressed="true">Todos <span>{livros.length}</span></button>
         {CATEGORIAS_LIVRO.map(([id, nome]) => <button type="button" data-cat={id} aria-pressed="false">{nome} <span>{porCategoria(id)}</span></button>)}
         <button type="button" data-cat="online" aria-pressed="false">Edição online <span>{nOnline}</span></button>
-      </div>
+      </div></div>
+      <div class="filter-row"><span class="filter-label" id="rot-idioma-livro">Idioma</span>
+      <div class="filters" role="group" aria-labelledby="rot-idioma-livro" data-livros-idioma>
+        <button type="button" data-idioma="todos" aria-pressed="true">Todos</button>
+        <button type="button" data-idioma="pt" aria-pressed="false">Com edição em português <span>{nTraduzidos}</span></button>
+        <button type="button" data-idioma="en" aria-pressed="false">Só em inglês <span>{livros.length - nTraduzidos}</span></button>
+      </div></div>
       <ul class="livros" role="list">
         {livros.map((l) => (
-          <li class="livro" data-cat={l.categoria} data-online={l.url ? "sim" : "nao"}>
+          <li class="livro" data-cat={l.categoria} data-online={l.url ? "sim" : "nao"} data-pt={l.edicao_pt ? "sim" : "nao"}>
             {l.capa ? (
               <img class="livro-capa" src={l.capa} alt={`Capa de ${l.titulo}`} width="120" height="180" loading="lazy" decoding="async" />
             ) : (
@@ -33,12 +43,14 @@ const ordenados = [...artigos].sort((a, b) => a.ano - b.ano);
             )}
             <div class="livro-texto">
               <h3>{l.titulo}</h3>
-              <p class="livro-autor">{l.autores}{l.ano ? ` · ${l.ano}` : ""}</p>
+              <p class="livro-autor">{l.autores}{l.ano ? ` · ${l.ano}` : ""} · <span class="livro-lang">{IDIOMAS[l.idioma ?? "en"]}</span></p>
               {l.resenha && <p class="livro-resenha">{l.resenha}</p>}
               {l.uso && <p class="livro-uso"><b>No projeto:</b> {l.uso}</p>}
+              {l.edicao_pt && <p class="livro-pt"><b>Em português:</b> <cite>{l.edicao_pt.titulo}</cite> ({l.edicao_pt.editora}{l.edicao_pt.ano ? `, ${l.edicao_pt.ano}` : ""})</p>}
               <p class="livro-links">
                 {l.url && <a class="online" href={l.url} target="_blank" rel="noopener noreferrer">Ler online<span class="sr-only"> {l.titulo}</span></a>}
-                {l.compra_url && <a href={l.compra_url} target="_blank" rel="noopener noreferrer">Amazon<span class="sr-only">: {l.titulo}</span></a>}
+                {l.compra_url && <a href={l.compra_url} target="_blank" rel="noopener noreferrer">Amazon{l.edicao_pt ? " (inglês)" : ""}<span class="sr-only">: {l.titulo}</span></a>}
+                {l.edicao_pt && !l.edicao_pt.editora.startsWith("edição do autor") && <a href={`https://www.amazon.com.br/s?k=${encodeURIComponent(`${l.edicao_pt.titulo.split(":")[0]} ${l.autores.split(",")[0]}`)}`} target="_blank" rel="noopener noreferrer">Amazon (português)<span class="sr-only">: {l.edicao_pt.titulo}</span></a>}
               </p>
             </div>
           </li>
@@ -51,17 +63,26 @@ const ordenados = [...artigos].sort((a, b) => a.ano - b.ano);
   <section class="section" id="artigos">
     <div class="container">
       <div class="section-head"><div><h2>Artigos acadêmicos</h2><p>Os trabalhos que definem a base a bater e a arte prévia de cada caminho.</p></div></div>
-      <div class="filters" role="group" aria-label="Filtrar artigos">
+      <div class="filter-row"><span class="filter-label" id="rot-tema">Tema</span>
+      <div class="filters" role="group" aria-labelledby="rot-tema">
         <button type="button" data-grupo="todos" aria-pressed="true">Todos</button>
         <button type="button" data-grupo="fund" aria-pressed="false">Fundamentos</button>
         <button type="button" data-grupo="busca" aria-pressed="false">Busca e quantização</button>
         <button type="button" data-grupo="arte" aria-pressed="false">Arte prévia</button>
-      </div>
+      </div></div>
+      <div class="filter-row"><span class="filter-label" id="rot-idioma-art">Idioma</span>
+      <div class="filters" role="group" aria-labelledby="rot-idioma-art">
+        <button type="button" data-art-idioma="todos" aria-pressed="true">Todos</button>
+        {["pt", ...idiomasArtigos.filter((i) => i !== "pt")].map((i) => <button type="button" data-art-idioma={i} aria-pressed="false" disabled={contaIdiomaArtigo(i) === 0}>{IDIOMAS[i]} <span>{contaIdiomaArtigo(i)}</span></button>)}
+      </div></div>
       <div class="papers">
         {ordenados.map((p) => (
-          <div class="paper" data-grupo={p.grupo}>
+          <div class="paper" data-grupo={p.grupo} data-idioma={p.idioma ?? "en"}>
             <div class="ano">{p.ano}</div>
-            <div><a href={p.url} target="_blank" rel="noopener noreferrer">{p.titulo}</a><div class="v">{p.autores}</div></div>
+            <div>
+              <a href={p.pdf_url ?? p.url} target="_blank" rel="noopener noreferrer">{p.titulo}</a>{p.pdf_url && <span class="paper-pdf">PDF</span>}
+              <div class="v">{p.autores} · {IDIOMAS[p.idioma ?? "en"]}{p.pdf_url && p.pdf_url !== p.url && <> · <a class="paper-pagina" href={p.url} target="_blank" rel="noopener noreferrer">resumo e versões<span class="sr-only">: {p.titulo}</span></a></>}</div>
+            </div>
             <span class={`tag ${p.selo}`}>{p.rotulo}</span>
           </div>
         ))}
@@ -79,26 +100,34 @@ const ordenados = [...artigos].sort((a, b) => a.ano - b.ano);
   </section>
 </Base>
 <script>
-  document.querySelectorAll<HTMLButtonElement>(".filters button[data-cat]").forEach((b, _, todos) => {
-    b.addEventListener("click", () => {
+  // Filtros combinados: cada grupo de botões guarda o seu valor e a lista mostra o que passa em todos.
+  function filtrar(sel: string, testes: Record<string, (el: HTMLElement) => boolean>, vazio?: string) {
+    let n = 0;
+    document.querySelectorAll<HTMLElement>(sel).forEach((el) => {
+      const ok = Object.values(testes).every((t) => t(el));
+      el.hidden = !ok; if (ok) n++;
+    });
+    if (vazio) { const v = document.querySelector<HTMLElement>(vazio); if (v) v.hidden = n > 0; }
+  }
+  function ligar(botoes: string, attr: string, aoMudar: (v: string) => void) {
+    const todos = [...document.querySelectorAll<HTMLButtonElement>(botoes)];
+    todos.forEach((b) => b.addEventListener("click", () => {
       todos.forEach((x) => x.setAttribute("aria-pressed", "false"));
       b.setAttribute("aria-pressed", "true");
-      const c = b.dataset.cat;
-      let n = 0;
-      document.querySelectorAll<HTMLElement>(".livro[data-cat]").forEach((l) => {
-        const ok = c === "todos" || (c === "online" ? l.dataset.online === "sim" : l.dataset.cat === c);
-        l.hidden = !ok; if (ok) n++;
-      });
-      const vazio = document.querySelector<HTMLElement>(".livros-vazio");
-      if (vazio) vazio.hidden = n > 0;
-    });
+      aoMudar(b.getAttribute(attr) ?? "todos");
+    }));
+  }
+  let cat = "todos", idiomaLivro = "todos", grupo = "todos", idiomaArt = "todos";
+  const livros = () => filtrar(".livro[data-cat]", {
+    cat: (l) => cat === "todos" || (cat === "online" ? l.dataset.online === "sim" : l.dataset.cat === cat),
+    idioma: (l) => idiomaLivro === "todos" || (idiomaLivro === "pt" ? l.dataset.pt === "sim" : l.dataset.pt !== "sim"),
+  }, ".livros-vazio");
+  const papers = () => filtrar(".paper[data-grupo]", {
+    grupo: (p) => grupo === "todos" || p.dataset.grupo === grupo,
+    idioma: (p) => idiomaArt === "todos" || p.dataset.idioma === idiomaArt,
   });
-  document.querySelectorAll<HTMLButtonElement>(".filters button[data-grupo]").forEach((b, _, todos) => {
-    b.addEventListener("click", () => {
-      todos.forEach((x) => x.setAttribute("aria-pressed", "false"));
-      b.setAttribute("aria-pressed", "true");
-      const g = b.dataset.grupo;
-      document.querySelectorAll<HTMLElement>(".paper[data-grupo]").forEach((p) => { p.hidden = !(g === "todos" || p.dataset.grupo === g); });
-    });
-  });
+  ligar(".filters button[data-cat]", "data-cat", (v) => { cat = v; livros(); });
+  ligar(".filters button[data-idioma]", "data-idioma", (v) => { idiomaLivro = v; livros(); });
+  ligar(".filters button[data-grupo]", "data-grupo", (v) => { grupo = v; papers(); });
+  ligar(".filters button[data-art-idioma]", "data-art-idioma", (v) => { idiomaArt = v; papers(); });
 </script>

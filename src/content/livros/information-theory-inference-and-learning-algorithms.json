@@ -15,5 +15,6 @@
   "resenha": "Teoria da informação, inferência e aprendizado no mesmo livro, de códigos corretores de erro a redes neurais.",
   "categoria": "ling",
   "capa": "/img/livros/information-theory-inference-and-learning-algorithms.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Information%20Theory%20Inference%20%28MacKay%29"
+  "compra_url": "https://www.amazon.com.br/s?k=Information%20Theory%20Inference%20%28MacKay%29",
+  "idioma": "en"
 }

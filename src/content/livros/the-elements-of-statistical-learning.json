@@ -15,5 +15,6 @@
   "resenha": "Aprendizado estatístico em profundidade: regressão, regularização, árvores, boosting, métodos de núcleo e aprendizado não supervisionado.",
   "categoria": "ml",
   "capa": "/img/livros/the-elements-of-statistical-learning.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=The%20Elements%20of%20Statistical%20Learning"
+  "compra_url": "https://www.amazon.com.br/s?k=The%20Elements%20of%20Statistical%20Learning",
+  "idioma": "en"
 }

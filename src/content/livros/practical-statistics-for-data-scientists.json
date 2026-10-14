@@ -15,5 +15,11 @@
   "resenha": "Os conceitos de estatística que mais importam para ciência de dados, com exemplos em R e Python e sem excesso de formalismo.",
   "categoria": "mat",
   "capa": "/img/livros/practical-statistics-for-data-scientists.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=Practical%20Statistics%20for%20Data%20Scientists"
+  "compra_url": "https://www.amazon.com.br/s?k=Practical%20Statistics%20for%20Data%20Scientists",
+  "idioma": "en",
+  "edicao_pt": {
+    "titulo": "Estatística Prática para Cientistas de Dados",
+    "editora": "Alta Books",
+    "ano": 2019
+  }
 }

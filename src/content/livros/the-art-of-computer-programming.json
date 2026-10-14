@@ -15,5 +15,6 @@
   "resenha": "A obra de Knuth sobre algoritmos fundamentais, números aleatórios, ordenação, busca e combinatória, com análise matemática rigorosa.",
   "categoria": "comp",
   "capa": "/img/livros/the-art-of-computer-programming.webp",
-  "compra_url": "https://www.amazon.com.br/s?k=The%20Art%20of%20Computer%20Programming%20%28Knuth%29"
+  "compra_url": "https://www.amazon.com.br/s?k=The%20Art%20of%20Computer%20Programming%20%28Knuth%29",
+  "idioma": "en"
 }

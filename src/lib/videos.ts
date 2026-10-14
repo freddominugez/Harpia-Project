@@ -2,7 +2,7 @@
 import { lista } from "./conteudo";
 
 export type Nivel = "Iniciante" | "Intermediário" | "Avançado";
-export type Video = { id: string; titulo: string; canal: string; modulo: number; nivel: Nivel; resumo: string; catalogo: number | null; trilha: string };
+export type Video = { id: string; titulo: string; canal: string; modulo: number; nivel: Nivel; resumo: string; catalogo: number | null; trilha: string; idioma?: string; dublagem_pt?: boolean };
 export type Modulo = { numero: number; titulo: string; subtitulo: string; icone: string };
 
 export const VIDEOS = lista<Video & { status?: string; ordem?: number }>(import.meta.glob("../content/videos/*.json", { eager: true }))
