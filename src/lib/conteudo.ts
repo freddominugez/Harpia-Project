@@ -10,7 +10,8 @@ const lista = <T extends Status>(mods: Record<string, unknown>, todos = false): 
     .sort((a, b) => Number(a.ordem ?? 999) - Number(b.ordem ?? 999));
 
 export type Artigo = { ano: number; titulo: string; autores: string; url: string; grupo: string; selo: "medido" | "arte" | "lacuna" | "teste"; rotulo: string };
-export type Livro = { titulo: string; autores: string; nota: string; uso: string; url: string; cor: string };
+export type Livro = { titulo: string; autores: string; nota: string; uso: string; url: string; cor: string; ano?: number; resenha?: string; categoria?: string; capa?: string; compra_url?: string };
+export const CATEGORIAS_LIVRO: [string, string][] = [["mat", "Matemática e estatística"], ["ml", "Aprendizado de máquina"], ["ling", "Linguagem e informação"], ["ia", "IA e sociedade"], ["comp", "Ciência da computação"], ["eng", "Engenharia de software e dados"]];
 export type Fonte = { nome: string; url: string; descricao: string; grupo: string; grupo_ordem: number };
 export type Feed = { nome: string; url: string; nota?: string; so_titulo?: boolean };
 export type Aprendizado = { ano: number; titulo: string; texto: string; eq?: string };

@@ -1,0 +1,19 @@
+{
+  "titulo": "Bayesian Data Analysis",
+  "autores": "Gelman, Carlin, Stern, Dunson, Vehtari, Rubin",
+  "nota": "1995 · online",
+  "uso": "",
+  "url": "https://sites.stat.columbia.edu/gelman/book/",
+  "cor": "c3",
+  "ordem": 50,
+  "fonte_url": "https://sites.stat.columbia.edu/gelman/book/",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 1995,
+  "resenha": "A referência em análise bayesiana aplicada: modelos hierárquicos, computação por MCMC e verificação de modelos.",
+  "categoria": "mat",
+  "capa": "/img/livros/bayesian-data-analysis.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Bayesian%20Data%20Analysis"
+}

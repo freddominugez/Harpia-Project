@@ -1,0 +1,19 @@
+{
+  "titulo": "Python Machine Learning",
+  "autores": "Raschka, Mirjalili",
+  "nota": "2015",
+  "uso": "",
+  "url": "",
+  "cor": "c5",
+  "ordem": 28,
+  "fonte_url": "https://www.amazon.com.br/s?k=Python%20Machine%20Learning",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 2015,
+  "resenha": "Aprendizado de máquina com Python, da intuição de cada algoritmo ao código, passando por avaliação de modelos e redes neurais.",
+  "categoria": "ml",
+  "capa": "/img/livros/python-machine-learning.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Python%20Machine%20Learning"
+}

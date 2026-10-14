@@ -1,0 +1,19 @@
+{
+  "titulo": "Clean Code",
+  "autores": "Martin",
+  "nota": "2008",
+  "uso": "",
+  "url": "",
+  "cor": "c5",
+  "ordem": 16,
+  "fonte_url": "https://www.amazon.com.br/s?k=Clean+Code",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 2008,
+  "resenha": "Práticas essenciais de engenharia de software para escrever códigos legíveis, manuteníveis e limpos.",
+  "categoria": "eng",
+  "capa": "/img/livros/clean-code.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Clean+Code"
+}

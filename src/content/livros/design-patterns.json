@@ -1,0 +1,19 @@
+{
+  "titulo": "Design Patterns",
+  "autores": "Gamma, Helm, Johnson, Vlissides",
+  "nota": "1994",
+  "uso": "",
+  "url": "",
+  "cor": "c1",
+  "ordem": 18,
+  "fonte_url": "https://www.amazon.com.br/s?k=Design+Patterns+Gamma",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 1994,
+  "resenha": "O clássico do GoF que catalogou os padrões fundamentais de arquitetura orientada a objetos.",
+  "categoria": "eng",
+  "capa": "/img/livros/design-patterns.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Design+Patterns+Gamma"
+}

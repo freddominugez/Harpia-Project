@@ -1,0 +1,19 @@
+{
+  "titulo": "Introduction to Algorithms",
+  "autores": "Cormen, Leiserson, Rivest, Stein",
+  "nota": "1990",
+  "uso": "",
+  "url": "",
+  "cor": "c4",
+  "ordem": 39,
+  "fonte_url": "https://www.amazon.com.br/s?k=Introduction%20to%20Algorithms%20%28Cormen%29",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 1990,
+  "resenha": "A referência padrão de algoritmos e estruturas de dados, com análise de complexidade e provas de correção.",
+  "categoria": "comp",
+  "capa": "/img/livros/introduction-to-algorithms.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Introduction%20to%20Algorithms%20%28Cormen%29"
+}

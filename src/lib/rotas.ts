@@ -349,7 +349,7 @@ export async function rotas(): Promise<Rota[]> {
       secao: "Biblioteca",
       atualizado: dBiblioteca,
       markdown: () => [
-        `## Livros\n\n${LIVROS.map((l) => `- **${l.titulo}**, ${l.autores}. ${l.nota} ${l.uso}${l.url ? ` ${l.url}` : ""}`).join("\n")}`,
+        `## Livros\n\n${LIVROS.map((l) => `- **${l.titulo}**, ${l.autores}${l.ano ? ` (${l.ano})` : ""}. ${l.resenha ?? ""}${l.uso ? ` No projeto: ${l.uso}.` : ""}${l.url ? ` Edição online: ${l.url}` : ""}`).join("\n")}`,
         `## Artigos\n\n${ARTIGOS.map((a) => `- ${a.ano}. [${a.titulo}](${a.url}), ${a.autores}. ${a.rotulo}.`).join("\n")}`,
       ].join("\n\n"),
       schema: () => [colecao("/biblioteca/", "Biblioteca", "Livros, artigos acadêmicos e fontes sobre matemática, física e IA.", {
@@ -357,7 +357,7 @@ export async function rotas(): Promise<Rota[]> {
         name: "Livros e artigos",
         numberOfItems: LIVROS.length + ARTIGOS.length,
         itemListElement: [
-          ...LIVROS.map((l, i) => ({ "@type": "ListItem", position: i + 1, item: { "@type": "Book", name: l.titulo, author: l.autores, ...(l.url ? { url: l.url } : {}) } })),
+          ...LIVROS.map((l, i) => ({ "@type": "ListItem", position: i + 1, item: { "@type": "Book", name: l.titulo, author: l.autores.split(", ").map((n) => ({ "@type": "Person", name: n })), ...(l.ano ? { datePublished: String(l.ano) } : {}), ...(l.resenha ? { description: l.resenha } : {}), ...(l.capa ? { image: abs(l.capa) } : {}), ...(l.url ? { url: l.url } : {}) } })),
           ...ARTIGOS.map((a, i) => ({ "@type": "ListItem", position: LIVROS.length + i + 1, item: { "@type": "ScholarlyArticle", headline: a.titulo, name: a.titulo, author: a.autores, datePublished: String(a.ano), url: a.url } })),
         ],
       })],

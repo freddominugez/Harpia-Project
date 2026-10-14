@@ -1,0 +1,19 @@
+{
+  "titulo": "Computer Vision: Algorithms and Applications",
+  "autores": "Szeliski",
+  "nota": "2010 · online",
+  "uso": "",
+  "url": "https://szeliski.org/Book/",
+  "cor": "c3",
+  "ordem": 44,
+  "fonte_url": "https://szeliski.org/Book/",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 2010,
+  "resenha": "Visão computacional moderna: formação de imagem, atributos, geometria de múltiplas vistas, reconstrução 3D e reconhecimento.",
+  "categoria": "ml",
+  "capa": "/img/livros/computer-vision.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Computer%20Vision%20Szeliski"
+}

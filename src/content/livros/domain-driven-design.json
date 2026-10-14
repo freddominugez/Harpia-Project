@@ -1,0 +1,19 @@
+{
+  "titulo": "Domain-Driven Design",
+  "autores": "Evans",
+  "nota": "2003",
+  "uso": "",
+  "url": "",
+  "cor": "c4",
+  "ordem": 21,
+  "fonte_url": "https://www.amazon.com.br/s?k=Domain-Driven+Design",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 2003,
+  "resenha": "Lidando com a complexidade no coração do software focando no modelo de domínio e linguagem ubíqua.",
+  "categoria": "eng",
+  "capa": "/img/livros/domain-driven-design.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Domain-Driven+Design"
+}

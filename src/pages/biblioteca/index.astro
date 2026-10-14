@@ -2,12 +2,14 @@
 import Base from "../../layouts/Base.astro";
 import PageIntro from "../../components/PageIntro.astro";
 import Tag from "../../components/Tag.astro";
-import { LIVROS as livros, ARTIGOS as artigos, FONTES_POR_GRUPO as fontes } from "../../lib/conteudo";
+import { LIVROS as livros, ARTIGOS as artigos, FONTES_POR_GRUPO as fontes, CATEGORIAS_LIVRO } from "../../lib/conteudo";
+const nOnline = livros.filter((l) => l.url).length;
+const porCategoria = (c: string) => livros.filter((l) => l.categoria === c).length;
 const nFontes = fontes.reduce((s, g) => s + g.itens.length, 0);
 const ordenados = [...artigos].sort((a, b) => a.ano - b.ano);
 ---
 <Base titulo="Biblioteca" descricao="Livros, artigos acadêmicos e fontes de alta qualidade sobre matemática, física e IA.">
-  <PageIntro trilha={[{ rotulo: "Biblioteca" }]} eyebrow="Biblioteca" titulo="Livros, artigos e onde pesquisar" lead="Cada item indica o caminho do projeto que ele sustenta. Vários livros têm edição gratuita oficial.">
+  <PageIntro trilha={[{ rotulo: "Biblioteca" }]} eyebrow="Biblioteca" titulo="Livros, artigos e onde pesquisar" lead={`${livros.length} livros com capa, resenha curta e onde encontrar. ${nOnline} têm edição online oficial, publicada pelos autores ou pela editora.`}>
     <div class="tag-row">
       <Tag href="#livros">{livros.length} livros</Tag><Tag href="#artigos">{artigos.length} artigos</Tag><Tag href="/biblioteca/fontes/">{nFontes} fontes</Tag><Tag href="/biblioteca/glossario/">Glossário</Tag>
     </div>
@@ -15,19 +17,34 @@ const ordenados = [...artigos].sort((a, b) => a.ano - b.ano);
 
   <section class="section" id="livros">
     <div class="container">
-      <div class="section-head"><div><h2>Livros</h2><p>Da álgebra linear aos reticulados.</p></div></div>
-      <div class="shelf">
-        {livros.map((l) => (
-          <div class="book">
-            {l.url ? (
-              <a class={`cover ${l.cor}`} href={l.url} target="_blank" rel="noopener noreferrer"><small>{l.nota.toUpperCase()}</small><b>{l.titulo}</b><small>{l.autores}</small></a>
-            ) : (
-              <div class={`cover ${l.cor}`}><small>{l.nota.toUpperCase()}</small><b>{l.titulo}</b><small>{l.autores}</small></div>
-            )}
-            <div class="info"><strong>{l.uso.split(":")[0]}</strong>{l.uso.includes(":") ? ` · ${l.uso.split(":")[1].trim()}` : ""}</div>
-          </div>
-        ))}
+      <div class="section-head"><div><h2>Livros</h2><p>Da álgebra linear aos reticulados, com os clássicos de computação e engenharia de software.</p></div></div>
+      <div class="filters" role="group" aria-label="Filtrar livros">
+        <button type="button" data-cat="todos" aria-pressed="true">Todos <span>{livros.length}</span></button>
+        {CATEGORIAS_LIVRO.map(([id, nome]) => <button type="button" data-cat={id} aria-pressed="false">{nome} <span>{porCategoria(id)}</span></button>)}
+        <button type="button" data-cat="online" aria-pressed="false">Edição online <span>{nOnline}</span></button>
       </div>
+      <ul class="livros" role="list">
+        {livros.map((l) => (
+          <li class="livro" data-cat={l.categoria} data-online={l.url ? "sim" : "nao"}>
+            {l.capa ? (
+              <img class="livro-capa" src={l.capa} alt={`Capa de ${l.titulo}`} width="120" height="180" loading="lazy" decoding="async" />
+            ) : (
+              <div class={`livro-capa cover ${l.cor}`} aria-hidden="true"><b>{l.titulo}</b><small>{l.autores}</small></div>
+            )}
+            <div class="livro-texto">
+              <h3>{l.titulo}</h3>
+              <p class="livro-autor">{l.autores}{l.ano ? ` · ${l.ano}` : ""}</p>
+              {l.resenha && <p class="livro-resenha">{l.resenha}</p>}
+              {l.uso && <p class="livro-uso"><b>No projeto:</b> {l.uso}</p>}
+              <p class="livro-links">
+                {l.url && <a class="online" href={l.url} target="_blank" rel="noopener noreferrer">Ler online<span class="sr-only"> {l.titulo}</span></a>}
+                {l.compra_url && <a href={l.compra_url} target="_blank" rel="noopener noreferrer">Amazon<span class="sr-only">: {l.titulo}</span></a>}
+              </p>
+            </div>
+          </li>
+        ))}
+      </ul>
+      <p class="livros-vazio" hidden>Nenhum livro nesta categoria.</p>
     </div>
   </section>
 
@@ -62,6 +79,20 @@ const ordenados = [...artigos].sort((a, b) => a.ano - b.ano);
   </section>
 </Base>
 <script>
+  document.querySelectorAll<HTMLButtonElement>(".filters button[data-cat]").forEach((b, _, todos) => {
+    b.addEventListener("click", () => {
+      todos.forEach((x) => x.setAttribute("aria-pressed", "false"));
+      b.setAttribute("aria-pressed", "true");
+      const c = b.dataset.cat;
+      let n = 0;
+      document.querySelectorAll<HTMLElement>(".livro[data-cat]").forEach((l) => {
+        const ok = c === "todos" || (c === "online" ? l.dataset.online === "sim" : l.dataset.cat === c);
+        l.hidden = !ok; if (ok) n++;
+      });
+      const vazio = document.querySelector<HTMLElement>(".livros-vazio");
+      if (vazio) vazio.hidden = n > 0;
+    });
+  });
   document.querySelectorAll<HTMLButtonElement>(".filters button[data-grupo]").forEach((b, _, todos) => {
     b.addEventListener("click", () => {
       todos.forEach((x) => x.setAttribute("aria-pressed", "false"));

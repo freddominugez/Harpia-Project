@@ -1,0 +1,19 @@
+{
+  "titulo": "Statistical Rethinking",
+  "autores": "McElreath",
+  "nota": "2015",
+  "uso": "",
+  "url": "",
+  "cor": "c6",
+  "ordem": 35,
+  "fonte_url": "https://www.amazon.com.br/s?k=Statistical%20Rethinking",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 2015,
+  "resenha": "Curso de estatística bayesiana construído com modelos causais e simulação, com exemplos em R e Stan.",
+  "categoria": "mat",
+  "capa": "/img/livros/statistical-rethinking.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Statistical%20Rethinking"
+}

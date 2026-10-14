@@ -1,0 +1,19 @@
+{
+  "titulo": "Clean Architecture",
+  "autores": "Martin",
+  "nota": "2017",
+  "uso": "",
+  "url": "",
+  "cor": "c3",
+  "ordem": 20,
+  "fonte_url": "https://www.amazon.com.br/s?k=Clean+Architecture",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 2017,
+  "resenha": "Princípios de design de arquitetura de software para isolar dependências e criar sistemas robustos.",
+  "categoria": "eng",
+  "capa": "/img/livros/clean-architecture.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Clean+Architecture"
+}

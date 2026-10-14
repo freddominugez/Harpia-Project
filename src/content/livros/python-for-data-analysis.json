@@ -1,0 +1,19 @@
+{
+  "titulo": "Python for Data Analysis",
+  "autores": "McKinney",
+  "nota": "2012 · online",
+  "uso": "",
+  "url": "https://wesmckinney.com/book/",
+  "cor": "c1",
+  "ordem": 36,
+  "fonte_url": "https://wesmckinney.com/book/",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 2012,
+  "resenha": "Manipulação e análise de dados com pandas, NumPy e Jupyter, escrito pelo criador do pandas.",
+  "categoria": "eng",
+  "capa": "/img/livros/python-for-data-analysis.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Python%20for%20Data%20Analysis"
+}

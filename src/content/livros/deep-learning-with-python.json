@@ -1,0 +1,19 @@
+{
+  "titulo": "Deep Learning with Python",
+  "autores": "Chollet",
+  "nota": "2017 · online",
+  "uso": "",
+  "url": "https://deeplearningwithpython.io/",
+  "cor": "c6",
+  "ordem": 29,
+  "fonte_url": "https://deeplearningwithpython.io/",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 2017,
+  "resenha": "Deep learning explicado pelo criador do Keras, com ênfase em intuição, boas práticas e código executável.",
+  "categoria": "ml",
+  "capa": "/img/livros/deep-learning-with-python.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Deep%20Learning%20with%20Python"
+}

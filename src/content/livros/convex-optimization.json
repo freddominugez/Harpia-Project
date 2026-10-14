@@ -1,0 +1,19 @@
+{
+  "titulo": "Convex Optimization",
+  "autores": "Boyd, Vandenberghe",
+  "nota": "2004 · online",
+  "uso": "",
+  "url": "https://web.stanford.edu/~boyd/cvxbook/",
+  "cor": "c5",
+  "ordem": 52,
+  "fonte_url": "https://web.stanford.edu/~boyd/cvxbook/",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 2004,
+  "resenha": "Teoria e prática de otimização convexa: conjuntos e funções convexas, dualidade e algoritmos de ponto interior.",
+  "categoria": "mat",
+  "capa": "/img/livros/convex-optimization.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Convex%20Optimization%20%28Boyd%29"
+}

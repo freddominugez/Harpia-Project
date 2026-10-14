@@ -1,0 +1,19 @@
+{
+  "titulo": "Calculus",
+  "autores": "Spivak",
+  "nota": "1967",
+  "uso": "",
+  "url": "",
+  "cor": "c1",
+  "ordem": 54,
+  "fonte_url": "https://www.amazon.com.br/s?k=Calculus%20%28Spivak%29",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 1967,
+  "resenha": "Cálculo construído com o rigor da análise, com exercícios conhecidos pela dificuldade.",
+  "categoria": "mat",
+  "capa": "/img/livros/calculus.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Calculus%20%28Spivak%29"
+}

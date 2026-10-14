@@ -1,0 +1,19 @@
+{
+  "titulo": "Effective C++",
+  "autores": "Meyers",
+  "nota": "1992",
+  "uso": "",
+  "url": "",
+  "cor": "c1",
+  "ordem": 24,
+  "fonte_url": "https://www.amazon.com.br/s?k=Effective%20C%2B%2B",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 1992,
+  "resenha": "Itens curtos com regras práticas para usar C++ bem: construtores, gestão de recursos, herança, templates e armadilhas comuns.",
+  "categoria": "comp",
+  "capa": "/img/livros/effective-c.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Effective%20C%2B%2B"
+}

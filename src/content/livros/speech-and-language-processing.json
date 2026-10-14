@@ -10,5 +10,10 @@
   "status": "publicado",
   "origem": "manual",
   "adicionado_em": "2026-10-12",
-  "verificado_em": "2026-10-12"
+  "verificado_em": "2026-10-12",
+  "ano": 2000,
+  "resenha": "O livro definitivo sobre Processamento de Linguagem Natural (NLP), gramática computacional e reconhecimento de fala.",
+  "categoria": "ling",
+  "capa": "/img/livros/speech-and-language-processing.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Speech+and+Language+Processing"
 }

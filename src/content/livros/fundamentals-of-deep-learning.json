@@ -1,0 +1,19 @@
+{
+  "titulo": "Fundamentals of Deep Learning",
+  "autores": "Buduma",
+  "nota": "2017",
+  "uso": "",
+  "url": "",
+  "cor": "c3",
+  "ordem": 32,
+  "fonte_url": "https://www.amazon.com.br/s?k=Fundamentals%20of%20Deep%20Learning",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 2017,
+  "resenha": "Introdução às arquiteturas de deep learning, de redes convolucionais e recorrentes a embeddings, com implementações comentadas.",
+  "categoria": "ml",
+  "capa": "/img/livros/fundamentals-of-deep-learning.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Fundamentals%20of%20Deep%20Learning"
+}

@@ -1,0 +1,19 @@
+{
+  "titulo": "Practical Statistics for Data Scientists",
+  "autores": "Bruce, Bruce, Gedeck",
+  "nota": "2017",
+  "uso": "",
+  "url": "",
+  "cor": "c1",
+  "ordem": 30,
+  "fonte_url": "https://www.amazon.com.br/s?k=Practical%20Statistics%20for%20Data%20Scientists",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 2017,
+  "resenha": "Os conceitos de estatística que mais importam para ciência de dados, com exemplos em R e Python e sem excesso de formalismo.",
+  "categoria": "mat",
+  "capa": "/img/livros/practical-statistics-for-data-scientists.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Practical%20Statistics%20for%20Data%20Scientists"
+}

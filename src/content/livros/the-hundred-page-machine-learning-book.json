@@ -1,0 +1,19 @@
+{
+  "titulo": "The Hundred-Page Machine Learning Book",
+  "autores": "Burkov",
+  "nota": "2019 · online",
+  "uso": "",
+  "url": "https://themlbook.com/wiki/doku.php",
+  "cor": "c3",
+  "ordem": 14,
+  "fonte_url": "https://themlbook.com/wiki/doku.php",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 2019,
+  "resenha": "Resumo denso e direto ao ponto cobrindo o que você realmente precisa saber sobre ML.",
+  "categoria": "ml",
+  "capa": "/img/livros/the-hundred-page-machine-learning-book.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=The+Hundred-Page+Machine+Learning"
+}

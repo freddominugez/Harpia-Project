@@ -1,0 +1,19 @@
+{
+  "titulo": "Artificial Intelligence: A Modern Approach",
+  "autores": "Russell, Norvig",
+  "nota": "1995",
+  "uso": "",
+  "url": "",
+  "cor": "c2",
+  "ordem": 43,
+  "fonte_url": "https://www.amazon.com.br/s?k=Artificial%20Intelligence%3A%20A%20Modern%20Approach",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 1995,
+  "resenha": "O livro-texto de referência em inteligência artificial: busca, lógica, planejamento, raciocínio sob incerteza, aprendizado e percepção.",
+  "categoria": "ia",
+  "capa": "/img/livros/artificial-intelligence.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Artificial%20Intelligence%3A%20A%20Modern%20Approach"
+}

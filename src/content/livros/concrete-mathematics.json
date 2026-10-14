@@ -1,0 +1,19 @@
+{
+  "titulo": "Concrete Mathematics",
+  "autores": "Graham, Knuth, Patashnik",
+  "nota": "1989",
+  "uso": "",
+  "url": "",
+  "cor": "c4",
+  "ordem": 57,
+  "fonte_url": "https://www.amazon.com.br/s?k=Concrete%20Mathematics%20%28Knuth%29",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 1989,
+  "resenha": "A matemática por trás da análise de algoritmos: somas, recorrências, coeficientes binomiais, funções geradoras e teoria dos números.",
+  "categoria": "mat",
+  "capa": "/img/livros/concrete-mathematics.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Concrete%20Mathematics%20%28Knuth%29"
+}

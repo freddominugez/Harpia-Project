@@ -479,12 +479,55 @@ collections:
     name: nota
     widget: string
     hint: 'Ex.: 2020 · gratuito'
+  - label: Ano
+    name: ano
+    widget: number
+    value_type: int
+    required: false
+  - label: Categoria
+    name: categoria
+    widget: select
+    options:
+    - label: Matemática e estatística
+      value: mat
+    - label: Aprendizado de máquina
+      value: ml
+    - label: Linguagem e informação
+      value: ling
+    - label: IA e sociedade
+      value: ia
+    - label: Ciência da computação
+      value: comp
+    - label: Engenharia de software e dados
+      value: eng
+    default: ml
+  - label: Resenha
+    name: resenha
+    widget: text
+    required: false
+    default: ''
+    hint: Uma ou duas frases.
   - label: Uso no projeto
     name: uso
     widget: string
+    required: false
+    default: ''
     hint: 'Ex.: Caminho 3: concentração de medida'
-  - label: URL
+  - label: Capa
+    name: capa
+    widget: image
+    required: false
+    default: ''
+    media_folder: /public/img/livros
+    public_folder: /img/livros
+    hint: Imagem 360 px de largura, proporção 2:3
+  - label: Link da edição online oficial
     name: url
+    widget: string
+    required: false
+    default: ''
+  - label: Link de compra
+    name: compra_url
     widget: string
     required: false
     default: ''

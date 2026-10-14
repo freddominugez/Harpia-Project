@@ -1,0 +1,19 @@
+{
+  "titulo": "Compilers: Principles, Techniques, and Tools",
+  "autores": "Aho, Lam, Sethi, Ullman",
+  "nota": "1986",
+  "uso": "",
+  "url": "",
+  "cor": "c6",
+  "ordem": 41,
+  "fonte_url": "https://www.amazon.com.br/s?k=Compilers%3A%20Principles%2C%20Techniques%2C%20Tools",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 1986,
+  "resenha": "O livro do dragão: análise léxica e sintática, tradução dirigida por sintaxe, otimização e geração de código.",
+  "categoria": "comp",
+  "capa": "/img/livros/compilers.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Compilers%3A%20Principles%2C%20Techniques%2C%20Tools"
+}

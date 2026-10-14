@@ -1,0 +1,19 @@
+{
+  "titulo": "Natural Language Processing with Python",
+  "autores": "Bird, Klein, Loper",
+  "nota": "2009 · online",
+  "uso": "",
+  "url": "https://www.nltk.org/book/",
+  "cor": "c4",
+  "ordem": 33,
+  "fonte_url": "https://www.nltk.org/book/",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 2009,
+  "resenha": "Processamento de linguagem natural com Python e a biblioteca NLTK: tokenização, marcação gramatical, classificação de texto e análise sintática.",
+  "categoria": "ling",
+  "capa": "/img/livros/natural-language-processing-with-python.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Natural%20Language%20Processing%20with%20Python"
+}

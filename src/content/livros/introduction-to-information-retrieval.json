@@ -10,5 +10,10 @@
   "status": "publicado",
   "origem": "manual",
   "adicionado_em": "2026-10-12",
-  "verificado_em": "2026-10-12"
+  "verificado_em": "2026-10-12",
+  "ano": 2008,
+  "resenha": "Fundamentos de como sistemas de busca funcionam: índice invertido, ranqueamento, avaliação, classificação de texto e busca na web.",
+  "categoria": "ling",
+  "capa": "/img/livros/introduction-to-information-retrieval.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Introduction+to+Information+Retrieval"
 }

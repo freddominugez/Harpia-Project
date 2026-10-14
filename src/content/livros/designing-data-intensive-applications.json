@@ -1,0 +1,19 @@
+{
+  "titulo": "Designing Data-Intensive Applications",
+  "autores": "Kleppmann",
+  "nota": "2017",
+  "uso": "",
+  "url": "",
+  "cor": "c2",
+  "ordem": 19,
+  "fonte_url": "https://www.amazon.com.br/s?k=Designing+Data-Intensive",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 2017,
+  "resenha": "O melhor livro atual sobre arquitetura de sistemas distribuídos, bancos de dados e escalabilidade.",
+  "categoria": "eng",
+  "capa": "/img/livros/designing-data-intensive-applications.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Designing+Data-Intensive"
+}

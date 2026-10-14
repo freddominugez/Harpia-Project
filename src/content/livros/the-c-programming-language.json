@@ -1,0 +1,19 @@
+{
+  "titulo": "The C Programming Language",
+  "autores": "Kernighan, Ritchie",
+  "nota": "1978",
+  "uso": "",
+  "url": "",
+  "cor": "c6",
+  "ordem": 23,
+  "fonte_url": "https://www.amazon.com.br/s?k=The%20C%20Programming%20Language",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 1978,
+  "resenha": "O livro de Kernighan e Ritchie que definiu a linguagem C: curto, preciso e com exercícios que ainda servem de referência.",
+  "categoria": "comp",
+  "capa": "/img/livros/the-c-programming-language.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=The%20C%20Programming%20Language"
+}

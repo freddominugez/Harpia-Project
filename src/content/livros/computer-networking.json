@@ -1,0 +1,19 @@
+{
+  "titulo": "Computer Networking: A Top-Down Approach",
+  "autores": "Kurose, Ross",
+  "nota": "2001",
+  "uso": "",
+  "url": "",
+  "cor": "c2",
+  "ordem": 25,
+  "fonte_url": "https://www.amazon.com.br/s?k=Computer%20Networking%20Top-Down",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 2001,
+  "resenha": "Redes de computadores explicadas de cima para baixo, da camada de aplicação (HTTP, DNS) até o enlace, com foco na Internet.",
+  "categoria": "comp",
+  "capa": "/img/livros/computer-networking.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Computer%20Networking%20Top-Down"
+}

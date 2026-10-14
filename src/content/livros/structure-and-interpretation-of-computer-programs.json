@@ -1,0 +1,19 @@
+{
+  "titulo": "Structure and Interpretation of Computer Programs",
+  "autores": "Abelson, Sussman, Sussman",
+  "nota": "1985 · online",
+  "uso": "",
+  "url": "https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/full-text/book/book.html",
+  "cor": "c1",
+  "ordem": 42,
+  "fonte_url": "https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/full-text/book/book.html",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 1985,
+  "resenha": "O curso clássico do MIT sobre abstração e construção de programas, ensinado em Scheme.",
+  "categoria": "comp",
+  "capa": "/img/livros/structure-and-interpretation-of-computer-programs.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Structure%20and%20Interpretation%20of%20Computer%20Programs"
+}

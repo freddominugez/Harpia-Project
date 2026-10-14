@@ -1,0 +1,19 @@
+{
+  "titulo": "Reinforcement Learning: An Introduction",
+  "autores": "Sutton, Barto",
+  "nota": "1998 · online",
+  "uso": "",
+  "url": "http://incompleteideas.net/book/the-book-2nd.html",
+  "cor": "c1",
+  "ordem": 48,
+  "fonte_url": "http://incompleteideas.net/book/the-book-2nd.html",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 1998,
+  "resenha": "A introdução de referência ao aprendizado por reforço: processos de decisão de Markov, diferença temporal e gradiente de política.",
+  "categoria": "ml",
+  "capa": "/img/livros/reinforcement-learning.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Reinforcement%20Learning%20%28Sutton%29"
+}

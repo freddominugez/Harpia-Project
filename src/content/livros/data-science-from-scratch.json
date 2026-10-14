@@ -1,0 +1,19 @@
+{
+  "titulo": "Data Science from Scratch",
+  "autores": "Grus",
+  "nota": "2015",
+  "uso": "",
+  "url": "",
+  "cor": "c2",
+  "ordem": 37,
+  "fonte_url": "https://www.amazon.com.br/s?k=Data%20Science%20from%20Scratch",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 2015,
+  "resenha": "Ciência de dados implementada do zero em Python, sem bibliotecas prontas, para entender o que cada algoritmo realmente faz.",
+  "categoria": "eng",
+  "capa": "/img/livros/data-science-from-scratch.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Data%20Science%20from%20Scratch"
+}

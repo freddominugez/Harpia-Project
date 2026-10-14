@@ -1,0 +1,19 @@
+{
+  "titulo": "Information Theory, Inference, and Learning Algorithms",
+  "autores": "MacKay",
+  "nota": "2003 · online",
+  "uso": "",
+  "url": "https://www.inference.org.uk/mackay/itila/",
+  "cor": "c4",
+  "ordem": 51,
+  "fonte_url": "https://www.inference.org.uk/mackay/itila/",
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-13",
+  "verificado_em": "2026-10-13",
+  "ano": 2003,
+  "resenha": "Teoria da informação, inferência e aprendizado no mesmo livro, de códigos corretores de erro a redes neurais.",
+  "categoria": "ling",
+  "capa": "/img/livros/information-theory-inference-and-learning-algorithms.webp",
+  "compra_url": "https://www.amazon.com.br/s?k=Information%20Theory%20Inference%20%28MacKay%29"
+}
