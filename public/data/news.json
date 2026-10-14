@@ -1,5 +1,243 @@
 [
  {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Co-adaptive Rule Routing and Constraining for Structured Knowledge Retrieval",
+  "url": "https://arxiv.org/abs/2610.14465",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Fine-Tuning Strategy, Not Just Data: A Statistically Rigorous Audit of Gender and Stereotypical Bias in Embedding Models for HR Recommendation Systems",
+  "url": "https://arxiv.org/abs/2610.14579",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "The Company a Question Keeps: Auditing Open Jev-Style Models for Retrieval",
+  "url": "https://arxiv.org/abs/2610.14631",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Self-improving data synthesis can scale embedding models across domains and tasks",
+  "url": "https://arxiv.org/abs/2610.14730",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "What Drives AI Citations? Content, Retrieval and Model Knowledge in Generative Engine Optimization (GEO)",
+  "url": "https://arxiv.org/abs/2610.15033",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Retrieving Complementary Evidence for Multi-Hop RAG with Semantic Gain Graphs",
+  "url": "https://arxiv.org/abs/2610.15285",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "KhyontekAI at CheckThat! 2026: Multilingual Dense Retrieval and Cross-Encoder Reranking for Scientific Web Claims",
+  "url": "https://arxiv.org/abs/2610.15837",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "WeGR: Unified Generative Retrieval for Industrial Search Systems in WeChat",
+  "url": "https://arxiv.org/abs/2610.16979",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Computed, not Memorized: Bit-Factorized Identifiers for Efficient Generative Retrieval",
+  "url": "https://arxiv.org/abs/2610.17467",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "AiSAQ-in-Filtering for DRAM-free Filtered Information Retrieval",
+  "url": "https://arxiv.org/abs/2610.17627",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "RALI@iKAT 2026: Retrieval-aware User Profile Denoising via Personalized Conversational Dense Retrieval",
+  "url": "https://arxiv.org/abs/2610.17673",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "FASHION-RQ: Mining Hierarchical Semantic Structure for Automated Evaluation of Fashion Retrieval",
+  "url": "https://arxiv.org/abs/2610.17841",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "MDN-VJEPA: Multimodal Probabilistic Joint-Embedding World Models",
+  "url": "https://arxiv.org/abs/2610.13956",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "SIRNET: Causal Adaptation of Pretrained Embeddings for Semiparametric Treatment-Effect Estimation Under Surrogacy",
+  "url": "https://arxiv.org/abs/2610.14011",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Agreement versus Softmax under Spatial Disambiguation",
+  "url": "https://arxiv.org/abs/2610.14210",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Embedding Graph Kernel Entropy (EGKE): Fine-grained Hallucination Detection for LLMs from Embeddings",
+  "url": "https://arxiv.org/abs/2610.14214",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "KV4-RL: Unlocking Faster Asynchronous Rollouts for RLVR with INT4 KV Cache Quantization",
+  "url": "https://arxiv.org/abs/2610.14448",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "VitaBench: Memory Lifecycles Beyond Retrieval",
+  "url": "https://arxiv.org/abs/2610.14731",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Swarm Telepathy: Prefill-Free KV-Cache Transfer Across Families",
+  "url": "https://arxiv.org/abs/2610.15095",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "When Dynamic Scaling Fails: A Scale-State Feedback Governs Recurrent-State Quantization in Linear-Attention and SSM LLMs",
+  "url": "https://arxiv.org/abs/2610.15139",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "E8 Lattice Key Quantization for Low-Bit KV-Cache Compression",
+  "url": "https://arxiv.org/abs/2610.15384",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Riemannian Graph Tokenizer for Structural Knowledge Transfer",
+  "url": "https://arxiv.org/abs/2610.15427",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Preserving Updates in Low-Bit Recurrent State Quantization",
+  "url": "https://arxiv.org/abs/2610.15709",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "To Cache or Not to Cache: Understanding and Mitigating Safety Incompatibility in Cross-Model KV Cache Reuse",
+  "url": "https://arxiv.org/abs/2610.15721",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Training-Free BioNEL-RAG: Advancing Biomedical Entity Linking through Retrieval-Augmented Generation and Large Language Model",
+  "url": "https://arxiv.org/abs/2610.14789",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "FidelityQ: Preserving Predictive Fidelity in Ultra-Low-Bit Language Model Quantization",
+  "url": "https://arxiv.org/abs/2610.14934",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "SAFE-KV: Causal Suffix Repair for Behavior-Preserving Non-Prefix KV Cache Reuse in RAG",
+  "url": "https://arxiv.org/abs/2610.15186",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "In-Place Indic Tokenizer Expansion and Continual Pretraining of Nemotron-3-Nano-30B-A3B",
+  "url": "https://arxiv.org/abs/2610.15373",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "CultureBot: A Framework for Retrieval-Augmented Exploration of Cultural Heritage Data",
+  "url": "https://arxiv.org/abs/2610.16435",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Estimating Uncertainty of Omnimodal Large Language Models via External Omnimodal Embeddings",
+  "url": "https://arxiv.org/abs/2610.16933",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "LatentRemedy: Efficient Remedy For Non-Prefix KV Cache Reuse in Multi-Agent Systems",
+  "url": "https://arxiv.org/abs/2610.18014",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "SparPR: Runtime KV-Cache Recovery for Resource-Constrained LLM Inference on Consumer Hardware",
+  "url": "https://arxiv.org/abs/2610.18140",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Legal-R1: Agentic Retrieval for Evidence-Based Legal Reasoning",
+  "url": "https://arxiv.org/abs/2610.18611",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Tokenization-Invariant Watermarking: A Byte-Local Method for LLM Text",
+  "url": "https://arxiv.org/abs/2610.14378",
+  "data": "14/10/2026",
+  "ts": 1791950400
+ },
+ {
   "fonte": "Google DeepMind",
   "titulo": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
   "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
