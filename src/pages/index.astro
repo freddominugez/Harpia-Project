@@ -2,7 +2,6 @@
 // Página inicial: reprodução da composição aprovada (docs/referencia-home-exata.png).
 import Base from "../layouts/Base.astro";
 import Hero from "../components/Hero.astro";
-import Kpi from "../components/Kpi.astro";
 import StudyTrackCard from "../components/StudyTrackCard.astro";
 import ArticleCard from "../components/ArticleCard.astro";
 import VideoFeature from "../components/VideoFeature.astro";
@@ -10,7 +9,7 @@ import ForumList from "../components/ForumList.astro";
 import JoinCommunityCard from "../components/JoinCommunityCard.astro";
 import StartCard from "../components/StartCard.astro";
 import { getCollection } from "astro:content";
-import { kpis, trilhas, ARTIGOS_DESTAQUE } from "../data/home";
+import { trilhas, ARTIGOS_DESTAQUE } from "../data/home";
 import { PAUTAS } from "../lib/pautas";
 import { VIDEOS, selecaoDaSemana } from "../lib/videos";
 import { dataCurta, ROTULO_ESTATUTO } from "../lib/format";
@@ -25,12 +24,6 @@ const destaque = selecaoDaSemana();
 ---
 <Base home>
   <Hero />
-
-  <section class="ref-stat-section" aria-label="O acervo em números">
-    <div class="container ref-stats">
-      {kpis(caminhos.length).map((k) => <Kpi k={k} />)}
-    </div>
-  </section>
 
   <section class="ref-content">
     <div class="container wide ref-columns">
@@ -57,6 +50,9 @@ const destaque = selecaoDaSemana();
                 tags={[...tags, ROTULO_ESTATUTO[c.data.estatuto]]}
                 titulo={c.data.titulo}
                 resumo={c.data.resumo}
+                proximo={c.data.proximo_teste}
+                parar={c.data.parar_se}
+                arte={c.data.arte_previa}
                 data={dataCurta(c.data.atualizado)}
                 dataISO={c.data.atualizado}
               />
