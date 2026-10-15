@@ -11,11 +11,26 @@ O painel é o [Sveltia CMS](https://github.com/sveltia/sveltia-cms) 0.221.8, uma
 | `public/admin/config.yml` | Configuração gerada a partir da fonte. Não edite à mão |
 | `scripts/gerar_config_cms.py` | Gera `config.yml` a partir da fonte |
 | `scripts/validar_cms.py` | Confere que todo campo dos arquivos de conteúdo existe no painel e vice-versa |
-| `api/_oauth.js`, `api/auth.js`, `api/callback.js` | Login pelo GitHub (funções da Vercel em `/auth` e `/callback`) |
+| `api/_oauth.js`, `api/auth.js`, `api/callback.js` | Login por e-mail e senha ou pelo GitHub (funções da Vercel em `/auth` e `/callback`) |
+| `scripts/gerar_hash_senha.mjs` | Gera o hash da senha do painel |
 
 O painel não é indexado: meta `noindex`, cabeçalho `X-Robots-Tag: noindex, nofollow` (em `vercel.json`) e `Disallow: /admin/` no `robots.txt`.
 
-## Entrar
+## Entrar com e-mail e senha
+
+Quando as três variáveis abaixo existem na Vercel, o botão **Sign In with GitHub** abre uma tela própria do Harpya pedindo e-mail e senha. Se baterem, o painel recebe o token do GitHub guardado no servidor e entra direto.
+
+| Variável (Vercel, ambiente Production) | Valor |
+|---|---|
+| `ADMIN_EMAIL` | o e-mail autorizado (maiúsculas não importam) |
+| `ADMIN_PASSWORD_HASH` | o hash da senha, gerado por `node scripts/gerar_hash_senha.mjs` (a senha é digitada sem aparecer na tela). Marque como **Sensitive** |
+| `GITHUB_CMS_TOKEN` | token *fine-grained* do GitHub só para `freddominugez/Harpia-Project`, com **Contents** e **Pull requests** em leitura e escrita. Marque como **Sensitive** |
+
+A senha em texto nunca vai para o repositório nem para a Vercel: só o hash scrypt. Erro de e-mail ou senha leva 1 segundo para responder (freio contra tentativas em sequência), e o formulário só aceita envio vindo de `harpya.org`. Depois de criar ou trocar uma variável, faça **Redeploy**.
+
+Para trocar a senha: gere um hash novo e substitua `ADMIN_PASSWORD_HASH`. Para cortar o acesso: apague `GITHUB_CMS_TOKEN` na Vercel e revogue o token no GitHub. Sem as três variáveis, o login volta a ser pelo GitHub, descrito a seguir.
+
+## Entrar pelo GitHub
 
 Em https://www.harpya.org/admin/, clique em **Sign In with GitHub** e entre com a sua conta do GitHub (e-mail, senha e verificação em duas etapas do próprio GitHub). Na primeira vez, o GitHub pergunta se autoriza o app "Harpya painel": clique em **Authorize**. Trocar a senha ou ativar a verificação em duas etapas se faz no GitHub, em https://github.com/settings/security.
 

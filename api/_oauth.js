@@ -1,10 +1,14 @@
-// Autenticação do painel /admin com "Sign In with GitHub".
+// Autenticação do painel /admin.
+// Modo 1 (preferido quando configurado): tela própria de e-mail e senha em /auth. A senha é
+// conferida contra um hash scrypt guardado na Vercel e, se bater, o painel recebe o token do
+// GitHub guardado no servidor. Variáveis: ADMIN_EMAIL, ADMIN_PASSWORD_HASH, GITHUB_CMS_TOKEN.
+// Modo 2: "Sign In with GitHub" pelo OAuth App, descrito abaixo.
 // O Sveltia CMS abre uma janela em /auth; aqui ela vai ao GitHub, volta em /callback,
 // troca o código por um token e entrega o token à janela do painel por postMessage.
 // Mesmo protocolo do sveltia-cms-auth (MIT, github.com/sveltia/sveltia-cms-auth),
 // adaptado para funções da Vercel. Segredos só em variáveis de ambiente:
 //   GITHUB_CLIENT_ID e GITHUB_CLIENT_SECRET (OAuth App do GitHub, ver docs/PAINEL_ADMIN.md).
-import { randomBytes, timingSafeEqual } from "node:crypto";
+import { randomBytes, scryptSync, timingSafeEqual } from "node:crypto";
 
 // O token só é entregue a uma página servida por um destes endereços.
 const ORIGENS = ["https://www.harpya.org", "https://harpya.org", "http://localhost:4321"];
@@ -46,12 +50,90 @@ function pagina(res, { token, erro, codigo }) {
 </script></body></html>`);
 }
 
-export function iniciar(req, res) {
+// ---------- Modo 1: e-mail e senha ----------
+
+const senhaConfigurada = () => {
+  const { ADMIN_EMAIL, ADMIN_PASSWORD_HASH, GITHUB_CMS_TOKEN } = process.env;
+  return Boolean(ADMIN_EMAIL && ADMIN_PASSWORD_HASH && GITHUB_CMS_TOKEN);
+};
+
+const iguais = (a, b) => {
+  const x = Buffer.from(String(a));
+  const y = Buffer.from(String(b));
+  return x.length === y.length && timingSafeEqual(x, y);
+};
+
+/** Confere a senha contra "scrypt$N$r$p$sal_base64$hash_base64" (ver scripts/gerar_hash_senha.mjs). */
+export function senhaConfere(senha, guardado) {
+  const partes = String(guardado ?? "").split("$");
+  if (partes.length !== 6 || partes[0] !== "scrypt") return false;
+  const [, n, r, p, sal, hash] = partes;
+  const esperado = Buffer.from(hash, "base64");
+  if (!esperado.length) return false;
+  try {
+    const obtido = scryptSync(String(senha), Buffer.from(sal, "base64"), esperado.length, {
+      N: Number(n), r: Number(r), p: Number(p), maxmem: 256 * 1024 * 1024,
+    });
+    return timingSafeEqual(obtido, esperado);
+  } catch {
+    return false;
+  }
+}
+
+const escapar = (t) => String(t).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+
+function formulario(res, aviso = "", status = 200) {
+  res.writeHead(status, {
+    ...cabecalhos,
+    "X-Frame-Options": "DENY",
+    "Content-Security-Policy": "default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; frame-ancestors 'none'",
+  });
+  res.end(`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Harpya · entrar no painel</title>
+<style>body{font-family:system-ui,sans-serif;background:#f6f5f2;color:#1c1b19;display:grid;place-items:center;min-height:100vh;margin:0}form{background:#fff;padding:28px;border-radius:10px;box-shadow:0 2px 12px #0001;width:min(340px,90vw);display:grid;gap:12px}label{display:grid;gap:4px;font-size:14px}input{font:inherit;padding:9px 10px;border:1px solid #bbb;border-radius:6px}button{font:inherit;padding:10px;border:0;border-radius:6px;background:#1c1b19;color:#fff;cursor:pointer}.aviso{color:#a12;font-size:14px;margin:0}h1{font-size:18px;margin:0}</style></head>
+<body><form method="post" action="/auth" autocomplete="on"><h1>Painel do Harpya</h1>${aviso ? `<p class="aviso" role="alert">${escapar(aviso)}</p>` : ""}
+<label>E-mail<input type="email" name="email" autocomplete="username" required autofocus></label>
+<label>Senha<input type="password" name="senha" autocomplete="current-password" required></label>
+<button type="submit">Entrar</button></form></body></html>`);
+}
+
+async function lerCorpo(req) {
+  if (req.body && typeof req.body === "object") return req.body;
+  if (typeof req.body === "string") return Object.fromEntries(new URLSearchParams(req.body));
+  let texto = "";
+  for await (const parte of req) {
+    texto += parte;
+    if (texto.length > 4096) break;
+  }
+  return Object.fromEntries(new URLSearchParams(texto));
+}
+
+const esperar = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function entrarComSenha(req, res) {
+  if (req.method !== "POST") return formulario(res);
+  // Só aceita envio feito pelo próprio formulário do site.
+  const origem = req.headers.origin;
+  if (origem && !ORIGENS.includes(origem)) return formulario(res, "Origem não autorizada.", 403);
+  const { email = "", senha = "" } = await lerCorpo(req);
+  const { ADMIN_EMAIL, ADMIN_PASSWORD_HASH, GITHUB_CMS_TOKEN } = process.env;
+  const emailOk = iguais(String(email).trim().toLowerCase(), ADMIN_EMAIL.trim().toLowerCase());
+  const senhaOk = senhaConfere(senha, ADMIN_PASSWORD_HASH); // roda sempre, para não revelar qual campo errou
+  if (!emailOk || !senhaOk) {
+    await esperar(1000); // freio contra tentativas em sequência
+    return formulario(res, "E-mail ou senha incorretos.", 401);
+  }
+  return pagina(res, { token: GITHUB_CMS_TOKEN });
+}
+
+// ---------- Modo 2: OAuth do GitHub ----------
+
+export async function iniciar(req, res) {
   const { GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET } = process.env;
   const url = new URL(req.url, "https://www.harpya.org");
   if ((url.searchParams.get("provider") ?? "github") !== "github") {
     return pagina(res, { erro: "Só o login pelo GitHub é aceito.", codigo: "UNSUPPORTED_BACKEND" });
   }
+  if (senhaConfigurada()) return entrarComSenha(req, res);
   if (!GITHUB_CLIENT_ID || !GITHUB_CLIENT_SECRET) {
     return pagina(res, { erro: "Login pelo GitHub ainda não configurado (faltam GITHUB_CLIENT_ID e GITHUB_CLIENT_SECRET na Vercel).", codigo: "MISCONFIGURED_CLIENT" });
   }
