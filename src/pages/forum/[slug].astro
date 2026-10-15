@@ -26,7 +26,7 @@ const externos = d.links.filter((l) => !l.startsWith("https://www.harpya.org/"))
       <Tag>Aberta em {dataNumerica(d.proposta_em)}</Tag>
     </div>
   </PageIntro>
-  <div class="container page-layout">
+  <div class="container page-layout single">
     <article class="article">
       <div class="prose">
         <Content />
@@ -40,13 +40,7 @@ const externos = d.links.filter((l) => !l.startsWith("https://www.harpya.org/"))
         <h2 id="discussao">Discussão</h2>
       </div>
       <Forum />
+      <p class="forum-voltar"><a class="card-link" href="/forum/">Todas as discussões →</a></p>
     </article>
-    <aside aria-label="Sobre esta discussão">
-      <div class="surface aside-panel">
-        <h3>Regras</h3>
-        <p>Toda medida de velocidade informa hardware, lote e latência p95. Toda proposta traz equação e regra de parada. Discordar é bem-vindo; com argumento.</p>
-        <a class="card-link" href="/forum/">Todas as discussões →</a>
-      </div>
-    </aside>
   </div>
 </Base>

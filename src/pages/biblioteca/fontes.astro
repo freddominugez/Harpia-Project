@@ -9,7 +9,7 @@ const descricao = "Fontes do Harpya, uma a uma: instituições, artigos, livros,
 <Base titulo="Fontes do site" descricao={descricao}>
   <PageIntro trilha={[{ rotulo: "Biblioteca", href: "/biblioteca/" }, { rotulo: "Fontes do site" }]} eyebrow="Referências e créditos" titulo="Fontes do site" lead={`${nFontes} links reunidos em um só lugar, com os nomes, créditos disponíveis e páginas em que são utilizados. Cada fonte conserva os direitos e a licença de seu titular.`} />
   <section class="page-body"><div class="container fontes-site">
-    <p class="fontes-nota">A lista acompanha o acervo publicado e a curadoria. Referências de leitura e de compra estão identificadas separadamente. Consulte os <a href="/termos-de-uso/">Termos de Uso</a> para conhecer as permissões de reutilização.</p>
+    <p class="fontes-nota">Referências de leitura e de compra estão identificadas separadamente. Consulte os <a href="/termos-de-uso/">Termos de Uso</a> para conhecer as permissões de reutilização.</p>
     <nav class="fontes-indice" aria-label="Categorias de fontes">
       {grupos.map((g) => <a href={`#${g.id}`}>{g.titulo} <small>({g.itens.length})</small></a>)}
     </nav>

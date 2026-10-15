@@ -390,6 +390,8 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fo
 
 .page-body { padding: 26px 0 40px; }
 .page-layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 34px; align-items: start; padding: 26px 0 40px; }
+.page-layout.single { grid-template-columns: minmax(0, 1fr); max-width: 980px; }
+.forum-voltar { margin-top: 18px; }
 .page-layout > aside { position: sticky; top: calc(var(--header-h) + 18px); display: flex; flex-direction: column; gap: 14px; max-height: calc(100vh - var(--header-h) - 30px); overflow-y: auto; scrollbar-width: thin; }
 .surface { border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--paper); box-shadow: var(--shadow); }
 .aside-panel { padding: 18px 18px; }
@@ -588,6 +590,7 @@ a.cover:hover { transform: translateY(-3px); }
 
 /* news */
 .news { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 24px; }
+.news.single { grid-template-columns: minmax(0, 1fr); max-width: 980px; }
 .news-list { padding: 6px 22px; }
 .ni { display: block; padding: 13px 0; border-bottom: 1px solid var(--border); }
 .ni:last-child { border-bottom: 0; }

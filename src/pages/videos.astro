@@ -85,13 +85,11 @@ const nDub = VIDEOS.filter((v) => v.dublagem_pt).length;
       <p class="vempty" data-f-vazio hidden>Nenhum vídeo com esses filtros. Escolha outro nível, idioma ou módulo.</p>
 
       <section class="panel vcriteria" aria-labelledby="h-criterios">
-        <h2 id="h-criterios">Critérios do catálogo</h2>
+        <h2 id="h-criterios">Como ler o catálogo</h2>
         <ul>
-          <li><b>Módulos por tema.</b> Do token e dos embeddings até RAG, arquiteturas densas, Mixture of Experts, fine-tuning, alinhamento, agentes, multimodalidade, inferência e o que vem depois do Transformer. O módulo 00 reúne a matemática e as redes neurais que vêm antes.</li>
           <li><b>Três níveis.</b> Iniciante: intuição, sem código. Intermediário: matemática acessível ou código prático. Avançado: aulas acadêmicas, leitura de artigos e implementação.</li>
-          <li><b>Resumo em português</b> do que o vídeo realmente ensina. {nPt} vídeos são falados em português e {nEn} em inglês, quase todos com legendas automáticas; {nDub} dos vídeos em inglês têm dublagem automática em português no YouTube (menu de engrenagem, faixa de áudio). O idioma foi conferido pela legenda automática de cada vídeo em 14/10/2026.</li>
-          <li><b>Link conferido.</b> Cada vídeo foi conferido no YouTube em 12/10/2026, com título e canal reais. Quando o vídeo indicado no rascunho do catálogo não existia, entrou o vídeo real mais próximo do mesmo tema e nível, de preferência do mesmo canal ou do autor do trabalho.</li>
-          <li><b>Curadoria contínua.</b> Novas sugestões chegam toda semana em um pull request e só entram depois de revisão.</li>
+          <li><b>Idioma.</b> {nPt} vídeos são falados em português e {nEn} em inglês, quase todos com legendas automáticas. {nDub} dos vídeos em inglês têm dublagem automática em português no YouTube (menu de engrenagem, faixa de áudio).</li>
+          <li><b>Resumo em português</b> do que cada vídeo ensina.</li>
         </ul>
       </section>
     </div>

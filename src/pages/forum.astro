@@ -9,7 +9,7 @@ import { PAUTAS } from "../lib/pautas";
 ---
 <Base titulo="Fórum" descricao={proprio ? "Fórum do Harpya: perguntas, reproduções e propostas sobre eficiência de LLMs, com login por e-mail ou Google." : "Fórum do Harpya: perguntas, reproduções e propostas, via GitHub Discussions."}>
   <PageIntro trilha={[{ rotulo: "Fórum" }]} eyebrow="Comunidade" titulo="Discuta, reproduza, conteste" lead={proprio ? "Cada página de caminho tem a sua própria conversa, e cada pauta aprovada vira uma discussão. Esta página é o espaço geral. Entre com e-mail e senha ou com a conta Google." : "As conversas ficam no GitHub Discussions do repositório. Cada página de caminho tem a sua própria discussão; esta página é o espaço geral."} />
-  <div class="container page-layout">
+  <div class="container page-layout single">
     <div class="article">
       <div class="panel">
         <h2 id="geral">Discussão geral</h2>
@@ -20,18 +20,5 @@ import { PAUTAS } from "../lib/pautas";
       </div>
       <ForumList itens={PAUTAS} limite={50} />
     </div>
-    <aside aria-label="Sobre o fórum">
-      <div class="surface aside-panel">
-        <h3>Categorias</h3>
-        <div class="cat"><div class="ic">C</div><div><b>Caminhos</b><span>Uma discussão por caminho.</span></div></div>
-        <div class="cat"><div class="ic">?</div><div><b>Perguntas</b><span>Matemática, código ou método.</span></div></div>
-        <div class="cat"><div class="ic">R</div><div><b>Resultados e reproduções</b><span>Números com código e hardware.</span></div></div>
-        <div class="cat"><div class="ic">+</div><div><b>Propostas novas</b><span>Equação, custo e teste.</span></div></div>
-      </div>
-      <div class="surface aside-panel">
-        <h3>Regras</h3>
-        <p>Toda medida de velocidade informa hardware, lote e latência p95. Toda proposta traz equação e regra de parada. Discordar é bem-vindo; com argumento.</p>
-      </div>
-    </aside>
   </div>
 </Base>

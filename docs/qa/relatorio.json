@@ -31,6 +31,7 @@
   "/news/",
   "/origens/",
   "/sobre/",
+  "/termos-de-uso/",
   "/videos/"
  ],
  "links_quebrados": [],
@@ -189,6 +190,11 @@
     "ok": true
    },
    "/sobre/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/termos-de-uso/": {
     "scrollWidth": 1672,
     "innerWidth": 1672,
     "ok": true
@@ -355,6 +361,11 @@
     "innerWidth": 1440,
     "ok": true
    },
+   "/termos-de-uso/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
    "/videos/": {
     "scrollWidth": 1440,
     "innerWidth": 1440,
@@ -513,6 +524,11 @@
     "ok": true
    },
    "/sobre/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/termos-de-uso/": {
     "scrollWidth": 1280,
     "innerWidth": 1280,
     "ok": true
@@ -679,6 +695,11 @@
     "innerWidth": 1024,
     "ok": true
    },
+   "/termos-de-uso/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
    "/videos/": {
     "scrollWidth": 1024,
     "innerWidth": 1024,
@@ -837,6 +858,11 @@
     "ok": true
    },
    "/sobre/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/termos-de-uso/": {
     "scrollWidth": 768,
     "innerWidth": 768,
     "ok": true
@@ -1003,6 +1029,11 @@
     "innerWidth": 430,
     "ok": true
    },
+   "/termos-de-uso/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
    "/videos/": {
     "scrollWidth": 430,
     "innerWidth": 430,
@@ -1161,6 +1192,11 @@
     "ok": true
    },
    "/sobre/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/termos-de-uso/": {
     "scrollWidth": 390,
     "innerWidth": 390,
     "ok": true
@@ -1327,6 +1363,11 @@
     "innerWidth": 360,
     "ok": true
    },
+   "/termos-de-uso/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
    "/videos/": {
     "scrollWidth": 360,
     "innerWidth": 360,
@@ -1489,6 +1530,11 @@
     "innerWidth": 320,
     "ok": true
    },
+   "/termos-de-uso/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
    "/videos/": {
     "scrollWidth": 320,
     "innerWidth": 320,
@@ -1517,9 +1563,9 @@
   "skip_link_focavel": true
  },
  "resumo": {
-  "rotas": 32,
+  "rotas": 33,
   "viewports": 9,
-  "verificacoes_scroll": 288,
+  "verificacoes_scroll": 297,
   "rolagem_horizontal": [],
   "links_quebrados": 0,
   "arquivos_faltando": 0,
