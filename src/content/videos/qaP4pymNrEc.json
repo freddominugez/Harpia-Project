@@ -1,0 +1,16 @@
+{
+  "id": "qaP4pymNrEc",
+  "titulo": "RTX 5090 vs M5 Ultra: Which AI Powerhouse Wins?",
+  "canal": "Hugging Face",
+  "modulo": 10,
+  "nivel": "Iniciante",
+  "resumo": "Compara RTX 5090 e M5 Ultra rodando o mesmo modelo de 27B, separando processamento do prompt e geração, e explica por que tokens por segundo seguem banda de memória dividida pelo tamanho do modelo.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=qaP4pymNrEc",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-15",
+  "verificado_em": "2026-10-15"
+}

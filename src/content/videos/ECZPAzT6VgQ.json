@@ -1,0 +1,16 @@
+{
+  "id": "ECZPAzT6VgQ",
+  "titulo": "GSQ-RCO: Better Non-Uniform GGUF Quantization",
+  "canal": "GPU MODE",
+  "modulo": 10,
+  "nivel": "Avançado",
+  "resumo": "Apresenta dois métodos de quantização em poucos bits: amostragem Gumbel-Softmax (GSQ) e alocação de precisão por otimização riemanniana sob orçamento de tamanho (RCO). Para quem já conhece GGUF e quantização de pesos.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=ECZPAzT6VgQ",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-15",
+  "verificado_em": "2026-10-15"
+}
