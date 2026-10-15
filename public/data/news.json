@@ -264,12 +264,5 @@
   "url": "https://huggingface.co/blog/tokenizers-v1",
   "data": "21/09/2026",
   "ts": 1789948800
- },
- {
-  "fonte": "Google Research",
-  "titulo": "Bypassing inference bottlenecks: Accelerating complex AI search with Retrieve-for-Train",
-  "url": "https://research.google/blog/bypassing-inference-bottlenecks-accelerating-complex-ai-search-with-retrieve-for-train/",
-  "data": "15/09/2026",
-  "ts": 1789502400
  }
 ]
