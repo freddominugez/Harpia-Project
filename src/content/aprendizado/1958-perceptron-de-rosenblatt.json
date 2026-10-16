@@ -1,11 +1,48 @@
 {
   "ano": 1958,
   "titulo": "Perceptron de Rosenblatt",
+  "autores": "Frank Rosenblatt",
   "texto": "O primeiro classificador que aprende com os próprios erros.",
   "eq": "w\\leftarrow w+\\eta\\,(y-\\hat y)\\,x",
+  "contexto": "Frank Rosenblatt, psicólogo do Laboratório Aeronáutico de Cornell, descreveu o perceptron em 1958 na *Psychological Review* e o levou para o hardware no Mark I Perceptron, uma máquina que aprendia a reconhecer padrões vistos por uma grade de fotocélulas.\n\nA novidade não era o neurônio artificial, que Warren McCulloch e Walter Pitts já tinham modelado em 1943. Era a regra para ajustar os pesos a partir de exemplos com a resposta certa.",
+  "mecanismo": "O perceptron soma as entradas ponderadas e compara o resultado com zero: acima, responde 1; abaixo, 0. Geometricamente, os pesos definem uma reta (em mais dimensões, um hiperplano) que divide o espaço em duas regiões.\n\nO treino mostra um exemplo por vez. Se a resposta está certa, nada muda. Se está errada, os pesos se movem na direção do exemplo, empurrando a reta para o lado certo dele. Diferente da regra de Hebb, aqui existe um professor, o rótulo correto $y$ de cada exemplo: é **aprendizado supervisionado**.",
+  "equacoes": [
+    {
+      "tex": "\\hat y=\\begin{cases}1, & w^\\top x+b>0\\\\[2pt] 0, & \\text{caso contrário}\\end{cases}",
+      "texto": "A decisão. $w$ são os pesos, $b$ o viés, que desloca a reta, e $\\hat y$ a resposta da máquina."
+    },
+    {
+      "tex": "w\\leftarrow w+\\eta\\,(y-\\hat y)\\,x,\\qquad b\\leftarrow b+\\eta\\,(y-\\hat y)",
+      "texto": "A regra de correção. Quando acerta, $y-\\hat y=0$ e nada muda. Quando deveria ter dito 1 e disse 0, soma o exemplo aos pesos; no caso oposto, subtrai."
+    },
+    {
+      "tex": "k\\le\\left(\\frac{R}{\\gamma}\\right)^{2}",
+      "texto": "O teorema de convergência (Novikoff, 1962). Se existe uma reta que separa as classes com folga $\\gamma$ e todo exemplo tem norma no máximo $R$, o perceptron comete no máximo $(R/\\gamma)^2$ erros, em qualquer ordem de apresentação. Se a reta não existe, o algoritmo não para."
+    }
+  ],
+  "exemplo": "Ensine a função E lógico, que só vale 1 quando as duas entradas valem 1. Com $w=(0,0)$, $b=0$ e $\\eta=1$, percorrendo os exemplos na ordem (0,0), (0,1), (1,0), (1,1):\n\n- Primeira passada: erra só em (1,1), que deveria dar 1. Os pesos viram $w=(1,1)$ e $b=1$.\n- Agora a máquina responde 1 para quase tudo, e as passadas seguintes corrigem os falsos positivos, subtraindo (0,0), (0,1) ou (1,0) quando erram.\n- Depois de 10 correções em 5 passadas, chega a $w=(2,1)$ e $b=-2$. A sexta passada não erra nada: $2\\cdot1+1\\cdot1-2=1>0$ para (1,1), e o resultado é zero ou negativo para os outros três.\n\nA reta $2x_1+x_2=2$ deixa (1,1) de um lado e os outros três pontos sobre ela ou abaixo. Não é a reta mais equilibrada, só a primeira que funcionou: o perceptron para no primeiro acerto completo, sem buscar folga.",
+  "limites": "Só aprende o que uma reta separa; quando as classes se misturam, os pesos oscilam para sempre. E a saída em degrau não diz quão perto do erro ele está, o que impede de treinar vários perceptrons empilhados ao mesmo tempo. Os dois problemas reaparecem nos itens sobre o XOR e a retropropagação.",
+  "legado": "Cada neurônio de uma rede moderna é um perceptron com o degrau trocado por uma função suave, como ReLU ou GELU. E a cabeça de saída de uma LLM é um classificador linear do mesmo tipo, só que com dezenas de milhares de classes, uma por token: $\\text{logits}=W\\,h$.",
+  "hoje": "Cada neurônio e a cabeça de saída, que classifica o próximo token.",
+  "referencias": [
+    {
+      "texto": "Rosenblatt, F. The perceptron: A probabilistic model for information storage and organization in the brain. Psychological Review, 1958.",
+      "url": "https://doi.org/10.1037/h0042519"
+    },
+    {
+      "texto": "Novikoff, A. B. J. On convergence proofs on perceptrons. Symposium on the Mathematical Theory of Automata, 1962.",
+      "url": ""
+    }
+  ],
+  "links": [
+    {
+      "rotulo": "Equações: cabeça de saída",
+      "href": "/equacoes/#9-cabeça-de-saída"
+    }
+  ],
   "ordem": 2,
   "status": "publicado",
   "origem": "manual",
   "adicionado_em": "2026-10-12",
-  "verificado_em": "2026-10-12"
+  "verificado_em": "2026-10-16"
 }

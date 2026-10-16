@@ -1,11 +1,52 @@
 {
   "ano": 1949,
   "titulo": "Regra de Hebb",
-  "texto": "Neurônios que disparam juntos reforçam a ligação.",
+  "autores": "Donald O. Hebb",
+  "texto": "Neurônios que disparam juntos reforçam a ligação: a primeira regra de aprendizado pensada para redes de neurônios.",
   "eq": "\\Delta w_{ij}=\\eta\\,x_i\\,y_j",
+  "contexto": "Em 1949, o psicólogo canadense Donald Hebb publicou *The Organization of Behavior*, um livro sobre como a percepção e a memória poderiam surgir da atividade de grupos de neurônios. Ali está a hipótese que leva o seu nome: quando um neurônio A ajuda repetidamente a disparar um neurônio B, a ligação de A para B fica mais eficiente.\n\nHebb não escreveu equação nenhuma. A forma matemática veio depois, quando pesquisadores de redes neurais artificiais precisaram de uma regra local, que cada ligação pudesse aplicar olhando só para os dois neurônios que ela conecta.",
+  "mecanismo": "Cada ligação tem um peso $w_{ij}$, que diz quanto o neurônio de entrada $i$ influencia o neurônio de saída $j$. A regra olha para a atividade dos dois ao mesmo tempo: se ambos estão ativos, o peso cresce; se um deles está parado, nada muda.\n\nNão há professor nem resposta certa. A rede aprende só com as coincidências que observa, e por isso a regra de Hebb é o primeiro exemplo de **aprendizado não supervisionado**.",
+  "equacoes": [
+    {
+      "tex": "\\Delta w_{ij}=\\eta\\,x_i\\,y_j",
+      "texto": "A regra básica. $x_i$ é a atividade da entrada, $y_j$ a da saída e $\\eta$ a taxa de aprendizado, um número pequeno que controla o tamanho de cada passo."
+    },
+    {
+      "tex": "y=w^\\top x=\\sum_i w_i\\,x_i,\\qquad \\Delta w=\\eta\\,y\\,x",
+      "texto": "Para um neurônio linear com várias entradas, a saída é a soma ponderada das entradas, e a regra passa a atualizar o vetor de pesos inteiro de uma vez."
+    },
+    {
+      "tex": "\\mathbb{E}[\\Delta w]=\\eta\\,C\\,w,\\qquad C=\\mathbb{E}\\big[x\\,x^\\top\\big]",
+      "texto": "Na média sobre muitos exemplos com entradas de média zero, o passo é proporcional à matriz de covariância $C$ das entradas. O peso cresce mais depressa na direção em que os dados mais variam: a regra encontra sozinha a direção principal dos dados."
+    },
+    {
+      "tex": "\\Delta w=\\eta\\,y\\,\\big(x-y\\,w\\big)",
+      "texto": "A correção de Erkki Oja (1982). O termo $-\\eta\\,y^2w$ freia o crescimento, e o vetor converge para a primeira componente principal, com $\\|w\\|=1$."
+    }
+  ],
+  "exemplo": "Tome três entradas, $x=(1,0,1)$, uma saída ativa $y=1$, peso inicial zero e $\\eta=0{,}1$. Cada vez que o padrão aparece, $\\Delta w=0{,}1\\cdot1\\cdot(1,0,1)=(0{,}1;\\,0;\\,0{,}1)$. Depois de dez apresentações, $w=(1;\\,0;\\,1)$: as duas entradas que andaram junto com a saída ficaram fortes, e a do meio, que nunca disparou, continuou em zero.\n\nAgora deixe a saída depender do próprio peso, $y=w^\\top x$, partindo de $w=(0{,}1;\\,0;\\,0{,}1)$. A cada passo o peso é multiplicado por $1+\\eta\\|x\\|^2=1{,}2$. Em dez passos a norma vai de $0{,}14$ para $0{,}88$; em cinquenta, passa de 1 000. Com a regra de Oja, o mesmo ponto de partida converge para $w=(0{,}707;\\,0;\\,0{,}707)$, de norma 1, e para de crescer.",
+  "limites": "A regra pura só reforça: não há termo que enfraqueça uma ligação, e os pesos crescem sem limite. Também não sabe o que é certo ou errado, só o que acontece junto. Variações posteriores acrescentaram normalização (Oja), limiares que permitem enfraquecer ligações e a dependência da ordem no tempo entre os disparos.",
+  "legado": "A ideia de guardar associações como soma de produtos externos, $W=\\sum_t y_t\\,x_t^\\top$, é a base das memórias associativas e reaparece quando se lê a atenção linear como uma memória escrita a cada token. E o resultado da terceira equação, de que a correlação aponta para a direção principal dos dados, é o mesmo que a análise de componentes principais usa para comprimir embeddings.",
+  "hoje": "Memórias associativas e a leitura da atenção linear como memória de produtos externos.",
+  "referencias": [
+    {
+      "texto": "Hebb, D. O. The Organization of Behavior: A Neuropsychological Theory. Wiley, 1949 (reedição Psychology Press).",
+      "url": "https://doi.org/10.4324/9781410612403"
+    },
+    {
+      "texto": "Oja, E. Simplified neuron model as a principal component analyzer. Journal of Mathematical Biology, 1982.",
+      "url": "https://doi.org/10.1007/BF00275687"
+    }
+  ],
+  "links": [
+    {
+      "rotulo": "Equações: modelo de embedding",
+      "href": "/equacoes/#13-modelo-de-embedding-pooling"
+    }
+  ],
   "ordem": 1,
   "status": "publicado",
   "origem": "manual",
   "adicionado_em": "2026-10-12",
-  "verificado_em": "2026-10-12"
+  "verificado_em": "2026-10-16"
 }

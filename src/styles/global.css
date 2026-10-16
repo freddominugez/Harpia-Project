@@ -429,6 +429,51 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fo
 .prose ul, .prose ol { padding-left: 22px; margin: 0 0 16px; }
 .prose li { margin: 5px 0; }
 .prose li::marker { color: var(--gold); }
+/* Aprendizado de Máquina: itens longos com equações explicadas */
+.ml .ml-intro { margin-bottom: 8px; }
+.ml-notacao { margin: 18px 0; padding: 14px 18px; border: 1px solid var(--border); border-radius: 10px; background: #fff; }
+.ml-notacao b { display: block; margin-bottom: 4px; font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gold-strong); }
+.ml-notacao ul { margin: 0; }
+.ml-mapa { list-style: none; padding: 0 !important; margin: 22px 0 8px; display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 10px; }
+.ml-mapa li { margin: 0; }
+.prose .ml-mapa a { display: flex; flex-direction: column; gap: 2px; height: 100%; padding: 12px 14px; border: 1px solid var(--border); border-radius: 9px; background: #fff; text-decoration: none; transition: border-color .15s, transform .15s; }
+.ml-mapa a:hover { border-color: var(--gold); transform: translateY(-1px); }
+.ml-mapa span { font-size: .74rem; font-weight: 800; color: var(--gold-strong); font-variant-numeric: tabular-nums; }
+.ml-mapa b { font-size: .92rem; color: var(--ink); line-height: 1.25; }
+.ml-mapa small { font-size: .76rem; line-height: 1.4; color: var(--muted); }
+.ml-item { margin-top: 30px; padding-top: 26px; border-top: 1px solid var(--border); scroll-margin-top: calc(var(--header-h) + 16px); }
+.ml-head h2 { margin: 8px 0 2px; }
+.ml-autores { margin: 0 0 8px !important; font-size: .9rem; font-weight: 650; color: #2f3a44 !important; }
+.ml-resumo { font-size: 1.05rem; color: #2f3a44 !important; }
+.ml-eqs { list-style: none; padding: 0 !important; counter-reset: eq; }
+.ml-eqs > li { counter-increment: eq; position: relative; margin: 0 0 14px; padding: 4px 0 4px 34px; }
+.ml-eqs > li::before { content: counter(eq); position: absolute; left: 0; top: 18px; display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--gold-soft); color: var(--gold-strong); font-size: .72rem; font-weight: 800; }
+.ml-eqs .eqbox { margin: 6px 0 6px; overflow-x: auto; }
+.ml-eqs p { margin: 0 !important; font-size: .94rem; }
+.ml-exemplo { margin: 20px 0; padding: 4px 20px 8px; border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; background: #fffbf2; }
+.ml-exemplo h3 { margin-top: 14px; }
+.ml-links { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: .9rem; font-weight: 650; }
+.ml-links a { color: var(--gold-strong); }
+.ml-refs { margin-top: 14px; padding: 12px 16px; border-radius: 9px; background: var(--soft); font-size: .86rem; }
+.ml-refs b { font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.ml-refs ul { margin: 4px 0 0; }
+.ml-refs a { color: #2f3a44; text-decoration: underline; text-underline-offset: 3px; }
+.ml-fio { margin-top: 34px; padding-top: 26px; border-top: 1px solid var(--border); scroll-margin-top: calc(var(--header-h) + 16px); }
+.ml-tabela-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 10px; background: #fff; }
+.prose .ml-tabela { display: table; width: 100%; max-width: none; margin: 0; border: 0; border-collapse: collapse; font-size: .9rem; }
+.ml-tabela th, .ml-tabela td { padding: 10px 14px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+.ml-tabela thead th { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); background: var(--soft); }
+.ml-tabela td:first-child { font-weight: 800; color: var(--gold-strong); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ml-tabela tbody th a { color: var(--ink); }
+.ml-tabela tr:last-child > * { border-bottom: 0; }
+@media (max-width: 640px) {
+  .ml-tabela thead { display: none; }
+  .ml-tabela tr { display: block; padding: 10px 14px; border-bottom: 1px solid var(--border); }
+  .ml-tabela tr:last-child { border-bottom: 0; }
+  .ml-tabela th, .ml-tabela td { display: block; padding: 2px 0; border: 0; }
+  .ml-exemplo { padding: 2px 14px 6px; }
+  .ml-eqs > li { padding-left: 28px; }
+}
 .prose a { color: #33618a; text-decoration: underline; text-decoration-color: rgba(51, 97, 138, .35); text-underline-offset: 3px; }
 .prose a:hover { color: var(--gold-strong); text-decoration-color: currentColor; }
 .prose strong, .prose b { color: var(--ink); }

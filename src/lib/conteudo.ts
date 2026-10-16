@@ -14,7 +14,12 @@ export type Livro = { titulo: string; autores: string; nota: string; uso: string
 export const CATEGORIAS_LIVRO: [string, string][] = [["mat", "Matemática e estatística"], ["ml", "Aprendizado de máquina"], ["ling", "Linguagem e informação"], ["ia", "IA e sociedade"], ["comp", "Ciência da computação"], ["eng", "Engenharia de software e dados"]];
 export type Fonte = { nome: string; url: string; descricao: string; grupo: string; grupo_ordem: number };
 export type Feed = { nome: string; url: string; nota?: string; so_titulo?: boolean };
-export type Aprendizado = { ano: number; titulo: string; texto: string; eq?: string };
+export type Aprendizado = {
+  ano: number; titulo: string; texto: string; eq?: string; autores?: string;
+  contexto?: string; mecanismo?: string; equacoes?: { tex: string; texto: string }[]; exemplo?: string;
+  limites?: string; legado?: string; hoje?: string;
+  referencias?: { texto: string; url: string }[]; links?: { rotulo: string; href: string }[];
+};
 export type EventoLinha = { ano: number; titulo: string; texto: string; eq?: string; marco: boolean; era: string };
 
 export const ARTIGOS = lista<Artigo & Status>(import.meta.glob("../content/artigos/*.json", { eager: true }));

@@ -121,7 +121,23 @@ const feeds = defineCollection({
 
 const aprendizado = defineCollection({
   loader: data("aprendizado"),
-  schema: z.object({ ano: z.coerce.number().int(), titulo: z.string(), texto: z.string(), eq: z.string().optional(), ...curadoria }),
+  schema: z.object({
+    ano: z.coerce.number().int(),
+    titulo: z.string(),
+    texto: z.string(),
+    eq: z.string().optional(),
+    autores: z.string().optional(),
+    contexto: z.string().optional(),
+    mecanismo: z.string().optional(),
+    equacoes: z.array(z.object({ tex: z.string(), texto: z.string() })).default([]),
+    exemplo: z.string().optional(),
+    limites: z.string().optional(),
+    legado: z.string().optional(),
+    hoje: z.string().optional(),
+    referencias: z.array(z.object({ texto: z.string(), url: z.string().url().or(z.literal("")).default("") })).default([]),
+    links: z.array(z.object({ rotulo: z.string(), href: z.string() })).default([]),
+    ...curadoria,
+  }),
 });
 
 const linhaDoTempo = defineCollection({

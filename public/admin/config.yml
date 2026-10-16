@@ -800,7 +800,7 @@ collections:
     default: 999
     hint: Posição na lista (menor aparece primeiro).
 - name: aprendizado
-  label: Aprendizado de máquina (marcos)
+  label: Aprendizado de máquina
   label_singular: Marco
   folder: src/content/aprendizado
   extension: json
@@ -817,13 +817,84 @@ collections:
   - label: Título
     name: titulo
     widget: string
-  - label: Texto
+  - label: Resumo (uma frase)
     name: texto
     widget: text
-  - label: Regra de atualização (LaTeX)
+  - label: Equação principal (LaTeX)
     name: eq
     widget: string
     required: false
+    hint: Usada só quando a lista de equações está vazia.
+  - label: Autores
+    name: autores
+    widget: string
+    required: false
+  - label: Contexto
+    name: contexto
+    widget: text
+    required: false
+    hint: Texto corrido. Linha em branco separa parágrafos; $...$ para matemática; linhas começando com "- " viram lista; **negrito**, *itálico*.
+  - label: Como funciona
+    name: mecanismo
+    widget: text
+    required: false
+    hint: Texto corrido. Linha em branco separa parágrafos; $...$ para matemática; linhas começando com "- " viram lista; **negrito**, *itálico*.
+  - label: Equações
+    name: equacoes
+    widget: list
+    required: false
+    summary: '{{fields.tex}}'
+    fields:
+    - label: Equação (LaTeX)
+      name: tex
+      widget: string
+    - label: Explicação
+      name: texto
+      widget: text
+      hint: Pode usar $...$ para símbolos.
+  - label: Exemplo com números
+    name: exemplo
+    widget: text
+    required: false
+    hint: Texto corrido. Linha em branco separa parágrafos; $...$ para matemática; linhas começando com "- " viram lista; **negrito**, *itálico*.
+  - label: Limites
+    name: limites
+    widget: text
+    required: false
+  - label: O que virou hoje
+    name: legado
+    widget: text
+    required: false
+  - label: Numa LLM de hoje (uma linha, para a tabela final)
+    name: hoje
+    widget: string
+    required: false
+  - label: Fontes
+    name: referencias
+    widget: list
+    required: false
+    summary: '{{fields.texto}}'
+    fields:
+    - label: Referência
+      name: texto
+      widget: string
+    - label: Link (DOI ou PDF)
+      name: url
+      widget: string
+      required: false
+      default: ''
+  - label: Links internos
+    name: links
+    widget: list
+    required: false
+    summary: '{{fields.rotulo}}'
+    fields:
+    - label: Rótulo
+      name: rotulo
+      widget: string
+    - label: Endereço no site
+      name: href
+      widget: string
   - label: Status
     name: status
     widget: select

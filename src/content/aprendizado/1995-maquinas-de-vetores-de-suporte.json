@@ -1,11 +1,56 @@
 {
   "ano": 1995,
   "titulo": "Máquinas de vetores de suporte",
-  "texto": "Cortes e Vapnik: separar com a maior margem possível.",
+  "autores": "Corinna Cortes e Vladimir Vapnik",
+  "texto": "Cortes e Vapnik: separar com a maior margem possível, tolerando erros e usando núcleos.",
   "eq": "\\min\\tfrac12\\|w\\|^2\\ \\text{s.a.}\\ y_i(w^\\top x_i+b)\\ge1",
-  "ordem": 8,
+  "contexto": "Nos Bell Labs, Vladimir Vapnik vinha desenvolvendo desde os anos 1960 uma teoria estatística do aprendizado, que relaciona o erro em dados novos à capacidade do modelo. Em 1992, com Bernhard Boser e Isabelle Guyon, mostrou como treinar classificadores de margem máxima usando núcleos. Em 1995, com Corinna Cortes, publicou a versão com margem flexível, que tolera exemplos do lado errado, com o nome *support-vector networks*.\n\nPor cerca de quinze anos, as SVMs foram um método de referência em classificação de texto, bioinformática e visão.",
+  "mecanismo": "Entre todas as retas que separam duas classes, o perceptron para na primeira que encontra. A SVM escolhe a que fica mais longe dos pontos mais próximos de cada lado, a de maior margem. A intuição é que uma fronteira com folga erra menos em dados novos.\n\nSó os pontos que encostam na margem, os **vetores de suporte**, determinam a solução; os outros podem ser apagados sem mudar nada. Quando as classes não se separam por uma reta, entram dois recursos: variáveis de folga, que permitem alguns erros a um custo, e o truque do núcleo, que calcula produtos internos num espaço de dimensão muito maior sem nunca construir esse espaço.",
+  "equacoes": [
+    {
+      "tex": "\\text{margem}=\\frac{2}{\\|w\\|}",
+      "texto": "A largura da faixa vazia entre as classes, para a fronteira $w^\\top x+b=0$ com os pontos mais próximos em $w^\\top x+b=\\pm1$. Maximizar a margem é minimizar $\\|w\\|$."
+    },
+    {
+      "tex": "\\min_{w,b,\\xi}\\ \\tfrac12\\|w\\|^2+C\\sum_i\\xi_i\\quad\\text{s.a.}\\quad y_i\\,(w^\\top x_i+b)\\ge1-\\xi_i,\\ \\ \\xi_i\\ge0",
+      "texto": "O problema com margem flexível. $y_i\\in\\{-1,+1\\}$ é o rótulo, $\\xi_i$ a folga do exemplo $i$ e $C$ o preço de cada violação."
+    },
+    {
+      "tex": "\\min_{w,b}\\ \\tfrac12\\|w\\|^2+C\\sum_i\\max\\big(0,\\ 1-y_i\\,(w^\\top x_i+b)\\big)",
+      "texto": "A mesma coisa escrita como perda: a perda de articulação (*hinge*) é zero para quem está do lado certo com folga e cresce em linha reta para os demais."
+    },
+    {
+      "tex": "f(x)=\\operatorname{sinal}\\Big(\\sum_i\\alpha_i\\,y_i\\,K(x_i,x)+b\\Big)",
+      "texto": "A decisão na forma dual. Só os vetores de suporte têm $\\alpha_i>0$."
+    },
+    {
+      "tex": "K(x,z)=\\varphi(x)^\\top\\varphi(z),\\qquad K_{\\text{RBF}}(x,z)=e^{-\\gamma\\|x-z\\|^2}",
+      "texto": "O núcleo substitui o produto interno num espaço transformado $\\varphi$. O núcleo gaussiano (RBF) corresponde a um espaço de dimensão infinita."
+    }
+  ],
+  "exemplo": "Dois pontos: $(1,1)$ da classe $+1$ e $(-1,-1)$ da classe $-1$. A solução de margem máxima é $w=(0{,}5;\\,0{,}5)$ e $b=0$. Os dois pontos ficam exatamente em $y\\,(w^\\top x)=1$, e a margem é $2/\\|w\\|=2/0{,}707\\approx2{,}83$, a própria distância entre eles, $2\\sqrt2$. A fronteira é a reta $x_1+x_2=0$, bem no meio.\n\nUm terceiro ponto da classe $+1$ em $(0{,}5;\\,0)$ ficaria dentro da faixa: $y\\,(w^\\top x)=0{,}25$, com perda hinge de $1-0{,}25=0{,}75$. Com $C$ grande, a SVM moveria a fronteira para acomodá-lo; com $C$ pequeno, aceitaria pagar essa perda e manteria a margem larga.",
+  "limites": "O treino exato cresce mais que linearmente com o número de exemplos, porque a forma dual envolve a matriz de núcleo de $n\\times n$. E o núcleo precisa ser escolhido à mão: a SVM não aprende as características, só a melhor fronteira sobre elas. Foi nesse ponto que as redes profundas, que aprendem a própria representação, tomaram o lugar dela a partir de 2012.",
+  "legado": "A ideia de margem voltou nas perdas contrastivas que treinam os modelos de embedding, que exigem que o par certo fique mais próximo que os errados por uma folga. E a atenção pode ser lida como um suavizador por núcleo: o peso $\\mathrm{softmax}(q^\\top k_i)$ mede a semelhança entre a consulta e cada chave, como $K(x_i,x)$ mede a semelhança entre exemplos.",
+  "hoje": "A margem das perdas contrastivas e a leitura da atenção como núcleo.",
+  "referencias": [
+    {
+      "texto": "Cortes, C.; Vapnik, V. Support-vector networks. Machine Learning, 1995.",
+      "url": "https://doi.org/10.1007/BF00994018"
+    },
+    {
+      "texto": "Boser, B. E.; Guyon, I. M.; Vapnik, V. N. A training algorithm for optimal margin classifiers. COLT, 1992.",
+      "url": "https://doi.org/10.1145/130385.130401"
+    }
+  ],
+  "links": [
+    {
+      "rotulo": "Equações: perda contrastiva e Matryoshka",
+      "href": "/equacoes/#14-perda-contrastiva-e-matryoshka"
+    }
+  ],
+  "ordem": 9,
   "status": "publicado",
   "origem": "manual",
   "adicionado_em": "2026-10-12",
-  "verificado_em": "2026-10-12"
+  "verificado_em": "2026-10-16"
 }

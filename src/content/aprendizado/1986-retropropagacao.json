@@ -1,0 +1,56 @@
+{
+  "ano": 1986,
+  "titulo": "Retropropagação",
+  "autores": "David E. Rumelhart, Geoffrey E. Hinton e Ronald J. Williams",
+  "texto": "A regra da cadeia distribui a culpa do erro por todas as camadas, e redes com camadas escondidas passam a ser treináveis.",
+  "eq": "\\delta^{(l)}=\\big((W^{(l+1)})^{\\top}\\delta^{(l+1)}\\big)\\odot\\sigma'(z^{(l)})",
+  "contexto": "A pergunta deixada pelo XOR era como ajustar neurônios que não estão na saída. A resposta, calcular o gradiente de trás para frente pela regra da cadeia, apareceu mais de uma vez: na diferenciação automática em modo reverso de Seppo Linnainmaa (1970) e na tese de Paul Werbos (1974).\n\nEla se tornou conhecida em 1986, quando David Rumelhart, Geoffrey Hinton e Ronald Williams mostraram na *Nature* que redes treinadas assim aprendem, por conta própria, representações internas úteis nas camadas escondidas.",
+  "mecanismo": "Duas condições tornam o método possível. A primeira é trocar o degrau por uma função suave, como a sigmoide, para que pequenas mudanças nos pesos causem pequenas mudanças na saída. A segunda é organizar a conta.\n\nO passo para frente calcula as ativações camada a camada. O passo para trás parte do erro na saída e, usando a regra da cadeia, calcula quanto cada peso contribuiu para ele, reaproveitando o que já foi calculado para a camada seguinte. Por isso o passo para trás custa da mesma ordem que o passo para frente, por maior que seja a rede.",
+  "equacoes": [
+    {
+      "tex": "z^{(l)}=W^{(l)}a^{(l-1)}+b^{(l)},\\qquad a^{(l)}=\\sigma\\big(z^{(l)}\\big)",
+      "texto": "O passo para frente: cada camada $l$ combina as ativações da anterior e aplica a não linearidade $\\sigma$."
+    },
+    {
+      "tex": "\\delta^{(L)}=\\nabla_{a^{(L)}}\\mathcal L\\odot\\sigma'\\big(z^{(L)}\\big)",
+      "texto": "O erro na última camada $L$: quanto a perda $\\mathcal L$ muda com a pré-ativação da saída. $\\odot$ é a multiplicação elemento a elemento."
+    },
+    {
+      "tex": "\\delta^{(l)}=\\Big(\\big(W^{(l+1)}\\big)^{\\top}\\delta^{(l+1)}\\Big)\\odot\\sigma'\\big(z^{(l)}\\big)",
+      "texto": "A retropropagação: o erro de uma camada é o da camada seguinte, levado para trás pelos mesmos pesos, transpostos."
+    },
+    {
+      "tex": "\\frac{\\partial\\mathcal L}{\\partial W^{(l)}}=\\delta^{(l)}\\big(a^{(l-1)}\\big)^{\\top},\\qquad \\frac{\\partial\\mathcal L}{\\partial b^{(l)}}=\\delta^{(l)}",
+      "texto": "O gradiente de cada matriz de pesos, que alimenta a atualização $W\\leftarrow W-\\eta\\,\\partial\\mathcal L/\\partial W$."
+    },
+    {
+      "tex": "\\sigma(z)=\\frac{1}{1+e^{-z}},\\qquad \\sigma'(z)=\\sigma(z)\\big(1-\\sigma(z)\\big)",
+      "texto": "A sigmoide e a sua derivada, que se calcula a partir do próprio valor e nunca passa de $0{,}25$."
+    }
+  ],
+  "exemplo": "A menor rede possível: entrada $x=1$, um neurônio escondido sigmoide com peso $w_1=0$, saída linear com peso $w_2=1$, alvo $t=1$ e perda $\\mathcal L=\\tfrac12(y-t)^2$.\n\n- Para frente: $h=\\sigma(0)=0{,}5$, $y=w_2h=0{,}5$, $\\mathcal L=0{,}125$.\n- Para trás: $\\partial\\mathcal L/\\partial y=y-t=-0{,}5$. Para o peso de saída, $\\partial\\mathcal L/\\partial w_2=-0{,}5\\cdot h=-0{,}25$. Para o neurônio escondido, o erro chega multiplicado por $w_2$ e por $\\sigma'(0)=0{,}25$: $\\partial\\mathcal L/\\partial w_1=-0{,}5\\cdot1\\cdot0{,}25\\cdot x=-0{,}125$.\n- Com $\\eta=1$: $w_2=1{,}25$ e $w_1=0{,}125$. A nova saída é $1{,}25\\cdot\\sigma(0{,}125)\\approx0{,}664$, e a perda cai de $0{,}125$ para $0{,}056$.\n\nO peso escondido recebeu metade do ajuste do peso de saída: a derivada da sigmoide encolhe o sinal a cada camada. Em redes muito profundas esse encolhimento faz o gradiente sumir, um dos motivos da troca da sigmoide pela ReLU.",
+  "limites": "Com sigmoides, o gradiente diminui a cada camada, e redes profundas treinavam mal. O método também exige guardar todas as ativações do passo para frente, o que pesa na memória. Esses dois problemas levaram à ReLU, à inicialização cuidadosa, às conexões residuais e à normalização, todas presentes nas LLMs.",
+  "legado": "É o algoritmo que treina todas as redes atuais. Bibliotecas como PyTorch e JAX implementam a diferenciação automática em modo reverso, a generalização desta conta para qualquer programa. Uma etapa de treino de LLM é um passo para frente sobre um lote de textos, um passo para trás e uma atualização do otimizador.",
+  "hoje": "O treino de toda rede: diferenciação automática em modo reverso.",
+  "referencias": [
+    {
+      "texto": "Rumelhart, D. E.; Hinton, G. E.; Williams, R. J. Learning representations by back-propagating errors. Nature, 1986.",
+      "url": "https://doi.org/10.1038/323533a0"
+    }
+  ],
+  "links": [
+    {
+      "rotulo": "Equações: perda e gradiente",
+      "href": "/equacoes/#11-perda-e-gradiente"
+    },
+    {
+      "rotulo": "Equações: conexões residuais",
+      "href": "/equacoes/#8-conexões-residuais"
+    }
+  ],
+  "ordem": 7,
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-16",
+  "verificado_em": "2026-10-16"
+}

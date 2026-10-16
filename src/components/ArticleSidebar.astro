@@ -1,15 +1,15 @@
 ---
 // Coluna lateral das páginas de leitura: índice fixo, links relacionados e fórum.
 import type { TocItem, Relacionado } from "../lib/types";
-interface Props { toc?: TocItem[]; relacionados?: Relacionado[]; tituloRelacionados?: string }
-const { toc = [], relacionados = [], tituloRelacionados = "Trilhas relacionadas" } = Astro.props;
+interface Props { toc?: TocItem[]; relacionados?: Relacionado[]; tituloRelacionados?: string; numerar?: boolean }
+const { toc = [], relacionados = [], tituloRelacionados = "Trilhas relacionadas", numerar = true } = Astro.props;
 ---
 <aside aria-label="Navegação da página">
   {toc.length > 1 && (
     <div class="surface aside-panel toc-panel">
       <h3>Índice da página</h3>
       <nav class="toc" aria-label="Índice">
-        {toc.map((t, i) => <a href={`#${t.id}`}>{/^\d/.test(t.texto) ? t.texto : `${i + 1}. ${t.texto}`}</a>)}
+        {toc.map((t, i) => <a href={`#${t.id}`}>{!numerar || /^\d/.test(t.texto) ? t.texto : `${i + 1}. ${t.texto}`}</a>)}
       </nav>
     </div>
   )}

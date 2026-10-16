@@ -1,10 +1,56 @@
 {
   "ano": 1998,
   "titulo": "VA-file",
+  "autores": "Roger Weber, Hans-Jörg Schek e Stephen Blott",
   "texto": "Busca em alta dimensão lendo primeiro uma aproximação em poucos bits de cada vetor. É arte prévia direta da linha principal deste projeto.",
-  "ordem": 9,
+  "eq": "L(x)>U_{(k)}\\ \\Rightarrow\\ x\\notin\\text{top-}k",
+  "contexto": "Nos anos 1990, bancos de imagens e de documentos já representavam cada item por um vetor de dezenas de dimensões, e a busca do vizinho mais próximo usava índices em árvore. Em 1998, no congresso VLDB, Roger Weber, Hans-Jörg Schek e Stephen Blott mostraram que esses índices perdem para a simples leitura de todos os vetores quando a dimensão passa de cerca de dez, ao menos sob as hipóteses de dados uniformes do estudo.\n\nEm vez de tentar mais uma árvore, eles propuseram acelerar a própria varredura: o VA-file (*vector approximation file*).",
+  "mecanismo": "Cada dimensão é dividida em poucas faixas, por exemplo 4 ou 16, e cada vetor é guardado também numa versão aproximada: em vez dos números exatos, só o número da faixa em que cada coordenada cai, com 2 a 4 bits por dimensão.\n\nA busca tem duas fases. Na primeira, lê só as aproximações, que são muito menores, e calcula para cada vetor um limite inferior e um superior da distância à consulta. Qualquer vetor cujo limite inferior seja maior que o limite superior dos $k$ melhores já vistos é descartado **com certeza**, sem ler o vetor completo. Na segunda fase, só os sobreviventes são lidos por inteiro e medidos exatamente.",
+  "equacoes": [
+    {
+      "tex": "c_j(x)=\\left\\lfloor\\frac{x_j-a_j}{\\Delta_j}\\right\\rfloor\\in\\{0,\\dots,2^{b}-1\\}",
+      "texto": "A aproximação: a coordenada $x_j$ vira o número da faixa de largura $\\Delta_j$, contada a partir do início $a_j$ do intervalo, com $b$ bits por dimensão."
+    },
+    {
+      "tex": "\\ell_j=\\begin{cases}\\mathrm{lo}_j-q_j, & q_j<\\mathrm{lo}_j\\\\ 0, & \\mathrm{lo}_j\\le q_j\\le\\mathrm{hi}_j\\\\ q_j-\\mathrm{hi}_j, & q_j>\\mathrm{hi}_j\\end{cases}\\qquad u_j=\\max\\big(|q_j-\\mathrm{lo}_j|,\\ |q_j-\\mathrm{hi}_j|\\big)",
+      "texto": "Para cada dimensão, a menor e a maior distância possíveis entre a coordenada da consulta $q_j$ e qualquer ponto da faixa $[\\mathrm{lo}_j,\\mathrm{hi}_j]$ em que o vetor está."
+    },
+    {
+      "tex": "L(x)=\\Big(\\sum_j \\ell_j^2\\Big)^{1/2}\\ \\le\\ \\|q-x\\|\\ \\le\\ U(x)=\\Big(\\sum_j u_j^2\\Big)^{1/2}",
+      "texto": "Os limites da distância verdadeira, calculados só com a aproximação."
+    },
+    {
+      "tex": "L(x)>U_{(k)}\\ \\Rightarrow\\ x\\ \\text{não está entre os}\\ k\\ \\text{mais próximos}",
+      "texto": "A regra de descarte. $U_{(k)}$ é o $k$-ésimo menor limite superior visto até agora. É uma exclusão com garantia, não uma aposta."
+    }
+  ],
+  "exemplo": "Consulta $q=(0{,}62;\\,0{,}10)$ em duas dimensões, com 2 bits por dimensão, ou seja, quatro faixas de largura $0{,}25$ entre 0 e 1.\n\n- Um vetor $A$ está na faixa $[0{,}5;\\,0{,}75]$ da primeira dimensão e na faixa $[0;\\,0{,}25]$ da segunda. A consulta cai dentro das duas faixas, então $L(A)=0$. O limite superior é $U(A)=\\sqrt{0{,}13^2+0{,}15^2}\\approx0{,}198$.\n- Um vetor $B$ está nas faixas $[0;\\,0{,}25]$ e $[0{,}75;\\,1]$. Agora $L(B)=\\sqrt{0{,}37^2+0{,}65^2}\\approx0{,}748$.\n\nComo $L(B)=0{,}748$ é maior que $U(A)=0{,}198$, $B$ não pode ser o vizinho mais próximo, e o seu vetor completo nunca é lido. Em escala real, com 768 dimensões, um vetor em 32 bits ocupa 3 072 bytes e a aproximação de 4 bits por dimensão ocupa 384, oito vezes menos para a primeira fase.",
+  "limites": "Os limites são frouxos quando as faixas são largas, e então poucos vetores são descartados. A divisão em faixas fixas funciona mal quando os dados se concentram em poucas regiões, e a segunda fase ainda faz leituras espalhadas dos vetores completos.",
+  "legado": "Ler primeiro uma versão comprimida, calcular um limite para a distância e só então ler o resto está na base de métodos modernos de quantização para busca vetorial, como ADSampling e RaBitQ, que trocam o limite garantido por limites probabilísticos mais apertados. É também a linha principal deste projeto: o certificado inteiro lê os 4 bits altos de cada linha int8, exclui com certeza quem não pode vencer e só lê os 4 bits baixos dos sobreviventes.",
+  "hoje": "Quantização com filtragem garantida em bancos vetoriais, e o caminho 01 deste projeto.",
+  "referencias": [
+    {
+      "texto": "Weber, R.; Schek, H.-J.; Blott, S. A Quantitative Analysis and Performance Study for Similarity-Search Methods in High-Dimensional Spaces. VLDB, 1998.",
+      "url": "https://www.vldb.org/conf/1998/p194.pdf"
+    }
+  ],
+  "links": [
+    {
+      "rotulo": "Caminho 01: certificado inteiro",
+      "href": "/estudos/caminhos/certificado-inteiro/"
+    },
+    {
+      "rotulo": "Caminho 03: raio probabilístico",
+      "href": "/estudos/caminhos/raio-probabilistico/"
+    },
+    {
+      "rotulo": "Equações: quantização",
+      "href": "/equacoes/#15-quantização"
+    }
+  ],
+  "ordem": 10,
   "status": "publicado",
   "origem": "manual",
   "adicionado_em": "2026-10-12",
-  "verificado_em": "2026-10-12"
+  "verificado_em": "2026-10-16"
 }

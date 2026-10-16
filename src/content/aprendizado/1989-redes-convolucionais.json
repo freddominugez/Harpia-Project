@@ -1,10 +1,47 @@
 {
   "ano": 1989,
   "titulo": "Redes convolucionais",
-  "texto": "LeCun lê dígitos de cheques com pesos compartilhados.",
-  "ordem": 7,
+  "autores": "Yann LeCun e colegas, nos Bell Labs",
+  "texto": "LeCun lê dígitos manuscritos de códigos postais com pesos compartilhados.",
+  "eq": "S(i,j)=\\sum_{m}\\sum_{n} I(i+m,\\,j+n)\\,K(m,n)+b",
+  "contexto": "Nos Bell Labs, Yann LeCun e colegas treinaram com retropropagação uma rede para ler os dígitos manuscritos dos códigos postais (ZIP codes) em envelopes do correio dos Estados Unidos. O artigo de 1989 mostrou que restringir a arquitetura, em vez de ligar cada neurônio a todos os pixels, faz a rede aprender melhor com menos exemplos.\n\nA linha evoluiu para a LeNet-5, descrita em 1998, e um sistema baseado nela foi usado na leitura automática de cheques bancários nos Estados Unidos.",
+  "mecanismo": "Uma imagem tem uma estrutura que uma rede comum ignora: um traço vertical é um traço vertical em qualquer lugar da imagem. A convolução usa isso. Em vez de cada neurônio olhar para a imagem inteira com pesos próprios, um pequeno filtro, por exemplo de 3×3 pixels, desliza pela imagem e aplica os mesmos pesos em cada posição.\n\nCada filtro aprende a detectar um padrão local, como uma borda ou uma curva, e gera um mapa que diz onde o padrão aparece. Camadas seguintes combinam esses mapas em padrões maiores, e etapas de subamostragem reduzem a resolução, o que torna a rede tolerante a pequenos deslocamentos.",
+  "equacoes": [
+    {
+      "tex": "S(i,j)=\\sum_{m}\\sum_{n} I(i+m,\\,j+n)\\,K(m,n)+b",
+      "texto": "A operação de cada filtro: $I$ é a imagem, $K$ o núcleo de pesos, $b$ o viés e $S$ o mapa de saída. Tecnicamente é uma correlação cruzada, que as bibliotecas chamam de convolução."
+    },
+    {
+      "tex": "o=\\left\\lfloor\\frac{n+2p-k}{s}\\right\\rfloor+1",
+      "texto": "O lado da saída para uma entrada de lado $n$, filtro de lado $k$, preenchimento $p$ e passo $s$."
+    },
+    {
+      "tex": "\\#\\,\\text{parâmetros}=k^2\\,C_{\\text{in}}\\,C_{\\text{out}}+C_{\\text{out}}",
+      "texto": "Quantos pesos uma camada convolucional tem. Não depende do tamanho da imagem, só do filtro e do número de canais de entrada e de saída."
+    },
+    {
+      "tex": "y(i,j)=\\max_{(u,v)\\,\\in\\,\\text{janela}(i,j)} S(u,v)",
+      "texto": "A subamostragem por máximo, forma comum nas redes atuais. As redes de LeCun reduziam a resolução com passos de 2 ou com médias."
+    }
+  ],
+  "exemplo": "Um filtro de borda vertical, com colunas $(1,0,-1)$, sobre um trecho de 3×3 pixels em que as duas colunas da esquerda valem 9 e a da direita vale 1: a soma dá $3\\cdot9-3\\cdot1=24$, um sinal forte de borda. Sobre um trecho liso, com todos os pixels valendo 5, dá 0. O mesmo filtro, com os mesmos 9 pesos, varre a imagem inteira.\n\nAgora o tamanho. Numa imagem de 28×28, um filtro 3×3 sem preenchimento produz um mapa de 26×26 e tem 10 parâmetros, 9 pesos e um viés. Uma camada totalmente conectada que produzisse as mesmas 676 saídas a partir dos 784 pixels teria $784\\cdot676+676=530\\,660$ parâmetros, mais de 50 mil vezes mais.",
+  "limites": "A convolução supõe que o mesmo padrão vale em qualquer posição e que o que importa é local. Isso é ótimo para imagens e sons, mas relacionar pontos distantes exige empilhar muitas camadas.",
+  "legado": "O princípio de compartilhar pesos está em toda LLM: as mesmas matrizes de atenção e de FFN são aplicadas a cada token da sequência, em qualquer posição. E os modelos de visão baseados em Transformer cortam a imagem em blocos com uma camada que é, ela mesma, uma convolução com passo igual ao tamanho do bloco.",
+  "hoje": "Pesos compartilhados entre posições, e a entrada dos modelos de visão.",
+  "referencias": [
+    {
+      "texto": "LeCun, Y. et al. Backpropagation Applied to Handwritten Zip Code Recognition. Neural Computation, 1989.",
+      "url": "https://doi.org/10.1162/neco.1989.1.4.541"
+    },
+    {
+      "texto": "LeCun, Y.; Bottou, L.; Bengio, Y.; Haffner, P. Gradient-based learning applied to document recognition. Proceedings of the IEEE, 1998.",
+      "url": "https://doi.org/10.1109/5.726791"
+    }
+  ],
+  "links": [],
+  "ordem": 8,
   "status": "publicado",
   "origem": "manual",
   "adicionado_em": "2026-10-12",
-  "verificado_em": "2026-10-12"
+  "verificado_em": "2026-10-16"
 }

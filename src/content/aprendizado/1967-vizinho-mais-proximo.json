@@ -1,11 +1,56 @@
 {
   "ano": 1967,
   "titulo": "Vizinho mais próximo",
+  "autores": "Thomas Cover e Peter Hart",
   "texto": "Cover e Hart: classificar pelo exemplo mais parecido. É o ancestral direto da busca vetorial.",
   "eq": "\\hat y(q)=y_{\\arg\\min_i\\|q-x_i\\|}",
+  "contexto": "A regra do vizinho mais próximo já tinha sido proposta por Evelyn Fix e Joseph Hodges em 1951, num relatório técnico para a Força Aérea dos Estados Unidos. Em 1967, Thomas Cover e Peter Hart provaram o que ela garante: com exemplos suficientes, o erro dessa regra tão simples nunca passa do dobro do menor erro possível para o problema.\n\nFoi a primeira vez que um método sem modelo nenhum, que apenas guarda os exemplos, ganhou uma garantia matemática forte.",
+  "mecanismo": "Não há treino. O método guarda todos os exemplos rotulados. Para classificar um ponto novo, mede a distância até cada exemplo guardado e copia o rótulo do mais próximo. A variante com $k$ vizinhos faz uma votação entre os $k$ mais próximos, o que reduz o efeito de exemplos com ruído.\n\nToda a inteligência está na escolha da distância: dois pontos próximos precisam significar duas coisas parecidas. É exatamente o que um bom modelo de embedding tenta garantir.",
+  "equacoes": [
+    {
+      "tex": "\\hat y(q)=y_{i^{*}},\\qquad i^{*}=\\arg\\min_i\\ \\|q-x_i\\|",
+      "texto": "A regra: $q$ é o ponto a classificar, $x_i$ os exemplos guardados e $y_i$ os seus rótulos."
+    },
+    {
+      "tex": "\\hat y(q)=\\arg\\max_{c}\\ \\sum_{i\\in N_k(q)}\\mathbf{1}\\,[\\,y_i=c\\,]",
+      "texto": "Com $k$ vizinhos: $N_k(q)$ são os $k$ exemplos mais próximos, e a classe vencedora é a mais frequente entre eles."
+    },
+    {
+      "tex": "R^{*}\\le R\\le R^{*}\\Big(2-\\frac{M}{M-1}\\,R^{*}\\Big)\\le 2R^{*}",
+      "texto": "O teorema de Cover e Hart. $R^{*}$ é o menor erro que qualquer classificador consegue (o erro de Bayes), $R$ o erro do vizinho mais próximo com infinitos exemplos e $M$ o número de classes."
+    },
+    {
+      "tex": "\\|q-x\\|^2=\\|q\\|^2+\\|x\\|^2-2\\,q^\\top x=2-2\\cos(q,x)",
+      "texto": "Quando os vetores têm norma 1, como os embeddings normalizados, a distância euclidiana e a semelhança de cosseno ordenam os vizinhos do mesmo jeito: o mais próximo é o de maior produto interno."
+    },
+    {
+      "tex": "\\text{custo por consulta}=O(n\\,d)",
+      "texto": "A busca exata lê cada um dos $n$ vetores de $d$ dimensões a cada consulta."
+    }
+  ],
+  "exemplo": "Dois embeddings de norma 1: a consulta $q=(0{,}6;\\,0{,}8)$ e um documento $x=(1;\\,0)$. O produto interno é $0{,}6$, e a distância ao quadrado é $(0{,}6-1)^2+0{,}8^2=0{,}8$, exatamente $2-2\\cdot0{,}6$.\n\nNum acervo com um milhão de documentos de 768 dimensões, a busca exata faz cerca de 768 milhões de multiplicações por consulta e lê uns 3 GB de vetores em 32 bits a cada pergunta. Esse custo é a razão de existir de todo o resto da busca vetorial, inclusive do VA-file, no fim desta página.",
+  "limites": "O custo cresce com o tamanho do acervo, e a memória também, porque nada é resumido. Em muitas dimensões, as distâncias tendem a ficar parecidas entre si, e a diferença entre o mais próximo e o mais distante diminui. E a garantia de Cover e Hart vale no limite de infinitos exemplos.",
+  "legado": "Geração aumentada por recuperação (RAG), busca semântica e memória de longo prazo de assistentes são, no fundo, vizinho mais próximo sobre embeddings. Quase toda a pesquisa em índices vetoriais, de grafos como o HNSW à quantização, busca fazer essa mesma conta lendo menos bytes.",
+  "hoje": "RAG e busca semântica: vizinho mais próximo sobre embeddings.",
+  "referencias": [
+    {
+      "texto": "Cover, T.; Hart, P. Nearest neighbor pattern classification. IEEE Transactions on Information Theory, 1967.",
+      "url": "https://doi.org/10.1109/TIT.1967.1053964"
+    },
+    {
+      "texto": "Fix, E.; Hodges, J. L. Discriminatory analysis, nonparametric discrimination. Relatório técnico, USAF School of Aviation Medicine, 1951.",
+      "url": ""
+    }
+  ],
+  "links": [
+    {
+      "rotulo": "Equações: recuperação vetorial",
+      "href": "/equacoes/#16-recuperação-vetorial"
+    }
+  ],
   "ordem": 5,
   "status": "publicado",
   "origem": "manual",
   "adicionado_em": "2026-10-12",
-  "verificado_em": "2026-10-12"
+  "verificado_em": "2026-10-16"
 }

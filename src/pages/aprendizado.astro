@@ -1,25 +1,120 @@
 ---
+// Aprendizado de Máquina: as ideias de 1949 a 1998 que ainda estão dentro das LLMs.
+// Cada item tem contexto, mecanismo, equações explicadas, exemplo com números, limites, legado e fonte.
+// Conteúdo em src/content/aprendizado/*.json (editável no painel); texto com $...$ renderizado no build.
 import Base from "../layouts/Base.astro";
 import PageIntro from "../components/PageIntro.astro";
-import ResponsiveGrid from "../components/ResponsiveGrid.astro";
+import ArticleSidebar from "../components/ArticleSidebar.astro";
 import Tag from "../components/Tag.astro";
 import M from "../components/M.astro";
 import { APRENDIZADO as ml } from "../lib/conteudo";
+import { rico, linha } from "../lib/rico";
+
+const slug = (a: { ano: number; titulo: string }) =>
+  `${a.ano}-${a.titulo.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}`;
+const itens = ml.map((a) => ({ ...a, id: slug(a) }));
+const toc = [
+  { id: "como-ler", texto: "Como ler esta página" },
+  ...itens.map((a) => ({ id: a.id, texto: `${a.ano} · ${a.titulo}` })),
+  { id: "o-fio", texto: "O fio que liga tudo" },
+];
+const nEq = itens.reduce((s, a) => s + (a.equacoes?.length ?? 0), 0);
+const relacionados = [
+  { href: "/equacoes/", titulo: "Equações", sub: "As 16 camadas de um LLM", icone: "sigma" },
+  { href: "/origens/", titulo: "Origens", sub: "A linha do tempo das LLMs", icone: "globe" },
+  { href: "/videos/#modulo-0", titulo: "Vídeos", sub: "Módulo 00: matemática e redes neurais", icone: "play" },
+];
 ---
-<Base titulo="Aprendizado de Máquina" descricao="As primeiras tentativas de fazer a máquina aprender, com a regra de atualização de cada uma.">
-  <PageIntro trilha={[{ rotulo: "Aprendizado de Máquina" }]} eyebrow="Antes das LLMs" titulo="As primeiras tentativas de fazer a máquina aprender" lead="Quase toda ideia de hoje tem um ancestral simples. Algumas falharam por motivos que ainda valem." />
-  <section class="page-body">
-    <div class="container">
-      <ResponsiveGrid min="300px">
-        {ml.map((i: any) => (
-          <article class="card">
-            <Tag variante="soft-gold">{i.ano}</Tag>
-            <h3>{i.titulo}</h3>
-            <p>{i.texto}</p>
-            {i.eq && <div class="eq"><M t={i.eq} /></div>}
-          </article>
-        ))}
-      </ResponsiveGrid>
-    </div>
-  </section>
+<Base titulo="Aprendizado de Máquina" descricao="Dez ideias de 1949 a 1998 que ainda estão dentro das LLMs, com contexto, equações explicadas, exemplos com números e fontes primárias.">
+  <PageIntro
+    trilha={[{ rotulo: "Aprendizado de Máquina" }]}
+    eyebrow="Antes das LLMs"
+    titulo="As primeiras tentativas de fazer a máquina aprender"
+    lead={`${itens.length} ideias, de ${itens[0].ano} a ${itens[itens.length - 1].ano}, que ainda estão dentro de toda LLM. Cada uma com o contexto em que surgiu, como funciona, ${nEq} equações explicadas símbolo a símbolo, um exemplo com números e o que ela virou hoje.`}
+  />
+  <div class="container page-layout">
+    <article class="article prose ml">
+      <section id="como-ler" class="ml-intro">
+        <h2>Como ler esta página</h2>
+        <p>As ideias formam dois fios. O primeiro vai da regra de Hebb ao perceptron, ao ADALINE e à retropropagação: <strong>como ajustar pesos a partir de exemplos</strong>, que é como toda LLM é treinada. O segundo vai do vizinho mais próximo ao VA-file: <strong>como achar depressa o vetor mais parecido</strong>, que é como funcionam a busca semântica e a geração aumentada por recuperação (RAG). Samuel, o XOR, as redes convolucionais e as SVMs ligam os dois fios: aprender com a própria experiência, a necessidade de camadas, o compartilhamento de pesos e a margem.</p>
+        <p>Cada item segue a mesma ordem: contexto, como funciona, as equações, um exemplo com números, os limites e o que a ideia virou. Os exemplos foram calculados e podem ser refeitos à mão.</p>
+        <div class="ml-notacao">
+          <b>Notação usada em toda a página</b>
+          <ul>
+            <li><M t="x" /> é o vetor de entrada, <M t="w" /> o vetor de pesos e <M t="b" /> o viés.</li>
+            <li><M t={"w^\\top x=\\sum_i w_i x_i"} /> é o produto interno, a soma ponderada das entradas.</li>
+            <li><M t="y" /> é a resposta certa, <M t={"\\hat y"} /> a resposta do modelo e <M t={"\\eta"} /> a taxa de aprendizado.</li>
+            <li><M t={"\\|x\\|=\\sqrt{\\textstyle\\sum_i x_i^2}"} /> é o comprimento (norma) de um vetor. Os decimais usam vírgula.</li>
+          </ul>
+        </div>
+        <ol class="ml-mapa" aria-label="As ideias em ordem">
+          {itens.map((a) => <li><a href={`#${a.id}`}><span>{a.ano}</span><b>{a.titulo}</b><small>{a.texto}</small></a></li>)}
+        </ol>
+      </section>
+
+      {itens.map((a, n) => (
+        <section class="ml-item" id={a.id} aria-labelledby={`h-${a.id}`}>
+          <header class="ml-head">
+            <Tag variante="soft-gold">{a.ano}</Tag>
+            <h2 id={`h-${a.id}`}>{n + 1}. {a.titulo}</h2>
+            {a.autores && <p class="ml-autores">{a.autores}</p>}
+            <p class="ml-resumo">{a.texto}</p>
+          </header>
+
+          {a.contexto && <><h3>Contexto</h3><Fragment set:html={rico(a.contexto)} /></>}
+          {a.mecanismo && <><h3>Como funciona</h3><Fragment set:html={rico(a.mecanismo)} /></>}
+
+          {(a.equacoes?.length ?? 0) > 0 ? (
+            <>
+              <h3>As equações</h3>
+              <ol class="ml-eqs">
+                {a.equacoes!.map((e) => (
+                  <li>
+                    <M t={e.tex} d />
+                    <p set:html={linha(e.texto)} />
+                  </li>
+                ))}
+              </ol>
+            </>
+          ) : a.eq && <M t={a.eq} d />}
+
+          {a.exemplo && (
+            <div class="ml-exemplo">
+              <h3>Exemplo com números</h3>
+              <Fragment set:html={rico(a.exemplo)} />
+            </div>
+          )}
+
+          {a.limites && <><h3>Limites</h3><Fragment set:html={rico(a.limites)} /></>}
+          {a.legado && <><h3>O que virou hoje</h3><Fragment set:html={rico(a.legado)} /></>}
+          {(a.links?.length ?? 0) > 0 && (
+            <p class="ml-links">{a.links!.map((l) => <a href={l.href}>{l.rotulo} →</a>)}</p>
+          )}
+
+          {(a.referencias?.length ?? 0) > 0 && (
+            <div class="ml-refs">
+              <b>{a.referencias!.length > 1 ? "Fontes" : "Fonte"}</b>
+              <ul>
+                {a.referencias!.map((r) => <li>{r.url ? <a href={r.url} target="_blank" rel="noopener noreferrer">{r.texto}</a> : r.texto}</li>)}
+              </ul>
+            </div>
+          )}
+        </section>
+      ))}
+
+      <section id="o-fio" class="ml-fio">
+        <h2>O fio que liga tudo</h2>
+        <p>Onde cada ideia aparece numa LLM de hoje. As páginas de <a href="/equacoes/">Equações</a> e de <a href="/origens/">Origens</a> continuam a história a partir daqui.</p>
+        <div class="ml-tabela-wrap">
+          <table class="ml-tabela">
+            <thead><tr><th scope="col">Ano</th><th scope="col">Ideia</th><th scope="col">Numa LLM de hoje</th></tr></thead>
+            <tbody>
+              {itens.map((a) => <tr><td>{a.ano}</td><th scope="row"><a href={`#${a.id}`}>{a.titulo}</a></th><td>{a.hoje ?? a.texto}</td></tr>)}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </article>
+    <ArticleSidebar toc={toc} relacionados={relacionados} tituloRelacionados="Veja também" numerar={false} />
+  </div>
 </Base>

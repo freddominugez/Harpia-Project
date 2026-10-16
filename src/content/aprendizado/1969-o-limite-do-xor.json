@@ -1,10 +1,44 @@
 {
   "ano": 1969,
   "titulo": "O limite do XOR",
-  "texto": "Minsky e Papert mostram o que um perceptron de uma camada não separa. Segue-se um inverno de financiamento.",
+  "autores": "Marvin Minsky e Seymour Papert",
+  "texto": "Minsky e Papert mostram o que um perceptron de uma camada não separa, e por que é preciso empilhar camadas.",
+  "eq": "w_1+w_2+b>-b>0",
+  "contexto": "Em 1969, Marvin Minsky e Seymour Papert, do MIT, publicaram *Perceptrons*, uma análise matemática do que essas máquinas conseguem ou não reconhecer. O livro provou que perceptrons de uma camada, ou com conexões limitadas, não decidem propriedades como a paridade e a conectividade de uma figura. O exemplo mais simples é o OU exclusivo, o XOR.\n\nO livro costuma ser associado à queda do financiamento para redes neurais nos anos 1970, embora historiadores discutam o quanto ele pesou nisso.",
+  "mecanismo": "O XOR vale 1 quando exatamente uma das duas entradas vale 1. No plano, os pontos (0,1) e (1,0) são da classe 1, e (0,0) e (1,1) são da classe 0, em cantos opostos de um quadrado. Nenhuma reta deixa os dois primeiros de um lado e os dois últimos do outro.\n\nComo o perceptron só sabe traçar uma reta, não aprende o XOR, por mais exemplos que veja. A saída é empilhar camadas: neurônios intermediários criam características novas, e na representação deles o problema fica separável.",
+  "equacoes": [
+    {
+      "tex": "\\begin{aligned}(0,0)&\\mapsto 0: & b&<0\\\\(0,1)&\\mapsto 1: & w_2+b&>0\\\\(1,0)&\\mapsto 1: & w_1+b&>0\\\\(1,1)&\\mapsto 0: & w_1+w_2+b&<0\\end{aligned}",
+      "texto": "As quatro condições que um perceptron $w_1x_1+w_2x_2+b$ precisaria cumprir para calcular o XOR."
+    },
+    {
+      "tex": "w_1+w_2+2b>0\\ \\Rightarrow\\ w_1+w_2+b>-b>0",
+      "texto": "A prova. Somando a segunda e a terceira condições vem $w_1+w_2+2b>0$; como $b<0$, isso dá $w_1+w_2+b>-b>0$, o que contradiz a quarta. Não existem pesos que funcionem."
+    },
+    {
+      "tex": "\\begin{aligned}h_1&=\\mathrm{degrau}(x_1+x_2-0{,}5)\\\\h_2&=\\mathrm{degrau}(-x_1-x_2+1{,}5)\\\\y&=\\mathrm{degrau}(h_1+h_2-1{,}5)\\end{aligned}",
+      "texto": "A solução com uma camada escondida, sendo $\\mathrm{degrau}(z)=1$ se $z>0$ e 0 caso contrário. $h_1$ calcula o OU, $h_2$ calcula o NÃO-E, e a saída faz o E dos dois."
+    }
+  ],
+  "exemplo": "Conferindo a rede de duas camadas nas quatro entradas:\n\n- (0,0): $h_1=0$, $h_2=1$, saída $\\mathrm{degrau}(-0{,}5)=0$.\n- (0,1) e (1,0): $h_1=1$, $h_2=1$, saída $\\mathrm{degrau}(0{,}5)=1$.\n- (1,1): $h_1=1$, $h_2=0$, saída $\\mathrm{degrau}(-0{,}5)=0$.\n\nNa camada escondida, os quatro pontos viram só três: (0,1), (1,1) e (1,0) no espaço $(h_1,h_2)$, e agora uma reta, $h_1+h_2=1{,}5$, separa a classe 1 do resto. A camada escondida mudou a geometria do problema.",
+  "limites": "O livro não dizia como treinar uma rede de várias camadas. Com o degrau não há gradiente: um erro na saída não informa qual neurônio escondido deveria mudar, e os pesos acima foram escritos à mão. A resposta só se popularizou com a retropropagação, em 1986.",
+  "legado": "A lição de que profundidade e não linearidade criam representações novas está em toda LLM. O bloco FFN de cada camada, com a sua ativação não linear (SwiGLU, GELU), faz o papel da camada escondida que resolve o XOR, só que em milhares de dimensões.",
+  "hoje": "A não linearidade do bloco FFN de cada camada.",
+  "referencias": [
+    {
+      "texto": "Minsky, M.; Papert, S. Perceptrons: An Introduction to Computational Geometry. MIT Press, 1969.",
+      "url": "https://search.worldcat.org/oclc/5034"
+    }
+  ],
+  "links": [
+    {
+      "rotulo": "Equações: FFN SwiGLU",
+      "href": "/equacoes/#7-ffn-swiglu"
+    }
+  ],
   "ordem": 6,
   "status": "publicado",
   "origem": "manual",
   "adicionado_em": "2026-10-12",
-  "verificado_em": "2026-10-12"
+  "verificado_em": "2026-10-16"
 }

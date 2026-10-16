@@ -1,10 +1,44 @@
 {
   "ano": 1959,
   "titulo": "Samuel e as damas",
+  "autores": "Arthur L. Samuel",
   "texto": "Um programa que melhora jogando contra si mesmo dá nome ao aprendizado de máquina.",
+  "eq": "w_k\\leftarrow w_k+\\eta\\,\\big(V_{\\text{busca}}(s)-V(s)\\big)\\,f_k(s)",
+  "contexto": "Arthur Samuel, engenheiro da IBM, passou a década de 1950 escrevendo um programa de damas para os primeiros computadores da empresa. Em 1959 publicou os resultados com o título *Some Studies in Machine Learning Using the Game of Checkers*, o texto que popularizou a expressão aprendizado de máquina.\n\nO objetivo declarado era mostrar que um computador pode ser programado para jogar melhor do que a pessoa que o programou, e o artigo relata que isso foi alcançado.",
+  "mecanismo": "O programa tinha três peças.\n\n- Uma **função de avaliação**: uma soma ponderada de características do tabuleiro, como vantagem em peças e mobilidade, que diz o quanto uma posição é boa.\n- Uma **busca à frente**: antes de jogar, simula alguns lances de cada lado e escolhe o caminho que garante o melhor resultado supondo que o adversário também joga bem (minimax).\n- Duas formas de aprender: decorar posições já avaliadas, para não recalcular, e ajustar os pesos da função de avaliação para que ela concorde com o que a busca mais profunda revela. Para ganhar experiência, versões do programa jogavam umas contra as outras.",
+  "equacoes": [
+    {
+      "tex": "V(s)=\\sum_{k} w_k\\,f_k(s)",
+      "texto": "A função de avaliação. $s$ é a posição, $f_k(s)$ a característica $k$ medida nela e $w_k$ o peso que o programa aprende."
+    },
+    {
+      "tex": "V_{\\text{busca}}(s)=\\max_{a}\\ \\min_{b}\\ V\\big(s_{a,b}\\big)",
+      "texto": "Busca minimax de dois lances: o programa escolhe o lance $a$ que maximiza o pior caso depois da resposta $b$ do adversário. Com mais profundidade, a alternância de máximos e mínimos continua."
+    },
+    {
+      "tex": "w_k\\leftarrow w_k+\\eta\\,\\big(V_{\\text{busca}}(s)-V(s)\\big)\\,f_k(s)",
+      "texto": "O ajuste, em notação moderna: aproxima a avaliação rápida da avaliação que a busca mais funda produziu. Samuel usava um procedimento próprio para mexer nos coeficientes; esta forma é a leitura que a literatura de aprendizado por reforço faz do trabalho dele, como precursor do aprendizado por diferença temporal."
+    }
+  ],
+  "exemplo": "Suponha duas características: $f_1=2$ (o programa tem duas peças a mais) e $f_2=-3$ (o adversário tem três lances possíveis a mais), com pesos $w=(1{,}0;\\,0{,}2)$. A avaliação rápida dá $V=2-0{,}6=1{,}4$.\n\nA busca alguns lances à frente mostra que a posição vale só $0{,}8$: a vantagem de peças vai ser devolvida. Com $\\eta=0{,}05$, o erro é $0{,}8-1{,}4=-0{,}6$, e os pesos mudam $\\Delta w=0{,}05\\cdot(-0{,}6)\\cdot(2,-3)=(-0{,}06;\\,+0{,}09)$, ficando $w=(0{,}94;\\,0{,}29)$.\n\nA nova avaliação da mesma posição é $1{,}01$, mais perto de $0{,}8$: o programa aprendeu a dar um pouco menos de valor às peças e um pouco mais à mobilidade. Os números são ilustrativos.",
+  "limites": "As características eram escolhidas à mão pelo autor; o programa só aprendia quanto pesava cada uma. E o sinal de aprendizado vinha da própria busca, que pode estar enganada: se a avaliação for ruim, a busca reforça os próprios erros.",
+  "legado": "Aprender a avaliação comparando-a com uma estimativa melhor, obtida olhando mais à frente, é a ideia central do aprendizado por diferença temporal e dos sistemas que treinam jogando contra si mesmos, de TD-Gammon (1992) a AlphaZero (2017). No ajuste de LLMs por reforço, a política é corrigida por um sinal de valor com a mesma lógica.",
+  "hoje": "Aprendizado por reforço, autojogo e o ajuste de LLMs por um sinal de valor.",
+  "referencias": [
+    {
+      "texto": "Samuel, A. L. Some Studies in Machine Learning Using the Game of Checkers. IBM Journal of Research and Development, 1959.",
+      "url": "https://doi.org/10.1147/rd.33.0210"
+    }
+  ],
+  "links": [
+    {
+      "rotulo": "Caminho 07: controle como problema de Bellman",
+      "href": "/estudos/caminhos/controle-bellman/"
+    }
+  ],
   "ordem": 3,
   "status": "publicado",
   "origem": "manual",
   "adicionado_em": "2026-10-12",
-  "verificado_em": "2026-10-12"
+  "verificado_em": "2026-10-16"
 }

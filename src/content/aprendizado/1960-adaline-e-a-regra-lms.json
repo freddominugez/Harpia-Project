@@ -1,11 +1,56 @@
 {
   "ano": 1960,
   "titulo": "ADALINE e a regra LMS",
+  "autores": "Bernard Widrow e Marcian E. (Ted) Hoff",
   "texto": "Widrow e Hoff descem o gradiente do erro quadrático, a semente do treino atual.",
   "eq": "w\\leftarrow w+\\eta\\,(y-w^\\top x)\\,x",
+  "contexto": "Em Stanford, Bernard Widrow e seu aluno Ted Hoff construíram o ADALINE (*ADAptive LINear Element*), um neurônio eletrônico com pesos ajustáveis, apresentado em 1960 no artigo *Adaptive Switching Circuits*.\n\nA regra que o treinava, chamada LMS (*least mean squares*, mínimos quadrados médios), teve uma longa carreira fora das redes neurais: por décadas foi usada em filtros adaptativos, como os canceladores de eco de linhas telefônicas e de modems.",
+  "mecanismo": "O ADALINE parece um perceptron, mas muda o lugar onde o erro é medido. O perceptron compara a resposta já arredondada para 0 ou 1; o ADALINE compara a soma ponderada, antes do arredondamento, com o valor desejado.\n\nEsse erro é um número contínuo, e o quadrado dele forma uma superfície lisa, em forma de tigela, sobre o espaço dos pesos. Treinar vira descer essa tigela pelo lado mais inclinado, um pequeno passo por exemplo. Por isso o ADALINE continua aprendendo mesmo quando já classifica certo, e chega perto do melhor ajuste possível mesmo quando nenhuma reta separa os dados.",
+  "equacoes": [
+    {
+      "tex": "J(w)=\\tfrac12\\,\\mathbb{E}\\big[(y-w^\\top x)^2\\big]",
+      "texto": "O custo: o erro quadrático médio entre o valor desejado $y$ e a saída linear $w^\\top x$."
+    },
+    {
+      "tex": "\\nabla_w J=-\\,\\mathbb{E}\\big[(y-w^\\top x)\\,x\\big]",
+      "texto": "O gradiente, a direção em que o custo mais sobe. Andar no sentido oposto reduz o erro."
+    },
+    {
+      "tex": "w\\leftarrow w+\\eta\\,e\\,x,\\qquad e=y-w^\\top x",
+      "texto": "A regra LMS: em vez da média sobre todos os dados, usa o erro do exemplo atual. É a descida de gradiente estocástica na sua primeira forma."
+    },
+    {
+      "tex": "w^{*}=R^{-1}p,\\qquad R=\\mathbb{E}\\big[x\\,x^\\top\\big],\\quad p=\\mathbb{E}[y\\,x]",
+      "texto": "O fundo da tigela, a solução de Wiener. O LMS chega perto dela sem inverter matriz nenhuma."
+    },
+    {
+      "tex": "0<\\eta<\\frac{2}{\\lambda_{\\max}(R)}",
+      "texto": "A condição de estabilidade em média: com passo maior, os pesos oscilam e divergem. $\\lambda_{\\max}$ é o maior autovalor de $R$."
+    }
+  ],
+  "exemplo": "Um exemplo só, $x=(1,2)$, com alvo $y=1$, pesos iniciais zero e $\\eta=0{,}1$:\n\n- Passo 1: saída 0, erro 1. Os pesos viram $(0{,}1;\\,0{,}2)$ e a saída passa a $0{,}5$.\n- Passo 2: erro $0{,}5$. Pesos $(0{,}15;\\,0{,}3)$, saída $0{,}75$.\n- Passo 3: erro $0{,}25$, saída $0{,}875$. Passo 4: erro $0{,}125$, saída $0{,}9375$.\n\nO erro cai pela metade a cada passo porque é multiplicado por $1-\\eta\\|x\\|^2=1-0{,}1\\cdot5=0{,}5$. Com $\\eta=0{,}4$ o fator seria $-1$ e o erro trocaria de sinal sem diminuir; acima disso, cresceria. É a condição de estabilidade vista num caso de um exemplo só: $\\eta<2/\\|x\\|^2=0{,}4$.",
+  "limites": "Continua sendo um único neurônio linear: só aprende fronteiras retas, como o perceptron. E a condição de estabilidade depende da escala das entradas, o que torna a escolha do passo delicada quando elas têm tamanhos muito diferentes.",
+  "legado": "Toda etapa de treino de uma LLM tem a forma $w\\leftarrow w-\\eta\\,\\nabla_w\\mathcal L$, a mesma do LMS, com a perda trocada por entropia cruzada e o gradiente calculado por retropropagação. Otimizadores como o AdamW acrescentam memória dos passos anteriores e um tamanho de passo por parâmetro, justamente para contornar o problema de escala que o LMS já mostrava.",
+  "hoje": "Cada passo de treino: descida de gradiente estocástica, hoje com AdamW.",
+  "referencias": [
+    {
+      "texto": "Widrow, B.; Hoff, M. E. Adaptive Switching Circuits. IRE WESCON Convention Record, 1960.",
+      "url": "https://isl.stanford.edu/~widrow/papers/c1960adaptiveswitching.pdf"
+    }
+  ],
+  "links": [
+    {
+      "rotulo": "Equações: perda e gradiente",
+      "href": "/equacoes/#11-perda-e-gradiente"
+    },
+    {
+      "rotulo": "Equações: otimizador AdamW",
+      "href": "/equacoes/#12-otimizador-adamw"
+    }
+  ],
   "ordem": 4,
   "status": "publicado",
   "origem": "manual",
   "adicionado_em": "2026-10-12",
-  "verificado_em": "2026-10-12"
+  "verificado_em": "2026-10-16"
 }
