@@ -1,0 +1,16 @@
+{
+  "id": "KtBivPzmOM8",
+  "titulo": "Memory-Aware Agent Harnesses for Anti-Money Laundering — Nacho Martinez, Oracle",
+  "canal": "AI Engineer",
+  "modulo": 8,
+  "nivel": "Intermediário",
+  "resumo": "Percorre a estrutura de um agente (laço, memória curta e longa, engenharia de contexto, ferramentas e habilidades) aplicada a um agente que sinaliza transações suspeitas. Para quem monta agentes com memória.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=KtBivPzmOM8",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-17",
+  "verificado_em": "2026-10-17"
+}

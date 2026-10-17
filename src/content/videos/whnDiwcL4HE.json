@@ -1,0 +1,16 @@
+{
+  "id": "whnDiwcL4HE",
+  "titulo": "Why Nobody Has Solved Continual Learning",
+  "canal": "LangChain",
+  "modulo": 6,
+  "nivel": "Intermediário",
+  "resumo": "Discute por que o aprendizado contínuo segue em aberto: SFT instala conhecimento mas causa esquecimento catastrófico, RL esquece menos mas só reforça o que o modelo já amostra. Para quem treina modelos.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=whnDiwcL4HE",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-17",
+  "verificado_em": "2026-10-17"
+}

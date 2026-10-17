@@ -1,0 +1,16 @@
+{
+  "id": "cUpoPoKqc68",
+  "titulo": "Forget Token in AI: LLM Now Predicts DECISIONS (No JEV)",
+  "canal": "Discover AI",
+  "modulo": 6,
+  "nivel": "Avançado",
+  "resumo": "Explica o ActionOPD, destilação em que a unidade de supervisão passa do token para a ação semântica, sem exigir acesso aos logits do professor. Para quem estuda destilação de modelos.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=cUpoPoKqc68",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-17",
+  "verificado_em": "2026-10-17"
+}

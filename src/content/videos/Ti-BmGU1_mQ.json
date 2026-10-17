@@ -1,0 +1,16 @@
+{
+  "id": "Ti-BmGU1_mQ",
+  "titulo": "The AI Bill Is Too Damn High: Tokenomics 101 — Eugene Cheah, Featherless AI",
+  "canal": "AI Engineer",
+  "modulo": 10,
+  "nivel": "Intermediário",
+  "resumo": "Mostra quatro passos para reduzir o custo de inferência em escala: medir o gasto de tokens, dimensionar o modelo à tarefa, comprar capacidade e revisar processos. Para quem opera LLMs em produção.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=Ti-BmGU1_mQ",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-17",
+  "verificado_em": "2026-10-17"
+}
