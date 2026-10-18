@@ -1,0 +1,16 @@
+{
+  "id": "SHMCGrNJJGc",
+  "titulo": "How to Know If Your AI Agent Is Any Good: Evals With Phoenix & Claude — Laurie Voss, Arize AI",
+  "canal": "AI Engineer",
+  "modulo": 8,
+  "nivel": "Intermediário",
+  "resumo": "Monta um ciclo completo de avaliação de um agente: leitura de traços, avaliadores em código e juiz LLM, teste da confiabilidade do próprio juiz e experimentos para provar uma correção. Para quem avalia agentes.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=SHMCGrNJJGc",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-18",
+  "verificado_em": "2026-10-18"
+}

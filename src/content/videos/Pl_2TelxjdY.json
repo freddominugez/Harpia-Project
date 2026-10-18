@@ -1,0 +1,16 @@
+{
+  "id": "Pl_2TelxjdY",
+  "titulo": "I Trained Qwen 4B With RL to Catch Qwen 27B",
+  "canal": "Prompt Engineering",
+  "modulo": 6,
+  "nivel": "Avançado",
+  "resumo": "Treina o Qwen 3.5 4B com LoRA e GRPO em ambientes de RL e compara com o 27B numa prova separada, em duas DGX Spark. Explica checador rígido contra reward hacking e filtragem de tarefas. Para quem faz ajuste fino.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=Pl_2TelxjdY",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-18",
+  "verificado_em": "2026-10-18"
+}

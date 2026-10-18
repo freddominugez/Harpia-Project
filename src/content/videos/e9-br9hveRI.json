@@ -1,0 +1,16 @@
+{
+  "id": "e9-br9hveRI",
+  "titulo": "Stop Chatting With Spreadsheets — Francesco Galletta & Felippe Felisola Caso, Monzo",
+  "canal": "AI Engineer",
+  "modulo": 8,
+  "nivel": "Intermediário",
+  "resumo": "Constrói ao vivo um harness de agente analista financeiro e explica por que os cálculos devem ficar em código chamado como ferramenta, não na resposta do modelo. Para quem projeta agentes com ferramentas.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=e9-br9hveRI",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-18",
+  "verificado_em": "2026-10-18"
+}
