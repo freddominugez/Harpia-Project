@@ -53,6 +53,7 @@ export type NavItem = { href: string; rotulo: string; icone: string; descricao: 
 // News continua como rota pública: menu móvel, rodapé e busca.
 export const NAV: NavItem[] = [
   { href: "/", rotulo: "Início", icone: "home", descricao: "Página inicial do Harpya", principal: true },
+  { href: "/analises/", rotulo: "Análises", icone: "file", descricao: "Análises assinadas sobre resultados recentes em IA e computação", principal: false },
   { href: "/comecando/", rotulo: "Começando", icone: "book", descricao: "Série para quem está começando: como uma máquina aprende a falar", principal: false },
   { href: "/origens/", rotulo: "Origens", icone: "globe", descricao: "Linha do tempo das LLMs", principal: true },
   { href: "/aprendizado/", rotulo: "Aprendizado de Máquina", icone: "brain", descricao: "As primeiras tentativas de fazer a máquina aprender", principal: true },

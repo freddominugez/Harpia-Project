@@ -1,0 +1,14 @@
+---
+// Card da home com a análise mais recente (src/content/analises).
+import { ANALISES, urlAnalise } from "../data/analises";
+import { dataNumerica } from "../lib/format";
+const a = ANALISES[0];
+---
+{a && (
+  <a class="ref-analise" href={urlAnalise(a)}>
+    <span class="ref-analise-serie">{a.serie} · parte {a.parte} de {a.total}</span>
+    <b>{a.titulo_curto}</b>
+    <small>{a.resumo}</small>
+    <span class="ref-analise-meta"><time datetime={a.data}>{dataNumerica(a.data)}</time><span>Ler a análise <span aria-hidden="true">→</span></span></span>
+  </a>
+)}

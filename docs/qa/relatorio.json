@@ -1,6 +1,8 @@
 {
  "rotas": [
   "/404.html",
+  "/analises/computacao-quantica-util-parte-1/",
+  "/analises/",
   "/aprendizado/",
   "/biblioteca/fontes/",
   "/biblioteca/glossario/",
@@ -40,6 +42,16 @@
  "viewports": {
   "1672x941": {
    "/404.html": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/analises/computacao-quantica-util-parte-1/": {
+    "scrollWidth": 1672,
+    "innerWidth": 1672,
+    "ok": true
+   },
+   "/analises/": {
     "scrollWidth": 1672,
     "innerWidth": 1672,
     "ok": true
@@ -211,6 +223,16 @@
     "innerWidth": 1440,
     "ok": true
    },
+   "/analises/computacao-quantica-util-parte-1/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
+   "/analises/": {
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "ok": true
+   },
    "/aprendizado/": {
     "scrollWidth": 1440,
     "innerWidth": 1440,
@@ -374,6 +396,16 @@
   },
   "1280x800": {
    "/404.html": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/analises/computacao-quantica-util-parte-1/": {
+    "scrollWidth": 1280,
+    "innerWidth": 1280,
+    "ok": true
+   },
+   "/analises/": {
     "scrollWidth": 1280,
     "innerWidth": 1280,
     "ok": true
@@ -545,6 +577,16 @@
     "innerWidth": 1024,
     "ok": true
    },
+   "/analises/computacao-quantica-util-parte-1/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
+   "/analises/": {
+    "scrollWidth": 1024,
+    "innerWidth": 1024,
+    "ok": true
+   },
    "/aprendizado/": {
     "scrollWidth": 1024,
     "innerWidth": 1024,
@@ -708,6 +750,16 @@
   },
   "768x1024": {
    "/404.html": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/analises/computacao-quantica-util-parte-1/": {
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "ok": true
+   },
+   "/analises/": {
     "scrollWidth": 768,
     "innerWidth": 768,
     "ok": true
@@ -879,6 +931,16 @@
     "innerWidth": 430,
     "ok": true
    },
+   "/analises/computacao-quantica-util-parte-1/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
+   "/analises/": {
+    "scrollWidth": 430,
+    "innerWidth": 430,
+    "ok": true
+   },
    "/aprendizado/": {
     "scrollWidth": 430,
     "innerWidth": 430,
@@ -1042,6 +1104,16 @@
   },
   "390x844": {
    "/404.html": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/analises/computacao-quantica-util-parte-1/": {
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "ok": true
+   },
+   "/analises/": {
     "scrollWidth": 390,
     "innerWidth": 390,
     "ok": true
@@ -1213,6 +1285,16 @@
     "innerWidth": 360,
     "ok": true
    },
+   "/analises/computacao-quantica-util-parte-1/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
+   "/analises/": {
+    "scrollWidth": 360,
+    "innerWidth": 360,
+    "ok": true
+   },
    "/aprendizado/": {
     "scrollWidth": 360,
     "innerWidth": 360,
@@ -1376,6 +1458,16 @@
   },
   "320x720": {
    "/404.html": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/analises/computacao-quantica-util-parte-1/": {
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "ok": true
+   },
+   "/analises/": {
     "scrollWidth": 320,
     "innerWidth": 320,
     "ok": true
@@ -1563,9 +1655,9 @@
   "skip_link_focavel": true
  },
  "resumo": {
-  "rotas": 33,
+  "rotas": 35,
   "viewports": 9,
-  "verificacoes_scroll": 297,
+  "verificacoes_scroll": 315,
   "rolagem_horizontal": [],
   "links_quebrados": 0,
   "arquivos_faltando": 0,

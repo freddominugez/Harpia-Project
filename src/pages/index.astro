@@ -8,6 +8,7 @@ import VideoFeature from "../components/VideoFeature.astro";
 import ForumList from "../components/ForumList.astro";
 import JoinCommunityCard from "../components/JoinCommunityCard.astro";
 import StartCard from "../components/StartCard.astro";
+import AnaliseCard from "../components/AnaliseCard.astro";
 import { getCollection } from "astro:content";
 import { trilhas, ARTIGOS_DESTAQUE } from "../data/home";
 import { PAUTAS } from "../lib/pautas";
@@ -87,6 +88,13 @@ const destaque = selecaoDaSemana();
           <ForumList itens={PAUTAS} />
         </section>
         <JoinCommunityCard />
+        <section class="ref-section" aria-labelledby="h-analise">
+          <div class="ref-section-title">
+            <div><h2 id="h-analise">Análise</h2></div>
+            <a href="/analises/">Ver todas <span aria-hidden="true">→</span></a>
+          </div>
+          <AnaliseCard />
+        </section>
       </div>
     </div>
   </section>

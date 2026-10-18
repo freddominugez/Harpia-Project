@@ -10,6 +10,7 @@ import { ARTIGOS, LIVROS, FONTES, FONTES_POR_GRUPO, APRENDIZADO, LINHA_DO_TEMPO 
 import { CAPITULOS, EVENTOS, PESSOAS } from "../data/origens";
 import { PAUTAS, temPagina } from "./pautas";
 import { COMECANDO, SERIE, TOTAL_DA_SERIE, corpoDe } from "../data/comecando";
+import { ANALISES, urlAnalise } from "../data/analises";
 
 /** HTML de artigo da série em markdown: parágrafos, títulos e figuras (descrição + legenda). */
 function htmlParaMd(html: string) {
@@ -206,6 +207,42 @@ export async function rotas(): Promise<Rota[]> {
         image: abs(ogDe(`/comecando/${a.slug}/`)),
         license: "https://creativecommons.org/licenses/by/4.0/",
         educationalLevel: "iniciante",
+      }],
+    })),
+    ...(ANALISES.length ? [{
+      path: "/analises/",
+      titulo: "Análises",
+      descricao: "Análises assinadas por Carlos Frederico Domínguez sobre resultados recentes em IA e computação, com as fontes de cada afirmação.",
+      secao: "Análises",
+      atualizado: maior(...ANALISES.map((a) => a.data)),
+      markdown: () => ANALISES.map((a) => `- [${a.titulo}](${abs(urlAnalise(a))}): ${a.resumo}`).join("\n"),
+      schema: () => [colecao("/analises/", "Análises", "Análises assinadas sobre resultados recentes em IA e computação.",
+        itemList("Análises", ANALISES.map((a) => ({ name: a.titulo, url: abs(urlAnalise(a)) }))))],
+    } as Rota] : []),
+    ...ANALISES.map((a): Rota => ({
+      path: urlAnalise(a),
+      titulo: a.titulo_curto,
+      descricao: a.resumo,
+      secao: `Análises · ${a.serie}`,
+      pai: "/analises/",
+      atualizado: a.data,
+      markdown: () => `*${a.serie}, parte ${a.parte} de ${a.total}.*\n\n${a.corpo.trim()}`,
+      schema: () => [{
+        "@type": "Article",
+        "@id": `${abs(urlAnalise(a))}#artigo`,
+        headline: a.titulo,
+        description: a.resumo,
+        url: abs(urlAnalise(a)),
+        inLanguage: "pt-BR",
+        datePublished: a.data,
+        dateModified: a.data,
+        author: { "@id": ID.pessoa },
+        publisher: { "@id": ID.org },
+        isPartOf: [{ "@id": ID.site }, { "@type": "CreativeWorkSeries", name: a.serie, url: abs("/analises/") }],
+        position: a.parte,
+        image: abs(ogDe(urlAnalise(a))),
+        license: "https://creativecommons.org/licenses/by/4.0/",
+        citation: [...a.corpo.matchAll(/\]\((https?:\/\/[^)\s]+)\)/g)].map((m) => m[1]),
       }],
     })),
     {

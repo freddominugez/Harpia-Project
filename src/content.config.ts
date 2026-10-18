@@ -34,6 +34,21 @@ const caminhos = defineCollection({
   }),
 });
 
+// Análises assinadas: textos longos em séries, publicados como enviados pelo autor.
+const analises = defineCollection({
+  loader: md("analises"),
+  schema: z.object({
+    titulo: z.string(),
+    titulo_curto: z.string(),
+    serie: z.string(),
+    parte: z.number().int(),
+    total: z.number().int(),
+    data: dia,
+    resumo: z.string().min(50).max(200),
+    status: z.enum(["rascunho", "publicado"]).default("publicado"),
+  }),
+});
+
 const videos = defineCollection({
   loader: data("videos"),
   schema: z.object({
@@ -185,6 +200,6 @@ const fontesMonitoradas = defineCollection({
 });
 
 export const collections = {
-  caminhos, videos, modulos, artigos, livros, fontes, feeds, aprendizado,
+  caminhos, analises, videos, modulos, artigos, livros, fontes, feeds, aprendizado,
   "linha-do-tempo": linhaDoTempo, pautas, "fontes-monitoradas": fontesMonitoradas,
 };

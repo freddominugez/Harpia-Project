@@ -243,6 +243,25 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fo
 .ref-start-txt b { font-size: .8rem; line-height: 1.25; font-weight: 720; }
 .ref-start-txt small { font-size: .66rem; line-height: 1.35; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .ref-start-list a:hover b { color: var(--gold-strong); }
+.ref-analise { display: flex; flex-direction: column; gap: 5px; padding: 13px 14px 12px; border: 1px solid #e4e6e8; border-left: 3px solid var(--gold-btn); border-radius: 7px; background: #fff; box-shadow: 0 2px 8px rgba(0, 0, 0, .045); color: var(--ink); transition: transform .18s, box-shadow .18s; }
+.ref-analise:hover { transform: translateY(-2px); box-shadow: var(--shadow-hover); }
+.ref-analise-serie { font-size: .6rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--gold-strong); }
+.ref-analise b { font-size: .86rem; line-height: 1.25; font-weight: 760; }
+.ref-analise small { font-size: .68rem; line-height: 1.4; color: var(--muted); }
+.ref-analise-meta { display: flex; justify-content: space-between; align-items: center; margin-top: 4px; padding-top: 7px; border-top: 1px solid #ebeef1; font-size: .64rem; color: var(--muted); }
+.ref-analise-meta > span { font-weight: 720; color: #293640; }
+/* Análises: página e índice */
+.analise-meta { font-size: .9rem; color: var(--muted) !important; }
+.analise-meta b { color: #2f3a44; }
+.analises-lista { max-width: 900px; }
+.analises-lista h2 { font-size: 1.3rem; margin: 0 0 12px; }
+.analises-lista ol { list-style: none; padding: 0; margin: 0 0 30px; display: grid; gap: 12px; }
+.analises-lista a { display: flex; flex-direction: column; gap: 4px; padding: 16px 18px; border: 1px solid var(--border); border-left: 3px solid var(--gold-btn); border-radius: 10px; background: #fff; color: var(--ink); }
+.analises-lista a:hover b { color: var(--gold-strong); }
+.analises-parte { font-size: .72rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--gold-strong); }
+.analises-lista b { font-size: 1.08rem; }
+.analises-lista small { color: var(--muted); font-size: .9rem; line-height: 1.5; }
+.analises-lista time { font-size: .8rem; color: var(--muted); }
 .ref-forum-box { padding: 0 12px; border: 1px solid #e4e6e8; border-radius: 7px; background: #fff; box-shadow: 0 2px 8px rgba(0, 0, 0, .045); }
 .ref-forum-notice { display: block; margin: 0 -12px; padding: 5px 12px; border-bottom: 1px solid #eee9db; border-radius: 7px 7px 0 0; background: #fffbf2; font-size: .62rem; font-weight: 600; color: #7d5a14; }
 .ref-forum-topic { display: flex; align-items: center; gap: 10px; min-width: 0; min-height: 43px; padding: 4px 0; border-bottom: 1px solid #ebeef1; }

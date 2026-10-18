@@ -1,0 +1,32 @@
+---
+// Índice das análises assinadas, agrupadas por série.
+import Base from "../../layouts/Base.astro";
+import PageIntro from "../../components/PageIntro.astro";
+import { ANALISES, urlAnalise } from "../../data/analises";
+import { dataNumerica } from "../../lib/format";
+const series = [...new Set(ANALISES.map((a) => a.serie))];
+---
+<Base titulo="Análises" descricao="Análises assinadas por Carlos Frederico Domínguez sobre resultados recentes em IA e computação, com as fontes de cada afirmação.">
+  <PageIntro trilha={[{ rotulo: "Análises" }]} eyebrow="Análises" titulo="Resultados recentes, lidos com calma" lead="Textos assinados sobre o que saiu em IA e computação: o que foi medido, o que ainda é estimativa e o que falta. Cada afirmação traz a fonte." />
+  <section class="page-body">
+    <div class="container analises-lista">
+      {series.map((s) => (
+        <section aria-labelledby={`s-${s}`}>
+          <h2 id={`s-${s}`}>{s}</h2>
+          <ol>
+            {ANALISES.filter((a) => a.serie === s).sort((x, y) => x.parte - y.parte).map((a) => (
+              <li>
+                <a href={urlAnalise(a)}>
+                  <span class="analises-parte">Parte {a.parte} de {a.total}</span>
+                  <b>{a.titulo_curto}</b>
+                  <small>{a.resumo}</small>
+                  <time datetime={a.data}>{dataNumerica(a.data)}</time>
+                </a>
+              </li>
+            ))}
+          </ol>
+        </section>
+      ))}
+    </div>
+  </section>
+</Base>

@@ -7,12 +7,14 @@ import { VIDEOS, urlVideo } from "../lib/videos";
 import { ARTIGOS, LIVROS } from "../lib/conteudo";
 import { URL_SITE } from "../lib/rotas";
 import { COMECANDO, SERIE } from "../data/comecando";
+import { ANALISES, urlAnalise } from "../data/analises";
 
 type D = { adicionado_em?: string };
 
 export const GET: APIRoute = async () => {
   const caminhos = await getCollection("caminhos");
   const itens = [
+    ...ANALISES.map((a) => ({ title: a.titulo, link: `${URL_SITE}${urlAnalise(a)}`, pubDate: new Date(`${a.data}T12:00:00Z`), description: a.resumo, categories: ["Análises", a.serie] })),
     ...COMECANDO.map((a) => ({ title: `${SERIE}, artigo ${a.numero}: ${a.titulo}`, link: `${URL_SITE}/comecando/${a.slug}/`, pubDate: new Date(`${a.data}T12:00:00Z`), description: a.descricao, categories: ["Começando"] })),
     ...caminhos.map((c) => ({ title: `Caminho ${c.data.numero}: ${c.data.titulo}`, link: `${URL_SITE}/estudos/caminhos/${c.id}/`, pubDate: new Date(`${c.data.atualizado}T12:00:00Z`), description: c.data.resumo, categories: ["Caminhos"] })),
     ...(VIDEOS as (typeof VIDEOS[number] & D)[]).map((v) => ({ title: `Vídeo: ${v.titulo}`, link: urlVideo(v.id), pubDate: new Date(`${v.adicionado_em ?? "2026-10-12"}T12:00:00Z`), description: `${v.canal}. ${v.resumo}`, categories: ["Vídeos", v.nivel] })),

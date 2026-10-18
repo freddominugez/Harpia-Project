@@ -1,0 +1,38 @@
+---
+// Página de cada análise: texto do autor como enviado, com índice lateral e posição na série.
+import Base from "../../layouts/Base.astro";
+import PageIntro from "../../components/PageIntro.astro";
+import ArticleSidebar from "../../components/ArticleSidebar.astro";
+import { getCollection, render } from "astro:content";
+import { SITE } from "../../config";
+import { dataNumerica } from "../../lib/format";
+import type { TocItem } from "../../lib/types";
+
+export async function getStaticPaths() {
+  const todas = (await getCollection("analises")).filter((a) => a.data.status === "publicado");
+  return todas.map((a) => ({ params: { slug: a.id }, props: { a, todas } }));
+}
+const { a, todas } = Astro.props;
+const d = a.data;
+const { Content, headings } = await render(a);
+const palavras = (a.body ?? "").split(/\s+/).filter(Boolean).length;
+const minutos = Math.max(1, Math.round(palavras / 200));
+const toc: TocItem[] = headings.filter((h) => h.depth === 2).map((h) => ({ id: h.slug, texto: h.text }));
+const daSerie = todas.filter((x) => x.data.serie === d.serie).sort((x, y) => x.data.parte - y.data.parte);
+const relacionados = daSerie.filter((x) => x.id !== a.id).map((x) => ({ href: `/analises/${x.id}/`, titulo: x.data.titulo_curto, sub: `Parte ${x.data.parte} de ${x.data.total}`, icone: "file" }));
+---
+<Base titulo={d.titulo} descricao={d.resumo}>
+  <PageIntro
+    trilha={[{ rotulo: "Análises", href: "/analises/" }, { rotulo: `${d.serie}, parte ${d.parte}` }]}
+    eyebrow={`${d.serie} · parte ${d.parte} de ${d.total}`}
+    titulo={d.titulo_curto}
+    lead={d.resumo}
+  />
+  <div class="container page-layout">
+    <article class="article prose analise">
+      <p class="analise-meta"><b>{SITE.autor}</b> · <time datetime={d.data}>{dataNumerica(d.data)}</time> · {minutos} min de leitura</p>
+      <Content />
+    </article>
+    <ArticleSidebar toc={toc} relacionados={relacionados} tituloRelacionados="Nesta série" />
+  </div>
+</Base>
