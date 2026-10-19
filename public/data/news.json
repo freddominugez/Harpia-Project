@@ -1,5 +1,173 @@
 [
  {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Reasoning Reranking with Semantic IDs as the Sole Item Representation",
+  "url": "https://arxiv.org/abs/2610.22797",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Jev-as-a-Judge for Brazilian Portuguese Information Retrieval: Relevance Assessment and Reranking",
+  "url": "https://arxiv.org/abs/2610.23346",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "RIT-RAG: Navigating Document Corpora with Retrieval-Induced Trees",
+  "url": "https://arxiv.org/abs/2610.11370",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Domain-specific language alignment of multimodal embeddings towards explainable predictions",
+  "url": "https://arxiv.org/abs/2610.23110",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "ADT: All-Atom Diffusion Tokenizer for 3D Molecular Structures",
+  "url": "https://arxiv.org/abs/2610.23265",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "SETAREH Transform: A Sorting-Assisted Haar-Wavelet Sparsification Method for Approximate Inner-Product Computation",
+  "url": "https://arxiv.org/abs/2610.23338",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "ThetreStageAI: Multi-View Retrieval-Augmented Generation for Structured Bengali Theatre Production Planning",
+  "url": "https://arxiv.org/abs/2610.23618",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Encoded but Exposed: Language Embeddings can Reveal More Than They Should in Recommender Systems",
+  "url": "https://arxiv.org/abs/2610.21713",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "FederatedBytes: Tokenizer-Free, Byte-Level Small Language Models for Efficient Multimodal Federated Learning",
+  "url": "https://arxiv.org/abs/2610.22906",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Characterising and Analysing Retrieval-Augmented Generation Techniques",
+  "url": "https://arxiv.org/abs/2610.23226",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "LeanTTA: A Backpropagation-Free and Stateless Approach to Quantized Test-Time Adaptation on Edge Devices",
+  "url": "https://arxiv.org/abs/2503.15889",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Pretraining Transformers with Quantized Softmax in Attention",
+  "url": "https://arxiv.org/abs/2609.33591",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Embeddings Are Overpriced? A Frozen 16 MB Vocabulary for Small and Ternary Language Models",
+  "url": "https://arxiv.org/abs/2610.22428",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "SAG2: Embedding-Free Multi-Hop Retrieval with BM25 and JEV",
+  "url": "https://arxiv.org/abs/2610.22588",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Inductive Learning of Concept Embeddings from Cross-Linguistic Colexification Patterns with Textual Attributes",
+  "url": "https://arxiv.org/abs/2610.22638",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Prune the Leaky Neurons: Mitigating Private Data Leakage in Fine-Tuned LLMs via Joint-Embedding-Guided Pruning",
+  "url": "https://arxiv.org/abs/2610.22792",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Bengali Hallucination Detection with Retrieval and Programs: A System Study",
+  "url": "https://arxiv.org/abs/2610.22892",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Before Retrieval Begins: Safety and Tool-Use Decisions in LLM Agents",
+  "url": "https://arxiv.org/abs/2610.23071",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Disentangling Language Effects on Tool Admission and Post-Retrieval Safety",
+  "url": "https://arxiv.org/abs/2610.23093",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "What LLMs Do in the Shadows: Reading Context Reliance from the Unembedding Dark Space",
+  "url": "https://arxiv.org/abs/2610.23182",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Who Pays for Efficient Inference? Confidence-Based Small-to-Large LLM Routing Across Tasks and Languages",
+  "url": "https://arxiv.org/abs/2610.23249",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Steering beyond Language: Improving Multilingual Training-Free Text Embeddings via Paired-Residual Subspace Removal",
+  "url": "https://arxiv.org/abs/2610.23807",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "SAFE-Mem: Secure Agentic Memory with Fine-Grained Authority and Governance-Aware Retrieval",
+  "url": "https://arxiv.org/abs/2610.22959",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Self-Reflective Chain-of-Thought (SRCoT): Evidence-Based Text Generation via a Closed-Loop Retrieve--Reflect--Revise Pipeline on Edge LLMs",
+  "url": "https://arxiv.org/abs/2610.23311",
+  "data": "19/10/2026",
+  "ts": 1792382400
+ },
+ {
   "fonte": "Google DeepMind",
   "titulo": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
   "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
