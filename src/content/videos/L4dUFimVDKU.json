@@ -1,0 +1,16 @@
+{
+  "id": "L4dUFimVDKU",
+  "titulo": "Backtest Your Agent Against Yesterday's Web — Ryan Ahern, Exa",
+  "canal": "AI Engineer",
+  "modulo": 8,
+  "nivel": "Intermediário",
+  "resumo": "Mostra como testar as previsões de um agente contra a web de uma data passada, evitando vazamento de informação futura. Para quem avalia agentes com busca.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=L4dUFimVDKU",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-19",
+  "verificado_em": "2026-10-19"
+}
