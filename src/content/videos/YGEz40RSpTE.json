@@ -1,0 +1,16 @@
+{
+  "id": "YGEz40RSpTE",
+  "titulo": "DeepSeek Just Made Reasoning WAY More Efficient!",
+  "canal": "Prompt Engineering",
+  "modulo": 11,
+  "nivel": "Intermediário",
+  "resumo": "Compara o consumo de tokens de raciocínio de duas versões do DeepSeek Flash com os mesmos prompts e ajustes. Para quem mede custo por tarefa, e não só por token.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=YGEz40RSpTE",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-20",
+  "verificado_em": "2026-10-20"
+}
