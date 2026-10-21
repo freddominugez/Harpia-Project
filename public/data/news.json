@@ -1,5 +1,12 @@
 [
  {
+  "fonte": "Hugging Face",
+  "titulo": "NVIDIA Kumo Forecast Combines Pretrained Time-Series Representations with Historical Pattern Retrieval and Interpretability",
+  "url": "https://huggingface.co/blog/nvidia/kumo-forecast",
+  "data": "21/10/2026",
+  "ts": 1792587084
+ },
+ {
   "fonte": "arXiv cs.IR",
   "titulo": "GRaSP: Latency-Aware Optimization for Geo-Distributed Retrieval-Augmented Generation",
   "url": "https://arxiv.org/abs/2610.26938",
