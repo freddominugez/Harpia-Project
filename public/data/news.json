@@ -1,10 +1,10 @@
 [
  {
   "fonte": "Hugging Face",
-  "titulo": "NVIDIA Kumo Forecast Combines Pretrained Time-Series Representations with Historical Pattern Retrieval and Interpretability",
-  "url": "https://huggingface.co/blog/nvidia/kumo-forecast",
+  "titulo": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+  "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
   "data": "21/10/2026",
-  "ts": 1792587084
+  "ts": 1792604136
  },
  {
   "fonte": "arXiv cs.IR",
