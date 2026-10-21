@@ -1,0 +1,16 @@
+{
+  "id": "YvQ4BVTWfHI",
+  "titulo": "Is a Faster Model Actually Faster? Test the Whole Job — Morgan Suo, MiniMax",
+  "canal": "AI Engineer",
+  "modulo": 10,
+  "nivel": "Intermediário",
+  "resumo": "Testa num trabalho real de pesquisa o efeito de atenção esparsa, cache KV em 4 bits, especialistas em baixa precisão e decodificação especulativa. Para quem precisa julgar se um modelo mais rápido encurta o trabalho inteiro.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=YvQ4BVTWfHI",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-21",
+  "verificado_em": "2026-10-21"
+}

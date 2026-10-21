@@ -1,0 +1,16 @@
+{
+  "id": "RBXH5Hozowk",
+  "titulo": "Rules Belong in Code, Not Prompts: How to Build Production AI Agents",
+  "canal": "Arize AI",
+  "modulo": 8,
+  "nivel": "Intermediário",
+  "resumo": "Mostra como impor regras de agente em código: portões de conclusão de tarefa, contexto gerido no servidor e respostas JSON enxutas. Para quem leva agentes com ferramentas à produção.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=RBXH5Hozowk",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-21",
+  "verificado_em": "2026-10-21"
+}

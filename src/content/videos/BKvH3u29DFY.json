@@ -1,0 +1,16 @@
+{
+  "id": "BKvH3u29DFY",
+  "titulo": "AI Latent Reasoning:  Sep-Latent Token Compression",
+  "canal": "Discover AI",
+  "modulo": 11,
+  "nivel": "Avançado",
+  "resumo": "Explica o Sep-Latent, que comprime passos de raciocínio em tokens separadores com máscara de decaimento de atenção e autodestilação. Para quem estuda raciocínio latente e custo de tokens.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=BKvH3u29DFY",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-21",
+  "verificado_em": "2026-10-21"
+}
