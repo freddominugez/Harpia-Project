@@ -1,0 +1,16 @@
+{
+  "id": "Ud5RsBegyfw",
+  "titulo": "How Deep Agents Manages Context: Offloading and Summarization",
+  "canal": "LangChain",
+  "modulo": 8,
+  "nivel": "Intermediário",
+  "resumo": "Mostra duas técnicas de gestão de contexto em agentes longos: descarregar resultados grandes de ferramentas em arquivos e resumir a conversa ao passar de um limite de tokens.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=Ud5RsBegyfw",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-22",
+  "verificado_em": "2026-10-22"
+}

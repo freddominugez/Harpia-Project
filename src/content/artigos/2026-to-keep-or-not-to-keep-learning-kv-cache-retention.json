@@ -1,0 +1,15 @@
+{
+  "ano": 2026,
+  "titulo": "To Keep or Not to Keep: Learning KV Cache Retention in Disaggregated LLM Serving Systems",
+  "autores": "Liu, Yu, Jiang, Wang, Wu · arXiv",
+  "url": "https://arxiv.org/abs/2610.28637",
+  "grupo": "fund",
+  "selo": "medido",
+  "rotulo": "fundamento · retenção de KV cache em serving",
+  "ordem": 999,
+  "fonte_url": "https://arxiv.org/abs/2610.28637",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-22",
+  "verificado_em": "2026-10-22"
+}

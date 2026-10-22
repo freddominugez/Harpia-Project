@@ -1,0 +1,16 @@
+{
+  "id": "vM3kzJIPvvw",
+  "titulo": "How LLM Serving Works: An Introduction to vLLM and SGLang",
+  "canal": "Vizuara",
+  "modulo": 10,
+  "nivel": "Intermediário",
+  "resumo": "Aula que segue o Llama 3.1 8B numa H100 para explicar KV cache, prefill e decode, batching e as ideias do vLLM e do SGLang. Para quem vai servir modelos.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=vM3kzJIPvvw",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-22",
+  "verificado_em": "2026-10-22"
+}

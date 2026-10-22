@@ -1,0 +1,16 @@
+{
+  "id": "esdRFXgXaaQ",
+  "titulo": "DeepSeek Just Open-Sourced How It Serves 155T Tokens a Day",
+  "canal": "Prompt Engineering",
+  "modulo": 10,
+  "nivel": "Intermediário",
+  "resumo": "Percorre uma requisição no motor de inferência aberto da DeepSeek: cache de KV entre sessões, prefill e decode separados, paralelismo de especialistas e decodificação especulativa.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=esdRFXgXaaQ",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-22",
+  "verificado_em": "2026-10-22"
+}

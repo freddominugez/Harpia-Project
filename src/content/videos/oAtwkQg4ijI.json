@@ -1,0 +1,16 @@
+{
+  "id": "oAtwkQg4ijI",
+  "titulo": "Post-Train Your Local AI: Which Method Actually Works? Distillation?",
+  "canal": "Discover AI",
+  "modulo": 6,
+  "nivel": "Avançado",
+  "resumo": "Compara métodos de pós-treino como SFT, DPO, RLVR e destilação on-policy a partir de artigos recentes. Para quem já faz fine-tuning e quer escolher o método.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=oAtwkQg4ijI",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-22",
+  "verificado_em": "2026-10-22"
+}
