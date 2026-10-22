@@ -1,5 +1,12 @@
 [
  {
+  "fonte": "Hugging Face",
+  "titulo": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
+  "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
+  "data": "22/10/2026",
+  "ts": 1792685491
+ },
+ {
   "fonte": "arXiv cs.IR",
   "titulo": "TAGR: Task-Adaptive Geo-Semantic Retrieval across Heterogeneous Urban Delivery Tasks",
   "url": "https://arxiv.org/abs/2610.28638",
