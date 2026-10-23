@@ -225,13 +225,6 @@
  },
  {
   "fonte": "Hugging Face",
-  "titulo": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
-  "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
-  "data": "22/10/2026",
-  "ts": 1792685491
- },
- {
-  "fonte": "Hugging Face",
   "titulo": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
   "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
   "data": "21/10/2026",
