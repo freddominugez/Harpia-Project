@@ -1,0 +1,16 @@
+{
+  "id": "STRtnhlf9CI",
+  "titulo": "A New Way to Distill Local AI Models: OPTD?",
+  "canal": "Discover AI",
+  "modulo": 6,
+  "nivel": "Avançado",
+  "resumo": "Apresenta o artigo On-Policy Transition Distillation, um método para destilar um LLM grande num modelo local pequeno. Para quem já conhece destilação e quer acompanhar a pesquisa recente.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=STRtnhlf9CI",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-23",
+  "verificado_em": "2026-10-23"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "A0dgodaKyac",
+  "titulo": "Why Post-Training Can’t Fix AI Alignment | Dylan Hadfield-Menell (MIT)",
+  "canal": "FAR․AI",
+  "modulo": 7,
+  "nivel": "Intermediário",
+  "resumo": "Palestra sobre por que o alinhamento feito no pós-treino é removido com pouco custo, já que a recusa vive numa única direção do fluxo residual. Para quem estuda alinhamento e segurança.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=A0dgodaKyac",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-23",
+  "verificado_em": "2026-10-23"
+}

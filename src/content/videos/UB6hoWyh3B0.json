@@ -1,0 +1,16 @@
+{
+  "id": "UB6hoWyh3B0",
+  "titulo": "A Bank Trained Its Own Foundation Model to Catch Fraud — Freddy Lecue, Wells Fargo",
+  "canal": "AI Engineer",
+  "modulo": 1,
+  "nivel": "Intermediário",
+  "resumo": "Caso de um banco que pré-treinou um transformer sobre transações em vez de palavras, com foco em como transformar dados tabulares em tokens. Para quem quer ver tokenização fora do texto.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=UB6hoWyh3B0",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-23",
+  "verificado_em": "2026-10-23"
+}

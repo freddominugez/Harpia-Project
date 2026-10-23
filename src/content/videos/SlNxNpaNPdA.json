@@ -1,0 +1,16 @@
+{
+  "id": "SlNxNpaNPdA",
+  "titulo": "How Thousands of GPUs Train One AI: 5 Ways They Work Together",
+  "canal": "Jia-Bin Huang",
+  "modulo": 4,
+  "nivel": "Intermediário",
+  "resumo": "Explica as cinco formas de dividir o treino de um modelo entre milhares de GPUs: dados, tensor, contexto, pipeline e especialistas. Para quem já conhece paralelismo de dados e quer entender o resto.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=SlNxNpaNPdA",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-23",
+  "verificado_em": "2026-10-23"
+}
