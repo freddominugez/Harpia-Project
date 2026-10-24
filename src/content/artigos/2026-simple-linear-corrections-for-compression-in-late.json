@@ -3,13 +3,15 @@
   "titulo": "Simple Linear Corrections for Compression in Late Interaction",
   "autores": "Agarwal, Basu, Agrawal · arXiv",
   "url": "https://arxiv.org/abs/2610.14196",
-  "grupo": "arte",
-  "selo": "arte",
-  "rotulo": "arte prévia · caminho 2",
+  "grupo": "busca",
+  "selo": "medido",
+  "rotulo": "interação tardia comprimida",
   "ordem": 999,
   "fonte_url": "https://arxiv.org/abs/2610.14196",
-  "status": "rascunho",
+  "status": "publicado",
   "origem": "curadoria-diaria",
   "adicionado_em": "2026-10-14",
-  "verificado_em": "2026-10-14"
+  "verificado_em": "2026-10-24",
+  "pdf_url": "https://arxiv.org/pdf/2610.14196",
+  "idioma": "en"
 }

@@ -5,11 +5,13 @@
   "url": "https://arxiv.org/abs/2610.23939",
   "grupo": "fund",
   "selo": "medido",
-  "rotulo": "fundamento · cache KV",
+  "rotulo": "compressão do cache KV",
   "ordem": 999,
   "fonte_url": "https://arxiv.org/abs/2610.23939",
-  "status": "rascunho",
+  "status": "publicado",
   "origem": "curadoria-diaria",
   "adicionado_em": "2026-10-21",
-  "verificado_em": "2026-10-21"
+  "verificado_em": "2026-10-24",
+  "pdf_url": "https://arxiv.org/pdf/2610.23939",
+  "idioma": "en"
 }

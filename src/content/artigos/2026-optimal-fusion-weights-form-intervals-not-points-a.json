@@ -1,15 +1,17 @@
 {
   "ano": 2026,
   "titulo": "Optimal Fusion Weights Form Intervals, Not Points: A Latency-Aware Study of Query-Adaptive WRRF",
-  "autores": "Ma, Shekarchi, Mcilroy, Farrokh, Zarrinkalam, Stremmel · arXiv",
+  "autores": "Ma et al. · arXiv",
   "url": "https://arxiv.org/abs/2610.24341",
   "grupo": "busca",
   "selo": "medido",
   "rotulo": "fusão híbrida esparsa e densa",
   "ordem": 999,
   "fonte_url": "https://arxiv.org/abs/2610.24341",
-  "status": "rascunho",
+  "status": "publicado",
   "origem": "curadoria-diaria",
   "adicionado_em": "2026-10-20",
-  "verificado_em": "2026-10-20"
+  "verificado_em": "2026-10-24",
+  "pdf_url": "https://arxiv.org/pdf/2610.24341",
+  "idioma": "en"
 }

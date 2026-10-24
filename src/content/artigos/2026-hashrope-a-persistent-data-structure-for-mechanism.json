@@ -1,15 +1,17 @@
 {
   "ano": 2026,
   "titulo": "Hashrope: A Persistent Data Structure for Mechanisms of LLM Context Management",
-  "autores": "Syed, Alsulami, Silaghi · IEEE ICTAI 2026",
+  "autores": "Syed, Alsulami, Silaghi · arXiv",
   "url": "https://arxiv.org/abs/2610.16144",
   "grupo": "fund",
   "selo": "medido",
-  "rotulo": "fundamento",
+  "rotulo": "reúso de prefixos do cache KV",
   "ordem": 999,
   "fonte_url": "https://arxiv.org/abs/2610.16144",
-  "status": "rascunho",
+  "status": "publicado",
   "origem": "curadoria-diaria",
   "adicionado_em": "2026-10-14",
-  "verificado_em": "2026-10-14"
+  "verificado_em": "2026-10-24",
+  "pdf_url": "https://arxiv.org/pdf/2610.16144",
+  "idioma": "en"
 }

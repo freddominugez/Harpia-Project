@@ -5,11 +5,13 @@
   "url": "https://arxiv.org/abs/2610.24890",
   "grupo": "arte",
   "selo": "arte",
-  "rotulo": "arte prévia · caminho 1",
+  "rotulo": "limite teórico · caminho 1",
   "ordem": 999,
   "fonte_url": "https://arxiv.org/abs/2610.24890",
-  "status": "rascunho",
+  "status": "publicado",
   "origem": "curadoria-diaria",
   "adicionado_em": "2026-10-20",
-  "verificado_em": "2026-10-20"
+  "verificado_em": "2026-10-24",
+  "pdf_url": "https://arxiv.org/pdf/2610.24890",
+  "idioma": "en"
 }

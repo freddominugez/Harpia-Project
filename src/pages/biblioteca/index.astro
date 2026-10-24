@@ -9,7 +9,7 @@ const nTraduzidos = livros.filter((l) => l.edicao_pt).length;
 const idiomasArtigos = [...new Set(artigos.map((a) => a.idioma ?? "en"))].sort((a, b) => (a === "pt" ? -1 : b === "pt" ? 1 : a.localeCompare(b)));
 const contaIdiomaArtigo = (i: string) => artigos.filter((a) => (a.idioma ?? "en") === i).length;
 const nFontes = fontes.reduce((s, g) => s + g.itens.length, 0);
-const ordenados = [...artigos].sort((a, b) => a.ano - b.ano);
+const ordenados = [...artigos].sort((a, b) => b.ano - a.ano || a.titulo.localeCompare(b.titulo));
 ---
 <Base titulo="Biblioteca" descricao="Livros, artigos acadêmicos e fontes de alta qualidade sobre matemática, física e IA.">
   <PageIntro trilha={[{ rotulo: "Biblioteca" }]} eyebrow="Biblioteca" titulo="Livros, artigos e onde pesquisar" lead={`${livros.length} livros com capa, resenha curta e onde encontrar. ${nOnline} têm edição online oficial, publicada pelos autores ou pela editora.`}>
@@ -62,7 +62,7 @@ const ordenados = [...artigos].sort((a, b) => a.ano - b.ano);
 
   <section class="section" id="artigos">
     <div class="container">
-      <div class="section-head"><div><h2>Artigos acadêmicos</h2><p>Os trabalhos que definem a base a bater e a arte prévia de cada caminho.</p></div></div>
+      <div class="section-head"><div><h2>Artigos acadêmicos</h2><p>Os trabalhos que definem a base a bater e a arte prévia de cada caminho, e os resultados recentes em busca vetorial, quantização e cache KV. Mais recentes primeiro; o título abre o PDF.</p></div></div>
       <div class="filter-row"><span class="filter-label" id="rot-tema">Tema</span>
       <div class="filters" role="group" aria-labelledby="rot-tema">
         <button type="button" data-grupo="todos" aria-pressed="true">Todos</button>

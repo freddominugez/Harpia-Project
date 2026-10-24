@@ -5,11 +5,13 @@
   "url": "https://arxiv.org/abs/2610.30206",
   "grupo": "fund",
   "selo": "medido",
-  "rotulo": "fundamento · cache KV",
+  "rotulo": "cache KV em mistura de especialistas",
   "ordem": 999,
   "fonte_url": "https://arxiv.org/abs/2610.30206",
-  "status": "rascunho",
+  "status": "publicado",
   "origem": "curadoria-diaria",
   "adicionado_em": "2026-10-23",
-  "verificado_em": "2026-10-23"
+  "verificado_em": "2026-10-24",
+  "pdf_url": "https://arxiv.org/pdf/2610.30206",
+  "idioma": "en"
 }
