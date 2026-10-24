@@ -1,0 +1,16 @@
+{
+  "id": "5O6jLtoeKrg",
+  "titulo": "Real AI Agent Attacks and What Would Have Stopped Them — Andrey Rybka, Bloomberg",
+  "canal": "AI Engineer",
+  "modulo": 7,
+  "nivel": "Intermediário",
+  "resumo": "Percorre incidentes reais com agentes, como injeção por e-mail e pacote MCP adulterado, e os controles que os teriam barrado. Para quem põe agentes em produção.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=5O6jLtoeKrg",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-24",
+  "verificado_em": "2026-10-24"
+}

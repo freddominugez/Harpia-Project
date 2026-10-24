@@ -1,0 +1,16 @@
+{
+  "id": "6qQQS1zjGoU",
+  "titulo": "Lecture 119: Scan at the speed of light",
+  "canal": "GPU MODE",
+  "modulo": 10,
+  "nivel": "Avançado",
+  "resumo": "Aula sobre como implementar a varredura (scan, soma de prefixos) em GPU buscando o limite do hardware. Para quem escreve kernels.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=6qQQS1zjGoU",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-24",
+  "verificado_em": "2026-10-24"
+}

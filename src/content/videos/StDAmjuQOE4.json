@@ -1,0 +1,16 @@
+{
+  "id": "StDAmjuQOE4",
+  "titulo": "The Boring Version of Continual Learning",
+  "canal": "LangChain",
+  "modulo": 6,
+  "nivel": "Intermediário",
+  "resumo": "Will Brown compara métodos de pós-treino para agentes, de SFT e destilação de contexto a RL online, e trata avaliação contínua. Para quem ajusta modelos.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=StDAmjuQOE4",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-24",
+  "verificado_em": "2026-10-24"
+}

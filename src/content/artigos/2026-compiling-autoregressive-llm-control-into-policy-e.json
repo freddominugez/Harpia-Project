@@ -1,0 +1,15 @@
+{
+  "ano": 2026,
+  "titulo": "Compiling Autoregressive LLM Control into Policy-Exact Parallel Inference for Hierarchical RAG",
+  "autores": "Lin, Shen, Hao, Cui, Li, Chen, Tang, Wang, Yan, Li, Xiong · arXiv",
+  "url": "https://arxiv.org/abs/2610.30664",
+  "grupo": "busca",
+  "selo": "medido",
+  "rotulo": "RAG hierárquico · latência de controle",
+  "ordem": 999,
+  "fonte_url": "https://arxiv.org/abs/2610.30664",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-24",
+  "verificado_em": "2026-10-24"
+}
