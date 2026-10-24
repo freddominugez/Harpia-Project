@@ -1,227 +1,87 @@
 [
  {
-  "fonte": "arXiv cs.IR",
-  "titulo": "IRAH: Hierarchical Agentic Tree Search for Retrieval Pipeline Optimization",
-  "url": "https://arxiv.org/abs/2610.30167",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "FormBench: A Benchmark for Fine-Grained Retrieval in Formulation Patents",
-  "url": "https://arxiv.org/abs/2610.30175",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "FlexVDR: Learning to Allocate Matryoshka Representation Budgets for Visual Document Retrieval",
-  "url": "https://arxiv.org/abs/2610.30177",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "QProtFuse: Query-Guided Layer Fusion for Retrieval-Augmented Protein Function Prediction",
-  "url": "https://arxiv.org/abs/2610.30180",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "When Agentic Retrieval Fails Silently: Framework and Production Evidence from a Creative AI Assistant",
-  "url": "https://arxiv.org/abs/2610.30423",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "Getting a GRIP on Graph-Based Search for Learned Sparse Retrieval",
-  "url": "https://arxiv.org/abs/2610.30425",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "The Fusion Tax: A Diagnostic Analysis of When Hybrid Retrieval Hurts",
-  "url": "https://arxiv.org/abs/2610.30612",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "Lychee: Certified Screening of Inverted Lists for High-Recall Vector Search",
-  "url": "https://arxiv.org/abs/2610.30697",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "PAIR: Preference-Aligned Intent Retrieval for Premium People Recommendation at LinkedIn",
-  "url": "https://arxiv.org/abs/2610.30941",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "Chunk Recomputation under Real Document Revisions: Measuring Update Cost and Retrieval Quality of Fixed, Recursive, and Content-Defined Chunking",
-  "url": "https://arxiv.org/abs/2610.31019",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "A Memory-Efficient Distributed Algorithm for Approximate Nearest Neighbour Search with Arbitrary Distances",
-  "url": "https://arxiv.org/abs/2405.13795",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "Xetrieval: Explaining Dense Retrieval through Feature Elicitation",
-  "url": "https://arxiv.org/abs/2605.29507",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.LG",
-  "titulo": "MoEZip: Routing-Aware KV Cache Compression for Sparse Mixture-of-Experts LLMs",
-  "url": "https://arxiv.org/abs/2610.30206",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.LG",
-  "titulo": "Spike-Aware Gradient-Based Mixed-Precision Quantization of Spiking Neural Networks for Vision Applications",
-  "url": "https://arxiv.org/abs/2610.30339",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.LG",
-  "titulo": "NEST: Nested Embedding Representation for Multiscale Clustering",
-  "url": "https://arxiv.org/abs/2610.30520",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.LG",
-  "titulo": "Federated Graph Retrieval-Augmented Generation",
-  "url": "https://arxiv.org/abs/2610.30728",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.LG",
-  "titulo": "Gandalf: Flash Shall Not Die! Increasing Flash Storage Lifetime for KV Cache Offloading in LLM Serving",
-  "url": "https://arxiv.org/abs/2610.30791",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.LG",
-  "titulo": "When Forgotten Facts Return: Relearning-Aware Unlearning of Knowledge Graph Embeddings via Tangent Kernels",
-  "url": "https://arxiv.org/abs/2610.31075",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.LG",
-  "titulo": "Extreme Compression of Per-Layer Embeddings via Cross-Layer Latent Vector Quantization",
-  "url": "https://arxiv.org/abs/2610.31309",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.LG",
-  "titulo": "SQuAT: Spherical Lattice Vector Quantization-Aware Training",
-  "url": "https://arxiv.org/abs/2610.31412",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.LG",
-  "titulo": "Multi-Token Prediction and Alternative Tokenization Improve Learning Latent Multi-Hop Graph Search at Scale",
-  "url": "https://arxiv.org/abs/2610.31439",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.LG",
-  "titulo": "CRANE: Post-Hoc Counterfactual Retrieval for Multimodal Classifiers",
-  "url": "https://arxiv.org/abs/2610.31594",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.LG",
-  "titulo": "A Fix for Softmax and Cross-Entropy",
-  "url": "https://arxiv.org/abs/2610.31642",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
-  "fonte": "arXiv cs.LG",
-  "titulo": "FIGFLEX: A Mixed-Precision FP-INT GEMM Accelerator Co-Designed with Low-Bit LLM Quantization",
-  "url": "https://arxiv.org/abs/2610.30480",
-  "data": "23/10/2026",
-  "ts": 1792728000
- },
- {
   "fonte": "arXiv cs.CL",
   "titulo": "Self-Assessment Reinforcement Learning for Search-State Awareness in Retrieval-Augmented Large Language Models",
   "url": "https://arxiv.org/abs/2610.30435",
-  "data": "23/10/2026",
-  "ts": 1792728000
+  "data": "24/10/2026",
+  "ts": 1792814400
  },
  {
   "fonte": "arXiv cs.CL",
   "titulo": "IFC-MCQ: Automatically Generating Multiple-Choice Benchmarks for Evaluating LLM Agents on IFC Data Retrieval",
   "url": "https://arxiv.org/abs/2610.30533",
-  "data": "23/10/2026",
-  "ts": 1792728000
+  "data": "24/10/2026",
+  "ts": 1792814400
  },
  {
   "fonte": "arXiv cs.CL",
   "titulo": "ULME: Predictive Coupling for Mutually Reinforcing Embedding and Language Modeling",
   "url": "https://arxiv.org/abs/2610.30705",
-  "data": "23/10/2026",
-  "ts": 1792728000
+  "data": "24/10/2026",
+  "ts": 1792814400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Chunk Recomputation under Real Document Revisions: Measuring Update Cost and Retrieval Quality of Fixed, Recursive, and Content-Defined Chunking",
+  "url": "https://arxiv.org/abs/2610.31019",
+  "data": "24/10/2026",
+  "ts": 1792814400
  },
  {
   "fonte": "arXiv cs.CL",
   "titulo": "RIFT: KV Cache Compression for Draft Models with Complementary Compressibility Training",
   "url": "https://arxiv.org/abs/2610.31098",
-  "data": "23/10/2026",
-  "ts": 1792728000
+  "data": "24/10/2026",
+  "ts": 1792814400
  },
  {
   "fonte": "arXiv cs.CL",
   "titulo": "How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions",
   "url": "https://arxiv.org/abs/2610.31606",
-  "data": "23/10/2026",
-  "ts": 1792728000
+  "data": "24/10/2026",
+  "ts": 1792814400
  },
  {
   "fonte": "arXiv cs.CL",
   "titulo": "Low-Bit N-Gram Embeddings for Language Models",
   "url": "https://arxiv.org/abs/2610.31646",
-  "data": "23/10/2026",
-  "ts": 1792728000
+  "data": "24/10/2026",
+  "ts": 1792814400
  },
  {
   "fonte": "arXiv cs.CL",
   "titulo": "Finitely Verifiable Segmentation: Decidability for Every Tokenizer with a Finite-State Verifier",
   "url": "https://arxiv.org/abs/2610.30168",
-  "data": "23/10/2026",
-  "ts": 1792728000
+  "data": "24/10/2026",
+  "ts": 1792814400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "The Fusion Tax: A Diagnostic Analysis of When Hybrid Retrieval Hurts",
+  "url": "https://arxiv.org/abs/2610.30612",
+  "data": "24/10/2026",
+  "ts": 1792814400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "SQuAT: Spherical Lattice Vector Quantization-Aware Training",
+  "url": "https://arxiv.org/abs/2610.31412",
+  "data": "24/10/2026",
+  "ts": 1792814400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Multi-Token Prediction and Alternative Tokenization Improve Learning Latent Multi-Hop Graph Search at Scale",
+  "url": "https://arxiv.org/abs/2610.31439",
+  "data": "24/10/2026",
+  "ts": 1792814400
  },
  {
   "fonte": "arXiv cs.CL",
   "titulo": "Beyond Recall Saturation: Scaling Hard-Negative Reranker Training for Industrial Legal Retrieval",
   "url": "https://arxiv.org/abs/2610.24478",
-  "data": "23/10/2026",
-  "ts": 1792728000
+  "data": "24/10/2026",
+  "ts": 1792814400
  },
  {
   "fonte": "Hugging Face",
