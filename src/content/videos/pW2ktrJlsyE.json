@@ -1,0 +1,16 @@
+{
+  "id": "pW2ktrJlsyE",
+  "titulo": "Harness² Explained: Self-Improving Agents Without Training",
+  "canal": "Prompt Engineering",
+  "modulo": 8,
+  "nivel": "Avançado",
+  "resumo": "Explica o Harness², em que o agente reescreve prompts, skills, scripts e laço de controle a cada tarefa sem treinar o modelo, e onde o método falha. Para quem estuda agentes que se ajustam sozinhos.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=pW2ktrJlsyE",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-25",
+  "verificado_em": "2026-10-25"
+}

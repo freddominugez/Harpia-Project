@@ -1,0 +1,16 @@
+{
+  "id": "DZ24Xbm9Joc",
+  "titulo": "How to Build Financial Agents That Work Across the Web - Jay Sahnan & Arik Bird, Browserbase",
+  "canal": "AI Engineer",
+  "modulo": 8,
+  "nivel": "Intermediário",
+  "resumo": "Agentes de navegador para sites sem API: primitivas act, extract e observe do Stagehand e como manter automações estáveis quando a página muda. Para quem integra agentes a portais web.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=DZ24Xbm9Joc",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-25",
+  "verificado_em": "2026-10-25"
+}

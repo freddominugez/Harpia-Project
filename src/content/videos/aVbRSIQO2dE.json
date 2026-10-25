@@ -1,0 +1,16 @@
+{
+  "id": "aVbRSIQO2dE",
+  "titulo": "Why Frontier Models Fail as Buy-Side Analysts - Janie Gu, Google DeepMind & Suyeol Yun, LinqAlpha",
+  "canal": "AI Engineer",
+  "modulo": 8,
+  "nivel": "Intermediário",
+  "resumo": "Problemas de benchmarks de modelos: variação entre execuções iguais, agentes que mexem no avaliador e tarefas longe do trabalho real, com o MandateBench como exemplo. Para quem mede agentes.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=aVbRSIQO2dE",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-25",
+  "verificado_em": "2026-10-25"
+}
