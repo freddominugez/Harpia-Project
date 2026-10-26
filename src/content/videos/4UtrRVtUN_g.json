@@ -1,0 +1,16 @@
+{
+  "id": "4UtrRVtUN_g",
+  "titulo": "How to Build an AI Code Review Agent - Daksh Gupta, Greptile",
+  "canal": "AI Engineer",
+  "modulo": 8,
+  "nivel": "Intermediário",
+  "resumo": "Mostra como montar um agente de revisão de código: prompts dirigidos, base de PRs com incidentes, revisão cruzada entre modelos e roteamento para modelos mais baratos. Para quem constrói agentes.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=4UtrRVtUN_g",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-26",
+  "verificado_em": "2026-10-26"
+}

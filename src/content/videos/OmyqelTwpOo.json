@@ -1,0 +1,16 @@
+{
+  "id": "OmyqelTwpOo",
+  "titulo": "How to Build Voice Agents That Don't Fall Apart When You Interrupt - Jesse Hall, LiveKit",
+  "canal": "AI Engineer",
+  "modulo": 9,
+  "nivel": "Intermediário",
+  "resumo": "Explica como medir e reduzir a latência de agentes de voz: tempo até o primeiro áudio, detecção de turno e chamadas de ferramenta assíncronas. Para quem monta pipelines de fala.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=OmyqelTwpOo",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-26",
+  "verificado_em": "2026-10-26"
+}

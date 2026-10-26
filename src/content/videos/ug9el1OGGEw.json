@@ -1,0 +1,16 @@
+{
+  "id": "ug9el1OGGEw",
+  "titulo": "This question inspired LoRA fine-tuning",
+  "canal": "Julia Turc",
+  "modulo": 6,
+  "nivel": "Intermediário",
+  "resumo": "Constrói a intuição geométrica de por que LoRA funciona até com posto 1, a partir da dimensão intrínseca do ajuste fino. Para quem quer entender PEFT além da receita.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=ug9el1OGGEw",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-26",
+  "verificado_em": "2026-10-26"
+}
