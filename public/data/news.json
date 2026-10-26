@@ -1,5 +1,194 @@
 [
  {
+  "fonte": "arXiv cs.IR",
+  "titulo": "MICE to Meet You: From Re-ranking Only to End-to-End Retrieval",
+  "url": "https://arxiv.org/abs/2610.31932",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "PersonalQuery-Benchmark:Evaluating Retrieval Robustness to Personalized User Expression Differences",
+  "url": "https://arxiv.org/abs/2610.32164",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "SkillRep: Characterizing and Understanding the Representation Design Space of Agent Skill Retrieval",
+  "url": "https://arxiv.org/abs/2610.32336",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Agentic Memory Management Is the Next Frontier of Information Retrieval",
+  "url": "https://arxiv.org/abs/2610.32464",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "UAE GovTrust Scope Filtering Gains and Routing Failures in Bilingual Public Service Retrieval",
+  "url": "https://arxiv.org/abs/2610.32608",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "What the Query Remembers: Query Abstraction Governs Lexical and Dense Retrieval of Classical Arabic Poetry",
+  "url": "https://arxiv.org/abs/2610.31821",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "System One models Are Not Better Rerankers",
+  "url": "https://arxiv.org/abs/2610.32318",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Driving Video Retrieval for Complex Queries with Structured Grounding",
+  "url": "https://arxiv.org/abs/2606.09109",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Learning Structured Sparsity for Large Models: Bridging Model Compressibility and Efficient Inference",
+  "url": "https://arxiv.org/abs/2610.31897",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Decode Late, Multiply Once: Rethinking the Dot Product for Quantized Weights",
+  "url": "https://arxiv.org/abs/2610.31913",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Head Dimension Matters in Language Models for Long-Context Retrieval",
+  "url": "https://arxiv.org/abs/2610.32213",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "BiLoCo: Binary Low-Rank Corrections for Post-Training Quantization",
+  "url": "https://arxiv.org/abs/2610.32243",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "When to Trust Memory: Retrieval-Guided Probabilistic Spatiotemporal Forecasting under Distribution Shift",
+  "url": "https://arxiv.org/abs/2610.32329",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Earth embeddings are decomposable records of the land surface",
+  "url": "https://arxiv.org/abs/2610.32617",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "MPQ: A Message-Passing View of Post-Training Quantization",
+  "url": "https://arxiv.org/abs/2610.32127",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "EMG Tokenization Preserves Movement Information at a Fraction of the Bitrate",
+  "url": "https://arxiv.org/abs/2610.32674",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Generalization properties of the token perceptron: the role of embedding and vocabulary",
+  "url": "https://arxiv.org/abs/2610.32788",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "GeneSpeak-FP: Target and Compound Retrieval from Observed Cell-Level Perturbation Signatures",
+  "url": "https://arxiv.org/abs/2607.17671",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "SpectrumQuant: Spectrum Alignment for LLM Quantization",
+  "url": "https://arxiv.org/abs/2610.20303",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "On Orthogonal Recurrent Neural Networks Quantization",
+  "url": "https://arxiv.org/abs/2402.04012",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "POS-Signature Demonstration Retrieval for In-Context Dependency Parsing",
+  "url": "https://arxiv.org/abs/2610.31966",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "From Noisy Retrieval to Decision Evidence: Silver Evidence Demonstrations for In-Context Learning",
+  "url": "https://arxiv.org/abs/2610.32128",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "A Broader Look into MLLM's Retrieval Heads",
+  "url": "https://arxiv.org/abs/2610.32411",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Yalda-Embedding: Open Development of a Competitive Persian Retrieval Model",
+  "url": "https://arxiv.org/abs/2610.32933",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Beyond Post-Hoc Rewards: Privileged Reasoning Exploration for Multimodal Embeddings",
+  "url": "https://arxiv.org/abs/2610.32474",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "GRKV: Global Regression for Training-Free KV Cache Compression in Long-Context LLMs",
+  "url": "https://arxiv.org/abs/2605.31105",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "How Ground Truth Shapes Retrieval Scores: Evidence-Aware Evaluation of a Retrieval-Augmented Generation System for Breast Lesions",
+  "url": "https://arxiv.org/abs/2610.31606",
+  "data": "26/10/2026",
+  "ts": 1792987200
+ },
+ {
   "fonte": "Hugging Face",
   "titulo": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
   "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
