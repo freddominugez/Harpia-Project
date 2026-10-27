@@ -1,0 +1,14 @@
+---
+// /noticias/<arquivo>/: a página NotícIAs com esta matéria aberta por inteiro.
+import Base from "../../layouts/Base.astro";
+import NoticiasPagina from "../../components/NoticiasPagina.astro";
+import { NOTICIAS, type Noticia } from "../../lib/noticias";
+
+export function getStaticPaths() {
+  return NOTICIAS.map((n) => ({ params: { slug: n.slug }, props: { n } }));
+}
+const { n } = Astro.props as { n: Noticia };
+---
+<Base titulo={n.titulo} descricao={n.resumo}>
+  <NoticiasPagina atual={n} tituloNoH1 />
+</Base>

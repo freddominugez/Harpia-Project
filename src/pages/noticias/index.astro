@@ -1,0 +1,13 @@
+---
+// /noticias/: a página NotícIAs com a matéria mais recente aberta.
+import Base from "../../layouts/Base.astro";
+import NoticiasPagina from "../../components/NoticiasPagina.astro";
+import PageIntro from "../../components/PageIntro.astro";
+import { NOTICIAS } from "../../lib/noticias";
+const descricao = "NotícIAs do Harpya: letramento em IA, regulação, modelos abertos e pesquisa, em matérias curtas com as fontes de cada informação.";
+---
+<Base titulo="NotícIAs" descricao={descricao}>
+  {NOTICIAS[0] ? <NoticiasPagina atual={NOTICIAS[0]} /> : (
+    <PageIntro trilha={[{ rotulo: "NotícIAs" }]} eyebrow="Harpya · notícias com fonte" titulo="NotícIAs" lead="Nenhuma notícia publicada ainda. As matérias entram depois de revisadas no painel." />
+  )}
+</Base>

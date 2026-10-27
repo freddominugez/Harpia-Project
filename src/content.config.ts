@@ -184,6 +184,24 @@ const pautas = defineCollection({
   }),
 });
 
+// NotícIAs: matérias curtas escritas pelo projeto a partir de fontes citadas.
+// A tarefa "Harpya · NotícIAs" (a cada dois dias) grava sempre como rascunho;
+// só aparecem no site depois de publicadas pelo painel. Nome do arquivo = endereço.
+const noticias = defineCollection({
+  loader: data("noticias"),
+  schema: z.object({
+    titulo: z.string().min(20).max(140),
+    resumo: z.string().min(60).max(200),
+    data: dia,
+    categoria: z.enum(["letramento", "brasil", "abertos", "pesquisa"]),
+    icone: z.enum(["livro", "escola", "onda", "maquina", "globo", "chip", "biblioteca", "codigo", "leitura", "balanca", "lupa"]),
+    corpo: z.array(z.string().min(40)).min(2).max(8),
+    harpia: z.string().min(40).max(400),
+    fontes: z.array(z.object({ veiculo: z.string().min(2), titulo: z.string().min(3), url: z.string().url() })).min(1).max(8),
+    ...curadoria,
+  }),
+});
+
 // Lista curada que a tarefa diária consulta.
 const fontesMonitoradas = defineCollection({
   loader: data("fontes-monitoradas"),
@@ -201,5 +219,5 @@ const fontesMonitoradas = defineCollection({
 
 export const collections = {
   caminhos, analises, videos, modulos, artigos, livros, fontes, feeds, aprendizado,
-  "linha-do-tempo": linhaDoTempo, pautas, "fontes-monitoradas": fontesMonitoradas,
+  "linha-do-tempo": linhaDoTempo, pautas, "fontes-monitoradas": fontesMonitoradas, noticias,
 };

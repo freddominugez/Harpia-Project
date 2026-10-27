@@ -1,0 +1,202 @@
+---
+// Página NotícIAs: abertura com o IA grande, destaques em duas linhas de quatro,
+// barra "Veja mais" que troca a vista pelo arquivo completo (grade de 12, com seta para
+// os grupos seguintes, das mais recentes às mais antigas) e, com a barra fechada,
+// a matéria escolhida inteira, com as fontes ao lado.
+import "../styles/noticias.css";
+import Breadcrumb from "./Breadcrumb.astro";
+import NoticiaCard from "./NoticiaCard.astro";
+import { NOTICIAS, capa, cat, icone, urlNoticia, minutosDeLeitura, type Noticia } from "../lib/noticias";
+import { dataCurta } from "../lib/format";
+import { SITE } from "../config";
+
+interface Props { atual: Noticia; tituloNoH1?: boolean }
+const { atual, tituloNoH1 = false } = Astro.props;
+const c = cat(atual.categoria);
+const i = NOTICIAS.findIndex((n) => n.slug === atual.slug);
+const maisRecente = i > 0 ? NOTICIAS[i - 1] : undefined;
+const maisAntiga = i >= 0 ? NOTICIAS[i + 1] : undefined;
+const destaques = NOTICIAS.slice(0, 8);
+const POR_PAGINA = 12;
+const paginas = Array.from({ length: Math.max(1, Math.ceil(NOTICIAS.length / POR_PAGINA)) }, (_, p) => NOTICIAS.slice(p * POR_PAGINA, (p + 1) * POR_PAGINA));
+const mesmaArea = NOTICIAS.filter((n) => n.slug !== atual.slug && n.categoria === atual.categoria);
+const leiaTambem = [...mesmaArea, ...NOTICIAS.filter((n) => n.slug !== atual.slug && n.categoria !== atual.categoria)].slice(0, 3);
+const trilha = tituloNoH1 ? [{ rotulo: "NotícIAs", href: "/noticias/" }, { rotulo: atual.titulo.length > 60 ? `${atual.titulo.slice(0, 57).trimEnd()}...` : atual.titulo }] : [{ rotulo: "NotícIAs" }];
+const Titulo = tituloNoH1 ? "h1" : "h2";
+const Marca = tituloNoH1 ? "p" : "h1";
+
+// Raios decorativos da abertura (mesmo motivo das capas, em dourado claro).
+const raios = Array.from({ length: 9 }, (_, k) => {
+  const a = (k / 9) * Math.PI * 2 + 0.35;
+  const L = 70 + ((k * 37) % 90);
+  return { x: (220 + Math.cos(a) * L).toFixed(1), y: (120 + Math.sin(a) * L).toFixed(1) };
+});
+---
+<section class="nmast">
+  <svg class="nmast-raios" viewBox="0 0 440 240" aria-hidden="true">
+    <g stroke="#c79a39" stroke-opacity=".22" stroke-width="1.2" stroke-linecap="round">{raios.map((r) => <line x1="220" y1="120" x2={r.x} y2={r.y} />)}</g>
+    <g fill="#c79a39" fill-opacity=".3">{raios.map((r) => <circle cx={r.x} cy={r.y} r="3" />)}<circle cx="220" cy="120" r="6" /></g>
+  </svg>
+  <div class="container nmast-in">
+    <Breadcrumb itens={trilha} />
+    <div class="nmast-grid">
+      <div class="nmast-marca">
+        <div class="eyebrow">Harpya · notícias com fonte</div>
+        <Marca class="nwm"><span class="sr-only">NotícIAs</span><span class="nwm-t" aria-hidden="true">Notíc</span><span class="nwm-ia" aria-hidden="true">IA</span><span class="nwm-t" aria-hidden="true">s</span></Marca>
+      </div>
+      <div class="nmast-lado">
+        <p class="nmast-lead">O que mudou em inteligência artificial, contado com fonte: letramento, regulação, modelos abertos e pesquisa. Cada matéria aponta para onde a informação pode ser conferida.</p>
+        <dl class="nmast-dados">
+          <div><dt>Publicadas</dt><dd>{NOTICIAS.length}</dd></div>
+          <div><dt>Mais recente</dt><dd>{NOTICIAS[0] ? dataCurta(NOTICIAS[0].data) : ""}</dd></div>
+          <div><dt>Atualização</dt><dd>a cada 2 dias</dd></div>
+        </dl>
+        <a class="nmast-lendo" href="#materia"><span>Lendo agora</span><b>{atual.titulo}</b><Fragment set:html={icone("abaixo")} /></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="nsec" id="destaques" aria-labelledby="h-destaques">
+  <div class="container">
+    <div class="nsec-tit"><h2 id="h-destaques">Destaques</h2><span>as {destaques.length} mais recentes</span></div>
+    <div class="ngrade">{destaques.map((n) => <NoticiaCard n={n} atual={n.slug === atual.slug} />)}</div>
+  </div>
+</section>
+
+<div class="container">
+  <button class="nbarra" type="button" data-nbarra aria-expanded="false" aria-controls="arquivo">
+    <span class="nbarra-a" data-nbarra-a>Veja mais</span>
+    <span class="nbarra-b" data-nbarra-b>Todas as {NOTICIAS.length} notícias, da mais recente à mais antiga</span>
+    <span class="nbarra-c" set:html={icone("abaixo")} />
+  </button>
+</div>
+
+<section class="nsec narq" id="arquivo" aria-labelledby="h-arquivo" hidden data-narq>
+  <div class="container">
+    <div class="nsec-tit">
+      <h2 id="h-arquivo">Todas as notícias</h2>
+      {paginas.length > 1 && (
+        <div class="npag">
+          <button type="button" class="nseta" data-npag-ant aria-label="Doze mais recentes" disabled set:html={icone("voltar")} />
+          <span data-npag-n>1 de {paginas.length}</span>
+          <button type="button" class="nseta" data-npag-prox aria-label="Doze mais antigas" set:html={icone("seta")} />
+        </div>
+      )}
+    </div>
+    <div class="npaginas-box">
+      <div class="npaginas" data-npaginas tabindex="0" aria-label="Grupos de doze notícias">
+        {paginas.map((pg, p) => (
+          <div class="npagina" aria-label={`Grupo ${p + 1} de ${paginas.length}`}>
+            <div class="ngrade">{pg.map((n) => <NoticiaCard n={n} atual={n.slug === atual.slug} />)}</div>
+          </div>
+        ))}
+      </div>
+      {paginas.length > 1 && <button type="button" class="nlado nlado-prox" data-nlado-prox aria-label="Doze mais antigas" set:html={icone("seta")} />}
+      {paginas.length > 1 && <button type="button" class="nlado nlado-ant" data-nlado-ant aria-label="Doze mais recentes" hidden set:html={icone("voltar")} />}
+    </div>
+    <p class="nnota-arq">Mais recentes no topo. As mais antigas descem na grade e seguem para a direita em grupos de 12.</p>
+  </div>
+</section>
+
+<section class="nmat" id="materia" data-nmat>
+  <div class="container">
+    <article class="nart">
+      <div class="nart-capa" set:html={capa(atual)} />
+      <div class="nart-grade">
+        <div class="nart-principal">
+          <div class="nmeta"><span class={`tag ${c.tag}`}><Fragment set:html={icone(c.icone)} />{c.nome}</span><time datetime={atual.data}>{dataCurta(atual.data)}</time><span>{minutosDeLeitura(atual)} min de leitura</span></div>
+          <Titulo class="nart-titulo">{atual.titulo}</Titulo>
+          <p class="nart-linha-fina">{atual.resumo}</p>
+          <div class="nart-texto">{atual.corpo.map((p) => <p>{p}</p>)}</div>
+          <aside class="nart-por-que" aria-label="Por que importa para o Harpya">
+            <b><Fragment set:html={icone("lupa")} />Por que importa para o Harpya</b>
+            <p>{atual.harpia}</p>
+          </aside>
+          <nav class="nart-nav" aria-label="Outras notícias">
+            {maisRecente ? <a href={`${urlNoticia(maisRecente)}#materia`}><small>Mais recente</small><span>{maisRecente.titulo}</span></a> : <span />}
+            {maisAntiga && <a class="nart-nav-antiga" href={`${urlNoticia(maisAntiga)}#materia`}><small>Mais antiga</small><span>{maisAntiga.titulo}</span></a>}
+          </nav>
+        </div>
+        <aside class="nart-lado">
+          <div class="nbox">
+            <h3>Fontes</h3>
+            <ol class="nfontes">
+              {atual.fontes.map((f) => (
+                <li><a href={f.url} target="_blank" rel="noopener noreferrer"><span class="nf-v">{f.veiculo}</span><span class="nf-t">{f.titulo}</span><Fragment set:html={icone("fonte")} /></a></li>
+              ))}
+            </ol>
+            <p class="nbox-nota">Texto escrito pelo {SITE.nome} a partir das fontes acima. As capas são ilustrações do projeto, geradas a partir do tema de cada notícia.</p>
+          </div>
+          {leiaTambem.length > 0 && (
+            <div class="nbox">
+              <h3>Leia também</h3>
+              {leiaTambem.map((n) => {
+                const cn = cat(n.categoria);
+                return <a class="nmini" href={`${urlNoticia(n)}#materia`}><span class={`nmini-ic tag ${cn.tag}`} set:html={icone(n.icone)} /><span><b>{n.titulo}</b><small>{dataCurta(n.data)}</small></span></a>;
+              })}
+            </div>
+          )}
+        </aside>
+      </div>
+    </article>
+  </div>
+</section>
+
+<script>
+  // Barra "Veja mais": abre o arquivo no lugar dos destaques e da matéria; fechar volta.
+  // Arquivo: grupos de 12 lado a lado, com setas e teclado.
+  const barra = document.querySelector<HTMLButtonElement>("[data-nbarra]");
+  const arquivo = document.querySelector<HTMLElement>("[data-narq]");
+  const destaques = document.getElementById("destaques");
+  const materia = document.querySelector<HTMLElement>("[data-nmat]");
+  const reduzido = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const trilho = document.querySelector<HTMLElement>("[data-npaginas]");
+  let pagina = 0;
+  const total = trilho ? trilho.children.length : 1;
+  const marca = () => {
+    const n = document.querySelector("[data-npag-n]");
+    if (n) n.textContent = `${pagina + 1} de ${total}`;
+    const ant = document.querySelector<HTMLButtonElement>("[data-npag-ant]");
+    const prox = document.querySelector<HTMLButtonElement>("[data-npag-prox]");
+    if (ant) ant.disabled = pagina === 0;
+    if (prox) prox.disabled = pagina >= total - 1;
+    const la = document.querySelector<HTMLElement>("[data-nlado-ant]");
+    const lp = document.querySelector<HTMLElement>("[data-nlado-prox]");
+    if (la) la.hidden = pagina === 0;
+    if (lp) lp.hidden = pagina >= total - 1;
+  };
+  const vai = (p: number) => {
+    if (!trilho) return;
+    pagina = Math.max(0, Math.min(total - 1, p));
+    const alvo = trilho.children[pagina] as HTMLElement | undefined;
+    if (alvo) trilho.scrollTo({ left: alvo.offsetLeft - trilho.offsetLeft, behavior: reduzido ? "auto" : "smooth" });
+    marca();
+  };
+  const abre = (abrir: boolean) => {
+    if (!barra || !arquivo) return;
+    barra.setAttribute("aria-expanded", abrir ? "true" : "false");
+    arquivo.hidden = !abrir;
+    if (destaques) destaques.hidden = abrir;
+    if (materia) materia.hidden = abrir;
+    const a = barra.querySelector("[data-nbarra-a]");
+    const b = barra.querySelector("[data-nbarra-b]");
+    if (a) a.textContent = abrir ? "Fechar" : "Veja mais";
+    if (b) b.textContent = abrir ? "Voltar aos destaques e à matéria" : (b.getAttribute("data-fechado") ?? b.textContent);
+    if (abrir) { vai(0); barra.scrollIntoView({ block: "start", behavior: reduzido ? "auto" : "smooth" }); }
+  };
+  const b = barra?.querySelector("[data-nbarra-b]");
+  if (b) b.setAttribute("data-fechado", b.textContent ?? "");
+  barra?.addEventListener("click", () => abre(barra.getAttribute("aria-expanded") !== "true"));
+  for (const sel of ["[data-npag-ant]", "[data-nlado-ant]"]) document.querySelector(sel)?.addEventListener("click", () => vai(pagina - 1));
+  for (const sel of ["[data-npag-prox]", "[data-nlado-prox]"]) document.querySelector(sel)?.addEventListener("click", () => vai(pagina + 1));
+  trilho?.addEventListener("scroll", () => {
+    const largura = trilho.clientWidth + 24;
+    const p = Math.round(trilho.scrollLeft / Math.max(1, largura));
+    if (p !== pagina) { pagina = Math.max(0, Math.min(total - 1, p)); marca(); }
+  }, { passive: true });
+  trilho?.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight") { e.preventDefault(); vai(pagina + 1); }
+    if (e.key === "ArrowLeft") { e.preventDefault(); vai(pagina - 1); }
+  });
+</script>

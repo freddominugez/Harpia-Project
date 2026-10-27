@@ -1,0 +1,25 @@
+{
+  "titulo": "Modelo aberto de reconhecimento de fala cabe em 156 MB e supera o Whisper large-v3",
+  "resumo": "A Fermion AI abriu o Phonon-2.5, que transcreve 25 línguas com mais precisão que o Whisper large-v3 sendo cerca de 20 vezes menor.",
+  "data": "2026-10-25",
+  "categoria": "abertos",
+  "icone": "onda",
+  "corpo": [
+    "A Fermion AI liberou como código aberto o Phonon-2.5, um modelo multilíngue de reconhecimento de fala com 156 MB. Segundo a empresa, ele estabelece uma nova fronteira entre precisão e tamanho no benchmark FLEURS, em 25 línguas, e supera o Whisper large-v3, da OpenAI, apesar de ser cerca de 20 vezes menor.",
+    "A empresa afirma ter reduzido um modelo de 2,5 GB a 6,2% do tamanho original de download e, ao mesmo tempo, melhorado a precisão. A notícia foi registrada no resumo semanal This Week in All Things AI da semana 43 de 2026.",
+    "Os números são da própria Fermion AI. Ainda não há verificação independente publicada, e o FLEURS mede um conjunto específico de leituras em voz alta, que não cobre todas as situações de fala real."
+  ],
+  "harpia": "Um modelo de transcrição que cabe num celular muda quem pode testar, medir e estudar IA em casa. Também é um bom exemplo para separar o que a empresa afirma do que já foi conferido por outros.",
+  "fontes": [
+    {
+      "veiculo": "This Week in All Things AI",
+      "titulo": "Week 43-2026",
+      "url": "https://paragraph.com/@twiata/this-week-in-all-things-ai-week-43-2026"
+    }
+  ],
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-26",
+  "verificado_em": "2026-10-26",
+  "ordem": 999
+}

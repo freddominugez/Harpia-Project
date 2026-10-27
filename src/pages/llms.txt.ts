@@ -19,6 +19,7 @@ export const GET: APIRoute = async () => {
     `## Caminhos de pesquisa\n\n${caminhos.map((r) => linha(r.path)).join("\n")}`,
     `## Referência\n\n${["/equacoes/", "/biblioteca/glossario/", "/origens/", "/aprendizado/", "/estudos/a-ideia-mais-interessante/", "/estudos/arquivados/"].map(linha).join("\n")}`,
     `## Acervo\n\n${["/videos/", "/biblioteca/", "/biblioteca/fontes/"].map(linha).join("\n")}`,
+    ...(todas.some((r) => r.path === "/noticias/") ? [`## NotícIAs\n\n${todas.filter((r) => r.path.startsWith("/noticias/")).map((r) => linha(r.path)).join("\n")}`] : []),
     `## Optional\n\n${["/news/", "/forum/"].map(linha).join("\n")}\n- [RSS](${abs("/rss.xml")}): novidades do site\n- [Repositório](${SITE.repositorio}): código e conteúdo`,
     "",
   ].join("\n\n");

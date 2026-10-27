@@ -1,0 +1,26 @@
+{
+  "titulo": "Livro da Microsoft mostra que o letramento em IA depende de camadas anteriores",
+  "resumo": "A coletânea Learning Curves reúne pesquisas sobre IA na escola e no trabalho. Num dos capítulos, a maior barreira para usar assistentes de escrita foi a digitação dos alunos.",
+  "data": "2026-10-26",
+  "categoria": "letramento",
+  "icone": "livro",
+  "corpo": [
+    "O Microsoft AI Economy Institute lançou em 26 de outubro a coletânea Learning Curves: Rethinking Education from Classrooms to Careers in an AI-Driven World, com ensaios da segunda turma de pesquisadores seniores do instituto. A edição é de Juan M. Lavista Ferres, cientista-chefe de dados da Microsoft, e de Frank Nagle, e o livro sai pela Wiley.",
+    "Os textos cobrem do ensino básico à passagem da faculdade para o primeiro emprego. Joseph Orero, da Strathmore University, no Quênia, sustenta que os professores não resistem à IA: o que falta é formação adequada. A pesquisa dele trata de aprendizagem com jogos em línguas africanas apoiadas por IA.",
+    "Um capítulo sobre ensino em árabe traz o achado mais concreto da coletânea. Quando os professores levaram assistentes de escrita para a sala, a principal barreira foi o letramento digital dos alunos, sobretudo a capacidade de digitar. Outro capítulo, de Laura Nuriski, do Centre for European Policy Studies, lembra que dar acesso à ferramenta não garante integração: contam também a infraestrutura de dados, o preparo da organização e uma abordagem centrada nas pessoas.",
+    "A apresentação do livro cita dois números de contexto: a adoção de IA passa de 70% nos Emirados Árabes Unidos e fica num dígito em boa parte da África subsaariana, e mais da metade dos adolescentes americanos já usa chatbots para tarefas escolares. A conclusão comum dos autores é que não existe um modelo único de competência em IA e que a formação precisa se ajustar ao contexto de cada lugar."
+  ],
+  "harpia": "O caso da digitação é o exemplo mais claro de que entender IA se apoia em camadas que vêm antes dela. Antes de perguntar como o modelo funciona, alguém precisa conseguir escrever a pergunta.",
+  "fontes": [
+    {
+      "veiculo": "Microsoft On the Issues",
+      "titulo": "Learning Curves: The future of education, from classrooms to careers, in an AI-driven world",
+      "url": "https://blogs.microsoft.com/on-the-issues/2026/10/26/learning-curves-the-future-of-education-from-classrooms-to-careers-in-an-ai-driven-world"
+    }
+  ],
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-26",
+  "verificado_em": "2026-10-26",
+  "ordem": 999
+}

@@ -1,0 +1,30 @@
+{
+  "titulo": "Kimi K3.1 Pro estreia como o modelo aberto mais bem avaliado, mas os pesos só vêm em novembro",
+  "resumo": "A Moonshot AI lançou um modelo de 2,8 trilhões de parâmetros que entrou em 4º lugar num índice de inteligência. A publicação dos pesos está prometida até 4 de novembro.",
+  "data": "2026-10-23",
+  "categoria": "abertos",
+  "icone": "chip",
+  "corpo": [
+    "A Moonshot AI lançou em 23 de outubro o Kimi K3.1 Pro, um modelo com 2,8 trilhões de parâmetros no total, 104 bilhões ativos por token e janela de contexto de 1 milhão de tokens. No Artificial Analysis Intelligence Index ele marcou 55 pontos e ficou em 4º lugar geral, a maior nota já registrada para um modelo de pesos abertos.",
+    "O detalhe que importa é o tempo verbal. Por enquanto, o modelo está disponível por API, a 2 dólares por milhão de tokens de entrada e 10 dólares por milhão de saída. A empresa se comprometeu a publicar os pesos completos até 4 de novembro, e os termos da licença só serão conhecidos quando o texto dela sair.",
+    "Segundo a avaliação independente, os maiores ganhos sobre o Kimi K3 estão em tarefas de agente, aquelas em que o modelo usa ferramentas e executa passos em sequência."
+  ],
+  "harpia": "Um modelo só é aberto, no sentido que interessa, quando os pesos e a licença podem ser baixados e lidos. Até 4 de novembro, a promessa é notícia e o acesso ainda não é.",
+  "fontes": [
+    {
+      "veiculo": "Local AI Zone",
+      "titulo": "October 2026 AI Model Updates",
+      "url": "https://local-ai-zone.github.io/blog/October_2026_AI_Model_Updates.html"
+    },
+    {
+      "veiculo": "This Week in All Things AI",
+      "titulo": "Week 43-2026",
+      "url": "https://paragraph.com/@twiata/this-week-in-all-things-ai-week-43-2026"
+    }
+  ],
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-26",
+  "verificado_em": "2026-10-26",
+  "ordem": 999
+}

@@ -9,6 +9,7 @@ import ForumList from "../components/ForumList.astro";
 import JoinCommunityCard from "../components/JoinCommunityCard.astro";
 import StartCard from "../components/StartCard.astro";
 import AnaliseCard from "../components/AnaliseCard.astro";
+import NoticiasCarrossel from "../components/NoticiasCarrossel.astro";
 import { getCollection } from "astro:content";
 import { trilhas, ARTIGOS_DESTAQUE } from "../data/home";
 import { PAUTAS } from "../lib/pautas";
@@ -80,6 +81,7 @@ const destaque = selecaoDaSemana();
       </div>
 
       <div class="ref-column ref-right">
+        <NoticiasCarrossel />
         <section class="ref-section" aria-labelledby="h-forum">
           <div class="ref-section-title">
             <div><h2 id="h-forum">Fórum da Comunidade</h2></div>
