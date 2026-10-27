@@ -1,0 +1,25 @@
+{
+  "titulo": "Se a IA resume qualquer livro, o que acontece com a leitura?",
+  "resumo": "O programa Houston Matters, da Houston Public Media, dedicou um bloco ao efeito da IA sobre o hábito de ler e sobre a alfabetização.",
+  "data": "2026-10-20",
+  "categoria": "letramento",
+  "icone": "leitura",
+  "corpo": [
+    "O programa Houston Matters, da emissora pública Houston Public Media, dedicou parte da edição de 20 de outubro a uma pergunta que aparece cada vez mais em salas de aula: se a IA consegue resumir praticamente qualquer artigo ou livro, o que isso significa para o futuro da leitura e da alfabetização?",
+    "A mesma edição tratou de um currículo desenvolvido pelo distrito escolar de Houston com dinheiro público, que agora está sendo compartilhado gratuitamente com outros distritos.",
+    "A página do programa traz o áudio e o resumo da edição. Não publica os argumentos dos convidados em texto, por isso esta nota se limita ao tema e à pergunta levantada."
+  ],
+  "harpia": "A pergunta conversa com o exemplo da prensa no manifesto: uma tecnologia que torna o texto barato muda o que significa saber ler.",
+  "fontes": [
+    {
+      "veiculo": "Houston Public Media",
+      "titulo": "Effect of AI on literacy (Oct. 20 2026)",
+      "url": "https://www.houstonpublicmedia.org/articles/shows/houston-matters/2026/10/20/564567/effect-of-ai-on-literacy-oct-20-2026/"
+    }
+  ],
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-26",
+  "verificado_em": "2026-10-26",
+  "ordem": 999
+}

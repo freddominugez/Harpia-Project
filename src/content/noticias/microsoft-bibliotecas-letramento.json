@@ -1,0 +1,25 @@
+{
+  "titulo": "Bibliotecas públicas americanas vão oferecer formação gratuita em IA a funcionários e leitores",
+  "resumo": "Microsoft e Public Library Association lançaram programa que ensina como a IA funciona, como checar o que ela afirma e quando vale a pena usá-la.",
+  "data": "2026-10-22",
+  "categoria": "letramento",
+  "icone": "biblioteca",
+  "corpo": [
+    "A Microsoft anunciou em 22 de outubro, por meio do programa Microsoft Elevate, uma iniciativa com a Public Library Association, divisão da American Library Association. Chamado Building AI Skills and Agency Through Libraries, o programa oferece formação gratuita em IA para funcionários de bibliotecas públicas e para o público que as frequenta.",
+    "O conteúdo vai além de ensinar a usar ferramentas. Inclui como a IA funciona, como avaliar riscos, como proteger informações pessoais e confidenciais, como verificar afirmações e fontes geradas por IA, e noções de segurança e viés. A proposta inclui webinários gratuitos e uma comunidade de prática para troca entre bibliotecários.",
+    "No mesmo anúncio, a Microsoft lembrou um padrão de segurança e privacidade para escolas criado em setembro com a American Federation of Teachers. A partir de 1º de novembro, qualquer distrito escolar dos Estados Unidos poderá pedir essas proteções em contratos novos ou vigentes. O texto cita ainda mais de 100 mil educadores no programa Elevate for Educators e mais de 18 mil participantes na trilha para organizações sem fins lucrativos."
+  ],
+  "harpia": "A justificativa do programa é quase a tese do Harpya: saber usar não basta, é preciso saber decidir se, quando e como usar. A diferença está na profundidade, porque o Harpya quer chegar até a estrutura lógica.",
+  "fontes": [
+    {
+      "veiculo": "Microsoft On the Issues",
+      "titulo": "Expanding AI literacy with the Public Library Association and community-based programs",
+      "url": "https://blogs.microsoft.com/on-the-issues/2026/10/22/expanding-ai-literacy-with-the-american-library-association-and-community-based-programs/"
+    }
+  ],
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-26",
+  "verificado_em": "2026-10-26",
+  "ordem": 999
+}

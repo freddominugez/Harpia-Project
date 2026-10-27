@@ -182,6 +182,44 @@ collections:
       - *verificado
       - *ordem
 
+  # ---------------------------------------------------------------- notícias
+  - name: noticias
+    label: "NotícIAs"
+    label_singular: "Notícia"
+    description: "Matérias curtas com fontes. A tarefa a cada dois dias grava como rascunho; troque o Status para Publicado para entrar no site."
+    folder: src/content/noticias
+    extension: json
+    format: json
+    create: true
+    slug: "{{titulo}}"
+    identifier_field: titulo
+    summary: "{{data}} · {{titulo}} · {{status}}"
+    sortable_fields: [data, titulo, status]
+    view_filters:
+      - { label: "Rascunhos", field: status, pattern: "^rascunho$" }
+      - { label: "Publicadas", field: status, pattern: "^publicado$" }
+    fields:
+      - { label: "Título", name: titulo, widget: string, hint: "Entre 20 e 140 caracteres. Português do Brasil, sem travessão." }
+      - { label: "Resumo (aparece nos cards)", name: resumo, widget: text, hint: "Entre 60 e 200 caracteres." }
+      - { label: "Data da notícia", name: data, <<: *dia }
+      - { label: "Tema", name: categoria, widget: select, options: [{ label: "Letramento em IA", value: letramento }, { label: "Brasil e regulação", value: brasil }, { label: "Código e modelos abertos", value: abertos }, { label: "Pesquisa e fronteira", value: pesquisa }] }
+      - { label: "Ícone da capa", name: icone, widget: select, options: [livro, escola, onda, maquina, globo, chip, biblioteca, codigo, leitura, balanca, lupa] }
+      - { label: "Texto (um parágrafo por item)", name: corpo, widget: list, field: { label: "Parágrafo", name: paragrafo, widget: text } }
+      - { label: "Por que importa para o Harpya", name: harpia, widget: text }
+      - label: "Fontes"
+        name: fontes
+        widget: list
+        summary: "{{veiculo}} · {{titulo}}"
+        fields:
+          - { label: "Veículo", name: veiculo, widget: string }
+          - { label: "Título da matéria original", name: titulo, widget: string }
+          - { label: "Endereço", name: url, widget: string, pattern: ["^https?://", "Endereço completo."] }
+      - *status
+      - *origem
+      - *adicionado
+      - *verificado
+      - *ordem
+
   - name: livros
     label: "Livros"
     label_singular: "Livro"

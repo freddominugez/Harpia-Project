@@ -1,0 +1,81 @@
+---
+// Card "Notícias" da home: as três publicadas mais recentes em carrossel.
+// Cada slide abre a matéria inteira na página NotícIAs.
+import "../styles/noticias.css";
+import { NOTICIAS, capa, cat, icone, urlNoticia } from "../lib/noticias";
+import { dataCurta } from "../lib/format";
+const top = NOTICIAS.slice(0, 3);
+---
+{top.length > 0 && (
+  <section class="ref-section" aria-labelledby="h-noticias">
+    <div class="ref-section-title">
+      <div><h2 id="h-noticias">Notícias</h2></div>
+      <a href="/noticias/">Ver todas <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="ncar" data-ncar aria-roledescription="carrossel" aria-label="Últimas notícias">
+      <div class="ncar-trilho" data-ncar-trilho tabindex="0" aria-label="Use as setas do teclado para trocar de notícia">
+        {top.map((n, i) => {
+          const c = cat(n.categoria);
+          return (
+            <a class="ncar-slide" href={urlNoticia(n)} aria-roledescription="slide" aria-label={`${i + 1} de ${top.length}: ${n.titulo}`}>
+              <div class="ncar-capa" set:html={capa(n)} />
+              <div class="ncar-texto">
+                <div class="nmeta"><span class={`tag ${c.tag}`}><Fragment set:html={icone(c.icone)} />{c.nome}</span></div>
+                <h3>{n.titulo}</h3>
+                <time datetime={n.data}>{dataCurta(n.data)}</time>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+      {top.length > 1 && (
+        <div class="ncar-ctl">
+          <span class="ncar-n" data-ncar-n aria-live="polite">1 de {top.length}</span>
+          <div class="ncar-pontos" role="group" aria-label="Escolher notícia">
+            {top.map((_, i) => <button type="button" data-ncar-ponto={i} aria-label={`Notícia ${i + 1}`} aria-current={i === 0 ? "true" : "false"} />)}
+          </div>
+          <button type="button" class="ncar-seta" data-ncar-ant aria-label="Notícia anterior" set:html={icone("voltar")} />
+          <button type="button" class="ncar-seta" data-ncar-prox aria-label="Próxima notícia" set:html={icone("seta")} />
+        </div>
+      )}
+    </div>
+  </section>
+)}
+
+<script>
+  // Carrossel leve: rolagem com encaixe, setas, pontos, teclado e troca automática
+  // a cada 7 segundos (pausa com o ponteiro, o foco ou o toque; desligada com movimento reduzido).
+  for (const box of document.querySelectorAll<HTMLElement>("[data-ncar]")) {
+    const trilho = box.querySelector<HTMLElement>("[data-ncar-trilho]")!;
+    const pontos = [...box.querySelectorAll<HTMLButtonElement>("[data-ncar-ponto]")];
+    const contador = box.querySelector<HTMLElement>("[data-ncar-n]");
+    const total = trilho.children.length;
+    if (total < 2) continue;
+    const reduzido = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let i = 0;
+    let parado = false;
+    const marca = () => {
+      pontos.forEach((p, j) => p.setAttribute("aria-current", j === i ? "true" : "false"));
+      if (contador) contador.textContent = `${i + 1} de ${total}`;
+    };
+    const vai = (n: number) => {
+      i = (n + total) % total;
+      trilho.scrollTo({ left: i * trilho.clientWidth, behavior: reduzido ? "auto" : "smooth" });
+      marca();
+    };
+    pontos.forEach((p, j) => p.addEventListener("click", () => vai(j)));
+    box.querySelector("[data-ncar-ant]")?.addEventListener("click", () => vai(i - 1));
+    box.querySelector("[data-ncar-prox]")?.addEventListener("click", () => vai(i + 1));
+    trilho.addEventListener("scroll", () => {
+      const n = Math.round(trilho.scrollLeft / Math.max(1, trilho.clientWidth));
+      if (n !== i && n >= 0 && n < total) { i = n; marca(); }
+    }, { passive: true });
+    trilho.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowRight") { e.preventDefault(); vai(i + 1); }
+      if (e.key === "ArrowLeft") { e.preventDefault(); vai(i - 1); }
+    });
+    for (const ev of ["mouseenter", "focusin", "touchstart"]) box.addEventListener(ev, () => { parado = true; }, { passive: true });
+    for (const ev of ["mouseleave", "focusout"]) box.addEventListener(ev, () => { parado = false; });
+    if (!reduzido) setInterval(() => { if (!parado && !document.hidden) vai(i + 1); }, 7000);
+  }
+</script>

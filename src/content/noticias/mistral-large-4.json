@@ -1,0 +1,30 @@
+{
+  "titulo": "Mistral Large 4 promete o modelo aberto mais forte fora da China, com pesos ainda a caminho",
+  "resumo": "O modelo europeu de 1 trilhão de parâmetros, apelidado de le Chonk, foi treinado em data centers próprios da Mistral. Os pesos estão prometidos para o fim de outubro.",
+  "data": "2026-10-06",
+  "categoria": "abertos",
+  "icone": "chip",
+  "corpo": [
+    "A francesa Mistral AI apresentou em 6 de outubro o Mistral Large 4, apelidado de le Chonk, um modelo com 1 trilhão de parâmetros. A empresa afirma que ele é o modelo de pesos abertos mais forte desenvolvido fora da China, com margem considerável, e destaca o desempenho em segurança digital, programação, indústria, finanças e tarefas multimodais.",
+    "O treinamento levou cerca de dois meses em aproximadamente 4 mil GPUs NVIDIA Grace Blackwell instaladas nos data centers da própria Mistral na Europa, e cobriu mais de 160 línguas.",
+    "O lançamento começou como prévia, restrita a desenvolvedores, especialistas em segurança e autoridades públicas. A Mistral diz que os pesos serão liberados até o fim do mês. Enquanto isso não acontece, licença, janela de contexto e detalhes da arquitetura seguem sem confirmação pública."
+  ],
+  "harpia": "Um modelo grande, aberto e treinado na Europa mostra que a infraestrutura também entra na conversa sobre autonomia tecnológica. A promessa só se cumpre quando os pesos saem.",
+  "fontes": [
+    {
+      "veiculo": "CNBC",
+      "titulo": "Mistral unveils new AI model it says rivals best open systems from China",
+      "url": "https://www.cnbc.com/2026/10/06/mistral-ai-model-le-chonk.html"
+    },
+    {
+      "veiculo": "Local AI Zone",
+      "titulo": "October 2026 AI Model Updates",
+      "url": "https://local-ai-zone.github.io/blog/October_2026_AI_Model_Updates.html"
+    }
+  ],
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-26",
+  "verificado_em": "2026-10-26",
+  "ordem": 999
+}

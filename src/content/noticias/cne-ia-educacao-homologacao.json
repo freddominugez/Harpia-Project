@@ -1,0 +1,41 @@
+{
+  "titulo": "Regras de IA na educação brasileira esperam homologação, com mudança sobre correção de redações",
+  "resumo": "O parecer do CNE trata o letramento em IA como aprendizagem. O MEC deve liberar IA para apoiar correções, mas a nota continua com o professor.",
+  "data": "2026-10-13",
+  "categoria": "brasil",
+  "icone": "balanca",
+  "corpo": [
+    "O Conselho Nacional de Educação aprovou por unanimidade, em 1º de setembro, o Parecer CNE/CP nº 15/2026, com as Diretrizes para a Utilização da Inteligência Artificial na Educação Brasileira. A súmula foi publicada no Diário Oficial da União em 6 de outubro, e o texto depende agora da homologação do ministro da Educação, Leonardo Barchini, para ter força normativa.",
+    "Segundo o jornal O Globo, em 13 de outubro, o MEC homologaria o parecer com mudanças. A principal libera ferramentas de IA para apoiar a correção de redações e questões dissertativas, o que a versão original proibia. Em troca, a nota fica só com o professor, e fica vedado usar IA para decidir aprovação ou reprovação.",
+    "O parecer classifica os usos de IA em quatro níveis de risco: baixo, moderado, alto e excessivo ou incompatível. Alunos até o 5º ano não podem usar ferramentas generativas de forma autônoma, apenas em atividades planejadas e acompanhadas por um educador. O texto também impede que detectores de texto gerado por IA sejam usados para punir estudantes e trata o letramento em IA como conteúdo a ser aprendido, e não apenas como ferramenta.",
+    "Depois da homologação, escolas e universidades públicas e privadas terão 12 meses para se adaptar. Até a data desta nota, não encontramos confirmação de que o despacho de homologação já tenha sido publicado no Diário Oficial."
+  ],
+  "harpia": "É a primeira norma nacional a dizer que entender IA é parte da formação. Vale acompanhar a homologação e o que ela mantém do texto aprovado.",
+  "fontes": [
+    {
+      "veiculo": "Apufsc (reproduz O Globo)",
+      "titulo": "MEC vai homologar com mudanças parecer que cria regras para uso de inteligência artificial na educação",
+      "url": "https://www.apufsc.org.br/2026/10/13/mec-vai-homologar-com-mudancas-parecer-que-cria-regras-para-uso-de-inteligencia-artificial-na-educacao/"
+    },
+    {
+      "veiculo": "Anup",
+      "titulo": "CNE publica resolução que regulamenta IA na educação; texto aguarda homologação do MEC",
+      "url": "https://anup.org.br/noticias/cne-publica-resolucao-que-regulamenta-ia-na-educacao-texto-aguarda-homologacao-do-mec/"
+    },
+    {
+      "veiculo": "Tecnoblog",
+      "titulo": "Governo pode proibir uso de IA para corrigir redações nas escolas; entenda as regras",
+      "url": "https://tecnoblog.net/noticias/cne-proibe-ia-para-corrigir-redacoes-nas-escolas-veja-o-que-muda/"
+    },
+    {
+      "veiculo": "Vanquish",
+      "titulo": "O Brasil regulou IA na educação, e 56% dos professores já usavam",
+      "url": "https://www.vanquish.com.br/blog/diretrizes-ia-educacao-brasil-cne-2026"
+    }
+  ],
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-26",
+  "verificado_em": "2026-10-26",
+  "ordem": 999
+}

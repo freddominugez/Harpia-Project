@@ -1,0 +1,30 @@
+{
+  "titulo": "Reflection AI coloca no ar o Beam, modelo aberto americano para programação com agentes",
+  "resumo": "A startup apoiada pela NVIDIA lançou um modelo de pesos abertos com 501 bilhões de parâmetros e 23 bilhões ativos, voltado a tarefas de código.",
+  "data": "2026-10-16",
+  "categoria": "abertos",
+  "icone": "chip",
+  "corpo": [
+    "A Reflection AI, startup americana apoiada pela NVIDIA, colocou à disposição o Beam 1.0, seu primeiro modelo de pesos abertos. É uma mistura de especialistas com 501 bilhões de parâmetros no total e 23 bilhões ativos, voltada para programação com agentes, e está disponível na AWS e em plataformas como o OpenRouter desde 16 de outubro.",
+    "No anúncio, no início do mês, a empresa afirmou que o modelo alcança a capacidade do GLM 5.2, da chinesa Z.ai, que por sua vez já foi superado pelo GLM 5.3 em agosto.",
+    "O lançamento faz parte de uma corrida de empresas ocidentais para reduzir a distância em relação aos modelos abertos chineses, que lideram essa categoria."
+  ],
+  "harpia": "A disputa entre modelos abertos de países diferentes é também uma disputa sobre quem pode inspecionar, adaptar e auditar a tecnologia. É um tema de fundo do projeto.",
+  "fontes": [
+    {
+      "veiculo": "CNBC",
+      "titulo": "Mistral unveils new AI model it says rivals best open systems from China",
+      "url": "https://www.cnbc.com/2026/10/06/mistral-ai-model-le-chonk.html"
+    },
+    {
+      "veiculo": "Price Per Token",
+      "titulo": "New Models Today",
+      "url": "https://pricepertoken.com/news/model-releases"
+    }
+  ],
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-26",
+  "verificado_em": "2026-10-26",
+  "ordem": 999
+}

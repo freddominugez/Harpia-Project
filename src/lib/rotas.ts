@@ -11,6 +11,7 @@ import { CAPITULOS, EVENTOS, PESSOAS } from "../data/origens";
 import { PAUTAS, temPagina } from "./pautas";
 import { COMECANDO, SERIE, TOTAL_DA_SERIE, corpoDe } from "../data/comecando";
 import { ANALISES, urlAnalise } from "../data/analises";
+import { NOTICIAS, urlNoticia, cat as catNoticia } from "./noticias";
 
 /** HTML de artigo da série em markdown: parágrafos, títulos e figuras (descrição + legenda). */
 function htmlParaMd(html: string) {
@@ -450,6 +451,48 @@ export async function rotas(): Promise<Rota[]> {
       atualizado: maior(dataNews),
       markdown: () => `Manchetes coletadas por RSS e filtradas pelos temas do Harpya. Atualização a cada 6 horas.\n\n${news.map((n) => `- ${n.data}, ${n.fonte}: [${n.titulo}](${n.url})`).join("\n")}`,
     },
+    ...(NOTICIAS.length ? [{
+      path: "/noticias/",
+      titulo: "NotícIAs",
+      descricao: "NotícIAs do Harpya: letramento em IA, regulação, modelos abertos e pesquisa, em matérias curtas com as fontes de cada informação.",
+      secao: "NotícIAs",
+      atualizado: maior(...NOTICIAS.map((n) => n.data)),
+      markdown: () => NOTICIAS.map((n) => `- ${n.data}, ${catNoticia(n.categoria).nome}: [${n.titulo}](${abs(urlNoticia(n))}). ${n.resumo}`).join("\n"),
+      schema: () => [colecao("/noticias/", "NotícIAs", "Matérias curtas do Harpya sobre letramento em IA, regulação, modelos abertos e pesquisa, com fontes.",
+        itemList("NotícIAs", NOTICIAS.map((n) => ({ name: n.titulo, url: abs(urlNoticia(n)) }))))],
+    } as Rota] : []),
+    ...NOTICIAS.map((n): Rota => ({
+      path: urlNoticia(n),
+      titulo: n.titulo,
+      descricao: n.resumo,
+      secao: `NotícIAs · ${catNoticia(n.categoria).nome}`,
+      pai: "/noticias/",
+      atualizado: n.data,
+      markdown: () => [
+        `*${catNoticia(n.categoria).nome}, ${n.data}.*`,
+        n.resumo,
+        ...n.corpo,
+        `**Por que importa para o Harpya.** ${n.harpia}`,
+        `## Fontes\n\n${n.fontes.map((f) => `- ${f.veiculo}: [${f.titulo}](${f.url})`).join("\n")}`,
+      ].join("\n\n"),
+      schema: () => [{
+        "@type": "NewsArticle",
+        "@id": `${abs(urlNoticia(n))}#artigo`,
+        headline: n.titulo,
+        description: n.resumo,
+        url: abs(urlNoticia(n)),
+        inLanguage: "pt-BR",
+        datePublished: n.data,
+        dateModified: n.data,
+        articleSection: catNoticia(n.categoria).nome,
+        author: { "@id": ID.pessoa },
+        publisher: { "@id": ID.org },
+        isPartOf: { "@id": ID.site },
+        image: abs(ogDe(urlNoticia(n))),
+        license: "https://creativecommons.org/licenses/by/4.0/",
+        citation: n.fontes.map((f) => f.url),
+      }],
+    })),
     {
       path: "/forum/",
       titulo: "Fórum",

@@ -1,0 +1,30 @@
+{
+  "titulo": "DeepSeek abre o software que roda seu modelo em produção",
+  "resumo": "O DeepInfer, framework de inferência por trás do DeepSeek-V4.1-Flash, saiu sob licença Apache 2.0, junto com receitas para reproduzir a API oficial em servidor próprio.",
+  "data": "2026-10-20",
+  "categoria": "abertos",
+  "icone": "codigo",
+  "corpo": [
+    "A DeepSeek publicou em 20 de outubro o DeepInfer, o framework de inferência que roda o DeepSeek-V4.1-Flash na produção da empresa, sob licença Apache 2.0. Junto com ele saiu o deepseek-recipe, um conjunto de configurações para reproduzir o comportamento da API oficial em instalações próprias.",
+    "O pacote suporta paralelismo avançado, GPUs NVIDIA Blackwell e chips Huawei Ascend. A empresa justificou a abertura com a redução de custo de computação e de consumo de energia para quem hospeda o modelo.",
+    "O modelo que esse software roda já era aberto. A versão 1017 do DeepSeek-V4.1-Flash, de 17 de outubro, saiu com pesos no Hugging Face e no ModelScope sob licença MIT. Tem 552 bilhões de parâmetros e ativa cerca de 8 bilhões por token de entrada e 16 bilhões por token de saída, com janela de cerca de 1 milhão de tokens."
+  ],
+  "harpia": "Abrir os pesos mostra o que o modelo sabe. Abrir o software de inferência mostra como ele é servido de verdade. É o capô aberto num nível a mais.",
+  "fontes": [
+    {
+      "veiculo": "This Week in All Things AI",
+      "titulo": "Week 43-2026",
+      "url": "https://paragraph.com/@twiata/this-week-in-all-things-ai-week-43-2026"
+    },
+    {
+      "veiculo": "Local AI Zone",
+      "titulo": "October 2026 AI Model Updates",
+      "url": "https://local-ai-zone.github.io/blog/October_2026_AI_Model_Updates.html"
+    }
+  ],
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-26",
+  "verificado_em": "2026-10-26",
+  "ordem": 999
+}

@@ -1,0 +1,30 @@
+{
+  "titulo": "Meta lança o Muse Spark Open, feito para rodar em Macs, mas com apetite de 1 terabyte",
+  "resumo": "O modelo multimodal de 816 bilhões de parâmetros foi apresentado como o mais capaz modelo aberto dos Estados Unidos no lançamento.",
+  "data": "2026-10-15",
+  "categoria": "abertos",
+  "icone": "chip",
+  "corpo": [
+    "A Meta publicou em 15 de outubro o Muse Spark Open, um modelo multimodal com 816 bilhões de parâmetros no total, 42 bilhões ativos por token e janela de contexto de 1 milhão de tokens. A empresa o apresentou como o modelo de pesos abertos mais capaz feito nos Estados Unidos até aquela data.",
+    "O modelo foi pensado para rodar em computadores com chips da Apple. Na prática, segundo o levantamento da Local AI Zone, isso exige algo na casa de 1 terabyte de memória unificada, o que coloca o uso local fora do alcance da maioria das pessoas. Em plataformas de API, aparece a 1,25 dólar por milhão de tokens de entrada e 4,25 por milhão de saída.",
+    "No índice da Artificial Analysis, marcou 39 pontos, abaixo dos melhores modelos abertos chineses do mês."
+  ],
+  "harpia": "Rodar em Mac e rodar no seu Mac são coisas diferentes. Ler as exigências de memória é parte de entender o que um modelo aberto oferece de fato.",
+  "fontes": [
+    {
+      "veiculo": "Local AI Zone",
+      "titulo": "October 2026 AI Model Updates",
+      "url": "https://local-ai-zone.github.io/blog/October_2026_AI_Model_Updates.html"
+    },
+    {
+      "veiculo": "Price Per Token",
+      "titulo": "New Models Today",
+      "url": "https://pricepertoken.com/news/model-releases"
+    }
+  ],
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-26",
+  "verificado_em": "2026-10-26",
+  "ordem": 999
+}

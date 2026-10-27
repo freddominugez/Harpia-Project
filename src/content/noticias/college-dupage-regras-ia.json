@@ -1,0 +1,25 @@
+{
+  "titulo": "Sem regra da instituição, professores decidem sozinhos o lugar da IA em sala",
+  "resumo": "No College of DuPage, nos Estados Unidos, não há norma geral para IA nas aulas. Cada professor define se e como os alunos podem usar as ferramentas.",
+  "data": "2026-10-26",
+  "categoria": "letramento",
+  "icone": "escola",
+  "corpo": [
+    "O jornal estudantil The Courier, do College of DuPage, em Illinois, publicou em 26 de outubro uma reportagem sobre um vácuo que se repete em muitas instituições: não existe uma regra geral da faculdade para o uso de IA nas aulas, e cada professor decide por conta própria se os alunos podem usar as ferramentas e de que forma.",
+    "Um dos professores ouvidos, de sobrenome Goldberg, disse saber que a faculdade oferece recursos sobre IA para o corpo docente, mas contou que nunca os usou e não sabe o que incluem. Ele espera que as aulas de inglês sejam as mais afetadas, embora não tenha consultado colegas de outros departamentos. Já Siddiqi, também ouvido pela reportagem, informou que as aulas de letramento em IA da instituição estão abertas a professores, funcionários e alunos, incluindo professores contratados por disciplina.",
+    "O resultado prático é uma colcha de retalhos: trabalhos refeitos em algumas disciplinas, regras diferentes de uma sala para a outra e decisões tomadas sem uma base comum de entendimento sobre o que as ferramentas fazem."
+  ],
+  "harpia": "Quando não há regra, a decisão fica com quem estiver mais perto do problema. Por isso o entendimento de como a tecnologia funciona não pode ficar restrito a quem escreve as normas.",
+  "fontes": [
+    {
+      "veiculo": "The Courier",
+      "titulo": "Professors Rework Assignments as COD Leaves AI Rules to Faculty",
+      "url": "https://codcourier.org/professors-rework-assignments-as-cod-leaves-ai-rules-to-faculty"
+    }
+  ],
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-26",
+  "verificado_em": "2026-10-26",
+  "ordem": 999
+}

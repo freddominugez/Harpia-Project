@@ -85,6 +85,7 @@ O botão **Sign In Using Access Token** continua disponível. Crie um token *fin
 | Linha do tempo, Aprendizado | `src/content/{linha-do-tempo,aprendizado}/` | Origens e Aprendizado de Máquina |
 | Fontes monitoradas | `src/content/fontes-monitoradas/` | Sites e canais que a curadoria diária lê |
 | Feeds de news | `src/content/feeds/` | Feeds do robô de news (a cada 6 horas) |
+| NotícIAs | `src/content/noticias/*.json` | Matérias curtas com fontes. A tarefa "Harpya · NotícIAs" grava como rascunho a cada dois dias (ver `docs/TAREFA_NOTICIAS.md`) |
 | Páginas de texto | `sobre.md`, `glossario.md`, `arquivados.md`, `equacoes.md` | Textos longos |
 
 Todo item curado tem `status` (rascunho ou publicado), `origem` (manual ou curadoria diária), `adicionado_em`, `verificado_em` e `ordem`. **Rascunho não aparece em nenhuma página, busca, sitemap, RSS ou llms.txt.**
@@ -107,6 +108,13 @@ A tarefa agendada (ver `docs/TAREFA_CURADORIA.md`) grava direto em `main`, sempr
 2. Abra o item, confira título, canal, módulo, nível e resumo. Corrija o que quiser.
 3. Troque **Status** para **Publicado** e salve. A alteração segue o fluxo editorial acima.
 4. Item que não deve entrar: apague pelo painel (botão **Delete**). Como a URL já está no registro do dia, a curadoria não volta a propor.
+
+## Revisar as NotícIAs
+
+1. Abra **NotícIAs** e use o filtro **Rascunhos**.
+2. Confira o texto contra as fontes listadas na própria matéria e corrija o que quiser.
+3. Troque **Status** para **Publicado** e salve. A matéria entra no card da home, na página `/noticias/`, no sitemap, no RSS e na busca.
+4. Para recusar, apague pelo painel. A URL fica em `curadoria/noticias/` e a tarefa não volta a propor.
 
 ## Aprovar pautas e criar discussões
 

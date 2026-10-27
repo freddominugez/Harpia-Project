@@ -1,0 +1,25 @@
+{
+  "titulo": "MiniMax publica os pesos do M3.1 Flash, e a avaliação mostra quanto ele erra com confiança",
+  "resumo": "O modelo de 428 bilhões de parâmetros saiu por API em 19 de outubro e teve os pesos publicados no dia 23. Quase todos os seus erros num teste vieram com resposta segura.",
+  "data": "2026-10-23",
+  "categoria": "abertos",
+  "icone": "chip",
+  "corpo": [
+    "A MiniMax lançou o M3.1 Flash por API em 19 de outubro e publicou os pesos no Hugging Face e no ModelScope em 23 de outubro. É um modelo multimodal com 428 bilhões de parâmetros, dos quais 23 bilhões ficam ativos a cada token, e janela de contexto de cerca de 1 milhão de tokens. A licença é a licença comunitária da própria MiniMax.",
+    "O preço é baixo: 0,15 dólar por milhão de tokens de entrada e 0,60 por milhão de saída. No índice da Artificial Analysis, marcou 43 pontos, com custo de 0,22 dólar por tarefa. O raciocínio fica sempre ligado, com cinco níveis de esforço.",
+    "O dado mais interessante está num teste de conhecimento da mesma Artificial Analysis: 92,8% das respostas erradas do modelo vieram dadas com confiança, sem sinal de dúvida. É um número que ajuda a entender por que fluência e acerto são coisas diferentes."
+  ],
+  "harpia": "O erro confiante é exatamente o que o manifesto descreve como meio-entendimento que fala com a fluência de quem sabe. Aqui ele aparece medido.",
+  "fontes": [
+    {
+      "veiculo": "Local AI Zone",
+      "titulo": "October 2026 AI Model Updates",
+      "url": "https://local-ai-zone.github.io/blog/October_2026_AI_Model_Updates.html"
+    }
+  ],
+  "status": "publicado",
+  "origem": "manual",
+  "adicionado_em": "2026-10-26",
+  "verificado_em": "2026-10-26",
+  "ordem": 999
+}
