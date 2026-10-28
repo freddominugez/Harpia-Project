@@ -17,7 +17,7 @@ const top = NOTICIAS.slice(0, 3);
         {top.map((n, i) => {
           const c = cat(n.categoria);
           return (
-            <a class="ncar-slide" href={urlNoticia(n)} aria-roledescription="slide" aria-label={`${i + 1} de ${top.length}: ${n.titulo}`}>
+            <a class="ncar-slide" href={`${urlNoticia(n)}#materia`} aria-roledescription="slide" aria-label={`${i + 1} de ${top.length}: ${n.titulo}`}>
               <div class="ncar-capa" set:html={capa(n)} />
               <div class="ncar-texto">
                 <div class="nmeta"><span class={`tag ${c.tag}`}><Fragment set:html={icone(c.icone)} />{c.nome}</span></div>
