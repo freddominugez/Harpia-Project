@@ -1,0 +1,16 @@
+{
+  "id": "P_0_Th_ZzIg",
+  "titulo": "Stop Guessing Your vLLM Config: Benchmarking LLMs on Runpod - Chris Vela, Runpod",
+  "canal": "AI Engineer",
+  "modulo": 10,
+  "nivel": "Intermediário",
+  "resumo": "Palestra sobre escolher a configuração do vLLM medindo o desempenho em benchmarks, em vez de ajustar parâmetros no palpite. Para quem serve LLMs em GPU alugada.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=P_0_Th_ZzIg",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-28",
+  "verificado_em": "2026-10-28"
+}
