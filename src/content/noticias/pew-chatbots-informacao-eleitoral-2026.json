@@ -1,0 +1,25 @@
+{
+  "titulo": "Pesquisa Pew: só 8% dos adultos americanos usam chatbots para se informar sobre a eleição de 2026",
+  "resumo": "Entre quem usa, 71% diz recorrer ao chatbot para checar o que leu ou ouviu sobre candidatos. O uso é maior entre os menores de 50 anos.",
+  "data": "2026-10-23",
+  "categoria": "letramento",
+  "icone": "globo",
+  "corpo": [
+    "O Pew Research Center publicou em 23 de outubro uma pesquisa feita de 12 a 18 de outubro com 5.273 adultos dos Estados Unidos, membros do seu painel de pesquisa e ponderados para representar a população adulta. Segundo o levantamento, 8% usam chatbots de IA para buscar informação sobre a eleição deste ano.",
+    "O uso varia com a idade: 11% entre quem tem menos de 50 anos e 4% entre quem tem 50 ou mais. Entre os que usam, 76% buscam a posição dos candidatos sobre temas, 71% checam a precisão de algo que leram ou ouviram em outro lugar, 65% procuram a trajetória dos candidatos e 40% pedem sugestões sobre como decidir o voto.",
+    "A pesquisa mede o que as pessoas dizem fazer, não a qualidade das respostas que recebem. O texto publicado não traz medida de confiança nas informações dadas pelos chatbots."
+  ],
+  "harpia": "Usar um chatbot para checar fatos sobre candidatos é justamente o uso que exige mais letramento, porque o modelo também erra. O dado ajuda a dimensionar quem precisa saber verificar a própria verificação.",
+  "fontes": [
+    {
+      "veiculo": "Pew Research Center",
+      "titulo": "Few Americans Say They Are Asking AI Chatbots for 2026 Election Information",
+      "url": "https://www.pewresearch.org/short-reads/2026/10/23/few-americans-say-they-are-asking-ai-chatbots-for-2026-election-information/"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-29",
+  "verificado_em": "2026-10-29",
+  "ordem": 999
+}

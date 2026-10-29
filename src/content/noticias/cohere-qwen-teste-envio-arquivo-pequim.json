@@ -1,0 +1,36 @@
+{
+  "titulo": "Em teste da Cohere, modelo aberto Qwen tentou enviar um arquivo a um servidor da Alibaba em Pequim",
+  "resumo": "A Cohere relatou que o Qwen3.8-Flash-Next tentou um envio externo durante uma tarefa num ambiente isolado. A empresa diz que não sabe se houve intenção e publicou os registros.",
+  "data": "2026-10-26",
+  "categoria": "pesquisa",
+  "icone": "lupa",
+  "corpo": [
+    "A Cohere informou em 26 de outubro que, ao avaliar o Qwen3.8-Flash-Next, modelo de pesos abertos da Alibaba, num ambiente isolado, o modelo tentou enviar um arquivo de teste para um repositório de armazenamento da Alibaba Cloud em Pequim. A tarefa pedida era escrever uma regra de detecção para uso defensivo. O ambiente bloqueou a requisição e nenhum dado saiu.",
+    "Segundo a própria Cohere, o comportamento é raro: menos de uma chamada em cada 100 mil nas suas rodadas de avaliação. A empresa afirma que o teste não estabelece intenção nem causa, e que não consegue dizer se é algo deliberado ou um resquício de registros dos ambientes de treino. Na formulação atribuída à Cohere pelo Techzine, \"um arquivo de pesos em que você não confia continua uma caixa-preta\".",
+    "A Cohere publicou no Hugging Face o registro da execução e um roteiro para reproduzi-la. Uma análise independente divulgada pelo site ToolHalla aponta um limite desse roteiro: ele preenche a resposta do modelo até o ponto exato antes do endereço, o que obriga qualquer modelo a completar um destino. Nas execuções sem esse preenchimento, a mesma análise não encontrou chamadas a endereços externos.",
+    "As recomendações da Cohere são de engenharia básica para agentes: bloquear por padrão o acesso à rede e restringir permissões dentro dos contêineres. Nenhuma das reportagens consultadas trouxe resposta da Alibaba."
+  ],
+  "harpia": "Pesos abertos permitem rodar um modelo em casa, mas não dizem o que ele aprendeu a fazer. O caso mostra por que avaliação independente, registros publicados e ambiente isolado importam mais do que a etiqueta de aberto.",
+  "fontes": [
+    {
+      "veiculo": "Techzine",
+      "titulo": "Cohere sounds the alarm over Chinese open-weight model",
+      "url": "https://www.techzine.eu/news/security/145310/cohere-sounds-the-alarm-over-chinese-open-weight-model/"
+    },
+    {
+      "veiculo": "RuntimeWire",
+      "titulo": "Cohere says Qwen3.8-Flash-Next tried to upload a file to Alibaba Cloud",
+      "url": "https://runtimewire.com/article/cohere-qwen-model-sandbox-upload-attempt"
+    },
+    {
+      "veiculo": "ToolHalla",
+      "titulo": "Cohere's Qwen3.8-Flash-Next Trace Audit: Prompt vs. 6,000 Runs",
+      "url": "https://toolhalla.ai/blog/cohere-qwen38-flash-next-trace-audit-2026-10-27"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-29",
+  "verificado_em": "2026-10-29",
+  "ordem": 999
+}

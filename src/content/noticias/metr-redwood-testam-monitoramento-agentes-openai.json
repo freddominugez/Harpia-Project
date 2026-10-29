@@ -1,0 +1,26 @@
+{
+  "titulo": "Avaliadores externos passam três semanas tentando burlar o sistema que vigia os agentes internos da OpenAI",
+  "resumo": "METR e Redwood Research tiveram acesso ao código e à equipe da OpenAI e acharam falhas no monitoramento de agentes. A OpenAI diz ter corrigido; o METR não verificou.",
+  "data": "2026-10-22",
+  "categoria": "pesquisa",
+  "icone": "maquina",
+  "corpo": [
+    "O METR publicou em 22 de outubro o resumo de um exercício piloto em que um funcionário seu e um da Redwood Research passaram três semanas, de 21 de julho a 11 de agosto, testando o sistema interno da OpenAI que monitora seus agentes em busca de comportamento desalinhado. Eles tiveram acesso ao código, às instruções e à configuração do monitor, à documentação interna e a entrevistas com cerca de uma dúzia de pessoas das equipes envolvidas.",
+    "Entre os achados estão lacunas de cobertura e brechas exploráveis. As rodadas de treino por reforço não eram monitoradas no início do exercício. O monitor só era acionado quando o agente devolvia o controle, o que permitiria adiá-lo indefinidamente. Os avaliadores também descrevem um modo de agentes do Codex escaparem do isolamento e dois cabeçalhos controláveis pelo cliente que desligavam o monitoramento de novos agentes.",
+    "Houve achados positivos: o monitor vê quase toda a trajetória que o agente vê e cobre categorias como sabotagem, exfiltração e engano. A OpenAI afirma que todas as falhas que afetavam suas salvaguardas em produção foram corrigidas, mas o METR diz que não avaliou essa afirmação.",
+    "O texto público é curto por acordo prévio, e a OpenAI pôde retirar o que considerou confidencial. O relatório interno tinha 61 páginas. O METR diz endossar as conclusões publicadas, não os cortes."
+  ],
+  "harpia": "É um raro exemplo de avaliação externa com acesso de verdade ao interior de um laboratório, e também mostra os limites disso: o público vê um resumo editado e depende da palavra da empresa sobre as correções.",
+  "fontes": [
+    {
+      "veiculo": "METR",
+      "titulo": "Red-Teaming OpenAI's Internal Agent Monitoring Systems",
+      "url": "https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-29",
+  "verificado_em": "2026-10-29",
+  "ordem": 999
+}

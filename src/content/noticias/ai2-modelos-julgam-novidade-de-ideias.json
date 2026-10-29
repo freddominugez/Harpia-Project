@@ -1,0 +1,26 @@
+{
+  "titulo": "Estudo do Ai2 mostra que modelos de linguagem mudam de veredito sobre ideias novas conforme o jeito de perguntar",
+  "resumo": "Pesquisadores do Ai2 montaram um teste com ideias de artigos do ICLR 2026. A acurácia de um mesmo modelo caiu de 93,5% para 40,9% só com a troca da instrução.",
+  "data": "2026-10-27",
+  "categoria": "pesquisa",
+  "icone": "balanca",
+  "corpo": [
+    "O Allen Institute for AI (Ai2) divulgou em 27 de outubro um estudo sobre uma pergunta que interessa a quem usa IA na ciência: dá para confiar num modelo de linguagem para dizer se uma ideia de pesquisa é original? Para testar, a equipe extraiu das avaliações do ICLR 2026 os comentários explícitos dos revisores sobre originalidade, em vez de usar a aceitação do artigo como atalho.",
+    "O conjunto reúne 154 ideias de artigos bem aceitos e elogiados pela originalidade e 145 de artigos rejeitados com críticas a esse ponto. Num segundo cenário, as ideias humanas foram pareadas com ideias geradas por um modelo simples. Foram testados modelos das famílias GPT e Claude, além de avaliadores feitos sob medida para a tarefa.",
+    "O principal achado é a fragilidade. No cenário com ideias geradas, o GPT-5.4 acertou 93,5% quando a instrução dizia que exatamente uma das ideias era nova, e 40,9% quando a pergunta era só qual delas era nova. Nenhuma instrução foi a melhor para todos os modelos, e mais busca e mais raciocínio não ajudaram de forma consistente.",
+    "Os próprios autores apontam limites: os rótulos das ideias geradas são suposições fracas, a checagem por especialista cobriu 30 pares e os dados vêm de uma única conferência. Artigo, dados e código foram publicados."
+  ],
+  "harpia": "Um resultado que depende tanto da forma da pergunta não é um julgamento, é um sintoma. Para o letramento em IA, é um exemplo concreto de por que testar a mesma pergunta de várias maneiras antes de confiar na resposta.",
+  "fontes": [
+    {
+      "veiculo": "Hugging Face (blog do Ai2)",
+      "titulo": "Can we trust LLMs to judge whether a research idea is novel?",
+      "url": "https://huggingface.co/blog/allenai/novelty-bench"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-29",
+  "verificado_em": "2026-10-29",
+  "ordem": 999
+}

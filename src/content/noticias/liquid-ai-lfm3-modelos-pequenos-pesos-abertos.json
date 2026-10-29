@@ -1,0 +1,25 @@
+{
+  "titulo": "Liquid AI lança a família LFM3, modelos de pesos abertos com cerca de 2 bilhões de parâmetros para texto, imagem e voz",
+  "resumo": "A nova geração inclui versões de texto, visão, áudio e uma que junta tudo. O modelo de texto cabe em cerca de 1 GB. Os resultados de desempenho são da própria empresa.",
+  "data": "2026-10-27",
+  "categoria": "abertos",
+  "icone": "chip",
+  "corpo": [
+    "A Liquid AI apresentou em 27 de outubro a família LFM3, sucessora da LFM2. São modelos pequenos, na faixa de 2 bilhões de parâmetros: um de texto, um de visão que agora aceita vídeo, um de áudio que ouve e fala, e um modelo omni que recebe texto, imagem, vídeo e áudio. A empresa diz que todos têm pesos abertos, mas o anúncio não nomeia a licença.",
+    "Segundo a Liquid AI, o modelo de texto foi pré-treinado com 22 trilhões de tokens, tem janela de contexto de 256 mil tokens e cabe em cerca de 1 GB com quantização de 4 bits. A empresa afirma que ele supera a versão anterior de 2,6 bilhões de parâmetros com 35% menos parâmetros e que o ajuste fino é possível com uma única GPU.",
+    "Todos os números de desempenho do anúncio foram medidos pela própria Liquid AI, e a página não cita avaliação independente. Até que alguém de fora reproduza os testes, as comparações devem ser lidas como alegações da empresa."
+  ],
+  "harpia": "Modelos que cabem em 1 GB rodam em notebook comum e até em celular. Para o Harpya, são o tipo de ferramenta que permite experimentar IA localmente; resta checar a licença e medir por conta própria.",
+  "fontes": [
+    {
+      "veiculo": "Hugging Face (blog da Liquid AI)",
+      "titulo": "Build specialized multimodal models with LFM3",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm3"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-29",
+  "verificado_em": "2026-10-29",
+  "ordem": 999
+}

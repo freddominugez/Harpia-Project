@@ -1,0 +1,26 @@
+{
+  "titulo": "NVIDIA abre o Nemotron 3.5 Transcribe, que transcreve 40 línguas, e amplia sua base de áudio para 463 mil horas",
+  "resumo": "O modelo de 30 bilhões de parâmetros transcreve, traduz e identifica quem fala a partir de instruções em texto. Vem com o Granary v2, conjunto de dados de fala em 48 línguas.",
+  "data": "2026-10-28",
+  "categoria": "abertos",
+  "icone": "onda",
+  "corpo": [
+    "A NVIDIA publicou em 28 de outubro, no Hugging Face e no ModelScope, os pesos do Nemotron 3.5 Transcribe, um modelo de fala com 30 bilhões de parâmetros no total e cerca de 4 bilhões ativos por vez. Ele transcreve 40 línguas, traduz 31 de ou para o inglês e identifica falantes em 13. Aceita gravações de até uma hora com até oito pessoas.",
+    "A diferença em relação a modelos de transcrição comuns é que ele recebe instruções em linguagem natural. O mesmo modelo pode devolver uma transcrição com os falantes marcados, uma tradução ou a resposta a uma pergunta sobre o áudio, e aceita uma lista de termos técnicos como contexto.",
+    "Nos números citados pela NVIDIA, o modelo aparece em primeiro entre os de pesos abertos no Open ASR Leaderboard do Hugging Face, com 5,33% de taxa média de erro de palavras em inglês, e empatado em primeiro na avaliação da Artificial Analysis. Junto saiu o Granary v2, com 463.062 horas de áudio em 48 línguas, contra 25 na primeira versão; o áudio original precisa ser baixado de cada fonte, sob a licença de cada uma.",
+    "Há limites declarados: o modelo foi feito para áudio gravado, não para transmissão ao vivo, e o recurso de perguntas sobre o áudio foi treinado só em inglês. O anúncio não informa a licença do modelo nem detalha o desempenho em português, o que precisa ser conferido na página do modelo."
+  ],
+  "harpia": "Transcrever entrevistas, aulas e reuniões em casa, sem mandar o áudio para fora, é um uso direto de modelos abertos. Vale conferir a licença e a qualidade em português antes de adotar.",
+  "fontes": [
+    {
+      "veiculo": "Hugging Face (blog da NVIDIA)",
+      "titulo": "NVIDIA Nemotron 3.5 Transcribe and Granary v2",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-29",
+  "verificado_em": "2026-10-29",
+  "ordem": 999
+}
