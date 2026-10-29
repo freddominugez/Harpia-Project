@@ -1,0 +1,16 @@
+{
+  "id": "mJ7q8CuVmbw",
+  "titulo": "We Trust AI Agents That Break Every Day - Shy Ruparel, Temporal",
+  "canal": "AI Engineer",
+  "modulo": 8,
+  "nivel": "Intermediário",
+  "resumo": "Mostra como execução durável mantém um agente com modelo local funcionando quando os workers caem no meio de um fluxo de pagamento. Para quem leva agentes do protótipo à produção.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=mJ7q8CuVmbw",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-29",
+  "verificado_em": "2026-10-29"
+}

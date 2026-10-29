@@ -1,0 +1,16 @@
+{
+  "id": "Ok6QdZHCcI8",
+  "titulo": "How Revolut Cut AI Coding Costs 90% With Self-Hosted Open Models - David Abitbol, Revolut",
+  "canal": "AI Engineer",
+  "modulo": 10,
+  "nivel": "Intermediário",
+  "resumo": "Relato da Revolut sobre trocar modelos de fronteira por modelos abertos GLM hospedados na própria infraestrutura: GPUs usadas, metas de latência e ajustes de serviço. Para quem planeja deploy de modelos para equipes de engenharia.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=Ok6QdZHCcI8",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-29",
+  "verificado_em": "2026-10-29"
+}

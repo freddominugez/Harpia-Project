@@ -1,0 +1,16 @@
+{
+  "id": "yXd93a1MLLA",
+  "titulo": "Evolve on Graph now trains your AI model (w/ code)",
+  "canal": "Discover AI",
+  "modulo": 11,
+  "nivel": "Avançado",
+  "resumo": "Explica o Evolve on Graph, em que um único LLM alterna entre propor e resolver perguntas sobre um grafo de conhecimento, com respostas verificadas por execução simbólica. Para quem estuda raciocínio sem dados anotados.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=yXd93a1MLLA",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-29",
+  "verificado_em": "2026-10-29"
+}

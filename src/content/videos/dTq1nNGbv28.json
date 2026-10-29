@@ -1,0 +1,16 @@
+{
+  "id": "dTq1nNGbv28",
+  "titulo": "Lecture 13 - LeWorldModel | A JEPA World Model on One GPU",
+  "canal": "Vizuara",
+  "modulo": 9,
+  "nivel": "Avançado",
+  "resumo": "Aula sobre o LeWorldModel, modelo de mundo JEPA treinado de ponta a ponta a partir de pixels, com a perda SIGReg que empurra projeções aleatórias dos embeddings para uma gaussiana e evita o colapso. Para quem estuda representação visual.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=dTq1nNGbv28",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-29",
+  "verificado_em": "2026-10-29"
+}

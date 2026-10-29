@@ -1,0 +1,16 @@
+{
+  "id": "_87vrjxx1EE",
+  "titulo": "NCM: The End of LLMs? Not So Fast (Local Tests)",
+  "canal": "Prompt Engineering",
+  "modulo": 11,
+  "nivel": "Avançado",
+  "resumo": "Testa localmente o Next-Concept Modeling contra um LLM de mesmo tamanho num DGX Spark: até 4 vezes mais rápido com uma requisição e 4 a 8 vezes mais lento com 64. Para quem avalia geração fora do esquema token a token.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=_87vrjxx1EE",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-29",
+  "verificado_em": "2026-10-29"
+}
