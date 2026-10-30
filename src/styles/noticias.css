@@ -97,11 +97,11 @@
 .nnota-arq { margin: 14px 0 0; font-size: .76rem; color: var(--muted); }
 
 /* ---------- matéria ---------- */
-.nmat { padding: 26px 0 56px; scroll-margin-top: var(--header-h); }
-.nart-capa { aspect-ratio: 16 / 5; max-width: 100%; border-radius: var(--radius-lg); overflow: hidden; background: var(--graphite); }
-.nart-grade { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 44px; margin-top: 26px; }
+.nmat { padding: 26px 0 56px; scroll-margin-top: calc(var(--header-h) + 8px); border-top: 1px solid var(--border); }
+.nart-capa { aspect-ratio: 16 / 9; max-width: 100%; border-radius: var(--radius-lg); overflow: hidden; background: var(--graphite); }
+.nart-grade { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 44px; }
 .nart-principal { min-width: 0; max-width: 760px; }
-.nart-titulo { margin: 12px 0 12px; font-size: clamp(1.8rem, 3.2vw, 2.6rem); font-weight: 800; letter-spacing: -.035em; line-height: 1.12; }
+.nart-titulo { margin: 12px 0 12px; scroll-margin-top: calc(var(--header-h) + 8px); font-size: clamp(1.8rem, 3.2vw, 2.6rem); font-weight: 800; letter-spacing: -.035em; line-height: 1.12; }
 .nart-linha-fina { margin: 0 0 24px; font-size: 1.12rem; line-height: 1.55; color: #4f5964; }
 .nart-texto p { margin: 0 0 1.1em; font-size: 1.04rem; line-height: 1.75; color: #3b434c; }
 .nart-por-que { margin: 26px 0; padding: 18px 20px; border-radius: var(--radius-lg); background: var(--gold-tint); border: 1px solid #efe2c2; }
@@ -146,7 +146,6 @@
 @media (max-width: 860px) {
   .nmast-grid { grid-template-columns: minmax(0, 1fr); }
   .nmast-raios { opacity: .6; }
-  .nart-capa { aspect-ratio: 16 / 8; }
 }
 @media (max-width: 560px) {
   .ngrade { grid-template-columns: minmax(0, 1fr); gap: 12px; }
