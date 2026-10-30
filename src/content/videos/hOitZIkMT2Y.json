@@ -1,0 +1,16 @@
+{
+  "id": "hOitZIkMT2Y",
+  "titulo": "I Trained Qwen 4B with Distillation to Catch Qwen 27B",
+  "canal": "Prompt Engineering",
+  "modulo": 6,
+  "nivel": "Intermediário",
+  "resumo": "Compara três formas de destilação do Qwen 27B para o Qwen 4B, com respostas, probabilidades e destilação on-policy, rodando em duas DGX Spark. Para quem ajusta modelos pequenos.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=hOitZIkMT2Y",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-30",
+  "verificado_em": "2026-10-30"
+}

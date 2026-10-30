@@ -1,0 +1,16 @@
+{
+  "id": "uU6TEeaIh3o",
+  "titulo": "pg_pinecone: Under the hood of vector search in Postgres",
+  "canal": "Pinecone",
+  "modulo": 3,
+  "nivel": "Intermediário",
+  "resumo": "Mostra como a extensão aberta pg_pinecone faz busca vetorial dentro do Postgres e por que a busca filtrada quebra o HNSW. Para quem mantém RAG sobre um banco relacional.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=uU6TEeaIh3o",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-30",
+  "verificado_em": "2026-10-30"
+}

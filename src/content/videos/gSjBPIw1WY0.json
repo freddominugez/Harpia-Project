@@ -1,0 +1,16 @@
+{
+  "id": "gSjBPIw1WY0",
+  "titulo": "A New Transformer for TEMPORAL Attention #ai",
+  "canal": "Discover AI",
+  "modulo": 4,
+  "nivel": "Avançado",
+  "resumo": "Explica a arquitetura TCR-Former, que acrescenta slots de evento e uma atenção temporal modificada ao transformer para raciocínio causal no tempo. Para quem estuda variações de atenção.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=gSjBPIw1WY0",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-30",
+  "verificado_em": "2026-10-30"
+}

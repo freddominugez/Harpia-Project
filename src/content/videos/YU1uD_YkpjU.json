@@ -1,0 +1,16 @@
+{
+  "id": "YU1uD_YkpjU",
+  "titulo": "Your Agent Just Paid for Nothing: 6 Attacks on x402 Payments - Ishween Kaur, SoFi",
+  "canal": "AI Engineer",
+  "modulo": 8,
+  "nivel": "Intermediário",
+  "resumo": "Explica o protocolo x402 de pagamentos por agentes sobre HTTP e seis ataques reproduzidos em ambiente de teste, com a defesa de cada um. Para quem põe agentes para pagar APIs.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=YU1uD_YkpjU",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-30",
+  "verificado_em": "2026-10-30"
+}
