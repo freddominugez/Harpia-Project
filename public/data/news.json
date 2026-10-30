@@ -1,5 +1,250 @@
 [
  {
+  "fonte": "arXiv cs.IR",
+  "titulo": "chATLAS: A Retrieval-Augmented Conversational Assistant for the ATLAS Experiment",
+  "url": "https://arxiv.org/abs/2610.37697",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Relevance-Guided Residual Calibration for Spectral Compression of Dense Retrieval Embeddings",
+  "url": "https://arxiv.org/abs/2610.37707",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Beyond Similarity Search: Knowledge Graph Metadata Enrichment for Enterprise Retrieval-Augmented Generation",
+  "url": "https://arxiv.org/abs/2610.37728",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Predicting What Answer Engines Cite: Open Decision Models, Rerankers and a Distilled 4B Student on Ten Engines under Controlled Retrieval",
+  "url": "https://arxiv.org/abs/2610.38090",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "PALATE: Pretrained Autoregressive LATent Embeddings",
+  "url": "https://arxiv.org/abs/2610.39090",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Efficient LLM-based Subgraph Retrieval for Multi-Hop Knowledge Base Question Answering",
+  "url": "https://arxiv.org/abs/2610.39667",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "R2QRec: Learning Recommendation Queries from Retrieval Feedback",
+  "url": "https://arxiv.org/abs/2610.39984",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "xPRT: Cross-Passage Retrieval Pretraining",
+  "url": "https://arxiv.org/abs/2610.40122",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "What Constitutes Food Similarity? Visual Representations and Retrieval in Indian Cuisine",
+  "url": "https://arxiv.org/abs/2610.37867",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Manifest-Assisted Retrieval in Artificial Intelligence Search: Evidence Gaps and a Security Evaluation",
+  "url": "https://arxiv.org/abs/2610.38361",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Contextual Embeddings Beyond the Gold Chunk",
+  "url": "https://arxiv.org/abs/2610.38854",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Lost in the Latent Space: How Code Embeddings Represent Functional Intent and Implementation Fidelity",
+  "url": "https://arxiv.org/abs/2610.39519",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Predicate Neuron: Differentiable Quantization of Predicate Relations in Gradient-based Learning",
+  "url": "https://arxiv.org/abs/2610.37727",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Separability Is Not Alignability: Representations for Spectrum-to-Molecule Retrieval",
+  "url": "https://arxiv.org/abs/2610.37979",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "The Role of Quantization in Loss Spikes",
+  "url": "https://arxiv.org/abs/2610.38277",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "REVBRAIN: Real-time Probabilistic EEG Forecasting Using Residual Vector Quantization",
+  "url": "https://arxiv.org/abs/2610.38558",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "FairSplit: Decomposing the Embedding Space for Fair Classification",
+  "url": "https://arxiv.org/abs/2610.39031",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Softmax Routing Dynamics in Mixture-of-Experts Models: Collapse and Recovery",
+  "url": "https://arxiv.org/abs/2610.39442",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Low-Bit GDN Recurrent-State Quantization: Global Gradient-aware Allocation and Pure-Write Sliding Windows",
+  "url": "https://arxiv.org/abs/2610.39931",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "One Vector or Many? Clustered Optimal-Transport Steering under Quantization",
+  "url": "https://arxiv.org/abs/2610.40055",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "FARE: Factor-Aware Retrieval with Error-Guided Fusion for Retail Forecasting",
+  "url": "https://arxiv.org/abs/2610.40160",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "A Unified Hessian-Guided Framework for Post-Training Quantization",
+  "url": "https://arxiv.org/abs/2610.40345",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "On Worst-Case Guarantees for Graph-Based Nearest-Neighbor Search",
+  "url": "https://arxiv.org/abs/2610.38133",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Two Birds with One Stone: Skill-Augmented Generation via Unified Retrieval and Utilization",
+  "url": "https://arxiv.org/abs/2610.38204",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Statutory Article Retrieval from Arabic Judicial Narratives: Family Law and Law of Evidence in Saudi Arabia",
+  "url": "https://arxiv.org/abs/2610.38336",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Tracing the Influence of Retrieved Literature on Scientific Ideation in LLMs",
+  "url": "https://arxiv.org/abs/2610.39060",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "KV Cache Quantization for Diffusion Language Models",
+  "url": "https://arxiv.org/abs/2610.39853",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Tokenizer Tokens Tell Training Tales",
+  "url": "https://arxiv.org/abs/2610.39919",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "It Takes Two to Probe, Thousands to Retrieve: Putting Vision--Language Probes to the Retrieval Test",
+  "url": "https://arxiv.org/abs/2610.40124",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Executable Schema Contracts: From Automatic Ingestion to Multi-Source Retrieval",
+  "url": "https://arxiv.org/abs/2606.05415",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Self-Augmenting Retrieval for Diffusion Language Models",
+  "url": "https://arxiv.org/abs/2606.06474",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "QuechuaTok: Morphological Boundary Accuracy as a Necessary Metric for Tokenizer Evaluation in Agglutinative Low-Resource Languages",
+  "url": "https://arxiv.org/abs/2606.23943",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Measuring Data Diversity with Embeddings: A Taxonomy and Benchmark for Diversity Measures",
+  "url": "https://arxiv.org/abs/2610.24888",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Improving JEV Entailment Reranking with Span Readouts and Selective Adaptation",
+  "url": "https://arxiv.org/abs/2610.35654",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Nothing Left Behind: Embedding Retrieval and Language Model Screening for High Recall Evidence Search",
+  "url": "https://arxiv.org/abs/2610.36910",
+  "data": "30/10/2026",
+  "ts": 1793332800
+ },
+ {
   "fonte": "Hugging Face",
   "titulo": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
   "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
