@@ -33,16 +33,18 @@ test('confere gravação com árvore idêntica, sem criar commit ou alterar bran
     calls.push([path, options]);
     if (path.endsWith('/git/ref/heads/main')) return { object: { sha: 'head' } };
     if (path.endsWith('/git/commits/head')) return { tree: { sha: 'base' } };
+    if (path.endsWith('/git/trees/base')) return { tree: [{ path: 'README.md', mode: '100644', type: 'blob', sha: 'existing-blob' }] };
     return { sha: 'base' };
   });
-  assert.equal(calls.length, 3);
-  assert.deepEqual(JSON.parse(calls[2][1].body), { base_tree: 'base', tree: [] });
-  assert.equal(calls[2][1].method, 'POST');
+  assert.equal(calls.length, 4);
+  assert.deepEqual(JSON.parse(calls[3][1].body), { base_tree: 'base', tree: [{ path: 'README.md', mode: '100644', type: 'blob', sha: 'existing-blob' }] });
+  assert.equal(calls[3][1].method, 'POST');
 });
 test('propaga recusa de gravação antes de oferecer publicação', async () => {
   await assert.rejects(checkPublicationAccess(async path => {
     if (path.endsWith('/git/ref/heads/main')) return { object: { sha: 'head' } };
     if (path.endsWith('/git/commits/head')) return { tree: { sha: 'base' } };
+    if (path.endsWith('/git/trees/base')) return { tree: [{ path: 'README.md', mode: '100644', type: 'blob', sha: 'existing-blob' }] };
     throw new Error('Contents: write necessário');
   }), /Contents: write/);
 });

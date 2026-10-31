@@ -28,11 +28,17 @@ export function publicationChanges(selected, current) {
 }
 
 // Confere a permissão de gravação sem criar commit nem alterar o conteúdo do site.
-// A árvore vazia sobre a base atual produz a mesma árvore que já existe.
+// Reenvia uma entrada existente, com o mesmo SHA, para produzir uma árvore idêntica.
 export async function checkPublicationAccess(api) {
   const head = await api(`${REPO}/git/ref/heads/main`);
   const parent = await api(`${REPO}/git/commits/${head.object.sha}`);
-  await api(`${REPO}/git/trees`, { method: 'POST', body: JSON.stringify({ base_tree: parent.tree.sha, tree: [] }) });
+  const current = await api(`${REPO}/git/trees/${parent.tree.sha}`);
+  const entry = current.tree?.find(item => item.type === 'blob');
+  if (!entry) throw new Error('Não foi possível verificar a gravação. Nenhum arquivo foi alterado.');
+  const { path, mode, type, sha } = entry;
+  await api(`${REPO}/git/trees`, { method: 'POST', body: JSON.stringify({
+    base_tree: parent.tree.sha, tree: [{ path, mode, type, sha }],
+  }) });
 }
 
 if (typeof document !== 'undefined') initialize();
