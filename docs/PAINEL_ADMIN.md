@@ -102,6 +102,29 @@ O painel está em `publish_mode: editorial_workflow`. Toda alteração feita por
 
 ## Revisar a curadoria diária
 
+### Publicar vários rascunhos de uma vez
+
+No painel, clique em **Publicar conteúdos** (canto inferior direito), ou abra
+https://www.harpya.org/admin/publicar/. A tela reutiliza o login do painel; se a
+sessão não estiver disponível, oferece o mesmo login por e-mail e senha.
+
+1. Escolha a coleção (NotícIAs, Vídeos, Artigos, Livros, Fontes, Linha do tempo ou Aprendizado).
+2. Marque os rascunhos revisados, individualmente ou usando **Marcar todos os rascunhos**.
+3. Clique em **Publicar selecionados** e confira os títulos na confirmação.
+4. Clique em **Confirmar publicação**. A tela altera somente o `status` dos itens
+   selecionados para `publicado`, em um único commit em `main`. A Vercel processa
+   o commit antes de atualizar o site.
+
+Essa ação publica os rascunhos já salvos no catálogo de `main`; alterações ainda
+em revisão no Workflow continuam seguindo o fluxo editorial. Se um item mudar
+desde o carregamento da lista, a publicação é interrompida para nova revisão.
+Uma atualização concorrente de `main` também impede a gravação, sem sobrescrever
+o trabalho de outra pessoa. Erros de envio exigem atualizar a lista para conferir
+o estado antes de tentar de novo.
+
+Verificações da seleção e da preservação do conteúdo:
+`node --test scripts/test_publicacao.mjs`.
+
 A tarefa agendada (ver `docs/TAREFA_CURADORIA.md`) grava direto em `main`, sempre como **rascunho**, e anota tudo em `curadoria/registro/AAAA-MM-DD.md`.
 
 1. No painel, abra **Vídeos** (ou **Artigos**) e use o filtro **Rascunhos** (ou **Da curadoria diária**).
