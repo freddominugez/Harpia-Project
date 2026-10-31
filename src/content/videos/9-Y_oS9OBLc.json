@@ -1,0 +1,16 @@
+{
+  "id": "9-Y_oS9OBLc",
+  "titulo": "When Running Your Own AI Models Beats Paying for APIs - Steven Latré, imec",
+  "canal": "AI Engineer",
+  "modulo": 10,
+  "nivel": "Intermediário",
+  "resumo": "Mede quando GPUs próprias saem mais baratas que APIs para agentes de código, com milhares de execuções no SWE-Bench Pro, ponto de equilíbrio de utilização e efeito da concorrência. Para quem planeja deploy.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=9-Y_oS9OBLc",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-31",
+  "verificado_em": "2026-10-31"
+}

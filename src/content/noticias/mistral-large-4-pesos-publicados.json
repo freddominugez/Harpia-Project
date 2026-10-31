@@ -1,0 +1,37 @@
+{
+  "titulo": "Mistral publica os pesos do Large 4, modelo de 1 trilhão de parâmetros, com licença que restringe uso como serviço",
+  "resumo": "Os pesos do Mistral Large 4 chegaram ao Hugging Face em 29 de outubro. A licença deriva da MIT, mas exige contrato à parte para quem vender o modelo como serviço.",
+  "data": "2026-10-29",
+  "categoria": "abertos",
+  "icone": "codigo",
+  "corpo": [
+    "A Mistral AI publicou em 29 de outubro, no Hugging Face, os pesos do Mistral Large 4, modelo que tinha apresentado em prévia no começo do mês só pela sua API. É um modelo de mistura de especialistas com cerca de 1 trilhão de parâmetros no total, que aceita texto e imagem e combina modo de instrução com modo de raciocínio.",
+    "A licença é a Mistral Ecosystem Open-Weight, uma variação da MIT. Ela permite usar, modificar, ajustar e explorar comercialmente o modelo, mas quem quiser oferecê-lo como serviço a terceiros precisa de uma licença comercial separada com a Mistral. Por isso, é um modelo de pesos abertos, não um modelo de código aberto no sentido estrito.",
+    "Rodar o modelo em casa continua fora de alcance para quase todo mundo. Segundo o blog do Hugging Face, as versões oficiais saem em FP8 e NVFP4, esta última feita para placas NVIDIA da geração Blackwell. As versões mais comprimidas, em GGUF de 2 bits, cabem num único Mac com chip Ultra e 512 GB de memória unificada; o resto pede vários aceleradores. O mesmo texto fala em 49 bilhões de parâmetros ativos, enquanto o nome do modelo indica 52 bilhões.",
+    "A empresa apresenta o modelo como ferramenta de defesa cibernética que governos e empresas podem instalar nos próprios servidores. Os números de desempenho vêm em boa parte da própria Mistral. Alguns são atribuídos a terceiros, como 48% no índice de agentes de programação da Artificial Analysis, empatado com o chinês GLM-5.3 e usando 47% menos tokens por tarefa, e 51% no índice de cibersegurança da mesma organização.",
+    "A Mistral diz que o modelo recusou em média 96,6% de pedidos maliciosos de ataque em três testes públicos de segurança, mas admite ter visto potencial de ajuda real a atacantes e afirma estar ajustando as salvaguardas. Uma variante para testes de invasão fica restrita a parceiros selecionados, sob contrato."
+  ],
+  "harpia": "Um modelo grande com pesos públicos permite que pesquisadores independentes testem de verdade o que a empresa afirma. A licença com restrição a serviços e o hardware exigido mostram por que vale separar pesos abertos de código aberto e de modelo que se roda em casa.",
+  "fontes": [
+    {
+      "veiculo": "Mistral AI",
+      "titulo": "Mistral Large 4 (Le Chonk) is now open weight",
+      "url": "https://mistral.ai/news/mistral-large-4-oss/"
+    },
+    {
+      "veiculo": "Hugging Face",
+      "titulo": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
+      "url": "https://huggingface.co/blog/mistral-large4"
+    },
+    {
+      "veiculo": "TechCrunch",
+      "titulo": "Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity",
+      "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-31",
+  "verificado_em": "2026-10-31",
+  "ordem": 999
+}

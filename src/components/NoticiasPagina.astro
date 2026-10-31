@@ -99,10 +99,9 @@ const raios = Array.from({ length: 9 }, (_, k) => {
   </div>
 </section>
 
-<section class="nmat" id="materia" data-nmat>
+<section class="nmat" id="materia" data-nmat data-nmat-aberta={tituloNoH1 ? "sim" : undefined} aria-label="Matéria selecionada">
   <div class="container">
     <article class="nart">
-      <div class="nart-capa" set:html={capa(atual)} />
       <div class="nart-grade">
         <div class="nart-principal">
           <div class="nmeta"><span class={`tag ${c.tag}`}><Fragment set:html={icone(c.icone)} />{c.nome}</span><time datetime={atual.data}>{dataCurta(atual.data)}</time><span>{minutosDeLeitura(atual)} min de leitura</span></div>
@@ -119,6 +118,7 @@ const raios = Array.from({ length: 9 }, (_, k) => {
           </nav>
         </div>
         <aside class="nart-lado">
+          <div class="nart-capa" set:html={capa(atual)} />
           <div class="nbox">
             <h3>Fontes</h3>
             <ol class="nfontes">
@@ -144,6 +144,11 @@ const raios = Array.from({ length: 9 }, (_, k) => {
 </section>
 
 <script>
+  // Página de uma notícia (/noticias/<arquivo>/): abre já rolada até a matéria, mesmo
+  // quando o link chega sem #materia (o navegador cuida do caso com a âncora).
+  const aberta = document.querySelector<HTMLElement>("[data-nmat-aberta]");
+  if (aberta && !location.hash) aberta.scrollIntoView({ block: "start" });
+
   // Barra "Veja mais": abre o arquivo no lugar dos destaques e da matéria; fechar volta.
   // Arquivo: grupos de 12 lado a lado, com setas e teclado.
   const barra = document.querySelector<HTMLButtonElement>("[data-nbarra]");
