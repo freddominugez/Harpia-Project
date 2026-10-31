@@ -2,7 +2,7 @@
 
 Endereço: **https://www.harpya.org/admin/**
 
-O painel é o [Sveltia CMS](https://github.com/sveltia/sveltia-cms) 0.221.8, uma biblioteca pública e gratuita que roda inteira no navegador. Não há banco: o único código no servidor são duas funções pequenas que fazem o login pelo GitHub. Cada alteração vira um commit no repositório `freddominugez/Harpia-Project`, e a Vercel publica o site sozinha depois do commit.
+O painel é o [Sveltia CMS](https://github.com/sveltia/sveltia-cms) 0.256.1, uma biblioteca pública e gratuita que roda inteira no navegador. Não há banco: o único código no servidor são duas funções pequenas que fazem o login pelo GitHub. Cada alteração vira um commit no repositório `freddominugez/Harpia-Project`, e a Vercel publica o site sozinha depois do commit.
 
 | Arquivo | Para que serve |
 |---|---|
