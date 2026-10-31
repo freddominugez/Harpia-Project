@@ -1,0 +1,16 @@
+{
+  "id": "IDjyrXKsC5U",
+  "titulo": "Journey of a token in vLLM and SGLang",
+  "canal": "Vizuara",
+  "modulo": 10,
+  "nivel": "Intermediário",
+  "resumo": "Parte 2 da série da Vizuara: segue uma requisição de chat por dentro do vLLM V1 e do SGLang, do servidor de API ao streaming da resposta, com o laço entre CPU e GPU. Para quem serve modelos.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=IDjyrXKsC5U",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-31",
+  "verificado_em": "2026-10-31"
+}

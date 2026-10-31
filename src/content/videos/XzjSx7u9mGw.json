@@ -1,0 +1,16 @@
+{
+  "id": "XzjSx7u9mGw",
+  "titulo": "Full-Stack AI Engineering Course (FastAPI, LLMs, Docker, Supabase)",
+  "canal": "Dave Ebbelaar",
+  "modulo": 8,
+  "nivel": "Iniciante",
+  "resumo": "Curso que constrói do zero um agente de atendimento com LLM, FastAPI, Docker e Supabase, do código ao deploy. Para quem começa a montar aplicações com agentes.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=XzjSx7u9mGw",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-31",
+  "verificado_em": "2026-10-31"
+}
