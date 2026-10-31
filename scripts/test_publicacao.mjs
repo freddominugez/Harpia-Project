@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
-import { readDrafts, publicationChanges } from '../public/admin/publicar/app.js';
+import { readDrafts, publicationChanges, checkPublicationAccess } from '../public/admin/publicar/app.js';
 
 const blob = (name, status, oid = name) => ({ name, type: 'blob', object: {
   oid, text: JSON.stringify({ titulo: name, status, resumo: 'Texto revisado', ordem: 4 }),
@@ -25,4 +25,24 @@ test('exige seleção e nova revisão quando um item muda, some ou deixa de ser 
   assert.throws(() => publicationChanges([drafts[0]], [{ ...drafts[0], oid: 'changed' }]), /alterado/);
   assert.throws(() => publicationChanges([drafts[0]], [{ ...drafts[0], content: { status: 'publicado' } }]), /alterado/);
   assert.throws(() => publicationChanges([drafts[0], drafts[0]], drafts), /alterado/);
+});
+
+test('confere gravação com árvore idêntica, sem criar commit ou alterar branch', async () => {
+  const calls = [];
+  await checkPublicationAccess(async (path, options) => {
+    calls.push([path, options]);
+    if (path.endsWith('/git/ref/heads/main')) return { object: { sha: 'head' } };
+    if (path.endsWith('/git/commits/head')) return { tree: { sha: 'base' } };
+    return { sha: 'base' };
+  });
+  assert.equal(calls.length, 3);
+  assert.deepEqual(JSON.parse(calls[2][1].body), { base_tree: 'base', tree: [] });
+  assert.equal(calls[2][1].method, 'POST');
+});
+test('propaga recusa de gravação antes de oferecer publicação', async () => {
+  await assert.rejects(checkPublicationAccess(async path => {
+    if (path.endsWith('/git/ref/heads/main')) return { object: { sha: 'head' } };
+    if (path.endsWith('/git/commits/head')) return { tree: { sha: 'base' } };
+    throw new Error('Contents: write necessário');
+  }), /Contents: write/);
 });

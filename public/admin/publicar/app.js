@@ -27,6 +27,14 @@ export function publicationChanges(selected, current) {
   });
 }
 
+// Confere a permissão de gravação sem criar commit nem alterar o conteúdo do site.
+// A árvore vazia sobre a base atual produz a mesma árvore que já existe.
+export async function checkPublicationAccess(api) {
+  const head = await api(`${REPO}/git/ref/heads/main`);
+  const parent = await api(`${REPO}/git/commits/${head.object.sha}`);
+  await api(`${REPO}/git/trees`, { method: 'POST', body: JSON.stringify({ base_tree: parent.tree.sha, tree: [] }) });
+}
+
 if (typeof document !== 'undefined') initialize();
 
 function initialize() {
@@ -35,6 +43,7 @@ function initialize() {
   let entries = [];
   const selection = new Set();
   let busy = false;
+  let writeAllowed = false;
   let popup;
   let loginTimer;
   let loadVersion = 0;
@@ -48,7 +57,7 @@ function initialize() {
   }
 
   function controls() {
-    $('publish').disabled = busy || !selection.size;
+    $('publish').disabled = busy || !writeAllowed || !selection.size;
     $('publish').textContent = busy ? 'Aguarde…' : `Publicar selecionados${selection.size ? ` (${selection.size})` : ''}`;
     $('count').textContent = `${selection.size} selecionado${selection.size === 1 ? '' : 's'}`;
     $('all').disabled = busy || !entries.length;
@@ -67,6 +76,12 @@ function initialize() {
     });
     if (!response.ok) {
       if (response.status === 401) { token = ''; $('login').hidden = false; }
+      const data = await response.json().catch(() => ({}));
+      if (response.status === 403 && data.message === 'Resource not accessible by personal access token' && options.method === 'POST' && path.endsWith('/git/trees')) {
+        writeAllowed = false;
+        $('permission-help').hidden = false;
+        throw new Error('O token do painel permite leitura, mas não tem permissão para publicar. No GitHub, ajuste Contents para Read and write e clique em Atualizar lista.');
+      }
       const advice = response.status === 401 ? 'Entre novamente para continuar.' :
         response.status === 409 || response.status === 422 ? 'O conteúdo mudou ou a publicação não foi permitida. Atualize a lista e tente novamente.' :
         'Não foi possível acessar o repositório. Verifique sua conexão e a permissão de publicação.';
@@ -108,12 +123,15 @@ function initialize() {
   async function load() {
     if (!token || busy) return;
     const version = ++loadVersion;
-    selection.clear(); entries = []; render();
+    selection.clear(); entries = []; writeAllowed = false; $('permission-help').hidden = true; render();
     busy = true; controls(); message('Carregando rascunhos…');
     try {
       const drafts = await fetchDrafts($('collection').value);
       if (version !== loadVersion) return;
       entries = drafts; render();
+      message('Verificando permissão de publicação…');
+      await checkPublicationAccess(api);
+      writeAllowed = true;
       message(entries.length ? `${entries.length} rascunhos disponíveis. Marque os itens que deseja publicar.` : 'Nenhum rascunho nesta coleção.');
     } catch (error) { message(error.message, true); }
     finally { busy = false; controls(); }
@@ -149,7 +167,7 @@ function initialize() {
     controls();
   });
   $('publish').addEventListener('click', () => {
-    if (busy || !selection.size) return;
+    if (busy || !writeAllowed || !selection.size) return;
     $('confirmation-items').replaceChildren(...entries.filter(entry => selection.has(entry.path)).map(entry => {
       const item = document.createElement('li'); item.textContent = entry.title; return item;
     }));
@@ -157,7 +175,7 @@ function initialize() {
   });
   $('cancel').addEventListener('click', () => $('confirmation').close());
   $('confirm').addEventListener('click', async () => {
-    if (busy || !selection.size) return;
+    if (busy || !writeAllowed || !selection.size) return;
     $('confirmation').close(); busy = true; controls(); message('Publicando os itens selecionados…');
     let committed = false;
     try {

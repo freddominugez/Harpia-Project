@@ -125,6 +125,14 @@ o estado antes de tentar de novo.
 Verificações da seleção e da preservação do conteúdo:
 `node --test scripts/test_publicacao.mjs`.
 
+A tela confere a permissão de gravação antes de habilitar a publicação. Essa
+verificação usa a mesma árvore de arquivos existente e não cria commit nem
+altera `main`. Se o GitHub responder `Resource not accessible by personal access
+token`, edite o token em https://github.com/settings/personal-access-tokens e
+defina **Contents: Read and write** para `Harpia-Project`. Salve e clique em
+**Atualizar lista**. A permissão de escrita da conta, isoladamente, não garante
+que o token também tenha acesso de escrita.
+
 A tarefa agendada (ver `docs/TAREFA_CURADORIA.md`) grava direto em `main`, sempre como **rascunho**, e anota tudo em `curadoria/registro/AAAA-MM-DD.md`.
 
 1. No painel, abra **Vídeos** (ou **Artigos**) e use o filtro **Rascunhos** (ou **Da curadoria diária**).
