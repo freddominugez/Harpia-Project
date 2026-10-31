@@ -85,12 +85,15 @@ const escapar = (t) => String(t).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<"
 function formulario(res, aviso = "", status = 200) {
   res.writeHead(status, {
     ...cabecalhos,
+    // no-referrer faz o navegador enviar Origin: null no POST do formulário.
+    // Preserva a origem no próprio site sem enviar referências a outros sites.
+    "Referrer-Policy": "same-origin",
     "X-Frame-Options": "DENY",
     "Content-Security-Policy": "default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; frame-ancestors 'none'",
   });
   res.end(`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Harpya · entrar no painel</title>
 <style>body{font-family:system-ui,sans-serif;background:#f6f5f2;color:#1c1b19;display:grid;place-items:center;min-height:100vh;margin:0}form{background:#fff;padding:28px;border-radius:10px;box-shadow:0 2px 12px #0001;width:min(340px,90vw);display:grid;gap:12px}label{display:grid;gap:4px;font-size:14px}input{font:inherit;padding:9px 10px;border:1px solid #bbb;border-radius:6px}button{font:inherit;padding:10px;border:0;border-radius:6px;background:#1c1b19;color:#fff;cursor:pointer}.aviso{color:#a12;font-size:14px;margin:0}h1{font-size:18px;margin:0}</style></head>
-<body><form method="post" action="/auth" autocomplete="on"><h1>Painel do Harpya</h1>${aviso ? `<p class="aviso" role="alert">${escapar(aviso)}</p>` : ""}
+<body><form method="post" action="/auth/" autocomplete="on"><h1>Painel do Harpya</h1>${aviso ? `<p class="aviso" role="alert">${escapar(aviso)}</p>` : ""}
 <label>E-mail<input type="email" name="email" autocomplete="username" required autofocus></label>
 <label>Senha<input type="password" name="senha" autocomplete="current-password" required></label>
 <button type="submit">Entrar</button></form></body></html>`);

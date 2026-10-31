@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="same-origin">
+  <title>Publicar conteúdos · Harpya</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/admin/publicar/style.css">
+</head>
+<body>
+  <main>
+    <a href="/admin/">← Voltar ao painel</a>
+    <h1>Publicar conteúdos</h1>
+    <p>Marque os rascunhos que já revisou e clique em <strong>Publicar selecionados</strong>.</p>
+    <p>Os itens serão publicados no site após o processamento da hospedagem.</p>
+    <button id="login" hidden>Entrar com e-mail e senha</button>
+    <section aria-label="Seleção de conteúdos">
+      <div class="toolbar">
+        <label>Coleção <select id="collection">
+          <option value="noticias">NotícIAs</option>
+          <option value="videos">Vídeos</option>
+          <option value="artigos">Artigos acadêmicos</option>
+          <option value="livros">Livros</option>
+          <option value="fontes">Fontes de pesquisa</option>
+          <option value="linha-do-tempo">Linha do tempo</option>
+          <option value="aprendizado">Aprendizado de máquina</option>
+        </select></label>
+        <button id="reload">Atualizar lista</button>
+      </div>
+      <p id="message" role="status" aria-live="polite"></p>
+      <div class="selection">
+        <label><input type="checkbox" id="all" disabled> Marcar todos os rascunhos</label>
+        <span id="count">0 selecionados</span>
+      </div>
+      <div id="entries"></div>
+    </section>
+    <footer><button id="publish" disabled>Publicar selecionados</button></footer>
+    <dialog id="confirmation" aria-labelledby="confirmation-title">
+      <h2 id="confirmation-title">Publicar os itens marcados?</h2>
+      <p>Confira os títulos. Apenas estes conteúdos serão publicados:</p>
+      <ul id="confirmation-items"></ul>
+      <div class="actions"><button id="cancel">Voltar</button><button id="confirm">Confirmar publicação</button></div>
+    </dialog>
+  </main>
+  <script type="module" src="/admin/publicar/app.js"></script>
+</body>
+</html>
