@@ -1,0 +1,32 @@
+{
+  "titulo": "Em experimento da Anthropic, analistas seguiram a preferência sorteada de um agente de IA em 86% das escolhas",
+  "resumo": "Cinquenta analistas usaram um agente com preferência sorteada em segredo. A maioria seguiu o agente, repetiu seus argumentos e quase ninguém o citou como influência.",
+  "data": "2026-10-27",
+  "categoria": "pesquisa",
+  "icone": "lupa",
+  "corpo": [
+    "Pesquisadores da equipe de alinhamento da Anthropic publicaram em 27 de outubro um experimento controlado sobre quanto um agente de IA molda decisões de especialistas. Cinquenta analistas com experiência em inferência causal avaliaram, com o Claude Code, se o programa de assessoria de uma cooperativa agrícola fictícia devia ser ampliado ou encerrado.",
+    "O trabalho envolvia quatro escolhas de análise, como a medida de resultado e o método de comparação, e uma recomendação final. Para cada escolha, um sorteio definia em segredo qual opção o agente iria favorecer. Sem influência, seria de esperar concordância perto de 50%. Os analistas acompanharam a preferência sorteada em 86% das escolhas de análise.",
+    "Quando o analista já tinha uma opinião e o agente discordava, ele mudou de ideia em 60% dos casos; quando o agente concordava, em 6%. Ao explicar suas decisões, 77% repetiram argumentos do agente, mas só 15% disseram que ele os influenciou. Experiência e formação não previram quem cedeu mais.",
+    "Os autores apontam limites: a inclinação do agente foi reforçada de propósito, houve uma só tarefa, uma só área e um só modelo, e o grupo de comparação sem IA era pequeno e menos experiente. Eles também registram que quem usou o agente cometeu bem menos erros graves e não tratam o resultado como argumento para usar menos IA.",
+    "A recomendação é que agentes apresentem o melhor argumento de cada opção e perguntem a opinião do especialista antes, e que instituições definam quais decisões exigem julgamento humano independente. O argumento central do texto é que um revisor humano só funciona como controle independente quando o julgamento é de fato dele."
+  ],
+  "harpia": "O estudo mede algo que o letramento em IA precisa ensinar: a influência do assistente pode passar despercebida até por especialistas. Saber usar a ferramenta inclui formar a própria opinião antes de ouvir a dela.",
+  "fontes": [
+    {
+      "veiculo": "Anthropic",
+      "titulo": "How AI agents shape experts' judgment calls",
+      "url": "https://anthropic.com/research/agents-judgment-calls"
+    },
+    {
+      "veiculo": "Decrypt",
+      "titulo": "AI Can Quietly Influence Experts' Decisions, Anthropic Study Finds",
+      "url": "https://decrypt.co/382065/ai-can-quietly-influence-experts-decisions"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-10-31",
+  "verificado_em": "2026-10-31",
+  "ordem": 999
+}
