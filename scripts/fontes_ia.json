@@ -1,0 +1,12 @@
+[
+  {"id":"openai","nome":"OpenAI","site":"https://openai.com/news/","tipo":"rss","canal":"https://openai.com/news/rss.xml","hosts":["openai.com","www.openai.com"],"prefixos":["/index/","/news/"]},
+  {"id":"anthropic","nome":"Anthropic","site":"https://www.anthropic.com/news","tipo":"cards","canal":"https://www.anthropic.com/news","hosts":["www.anthropic.com","anthropic.com"],"prefixos":["/news/","/research/"]},
+  {"id":"google","nome":"Google DeepMind","site":"https://deepmind.google/blog/","tipo":"rss","canal":"https://deepmind.google/blog/rss.xml","hosts":["deepmind.google","blog.google","www.deepmind.google"],"prefixos":["/blog/","/discover/blog/","/technology/","/innovation-and-ai/"]},
+  {"id":"mistral","nome":"Mistral AI","site":"https://mistral.ai/news/","tipo":"rss","canal":"https://mistral.ai/news/rss","hosts":["mistral.ai","www.mistral.ai"],"prefixos":["/news/"]},
+  {"id":"meta","nome":"Meta AI","site":"https://ai.meta.com/blog/","tipo":"rss","canal":"https://about.fb.com/news/feed/","hosts":["about.fb.com","ai.meta.com"],"prefixos":["/news/","/blog/"],"filtrar_ia":true},
+  {"id":"nvidia","nome":"NVIDIA","site":"https://blogs.nvidia.com/","tipo":"rss","canal":"https://blogs.nvidia.com/blog/category/deep-learning/feed/","hosts":["blogs.nvidia.com","nvidianews.nvidia.com"],"prefixos":["/blog/","/news/"],"filtrar_ia":true},
+  {"id":"xai","nome":"xAI / Grok","site":"https://x.ai/news","tipo":"cards","canal":"https://x.ai/news","hosts":["x.ai","www.x.ai"],"prefixos":["/news/"]},
+  {"id":"deepseek","nome":"DeepSeek","site":"https://api-docs.deepseek.com/updates/","tipo":"changelog","canal":"https://api-docs.deepseek.com/updates/","hosts":["api-docs.deepseek.com"],"prefixos":["/updates/","/news/"],"fragmentos":true},
+  {"id":"qwen","nome":"Qwen / Alibaba","site":"https://qwen.ai/blog","tipo":"rss","canal":"https://qwenlm.github.io/blog/index.xml","hosts":["qwenlm.github.io","qwen.ai","www.qwen.ai"],"prefixos":["/blog/","/research/"]},
+  {"id":"kimi","nome":"Moonshot / Kimi","site":"https://www.kimi.com/en/blog/","tipo":"cards","canal":"https://www.kimi.com/en/blog/","hosts":["www.kimi.com","kimi.com"],"prefixos":["/blog/","/en/blog/"]}
+]

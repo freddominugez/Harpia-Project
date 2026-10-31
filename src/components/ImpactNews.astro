@@ -1,0 +1,18 @@
+---
+import { RADAR_FEATURED as item, FEATURED_TITLE, FEATURED_SUMMARY, FEATURED_WHY, radarDate } from '../lib/radar';
+---
+{item && <section class="home-impact" aria-labelledby="impact-title" data-impact-news>
+  <div class="impact-copy">
+    <div class="editorial-eyebrow"><span class="editorial-dot" aria-hidden="true"></span> Em destaque no mundo da IA</div>
+    <div class="impact-meta"><span>{item.company}</span><time datetime={item.published_at}>{radarDate(item.published_at)}</time><span>Fonte oficial</span></div>
+    <h2 id="impact-title"><a href={item.url} target="_blank" rel="noopener noreferrer">{FEATURED_TITLE}</a></h2>
+    {FEATURED_SUMMARY && <p class="impact-summary">{FEATURED_SUMMARY}</p>}
+    {FEATURED_WHY && <p class="impact-why"><strong>Por que acompanhar:</strong>{' '}{FEATURED_WHY}</p>}
+    <a class="impact-cta" href={item.url} target="_blank" rel="noopener noreferrer">Ler o anúncio original <span aria-hidden="true">↗</span></a>
+    <small>Anúncio da empresa. A seleção considera atualidade e relevância; resultados de desempenho não foram auditados pelo Harpya.</small>
+  </div>
+  <div class="impact-art" aria-hidden="true">
+    <svg viewBox="0 0 540 540" fill="none"><defs><radialGradient id="impact-glow"><stop stop-color="#c79a39" stop-opacity=".5"/><stop offset="1" stop-color="#c79a39" stop-opacity="0"/></radialGradient></defs><circle cx="270" cy="270" r="265" fill="url(#impact-glow)"/><g stroke="#c79a39" stroke-opacity=".5"><circle cx="270" cy="270" r="190"/><circle cx="270" cy="270" r="142"/><circle cx="270" cy="270" r="94"/><path d="M80 270h380M270 80v380M135 135l270 270M135 405l270-270"/><path d="m270 80 134 55 56 135-56 135-134 55-135-55-55-135 55-135Z"/></g><g fill="#f2d898">{[[270,80],[404,135],[460,270],[404,405],[270,460],[135,405],[80,270],[135,135]].map(([x,y])=><circle cx={x} cy={y} r="6"/>)}</g><rect x="207" y="207" width="126" height="126" rx="24" fill="#282d33" stroke="#e3bd68"/><text x="270" y="288" text-anchor="middle" fill="#f2d898" font-size="52" font-family="system-ui" font-weight="700">IA</text></svg>
+    <span>MODELOS · PESQUISA · NOVAS FRONTEIRAS</span>
+  </div>
+</section>}

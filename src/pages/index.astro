@@ -10,6 +10,9 @@ import JoinCommunityCard from "../components/JoinCommunityCard.astro";
 import StartCard from "../components/StartCard.astro";
 import AnaliseCard from "../components/AnaliseCard.astro";
 import NoticiasCarrossel from "../components/NoticiasCarrossel.astro";
+import ImpactNews from '../components/ImpactNews.astro';
+import HomeEditorial from '../components/HomeEditorial.astro';
+import '../styles/home-editorial.css';
 import { getCollection } from "astro:content";
 import { trilhas, ARTIGOS_DESTAQUE } from "../data/home";
 import { PAUTAS } from "../lib/pautas";
@@ -26,6 +29,7 @@ const destaque = selecaoDaSemana();
 ---
 <Base home>
   <Hero />
+  <ImpactNews />
 
   <section class="ref-content">
     <div class="container wide ref-columns">
@@ -100,4 +104,5 @@ const destaque = selecaoDaSemana();
       </div>
     </div>
   </section>
+  <HomeEditorial />
 </Base>

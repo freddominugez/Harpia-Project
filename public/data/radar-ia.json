@@ -1,0 +1,730 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-31T19:09:03.826519+00:00",
+  "last_successful_at": "2026-10-31T19:09:03.826519+00:00",
+  "publication_policy": "official_sources_automatic",
+  "featured_id": "https://mistral.ai/news/mistral-large-4-oss/",
+  "sources": [
+    {
+      "id": "openai",
+      "nome": "OpenAI",
+      "site": "https://openai.com/news/",
+      "canal": "https://openai.com/news/rss.xml",
+      "checked_at": "2026-10-31T19:09:03.826519+00:00",
+      "status": "ok",
+      "item_count": 108
+    },
+    {
+      "id": "anthropic",
+      "nome": "Anthropic",
+      "site": "https://www.anthropic.com/news",
+      "canal": "https://www.anthropic.com/news",
+      "checked_at": "2026-10-31T19:09:03.826519+00:00",
+      "status": "ok",
+      "item_count": 20
+    },
+    {
+      "id": "google",
+      "nome": "Google DeepMind",
+      "site": "https://deepmind.google/blog/",
+      "canal": "https://deepmind.google/blog/rss.xml",
+      "checked_at": "2026-10-31T19:09:03.826519+00:00",
+      "status": "ok",
+      "item_count": 14
+    },
+    {
+      "id": "mistral",
+      "nome": "Mistral AI",
+      "site": "https://mistral.ai/news/",
+      "canal": "https://mistral.ai/news/rss",
+      "checked_at": "2026-10-31T19:09:03.826519+00:00",
+      "status": "ok",
+      "item_count": 6
+    },
+    {
+      "id": "meta",
+      "nome": "Meta AI",
+      "site": "https://ai.meta.com/blog/",
+      "canal": "https://about.fb.com/news/feed/",
+      "checked_at": "2026-10-31T19:09:03.826519+00:00",
+      "status": "ok",
+      "item_count": 5
+    },
+    {
+      "id": "nvidia",
+      "nome": "NVIDIA",
+      "site": "https://blogs.nvidia.com/",
+      "canal": "https://blogs.nvidia.com/blog/category/deep-learning/feed/",
+      "checked_at": "2026-10-31T19:09:03.826519+00:00",
+      "status": "ok",
+      "item_count": 1
+    },
+    {
+      "id": "xai",
+      "nome": "xAI / Grok",
+      "site": "https://x.ai/news",
+      "canal": "https://x.ai/news",
+      "checked_at": "2026-10-31T19:09:03.826519+00:00",
+      "status": "error",
+      "item_count": 0,
+      "error": "HTTP 403"
+    },
+    {
+      "id": "deepseek",
+      "nome": "DeepSeek",
+      "site": "https://api-docs.deepseek.com/updates/",
+      "canal": "https://api-docs.deepseek.com/updates/",
+      "checked_at": "2026-10-31T19:09:03.826519+00:00",
+      "status": "ok",
+      "item_count": 1
+    },
+    {
+      "id": "qwen",
+      "nome": "Qwen / Alibaba",
+      "site": "https://qwen.ai/blog",
+      "canal": "https://qwenlm.github.io/blog/index.xml",
+      "checked_at": "2026-10-31T19:09:03.826519+00:00",
+      "status": "no_recent_items",
+      "item_count": 0
+    },
+    {
+      "id": "kimi",
+      "nome": "Moonshot / Kimi",
+      "site": "https://www.kimi.com/en/blog/",
+      "canal": "https://www.kimi.com/en/blog/",
+      "checked_at": "2026-10-31T19:09:03.826519+00:00",
+      "status": "ok",
+      "item_count": 1
+    }
+  ],
+  "items": [
+    {
+      "id": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+      "source_id": "openai",
+      "company": "OpenAI",
+      "title": "Making it easier for websites to express AI training preferences",
+      "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers.",
+      "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+      "published_at": "2026-10-30T09:30:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 10,
+      "topics": [
+        "Atualização oficial"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+      "source_id": "openai",
+      "company": "OpenAI",
+      "title": "Community safety report and new protections for teens",
+      "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting.",
+      "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+      "published_at": "2026-10-30T09:00:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 40,
+      "topics": [
+        "Segurança"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/fair-use-benefits-everyone",
+      "source_id": "openai",
+      "company": "OpenAI",
+      "title": "Fair use benefits everyone",
+      "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation.",
+      "url": "https://openai.com/index/fair-use-benefits-everyone",
+      "published_at": "2026-10-30T00:00:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 10,
+      "topics": [
+        "Atualização oficial"
+      ]
+    },
+    {
+      "id": "https://about.fb.com/news/2026/10/the-future-is-for-everyone-meta-and-cnib-partner-to-support-canadians-who-are-blind-deafblind-or-have-low-vision/",
+      "source_id": "meta",
+      "company": "Meta AI",
+      "title": "The Future Is for Everyone: Meta and CNIB Partner to Support Canadians Who Are Blind, Deafblind or Have Low Vision",
+      "summary": "We believe the future is for everyone. That’s why Meta is partnering with CNIB – a non-profit founded in 1918 that empowers Canadians impacted by blindness to live their dreams – to help bring the benefit of AI glasses to more Canadians…",
+      "url": "https://about.fb.com/news/2026/10/the-future-is-for-everyone-meta-and-cnib-partner-to-support-canadians-who-are-blind-deafblind-or-have-low-vision/",
+      "published_at": "2026-10-29T17:00:36+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 10,
+      "topics": [
+        "Atualização oficial"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/updated-model-spec",
+      "source_id": "openai",
+      "company": "OpenAI",
+      "title": "An updated Model Spec for more capable and beneficial AI",
+      "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent.",
+      "url": "https://openai.com/index/updated-model-spec",
+      "published_at": "2026-10-29T17:00:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 30,
+      "topics": [
+        "Modelos"
+      ]
+    },
+    {
+      "id": "https://mistral.ai/news/mistral-large-4-oss/",
+      "source_id": "mistral",
+      "company": "Mistral AI",
+      "title": "Le Chonk: Built for Coders, Trusted by Defenders.",
+      "summary": "The weights of Mistral Large 4 (Le Chonk) are now open. A 1T parameter multimodal model, and best open-weight model for coding, trained in Europe.",
+      "url": "https://mistral.ai/news/mistral-large-4-oss/",
+      "published_at": "2026-10-29T12:00:07+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 58,
+      "topics": [
+        "Modelos",
+        "Código aberto",
+        "APIs e ferramentas"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "source_id": "openai",
+      "company": "OpenAI",
+      "title": "How we detect frontier model misalignment",
+      "summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate.",
+      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "published_at": "2026-10-29T09:00:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 40,
+      "topics": [
+        "Modelos",
+        "APIs e ferramentas"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/ropes-gray-ai-diligence",
+      "source_id": "openai",
+      "company": "OpenAI",
+      "title": "How Ropes & Gray is developing AI for transactional diligence",
+      "summary": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients.",
+      "url": "https://openai.com/index/ropes-gray-ai-diligence",
+      "published_at": "2026-10-29T07:00:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 10,
+      "topics": [
+        "Atualização oficial"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/credit-saison",
+      "source_id": "openai",
+      "company": "OpenAI",
+      "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
+      "summary": "Credit Saison’s ChatGPT Enterprise pilot delivered 954% ROI. See how leaders and employees helped turn the results into companywide adoption.",
+      "url": "https://openai.com/index/credit-saison",
+      "published_at": "2026-10-29T00:00:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 10,
+      "topics": [
+        "Atualização oficial"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+      "source_id": "google",
+      "company": "Google DeepMind",
+      "title": "Gemini 4 Carbon: Our next frontier model",
+      "summary": "",
+      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+      "published_at": "2026-10-28T17:00:58+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 30,
+      "topics": [
+        "Modelos"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/openai-servicenow-partnership-expansion",
+      "source_id": "openai",
+      "company": "OpenAI",
+      "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+      "summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
+      "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+      "published_at": "2026-10-28T13:15:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 40,
+      "topics": [
+        "Modelos",
+        "APIs e ferramentas"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/the-future-of-the-firm",
+      "source_id": "openai",
+      "company": "OpenAI",
+      "title": "The future of the firm",
+      "summary": "How AI might enter the org chart—beneath, beside, and between us.",
+      "url": "https://openai.com/index/the-future-of-the-firm",
+      "published_at": "2026-10-28T10:00:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 10,
+      "topics": [
+        "Atualização oficial"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/legora",
+      "source_id": "openai",
+      "company": "OpenAI",
+      "title": "Legora is building the agentic operating system for legal work",
+      "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
+      "url": "https://openai.com/index/legora",
+      "published_at": "2026-10-28T09:30:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 40,
+      "topics": [
+        "Modelos",
+        "APIs e ferramentas"
+      ]
+    },
+    {
+      "id": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
+      "source_id": "meta",
+      "company": "Meta AI",
+      "title": "Muse Is Now Available in Singapore: The World’s First Personal AI Agent Built for Everyone",
+      "summary": "Today we’re announcing Muse is now available in Singapore. The post Muse Is Now Available in Singapore: The World’s First Personal AI Agent Built for Everyone appeared first on Meta Newsroom .",
+      "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
+      "published_at": "2026-10-28T00:00:03+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 20,
+      "topics": [
+        "APIs e ferramentas"
+      ]
+    },
+    {
+      "id": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+      "source_id": "anthropic",
+      "company": "Anthropic",
+      "title": "AI for Science expands to foundations and research institutions",
+      "summary": "We’re highlighting 20 scientific foundations, institutions, and research groups around the world that we’ve partnered with in an expansion of our AI for Science program.",
+      "url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+      "published_at": "2026-10-28T00:00:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 22,
+      "topics": [
+        "Pesquisa"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "source_id": "google",
+      "company": "Google DeepMind",
+      "title": "Genie 4: A new generation of world simulation",
+      "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "published_at": "2026-10-27T16:01:38+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 45,
+      "topics": [
+        "Modelos"
+      ]
+    },
+    {
+      "id": "https://www.anthropic.com/research/early-progress-drug-development",
+      "source_id": "anthropic",
+      "company": "Anthropic",
+      "title": "Early progress on accelerating drug development with Claude",
+      "summary": "We're at the start of a major effort to speed up drug development with Claude. Over the past several months, our scientists have engaged in deep research partnerships with six organizations developing new medicines.",
+      "url": "https://www.anthropic.com/research/early-progress-drug-development",
+      "published_at": "2026-10-27T00:00:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 42,
+      "topics": [
+        "Modelos",
+        "Pesquisa"
+      ]
+    },
+    {
+      "id": "https://www.anthropic.com/news/expanding-partnership-gsa",
+      "source_id": "anthropic",
+      "company": "Anthropic",
+      "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+      "summary": "We are expanding our partnership with the General Services Administration (GSA) through a new agreement that gives government partners a 40% discount on Claude Enterprise, Claude for Government, and the Claude API.",
+      "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+      "published_at": "2026-10-27T00:00:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 40,
+      "topics": [
+        "Modelos",
+        "APIs e ferramentas"
+      ]
+    },
+    {
+      "id": "https://www.anthropic.com/news/s1-sec",
+      "source_id": "anthropic",
+      "company": "Anthropic",
+      "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+      "summary": "Today, Anthropic, PBC filed a registration statement on Form S-1 with the U.S. Securities and Exchange Commission relating to its proposed initial public offering of its Class A common stock.",
+      "url": "https://www.anthropic.com/news/s1-sec",
+      "published_at": "2026-10-26T00:00:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 10,
+      "topics": [
+        "Atualização oficial"
+      ]
+    },
+    {
+      "id": "https://www.kimi.com/en/blog/kimi-k3-1-pro",
+      "source_id": "kimi",
+      "company": "Moonshot / Kimi",
+      "title": "Kimi K3.1 Pro",
+      "summary": "",
+      "url": "https://www.kimi.com/en/blog/kimi-k3-1-pro",
+      "published_at": "2026-10-24T00:00:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 30,
+      "topics": [
+        "Modelos"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "source_id": "google",
+      "company": "Google DeepMind",
+      "title": "Beyond tree cover: mapping the world’s forest types",
+      "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
+      "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "published_at": "2026-10-22T14:30:24+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 10,
+      "topics": [
+        "Atualização oficial"
+      ]
+    },
+    {
+      "id": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+      "source_id": "anthropic",
+      "company": "Anthropic",
+      "title": "Open call for guest investigators in the life sciences",
+      "summary": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects.",
+      "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+      "published_at": "2026-10-22T00:00:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 22,
+      "topics": [
+        "Pesquisa"
+      ]
+    },
+    {
+      "id": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+      "source_id": "anthropic",
+      "company": "Anthropic",
+      "title": "Donating Agent Skills to the Agentic AI Foundation",
+      "summary": "We’re donating Agent Skills, the open standard that gives AI agents specialized knowledge and workflows, to the Agentic AI Foundation. More than 70 agent platforms, including ChatGPT, Cursor, GitHub Copilot, and VS Code, have integrated…",
+      "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+      "published_at": "2026-10-22T00:00:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 20,
+      "topics": [
+        "APIs e ferramentas"
+      ]
+    },
+    {
+      "id": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
+      "source_id": "mistral",
+      "company": "Mistral AI",
+      "title": "Mistral Advances AI for Engineering with NVIDIA",
+      "summary": "Mistral is collaborating with NVIDIA to develop a new generation of AI-native engineering workflows powered by NVIDIA accelerated computing.",
+      "url": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
+      "published_at": "2026-10-21T12:00:20+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 30,
+      "topics": [
+        "Modelos"
+      ]
+    },
+    {
+      "id": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+      "source_id": "anthropic",
+      "company": "Anthropic",
+      "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
+      "summary": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and…",
+      "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
+      "published_at": "2026-10-21T00:00:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 22,
+      "topics": [
+        "Pesquisa"
+      ]
+    },
+    {
+      "id": "https://mistral.ai/news/voxtral-3/",
+      "source_id": "mistral",
+      "company": "Mistral AI",
+      "title": "Voxtral 3",
+      "summary": "Voxtral 3: Mistral's voice agent SDK for real-time speech in 50+ languages, accurate transcription, emotional TTS, deep tool use.",
+      "url": "https://mistral.ai/news/voxtral-3/",
+      "published_at": "2026-10-20T12:00:22+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 40,
+      "topics": [
+        "Modelos",
+        "APIs e ferramentas"
+      ]
+    },
+    {
+      "id": "https://www.anthropic.com/news/public-benefit-fund",
+      "source_id": "anthropic",
+      "company": "Anthropic",
+      "title": "Investing in the public benefit",
+      "summary": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
+      "url": "https://www.anthropic.com/news/public-benefit-fund",
+      "published_at": "2026-10-18T00:00:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 10,
+      "topics": [
+        "Atualização oficial"
+      ]
+    },
+    {
+      "id": "https://api-docs.deepseek.com/updates/#date-2026-10-17",
+      "source_id": "deepseek",
+      "company": "DeepSeek",
+      "title": "DeepSeek: Opening up the in-house search API ; DeepSeek-V4.1-Flash-1017 Update",
+      "summary": "DeepSeek's web and API search capabilities are powered by our in-house DeepSeek search engine, which reliably handles hundreds of millions of search requests from around the world every day. DeepSeek Search is an AI-native general-purpose…",
+      "url": "https://api-docs.deepseek.com/updates/#date-2026-10-17",
+      "published_at": "2026-10-17T00:00:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 40,
+      "topics": [
+        "Modelos",
+        "APIs e ferramentas"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+      "source_id": "google",
+      "company": "Google DeepMind",
+      "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+      "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
+      "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+      "published_at": "2026-10-15T16:08:03+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 22,
+      "topics": [
+        "Pesquisa"
+      ]
+    },
+    {
+      "id": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+      "source_id": "nvidia",
+      "company": "NVIDIA",
+      "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
+      "summary": "NVIDIA today released Nemotron 3.5 Super VL, an open 120-billion-parameter model that delivers the fastest task completion and highest accuracy for specialized always-on agents. Joining it are two new edge models: Nemotron 3.5 Bolt 74B-A9B…",
+      "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+      "published_at": "2026-10-15T15:00:24+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 40,
+      "topics": [
+        "Modelos",
+        "APIs e ferramentas"
+      ]
+    },
+    {
+      "id": "https://mistral.ai/news/timestral/",
+      "source_id": "mistral",
+      "company": "Mistral AI",
+      "title": "Introducing Timestral",
+      "summary": "State-of-the-art probabilistic forecasting in four sizes (5M–209M params), CPU-efficient, zero-shot ready.",
+      "url": "https://mistral.ai/news/timestral/",
+      "published_at": "2026-10-15T12:00:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 25,
+      "topics": [
+        "Atualização oficial"
+      ]
+    },
+    {
+      "id": "https://about.fb.com/news/2026/10/more-than-three-quarters-of-small-business-owners-say-ai-makes-them-more-productive-but-most-need-more-guidance/",
+      "source_id": "meta",
+      "company": "Meta AI",
+      "title": "More Than Three Quarters of Small Business Owners Say AI Makes Them More Productive, But Most Need More Guidance",
+      "summary": "New Meta research across nine APAC markets shows how AI is helping small businesses grow, compete with larger rivals and reach customers across borders. The post More Than Three Quarters of Small Business Owners Say AI Makes Them More…",
+      "url": "https://about.fb.com/news/2026/10/more-than-three-quarters-of-small-business-owners-say-ai-makes-them-more-productive-but-most-need-more-guidance/",
+      "published_at": "2026-10-15T00:50:50+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 22,
+      "topics": [
+        "Pesquisa"
+      ]
+    },
+    {
+      "id": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "source_id": "anthropic",
+      "company": "Anthropic",
+      "title": "An update on independent evaluators",
+      "summary": "To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.",
+      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "published_at": "2026-10-15T00:00:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 45,
+      "topics": [
+        "Modelos",
+        "Segurança"
+      ]
+    },
+    {
+      "id": "https://about.fb.com/news/2026/10/meta-milans-pinacoteca-di-brera-and-essilorluxottica-expand-access-to-art-through-ai-glasses/",
+      "source_id": "meta",
+      "company": "Meta AI",
+      "title": "Meta, Milan’s Pinacoteca di Brera, and EssilorLuxottica Expand Access to Art Through AI Glasses",
+      "summary": "Today, Meta, Pinacoteca di Brera and EssilorLuxottica are proud to launch “Sensing Art – Discovering Masterpieces Beyond What Meets the Eye.” This pilot aims to explore how AI glasses can make art more accessible for people who are blind…",
+      "url": "https://about.fb.com/news/2026/10/meta-milans-pinacoteca-di-brera-and-essilorluxottica-expand-access-to-art-through-ai-glasses/",
+      "published_at": "2026-10-14T16:00:57+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 10,
+      "topics": [
+        "Atualização oficial"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "source_id": "google",
+      "company": "Google DeepMind",
+      "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+      "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+      "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "published_at": "2026-10-14T02:00:14+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 30,
+      "topics": [
+        "Modelos"
+      ]
+    },
+    {
+      "id": "https://www.anthropic.com/news/safeguards",
+      "source_id": "anthropic",
+      "company": "Anthropic",
+      "title": "Safeguards",
+      "summary": "",
+      "url": "https://www.anthropic.com/news/safeguards",
+      "published_at": "2026-10-14T00:00:00+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 25,
+      "topics": [
+        "Segurança"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+      "source_id": "google",
+      "company": "Google DeepMind",
+      "title": "Developing Gemini 4 Argon responsibly and safely",
+      "summary": "",
+      "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+      "published_at": "2026-10-13T19:43:07+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 30,
+      "topics": [
+        "Modelos"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+      "source_id": "google",
+      "company": "Google DeepMind",
+      "title": "Gemini 4 Argon for Robotics",
+      "summary": "",
+      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+      "published_at": "2026-10-13T16:01:58+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 30,
+      "topics": [
+        "Modelos"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+      "source_id": "google",
+      "company": "Google DeepMind",
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "summary": "",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+      "published_at": "2026-10-13T16:01:52+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 30,
+      "topics": [
+        "Modelos"
+      ]
+    },
+    {
+      "id": "https://about.fb.com/news/2026/10/introducing-your-algorithm-facebook/",
+      "source_id": "meta",
+      "company": "Meta AI",
+      "title": "Your Algorithm, Your Words: New Ways to Shape What You See on Facebook",
+      "summary": "We’re introducing new AI-powered tools that help you shape what you see in Feed and Reels by telling us what you’re interested in, in your own words. The post Your Algorithm, Your Words: New Ways to Shape What You See on Facebook appeared…",
+      "url": "https://about.fb.com/news/2026/10/introducing-your-algorithm-facebook/",
+      "published_at": "2026-10-13T16:00:29+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 25,
+      "topics": [
+        "Atualização oficial"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+      "source_id": "google",
+      "company": "Google DeepMind",
+      "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+      "summary": "",
+      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+      "published_at": "2026-10-06T19:57:04+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 30,
+      "topics": [
+        "Modelos"
+      ]
+    },
+    {
+      "id": "https://mistral.ai/news/mistral-large-4/",
+      "source_id": "mistral",
+      "company": "Mistral AI",
+      "title": "Introducing Mistral Large 4",
+      "summary": "",
+      "url": "https://mistral.ai/news/mistral-large-4/",
+      "published_at": "2026-10-06T12:00:27+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 45,
+      "topics": [
+        "Modelos"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+      "source_id": "google",
+      "company": "Google DeepMind",
+      "title": "Gemini 4 Argon: our next era of frontier intelligence",
+      "summary": "",
+      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+      "published_at": "2026-09-30T20:01:45+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 30,
+      "topics": [
+        "Modelos"
+      ]
+    },
+    {
+      "id": "https://mistral.ai/news/hallo-deutschland/",
+      "source_id": "mistral",
+      "company": "Mistral AI",
+      "title": "Hallo, Deutschland!",
+      "summary": "Mistral opens a Munich hub for Physics AI and Industrial AI research, partnering with German industry.",
+      "url": "https://mistral.ai/news/hallo-deutschland/",
+      "published_at": "2026-09-28T15:57:59+00:00",
+      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "impact_score": 42,
+      "topics": [
+        "Modelos",
+        "Pesquisa"
+      ]
+    }
+  ]
+}
