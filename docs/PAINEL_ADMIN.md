@@ -77,7 +77,10 @@ O botão **Sign In Using Access Token** continua disponível. Crie um token *fin
 
 ### Anúncios e contador de visualizações
 
-Abra **Anúncios** nas ferramentas do painel ou
+Na barra superior do painel, clique em **Gerenciar anúncios**. O gerenciador
+abre dentro do próprio painel, compartilha a sessão do CMS e mantém o editor
+de conteúdo aberto na aba **Conteúdos**. Link direto integrado:
+https://www.harpya.org/admin/?ferramenta=anuncios. Também é possível abrir
 https://www.harpya.org/admin/anuncios/. Escolha uma das três posições: banner
 superior, lateral esquerda ou lateral direita. Os três cartões mostram o anunciante,
 o estado e a imagem de cada posição. Clique para editar. Edite anunciante, título, texto,

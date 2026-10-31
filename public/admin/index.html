@@ -6,14 +6,19 @@
     <meta name="robots" content="noindex, nofollow" />
     <title>Painel · Harpya</title>
     <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="stylesheet" href="/admin/painel.css">
   </head>
   <body>
-    <nav aria-label="Ferramentas do administrador" style="position:fixed;right:16px;bottom:16px;z-index:1000;display:flex;gap:8px;flex-wrap:wrap;max-width:calc(100% - 32px);padding:8px;background:#fff;border:1px solid #ddd;border-radius:8px;font:600 14px system-ui,sans-serif;box-shadow:0 2px 10px #0003">
-      <a href="/admin/publicar/" style="padding:8px;background:#282d33;color:#fff;border-radius:5px;text-decoration:none">Publicar conteúdos</a>
-      <a href="/admin/anuncios/" style="padding:8px;color:#282d33">Anúncios</a>
-      <a href="/admin/divulgacao/" style="padding:8px;color:#282d33">Divulgação</a>
-      <a href="/admin/radar/" style="padding:8px;color:#282d33">Radar IA</a>
+    <nav class="admin-tools" aria-label="Ferramentas do administrador">
+      <strong>Harpya · Administração</strong>
+      <button type="button" data-tool="conteudos" aria-pressed="true">Conteúdos</button>
+      <button type="button" data-tool="anuncios" aria-pressed="false">Gerenciar anúncios</button>
+      <button type="button" data-tool="publicar" aria-pressed="false">Publicar conteúdos</button>
+      <button type="button" data-tool="divulgacao" aria-pressed="false">Divulgação</button>
+      <button type="button" data-tool="radar" aria-pressed="false">Radar IA</button>
+      <a href="/" target="_blank" rel="noopener noreferrer">Ver site ↗</a>
     </nav>
+    <script type="module" src="/admin/painel.js"></script>
     <!-- Sveltia CMS, versão fixada. Para atualizar, troque o número e teste em /admin antes de publicar. -->
     <script src="https://unpkg.com/@sveltia/cms@0.256.1/dist/sveltia-cms.js"></script>
   </body>
