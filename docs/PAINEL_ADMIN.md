@@ -79,9 +79,14 @@ O botão **Sign In Using Access Token** continua disponível. Crie um token *fin
 
 Abra **Anúncios** nas ferramentas do painel ou
 https://www.harpya.org/admin/anuncios/. Escolha uma das três posições: banner
-superior, lateral esquerda ou lateral direita. Edite anunciante, título, texto,
+superior, lateral esquerda ou lateral direita. Os três cartões mostram o anunciante,
+o estado e a imagem de cada posição. Clique para editar. Edite anunciante, título, texto,
 link HTTPS e imagem. Você pode enviar PNG, JPG ou WebP de até 2 MB ou informar uma
-imagem por endereço HTTPS. Preencha a descrição da imagem para acessibilidade.
+imagem por endereço HTTPS. O upload aceita arrastar e soltar com FilePond 4.32.12
+(licença MIT), hospedado localmente em `public/admin/anuncios/vendor/`, sem
+serviço externo de upload. A licença original acompanha a distribuição.
+Preencha a descrição da imagem para acessibilidade. As peças prontas ocupam
+o espaço inteiro, com proporção preservada e sem repetir texto sobre a arte.
 
 **Publicar anúncio** grava imagem e configuração juntas, em um único commit em
 `main`. **Salvar como rascunho** e **Retirar anúncio do site** deixam a posição

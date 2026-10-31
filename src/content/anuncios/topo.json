@@ -1,1 +1,9 @@
-{"titulo":"","anunciante":"","texto":"","imagem":"","imagem_alt":"","url":"","status":"rascunho"}
+{
+  "titulo": "Vulcan Organizer",
+  "anunciante": "Vulcan Organizer",
+  "texto": "",
+  "imagem": "/img/anuncios/vulcan-organizer-banner-superior-970x90-2x.png",
+  "imagem_alt": "Vulcan Organizer: Seu dia inteiro num organizer de verdade. Comece grátis.",
+  "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=superior_970x90",
+  "status": "publicado"
+}

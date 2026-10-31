@@ -9,9 +9,9 @@ const top = posicao === 'topo';
 <section class:list={['ad-slot', { 'ad-slot-top': top, 'ad-slot-side': !top }]} aria-label={`Publicidade: ${top ? 'banner superior' : posicao === 'lateral-esquerda' ? 'lateral esquerda' : 'lateral direita'}`} data-ad-slot={posicao}>
   <span class="ad-label">Publicidade</span>
   {ad ? (
-    <a class="ad-content" href={ad.url || undefined} target={ad.url ? '_blank' : undefined} rel={ad.url ? 'sponsored nofollow noopener noreferrer' : undefined}>
+    <a class:list={['ad-content', { 'ad-image-only': !!ad.imagem }]} href={ad.url || undefined} target={ad.url ? '_blank' : undefined} rel={ad.url ? 'sponsored nofollow noopener noreferrer' : undefined}>
       {ad.imagem && <img src={ad.imagem} alt={ad.imagem_alt} width={top ? 970 : 300} height={top ? 90 : 250} loading="lazy" decoding="async" />}
-      <span class="ad-copy"><small>{ad.anunciante}</small><strong>{ad.titulo}</strong>{ad.texto && <span>{ad.texto}</span>}</span>
+      <span class:list={['ad-copy', { 'ad-sr-only': !!ad.imagem }]}><small>{ad.anunciante}</small><strong>{ad.titulo}</strong>{ad.texto && <span>{ad.texto}</span>}</span>
     </a>
   ) : (
     <div class="ad-placeholder"><strong>Seu anúncio aqui</strong><span>{top ? 'Banner superior' : 'Espaço lateral'} · Apoie a pesquisa aberta</span></div>
