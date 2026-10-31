@@ -41,6 +41,39 @@ export async function checkPublicationAccess(api) {
   }) });
 }
 
+export async function publishSelection(api, fetchDrafts, collection, selected, { branch = 'main', onRetry = () => {} } = {}) {
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const head = await api(`${REPO}/git/ref/heads/${branch}`);
+    const revision = head.object.sha;
+    const current = await fetchDrafts(collection, revision);
+    const changes = publicationChanges(selected, current);
+    const parent = await api(`${REPO}/git/commits/${revision}`);
+    const tree = await api(`${REPO}/git/trees`, { method: 'POST', body: JSON.stringify({ base_tree: parent.tree.sha, tree: changes }) });
+    const commit = await api(`${REPO}/git/commits`, { method: 'POST', body: JSON.stringify({
+      message: `Painel: publica ${selected.length} itens de ${collection}`,
+      tree: tree.sha, parents: [revision],
+    }) });
+    try {
+      await api(`${REPO}/git/refs/heads/${branch}`, { method: 'PATCH', body: JSON.stringify({ sha: commit.sha, force: false }) });
+      return commit;
+    } catch (error) {
+      if (![409, 422].includes(error.status)) throw error;
+      const latest = await api(`${REPO}/git/ref/heads/${branch}`);
+      // Só repete se houve avanço da branch. Outros erros 422 continuam sendo erros.
+      if (latest.object.sha === revision) throw error;
+      if (attempt === 2) throw new Error('Outras alterações continuam chegando ao site. Tente publicar novamente em alguns instantes.');
+      onRetry();
+    }
+  }
+}
+
+export function githubError(status, data = {}) {
+  const advice = status === 401 ? 'Entre novamente para continuar.' :
+    status === 409 || status === 422 ? `O GitHub recusou a publicação${data.message ? `: ${data.message}` : ''}.` :
+    'Não foi possível acessar o repositório. Verifique sua conexão e a permissão de publicação.';
+  return Object.assign(new Error(advice), { status, githubMessage: data.message });
+}
+
 if (typeof document !== 'undefined') initialize();
 
 function initialize() {
@@ -77,7 +110,7 @@ function initialize() {
 
   async function api(path, options = {}) {
     const response = await fetch(`https://api.github.com${path}`, {
-      ...options, headers: { Accept: 'application/vnd.github+json', Authorization: `Bearer ${token}`,
+      ...options, cache: 'no-store', headers: { Accept: 'application/vnd.github+json', Authorization: `Bearer ${token}`,
         'Content-Type': 'application/json', ...options.headers },
     });
     if (!response.ok) {
@@ -88,10 +121,7 @@ function initialize() {
         $('permission-help').hidden = false;
         throw new Error('O token do painel permite leitura, mas não tem permissão para publicar. No GitHub, ajuste Contents para Read and write e clique em Atualizar lista.');
       }
-      const advice = response.status === 401 ? 'Entre novamente para continuar.' :
-        response.status === 409 || response.status === 422 ? 'O conteúdo mudou ou a publicação não foi permitida. Atualize a lista e tente novamente.' :
-        'Não foi possível acessar o repositório. Verifique sua conexão e a permissão de publicação.';
-      throw new Error(advice);
+      throw githubError(response.status, data);
     }
     return response.json();
   }
@@ -186,17 +216,9 @@ function initialize() {
     let committed = false;
     try {
       const selected = entries.filter(entry => selection.has(entry.path));
-      const head = await api(`${REPO}/git/ref/heads/main`);
-      const revision = head.object.sha;
-      const current = await fetchDrafts($('collection').value, revision);
-      const changes = publicationChanges(selected, current);
-      const parent = await api(`${REPO}/git/commits/${revision}`);
-      const tree = await api(`${REPO}/git/trees`, { method: 'POST', body: JSON.stringify({ base_tree: parent.tree.sha, tree: changes }) });
-      const commit = await api(`${REPO}/git/commits`, { method: 'POST', body: JSON.stringify({
-        message: `Painel: publica ${selected.length} itens de ${$('collection').selectedOptions[0].textContent}`,
-        tree: tree.sha, parents: [revision],
-      }) });
-      await api(`${REPO}/git/refs/heads/main`, { method: 'PATCH', body: JSON.stringify({ sha: commit.sha, force: false }) });
+      await publishSelection(api, fetchDrafts, $('collection').value, selected, {
+        onRetry: () => message('O site recebeu outra atualização. Conferindo os itens e retomando a publicação…'),
+      });
       committed = true;
       entries = entries.filter(entry => !selection.has(entry.path)); selection.clear(); render();
       message(`${selected.length} itens enviados para publicação. O site será atualizado quando a hospedagem concluir o processamento.`);

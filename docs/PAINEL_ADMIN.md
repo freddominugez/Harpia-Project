@@ -118,8 +118,11 @@ sessão não estiver disponível, oferece o mesmo login por e-mail e senha.
 Essa ação publica os rascunhos já salvos no catálogo de `main`; alterações ainda
 em revisão no Workflow continuam seguindo o fluxo editorial. Se um item mudar
 desde o carregamento da lista, a publicação é interrompida para nova revisão.
-Uma atualização concorrente de `main` também impede a gravação, sem sobrescrever
-o trabalho de outra pessoa. Erros de envio exigem atualizar a lista para conferir
+Uma atualização concorrente de `main` faz o painel reler a versão atual e
+tentar novamente, até três tentativas, sem sobrescrever o trabalho de outra
+pessoa. Os itens selecionados são conferidos novamente a cada tentativa. As
+leituras do GitHub não usam o cache do navegador, inclusive ao publicar duas
+coleções em sequência. Erros de envio exigem atualizar a lista para conferir
 o estado antes de tentar de novo.
 
 Verificações da seleção e da preservação do conteúdo:
