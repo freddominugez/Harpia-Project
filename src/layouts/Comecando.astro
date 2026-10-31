@@ -8,6 +8,9 @@ import serifLatin from "@fontsource-variable/source-serif-4/files/source-serif-4
 import "../artigos/comecando/serie.css";
 import Seo from "../components/Seo.astro";
 import { SITE } from "../config";
+import Advertisement from '../components/Advertisement.astro';
+import VisitCounter from '../components/VisitCounter.astro';
+import '../styles/advertising.css';
 
 interface Props { titulo: string; descricao: string }
 const { titulo, descricao } = Astro.props;
@@ -35,11 +38,17 @@ const ano = new Date().getFullYear();
         <a class="cm-site" href="/">Voltar ao site →</a>
       </div>
     </header>
+    <Advertisement posicao="topo" />
+    <div class="ad-layout">
+    <aside class="ad-rail ad-rail-left"><Advertisement posicao="lateral-esquerda" /></aside>
     <main id="conteudo">
       <slot />
     </main>
+    <aside class="ad-rail ad-rail-right"><Advertisement posicao="lateral-direita" /></aside>
+    </div>
     <footer class="cm-foot">
       <div class="cm-foot-in">
+        <VisitCounter />
         <span><b>{SITE.assinatura}</b></span>
         <span>© {ano} {SITE.nome}. Todos os direitos reservados, ressalvadas as licenças CC BY 4.0 e MIT.</span>
         <nav class="cm-foot-links" aria-label="Links do rodapé">

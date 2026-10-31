@@ -75,6 +75,41 @@ O botão **Sign In Using Access Token** continua disponível. Crie um token *fin
 
 ## Coleções
 
+### Anúncios e contador de visualizações
+
+Abra **Anúncios** nas ferramentas do painel ou
+https://www.harpya.org/admin/anuncios/. Escolha uma das três posições: banner
+superior, lateral esquerda ou lateral direita. Edite anunciante, título, texto,
+link HTTPS e imagem. Você pode enviar PNG, JPG ou WebP de até 2 MB ou informar uma
+imagem por endereço HTTPS. Preencha a descrição da imagem para acessibilidade.
+
+**Publicar anúncio** grava imagem e configuração juntas, em um único commit em
+`main`. **Salvar como rascunho** e **Retirar anúncio do site** deixam a posição
+com o aviso “Seu anúncio aqui”. A hospedagem processa a alteração antes de
+atualizar o site. A tela confere o SHA do arquivo e preserva atualizações
+concorrentes. Anúncios também estão disponíveis na coleção do CMS, que segue o
+Workflow quando usada pelo editor padrão.
+
+O contador público conta visualizações, não pessoas únicas, a partir da data
+informada no rodapé. Não há números históricos inventados. O endpoint
+`api/visitas.js` usa as funções do banco em `docs/sql/harpya_views.sql`, no esquema
+isolado `harpya_stats` do projeto Supabase By Vulcan. As tabelas privadas têm RLS
+e nenhum acesso direto por visitantes; as funções públicas são invocadoras e
+as rotinas privilegiadas ficam no esquema privado. A gravação exige uma chave
+aleatória do servidor, cujo hash é guardado no banco. A leitura só expõe total
+e data inicial.
+
+Configure `HARPYA_STATS_URL`, `HARPYA_STATS_KEY` e `HARPYA_STATS_SECRET` na Vercel.
+Nunca grave a chave secreta no repositório. O rate limit usa HMAC diário do IP,
+sem guardá-lo em texto, e permite até 30 eventos por minuto por chave. Eventos
+repetidos usam o mesmo UUID e não aumentam a contagem. Identificadores técnicos
+são eliminados após sete dias, na próxima atualização do contador. Contagens são aproximadas: robôs disfarçados,
+bloqueadores e falhas de rede podem alterar os números.
+
+Em **Divulgação**, https://www.harpya.org/admin/divulgacao/, há uma pesquisa com
+fontes oficiais, regras dos canais e proposta de automação com revisão. Nenhum
+envio a comunidades externas é disparado por essa ferramenta.
+
 | Coleção | Pasta | O que é |
 |---|---|---|
 | Caminhos | `src/content/caminhos/*.md` | As fichas dos 12 caminhos (markdown com LaTeX) |

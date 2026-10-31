@@ -46,6 +46,24 @@ x-fonte: &fonte { label: "URL de origem", name: fonte_url, widget: string, patte
 x-selo: &selo { widget: select, options: [{ label: "medido no projeto", value: medido }, { label: "arte prévia", value: arte }, { label: "lacuna", value: lacuna }, { label: "teste ou enquadramento", value: teste }] }
 
 collections:
+  - name: anuncios
+    label: "Anúncios"
+    description: "Três posições fixas. Para enviar imagem e publicar diretamente, use o botão Anúncios no rodapé do painel."
+    folder: src/content/anuncios
+    extension: json
+    format: json
+    create: false
+    delete: false
+    identifier_field: titulo
+    summary: "{{slug}} · {{status}} · {{anunciante}}"
+    fields:
+      - { label: "Título", name: titulo, widget: string, required: false, default: "" }
+      - { label: "Anunciante", name: anunciante, widget: string, required: false, default: "" }
+      - { label: "Texto curto", name: texto, widget: text, required: false, default: "" }
+      - { label: "Imagem", name: imagem, widget: image, required: false, default: "", media_folder: /public/img/anuncios, public_folder: /img/anuncios }
+      - { label: "Descrição da imagem", name: imagem_alt, widget: string, required: false, default: "" }
+      - { label: "Link HTTPS", name: url, widget: string, required: false, default: "" }
+      - { label: "Status", name: status, widget: select, options: [rascunho, publicado], default: rascunho }
   # ---------------------------------------------------------------- pesquisa
   - name: caminhos
     label: "Caminhos de pesquisa"

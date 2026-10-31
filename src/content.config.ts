@@ -217,7 +217,18 @@ const fontesMonitoradas = defineCollection({
   }),
 });
 
+const anuncios = defineCollection({
+  loader: data('anuncios'),
+  schema: z.object({
+    titulo: z.string().max(80), anunciante: z.string().max(100), texto: z.string().max(240),
+    imagem: z.string().refine(value => value === '' || /^https:\/\//.test(value) || /^\/img\/anuncios\/[A-Za-z0-9._-]+$/.test(value), 'Imagem HTTPS ou arquivo de anúncios'),
+    imagem_alt: z.string().max(160),
+    url: z.string().url().startsWith('https://').or(z.literal('')),
+    status: z.enum(['rascunho', 'publicado']),
+  }).refine(value => value.status !== 'publicado' || (value.titulo.trim().length > 0 && value.anunciante.trim().length > 0 && (!value.imagem || value.imagem_alt.trim().length > 0)), 'Anúncio publicado exige título, anunciante e descrição da imagem'),
+});
+
 export const collections = {
   caminhos, analises, videos, modulos, artigos, livros, fontes, feeds, aprendizado,
-  "linha-do-tempo": linhaDoTempo, pautas, "fontes-monitoradas": fontesMonitoradas, noticias,
+  "linha-do-tempo": linhaDoTempo, pautas, "fontes-monitoradas": fontesMonitoradas, noticias, anuncios,
 };

@@ -1,6 +1,7 @@
 ---
 // Rodapé compacto em faixa grafite, como na referência aprovada.
 import { NAV, SITE } from "../config";
+import VisitCounter from './VisitCounter.astro';
 const ano = new Date().getFullYear();
 ---
 <footer class="site-footer">
@@ -26,6 +27,7 @@ const ano = new Date().getFullYear();
       </div>
     )}
     <div class="footer-credit">
+      <VisitCounter />
       <span><b>{SITE.assinatura}</b></span>
       <span>© {ano} {SITE.nome}. Todos os direitos reservados.</span>
       <span>Ressalvadas as licenças CC BY 4.0 e MIT.</span>
