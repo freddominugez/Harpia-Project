@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-31T19:09:03.826519+00:00",
-  "last_successful_at": "2026-10-31T19:09:03.826519+00:00",
+  "checked_at": "2026-10-31T21:39:20.776Z",
+  "last_successful_at": "2026-10-31T21:39:20.776Z",
   "publication_policy": "official_sources_automatic",
   "featured_id": "https://mistral.ai/news/mistral-large-4-oss/",
   "sources": [
@@ -10,7 +10,7 @@
       "nome": "OpenAI",
       "site": "https://openai.com/news/",
       "canal": "https://openai.com/news/rss.xml",
-      "checked_at": "2026-10-31T19:09:03.826519+00:00",
+      "checked_at": "2026-10-31T21:39:20.776Z",
       "status": "ok",
       "item_count": 108
     },
@@ -19,7 +19,7 @@
       "nome": "Anthropic",
       "site": "https://www.anthropic.com/news",
       "canal": "https://www.anthropic.com/news",
-      "checked_at": "2026-10-31T19:09:03.826519+00:00",
+      "checked_at": "2026-10-31T21:39:20.776Z",
       "status": "ok",
       "item_count": 20
     },
@@ -28,7 +28,7 @@
       "nome": "Google DeepMind",
       "site": "https://deepmind.google/blog/",
       "canal": "https://deepmind.google/blog/rss.xml",
-      "checked_at": "2026-10-31T19:09:03.826519+00:00",
+      "checked_at": "2026-10-31T21:39:20.776Z",
       "status": "ok",
       "item_count": 14
     },
@@ -37,7 +37,7 @@
       "nome": "Mistral AI",
       "site": "https://mistral.ai/news/",
       "canal": "https://mistral.ai/news/rss",
-      "checked_at": "2026-10-31T19:09:03.826519+00:00",
+      "checked_at": "2026-10-31T21:39:20.776Z",
       "status": "ok",
       "item_count": 6
     },
@@ -46,7 +46,7 @@
       "nome": "Meta AI",
       "site": "https://ai.meta.com/blog/",
       "canal": "https://about.fb.com/news/feed/",
-      "checked_at": "2026-10-31T19:09:03.826519+00:00",
+      "checked_at": "2026-10-31T21:39:20.776Z",
       "status": "ok",
       "item_count": 5
     },
@@ -55,7 +55,7 @@
       "nome": "NVIDIA",
       "site": "https://blogs.nvidia.com/",
       "canal": "https://blogs.nvidia.com/blog/category/deep-learning/feed/",
-      "checked_at": "2026-10-31T19:09:03.826519+00:00",
+      "checked_at": "2026-10-31T21:39:20.776Z",
       "status": "ok",
       "item_count": 1
     },
@@ -64,17 +64,16 @@
       "nome": "xAI / Grok",
       "site": "https://x.ai/news",
       "canal": "https://x.ai/news",
-      "checked_at": "2026-10-31T19:09:03.826519+00:00",
-      "status": "error",
-      "item_count": 0,
-      "error": "HTTP 403"
+      "checked_at": "2026-10-31T21:39:20.776Z",
+      "status": "ok",
+      "item_count": 5
     },
     {
       "id": "deepseek",
       "nome": "DeepSeek",
       "site": "https://api-docs.deepseek.com/updates/",
       "canal": "https://api-docs.deepseek.com/updates/",
-      "checked_at": "2026-10-31T19:09:03.826519+00:00",
+      "checked_at": "2026-10-31T21:39:20.776Z",
       "status": "ok",
       "item_count": 1
     },
@@ -83,7 +82,7 @@
       "nome": "Qwen / Alibaba",
       "site": "https://qwen.ai/blog",
       "canal": "https://qwenlm.github.io/blog/index.xml",
-      "checked_at": "2026-10-31T19:09:03.826519+00:00",
+      "checked_at": "2026-10-31T21:39:20.776Z",
       "status": "no_recent_items",
       "item_count": 0
     },
@@ -92,7 +91,7 @@
       "nome": "Moonshot / Kimi",
       "site": "https://www.kimi.com/en/blog/",
       "canal": "https://www.kimi.com/en/blog/",
-      "checked_at": "2026-10-31T19:09:03.826519+00:00",
+      "checked_at": "2026-10-31T21:39:20.776Z",
       "status": "ok",
       "item_count": 1
     }
@@ -176,7 +175,7 @@
       "summary": "The weights of Mistral Large 4 (Le Chonk) are now open. A 1T parameter multimodal model, and best open-weight model for coding, trained in Europe.",
       "url": "https://mistral.ai/news/mistral-large-4-oss/",
       "published_at": "2026-10-29T12:00:07+00:00",
-      "verified_at": "2026-10-31T19:09:03.826519+00:00",
+      "verified_at": "2026-10-31T21:39:20.776Z",
       "impact_score": 58,
       "topics": [
         "Modelos",
@@ -358,6 +357,20 @@
       ]
     },
     {
+      "id": "https://x.ai/news/grok-bot-sales",
+      "source_id": "xai",
+      "company": "xAI / Grok",
+      "title": "Your next sales teammate should be a Grok Bot",
+      "summary": "The xAI sales team describes shared Grok Bots for prospecting, quoting and deal review, with user permissions, action limits and human review for sensitive decisions.",
+      "url": "https://x.ai/news/grok-bot-sales",
+      "published_at": "2026-10-27T00:00:00+00:00",
+      "verified_at": "2026-10-31T21:39:20.776Z",
+      "impact_score": 25,
+      "topics": [
+        "APIs e ferramentas"
+      ]
+    },
+    {
       "id": "https://www.anthropic.com/news/s1-sec",
       "source_id": "anthropic",
       "company": "Anthropic",
@@ -428,6 +441,20 @@
       ]
     },
     {
+      "id": "https://x.ai/news/partnernetworkannouncement",
+      "source_id": "xai",
+      "company": "xAI / Grok",
+      "title": "Introducing the SpaceX Super Intelligence Partner Network",
+      "summary": "xAI announced an official partner program for companies that deploy Grok or build plugins and integrations for the product suite.",
+      "url": "https://x.ai/news/partnernetworkannouncement",
+      "published_at": "2026-10-22T00:00:00+00:00",
+      "verified_at": "2026-10-31T21:39:20.776Z",
+      "impact_score": 10,
+      "topics": [
+        "Atualização oficial"
+      ]
+    },
+    {
       "id": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
       "source_id": "mistral",
       "company": "Mistral AI",
@@ -467,6 +494,20 @@
       "impact_score": 40,
       "topics": [
         "Modelos",
+        "APIs e ferramentas"
+      ]
+    },
+    {
+      "id": "https://x.ai/news/incident-sweep",
+      "source_id": "xai",
+      "company": "xAI / Grok",
+      "title": "Using Grok Bot to detect and respond to incidents",
+      "summary": "xAI describes Grok Bot workflows that detect spikes in support tickets and prepare reviewed batch responses after incidents, with approval and audit controls.",
+      "url": "https://x.ai/news/incident-sweep",
+      "published_at": "2026-10-20T00:00:00+00:00",
+      "verified_at": "2026-10-31T21:39:20.776Z",
+      "impact_score": 25,
+      "topics": [
         "APIs e ferramentas"
       ]
     },
@@ -614,6 +655,21 @@
       ]
     },
     {
+      "id": "https://x.ai/news/grok-voice-3",
+      "source_id": "xai",
+      "company": "xAI / Grok",
+      "title": "Introducing Grok Voice 3.0",
+      "summary": "xAI launched Grok Voice 3.0 for speech-to-speech applications and made it available through its API. Performance and cost claims are reported by xAI; the post also cites external benchmarks.",
+      "url": "https://x.ai/news/grok-voice-3",
+      "published_at": "2026-10-14T00:00:00+00:00",
+      "verified_at": "2026-10-31T21:39:20.776Z",
+      "impact_score": 40,
+      "topics": [
+        "Modelos",
+        "APIs e ferramentas"
+      ]
+    },
+    {
       "id": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
       "source_id": "google",
       "company": "Google DeepMind",
@@ -665,6 +721,20 @@
       "published_at": "2026-10-13T16:00:29+00:00",
       "verified_at": "2026-10-31T19:09:03.826519+00:00",
       "impact_score": 25,
+      "topics": [
+        "Atualização oficial"
+      ]
+    },
+    {
+      "id": "https://x.ai/news/x-subscription",
+      "source_id": "xai",
+      "company": "xAI / Grok",
+      "title": "Introducing The X Subscription",
+      "summary": "xAI announced a combined subscription covering Grok, Grok Bot, Cursor and X, with shared usage across Grok and Cursor tiers.",
+      "url": "https://x.ai/news/x-subscription",
+      "published_at": "2026-10-12T00:00:00+00:00",
+      "verified_at": "2026-10-31T21:39:20.776Z",
+      "impact_score": 10,
       "topics": [
         "Atualização oficial"
       ]
