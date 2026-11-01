@@ -1,0 +1,31 @@
+{
+  "titulo": "Universidade do Missouri e Scale AI abrem curso gratuito de 12 horas sobre IA para professores dos EUA",
+  "resumo": "O curso Fundamentals of AI for Educators é online, no ritmo de cada um, e dá certificado e microcredencial. Foi testado antes com 20 professores de uma rede escolar de St. Louis.",
+  "data": "2026-10-30",
+  "categoria": "letramento",
+  "icone": "escola",
+  "corpo": [
+    "A Universidade do Missouri em St. Louis (UMSL), a empresa Scale AI e a rede escolar Lindbergh Schools lançaram em 30 de outubro o curso Fundamentals of AI for Educators, voltado a professores da educação básica. A formação tem 12 horas, é online, gratuita e feita no ritmo de cada participante, com oferta para todo o país pelo Advanced Workforce Center da universidade.",
+    "Quem conclui recebe um certificado do centro e uma microcredencial com selo digital. Segundo a universidade, o conteúdo trata do uso ético e eficaz de IA em sala, da interação entre professor e aluno, de ensino personalizado e termina com a criação de um material de aula pronto para uso.",
+    "Antes do lançamento, 20 professores da Lindbergh Schools testaram o curso num piloto. A Scale AI apresenta a iniciativa como parte do compromisso que assumiu com a Casa Branca em junho de 2025: formar 1.000 professores e preparar 500 mil estudantes em habilidades básicas de IA até 2029.",
+    "As informações vêm da própria universidade e da empresa. Não há, nos textos publicados, resultados do piloto, avaliação externa do curso nem indicação de órgão que credencie a microcredencial."
+  ],
+  "harpia": "Cursos curtos e gratuitos para professores se espalham, muitas vezes com empresas de IA como parceiras. O Harpya acompanha esses modelos para comparar conteúdo, quem financia e se há avaliação do que o professor leva para a sala.",
+  "fontes": [
+    {
+      "veiculo": "UMSL Daily",
+      "titulo": "Scale AI, Lindbergh Schools and UMSL partnering to train teachers to make effective use of AI in their classrooms",
+      "url": "https://blogs.umsl.edu/news/2026/10/30/umsl-scale-ai-lindbergh-schools-fundamentals-of-ai-for-educators"
+    },
+    {
+      "veiculo": "Scale AI",
+      "titulo": "Scale Expands Its Commitment to AI Literacy with National Teacher Microcredential Launch in St. Louis",
+      "url": "https://scale.com/blog/ai-literacy-microcredential-launch"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-01",
+  "verificado_em": "2026-11-01",
+  "ordem": 999
+}
