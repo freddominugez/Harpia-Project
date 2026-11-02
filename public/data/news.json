@@ -1,5 +1,215 @@
 [
  {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Retrieve-then-Disambiguate: Scalable Reviewer Discovery",
+  "url": "https://arxiv.org/abs/2610.40768",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Context as Infrastructure: Knowledge Compilation for Retrieval in Agentic Systems with Harnesses",
+  "url": "https://arxiv.org/abs/2610.41172",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Defining Page-Centric Visual Document Retrieval and Evaluating Existing Benchmarks",
+  "url": "https://arxiv.org/abs/2610.41360",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "ProSearch: Benchmarking Multi-Constraint Protocol Retrieval in Experimental Science",
+  "url": "https://arxiv.org/abs/2610.41396",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "How BERT-based Cross-Encoders Model Relevance in Information Retrieval?",
+  "url": "https://arxiv.org/abs/2610.41425",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "KITE: Retrieval as a Decision Procedure for Long-Term Conversational Memory",
+  "url": "https://arxiv.org/abs/2610.41521",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Completeness and Cost of Retrieval Structures for Multi-Tool Requests in LLM Agents",
+  "url": "https://arxiv.org/abs/2610.41905",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Hierarchical Dual-Graph Retrieval for Long-form Audio Reasoning",
+  "url": "https://arxiv.org/abs/2610.41390",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Fidelity Synopses: Pre-Execution Plan Selection for Approximate Vector Search",
+  "url": "https://arxiv.org/abs/2610.41407",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Peeling the Matryoshka: Extracting Ontological Structure from Retrieval Embeddings",
+  "url": "https://arxiv.org/abs/2610.41785",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "EMAR: Efficient Multi-domain Adaptive Retrieval",
+  "url": "https://arxiv.org/abs/2602.14960",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Understanding the Performance Plateau in Text-to-Video Retrieval: A Comprehensive Empirical and Linguistic Analysis",
+  "url": "https://arxiv.org/abs/2605.00826",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "CAMEL: Cross-Architecture Masked Embedding Learning for Ultra-Lightweight Retinal Foundation Models",
+  "url": "https://arxiv.org/abs/2610.40954",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Trainable Vector Quantization for Large Language Models",
+  "url": "https://arxiv.org/abs/2610.41822",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "On k-nearest-neighbor regression in metric spaces",
+  "url": "https://arxiv.org/abs/2610.41896",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Hyperbolic Inverse Reinforcement Learning",
+  "url": "https://arxiv.org/abs/2610.42104",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "From the Zoo to the BULLPEN: Sample-Efficient LLM Profiling via Multi-Channel Model Embeddings",
+  "url": "https://arxiv.org/abs/2610.41375",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "SACQ: Structure-Aware Codebook Quantization for Ultra-Low-Bit Vision-Language-Action Models",
+  "url": "https://arxiv.org/abs/2610.41408",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "KV-Cache Patching: Tracing How and Where Fine-Tuned Behaviors Arise",
+  "url": "https://arxiv.org/abs/2610.41480",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "RAMA: Retrieval-Augmented Multi-Agent Routing with Episodic Memory for LEO Satellite Networks",
+  "url": "https://arxiv.org/abs/2610.42068",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Towards Universal Tabular Embeddings: A Benchmark Across Data Tasks",
+  "url": "https://arxiv.org/abs/2604.21696",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Lattice-Based Pruning of Recurrent Neural Networks via Poset Modeling: A Corrected Theory and a Matched-Sparsity Evaluation",
+  "url": "https://arxiv.org/abs/2502.16525",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Better Retrievers, Worse Labels: How Incomplete Relevance Judgments Distort Abstention Evaluation in Conversational RAG",
+  "url": "https://arxiv.org/abs/2610.40966",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Iterated Integrals as Lexical Fingerprints: Path Signature Embeddings for Lexical Similarity",
+  "url": "https://arxiv.org/abs/2610.41855",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "DecisionRank: On-Policy Distillation for Decision-Model Rerankers",
+  "url": "https://arxiv.org/abs/2610.42128",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "DAMI: Dual-Axis Memory Initialization for Enhanced Long-Context Retrieval in Gated Linear Attention",
+  "url": "https://arxiv.org/abs/2610.41994",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Enhancing Safety of Large Language Models via Embedding Space Separation",
+  "url": "https://arxiv.org/abs/2603.20206",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Metacognitive Decoding: Efficient Inference for Diffusion Language Agents",
+  "url": "https://arxiv.org/abs/2610.37642",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Tracing the Influence of Retrieved Literature on Scientific Ideation in LLMs",
+  "url": "https://arxiv.org/abs/2610.39060",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "From Association to Causation: Improving Retrieval Precision of Retrieval-Augmented Generation via Causal Relations and an Attention Mechanism",
+  "url": "https://arxiv.org/abs/2608.21702",
+  "data": "02/11/2026",
+  "ts": 1793595600
+ },
+ {
   "fonte": "Hugging Face",
   "titulo": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
   "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
