@@ -1,8 +1,8 @@
 {
-  "item_id": "https://mistral.ai/news/mistral-large-4-oss/",
-  "titulo_pt": "Mistral abre os pesos do Large 4 e amplia a disputa em modelos de IA",
-  "resumo_pt": "A Mistral disponibilizou os pesos do Mistral Large 4, o Le Chonk, modelo multimodal voltado a programação e segurança. O anúncio apresenta avanços de eficiência; as comparações de desempenho são da própria empresa.",
-  "por_que_importa": "Pesos disponíveis para estudo e implantação são relevantes para pesquisas sobre inferência e agentes. Consulte os detalhes e as condições de uso no anúncio original.",
-  "source_url": "https://mistral.ai/news/mistral-large-4-oss/",
-  "updated_at": "2026-11-03T03:41:41.255Z"
+  "item_id": "https://www.anthropic.com/research/provable-inference",
+  "titulo_pt": "Anthropic abre o FlashProve para verificar inferência de modelos com provas criptográficas",
+  "resumo_pt": "A Anthropic publicou o FlashProve, protótipo aberto que usa provas criptográficas para verificar se uma resposta foi produzida pelo modelo declarado sem revelar seus pesos. Código, provas em Lean e documentação saíram sob Apache 2.0; desempenho e comparações são resultados relatados pela equipe.",
+  "por_que_importa": "A técnica pode dar a clientes e auditores uma forma verificável de conferir qual modelo gerou uma resposta. Ainda é pesquisa intermediária e requer avaliação independente.",
+  "source_url": "https://www.anthropic.com/research/provable-inference",
+  "updated_at": "2026-11-03T09:42:05.574Z"
 }
