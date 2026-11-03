@@ -1,8 +1,8 @@
 {
-  "item_id": "https://www.anthropic.com/research/provable-inference",
-  "titulo_pt": "Anthropic abre o FlashProve para verificar inferência de modelos com provas criptográficas",
-  "resumo_pt": "A Anthropic publicou o FlashProve, protótipo aberto que usa provas criptográficas para verificar se uma resposta foi produzida pelo modelo declarado sem revelar seus pesos. Código, provas em Lean e documentação saíram sob Apache 2.0; desempenho e comparações são resultados relatados pela equipe.",
-  "por_que_importa": "A técnica pode dar a clientes e auditores uma forma verificável de conferir qual modelo gerou uma resposta. Ainda é pesquisa intermediária e requer avaliação independente.",
-  "source_url": "https://www.anthropic.com/research/provable-inference",
-  "updated_at": "2026-11-03T15:42:31.340Z"
+  "item_id": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+  "titulo_pt": "OpenAI leva modelos de IA a projetos de engenharia e fabricação física",
+  "resumo_pt": "A OpenAI apresentou avanços no uso de seus modelos para desenho mecânico e elétrico, CAD, simulações e integração de sistemas físicos. O artigo relata testes internos e colaborações industriais; métricas de desempenho e ganhos de fluxo de trabalho são afirmações da empresa.",
+  "por_que_importa": "A iniciativa aproxima agentes de IA de tarefas industriais com restrições físicas e revisão humana. Os resultados ainda precisam de validação independente em produção.",
+  "source_url": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+  "updated_at": "2026-11-03T21:44:06.931Z"
 }
