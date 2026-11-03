@@ -1,0 +1,16 @@
+{
+  "id": "vSCYL8ySh9g",
+  "titulo": "Dory - NVIDIA's Looped Transformer",
+  "canal": "Sam Witteveen",
+  "modulo": 11,
+  "nivel": "Intermediário",
+  "resumo": "Apresenta o Dory, transformer em laço de 4B da NVIDIA, que reaplica as mesmas camadas várias vezes em vez de empilhar mais. Para quem acompanha raciocínio com profundidade variável.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=vSCYL8ySh9g",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-03",
+  "verificado_em": "2026-11-03"
+}
