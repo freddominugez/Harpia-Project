@@ -7,8 +7,10 @@ import "@fontsource-variable/inter/wght.css";
 import serifLatin from "@fontsource-variable/source-serif-4/files/source-serif-4-latin-opsz-normal.woff2?url";
 import "../artigos/comecando/serie.css";
 import Seo from "../components/Seo.astro";
+import GoogleTag from '../components/GoogleTag.astro';
 import { SITE } from "../config";
 import Advertisement from '../components/Advertisement.astro';
+import TechnologyCards from '../components/TechnologyCards.astro';
 import VisitCounter from '../components/VisitCounter.astro';
 import '../styles/advertising.css';
 
@@ -20,6 +22,7 @@ const ano = new Date().getFullYear();
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
+    <GoogleTag />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
     <Seo titulo={titulo} descricao={descricao} />
@@ -38,13 +41,15 @@ const ano = new Date().getFullYear();
         <a class="cm-site" href="/">Voltar ao site →</a>
       </div>
     </header>
-    <Advertisement posicao="topo" />
     <div class="ad-layout">
-    <aside class="ad-rail ad-rail-left"><Advertisement posicao="lateral-esquerda" /></aside>
     <main id="conteudo">
       <slot />
     </main>
-    <aside class="ad-rail ad-rail-right"><Advertisement posicao="lateral-direita" /></aside>
+    <aside class="ad-rail ad-rail-right" aria-label="Publicidade e leituras de tecnologia">
+      <Advertisement posicao="lateral-direita" />
+      <TechnologyCards />
+      <Advertisement posicao="lateral-esquerda" />
+    </aside>
     </div>
     <footer class="cm-foot">
       <div class="cm-foot-in">

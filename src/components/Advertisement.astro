@@ -6,7 +6,7 @@ const entry = await getEntry('anuncios', posicao);
 const ad = entry?.data.status === 'publicado' ? entry.data : null;
 const top = posicao === 'topo';
 ---
-<section class:list={['ad-slot', { 'ad-slot-top': top, 'ad-slot-side': !top }]} aria-label={`Publicidade: ${top ? 'banner superior' : posicao === 'lateral-esquerda' ? 'lateral esquerda' : 'lateral direita'}`} data-ad-slot={posicao}>
+<section class:list={['ad-slot', { 'ad-slot-top': top, 'ad-slot-side': !top }]} aria-label={`Publicidade: ${top ? 'banner superior' : posicao === 'lateral-esquerda' ? 'coluna direita, segundo anúncio' : 'coluna direita, primeiro anúncio'}`} data-ad-slot={posicao}>
   <span class="ad-label">Publicidade</span>
   {ad ? (
     <a class:list={['ad-content', { 'ad-image-only': !!ad.imagem }]} href={ad.url || undefined} target={ad.url ? '_blank' : undefined} rel={ad.url ? 'sponsored nofollow noopener noreferrer' : undefined}>

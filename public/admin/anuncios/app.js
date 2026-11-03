@@ -6,7 +6,8 @@ const $ = id => document.getElementById(id);
 const form = $('ad-form');
 let sha = '', savedStatus = 'rascunho', busy = false, image;
 let objectURL, dirty = false;
-const slotNames = { topo: 'Banner superior · 970 × 90', 'lateral-esquerda': 'Lateral esquerda · 300 × 250', 'lateral-direita': 'Lateral direita · 300 × 250' };
+const activeSlots = SLOTS.filter(slot => slot !== 'topo');
+const slotNames = { 'lateral-esquerda': 'Coluna direita · segundo anúncio · 300 × 250', 'lateral-direita': 'Coluna direita · primeiro anúncio · 300 × 250' };
 const pond = createUpload($('upload'), {
   credits: false, allowMultiple: false, instantUpload: false, allowProcess: false, allowPaste: false,
   labelIdle: 'Arraste uma imagem ou <span class="filepond--label-action">escolha um arquivo</span>',
@@ -38,7 +39,7 @@ async function load() {
   if (!client.hasToken()) { $('login').hidden = false; return tell('Entre para editar e publicar os anúncios.'); }
   lock(true); tell('Carregando anúncio…');
   try {
-    const records = await Promise.all(SLOTS.map(async slot => {
+    const records = await Promise.all(activeSlots.map(async slot => {
       const file = await client.api(`/repos/freddominugez/Harpia-Project/contents/src/content/anuncios/${slot}.json?ref=main`);
       const bytes = Uint8Array.from(atob(file.content.replace(/\s/g, '')), c => c.charCodeAt(0));
       return { slot, file, data: JSON.parse(new TextDecoder().decode(bytes)) };

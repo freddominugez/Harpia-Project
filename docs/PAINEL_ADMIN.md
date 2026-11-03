@@ -81,8 +81,8 @@ Na barra superior do painel, clique em **Gerenciar anúncios**. O gerenciador
 abre dentro do próprio painel, compartilha a sessão do CMS e mantém o editor
 de conteúdo aberto na aba **Conteúdos**. Link direto integrado:
 https://www.harpya.org/admin/?ferramenta=anuncios. Também é possível abrir
-https://www.harpya.org/admin/anuncios/. Escolha uma das três posições: banner
-superior, lateral esquerda ou lateral direita. Os três cartões mostram o anunciante,
+https://www.harpya.org/admin/anuncios/. Escolha primeiro ou segundo anúncio da
+coluna direita. Os dois cartões mostram o anunciante,
 o estado e a imagem de cada posição. Clique para editar. Edite anunciante, título, texto,
 link HTTPS e imagem. Você pode enviar PNG, JPG ou WebP de até 2 MB ou informar uma
 imagem por endereço HTTPS. O upload aceita arrastar e soltar com FilePond 4.32.12
@@ -90,6 +90,13 @@ imagem por endereço HTTPS. O upload aceita arrastar e soltar com FilePond 4.32.
 serviço externo de upload. A licença original acompanha a distribuição.
 Preencha a descrição da imagem para acessibilidade. As peças prontas ocupam
 o espaço inteiro, com proporção preservada e sem repetir texto sobre a arte.
+
+Toda a publicidade aparece na coluna direita; em telas menores, abaixo do
+conteúdo principal. O banner superior foi retirado do layout. Os identificadores
+legados `lateral-direita` e `lateral-esquerda` representam, respectivamente, o
+primeiro e o segundo anúncio da mesma coluna, preservando as peças existentes.
+O arquivo `topo.json` permanece arquivado e não é exibido. Entre os anúncios há
+cards RSS de eletrônica, chips e LLMs (ver `docs/TECNOLOGIA_RSS.md`).
 
 **Publicar anúncio** grava imagem e configuração juntas, em um único commit em
 `main`. **Salvar como rascunho** e **Retirar anúncio do site** deixam a posição

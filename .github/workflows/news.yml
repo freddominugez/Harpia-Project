@@ -1,4 +1,4 @@
-# Atualiza public/data/news.json a cada 6 horas. O commit dispara um novo deploy na Vercel.
+# Atualiza notícias e cards de tecnologia a cada 6 horas. O commit dispara um novo deploy.
 name: news
 on:
   schedule:
@@ -19,11 +19,13 @@ jobs:
           python-version: "3.12"
       - run: pip install -r scripts/requirements.txt
       - run: python scripts/coletar_news.py
+      - run: python -m unittest discover -s scripts -p test_tecnologia.py
+      - run: python scripts/coletar_tecnologia.py
       - name: Commit se houver novidade
         run: |
           git config user.name "harpya-bot"
           git config user.email "harpya-bot@users.noreply.github.com"
-          git add public/data/news.json
+          git add public/data/news.json public/data/tecnologia.json
           git diff --cached --quiet && echo "sem novidade" && exit 0
           git commit -m "news: atualização automática"
           git push
