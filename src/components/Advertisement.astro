@@ -6,7 +6,7 @@ const entry = await getEntry('anuncios', posicao);
 const ad = entry?.data.status === 'publicado' ? entry.data : null;
 const top = posicao === 'topo';
 ---
-<section class:list={['ad-slot', { 'ad-slot-top': top, 'ad-slot-side': !top }]} aria-label={`Publicidade: ${top ? 'banner superior' : posicao === 'lateral-esquerda' ? 'coluna direita, segundo anúncio' : 'coluna direita, primeiro anúncio'}`} data-ad-slot={posicao}>
+<section class:list={['ad-slot', { 'ad-slot-horizontal': top, 'ad-slot-side': !top }]} aria-label={`Publicidade: ${top ? 'banner horizontal no conteúdo' : posicao === 'lateral-esquerda' ? 'coluna direita, segundo anúncio' : 'coluna direita, primeiro anúncio'}`} data-ad-slot={posicao} data-ad-placement={top ? 'midpage' : 'right-rail'}>
   <span class="ad-label">Publicidade</span>
   {ad ? (
     <a class:list={['ad-content', { 'ad-image-only': !!ad.imagem }]} href={ad.url || undefined} target={ad.url ? '_blank' : undefined} rel={ad.url ? 'sponsored nofollow noopener noreferrer' : undefined}>
@@ -14,6 +14,6 @@ const top = posicao === 'topo';
       <span class:list={['ad-copy', { 'ad-sr-only': !!ad.imagem }]}><small>{ad.anunciante}</small><strong>{ad.titulo}</strong>{ad.texto && <span>{ad.texto}</span>}</span>
     </a>
   ) : (
-    <div class="ad-placeholder"><strong>Seu anúncio aqui</strong><span>{top ? 'Banner superior' : 'Espaço lateral'} · Apoie a pesquisa aberta</span></div>
+    <div class="ad-placeholder"><strong>Seu anúncio aqui</strong><span>{top ? 'Banner horizontal' : 'Espaço lateral'} · Apoie a pesquisa aberta</span></div>
   )}
 </section>

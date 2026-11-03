@@ -1,8 +1,9 @@
 # Leituras de tecnologia na coluna direita
 
-Os anúncios estão em uma única coluna à direita em telas a partir de 1280 px.
-Em telas menores, a coluna é empilhada depois do conteúdo principal. O banner
-superior não é exibido. As chaves históricas dos dois anúncios foram mantidas
+Os anúncios laterais estão em uma única coluna à direita em telas a partir de
+1280 px. Em telas menores, a coluna é empilhada depois do conteúdo principal.
+O banner horizontal é exibido no meio do conteúdo da landing page e das
+subpáginas, reutilizando `topo.json`; não há banner na abertura. As chaves históricas dos anúncios foram mantidas
 para preservar imagens, links e compatibilidade com o CMS.
 
 Os cards usam RSS públicos gratuitos e não exigem chave nem agregador:
@@ -47,7 +48,7 @@ npm run check
 npm run build
 ```
 
-## Verificação local em 02/11/2026
+## Verificação local em 02/11/2026, antes do banner horizontal
 
 Astro check sem erros ou warnings (quatro hints preexistentes), build de 50
 páginas e nove testes de coleta/publicidade aprovados. O HTML das 50 páginas
@@ -57,3 +58,12 @@ cards de três temas, sem rolagem horizontal ou erros de JavaScript. Foram
 conferidas ainda 12 combinações de rota/largura em notícias, estudos e
 Começando, incluindo a largura efetiva do texto junto à coluna. Capturas da
 home e da série em tema escuro foram inspecionadas visualmente.
+
+Após a inclusão do banner horizontal, as 59 páginas da versão de publicação
+foram verificadas com um horizontal dentro do conteúdo e dois anúncios na
+coluna direita, mantendo a tag Google única. Nove testes de publicidade e
+inserção passaram. No Chrome, seis rotas foram conferidas em cinco larguras,
+incluindo filtros de vídeos e abertura/fechamento do arquivo de notícias.
+`MidPageContent.astro` usa `midpage-ad.mjs` no build para escolher um limite
+entre blocos perto do meio da leitura, sem inserir publicidade dentro de links,
+listas, tabelas, figuras ou áreas ocultas. O HTML original é preservado.

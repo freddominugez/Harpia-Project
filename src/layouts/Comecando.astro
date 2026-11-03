@@ -11,6 +11,7 @@ import GoogleTag from '../components/GoogleTag.astro';
 import { SITE } from "../config";
 import Advertisement from '../components/Advertisement.astro';
 import TechnologyCards from '../components/TechnologyCards.astro';
+import MidPageContent from '../components/MidPageContent.astro';
 import VisitCounter from '../components/VisitCounter.astro';
 import '../styles/advertising.css';
 
@@ -43,7 +44,7 @@ const ano = new Date().getFullYear();
     </header>
     <div class="ad-layout">
     <main id="conteudo">
-      <slot />
+      <MidPageContent><slot /></MidPageContent>
     </main>
     <aside class="ad-rail ad-rail-right" aria-label="Publicidade e leituras de tecnologia">
       <Advertisement posicao="lateral-direita" />

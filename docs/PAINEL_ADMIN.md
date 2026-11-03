@@ -81,8 +81,8 @@ Na barra superior do painel, clique em **Gerenciar anúncios**. O gerenciador
 abre dentro do próprio painel, compartilha a sessão do CMS e mantém o editor
 de conteúdo aberto na aba **Conteúdos**. Link direto integrado:
 https://www.harpya.org/admin/?ferramenta=anuncios. Também é possível abrir
-https://www.harpya.org/admin/anuncios/. Escolha primeiro ou segundo anúncio da
-coluna direita. Os dois cartões mostram o anunciante,
+https://www.harpya.org/admin/anuncios/. Escolha o banner horizontal no meio da
+página ou o primeiro ou segundo anúncio da coluna direita. Os três cartões mostram o anunciante,
 o estado e a imagem de cada posição. Clique para editar. Edite anunciante, título, texto,
 link HTTPS e imagem. Você pode enviar PNG, JPG ou WebP de até 2 MB ou informar uma
 imagem por endereço HTTPS. O upload aceita arrastar e soltar com FilePond 4.32.12
@@ -91,11 +91,14 @@ serviço externo de upload. A licença original acompanha a distribuição.
 Preencha a descrição da imagem para acessibilidade. As peças prontas ocupam
 o espaço inteiro, com proporção preservada e sem repetir texto sobre a arte.
 
-Toda a publicidade aparece na coluna direita; em telas menores, abaixo do
-conteúdo principal. O banner superior foi retirado do layout. Os identificadores
+Os dois anúncios laterais aparecem na coluna direita; em telas menores, abaixo
+do conteúdo principal. O banner horizontal aparece uma vez no meio do conteúdo
+da landing page e das subpáginas, entre blocos completos de leitura. A posição é
+definida no build; a exibição não depende de JavaScript no navegador. Os identificadores
 legados `lateral-direita` e `lateral-esquerda` representam, respectivamente, o
 primeiro e o segundo anúncio da mesma coluna, preservando as peças existentes.
-O arquivo `topo.json` permanece arquivado e não é exibido. Entre os anúncios há
+O arquivo `topo.json` é reutilizado para o horizontal (970 × 90), sem banner no
+topo da página. A arte é responsiva e mantém a proporção original. Entre os anúncios laterais há
 cards RSS de eletrônica, chips e LLMs (ver `docs/TECNOLOGIA_RSS.md`).
 
 **Publicar anúncio** grava imagem e configuração juntas, em um único commit em

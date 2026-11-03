@@ -9,6 +9,7 @@ import Seo from "../components/Seo.astro";
 import GoogleTag from '../components/GoogleTag.astro';
 import Advertisement from '../components/Advertisement.astro';
 import TechnologyCards from '../components/TechnologyCards.astro';
+import MidPageContent from '../components/MidPageContent.astro';
 import '../styles/advertising.css';
 
 interface Props { titulo?: string; descricao?: string; home?: boolean; noindex?: boolean }
@@ -30,7 +31,7 @@ const { titulo, descricao, home = false, noindex = false } = Astro.props;
     <Header />
     <div class="ad-layout">
     <main id="conteudo">
-      <slot />
+      <MidPageContent><slot /></MidPageContent>
     </main>
     <aside class="ad-rail ad-rail-right" aria-label="Publicidade e leituras de tecnologia">
       <Advertisement posicao="lateral-direita" />

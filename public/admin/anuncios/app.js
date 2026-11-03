@@ -6,8 +6,8 @@ const $ = id => document.getElementById(id);
 const form = $('ad-form');
 let sha = '', savedStatus = 'rascunho', busy = false, image;
 let objectURL, dirty = false;
-const activeSlots = SLOTS.filter(slot => slot !== 'topo');
-const slotNames = { 'lateral-esquerda': 'Coluna direita · segundo anúncio · 300 × 250', 'lateral-direita': 'Coluna direita · primeiro anúncio · 300 × 250' };
+const activeSlots = SLOTS;
+const slotNames = { topo: 'Banner horizontal · meio da página · 970 × 90', 'lateral-esquerda': 'Coluna direita · segundo anúncio · 300 × 250', 'lateral-direita': 'Coluna direita · primeiro anúncio · 300 × 250' };
 const pond = createUpload($('upload'), {
   credits: false, allowMultiple: false, instantUpload: false, allowProcess: false, allowPaste: false,
   labelIdle: 'Arraste uma imagem ou <span class="filepond--label-action">escolha um arquivo</span>',
