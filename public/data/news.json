@@ -1,255 +1,220 @@
 [
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "WeSearch: A Unified Model-Centric Retrieval Framework for WeChat Search",
-  "url": "https://arxiv.org/abs/2611.00530",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "Enhancing Stock Market Information Retrieval with Retrieval-Augmented Generation",
+  "url": "https://arxiv.org/abs/2611.03747",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "EduExplain: A Benchmark for Explanation-Set Retrieval and Storyboard Construction in Educational Explanation",
-  "url": "https://arxiv.org/abs/2611.00802",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "Modular and Efficient Approximate Nearest Neighbors Search with Vectorium and kANNolo",
+  "url": "https://arxiv.org/abs/2611.03927",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "Numerical Embeddings for CTR Prediction: A Taxonomy, Unified Benchmark, and Open-Source FuxiCTR Extension",
-  "url": "https://arxiv.org/abs/2611.01090",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "ReuseGR: Offline--Online Decoupled Generative Retrieval via Adaptive Prefix Reuse",
+  "url": "https://arxiv.org/abs/2611.04259",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "\"PRISM\" Is Not All You Need: Cross-Topic Name Collisions and Scientific Paper Retrieval",
-  "url": "https://arxiv.org/abs/2611.01362",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "Do Retrieval Ranking Models Capture Event Order? A Study of Timeline-Constrained Retrieval",
+  "url": "https://arxiv.org/abs/2611.04343",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "EAGR: Evidence-Guided Adaptive Graph Retrieval",
-  "url": "https://arxiv.org/abs/2611.01910",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "QueryFlow: Multi-Hop Graph Retrieval with Adaptive Query Evolution",
+  "url": "https://arxiv.org/abs/2611.04625",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "Adversarial Robustness of Retrieval-Based Fact-Checking: Detecting and Mitigating Evidence Contamination",
-  "url": "https://arxiv.org/abs/2611.02139",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "OneTrans-GSR: A Generative Slate Ranking Paradigm Unifying Reranking and Mix-Ranking with One Autoregressive Transformer",
+  "url": "https://arxiv.org/abs/2611.04720",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "PACERec: Progressive Adaptation of LLM Item Embeddings with Collaborative Evidence for Recommendation",
-  "url": "https://arxiv.org/abs/2611.03068",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "Scaling Laws For Data-Constrained Dense Retrieval",
+  "url": "https://arxiv.org/abs/2611.04979",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "Every Clause Counts: Instruction-Following Reranking by Multiplying Small, Answerable Questions",
-  "url": "https://arxiv.org/abs/2611.03179",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "Rethinking Next-Visit Diagnosis Prediction Beyond Aggregate Metrics: Retrieval--Memory Multi-Agent Adjudication",
+  "url": "https://arxiv.org/abs/2611.03826",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "Dh\\={a}r\\={a} Bench: An Evidence-Oriented Retrieval Benchmark for Indian Knowledge Systems",
-  "url": "https://arxiv.org/abs/2611.03196",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "Factorized MLLM Embeddings for Composed Image Retrieval",
+  "url": "https://arxiv.org/abs/2611.05193",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "Federated Vector Retrieval across Heterogeneous VectorDBs",
-  "url": "https://arxiv.org/abs/2611.01514",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "DAT: Dynamic Alpha Tuning for Hybrid Retrieval in Retrieval-Augmented Generation",
+  "url": "https://arxiv.org/abs/2503.23013",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "Nonreciprocal Spherical Attention and Retrieval: Sharp Coarsening Clocks and Certified Score Correction",
-  "url": "https://arxiv.org/abs/2611.02237",
-  "data": "03/11/2026",
-  "ts": 1793682000
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "SearchInject: Retrieval Exposure Control for Indirect Prompt Injection in Language-Model Search",
-  "url": "https://arxiv.org/abs/2611.02643",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "MLAIRE: Multilingual Language-Aware Information Retrieval Evaluation Protocol",
+  "url": "https://arxiv.org/abs/2605.07249",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "IsoAlign: Isoform-Aware DNA-Protein Alignment via Joint-Embedding Predictive Architectures",
-  "url": "https://arxiv.org/abs/2611.00241",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "CaRe-KT: Continuity-Aware Retrieval-Augmented Reasoning for Knowledge Tracing",
+  "url": "https://arxiv.org/abs/2611.03744",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "OCELOT: Planetary-Scale Species Distribution Modeling with Satellite Foundation Embeddings",
-  "url": "https://arxiv.org/abs/2611.00284",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "Embedding Semantic Entropy: NLI-Free Semantic Uncertainty Estimation with Geometry-Aware Clustering",
+  "url": "https://arxiv.org/abs/2611.03876",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Quantization of Large Models with Weight Outliers and Sparsity",
-  "url": "https://arxiv.org/abs/2611.00286",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "Ermakov--Based embeddings as a parameter-free layer for physics-informed neural networks",
+  "url": "https://arxiv.org/abs/2611.03964",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "C3: Speech-Guided KV Retrieval for Long-Context SpeechLLM Inference",
-  "url": "https://arxiv.org/abs/2611.00333",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "LoopKV: Loop-Aware KV Cache Compression for Serving Looped Transformers",
+  "url": "https://arxiv.org/abs/2611.04137",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "MXCode: Vector Quantization for MX-Native Inference at Scale",
-  "url": "https://arxiv.org/abs/2611.00403",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "Anchor: Augmented Cross-Layer Recurrent State for Long-Context Retrieval in Test-Time Training",
+  "url": "https://arxiv.org/abs/2611.04327",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Integer-Exact Microscaling: Running MXFP4 Language Models on INT8 Matrix Units",
-  "url": "https://arxiv.org/abs/2611.00486",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "Near-Zero Token Embeddings Silently Stall Training in Gated Sequence Models",
+  "url": "https://arxiv.org/abs/2611.04449",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "GateTrim: Adaptive-Rank Quantization for Large Language Models",
-  "url": "https://arxiv.org/abs/2611.00654",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "Basin2Vec: Learning Basin-Centric Embeddings for Scalable Hydrological Modeling",
+  "url": "https://arxiv.org/abs/2611.05164",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "ISBC: Interpretable Sparse Binary Coding of Pretrained Text Embeddings",
-  "url": "https://arxiv.org/abs/2611.00999",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "Fusing Earth observation embeddings and spaceborne terrain with meteorological forcing for flood peak depth prediction from high-water marks",
+  "url": "https://arxiv.org/abs/2611.05220",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Sensitivity Inflation from Cross-Record Precision Routing in Private Quantized Fine-Tuning",
-  "url": "https://arxiv.org/abs/2611.01411",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "NovoCRF: Globally Normalized De Novo Peptide Sequencing on a Prefix-Mass Lattice",
+  "url": "https://arxiv.org/abs/2611.05260",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "MatMoE: Matryoshka Mixture-of-Experts with Dynamic Mixed-Precision Quantization for Efficient Inference",
-  "url": "https://arxiv.org/abs/2611.01704",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "LoopVQ: Sub 1-bit KV Cache Quantization for Looped Transformers",
+  "url": "https://arxiv.org/abs/2611.05304",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Quantizing Recurrent Language Models Is Easier Than You Think",
-  "url": "https://arxiv.org/abs/2611.01864",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "FlagRot: Selective Rotation for Low-Bit KV Caches",
+  "url": "https://arxiv.org/abs/2611.03992",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Who Should Score the Cache? Mid-Depth Layers Are the Best Judges of KV-Cache Eviction",
-  "url": "https://arxiv.org/abs/2611.02230",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "Tokenizer Myths and Where To Find Them",
+  "url": "https://arxiv.org/abs/2611.04215",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "From Fragmentation to Fusion: A Survey and Roadmap for Omnimodal Embeddings",
-  "url": "https://arxiv.org/abs/2611.00172",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "Length Is Cheap, Competition Is Not: Attention Predicts Context Rot in Retrieval",
+  "url": "https://arxiv.org/abs/2611.04169",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "From Lookups to Lessons: Turning Retrieved Knowledge into Parametric Memory",
-  "url": "https://arxiv.org/abs/2611.00450",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "TEMPO: Time Series Understanding via Discrete Tokenization",
+  "url": "https://arxiv.org/abs/2611.04482",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "Saidzoda-Tajik-E5-Large: Fine-Tuning a 560M Embedder for Tajik Retrieval",
-  "url": "https://arxiv.org/abs/2611.00592",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "Heads That Write, Not Just Point: Image Retrieval Heads in Vision-Language Models",
+  "url": "https://arxiv.org/abs/2611.04903",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "Audit at the Precision You Deploy: Quantization Reshapes a Subliminally Learned Preference",
-  "url": "https://arxiv.org/abs/2611.00665",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "Mindscape-Aware Retrieval Augmented Generation for Improved Long Context Understanding",
+  "url": "https://arxiv.org/abs/2512.17220",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "CompSkill: Compiling Execution Experience for Skill Retrieval",
-  "url": "https://arxiv.org/abs/2611.01115",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "EchoKV: Efficient KV Cache Compression via Similarity-Based Reconstruction",
+  "url": "https://arxiv.org/abs/2603.22910",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "MedAstra: ASR-less Speech Retrieval with Diagnostic Grounding for Medical QA",
-  "url": "https://arxiv.org/abs/2611.01261",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "The Smallest Singular Directions of the Unembedding Matter Disproportionately for Next-Token Prediction",
+  "url": "https://arxiv.org/abs/2605.17084",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "Retrieval-Enhanced Cultural Evaluation for Social Media Translation Training",
-  "url": "https://arxiv.org/abs/2611.02009",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "O\\'ido: Real-Time Open-Vocabulary Speech Recognition on a $5 Microcontroller without a Neural Accelerator",
+  "url": "https://arxiv.org/abs/2610.13447",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "Which Words a Model Fears: From a Refusal Direction to a Vocabulary-Wide Fear Lexicon",
-  "url": "https://arxiv.org/abs/2611.02348",
-  "data": "03/11/2026",
-  "ts": 1793682000
- },
- {
-  "fonte": "arXiv cs.CL",
-  "titulo": "Beyond Accuracy: How Quantization Affects Coding Agents",
-  "url": "https://arxiv.org/abs/2611.02368",
-  "data": "03/11/2026",
-  "ts": 1793682000
- },
- {
-  "fonte": "arXiv cs.CL",
-  "titulo": "EviCast: Forecasting Retrieval Gains Through Shared Response Calibration",
-  "url": "https://arxiv.org/abs/2611.02387",
-  "data": "03/11/2026",
-  "ts": 1793682000
- },
- {
-  "fonte": "arXiv cs.CL",
-  "titulo": "Re$^3$Rank: Listwise Reranking with Reasoning-Conditioned Retrieval Heads",
-  "url": "https://arxiv.org/abs/2611.02550",
-  "data": "03/11/2026",
-  "ts": 1793682000
- },
- {
-  "fonte": "arXiv cs.CL",
-  "titulo": "TRIO: Task Refinement with Individual Optimization for Retrieval-Augmented Generation",
-  "url": "https://arxiv.org/abs/2611.02810",
-  "data": "03/11/2026",
-  "ts": 1793682000
+  "titulo": "DAMI: Dual-Axis Memory Initialization for Enhanced Long-Context Retrieval in Gated Linear Attention",
+  "url": "https://arxiv.org/abs/2610.41994",
+  "data": "04/11/2026",
+  "ts": 1793768400
  },
  {
   "fonte": "Hugging Face",
