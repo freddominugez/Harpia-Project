@@ -1,8 +1,8 @@
 {
-  "item_id": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
-  "titulo_pt": "OpenAI leva modelos de IA a projetos de engenharia e fabricação física",
-  "resumo_pt": "A OpenAI apresentou avanços no uso de seus modelos para desenho mecânico e elétrico, CAD, simulações e integração de sistemas físicos. O artigo relata testes internos e colaborações industriais; métricas de desempenho e ganhos de fluxo de trabalho são afirmações da empresa.",
-  "por_que_importa": "A iniciativa aproxima agentes de IA de tarefas industriais com restrições físicas e revisão humana. Os resultados ainda precisam de validação independente em produção.",
-  "source_url": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
-  "updated_at": "2026-11-04T09:43:56.129Z"
+  "item_id": "https://openai.com/index/daybreak-red-aws-govcloud/",
+  "titulo_pt": "Daybreak Red chega ao AWS GovCloud com o GPT-5.6 Cyber",
+  "resumo_pt": "A OpenAI disponibilizou o GPT-5.6 Cyber a clientes aprovados do Daybreak Red no AWS GovCloud (US-East). Segundo a empresa, o modelo apoia pesquisa autorizada de vulnerabilidades, validação de exploits e testes de segurança; especialistas devem revisar descobertas e correções.",
+  "por_que_importa": "A oferta leva um modelo especializado em cibersegurança a ambientes governamentais com requisitos de governança. A eficácia descrita é afirmação da OpenAI, sem validação independente.",
+  "source_url": "https://openai.com/index/daybreak-red-aws-govcloud/",
+  "updated_at": "2026-11-04T15:41:13.508Z"
 }
