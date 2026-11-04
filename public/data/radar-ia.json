@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-04T09:43:56.129Z",
-  "last_successful_at": "2026-11-04T09:43:56.129Z",
+  "checked_at": "2026-11-04T15:41:13.508Z",
+  "last_successful_at": "2026-11-04T15:41:13.508Z",
   "publication_policy": "official_sources_automatic",
-  "featured_id": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+  "featured_id": "https://openai.com/index/daybreak-red-aws-govcloud/",
   "sources": [
     {
       "id": "openai",
       "nome": "OpenAI",
       "site": "https://openai.com/news/",
       "canal": "https://openai.com/news/rss.xml",
-      "checked_at": "2026-11-04T09:43:56.129Z",
+      "checked_at": "2026-11-04T15:41:13.508Z",
       "status": "ok",
-      "item_count": 112
+      "item_count": 115
     },
     {
       "id": "anthropic",
       "nome": "Anthropic",
       "site": "https://www.anthropic.com/news",
       "canal": "https://www.anthropic.com/news",
-      "checked_at": "2026-11-04T09:43:56.129Z",
+      "checked_at": "2026-11-04T15:41:13.508Z",
       "status": "ok",
       "item_count": 20
     },
@@ -28,7 +28,7 @@
       "nome": "Google DeepMind",
       "site": "https://deepmind.google/blog/",
       "canal": "https://deepmind.google/blog/rss.xml",
-      "checked_at": "2026-11-04T09:43:56.129Z",
+      "checked_at": "2026-11-04T15:41:13.508Z",
       "status": "ok",
       "item_count": 15
     },
@@ -37,7 +37,7 @@
       "nome": "Mistral AI",
       "site": "https://mistral.ai/news/",
       "canal": "https://mistral.ai/news/rss",
-      "checked_at": "2026-11-04T09:43:56.129Z",
+      "checked_at": "2026-11-04T15:41:13.508Z",
       "status": "ok",
       "item_count": 6
     },
@@ -46,7 +46,7 @@
       "nome": "Meta AI",
       "site": "https://ai.meta.com/blog/",
       "canal": "https://about.fb.com/news/feed/",
-      "checked_at": "2026-11-04T09:43:56.129Z",
+      "checked_at": "2026-11-04T15:41:13.508Z",
       "status": "ok",
       "item_count": 5
     },
@@ -55,7 +55,7 @@
       "nome": "NVIDIA",
       "site": "https://blogs.nvidia.com/",
       "canal": "https://blogs.nvidia.com/blog/category/deep-learning/feed/",
-      "checked_at": "2026-11-04T09:43:56.129Z",
+      "checked_at": "2026-11-04T15:41:13.508Z",
       "status": "ok",
       "item_count": 2
     },
@@ -64,7 +64,7 @@
       "nome": "xAI / Grok",
       "site": "https://x.ai/news",
       "canal": "https://x.ai/news",
-      "checked_at": "2026-11-04T09:43:56.129Z",
+      "checked_at": "2026-11-04T15:41:13.508Z",
       "status": "ok",
       "item_count": 6
     },
@@ -73,7 +73,7 @@
       "nome": "DeepSeek",
       "site": "https://api-docs.deepseek.com/updates/",
       "canal": "https://api-docs.deepseek.com/updates/",
-      "checked_at": "2026-11-04T09:43:56.129Z",
+      "checked_at": "2026-11-04T15:41:13.508Z",
       "status": "ok",
       "item_count": 1
     },
@@ -82,7 +82,7 @@
       "nome": "Qwen / Alibaba",
       "site": "https://qwen.ai/blog",
       "canal": "https://qwenlm.github.io/blog/index.xml",
-      "checked_at": "2026-11-04T09:43:56.129Z",
+      "checked_at": "2026-11-04T15:41:13.508Z",
       "status": "no_recent_items",
       "item_count": 0
     },
@@ -91,12 +91,42 @@
       "nome": "Moonshot / Kimi",
       "site": "https://www.kimi.com/en/blog/",
       "canal": "https://www.kimi.com/en/blog/",
-      "checked_at": "2026-11-04T09:43:56.129Z",
+      "checked_at": "2026-11-04T15:41:13.508Z",
       "status": "ok",
       "item_count": 1
     }
   ],
   "items": [
+    {
+      "id": "https://openai.com/index/openai-to-acquire-pierre/",
+      "source_id": "openai",
+      "company": "OpenAI",
+      "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+      "summary": "OpenAI announced an agreement to acquire Pierre, whose open-source Trees and Diffs libraries are used in Codex. The company plans to bring Pierre’s code review and storage capabilities into Codex after closing.",
+      "url": "https://openai.com/index/openai-to-acquire-pierre/",
+      "published_at": "2026-11-04T00:00:00+00:00",
+      "verified_at": "2026-11-04T15:41:13.508Z",
+      "impact_score": 25,
+      "topics": [
+        "APIs e ferramentas"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/daybreak-red-aws-govcloud/",
+      "source_id": "openai",
+      "company": "OpenAI",
+      "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
+      "summary": "OpenAI made GPT-5.6 Cyber available to approved Daybreak Red customers in AWS GovCloud (US-East) for authorized vulnerability research, exploit validation and security testing, with practitioner review required.",
+      "url": "https://openai.com/index/daybreak-red-aws-govcloud/",
+      "published_at": "2026-11-04T00:00:00+00:00",
+      "verified_at": "2026-11-04T15:41:13.508Z",
+      "impact_score": 50,
+      "topics": [
+        "Modelos",
+        "Segurança",
+        "APIs e ferramentas"
+      ]
+    },
     {
       "id": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
       "source_id": "openai",
@@ -105,7 +135,7 @@
       "summary": "OpenAI presented advances in applying its models to mechanical and electrical engineering, simulations and end-to-end hardware design. Capability and workflow results are company-reported.",
       "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
       "published_at": "2026-11-03T00:00:00+00:00",
-      "verified_at": "2026-11-04T09:43:56.129Z",
+      "verified_at": "2026-11-04T15:41:13.508Z",
       "impact_score": 50,
       "topics": [
         "Pesquisa",
@@ -214,6 +244,20 @@
       ]
     },
     {
+      "id": "https://blogs.nvidia.com/blog/cities-physical-agentic-ai-applications/",
+      "source_id": "nvidia",
+      "company": "NVIDIA",
+      "title": "Cities Worldwide Build and Scale AI Services With NVIDIA Physical and Agentic AI",
+      "summary": "NVIDIA described partner deployments of physical and agentic AI for public services, infrastructure planning, mobility and digital twins. Deployment results are company-reported.",
+      "url": "https://blogs.nvidia.com/blog/cities-physical-agentic-ai-applications/",
+      "published_at": "2026-11-02T00:00:00+00:00",
+      "verified_at": "2026-11-03T09:42:05.574Z",
+      "impact_score": 22,
+      "topics": [
+        "APIs e ferramentas"
+      ]
+    },
+    {
       "id": "https://www.anthropic.com/research/provable-inference",
       "source_id": "anthropic",
       "company": "Anthropic",
@@ -227,20 +271,6 @@
         "Pesquisa",
         "Segurança",
         "Código aberto"
-      ]
-    },
-    {
-      "id": "https://blogs.nvidia.com/blog/cities-physical-agentic-ai-applications/",
-      "source_id": "nvidia",
-      "company": "NVIDIA",
-      "title": "Cities Worldwide Build and Scale AI Services With NVIDIA Physical and Agentic AI",
-      "summary": "NVIDIA described partner deployments of physical and agentic AI for public services, infrastructure planning, mobility and digital twins. Deployment results are company-reported.",
-      "url": "https://blogs.nvidia.com/blog/cities-physical-agentic-ai-applications/",
-      "published_at": "2026-11-02T00:00:00+00:00",
-      "verified_at": "2026-11-03T09:42:05.574Z",
-      "impact_score": 22,
-      "topics": [
-        "APIs e ferramentas"
       ]
     },
     {
@@ -286,20 +316,6 @@
       ]
     },
     {
-      "id": "https://openai.com/index/fair-use-benefits-everyone",
-      "source_id": "openai",
-      "company": "OpenAI",
-      "title": "Fair use benefits everyone",
-      "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation.",
-      "url": "https://openai.com/index/fair-use-benefits-everyone",
-      "published_at": "2026-10-30T00:00:00+00:00",
-      "verified_at": "2026-10-31T19:09:03.826519+00:00",
-      "impact_score": 10,
-      "topics": [
-        "Atualização oficial"
-      ]
-    },
-    {
       "id": "https://about.fb.com/news/2026/10/the-future-is-for-everyone-meta-and-cnib-partner-to-support-canadians-who-are-blind-deafblind-or-have-low-vision/",
       "source_id": "meta",
       "company": "Meta AI",
@@ -311,20 +327,6 @@
       "impact_score": 10,
       "topics": [
         "Atualização oficial"
-      ]
-    },
-    {
-      "id": "https://openai.com/index/updated-model-spec",
-      "source_id": "openai",
-      "company": "OpenAI",
-      "title": "An updated Model Spec for more capable and beneficial AI",
-      "summary": "OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent.",
-      "url": "https://openai.com/index/updated-model-spec",
-      "published_at": "2026-10-29T17:00:00+00:00",
-      "verified_at": "2026-10-31T19:09:03.826519+00:00",
-      "impact_score": 30,
-      "topics": [
-        "Modelos"
       ]
     },
     {
@@ -785,6 +787,20 @@
       ]
     },
     {
+      "id": "https://x.ai/news/x-subscription",
+      "source_id": "xai",
+      "company": "xAI / Grok",
+      "title": "Introducing The X Subscription",
+      "summary": "xAI announced a combined subscription covering Grok, Grok Bot, Cursor and X, with shared usage across Grok and Cursor tiers.",
+      "url": "https://x.ai/news/x-subscription",
+      "published_at": "2026-10-12T00:00:00+00:00",
+      "verified_at": "2026-10-31T21:39:20.776Z",
+      "impact_score": 10,
+      "topics": [
+        "Atualização oficial"
+      ]
+    },
+    {
       "id": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/",
       "source_id": "meta",
       "company": "Meta AI",
@@ -797,20 +813,6 @@
       "topics": [
         "Modelos",
         "APIs e ferramentas"
-      ]
-    },
-    {
-      "id": "https://x.ai/news/x-subscription",
-      "source_id": "xai",
-      "company": "xAI / Grok",
-      "title": "Introducing The X Subscription",
-      "summary": "xAI announced a combined subscription covering Grok, Grok Bot, Cursor and X, with shared usage across Grok and Cursor tiers.",
-      "url": "https://x.ai/news/x-subscription",
-      "published_at": "2026-10-12T00:00:00+00:00",
-      "verified_at": "2026-10-31T21:39:20.776Z",
-      "impact_score": 10,
-      "topics": [
-        "Atualização oficial"
       ]
     },
     {
