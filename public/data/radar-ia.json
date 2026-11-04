@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-04T15:41:13.508Z",
-  "last_successful_at": "2026-11-04T15:41:13.508Z",
+  "checked_at": "2026-11-04T21:34:37.584Z",
+  "last_successful_at": "2026-11-04T21:34:37.584Z",
   "publication_policy": "official_sources_automatic",
   "featured_id": "https://openai.com/index/daybreak-red-aws-govcloud/",
   "sources": [
@@ -10,7 +10,7 @@
       "nome": "OpenAI",
       "site": "https://openai.com/news/",
       "canal": "https://openai.com/news/rss.xml",
-      "checked_at": "2026-11-04T15:41:13.508Z",
+      "checked_at": "2026-11-04T21:34:37.584Z",
       "status": "ok",
       "item_count": 115
     },
@@ -19,7 +19,7 @@
       "nome": "Anthropic",
       "site": "https://www.anthropic.com/news",
       "canal": "https://www.anthropic.com/news",
-      "checked_at": "2026-11-04T15:41:13.508Z",
+      "checked_at": "2026-11-04T21:34:37.584Z",
       "status": "ok",
       "item_count": 20
     },
@@ -28,7 +28,7 @@
       "nome": "Google DeepMind",
       "site": "https://deepmind.google/blog/",
       "canal": "https://deepmind.google/blog/rss.xml",
-      "checked_at": "2026-11-04T15:41:13.508Z",
+      "checked_at": "2026-11-04T21:34:37.584Z",
       "status": "ok",
       "item_count": 15
     },
@@ -37,7 +37,7 @@
       "nome": "Mistral AI",
       "site": "https://mistral.ai/news/",
       "canal": "https://mistral.ai/news/rss",
-      "checked_at": "2026-11-04T15:41:13.508Z",
+      "checked_at": "2026-11-04T21:34:37.584Z",
       "status": "ok",
       "item_count": 6
     },
@@ -46,7 +46,7 @@
       "nome": "Meta AI",
       "site": "https://ai.meta.com/blog/",
       "canal": "https://about.fb.com/news/feed/",
-      "checked_at": "2026-11-04T15:41:13.508Z",
+      "checked_at": "2026-11-04T21:34:37.584Z",
       "status": "ok",
       "item_count": 5
     },
@@ -55,7 +55,7 @@
       "nome": "NVIDIA",
       "site": "https://blogs.nvidia.com/",
       "canal": "https://blogs.nvidia.com/blog/category/deep-learning/feed/",
-      "checked_at": "2026-11-04T15:41:13.508Z",
+      "checked_at": "2026-11-04T21:34:37.584Z",
       "status": "ok",
       "item_count": 2
     },
@@ -64,7 +64,7 @@
       "nome": "xAI / Grok",
       "site": "https://x.ai/news",
       "canal": "https://x.ai/news",
-      "checked_at": "2026-11-04T15:41:13.508Z",
+      "checked_at": "2026-11-04T21:34:37.584Z",
       "status": "ok",
       "item_count": 6
     },
@@ -73,7 +73,7 @@
       "nome": "DeepSeek",
       "site": "https://api-docs.deepseek.com/updates/",
       "canal": "https://api-docs.deepseek.com/updates/",
-      "checked_at": "2026-11-04T15:41:13.508Z",
+      "checked_at": "2026-11-04T21:34:37.584Z",
       "status": "ok",
       "item_count": 1
     },
@@ -82,7 +82,7 @@
       "nome": "Qwen / Alibaba",
       "site": "https://qwen.ai/blog",
       "canal": "https://qwenlm.github.io/blog/index.xml",
-      "checked_at": "2026-11-04T15:41:13.508Z",
+      "checked_at": "2026-11-04T21:34:37.584Z",
       "status": "no_recent_items",
       "item_count": 0
     },
@@ -91,7 +91,7 @@
       "nome": "Moonshot / Kimi",
       "site": "https://www.kimi.com/en/blog/",
       "canal": "https://www.kimi.com/en/blog/",
-      "checked_at": "2026-11-04T15:41:13.508Z",
+      "checked_at": "2026-11-04T21:34:37.584Z",
       "status": "ok",
       "item_count": 1
     }
@@ -119,7 +119,7 @@
       "summary": "OpenAI made GPT-5.6 Cyber available to approved Daybreak Red customers in AWS GovCloud (US-East) for authorized vulnerability research, exploit validation and security testing, with practitioner review required.",
       "url": "https://openai.com/index/daybreak-red-aws-govcloud/",
       "published_at": "2026-11-04T00:00:00+00:00",
-      "verified_at": "2026-11-04T15:41:13.508Z",
+      "verified_at": "2026-11-04T21:34:37.584Z",
       "impact_score": 50,
       "topics": [
         "Modelos",
