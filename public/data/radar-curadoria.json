@@ -1,8 +1,8 @@
 {
-  "item_id": "https://openai.com/index/daybreak-red-aws-govcloud/",
-  "titulo_pt": "Daybreak Red chega ao AWS GovCloud com o GPT-5.6 Cyber",
-  "resumo_pt": "A OpenAI disponibilizou o GPT-5.6 Cyber a clientes aprovados do Daybreak Red no AWS GovCloud (US-East). Segundo a empresa, o modelo apoia pesquisa autorizada de vulnerabilidades, validação de exploits e testes de segurança; especialistas devem revisar descobertas e correções.",
-  "por_que_importa": "A oferta leva um modelo especializado em cibersegurança a ambientes governamentais com requisitos de governança. A eficácia descrita é afirmação da OpenAI, sem validação independente.",
-  "source_url": "https://openai.com/index/daybreak-red-aws-govcloud/",
-  "updated_at": "2026-11-04T21:34:37.584Z"
+  "item_id": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+  "titulo_pt": "OpenAI relata pipeline autônomo que reduz caminhos para acesso root no Linux",
+  "resumo_pt": "A OpenAI afirma que um pipeline autônomo de segurança encontrou e validou 948 vulnerabilidades de escalonamento de privilégio no Linux e produziu correções. Os resultados, custos e taxas de sucesso foram divulgados pela empresa e não constituem avaliação independente.",
+  "por_que_importa": "O trabalho sugere que agentes podem ampliar auditorias de segurança e acelerar correções em software crítico. Os números são alegações da OpenAI, sem validação independente.",
+  "source_url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+  "updated_at": "2026-11-05T03:38:52.951Z"
 }
