@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-05T21:42:09.674Z",
-  "last_successful_at": "2026-11-05T21:42:09.674Z",
+  "checked_at": "2026-11-06T03:36:50.310Z",
+  "last_successful_at": "2026-11-06T03:36:50.310Z",
   "publication_policy": "official_sources_automatic",
   "featured_id": "https://openai.com/index/introducing-gpt-6-cyber/",
   "sources": [
@@ -10,7 +10,7 @@
       "nome": "OpenAI",
       "site": "https://openai.com/news/",
       "canal": "https://openai.com/news/rss.xml",
-      "checked_at": "2026-11-05T21:42:09.674Z",
+      "checked_at": "2026-11-06T03:36:50.310Z",
       "status": "ok",
       "item_count": 118
     },
@@ -19,7 +19,7 @@
       "nome": "Anthropic",
       "site": "https://www.anthropic.com/news",
       "canal": "https://www.anthropic.com/news",
-      "checked_at": "2026-11-05T21:42:09.674Z",
+      "checked_at": "2026-11-06T03:36:50.310Z",
       "status": "ok",
       "item_count": 22
     },
@@ -28,16 +28,16 @@
       "nome": "Google DeepMind",
       "site": "https://deepmind.google/blog/",
       "canal": "https://deepmind.google/blog/rss.xml",
-      "checked_at": "2026-11-05T21:42:09.674Z",
+      "checked_at": "2026-11-06T03:36:50.310Z",
       "status": "ok",
-      "item_count": 15
+      "item_count": 16
     },
     {
       "id": "mistral",
       "nome": "Mistral AI",
       "site": "https://mistral.ai/news/",
       "canal": "https://mistral.ai/news/rss",
-      "checked_at": "2026-11-05T21:42:09.674Z",
+      "checked_at": "2026-11-06T03:36:50.310Z",
       "status": "ok",
       "item_count": 6
     },
@@ -46,7 +46,7 @@
       "nome": "Meta AI",
       "site": "https://ai.meta.com/blog/",
       "canal": "https://about.fb.com/news/feed/",
-      "checked_at": "2026-11-05T21:42:09.674Z",
+      "checked_at": "2026-11-06T03:36:50.310Z",
       "status": "ok",
       "item_count": 6
     },
@@ -55,7 +55,7 @@
       "nome": "NVIDIA",
       "site": "https://blogs.nvidia.com/",
       "canal": "https://blogs.nvidia.com/blog/category/deep-learning/feed/",
-      "checked_at": "2026-11-05T21:42:09.674Z",
+      "checked_at": "2026-11-06T03:36:50.310Z",
       "status": "ok",
       "item_count": 4
     },
@@ -64,7 +64,7 @@
       "nome": "xAI / Grok",
       "site": "https://x.ai/news",
       "canal": "https://x.ai/news",
-      "checked_at": "2026-11-05T21:42:09.674Z",
+      "checked_at": "2026-11-06T03:36:50.310Z",
       "status": "ok",
       "item_count": 6
     },
@@ -73,7 +73,7 @@
       "nome": "DeepSeek",
       "site": "https://api-docs.deepseek.com/updates/",
       "canal": "https://api-docs.deepseek.com/updates/",
-      "checked_at": "2026-11-05T21:42:09.674Z",
+      "checked_at": "2026-11-06T03:36:50.310Z",
       "status": "ok",
       "item_count": 1
     },
@@ -82,7 +82,7 @@
       "nome": "Qwen / Alibaba",
       "site": "https://qwen.ai/blog",
       "canal": "https://qwenlm.github.io/blog/index.xml",
-      "checked_at": "2026-11-05T21:42:09.674Z",
+      "checked_at": "2026-11-06T03:36:50.310Z",
       "status": "no_recent_items",
       "item_count": 0
     },
@@ -91,7 +91,7 @@
       "nome": "Moonshot / Kimi",
       "site": "https://www.kimi.com/en/blog/",
       "canal": "https://www.kimi.com/en/blog/",
-      "checked_at": "2026-11-05T21:42:09.674Z",
+      "checked_at": "2026-11-06T03:36:50.310Z",
       "status": "ok",
       "item_count": 1
     }
@@ -105,11 +105,26 @@
       "summary": "OpenAI introduced GPT‑6 Cyber for authorized security research, reporting gains in vulnerability discovery and scope adherence. Benchmark and real-world results are company-reported, not independently validated.",
       "url": "https://openai.com/index/introducing-gpt-6-cyber/",
       "published_at": "2026-11-05T00:00:00+00:00",
-      "verified_at": "2026-11-05T21:42:09.674Z",
+      "verified_at": "2026-11-06T03:36:50.310Z",
       "impact_score": 60,
       "topics": [
         "Modelos",
         "Segurança",
+        "APIs e ferramentas"
+      ]
+    },
+    {
+      "id": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "source_id": "google",
+      "company": "Google DeepMind",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "summary": "Google launched Gemini Omni 1.2 Flash with native video clips up to 15 seconds, conversational editing and general availability via the Gemini API and Cloud. Pricing and performance claims are Google’s.",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "published_at": "2026-11-05T00:00:00+00:00",
+      "verified_at": "2026-11-06T03:36:50.310Z",
+      "impact_score": 50,
+      "topics": [
+        "Modelos",
         "APIs e ferramentas"
       ]
     },
@@ -860,20 +875,6 @@
       "impact_score": 10,
       "topics": [
         "Atualização oficial"
-      ]
-    },
-    {
-      "id": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
-      "source_id": "google",
-      "company": "Google DeepMind",
-      "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
-      "summary": "",
-      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
-      "published_at": "2026-10-06T19:57:04+00:00",
-      "verified_at": "2026-10-31T19:09:03.826519+00:00",
-      "impact_score": 30,
-      "topics": [
-        "Modelos"
       ]
     },
     {
