@@ -4,8 +4,8 @@
   "url": "https://hbr.org/2024/01/the-right-way-to-build-your-brand",
   "tipo": "artigo",
   "trilha": "marcas",
-  "data": "2024-01-01",
-  "data_precisa": true,
+  "data": "",
+  "data_precisa": false,
   "resumo": "Promessas de marca e publicidade.",
   "limites": "Publicação executiva; verificar acesso ao original.",
   "autores": "Roger L. Martin, Jann Schwarz e Mimi Turner",
@@ -15,5 +15,6 @@
   "evidencia": "análise executiva",
   "justificativa": "Referência identificada na instituição de origem, com autoria e natureza da evidência explicitadas.",
   "revisor": "Harpya · curadoria inicial",
-  "revisado_em": "2026-11-06"
+  "revisado_em": "2026-11-06",
+  "ano_publicacao": 2024
 }

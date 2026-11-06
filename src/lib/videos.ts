@@ -33,14 +33,14 @@ function semana(d: Date): number {
  * girando pelos módulos. O site é reconstruído várias vezes por dia pelo robô de
  * news, então a seleção muda sozinha a cada semana.
  */
-export function selecaoDaSemana(hoje = new Date(), quantos = 3): Video[] {
+export function selecaoDaSemana(hoje = new Date(), quantos = 3, catalogo: Video[] = VIDEOS, modulos: Modulo[] = MODULOS): Video[] {
   const s = semana(hoje) + hoje.getFullYear() * 53;
   const out: Video[] = [];
   for (let i = 0; i < quantos; i++) {
     const nivel = NIVEIS[i % NIVEIS.length];
-    for (let k = 0; k < MODULOS.length; k++) {
-      const mod = MODULOS[(s + i * 4 + k) % MODULOS.length].numero;
-      const opcoes = VIDEOS.filter((v) => v.modulo === mod && v.nivel === nivel && !out.some((o) => o.modulo === mod));
+    for (let k = 0; k < modulos.length; k++) {
+      const mod = modulos[(s + i * 4 + k) % modulos.length].numero;
+      const opcoes = catalogo.filter((v) => v.modulo === mod && v.nivel === nivel && !out.some((o) => o.modulo === mod));
       if (opcoes.length) { out.push(opcoes[s % opcoes.length]); break; }
     }
   }

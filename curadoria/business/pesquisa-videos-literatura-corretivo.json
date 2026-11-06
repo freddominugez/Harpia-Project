@@ -1,0 +1,2006 @@
+{
+  "schema_version": "1.0",
+  "pesquisa_em": "2026-11-06",
+  "escopo": "Pesquisa editorial corretiva de vídeos e literatura; sem edição de aplicação e sem publicação. Não comprova paridade estrutural ou volume do projeto original.",
+  "estado": "pesquisa_de_candidatos; revisão editorial integral pendente",
+  "criterios": [
+    "Somente os oito channel_id aprovados no catálogo.",
+    "Página individual do YouTube valida canal, título, ID, data e duração; busca geral não basta.",
+    "Credenciais demonstradas por descrição da instituição ou página institucional primária.",
+    "Excluir anúncios de curso/programa como conteúdo curricular.",
+    "Nenhuma classificação de nível é certificação do emissor: trata-se de proposta pedagógica, a confirmar em revisão integral.",
+    "Não tratar metadados, lista de legendas ou disponibilidade de transcrição como conteúdo integral revisado."
+  ],
+  "metodologia": {
+    "descoberta": "Busca pública interna nos canais oficiais, seguida de páginas individuais públicas de vídeo.",
+    "metadados": "videoDetails e playerMicroformatRenderer da página oficial do YouTube, consultados em 2026-11-06; channel_id comparado por igualdade com catálogo aprovado.",
+    "busca_credenciais": "Páginas oficiais de instituições e editoras via web; descrições institucionais do YouTube são evidência primária quando indicado.",
+    "limite": "Não houve audição integral nem revisão de transcrições integrais. Embutibilidade, disponibilidade regional, qualidade de legenda e ausência de publicidade no decorrer de cada vídeo exigem validação posterior."
+  },
+  "quantitativos": {
+    "videos_candidatos_verificados": 24,
+    "canais_representados": 8,
+    "por_canal": {
+      "hbr": 3,
+      "hbs": 2,
+      "mit-smr": 3,
+      "insead": 3,
+      "wharton": 3,
+      "lbs": 3,
+      "fgv": 3,
+      "fdc": 4
+    },
+    "por_nivel_proposto": {
+      "intermediario": 10,
+      "iniciante": 8,
+      "avancado": 6
+    },
+    "idiomas_propostos": {
+      "en": 17,
+      "pt-BR": 7
+    },
+    "duracao_total_segundos": 36345,
+    "duracao_total_horas": 10.1,
+    "videos_com_revisao_integral_concluida": 0,
+    "literatura_isbns_confirmados": 8,
+    "capas_com_licenca_republicacao_confirmada": 0,
+    "observacao_volume": "São candidatos distintos, não quantidade necessária ao clone. O volume necessário deve ser confrontado com contagem das seções, cards, trilhas, aulas e biblioteca do original."
+  },
+  "esforco_de_revisao": {
+    "base_medida_segundos_video": 36345,
+    "hipotese_planejamento": "Somente para dimensionar: uma passagem integral toma pelo menos a duração nominal. Anotações, validação de alegações, resumo, questões e revisão técnica acrescentam trabalho não medido aqui.",
+    "mínimo_horas_audicao_1x": 10.1,
+    "tarefas_por_video": [
+      "Revisão integral e indicação dos trechos relevantes.",
+      "Checagem de alegações, credenciais e conflitos de interesse.",
+      "Confirmação de idioma, legenda, duração e reprodução no ambiente.",
+      "Síntese autoral, referência e enquadramento na seção equivalente da Tecnologia."
+    ]
+  },
+  "lacunas": [
+    "Não há 24 vídeos aprovados editorialmente: há 24 candidatos com metadados confirmados e zero revisões integrais.",
+    "O lote concentra fundamentos de estratégia, consumidor e IA. Mídia, distribuição, serviço, economia aplicada, operações e administração geral precisam ser dimensionados pela matriz real do original.",
+    "Sete vídeos são de instituições brasileiras e propõem português; a maior parte do lote é em inglês. Confirmar idioma falado e acessibilidade antes de estabelecer metas linguísticas.",
+    "Entrevistas acadêmicas e institucionais não são excluídas só por formato podcast; credenciais foram identificadas, mas alegações ainda dependem de revisão integral.",
+    "Um vídeo INSEAD possui faixa automática nl inesperada; revisão de idioma é obrigatória.",
+    "Livros são referências comerciais: não reproduzir livros completos; capa publicamente acessível não comprova licença de reutilização.",
+    "Tradução da edição específica de vários títulos não foi confirmada; nunca apresentar título traduzido informal como edição portuguesa publicada."
+  ],
+  "videos": [
+    {
+      "id": "mYF2_FBCvXw",
+      "titulo_oficial": "The Five Competitive Forces That Shape Strategy",
+      "url": "https://www.youtube.com/watch?v=mYF2_FBCvXw",
+      "canal": {
+        "id_catalogo": "hbr",
+        "nome": "Harvard Business Review",
+        "channel_id_confirmado": "UCWo4IA01TXzBeGJJKWHOG9g",
+        "url": "https://www.youtube.com/channel/UCWo4IA01TXzBeGJJKWHOG9g",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2008-06-30T09:03:44-07:00",
+      "duracao_segundos": 792,
+      "idioma": {
+        "proposto": "en",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Estratégia competitiva",
+      "nivel_proposto": "intermediario",
+      "justificativa_nivel": "Aplicar cinco forças exige distinguir rivalidade, substitutos e poder de negociação.",
+      "especialistas": "Michael E. Porter; professor de Harvard, identificado pela HBR na descrição oficial.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=mYF2_FBCvXw",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [
+              "en"
+            ],
+            "automaticas": [
+              "en"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "disponibilidade": "texto integral independente não confirmado; somente lista de legendas quando presente"
+        }
+      },
+      "ressalvas": [
+        "Conteúdo antigo: usar como fundamento ou memória de método; confrontar aplicações e dados com fontes atuais."
+      ]
+    },
+    {
+      "id": "hw8FfogTUhU",
+      "titulo_oficial": "The Explainer: Don’t Just Sell Stuff — Satisfy Needs",
+      "url": "https://www.youtube.com/watch?v=hw8FfogTUhU",
+      "canal": {
+        "id_catalogo": "hbr",
+        "nome": "Harvard Business Review",
+        "channel_id_confirmado": "UCWo4IA01TXzBeGJJKWHOG9g",
+        "url": "https://www.youtube.com/channel/UCWo4IA01TXzBeGJJKWHOG9g",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2019-07-23T12:26:54-07:00",
+      "duracao_segundos": 119,
+      "idioma": {
+        "proposto": "en",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Orientação para o cliente",
+      "nivel_proposto": "iniciante",
+      "justificativa_nivel": "Explicação curta de necessidade do cliente e miopia de marketing, adequada à introdução.",
+      "especialistas": "Animação editorial HBR sobre Theodore Levitt; narrador não identificado, não atribuir fala ou apresentação a Levitt.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=hw8FfogTUhU",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [
+              "en"
+            ],
+            "automaticas": [
+              "en"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "disponibilidade": "texto integral independente não confirmado; somente lista de legendas quando presente"
+        }
+      },
+      "ressalvas": []
+    },
+    {
+      "id": "sYdaa02CS5E",
+      "titulo_oficial": "The Explainer: Blue Ocean Strategy",
+      "url": "https://www.youtube.com/watch?v=sYdaa02CS5E",
+      "canal": {
+        "id_catalogo": "hbr",
+        "nome": "Harvard Business Review",
+        "channel_id_confirmado": "UCWo4IA01TXzBeGJJKWHOG9g",
+        "url": "https://www.youtube.com/channel/UCWo4IA01TXzBeGJJKWHOG9g",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2019-07-16T07:26:25-07:00",
+      "duracao_segundos": 140,
+      "idioma": {
+        "proposto": "en",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Posicionamento e inovação de valor",
+      "nivel_proposto": "iniciante",
+      "justificativa_nivel": "Introduz o contraste entre mercados existentes e criação de demanda, antes de aplicação de ferramentas.",
+      "especialistas": "Animação editorial HBR; narrador não identificado, autoria da teoria não equivale a presença de seus autores.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=sYdaa02CS5E",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [
+              "en"
+            ],
+            "automaticas": [
+              "en"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "disponibilidade": "texto integral independente não confirmado; somente lista de legendas quando presente"
+        }
+      },
+      "ressalvas": []
+    },
+    {
+      "id": "xdebpIumAMw",
+      "titulo_oficial": "How a Museum Marketing Team Used AI to Bring People Closer to Art | Cold Call",
+      "url": "https://www.youtube.com/watch?v=xdebpIumAMw",
+      "canal": {
+        "id_catalogo": "hbs",
+        "nome": "Harvard Business School",
+        "channel_id_confirmado": "UCk8n46m74K5XWfdeBzOXDfA",
+        "url": "https://www.youtube.com/channel/UCk8n46m74K5XWfdeBzOXDfA",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2026-07-21T05:00:19-07:00",
+      "duracao_segundos": 2264,
+      "idioma": {
+        "proposto": "en",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Marca, IA e governança",
+      "nivel_proposto": "intermediario",
+      "justificativa_nivel": "Caso organizacional com tensão entre engajamento, autenticidade e risco reputacional.",
+      "especialistas": "Julian De Freitas, pesquisador de Marketing da HBS; John Connolly, diretor de Marketing dos Harvard Art Museums. Descrição do YouTube usa Assistant Professor; página editorial contemporânea usa Associate Professor. Evitar fixar hierarquia desatualizada.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=xdebpIumAMw",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        },
+        {
+          "url": "https://aiinstitute.hbs.edu/d3-associates-spotlight-series-elie-ofek-and-julian-de-freitas/",
+          "verifica": [
+            "identificacao_e_credenciais_do_especialista"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [
+              "en-US"
+            ],
+            "automaticas": [
+              "ar",
+              "bn",
+              "nl-NL",
+              "en",
+              "fr-FR",
+              "de-DE",
+              "iw",
+              "hi",
+              "id",
+              "it",
+              "ja",
+              "ko",
+              "ml",
+              "pl",
+              "pt-BR",
+              "ru",
+              "es-US",
+              "uk"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "pagina_de_transcricao_anunciada": "https://hbr.org/podcast/2026/07/how-a-museum-marketing-team-used-ai-to-bring-people-closer-to-art",
+          "disponibilidade": "seção Transcript presente na página editorial HBR; revisão integral pendente"
+        }
+      },
+      "ressalvas": []
+    },
+    {
+      "id": "cHclvxMTfPI",
+      "titulo_oficial": "Managing Through Crisis with Sandra Sucher",
+      "url": "https://www.youtube.com/watch?v=cHclvxMTfPI",
+      "canal": {
+        "id_catalogo": "hbs",
+        "nome": "Harvard Business School",
+        "channel_id_confirmado": "UCk8n46m74K5XWfdeBzOXDfA",
+        "url": "https://www.youtube.com/channel/UCk8n46m74K5XWfdeBzOXDfA",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2022-04-21T03:00:24-07:00",
+      "duracao_segundos": 581,
+      "idioma": {
+        "proposto": "en",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Confiança e gestão de crises",
+      "nivel_proposto": "iniciante",
+      "justificativa_nivel": "Introduz confiança institucional e decisões de liderança em linguagem de entrevista.",
+      "especialistas": "Sandra Sucher, professora da HBS, entrevistada por Brian Kenny; identificação na descrição oficial.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=cHclvxMTfPI",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        },
+        {
+          "url": "https://www.library.hbs.edu/working-knowledge/the-quest-for-better-layoffs",
+          "verifica": [
+            "identificacao_e_credenciais_do_especialista"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [
+              "en-US"
+            ],
+            "automaticas": [
+              "en"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "disponibilidade": "texto integral independente não confirmado; somente lista de legendas quando presente"
+        }
+      },
+      "ressalvas": []
+    },
+    {
+      "id": "Vf03g8Apn9M",
+      "titulo_oficial": "Reimagining Marketing Strategy for the AI Era",
+      "url": "https://www.youtube.com/watch?v=Vf03g8Apn9M",
+      "canal": {
+        "id_catalogo": "mit-smr",
+        "nome": "MIT Sloan Management Review",
+        "channel_id_confirmado": "UC0wOrSaO_sBGGU9Jderpk7g",
+        "url": "https://www.youtube.com/channel/UC0wOrSaO_sBGGU9Jderpk7g",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2025-09-25T04:29:01-07:00",
+      "duracao_segundos": 3577,
+      "idioma": {
+        "proposto": "en",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Estratégia de marketing e IA",
+      "nivel_proposto": "avancado",
+      "justificativa_nivel": "Webinar sobre seleção de oportunidades, reação do consumidor e governança de IA, requer fundamentos de marketing.",
+      "especialistas": "Oguz A. Acar, professor de Marketing e Inovação no King’s College London.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=Vf03g8Apn9M",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        },
+        {
+          "url": "https://kclpure.kcl.ac.uk/portal/en/persons/oguz.acar/",
+          "verifica": [
+            "identificacao_e_credenciais_do_especialista"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [
+              "en"
+            ],
+            "automaticas": [
+              "en"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "disponibilidade": "texto integral independente não confirmado; somente lista de legendas quando presente"
+        }
+      },
+      "ressalvas": []
+    },
+    {
+      "id": "2cAwSp2hERY",
+      "titulo_oficial": "Marketing With Generative AI: Harvard Business School’s Ayelet Israeli",
+      "url": "https://www.youtube.com/watch?v=2cAwSp2hERY",
+      "canal": {
+        "id_catalogo": "mit-smr",
+        "nome": "MIT Sloan Management Review",
+        "channel_id_confirmado": "UC0wOrSaO_sBGGU9Jderpk7g",
+        "url": "https://www.youtube.com/channel/UC0wOrSaO_sBGGU9Jderpk7g",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2024-01-25T07:16:58-08:00",
+      "duracao_segundos": 1909,
+      "idioma": {
+        "proposto": "en",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Pesquisa de mercado e IA generativa",
+      "nivel_proposto": "avancado",
+      "justificativa_nivel": "Discute limites de simulação de grupos focais e pesquisas; exige noções de validade e viés.",
+      "especialistas": "Ayelet Israeli, professora da unidade de Marketing da HBS e cofundadora do Customer Intelligence Lab; PhD em Marketing pela Kellogg, segundo biografia publicada pelo MIT SMR.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=2cAwSp2hERY",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [],
+            "automaticas": [
+              "en"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "pagina_de_transcricao_anunciada": "https://sloanreview.mit.edu/audio/marketing-with-generative-ai-harvard-business-schools-ayelet-israeli/",
+          "disponibilidade": "anunciada_na_descricao_oficial; acesso da página restrito nesta pesquisa"
+        }
+      },
+      "ressalvas": [
+        "Formato de entrevista/podcast aceito como candidato por credenciais institucionais demonstradas; rever vieses e alegações na íntegra."
+      ]
+    },
+    {
+      "id": "1eAAPzwx0HI",
+      "titulo_oficial": "Building Customer Value: From Theory to Practice",
+      "url": "https://www.youtube.com/watch?v=1eAAPzwx0HI",
+      "canal": {
+        "id_catalogo": "mit-smr",
+        "nome": "MIT Sloan Management Review",
+        "channel_id_confirmado": "UC0wOrSaO_sBGGU9Jderpk7g",
+        "url": "https://www.youtube.com/channel/UC0wOrSaO_sBGGU9Jderpk7g",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2025-04-22T02:55:05-07:00",
+      "duracao_segundos": 3569,
+      "idioma": {
+        "proposto": "en",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Valor e portfólio de clientes",
+      "nivel_proposto": "avancado",
+      "justificativa_nivel": "Integra métricas, previsão e modelos causais; indicado após fundamentos de rentabilidade e retenção.",
+      "especialistas": "Michael D. Johnson, professor e dean emeritus de Cornell; Fred Selnes, professor de Marketing na BI Norwegian Business School; mediação de Abbie Lundberg.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=1eAAPzwx0HI",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        },
+        {
+          "url": "https://sloanreview.mit.edu/video/building-customer-value-from-theory-to-practice/",
+          "verifica": [
+            "identificacao_e_credenciais_do_especialista"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [
+              "en"
+            ],
+            "automaticas": [
+              "en"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "disponibilidade": "texto integral independente não confirmado; somente lista de legendas quando presente"
+        }
+      },
+      "ressalvas": []
+    },
+    {
+      "id": "bwtZb60BxlU",
+      "titulo_oficial": "INSEAD Professor Pierre Chandon on how food marketing affects how people eat",
+      "url": "https://www.youtube.com/watch?v=bwtZb60BxlU",
+      "canal": {
+        "id_catalogo": "insead",
+        "nome": "INSEAD",
+        "channel_id_confirmado": "UC9aeQQ-NqjHS3nfiod2PMSA",
+        "url": "https://www.youtube.com/channel/UC9aeQQ-NqjHS3nfiod2PMSA",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2012-11-07T21:52:08-08:00",
+      "duracao_segundos": 676,
+      "idioma": {
+        "proposto": "en",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Comportamento do consumidor e alimentação",
+      "nivel_proposto": "intermediario",
+      "justificativa_nivel": "Relaciona pesquisa em consumo e decisões de marketing; pede comparação crítica com contexto atual.",
+      "especialistas": "Pierre Chandon, professor de Marketing do INSEAD e pesquisador de alimentação e consumo.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=bwtZb60BxlU",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        },
+        {
+          "url": "https://www.insead.edu/faculty/pierre-chandon",
+          "verifica": [
+            "identificacao_e_credenciais_do_especialista"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [],
+            "automaticas": [
+              "en"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "disponibilidade": "texto integral independente não confirmado; somente lista de legendas quando presente"
+        }
+      },
+      "ressalvas": [
+        "Conteúdo antigo: usar como fundamento ou memória de método; confrontar aplicações e dados com fontes atuais."
+      ]
+    },
+    {
+      "id": "akfnG4tEgYA",
+      "titulo_oficial": "How word-of-mouth marketing can backfire among close friends",
+      "url": "https://www.youtube.com/watch?v=akfnG4tEgYA",
+      "canal": {
+        "id_catalogo": "insead",
+        "nome": "INSEAD",
+        "channel_id_confirmado": "UC9aeQQ-NqjHS3nfiod2PMSA",
+        "url": "https://www.youtube.com/channel/UC9aeQQ-NqjHS3nfiod2PMSA",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2016-05-09T02:11:32-07:00",
+      "duracao_segundos": 416,
+      "idioma": {
+        "proposto": "en",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Comunicação boca a boca",
+      "nivel_proposto": "intermediario",
+      "justificativa_nivel": "Apresenta achados sobre proximidade social e valência de recomendações, úteis para discutir limites de generalização.",
+      "especialistas": "David Dubois, professor de Marketing do INSEAD identificado no artigo institucional associado.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=akfnG4tEgYA",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        },
+        {
+          "url": "https://knowledge.insead.edu/marketing/close-friends-could-darken-word-mouth-marketing",
+          "verifica": [
+            "identificacao_e_credenciais_do_especialista"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [],
+            "automaticas": [
+              "en"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "disponibilidade": "texto integral independente não confirmado; somente lista de legendas quando presente"
+        }
+      },
+      "ressalvas": []
+    },
+    {
+      "id": "XowaDm1GEVk",
+      "titulo_oficial": "Understanding consumer behaviour, from the inside out",
+      "url": "https://www.youtube.com/watch?v=XowaDm1GEVk",
+      "canal": {
+        "id_catalogo": "insead",
+        "nome": "INSEAD",
+        "channel_id_confirmado": "UC9aeQQ-NqjHS3nfiod2PMSA",
+        "url": "https://www.youtube.com/channel/UC9aeQQ-NqjHS3nfiod2PMSA",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2018-04-01T21:34:15-07:00",
+      "duracao_segundos": 325,
+      "idioma": {
+        "proposto": "en",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Neurociência da decisão e consumo",
+      "nivel_proposto": "intermediario",
+      "justificativa_nivel": "Introdução a uma linha de pesquisa com inferências e métodos que pedem leitura crítica, sem promessas de controle mental.",
+      "especialistas": "Hilke Plassmann, professora de Marketing do INSEAD e pesquisadora em neurociência da decisão; descrição histórica usa Associate Professor.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=XowaDm1GEVk",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        },
+        {
+          "url": "https://www.insead.edu/events/neuroeconomics-summer-school",
+          "verifica": [
+            "identificacao_e_credenciais_do_especialista"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [],
+            "automaticas": [
+              "nl"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "disponibilidade": "texto integral independente não confirmado; somente lista de legendas quando presente"
+        }
+      },
+      "ressalvas": [
+        "Player retornou apenas faixa automática nl, incompatível com título e apresentação institucionais em inglês. Idioma falado e legendas exigem conferência manual; não prometer legenda inglesa/portuguesa."
+      ]
+    },
+    {
+      "id": "Jn4xIHu0cmI",
+      "titulo_oficial": "BizTalks 2015: Barbara Kahn on “Marketing Magic: Managing Consumer Perceptions.”",
+      "url": "https://www.youtube.com/watch?v=Jn4xIHu0cmI",
+      "canal": {
+        "id_catalogo": "wharton",
+        "nome": "Wharton School",
+        "channel_id_confirmado": "UCU9Z1eLsDa_meEfsmx-Ys0w",
+        "url": "https://www.youtube.com/channel/UCU9Z1eLsDa_meEfsmx-Ys0w",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2015-07-22T12:26:48-07:00",
+      "duracao_segundos": 409,
+      "idioma": {
+        "proposto": "en",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Percepção de variedade e escolha",
+      "nivel_proposto": "iniciante",
+      "justificativa_nivel": "Demonstração curta sobre percepção do consumidor, útil antes de aprofundar métodos experimentais.",
+      "especialistas": "Barbara E. Kahn, professora de Marketing da Wharton.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=Jn4xIHu0cmI",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        },
+        {
+          "url": "https://marketing.wharton.upenn.edu/profile/kahn/",
+          "verifica": [
+            "identificacao_e_credenciais_do_especialista"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [],
+            "automaticas": [
+              "ar",
+              "bn",
+              "nl-NL",
+              "en",
+              "fr-FR",
+              "de-DE",
+              "iw",
+              "hi",
+              "id",
+              "it",
+              "ja",
+              "ko",
+              "ml",
+              "pl",
+              "pt-BR",
+              "pa",
+              "ru",
+              "es-US",
+              "ta",
+              "uk"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "disponibilidade": "texto integral independente não confirmado; somente lista de legendas quando presente"
+        }
+      },
+      "ressalvas": []
+    },
+    {
+      "id": "C4Rq8G10xOg",
+      "titulo_oficial": "Professor Paul Green: The Technique of Market Research",
+      "url": "https://www.youtube.com/watch?v=C4Rq8G10xOg",
+      "canal": {
+        "id_catalogo": "wharton",
+        "nome": "Wharton School",
+        "channel_id_confirmado": "UCU9Z1eLsDa_meEfsmx-Ys0w",
+        "url": "https://www.youtube.com/channel/UCU9Z1eLsDa_meEfsmx-Ys0w",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2012-05-01T12:44:56-07:00",
+      "duracao_segundos": 3405,
+      "idioma": {
+        "proposto": "en",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Métodos de pesquisa de mercado",
+      "nivel_proposto": "avancado",
+      "justificativa_nivel": "História de modelagem, psicometria, análise conjunta e agrupamento; requer estatística e não serve como atualização de ferramentas.",
+      "especialistas": "Paul E. Green, professor emérito de Marketing da Wharton, identificado na descrição oficial.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=C4Rq8G10xOg",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [],
+            "automaticas": [
+              "en"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "disponibilidade": "texto integral independente não confirmado; somente lista de legendas quando presente"
+        }
+      },
+      "ressalvas": [
+        "Conteúdo antigo: usar como fundamento ou memória de método; confrontar aplicações e dados com fontes atuais."
+      ]
+    },
+    {
+      "id": "cX88ia-4-6o",
+      "titulo_oficial": "Professor Paul Green: The Practice of Market Research",
+      "url": "https://www.youtube.com/watch?v=cX88ia-4-6o",
+      "canal": {
+        "id_catalogo": "wharton",
+        "nome": "Wharton School",
+        "channel_id_confirmado": "UCU9Z1eLsDa_meEfsmx-Ys0w",
+        "url": "https://www.youtube.com/channel/UCU9Z1eLsDa_meEfsmx-Ys0w",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2012-05-01T12:11:02-07:00",
+      "duracao_segundos": 2499,
+      "idioma": {
+        "proposto": "en",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Aplicações de pesquisa de mercado",
+      "nivel_proposto": "avancado",
+      "justificativa_nivel": "Aplicações de análise conjunta e escalonamento; indicado com conhecimento dos fundamentos quantitativos.",
+      "especialistas": "Paul E. Green, professor emérito de Marketing da Wharton, identificado na descrição oficial.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=cX88ia-4-6o",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [],
+            "automaticas": [
+              "en"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "disponibilidade": "texto integral independente não confirmado; somente lista de legendas quando presente"
+        }
+      },
+      "ressalvas": [
+        "Conteúdo antigo: usar como fundamento ou memória de método; confrontar aplicações e dados com fontes atuais."
+      ]
+    },
+    {
+      "id": "vw9dqka3oDg",
+      "titulo_oficial": "AI-ready marketing: The next shift in digital marketing strategy",
+      "url": "https://www.youtube.com/watch?v=vw9dqka3oDg",
+      "canal": {
+        "id_catalogo": "lbs",
+        "nome": "London Business School",
+        "channel_id_confirmado": "UCRPKXKBG8n6r6vIXoxsD2pQ",
+        "url": "https://www.youtube.com/channel/UCRPKXKBG8n6r6vIXoxsD2pQ",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2025-05-14T03:39:39-07:00",
+      "duracao_segundos": 1768,
+      "idioma": {
+        "proposto": "en",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Marketing digital, mensuração e IA",
+      "nivel_proposto": "intermediario",
+      "justificativa_nivel": "Discussão sobre plataformas e mensuração a ser contextualizada com possíveis interesses de fornecedor.",
+      "especialistas": "Xu Zhang, professora de Marketing da LBS; Alex Schultz, CMO e VP de Analytics da Meta, segundo descrição institucional; mediação de Sergei Guriev.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=vw9dqka3oDg",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        },
+        {
+          "url": "https://www.london.edu/faculty-and-research/faculty-profiles/x/xu-zhang?entry=true",
+          "verifica": [
+            "identificacao_e_credenciais_do_especialista"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [],
+            "automaticas": [
+              "en"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "disponibilidade": "texto integral independente não confirmado; somente lista de legendas quando presente"
+        }
+      },
+      "ressalvas": [
+        "Formato de entrevista/podcast aceito como candidato por credenciais institucionais demonstradas; rever vieses e alegações na íntegra."
+      ]
+    },
+    {
+      "id": "lcmLaRG7pI8",
+      "titulo_oficial": "Exciting your customers through price | London Business School",
+      "url": "https://www.youtube.com/watch?v=lcmLaRG7pI8",
+      "canal": {
+        "id_catalogo": "lbs",
+        "nome": "London Business School",
+        "channel_id_confirmado": "UCRPKXKBG8n6r6vIXoxsD2pQ",
+        "url": "https://www.youtube.com/channel/UCRPKXKBG8n6r6vIXoxsD2pQ",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2008-11-11T06:01:33-08:00",
+      "duracao_segundos": 246,
+      "idioma": {
+        "proposto": "en",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Precificação e experiência do cliente",
+      "nivel_proposto": "iniciante",
+      "justificativa_nivel": "Vídeo conceitual curto para iniciar discussão de preço além de desconto.",
+      "especialistas": "Marco Bertini, identificado como Associate Professor na descrição histórica da LBS.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=lcmLaRG7pI8",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [],
+            "automaticas": [
+              "en"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "disponibilidade": "texto integral independente não confirmado; somente lista de legendas quando presente"
+        }
+      },
+      "ressalvas": [
+        "Conteúdo antigo: usar como fundamento ou memória de método; confrontar aplicações e dados com fontes atuais.",
+        "Descrição inclui link geral a executive education; não se apresenta como anúncio de programa no título. Revisão integral deve confirmar predominância didática."
+      ]
+    },
+    {
+      "id": "BwKHQZfIZ4Y",
+      "titulo_oficial": "Simona Botti: What if freedom of choice spread unhappiness? | London Business School",
+      "url": "https://www.youtube.com/watch?v=BwKHQZfIZ4Y",
+      "canal": {
+        "id_catalogo": "lbs",
+        "nome": "London Business School",
+        "channel_id_confirmado": "UCRPKXKBG8n6r6vIXoxsD2pQ",
+        "url": "https://www.youtube.com/channel/UCRPKXKBG8n6r6vIXoxsD2pQ",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2015-11-09T02:14:11-08:00",
+      "duracao_segundos": 182,
+      "idioma": {
+        "proposto": "en",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Escolha e bem-estar do consumidor",
+      "nivel_proposto": "iniciante",
+      "justificativa_nivel": "Introduz excesso de escolha e satisfação sem exigir modelagem.",
+      "especialistas": "Simona Botti, professora de Marketing da LBS, pesquisadora de comportamento e decisão.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=BwKHQZfIZ4Y",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        },
+        {
+          "url": "https://www.london.edu/faculty-and-research/faculty-profiles/b/botti-s?entry=true",
+          "verifica": [
+            "identificacao_e_credenciais_do_especialista"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [],
+            "automaticas": [
+              "en"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "disponibilidade": "texto integral independente não confirmado; somente lista de legendas quando presente"
+        }
+      },
+      "ressalvas": []
+    },
+    {
+      "id": "nFqu5xY99sY",
+      "titulo_oficial": "#48 Marketing em 2026: Inteligência Artificial e Geração de Valor",
+      "url": "https://www.youtube.com/watch?v=nFqu5xY99sY",
+      "canal": {
+        "id_catalogo": "fgv",
+        "nome": "FGV",
+        "channel_id_confirmado": "UC8DhN1cJi0QklBQot5hv_kg",
+        "url": "https://www.youtube.com/channel/UC8DhN1cJi0QklBQot5hv_kg",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2025-12-22T06:05:02-08:00",
+      "duracao_segundos": 1798,
+      "idioma": {
+        "proposto": "pt-BR",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Marketing, IA e geração de valor",
+      "nivel_proposto": "intermediario",
+      "justificativa_nivel": "Discussão profissional com convidada de formação e função verificadas; confrontar visões de plataforma com evidência independente.",
+      "especialistas": "Isabella Milano, gerente de Marketing de Produto no Google e mestre em Administração pela FGV EAESP, segundo a própria FGV.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=nFqu5xY99sY",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        },
+        {
+          "url": "https://portal.fgv.br/podcast/48-marketing-em-2026-inteligencia-artificial-e-geracao-de-valor-lets-talk-fgv-eaesp",
+          "verifica": [
+            "identificacao_e_credenciais_do_especialista"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [],
+            "automaticas": [
+              "pt"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "disponibilidade": "texto integral independente não confirmado; somente lista de legendas quando presente"
+        }
+      },
+      "ressalvas": [
+        "Formato de entrevista/podcast aceito como candidato por credenciais institucionais demonstradas; rever vieses e alegações na íntegra."
+      ]
+    },
+    {
+      "id": "RAxVySzbCEM",
+      "titulo_oficial": "Webinar | Centralidade no Cliente e Inovação Digital para Além da Crise",
+      "url": "https://www.youtube.com/watch?v=RAxVySzbCEM",
+      "canal": {
+        "id_catalogo": "fgv",
+        "nome": "FGV",
+        "channel_id_confirmado": "UC8DhN1cJi0QklBQot5hv_kg",
+        "url": "https://www.youtube.com/channel/UC8DhN1cJi0QklBQot5hv_kg",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2020-06-09T16:29:50-07:00",
+      "duracao_segundos": 5095,
+      "idioma": {
+        "proposto": "pt-BR",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Centralidade no cliente e transformação digital",
+      "nivel_proposto": "intermediario",
+      "justificativa_nivel": "Casos e cadeia de valor do cliente requerem distinguir princípios duradouros do contexto pandêmico.",
+      "especialistas": "Leandro Guissoni, professor de carreira da FGV EAESP segundo descrição oficial.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=RAxVySzbCEM",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        },
+        {
+          "url": "https://altagestao.fgv.br/evento/liderando-uma-organizacao-centrada-no-cliente-na-era-digital",
+          "verifica": [
+            "identificacao_e_credenciais_do_especialista"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [],
+            "automaticas": [
+              "pt"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "disponibilidade": "texto integral independente não confirmado; somente lista de legendas quando presente"
+        }
+      },
+      "ressalvas": []
+    },
+    {
+      "id": "qsAX3XyRsPU",
+      "titulo_oficial": "Webinar | Ambiente digital, métricas e operações de trade marketing no PDV de canais key accounts",
+      "url": "https://www.youtube.com/watch?v=qsAX3XyRsPU",
+      "canal": {
+        "id_catalogo": "fgv",
+        "nome": "FGV",
+        "channel_id_confirmado": "UC8DhN1cJi0QklBQot5hv_kg",
+        "url": "https://www.youtube.com/channel/UC8DhN1cJi0QklBQot5hv_kg",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2022-10-31T15:11:07-07:00",
+      "duracao_segundos": 4000,
+      "idioma": {
+        "proposto": "pt-BR",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Trade marketing, canais e métricas",
+      "nivel_proposto": "avancado",
+      "justificativa_nivel": "Indicadores de loja, categorias e RFV pedem base de canais, varejo e mensuração.",
+      "especialistas": "Luiz Roberto Carnier, coordenador de cursos do IDE/FGV em estratégia comercial e trade marketing, segundo descrição oficial.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=qsAX3XyRsPU",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [],
+            "automaticas": [
+              "pt"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "disponibilidade": "texto integral independente não confirmado; somente lista de legendas quando presente"
+        }
+      },
+      "ressalvas": []
+    },
+    {
+      "id": "BV8AA5vXmsA",
+      "titulo_oficial": "Gestão comercial e rentabilização da base de clientes",
+      "url": "https://www.youtube.com/watch?v=BV8AA5vXmsA",
+      "canal": {
+        "id_catalogo": "fdc",
+        "nome": "Fundação Dom Cabral",
+        "channel_id_confirmado": "UC1fHbk7N11bB8UnL4tYg26A",
+        "url": "https://www.youtube.com/channel/UC1fHbk7N11bB8UnL4tYg26A",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2020-06-17T10:58:12-07:00",
+      "duracao_segundos": 288,
+      "idioma": {
+        "proposto": "pt-BR",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Gestão de clientes B2B",
+      "nivel_proposto": "intermediario",
+      "justificativa_nivel": "Metodologia de segmentação e rentabilização para aplicação comercial após noções de cliente e valor.",
+      "especialistas": "Áurea Ribeiro, professora de Marketing da FDC e especialista em relacionamento B2B, segundo descrição oficial da FDC.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=BV8AA5vXmsA",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [],
+            "automaticas": [
+              "pt"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "disponibilidade": "texto integral independente não confirmado; somente lista de legendas quando presente"
+        }
+      },
+      "ressalvas": []
+    },
+    {
+      "id": "JlIKeIlnhTo",
+      "titulo_oficial": "Como aumentar o retorno sobre relacionamento com clientes",
+      "url": "https://www.youtube.com/watch?v=JlIKeIlnhTo",
+      "canal": {
+        "id_catalogo": "fdc",
+        "nome": "Fundação Dom Cabral",
+        "channel_id_confirmado": "UC1fHbk7N11bB8UnL4tYg26A",
+        "url": "https://www.youtube.com/channel/UC1fHbk7N11bB8UnL4tYg26A",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2020-06-17T10:59:05-07:00",
+      "duracao_segundos": 229,
+      "idioma": {
+        "proposto": "pt-BR",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Relacionamento e retorno B2B",
+      "nivel_proposto": "intermediario",
+      "justificativa_nivel": "Relaciona problemas do cliente, cocriação e retorno; exige separar correlação e impacto causal.",
+      "especialistas": "Áurea Ribeiro, professora de Marketing da FDC e especialista em relacionamento B2B, segundo descrição oficial da FDC.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=JlIKeIlnhTo",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [],
+            "automaticas": [
+              "pt"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "disponibilidade": "texto integral independente não confirmado; somente lista de legendas quando presente"
+        }
+      },
+      "ressalvas": []
+    },
+    {
+      "id": "e7DZNb81ISg",
+      "titulo_oficial": "Estratégia Empresarial",
+      "url": "https://www.youtube.com/watch?v=e7DZNb81ISg",
+      "canal": {
+        "id_catalogo": "fdc",
+        "nome": "Fundação Dom Cabral",
+        "channel_id_confirmado": "UC1fHbk7N11bB8UnL4tYg26A",
+        "url": "https://www.youtube.com/channel/UC1fHbk7N11bB8UnL4tYg26A",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2012-05-31T11:44:32-07:00",
+      "duracao_segundos": 1802,
+      "idioma": {
+        "proposto": "pt-BR",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Fundamentos de estratégia empresarial",
+      "nivel_proposto": "iniciante",
+      "justificativa_nivel": "Introdução teórica e prática; classificar como fundamento histórico e revisar atualidade dos exemplos.",
+      "especialistas": "Ricardo Abdala, professor da FDC na descrição institucional histórica; currículo externo específico não verificado.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=e7DZNb81ISg",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [],
+            "automaticas": []
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "disponibilidade": "texto integral independente não confirmado; somente lista de legendas quando presente"
+        }
+      },
+      "ressalvas": [
+        "Conteúdo antigo: usar como fundamento ou memória de método; confrontar aplicações e dados com fontes atuais."
+      ]
+    },
+    {
+      "id": "3iXbE1jzY2A",
+      "titulo_oficial": "Digitalizando - Sétimo Episódio: Jornada do cliente!",
+      "url": "https://www.youtube.com/watch?v=3iXbE1jzY2A",
+      "canal": {
+        "id_catalogo": "fdc",
+        "nome": "Fundação Dom Cabral",
+        "channel_id_confirmado": "UC1fHbk7N11bB8UnL4tYg26A",
+        "url": "https://www.youtube.com/channel/UC1fHbk7N11bB8UnL4tYg26A",
+        "aprovado": true
+      },
+      "data_publicacao_youtube": "2022-02-22T04:58:05-08:00",
+      "duracao_segundos": 256,
+      "idioma": {
+        "proposto": "pt-BR",
+        "falado_conferido_por_audicao": false,
+        "base": "idioma da descrição institucional e faixas de legenda; confirmação auditiva pendente"
+      },
+      "tema": "Jornada do cliente e indicadores",
+      "nivel_proposto": "iniciante",
+      "justificativa_nivel": "Explicação curta de jornada, engajamento e indicadores digitais.",
+      "especialistas": "Hugo Ferreira Braga Tadeu, professor e pesquisador da FDC.",
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=3iXbE1jzY2A",
+          "verifica": [
+            "titulo",
+            "video_id",
+            "channel_id",
+            "data_publicacao",
+            "duracao",
+            "descricao_institucional",
+            "lista_de_legendas"
+          ]
+        },
+        {
+          "url": "https://hotsites.fdc.org.br/hotsites/mail/fdc_day/2014/hugo.pdf",
+          "verifica": [
+            "identificacao_e_credenciais_do_especialista"
+          ]
+        }
+      ],
+      "revisao": {
+        "status": "candidato_verificado_em_metadados",
+        "metadados_consultados": true,
+        "revisao_integral": false,
+        "publicavel_como_material_revisado": false,
+        "pendencias": [
+          "Assistir ou revisar transcrição integral com controle de trechos e alegações.",
+          "Confirmar idioma falado, qualidade de legendas e ausência de publicidade predominante.",
+          "Produzir resumo próprio e perguntas alinhadas à trilha somente após revisão."
+        ],
+        "transcricao": {
+          "integral_consultada": false,
+          "integral_revisada": false,
+          "arquivo_local": null,
+          "legendas_listadas_metadados": {
+            "editoriais": [],
+            "automaticas": [
+              "pt"
+            ]
+          },
+          "observacao": "Faixas listadas no player oficial; conteúdo das legendas não foi baixado nem conferido. Legenda automática não equivale a transcrição editorial validada.",
+          "disponibilidade": "texto integral independente não confirmado; somente lista de legendas quando presente"
+        }
+      },
+      "ressalvas": []
+    }
+  ],
+  "descartes_e_reservas": [
+    {
+      "id": "pmnIgjNkPlY",
+      "titulo": "FGV EAESP | Marketing não é apenas arte, é ciência",
+      "url": "https://www.youtube.com/watch?v=pmnIgjNkPlY",
+      "channel_id": "UC8DhN1cJi0QklBQot5hv_kg",
+      "decisao": "excluir",
+      "motivo": "Descrição promove explicitamente Mestrado Profissional e direciona a conhecer o programa; não é aula substantiva para o acervo."
+    },
+    {
+      "id": "WMfV2tdyeUs",
+      "titulo": "Webinar | E-Commerce e a Gestão Estratégica de Vendas",
+      "url": "https://www.youtube.com/watch?v=WMfV2tdyeUs",
+      "channel_id": "UC8DhN1cJi0QklBQot5hv_kg",
+      "decisao": "nao_selecionado",
+      "motivo": "Palestrante apresentado como aluno especialista e Business Development Associate; comprovação de pesquisa/produção e profundidade não obtida. Não equiparar a professor do moderador."
+    },
+    {
+      "id": "5WltfJ1ZSmk",
+      "titulo": "O impacto do ESG do marketing à liderança | FDC",
+      "url": "https://www.youtube.com/watch?v=5WltfJ1ZSmk",
+      "channel_id": "UC1fHbk7N11bB8UnL4tYg26A",
+      "decisao": "reserva_com_pendencia",
+      "motivo": "Título e canal verificados, mas descrição não identifica palestrantes; credenciais individuais pendentes."
+    },
+    {
+      "id": "XCWHSeDU-zk",
+      "titulo": "The Explainer: The 5 Forces That Make Companies Successful",
+      "url": "https://www.youtube.com/watch?v=XCWHSeDU-zk",
+      "decisao": "reserva_por_redundancia",
+      "motivo": "Introdução às cinco forças duplica tema da entrevista com Porter selecionada; não necessário ao lote inicial."
+    },
+    {
+      "id": "qBMG9izJF_g",
+      "titulo": "Webinar | Vamos falar de branding e reputação de forma estratégica?",
+      "url": "https://www.youtube.com/watch?v=qBMG9izJF_g",
+      "decisao": "reserva_com_pendencia",
+      "motivo": "Painel institucional inclui dirigentes de agências e marcas; preferidos materiais acadêmicos para o lote. Revisar conflitos comerciais e conteúdo integral antes de reconsiderar."
+    }
+  ],
+  "literatura": [
+    {
+      "id": "marketing-management",
+      "titulo": "Marketing Management",
+      "autores": "Philip Kotler; Kevin Lane Keller; Alexander Chernev",
+      "isbn_aprovado": "9780137344161",
+      "isbn_confirmado_em_pagina_editorial": true,
+      "formato_do_isbn": "eTextbook / assinatura Pearson+",
+      "edicao_confirmada": "16",
+      "url_editorial": "https://www.pearson.com/en-us/subject-catalog/p/marketing-management/P200000005952?view=educator",
+      "url_catalogo_original": "https://www.pearson.com/en-us/subject-catalog/p/marketing-management/P200000005952?view=educator",
+      "verificacao": {
+        "metodo": "página editorial oficial em HTTP e/ou busca web do conteúdo editorial; não leitura integral",
+        "conteudo_integral_lido": false,
+        "observacao": "Datas de página e de produto podem divergir; não converter ISBN de eBook em ISBN impresso."
+      },
+      "traducao_portugues": {
+        "status": "tradução portuguesa da 16ª edição confirmada pelo catálogo editorial; ISBN presente no endereço, confirmar ficha antes de substituir edição",
+        "titulo": "Administração de Marketing",
+        "editora": "Pearson / Bookman",
+        "ano": 2024,
+        "tradutor": "Francisco Araújo da Costa",
+        "isbn": null,
+        "isbn_reportado_no_slug": "9788582606223",
+        "url": "https://m.loja.grupoa.com.br/grupoa-hlg-hc/eb-administracao-de-marketing-16ed9788582606223-p1025709"
+      },
+      "capa": {
+        "url_institucional": "https://www.pearson.com/store/pmccommercewebservices/v2/medias/size-W370-P1000-03-05-40-P100003054015-P100003054015-Lrg.jpg?context=bWFzdGVyfGltYWdlc3w1MTcwOHxpbWFnZS9qcGVnfHN5cy1tYXN0ZXIvaW1hZ2VzL2hmOS9oNTYvMTU1NjAwMDQ5NjAyODYvc2l6ZV9XMzcwXy9QMTAwMC8wMy8wNS80MC9QMTAwMDAzMDU0MDE1L1AxMDAwMDMwNTQwMTVfTHJnLmpwZ3w5ZmZmOWFmNDM0ZDE5NzdlNTQzM2I4NDExNmY5NmU4OTUwNTM2ZmU5MTZmMGVmNzAxOTIwYmRlNDZkNmEyMDUz&imwidth=640",
+        "estado": "imagem_hero_da_pagina_editorial; conferir edição no arquivo visual antes de usar",
+        "imagem_inspecionada_visualmente": false,
+        "edicao_visual_confirmada": false,
+        "licenca_republicacao_confirmada": false,
+        "uso_no_app": "pendente de correspondência da edição e condições de uso da imagem; manter recurso de capa no mesmo componente da Tecnologia, com fallback editorial próprio se necessário"
+      }
+    },
+    {
+      "id": "marketing-research",
+      "titulo": "Marketing Research: An Applied Orientation",
+      "autores": "Naresh K. Malhotra",
+      "isbn_aprovado": "9780134734842",
+      "isbn_confirmado_em_pagina_editorial": true,
+      "formato_do_isbn": "Hardcover",
+      "edicao_confirmada": "7",
+      "url_editorial": "https://www.pearson.com/en-us/subject-catalog/p/marketing-research-an-applied-orientation/P200000005969/9780134734842",
+      "url_catalogo_original": "https://www.pearson.com/en-us/subject-catalog/p/marketing-research-an-applied-orientation/P200000005969/9780134734842",
+      "verificacao": {
+        "metodo": "página editorial oficial em HTTP e/ou busca web do conteúdo editorial; não leitura integral",
+        "conteudo_integral_lido": false,
+        "observacao": "Datas de página e de produto podem divergir; não converter ISBN de eBook em ISBN impresso."
+      },
+      "traducao_portugues": {
+        "status": "edição portuguesa 7 confirmada pelo catálogo editorial",
+        "titulo": "Pesquisa de Marketing: Uma Orientação Aplicada",
+        "editora": "Bookman / Grupo A",
+        "ano": 2019,
+        "isbn_impresso": "9788582605097",
+        "isbn_ebook": "9788582605103",
+        "url": "https://loja.grupoa.com.br/novo/pesquisa-de-marketing-7ed9788582605097-p1005460"
+      },
+      "capa": {
+        "url_institucional": "https://www.pearson.com/store/pmccommercewebservices/v2/medias/size-W370-bigcovers-013473484X.jpg?context=bWFzdGVyfGltYWdlc3w1MzY4NXxpbWFnZS9qcGVnfHN5cy1tYXN0ZXIvaW1hZ2VzL2g4YS9oMTEvMTU1NTAwOTAzNzkyOTQvc2l6ZV9XMzcwXy9iaWdjb3ZlcnMvMDEzNDczNDg0WC5qcGd8YzU3NzhkNmQxZThhMDg4OTY5MjlkNjY2YzQxODI4MzgwZjMxY2NiYzk1YTg4YzIyOTE0NWM5N2UwMWIzMGVhMw&imwidth=3840",
+        "estado": "imagem_hero_da_pagina_editorial; conferir edição no arquivo visual antes de usar",
+        "imagem_inspecionada_visualmente": false,
+        "edicao_visual_confirmada": false,
+        "licenca_republicacao_confirmada": false,
+        "uso_no_app": "pendente de correspondência da edição e condições de uso da imagem; manter recurso de capa no mesmo componente da Tecnologia, com fallback editorial próprio se necessário"
+      }
+    },
+    {
+      "id": "strategic-brand-management",
+      "titulo": "Strategic Brand Management",
+      "autores": "Kevin Lane Keller; Vanitha Swaminathan",
+      "isbn_aprovado": "9780135641347",
+      "isbn_confirmado_em_pagina_editorial": true,
+      "formato_do_isbn": "Loose-Leaf + Paperback, edição impressa",
+      "edicao_confirmada": "5",
+      "url_editorial": "https://www.pearson.com/en-us/subject-catalog/p/strategic-brand-management-building-measuring-and-managing-brand-equity/P200000005947/9780135641347",
+      "url_catalogo_original": "https://www.pearson.com/en-us/subject-catalog/p/strategic-brand-management-building-measuring-and-managing-brand-equity/P200000005947/9780135641347",
+      "verificacao": {
+        "metodo": "página editorial oficial em HTTP e/ou busca web do conteúdo editorial; não leitura integral",
+        "conteudo_integral_lido": false,
+        "observacao": "Datas de página e de produto podem divergir; não converter ISBN de eBook em ISBN impresso."
+      },
+      "traducao_portugues": {
+        "status": "tradução anterior localizada em catálogo institucional; NÃO é confirmação de tradução da 5ª edição aprovada",
+        "titulo": "Gestão estratégica de marcas",
+        "autores": "Kevin L. Keller; Marcos Machado",
+        "editora": "Pearson Prentice Hall",
+        "ano": 2006,
+        "isbn": "9788587918895",
+        "tradutor": "Arlete Simille Marques",
+        "url": "https://www.bdpa.cnptia.embrapa.br/consulta/busca?b=ad&id=942225",
+        "substituicao_automatica_permitida": false
+      },
+      "capa": {
+        "url_institucional": null,
+        "estado": "link de imagem presente na página Pearson; requisição à imagem expirou",
+        "imagem_inspecionada_visualmente": false,
+        "edicao_visual_confirmada": false,
+        "licenca_republicacao_confirmada": false,
+        "uso_no_app": "pendente de correspondência da edição e condições de uso da imagem; manter recurso de capa no mesmo componente da Tecnologia, com fallback editorial próprio se necessário"
+      }
+    },
+    {
+      "id": "how-brands-grow",
+      "titulo": "How Brands Grow: What Marketers Don’t Know",
+      "autores": "Byron Sharp",
+      "isbn_aprovado": "9780190337889",
+      "isbn_confirmado_em_pagina_editorial": true,
+      "formato_do_isbn": "eBook",
+      "edicao_confirmada": null,
+      "url_editorial": "https://www.oup.com.au/books/higher-education/business-marketing/9780190337889",
+      "url_catalogo_original": "https://www.oup.com.au/books/higher-education/business-marketing/9780190337889",
+      "verificacao": {
+        "metodo": "página editorial oficial em HTTP e/ou busca web do conteúdo editorial; não leitura integral",
+        "conteudo_integral_lido": false,
+        "observacao": "Datas de página e de produto podem divergir; não converter ISBN de eBook em ISBN impresso."
+      },
+      "traducao_portugues": {
+        "status": "tradução específica da edição aprovada não confirmada nesta pesquisa",
+        "titulo": null,
+        "isbn": null,
+        "url": null,
+        "nao_inferir_ausencia": true
+      },
+      "capa": {
+        "url_institucional": "https://fdslive.oup.com/covers/anz/desktop/medium/9780195573565.jpg",
+        "estado": "link oficial da OUP associa capa do impresso 9780195573565 à página do eBook aprovado; arquivo respondeu 403; conferir correspondência visual",
+        "imagem_inspecionada_visualmente": false,
+        "edicao_visual_confirmada": false,
+        "licenca_republicacao_confirmada": false,
+        "uso_no_app": "pendente de correspondência da edição e condições de uso da imagem; manter recurso de capa no mesmo componente da Tecnologia, com fallback editorial próprio se necessário"
+      }
+    },
+    {
+      "id": "marketing-metrics",
+      "titulo": "Marketing Metrics",
+      "autores": "Paul W. Farris; Neil Bendle; Phillip Pfeifer; David Reibstein",
+      "isbn_aprovado": "9780136755241",
+      "isbn_confirmado_em_pagina_editorial": true,
+      "formato_do_isbn": "eBook PDF",
+      "edicao_confirmada": "4",
+      "url_editorial": "https://www.informit.com/store/marketing-metrics-9780136755241",
+      "url_catalogo_original": "https://www.informit.com/store/marketing-metrics-9780136755241",
+      "verificacao": {
+        "metodo": "página editorial oficial em HTTP e/ou busca web do conteúdo editorial; não leitura integral",
+        "conteudo_integral_lido": false,
+        "observacao": "Datas de página e de produto podem divergir; não converter ISBN de eBook em ISBN impresso."
+      },
+      "traducao_portugues": {
+        "status": "tradução específica da edição aprovada não confirmada nesta pesquisa",
+        "titulo": null,
+        "isbn": null,
+        "url": null,
+        "nao_inferir_ausencia": true
+      },
+      "capa": {
+        "url_institucional": "https://www.informit.com/ShowCover.aspx?isbn=9780136755241&type=f",
+        "estado": "link de capa explícito na página editorial do ISBN aprovado",
+        "imagem_inspecionada_visualmente": false,
+        "edicao_visual_confirmada": false,
+        "licenca_republicacao_confirmada": false,
+        "uso_no_app": "pendente de correspondência da edição e condições de uso da imagem; manter recurso de capa no mesmo componente da Tecnologia, com fallback editorial próprio se necessário"
+      }
+    },
+    {
+      "id": "competitive-strategy",
+      "titulo": "Competitive Strategy",
+      "autores": "Michael E. Porter",
+      "isbn_aprovado": "9780684841489",
+      "isbn_confirmado_em_pagina_editorial": true,
+      "formato_do_isbn": "Hardcover",
+      "edicao_confirmada": "edição Free Press publicada em 1998; obra original de 1980",
+      "url_editorial": "https://www.simonandschuster.biz/books/Competitive-Strategy/Michael-E-Porter/9780684841489",
+      "url_catalogo_original": "https://www.simonandschuster.com/books/Competitive-Strategy/Michael-E-Porter/9780684841489",
+      "verificacao": {
+        "metodo": "página editorial oficial em HTTP e/ou busca web do conteúdo editorial; não leitura integral",
+        "conteudo_integral_lido": false,
+        "observacao": "Datas de página e de produto podem divergir; não converter ISBN de eBook em ISBN impresso."
+      },
+      "traducao_portugues": {
+        "status": "tradução específica da edição aprovada não confirmada nesta pesquisa",
+        "titulo": null,
+        "isbn": null,
+        "url": null,
+        "nao_inferir_ausencia": true
+      },
+      "capa": {
+        "url_institucional": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9780684841489/competitive-strategy-9780684841489_lg.jpg",
+        "estado": "link de capa da página oficial Simon & Schuster; download expirou",
+        "imagem_inspecionada_visualmente": false,
+        "edicao_visual_confirmada": false,
+        "licenca_republicacao_confirmada": false,
+        "uso_no_app": "pendente de correspondência da edição e condições de uso da imagem; manter recurso de capa no mesmo componente da Tecnologia, com fallback editorial próprio se necessário"
+      }
+    },
+    {
+      "id": "good-strategy-bad-strategy",
+      "titulo": "Good Strategy Bad Strategy",
+      "autores": "Richard Rumelt",
+      "isbn_aprovado": "9780307886231",
+      "isbn_confirmado_em_pagina_editorial": true,
+      "formato_do_isbn": "Hardcover",
+      "edicao_confirmada": "publicação de 2011; ordinal não declarado na página consultada",
+      "url_editorial": "https://www.penguinrandomhouse.com/books/208668/good-strategy-bad-strategy-by-richard-rumelt/",
+      "url_catalogo_original": "https://www.penguinrandomhouse.com/books/208668/good-strategy-bad-strategy-by-richard-rumelt/",
+      "verificacao": {
+        "metodo": "página editorial oficial em HTTP e/ou busca web do conteúdo editorial; não leitura integral",
+        "conteudo_integral_lido": false,
+        "observacao": "Datas de página e de produto podem divergir; não converter ISBN de eBook em ISBN impresso."
+      },
+      "traducao_portugues": {
+        "status": "tradução específica da edição aprovada não confirmada nesta pesquisa",
+        "titulo": null,
+        "isbn": null,
+        "url": null,
+        "nao_inferir_ausencia": true
+      },
+      "capa": {
+        "url_institucional": "https://images4.penguinrandomhouse.com/smedia/9780307886231",
+        "estado": "localizada_na_pagina_editorial",
+        "imagem_inspecionada_visualmente": false,
+        "edicao_visual_confirmada": false,
+        "licenca_republicacao_confirmada": false,
+        "uso_no_app": "pendente de correspondência da edição e condições de uso da imagem; manter recurso de capa no mesmo componente da Tecnologia, com fallback editorial próprio se necessário"
+      }
+    },
+    {
+      "id": "marketing-servicos",
+      "titulo": "Marketing de Serviços",
+      "autores": "Marcos Cobra",
+      "isbn_aprovado": "9788597021448",
+      "isbn_confirmado_em_pagina_editorial": true,
+      "formato_do_isbn": "Impresso",
+      "edicao_confirmada": "1|2021",
+      "url_editorial": "https://www.grupogen.com.br/marketing-de-servicos",
+      "url_catalogo_original": "https://www.grupogen.com.br/marketing-de-servicos",
+      "verificacao": {
+        "metodo": "página editorial oficial em HTTP e/ou busca web do conteúdo editorial; não leitura integral",
+        "conteudo_integral_lido": false,
+        "observacao": "Datas de página e de produto podem divergir; não converter ISBN de eBook em ISBN impresso."
+      },
+      "traducao_portugues": {
+        "status": "obra brasileira em português; tradução não se aplica",
+        "idioma": "pt-BR",
+        "isbn": "9788597021448",
+        "url": "https://www.grupogen.com.br/marketing-de-servicos"
+      },
+      "capa": {
+        "url_institucional": "https://www.grupogen.com.br/media/catalog/product/9/7/9788597021448.jpg?optimize=low&bg-color=255,255,255&fit=bounds&height=265&width=265&canvas=265:265",
+        "estado": "localizada_na_pagina_editorial",
+        "imagem_inspecionada_visualmente": false,
+        "edicao_visual_confirmada": false,
+        "licenca_republicacao_confirmada": false,
+        "uso_no_app": "pendente de correspondência da edição e condições de uso da imagem; manter recurso de capa no mesmo componente da Tecnologia, com fallback editorial próprio se necessário"
+      }
+    }
+  ]
+}

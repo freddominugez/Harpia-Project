@@ -1,5 +1,6 @@
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
+import { NAV } from '../config';
 
 export const TRILHAS_BUSINESS = [
   { id: 'fundamentos', titulo: 'Fundamentos de marketing', resumo: 'Mercado, valor e orientação ao cliente.' },
@@ -31,7 +32,15 @@ export const SECOES_BUSINESS = [
   { slug: 'sobre', titulo: 'Sobre o Harpya Business', descricao: 'O método editorial, os critérios de curadoria e a organização do ambiente de marketing e administração.', nav: 'Sobre', principal: false },
 ] as const;
 export const businessPath = (slug = '') => `/business/${slug ? `${slug}/` : ''}`;
-export const BUSINESS_NAV = SECOES_BUSINESS.map(s => ({ href: businessPath(s.slug), rotulo: s.nav, principal: s.principal, descricao: s.descricao, icone: s.slug === 'videos' ? 'play' : s.slug === 'forum' ? 'messages' : 'book' }));
+// Mesma ordem, ícones e visibilidade do menu original. Rotas auxiliares continuam acessíveis.
+export const BUSINESS_NAV = [
+  ...NAV.map(item => {
+    const slug = item.href === '/' ? '' : item.href.replace(/^\/|\/$/g, '') === 'equacoes' ? 'metricas' : item.href.replace(/^\/|\/$/g, '');
+    const secao = SECOES_BUSINESS.find(s => s.slug === slug)!;
+    return { ...item, href: businessPath(slug), rotulo: secao.nav, descricao: secao.descricao };
+  }),
+  ...SECOES_BUSINESS.filter(s => !['', 'analises', 'comecando', 'origens', 'aprendizado', 'videos', 'estudos', 'metricas', 'biblioteca', 'noticias', 'news', 'forum', 'sobre'].includes(s.slug)).map(s => ({ href: businessPath(s.slug), rotulo: s.nav, descricao: s.descricao, icone: 'book', principal: false })),
+];
 export const guiaPath = (slug: string) => businessPath(`estudos/${slug}`);
 export const recursoPath = (slug: string) => businessPath(`leituras/${slug}`);
 export const trilhaNome = (id: string) => TRILHAS_BUSINESS.find(t => t.id === id)?.titulo ?? id;

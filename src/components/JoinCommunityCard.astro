@@ -1,10 +1,12 @@
 ---
 // CTA escuro com o grafismo da marca.
+interface Props { href?: string; descricao?: string }
+const { href = '/forum/', descricao = 'Troque ideias, reproduza experimentos e discuta os caminhos.' } = Astro.props;
 ---
-<a class="ref-join" href="/forum/">
+<a class="ref-join" href={href}>
   <span class="ref-join-copy">
     <b>Faça parte da<br />comunidade Harpya</b>
-    <small>Troque ideias, reproduza experimentos e discuta os caminhos.</small>
+    <small>{descricao}</small>
     <span class="ref-join-cta">Acessar o fórum <span aria-hidden="true">→</span></span>
   </span>
   <picture>

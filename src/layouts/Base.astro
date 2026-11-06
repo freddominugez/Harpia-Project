@@ -30,7 +30,7 @@ const business = ambiente === 'business';
     <meta name="color-scheme" content="light" />
     <Seo titulo={titulo} descricao={descricao} noindex={noindex} />
     <link rel="preload" href={interLatin} as="font" type="font/woff2" crossorigin />
-    {home && <link rel="preload" as="image" href={business ? '/img/ambientes/harpia-business.png' : '/img/harpya-original.webp'} />}
+    {home && <link rel="preload" as="image" href={'/img/harpya-original.webp'} />}
   </head>
   <body class:list={[home ? "is-home" : "is-internal", { 'is-business': business }]} data-environment={ambiente}>
     <a class="skip" href="#conteudo">Pular para o conteúdo</a>

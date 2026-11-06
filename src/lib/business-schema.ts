@@ -14,7 +14,7 @@ export const businessGuiaSchema = z.object({ titulo: z.string(), resumo: z.strin
 export const businessAcervoSchema = z.object({
   titulo: z.string().min(5), resumo: z.string().min(20), fonte: z.string(), url: https,
   tipo: z.enum(['artigo', 'livro', 'relatorio', 'video', 'noticia', 'analise', 'webinar']), trilha: businessTrilha,
-  autores: z.string().min(2), data: data.or(z.literal('')), data_precisa: z.boolean().default(true), idioma: z.enum(['pt', 'en', 'es']), acesso: z.string(), evidencia: z.string(), limites: z.string().min(10),
+  autores: z.string().min(2), data: data.or(z.literal('')), data_precisa: z.boolean().default(true), ano_publicacao: z.number().int().min(1400).max(2100).optional(), idioma: z.enum(['pt', 'en', 'es']), acesso: z.string(), evidencia: z.string(), limites: z.string().min(10),
   status: businessStatus, justificativa: z.string(), revisor: z.string(), revisado_em: data.or(z.literal('')),
   video_id: z.string().regex(/^[A-Za-z0-9_-]{11}$/).or(z.literal('')).optional(), channel_id: z.string().default(''), revisao_integral: z.boolean().default(false),
   nivel: z.enum(['Iniciante', 'Intermediário', 'Avançado']).default('Iniciante'),

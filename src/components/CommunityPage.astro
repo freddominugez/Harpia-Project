@@ -1,0 +1,23 @@
+---
+import PageIntro from "./PageIntro.astro";
+import ForumList from "./ForumList.astro";
+import Forum from "./Forum.astro";
+import { forumProprio } from "../config";
+interface Props { pautas?: typeof PAUTAS; path?: string; lead?: string; propostas?: string }
+const { pautas = PAUTAS, path, lead, propostas } = Astro.props;
+const proprio = forumProprio();
+import { PAUTAS } from "../lib/pautas";
+---
+  <PageIntro trilha={[{ rotulo: "Fórum" }]} eyebrow="Comunidade" titulo="Discuta, reproduza, conteste" lead={lead ?? (proprio ? "Cada página de caminho tem a sua própria conversa, e cada pauta aprovada vira uma discussão. Esta página é o espaço geral. Entre com e-mail e senha ou com a conta Google." : "As conversas ficam no GitHub Discussions do repositório. Cada página de caminho tem a sua própria discussão; esta página é o espaço geral.")} />
+  <div class="container page-layout single">
+    <div class="article">
+      <div class="panel">
+        <h2 id="geral">Discussão geral</h2>
+        <Forum geral path={path} />
+      </div>
+      <div class="section-head" style="margin-top:28px">
+        <div><h2 id="pautas">{proprio ? "Discussões e pautas" : "Pautas propostas"}</h2><p>{propostas ?? (proprio ? "Discussões abertas primeiro. As pautas propostas ainda não são conversas: cada uma leva à ficha do caminho." : "Temas que o projeto quer discutir primeiro. Não são conversas existentes: cada uma leva à ficha do caminho.")}</p></div>
+      </div>
+      <ForumList itens={pautas} limite={50} />
+    </div>
+  </div>

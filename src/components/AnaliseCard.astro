@@ -1,8 +1,9 @@
 ---
 // Card da home com a análise mais recente (src/content/analises).
-import { ANALISES, urlAnalise } from "../data/analises";
+import { ANALISES, urlAnalise, type Analise } from "../data/analises";
 import { dataNumerica } from "../lib/format";
-const a = ANALISES[0];
+interface Props { analise?: Analise | null }
+const { analise: a = ANALISES[0] } = Astro.props;
 ---
 {a && (
   <a class="ref-analise" href={urlAnalise(a)}>

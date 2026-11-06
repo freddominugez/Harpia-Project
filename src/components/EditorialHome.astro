@@ -1,0 +1,105 @@
+---
+// Página inicial: reprodução da composição aprovada (docs/referencia-home-exata.png).
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import StudyTrackCard from "../components/StudyTrackCard.astro";
+import ArticleCard from "../components/ArticleCard.astro";
+import VideoFeature from "../components/VideoFeature.astro";
+import ForumList from "../components/ForumList.astro";
+import JoinCommunityCard from "../components/JoinCommunityCard.astro";
+import StartCard from "../components/StartCard.astro";
+import AnaliseCard from "../components/AnaliseCard.astro";
+import NoticiasCarrossel from "../components/NoticiasCarrossel.astro";
+import ImpactNews from '../components/ImpactNews.astro';
+import HomeEditorial from '../components/HomeEditorial.astro';
+import '../styles/home-editorial.css';
+import { getCollection } from "astro:content";
+import { trilhas, ARTIGOS_DESTAQUE } from "../data/home";
+import { PAUTAS } from "../lib/pautas";
+import { VIDEOS, selecaoDaSemana } from "../lib/videos";
+import { dataCurta, ROTULO_ESTATUTO } from "../lib/format";
+
+const caminhos = await getCollection("caminhos");
+const porSlug = new Map(caminhos.map((c) => [c.id, c]));
+const artigos = ARTIGOS_DESTAQUE.flatMap((a) => {
+  const c = porSlug.get(a.slug);
+  return c ? [{ ...a, c }] : [];
+});
+import { getBusinessPresentation } from '../lib/business-presentation';
+interface Props { business?: boolean }
+const { business = false } = Astro.props;
+const model = business ? await getBusinessPresentation() : null;
+const prefixo = business ? '/business' : '';
+const artigosHome = model ? model.estudos : artigos.map(({ c, imagem, tags }) => ({
+  href: `/estudos/caminhos/${c.id}/`, imagem, tags: [...tags, ROTULO_ESTATUTO[c.data.estatuto]],
+  titulo: c.data.titulo, resumo: c.data.resumo, proximo: c.data.proximo_teste,
+  parar: c.data.parar_se, arte: c.data.arte_previa, dataISO: c.data.atualizado,
+}));
+const destaque = model ? selecaoDaSemana(new Date(), 3, model.videos, model.modulos) : selecaoDaSemana();
+---
+<Base home titulo={business ? "Harpya Business" : undefined} descricao={business ? "Marketing, estratégia e administração com pesquisa e fontes de referência." : undefined}>
+  <Hero {...model?.hero} />
+  <ImpactNews {...model?.impact} />
+
+  <section class="ref-content">
+    <div class="container wide ref-columns">
+      <div class="ref-column ref-left">
+        <section class="ref-section" aria-labelledby="h-trilhas">
+          <div class="ref-section-title">
+            <div><h2 id="h-trilhas">Trilhas de Estudo em Destaque</h2><p>Percursos estruturados para evoluir do básico ao avançado.</p></div>
+            <a href={`${prefixo}/estudos/`}>Ver todas <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="ref-track-grid">
+            {(model?.trilhas ?? trilhas(caminhos.length)).map((t) => <StudyTrackCard t={t} />)}
+          </div>
+        </section>
+        <section class="ref-section" aria-labelledby="h-artigos">
+          <div class="ref-section-title">
+            <div><h2 id="h-artigos">Artigos Recentes</h2></div>
+            <a href={`${prefixo}/estudos/`}>Ver todos os estudos <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="ref-articles">
+            {artigosHome.map(a => <ArticleCard {...a} data={dataCurta(a.dataISO)} />)}
+          </div>
+        </section>
+      </div>
+
+      <div class="ref-column ref-middle">
+        <section class="ref-section" aria-labelledby="h-video">
+          <div class="ref-section-title">
+            <div><h2 id="h-video">Vídeos em Destaque</h2></div>
+            <a href={`${prefixo}/videos/`}>Ver os {model ? model.videos.length : VIDEOS.length} vídeos <span aria-hidden="true">→</span></a>
+          </div>
+          <VideoFeature videos={destaque} />
+        </section>
+        <section class="ref-section" aria-labelledby="h-comecando">
+          <div class="ref-section-title">
+            <div><h2 id="h-comecando">Para quem está começando</h2></div>
+            <a href={`${prefixo}/comecando/`}>Ver a série <span aria-hidden="true">→</span></a>
+          </div>
+          <StartCard {...model?.start} />
+        </section>
+      </div>
+
+      <div class="ref-column ref-right">
+        <NoticiasCarrossel noticias={model?.noticias} indice={`${prefixo}/noticias/`} />
+        <section class="ref-section" aria-labelledby="h-forum">
+          <div class="ref-section-title">
+            <div><h2 id="h-forum">Fórum da Comunidade</h2></div>
+            <a href={`${prefixo}/forum/`}>Ver fórum <span aria-hidden="true">→</span></a>
+          </div>
+          <ForumList itens={model?.pautas ?? PAUTAS} />
+        </section>
+        <JoinCommunityCard href={`${prefixo}/forum/`} descricao={business ? "Troque ideias, compare evidências e discuta decisões de marketing e administração." : undefined} />
+        <section class="ref-section" aria-labelledby="h-analise">
+          <div class="ref-section-title">
+            <div><h2 id="h-analise">Análise</h2></div>
+            <a href={`${prefixo}/analises/`}>Ver todas <span aria-hidden="true">→</span></a>
+          </div>
+          <AnaliseCard analise={model ? model.analise : undefined} />
+        </section>
+      </div>
+    </div>
+  </section>
+  <HomeEditorial {...model?.editorial} />
+</Base>

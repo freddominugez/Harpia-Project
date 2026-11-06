@@ -17,7 +17,7 @@ const ativo = (href: string) => (href === inicio ? atual === inicio : atual.star
         <source srcset="/img/harpya-mark-head.webp" type="image/webp" />
         <img src="/img/harpya-mark-head.png" alt="" width="46" height="43" />
       </picture>
-      <span class="wordmark-text"><b>{business ? 'HARPYA BUSINESS' : 'HARPYA'}</b><em>{AMBIENTES[ambiente].subtitulo.toUpperCase()}</em></span>
+      <span class="wordmark-text"><b>HARPYA</b><em>{business ? 'BUSINESS' : AMBIENTES[ambiente].subtitulo.toUpperCase()}</em></span>
     </a>
     <nav class="nav-links" aria-label="Navegação principal">
       {menu.filter((i) => i.principal).map((i) => <a href={i.href} aria-current={ativo(i.href) ? "page" : undefined}>{i.rotulo}</a>)}

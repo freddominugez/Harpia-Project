@@ -1,0 +1,76 @@
+{
+  "gerado_em": "2026-11-06T23:42:49.472Z",
+  "estado": "execucao_parcial",
+  "liberado_para_publicar": false,
+  "referencia": "939e5f75d0bb7b0fc8028471a20c31b353204ba0",
+  "familias": [
+    {
+      "familia": "Vídeos",
+      "volume_original_e_referencia_nao_cota_automatica": true,
+      "referencia": 155,
+      "publicados": 0,
+      "faltam_para_volume_original": 155
+    },
+    {
+      "familia": "Artigos e relatórios",
+      "referencia": 63,
+      "publicados": 6,
+      "faltam_para_volume_original": 57
+    },
+    {
+      "familia": "Livros",
+      "referencia": 58,
+      "publicados": 8,
+      "faltam_para_volume_original": 50
+    },
+    {
+      "familia": "Notícias",
+      "referencia": 23,
+      "publicados": 0,
+      "faltam_para_volume_original": 23
+    },
+    {
+      "familia": "Análises",
+      "referencia": 1,
+      "publicados": 0,
+      "faltam_para_volume_original": 1
+    }
+  ],
+  "diferencas_volume": [
+    "Vídeos: diferença de 155 registros em relação ao volume original; não equivale a requisito do template.",
+    "Artigos e relatórios: diferença de 57 registros em relação ao volume original; não equivale a requisito do template.",
+    "Livros: diferença de 50 registros em relação ao volume original; não equivale a requisito do template.",
+    "Notícias: diferença de 23 registros em relação ao volume original; não equivale a requisito do template.",
+    "Análises: diferença de 1 registros em relação ao volume original; não equivale a requisito do template."
+  ],
+  "pesquisa": {
+    "artigos_candidatos": 28,
+    "artigos_urls_novas": 24,
+    "artigos_ja_no_acervo": 4,
+    "videos_candidatos": 24,
+    "canais_verificados": 8,
+    "duracao_video_segundos": 36345,
+    "videos_integralmente_revisados": 0,
+    "livros_existentes_conferidos": 8
+  },
+  "bloqueios": [
+    "Vídeos: os três destaques da home ainda não podem ser preenchidos.",
+    "Vídeos: nenhum registro publicado do nível Iniciante.",
+    "Vídeos: nenhum registro publicado do nível Intermediário.",
+    "Vídeos: nenhum registro publicado do nível Avançado.",
+    "Notícias: faltam matérias publicadas para preencher os oito destaques do template original.",
+    "Análises: falta o texto que alimenta o card e o destaque ampliado.",
+    "Origens: template, cronologia temática documentada, retratos, capítulos e referências ainda pendentes.",
+    "Aprendizado: template e dossiês com mecanismos, exemplos e limites ainda pendentes.",
+    "Estudos: índice, investigação editorial, arquivados e aprofundamento dos 8 guias para estudos completos ainda pendentes.",
+    "Começando: série no layout original, textos ilustrados e navegação entre artigos ainda pendentes.",
+    "Análises e notícias: produção de textos completos e adaptação das páginas de detalhe ainda pendentes.",
+    "Biblioteca: completar literatura e referências; conferir capas/edições, traduções e condições de uso.",
+    "Painel de publicação: integrar escopo Business e fluxo editorial aos recursos do painel original.",
+    "Coleta e distribuição: validar curadoria, feed, busca, SEO e divulgação com todos os novos tipos de conteúdo.",
+    "Verificação final de paridade visual e funcional em todos os templates e larguras ainda pendente.",
+    "Os candidatos de vídeo exigem revisão integral, verificação de alegações e resumos próprios antes da publicação.",
+    "Rotas auxiliares de livros/canais e fichas externas ainda usam apresentação legada; migrar sem substituir os catálogos originais.",
+    "Criar as rotas canônicas temáticas restantes e preservar aliases publicados, incluindo Equações/Métricas e os detalhes de notícias e análises."
+  ]
+}

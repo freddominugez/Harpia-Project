@@ -6,6 +6,7 @@
 export type Fonte = { veiculo: string; titulo: string; url: string };
 export type Noticia = {
   slug: string;
+  href?: string;
   titulo: string;
   resumo: string;
   data: string;
@@ -17,9 +18,13 @@ export type Noticia = {
   status?: string;
   ordem?: number;
 };
-export type Categoria = "letramento" | "brasil" | "abertos" | "pesquisa";
+export type Categoria = "letramento" | "brasil" | "abertos" | "pesquisa" | "mercado" | "consumidor" | "gestao" | "mensuracao";
 
 export const CATEGORIAS: Record<Categoria, { nome: string; icone: string; tag: string; de: string; ate: string; traco: string }> = {
+  mercado: { nome: "Mercados e estratégia", icone: "globo", tag: "soft-gold", de: "#23292f", ate: "#4d3b16", traco: "#d9b25c" },
+  consumidor: { nome: "Pesquisa e consumidor", icone: "lupa", tag: "medido", de: "#1f2926", ate: "#22473a", traco: "#7fc29b" },
+  gestao: { nome: "Gestão e inovação", icone: "biblioteca", tag: "arte", de: "#1f2730", ate: "#2f4a68", traco: "#8fb0d6" },
+  mensuracao: { nome: "Mensuração e métodos", icone: "lupa", tag: "teste", de: "#231f2e", ate: "#463a63", traco: "#b9a6e3" },
   letramento: { nome: "Letramento em IA", icone: "livro", tag: "soft-gold", de: "#23292f", ate: "#4d3b16", traco: "#d9b25c" },
   brasil: { nome: "Brasil e regulação", icone: "balanca", tag: "medido", de: "#1f2926", ate: "#22473a", traco: "#7fc29b" },
   abertos: { nome: "Código e modelos abertos", icone: "codigo", tag: "arte", de: "#1f2730", ate: "#2f4a68", traco: "#8fb0d6" },
@@ -103,7 +108,7 @@ export const NOTICIAS: Noticia[] = Object.entries(mods)
   .filter((n) => (n.status ?? "publicado") === "publicado")
   .sort((a, b) => b.data.localeCompare(a.data) || Number(a.ordem ?? 999) - Number(b.ordem ?? 999) || a.slug.localeCompare(b.slug));
 
-export const urlNoticia = (n: { slug: string }) => `/noticias/${n.slug}/`;
+export const urlNoticia = (n: { slug: string; href?: string }) => n.href ?? `/noticias/${n.slug}/`;
 
 /** Minutos de leitura do corpo e do resumo. */
 export const minutosDeLeitura = (n: Noticia) =>

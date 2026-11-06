@@ -6,12 +6,14 @@
 import "../styles/noticias.css";
 import Breadcrumb from "./Breadcrumb.astro";
 import NoticiaCard from "./NoticiaCard.astro";
-import { NOTICIAS, capa, cat, icone, urlNoticia, minutosDeLeitura, type Noticia } from "../lib/noticias";
+import { NOTICIAS as DEFAULT_NOTICIAS, capa, cat, icone, urlNoticia, minutosDeLeitura, type Noticia } from "../lib/noticias";
 import { dataCurta } from "../lib/format";
 import { SITE } from "../config";
 
-interface Props { atual: Noticia; tituloNoH1?: boolean }
-const { atual, tituloNoH1 = false } = Astro.props;
+interface Props { atual: Noticia; tituloNoH1?: boolean; noticias?: Noticia[]; prefixo?: string; lead?: string; periodicidade?: string; negocios?: boolean }
+const { atual, tituloNoH1 = false, noticias: NOTICIAS = DEFAULT_NOTICIAS, prefixo = '', negocios = false,
+  lead = 'O que mudou em inteligência artificial, contado com fonte: letramento, regulação, modelos abertos e pesquisa. Cada matéria aponta para onde a informação pode ser conferida.',
+  periodicidade = 'a cada 2 dias' } = Astro.props;
 const c = cat(atual.categoria);
 const i = NOTICIAS.findIndex((n) => n.slug === atual.slug);
 const maisRecente = i > 0 ? NOTICIAS[i - 1] : undefined;
@@ -21,7 +23,7 @@ const POR_PAGINA = 12;
 const paginas = Array.from({ length: Math.max(1, Math.ceil(NOTICIAS.length / POR_PAGINA)) }, (_, p) => NOTICIAS.slice(p * POR_PAGINA, (p + 1) * POR_PAGINA));
 const mesmaArea = NOTICIAS.filter((n) => n.slug !== atual.slug && n.categoria === atual.categoria);
 const leiaTambem = [...mesmaArea, ...NOTICIAS.filter((n) => n.slug !== atual.slug && n.categoria !== atual.categoria)].slice(0, 3);
-const trilha = tituloNoH1 ? [{ rotulo: "NotícIAs", href: "/noticias/" }, { rotulo: atual.titulo.length > 60 ? `${atual.titulo.slice(0, 57).trimEnd()}...` : atual.titulo }] : [{ rotulo: "NotícIAs" }];
+const trilha = tituloNoH1 ? [{ rotulo: "NotícIAs", href: `${prefixo}/noticias/` }, { rotulo: atual.titulo.length > 60 ? `${atual.titulo.slice(0, 57).trimEnd()}...` : atual.titulo }] : [{ rotulo: "NotícIAs" }];
 const Titulo = tituloNoH1 ? "h1" : "h2";
 const Marca = tituloNoH1 ? "p" : "h1";
 
@@ -42,14 +44,14 @@ const raios = Array.from({ length: 9 }, (_, k) => {
     <div class="nmast-grid">
       <div class="nmast-marca">
         <div class="eyebrow">Harpya · notícias com fonte</div>
-        <Marca class="nwm"><span class="sr-only">NotícIAs</span><span class="nwm-t" aria-hidden="true">Notíc</span><span class="nwm-ia" aria-hidden="true">IA</span><span class="nwm-t" aria-hidden="true">s</span></Marca>
+        <Marca class="nwm"><span class="sr-only">{negocios ? "Notícias" : "NotícIAs"}</span><span class="nwm-t" aria-hidden="true">Notíc</span><span class="nwm-ia" aria-hidden="true">{negocios ? "ia" : "IA"}</span><span class="nwm-t" aria-hidden="true">s</span></Marca>
       </div>
       <div class="nmast-lado">
-        <p class="nmast-lead">O que mudou em inteligência artificial, contado com fonte: letramento, regulação, modelos abertos e pesquisa. Cada matéria aponta para onde a informação pode ser conferida.</p>
+        <p class="nmast-lead">{lead}</p>
         <dl class="nmast-dados">
           <div><dt>Publicadas</dt><dd>{NOTICIAS.length}</dd></div>
           <div><dt>Mais recente</dt><dd>{NOTICIAS[0] ? dataCurta(NOTICIAS[0].data) : ""}</dd></div>
-          <div><dt>Atualização</dt><dd>a cada 2 dias</dd></div>
+          <div><dt>Atualização</dt><dd>{periodicidade}</dd></div>
         </dl>
         <a class="nmast-lendo" href="#materia"><span>Lendo agora</span><b>{atual.titulo}</b><Fragment set:html={icone("abaixo")} /></a>
       </div>

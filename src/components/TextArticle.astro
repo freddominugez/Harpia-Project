@@ -1,0 +1,25 @@
+---
+// Layout das páginas em markdown (equações, glossário, arquivados, sobre).
+// Mesmo padrão editorial das fichas: trilha, H1, descrição, leitura e índice lateral fixo.
+import PageIntro from "./PageIntro.astro";
+import ArticleSidebar from "./ArticleSidebar.astro";
+import { NAV } from "../config";
+import type { Crumb, Relacionado } from "../lib/types";
+
+const { frontmatter, headings = [], prefixo = "" } = Astro.props;
+const partes = Astro.url.pathname.replace(prefixo, "").split("/").filter(Boolean);
+const trilha: Crumb[] = [];
+if (partes.length > 1) {
+  const pai = NAV.find((n) => n.href === `/${partes[0]}/`);
+  if (pai) trilha.push({ rotulo: pai.rotulo, href: `${prefixo}${pai.href}` });
+}
+trilha.push({ rotulo: frontmatter.titulo });
+const toc = headings.filter((h: { depth: number }) => h.depth === 2).map((h: { slug: string; text: string }) => ({ id: h.slug, texto: h.text }));
+const relacionados: Relacionado[] = (frontmatter.relacionados ?? []).map((r: Relacionado) => r);
+---
+
+  <PageIntro trilha={trilha} eyebrow={frontmatter.kicker} titulo={frontmatter.titulo} lead={frontmatter.lead} />
+  <div class="container page-layout">
+    <article class="article prose"><slot /></article>
+    <ArticleSidebar toc={toc} relacionados={relacionados} tituloRelacionados="Veja também" />
+  </div>

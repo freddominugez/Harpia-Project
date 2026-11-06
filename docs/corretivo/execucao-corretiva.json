@@ -1,0 +1,149 @@
+{
+  "status": "em_execucao_parcial_nao_publicado",
+  "data": "2026-11-06",
+  "branch": "codex/harpya-business-corretivo",
+  "referencia_original": "939e5f75d0bb7b0fc8028471a20c31b353204ba0",
+  "componentes_compartilhados_implementados": [
+    "EditorialHome",
+    "Hero",
+    "HomeEditorial",
+    "ImpactNews",
+    "StartCard",
+    "AnaliseCard",
+    "NoticiasCarrossel",
+    "TechnologyCards",
+    "LibraryCatalog",
+    "VideoCatalog",
+    "TextArticle",
+    "AnalysisCatalog",
+    "CommunityPage",
+    "NoticiasPagina",
+    "NewsCard",
+    "SourceCatalog",
+    "StudyArticle"
+  ],
+  "alteracoes_estruturais": [
+    "Menu Business derivado de NAV original",
+    "Remoção de tokens e overrides globais da versão azul",
+    "Mesmo hero e imagens editoriais originais; poses alternativas permanecem no portal",
+    "Fontes e créditos compilados dos registros publicados"
+  ],
+  "pendencias": [
+    "Origens: template, cronologia temática documentada, retratos, capítulos e referências ainda pendentes.",
+    "Aprendizado: template e dossiês com mecanismos, exemplos e limites ainda pendentes.",
+    "Estudos: índice, investigação editorial, arquivados e aprofundamento dos 8 guias para estudos completos ainda pendentes.",
+    "Começando: série no layout original, textos ilustrados e navegação entre artigos ainda pendentes.",
+    "Análises e notícias: produção de textos completos e adaptação das páginas de detalhe ainda pendentes.",
+    "Biblioteca: completar literatura e referências; conferir capas/edições, traduções e condições de uso.",
+    "Painel de publicação: integrar escopo Business e fluxo editorial aos recursos do painel original.",
+    "Coleta e distribuição: validar curadoria, feed, busca, SEO e divulgação com todos os novos tipos de conteúdo.",
+    "Verificação final de paridade visual e funcional em todos os templates e larguras ainda pendente.",
+    "Os candidatos de vídeo exigem revisão integral, verificação de alegações e resumos próprios antes da publicação.",
+    "Rotas auxiliares de livros/canais e fichas externas ainda usam apresentação legada; migrar sem substituir os catálogos originais.",
+    "Criar as rotas canônicas temáticas restantes e preservar aliases publicados, incluindo Equações/Métricas e os detalhes de notícias e análises."
+  ],
+  "validacao": {
+    "estado": "verificacao_parcial_aprovada_sem_aceite_integral",
+    "astro_check": {
+      "erros": 0,
+      "avisos": 0,
+      "hints_preexistentes": 4
+    },
+    "build": {
+      "paginas": 99
+    },
+    "testes_node": {
+      "aprovados": 43
+    },
+    "testes_python_business": {
+      "aprovados": 13
+    },
+    "integridade_build": {
+      "pages": 41,
+      "businessPages": 39,
+      "internalReferences": 4096,
+      "businessSearchItems": 39,
+      "broken": [],
+      "duplicateIds": [],
+      "headingFailures": [],
+      "missingMeta": []
+    },
+    "regressao_tecnologia": {
+      "base": "bf96fafa0c883a7f5d39c5d91ca0c15355482ccd",
+      "metodo": "Comparação da árvore do main, texto e atributos; ignorados scripts, atributos Astro de escopo, IDs sequenciais das capas e nomes hash de arquivos CSS. Baseline compilada em checkout limpo no mesmo momento. Não é diff de pixels.",
+      "resultados": [
+        {
+          "route": "/tecnologia/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/videos/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/biblioteca/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/analises/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/forum/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/news/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/noticias/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/equacoes/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/biblioteca/glossario/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/biblioteca/fontes/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/sobre/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/estudos/caminhos/certificado-inteiro/",
+          "dom_textos_atributos_preservados": true
+        }
+      ]
+    },
+    "browser_local": {
+      "navegador": "Safari",
+      "observacoes": [
+        "Preferência de entrada exibida no Business; Agora não preserva a navegação.",
+        "Home com hero, imagens, quatro cards de trilha, três cards de guia e pautas do sistema original.",
+        "Filtro por área da biblioteca oculta livros de outras áreas.",
+        "Filtro de português mantém Marketing de Serviços; sete obras em inglês e uma em português.",
+        "Guia no layout original com metadados, índice, fontes, citação e navegação.",
+        "Relatório de 60 fichas filtra Wharton para cinco fichas."
+      ],
+      "limites": [
+        "Inspeção desktop; dimensões de viewport não medidas nesta etapa.",
+        "Não há comparação de pixels pareada nas cinco larguras do contrato.",
+        "Catálogos de vídeos/notícias/análises continuam incompletos; esses estados preenchidos não foram validados em Business.",
+        "Nenhum comentário, mensagem, compra ou publicação foi enviado."
+      ]
+    },
+    "publicacao": false,
+    "aceite_integral": false,
+    "ancoras_business": {
+      "checked": 138,
+      "broken": []
+    }
+  }
+}

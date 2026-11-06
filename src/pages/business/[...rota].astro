@@ -2,9 +2,22 @@
 import { render } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import SourceCatalog from '../../components/SourceCatalog.astro';
+import StudyArticle from '../../components/StudyArticle.astro';
+import { businessFontesDoSite } from '../../lib/business-fontes-site';
+import BusinessTextPage from '../../components/BusinessTextPage.astro';
+import AnalysisCatalog from '../../components/AnalysisCatalog.astro';
+import CommunityPage from '../../components/CommunityPage.astro';
+import NoticiasPagina from '../../components/NoticiasPagina.astro';
+import NewsCard from '../../components/NewsCard.astro';
+import PageIntro from '../../components/PageIntro.astro';
+import EditorialHome from '../../components/EditorialHome.astro';
+import LibraryCatalog from '../../components/LibraryCatalog.astro';
+import VideoCatalog from '../../components/VideoCatalog.astro';
+import { getBusinessPresentation } from '../../lib/business-presentation';
 import BusinessResourceDetail from '../../components/BusinessResourceDetail.astro';
 import BusinessPage from '../../components/BusinessPage.astro';
-import { getBusiness, SECOES_BUSINESS, guiaPath, trilhaNome } from '../../lib/business';
+import { getBusiness, SECOES_BUSINESS, guiaPath } from '../../lib/business';
 export async function getStaticPaths() {
   const { guias, acervo } = await getBusiness();
   return [
@@ -19,19 +32,31 @@ const page = SECOES_BUSINESS.find(p => p.slug === secao);
 const titulo = tipo === 'guia' ? guia!.data.titulo : tipo === 'recurso' ? item!.data.titulo : page!.titulo;
 const descricao = tipo === 'guia' ? guia!.data.resumo : tipo === 'recurso' ? item!.data.resumo : page!.descricao;
 const rendered = guia ? await render(guia) : null;
-const Content = rendered?.Content;
 const { guias, fontes } = await getBusiness();
+const catalogo = tipo === 'secao' && ['biblioteca','videos','analises','forum','news','noticias'].includes(secao) ? await getBusinessPresentation() : null;
+const gruposFontes = tipo === 'secao' && secao === 'biblioteca/fontes' ? await businessFontesDoSite() : [];
+const fichasGuias = guias.map(g => ({ id: g.id, href: guiaPath(g.id), markdown: `/business/estudos/${g.id}.md`, body: g.body, data: {
+  ...g.data, autor: 'Harpya', rotulo: 'Guia', estatuto: 'teste' as const, selo: 'Guia didático', principal: false,
+  equacao: '', proximo_teste: '', parar_se: '', arte_previa: g.data.fontes,
+  referencias_descricao: 'Fontes indicadas neste guia. Verifique autoria, contexto e limites na publicação original.',
+} }));
+const fichaGuia = guia ? fichasGuias.find(g => g.id === guia.id) : undefined;
 const fonte = item ? fontes.find(f => f.id === item.data.fonte) : undefined;
 const indice = guia ? guias.findIndex(g => g.id === guia.id) : -1;
 ---
-<Base titulo={titulo} descricao={descricao} home={tipo === 'secao' && secao === ''}>
-  {tipo === 'secao' && <BusinessPage secao={secao} />}
-  {tipo === 'guia' && guia && <>
-    <header class="container business-page-intro"><nav aria-label="Caminho da página"><a href="/business/">Harpya Business</a> / <a href="/business/estudos/">Estudos</a> / Guia {guia.data.numero}</nav><span class="eyebrow">{trilhaNome(guia.data.trilha)}</span><h1 tabindex="-1">{guia.data.titulo}</h1><p>{guia.data.resumo}</p></header>
-    <div class="container business-section business-guide"><div class="business-guide-layout"><article class="article">{Content && <Content />}<div class="business-reference-list"><strong>Referências para aprofundamento</strong>{guia.data.fontes.map(url => <a href={url} target="_blank" rel="noopener noreferrer">{url} ↗</a>)}<p style="margin-top:12px">Guia didático do Harpya · Atualizado em {guia.data.atualizado}. Os links levam aos originais; idioma e disponibilidade podem variar.</p></div><nav class="business-pagination" aria-label="Sequência de estudo">{indice > 0 ? <a href={guiaPath(guias[indice-1].id)}>← Guia anterior</a> : <a href="/business/comecando/">← Ver a sequência</a>}{indice < guias.length-1 && <a href={guiaPath(guias[indice+1].id)}>Próximo guia →</a>}</nav><div class="business-policy"><h2>Continue a investigação</h2><p>Consulte leituras relacionadas, compare contextos e leve uma pergunta fundamentada à comunidade.</p><a href={`/business/biblioteca/?trilha=${guia.data.trilha}`}>Leituras desta trilha →</a> · <a href="/business/forum/">Discutir na comunidade →</a></div></article><nav class="business-guide-toc toc" aria-label="Neste guia"><strong>Neste guia</strong>{rendered?.headings.map(h => <a href={`#${h.slug}`}>{h.text}</a>)}</nav></div></div>
-  </>}
+{tipo === 'secao' && secao === '' ? <EditorialHome business /> : <Base titulo={titulo} descricao={descricao} home={tipo === 'secao' && secao === ''}>
+  {tipo === 'secao' && secao === 'biblioteca' && catalogo && <LibraryCatalog livros={catalogo.livros} artigos={catalogo.artigos} fontes={catalogo.fontesBiblioteca} categorias={catalogo.categoriasLivro} grupos={catalogo.categoriasLivro} prefixo="/business" lead={`${catalogo.livros.length} livros de referência e ${catalogo.artigos.length} artigos e relatórios selecionados. Autoria, natureza da evidência e links às fontes originais.`} livrosDescricao="Marketing, comportamento do consumidor, marcas, estratégia e administração. Páginas comerciais das editoras não são classificadas como leitura gratuita." artigosTitulo="Artigos e relatórios" artigosDescricao="Pesquisa acadêmica e análise executiva identificadas pela sua natureza. O título abre a publicação original; acesso e idioma podem variar." fontesDescricao="Instituições acadêmicas, consultorias e publicações de referência do Brasil, dos Estados Unidos e da Europa." />}
+  {tipo === 'secao' && secao === 'videos' && catalogo && <VideoCatalog videos={catalogo.videos} modulos={catalogo.modulos} titulo="Marketing e administração, em vídeo" lead={`${catalogo.videos.length} vídeos publicados após revisão individual. A pesquisa de candidatos e a aprovação de canais são etapas distintas da publicação.`} criterios={['Três níveis: fundamentos; aplicação e métodos; pesquisa e análise avançada. A classificação exige revisão do material.', 'Idioma e disponibilidade de legendas são verificados individualmente. Dublagem não é presumida.', 'Canal institucional, credenciais, referências e revisão integral são registrados antes da publicação.']} />}
+  {tipo === 'secao' && ['metricas','biblioteca/glossario','sobre'].includes(secao) && <BusinessTextPage secao={secao} />}
+  {tipo === 'secao' && secao === 'analises' && catalogo && <AnalysisCatalog analises={catalogo.analise ? [catalogo.analise] : []} lead="Leituras críticas de marketing e administração: a pergunta, o método, as evidências e os limites de aplicação." />}
+  {tipo === 'secao' && secao === 'forum' && catalogo && <CommunityPage pautas={catalogo.pautas} path="/business/forum/" lead="Discuta decisões de marketing e administração com fontes e contexto. Cada página possui uma conversa identificada pelo seu endereço; este é o espaço geral de Business." propostas="Temas propostos pelo Harpya para iniciar a conversa. São perguntas para debate, sem autores, respostas ou contagens de discussões inventadas." />}
+  {tipo === 'secao' && secao === 'noticias' && catalogo && (catalogo.noticias[0] ? <NoticiasPagina atual={catalogo.noticias[0]} noticias={catalogo.noticias} prefixo="/business" negocios lead="Marketing e administração com fontes, contexto e limites da evidência." periodicidade="após revisão editorial" /> : <PageIntro trilha={[{rotulo:'Notícias'}]} eyebrow="Harpya · notícias com fonte" titulo="Notícias" lead="Nenhuma notícia publicada ainda. As matérias entram depois da revisão de autoria, fontes e evidências." />)}
+  {tipo === 'secao' && secao === 'news' && catalogo && <><PageIntro trilha={[{rotulo:'Radar'}]} eyebrow="News" titulo="O que saiu sobre marketing e administração" lead="Leituras selecionadas nas instituições de referência. Cada título leva à publicação original." /><section class="page-body"><div class="container"><NewsCard limite={40} manchetes={catalogo.acervo.filter(a => ['artigo','relatorio'].includes(a.data.tipo)).map(a => ({fonte:a.data.autores,titulo:a.data.titulo,url:a.data.url,data:a.data.data_precisa?a.data.data:''}))} chamada="Publicações selecionadas sobre marketing, estratégia e administração" /></div></section></>}
+  {tipo === 'secao' && !['', 'biblioteca', 'videos','metricas','biblioteca/glossario','sobre','analises','forum','noticias','news','biblioteca/fontes'].includes(secao) && <BusinessPage secao={secao} />}
+  {tipo === 'secao' && secao === 'biblioteca/fontes' && <SourceCatalog grupos={gruposFontes} prefixo="/business" />}
+  {tipo === 'guia' && fichaGuia && rendered && <StudyArticle c={fichaGuia} todos={fichasGuias} ant={fichasGuias[indice-1] ?? null} prox={fichasGuias[indice+1] ?? null} Content={rendered.Content} headings={rendered.headings} prefixo="/business" />}
   {tipo === 'recurso' && item && <>
     <header class="container business-page-intro"><nav aria-label="Caminho da página"><a href="/business/">Harpya Business</a> / <a href="/business/biblioteca/">Biblioteca</a></nav><span class="eyebrow">{item.data.evidencia}</span><h1 tabindex="-1">{item.data.titulo}</h1><p>{item.data.resumo}</p></header>
     <BusinessResourceDetail item={item} fonte={fonte} />
   </>}
-</Base>
+</Base>}
