@@ -1,199 +1,234 @@
 [
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "Item Representations Matter: Bridging Hard Semantic IDs and Soft Prototype Mixtures for Generative Retrieval",
-  "url": "https://arxiv.org/abs/2611.05799",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "titulo": "Reducing Representational Interference in Retrieval Embeddings with Trainable Prefix Tokens",
+  "url": "https://arxiv.org/abs/2611.07298",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "SciToT: Multimodal Tip-of-the-Tongue Retrieval for Scientific Papers",
-  "url": "https://arxiv.org/abs/2611.05829",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "titulo": "CacheGraft: Enhancing Retrieval-Augmented Generation via Latent-Space Document Enrichment",
+  "url": "https://arxiv.org/abs/2611.07393",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "Weaver: Weaving Preference Evidence through Incremental Reasoning for Personalized Retrieval-Augmented Generation",
-  "url": "https://arxiv.org/abs/2611.05900",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "titulo": "BRIDGE: Bridging the Semantic Quantization Gap for Generative Recommendation",
+  "url": "https://arxiv.org/abs/2611.07425",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "Generative Retrieval under Real-Time Supply Constraints in Local Commerce",
-  "url": "https://arxiv.org/abs/2611.06323",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "titulo": "OptST: Optimizing Semantic Tokenization for LLM-Enhanced Recommendation",
+  "url": "https://arxiv.org/abs/2611.07523",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "RAGCompass: Generalizable Retriever Routing via Reranking",
-  "url": "https://arxiv.org/abs/2611.05596",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "titulo": "Probabilistic Relevance Decisions for Semantic Retrieval",
+  "url": "https://arxiv.org/abs/2611.08014",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "ArcRAG: Agentic Compositional Retrieval over Knowledge Graphs",
-  "url": "https://arxiv.org/abs/2611.06481",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "titulo": "Domain-specific information retrieval",
+  "url": "https://arxiv.org/abs/2611.08228",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "Signed but Steerable: Measuring and Closing the Text-Vector Integrity Gap in Offline Retrieval-Augmented Generation",
-  "url": "https://arxiv.org/abs/2611.06498",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "titulo": "GINGER: Spicing Up Graph-Based Vector Search",
+  "url": "https://arxiv.org/abs/2611.08306",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "Balancing hierarchical representation and quantization: A performance trade-off in text embeddings",
-  "url": "https://arxiv.org/abs/2611.06859",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "titulo": "Persistent Retrieval for Conversational Agents: A Study of Retrieval Efficiency",
+  "url": "https://arxiv.org/abs/2611.07899",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "Driving Video Retrieval for Complex Queries with Structured Grounding",
-  "url": "https://arxiv.org/abs/2606.09109",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "titulo": "ZeroRAG: Adaptive Semantic Peer Routing for Decentralized Retrieval-Augmented Generation",
+  "url": "https://arxiv.org/abs/2611.07928",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "Factorized MLLM Embeddings for Composed Image Retrieval",
-  "url": "https://arxiv.org/abs/2611.05193",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "titulo": "Decision Models as Retrieval Gates Against Injection and Pollution",
+  "url": "https://arxiv.org/abs/2611.08325",
+  "data": "06/11/2026",
+  "ts": 1793941200
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "FloodSQL-Bench: A Retrieval-Augmented Benchmark for Geospatially-Grounded Text-to-SQL",
+  "url": "https://arxiv.org/abs/2512.12084",
+  "data": "06/11/2026",
+  "ts": 1793941200
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "HyperSU: Corpus-Driven Semantic-Unit Hypergraph for Retrieval-Augmented Generation",
+  "url": "https://arxiv.org/abs/2606.28351",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "CaRe-KT: Continuity-Aware Retrieval-Augmented Reasoning for Knowledge Tracing",
-  "url": "https://arxiv.org/abs/2611.03744",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "titulo": "LowRAM: Low-Rank Keys and Amortised Values for Composable KV Cache Compression at Test-Time",
+  "url": "https://arxiv.org/abs/2611.07025",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Embedding Semantic Entropy: NLI-Free Semantic Uncertainty Estimation with Geometry-Aware Clustering",
-  "url": "https://arxiv.org/abs/2611.03876",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "titulo": "TileQuant: Tile as the Precision-Allocation Unit for LLM Mixed-Precision Post-Training Quantization",
+  "url": "https://arxiv.org/abs/2611.07217",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Ermakov--Based embeddings as a parameter-free layer for physics-informed neural networks",
-  "url": "https://arxiv.org/abs/2611.03964",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "titulo": "KG-Neighbor: Knowledge-Guided Neighborhood Construction for Embedding Visualization",
+  "url": "https://arxiv.org/abs/2611.07246",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "LoopKV: Loop-Aware KV Cache Compression for Serving Looped Transformers",
-  "url": "https://arxiv.org/abs/2611.04137",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "titulo": "Evolutionary Adaptive Neighborhood Learning: A Genetic Algorithm for Instance-Dependent k Optimization in Nearest Neighbor Classification",
+  "url": "https://arxiv.org/abs/2611.07257",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Anchor: Augmented Cross-Layer Recurrent State for Long-Context Retrieval in Test-Time Training",
-  "url": "https://arxiv.org/abs/2611.04327",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "titulo": "ConvPE: Convolutional Position Embedding Improves Transformers",
+  "url": "https://arxiv.org/abs/2611.07749",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Near-Zero Token Embeddings Silently Stall Training in Gated Sequence Models",
-  "url": "https://arxiv.org/abs/2611.04449",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "titulo": "PersonaAgent: Retrieval-Augmented Transaction Anomaly Scoring with Refreshable Multi-Entity Persona Memory",
+  "url": "https://arxiv.org/abs/2611.08094",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Basin2Vec: Learning Basin-Centric Embeddings for Scalable Hydrological Modeling",
-  "url": "https://arxiv.org/abs/2611.05164",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "titulo": "StrataFlux: Memory-Hierarchy-Native Low-Bit LLM Inference",
+  "url": "https://arxiv.org/abs/2611.08363",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Fusing Earth observation embeddings and spaceborne terrain with meteorological forcing for flood peak depth prediction from high-water marks",
-  "url": "https://arxiv.org/abs/2611.05220",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "titulo": "User Embeddings are Superpositions of Interpretable Behavioral Modes",
+  "url": "https://arxiv.org/abs/2611.08487",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "NovoCRF: Globally Normalized De Novo Peptide Sequencing on a Prefix-Mass Lattice",
-  "url": "https://arxiv.org/abs/2611.05260",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "titulo": "Bayesian Tensor Train Kernel Machines with Automatic Model Complexity Inference",
+  "url": "https://arxiv.org/abs/2611.07129",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "LoopVQ: Sub 1-bit KV Cache Quantization for Looped Transformers",
-  "url": "https://arxiv.org/abs/2611.05304",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "titulo": "TACT-KV: Tri-Axis Cosine Transform for Compressing Volumetric KV Caches in Medical VLMs",
+  "url": "https://arxiv.org/abs/2611.07593",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "FlagRot: Selective Rotation for Low-Bit KV Caches",
-  "url": "https://arxiv.org/abs/2611.03992",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "titulo": "Embedding-Space Fingerprinting of LoRA Fine-Tunes: Recovering the Training-Data Domain from the Model Artifact Alone",
+  "url": "https://arxiv.org/abs/2611.07610",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Tokenizer Myths and Where To Find Them",
-  "url": "https://arxiv.org/abs/2611.04215",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "titulo": "HomID : Benchmarking Intrinsic Dimension Estimators on Homogenous Manifolds with Anisotropic Embeddings",
+  "url": "https://arxiv.org/abs/2510.01335",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.CL",
   "titulo": "Human-like cross-language generalisation in deep neural speaker embeddings and its acoustic foundations",
   "url": "https://arxiv.org/abs/2611.05384",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.CL",
   "titulo": "SRRM: A Retrieval-Reconstruction Benchmark for Evaluating Long-Context Memory in Small Language Models",
   "url": "https://arxiv.org/abs/2611.05386",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "data": "06/11/2026",
+  "ts": 1793941200
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "RAGCompass: Generalizable Retriever Routing via Reranking",
+  "url": "https://arxiv.org/abs/2611.05596",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.CL",
   "titulo": "Where Should a KV-Cache Repair Budget Go? Distractor Structure and Contextual Compatibility in Non-Prefix Reuse",
   "url": "https://arxiv.org/abs/2611.06397",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.CL",
   "titulo": "Interpretable Text Embeddings Based on Hierarchical Questions",
   "url": "https://arxiv.org/abs/2611.06402",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "data": "06/11/2026",
+  "ts": 1793941200
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "ArcRAG: Agentic Compositional Retrieval over Knowledge Graphs",
+  "url": "https://arxiv.org/abs/2611.06481",
+  "data": "06/11/2026",
+  "ts": 1793941200
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Balancing hierarchical representation and quantization: A performance trade-off in text embeddings",
+  "url": "https://arxiv.org/abs/2611.06859",
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.CL",
   "titulo": "GaugeQuant: Online Learning of Quantization-Optimal Bases from LLM Symmetries",
   "url": "https://arxiv.org/abs/2607.20757",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "arXiv cs.CL",
   "titulo": "Query-Oblivious Coresets for Softmax Attention: Improved Bounds and Efficient Constructions",
   "url": "https://arxiv.org/abs/2609.06327",
-  "data": "05/11/2026",
-  "ts": 1793854800
+  "data": "06/11/2026",
+  "ts": 1793941200
  },
  {
   "fonte": "Hugging Face",
