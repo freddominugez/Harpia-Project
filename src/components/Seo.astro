@@ -3,12 +3,15 @@
 // Open Graph, Twitter Card, links alternativos (markdown e RSS) e JSON-LD.
 // Os dados de cada página vêm do registro em src/lib/rotas.ts.
 import { SITE, VERIFICACAO } from "../config";
+import { ambienteDaRota } from '../lib/ambientes';
 import { rotaDe, entidades, trilha, abs, ogDe, mdDe } from "../lib/rotas";
 
 interface Props { titulo?: string; descricao?: string; noindex?: boolean; tituloCompleto?: string }
 const { titulo, descricao = SITE.descricao, noindex = false, tituloCompleto } = Astro.props;
-const tituloFinal = tituloCompleto ?? (titulo ? `${titulo} · ${SITE.nome}` : `${SITE.nome} · ${SITE.lema}`);
 const path = Astro.url.pathname;
+const business = ambienteDaRota(path) === 'business';
+const nomeSite = business ? 'Harpya Business' : SITE.nome;
+const tituloFinal = tituloCompleto ?? (titulo === nomeSite ? `${nomeSite} · Marketing e administração` : titulo ? `${titulo} · ${nomeSite}` : `${nomeSite} · ${SITE.lema}`);
 const canonical = abs(path);
 const rota = noindex ? undefined : await rotaDe(path);
 const og = rota ? abs(ogDe(path)) : abs("/img/og.png");
@@ -35,7 +38,7 @@ const jsonld = JSON.stringify(grafo).replace(/</g, "\\u003c");
 {!noindex && <link rel="alternate" hreflang="pt-BR" href={canonical} />}
 {!noindex && <link rel="alternate" hreflang="x-default" href={canonical} />}
 {rota && <link rel="alternate" type="text/markdown" href={mdDe(path)} title="Versão em markdown" />}
-<link rel="alternate" type="application/rss+xml" href="/rss.xml" title={`${SITE.nome}: novidades`} />
+<link rel="alternate" type="application/rss+xml" href={business ? '/business/rss.xml' : '/rss.xml'} title={`${nomeSite}: novidades`} />
 {VERIFICACAO.google && <meta name="google-site-verification" content={VERIFICACAO.google} />}
 {VERIFICACAO.bing && <meta name="msvalidate.01" content={VERIFICACAO.bing} />}
 <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -44,9 +47,9 @@ const jsonld = JSON.stringify(grafo).replace(/</g, "\\u003c");
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-<meta name="theme-color" content="#282d33" />
+<meta name="theme-color" content={business ? '#214f7a' : '#282d33'} />
 <meta property="og:type" content={artigo ? "article" : "website"} />
-<meta property="og:site_name" content={SITE.nome} />
+<meta property="og:site_name" content={nomeSite} />
 <meta property="og:title" content={tituloFinal} />
 <meta property="og:description" content={descricao} />
 <meta property="og:url" content={canonical} />

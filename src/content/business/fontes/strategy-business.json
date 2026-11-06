@@ -1,0 +1,19 @@
+{
+  "nome": "strategy+business",
+  "url": "https://www.strategy-business.com/",
+  "regiao": "Global",
+  "tipo": "publicacao-executiva",
+  "descricao": "Estratégia, transformação e gestão de organizações.",
+  "idioma": "en",
+  "hosts": [
+    "www.strategy-business.com",
+    "strategy-business.com"
+  ],
+  "feed": "",
+  "status": "aprovado",
+  "verificado_em": "2026-11-06",
+  "escopos": [
+    "artigos"
+  ],
+  "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção."
+}

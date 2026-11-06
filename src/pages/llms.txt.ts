@@ -14,6 +14,7 @@ export const GET: APIRoute = async () => {
     `# ${SITE.nome}`,
     `> ${SITE.descricao}`,
     `Pesquisa aberta em português mantida por ${SITE.autor}. Cada caminho de pesquisa traz mecanismo em equação, custo, teste refutável, regra de parada e arte prévia. Conteúdo sob CC BY 4.0: cite com o título da página, o autor e o link. Cada página HTML tem uma versão em markdown no mesmo endereço terminado em .md. Texto completo em ${abs("/llms-full.txt")}.`,
+    `## Ambientes\n\n- [Tecnologia e Matemática](${abs('/tecnologia/')}): ambiente técnico original\n- [Harpya Business](${abs('/business/llms.txt')}): índice de marketing, estratégia e administração`,
     `## Comece por aqui\n\n${["/", "/comecando/", ...todas.filter((r) => r.path.startsWith("/comecando/") && r.path !== "/comecando/").map((r) => r.path), "/estudos/", "/sobre/"].map(linha).join("\n")}`,
     ...(todas.some((r) => r.path.startsWith("/analises/")) ? [`## Análises\n\n${todas.filter((r) => r.path.startsWith("/analises/")).map((r) => linha(r.path)).join("\n")}`] : []),
     `## Caminhos de pesquisa\n\n${caminhos.map((r) => linha(r.path)).join("\n")}`,

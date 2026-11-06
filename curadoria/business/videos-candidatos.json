@@ -1,0 +1,193 @@
+{
+  "ambiente": "business",
+  "atualizado_em": "2026-11-06T19:57:41.199005+00:00",
+  "politica": "candidatos_sem_publicacao_automatica",
+  "fontes": [
+    {
+      "id": "UC1fHbk7N11bB8UnL4tYg26A",
+      "fonte": "fdc",
+      "status": "ok",
+      "itens": 0,
+      "mensagem": "",
+      "verificado_em": "2026-11-06T19:57:41.199005+00:00"
+    },
+    {
+      "id": "UC8DhN1cJi0QklBQot5hv_kg",
+      "fonte": "fgv",
+      "status": "ok",
+      "itens": 0,
+      "mensagem": "",
+      "verificado_em": "2026-11-06T19:57:41.199005+00:00"
+    },
+    {
+      "id": "UCWo4IA01TXzBeGJJKWHOG9g",
+      "fonte": "hbr",
+      "status": "ok",
+      "itens": 3,
+      "mensagem": "",
+      "verificado_em": "2026-11-06T19:57:41.199005+00:00"
+    },
+    {
+      "id": "UCk8n46m74K5XWfdeBzOXDfA",
+      "fonte": "hbs",
+      "status": "ok",
+      "itens": 0,
+      "mensagem": "",
+      "verificado_em": "2026-11-06T19:57:41.199005+00:00"
+    },
+    {
+      "id": "UC9aeQQ-NqjHS3nfiod2PMSA",
+      "fonte": "insead",
+      "status": "ok",
+      "itens": 1,
+      "mensagem": "",
+      "verificado_em": "2026-11-06T19:57:41.199005+00:00"
+    },
+    {
+      "id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
+      "fonte": "lbs",
+      "status": "ok",
+      "itens": 3,
+      "mensagem": "",
+      "verificado_em": "2026-11-06T19:57:41.199005+00:00"
+    },
+    {
+      "id": "UC0wOrSaO_sBGGU9Jderpk7g",
+      "fonte": "mit-smr",
+      "status": "ok",
+      "itens": 0,
+      "mensagem": "",
+      "verificado_em": "2026-11-06T19:57:41.199005+00:00"
+    },
+    {
+      "id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
+      "fonte": "wharton",
+      "status": "ok",
+      "itens": 1,
+      "mensagem": "",
+      "verificado_em": "2026-11-06T19:57:41.199005+00:00"
+    }
+  ],
+  "itens": [
+    {
+      "id": "c1988cf31e9bc1980715",
+      "ambiente": "business",
+      "tipo": "video",
+      "titulo": "From Cube to Ecosystem: The waterdrop® Customer Experience | J. Niessing, T. Scheele, M. Murray",
+      "url": "https://www.youtube.com/watch?v=aS4Y6DeK0wI",
+      "fonte": "insead",
+      "video_id": "aS4Y6DeK0wI",
+      "channel_id": "UC9aeQQ-NqjHS3nfiod2PMSA",
+      "data": "2026-11-04",
+      "verificado_em": "2026-11-06",
+      "status": "candidato",
+      "revisao_editorial": false,
+      "revisao_integral": false
+    },
+    {
+      "id": "29f6c9e5ad390c2198c7",
+      "ambiente": "business",
+      "tipo": "video",
+      "titulo": "Building Trustworthy Consumer AI | Wharton Business & Generative AI Conference",
+      "url": "https://www.youtube.com/watch?v=gmmvzYJZMGs",
+      "fonte": "wharton",
+      "video_id": "gmmvzYJZMGs",
+      "channel_id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
+      "data": "2026-10-30",
+      "verificado_em": "2026-11-06",
+      "status": "candidato",
+      "revisao_editorial": false,
+      "revisao_integral": false
+    },
+    {
+      "id": "9dbfab309d1f6c812df1",
+      "ambiente": "business",
+      "tipo": "video",
+      "titulo": "How to Manage AI Adoption Across Your Organization",
+      "url": "https://www.youtube.com/watch?v=bcPJfRL94Qw",
+      "fonte": "hbr",
+      "video_id": "bcPJfRL94Qw",
+      "channel_id": "UCWo4IA01TXzBeGJJKWHOG9g",
+      "data": "2026-10-21",
+      "verificado_em": "2026-11-06",
+      "status": "candidato",
+      "revisao_editorial": false,
+      "revisao_integral": false
+    },
+    {
+      "id": "30f8d399567f38225375",
+      "ambiente": "business",
+      "tipo": "video",
+      "titulo": "How AI Is Changing Strategy—and 4 Skills Leaders Need Next",
+      "url": "https://www.youtube.com/watch?v=9f3qnX6aiIE",
+      "fonte": "hbr",
+      "video_id": "9f3qnX6aiIE",
+      "channel_id": "UCWo4IA01TXzBeGJJKWHOG9g",
+      "data": "2026-10-09",
+      "verificado_em": "2026-11-06",
+      "status": "candidato",
+      "revisao_editorial": false,
+      "revisao_integral": false
+    },
+    {
+      "id": "6953895df8196b6db2d6",
+      "ambiente": "business",
+      "tipo": "video",
+      "titulo": "Can You Measure the ROI of Customer Loyalty?",
+      "url": "https://www.youtube.com/watch?v=dm3-nA4ivk0",
+      "fonte": "hbr",
+      "video_id": "dm3-nA4ivk0",
+      "channel_id": "UCWo4IA01TXzBeGJJKWHOG9g",
+      "data": "2026-10-05",
+      "verificado_em": "2026-11-06",
+      "status": "candidato",
+      "revisao_editorial": false,
+      "revisao_integral": false
+    },
+    {
+      "id": "7689bc2a726286b632b2",
+      "ambiente": "business",
+      "tipo": "video",
+      "titulo": "Why 90% of employees don't know the strategy",
+      "url": "https://www.youtube.com/watch?v=b8duDcufp8g",
+      "fonte": "lbs",
+      "video_id": "b8duDcufp8g",
+      "channel_id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
+      "data": "2026-08-11",
+      "verificado_em": "2026-11-06",
+      "status": "candidato",
+      "revisao_editorial": false,
+      "revisao_integral": false
+    },
+    {
+      "id": "714bf1724de4cc9b79e3",
+      "ambiente": "business",
+      "tipo": "video",
+      "titulo": "The secret to communicating strategy clearly",
+      "url": "https://www.youtube.com/watch?v=rMdBQNrHO8U",
+      "fonte": "lbs",
+      "video_id": "rMdBQNrHO8U",
+      "channel_id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
+      "data": "2026-08-11",
+      "verificado_em": "2026-11-06",
+      "status": "candidato",
+      "revisao_editorial": false,
+      "revisao_integral": false
+    },
+    {
+      "id": "094856fc52ffa0a407b4",
+      "ambiente": "business",
+      "tipo": "video",
+      "titulo": "Why sales targets can reduce performance",
+      "url": "https://www.youtube.com/watch?v=sXCyIsc2oj8",
+      "fonte": "lbs",
+      "video_id": "sXCyIsc2oj8",
+      "channel_id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
+      "data": "2026-07-29",
+      "verificado_em": "2026-11-06",
+      "status": "candidato",
+      "revisao_editorial": false,
+      "revisao_integral": false
+    }
+  ]
+}

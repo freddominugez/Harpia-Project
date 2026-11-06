@@ -11,9 +11,15 @@ import Advertisement from '../components/Advertisement.astro';
 import TechnologyCards from '../components/TechnologyCards.astro';
 import MidPageContent from '../components/MidPageContent.astro';
 import '../styles/advertising.css';
+import '../styles/business.css';
+import EnvironmentPreference from '../components/EnvironmentPreference.astro';
+import BusinessSidebar from '../components/BusinessSidebar.astro';
+import { ambienteDaRota } from '../lib/ambientes';
 
 interface Props { titulo?: string; descricao?: string; home?: boolean; noindex?: boolean }
 const { titulo, descricao, home = false, noindex = false } = Astro.props;
+const ambiente = ambienteDaRota(Astro.url.pathname);
+const business = ambiente === 'business';
 ---
 <!doctype html>
 <html lang="pt-BR">
@@ -24,22 +30,23 @@ const { titulo, descricao, home = false, noindex = false } = Astro.props;
     <meta name="color-scheme" content="light" />
     <Seo titulo={titulo} descricao={descricao} noindex={noindex} />
     <link rel="preload" href={interLatin} as="font" type="font/woff2" crossorigin />
-    {home && <link rel="preload" as="image" href="/img/harpya-original.webp" type="image/webp" />}
+    {home && <link rel="preload" as="image" href={business ? '/img/ambientes/harpia-business.png' : '/img/harpya-original.webp'} />}
   </head>
-  <body class={home ? "is-home" : "is-internal"}>
+  <body class:list={[home ? "is-home" : "is-internal", { 'is-business': business }]} data-environment={ambiente}>
     <a class="skip" href="#conteudo">Pular para o conteúdo</a>
     <Header />
     <div class="ad-layout">
     <main id="conteudo">
-      <MidPageContent><slot /></MidPageContent>
+      <MidPageContent ambiente={ambiente}><slot /></MidPageContent>
     </main>
-    <aside class="ad-rail ad-rail-right" aria-label="Publicidade e leituras de tecnologia">
-      <Advertisement posicao="lateral-direita" />
-      <TechnologyCards />
-      <Advertisement posicao="lateral-esquerda" />
+    <aside class="ad-rail ad-rail-right" aria-label={business ? 'Publicidade e fontes de negócios' : 'Publicidade e leituras de tecnologia'}>
+      <Advertisement posicao="lateral-direita" ambiente={ambiente} />
+      {business ? <BusinessSidebar /> : <TechnologyCards />}
+      <Advertisement posicao="lateral-esquerda" ambiente={ambiente} />
     </aside>
     </div>
     <Footer />
+    {!noindex && <EnvironmentPreference />}
     <script>
       import "../scripts/site.ts";
     </script>

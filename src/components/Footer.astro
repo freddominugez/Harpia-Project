@@ -2,22 +2,28 @@
 // Rodapé compacto em faixa grafite, como na referência aprovada.
 import { NAV, SITE } from "../config";
 import VisitCounter from './VisitCounter.astro';
+import { AMBIENTES, ambienteDaRota } from '../lib/ambientes';
+import { BUSINESS_NAV } from '../lib/business';
+const ambiente = ambienteDaRota(Astro.url.pathname);
+const business = ambiente === 'business';
+const menu = business ? BUSINESS_NAV : NAV.map(i => ({ ...i, href: i.href === '/' ? '/tecnologia/' : i.href }));
 const ano = new Date().getFullYear();
 ---
 <footer class="site-footer">
   <div class="container wide footer-row">
-    <a class="footer-brand" href="/" aria-label={`${SITE.nome}, página inicial`}>
+    <a class="footer-brand" href={AMBIENTES[ambiente].inicio} aria-label={`${AMBIENTES[ambiente].nome}, página inicial`}>
       <picture>
         <source srcset="/img/harpya-mark-head.webp" type="image/webp" />
         <img src="/img/harpya-mark-head.png" alt="" width="40" height="37" loading="lazy" />
       </picture>
-      <span><b>HARPYA</b><small>{SITE.subtitulo.toUpperCase()}</small></span>
+      <span><b>{business ? 'HARPYA BUSINESS' : 'HARPYA'}</b><small>{AMBIENTES[ambiente].subtitulo.toUpperCase()}</small></span>
     </a>
     <span class="footer-motto">{SITE.lema}.</span>
     <nav class="footer-nav" aria-label="Links do rodapé">
-      {NAV.map((i) => <a href={i.href}>{i.rotulo}</a>)}
+      {menu.map((i) => <a href={i.href}>{i.rotulo}</a>)}
+      <a href="/?ambientes=1">Trocar ambiente</a>
       <a href="/termos-de-uso/">Termos de Uso</a>
-      <a href="/biblioteca/fontes/">Fontes do site</a>
+      <a href={business ? '/business/biblioteca/fontes/' : '/biblioteca/fontes/'}>Fontes do site</a>
     </nav>
     {SITE.repositorioPublico && (
       <div class="footer-social">
@@ -28,6 +34,7 @@ const ano = new Date().getFullYear();
     )}
     <div class="footer-credit">
       <VisitCounter />
+      <span>Contagem geral do portal, incluindo os dois ambientes.</span>
       <span><b>{SITE.assinatura}</b></span>
       <span>© {ano} {SITE.nome}. Todos os direitos reservados.</span>
       <span>Ressalvadas as licenças CC BY 4.0 e MIT.</span>

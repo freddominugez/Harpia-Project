@@ -35,7 +35,7 @@ const norm = (v = "") => v.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase(
 async function loadIndex(): Promise<Item[]> {
   if (index) return index;
   try {
-    const r = await fetch("/busca.json");
+    const r = await fetch(input?.dataset.searchIndex || "/busca.json");
     index = r.ok ? ((await r.json()) as Item[]) : [];
   } catch {
     index = [];

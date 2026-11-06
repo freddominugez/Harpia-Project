@@ -1,0 +1,19 @@
+{
+  "nome": "McKinsey & Company",
+  "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights",
+  "regiao": "Estados Unidos / global",
+  "tipo": "consultoria",
+  "descricao": "Marketing, crescimento, consumidor, pricing e vendas.",
+  "idioma": "en",
+  "hosts": [
+    "www.mckinsey.com",
+    "mckinsey.com"
+  ],
+  "feed": "https://www.mckinsey.com/Insights/rss.aspx",
+  "status": "aprovado",
+  "verificado_em": "2026-11-06",
+  "escopos": [
+    "artigos"
+  ],
+  "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção."
+}

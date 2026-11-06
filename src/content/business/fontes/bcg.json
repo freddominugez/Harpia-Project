@@ -1,0 +1,19 @@
+{
+  "nome": "Boston Consulting Group",
+  "url": "https://www.bcg.com/capabilities/marketing-sales/insights",
+  "regiao": "Estados Unidos / global",
+  "tipo": "consultoria",
+  "descricao": "Estratégia de marketing, personalização e consumer insights.",
+  "idioma": "en",
+  "hosts": [
+    "www.bcg.com",
+    "bcg.com"
+  ],
+  "feed": "",
+  "status": "aprovado",
+  "verificado_em": "2026-11-06",
+  "escopos": [
+    "artigos"
+  ],
+  "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção."
+}

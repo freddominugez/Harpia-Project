@@ -234,3 +234,10 @@ O Sveltia só roda em HTTPS ou em `localhost`:
 ```bash
 npm run build && npx astro preview   # http://localhost:4321/admin/
 ```
+
+
+### Harpya Business
+
+A aba **Curadoria Business** abre `/admin/business/` para conferir os candidatos de artigos e vídeos, a saúde das fontes e o catálogo proposto. Encaminhar ao CMS cria somente um candidato, sem resumo ou autoria inventados e sem publicação. A revisão e a publicação são feitas na coleção **Business · Leituras e vídeos**. A seleção integral de 17 fontes, oito canais e oito livros foi aprovada em 06/11/2026 e registrada no manifesto. As fichas bibliográficas estão disponíveis; cada novo artigo ou vídeo continua sujeito à revisão individual.
+
+O editor de anúncios agora permite escolher **Tecnologia e Matemática** ou **Harpya Business**. Cada ambiente tem três arquivos próprios. Não é necessário usar a coleção geral para editar os anúncios Business.

@@ -1,5 +1,5 @@
 const nav = document.querySelector('.admin-tools');
-const tools = { anuncios: ['Gerenciador de anúncios', '/admin/anuncios/'], publicar: ['Publicar conteúdos', '/admin/publicar/'], divulgacao: ['Divulgação', '/admin/divulgacao/'], radar: ['Radar IA', '/admin/radar/'] };
+const tools = { business: ['Curadoria Business', '/admin/business/'], anuncios: ['Gerenciador de anúncios', '/admin/anuncios/'], publicar: ['Publicar conteúdos', '/admin/publicar/'], divulgacao: ['Divulgação', '/admin/divulgacao/'], radar: ['Radar IA', '/admin/radar/'] };
 const frames = new Map();
 function openTool(tool, updateURL = true) {
   if (tool !== 'conteudos' && !Object.hasOwn(tools, tool)) tool = 'conteudos';

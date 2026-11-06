@@ -1,0 +1,27 @@
+{
+  "nome": "Harvard Business School",
+  "url": "https://www.hbs.edu/",
+  "regiao": "Estados Unidos",
+  "tipo": "academica",
+  "descricao": "Aulas e casos de administração; seleção de vídeos com revisão individual.",
+  "idioma": "en",
+  "hosts": [
+    "www.hbs.edu"
+  ],
+  "feed": "",
+  "status": "aprovado",
+  "escopos": [
+    "videos"
+  ],
+  "canais": [
+    {
+      "id": "UCk8n46m74K5XWfdeBzOXDfA",
+      "nome": "Harvard Business School",
+      "url": "https://www.youtube.com/channel/UCk8n46m74K5XWfdeBzOXDfA",
+      "procedencia": "https://www.hbs.edu/",
+      "status": "aprovado",
+      "verificado_em": "2026-11-06"
+    }
+  ],
+  "verificado_em": "2026-11-06"
+}

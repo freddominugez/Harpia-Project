@@ -1,0 +1,31 @@
+{
+  "nome": "FGV / RAE / GV-executivo",
+  "url": "https://eaesp.fgv.br/disseminacao-de-conhecimento/nossas_revistas",
+  "regiao": "Brasil",
+  "tipo": "academica",
+  "descricao": "Pesquisa e aplicação do conhecimento em administração.",
+  "idioma": "pt",
+  "hosts": [
+    "eaesp.fgv.br",
+    "periodicos.fgv.br",
+    "portal.fgv.br"
+  ],
+  "feed": "",
+  "status": "aprovado",
+  "verificado_em": "2026-11-06",
+  "canais": [
+    {
+      "id": "UC8DhN1cJi0QklBQot5hv_kg",
+      "nome": "FGV",
+      "url": "https://www.youtube.com/channel/UC8DhN1cJi0QklBQot5hv_kg",
+      "procedencia": "https://portal.fgv.br/",
+      "status": "aprovado",
+      "verificado_em": "2026-11-06"
+    }
+  ],
+  "escopos": [
+    "artigos",
+    "videos"
+  ],
+  "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção."
+}

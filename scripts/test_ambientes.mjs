@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { lerPreferencia, salvarPreferencia, destinoInicial, PREFERENCE_KEY } from '../src/lib/preferencia-ambiente.mjs';
+const storage = () => { const values=new Map(); return {getItem:key=>values.get(key)??null,setItem:(key,value)=>values.set(key,value),removeItem:key=>values.delete(key)}; };
+test('nenhum destino automático sem escolha explícita',()=>assert.equal(destinoInicial('/','',null),null));
+test('salva e restaura somente ambientes conhecidos',()=>{const s=storage();assert.equal(salvarPreferencia(s,'business'),true);assert.equal(lerPreferencia(s),'business');assert.equal(salvarPreferencia(s,'https://evil.test'),false);});
+test('a raiz encaminha para a home escolhida',()=>{assert.equal(destinoInicial('/','','business'),'/business/');assert.equal(destinoInicial('/','','tecnologia'),'/tecnologia/');});
+test('trocar ambiente ignora a preferência sem apagá-la',()=>assert.equal(destinoInicial('/','?ambientes=1','business'),null));
+test('nunca desvia artigo, vídeo, ambiente ou link compartilhado',()=>{for(const path of ['/videos/','/business/','/business/estudos/marcas/','/estudos/caminhos/escala-diagonal/'])assert.equal(destinoInicial(path,'','business'),null);});
+test('armazenamento inválido ou bloqueado não impede navegação',()=>{const broken={getItem(){throw Error('blocked');},setItem(){throw Error('blocked');}};assert.equal(lerPreferencia(broken),null);assert.equal(salvarPreferencia(broken,'business'),false);assert.equal(lerPreferencia(null),null);});
+test('preferências antigas ou corrompidas são ignoradas',()=>{const s=storage();s.setItem(PREFERENCE_KEY,'/business/');assert.equal(lerPreferencia(s),null);});

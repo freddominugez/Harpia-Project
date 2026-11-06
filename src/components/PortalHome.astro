@@ -1,0 +1,48 @@
+---
+import '@fontsource-variable/inter/wght.css';
+import '../styles/global.css';
+import '../styles/portal.css';
+import Seo from './Seo.astro';
+import GoogleTag from './GoogleTag.astro';
+import { PORTAL_DESCRICAO } from '../lib/ambientes';
+---
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><GoogleTag /><Seo tituloCompleto="Harpya · Dois horizontes, o mesmo rigor" descricao={PORTAL_DESCRICAO} /><link rel="preload" as="image" href="/img/ambientes/harpia-tecnologia.png" /><link rel="preload" as="image" href="/img/ambientes/harpia-business.png" /></head>
+<body class="portal"><a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header class="portal-header"><div class="portal-wrap"><a href="/?ambientes=1" class="portal-brand" aria-label="Harpya, escolher ambiente"><img src="/img/harpya-mark-head.webp" width="48" height="48" alt="" /><span><strong>Harpya</strong><small>CONHECIMENTO TRANSFORMA</small></span></a><nav class="portal-nav" aria-label="Navegação do portal"><a href="#sobre-ambientes">O projeto</a><a href="/business/biblioteca/fontes/">A curadoria</a></nav></div></header>
+  <main id="conteudo" class="portal-wrap">
+    <div class="portal-intro"><div><span class="eyebrow">Conhecimento transforma horizontes</span><h1>Dois horizontes.<br /><em>O mesmo rigor.</em></h1></div><p>Escolha seu ambiente de conhecimento.<br />Ciência para compreender.<br />Estratégia para decidir.</p></div>
+    <div class="portal-cards">
+      <a class="portal-card" href="/tecnologia/" data-environment-card="tecnologia">
+        <span class="portal-card-label"><span>CIÊNCIA &amp; PESQUISA</span><small>AMBIENTE ATUAL</small></span><span class="portal-number" aria-hidden="true">01.</span>
+        <img class="portal-card-art" src="/img/ambientes/harpia-tecnologia.png" alt="Harpia geométrica em repouso, com as asas fechadas e o olhar à esquerda." width="640" height="640" fetchpriority="high" />
+        <h2><small>Harpya</small>Tecnologia<br />e Matemática</h2><p class="portal-card-description">Fundamentos, inteligência artificial e pesquisa aberta. Das equações às ideias que ampliam o possível.</p>
+        <div class="portal-tags"><span>Inteligência artificial</span><span>Matemática</span><span>Computação</span></div><span class="portal-card-action"><span>Entrar em Tecnologia e Matemática</span><b aria-hidden="true">↗</b></span>
+      </a>
+      <a class="portal-card business" href="/business/" data-environment-card="business">
+        <span class="portal-card-label"><span>MARKETING &amp; ADMINISTRAÇÃO</span><small>NOVO AMBIENTE</small></span><span class="portal-number" aria-hidden="true">02.</span>
+        <img class="portal-card-art" src="/img/ambientes/harpia-business.png" alt="Harpia geométrica em posição de voo, com as asas abertas e o olhar à direita." width="640" height="640" fetchpriority="high" />
+        <h2><small>Harpya</small>Business</h2><p class="portal-card-description">Marketing, estratégia e gestão com base em evidências. Pesquisa de referência para decisões melhores.</p>
+        <div class="portal-tags"><span>Marketing</span><span>Estratégia</span><span>Gestão</span></div><span class="portal-card-action"><span>Entrar no Harpya Business</span><b aria-hidden="true">↗</b></span>
+      </a>
+    </div>
+    <div class="portal-preference"><p>Ao entrar, você pode escolher um ambiente para abrir automaticamente nas próximas visitas. Use “Trocar ambiente” para voltar a esta página.</p><button id="reset-environment">Redefinir preferência de entrada</button></div><p class="portal-status" id="portal-status" role="status" aria-live="polite"></p>
+    <section class="portal-about" id="sobre-ambientes" aria-label="Sobre os ambientes"><div><h2>Uma plataforma. Dois acervos.</h2><p>Os mesmos recursos de estudo, leitura e comunidade, com conteúdos e fontes próprios de cada área.</p></div><div><h2>Curadoria com procedência</h2><p>Autoria, referências e limites visíveis. No Business, fontes acadêmicas e executivas do Brasil, dos Estados Unidos e da Europa.</p></div><div><h2>Conhecimento para continuar</h2><p>Trilhas, vídeos, biblioteca e discussões organizados para aprofundar o estudo e formular perguntas melhores.</p></div></section>
+  </main>
+  <footer class="portal-wrap portal-footer"><span>Harpya · Conhecimento transforma horizontes</span><span><a href="/sobre/">Sobre o projeto</a> · <a href="/termos-de-uso/">Termos de uso</a> · Mindscope Labs</span></footer>
+  <script>
+    import { destinoInicial, lerPreferencia, PREFERENCE_KEY } from '../lib/preferencia-ambiente.mjs';
+    let storage: Storage | null = null;
+    try { storage = localStorage; } catch { /* navegação segue sem armazenamento */ }
+    const destination = destinoInicial(location.pathname, location.search, lerPreferencia(storage));
+    if (destination) location.replace(destination);
+    document.querySelector('#reset-environment')?.addEventListener('click', () => {
+      const status = document.querySelector<HTMLElement>('#portal-status');
+      try {
+        storage?.removeItem(PREFERENCE_KEY);
+        try { sessionStorage.removeItem('harpya.perguntado.tecnologia'); sessionStorage.removeItem('harpya.perguntado.business'); } catch { /* sem sessão */ }
+        if (status) status.textContent = 'Preferência apagada. Entre em um ambiente para escolher novamente.';
+      } catch { if (status) status.textContent = 'Armazenamento indisponível. Os dois ambientes continuam acessíveis.'; }
+    });
+  </script>
+</body></html>

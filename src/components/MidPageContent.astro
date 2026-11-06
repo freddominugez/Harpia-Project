@@ -1,10 +1,12 @@
 ---
 import Advertisement from './Advertisement.astro';
 import { midpageOffset } from '../lib/midpage-ad.mjs';
+interface Props { ambiente?: 'tecnologia' | 'business' }
+const { ambiente = 'tecnologia' } = Astro.props;
 
 const html = await Astro.slots.render('default');
 const offset = midpageOffset(html);
 ---
 <Fragment set:html={html.slice(0, offset)} />
-<Advertisement posicao="topo" />
+<Advertisement posicao="topo" ambiente={ambiente} />
 <Fragment set:html={html.slice(offset)} />

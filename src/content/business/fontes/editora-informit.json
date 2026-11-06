@@ -1,0 +1,18 @@
+{
+  "nome": "Pearson FT Press",
+  "url": "https://www.informit.com/",
+  "regiao": "Internacional",
+  "tipo": "editora",
+  "descricao": "Referência bibliográfica da editora; não integra a seleção de artigos.",
+  "idioma": "en",
+  "hosts": [
+    "www.informit.com"
+  ],
+  "feed": "",
+  "status": "aprovado",
+  "escopos": [
+    "livros"
+  ],
+  "canais": [],
+  "verificado_em": "2026-11-06"
+}

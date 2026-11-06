@@ -1,0 +1,6 @@
+---
+import { getBusiness } from '../lib/business';
+const { fontes } = await getBusiness();
+const escolhidas = ['fdc', 'insead', 'mit-smr'];
+---
+<section class="business-sidebar" aria-labelledby="business-sidebar-title"><span class="eyebrow">Leituras de referência</span><h2 id="business-sidebar-title">Fontes de negócios</h2>{escolhidas.map(id => { const fonte = fontes.find(f => f.id === id); return fonte && <a href={fonte.data.url} target="_blank" rel="noopener noreferrer"><small>{fonte.data.regiao}</small><strong>{fonte.data.nome} ↗</strong><span>{fonte.data.descricao}</span></a>; })}<a class="business-sidebar-all" href="/business/biblioteca/fontes/">Conhecer todas as fontes →</a></section>

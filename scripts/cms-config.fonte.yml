@@ -48,7 +48,7 @@ x-selo: &selo { widget: select, options: [{ label: "medido no projeto", value: m
 collections:
   - name: anuncios
     label: "Anúncios"
-    description: "Três posições fixas. Para enviar imagem e publicar diretamente, use o botão Anúncios no rodapé do painel."
+    description: "Três posições por ambiente. As posições business-* são do Business. O editor rápido permite escolher entre Tecnologia e Business."
     folder: src/content/anuncios
     extension: json
     format: json
@@ -410,3 +410,102 @@ collections:
       - { name: glossario, label: "Glossário", file: src/pages/biblioteca/glossario.md, fields: *pagina }
       - { name: arquivados, label: "Arquivados", file: src/pages/estudos/arquivados.md, fields: *pagina }
       - { name: equacoes, label: "Equações", file: src/pages/equacoes.md, fields: *pagina }
+
+  - name: businessGuias
+    label: "Business · Guias de estudo"
+    folder: src/content/business/guias
+    extension: md
+    format: frontmatter
+    create: true
+    slug: "{{trilha}}"
+    identifier_field: titulo
+    summary: "{{numero}}. {{titulo}} · {{status}}"
+    fields:
+      - { label: Título, name: titulo, widget: string }
+      - { label: Resumo, name: resumo, widget: text }
+      - { label: Número, name: numero, widget: number, value_type: int, min: 1 }
+      - { label: Trilha, name: trilha, widget: select, options: [fundamentos, consumidor, estrategia, marcas, clientes, crescimento, mensuracao, gestao] }
+      - { label: Status, name: status, widget: select, options: [candidato, em-revisao, aprovado, publicado, rejeitado, arquivado], default: candidato }
+      - { label: Atualizado, name: atualizado, <<: *dia }
+      - { label: Referências HTTPS, name: fontes, widget: list, field: { name: url, label: URL, widget: string } }
+      - { label: Guia, name: body, widget: markdown, modes: [raw] }
+
+  - name: businessFontes
+    label: "Business · Fontes institucionais"
+    folder: src/content/business/fontes
+    extension: json
+    format: json
+    create: true
+    identifier_field: nome
+    slug: "{{slug}}"
+    summary: "{{nome}} · {{status}}"
+    fields:
+      - { label: Instituição, name: nome, widget: string }
+      - { label: Página oficial HTTPS, name: url, widget: string }
+      - { label: Região, name: regiao, widget: string }
+      - { label: Natureza, name: tipo, widget: select, options: [academica, consultoria, publicacao-executiva, pesquisa-mercado, jornalismo, editora] }
+      - { label: Descrição, name: descricao, widget: text }
+      - { label: Condições de uso editorial, name: restricao, widget: text, required: false, default: "" }
+      - { label: Idioma, name: idioma, widget: select, options: [pt, en, es] }
+      - { label: Domínios permitidos, name: hosts, widget: list, field: { name: host, label: Host, widget: string } }
+      - { label: Escopos aprovados, name: escopos, widget: select, multiple: true, options: [artigos, videos, livros], default: [artigos] }
+      - label: Canais institucionais verificados
+        name: canais
+        widget: list
+        required: false
+        summary: "{{fields.nome}} · {{fields.status}}"
+        fields:
+          - { label: Channel ID, name: id, widget: string, pattern: ["^UC[A-Za-z0-9_-]{22}$", "Channel ID completo do YouTube."] }
+          - { label: Nome, name: nome, widget: string }
+          - { label: Página do canal HTTPS, name: url, widget: string }
+          - { label: Referência institucional HTTPS, name: procedencia, widget: string }
+          - { label: Aprovação, name: status, widget: select, options: [proposto, aprovado, suspenso], default: proposto }
+          - { label: Verificado em, name: verificado_em, <<: *dia }
+      - { label: Feed institucional HTTPS, name: feed, widget: string, required: false, default: "" }
+      - { label: Aprovação da fonte, name: status, widget: select, options: [aprovado, suspenso], default: suspenso }
+      - { label: Verificado em, name: verificado_em, <<: *dia }
+
+  - name: businessAcervo
+    label: "Business · Leituras e vídeos"
+    folder: src/content/business/acervo
+    extension: json
+    format: json
+    create: true
+    identifier_field: titulo
+    slug: "{{titulo}}"
+    summary: "{{tipo}} · {{titulo}} · {{status}}"
+    view_filters:
+      - { label: Candidatos, field: status, pattern: "^candidato$" }
+      - { label: Em revisão, field: status, pattern: "^em-revisao$" }
+      - { label: Publicados, field: status, pattern: "^publicado$" }
+    fields:
+      - { label: Título original, name: titulo, widget: string }
+      - { label: Resumo em português, name: resumo, widget: text }
+      - { label: Fonte institucional, name: fonte, widget: relation, collection: businessFontes, value_field: "{{slug}}", search_fields: [nome], display_fields: [nome] }
+      - { label: URL original HTTPS, name: url, widget: string }
+      - { label: Formato, name: tipo, widget: select, options: [artigo, livro, relatorio, video, noticia, analise, webinar] }
+      - { label: Trilha, name: trilha, widget: select, options: [fundamentos, consumidor, estrategia, marcas, clientes, crescimento, mensuracao, gestao] }
+      - { label: Autoria, name: autores, widget: string }
+      - { label: Data original confirmada, name: data, widget: string, required: false, default: "", hint: "AAAA-MM-DD. Deixe vazio se não for conhecida; não invente dia e mês." }
+      - { label: A data é precisa, name: data_precisa, widget: boolean, default: true }
+      - { label: Idioma, name: idioma, widget: select, options: [pt, en, es] }
+      - { label: Condição de acesso, name: acesso, widget: string }
+      - { label: Natureza da evidência, name: evidencia, widget: string }
+      - { label: Limites de aplicação, name: limites, widget: text }
+      - { label: Estado editorial, name: status, widget: select, options: [candidato, em-revisao, aprovado, publicado, rejeitado, arquivado], default: candidato }
+      - { label: Justificativa de curadoria, name: justificativa, widget: text, required: false, default: "" }
+      - { label: Responsável pela revisão, name: revisor, widget: string, required: false, default: "" }
+      - { label: Revisado em AAAA-MM-DD, name: revisado_em, widget: string, required: false, default: "" }
+      - { label: ID do YouTube (apenas vídeos), name: video_id, widget: string, required: false }
+      - { label: Channel ID verificado (apenas vídeos), name: channel_id, widget: string, required: false, default: "" }
+      - { label: Conteúdo integral revisado (vídeos), name: revisao_integral, widget: boolean, default: false }
+      - { label: Nível, name: nivel, widget: select, options: [Iniciante, Intermediário, Avançado], default: Iniciante }
+      - { label: Duração do vídeo em segundos, name: duracao_segundos, widget: number, value_type: int, min: 0, default: 0, required: false }
+      - { label: Palestrante, name: palestrante, widget: string, required: false, default: "" }
+      - { label: Qualificação verificada, name: credenciais, widget: text, required: false, default: "" }
+      - { label: Evidências da revisão HTTPS, name: evidencias_revisao, widget: list, required: false, field: { name: url, label: URL, widget: string } }
+      - { label: Editora, name: editora, widget: string, required: false, default: "" }
+      - { label: Edição confirmada, name: edicao, widget: string, required: false, default: "" }
+      - { label: ISBN da edição (sem hífens), name: isbn, widget: string, required: false, default: "" }
+      - { label: Texto autoral (notícias e análises), name: corpo, widget: list, required: false, field: { name: paragrafo, label: Parágrafo, widget: text } }
+      - { label: Referências HTTPS, name: referencias, widget: list, required: false, field: { name: url, label: URL, widget: string } }

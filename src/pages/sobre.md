@@ -3,7 +3,8 @@ layout: ../layouts/Texto.astro
 titulo: "Sobre o Harpya"
 kicker: "Sobre"
 descricao: "Como contribuir com o Harpya, privacidade, publicidade e licença."
-atualizado: "2026-10-12"
+lead: "Como contribuir com o Harpya, privacidade, publicidade e licença."
+atualizado: "2026-11-06"
 relacionados:
   - { href: "/forum/", titulo: "Fórum", sub: "Discuta, reproduza, conteste", icone: "messages" }
   - { href: "/estudos/", titulo: "Estudos", sub: "Os 12 caminhos válidos", icone: "file" }
@@ -17,6 +18,11 @@ relacionados:
 - **Correções e conteúdo:** pull request no repositório. Cada vídeo, livro, artigo e caminho é um arquivo em `src/content/`.
 
 ## Privacidade e publicidade
+
+A preferência de entrada em Tecnologia e Matemática ou Business é salva somente
+após uma escolha explícita, no armazenamento local deste navegador. Ela não exige
+conta nem sincroniza dispositivos. Para alterá-la, use **Trocar ambiente** e
+**Redefinir preferência de entrada**. Links diretos de páginas mantêm seu destino.
 
 O rodapé mostra o total aproximado de visualizações desde o início da contagem,
 não o número de pessoas diferentes. O contador não usa cookies nem cria um perfil

@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { validateAd, saveAd } from '../public/admin/anuncios/model.js';
+import { validateAd, saveAd, slotsForEnvironment, slotBase } from '../public/admin/anuncios/model.js';
 const data = { titulo: 'Apoie a pesquisa', anunciante: 'Parceiro', texto: 'Exemplo de anúncio', imagem: '', imagem_alt: '', url: 'https://example.com', status: 'publicado' };
 test('bloqueia links executáveis e publicação incompleta', () => {
   assert.throws(() => validateAd({ ...data, url: 'javascript:alert(1)' }), /https/);
@@ -55,4 +55,14 @@ test('rascunho retira anúncio sem apagar o arquivo nem criar outra posição', 
   assert.equal(files.length, 1);
   assert.equal(JSON.parse(files[0].content).status, 'rascunho');
   await assert.rejects(saveAd(api, '../api', data, 'original-blob'), /inválida/);
+});
+test('anúncios Business gravam somente nas posições do próprio ambiente', async () => {
+  assert.deepEqual(slotsForEnvironment('business'), ['business-topo', 'business-lateral-esquerda', 'business-lateral-direita']);
+  assert.equal(slotBase('business-topo'), 'topo');
+  assert.throws(() => slotsForEnvironment('../business'), /inválido/);
+  const { api, calls } = fixture();
+  await saveAd(api, 'business-topo', data, 'original-blob');
+  const files = calls.find(call => call.path.endsWith('/git/trees')).body.tree;
+  assert.equal(files[0].path, 'src/content/anuncios/business-topo.json');
+  assert.ok(!files.some(file => file.path === 'src/content/anuncios/topo.json'));
 });

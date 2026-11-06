@@ -1,4 +1,9 @@
 export const SLOTS = ['topo', 'lateral-esquerda', 'lateral-direita'];
+export const slotBase = slot => slot.startsWith('business-') ? slot.slice('business-'.length) : slot;
+export function slotsForEnvironment(environment) {
+  if (!['tecnologia', 'business'].includes(environment)) throw new Error('Ambiente inválido.');
+  return SLOTS.map(slot => environment === 'business' ? `business-${slot}` : slot);
+}
 const REPO = '/repos/freddominugez/Harpia-Project';
 export function validateAd(data) {
   for (const [field, limit] of Object.entries({ titulo: 80, anunciante: 100, texto: 240, imagem_alt: 160 })) {
@@ -13,7 +18,7 @@ export function validateAd(data) {
 }
 
 export async function saveAd(api, slot, data, expectedSha, image, { branch = 'main' } = {}) {
-  if (!SLOTS.includes(slot)) throw new Error('Posição de anúncio inválida.');
+  if (![...SLOTS, ...slotsForEnvironment('business')].includes(slot)) throw new Error('Posição de anúncio inválida.');
   const path = `src/content/anuncios/${slot}.json`;
   const saved = { ...data };
   let uploaded;

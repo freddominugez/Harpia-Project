@@ -1,33 +1,40 @@
 ---
 // Cabeçalho compacto (~63 px) com navegação textual, busca real e menu móvel.
-import { NAV, SITE } from "../config";
+import { NAV } from "../config";
+import { AMBIENTES, ambienteDaRota } from '../lib/ambientes';
+import { BUSINESS_NAV } from '../lib/business';
 const atual = Astro.url.pathname;
-const ativo = (href: string) => (href === "/" ? atual === "/" : atual.startsWith(href));
+const ambiente = ambienteDaRota(atual);
+const business = ambiente === 'business';
+const inicio = AMBIENTES[ambiente].inicio;
+const menu = business ? BUSINESS_NAV : NAV.map(i => ({ ...i, href: i.href === '/' ? inicio : i.href }));
+const ativo = (href: string) => (href === inicio ? atual === inicio : atual.startsWith(href));
 ---
 <header class="site-header">
   <div class="container header-inner">
-    <a class="wordmark" href="/" aria-label={`${SITE.nome}, página inicial`}>
+    <a class="wordmark" href={inicio} aria-label={`${AMBIENTES[ambiente].nome}, página inicial`}>
       <picture>
         <source srcset="/img/harpya-mark-head.webp" type="image/webp" />
         <img src="/img/harpya-mark-head.png" alt="" width="46" height="43" />
       </picture>
-      <span class="wordmark-text"><b>HARPYA</b><em>{SITE.subtitulo.toUpperCase()}</em></span>
+      <span class="wordmark-text"><b>{business ? 'HARPYA BUSINESS' : 'HARPYA'}</b><em>{AMBIENTES[ambiente].subtitulo.toUpperCase()}</em></span>
     </a>
     <nav class="nav-links" aria-label="Navegação principal">
-      {NAV.filter((i) => i.principal).map((i) => <a href={i.href} aria-current={ativo(i.href) ? "page" : undefined}>{i.rotulo}</a>)}
+      {menu.filter((i) => i.principal).map((i) => <a href={i.href} aria-current={ativo(i.href) ? "page" : undefined}>{i.rotulo}</a>)}
     </nav>
     <div class="header-actions">
       <button type="button" class="search-trigger" data-search-open aria-label="Pesquisar no site (Ctrl ou Command + K)" aria-haspopup="dialog">
         <img class="icon" src="/icons/search.svg" alt="" aria-hidden="true" width="21" height="21" />
       </button>
-      <a class="btn gold slim" href="/forum/">Participar</a>
+      <a class="environment-switch" href="/?ambientes=1">Trocar ambiente</a>
+      <a class="btn gold slim" href={business ? '/business/forum/' : '/forum/'}>Participar</a>
       <button type="button" class="mobile-menu-button" data-menu aria-expanded="false" aria-controls="menu-movel" aria-label="Abrir menu de navegação">
         <img class="icon" src="/icons/menu.svg" alt="" aria-hidden="true" width="22" height="22" />
       </button>
     </div>
   </div>
   <nav class="mobile-panel" id="menu-movel" data-mobile-panel aria-label="Navegação móvel">
-    {NAV.map((i) => (
+    {menu.map((i) => (
       <a href={i.href} aria-current={ativo(i.href) ? "page" : undefined}>
         <img class="icon" src={`/icons/${i.icone}.svg`} alt="" aria-hidden="true" width="20" height="20" />
         <span>{i.rotulo}</span>
@@ -38,10 +45,10 @@ const ativo = (href: string) => (href === "/" ? atual === "/" : atual.startsWith
 <div class="search-overlay" data-search-overlay aria-hidden="true" role="dialog" aria-modal="true" aria-label="Pesquisa no site">
   <div class="search-modal">
     <div class="search-top">
-      <label for="busca-global">Pesquisar páginas, caminhos e equações</label>
+      <label for="busca-global">{business ? 'Pesquisar em marketing e administração' : 'Pesquisar páginas, caminhos e equações'}</label>
       <button class="plain-button" type="button" data-search-close aria-label="Fechar a pesquisa">×</button>
     </div>
-    <input id="busca-global" data-search-input type="search" autocomplete="off" placeholder="Bits, tokens, Bellman, embeddings..." />
+    <input id="busca-global" data-search-input data-search-index={business ? '/business/busca.json' : '/busca.json'} type="search" autocomplete="off" placeholder={business ? 'Marca, consumidor, estratégia, métricas...' : 'Bits, tokens, Bellman, embeddings...'} />
     <div class="search-results" data-search-results aria-live="polite"></div>
     <p class="search-hint">Atalho: Ctrl ou ⌘ + K. Esc fecha.</p>
   </div>

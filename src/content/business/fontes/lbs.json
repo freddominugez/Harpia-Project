@@ -1,0 +1,30 @@
+{
+  "nome": "London Business School · Think",
+  "url": "https://www.london.edu/think",
+  "regiao": "Europa",
+  "tipo": "academica",
+  "descricao": "Estratégia e pesquisa aplicada em administração.",
+  "idioma": "en",
+  "hosts": [
+    "www.london.edu",
+    "london.edu"
+  ],
+  "feed": "",
+  "verificado_em": "2026-11-06",
+  "status": "aprovado",
+  "escopos": [
+    "artigos",
+    "videos"
+  ],
+  "canais": [
+    {
+      "id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
+      "nome": "London Business School",
+      "url": "https://www.youtube.com/channel/UCRPKXKBG8n6r6vIXoxsD2pQ",
+      "procedencia": "https://www.london.edu/",
+      "status": "aprovado",
+      "verificado_em": "2026-11-06"
+    }
+  ],
+  "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção."
+}

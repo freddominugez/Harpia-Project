@@ -1,0 +1,20 @@
+{
+  "nome": "Financial Times",
+  "url": "https://www.ft.com/",
+  "regiao": "Europa / global",
+  "tipo": "jornalismo",
+  "descricao": "Jornalismo de empresas e mercados.",
+  "idioma": "en",
+  "hosts": [
+    "www.ft.com",
+    "ft.com"
+  ],
+  "feed": "",
+  "verificado_em": "2026-11-06",
+  "status": "aprovado",
+  "escopos": [
+    "artigos"
+  ],
+  "canais": [],
+  "restricao": "Somente jornalismo de mercado; excluir conteúdo patrocinado e não tratar como pesquisa científica."
+}

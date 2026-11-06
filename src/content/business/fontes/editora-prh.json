@@ -1,0 +1,18 @@
+{
+  "nome": "Crown Currency / Penguin Random House",
+  "url": "https://www.penguinrandomhouse.com/",
+  "regiao": "Internacional",
+  "tipo": "editora",
+  "descricao": "Referência bibliográfica da editora; não integra a seleção de artigos.",
+  "idioma": "en",
+  "hosts": [
+    "www.penguinrandomhouse.com"
+  ],
+  "feed": "",
+  "status": "aprovado",
+  "escopos": [
+    "livros"
+  ],
+  "canais": [],
+  "verificado_em": "2026-11-06"
+}

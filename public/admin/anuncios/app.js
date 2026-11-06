@@ -1,12 +1,12 @@
 import { createGitHubClient } from '/admin/session.js';
-import { saveAd, validateAd, SLOTS } from './model.js';
+import { saveAd, validateAd, slotsForEnvironment, slotBase } from './model.js';
 import { create as createUpload } from './vendor/filepond-4.32.12/filepond.esm.min.js';
 const client = createGitHubClient();
 const $ = id => document.getElementById(id);
 const form = $('ad-form');
 let sha = '', savedStatus = 'rascunho', busy = false, image;
 let objectURL, dirty = false;
-const activeSlots = SLOTS;
+let activeSlots = slotsForEnvironment('tecnologia');
 const slotNames = { topo: 'Banner horizontal · meio da página · 970 × 90', 'lateral-esquerda': 'Coluna direita · segundo anúncio · 300 × 250', 'lateral-direita': 'Coluna direita · primeiro anúncio · 300 × 250' };
 const pond = createUpload($('upload'), {
   credits: false, allowMultiple: false, instantUpload: false, allowProcess: false, allowPaste: false,
@@ -23,9 +23,9 @@ const pond = createUpload($('upload'), {
 });
 const value = name => form.elements.namedItem(name).value.trim();
 const tell = (text, error = false) => { $('message').textContent = text; $('message').dataset.error = String(error); };
-function lock(locked) { busy = locked; $('fields').disabled = locked || !sha; $('slot').disabled = locked; $('reload').disabled = locked || !client.hasToken(); pond.disabled = locked || !sha; for (const button of $('ad-overview').querySelectorAll('button')) button.disabled = locked; }
+function lock(locked) { busy = locked; $('fields').disabled = locked || !sha; $('slot').disabled = locked; $('environment').disabled = locked; $('reload').disabled = locked || !client.hasToken(); pond.disabled = locked || !sha; for (const button of $('ad-overview').querySelectorAll('button')) button.disabled = locked; }
 function preview() {
-  document.querySelector('.preview').dataset.slot = $('slot').value;
+  document.querySelector('.preview').dataset.slot = slotBase($('slot').value);
   $('preview-title').textContent = value('titulo') || 'Título do anúncio';
   $('preview-text').textContent = value('texto'); $('preview-advertiser').textContent = value('anunciante');
   const src = objectURL || value('imagem');
@@ -50,7 +50,7 @@ async function load() {
       if (data.imagem && (/^https:\/\//.test(data.imagem) || /^\/img\/anuncios\/[A-Za-z0-9._-]+$/.test(data.imagem))) {
         const img = document.createElement('img'); img.src = data.imagem; img.alt = data.imagem_alt || data.titulo; button.append(img);
       }
-      for (const [tag, text] of [['strong', slotNames[slot]], ['span', data.anunciante || 'Sem anunciante'], ['small', data.status === 'publicado' ? 'Publicado · clique para editar' : 'Rascunho · clique para editar']]) {
+      for (const [tag, text] of [['strong', slotNames[slotBase(slot)]], ['span', data.anunciante || 'Sem anunciante'], ['small', data.status === 'publicado' ? 'Publicado · clique para editar' : 'Rascunho · clique para editar']]) {
         const el = document.createElement(tag); el.textContent = text; button.append(el);
       }
       button.addEventListener('click', () => { if (canDiscard()) { $('slot').value = slot; previousSlot = slot; load(); } }); return button;
@@ -85,7 +85,18 @@ $('login').addEventListener('click', async () => {
   catch (error) { tell(error.message, true); }
   finally { $('login').disabled = false; }
 });
-let previousSlot = $('slot').value;
+let previousSlot = $('slot').value, previousEnvironment = 'tecnologia';
+function setEnvironment(environment) {
+  activeSlots = slotsForEnvironment(environment);
+  $('environment').value = environment;
+  $('slot').replaceChildren(...activeSlots.map(slot => { const option = document.createElement('option'); option.value = slot; option.textContent = slotNames[slotBase(slot)]; return option; }));
+  previousEnvironment = environment; previousSlot = $('slot').value; sha = ''; dirty = false;
+  $('ad-overview').replaceChildren(); preview();
+}
+$('environment').addEventListener('change', () => {
+  if (!canDiscard()) { $('environment').value = previousEnvironment; return; }
+  setEnvironment($('environment').value); load();
+});
 function canDiscard() { return !dirty || confirm('Descartar as alterações ainda não publicadas?'); }
 $('slot').addEventListener('focus', () => { previousSlot = $('slot').value; });
 $('slot').addEventListener('change', () => { if (canDiscard()) { previousSlot = $('slot').value; load(); } else $('slot').value = previousSlot; });
@@ -113,4 +124,5 @@ async function prepareImage(file) {
   } catch { pond.removeFiles(); tell('Não foi possível ler a imagem. Use um arquivo PNG, JPG ou WebP válido.', true); }
   finally { lock(false); }
 }
+setEnvironment(new URLSearchParams(location.search).get('ambiente') === 'business' ? 'business' : 'tecnologia');
 lock(false); load();
