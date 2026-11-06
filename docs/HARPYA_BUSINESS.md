@@ -1,6 +1,6 @@
 # Harpya Business: primeira construção
 
-Atualizado em 06/11/2026. Implementação local; não foi publicada nem enviada ao repositório remoto nesta etapa.
+Publicado em 06/11/2026 em https://www.harpya.org/. Entrega de produção: `34ab18fd8dd0f37ca00ac48669326d924bde3ccc`, projeto Vercel `harpia-project`, equipe By Vulcan.
 
 ## Entrada e identidade
 
@@ -36,7 +36,7 @@ Notícias tem uma página funcional com estado inicial explícito, sem matérias
 
 Na consulta real desta etapa, a McKinsey respondeu e gerou seis candidatos. O feed de marketing da INSEAD retornou HTTP de erro; não houve tentativa de contornar a restrição. As outras fontes estão conectadas como referências institucionais com seleção manual, sem simular feeds inexistentes.
 
-O workflow `business-curadoria` foi preparado para execução diária e manual. Só será executado no GitHub depois que os arquivos forem enviados e o workflow estiver ativo no remoto. Sua atualização altera somente a fila de candidatos. A revisão e a publicação continuam pelo CMS. O workflow não publica vídeos automaticamente. `scripts/coletar_business_videos.py` consulta somente canais aprovados para o escopo de vídeos, valida o Channel ID do feed e de cada entrada e grava `curadoria/business/videos-candidatos.json`. Os oito canais agora estão aprovados e habilitados para consulta. A disponibilidade dos feeds é registrada individualmente na fila; aprovação não garante resposta do YouTube. Falhas preservam candidatos válidos do canal; a coleta nunca atribui revisão integral.
+O workflow `business-curadoria` foi preparado para execução diária e manual. Foi enviado ao GitHub na entrega de produção; a execução diária e manual está configurada no repositório. Sua atualização altera somente a fila de candidatos. A revisão e a publicação continuam pelo CMS. O workflow não publica vídeos automaticamente. `scripts/coletar_business_videos.py` consulta somente canais aprovados para o escopo de vídeos, valida o Channel ID do feed e de cada entrada e grava `curadoria/business/videos-candidatos.json`. Os oito canais agora estão aprovados e habilitados para consulta. A disponibilidade dos feeds é registrada individualmente na fila; aprovação não garante resposta do YouTube. Falhas preservam candidatos válidos do canal; a coleta nunca atribui revisão integral.
 
 ## Verificação
 
@@ -45,7 +45,7 @@ O workflow `business-curadoria` foi preparado para execução diária e manual. 
 - `python -m unittest discover -s scripts -p 'test_business*.py'`: 13 testes aprovados, sem rede.
 - `python scripts/gerar_config_cms.py` e `python scripts/validar_cms.py`: 17 coleções coerentes com os arquivos.
 - `node scripts/test_business_build.mjs`: links internos, IDs, títulos principais, canonical, separação dos índices e ausência do vídeo candidato nas páginas públicas.
-- Conferência no Safari: cards e artes, entrada Business, diálogo, salvamento, retorno automático, busca própria, filtro da biblioteca e reorganização em largura reduzida por zoom. Não houve publicação remota nem envio de comentários.
+- Conferência no Safari: cards e artes, entrada Business, diálogo, salvamento, retorno automático, busca própria, filtro da biblioteca e reorganização em largura reduzida por zoom. A etapa local não enviou comentários. Após a publicação, foram conferidos no domínio público os cards, a entrada Business, o diálogo, a biblioteca e o filtro por autoria, sem enviar mensagens ao fórum.
 
 O teste do CMS identificou um campo `lead` já exigido pelo painel e ausente em Sobre. Foi preenchido com a descrição já existente; a página também recebeu a explicação da nova preferência local.
 
@@ -53,7 +53,7 @@ O teste do CMS identificou um campo `lead` já exigido pelo painel e ausente em 
 
 Use `npm run dev` e abra `http://localhost:4321/?ambientes=1`. Para revisar o build, use `npm run build` e `npm run preview`. Não abra os HTMLs de `dist` diretamente por `file://`, pois os assets utilizam caminhos de site.
 
-Antes de lançar: ampliar e revisar o acervo de artigos, livros e vídeos; preparar as primeiras notícias; resolver ou substituir o acesso automatizado à INSEAD por um método permitido; verificar navegação e conteúdo em dispositivos móveis; decidir se fórum e métricas precisam de configurações remotas próprias; revisar o conteúdo e publicar pela hospedagem existente. As alterações anteriores do checkout foram preservadas.
+Próximas etapas editoriais: ampliar e revisar o acervo de artigos, livros e vídeos; preparar as primeiras notícias; resolver ou substituir o acesso automatizado à INSEAD por um método permitido; verificar navegação e conteúdo em dispositivos móveis; decidir se fórum e métricas precisam de configurações remotas próprias; manter a revisão individual antes de novas publicações. As alterações anteriores do checkout foram preservadas.
 
 ## Catálogo aprovado e painel de curadoria
 
@@ -65,6 +65,14 @@ A ferramenta `/admin/business/`, acessível pela aba Curadoria Business, lê as 
 
 A aprovação de uma fonte ou canal não promove seus itens. Os oito livros receberam revisão bibliográfica nesta etapa; vídeos e novos artigos continuam candidatos até revisão individual. Não há botão de publicação automática na fila.
 
-Após alterações no schema importado, use `npx astro sync --force` se houver cache de conteúdo de uma construção anterior. A construção inclui 39 páginas Business e 90 páginas no projeto inteiro. O relatório `docs/evidencias/harpya-business-qa-2026-11-06.json` registra links, índices, testes e disponibilidade das consultas. A hospedagem remota e os workflows do GitHub ainda não receberam estas alterações locais.
+Após alterações no schema importado, use `npx astro sync --force` se houver cache de conteúdo de uma construção anterior. A construção inclui 39 páginas Business e 99 páginas no projeto inteiro, após integrar as atualizações técnicas recentes do repositório. O relatório `docs/evidencias/harpya-business-qa-2026-11-06.json` registra links, índices, testes e disponibilidade das consultas. A entrega foi publicada e verificada no domínio público; os workflows build e lighthouse passaram no commit de produção.
 
 A consulta real após a ativação respondeu nos oito canais e gerou oito candidatos de vídeo, além dos seis candidatos de artigos da McKinsey. Foi corrigida a leitura do identificador abreviado no cabeçalho Atom do YouTube; o endereço do autor e o ID completo de cada vídeo continuam obrigatórios. Vídeos de divulgação de cursos/programas são excluídos na coleta. Os candidatos não aparecem no HTML, na busca, no RSS ou nas exportações Business.
+
+## Publicação em produção
+
+O commit `34ab18fd8dd0f37ca00ac48669326d924bde3ccc` foi enviado para `main` e publicado pela integração Git existente. Deployment `dpl_8QfAkmbK6RwrBxMArXCCxugmQH4E`, estado READY, domínio https://www.harpya.org/. A entrega foi construída sobre `939e5f7`, preservando notícias, artigos, vídeos e dados técnicos mais recentes. Nenhuma configuração de credenciais, banco ou fórum foi alterada.
+
+Uma instalação limpa identificou que os tipos do Node estavam apenas como peer opcional no lockfile. `@types/node@22.20.5` foi declarado como dependência de desenvolvimento, compatível com Node 22 do projeto. Validação da entrega: 42 verificações Node, 23 testes Python, Astro check sem erros/warnings (quatro hints preexistentes), build de 99 páginas, CMS coerente e 3.647 referências internas verificadas. Build e Lighthouse passaram no GitHub.
+
+Foram conferidas 14 URLs de produção com resposta 200, incluindo portal, Tecnologia, Business, biblioteca, canais, ficha de livro, índices de busca, RSS, sitemap, artes e páginas administrativas. No Safari, clicar no card Business abriu a pergunta de preferência; a biblioteca mostrou oito livros e o filtro “Kotler” encontrou um resultado. Candidatos continuam fora do acervo público.

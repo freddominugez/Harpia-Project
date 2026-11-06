@@ -7,10 +7,10 @@
   "duplicateIds": [],
   "headingFailures": [],
   "missingMeta": [],
-  "entrega": "Catálogo aprovado e ativado na construção local; sem envio ou publicação remota",
+  "entrega": "Publicado e verificado em https://www.harpya.org/",
   "verificacao": {
     "astro_check": "0 erros, 0 warnings; 4 hints anteriores em arquivos do projeto",
-    "build_paginas_total": 90,
+    "build_paginas_total": 99,
     "testes_node": 27,
     "testes_python": 13,
     "cms": "17 coleções; 24 registros institucionais aprovados; 14 fichas publicadas e 1 vídeo candidato manual",
@@ -35,8 +35,7 @@
       "revisão integral dos vídeos candidatos antes de publicar",
       "ampliar leituras e preparar primeiras notícias",
       "teste em dispositivos móveis reais",
-      "feed RSS INSEAD restrito",
-      "envio ao GitHub e publicação remota ainda não executados"
+      "feed RSS INSEAD restrito"
     ]
   },
   "coleta_real": [
@@ -133,5 +132,105 @@
     "candidatos_artigos": 6,
     "candidatos_videos_feed": 8
   },
-  "correcao_rss": "Cabeçalho yt:channelId com ou sem prefixo UC; endereço do autor e IDs completos de cada entrada devem corresponder ao canal aprovado."
+  "correcao_rss": "Cabeçalho yt:channelId com ou sem prefixo UC; endereço do autor e IDs completos de cada entrada devem corresponder ao canal aprovado.",
+  "publicacao": {
+    "verificado_em": "2026-11-06T22:52:56.053355+00:00",
+    "commit": "34ab18fd8dd0f37ca00ac48669326d924bde3ccc",
+    "deployment_id": "dpl_8QfAkmbK6RwrBxMArXCCxugmQH4E",
+    "project_id": "prj_cO7boG1xi3lFMPbsoAa7QTvuN6dF",
+    "target": "production",
+    "estado": "READY",
+    "url": "https://www.harpya.org/",
+    "url_deployment": "https://harpia-project-bh951s0u3-byvulcan.vercel.app",
+    "ci_build": "success",
+    "ci_lighthouse": "success",
+    "testes_node_release": 42,
+    "testes_python_release": 23,
+    "http": {
+      "base": "https://www.harpya.org",
+      "rotas": [
+        {
+          "path": "/?ambientes=1",
+          "status": 200,
+          "url": "https://www.harpya.org/?ambientes=1"
+        },
+        {
+          "path": "/tecnologia/",
+          "status": 200,
+          "url": "https://www.harpya.org/tecnologia/"
+        },
+        {
+          "path": "/business/",
+          "status": 200,
+          "url": "https://www.harpya.org/business/"
+        },
+        {
+          "path": "/business/biblioteca/livros/",
+          "status": 200,
+          "url": "https://www.harpya.org/business/biblioteca/livros/"
+        },
+        {
+          "path": "/business/videos/canais/",
+          "status": 200,
+          "url": "https://www.harpya.org/business/videos/canais/"
+        },
+        {
+          "path": "/business/leituras/livro-marketing-management/",
+          "status": 200,
+          "url": "https://www.harpya.org/business/leituras/livro-marketing-management/"
+        },
+        {
+          "path": "/business/busca.json",
+          "status": 200,
+          "url": "https://www.harpya.org/business/busca.json"
+        },
+        {
+          "path": "/busca.json",
+          "status": 200,
+          "url": "https://www.harpya.org/busca.json"
+        },
+        {
+          "path": "/business/rss.xml",
+          "status": 200,
+          "url": "https://www.harpya.org/business/rss.xml"
+        },
+        {
+          "path": "/business/sitemap.xml",
+          "status": 200,
+          "url": "https://www.harpya.org/business/sitemap.xml"
+        },
+        {
+          "path": "/img/ambientes/harpia-tecnologia.png",
+          "status": 200,
+          "url": "https://www.harpya.org/img/ambientes/harpia-tecnologia.png"
+        },
+        {
+          "path": "/img/ambientes/harpia-business.png",
+          "status": 200,
+          "url": "https://www.harpya.org/img/ambientes/harpia-business.png"
+        },
+        {
+          "path": "/admin/business/",
+          "status": 200,
+          "url": "https://www.harpya.org/admin/business/"
+        },
+        {
+          "path": "/admin/anuncios/?ambiente=business",
+          "status": 200,
+          "url": "https://www.harpya.org/admin/anuncios/?ambiente=business"
+        }
+      ],
+      "livros": 8,
+      "canais": 8,
+      "itens_busca_business": 39,
+      "indices_separados": true,
+      "candidato_manual_fora_do_acervo": true
+    },
+    "browser": [
+      "portal com dois cards em produção",
+      "clique Business abre pergunta de preferência",
+      "biblioteca com oito livros",
+      "filtro por Kotler encontra um resultado"
+    ]
+  }
 }
