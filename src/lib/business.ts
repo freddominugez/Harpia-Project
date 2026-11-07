@@ -65,7 +65,7 @@ export async function getBusiness() {
     if (!source) throw new Error(`Fonte não aprovada no acervo Business: ${item.id}`);
     const url = new URL(item.data.url);
     if (item.data.tipo === 'video') {
-      if (!source.escopos.includes('videos') || url.hostname !== 'www.youtube.com' || url.pathname !== '/watch' || url.searchParams.get('v') !== item.data.video_id || !source.canais.some(c => c.id === item.data.channel_id && c.status === 'aprovado')) throw new Error(`Vídeo sem canal institucional aprovado: ${item.id}`);
+      if ((item.data.revisao_escopo === 'fonte_e_contexto' && !source.escopos.includes('artigos')) || !source.escopos.includes('videos') || url.hostname !== 'www.youtube.com' || url.pathname !== '/watch' || url.searchParams.get('v') !== item.data.video_id || !source.canais.some(c => c.id === item.data.channel_id && c.status === 'aprovado')) throw new Error(`Vídeo sem canal institucional aprovado: ${item.id}`);
       return true;
     }
     if (!source.escopos.includes(item.data.tipo === 'livro' ? 'livros' : 'artigos')) throw new Error(`Formato fora do escopo da fonte Business: ${item.id}`);

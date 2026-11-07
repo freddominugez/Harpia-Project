@@ -1,0 +1,1291 @@
+{
+  "versao": 2,
+  "pesquisado_em": "2026-11-06",
+  "estado": "rascunho_editorial_para_integracao",
+  "rotulo_publico_proposto": "Seleção institucional verificada",
+  "escopo": "16 vídeos únicos de HBR e MIT Sloan Management Review, ambas fontes aprovadas para artigos e vídeos. Conferência institucional e de metadados/descrição; nenhuma revisão audiovisual integral é declarada.",
+  "metodologia": {
+    "principio": "Selecionar conteúdos editoriais institucionais e participantes identificados, sem coaches, agências ou anúncios de cursos identificados no material consultado.",
+    "canais": "Channel ID de cada vídeo confrontado com o canal aprovado no diretório de fontes.",
+    "consulta": "Páginas públicas YouTube em HTTP 200; descrições usadas para resumos próprios curtos. Seis registros prévios reconferidos e dez novos selecionados.",
+    "limitacao_acesso": "Páginas sloanreview.mit.edu bloqueadas por robots na ferramenta web; sem contorno, sem alegação de leitura de paywall ou de transcrição integral.",
+    "literatura_e_papers_mencionados": "A presença de referência na descrição não significa que seu texto integral tenha sido lido.",
+    "qualificacao_de_epoca": "Cargos explicitados em descrições históricas são da época da publicação; não se presume cargo atual. Perfis institucionais atuais, quando consultados, são identificados individualmente.",
+    "alteracoes_runtime": false,
+    "publicacao_realizada": false
+  },
+  "quantitativos": {
+    "videos_selecionados": 16,
+    "hbr": 10,
+    "mit_smr": 6,
+    "revisoes_audiovisuais_integrais": 0,
+    "revisoes_transcricoes_integrais": 0
+  },
+  "videos": [
+    {
+      "id": "mYF2_FBCvXw",
+      "titulo_oficial": "The Five Competitive Forces That Shape Strategy",
+      "url": "https://www.youtube.com/watch?v=mYF2_FBCvXw",
+      "data_publicacao_youtube": "2008-06-30T09:03:44-07:00",
+      "duracao_segundos": 792,
+      "fonte_id": "hbr",
+      "titulo_pt": "As cinco forças competitivas que moldam a estratégia",
+      "canal": {
+        "nome": "Harvard Business Review",
+        "channel_id_confirmado": "UCWo4IA01TXzBeGJJKWHOG9g",
+        "url": "https://www.youtube.com/channel/UCWo4IA01TXzBeGJJKWHOG9g",
+        "procedencia_institucional": "https://www.linkedin.com/posts/harvard-business-review_the-explainer-dont-just-sell-stuff-satisfy-activity-6559809594888204288-cVVt",
+        "status_catalogo": "aprovado",
+        "escopos_catalogo": [
+          "artigos",
+          "videos"
+        ]
+      },
+      "idioma": {
+        "proposto": "en",
+        "base": "Título e descrição institucionais em inglês; confirmação auditiva integral pendente.",
+        "falado_conferido_por_audicao": false
+      },
+      "resumo": "Entrevista com Michael E. Porter sobre a estrutura das cinco forças e seu uso em estratégia empresarial. A descrição oficial apresenta o modelo como ferramenta para compreender a competição e orientar decisões.",
+      "trilha": "estrategia",
+      "nivel_proposto": "intermediario",
+      "apresentacao": {
+        "formato": "entrevista",
+        "responsavel": "Michael E. Porter"
+      },
+      "credenciais": [
+        {
+          "nome": "Michael E. Porter",
+          "qualificacao": "A descrição identifica Porter como professor de Harvard; credencial publicada na época do vídeo.",
+          "fonte_institucional": "https://www.youtube.com/watch?v=mYF2_FBCvXw",
+          "alcance_verificacao": "Identificação e qualificação publicadas na descrição oficial; não é revisão de todos os trabalhos do participante."
+        }
+      ],
+      "contexto_consultado": {
+        "consulta_em": "2026-11-06",
+        "metadados": "Página pública oficial YouTube; videoDetails e playerMicroformatRenderer; HTTP 200. Título, canal/Channel ID, data e duração conferidos.",
+        "descricao": "Descrição institucional do vídeo consultada para enquadramento, participantes e resumo próprio; não equivale a conteúdo audiovisual integral.",
+        "origem_registro": "Registro anterior autorizado, com página YouTube novamente consultada nesta rodada.",
+        "catalogo": "src/content/business/fontes/hbr.json",
+        "conteudo_audiovisual_integral_consultado": false,
+        "transcricao_integral_consultada": false
+      },
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=mYF2_FBCvXw",
+          "consultado": "Metadados e descrição oficiais; sem download de vídeo, áudio ou transcrição."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/harvard-business-review_the-explainer-dont-just-sell-stuff-satisfy-activity-6559809594888204288-cVVt",
+          "consultado": "Procedência do canal reaproveitada do catálogo institucional aprovado; não é alegação de leitura integral dessa página nesta rodada."
+        }
+      ],
+      "revisao": {
+        "status": "selecao_institucional_verificada_em_metadados",
+        "rotulo_proposto": "Seleção institucional verificada",
+        "revisao_integral_audiovisual": false,
+        "revisao_integral_transcricao": false,
+        "resumo_baseado_em": "descricao_institucional",
+        "verificacao_promocao_integral": false
+      },
+      "limites": [
+        "Referência histórica de 2008: não constitui diagnóstico atual de um setor.",
+        "Audiovisual não assistido/ouvido integralmente. Exemplos, alegações, legendas e eventual publicidade interna ainda exigem revisão audiovisual antes de selo de revisão integral.",
+        "Presença de links de assinatura e divulgação institucional na descrição não foi tratada como evidência de aula promocional; conteúdo interno não foi auditado integralmente."
+      ]
+    },
+    {
+      "id": "hw8FfogTUhU",
+      "titulo_oficial": "The Explainer: Don’t Just Sell Stuff — Satisfy Needs",
+      "url": "https://www.youtube.com/watch?v=hw8FfogTUhU",
+      "data_publicacao_youtube": "2019-07-23T12:26:54-07:00",
+      "duracao_segundos": 119,
+      "fonte_id": "hbr",
+      "titulo_pt": "Satisfazer necessidades: além da venda de produtos",
+      "canal": {
+        "nome": "Harvard Business Review",
+        "channel_id_confirmado": "UCWo4IA01TXzBeGJJKWHOG9g",
+        "url": "https://www.youtube.com/channel/UCWo4IA01TXzBeGJJKWHOG9g",
+        "procedencia_institucional": "https://www.linkedin.com/posts/harvard-business-review_the-explainer-dont-just-sell-stuff-satisfy-activity-6559809594888204288-cVVt",
+        "status_catalogo": "aprovado",
+        "escopos_catalogo": [
+          "artigos",
+          "videos"
+        ]
+      },
+      "idioma": {
+        "proposto": "en",
+        "base": "Título e descrição institucionais em inglês; confirmação auditiva integral pendente.",
+        "falado_conferido_por_audicao": false
+      },
+      "resumo": "Explicação editorial da orientação ao cliente associada a Theodore Levitt. A descrição parte das necessidades atendidas e propõe examiná-las antes da forma do produto ou do processo de fabricação.",
+      "trilha": "fundamentos",
+      "nivel_proposto": "iniciante",
+      "apresentacao": {
+        "formato": "explicacao-editorial",
+        "responsavel": "Equipe editorial da Harvard Business Review"
+      },
+      "credenciais": [
+        {
+          "nome": "Equipe editorial da Harvard Business Review",
+          "qualificacao": "Responsabilidade editorial institucional; narrador não identificado. Levitt é referência teórica, não apresentador confirmado.",
+          "fonte_institucional": "https://www.youtube.com/watch?v=hw8FfogTUhU",
+          "alcance_verificacao": "Descrição institucional consultada. Em explicações editoriais, autoria institucional é a credencial; narrador não foi inventado."
+        }
+      ],
+      "contexto_consultado": {
+        "consulta_em": "2026-11-06",
+        "metadados": "Página pública oficial YouTube; videoDetails e playerMicroformatRenderer; HTTP 200. Título, canal/Channel ID, data e duração conferidos.",
+        "descricao": "Descrição institucional do vídeo consultada para enquadramento, participantes e resumo próprio; não equivale a conteúdo audiovisual integral.",
+        "origem_registro": "Registro anterior autorizado, com página YouTube novamente consultada nesta rodada.",
+        "catalogo": "src/content/business/fontes/hbr.json",
+        "conteudo_audiovisual_integral_consultado": false,
+        "transcricao_integral_consultada": false
+      },
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=hw8FfogTUhU",
+          "consultado": "Metadados e descrição oficiais; sem download de vídeo, áudio ou transcrição."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/harvard-business-review_the-explainer-dont-just-sell-stuff-satisfy-activity-6559809594888204288-cVVt",
+          "consultado": "Procedência do canal reaproveitada do catálogo institucional aprovado; não é alegação de leitura integral dessa página nesta rodada."
+        }
+      ],
+      "revisao": {
+        "status": "selecao_institucional_verificada_em_metadados",
+        "rotulo_proposto": "Seleção institucional verificada",
+        "revisao_integral_audiovisual": false,
+        "revisao_integral_transcricao": false,
+        "resumo_baseado_em": "descricao_institucional",
+        "verificacao_promocao_integral": false
+      },
+      "limites": [
+        "Síntese breve de um argumento clássico; não substitui pesquisa direta com clientes.",
+        "Audiovisual não assistido/ouvido integralmente. Exemplos, alegações, legendas e eventual publicidade interna ainda exigem revisão audiovisual antes de selo de revisão integral.",
+        "Presença de links de assinatura e divulgação institucional na descrição não foi tratada como evidência de aula promocional; conteúdo interno não foi auditado integralmente."
+      ]
+    },
+    {
+      "id": "sYdaa02CS5E",
+      "titulo_oficial": "The Explainer: Blue Ocean Strategy",
+      "url": "https://www.youtube.com/watch?v=sYdaa02CS5E",
+      "data_publicacao_youtube": "2019-07-16T07:26:25-07:00",
+      "duracao_segundos": 140,
+      "fonte_id": "hbr",
+      "titulo_pt": "Estratégia do oceano azul",
+      "canal": {
+        "nome": "Harvard Business Review",
+        "channel_id_confirmado": "UCWo4IA01TXzBeGJJKWHOG9g",
+        "url": "https://www.youtube.com/channel/UCWo4IA01TXzBeGJJKWHOG9g",
+        "procedencia_institucional": "https://www.linkedin.com/posts/harvard-business-review_the-explainer-dont-just-sell-stuff-satisfy-activity-6559809594888204288-cVVt",
+        "status_catalogo": "aprovado",
+        "escopos_catalogo": [
+          "artigos",
+          "videos"
+        ]
+      },
+      "idioma": {
+        "proposto": "en",
+        "base": "Título e descrição institucionais em inglês; confirmação auditiva integral pendente.",
+        "falado_conferido_por_audicao": false
+      },
+      "resumo": "Introdução editorial à distinção entre competir por demanda existente e buscar espaços de mercado diferentes. A descrição apresenta a mudança das fronteiras de uma indústria como possibilidade de criação de demanda.",
+      "trilha": "estrategia",
+      "nivel_proposto": "iniciante",
+      "apresentacao": {
+        "formato": "explicacao-editorial",
+        "responsavel": "Equipe editorial da Harvard Business Review"
+      },
+      "credenciais": [
+        {
+          "nome": "Equipe editorial da Harvard Business Review",
+          "qualificacao": "Responsabilidade editorial institucional; narrador e especialistas em cena não identificados.",
+          "fonte_institucional": "https://www.youtube.com/watch?v=sYdaa02CS5E",
+          "alcance_verificacao": "Descrição institucional consultada. Em explicações editoriais, autoria institucional é a credencial; narrador não foi inventado."
+        }
+      ],
+      "contexto_consultado": {
+        "consulta_em": "2026-11-06",
+        "metadados": "Página pública oficial YouTube; videoDetails e playerMicroformatRenderer; HTTP 200. Título, canal/Channel ID, data e duração conferidos.",
+        "descricao": "Descrição institucional do vídeo consultada para enquadramento, participantes e resumo próprio; não equivale a conteúdo audiovisual integral.",
+        "origem_registro": "Registro anterior autorizado, com página YouTube novamente consultada nesta rodada.",
+        "catalogo": "src/content/business/fontes/hbr.json",
+        "conteudo_audiovisual_integral_consultado": false,
+        "transcricao_integral_consultada": false
+      },
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=sYdaa02CS5E",
+          "consultado": "Metadados e descrição oficiais; sem download de vídeo, áudio ou transcrição."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/harvard-business-review_the-explainer-dont-just-sell-stuff-satisfy-activity-6559809594888204288-cVVt",
+          "consultado": "Procedência do canal reaproveitada do catálogo institucional aprovado; não é alegação de leitura integral dessa página nesta rodada."
+        }
+      ],
+      "revisao": {
+        "status": "selecao_institucional_verificada_em_metadados",
+        "rotulo_proposto": "Seleção institucional verificada",
+        "revisao_integral_audiovisual": false,
+        "revisao_integral_transcricao": false,
+        "resumo_baseado_em": "descricao_institucional",
+        "verificacao_promocao_integral": false
+      },
+      "limites": [
+        "A oportunidade proposta pelo modelo depende de verificação; o vídeo não demonstra ausência duradoura de concorrência.",
+        "Audiovisual não assistido/ouvido integralmente. Exemplos, alegações, legendas e eventual publicidade interna ainda exigem revisão audiovisual antes de selo de revisão integral.",
+        "Presença de links de assinatura e divulgação institucional na descrição não foi tratada como evidência de aula promocional; conteúdo interno não foi auditado integralmente."
+      ]
+    },
+    {
+      "id": "_WI3B54m6SU",
+      "titulo_oficial": "The Explainer: What Is Design Thinking?",
+      "url": "https://www.youtube.com/watch?v=_WI3B54m6SU",
+      "data_publicacao_youtube": "2019-07-23T12:19:03-07:00",
+      "duracao_segundos": 138,
+      "fonte_id": "hbr",
+      "titulo_pt": "O que é design thinking?",
+      "canal": {
+        "nome": "Harvard Business Review",
+        "channel_id_confirmado": "UCWo4IA01TXzBeGJJKWHOG9g",
+        "url": "https://www.youtube.com/channel/UCWo4IA01TXzBeGJJKWHOG9g",
+        "procedencia_institucional": "https://www.linkedin.com/posts/harvard-business-review_the-explainer-dont-just-sell-stuff-satisfy-activity-6559809594888204288-cVVt",
+        "status_catalogo": "aprovado",
+        "escopos_catalogo": [
+          "artigos",
+          "videos"
+        ]
+      },
+      "idioma": {
+        "proposto": "en",
+        "base": "Título e descrição institucionais em inglês; confirmação auditiva integral pendente.",
+        "falado_conferido_por_audicao": false
+      },
+      "resumo": "Introdução ao design thinking aplicada a produtos, experiências e outros problemas organizacionais. A descrição destaca a aceitação pelas pessoas envolvidas e a integração de uma solução ao contexto de uso.",
+      "trilha": "consumidor",
+      "nivel_proposto": "iniciante",
+      "apresentacao": {
+        "formato": "explicacao-editorial",
+        "responsavel": "Equipe editorial da Harvard Business Review"
+      },
+      "credenciais": [
+        {
+          "nome": "Equipe editorial da Harvard Business Review",
+          "qualificacao": "Produção editorial HBR. Kelley, Brown e Martin são citados na descrição como referências do método; não como apresentadores confirmados.",
+          "fonte_institucional": "https://www.youtube.com/watch?v=_WI3B54m6SU",
+          "alcance_verificacao": "Descrição institucional consultada. Em explicações editoriais, autoria institucional é a credencial; narrador não foi inventado."
+        }
+      ],
+      "contexto_consultado": {
+        "consulta_em": "2026-11-06",
+        "metadados": "Página pública oficial YouTube; videoDetails e playerMicroformatRenderer; HTTP 200. Título, canal/Channel ID, data e duração conferidos.",
+        "descricao": "Descrição institucional do vídeo consultada para enquadramento, participantes e resumo próprio; não equivale a conteúdo audiovisual integral.",
+        "origem_registro": "Coleta direta nesta rodada.",
+        "catalogo": "src/content/business/fontes/hbr.json",
+        "conteudo_audiovisual_integral_consultado": false,
+        "transcricao_integral_consultada": false
+      },
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=_WI3B54m6SU",
+          "consultado": "Metadados e descrição oficiais; sem download de vídeo, áudio ou transcrição."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/harvard-business-review_the-explainer-dont-just-sell-stuff-satisfy-activity-6559809594888204288-cVVt",
+          "consultado": "Procedência do canal reaproveitada do catálogo institucional aprovado; não é alegação de leitura integral dessa página nesta rodada."
+        }
+      ],
+      "revisao": {
+        "status": "selecao_institucional_verificada_em_metadados",
+        "rotulo_proposto": "Seleção institucional verificada",
+        "revisao_integral_audiovisual": false,
+        "revisao_integral_transcricao": false,
+        "resumo_baseado_em": "descricao_institucional",
+        "verificacao_promocao_integral": false
+      },
+      "limites": [
+        "Explicação curta; não contém, no material consultado, protocolo completo de pesquisa ou validação.",
+        "Audiovisual não assistido/ouvido integralmente. Exemplos, alegações, legendas e eventual publicidade interna ainda exigem revisão audiovisual antes de selo de revisão integral.",
+        "Presença de links de assinatura e divulgação institucional na descrição não foi tratada como evidência de aula promocional; conteúdo interno não foi auditado integralmente."
+      ]
+    },
+    {
+      "id": "aMsvWmvTmxw",
+      "titulo_oficial": "The Explainer: How to Be a Disruptor",
+      "url": "https://www.youtube.com/watch?v=aMsvWmvTmxw",
+      "data_publicacao_youtube": "2019-07-09T07:26:56-07:00",
+      "duracao_segundos": 123,
+      "fonte_id": "hbr",
+      "titulo_pt": "Como funciona a inovação disruptiva",
+      "canal": {
+        "nome": "Harvard Business Review",
+        "channel_id_confirmado": "UCWo4IA01TXzBeGJJKWHOG9g",
+        "url": "https://www.youtube.com/channel/UCWo4IA01TXzBeGJJKWHOG9g",
+        "procedencia_institucional": "https://www.linkedin.com/posts/harvard-business-review_the-explainer-dont-just-sell-stuff-satisfy-activity-6559809594888204288-cVVt",
+        "status_catalogo": "aprovado",
+        "escopos_catalogo": [
+          "artigos",
+          "videos"
+        ]
+      },
+      "idioma": {
+        "proposto": "en",
+        "base": "Título e descrição institucionais em inglês; confirmação auditiva integral pendente.",
+        "falado_conferido_por_audicao": false
+      },
+      "resumo": "A descrição apresenta a disrupção associada a Clayton Christensen como um percurso em que uma oferta começa por segmentos negligenciados e avança no mercado. Serve para formular perguntas sobre quem uma empresa está deixando de atender.",
+      "trilha": "estrategia",
+      "nivel_proposto": "intermediario",
+      "apresentacao": {
+        "formato": "explicacao-editorial",
+        "responsavel": "Equipe editorial da Harvard Business Review"
+      },
+      "credenciais": [
+        {
+          "nome": "Equipe editorial da Harvard Business Review",
+          "qualificacao": "Produção editorial institucional; Christensen é a referência da teoria, não apresentador confirmado.",
+          "fonte_institucional": "https://www.youtube.com/watch?v=aMsvWmvTmxw",
+          "alcance_verificacao": "Descrição institucional consultada. Em explicações editoriais, autoria institucional é a credencial; narrador não foi inventado."
+        }
+      ],
+      "contexto_consultado": {
+        "consulta_em": "2026-11-06",
+        "metadados": "Página pública oficial YouTube; videoDetails e playerMicroformatRenderer; HTTP 200. Título, canal/Channel ID, data e duração conferidos.",
+        "descricao": "Descrição institucional do vídeo consultada para enquadramento, participantes e resumo próprio; não equivale a conteúdo audiovisual integral.",
+        "origem_registro": "Coleta direta nesta rodada.",
+        "catalogo": "src/content/business/fontes/hbr.json",
+        "conteudo_audiovisual_integral_consultado": false,
+        "transcricao_integral_consultada": false
+      },
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=aMsvWmvTmxw",
+          "consultado": "Metadados e descrição oficiais; sem download de vídeo, áudio ou transcrição."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/harvard-business-review_the-explainer-dont-just-sell-stuff-satisfy-activity-6559809594888204288-cVVt",
+          "consultado": "Procedência do canal reaproveitada do catálogo institucional aprovado; não é alegação de leitura integral dessa página nesta rodada."
+        }
+      ],
+      "revisao": {
+        "status": "selecao_institucional_verificada_em_metadados",
+        "rotulo_proposto": "Seleção institucional verificada",
+        "revisao_integral_audiovisual": false,
+        "revisao_integral_transcricao": false,
+        "resumo_baseado_em": "descricao_institucional",
+        "verificacao_promocao_integral": false
+      },
+      "limites": [
+        "O rótulo de disrupção exige análise do caso; inovação e disrupção não são automaticamente equivalentes.",
+        "Audiovisual não assistido/ouvido integralmente. Exemplos, alegações, legendas e eventual publicidade interna ainda exigem revisão audiovisual antes de selo de revisão integral.",
+        "Presença de links de assinatura e divulgação institucional na descrição não foi tratada como evidência de aula promocional; conteúdo interno não foi auditado integralmente."
+      ]
+    },
+    {
+      "id": "SaZcT3N6EXI",
+      "titulo_oficial": "The Explainer: Writing Great Business Plans",
+      "url": "https://www.youtube.com/watch?v=SaZcT3N6EXI",
+      "data_publicacao_youtube": "2019-06-25T08:19:14-07:00",
+      "duracao_segundos": 131,
+      "fonte_id": "hbr",
+      "titulo_pt": "Como estruturar um plano de negócios",
+      "canal": {
+        "nome": "Harvard Business Review",
+        "channel_id_confirmado": "UCWo4IA01TXzBeGJJKWHOG9g",
+        "url": "https://www.youtube.com/channel/UCWo4IA01TXzBeGJJKWHOG9g",
+        "procedencia_institucional": "https://www.linkedin.com/posts/harvard-business-review_the-explainer-dont-just-sell-stuff-satisfy-activity-6559809594888204288-cVVt",
+        "status_catalogo": "aprovado",
+        "escopos_catalogo": [
+          "artigos",
+          "videos"
+        ]
+      },
+      "idioma": {
+        "proposto": "en",
+        "base": "Título e descrição institucionais em inglês; confirmação auditiva integral pendente.",
+        "falado_conferido_por_audicao": false
+      },
+      "resumo": "A explicação organiza a discussão de um plano em pessoas, oportunidade, contexto e relação entre risco e recompensa. A descrição propõe avaliar a coerência desses elementos ao formular o empreendimento.",
+      "trilha": "gestao",
+      "nivel_proposto": "iniciante",
+      "apresentacao": {
+        "formato": "explicacao-editorial",
+        "responsavel": "Equipe editorial da Harvard Business Review"
+      },
+      "credenciais": [
+        {
+          "nome": "Equipe editorial da Harvard Business Review",
+          "qualificacao": "Responsabilidade editorial institucional; narrador não identificado.",
+          "fonte_institucional": "https://www.youtube.com/watch?v=SaZcT3N6EXI",
+          "alcance_verificacao": "Descrição institucional consultada. Em explicações editoriais, autoria institucional é a credencial; narrador não foi inventado."
+        }
+      ],
+      "contexto_consultado": {
+        "consulta_em": "2026-11-06",
+        "metadados": "Página pública oficial YouTube; videoDetails e playerMicroformatRenderer; HTTP 200. Título, canal/Channel ID, data e duração conferidos.",
+        "descricao": "Descrição institucional do vídeo consultada para enquadramento, participantes e resumo próprio; não equivale a conteúdo audiovisual integral.",
+        "origem_registro": "Coleta direta nesta rodada.",
+        "catalogo": "src/content/business/fontes/hbr.json",
+        "conteudo_audiovisual_integral_consultado": false,
+        "transcricao_integral_consultada": false
+      },
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=SaZcT3N6EXI",
+          "consultado": "Metadados e descrição oficiais; sem download de vídeo, áudio ou transcrição."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/harvard-business-review_the-explainer-dont-just-sell-stuff-satisfy-activity-6559809594888204288-cVVt",
+          "consultado": "Procedência do canal reaproveitada do catálogo institucional aprovado; não é alegação de leitura integral dessa página nesta rodada."
+        }
+      ],
+      "revisao": {
+        "status": "selecao_institucional_verificada_em_metadados",
+        "rotulo_proposto": "Seleção institucional verificada",
+        "revisao_integral_audiovisual": false,
+        "revisao_integral_transcricao": false,
+        "resumo_baseado_em": "descricao_institucional",
+        "verificacao_promocao_integral": false
+      },
+      "limites": [
+        "Estrutura introdutória; números, condições de mercado e riscos precisam de investigação própria.",
+        "Audiovisual não assistido/ouvido integralmente. Exemplos, alegações, legendas e eventual publicidade interna ainda exigem revisão audiovisual antes de selo de revisão integral.",
+        "Presença de links de assinatura e divulgação institucional na descrição não foi tratada como evidência de aula promocional; conteúdo interno não foi auditado integralmente."
+      ]
+    },
+    {
+      "id": "qYKJwqtArPM",
+      "titulo_oficial": "The Explainer: Creating New Products for Emerging Markets",
+      "url": "https://www.youtube.com/watch?v=qYKJwqtArPM",
+      "data_publicacao_youtube": "2019-07-16T07:23:30-07:00",
+      "duracao_segundos": 127,
+      "fonte_id": "hbr",
+      "titulo_pt": "Novos produtos para mercados emergentes",
+      "canal": {
+        "nome": "Harvard Business Review",
+        "channel_id_confirmado": "UCWo4IA01TXzBeGJJKWHOG9g",
+        "url": "https://www.youtube.com/channel/UCWo4IA01TXzBeGJJKWHOG9g",
+        "procedencia_institucional": "https://www.linkedin.com/posts/harvard-business-review_the-explainer-dont-just-sell-stuff-satisfy-activity-6559809594888204288-cVVt",
+        "status_catalogo": "aprovado",
+        "escopos_catalogo": [
+          "artigos",
+          "videos"
+        ]
+      },
+      "idioma": {
+        "proposto": "en",
+        "base": "Título e descrição institucionais em inglês; confirmação auditiva integral pendente.",
+        "falado_conferido_por_audicao": false
+      },
+      "resumo": "Introdução editorial à inovação reversa. A descrição recomenda formular o problema e seus requisitos no mercado atendido, em vez de partir de uma linha existente de produtos e pressupostos sobre o consumidor.",
+      "trilha": "estrategia",
+      "nivel_proposto": "intermediario",
+      "apresentacao": {
+        "formato": "explicacao-editorial",
+        "responsavel": "Equipe editorial da Harvard Business Review"
+      },
+      "credenciais": [
+        {
+          "nome": "Equipe editorial da Harvard Business Review",
+          "qualificacao": "Responsabilidade editorial institucional; narrador não identificado.",
+          "fonte_institucional": "https://www.youtube.com/watch?v=qYKJwqtArPM",
+          "alcance_verificacao": "Descrição institucional consultada. Em explicações editoriais, autoria institucional é a credencial; narrador não foi inventado."
+        }
+      ],
+      "contexto_consultado": {
+        "consulta_em": "2026-11-06",
+        "metadados": "Página pública oficial YouTube; videoDetails e playerMicroformatRenderer; HTTP 200. Título, canal/Channel ID, data e duração conferidos.",
+        "descricao": "Descrição institucional do vídeo consultada para enquadramento, participantes e resumo próprio; não equivale a conteúdo audiovisual integral.",
+        "origem_registro": "Coleta direta nesta rodada.",
+        "catalogo": "src/content/business/fontes/hbr.json",
+        "conteudo_audiovisual_integral_consultado": false,
+        "transcricao_integral_consultada": false
+      },
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=qYKJwqtArPM",
+          "consultado": "Metadados e descrição oficiais; sem download de vídeo, áudio ou transcrição."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/harvard-business-review_the-explainer-dont-just-sell-stuff-satisfy-activity-6559809594888204288-cVVt",
+          "consultado": "Procedência do canal reaproveitada do catálogo institucional aprovado; não é alegação de leitura integral dessa página nesta rodada."
+        }
+      ],
+      "revisao": {
+        "status": "selecao_institucional_verificada_em_metadados",
+        "rotulo_proposto": "Seleção institucional verificada",
+        "revisao_integral_audiovisual": false,
+        "revisao_integral_transcricao": false,
+        "resumo_baseado_em": "descricao_institucional",
+        "verificacao_promocao_integral": false
+      },
+      "limites": [
+        "Mercados emergentes são heterogêneos; a proposta não dispensa pesquisa local nem análise de restrições.",
+        "Audiovisual não assistido/ouvido integralmente. Exemplos, alegações, legendas e eventual publicidade interna ainda exigem revisão audiovisual antes de selo de revisão integral.",
+        "Presença de links de assinatura e divulgação institucional na descrição não foi tratada como evidência de aula promocional; conteúdo interno não foi auditado integralmente."
+      ]
+    },
+    {
+      "id": "M1kSIerx-Fg",
+      "titulo_oficial": "The Explainer: Balancing Execution and Adaptation",
+      "url": "https://www.youtube.com/watch?v=M1kSIerx-Fg",
+      "data_publicacao_youtube": "2019-06-18T07:03:17-07:00",
+      "duracao_segundos": 131,
+      "fonte_id": "hbr",
+      "titulo_pt": "Como equilibrar execução e adaptação",
+      "canal": {
+        "nome": "Harvard Business Review",
+        "channel_id_confirmado": "UCWo4IA01TXzBeGJJKWHOG9g",
+        "url": "https://www.youtube.com/channel/UCWo4IA01TXzBeGJJKWHOG9g",
+        "procedencia_institucional": "https://www.linkedin.com/posts/harvard-business-review_the-explainer-dont-just-sell-stuff-satisfy-activity-6559809594888204288-cVVt",
+        "status_catalogo": "aprovado",
+        "escopos_catalogo": [
+          "artigos",
+          "videos"
+        ]
+      },
+      "idioma": {
+        "proposto": "en",
+        "base": "Título e descrição institucionais em inglês; confirmação auditiva integral pendente.",
+        "falado_conferido_por_audicao": false
+      },
+      "resumo": "A descrição diferencia a execução consistente de uma estratégia da adaptação criativa diante de problemas e incerteza. A explicação propõe considerar ambas ao avaliar o desempenho de uma equipe ou organização.",
+      "trilha": "gestao",
+      "nivel_proposto": "intermediario",
+      "apresentacao": {
+        "formato": "explicacao-editorial",
+        "responsavel": "Equipe editorial da Harvard Business Review"
+      },
+      "credenciais": [
+        {
+          "nome": "Equipe editorial da Harvard Business Review",
+          "qualificacao": "Responsabilidade editorial institucional; narrador não identificado.",
+          "fonte_institucional": "https://www.youtube.com/watch?v=M1kSIerx-Fg",
+          "alcance_verificacao": "Descrição institucional consultada. Em explicações editoriais, autoria institucional é a credencial; narrador não foi inventado."
+        }
+      ],
+      "contexto_consultado": {
+        "consulta_em": "2026-11-06",
+        "metadados": "Página pública oficial YouTube; videoDetails e playerMicroformatRenderer; HTTP 200. Título, canal/Channel ID, data e duração conferidos.",
+        "descricao": "Descrição institucional do vídeo consultada para enquadramento, participantes e resumo próprio; não equivale a conteúdo audiovisual integral.",
+        "origem_registro": "Coleta direta nesta rodada.",
+        "catalogo": "src/content/business/fontes/hbr.json",
+        "conteudo_audiovisual_integral_consultado": false,
+        "transcricao_integral_consultada": false
+      },
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=M1kSIerx-Fg",
+          "consultado": "Metadados e descrição oficiais; sem download de vídeo, áudio ou transcrição."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/harvard-business-review_the-explainer-dont-just-sell-stuff-satisfy-activity-6559809594888204288-cVVt",
+          "consultado": "Procedência do canal reaproveitada do catálogo institucional aprovado; não é alegação de leitura integral dessa página nesta rodada."
+        }
+      ],
+      "revisao": {
+        "status": "selecao_institucional_verificada_em_metadados",
+        "rotulo_proposto": "Seleção institucional verificada",
+        "revisao_integral_audiovisual": false,
+        "revisao_integral_transcricao": false,
+        "resumo_baseado_em": "descricao_institucional",
+        "verificacao_promocao_integral": false
+      },
+      "limites": [
+        "Distinção conceitual breve; critérios e medidas de desempenho devem ser definidos para cada situação.",
+        "Audiovisual não assistido/ouvido integralmente. Exemplos, alegações, legendas e eventual publicidade interna ainda exigem revisão audiovisual antes de selo de revisão integral.",
+        "Presença de links de assinatura e divulgação institucional na descrição não foi tratada como evidência de aula promocional; conteúdo interno não foi auditado integralmente."
+      ]
+    },
+    {
+      "id": "Abl6b71H2Mc",
+      "titulo_oficial": "The Explainer: Finding Your Company's Core Competencies",
+      "url": "https://www.youtube.com/watch?v=Abl6b71H2Mc",
+      "data_publicacao_youtube": "2019-07-02T07:40:12-07:00",
+      "duracao_segundos": 135,
+      "fonte_id": "hbr",
+      "titulo_pt": "Como identificar competências centrais da empresa",
+      "canal": {
+        "nome": "Harvard Business Review",
+        "channel_id_confirmado": "UCWo4IA01TXzBeGJJKWHOG9g",
+        "url": "https://www.youtube.com/channel/UCWo4IA01TXzBeGJJKWHOG9g",
+        "procedencia_institucional": "https://www.linkedin.com/posts/harvard-business-review_the-explainer-dont-just-sell-stuff-satisfy-activity-6559809594888204288-cVVt",
+        "status_catalogo": "aprovado",
+        "escopos_catalogo": [
+          "artigos",
+          "videos"
+        ]
+      },
+      "idioma": {
+        "proposto": "en",
+        "base": "Título e descrição institucionais em inglês; confirmação auditiva integral pendente.",
+        "falado_conferido_por_audicao": false
+      },
+      "resumo": "Introdução à ideia de competências centrais como aprendizado coletivo e coordenação de conhecimentos na organização. A descrição relaciona essas capacidades à criação de novos produtos e à necessidade de cultivá-las.",
+      "trilha": "estrategia",
+      "nivel_proposto": "intermediario",
+      "apresentacao": {
+        "formato": "explicacao-editorial",
+        "responsavel": "Equipe editorial da Harvard Business Review"
+      },
+      "credenciais": [
+        {
+          "nome": "Equipe editorial da Harvard Business Review",
+          "qualificacao": "Responsabilidade editorial institucional; narrador não identificado.",
+          "fonte_institucional": "https://www.youtube.com/watch?v=Abl6b71H2Mc",
+          "alcance_verificacao": "Descrição institucional consultada. Em explicações editoriais, autoria institucional é a credencial; narrador não foi inventado."
+        }
+      ],
+      "contexto_consultado": {
+        "consulta_em": "2026-11-06",
+        "metadados": "Página pública oficial YouTube; videoDetails e playerMicroformatRenderer; HTTP 200. Título, canal/Channel ID, data e duração conferidos.",
+        "descricao": "Descrição institucional do vídeo consultada para enquadramento, participantes e resumo próprio; não equivale a conteúdo audiovisual integral.",
+        "origem_registro": "Coleta direta nesta rodada.",
+        "catalogo": "src/content/business/fontes/hbr.json",
+        "conteudo_audiovisual_integral_consultado": false,
+        "transcricao_integral_consultada": false
+      },
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=Abl6b71H2Mc",
+          "consultado": "Metadados e descrição oficiais; sem download de vídeo, áudio ou transcrição."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/harvard-business-review_the-explainer-dont-just-sell-stuff-satisfy-activity-6559809594888204288-cVVt",
+          "consultado": "Procedência do canal reaproveitada do catálogo institucional aprovado; não é alegação de leitura integral dessa página nesta rodada."
+        }
+      ],
+      "revisao": {
+        "status": "selecao_institucional_verificada_em_metadados",
+        "rotulo_proposto": "Seleção institucional verificada",
+        "revisao_integral_audiovisual": false,
+        "revisao_integral_transcricao": false,
+        "resumo_baseado_em": "descricao_institucional",
+        "verificacao_promocao_integral": false
+      },
+      "limites": [
+        "Não é uma avaliação das capacidades de uma empresa real; a identificação exige evidências internas e de mercado.",
+        "Audiovisual não assistido/ouvido integralmente. Exemplos, alegações, legendas e eventual publicidade interna ainda exigem revisão audiovisual antes de selo de revisão integral.",
+        "Presença de links de assinatura e divulgação institucional na descrição não foi tratada como evidência de aula promocional; conteúdo interno não foi auditado integralmente."
+      ]
+    },
+    {
+      "id": "_C-vGu2mL38",
+      "titulo_oficial": "The Explainer: What is a Business Model?",
+      "url": "https://www.youtube.com/watch?v=_C-vGu2mL38",
+      "data_publicacao_youtube": "2019-07-02T07:39:56-07:00",
+      "duracao_segundos": 125,
+      "fonte_id": "hbr",
+      "titulo_pt": "O que é um modelo de negócio?",
+      "canal": {
+        "nome": "Harvard Business Review",
+        "channel_id_confirmado": "UCWo4IA01TXzBeGJJKWHOG9g",
+        "url": "https://www.youtube.com/channel/UCWo4IA01TXzBeGJJKWHOG9g",
+        "procedencia_institucional": "https://www.linkedin.com/posts/harvard-business-review_the-explainer-dont-just-sell-stuff-satisfy-activity-6559809594888204288-cVVt",
+        "status_catalogo": "aprovado",
+        "escopos_catalogo": [
+          "artigos",
+          "videos"
+        ]
+      },
+      "idioma": {
+        "proposto": "en",
+        "base": "Título e descrição institucionais em inglês; confirmação auditiva integral pendente.",
+        "falado_conferido_por_audicao": false
+      },
+      "resumo": "Introdução editorial ao conceito de modelo de negócio e à necessidade de esclarecer sua relação com estratégia. O resumo se limita ao enquadramento disponível na descrição oficial.",
+      "trilha": "fundamentos",
+      "nivel_proposto": "iniciante",
+      "apresentacao": {
+        "formato": "explicacao-editorial",
+        "responsavel": "Equipe editorial da Harvard Business Review"
+      },
+      "credenciais": [
+        {
+          "nome": "Equipe editorial da Harvard Business Review",
+          "qualificacao": "Responsabilidade editorial institucional; narrador não identificado.",
+          "fonte_institucional": "https://www.youtube.com/watch?v=_C-vGu2mL38",
+          "alcance_verificacao": "Descrição institucional consultada. Em explicações editoriais, autoria institucional é a credencial; narrador não foi inventado."
+        }
+      ],
+      "contexto_consultado": {
+        "consulta_em": "2026-11-06",
+        "metadados": "Página pública oficial YouTube; videoDetails e playerMicroformatRenderer; HTTP 200. Título, canal/Channel ID, data e duração conferidos.",
+        "descricao": "Descrição institucional do vídeo consultada para enquadramento, participantes e resumo próprio; não equivale a conteúdo audiovisual integral.",
+        "origem_registro": "Coleta direta nesta rodada.",
+        "catalogo": "src/content/business/fontes/hbr.json",
+        "conteudo_audiovisual_integral_consultado": false,
+        "transcricao_integral_consultada": false
+      },
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=_C-vGu2mL38",
+          "consultado": "Metadados e descrição oficiais; sem download de vídeo, áudio ou transcrição."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/harvard-business-review_the-explainer-dont-just-sell-stuff-satisfy-activity-6559809594888204288-cVVt",
+          "consultado": "Procedência do canal reaproveitada do catálogo institucional aprovado; não é alegação de leitura integral dessa página nesta rodada."
+        }
+      ],
+      "revisao": {
+        "status": "selecao_institucional_verificada_em_metadados",
+        "rotulo_proposto": "Seleção institucional verificada",
+        "revisao_integral_audiovisual": false,
+        "revisao_integral_transcricao": false,
+        "resumo_baseado_em": "descricao_institucional",
+        "verificacao_promocao_integral": false
+      },
+      "limites": [
+        "Descrição substantiva muito curta: etapas, exemplos e argumentos do vídeo não foram inferidos.",
+        "Audiovisual não assistido/ouvido integralmente. Exemplos, alegações, legendas e eventual publicidade interna ainda exigem revisão audiovisual antes de selo de revisão integral.",
+        "Presença de links de assinatura e divulgação institucional na descrição não foi tratada como evidência de aula promocional; conteúdo interno não foi auditado integralmente."
+      ]
+    },
+    {
+      "id": "Vf03g8Apn9M",
+      "titulo_oficial": "Reimagining Marketing Strategy for the AI Era",
+      "url": "https://www.youtube.com/watch?v=Vf03g8Apn9M",
+      "data_publicacao_youtube": "2025-09-25T04:29:01-07:00",
+      "duracao_segundos": 3577,
+      "fonte_id": "mit-smr",
+      "titulo_pt": "Repensar a estratégia de marketing na era da IA",
+      "canal": {
+        "nome": "MIT Sloan Management Review",
+        "channel_id_confirmado": "UC0wOrSaO_sBGGU9Jderpk7g",
+        "url": "https://www.youtube.com/channel/UC0wOrSaO_sBGGU9Jderpk7g",
+        "procedencia_institucional": "https://sloanreview.mit.edu/video/reimagining-marketing-strategy-for-the-ai-era/",
+        "status_catalogo": "aprovado",
+        "escopos_catalogo": [
+          "artigos",
+          "videos"
+        ]
+      },
+      "idioma": {
+        "proposto": "en",
+        "base": "Título e descrição institucionais em inglês; confirmação auditiva integral pendente.",
+        "falado_conferido_por_audicao": false
+      },
+      "resumo": "A apresentação de Oguz A. Acar aborda a implementação da IA generativa em marketing. Segundo a descrição, discute seleção de oportunidades, resistência de consumidores, governança e possíveis mudanças nas relações com marcas envolvendo agentes de IA.",
+      "trilha": "estrategia",
+      "nivel_proposto": "avancado",
+      "apresentacao": {
+        "formato": "webinar",
+        "responsavel": "Oguz A. Acar"
+      },
+      "credenciais": [
+        {
+          "nome": "Oguz A. Acar",
+          "qualificacao": "Professor de Marketing e Inovação",
+          "fonte_institucional": "https://www.kcl.ac.uk/people/oguz-a-acar",
+          "alcance_verificacao": "Perfil institucional em resultados de pesquisa consultados; apenas qualificação e vínculo usados."
+        }
+      ],
+      "contexto_consultado": {
+        "consulta_em": "2026-11-06",
+        "metadados": "Página pública oficial YouTube; videoDetails e playerMicroformatRenderer; HTTP 200. Título, canal/Channel ID, data e duração conferidos.",
+        "descricao": "Descrição institucional do vídeo consultada para enquadramento, participantes e resumo próprio; não equivale a conteúdo audiovisual integral.",
+        "origem_registro": "Registro anterior autorizado, com página YouTube novamente consultada nesta rodada.",
+        "catalogo": "src/content/business/fontes/mit-smr.json",
+        "conteudo_audiovisual_integral_consultado": false,
+        "transcricao_integral_consultada": false
+      },
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=Vf03g8Apn9M",
+          "consultado": "Metadados e descrição oficiais; sem download de vídeo, áudio ou transcrição."
+        },
+        {
+          "url": "https://sloanreview.mit.edu/video/reimagining-marketing-strategy-for-the-ai-era/",
+          "consultado": "Procedência do canal reaproveitada do catálogo institucional aprovado; não é alegação de leitura integral dessa página nesta rodada."
+        },
+        {
+          "url": "https://www.kcl.ac.uk/people/oguz-a-acar",
+          "consultado": "Perfil institucional em resultados de pesquisa consultados; apenas qualificação e vínculo usados."
+        }
+      ],
+      "revisao": {
+        "status": "selecao_institucional_verificada_em_metadados",
+        "rotulo_proposto": "Seleção institucional verificada",
+        "revisao_integral_audiovisual": false,
+        "revisao_integral_transcricao": false,
+        "resumo_baseado_em": "descricao_institucional",
+        "verificacao_promocao_integral": false
+      },
+      "limites": [
+        "Tema de rápida mudança; a descrição anuncia assuntos, mas não valida efeitos, previsões ou resultados de implementação.",
+        "Audiovisual não assistido/ouvido integralmente. Exemplos, alegações, legendas e eventual publicidade interna ainda exigem revisão audiovisual antes de selo de revisão integral.",
+        "Presença de links de assinatura e divulgação institucional na descrição não foi tratada como evidência de aula promocional; conteúdo interno não foi auditado integralmente."
+      ]
+    },
+    {
+      "id": "2cAwSp2hERY",
+      "titulo_oficial": "Marketing With Generative AI: Harvard Business School’s Ayelet Israeli",
+      "url": "https://www.youtube.com/watch?v=2cAwSp2hERY",
+      "data_publicacao_youtube": "2024-01-25T07:16:58-08:00",
+      "duracao_segundos": 1909,
+      "fonte_id": "mit-smr",
+      "titulo_pt": "Marketing com IA generativa: a pesquisa de Ayelet Israeli",
+      "canal": {
+        "nome": "MIT Sloan Management Review",
+        "channel_id_confirmado": "UC0wOrSaO_sBGGU9Jderpk7g",
+        "url": "https://www.youtube.com/channel/UC0wOrSaO_sBGGU9Jderpk7g",
+        "procedencia_institucional": "https://sloanreview.mit.edu/video/reimagining-marketing-strategy-for-the-ai-era/",
+        "status_catalogo": "aprovado",
+        "escopos_catalogo": [
+          "artigos",
+          "videos"
+        ]
+      },
+      "idioma": {
+        "proposto": "en",
+        "base": "Título e descrição institucionais em inglês; confirmação auditiva integral pendente.",
+        "falado_conferido_por_audicao": false
+      },
+      "resumo": "Conversa com Ayelet Israeli sobre oportunidades e limitações de usar IA generativa em pesquisa de mercado. A descrição menciona um estudo com simulação de grupos focais e pesquisas de preferências, sem substituir a necessidade de avaliar seu desenho e validade.",
+      "trilha": "consumidor",
+      "nivel_proposto": "avancado",
+      "apresentacao": {
+        "formato": "entrevista-podcast-institucional",
+        "responsavel": "Ayelet Israeli; mediação de Sam Ransbotham e Shervin Khodabandeh"
+      },
+      "credenciais": [
+        {
+          "nome": "Ayelet Israeli; mediação de Sam Ransbotham e Shervin Khodabandeh",
+          "qualificacao": "Israeli é identificada pelo MIT SMR como professora de Marketing da HBS, cofundadora do Customer Intelligence Lab e PhD em Marketing pela Kellogg. Coprodução editorial MIT SMR e BCG explicitada na descrição.",
+          "fonte_institucional": "https://www.youtube.com/watch?v=2cAwSp2hERY",
+          "alcance_verificacao": "Identificação e qualificação publicadas na descrição oficial; não é revisão de todos os trabalhos do participante."
+        }
+      ],
+      "contexto_consultado": {
+        "consulta_em": "2026-11-06",
+        "metadados": "Página pública oficial YouTube; videoDetails e playerMicroformatRenderer; HTTP 200. Título, canal/Channel ID, data e duração conferidos.",
+        "descricao": "Descrição institucional do vídeo consultada para enquadramento, participantes e resumo próprio; não equivale a conteúdo audiovisual integral.",
+        "origem_registro": "Registro anterior autorizado, com página YouTube novamente consultada nesta rodada.",
+        "catalogo": "src/content/business/fontes/mit-smr.json",
+        "conteudo_audiovisual_integral_consultado": false,
+        "transcricao_integral_consultada": false
+      },
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=2cAwSp2hERY",
+          "consultado": "Metadados e descrição oficiais; sem download de vídeo, áudio ou transcrição."
+        },
+        {
+          "url": "https://sloanreview.mit.edu/video/reimagining-marketing-strategy-for-the-ai-era/",
+          "consultado": "Procedência do canal reaproveitada do catálogo institucional aprovado; não é alegação de leitura integral dessa página nesta rodada."
+        }
+      ],
+      "revisao": {
+        "status": "selecao_institucional_verificada_em_metadados",
+        "rotulo_proposto": "Seleção institucional verificada",
+        "revisao_integral_audiovisual": false,
+        "revisao_integral_transcricao": false,
+        "resumo_baseado_em": "descricao_institucional",
+        "verificacao_promocao_integral": false
+      },
+      "limites": [
+        "Podcast com pesquisadora identificada, não revisão integral de suas evidências. Paper e transcrição apontados na descrição não foram lidos nesta coleta; consumidores sintéticos não equivalem a uma amostra real validada.",
+        "Audiovisual não assistido/ouvido integralmente. Exemplos, alegações, legendas e eventual publicidade interna ainda exigem revisão audiovisual antes de selo de revisão integral.",
+        "Presença de links de assinatura e divulgação institucional na descrição não foi tratada como evidência de aula promocional; conteúdo interno não foi auditado integralmente."
+      ],
+      "coproducao": {
+        "instituicoes": [
+          "MIT Sloan Management Review",
+          "Boston Consulting Group"
+        ],
+        "base": "Descrição oficial do programa Me, Myself, and AI. Ambos são instituições aprovadas no projeto.",
+        "restricao": "Não selecionar demais episódios sem identificação e qualificação individual dos convidados."
+      }
+    },
+    {
+      "id": "1eAAPzwx0HI",
+      "titulo_oficial": "Building Customer Value: From Theory to Practice",
+      "url": "https://www.youtube.com/watch?v=1eAAPzwx0HI",
+      "data_publicacao_youtube": "2025-04-22T02:55:05-07:00",
+      "duracao_segundos": 3569,
+      "fonte_id": "mit-smr",
+      "titulo_pt": "Criar valor para o cliente: da teoria à prática",
+      "canal": {
+        "nome": "MIT Sloan Management Review",
+        "channel_id_confirmado": "UC0wOrSaO_sBGGU9Jderpk7g",
+        "url": "https://www.youtube.com/channel/UC0wOrSaO_sBGGU9Jderpk7g",
+        "procedencia_institucional": "https://sloanreview.mit.edu/video/reimagining-marketing-strategy-for-the-ai-era/",
+        "status_catalogo": "aprovado",
+        "escopos_catalogo": [
+          "artigos",
+          "videos"
+        ]
+      },
+      "idioma": {
+        "proposto": "en",
+        "base": "Título e descrição institucionais em inglês; confirmação auditiva integral pendente.",
+        "falado_conferido_por_audicao": false
+      },
+      "resumo": "A descrição anuncia uma discussão de Michael D. Johnson e Fred Selnes sobre a implementação de estratégias centradas no cliente. O foco declarado combina princípios de marketing, análise de dados e modelos causais para investigar valor ao longo do relacionamento.",
+      "trilha": "clientes",
+      "nivel_proposto": "avancado",
+      "apresentacao": {
+        "formato": "webinar",
+        "responsavel": "Michael D. Johnson e Fred Selnes; mediação de Abbie Lundberg segundo registro institucional anterior"
+      },
+      "credenciais": [
+        {
+          "nome": "Michael D. Johnson e Fred Selnes",
+          "qualificacao": "Professores identificados no registro institucional anterior do MIT SMR",
+          "fonte_institucional": "https://sloanreview.mit.edu/video/building-customer-value-from-theory-to-practice/",
+          "alcance_verificacao": "Reaproveitado de pesquisa-videos-literatura-corretivo.json; página institucional não reaberta nesta rodada. Descrição YouTube atual confirma sobrenomes e tema, não todos os cargos."
+        }
+      ],
+      "contexto_consultado": {
+        "consulta_em": "2026-11-06",
+        "metadados": "Página pública oficial YouTube; videoDetails e playerMicroformatRenderer; HTTP 200. Título, canal/Channel ID, data e duração conferidos.",
+        "descricao": "Descrição institucional do vídeo consultada para enquadramento, participantes e resumo próprio; não equivale a conteúdo audiovisual integral.",
+        "origem_registro": "Registro anterior autorizado, com página YouTube novamente consultada nesta rodada.",
+        "catalogo": "src/content/business/fontes/mit-smr.json",
+        "conteudo_audiovisual_integral_consultado": false,
+        "transcricao_integral_consultada": false,
+        "limite_reconsulta": "A ficha sloanreview.mit.edu é procedência de verificação anterior; nesta rodada o domínio bloqueou consulta automatizada via ferramenta de pesquisa e não houve tentativa de contorno."
+      },
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=1eAAPzwx0HI",
+          "consultado": "Metadados e descrição oficiais; sem download de vídeo, áudio ou transcrição."
+        },
+        {
+          "url": "https://sloanreview.mit.edu/video/reimagining-marketing-strategy-for-the-ai-era/",
+          "consultado": "Procedência do canal reaproveitada do catálogo institucional aprovado; não é alegação de leitura integral dessa página nesta rodada."
+        },
+        {
+          "url": "https://sloanreview.mit.edu/video/building-customer-value-from-theory-to-practice/",
+          "consultado": "Reaproveitado de pesquisa-videos-literatura-corretivo.json; página institucional não reaberta nesta rodada. Descrição YouTube atual confirma sobrenomes e tema, não todos os cargos."
+        }
+      ],
+      "revisao": {
+        "status": "selecao_institucional_verificada_em_metadados",
+        "rotulo_proposto": "Seleção institucional verificada",
+        "revisao_integral_audiovisual": false,
+        "revisao_integral_transcricao": false,
+        "resumo_baseado_em": "descricao_institucional",
+        "verificacao_promocao_integral": false
+      },
+      "limites": [
+        "A descrição não permite verificar resultados ou identificar os modelos causais empregados; perfil completo dos participantes não foi reaberto nesta rodada.",
+        "Audiovisual não assistido/ouvido integralmente. Exemplos, alegações, legendas e eventual publicidade interna ainda exigem revisão audiovisual antes de selo de revisão integral.",
+        "Presença de links de assinatura e divulgação institucional na descrição não foi tratada como evidência de aula promocional; conteúdo interno não foi auditado integralmente."
+      ]
+    },
+    {
+      "id": "1c9qAOI1Z8Y",
+      "titulo_oficial": "Integrating Sales and Operations to Create Higher Value for Customers",
+      "url": "https://www.youtube.com/watch?v=1c9qAOI1Z8Y",
+      "data_publicacao_youtube": "2016-09-09T10:49:00-07:00",
+      "duracao_segundos": 3639,
+      "fonte_id": "mit-smr",
+      "titulo_pt": "Integrar vendas e operações para criar valor ao cliente",
+      "canal": {
+        "nome": "MIT Sloan Management Review",
+        "channel_id_confirmado": "UC0wOrSaO_sBGGU9Jderpk7g",
+        "url": "https://www.youtube.com/channel/UC0wOrSaO_sBGGU9Jderpk7g",
+        "procedencia_institucional": "https://sloanreview.mit.edu/video/reimagining-marketing-strategy-for-the-ai-era/",
+        "status_catalogo": "aprovado",
+        "escopos_catalogo": [
+          "artigos",
+          "videos"
+        ]
+      },
+      "idioma": {
+        "proposto": "en",
+        "base": "Título e descrição institucionais em inglês; confirmação auditiva integral pendente.",
+        "falado_conferido_por_audicao": false
+      },
+      "resumo": "O webinar de Theodore Stank discute a separação entre geração de demanda e atendimento dessa demanda. A descrição propõe aproximar vendas e operações para investigar conflitos de objetivos e oportunidades de criar valor para clientes e para a empresa.",
+      "trilha": "clientes",
+      "nivel_proposto": "avancado",
+      "apresentacao": {
+        "formato": "webinar",
+        "responsavel": "Theodore P. Stank"
+      },
+      "credenciais": [
+        {
+          "nome": "Theodore P. Stank",
+          "qualificacao": "Titular da Bruce Chair no Departamento de Supply Chain Management, University of Tennessee",
+          "fonte_institucional": "https://haslam.utk.edu/people/profile/ted-stank/",
+          "alcance_verificacao": "Página biográfica institucional aberta e consultada; vínculo e campo de pesquisa."
+        }
+      ],
+      "contexto_consultado": {
+        "consulta_em": "2026-11-06",
+        "metadados": "Página pública oficial YouTube; videoDetails e playerMicroformatRenderer; HTTP 200. Título, canal/Channel ID, data e duração conferidos.",
+        "descricao": "Descrição institucional do vídeo consultada para enquadramento, participantes e resumo próprio; não equivale a conteúdo audiovisual integral.",
+        "origem_registro": "Coleta direta nesta rodada.",
+        "catalogo": "src/content/business/fontes/mit-smr.json",
+        "conteudo_audiovisual_integral_consultado": false,
+        "transcricao_integral_consultada": false
+      },
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=1c9qAOI1Z8Y",
+          "consultado": "Metadados e descrição oficiais; sem download de vídeo, áudio ou transcrição."
+        },
+        {
+          "url": "https://sloanreview.mit.edu/video/reimagining-marketing-strategy-for-the-ai-era/",
+          "consultado": "Procedência do canal reaproveitada do catálogo institucional aprovado; não é alegação de leitura integral dessa página nesta rodada."
+        },
+        {
+          "url": "https://haslam.utk.edu/people/profile/ted-stank/",
+          "consultado": "Página biográfica institucional aberta e consultada; vínculo e campo de pesquisa."
+        }
+      ],
+      "revisao": {
+        "status": "selecao_institucional_verificada_em_metadados",
+        "rotulo_proposto": "Seleção institucional verificada",
+        "revisao_integral_audiovisual": false,
+        "revisao_integral_transcricao": false,
+        "resumo_baseado_em": "descricao_institucional",
+        "verificacao_promocao_integral": false
+      },
+      "limites": [
+        "Publicação de 2016; pesquisa e aplicações específicas anunciadas não foram revisadas integralmente nem atualizadas.",
+        "Audiovisual não assistido/ouvido integralmente. Exemplos, alegações, legendas e eventual publicidade interna ainda exigem revisão audiovisual antes de selo de revisão integral.",
+        "Presença de links de assinatura e divulgação institucional na descrição não foi tratada como evidência de aula promocional; conteúdo interno não foi auditado integralmente."
+      ]
+    },
+    {
+      "id": "-gcpK1wBo2I",
+      "titulo_oficial": "How to Speak to Customers to Build Trust",
+      "url": "https://www.youtube.com/watch?v=-gcpK1wBo2I",
+      "data_publicacao_youtube": "2020-11-09T04:25:15-08:00",
+      "duracao_segundos": 3485,
+      "fonte_id": "mit-smr",
+      "titulo_pt": "Como conversar com clientes para construir confiança",
+      "canal": {
+        "nome": "MIT Sloan Management Review",
+        "channel_id_confirmado": "UC0wOrSaO_sBGGU9Jderpk7g",
+        "url": "https://www.youtube.com/channel/UC0wOrSaO_sBGGU9Jderpk7g",
+        "procedencia_institucional": "https://sloanreview.mit.edu/video/reimagining-marketing-strategy-for-the-ai-era/",
+        "status_catalogo": "aprovado",
+        "escopos_catalogo": [
+          "artigos",
+          "videos"
+        ]
+      },
+      "idioma": {
+        "proposto": "en",
+        "base": "Título e descrição institucionais em inglês; confirmação auditiva integral pendente.",
+        "falado_conferido_por_audicao": false
+      },
+      "resumo": "Brent McFerran, Sarah G. Moore e Grant Packard discutem o papel da linguagem nas interações com clientes. A descrição situa a conversa no contexto posterior ao início da COVID-19 e delimita o tema à comunicação no atendimento.",
+      "trilha": "consumidor",
+      "nivel_proposto": "intermediario",
+      "apresentacao": {
+        "formato": "webinar",
+        "responsavel": "Brent McFerran; Sarah G. Moore; Grant Packard"
+      },
+      "credenciais": [
+        {
+          "nome": "Brent McFerran",
+          "qualificacao": "Professor de Marketing na SFU Beedie",
+          "fonte_institucional": "https://www.sfu.ca/beedie/contact-us/faculty-staff-directory.html",
+          "alcance_verificacao": "Diretório institucional aberto e resultado de busca com cargo e área consultados."
+        },
+        {
+          "nome": "Sarah G. Moore",
+          "qualificacao": "Professora de Marketing na Alberta School of Business",
+          "fonte_institucional": "https://apps.ualberta.ca/directory/person/sgmoore1",
+          "alcance_verificacao": "Perfil institucional aberto; cargo, área e biografia consultados."
+        },
+        {
+          "nome": "Grant Packard",
+          "qualificacao": "Professor associado de Marketing na Schulich School of Business/York",
+          "fonte_institucional": "https://schulich.yorku.ca/faculty/grant-packard/",
+          "alcance_verificacao": "Perfil institucional aberto e texto de pesquisa consultado; campo de pesquisa inclui linguagem e comportamento do consumidor."
+        }
+      ],
+      "contexto_consultado": {
+        "consulta_em": "2026-11-06",
+        "metadados": "Página pública oficial YouTube; videoDetails e playerMicroformatRenderer; HTTP 200. Título, canal/Channel ID, data e duração conferidos.",
+        "descricao": "Descrição institucional do vídeo consultada para enquadramento, participantes e resumo próprio; não equivale a conteúdo audiovisual integral.",
+        "origem_registro": "Coleta direta nesta rodada.",
+        "catalogo": "src/content/business/fontes/mit-smr.json",
+        "conteudo_audiovisual_integral_consultado": false,
+        "transcricao_integral_consultada": false
+      },
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=-gcpK1wBo2I",
+          "consultado": "Metadados e descrição oficiais; sem download de vídeo, áudio ou transcrição."
+        },
+        {
+          "url": "https://sloanreview.mit.edu/video/reimagining-marketing-strategy-for-the-ai-era/",
+          "consultado": "Procedência do canal reaproveitada do catálogo institucional aprovado; não é alegação de leitura integral dessa página nesta rodada."
+        },
+        {
+          "url": "https://www.sfu.ca/beedie/contact-us/faculty-staff-directory.html",
+          "consultado": "Diretório institucional aberto e resultado de busca com cargo e área consultados."
+        },
+        {
+          "url": "https://apps.ualberta.ca/directory/person/sgmoore1",
+          "consultado": "Perfil institucional aberto; cargo, área e biografia consultados."
+        },
+        {
+          "url": "https://schulich.yorku.ca/faculty/grant-packard/",
+          "consultado": "Perfil institucional aberto e texto de pesquisa consultado; campo de pesquisa inclui linguagem e comportamento do consumidor."
+        }
+      ],
+      "revisao": {
+        "status": "selecao_institucional_verificada_em_metadados",
+        "rotulo_proposto": "Seleção institucional verificada",
+        "revisao_integral_audiovisual": false,
+        "revisao_integral_transcricao": false,
+        "resumo_baseado_em": "descricao_institucional",
+        "verificacao_promocao_integral": false
+      },
+      "limites": [
+        "Contexto de 2020; a descrição não especifica todas as intervenções ou condições dos estudos, nem permite prometer que uma forma de falar sempre gere confiança.",
+        "Audiovisual não assistido/ouvido integralmente. Exemplos, alegações, legendas e eventual publicidade interna ainda exigem revisão audiovisual antes de selo de revisão integral.",
+        "Presença de links de assinatura e divulgação institucional na descrição não foi tratada como evidência de aula promocional; conteúdo interno não foi auditado integralmente."
+      ]
+    },
+    {
+      "id": "EtlJP_FTG6g",
+      "titulo_oficial": "Value-Creation, Experiments, And Why IT Does Matter",
+      "url": "https://www.youtube.com/watch?v=EtlJP_FTG6g",
+      "data_publicacao_youtube": "2011-02-07T06:40:04-08:00",
+      "duracao_segundos": 698,
+      "fonte_id": "mit-smr",
+      "titulo_pt": "Criação de valor, experimentos e o papel da tecnologia",
+      "canal": {
+        "nome": "MIT Sloan Management Review",
+        "channel_id_confirmado": "UC0wOrSaO_sBGGU9Jderpk7g",
+        "url": "https://www.youtube.com/channel/UC0wOrSaO_sBGGU9Jderpk7g",
+        "procedencia_institucional": "https://sloanreview.mit.edu/video/reimagining-marketing-strategy-for-the-ai-era/",
+        "status_catalogo": "aprovado",
+        "escopos_catalogo": [
+          "artigos",
+          "videos"
+        ]
+      },
+      "idioma": {
+        "proposto": "en",
+        "base": "Título e descrição institucionais em inglês; confirmação auditiva integral pendente.",
+        "falado_conferido_por_audicao": false
+      },
+      "resumo": "Michael Schrage propõe partir do valor que a organização pretende criar antes de escolher capacidades tecnológicas. A descrição apresenta essa inversão de perspectiva como enquadramento para decisões de gestão e investimento em tecnologia.",
+      "trilha": "mensuracao",
+      "nivel_proposto": "intermediario",
+      "apresentacao": {
+        "formato": "conversa-editorial",
+        "responsavel": "Michael Schrage"
+      },
+      "credenciais": [
+        {
+          "nome": "Michael Schrage",
+          "qualificacao": "Identificado na descrição institucional como integrante do MIT Center for Digital Business na época da publicação; não foi atribuída titulação acadêmica não confirmada.",
+          "fonte_institucional": "https://www.youtube.com/watch?v=EtlJP_FTG6g",
+          "alcance_verificacao": "Identificação e qualificação publicadas na descrição oficial; não é revisão de todos os trabalhos do participante."
+        }
+      ],
+      "contexto_consultado": {
+        "consulta_em": "2026-11-06",
+        "metadados": "Página pública oficial YouTube; videoDetails e playerMicroformatRenderer; HTTP 200. Título, canal/Channel ID, data e duração conferidos.",
+        "descricao": "Descrição institucional do vídeo consultada para enquadramento, participantes e resumo próprio; não equivale a conteúdo audiovisual integral.",
+        "origem_registro": "Coleta direta nesta rodada.",
+        "catalogo": "src/content/business/fontes/mit-smr.json",
+        "conteudo_audiovisual_integral_consultado": false,
+        "transcricao_integral_consultada": false
+      },
+      "evidencias_primarias": [
+        {
+          "url": "https://www.youtube.com/watch?v=EtlJP_FTG6g",
+          "consultado": "Metadados e descrição oficiais; sem download de vídeo, áudio ou transcrição."
+        },
+        {
+          "url": "https://sloanreview.mit.edu/video/reimagining-marketing-strategy-for-the-ai-era/",
+          "consultado": "Procedência do canal reaproveitada do catálogo institucional aprovado; não é alegação de leitura integral dessa página nesta rodada."
+        }
+      ],
+      "revisao": {
+        "status": "selecao_institucional_verificada_em_metadados",
+        "rotulo_proposto": "Seleção institucional verificada",
+        "revisao_integral_audiovisual": false,
+        "revisao_integral_transcricao": false,
+        "resumo_baseado_em": "descricao_institucional",
+        "verificacao_promocao_integral": false
+      },
+      "limites": [
+        "Vídeo de 2011. O título menciona experimentos, mas a descrição consultada não fornece protocolo ou resultados experimentais; não foram inferidos.",
+        "Audiovisual não assistido/ouvido integralmente. Exemplos, alegações, legendas e eventual publicidade interna ainda exigem revisão audiovisual antes de selo de revisão integral.",
+        "Presença de links de assinatura e divulgação institucional na descrição não foi tratada como evidência de aula promocional; conteúdo interno não foi auditado integralmente."
+      ]
+    }
+  ],
+  "nao_selecionados": [
+    {
+      "id": "cotZdapfbIc",
+      "url": "https://www.youtube.com/watch?v=cotZdapfbIc",
+      "motivo": "Coprodução com Emeritus e componente de promoção de oferta educacional explicitados na descrição; excluído pelo filtro editorial de promoção, sem julgamento não comprovado sobre competência pessoal."
+    },
+    {
+      "id": "9gtQDHH5eHM",
+      "url": "https://www.youtube.com/watch?v=9gtQDHH5eHM",
+      "motivo": "Descrição consultada não identifica individualmente o executivo de marketing mencionado; excluído desta seleção por insuficiência de identificação para o filtro de credenciais."
+    },
+    {
+      "id": "ES0BWbXDwKY",
+      "url": "https://www.youtube.com/watch?v=ES0BWbXDwKY",
+      "motivo": "Descrição consultada não identifica individualmente o participante; contexto insuficiente para confirmar suas credenciais nesta rodada."
+    },
+    {
+      "id": "xdebpIumAMw",
+      "url": "https://www.youtube.com/watch?v=xdebpIumAMw",
+      "motivo": "HBS está aprovada no catálogo somente para vídeos; retirada deste lote para cumprir a exigência literal de selecionar canais das mesmas fontes aprovadas para artigos. Não indica falha de qualidade do participante."
+    },
+    {
+      "id": "cHclvxMTfPI",
+      "url": "https://www.youtube.com/watch?v=cHclvxMTfPI",
+      "motivo": "HBS está aprovada no catálogo somente para vídeos; retirada deste lote para cumprir a exigência literal de selecionar canais das mesmas fontes aprovadas para artigos. Não indica falha de qualidade do participante."
+    },
+    {
+      "id": "Had02tymEyY",
+      "url": "https://www.youtube.com/watch?v=Had02tymEyY",
+      "motivo": "HBS está aprovada no catálogo somente para vídeos; retirada deste lote para cumprir a exigência literal de selecionar canais das mesmas fontes aprovadas para artigos. Não indica falha de qualidade do participante."
+    },
+    {
+      "id": "Eo0F1vhdoH0",
+      "url": "https://www.youtube.com/watch?v=Eo0F1vhdoH0",
+      "motivo": "HBS está aprovada no catálogo somente para vídeos; retirada deste lote para cumprir a exigência literal de selecionar canais das mesmas fontes aprovadas para artigos. Não indica falha de qualidade do participante."
+    }
+  ],
+  "reservas_fora_do_recorte": [
+    {
+      "id": "LU84BFFqKvI",
+      "titulo_oficial": "The Explainer: What It Takes to Be a Great Leader",
+      "url": "https://www.youtube.com/watch?v=LU84BFFqKvI",
+      "motivo": "Fora do recorte de 16 deste lote; não incorporado à seleção principal. Metadados consultados não equivalem a revisão audiovisual."
+    },
+    {
+      "id": "XOA6s6YCKnQ",
+      "titulo_oficial": "The Explainer: Solving Problems by Starting with the Worst Idea Possible",
+      "url": "https://www.youtube.com/watch?v=XOA6s6YCKnQ",
+      "motivo": "Fora do recorte de 16 deste lote; não incorporado à seleção principal. Metadados consultados não equivalem a revisão audiovisual."
+    },
+    {
+      "id": "zPVXe3Lr_sQ",
+      "titulo_oficial": "The Explainer: The Case for More Silent Meetings",
+      "url": "https://www.youtube.com/watch?v=zPVXe3Lr_sQ",
+      "motivo": "Fora do recorte de 16 deste lote; não incorporado à seleção principal. Metadados consultados não equivalem a revisão audiovisual."
+    },
+    {
+      "id": "YlAvr0TCgVU",
+      "titulo_oficial": "What Digital Transformation Means for Business",
+      "url": "https://www.youtube.com/watch?v=YlAvr0TCgVU",
+      "motivo": "Fora do recorte de 16 deste lote; não incorporado à seleção principal. Metadados consultados não equivalem a revisão audiovisual."
+    }
+  ],
+  "pendencias_gerais": [
+    "Revisão audiovisual ou de transcrição integral antes de alegar validação de argumentos, ausência de propaganda no corpo ou revisão completa.",
+    "Conferir idioma falado e qualidade/disponibilidade de legendas para acessibilidade.",
+    "A integração ao acervo, seu status e testes de interface cabem ao proprietário; este arquivo é pesquisa editorial."
+  ]
+}

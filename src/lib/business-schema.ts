@@ -17,6 +17,7 @@ export const businessAcervoSchema = z.object({
   autores: z.string().min(2), data: data.or(z.literal('')), data_precisa: z.boolean().default(true), ano_publicacao: z.number().int().min(1400).max(2100).optional(), idioma: z.enum(['pt', 'en', 'es']), acesso: z.string(), evidencia: z.string(), limites: z.string().min(10),
   status: businessStatus, justificativa: z.string(), revisor: z.string(), revisado_em: data.or(z.literal('')),
   video_id: z.string().regex(/^[A-Za-z0-9_-]{11}$/).or(z.literal('')).optional(), channel_id: z.string().default(''), revisao_integral: z.boolean().default(false),
+  revisao_escopo: z.enum(['integral', 'fonte_e_contexto']).default('integral'), contexto_editorial: z.string().default(''),
   nivel: z.enum(['Iniciante', 'Intermediário', 'Avançado']).default('Iniciante'),
   duracao_segundos: z.number().int().nonnegative().default(0), palestrante: z.string().default(''), credenciais: z.string().default(''),
   evidencias_revisao: z.array(https).default([]),
@@ -26,7 +27,10 @@ export const businessAcervoSchema = z.object({
 }).superRefine((item, context) => {
   if (item.status !== 'publicado') return;
   if (!item.revisor.trim() || !item.revisado_em || item.justificativa.trim().length < 20) context.addIssue({ code: z.ZodIssueCode.custom, message: 'Publicação Business exige revisão, data e justificativa.' });
-  if (item.tipo === 'video' && (!item.video_id || !/^UC[A-Za-z0-9_-]{22}$/.test(item.channel_id) || !item.revisao_integral)) context.addIssue({ code: z.ZodIssueCode.custom, message: 'Vídeo publicado exige ID, channel_id verificado e revisão integral.' });
+  if (item.tipo === 'video') {
+    if (!item.video_id || !/^UC[A-Za-z0-9_-]{22}$/.test(item.channel_id) || (item.revisao_escopo === 'integral' && !item.revisao_integral)) context.addIssue({ code: z.ZodIssueCode.custom, message: 'Vídeo publicado exige ID, channel_id verificado e revisão do escopo declarado.' });
+    if (item.revisao_escopo === 'fonte_e_contexto' && (item.revisao_integral || item.contexto_editorial.trim().length < 80 || item.duracao_segundos <= 0 || !item.evidencias_revisao.includes(item.url) || !item.evidencias_revisao.includes(`https://www.youtube.com/channel/${item.channel_id}`))) context.addIssue({ code: z.ZodIssueCode.custom, message: 'Seleção institucional exige contexto documentado, duração, evidências do vídeo e do canal, sem alegar revisão integral.' });
+  }
   if (item.tipo === 'webinar' && !item.revisao_integral) context.addIssue({ code: z.ZodIssueCode.custom, message: 'Webinar publicado exige revisão integral.' });
   if (item.tipo === 'video' && (!item.palestrante.trim() || !item.credenciais.trim() || !item.evidencias_revisao.length)) context.addIssue({ code: z.ZodIssueCode.custom, message: 'Vídeo publicado exige palestrante, credenciais e evidências da revisão.' });
   if(item.capa&&(!item.capa_credito||!item.capa_fonte||!item.capa_licenca))context.addIssue({code:z.ZodIssueCode.custom,message:'Capa publicada exige origem, crédito e condição de uso.'});

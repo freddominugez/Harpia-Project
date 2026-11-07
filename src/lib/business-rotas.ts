@@ -17,7 +17,7 @@ export async function businessRotas(abs: (path: string) => string): Promise<Rota
         ['', 'estudos'].includes(page.slug) ? `## Guias de estudo\n\n${guideList}` : '',
         ['', 'biblioteca', 'biblioteca/livros', 'news', 'analises', 'noticias', 'videos'].includes(page.slug) ? `## Leituras selecionadas\n\n${resourceList(page.slug === '' ? acervo : recursosDaSecao(acervo,page.slug))}` : '',
         page.slug === 'biblioteca/fontes' ? fontes.filter(f => f.data.escopos.includes('artigos')).map(f => `- [${f.data.nome}](${f.data.url}): ${f.data.descricao} (${f.data.regiao})`).join('\n') : '',
-        page.slug === 'videos' && !recursosDaSecao(acervo,'videos').length ? 'A seleção de vídeos está em revisão. Publicar exige canal confirmado e revisão integral. Candidatos não integram o acervo público.' : '',
+        page.slug === 'videos' && !recursosDaSecao(acervo,'videos').length ? 'Nenhum vídeo selecionado para publicação. Candidatos não integram o acervo público.' : '',
         page.slug === 'analises' ? analises.map(a=>`- [${a.data.titulo}](${abs(`/business/analises/${a.id}/`)})`).join('\n'):'',
         page.slug === 'noticias' && !recursosDaSecao(acervo,'noticias').length ? 'As primeiras matérias aguardam revisão editorial. Leituras selecionadas em /business/news/.' : '',
         page.slug === 'videos/canais' ? canais.length ? canais.map(c => `- [${c.nome}](${c.url}): ${c.instituicao}. [Procedência](${c.procedencia}).`).join('\n') : 'Canais aguardando aprovação editorial.' : '',

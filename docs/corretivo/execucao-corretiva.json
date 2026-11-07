@@ -45,7 +45,7 @@
     "Três retratos CC BY-SA com crédito, fonte, link de licença e indicação de redução/conversão; arquivos e créditos distribuídos sob as licenças originais."
   ],
   "pendencias": [
-    "Vídeos: zero publicáveis com revisão audiovisual integral concluída. Há 24 candidatos verificados por metadados, total nominal de 10 h 05 min 45 s, e duas transcrições editoriais lidas integralmente; isto não comprova a edição do YouTube. Tentativas de legendas retornaram 429.",
+    "Vídeos: 57 seleções institucionais publicadas no build, de sete fontes também aprovadas para artigos. Fonte, autoria e contexto conferidos; zero revisões audiovisuais integrais concluídas. O catálogo e as fichas declaram esse alcance. Detalhes em docs/corretivo/ampliacao-videos.json.",
     "Estudos: doze guias didáticos autorais com protocolos propostos; não são experimentos nem resultados empíricos. Revisão final da profundidade e dos estados funcionais permanece no aceite editorial e visual.",
     "Biblioteca: ampliar e revisar o acervo. O build local tem seis referências e oito livros, frente a 63 referências e 58 livros no original; uma das seis referências é uma edição completa da Revista DOM, não um artigo individual.",
     "Imagens temáticas: três retratos licenciados incorporados com crédito, fonte, link da licença e indicação das alterações; nove perfis ainda usam iniciais. Oito capas oficiais foram conferidas: sete correspondências bibliográficas confirmadas e How Brands Grow pendente. Condições de reutilização das capas estão registradas; os oito livros continuam usando as alternativas gráficas originais.",
@@ -291,5 +291,6 @@
       }
     ],
     "natureza": "status publicado identifica a seleção do build local. Esta correção ainda não foi implantada no site público."
-  }
+  },
+  "ampliacao_videos": "docs/corretivo/ampliacao-videos.json"
 }

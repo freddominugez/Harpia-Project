@@ -10,7 +10,7 @@ export function validateBusinessPublication(collection,data,sources){
  if(collection==='business/acervo'){
   const s=allowed.find(s=>s.id===data.fonte);if(!s)throw Error('Fonte institucional não aprovada.');const u=new URL(data.url);
   if(data.tipo==='video'){
-   if(!s.escopos?.includes('videos')||u.hostname!=='www.youtube.com'||u.pathname!=='/watch'||u.searchParams.get('v')!==data.video_id||!s.canais?.some(c=>c.id===data.channel_id&&c.status==='aprovado'))throw Error('Vídeo sem canal institucional aprovado.');
+   if((parsed.data.revisao_escopo==='fonte_e_contexto'&&!s.escopos?.includes('artigos'))||!s.escopos?.includes('videos')||u.hostname!=='www.youtube.com'||u.pathname!=='/watch'||u.searchParams.get('v')!==data.video_id||!s.canais?.some(c=>c.id===data.channel_id&&c.status==='aprovado'))throw Error('Vídeo sem canal institucional aprovado.');
   }else if(!s.hosts.includes(u.hostname)||!s.escopos?.includes(data.tipo==='livro'?'livros':'artigos'))throw Error('Formato ou domínio fora do escopo da fonte.');
   for(const url of data.referencias||[])check(url);
   return true;

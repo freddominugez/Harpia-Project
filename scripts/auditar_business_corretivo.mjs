@@ -48,8 +48,9 @@ const report = {
  diferencas_volume: families.filter(x=>x.faltam_para_volume_original).map(x=>`${x.familia}: diferença de ${x.faltam_para_volume_original} registros em relação ao volume original; não equivale a requisito do template.`),
  pesquisa:{artigos_candidatos:artigos.itens.length,artigos_urls_novas:novos.length,artigos_ja_no_acervo:artigos.itens.length-novos.length,
   videos_candidatos:pesquisaVideos.videos.length,canais_verificados:new Set(pesquisaVideos.videos.map(v=>v.canal.channel_id_confirmado)).size,
-  duracao_video_segundos:pesquisaVideos.videos.reduce((s,v)=>s+v.duracao_segundos,0), videos_integralmente_revisados:0,
+  duracao_video_segundos:pesquisaVideos.videos.reduce((s,v)=>s+v.duracao_segundos,0), videos_integralmente_revisados:publicado.filter(a=>a.tipo==='video'&&a.revisao_integral).length,
   livros_existentes_conferidos:pesquisaVideos.literatura.length},
+ publicacao_videos:{publicados:tipo('video'),selecao_institucional:publicado.filter(a=>a.tipo==='video'&&a.revisao_escopo==='fonte_e_contexto').length,revisao_integral:publicado.filter(a=>a.tipo==='video'&&a.revisao_integral).length},
  bloqueios,
 };
 if (process.argv.includes('--json')) console.log(JSON.stringify(report,null,2));

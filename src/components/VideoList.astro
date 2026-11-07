@@ -6,7 +6,7 @@ const { videos } = Astro.props;
 ---
 <div class="vlist">
   {videos.map((v) => (
-    <a class="vlist-item" href={urlVideo(v.id)} target="_blank" rel="noopener noreferrer" aria-label={`${v.titulo}, de ${v.canal}. Abre o YouTube em nova aba`}>
+    <a class="vlist-item" href={v.href ?? urlVideo(v.id)} target={v.href ? undefined : "_blank"} rel={v.href ? undefined : "noopener noreferrer"} aria-label={`${v.titulo}, de ${v.canal}. ${v.href ? "Abrir ficha e assistir ao vídeo" : "Abre o YouTube em nova aba"}`}>
       <span class="vlist-th">
         <img src={thumb(v.id)} alt="" loading="lazy" decoding="async" width="320" height="180" />
         <span class="vlist-play" aria-hidden="true"></span>

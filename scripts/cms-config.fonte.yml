@@ -503,6 +503,8 @@ collections:
       - { label: Revisado em AAAA-MM-DD, name: revisado_em, widget: string, required: false, default: "" }
       - { label: ID do YouTube (apenas vídeos), name: video_id, widget: string, required: false }
       - { label: Channel ID verificado (apenas vídeos), name: channel_id, widget: string, required: false, default: "" }
+      - { label: Escopo da conferência (vídeos), name: revisao_escopo, widget: select, options: [integral, fonte_e_contexto], default: integral }
+      - { label: Contexto institucional documentado (vídeos), name: contexto_editorial, widget: text, required: false, default: "" }
       - { label: Conteúdo integral revisado (vídeos), name: revisao_integral, widget: boolean, default: false }
       - { label: Nível, name: nivel, widget: select, options: [Iniciante, Intermediário, Avançado], default: Iniciante }
       - { label: Duração do vídeo em segundos, name: duracao_segundos, widget: number, value_type: int, min: 0, default: 0, required: false }

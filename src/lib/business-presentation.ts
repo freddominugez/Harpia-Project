@@ -26,7 +26,7 @@ export async function getBusinessPresentation() {
   }));
   const modulos: Modulo[] = TRILHAS_BUSINESS.map((t, i) => ({ numero: i, titulo: t.titulo, subtitulo: t.resumo, icone: ['book','brain','network','globe','messages','chart','sigma','file'][i] }));
   const videos: Video[] = acervo.filter(a => a.data.tipo === 'video').map(a => ({
-    id: a.data.video_id!, titulo: a.data.titulo,
+    id: a.data.video_id!, titulo: a.data.titulo, href: recursoPublicadoPath(a.id,a.data.tipo),
     canal: fontes.find(f => f.id === a.data.fonte)?.data.canais.find(c => c.id === a.data.channel_id)?.nome ?? fonteNome(a.data.fonte),
     modulo: TRILHAS_BUSINESS.findIndex(t => t.id === a.data.trilha), nivel: a.data.nivel,
     resumo: a.data.resumo, catalogo: null, trilha: a.data.trilha, idioma: a.data.idioma,

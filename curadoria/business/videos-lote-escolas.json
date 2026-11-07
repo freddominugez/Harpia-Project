@@ -1,0 +1,2641 @@
+{
+  "schema_version": 1,
+  "titulo": "Lote de vídeos institucionais — INSEAD, Wharton e London Business School",
+  "preparado_em": "2026-11-06",
+  "estado": "19 seleções institucionais pesquisadas em metadados; revisão integral não realizada; integração e publicação não executadas nesta tarefa",
+  "escopo": "Lote de apoio ao catálogo de ao menos 50 vídeos. Após triagem e orientação editorial do responsável, mantém 19 IDs únicos; cinco dos24 consultados estão em reservas. Deduplicar com os demais lotes.",
+  "rotulo_obrigatorio": "Seleção institucional · revisão integral pendente",
+  "contagens": {
+    "selecionados": 19,
+    "ids_unicos": 19,
+    "por_instituicao": {
+      "insead": 6,
+      "wharton": 8,
+      "lbs": 5
+    },
+    "ja_documentados_entre_24_candidatos": 8,
+    "descobertas_adicionais": 11,
+    "metadados_http_200_reconfirmados": 19,
+    "revisoes_integrais": 0,
+    "idioma_ambiguo_selecionado": 0,
+    "reservas_idioma_ambiguo": 1
+  },
+  "metodo": [
+    "Leitura dos 24 candidatos de curadoria/business/pesquisa-videos-literatura-corretivo.json e inventários locais de descoberta obtidos das buscas dos canais oficiais.",
+    "Consulta única por vídeo à página pública oficial YouTube, sem baixar o audiovisual. Extração de metadados públicos do player para título, autoria, Channel ID, duração, data, descrição e lista de faixas.",
+    "Confronto de todos os Channel IDs com os canais previamente aprovados em src/content/business/fontes/{insead,wharton,lbs}.json.",
+    "Leitura de páginas institucionais específicas para os pesquisadores não nomeados no título/descrição e para o contexto das pesquisas.",
+    "Descrições em português são sínteses próprias do material textual realmente consultado. Não correspondem a transcrições nem resumos integrais das gravações."
+  ],
+  "politica_bloqueios": {
+    "youtube": "24 consultas planejadas, todas HTTP 200 e player OK; nenhum bloqueio encontrado nas páginas dos candidatos.",
+    "homepage_insead": "Consulta direta retornou 403; nenhum retry ou contorno. Empregados registros previamente aprovados e fontes institucionais alternativas.",
+    "proibicoes_observadas": [
+      "Sem proxies, troca de identidade, solução de CAPTCHA ou exploração de endpoint para superar bloqueio.",
+      "Sem inferir visualização/audição a partir da disponibilidade dos metadados."
+    ]
+  },
+  "fontes_aprovadas": {
+    "insead": {
+      "id_catalogo": "insead",
+      "nome": "INSEAD",
+      "channel_id": "UC9aeQQ-NqjHS3nfiod2PMSA",
+      "url": "https://www.youtube.com/channel/UC9aeQQ-NqjHS3nfiod2PMSA",
+      "fonte_aprovada": "INSEAD Knowledge",
+      "procedencia_institucional": "https://blogs.insead.edu/germany-iaa/files/2015/06/Alumni-Careers-Support-Brochure-09.2017-14yc99h.pdf",
+      "aprovacao_documentada_em": "src/content/business/fontes/insead.json",
+      "confirmacao_atual": "Channel ID retornado pelo player oficial em todos os vídeos selecionados coincide com o canal aprovado; autor retornado também confere.",
+      "verificado_em": "2026-11-06",
+      "vinculo_institucional_consultado": {
+        "url": "https://www.insead.edu/",
+        "http_status_direto": 403,
+        "procedimento": "Sem nova tentativa ou contorno. Mantida a procedência do canal previamente aprovada e documentada, corroborada por descrições oficiais e páginas INSEAD Knowledge específicas.",
+        "procedencia_previamente_aprovada": "https://blogs.insead.edu/germany-iaa/files/2015/06/Alumni-Careers-Support-Brochure-09.2017-14yc99h.pdf"
+      }
+    },
+    "wharton": {
+      "id_catalogo": "wharton",
+      "nome": "Wharton School",
+      "channel_id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
+      "url": "https://www.youtube.com/channel/UCU9Z1eLsDa_meEfsmx-Ys0w",
+      "fonte_aprovada": "Knowledge at Wharton",
+      "procedencia_institucional": "https://www.wharton.upenn.edu/",
+      "aprovacao_documentada_em": "src/content/business/fontes/wharton.json",
+      "confirmacao_atual": "Channel ID retornado pelo player oficial em todos os vídeos selecionados coincide com o canal aprovado; autor retornado também confere.",
+      "verificado_em": "2026-11-06",
+      "vinculo_institucional_consultado": {
+        "url": "https://www.wharton.upenn.edu/",
+        "http_status": 200,
+        "link_youtube_no_html": "https://www.youtube.com/user/thewhartonschool"
+      }
+    },
+    "lbs": {
+      "id_catalogo": "lbs",
+      "nome": "London Business School",
+      "channel_id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
+      "url": "https://www.youtube.com/channel/UCRPKXKBG8n6r6vIXoxsD2pQ",
+      "fonte_aprovada": "London Business School · Think",
+      "procedencia_institucional": "https://www.london.edu/",
+      "aprovacao_documentada_em": "src/content/business/fontes/lbs.json",
+      "confirmacao_atual": "Channel ID retornado pelo player oficial em todos os vídeos selecionados coincide com o canal aprovado; autor retornado também confere.",
+      "verificado_em": "2026-11-06",
+      "vinculo_institucional_consultado": {
+        "url": "https://www.london.edu/",
+        "http_status": 200,
+        "link_youtube_no_html": "http://www.youtube.com/user/londonbusinessschool"
+      }
+    }
+  },
+  "videos": [
+    {
+      "id": "bwtZb60BxlU",
+      "url": "https://www.youtube.com/watch?v=bwtZb60BxlU",
+      "titulo": "INSEAD Professor Pierre Chandon on how food marketing affects how people eat",
+      "canal": {
+        "id_catalogo": "insead",
+        "nome": "INSEAD",
+        "channel_id": "UC9aeQQ-NqjHS3nfiod2PMSA",
+        "url": "https://www.youtube.com/channel/UC9aeQQ-NqjHS3nfiod2PMSA",
+        "fonte_aprovada": "INSEAD Knowledge",
+        "procedencia_institucional": "https://blogs.insead.edu/germany-iaa/files/2015/06/Alumni-Careers-Support-Brochure-09.2017-14yc99h.pdf",
+        "aprovacao_documentada_em": "src/content/business/fontes/insead.json",
+        "confirmacao_atual": "Channel ID retornado pelo player oficial em todos os vídeos selecionados coincide com o canal aprovado; autor retornado também confere.",
+        "verificado_em": "2026-11-06",
+        "vinculo_institucional_consultado": {
+          "url": "https://www.insead.edu/",
+          "http_status_direto": 403,
+          "procedimento": "Sem nova tentativa ou contorno. Mantida a procedência do canal previamente aprovada e documentada, corroborada por descrições oficiais e páginas INSEAD Knowledge específicas.",
+          "procedencia_previamente_aprovada": "https://blogs.insead.edu/germany-iaa/files/2015/06/Alumni-Careers-Support-Brochure-09.2017-14yc99h.pdf"
+        }
+      },
+      "data_publicacao_youtube": "2012-11-07T21:52:08-08:00",
+      "duracao_segundos": 676,
+      "apresentadores": {
+        "nomes": [
+          "Pierre Chandon"
+        ],
+        "qualificacao": "Professor de marketing identificado no título oficial do vídeo; qualificação apresentada pela instituição na época da publicação.",
+        "fonte_oficial": "https://www.youtube.com/watch?v=bwtZb60BxlU",
+        "criterio_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+      },
+      "idioma": "en",
+      "idioma_proposto": "en",
+      "base_idioma": "Inglês proposto pelo título, descrição e faixas en presentes nos metadados; não confirmado por audição nesta pesquisa.",
+      "idioma_falado_conferido_por_audicao": false,
+      "descricao": "A INSEAD apresenta uma discussão de Pierre Chandon sobre marketing de alimentos e comportamento alimentar. O ponto de entrada é a relação entre estímulos de marketing e consumo, sem tratar o título como prova de que toda ação produza o mesmo efeito.",
+      "base_descricao": "Resumo próprio limitado ao título/descrição oficial e às fontes institucionais explicitamente listadas; nenhum resumo da gravação integral é reivindicado.",
+      "trilha_proposta": "consumidor",
+      "nivel_proposto": "Intermediário",
+      "justificativa_nivel": "O tema exige distinguir estímulo, comportamento e contexto; a classificação é proposta editorial, sem avaliação integral da profundidade.",
+      "rotulo_editorial": "Seleção institucional · revisão integral pendente",
+      "revisao_integral": false,
+      "audicao_realizada": false,
+      "inspecao_audiovisual_realizada": false,
+      "transcricao_integral_consultada": false,
+      "revisao": {
+        "status": "selecao_institucional_com_metadados_confirmados",
+        "revisao_integral": false,
+        "publicavel_como_material_integralmente_revisado": false,
+        "metadados_reconfirmados": true,
+        "data_verificacao": "2026-11-06",
+        "legendas_listadas": [
+          {
+            "language_code": "en",
+            "kind": "asr"
+          }
+        ],
+        "legendas_conteudo_consultado": false,
+        "dublagem_portugues_confirmada": false,
+        "pendencias": [
+          "Revisar o conteúdo completo antes de qualificá-lo como integralmente revisado.",
+          "Confirmar idioma falado, qualidade das legendas e eventual predominância de promoção no conteúdo audiovisual.",
+          "Conferir adequação final à trilha e ao nível sem deduzir profundidade apenas da duração."
+        ]
+      },
+      "origem_no_inventario": "candidato_ja_documentado",
+      "referencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=bwtZb60BxlU",
+          "titulo": "Página oficial do vídeo no YouTube",
+          "consultado": "2026-11-06",
+          "alcance": "Título, autor/canal, Channel ID, data de publicação, duração, descrição e lista de faixas de legenda presentes no player oficial. Não foi reproduzido o vídeo nem baixado seu conteúdo audiovisual.",
+          "limites": "Metadados e descrição não substituem inspeção integral. Presença de legenda não confirma idioma original, qualidade de tradução ou dublagem."
+        },
+        {
+          "url": "https://blogs.insead.edu/germany-iaa/files/2015/06/Alumni-Careers-Support-Brochure-09.2017-14yc99h.pdf",
+          "titulo": "Procedência do canal INSEAD previamente aprovada",
+          "consultado": "registro prévio de 2026-11-06; não relido integralmente nesta tarefa",
+          "alcance": "Documento institucional registrado no catálogo aprovado de fontes, combinado com Channel ID novamente retornado pelo player oficial.",
+          "limites": "Homepage INSEAD retornou 403 em consulta direta; não houve retry, troca de identidade ou contorno. Fonte de procedência anterior não equivale a revisão integral do PDF."
+        }
+      ],
+      "criterio_selecao": "Canal institucional aprovado, autoria acadêmica ou executiva qualificada identificada em fonte oficial, tema pertinente; não identificado como anúncio de curso na apresentação principal dos metadados.",
+      "limites": [
+        "Seleção por procedência e metadados: não declarar conteúdo integralmente assistido, auditado ou revisado.",
+        "Cargo, exemplos e dados podem ser históricos; publicação no YouTube não é necessariamente a data da palestra."
+      ],
+      "formato": "entrevista ou exposição institucional",
+      "titulo_original": "INSEAD Professor Pierre Chandon on how food marketing affects how people eat",
+      "titulo_pt": "Como o marketing de alimentos afeta o que comemos",
+      "titulo_pt_natureza": "tradução/adaptação editorial própria, não título português oficial confirmado",
+      "resumo": "A INSEAD apresenta Pierre Chandon em uma discussão sobre marketing de alimentos e comportamento alimentar, relacionando estímulos comerciais e escolhas de consumo.",
+      "trilha": "consumidor",
+      "nivel": "Intermediário",
+      "contexto_consultado": {
+        "material": "Título, descrição e metadados do player oficial, consultados em 06/11/2026.",
+        "fontes_adicionais": [],
+        "limite": "Não houve audição, inspeção audiovisual, consulta de transcrição integral ou revisão integral. O resumo apenas reorganiza o texto institucional realmente consultado."
+      },
+      "credenciais": [
+        {
+          "nome": "Pierre Chandon",
+          "qualificacao_documentada": "Professor de marketing identificado no título oficial do vídeo; qualificação apresentada pela instituição na época da publicação.",
+          "fontes": [
+            {
+              "url": "https://www.youtube.com/watch?v=bwtZb60BxlU",
+              "alcance": "Descrição/metadados institucionais ou texto institucional primário relacionado, conforme referências e contexto de consulta.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        }
+      ]
+    },
+    {
+      "id": "akfnG4tEgYA",
+      "url": "https://www.youtube.com/watch?v=akfnG4tEgYA",
+      "titulo": "How word-of-mouth marketing can backfire among close friends",
+      "canal": {
+        "id_catalogo": "insead",
+        "nome": "INSEAD",
+        "channel_id": "UC9aeQQ-NqjHS3nfiod2PMSA",
+        "url": "https://www.youtube.com/channel/UC9aeQQ-NqjHS3nfiod2PMSA",
+        "fonte_aprovada": "INSEAD Knowledge",
+        "procedencia_institucional": "https://blogs.insead.edu/germany-iaa/files/2015/06/Alumni-Careers-Support-Brochure-09.2017-14yc99h.pdf",
+        "aprovacao_documentada_em": "src/content/business/fontes/insead.json",
+        "confirmacao_atual": "Channel ID retornado pelo player oficial em todos os vídeos selecionados coincide com o canal aprovado; autor retornado também confere.",
+        "verificado_em": "2026-11-06",
+        "vinculo_institucional_consultado": {
+          "url": "https://www.insead.edu/",
+          "http_status_direto": 403,
+          "procedimento": "Sem nova tentativa ou contorno. Mantida a procedência do canal previamente aprovada e documentada, corroborada por descrições oficiais e páginas INSEAD Knowledge específicas.",
+          "procedencia_previamente_aprovada": "https://blogs.insead.edu/germany-iaa/files/2015/06/Alumni-Careers-Support-Brochure-09.2017-14yc99h.pdf"
+        }
+      },
+      "data_publicacao_youtube": "2016-05-09T02:11:32-07:00",
+      "duracao_segundos": 416,
+      "apresentadores": {
+        "nomes": [
+          "David Dubois"
+        ],
+        "qualificacao": "Identificado no artigo institucional relacionado como Assistant Professor of Marketing da INSEAD em 2016.",
+        "fonte_oficial": "https://knowledge.insead.edu/marketing/close-friends-could-darken-word-mouth-marketing",
+        "criterio_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+      },
+      "idioma": "en",
+      "idioma_proposto": "en",
+      "base_idioma": "Inglês proposto pelo título, descrição e faixas en presentes nos metadados; não confirmado por audição nesta pesquisa.",
+      "idioma_falado_conferido_por_audicao": false,
+      "descricao": "A descrição institucional relaciona a proximidade entre pessoas ao teor das recomendações sobre produtos e serviços. O artigo INSEAD associado identifica David Dubois e contextualiza a diferença entre comunicar aspectos negativos a amigos próximos e positivos a contatos distantes.",
+      "base_descricao": "Resumo próprio limitado ao título/descrição oficial e às fontes institucionais explicitamente listadas; nenhum resumo da gravação integral é reivindicado.",
+      "trilha_proposta": "clientes",
+      "nivel_proposto": "Intermediário",
+      "justificativa_nivel": "Permite discutir mecanismos de comunicação e condições de generalização; não é receita para produzir avaliações positivas.",
+      "rotulo_editorial": "Seleção institucional · revisão integral pendente",
+      "revisao_integral": false,
+      "audicao_realizada": false,
+      "inspecao_audiovisual_realizada": false,
+      "transcricao_integral_consultada": false,
+      "revisao": {
+        "status": "selecao_institucional_com_metadados_confirmados",
+        "revisao_integral": false,
+        "publicavel_como_material_integralmente_revisado": false,
+        "metadados_reconfirmados": true,
+        "data_verificacao": "2026-11-06",
+        "legendas_listadas": [
+          {
+            "language_code": "en",
+            "kind": "asr"
+          }
+        ],
+        "legendas_conteudo_consultado": false,
+        "dublagem_portugues_confirmada": false,
+        "pendencias": [
+          "Revisar o conteúdo completo antes de qualificá-lo como integralmente revisado.",
+          "Confirmar idioma falado, qualidade das legendas e eventual predominância de promoção no conteúdo audiovisual.",
+          "Conferir adequação final à trilha e ao nível sem deduzir profundidade apenas da duração."
+        ]
+      },
+      "origem_no_inventario": "candidato_ja_documentado",
+      "referencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=akfnG4tEgYA",
+          "titulo": "Página oficial do vídeo no YouTube",
+          "consultado": "2026-11-06",
+          "alcance": "Título, autor/canal, Channel ID, data de publicação, duração, descrição e lista de faixas de legenda presentes no player oficial. Não foi reproduzido o vídeo nem baixado seu conteúdo audiovisual.",
+          "limites": "Metadados e descrição não substituem inspeção integral. Presença de legenda não confirma idioma original, qualidade de tradução ou dublagem."
+        },
+        {
+          "url": "https://knowledge.insead.edu/marketing/close-friends-could-darken-word-mouth-marketing",
+          "titulo": "Fonte institucional de contexto ou qualificação",
+          "consultado": "2026-11-06",
+          "alcance": "Texto institucional identificado na pesquisa, usado para autoria, qualificação ou contexto temático.",
+          "limites": "Não substitui revisão da gravação ou leitura integral das obras citadas."
+        },
+        {
+          "url": "https://blogs.insead.edu/germany-iaa/files/2015/06/Alumni-Careers-Support-Brochure-09.2017-14yc99h.pdf",
+          "titulo": "Procedência do canal INSEAD previamente aprovada",
+          "consultado": "registro prévio de 2026-11-06; não relido integralmente nesta tarefa",
+          "alcance": "Documento institucional registrado no catálogo aprovado de fontes, combinado com Channel ID novamente retornado pelo player oficial.",
+          "limites": "Homepage INSEAD retornou 403 em consulta direta; não houve retry, troca de identidade ou contorno. Fonte de procedência anterior não equivale a revisão integral do PDF."
+        }
+      ],
+      "criterio_selecao": "Canal institucional aprovado, autoria acadêmica ou executiva qualificada identificada em fonte oficial, tema pertinente; não identificado como anúncio de curso na apresentação principal dos metadados.",
+      "limites": [
+        "Seleção por procedência e metadados: não declarar conteúdo integralmente assistido, auditado ou revisado.",
+        "Cargo, exemplos e dados podem ser históricos; publicação no YouTube não é necessariamente a data da palestra."
+      ],
+      "formato": "entrevista ou exposição institucional",
+      "titulo_original": "How word-of-mouth marketing can backfire among close friends",
+      "titulo_pt": "Quando o boca a boca pode ter efeito contrário entre amigos próximos",
+      "titulo_pt_natureza": "tradução/adaptação editorial própria, não título português oficial confirmado",
+      "resumo": "Discussão institucional de David Dubois sobre como a proximidade entre pessoas pode mudar o teor positivo ou negativo das recomendações de produtos e serviços.",
+      "trilha": "clientes",
+      "nivel": "Intermediário",
+      "contexto_consultado": {
+        "material": "Título, descrição e metadados do player oficial, consultados em 06/11/2026.",
+        "fontes_adicionais": [
+          "https://knowledge.insead.edu/marketing/close-friends-could-darken-word-mouth-marketing"
+        ],
+        "limite": "Não houve audição, inspeção audiovisual, consulta de transcrição integral ou revisão integral. O resumo apenas reorganiza o texto institucional realmente consultado."
+      },
+      "credenciais": [
+        {
+          "nome": "David Dubois",
+          "qualificacao_documentada": "Identificado no artigo institucional relacionado como Assistant Professor of Marketing da INSEAD em 2016.",
+          "fontes": [
+            {
+              "url": "https://knowledge.insead.edu/marketing/close-friends-could-darken-word-mouth-marketing",
+              "alcance": "Descrição/metadados institucionais ou texto institucional primário relacionado, conforme referências e contexto de consulta.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        }
+      ]
+    },
+    {
+      "id": "nedxQh6_-9k",
+      "url": "https://www.youtube.com/watch?v=nedxQh6_-9k",
+      "titulo": "Marketing Dystopia?",
+      "canal": {
+        "id_catalogo": "insead",
+        "nome": "INSEAD",
+        "channel_id": "UC9aeQQ-NqjHS3nfiod2PMSA",
+        "url": "https://www.youtube.com/channel/UC9aeQQ-NqjHS3nfiod2PMSA",
+        "fonte_aprovada": "INSEAD Knowledge",
+        "procedencia_institucional": "https://blogs.insead.edu/germany-iaa/files/2015/06/Alumni-Careers-Support-Brochure-09.2017-14yc99h.pdf",
+        "aprovacao_documentada_em": "src/content/business/fontes/insead.json",
+        "confirmacao_atual": "Channel ID retornado pelo player oficial em todos os vídeos selecionados coincide com o canal aprovado; autor retornado também confere.",
+        "verificado_em": "2026-11-06",
+        "vinculo_institucional_consultado": {
+          "url": "https://www.insead.edu/",
+          "http_status_direto": 403,
+          "procedimento": "Sem nova tentativa ou contorno. Mantida a procedência do canal previamente aprovada e documentada, corroborada por descrições oficiais e páginas INSEAD Knowledge específicas.",
+          "procedencia_previamente_aprovada": "https://blogs.insead.edu/germany-iaa/files/2015/06/Alumni-Careers-Support-Brochure-09.2017-14yc99h.pdf"
+        }
+      },
+      "data_publicacao_youtube": "2019-05-15T06:09:55-07:00",
+      "duracao_segundos": 1819,
+      "apresentadores": {
+        "nomes": [
+          "Klaus Wertenbroch"
+        ],
+        "qualificacao": "Descrição oficial identifica Klaus Wertenbroch, INSEAD; a página acadêmica institucional o identifica como professor de marketing.",
+        "fonte_oficial": "https://digital.insead.edu/ai/",
+        "criterio_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+      },
+      "idioma": "en",
+      "idioma_proposto": "en",
+      "base_idioma": "Inglês proposto pelo título, descrição e faixas en presentes nos metadados; não confirmado por audição nesta pesquisa.",
+      "idioma_falado_conferido_por_audicao": false,
+      "descricao": "A instituição anuncia uma apresentação sobre microdirecionamento, discriminação de preços, privacidade e autonomia do consumidor. A descrição enquadra custos econômicos e psicológicos da automação; não foi realizada avaliação das alegações ou dos estudos mencionados ao longo da gravação.",
+      "base_descricao": "Resumo próprio limitado ao título/descrição oficial e às fontes institucionais explicitamente listadas; nenhum resumo da gravação integral é reivindicado.",
+      "trilha_proposta": "estrategia",
+      "nivel_proposto": "Avançado",
+      "justificativa_nivel": "Relaciona mecanismos de personalização, economia e autonomia; demanda leitura crítica de pressupostos e efeitos.",
+      "rotulo_editorial": "Seleção institucional · revisão integral pendente",
+      "revisao_integral": false,
+      "audicao_realizada": false,
+      "inspecao_audiovisual_realizada": false,
+      "transcricao_integral_consultada": false,
+      "revisao": {
+        "status": "selecao_institucional_com_metadados_confirmados",
+        "revisao_integral": false,
+        "publicavel_como_material_integralmente_revisado": false,
+        "metadados_reconfirmados": true,
+        "data_verificacao": "2026-11-06",
+        "legendas_listadas": [
+          {
+            "language_code": "en",
+            "kind": "asr"
+          }
+        ],
+        "legendas_conteudo_consultado": false,
+        "dublagem_portugues_confirmada": false,
+        "pendencias": [
+          "Revisar o conteúdo completo antes de qualificá-lo como integralmente revisado.",
+          "Confirmar idioma falado, qualidade das legendas e eventual predominância de promoção no conteúdo audiovisual.",
+          "Conferir adequação final à trilha e ao nível sem deduzir profundidade apenas da duração."
+        ]
+      },
+      "origem_no_inventario": "descoberta_adicional_em_canal_aprovado",
+      "referencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=nedxQh6_-9k",
+          "titulo": "Página oficial do vídeo no YouTube",
+          "consultado": "2026-11-06",
+          "alcance": "Título, autor/canal, Channel ID, data de publicação, duração, descrição e lista de faixas de legenda presentes no player oficial. Não foi reproduzido o vídeo nem baixado seu conteúdo audiovisual.",
+          "limites": "Metadados e descrição não substituem inspeção integral. Presença de legenda não confirma idioma original, qualidade de tradução ou dublagem."
+        },
+        {
+          "url": "https://digital.insead.edu/ai/",
+          "titulo": "Fonte institucional de contexto ou qualificação",
+          "consultado": "2026-11-06",
+          "alcance": "Texto institucional identificado na pesquisa, usado para autoria, qualificação ou contexto temático.",
+          "limites": "Não substitui revisão da gravação ou leitura integral das obras citadas."
+        },
+        {
+          "url": "https://blogs.insead.edu/germany-iaa/files/2015/06/Alumni-Careers-Support-Brochure-09.2017-14yc99h.pdf",
+          "titulo": "Procedência do canal INSEAD previamente aprovada",
+          "consultado": "registro prévio de 2026-11-06; não relido integralmente nesta tarefa",
+          "alcance": "Documento institucional registrado no catálogo aprovado de fontes, combinado com Channel ID novamente retornado pelo player oficial.",
+          "limites": "Homepage INSEAD retornou 403 em consulta direta; não houve retry, troca de identidade ou contorno. Fonte de procedência anterior não equivale a revisão integral do PDF."
+        },
+        {
+          "url": "https://www.insead.edu/faculty/klaus-wertenbroch",
+          "titulo": "Perfil acadêmico institucional de Klaus Wertenbroch",
+          "consultado": "2026-11-06",
+          "alcance": "Texto primário indexado com cargo e áreas acadêmicas.",
+          "limites": "Qualificação não implica auditoria das alegações do vídeo."
+        }
+      ],
+      "criterio_selecao": "Canal institucional aprovado, autoria acadêmica ou executiva qualificada identificada em fonte oficial, tema pertinente; não identificado como anúncio de curso na apresentação principal dos metadados.",
+      "limites": [
+        "Seleção por procedência e metadados: não declarar conteúdo integralmente assistido, auditado ou revisado.",
+        "Cargo, exemplos e dados podem ser históricos; publicação no YouTube não é necessariamente a data da palestra."
+      ],
+      "formato": "entrevista ou exposição institucional",
+      "titulo_original": "Marketing Dystopia?",
+      "titulo_pt": "Marketing distópico?",
+      "titulo_pt_natureza": "tradução/adaptação editorial própria, não título português oficial confirmado",
+      "resumo": "Apresentação de Klaus Wertenbroch sobre microdirecionamento, discriminação de preços, privacidade e autonomia do consumidor no contexto da automação de marketing.",
+      "trilha": "estrategia",
+      "nivel": "Avançado",
+      "contexto_consultado": {
+        "material": "Título, descrição e metadados do player oficial, consultados em 06/11/2026.",
+        "fontes_adicionais": [
+          "https://digital.insead.edu/ai/",
+          "https://www.insead.edu/faculty/klaus-wertenbroch"
+        ],
+        "limite": "Não houve audição, inspeção audiovisual, consulta de transcrição integral ou revisão integral. O resumo apenas reorganiza o texto institucional realmente consultado."
+      },
+      "credenciais": [
+        {
+          "nome": "Klaus Wertenbroch",
+          "qualificacao_documentada": "Professor de marketing identificado na descrição institucional e no perfil acadêmico da INSEAD; atuação em economia comportamental e escolha do consumidor.",
+          "fontes": [
+            {
+              "url": "https://www.insead.edu/faculty/klaus-wertenbroch",
+              "alcance": "Perfil primário consultado via resultado indexado: nome, título e áreas de pesquisa; não nova tentativa à homepage bloqueada.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        }
+      ]
+    },
+    {
+      "id": "8rWWUxf7gHU",
+      "url": "https://www.youtube.com/watch?v=8rWWUxf7gHU",
+      "titulo": "The Momentum Effect: Mobilising brainpower for efficient gro",
+      "canal": {
+        "id_catalogo": "insead",
+        "nome": "INSEAD",
+        "channel_id": "UC9aeQQ-NqjHS3nfiod2PMSA",
+        "url": "https://www.youtube.com/channel/UC9aeQQ-NqjHS3nfiod2PMSA",
+        "fonte_aprovada": "INSEAD Knowledge",
+        "procedencia_institucional": "https://blogs.insead.edu/germany-iaa/files/2015/06/Alumni-Careers-Support-Brochure-09.2017-14yc99h.pdf",
+        "aprovacao_documentada_em": "src/content/business/fontes/insead.json",
+        "confirmacao_atual": "Channel ID retornado pelo player oficial em todos os vídeos selecionados coincide com o canal aprovado; autor retornado também confere.",
+        "verificado_em": "2026-11-06",
+        "vinculo_institucional_consultado": {
+          "url": "https://www.insead.edu/",
+          "http_status_direto": 403,
+          "procedimento": "Sem nova tentativa ou contorno. Mantida a procedência do canal previamente aprovada e documentada, corroborada por descrições oficiais e páginas INSEAD Knowledge específicas.",
+          "procedencia_previamente_aprovada": "https://blogs.insead.edu/germany-iaa/files/2015/06/Alumni-Careers-Support-Brochure-09.2017-14yc99h.pdf"
+        }
+      },
+      "data_publicacao_youtube": "2008-06-24T07:17:09-07:00",
+      "duracao_segundos": 808,
+      "apresentadores": {
+        "nomes": [
+          "Jean-Claude Larréché"
+        ],
+        "qualificacao": "Descrição oficial o identifica como Alfred H. Heineken Chaired Professor of Marketing da INSEAD na publicação de 2008.",
+        "fonte_oficial": "https://www.youtube.com/watch?v=8rWWUxf7gHU",
+        "criterio_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+      },
+      "idioma": "en",
+      "idioma_proposto": "en",
+      "base_idioma": "Inglês proposto pelo título, descrição e faixas en presentes nos metadados; não confirmado por audição nesta pesquisa.",
+      "idioma_falado_conferido_por_audicao": false,
+      "descricao": "Entrevista institucional em que Jean-Claude Larréché apresenta o conceito denominado Momentum Effect, ligado a seu projeto de pesquisa sobre crescimento. A ficha indica o argumento e sua origem; não valida a promessa de crescimento autossustentado nem substitui a leitura das pesquisas.",
+      "base_descricao": "Resumo próprio limitado ao título/descrição oficial e às fontes institucionais explicitamente listadas; nenhum resumo da gravação integral é reivindicado.",
+      "trilha_proposta": "crescimento",
+      "nivel_proposto": "Intermediário",
+      "justificativa_nivel": "Útil para investigar hipóteses de crescimento e condições de replicação, com atenção ao contexto histórico de 2008.",
+      "rotulo_editorial": "Seleção institucional · revisão integral pendente",
+      "revisao_integral": false,
+      "audicao_realizada": false,
+      "inspecao_audiovisual_realizada": false,
+      "transcricao_integral_consultada": false,
+      "revisao": {
+        "status": "selecao_institucional_com_metadados_confirmados",
+        "revisao_integral": false,
+        "publicavel_como_material_integralmente_revisado": false,
+        "metadados_reconfirmados": true,
+        "data_verificacao": "2026-11-06",
+        "legendas_listadas": [
+          {
+            "language_code": "en",
+            "kind": "asr"
+          }
+        ],
+        "legendas_conteudo_consultado": false,
+        "dublagem_portugues_confirmada": false,
+        "pendencias": [
+          "Revisar o conteúdo completo antes de qualificá-lo como integralmente revisado.",
+          "Confirmar idioma falado, qualidade das legendas e eventual predominância de promoção no conteúdo audiovisual.",
+          "Conferir adequação final à trilha e ao nível sem deduzir profundidade apenas da duração."
+        ]
+      },
+      "origem_no_inventario": "descoberta_adicional_em_canal_aprovado",
+      "referencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=8rWWUxf7gHU",
+          "titulo": "Página oficial do vídeo no YouTube",
+          "consultado": "2026-11-06",
+          "alcance": "Título, autor/canal, Channel ID, data de publicação, duração, descrição e lista de faixas de legenda presentes no player oficial. Não foi reproduzido o vídeo nem baixado seu conteúdo audiovisual.",
+          "limites": "Metadados e descrição não substituem inspeção integral. Presença de legenda não confirma idioma original, qualidade de tradução ou dublagem."
+        },
+        {
+          "url": "https://blogs.insead.edu/germany-iaa/files/2015/06/Alumni-Careers-Support-Brochure-09.2017-14yc99h.pdf",
+          "titulo": "Procedência do canal INSEAD previamente aprovada",
+          "consultado": "registro prévio de 2026-11-06; não relido integralmente nesta tarefa",
+          "alcance": "Documento institucional registrado no catálogo aprovado de fontes, combinado com Channel ID novamente retornado pelo player oficial.",
+          "limites": "Homepage INSEAD retornou 403 em consulta direta; não houve retry, troca de identidade ou contorno. Fonte de procedência anterior não equivale a revisão integral do PDF."
+        }
+      ],
+      "criterio_selecao": "Canal institucional aprovado, autoria acadêmica ou executiva qualificada identificada em fonte oficial, tema pertinente; não identificado como anúncio de curso na apresentação principal dos metadados.",
+      "limites": [
+        "Seleção por procedência e metadados: não declarar conteúdo integralmente assistido, auditado ou revisado.",
+        "Cargo, exemplos e dados podem ser históricos; publicação no YouTube não é necessariamente a data da palestra."
+      ],
+      "formato": "entrevista ou exposição institucional",
+      "titulo_original": "The Momentum Effect: Mobilising brainpower for efficient gro",
+      "titulo_pt": "O efeito momentum: mobilizar inteligência para crescer",
+      "titulo_pt_natureza": "tradução/adaptação editorial própria, não título português oficial confirmado",
+      "resumo": "Entrevista com Jean-Claude Larréché sobre o conceito Momentum Effect e seu argumento de pesquisa sobre crescimento empresarial.",
+      "trilha": "crescimento",
+      "nivel": "Intermediário",
+      "contexto_consultado": {
+        "material": "Título, descrição e metadados do player oficial, consultados em 06/11/2026.",
+        "fontes_adicionais": [],
+        "limite": "Não houve audição, inspeção audiovisual, consulta de transcrição integral ou revisão integral. O resumo apenas reorganiza o texto institucional realmente consultado."
+      },
+      "credenciais": [
+        {
+          "nome": "Jean-Claude Larréché",
+          "qualificacao_documentada": "Descrição oficial o identifica como Alfred H. Heineken Chaired Professor of Marketing da INSEAD na publicação de 2008.",
+          "fontes": [
+            {
+              "url": "https://www.youtube.com/watch?v=8rWWUxf7gHU",
+              "alcance": "Descrição/metadados institucionais ou texto institucional primário relacionado, conforme referências e contexto de consulta.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        }
+      ]
+    },
+    {
+      "id": "slZcYr5IxD4",
+      "url": "https://www.youtube.com/watch?v=slZcYr5IxD4",
+      "titulo": "Viral marketing: tell a woman?",
+      "canal": {
+        "id_catalogo": "insead",
+        "nome": "INSEAD",
+        "channel_id": "UC9aeQQ-NqjHS3nfiod2PMSA",
+        "url": "https://www.youtube.com/channel/UC9aeQQ-NqjHS3nfiod2PMSA",
+        "fonte_aprovada": "INSEAD Knowledge",
+        "procedencia_institucional": "https://blogs.insead.edu/germany-iaa/files/2015/06/Alumni-Careers-Support-Brochure-09.2017-14yc99h.pdf",
+        "aprovacao_documentada_em": "src/content/business/fontes/insead.json",
+        "confirmacao_atual": "Channel ID retornado pelo player oficial em todos os vídeos selecionados coincide com o canal aprovado; autor retornado também confere.",
+        "verificado_em": "2026-11-06",
+        "vinculo_institucional_consultado": {
+          "url": "https://www.insead.edu/",
+          "http_status_direto": 403,
+          "procedimento": "Sem nova tentativa ou contorno. Mantida a procedência do canal previamente aprovada e documentada, corroborada por descrições oficiais e páginas INSEAD Knowledge específicas.",
+          "procedencia_previamente_aprovada": "https://blogs.insead.edu/germany-iaa/files/2015/06/Alumni-Careers-Support-Brochure-09.2017-14yc99h.pdf"
+        }
+      },
+      "data_publicacao_youtube": "2009-10-16T06:22:53-07:00",
+      "duracao_segundos": 602,
+      "apresentadores": {
+        "nomes": [
+          "Andrew Stephen"
+        ],
+        "qualificacao": "O artigo INSEAD associado o apresenta como Assistant Professor of Marketing à época da pesquisa divulgada em 2009.",
+        "fonte_oficial": "https://knowledge.insead.edu/marketing/viral-marketing-tell-woman",
+        "criterio_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+      },
+      "idioma": "en",
+      "idioma_proposto": "en",
+      "base_idioma": "Inglês proposto pelo título, descrição e faixas en presentes nos metadados; não confirmado por audição nesta pesquisa.",
+      "idioma_falado_conferido_por_audicao": false,
+      "descricao": "O vídeo é associado pela INSEAD a uma discussão de Andrew Stephen sobre circulação de recomendações e sociabilidade. O artigo contextualiza uma pesquisa de campanha com cupons e amostras; seus números não foram transportados para esta descrição nem generalizados para outras marcas.",
+      "base_descricao": "Resumo próprio limitado ao título/descrição oficial e às fontes institucionais explicitamente listadas; nenhum resumo da gravação integral é reivindicado.",
+      "trilha_proposta": "marcas",
+      "nivel_proposto": "Intermediário",
+      "justificativa_nivel": "Permite distinguir difusão, incentivo e evidência de campanha; o título histórico requer contextualização crítica.",
+      "rotulo_editorial": "Seleção institucional · revisão integral pendente",
+      "revisao_integral": false,
+      "audicao_realizada": false,
+      "inspecao_audiovisual_realizada": false,
+      "transcricao_integral_consultada": false,
+      "revisao": {
+        "status": "selecao_institucional_com_metadados_confirmados",
+        "revisao_integral": false,
+        "publicavel_como_material_integralmente_revisado": false,
+        "metadados_reconfirmados": true,
+        "data_verificacao": "2026-11-06",
+        "legendas_listadas": [
+          {
+            "language_code": "en",
+            "kind": "asr"
+          }
+        ],
+        "legendas_conteudo_consultado": false,
+        "dublagem_portugues_confirmada": false,
+        "pendencias": [
+          "Revisar o conteúdo completo antes de qualificá-lo como integralmente revisado.",
+          "Confirmar idioma falado, qualidade das legendas e eventual predominância de promoção no conteúdo audiovisual.",
+          "Conferir adequação final à trilha e ao nível sem deduzir profundidade apenas da duração."
+        ]
+      },
+      "origem_no_inventario": "descoberta_adicional_em_canal_aprovado",
+      "referencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=slZcYr5IxD4",
+          "titulo": "Página oficial do vídeo no YouTube",
+          "consultado": "2026-11-06",
+          "alcance": "Título, autor/canal, Channel ID, data de publicação, duração, descrição e lista de faixas de legenda presentes no player oficial. Não foi reproduzido o vídeo nem baixado seu conteúdo audiovisual.",
+          "limites": "Metadados e descrição não substituem inspeção integral. Presença de legenda não confirma idioma original, qualidade de tradução ou dublagem."
+        },
+        {
+          "url": "https://knowledge.insead.edu/marketing/viral-marketing-tell-woman",
+          "titulo": "Fonte institucional de contexto ou qualificação",
+          "consultado": "2026-11-06",
+          "alcance": "Texto institucional identificado na pesquisa, usado para autoria, qualificação ou contexto temático.",
+          "limites": "Não substitui revisão da gravação ou leitura integral das obras citadas."
+        },
+        {
+          "url": "https://blogs.insead.edu/germany-iaa/files/2015/06/Alumni-Careers-Support-Brochure-09.2017-14yc99h.pdf",
+          "titulo": "Procedência do canal INSEAD previamente aprovada",
+          "consultado": "registro prévio de 2026-11-06; não relido integralmente nesta tarefa",
+          "alcance": "Documento institucional registrado no catálogo aprovado de fontes, combinado com Channel ID novamente retornado pelo player oficial.",
+          "limites": "Homepage INSEAD retornou 403 em consulta direta; não houve retry, troca de identidade ou contorno. Fonte de procedência anterior não equivale a revisão integral do PDF."
+        }
+      ],
+      "criterio_selecao": "Canal institucional aprovado, autoria acadêmica ou executiva qualificada identificada em fonte oficial, tema pertinente; não identificado como anúncio de curso na apresentação principal dos metadados.",
+      "limites": [
+        "Seleção por procedência e metadados: não declarar conteúdo integralmente assistido, auditado ou revisado.",
+        "Cargo, exemplos e dados podem ser históricos; publicação no YouTube não é necessariamente a data da palestra."
+      ],
+      "formato": "entrevista ou exposição institucional",
+      "titulo_original": "Viral marketing: tell a woman?",
+      "titulo_pt": "Marketing viral: contar para uma mulher?",
+      "titulo_pt_natureza": "tradução/adaptação editorial própria, não título português oficial confirmado",
+      "resumo": "Discussão com Andrew Stephen sobre sociabilidade e circulação de recomendações, contextualizada pela INSEAD em pesquisa de marketing viral com cupons e amostras.",
+      "trilha": "marcas",
+      "nivel": "Intermediário",
+      "contexto_consultado": {
+        "material": "Título, descrição e metadados do player oficial, consultados em 06/11/2026.",
+        "fontes_adicionais": [
+          "https://knowledge.insead.edu/marketing/viral-marketing-tell-woman"
+        ],
+        "limite": "Não houve audição, inspeção audiovisual, consulta de transcrição integral ou revisão integral. O resumo apenas reorganiza o texto institucional realmente consultado."
+      },
+      "credenciais": [
+        {
+          "nome": "Andrew Stephen",
+          "qualificacao_documentada": "O artigo INSEAD associado o apresenta como Assistant Professor of Marketing à época da pesquisa divulgada em 2009.",
+          "fontes": [
+            {
+              "url": "https://knowledge.insead.edu/marketing/viral-marketing-tell-woman",
+              "alcance": "Descrição/metadados institucionais ou texto institucional primário relacionado, conforme referências e contexto de consulta.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        }
+      ]
+    },
+    {
+      "id": "N1J4imhOoZI",
+      "url": "https://www.youtube.com/watch?v=N1J4imhOoZI",
+      "titulo": "Disruptive innovation for your business model: INSEAD's Serguei Netessine and Karan Girotra",
+      "canal": {
+        "id_catalogo": "insead",
+        "nome": "INSEAD",
+        "channel_id": "UC9aeQQ-NqjHS3nfiod2PMSA",
+        "url": "https://www.youtube.com/channel/UC9aeQQ-NqjHS3nfiod2PMSA",
+        "fonte_aprovada": "INSEAD Knowledge",
+        "procedencia_institucional": "https://blogs.insead.edu/germany-iaa/files/2015/06/Alumni-Careers-Support-Brochure-09.2017-14yc99h.pdf",
+        "aprovacao_documentada_em": "src/content/business/fontes/insead.json",
+        "confirmacao_atual": "Channel ID retornado pelo player oficial em todos os vídeos selecionados coincide com o canal aprovado; autor retornado também confere.",
+        "verificado_em": "2026-11-06",
+        "vinculo_institucional_consultado": {
+          "url": "https://www.insead.edu/",
+          "http_status_direto": 403,
+          "procedimento": "Sem nova tentativa ou contorno. Mantida a procedência do canal previamente aprovada e documentada, corroborada por descrições oficiais e páginas INSEAD Knowledge específicas.",
+          "procedencia_previamente_aprovada": "https://blogs.insead.edu/germany-iaa/files/2015/06/Alumni-Careers-Support-Brochure-09.2017-14yc99h.pdf"
+        }
+      },
+      "data_publicacao_youtube": "2014-07-01T18:44:41-07:00",
+      "duracao_segundos": 656,
+      "apresentadores": {
+        "nomes": [
+          "Serguei Netessine",
+          "Karan Girotra"
+        ],
+        "qualificacao": "Descrição institucional identifica ambos como professores da INSEAD em 2014; a ficha não declara vínculo atual.",
+        "fonte_oficial": "https://www.youtube.com/watch?v=N1J4imhOoZI",
+        "criterio_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+      },
+      "idioma": "en",
+      "idioma_proposto": "en",
+      "base_idioma": "Inglês proposto pelo título, descrição e faixas en presentes nos metadados; não confirmado por audição nesta pesquisa.",
+      "idioma_falado_conferido_por_audicao": false,
+      "descricao": "Conversa institucional sobre inovação em modelos de negócio, a partir de um livro dos dois pesquisadores. A descrição enfatiza mudanças na forma de operar e responder à demanda, além da inovação do produto. O livro completo não foi consultado para esta ficha.",
+      "base_descricao": "Resumo próprio limitado ao título/descrição oficial e às fontes institucionais explicitamente listadas; nenhum resumo da gravação integral é reivindicado.",
+      "trilha_proposta": "crescimento",
+      "nivel_proposto": "Intermediário",
+      "justificativa_nivel": "Propõe separar oferta, operação e modelo de negócio; descrição e título não bastam para certificar aplicação.",
+      "rotulo_editorial": "Seleção institucional · revisão integral pendente",
+      "revisao_integral": false,
+      "audicao_realizada": false,
+      "inspecao_audiovisual_realizada": false,
+      "transcricao_integral_consultada": false,
+      "revisao": {
+        "status": "selecao_institucional_com_metadados_confirmados",
+        "revisao_integral": false,
+        "publicavel_como_material_integralmente_revisado": false,
+        "metadados_reconfirmados": true,
+        "data_verificacao": "2026-11-06",
+        "legendas_listadas": [
+          {
+            "language_code": "en",
+            "kind": "asr"
+          }
+        ],
+        "legendas_conteudo_consultado": false,
+        "dublagem_portugues_confirmada": false,
+        "pendencias": [
+          "Revisar o conteúdo completo antes de qualificá-lo como integralmente revisado.",
+          "Confirmar idioma falado, qualidade das legendas e eventual predominância de promoção no conteúdo audiovisual.",
+          "Conferir adequação final à trilha e ao nível sem deduzir profundidade apenas da duração."
+        ]
+      },
+      "origem_no_inventario": "descoberta_adicional_em_canal_aprovado",
+      "referencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=N1J4imhOoZI",
+          "titulo": "Página oficial do vídeo no YouTube",
+          "consultado": "2026-11-06",
+          "alcance": "Título, autor/canal, Channel ID, data de publicação, duração, descrição e lista de faixas de legenda presentes no player oficial. Não foi reproduzido o vídeo nem baixado seu conteúdo audiovisual.",
+          "limites": "Metadados e descrição não substituem inspeção integral. Presença de legenda não confirma idioma original, qualidade de tradução ou dublagem."
+        },
+        {
+          "url": "https://blogs.insead.edu/germany-iaa/files/2015/06/Alumni-Careers-Support-Brochure-09.2017-14yc99h.pdf",
+          "titulo": "Procedência do canal INSEAD previamente aprovada",
+          "consultado": "registro prévio de 2026-11-06; não relido integralmente nesta tarefa",
+          "alcance": "Documento institucional registrado no catálogo aprovado de fontes, combinado com Channel ID novamente retornado pelo player oficial.",
+          "limites": "Homepage INSEAD retornou 403 em consulta direta; não houve retry, troca de identidade ou contorno. Fonte de procedência anterior não equivale a revisão integral do PDF."
+        }
+      ],
+      "criterio_selecao": "Canal institucional aprovado, autoria acadêmica ou executiva qualificada identificada em fonte oficial, tema pertinente; não identificado como anúncio de curso na apresentação principal dos metadados.",
+      "limites": [
+        "Seleção por procedência e metadados: não declarar conteúdo integralmente assistido, auditado ou revisado.",
+        "Cargo, exemplos e dados podem ser históricos; publicação no YouTube não é necessariamente a data da palestra."
+      ],
+      "formato": "entrevista ou exposição institucional",
+      "titulo_original": "Disruptive innovation for your business model: INSEAD's Serguei Netessine and Karan Girotra",
+      "titulo_pt": "Inovação no modelo de negócio com Serguei Netessine e Karan Girotra",
+      "titulo_pt_natureza": "tradução/adaptação editorial própria, não título português oficial confirmado",
+      "resumo": "Serguei Netessine e Karan Girotra discutem inovação na forma de operar o negócio e responder à demanda, a partir do livro The Risk-Driven Business Model.",
+      "trilha": "crescimento",
+      "nivel": "Intermediário",
+      "contexto_consultado": {
+        "material": "Título, descrição e metadados do player oficial, consultados em 06/11/2026.",
+        "fontes_adicionais": [],
+        "limite": "Não houve audição, inspeção audiovisual, consulta de transcrição integral ou revisão integral. O resumo apenas reorganiza o texto institucional realmente consultado."
+      },
+      "credenciais": [
+        {
+          "nome": "Serguei Netessine",
+          "qualificacao_documentada": "Descrição institucional identifica ambos como professores da INSEAD em 2014; a ficha não declara vínculo atual.",
+          "fontes": [
+            {
+              "url": "https://www.youtube.com/watch?v=N1J4imhOoZI",
+              "alcance": "Descrição/metadados institucionais ou texto institucional primário relacionado, conforme referências e contexto de consulta.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        },
+        {
+          "nome": "Karan Girotra",
+          "qualificacao_documentada": "Descrição institucional identifica ambos como professores da INSEAD em 2014; a ficha não declara vínculo atual.",
+          "fontes": [
+            {
+              "url": "https://www.youtube.com/watch?v=N1J4imhOoZI",
+              "alcance": "Descrição/metadados institucionais ou texto institucional primário relacionado, conforme referências e contexto de consulta.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        }
+      ]
+    },
+    {
+      "id": "Jn4xIHu0cmI",
+      "url": "https://www.youtube.com/watch?v=Jn4xIHu0cmI",
+      "titulo": "BizTalks 2015: Barbara Kahn on “Marketing Magic: Managing Consumer Perceptions.”",
+      "canal": {
+        "id_catalogo": "wharton",
+        "nome": "Wharton School",
+        "channel_id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
+        "url": "https://www.youtube.com/channel/UCU9Z1eLsDa_meEfsmx-Ys0w",
+        "fonte_aprovada": "Knowledge at Wharton",
+        "procedencia_institucional": "https://www.wharton.upenn.edu/",
+        "aprovacao_documentada_em": "src/content/business/fontes/wharton.json",
+        "confirmacao_atual": "Channel ID retornado pelo player oficial em todos os vídeos selecionados coincide com o canal aprovado; autor retornado também confere.",
+        "verificado_em": "2026-11-06",
+        "vinculo_institucional_consultado": {
+          "url": "https://www.wharton.upenn.edu/",
+          "http_status": 200,
+          "link_youtube_no_html": "https://www.youtube.com/user/thewhartonschool"
+        }
+      },
+      "data_publicacao_youtube": "2015-07-22T12:26:48-07:00",
+      "duracao_segundos": 409,
+      "apresentadores": {
+        "nomes": [
+          "Barbara Kahn"
+        ],
+        "qualificacao": "Descrição da Wharton apresenta Barbara Kahn como professora e participante do evento acadêmico BizTalks 2015.",
+        "fonte_oficial": "https://www.youtube.com/watch?v=Jn4xIHu0cmI",
+        "criterio_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+      },
+      "idioma": "en",
+      "idioma_proposto": "en",
+      "base_idioma": "Inglês proposto pelo título, descrição e faixas en presentes nos metadados; não confirmado por audição nesta pesquisa.",
+      "idioma_falado_conferido_por_audicao": false,
+      "descricao": "A Wharton identifica a apresentação de Barbara Kahn sobre percepção de variedade e influência sobre escolhas. A seleção oferece um ponto de partida sobre percepção do consumidor, com base no tema e na descrição do evento, sem afirmar que a palestra completa foi assistida.",
+      "base_descricao": "Resumo próprio limitado ao título/descrição oficial e às fontes institucionais explicitamente listadas; nenhum resumo da gravação integral é reivindicado.",
+      "trilha_proposta": "consumidor",
+      "nivel_proposto": "Iniciante",
+      "justificativa_nivel": "Introdução curta a percepção e escolha; proposta de entrada no tema, não confirmação de ausência de pré-requisitos.",
+      "rotulo_editorial": "Seleção institucional · revisão integral pendente",
+      "revisao_integral": false,
+      "audicao_realizada": false,
+      "inspecao_audiovisual_realizada": false,
+      "transcricao_integral_consultada": false,
+      "revisao": {
+        "status": "selecao_institucional_com_metadados_confirmados",
+        "revisao_integral": false,
+        "publicavel_como_material_integralmente_revisado": false,
+        "metadados_reconfirmados": true,
+        "data_verificacao": "2026-11-06",
+        "legendas_listadas": [
+          {
+            "language_code": "ar",
+            "kind": "asr"
+          },
+          {
+            "language_code": "bn",
+            "kind": "asr"
+          },
+          {
+            "language_code": "nl-NL",
+            "kind": "asr"
+          },
+          {
+            "language_code": "en",
+            "kind": "asr"
+          },
+          {
+            "language_code": "fr-FR",
+            "kind": "asr"
+          },
+          {
+            "language_code": "de-DE",
+            "kind": "asr"
+          },
+          {
+            "language_code": "iw",
+            "kind": "asr"
+          },
+          {
+            "language_code": "hi",
+            "kind": "asr"
+          },
+          {
+            "language_code": "id",
+            "kind": "asr"
+          },
+          {
+            "language_code": "it",
+            "kind": "asr"
+          },
+          {
+            "language_code": "ja",
+            "kind": "asr"
+          },
+          {
+            "language_code": "ko",
+            "kind": "asr"
+          },
+          {
+            "language_code": "ml",
+            "kind": "asr"
+          },
+          {
+            "language_code": "pl",
+            "kind": "asr"
+          },
+          {
+            "language_code": "pt-BR",
+            "kind": "asr"
+          },
+          {
+            "language_code": "pa",
+            "kind": "asr"
+          },
+          {
+            "language_code": "ru",
+            "kind": "asr"
+          },
+          {
+            "language_code": "es-US",
+            "kind": "asr"
+          },
+          {
+            "language_code": "ta",
+            "kind": "asr"
+          },
+          {
+            "language_code": "uk",
+            "kind": "asr"
+          }
+        ],
+        "legendas_conteudo_consultado": false,
+        "dublagem_portugues_confirmada": false,
+        "pendencias": [
+          "Revisar o conteúdo completo antes de qualificá-lo como integralmente revisado.",
+          "Confirmar idioma falado, qualidade das legendas e eventual predominância de promoção no conteúdo audiovisual.",
+          "Conferir adequação final à trilha e ao nível sem deduzir profundidade apenas da duração."
+        ]
+      },
+      "origem_no_inventario": "candidato_ja_documentado",
+      "referencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=Jn4xIHu0cmI",
+          "titulo": "Página oficial do vídeo no YouTube",
+          "consultado": "2026-11-06",
+          "alcance": "Título, autor/canal, Channel ID, data de publicação, duração, descrição e lista de faixas de legenda presentes no player oficial. Não foi reproduzido o vídeo nem baixado seu conteúdo audiovisual.",
+          "limites": "Metadados e descrição não substituem inspeção integral. Presença de legenda não confirma idioma original, qualidade de tradução ou dublagem."
+        },
+        {
+          "url": "https://www.wharton.upenn.edu/",
+          "titulo": "Site institucional e vínculo para o canal oficial",
+          "consultado": "2026-11-06",
+          "alcance": "HTML público da instituição contém o link do canal YouTube registrado na procedência.",
+          "limites": "O vínculo institucional não certifica individualmente as alegações do vídeo."
+        }
+      ],
+      "criterio_selecao": "Canal institucional aprovado, autoria acadêmica ou executiva qualificada identificada em fonte oficial, tema pertinente; não identificado como anúncio de curso na apresentação principal dos metadados.",
+      "limites": [
+        "Seleção por procedência e metadados: não declarar conteúdo integralmente assistido, auditado ou revisado.",
+        "Cargo, exemplos e dados podem ser históricos; publicação no YouTube não é necessariamente a data da palestra."
+      ],
+      "formato": "entrevista ou exposição institucional",
+      "titulo_original": "BizTalks 2015: Barbara Kahn on “Marketing Magic: Managing Consumer Perceptions.”",
+      "titulo_pt": "Barbara Kahn: marketing e percepções do consumidor",
+      "titulo_pt_natureza": "tradução/adaptação editorial própria, não título português oficial confirmado",
+      "resumo": "Apresentação de Barbara Kahn no BizTalks 2015 sobre percepção de variedade e influência dessa percepção nas escolhas dos consumidores.",
+      "trilha": "consumidor",
+      "nivel": "Iniciante",
+      "contexto_consultado": {
+        "material": "Título, descrição e metadados do player oficial, consultados em 06/11/2026.",
+        "fontes_adicionais": [],
+        "limite": "Não houve audição, inspeção audiovisual, consulta de transcrição integral ou revisão integral. O resumo apenas reorganiza o texto institucional realmente consultado."
+      },
+      "credenciais": [
+        {
+          "nome": "Barbara Kahn",
+          "qualificacao_documentada": "Descrição da Wharton apresenta Barbara Kahn como professora e participante do evento acadêmico BizTalks 2015.",
+          "fontes": [
+            {
+              "url": "https://www.youtube.com/watch?v=Jn4xIHu0cmI",
+              "alcance": "Descrição/metadados institucionais ou texto institucional primário relacionado, conforme referências e contexto de consulta.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        }
+      ]
+    },
+    {
+      "id": "C4Rq8G10xOg",
+      "url": "https://www.youtube.com/watch?v=C4Rq8G10xOg",
+      "titulo": "Professor Paul Green: The Technique of Market Research",
+      "canal": {
+        "id_catalogo": "wharton",
+        "nome": "Wharton School",
+        "channel_id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
+        "url": "https://www.youtube.com/channel/UCU9Z1eLsDa_meEfsmx-Ys0w",
+        "fonte_aprovada": "Knowledge at Wharton",
+        "procedencia_institucional": "https://www.wharton.upenn.edu/",
+        "aprovacao_documentada_em": "src/content/business/fontes/wharton.json",
+        "confirmacao_atual": "Channel ID retornado pelo player oficial em todos os vídeos selecionados coincide com o canal aprovado; autor retornado também confere.",
+        "verificado_em": "2026-11-06",
+        "vinculo_institucional_consultado": {
+          "url": "https://www.wharton.upenn.edu/",
+          "http_status": 200,
+          "link_youtube_no_html": "https://www.youtube.com/user/thewhartonschool"
+        }
+      },
+      "data_publicacao_youtube": "2012-05-01T12:44:56-07:00",
+      "duracao_segundos": 3405,
+      "apresentadores": {
+        "nomes": [
+          "Paul E. Green"
+        ],
+        "qualificacao": "Descrição oficial o identifica como Wharton Emeritus Professor of Marketing; o registro é histórico, publicado em 2012.",
+        "fonte_oficial": "https://www.youtube.com/watch?v=C4Rq8G10xOg",
+        "criterio_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+      },
+      "idioma": "en",
+      "idioma_proposto": "en",
+      "base_idioma": "Inglês proposto pelo título, descrição e faixas en presentes nos metadados; não confirmado por audição nesta pesquisa.",
+      "idioma_falado_conferido_por_audicao": false,
+      "descricao": "A descrição institucional apresenta uma exposição histórica das técnicas de pesquisa de mercado: modelos matemáticos, psicometria, teoria dos jogos, escalonamento multidimensional, agrupamento e análise conjunta. A indicação é de formação metodológica; não houve conferência das demonstrações ou exercícios da gravação inteira.",
+      "base_descricao": "Resumo próprio limitado ao título/descrição oficial e às fontes institucionais explicitamente listadas; nenhum resumo da gravação integral é reivindicado.",
+      "trilha_proposta": "mensuracao",
+      "nivel_proposto": "Avançado",
+      "justificativa_nivel": "Reúne vários métodos e suas relações históricas; nível avançado proposto pela amplitude técnica anunciada.",
+      "rotulo_editorial": "Seleção institucional · revisão integral pendente",
+      "revisao_integral": false,
+      "audicao_realizada": false,
+      "inspecao_audiovisual_realizada": false,
+      "transcricao_integral_consultada": false,
+      "revisao": {
+        "status": "selecao_institucional_com_metadados_confirmados",
+        "revisao_integral": false,
+        "publicavel_como_material_integralmente_revisado": false,
+        "metadados_reconfirmados": true,
+        "data_verificacao": "2026-11-06",
+        "legendas_listadas": [
+          {
+            "language_code": "en",
+            "kind": "asr"
+          }
+        ],
+        "legendas_conteudo_consultado": false,
+        "dublagem_portugues_confirmada": false,
+        "pendencias": [
+          "Revisar o conteúdo completo antes de qualificá-lo como integralmente revisado.",
+          "Confirmar idioma falado, qualidade das legendas e eventual predominância de promoção no conteúdo audiovisual.",
+          "Conferir adequação final à trilha e ao nível sem deduzir profundidade apenas da duração."
+        ]
+      },
+      "origem_no_inventario": "candidato_ja_documentado",
+      "referencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=C4Rq8G10xOg",
+          "titulo": "Página oficial do vídeo no YouTube",
+          "consultado": "2026-11-06",
+          "alcance": "Título, autor/canal, Channel ID, data de publicação, duração, descrição e lista de faixas de legenda presentes no player oficial. Não foi reproduzido o vídeo nem baixado seu conteúdo audiovisual.",
+          "limites": "Metadados e descrição não substituem inspeção integral. Presença de legenda não confirma idioma original, qualidade de tradução ou dublagem."
+        },
+        {
+          "url": "https://www.wharton.upenn.edu/",
+          "titulo": "Site institucional e vínculo para o canal oficial",
+          "consultado": "2026-11-06",
+          "alcance": "HTML público da instituição contém o link do canal YouTube registrado na procedência.",
+          "limites": "O vínculo institucional não certifica individualmente as alegações do vídeo."
+        }
+      ],
+      "criterio_selecao": "Canal institucional aprovado, autoria acadêmica ou executiva qualificada identificada em fonte oficial, tema pertinente; não identificado como anúncio de curso na apresentação principal dos metadados.",
+      "limites": [
+        "Seleção por procedência e metadados: não declarar conteúdo integralmente assistido, auditado ou revisado.",
+        "Cargo, exemplos e dados podem ser históricos; publicação no YouTube não é necessariamente a data da palestra."
+      ],
+      "formato": "palestra/apresentação institucional",
+      "titulo_original": "Professor Paul Green: The Technique of Market Research",
+      "titulo_pt": "Paul Green: técnicas de pesquisa de mercado",
+      "titulo_pt_natureza": "tradução/adaptação editorial própria, não título português oficial confirmado",
+      "resumo": "Paul Green apresenta a história das técnicas de pesquisa de mercado, incluindo psicometria, modelos matemáticos, escalonamento multidimensional, agrupamento e análise conjunta.",
+      "trilha": "mensuracao",
+      "nivel": "Avançado",
+      "contexto_consultado": {
+        "material": "Título, descrição e metadados do player oficial, consultados em 06/11/2026.",
+        "fontes_adicionais": [],
+        "limite": "Não houve audição, inspeção audiovisual, consulta de transcrição integral ou revisão integral. O resumo apenas reorganiza o texto institucional realmente consultado."
+      },
+      "credenciais": [
+        {
+          "nome": "Paul E. Green",
+          "qualificacao_documentada": "Descrição oficial o identifica como Wharton Emeritus Professor of Marketing; o registro é histórico, publicado em 2012.",
+          "fontes": [
+            {
+              "url": "https://www.youtube.com/watch?v=C4Rq8G10xOg",
+              "alcance": "Descrição/metadados institucionais ou texto institucional primário relacionado, conforme referências e contexto de consulta.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        }
+      ]
+    },
+    {
+      "id": "cX88ia-4-6o",
+      "url": "https://www.youtube.com/watch?v=cX88ia-4-6o",
+      "titulo": "Professor Paul Green: The Practice of Market Research",
+      "canal": {
+        "id_catalogo": "wharton",
+        "nome": "Wharton School",
+        "channel_id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
+        "url": "https://www.youtube.com/channel/UCU9Z1eLsDa_meEfsmx-Ys0w",
+        "fonte_aprovada": "Knowledge at Wharton",
+        "procedencia_institucional": "https://www.wharton.upenn.edu/",
+        "aprovacao_documentada_em": "src/content/business/fontes/wharton.json",
+        "confirmacao_atual": "Channel ID retornado pelo player oficial em todos os vídeos selecionados coincide com o canal aprovado; autor retornado também confere.",
+        "verificado_em": "2026-11-06",
+        "vinculo_institucional_consultado": {
+          "url": "https://www.wharton.upenn.edu/",
+          "http_status": 200,
+          "link_youtube_no_html": "https://www.youtube.com/user/thewhartonschool"
+        }
+      },
+      "data_publicacao_youtube": "2012-05-01T12:11:02-07:00",
+      "duracao_segundos": 2499,
+      "apresentadores": {
+        "nomes": [
+          "Paul E. Green"
+        ],
+        "qualificacao": "Descrição oficial o apresenta como professor emérito de marketing da Wharton; referência histórica, sem presumir atividade docente atual.",
+        "fonte_oficial": "https://www.youtube.com/watch?v=cX88ia-4-6o",
+        "criterio_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+      },
+      "idioma": "en",
+      "idioma_proposto": "en",
+      "base_idioma": "Inglês proposto pelo título, descrição e faixas en presentes nos metadados; não confirmado por audição nesta pesquisa.",
+      "idioma_falado_conferido_por_audicao": false,
+      "descricao": "Complemento voltado às aplicações da pesquisa de mercado. A descrição menciona análise conjunta, escalonamento multidimensional e agrupamento em trabalhos de Paul Green. Casos empresariais são identificados pela instituição, mas não foram auditados nem reanalisados nesta seleção.",
+      "base_descricao": "Resumo próprio limitado ao título/descrição oficial e às fontes institucionais explicitamente listadas; nenhum resumo da gravação integral é reivindicado.",
+      "trilha_proposta": "mensuracao",
+      "nivel_proposto": "Intermediário",
+      "justificativa_nivel": "Conecta técnicas a problemas aplicados; exige distinguir relato de aplicação e validação independente.",
+      "rotulo_editorial": "Seleção institucional · revisão integral pendente",
+      "revisao_integral": false,
+      "audicao_realizada": false,
+      "inspecao_audiovisual_realizada": false,
+      "transcricao_integral_consultada": false,
+      "revisao": {
+        "status": "selecao_institucional_com_metadados_confirmados",
+        "revisao_integral": false,
+        "publicavel_como_material_integralmente_revisado": false,
+        "metadados_reconfirmados": true,
+        "data_verificacao": "2026-11-06",
+        "legendas_listadas": [
+          {
+            "language_code": "en",
+            "kind": "asr"
+          }
+        ],
+        "legendas_conteudo_consultado": false,
+        "dublagem_portugues_confirmada": false,
+        "pendencias": [
+          "Revisar o conteúdo completo antes de qualificá-lo como integralmente revisado.",
+          "Confirmar idioma falado, qualidade das legendas e eventual predominância de promoção no conteúdo audiovisual.",
+          "Conferir adequação final à trilha e ao nível sem deduzir profundidade apenas da duração."
+        ]
+      },
+      "origem_no_inventario": "candidato_ja_documentado",
+      "referencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=cX88ia-4-6o",
+          "titulo": "Página oficial do vídeo no YouTube",
+          "consultado": "2026-11-06",
+          "alcance": "Título, autor/canal, Channel ID, data de publicação, duração, descrição e lista de faixas de legenda presentes no player oficial. Não foi reproduzido o vídeo nem baixado seu conteúdo audiovisual.",
+          "limites": "Metadados e descrição não substituem inspeção integral. Presença de legenda não confirma idioma original, qualidade de tradução ou dublagem."
+        },
+        {
+          "url": "https://www.wharton.upenn.edu/",
+          "titulo": "Site institucional e vínculo para o canal oficial",
+          "consultado": "2026-11-06",
+          "alcance": "HTML público da instituição contém o link do canal YouTube registrado na procedência.",
+          "limites": "O vínculo institucional não certifica individualmente as alegações do vídeo."
+        }
+      ],
+      "criterio_selecao": "Canal institucional aprovado, autoria acadêmica ou executiva qualificada identificada em fonte oficial, tema pertinente; não identificado como anúncio de curso na apresentação principal dos metadados.",
+      "limites": [
+        "Seleção por procedência e metadados: não declarar conteúdo integralmente assistido, auditado ou revisado.",
+        "Cargo, exemplos e dados podem ser históricos; publicação no YouTube não é necessariamente a data da palestra."
+      ],
+      "formato": "palestra/apresentação institucional",
+      "titulo_original": "Professor Paul Green: The Practice of Market Research",
+      "titulo_pt": "Paul Green: a prática da pesquisa de mercado",
+      "titulo_pt_natureza": "tradução/adaptação editorial própria, não título português oficial confirmado",
+      "resumo": "Exposição de Paul Green sobre aplicações de pesquisa de mercado, incluindo análise conjunta, escalonamento multidimensional e agrupamento em problemas empresariais.",
+      "trilha": "mensuracao",
+      "nivel": "Intermediário",
+      "contexto_consultado": {
+        "material": "Título, descrição e metadados do player oficial, consultados em 06/11/2026.",
+        "fontes_adicionais": [],
+        "limite": "Não houve audição, inspeção audiovisual, consulta de transcrição integral ou revisão integral. O resumo apenas reorganiza o texto institucional realmente consultado."
+      },
+      "credenciais": [
+        {
+          "nome": "Paul E. Green",
+          "qualificacao_documentada": "Descrição oficial o apresenta como professor emérito de marketing da Wharton; referência histórica, sem presumir atividade docente atual.",
+          "fontes": [
+            {
+              "url": "https://www.youtube.com/watch?v=cX88ia-4-6o",
+              "alcance": "Descrição/metadados institucionais ou texto institucional primário relacionado, conforme referências e contexto de consulta.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        }
+      ]
+    },
+    {
+      "id": "m9zowHS79xM",
+      "url": "https://www.youtube.com/watch?v=m9zowHS79xM",
+      "titulo": "Professor David Bell on Digital Marketing: Wharton Lifelong Learning Tour",
+      "canal": {
+        "id_catalogo": "wharton",
+        "nome": "Wharton School",
+        "channel_id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
+        "url": "https://www.youtube.com/channel/UCU9Z1eLsDa_meEfsmx-Ys0w",
+        "fonte_aprovada": "Knowledge at Wharton",
+        "procedencia_institucional": "https://www.wharton.upenn.edu/",
+        "aprovacao_documentada_em": "src/content/business/fontes/wharton.json",
+        "confirmacao_atual": "Channel ID retornado pelo player oficial em todos os vídeos selecionados coincide com o canal aprovado; autor retornado também confere.",
+        "verificado_em": "2026-11-06",
+        "vinculo_institucional_consultado": {
+          "url": "https://www.wharton.upenn.edu/",
+          "http_status": 200,
+          "link_youtube_no_html": "https://www.youtube.com/user/thewhartonschool"
+        }
+      },
+      "data_publicacao_youtube": "2012-11-08T07:19:44-08:00",
+      "duracao_segundos": 3598,
+      "apresentadores": {
+        "nomes": [
+          "David Bell"
+        ],
+        "qualificacao": "Identificado pela descrição oficial de 2012 como Xinmei Zhang and Yongge Dai Professor na Wharton; a ficha preserva o caráter histórico.",
+        "fonte_oficial": "https://www.youtube.com/watch?v=m9zowHS79xM",
+        "criterio_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+      },
+      "idioma": "en",
+      "idioma_proposto": "en",
+      "base_idioma": "Inglês proposto pelo título, descrição e faixas en presentes nos metadados; não confirmado por audição nesta pesquisa.",
+      "idioma_falado_conferido_por_audicao": false,
+      "descricao": "Palestra para ex-alunos sobre gestão de marcas e ativos de clientes por meio do marketing digital, segundo a descrição oficial. O registro pode apoiar uma leitura histórica da estratégia de canais; tecnologias, exemplos e dados precisam ser confrontados com referências atuais.",
+      "base_descricao": "Resumo próprio limitado ao título/descrição oficial e às fontes institucionais explicitamente listadas; nenhum resumo da gravação integral é reivindicado.",
+      "trilha_proposta": "estrategia",
+      "nivel_proposto": "Intermediário",
+      "justificativa_nivel": "Pressupõe familiaridade com ativos de marca e cliente; a atualidade das aplicações não foi validada.",
+      "rotulo_editorial": "Seleção institucional · revisão integral pendente",
+      "revisao_integral": false,
+      "audicao_realizada": false,
+      "inspecao_audiovisual_realizada": false,
+      "transcricao_integral_consultada": false,
+      "revisao": {
+        "status": "selecao_institucional_com_metadados_confirmados",
+        "revisao_integral": false,
+        "publicavel_como_material_integralmente_revisado": false,
+        "metadados_reconfirmados": true,
+        "data_verificacao": "2026-11-06",
+        "legendas_listadas": [
+          {
+            "language_code": "en",
+            "kind": "asr"
+          }
+        ],
+        "legendas_conteudo_consultado": false,
+        "dublagem_portugues_confirmada": false,
+        "pendencias": [
+          "Revisar o conteúdo completo antes de qualificá-lo como integralmente revisado.",
+          "Confirmar idioma falado, qualidade das legendas e eventual predominância de promoção no conteúdo audiovisual.",
+          "Conferir adequação final à trilha e ao nível sem deduzir profundidade apenas da duração."
+        ]
+      },
+      "origem_no_inventario": "descoberta_adicional_em_canal_aprovado",
+      "referencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=m9zowHS79xM",
+          "titulo": "Página oficial do vídeo no YouTube",
+          "consultado": "2026-11-06",
+          "alcance": "Título, autor/canal, Channel ID, data de publicação, duração, descrição e lista de faixas de legenda presentes no player oficial. Não foi reproduzido o vídeo nem baixado seu conteúdo audiovisual.",
+          "limites": "Metadados e descrição não substituem inspeção integral. Presença de legenda não confirma idioma original, qualidade de tradução ou dublagem."
+        },
+        {
+          "url": "https://www.wharton.upenn.edu/",
+          "titulo": "Site institucional e vínculo para o canal oficial",
+          "consultado": "2026-11-06",
+          "alcance": "HTML público da instituição contém o link do canal YouTube registrado na procedência.",
+          "limites": "O vínculo institucional não certifica individualmente as alegações do vídeo."
+        }
+      ],
+      "criterio_selecao": "Canal institucional aprovado, autoria acadêmica ou executiva qualificada identificada em fonte oficial, tema pertinente; não identificado como anúncio de curso na apresentação principal dos metadados.",
+      "limites": [
+        "Seleção por procedência e metadados: não declarar conteúdo integralmente assistido, auditado ou revisado.",
+        "Cargo, exemplos e dados podem ser históricos; publicação no YouTube não é necessariamente a data da palestra."
+      ],
+      "formato": "palestra/apresentação institucional",
+      "titulo_original": "Professor David Bell on Digital Marketing: Wharton Lifelong Learning Tour",
+      "titulo_pt": "David Bell: marcas, clientes e marketing digital",
+      "titulo_pt_natureza": "tradução/adaptação editorial própria, não título português oficial confirmado",
+      "resumo": "Palestra de David Bell para ex-alunos sobre gestão dos ativos de marca e cliente por meio do marketing digital, publicada em 2012.",
+      "trilha": "estrategia",
+      "nivel": "Intermediário",
+      "contexto_consultado": {
+        "material": "Título, descrição e metadados do player oficial, consultados em 06/11/2026.",
+        "fontes_adicionais": [],
+        "limite": "Não houve audição, inspeção audiovisual, consulta de transcrição integral ou revisão integral. O resumo apenas reorganiza o texto institucional realmente consultado."
+      },
+      "credenciais": [
+        {
+          "nome": "David Bell",
+          "qualificacao_documentada": "Identificado pela descrição oficial de 2012 como Xinmei Zhang and Yongge Dai Professor na Wharton; a ficha preserva o caráter histórico.",
+          "fontes": [
+            {
+              "url": "https://www.youtube.com/watch?v=m9zowHS79xM",
+              "alcance": "Descrição/metadados institucionais ou texto institucional primário relacionado, conforme referências e contexto de consulta.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        }
+      ]
+    },
+    {
+      "id": "xol3k1aBe40",
+      "url": "https://www.youtube.com/watch?v=xol3k1aBe40",
+      "titulo": "Wharton Great Question: Prof. Jonah Berger – The Power of Influence",
+      "canal": {
+        "id_catalogo": "wharton",
+        "nome": "Wharton School",
+        "channel_id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
+        "url": "https://www.youtube.com/channel/UCU9Z1eLsDa_meEfsmx-Ys0w",
+        "fonte_aprovada": "Knowledge at Wharton",
+        "procedencia_institucional": "https://www.wharton.upenn.edu/",
+        "aprovacao_documentada_em": "src/content/business/fontes/wharton.json",
+        "confirmacao_atual": "Channel ID retornado pelo player oficial em todos os vídeos selecionados coincide com o canal aprovado; autor retornado também confere.",
+        "verificado_em": "2026-11-06",
+        "vinculo_institucional_consultado": {
+          "url": "https://www.wharton.upenn.edu/",
+          "http_status": 200,
+          "link_youtube_no_html": "https://www.youtube.com/user/thewhartonschool"
+        }
+      },
+      "data_publicacao_youtube": "2021-06-03T06:29:40-07:00",
+      "duracao_segundos": 270,
+      "apresentadores": {
+        "nomes": [
+          "Jonah Berger"
+        ],
+        "qualificacao": "Descrição da Wharton identifica Jonah Berger como professor na série institucional Wharton Great Question.",
+        "fonte_oficial": "https://www.youtube.com/watch?v=xol3k1aBe40",
+        "criterio_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+      },
+      "idioma": "en",
+      "idioma_proposto": "en",
+      "base_idioma": "Inglês proposto pelo título, descrição e faixas en presentes nos metadados; não confirmado por audição nesta pesquisa.",
+      "idioma_falado_conferido_por_audicao": false,
+      "descricao": "Perguntas e respostas institucionais com Jonah Berger sobre influência, mudança de opinião e marca pessoal. A ficha se limita aos temas anunciados pela Wharton, sem converter a participação acadêmica em promessa de persuasão ou validar recomendações ainda não revisadas integralmente.",
+      "base_descricao": "Resumo próprio limitado ao título/descrição oficial e às fontes institucionais explicitamente listadas; nenhum resumo da gravação integral é reivindicado.",
+      "trilha_proposta": "marcas",
+      "nivel_proposto": "Iniciante",
+      "justificativa_nivel": "Formato curto de perguntas introdutórias; revisão de fundamentos empíricos permanece pendente.",
+      "rotulo_editorial": "Seleção institucional · revisão integral pendente",
+      "revisao_integral": false,
+      "audicao_realizada": false,
+      "inspecao_audiovisual_realizada": false,
+      "transcricao_integral_consultada": false,
+      "revisao": {
+        "status": "selecao_institucional_com_metadados_confirmados",
+        "revisao_integral": false,
+        "publicavel_como_material_integralmente_revisado": false,
+        "metadados_reconfirmados": true,
+        "data_verificacao": "2026-11-06",
+        "legendas_listadas": [
+          {
+            "language_code": "bn",
+            "kind": "asr"
+          },
+          {
+            "language_code": "nl-NL",
+            "kind": "asr"
+          },
+          {
+            "language_code": "en",
+            "kind": "asr"
+          },
+          {
+            "language_code": "fr-FR",
+            "kind": "asr"
+          },
+          {
+            "language_code": "de-DE",
+            "kind": "asr"
+          },
+          {
+            "language_code": "iw",
+            "kind": "asr"
+          },
+          {
+            "language_code": "hi",
+            "kind": "asr"
+          },
+          {
+            "language_code": "id",
+            "kind": "asr"
+          },
+          {
+            "language_code": "it",
+            "kind": "asr"
+          },
+          {
+            "language_code": "ja",
+            "kind": "asr"
+          },
+          {
+            "language_code": "ko",
+            "kind": "asr"
+          },
+          {
+            "language_code": "ml",
+            "kind": "asr"
+          },
+          {
+            "language_code": "pl",
+            "kind": "asr"
+          },
+          {
+            "language_code": "pt-BR",
+            "kind": "asr"
+          },
+          {
+            "language_code": "pa",
+            "kind": "asr"
+          },
+          {
+            "language_code": "ru",
+            "kind": "asr"
+          },
+          {
+            "language_code": "es-US",
+            "kind": "asr"
+          },
+          {
+            "language_code": "ta",
+            "kind": "asr"
+          },
+          {
+            "language_code": "te",
+            "kind": "asr"
+          },
+          {
+            "language_code": "uk",
+            "kind": "asr"
+          }
+        ],
+        "legendas_conteudo_consultado": false,
+        "dublagem_portugues_confirmada": false,
+        "pendencias": [
+          "Revisar o conteúdo completo antes de qualificá-lo como integralmente revisado.",
+          "Confirmar idioma falado, qualidade das legendas e eventual predominância de promoção no conteúdo audiovisual.",
+          "Conferir adequação final à trilha e ao nível sem deduzir profundidade apenas da duração."
+        ]
+      },
+      "origem_no_inventario": "descoberta_adicional_em_canal_aprovado",
+      "referencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=xol3k1aBe40",
+          "titulo": "Página oficial do vídeo no YouTube",
+          "consultado": "2026-11-06",
+          "alcance": "Título, autor/canal, Channel ID, data de publicação, duração, descrição e lista de faixas de legenda presentes no player oficial. Não foi reproduzido o vídeo nem baixado seu conteúdo audiovisual.",
+          "limites": "Metadados e descrição não substituem inspeção integral. Presença de legenda não confirma idioma original, qualidade de tradução ou dublagem."
+        },
+        {
+          "url": "https://www.wharton.upenn.edu/",
+          "titulo": "Site institucional e vínculo para o canal oficial",
+          "consultado": "2026-11-06",
+          "alcance": "HTML público da instituição contém o link do canal YouTube registrado na procedência.",
+          "limites": "O vínculo institucional não certifica individualmente as alegações do vídeo."
+        }
+      ],
+      "criterio_selecao": "Canal institucional aprovado, autoria acadêmica ou executiva qualificada identificada em fonte oficial, tema pertinente; não identificado como anúncio de curso na apresentação principal dos metadados.",
+      "limites": [
+        "Seleção por procedência e metadados: não declarar conteúdo integralmente assistido, auditado ou revisado.",
+        "Cargo, exemplos e dados podem ser históricos; publicação no YouTube não é necessariamente a data da palestra."
+      ],
+      "formato": "entrevista ou exposição institucional",
+      "titulo_original": "Wharton Great Question: Prof. Jonah Berger – The Power of Influence",
+      "titulo_pt": "Jonah Berger: o poder da influência",
+      "titulo_pt_natureza": "tradução/adaptação editorial própria, não título português oficial confirmado",
+      "resumo": "Perguntas e respostas com Jonah Berger sobre influência, mudança de opinião e marca pessoal, na série institucional Wharton Great Question.",
+      "trilha": "marcas",
+      "nivel": "Iniciante",
+      "contexto_consultado": {
+        "material": "Título, descrição e metadados do player oficial, consultados em 06/11/2026.",
+        "fontes_adicionais": [],
+        "limite": "Não houve audição, inspeção audiovisual, consulta de transcrição integral ou revisão integral. O resumo apenas reorganiza o texto institucional realmente consultado."
+      },
+      "credenciais": [
+        {
+          "nome": "Jonah Berger",
+          "qualificacao_documentada": "Descrição da Wharton identifica Jonah Berger como professor na série institucional Wharton Great Question.",
+          "fontes": [
+            {
+              "url": "https://www.youtube.com/watch?v=xol3k1aBe40",
+              "alcance": "Descrição/metadados institucionais ou texto institucional primário relacionado, conforme referências e contexto de consulta.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        }
+      ]
+    },
+    {
+      "id": "g-jmy5Ao7Ag",
+      "url": "https://www.youtube.com/watch?v=g-jmy5Ao7Ag",
+      "titulo": "Crafting Your Personal Brand – Wharton Global Forum São Paulo",
+      "canal": {
+        "id_catalogo": "wharton",
+        "nome": "Wharton School",
+        "channel_id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
+        "url": "https://www.youtube.com/channel/UCU9Z1eLsDa_meEfsmx-Ys0w",
+        "fonte_aprovada": "Knowledge at Wharton",
+        "procedencia_institucional": "https://www.wharton.upenn.edu/",
+        "aprovacao_documentada_em": "src/content/business/fontes/wharton.json",
+        "confirmacao_atual": "Channel ID retornado pelo player oficial em todos os vídeos selecionados coincide com o canal aprovado; autor retornado também confere.",
+        "verificado_em": "2026-11-06",
+        "vinculo_institucional_consultado": {
+          "url": "https://www.wharton.upenn.edu/",
+          "http_status": 200,
+          "link_youtube_no_html": "https://www.youtube.com/user/thewhartonschool"
+        }
+      },
+      "data_publicacao_youtube": "2024-07-10T16:00:20-07:00",
+      "duracao_segundos": 927,
+      "apresentadores": {
+        "nomes": [
+          "Pinar Yildirim"
+        ],
+        "qualificacao": "Apresentada na descrição oficial de 2024 como Associate Professor of Marketing and Economics da Wharton, no Global Forum de São Paulo.",
+        "fonte_oficial": "https://www.youtube.com/watch?v=g-jmy5Ao7Ag",
+        "criterio_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+      },
+      "idioma": "en",
+      "idioma_proposto": "en",
+      "base_idioma": "Inglês proposto pelo título, descrição e faixas en presentes nos metadados; não confirmado por audição nesta pesquisa.",
+      "idioma_falado_conferido_por_audicao": false,
+      "descricao": "A Wharton anuncia uma exposição de Pinar Yildirim sobre ideias da publicidade aplicadas à construção de identidade profissional. Trata-se de participação docente em evento institucional, selecionada por sua procedência acadêmica; a descrição não demonstra eficácia de estratégias individuais de carreira.",
+      "base_descricao": "Resumo próprio limitado ao título/descrição oficial e às fontes institucionais explicitamente listadas; nenhum resumo da gravação integral é reivindicado.",
+      "trilha_proposta": "marcas",
+      "nivel_proposto": "Intermediário",
+      "justificativa_nivel": "Permite examinar a transferência de conceitos de marca; é proposta editorial, sem auditoria de resultados profissionais.",
+      "rotulo_editorial": "Seleção institucional · revisão integral pendente",
+      "revisao_integral": false,
+      "audicao_realizada": false,
+      "inspecao_audiovisual_realizada": false,
+      "transcricao_integral_consultada": false,
+      "revisao": {
+        "status": "selecao_institucional_com_metadados_confirmados",
+        "revisao_integral": false,
+        "publicavel_como_material_integralmente_revisado": false,
+        "metadados_reconfirmados": true,
+        "data_verificacao": "2026-11-06",
+        "legendas_listadas": [
+          {
+            "language_code": "en",
+            "kind": null
+          },
+          {
+            "language_code": "en",
+            "kind": "asr"
+          }
+        ],
+        "legendas_conteudo_consultado": false,
+        "dublagem_portugues_confirmada": false,
+        "pendencias": [
+          "Revisar o conteúdo completo antes de qualificá-lo como integralmente revisado.",
+          "Confirmar idioma falado, qualidade das legendas e eventual predominância de promoção no conteúdo audiovisual.",
+          "Conferir adequação final à trilha e ao nível sem deduzir profundidade apenas da duração."
+        ]
+      },
+      "origem_no_inventario": "descoberta_adicional_em_canal_aprovado",
+      "referencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=g-jmy5Ao7Ag",
+          "titulo": "Página oficial do vídeo no YouTube",
+          "consultado": "2026-11-06",
+          "alcance": "Título, autor/canal, Channel ID, data de publicação, duração, descrição e lista de faixas de legenda presentes no player oficial. Não foi reproduzido o vídeo nem baixado seu conteúdo audiovisual.",
+          "limites": "Metadados e descrição não substituem inspeção integral. Presença de legenda não confirma idioma original, qualidade de tradução ou dublagem."
+        },
+        {
+          "url": "https://www.wharton.upenn.edu/",
+          "titulo": "Site institucional e vínculo para o canal oficial",
+          "consultado": "2026-11-06",
+          "alcance": "HTML público da instituição contém o link do canal YouTube registrado na procedência.",
+          "limites": "O vínculo institucional não certifica individualmente as alegações do vídeo."
+        }
+      ],
+      "criterio_selecao": "Canal institucional aprovado, autoria acadêmica ou executiva qualificada identificada em fonte oficial, tema pertinente; não identificado como anúncio de curso na apresentação principal dos metadados.",
+      "limites": [
+        "Seleção por procedência e metadados: não declarar conteúdo integralmente assistido, auditado ou revisado.",
+        "Cargo, exemplos e dados podem ser históricos; publicação no YouTube não é necessariamente a data da palestra."
+      ],
+      "formato": "palestra/apresentação institucional",
+      "titulo_original": "Crafting Your Personal Brand – Wharton Global Forum São Paulo",
+      "titulo_pt": "Pinar Yildirim: a construção de uma marca pessoal",
+      "titulo_pt_natureza": "tradução/adaptação editorial própria, não título português oficial confirmado",
+      "resumo": "Pinar Yildirim apresenta ideias da publicidade aplicadas à construção de identidade profissional no Wharton Global Forum de São Paulo de 2024.",
+      "trilha": "marcas",
+      "nivel": "Intermediário",
+      "contexto_consultado": {
+        "material": "Título, descrição e metadados do player oficial, consultados em 06/11/2026.",
+        "fontes_adicionais": [],
+        "limite": "Não houve audição, inspeção audiovisual, consulta de transcrição integral ou revisão integral. O resumo apenas reorganiza o texto institucional realmente consultado."
+      },
+      "credenciais": [
+        {
+          "nome": "Pinar Yildirim",
+          "qualificacao_documentada": "Apresentada na descrição oficial de 2024 como Associate Professor of Marketing and Economics da Wharton, no Global Forum de São Paulo.",
+          "fontes": [
+            {
+              "url": "https://www.youtube.com/watch?v=g-jmy5Ao7Ag",
+              "alcance": "Descrição/metadados institucionais ou texto institucional primário relacionado, conforme referências e contexto de consulta.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        }
+      ]
+    },
+    {
+      "id": "epGXR_MY7bo",
+      "url": "https://www.youtube.com/watch?v=epGXR_MY7bo",
+      "titulo": "Muhtar Kent on Creating Growth and Value for Coca-Cola: Wharton Leadership Lecture",
+      "canal": {
+        "id_catalogo": "wharton",
+        "nome": "Wharton School",
+        "channel_id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
+        "url": "https://www.youtube.com/channel/UCU9Z1eLsDa_meEfsmx-Ys0w",
+        "fonte_aprovada": "Knowledge at Wharton",
+        "procedencia_institucional": "https://www.wharton.upenn.edu/",
+        "aprovacao_documentada_em": "src/content/business/fontes/wharton.json",
+        "confirmacao_atual": "Channel ID retornado pelo player oficial em todos os vídeos selecionados coincide com o canal aprovado; autor retornado também confere.",
+        "verificado_em": "2026-11-06",
+        "vinculo_institucional_consultado": {
+          "url": "https://www.wharton.upenn.edu/",
+          "http_status": 200,
+          "link_youtube_no_html": "https://www.youtube.com/user/thewhartonschool"
+        }
+      },
+      "data_publicacao_youtube": "2008-12-09T17:47:25-08:00",
+      "duracao_segundos": 2301,
+      "apresentadores": {
+        "nomes": [
+          "Muhtar Kent"
+        ],
+        "qualificacao": "Identificado na descrição oficial de 2008 como President & CEO da The Coca-Cola Company; palestrante executivo convidado, não pesquisador independente.",
+        "fonte_oficial": "https://www.youtube.com/watch?v=epGXR_MY7bo",
+        "criterio_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+      },
+      "idioma": "en",
+      "idioma_proposto": "en",
+      "base_idioma": "Inglês proposto pelo título, descrição e faixas en presentes nos metadados; não confirmado por audição nesta pesquisa.",
+      "idioma_falado_conferido_por_audicao": false,
+      "descricao": "Palestra executiva da série Wharton Leadership Lecture sobre crescimento e criação de valor na Coca-Cola. A descrição situa expansão de mercados e restrições de recursos. A ficha conserva o caráter de relato do dirigente e não trata sua participação como auditoria do desempenho da empresa.",
+      "base_descricao": "Resumo próprio limitado ao título/descrição oficial e às fontes institucionais explicitamente listadas; nenhum resumo da gravação integral é reivindicado.",
+      "trilha_proposta": "gestao",
+      "nivel_proposto": "Intermediário",
+      "justificativa_nivel": "Usar como visão executiva histórica, confrontando argumentos e evidências; há interesse empresarial explícito.",
+      "rotulo_editorial": "Seleção institucional · revisão integral pendente",
+      "revisao_integral": false,
+      "audicao_realizada": false,
+      "inspecao_audiovisual_realizada": false,
+      "transcricao_integral_consultada": false,
+      "revisao": {
+        "status": "selecao_institucional_com_metadados_confirmados",
+        "revisao_integral": false,
+        "publicavel_como_material_integralmente_revisado": false,
+        "metadados_reconfirmados": true,
+        "data_verificacao": "2026-11-06",
+        "legendas_listadas": [
+          {
+            "language_code": "en",
+            "kind": "asr"
+          }
+        ],
+        "legendas_conteudo_consultado": false,
+        "dublagem_portugues_confirmada": false,
+        "pendencias": [
+          "Revisar o conteúdo completo antes de qualificá-lo como integralmente revisado.",
+          "Confirmar idioma falado, qualidade das legendas e eventual predominância de promoção no conteúdo audiovisual.",
+          "Conferir adequação final à trilha e ao nível sem deduzir profundidade apenas da duração."
+        ]
+      },
+      "origem_no_inventario": "descoberta_adicional_em_canal_aprovado",
+      "referencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=epGXR_MY7bo",
+          "titulo": "Página oficial do vídeo no YouTube",
+          "consultado": "2026-11-06",
+          "alcance": "Título, autor/canal, Channel ID, data de publicação, duração, descrição e lista de faixas de legenda presentes no player oficial. Não foi reproduzido o vídeo nem baixado seu conteúdo audiovisual.",
+          "limites": "Metadados e descrição não substituem inspeção integral. Presença de legenda não confirma idioma original, qualidade de tradução ou dublagem."
+        },
+        {
+          "url": "https://www.wharton.upenn.edu/",
+          "titulo": "Site institucional e vínculo para o canal oficial",
+          "consultado": "2026-11-06",
+          "alcance": "HTML público da instituição contém o link do canal YouTube registrado na procedência.",
+          "limites": "O vínculo institucional não certifica individualmente as alegações do vídeo."
+        }
+      ],
+      "criterio_selecao": "Canal institucional aprovado, autoria acadêmica ou executiva qualificada identificada em fonte oficial, tema pertinente; não identificado como anúncio de curso na apresentação principal dos metadados.",
+      "limites": [
+        "Seleção por procedência e metadados: não declarar conteúdo integralmente assistido, auditado ou revisado.",
+        "Cargo, exemplos e dados podem ser históricos; publicação no YouTube não é necessariamente a data da palestra.",
+        "Inclui visão de dirigente empresarial; interesse comercial explícito, sem equiparar relato a evidência independente."
+      ],
+      "formato": "palestra/apresentação institucional",
+      "titulo_original": "Muhtar Kent on Creating Growth and Value for Coca-Cola: Wharton Leadership Lecture",
+      "titulo_pt": "Muhtar Kent: crescimento e criação de valor na Coca-Cola",
+      "titulo_pt_natureza": "tradução/adaptação editorial própria, não título português oficial confirmado",
+      "resumo": "Palestra executiva histórica de Muhtar Kent sobre crescimento e criação de valor na Coca-Cola, considerando expansão de mercados e restrições de recursos.",
+      "trilha": "gestao",
+      "nivel": "Intermediário",
+      "contexto_consultado": {
+        "material": "Título, descrição e metadados do player oficial, consultados em 06/11/2026.",
+        "fontes_adicionais": [],
+        "limite": "Não houve audição, inspeção audiovisual, consulta de transcrição integral ou revisão integral. O resumo apenas reorganiza o texto institucional realmente consultado."
+      },
+      "credenciais": [
+        {
+          "nome": "Muhtar Kent",
+          "qualificacao_documentada": "Identificado na descrição oficial de 2008 como President & CEO da The Coca-Cola Company; palestrante executivo convidado, não pesquisador independente.",
+          "fontes": [
+            {
+              "url": "https://www.youtube.com/watch?v=epGXR_MY7bo",
+              "alcance": "Descrição/metadados institucionais ou texto institucional primário relacionado, conforme referências e contexto de consulta.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        }
+      ]
+    },
+    {
+      "id": "jQJBS_CWPdo",
+      "url": "https://www.youtube.com/watch?v=jQJBS_CWPdo",
+      "titulo": "Wharton Leadership Lecture: Beth Comstock, former Vice Chair and CMO, GE",
+      "canal": {
+        "id_catalogo": "wharton",
+        "nome": "Wharton School",
+        "channel_id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
+        "url": "https://www.youtube.com/channel/UCU9Z1eLsDa_meEfsmx-Ys0w",
+        "fonte_aprovada": "Knowledge at Wharton",
+        "procedencia_institucional": "https://www.wharton.upenn.edu/",
+        "aprovacao_documentada_em": "src/content/business/fontes/wharton.json",
+        "confirmacao_atual": "Channel ID retornado pelo player oficial em todos os vídeos selecionados coincide com o canal aprovado; autor retornado também confere.",
+        "verificado_em": "2026-11-06",
+        "vinculo_institucional_consultado": {
+          "url": "https://www.wharton.upenn.edu/",
+          "http_status": 200,
+          "link_youtube_no_html": "https://www.youtube.com/user/thewhartonschool"
+        }
+      },
+      "data_publicacao_youtube": "2018-10-29T13:50:13-07:00",
+      "duracao_segundos": 2743,
+      "apresentadores": {
+        "nomes": [
+          "Beth Comstock",
+          "Laura Zarrow"
+        ],
+        "qualificacao": "Descrição oficial identifica Comstock como ex-Vice Chair e CMO da GE e Zarrow como Executive Director de Wharton People Analytics em 2018.",
+        "fonte_oficial": "https://www.youtube.com/watch?v=jQJBS_CWPdo",
+        "criterio_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+      },
+      "idioma": "en",
+      "idioma_proposto": "en",
+      "base_idioma": "Inglês proposto pelo título, descrição e faixas en presentes nos metadados; não confirmado por audição nesta pesquisa.",
+      "idioma_falado_conferido_por_audicao": false,
+      "descricao": "Conversa institucional com Beth Comstock sobre sua trajetória na GE e o livro Imagine It Forward, moderada por Laura Zarrow. A seleção serve ao estudo de decisões e organização de marketing; experiência pessoal e divulgação de livro não equivalem a evidência causal independente.",
+      "base_descricao": "Resumo próprio limitado ao título/descrição oficial e às fontes institucionais explicitamente listadas; nenhum resumo da gravação integral é reivindicado.",
+      "trilha_proposta": "gestao",
+      "nivel_proposto": "Intermediário",
+      "justificativa_nivel": "Discussão executiva contextualizada, com distinção entre experiência, hipótese e resultado verificado.",
+      "rotulo_editorial": "Seleção institucional · revisão integral pendente",
+      "revisao_integral": false,
+      "audicao_realizada": false,
+      "inspecao_audiovisual_realizada": false,
+      "transcricao_integral_consultada": false,
+      "revisao": {
+        "status": "selecao_institucional_com_metadados_confirmados",
+        "revisao_integral": false,
+        "publicavel_como_material_integralmente_revisado": false,
+        "metadados_reconfirmados": true,
+        "data_verificacao": "2026-11-06",
+        "legendas_listadas": [
+          {
+            "language_code": "en",
+            "kind": "asr"
+          }
+        ],
+        "legendas_conteudo_consultado": false,
+        "dublagem_portugues_confirmada": false,
+        "pendencias": [
+          "Revisar o conteúdo completo antes de qualificá-lo como integralmente revisado.",
+          "Confirmar idioma falado, qualidade das legendas e eventual predominância de promoção no conteúdo audiovisual.",
+          "Conferir adequação final à trilha e ao nível sem deduzir profundidade apenas da duração."
+        ]
+      },
+      "origem_no_inventario": "descoberta_adicional_em_canal_aprovado",
+      "referencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=jQJBS_CWPdo",
+          "titulo": "Página oficial do vídeo no YouTube",
+          "consultado": "2026-11-06",
+          "alcance": "Título, autor/canal, Channel ID, data de publicação, duração, descrição e lista de faixas de legenda presentes no player oficial. Não foi reproduzido o vídeo nem baixado seu conteúdo audiovisual.",
+          "limites": "Metadados e descrição não substituem inspeção integral. Presença de legenda não confirma idioma original, qualidade de tradução ou dublagem."
+        },
+        {
+          "url": "https://www.wharton.upenn.edu/",
+          "titulo": "Site institucional e vínculo para o canal oficial",
+          "consultado": "2026-11-06",
+          "alcance": "HTML público da instituição contém o link do canal YouTube registrado na procedência.",
+          "limites": "O vínculo institucional não certifica individualmente as alegações do vídeo."
+        }
+      ],
+      "criterio_selecao": "Canal institucional aprovado, autoria acadêmica ou executiva qualificada identificada em fonte oficial, tema pertinente; não identificado como anúncio de curso na apresentação principal dos metadados.",
+      "limites": [
+        "Seleção por procedência e metadados: não declarar conteúdo integralmente assistido, auditado ou revisado.",
+        "Cargo, exemplos e dados podem ser históricos; publicação no YouTube não é necessariamente a data da palestra.",
+        "Inclui visão de dirigente empresarial; interesse comercial explícito, sem equiparar relato a evidência independente."
+      ],
+      "formato": "entrevista ou exposição institucional",
+      "titulo_original": "Wharton Leadership Lecture: Beth Comstock, former Vice Chair and CMO, GE",
+      "titulo_pt": "Beth Comstock: trajetória, inovação e decisões na GE",
+      "titulo_pt_natureza": "tradução/adaptação editorial própria, não título português oficial confirmado",
+      "resumo": "Beth Comstock conversa com Laura Zarrow sobre sua trajetória na GE e o livro Imagine It Forward, em encontro institucional da Wharton.",
+      "trilha": "gestao",
+      "nivel": "Intermediário",
+      "contexto_consultado": {
+        "material": "Título, descrição e metadados do player oficial, consultados em 06/11/2026.",
+        "fontes_adicionais": [],
+        "limite": "Não houve audição, inspeção audiovisual, consulta de transcrição integral ou revisão integral. O resumo apenas reorganiza o texto institucional realmente consultado."
+      },
+      "credenciais": [
+        {
+          "nome": "Beth Comstock",
+          "qualificacao_documentada": "Na descrição oficial de 2018: former Vice Chair and CMO da GE; convidada executiva.",
+          "fontes": [
+            {
+              "url": "https://www.youtube.com/watch?v=jQJBS_CWPdo",
+              "alcance": "Descrição/metadados institucionais ou texto institucional primário relacionado, conforme referências e contexto de consulta.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        },
+        {
+          "nome": "Laura Zarrow",
+          "qualificacao_documentada": "Na descrição oficial de 2018: Executive Director de Wharton People Analytics; moderadora institucional.",
+          "fontes": [
+            {
+              "url": "https://www.youtube.com/watch?v=jQJBS_CWPdo",
+              "alcance": "Descrição/metadados institucionais ou texto institucional primário relacionado, conforme referências e contexto de consulta.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        }
+      ]
+    },
+    {
+      "id": "vw9dqka3oDg",
+      "url": "https://www.youtube.com/watch?v=vw9dqka3oDg",
+      "titulo": "AI-ready marketing: The next shift in digital marketing strategy",
+      "canal": {
+        "id_catalogo": "lbs",
+        "nome": "London Business School",
+        "channel_id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
+        "url": "https://www.youtube.com/channel/UCRPKXKBG8n6r6vIXoxsD2pQ",
+        "fonte_aprovada": "London Business School · Think",
+        "procedencia_institucional": "https://www.london.edu/",
+        "aprovacao_documentada_em": "src/content/business/fontes/lbs.json",
+        "confirmacao_atual": "Channel ID retornado pelo player oficial em todos os vídeos selecionados coincide com o canal aprovado; autor retornado também confere.",
+        "verificado_em": "2026-11-06",
+        "vinculo_institucional_consultado": {
+          "url": "https://www.london.edu/",
+          "http_status": 200,
+          "link_youtube_no_html": "http://www.youtube.com/user/londonbusinessschool"
+        }
+      },
+      "data_publicacao_youtube": "2025-05-14T03:39:39-07:00",
+      "duracao_segundos": 1768,
+      "apresentadores": {
+        "nomes": [
+          "Sergei Guriev",
+          "Xu Zhang",
+          "Alex Schultz"
+        ],
+        "qualificacao": "Descrição oficial identifica o anfitrião como dean e professor de economia da LBS, Xu Zhang como Assistant Professor of Marketing e Schultz como CMO & VP of Analytics da Meta.",
+        "fonte_oficial": "https://www.youtube.com/watch?v=vw9dqka3oDg",
+        "criterio_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+      },
+      "idioma": "en",
+      "idioma_proposto": "en",
+      "base_idioma": "Inglês proposto pelo título, descrição e faixas en presentes nos metadados; não confirmado por audição nesta pesquisa.",
+      "idioma_falado_conferido_por_audicao": false,
+      "descricao": "Conversa institucional sobre IA, fragmentação de dados, personalização e mensuração de marketing. O formato reúne direção acadêmica, pesquisa e um dirigente da Meta. A descrição permite selecionar os temas; as práticas anunciadas não foram verificadas e o interesse comercial do convidado precisa ser considerado.",
+      "base_descricao": "Resumo próprio limitado ao título/descrição oficial e às fontes institucionais explicitamente listadas; nenhum resumo da gravação integral é reivindicado.",
+      "trilha_proposta": "estrategia",
+      "nivel_proposto": "Intermediário",
+      "justificativa_nivel": "Integra estratégia, dados e operação; podcast institucional qualificado, sem alegação de revisão das recomendações.",
+      "rotulo_editorial": "Seleção institucional · revisão integral pendente",
+      "revisao_integral": false,
+      "audicao_realizada": false,
+      "inspecao_audiovisual_realizada": false,
+      "transcricao_integral_consultada": false,
+      "revisao": {
+        "status": "selecao_institucional_com_metadados_confirmados",
+        "revisao_integral": false,
+        "publicavel_como_material_integralmente_revisado": false,
+        "metadados_reconfirmados": true,
+        "data_verificacao": "2026-11-06",
+        "legendas_listadas": [
+          {
+            "language_code": "en",
+            "kind": "asr"
+          }
+        ],
+        "legendas_conteudo_consultado": false,
+        "dublagem_portugues_confirmada": false,
+        "pendencias": [
+          "Revisar o conteúdo completo antes de qualificá-lo como integralmente revisado.",
+          "Confirmar idioma falado, qualidade das legendas e eventual predominância de promoção no conteúdo audiovisual.",
+          "Conferir adequação final à trilha e ao nível sem deduzir profundidade apenas da duração."
+        ]
+      },
+      "origem_no_inventario": "candidato_ja_documentado",
+      "referencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=vw9dqka3oDg",
+          "titulo": "Página oficial do vídeo no YouTube",
+          "consultado": "2026-11-06",
+          "alcance": "Título, autor/canal, Channel ID, data de publicação, duração, descrição e lista de faixas de legenda presentes no player oficial. Não foi reproduzido o vídeo nem baixado seu conteúdo audiovisual.",
+          "limites": "Metadados e descrição não substituem inspeção integral. Presença de legenda não confirma idioma original, qualidade de tradução ou dublagem."
+        },
+        {
+          "url": "https://www.london.edu/",
+          "titulo": "Site institucional e vínculo para o canal oficial",
+          "consultado": "2026-11-06",
+          "alcance": "HTML público da instituição contém o link do canal YouTube registrado na procedência.",
+          "limites": "O vínculo institucional não certifica individualmente as alegações do vídeo."
+        }
+      ],
+      "criterio_selecao": "Canal institucional aprovado, autoria acadêmica ou executiva qualificada identificada em fonte oficial, tema pertinente; não identificado como anúncio de curso na apresentação principal dos metadados.",
+      "limites": [
+        "Seleção por procedência e metadados: não declarar conteúdo integralmente assistido, auditado ou revisado.",
+        "Cargo, exemplos e dados podem ser históricos; publicação no YouTube não é necessariamente a data da palestra.",
+        "Inclui visão de dirigente empresarial; interesse comercial explícito, sem equiparar relato a evidência independente."
+      ],
+      "formato": "conversa/podcast institucional com acadêmicos e dirigente identificado",
+      "titulo_original": "AI-ready marketing: The next shift in digital marketing strategy",
+      "titulo_pt": "Marketing preparado para IA: a próxima mudança na estratégia digital",
+      "titulo_pt_natureza": "tradução/adaptação editorial própria, não título português oficial confirmado",
+      "resumo": "Conversa institucional com Sergei Guriev, Xu Zhang e Alex Schultz sobre IA, personalização, fragmentação de dados e mensuração na estratégia de marketing digital.",
+      "trilha": "estrategia",
+      "nivel": "Intermediário",
+      "contexto_consultado": {
+        "material": "Título, descrição e metadados do player oficial, consultados em 06/11/2026.",
+        "fontes_adicionais": [],
+        "limite": "Não houve audição, inspeção audiovisual, consulta de transcrição integral ou revisão integral. O resumo apenas reorganiza o texto institucional realmente consultado."
+      },
+      "credenciais": [
+        {
+          "nome": "Sergei Guriev",
+          "qualificacao_documentada": "Na descrição oficial de 2025: anfitrião, professor de economia e dean da London Business School.",
+          "fontes": [
+            {
+              "url": "https://www.youtube.com/watch?v=vw9dqka3oDg",
+              "alcance": "Descrição/metadados institucionais ou texto institucional primário relacionado, conforme referências e contexto de consulta.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        },
+        {
+          "nome": "Xu Zhang",
+          "qualificacao_documentada": "Na descrição oficial de 2025: Assistant Professor of Marketing da London Business School.",
+          "fontes": [
+            {
+              "url": "https://www.youtube.com/watch?v=vw9dqka3oDg",
+              "alcance": "Descrição/metadados institucionais ou texto institucional primário relacionado, conforme referências e contexto de consulta.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        },
+        {
+          "nome": "Alex Schultz",
+          "qualificacao_documentada": "Na descrição oficial de 2025: CMO & VP of Analytics da Meta; convidado executivo com interesse empresarial explícito.",
+          "fontes": [
+            {
+              "url": "https://www.youtube.com/watch?v=vw9dqka3oDg",
+              "alcance": "Descrição/metadados institucionais ou texto institucional primário relacionado, conforme referências e contexto de consulta.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        }
+      ]
+    },
+    {
+      "id": "lcmLaRG7pI8",
+      "url": "https://www.youtube.com/watch?v=lcmLaRG7pI8",
+      "titulo": "Exciting your customers through price | London Business School",
+      "canal": {
+        "id_catalogo": "lbs",
+        "nome": "London Business School",
+        "channel_id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
+        "url": "https://www.youtube.com/channel/UCRPKXKBG8n6r6vIXoxsD2pQ",
+        "fonte_aprovada": "London Business School · Think",
+        "procedencia_institucional": "https://www.london.edu/",
+        "aprovacao_documentada_em": "src/content/business/fontes/lbs.json",
+        "confirmacao_atual": "Channel ID retornado pelo player oficial em todos os vídeos selecionados coincide com o canal aprovado; autor retornado também confere.",
+        "verificado_em": "2026-11-06",
+        "vinculo_institucional_consultado": {
+          "url": "https://www.london.edu/",
+          "http_status": 200,
+          "link_youtube_no_html": "http://www.youtube.com/user/londonbusinessschool"
+        }
+      },
+      "data_publicacao_youtube": "2008-11-11T06:01:33-08:00",
+      "duracao_segundos": 246,
+      "apresentadores": {
+        "nomes": [
+          "Marco Bertini"
+        ],
+        "qualificacao": "A descrição oficial o apresenta como Associate Professor na época da publicação de 2008.",
+        "fonte_oficial": "https://www.youtube.com/watch?v=lcmLaRG7pI8",
+        "criterio_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+      },
+      "idioma": "en",
+      "idioma_proposto": "en",
+      "base_idioma": "Inglês proposto pelo título, descrição e faixas en presentes nos metadados; não confirmado por audição nesta pesquisa.",
+      "idioma_falado_conferido_por_audicao": false,
+      "descricao": "A LBS apresenta Marco Bertini em um vídeo sobre a relação entre preço e resposta dos clientes. A indicação é temática e histórica. A descrição inclui link de rodapé para educação executiva, mas não identifica o vídeo pelo nome de um programa ou por uma oferta comercial específica.",
+      "base_descricao": "Resumo próprio limitado ao título/descrição oficial e às fontes institucionais explicitamente listadas; nenhum resumo da gravação integral é reivindicado.",
+      "trilha_proposta": "crescimento",
+      "nivel_proposto": "Intermediário",
+      "justificativa_nivel": "Entrada para investigar percepção e preço; não substitui exposição formal de elasticidade ou evidência causal.",
+      "rotulo_editorial": "Seleção institucional · revisão integral pendente",
+      "revisao_integral": false,
+      "audicao_realizada": false,
+      "inspecao_audiovisual_realizada": false,
+      "transcricao_integral_consultada": false,
+      "revisao": {
+        "status": "selecao_institucional_com_metadados_confirmados",
+        "revisao_integral": false,
+        "publicavel_como_material_integralmente_revisado": false,
+        "metadados_reconfirmados": true,
+        "data_verificacao": "2026-11-06",
+        "legendas_listadas": [
+          {
+            "language_code": "en",
+            "kind": "asr"
+          }
+        ],
+        "legendas_conteudo_consultado": false,
+        "dublagem_portugues_confirmada": false,
+        "pendencias": [
+          "Revisar o conteúdo completo antes de qualificá-lo como integralmente revisado.",
+          "Confirmar idioma falado, qualidade das legendas e eventual predominância de promoção no conteúdo audiovisual.",
+          "Conferir adequação final à trilha e ao nível sem deduzir profundidade apenas da duração."
+        ]
+      },
+      "origem_no_inventario": "candidato_ja_documentado",
+      "referencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=lcmLaRG7pI8",
+          "titulo": "Página oficial do vídeo no YouTube",
+          "consultado": "2026-11-06",
+          "alcance": "Título, autor/canal, Channel ID, data de publicação, duração, descrição e lista de faixas de legenda presentes no player oficial. Não foi reproduzido o vídeo nem baixado seu conteúdo audiovisual.",
+          "limites": "Metadados e descrição não substituem inspeção integral. Presença de legenda não confirma idioma original, qualidade de tradução ou dublagem."
+        },
+        {
+          "url": "https://www.london.edu/",
+          "titulo": "Site institucional e vínculo para o canal oficial",
+          "consultado": "2026-11-06",
+          "alcance": "HTML público da instituição contém o link do canal YouTube registrado na procedência.",
+          "limites": "O vínculo institucional não certifica individualmente as alegações do vídeo."
+        }
+      ],
+      "criterio_selecao": "Canal institucional aprovado, autoria acadêmica ou executiva qualificada identificada em fonte oficial, tema pertinente; não identificado como anúncio de curso na apresentação principal dos metadados.",
+      "limites": [
+        "Seleção por procedência e metadados: não declarar conteúdo integralmente assistido, auditado ou revisado.",
+        "Cargo, exemplos e dados podem ser históricos; publicação no YouTube não é necessariamente a data da palestra.",
+        "Há link genérico de educação executiva na descrição. Mantido como exposição temática curta já documentada; se a revisão audiovisual revelar anúncio predominante de curso, retirar da seleção."
+      ],
+      "formato": "entrevista ou exposição institucional",
+      "titulo_original": "Exciting your customers through price | London Business School",
+      "titulo_pt": "Como os preços podem entusiasmar os clientes",
+      "titulo_pt_natureza": "tradução/adaptação editorial própria, não título português oficial confirmado",
+      "resumo": "Exposição temática de Marco Bertini sobre a relação entre preço e resposta dos clientes, publicada pela London Business School em 2008.",
+      "trilha": "crescimento",
+      "nivel": "Intermediário",
+      "contexto_consultado": {
+        "material": "Título, descrição e metadados do player oficial, consultados em 06/11/2026.",
+        "fontes_adicionais": [],
+        "limite": "Não houve audição, inspeção audiovisual, consulta de transcrição integral ou revisão integral. O resumo apenas reorganiza o texto institucional realmente consultado."
+      },
+      "credenciais": [
+        {
+          "nome": "Marco Bertini",
+          "qualificacao_documentada": "A descrição oficial o apresenta como Associate Professor na época da publicação de 2008.",
+          "fontes": [
+            {
+              "url": "https://www.youtube.com/watch?v=lcmLaRG7pI8",
+              "alcance": "Descrição/metadados institucionais ou texto institucional primário relacionado, conforme referências e contexto de consulta.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        }
+      ]
+    },
+    {
+      "id": "BwKHQZfIZ4Y",
+      "url": "https://www.youtube.com/watch?v=BwKHQZfIZ4Y",
+      "titulo": "Simona Botti: What if freedom of choice spread unhappiness? | London Business School",
+      "canal": {
+        "id_catalogo": "lbs",
+        "nome": "London Business School",
+        "channel_id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
+        "url": "https://www.youtube.com/channel/UCRPKXKBG8n6r6vIXoxsD2pQ",
+        "fonte_aprovada": "London Business School · Think",
+        "procedencia_institucional": "https://www.london.edu/",
+        "aprovacao_documentada_em": "src/content/business/fontes/lbs.json",
+        "confirmacao_atual": "Channel ID retornado pelo player oficial em todos os vídeos selecionados coincide com o canal aprovado; autor retornado também confere.",
+        "verificado_em": "2026-11-06",
+        "vinculo_institucional_consultado": {
+          "url": "https://www.london.edu/",
+          "http_status": 200,
+          "link_youtube_no_html": "http://www.youtube.com/user/londonbusinessschool"
+        }
+      },
+      "data_publicacao_youtube": "2015-11-09T02:14:11-08:00",
+      "duracao_segundos": 182,
+      "apresentadores": {
+        "nomes": [
+          "Simona Botti"
+        ],
+        "qualificacao": "Título e descrição oficial atribuem a discussão a Simona Botti, pesquisadora de marketing; perfil institucional corrobora a qualificação.",
+        "fonte_oficial": "https://www.london.edu/faculty-and-research/faculty-profiles/b/botti-s",
+        "criterio_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+      },
+      "idioma": "en",
+      "idioma_proposto": "en",
+      "base_idioma": "Inglês proposto pelo título, descrição e faixas en presentes nos metadados; não confirmado por audição nesta pesquisa.",
+      "idioma_falado_conferido_por_audicao": false,
+      "descricao": "A descrição institucional discute a possibilidade de excesso de escolhas produzir paralisia ou insatisfação. O vídeo é selecionado como introdução a uma pergunta de comportamento do consumidor, sem transformar uma formulação provocativa em lei geral sobre quantidade de alternativas.",
+      "base_descricao": "Resumo próprio limitado ao título/descrição oficial e às fontes institucionais explicitamente listadas; nenhum resumo da gravação integral é reivindicado.",
+      "trilha_proposta": "consumidor",
+      "nivel_proposto": "Iniciante",
+      "justificativa_nivel": "Pergunta conceitual acessível; condições e evidência dos resultados exigem revisão posterior.",
+      "rotulo_editorial": "Seleção institucional · revisão integral pendente",
+      "revisao_integral": false,
+      "audicao_realizada": false,
+      "inspecao_audiovisual_realizada": false,
+      "transcricao_integral_consultada": false,
+      "revisao": {
+        "status": "selecao_institucional_com_metadados_confirmados",
+        "revisao_integral": false,
+        "publicavel_como_material_integralmente_revisado": false,
+        "metadados_reconfirmados": true,
+        "data_verificacao": "2026-11-06",
+        "legendas_listadas": [
+          {
+            "language_code": "en",
+            "kind": "asr"
+          }
+        ],
+        "legendas_conteudo_consultado": false,
+        "dublagem_portugues_confirmada": false,
+        "pendencias": [
+          "Revisar o conteúdo completo antes de qualificá-lo como integralmente revisado.",
+          "Confirmar idioma falado, qualidade das legendas e eventual predominância de promoção no conteúdo audiovisual.",
+          "Conferir adequação final à trilha e ao nível sem deduzir profundidade apenas da duração."
+        ]
+      },
+      "origem_no_inventario": "candidato_ja_documentado",
+      "referencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=BwKHQZfIZ4Y",
+          "titulo": "Página oficial do vídeo no YouTube",
+          "consultado": "2026-11-06",
+          "alcance": "Título, autor/canal, Channel ID, data de publicação, duração, descrição e lista de faixas de legenda presentes no player oficial. Não foi reproduzido o vídeo nem baixado seu conteúdo audiovisual.",
+          "limites": "Metadados e descrição não substituem inspeção integral. Presença de legenda não confirma idioma original, qualidade de tradução ou dublagem."
+        },
+        {
+          "url": "https://www.london.edu/faculty-and-research/faculty-profiles/b/botti-s",
+          "titulo": "Fonte institucional de contexto ou qualificação",
+          "consultado": "2026-11-06",
+          "alcance": "Texto institucional identificado na pesquisa, usado para autoria, qualificação ou contexto temático.",
+          "limites": "Não substitui revisão da gravação ou leitura integral das obras citadas."
+        },
+        {
+          "url": "https://www.london.edu/",
+          "titulo": "Site institucional e vínculo para o canal oficial",
+          "consultado": "2026-11-06",
+          "alcance": "HTML público da instituição contém o link do canal YouTube registrado na procedência.",
+          "limites": "O vínculo institucional não certifica individualmente as alegações do vídeo."
+        },
+        {
+          "url": "https://assets.london.edu/hxo16fanegqh/naojEcDk0j1YfDJXbzf67/7e50462d485c954a5dfbfaa156673306/cv_Botti_March_2025.pdf",
+          "titulo": "CV institucional de Simona Botti (março de 2025)",
+          "consultado": "2026-11-06",
+          "alcance": "Formação e posições acadêmicas, no texto primário indexado.",
+          "limites": "Não auditoria das pesquisas ou do vídeo completo."
+        }
+      ],
+      "criterio_selecao": "Canal institucional aprovado, autoria acadêmica ou executiva qualificada identificada em fonte oficial, tema pertinente; não identificado como anúncio de curso na apresentação principal dos metadados.",
+      "limites": [
+        "Seleção por procedência e metadados: não declarar conteúdo integralmente assistido, auditado ou revisado.",
+        "Cargo, exemplos e dados podem ser históricos; publicação no YouTube não é necessariamente a data da palestra."
+      ],
+      "formato": "entrevista ou exposição institucional",
+      "titulo_original": "Simona Botti: What if freedom of choice spread unhappiness? | London Business School",
+      "titulo_pt": "Quando a liberdade de escolha pode gerar infelicidade?",
+      "titulo_pt_natureza": "tradução/adaptação editorial própria, não título português oficial confirmado",
+      "resumo": "Simona Botti apresenta a pergunta de pesquisa sobre como excesso de alternativas pode produzir paralisia ou insatisfação na escolha do consumidor.",
+      "trilha": "consumidor",
+      "nivel": "Iniciante",
+      "contexto_consultado": {
+        "material": "Título, descrição e metadados do player oficial, consultados em 06/11/2026.",
+        "fontes_adicionais": [
+          "https://www.london.edu/faculty-and-research/faculty-profiles/b/botti-s"
+        ],
+        "limite": "Não houve audição, inspeção audiovisual, consulta de transcrição integral ou revisão integral. O resumo apenas reorganiza o texto institucional realmente consultado."
+      },
+      "credenciais": [
+        {
+          "nome": "Simona Botti",
+          "qualificacao_documentada": "Pesquisadora de marketing da LBS. O CV institucional de março de 2025 registra Associate Professor de 2012 a 2018 e Professor of Marketing desde 2018; preserva a distinção histórica entre os vídeos de 2015 e 2023.",
+          "fontes": [
+            {
+              "url": "https://www.london.edu/faculty-and-research/faculty-profiles/b/botti-s",
+              "alcance": "Descrição/metadados institucionais ou texto institucional primário relacionado, conforme referências e contexto de consulta.",
+              "consultado": "2026-11-06"
+            },
+            {
+              "url": "https://assets.london.edu/hxo16fanegqh/naojEcDk0j1YfDJXbzf67/7e50462d485c954a5dfbfaa156673306/cv_Botti_March_2025.pdf",
+              "alcance": "CV institucional de março de 2025 consultado via texto primário indexado; formação e posições docentes.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        }
+      ]
+    },
+    {
+      "id": "UkTFw1Nkuog",
+      "url": "https://www.youtube.com/watch?v=UkTFw1Nkuog",
+      "titulo": "Simona Botti Talks About Consumers and Artificial Intelligence",
+      "canal": {
+        "id_catalogo": "lbs",
+        "nome": "London Business School",
+        "channel_id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
+        "url": "https://www.youtube.com/channel/UCRPKXKBG8n6r6vIXoxsD2pQ",
+        "fonte_aprovada": "London Business School · Think",
+        "procedencia_institucional": "https://www.london.edu/",
+        "aprovacao_documentada_em": "src/content/business/fontes/lbs.json",
+        "confirmacao_atual": "Channel ID retornado pelo player oficial em todos os vídeos selecionados coincide com o canal aprovado; autor retornado também confere.",
+        "verificado_em": "2026-11-06",
+        "vinculo_institucional_consultado": {
+          "url": "https://www.london.edu/",
+          "http_status": 200,
+          "link_youtube_no_html": "http://www.youtube.com/user/londonbusinessschool"
+        }
+      },
+      "data_publicacao_youtube": "2023-11-20T07:38:37-08:00",
+      "duracao_segundos": 90,
+      "apresentadores": {
+        "nomes": [
+          "Simona Botti"
+        ],
+        "qualificacao": "Descrição oficial a identifica como Professor of Marketing da LBS e fornece perfil e referência acadêmica associados.",
+        "fonte_oficial": "https://www.london.edu/faculty-and-research/faculty-profiles/b/botti-s",
+        "criterio_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+      },
+      "idioma": "en",
+      "idioma_proposto": "en",
+      "base_idioma": "Inglês proposto pelo título, descrição e faixas en presentes nos metadados; não confirmado por audição nesta pesquisa.",
+      "idioma_falado_conferido_por_audicao": false,
+      "descricao": "Parte da série institucional em que docentes apresentam sua pesquisa em vídeos curtos. Simona Botti comenta consumidores e inteligência artificial, com ligação para uma publicação acadêmica. Somente a descrição e a referência foram consultadas; não houve leitura integral do paper ou revisão integral do vídeo.",
+      "base_descricao": "Resumo próprio limitado ao título/descrição oficial e às fontes institucionais explicitamente listadas; nenhum resumo da gravação integral é reivindicado.",
+      "trilha_proposta": "consumidor",
+      "nivel_proposto": "Iniciante",
+      "justificativa_nivel": "Apresentação curta de uma pergunta de pesquisa; leitura do trabalho relacionado permanece separada.",
+      "rotulo_editorial": "Seleção institucional · revisão integral pendente",
+      "revisao_integral": false,
+      "audicao_realizada": false,
+      "inspecao_audiovisual_realizada": false,
+      "transcricao_integral_consultada": false,
+      "revisao": {
+        "status": "selecao_institucional_com_metadados_confirmados",
+        "revisao_integral": false,
+        "publicavel_como_material_integralmente_revisado": false,
+        "metadados_reconfirmados": true,
+        "data_verificacao": "2026-11-06",
+        "legendas_listadas": [
+          {
+            "language_code": "en",
+            "kind": "asr"
+          }
+        ],
+        "legendas_conteudo_consultado": false,
+        "dublagem_portugues_confirmada": false,
+        "pendencias": [
+          "Revisar o conteúdo completo antes de qualificá-lo como integralmente revisado.",
+          "Confirmar idioma falado, qualidade das legendas e eventual predominância de promoção no conteúdo audiovisual.",
+          "Conferir adequação final à trilha e ao nível sem deduzir profundidade apenas da duração."
+        ]
+      },
+      "origem_no_inventario": "descoberta_adicional_em_canal_aprovado",
+      "referencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=UkTFw1Nkuog",
+          "titulo": "Página oficial do vídeo no YouTube",
+          "consultado": "2026-11-06",
+          "alcance": "Título, autor/canal, Channel ID, data de publicação, duração, descrição e lista de faixas de legenda presentes no player oficial. Não foi reproduzido o vídeo nem baixado seu conteúdo audiovisual.",
+          "limites": "Metadados e descrição não substituem inspeção integral. Presença de legenda não confirma idioma original, qualidade de tradução ou dublagem."
+        },
+        {
+          "url": "https://www.london.edu/faculty-and-research/faculty-profiles/b/botti-s",
+          "titulo": "Fonte institucional de contexto ou qualificação",
+          "consultado": "2026-11-06",
+          "alcance": "Texto institucional identificado na pesquisa, usado para autoria, qualificação ou contexto temático.",
+          "limites": "Não substitui revisão da gravação ou leitura integral das obras citadas."
+        },
+        {
+          "url": "https://www.london.edu/",
+          "titulo": "Site institucional e vínculo para o canal oficial",
+          "consultado": "2026-11-06",
+          "alcance": "HTML público da instituição contém o link do canal YouTube registrado na procedência.",
+          "limites": "O vínculo institucional não certifica individualmente as alegações do vídeo."
+        },
+        {
+          "url": "https://assets.london.edu/hxo16fanegqh/naojEcDk0j1YfDJXbzf67/7e50462d485c954a5dfbfaa156673306/cv_Botti_March_2025.pdf",
+          "titulo": "CV institucional de Simona Botti (março de 2025)",
+          "consultado": "2026-11-06",
+          "alcance": "Formação e posições acadêmicas, no texto primário indexado.",
+          "limites": "Não auditoria das pesquisas ou do vídeo completo."
+        }
+      ],
+      "criterio_selecao": "Canal institucional aprovado, autoria acadêmica ou executiva qualificada identificada em fonte oficial, tema pertinente; não identificado como anúncio de curso na apresentação principal dos metadados.",
+      "limites": [
+        "Seleção por procedência e metadados: não declarar conteúdo integralmente assistido, auditado ou revisado.",
+        "Cargo, exemplos e dados podem ser históricos; publicação no YouTube não é necessariamente a data da palestra."
+      ],
+      "formato": "entrevista ou exposição institucional",
+      "titulo_original": "Simona Botti Talks About Consumers and Artificial Intelligence",
+      "titulo_pt": "Simona Botti: consumidores e inteligência artificial",
+      "titulo_pt_natureza": "tradução/adaptação editorial própria, não título português oficial confirmado",
+      "resumo": "Vídeo da série de pesquisa docente da LBS em que Simona Botti comenta consumidores e inteligência artificial, com referência institucional a uma publicação acadêmica.",
+      "trilha": "consumidor",
+      "nivel": "Iniciante",
+      "contexto_consultado": {
+        "material": "Título, descrição e metadados do player oficial, consultados em 06/11/2026.",
+        "fontes_adicionais": [
+          "https://www.london.edu/faculty-and-research/faculty-profiles/b/botti-s"
+        ],
+        "limite": "Não houve audição, inspeção audiovisual, consulta de transcrição integral ou revisão integral. O resumo apenas reorganiza o texto institucional realmente consultado."
+      },
+      "credenciais": [
+        {
+          "nome": "Simona Botti",
+          "qualificacao_documentada": "Pesquisadora de marketing da LBS. O CV institucional de março de 2025 registra Associate Professor de 2012 a 2018 e Professor of Marketing desde 2018; preserva a distinção histórica entre os vídeos de 2015 e 2023.",
+          "fontes": [
+            {
+              "url": "https://www.london.edu/faculty-and-research/faculty-profiles/b/botti-s",
+              "alcance": "Descrição/metadados institucionais ou texto institucional primário relacionado, conforme referências e contexto de consulta.",
+              "consultado": "2026-11-06"
+            },
+            {
+              "url": "https://assets.london.edu/hxo16fanegqh/naojEcDk0j1YfDJXbzf67/7e50462d485c954a5dfbfaa156673306/cv_Botti_March_2025.pdf",
+              "alcance": "CV institucional de março de 2025 consultado via texto primário indexado; formação e posições docentes.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        }
+      ]
+    },
+    {
+      "id": "RkgtsrFinvo",
+      "url": "https://www.youtube.com/watch?v=RkgtsrFinvo",
+      "titulo": "Crossing Boundaries Strategies for Growth in Emerging Markets | London Business School",
+      "canal": {
+        "id_catalogo": "lbs",
+        "nome": "London Business School",
+        "channel_id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
+        "url": "https://www.youtube.com/channel/UCRPKXKBG8n6r6vIXoxsD2pQ",
+        "fonte_aprovada": "London Business School · Think",
+        "procedencia_institucional": "https://www.london.edu/",
+        "aprovacao_documentada_em": "src/content/business/fontes/lbs.json",
+        "confirmacao_atual": "Channel ID retornado pelo player oficial em todos os vídeos selecionados coincide com o canal aprovado; autor retornado também confere.",
+        "verificado_em": "2026-11-06",
+        "vinculo_institucional_consultado": {
+          "url": "https://www.london.edu/",
+          "http_status": 200,
+          "link_youtube_no_html": "http://www.youtube.com/user/londonbusinessschool"
+        }
+      },
+      "data_publicacao_youtube": "2014-12-02T04:56:12-08:00",
+      "duracao_segundos": 2724,
+      "apresentadores": {
+        "nomes": [
+          "Rajesh Chandy"
+        ],
+        "qualificacao": "Descrição oficial o identifica como Professor of Marketing da LBS no Global Leadership Summit de 2014.",
+        "fonte_oficial": "https://www.youtube.com/watch?v=RkgtsrFinvo",
+        "criterio_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+      },
+      "idioma": "en",
+      "idioma_proposto": "en",
+      "base_idioma": "Inglês proposto pelo título, descrição e faixas en presentes nos metadados; não confirmado por audição nesta pesquisa.",
+      "idioma_falado_conferido_por_audicao": false,
+      "descricao": "A escola anuncia uma palestra sobre crescimento em mercados emergentes e o papel da administração em ambiente tecnológico. O evento ocorreu em junho de 2014 e a publicação no YouTube é posterior. A ficha não presume que dados ou exemplos históricos permaneçam atuais.",
+      "base_descricao": "Resumo próprio limitado ao título/descrição oficial e às fontes institucionais explicitamente listadas; nenhum resumo da gravação integral é reivindicado.",
+      "trilha_proposta": "crescimento",
+      "nivel_proposto": "Intermediário",
+      "justificativa_nivel": "Relaciona contexto de mercado e decisões gerenciais; a aplicabilidade contemporânea precisa ser avaliada.",
+      "rotulo_editorial": "Seleção institucional · revisão integral pendente",
+      "revisao_integral": false,
+      "audicao_realizada": false,
+      "inspecao_audiovisual_realizada": false,
+      "transcricao_integral_consultada": false,
+      "revisao": {
+        "status": "selecao_institucional_com_metadados_confirmados",
+        "revisao_integral": false,
+        "publicavel_como_material_integralmente_revisado": false,
+        "metadados_reconfirmados": true,
+        "data_verificacao": "2026-11-06",
+        "legendas_listadas": [
+          {
+            "language_code": "en",
+            "kind": "asr"
+          }
+        ],
+        "legendas_conteudo_consultado": false,
+        "dublagem_portugues_confirmada": false,
+        "pendencias": [
+          "Revisar o conteúdo completo antes de qualificá-lo como integralmente revisado.",
+          "Confirmar idioma falado, qualidade das legendas e eventual predominância de promoção no conteúdo audiovisual.",
+          "Conferir adequação final à trilha e ao nível sem deduzir profundidade apenas da duração."
+        ]
+      },
+      "origem_no_inventario": "descoberta_adicional_em_canal_aprovado",
+      "referencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=RkgtsrFinvo",
+          "titulo": "Página oficial do vídeo no YouTube",
+          "consultado": "2026-11-06",
+          "alcance": "Título, autor/canal, Channel ID, data de publicação, duração, descrição e lista de faixas de legenda presentes no player oficial. Não foi reproduzido o vídeo nem baixado seu conteúdo audiovisual.",
+          "limites": "Metadados e descrição não substituem inspeção integral. Presença de legenda não confirma idioma original, qualidade de tradução ou dublagem."
+        },
+        {
+          "url": "https://www.london.edu/",
+          "titulo": "Site institucional e vínculo para o canal oficial",
+          "consultado": "2026-11-06",
+          "alcance": "HTML público da instituição contém o link do canal YouTube registrado na procedência.",
+          "limites": "O vínculo institucional não certifica individualmente as alegações do vídeo."
+        }
+      ],
+      "criterio_selecao": "Canal institucional aprovado, autoria acadêmica ou executiva qualificada identificada em fonte oficial, tema pertinente; não identificado como anúncio de curso na apresentação principal dos metadados.",
+      "limites": [
+        "Seleção por procedência e metadados: não declarar conteúdo integralmente assistido, auditado ou revisado.",
+        "Cargo, exemplos e dados podem ser históricos; publicação no YouTube não é necessariamente a data da palestra."
+      ],
+      "formato": "palestra/apresentação institucional",
+      "titulo_original": "Crossing Boundaries Strategies for Growth in Emerging Markets | London Business School",
+      "titulo_pt": "Estratégias de crescimento em mercados emergentes",
+      "titulo_pt_natureza": "tradução/adaptação editorial própria, não título português oficial confirmado",
+      "resumo": "Palestra de Rajesh Chandy no Global Leadership Summit de 2014 sobre crescimento em mercados emergentes e o papel da administração no ambiente tecnológico.",
+      "trilha": "crescimento",
+      "nivel": "Intermediário",
+      "contexto_consultado": {
+        "material": "Título, descrição e metadados do player oficial, consultados em 06/11/2026.",
+        "fontes_adicionais": [],
+        "limite": "Não houve audição, inspeção audiovisual, consulta de transcrição integral ou revisão integral. O resumo apenas reorganiza o texto institucional realmente consultado."
+      },
+      "credenciais": [
+        {
+          "nome": "Rajesh Chandy",
+          "qualificacao_documentada": "Descrição oficial o identifica como Professor of Marketing da LBS no Global Leadership Summit de 2014.",
+          "fontes": [
+            {
+              "url": "https://www.youtube.com/watch?v=RkgtsrFinvo",
+              "alcance": "Descrição/metadados institucionais ou texto institucional primário relacionado, conforme referências e contexto de consulta.",
+              "consultado": "2026-11-06"
+            }
+          ],
+          "limite_temporal": "Qualificação preservada na data ou contexto da descrição institucional; não inferir vínculo ou cargo atual."
+        }
+      ]
+    }
+  ],
+  "reservas_nao_incluidas": [
+    {
+      "id": "mFPGhKyts5w",
+      "titulo": "Business ideas for social change",
+      "url": "https://www.youtube.com/watch?v=mFPGhKyts5w",
+      "motivo": "Texto institucional associado e descrição contextualizam fortemente o Social Entrepreneurship Programme; reservado para evitar promoção de programas no lote editorial. Não se afirma que o audiovisual inteiro foi avaliado.",
+      "fonte_institucional": "https://knowledge.insead.edu/responsibility/business-ideas-social-change"
+    },
+    {
+      "id": "lLcgCEbsT08",
+      "titulo": "Two tips for developing good management skills | London Business School",
+      "url": "https://www.youtube.com/watch?v=lLcgCEbsT08",
+      "motivo": "Descrição combina introdução de gestão e promoção explícita de General Management Training Programmes. Reservado por mistura editorial/promocional, sem reivindicar revisão audiovisual integral."
+    },
+    {
+      "id": "XowaDm1GEVk",
+      "titulo": "Understanding consumer behaviour, from the inside out",
+      "url": "https://www.youtube.com/watch?v=XowaDm1GEVk",
+      "motivo": "Idioma falado não confirmado: título/descrição em inglês, mas a única faixa ASR retornada foi nl. Excluído do lote de integração; não resolver por suposição.",
+      "metadados_confirmados": true,
+      "duracao_segundos": 325,
+      "channel_id": "UC9aeQQ-NqjHS3nfiod2PMSA",
+      "revisao_integral": false
+    },
+    {
+      "id": "JefRMpird5o",
+      "titulo": "Rajesh Chandy, Professor of Marketing, urges alumni to think differently | London Business School",
+      "url": "https://www.youtube.com/watch?v=JefRMpird5o",
+      "motivo": "Descrição de discurso a ex-alunos limita-se a pensar diferente e focar no futuro, sem método ou pesquisa específica demonstrada; excluído por prioridade à substância.",
+      "metadados_confirmados": true,
+      "duracao_segundos": 608,
+      "channel_id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
+      "revisao_integral": false
+    },
+    {
+      "id": "EFW-87l5L-M",
+      "titulo": "The impact of the School on Marketing | London Business School",
+      "url": "https://www.youtube.com/watch?v=EFW-87l5L-M",
+      "motivo": "Palestra comemorativa sobre a contribuição da própria escola. Descrição demonstra tema e qualificação, mas não substância independente suficiente para afastar finalidade institucional/promocional; excluída por prioridade editorial do responsável.",
+      "metadados_confirmados": true,
+      "duracao_segundos": 4145,
+      "channel_id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
+      "revisao_integral": false
+    }
+  ],
+  "rejeicoes_de_descoberta": [
+    {
+      "id": "ZbRibTJ952s",
+      "motivo": "Título e descrição anunciam INSEAD Strategic Marketing Programme."
+    },
+    {
+      "id": "F_wqaTSgyxo",
+      "motivo": "Apresentação de INSEAD B2B Marketing Strategies Programme, não selecionada como aula editorial."
+    },
+    {
+      "id": "WVXBbFWF_dI",
+      "motivo": "Descrição apresenta programa de cinco dias Leading Digital Marketing Strategy."
+    },
+    {
+      "id": "qdf15T-smyo",
+      "motivo": "Peça Marketing Analytics com chamada de formação comercial; não aula substancial confirmada."
+    },
+    {
+      "id": "56jzxjW2TIc",
+      "motivo": "Digital Marketing Certificate: promoção explícita de certificado."
+    },
+    {
+      "id": "2CQoWVluCyI",
+      "motivo": "Customer Focused Marketing programme: promoção explícita de programa."
+    },
+    {
+      "id": "dq514v-_0K4",
+      "motivo": "Título inclui London Business School Executive Education e descrição promove programa."
+    },
+    {
+      "id": "CgsR_f1SIVk",
+      "motivo": "Market Driving Strategies: Programme Overview."
+    },
+    {
+      "id": "W-i7cM9n-BY",
+      "motivo": "New Online Course: Brand Management; anúncio de curso."
+    }
+  ],
+  "limites_globais": [
+    "Inglês é proposto por evidência textual e faixas, sem audição. XowaDm1GEVk, de idioma ambíguo, foi movido a reservas e não integra os19 selecionados.",
+    "Não afirmar existência de dublagem em português ou validar tradução apenas pela lista de legendas.",
+    "A presença de anúncios inseridos pela plataforma não foi inspecionada; seleção editorial trata a natureza do material institucional anunciada nos metadados.",
+    "Níveis e trilhas são propostas de organização do acervo, não certificações das instituições.",
+    "Os cargos são históricos quando associados às datas das descrições; não foram convertidos em afirmações sobre cargos atuais.",
+    "Não usar material de campanha/curso como aula quando a revisão revelar finalidade promocional predominante."
+  ],
+  "ajuste_escopo": "O responsável priorizou substância e idioma identificado, autorizando retirar vídeos institucionais/genéricos e completar50+ com outros lotes.",
+  "validacao": {
+    "ids_unicos": 19,
+    "url_id_canal_conferidos": true,
+    "datas_e_duracoes_confirmadas_em_player": 19,
+    "campos_integracao": [
+      "titulo_pt",
+      "titulo_original",
+      "resumo",
+      "contexto_consultado",
+      "credenciais",
+      "trilha",
+      "nivel_proposto"
+    ],
+    "revisao_integral_false_em_todos": true,
+    "sem_idioma_null_nos_selecionados": true
+  }
+}

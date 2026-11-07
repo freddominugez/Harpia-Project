@@ -1,0 +1,1842 @@
+{
+  "schema_version": "1.0",
+  "pesquisado_em": "2026-11-06",
+  "escopo": "Lote brasileiro de seleção institucional para expansão do catálogo de vídeos Business. Sem alteração de runtime, publicação ou commit.",
+  "rotulo_obrigatorio": "Seleção institucional · metadados verificados; revisão integral não realizada.",
+  "criterios": [
+    "Somente FGV e Fundação Dom Cabral, instituições e canais já aprovados; nenhum canal adicional de consultoria foi necessário.",
+    "ID, título e Channel ID conferidos em página individual; procedência cruzada com links dos portais oficiais e externalId dos aliases.",
+    "Qualificação dos apresentadores demonstrada em apresentação oficial ou perfil institucional, com fonte por item.",
+    "Excluir anúncios de programas, entrevistas sem qualificação demonstrada e casos de agência/coaching.",
+    "Não confundir seleção institucional com revisão audiovisual integral. Descrições próprias restritas ao que consta no material efetivamente consultado."
+  ],
+  "metodo": {
+    "descoberta": "Busca pública interna nos canais oficiais, consulta a páginas individuais e reaproveitamento identificado de sete registros já verificados.",
+    "procedencia": "HTTP público dos portais oficiais identifica os aliases dos canais; HTTP das páginas dos aliases confirma externalId.",
+    "metadados": "videoDetails e playerMicroformatRenderer das páginas públicas do YouTube; lista de legendas consultada apenas para idioma, sem obter seus textos.",
+    "audiovisual_integral": "Não consultado. Não foi solicitado nem inferido texto de legenda integral.",
+    "bloqueios": "Não foram contornados 403/429. Páginas públicas utilizadas retornaram HTTP 200; registros prévios só foram reutilizados com sua origem explicitada."
+  },
+  "quantitativos": {
+    "videos_unicos": 22,
+    "fgv": 7,
+    "fdc": 15,
+    "reaproveitados": 7,
+    "adicionais_ao_corpus_anterior": 15,
+    "revisao_integral_true": 0,
+    "duracao_total_segundos": 50145,
+    "duracao_total_horas": 13.93,
+    "por_trilha": {
+      "crescimento": 3,
+      "clientes": 5,
+      "mensuracao": 2,
+      "estrategia": 5,
+      "consumidor": 1,
+      "marcas": 3,
+      "gestao": 2,
+      "fundamentos": 1
+    },
+    "por_nivel": {
+      "Intermediário": 12,
+      "Avançado": 1,
+      "Iniciante": 9
+    }
+  },
+  "videos": [
+    {
+      "id": "nFqu5xY99sY",
+      "video_id": "nFqu5xY99sY",
+      "url": "https://www.youtube.com/watch?v=nFqu5xY99sY",
+      "titulo": "#48 Marketing em 2026: Inteligência Artificial e Geração de Valor",
+      "fonte": "Fundação Getulio Vargas",
+      "canal": "FGV",
+      "channel_id": "UC8DhN1cJi0QklBQot5hv_kg",
+      "url_canal": "https://www.youtube.com/channel/UC8DhN1cJi0QklBQot5hv_kg",
+      "pagina_procedencia_oficial": "https://portal.fgv.br/",
+      "procedencia": {
+        "instituicao": "Fundação Getulio Vargas",
+        "pagina_oficial": "https://portal.fgv.br/",
+        "link_youtube_publicado_no_portal": "http://www.youtube.com/fgv",
+        "alias_https_verificado": "https://www.youtube.com/fgv",
+        "channel_id_confirmado": "UC8DhN1cJi0QklBQot5hv_kg",
+        "metodo": "Portal institucional HTTP 200 contém link /fgv; página pública HTTPS do alias retornou externalId igual ao canal aprovado.",
+        "em": "2026-11-06"
+      },
+      "data_publicacao": "2025-12-22",
+      "data_publicacao_iso": "2025-12-22T06:05:02-08:00",
+      "duracao_segundos": 1798,
+      "apresentador_equipe": "Isabella Milano",
+      "credenciais": "Gerente de Marketing de Produto no Google e mestre em Administração pela FGV EAESP, segundo apresentação da FGV.",
+      "fonte_credenciais": "https://portal.fgv.br/podcast/48-marketing-em-2026-inteligencia-artificial-e-geracao-de-valor-lets-talk-fgv-eaesp",
+      "idioma": "pt",
+      "verificacao_idioma": {
+        "criterio": "Título e descrição institucional em português; faixa pt listada no player quando disponível.",
+        "faixa_portugues_listada": true,
+        "falado_conferido_por_audicao": false,
+        "conteudo_ou_qualidade_da_legenda_revisados": false
+      },
+      "descricao": "A sinopse anuncia discussão sobre IA, mudanças de busca e geração de valor em marketing. A seleção se apoia na apresentação institucional da convidada; alegações do episódio não foram revistas na íntegra.",
+      "descricao_base": "sinopse/descrição institucional e dados de apresentação; nenhuma síntese de conteúdo integral",
+      "trilha_proposta": "crescimento",
+      "nivel_proposto": "Intermediário",
+      "rotulo": "Seleção institucional · metadados verificados",
+      "estado_editorial": "selecao_institucional",
+      "revisao_integral": false,
+      "revisao_audiovisual": false,
+      "transcricao_integral_consultada": false,
+      "evidencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=nFqu5xY99sY",
+          "tipo": "pagina_individual_oficial_youtube",
+          "alcance": "Título, videoDetails.channelId, autoria do canal, descrição institucional, datas em microformat, duração e lista de faixas de legenda. Não assistido ou ouvido integralmente."
+        },
+        {
+          "url": "https://portal.fgv.br/",
+          "tipo": "procedencia_do_canal",
+          "alcance": "Link público do portal ao alias oficial do YouTube, resolvido para o Channel ID informado."
+        },
+        {
+          "url": "https://portal.fgv.br/podcast/48-marketing-em-2026-inteligencia-artificial-e-geracao-de-valor-lets-talk-fgv-eaesp",
+          "tipo": "pagina_institucional",
+          "alcance": "Perfil, apresentação ou notícia institucional usada para qualificação dos nomes indicados; não é prova de toda fala no vídeo."
+        }
+      ],
+      "verificado_em": "2026-11-06",
+      "reaproveitado_do_corpus_anterior": true,
+      "ressalvas": [
+        "Nível e trilha são propostas editoriais a partir dos metadados, não certificação da instituição.",
+        "Sem revisão audiovisual integral; conteúdo pode incluir introduções, vinhetas e avisos institucionais.",
+        "Há participação de executivos/fornecedores; preservar vínculo e possíveis interesses comerciais ao apresentar opiniões ou casos."
+      ],
+      "titulo_pt": "#48 Marketing em 2026: Inteligência Artificial e Geração de Valor",
+      "resumo": "A sinopse anuncia discussão sobre IA, mudanças de busca e geração de valor em marketing. A seleção se apoia na apresentação institucional da convidada; alegações do episódio não foram revistas na íntegra.",
+      "contexto_consultado": "Consultados título, descrição institucional, identificação do canal, datas/duração e lista de faixas de legenda na página oficial do vídeo. Perfil ou notícia institucional adicional usado para confirmar a qualificação apresentada. Não foi consultado conteúdo audiovisual ou transcrição integral; não é resenha do vídeo.",
+      "credenciais_fontes": [
+        {
+          "url": "https://www.youtube.com/watch?v=nFqu5xY99sY",
+          "alcance": "Identifica nominalmente a equipe e os vínculos apresentados pela instituição na data do evento."
+        },
+        {
+          "url": "https://portal.fgv.br/podcast/48-marketing-em-2026-inteligencia-artificial-e-geracao-de-valor-lets-talk-fgv-eaesp",
+          "alcance": "Perfil/apresentação institucional consultado para a qualificação do apresentador; vínculo histórico e perfil atual não foram tratados como equivalentes automaticamente."
+        }
+      ],
+      "trilha": "crescimento",
+      "nivel": "Intermediário"
+    },
+    {
+      "id": "RAxVySzbCEM",
+      "video_id": "RAxVySzbCEM",
+      "url": "https://www.youtube.com/watch?v=RAxVySzbCEM",
+      "titulo": "Webinar | Centralidade no Cliente e Inovação Digital para Além da Crise",
+      "fonte": "Fundação Getulio Vargas",
+      "canal": "FGV",
+      "channel_id": "UC8DhN1cJi0QklBQot5hv_kg",
+      "url_canal": "https://www.youtube.com/channel/UC8DhN1cJi0QklBQot5hv_kg",
+      "pagina_procedencia_oficial": "https://portal.fgv.br/",
+      "procedencia": {
+        "instituicao": "Fundação Getulio Vargas",
+        "pagina_oficial": "https://portal.fgv.br/",
+        "link_youtube_publicado_no_portal": "http://www.youtube.com/fgv",
+        "alias_https_verificado": "https://www.youtube.com/fgv",
+        "channel_id_confirmado": "UC8DhN1cJi0QklBQot5hv_kg",
+        "metodo": "Portal institucional HTTP 200 contém link /fgv; página pública HTTPS do alias retornou externalId igual ao canal aprovado.",
+        "em": "2026-11-06"
+      },
+      "data_publicacao": "2020-06-09",
+      "data_publicacao_iso": "2020-06-09T16:29:50-07:00",
+      "duracao_segundos": 5095,
+      "apresentador_equipe": "Leandro Guissoni",
+      "credenciais": "Identificado pela FGV como professor de carreira da EAESP; outra página institucional confirma docência associada e vínculo com a Darden.",
+      "fonte_credenciais": "https://altagestao.fgv.br/evento/liderando-uma-organizacao-centrada-no-cliente-na-era-digital",
+      "idioma": "pt",
+      "verificacao_idioma": {
+        "criterio": "Título e descrição institucional em português; faixa pt listada no player quando disponível.",
+        "faixa_portugues_listada": true,
+        "falado_conferido_por_audicao": false,
+        "conteudo_ou_qualidade_da_legenda_revisados": false
+      },
+      "descricao": "A descrição institucional apresenta centralidade no cliente e transformação digital por meio de casos, no contexto da crise sanitária. Não se inferem efeitos ou atualidade dos exemplos a partir da sinopse.",
+      "descricao_base": "sinopse/descrição institucional e dados de apresentação; nenhuma síntese de conteúdo integral",
+      "trilha_proposta": "clientes",
+      "nivel_proposto": "Intermediário",
+      "rotulo": "Seleção institucional · metadados verificados",
+      "estado_editorial": "selecao_institucional",
+      "revisao_integral": false,
+      "revisao_audiovisual": false,
+      "transcricao_integral_consultada": false,
+      "evidencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=RAxVySzbCEM",
+          "tipo": "pagina_individual_oficial_youtube",
+          "alcance": "Título, videoDetails.channelId, autoria do canal, descrição institucional, datas em microformat, duração e lista de faixas de legenda. Não assistido ou ouvido integralmente."
+        },
+        {
+          "url": "https://portal.fgv.br/",
+          "tipo": "procedencia_do_canal",
+          "alcance": "Link público do portal ao alias oficial do YouTube, resolvido para o Channel ID informado."
+        },
+        {
+          "url": "https://altagestao.fgv.br/evento/liderando-uma-organizacao-centrada-no-cliente-na-era-digital",
+          "tipo": "pagina_institucional",
+          "alcance": "Perfil, apresentação ou notícia institucional usada para qualificação dos nomes indicados; não é prova de toda fala no vídeo."
+        }
+      ],
+      "verificado_em": "2026-11-06",
+      "reaproveitado_do_corpus_anterior": true,
+      "ressalvas": [
+        "Nível e trilha são propostas editoriais a partir dos metadados, não certificação da instituição.",
+        "Sem revisão audiovisual integral; conteúdo pode incluir introduções, vinhetas e avisos institucionais.",
+        "Material de contexto anterior: distinguir fundamentos de previsões, exemplos de pandemia e informações que podem ter envelhecido."
+      ],
+      "titulo_pt": "Webinar | Centralidade no Cliente e Inovação Digital para Além da Crise",
+      "resumo": "A descrição institucional apresenta centralidade no cliente e transformação digital por meio de casos, no contexto da crise sanitária. Não se inferem efeitos ou atualidade dos exemplos a partir da sinopse.",
+      "contexto_consultado": "Consultados título, descrição institucional, identificação do canal, datas/duração e lista de faixas de legenda na página oficial do vídeo. Perfil ou notícia institucional adicional usado para confirmar a qualificação apresentada. Não foi consultado conteúdo audiovisual ou transcrição integral; não é resenha do vídeo.",
+      "credenciais_fontes": [
+        {
+          "url": "https://www.youtube.com/watch?v=RAxVySzbCEM",
+          "alcance": "Identifica nominalmente a equipe e os vínculos apresentados pela instituição na data do evento."
+        },
+        {
+          "url": "https://altagestao.fgv.br/evento/liderando-uma-organizacao-centrada-no-cliente-na-era-digital",
+          "alcance": "Perfil/apresentação institucional consultado para a qualificação do apresentador; vínculo histórico e perfil atual não foram tratados como equivalentes automaticamente."
+        }
+      ],
+      "trilha": "clientes",
+      "nivel": "Intermediário"
+    },
+    {
+      "id": "qsAX3XyRsPU",
+      "video_id": "qsAX3XyRsPU",
+      "url": "https://www.youtube.com/watch?v=qsAX3XyRsPU",
+      "titulo": "Webinar | Ambiente digital, métricas e operações de trade marketing no PDV de canais key accounts",
+      "fonte": "Fundação Getulio Vargas",
+      "canal": "FGV",
+      "channel_id": "UC8DhN1cJi0QklBQot5hv_kg",
+      "url_canal": "https://www.youtube.com/channel/UC8DhN1cJi0QklBQot5hv_kg",
+      "pagina_procedencia_oficial": "https://portal.fgv.br/",
+      "procedencia": {
+        "instituicao": "Fundação Getulio Vargas",
+        "pagina_oficial": "https://portal.fgv.br/",
+        "link_youtube_publicado_no_portal": "http://www.youtube.com/fgv",
+        "alias_https_verificado": "https://www.youtube.com/fgv",
+        "channel_id_confirmado": "UC8DhN1cJi0QklBQot5hv_kg",
+        "metodo": "Portal institucional HTTP 200 contém link /fgv; página pública HTTPS do alias retornou externalId igual ao canal aprovado.",
+        "em": "2026-11-06"
+      },
+      "data_publicacao": "2022-10-31",
+      "data_publicacao_iso": "2022-10-31T15:11:07-07:00",
+      "duracao_segundos": 4000,
+      "apresentador_equipe": "Luiz Roberto Carnier",
+      "credenciais": "A descrição oficial o identifica como coordenador de cursos do IDE/FGV em estratégia comercial, fidelização, trade marketing e key accounts.",
+      "fonte_credenciais": "https://www.youtube.com/watch?v=qsAX3XyRsPU",
+      "idioma": "pt",
+      "verificacao_idioma": {
+        "criterio": "Título e descrição institucional em português; faixa pt listada no player quando disponível.",
+        "faixa_portugues_listada": true,
+        "falado_conferido_por_audicao": false,
+        "conteudo_ou_qualidade_da_legenda_revisados": false
+      },
+      "descricao": "A descrição anuncia métricas de loja, trade marketing e canais de grandes contas. O nível é proposto por exigir base de varejo e indicadores; os métodos e exemplos não foram revisados integralmente.",
+      "descricao_base": "sinopse/descrição institucional e dados de apresentação; nenhuma síntese de conteúdo integral",
+      "trilha_proposta": "mensuracao",
+      "nivel_proposto": "Avançado",
+      "rotulo": "Seleção institucional · metadados verificados",
+      "estado_editorial": "selecao_institucional",
+      "revisao_integral": false,
+      "revisao_audiovisual": false,
+      "transcricao_integral_consultada": false,
+      "evidencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=qsAX3XyRsPU",
+          "tipo": "pagina_individual_oficial_youtube",
+          "alcance": "Título, videoDetails.channelId, autoria do canal, descrição institucional, datas em microformat, duração e lista de faixas de legenda. Não assistido ou ouvido integralmente."
+        },
+        {
+          "url": "https://portal.fgv.br/",
+          "tipo": "procedencia_do_canal",
+          "alcance": "Link público do portal ao alias oficial do YouTube, resolvido para o Channel ID informado."
+        }
+      ],
+      "verificado_em": "2026-11-06",
+      "reaproveitado_do_corpus_anterior": true,
+      "ressalvas": [
+        "Nível e trilha são propostas editoriais a partir dos metadados, não certificação da instituição.",
+        "Sem revisão audiovisual integral; conteúdo pode incluir introduções, vinhetas e avisos institucionais.",
+        "Material de contexto anterior: distinguir fundamentos de previsões, exemplos de pandemia e informações que podem ter envelhecido."
+      ],
+      "titulo_pt": "Webinar | Ambiente digital, métricas e operações de trade marketing no PDV de canais key accounts",
+      "resumo": "A descrição anuncia métricas de loja, trade marketing e canais de grandes contas. O nível é proposto por exigir base de varejo e indicadores; os métodos e exemplos não foram revisados integralmente.",
+      "contexto_consultado": "Consultados título, descrição institucional, identificação do canal, datas/duração e lista de faixas de legenda na página oficial do vídeo. Qualificação limitada à apresentação nominal feita pela própria instituição na descrição. Não foi consultado conteúdo audiovisual ou transcrição integral; não é resenha do vídeo.",
+      "credenciais_fontes": [
+        {
+          "url": "https://www.youtube.com/watch?v=qsAX3XyRsPU",
+          "alcance": "Identifica nominalmente a equipe e os vínculos apresentados pela instituição na data do evento."
+        }
+      ],
+      "trilha": "mensuracao",
+      "nivel": "Avançado"
+    },
+    {
+      "id": "BV8AA5vXmsA",
+      "video_id": "BV8AA5vXmsA",
+      "url": "https://www.youtube.com/watch?v=BV8AA5vXmsA",
+      "titulo": "Gestão comercial e rentabilização da base de clientes",
+      "fonte": "Fundação Dom Cabral",
+      "canal": "Fundação Dom Cabral",
+      "channel_id": "UC1fHbk7N11bB8UnL4tYg26A",
+      "url_canal": "https://www.youtube.com/channel/UC1fHbk7N11bB8UnL4tYg26A",
+      "pagina_procedencia_oficial": "https://www.fdc.org.br/",
+      "procedencia": {
+        "instituicao": "Fundação Dom Cabral",
+        "pagina_oficial": "https://www.fdc.org.br/",
+        "link_youtube_publicado_no_portal": "https://www.youtube.com/user/FDCIdeas",
+        "alias_https_verificado": "https://www.youtube.com/user/FDCIdeas",
+        "channel_id_confirmado": "UC1fHbk7N11bB8UnL4tYg26A",
+        "metodo": "Portal institucional HTTP 200 contém link /user/FDCIdeas; página pública do alias retornou externalId igual ao canal aprovado.",
+        "em": "2026-11-06"
+      },
+      "data_publicacao": "2020-06-17",
+      "data_publicacao_iso": "2020-06-17T10:58:12-07:00",
+      "duracao_segundos": 288,
+      "apresentador_equipe": "Áurea Ribeiro",
+      "credenciais": "Professora e pesquisadora da FDC em marketing, estratégia e relações B2B; atuação confirmada em perfil institucional.",
+      "fonte_credenciais": "https://posead.fdc.org.br/professores/aurea-helena-puga-ribeiro",
+      "idioma": "pt",
+      "verificacao_idioma": {
+        "criterio": "Título e descrição institucional em português; faixa pt listada no player quando disponível.",
+        "faixa_portugues_listada": true,
+        "falado_conferido_por_audicao": false,
+        "conteudo_ou_qualidade_da_legenda_revisados": false
+      },
+      "descricao": "A sinopse apresenta uma metodologia FDC de segmentação, estrutura comercial e rentabilização de clientes B2B. É seleção da explicação institucional, sem comprovação independente de eficácia.",
+      "descricao_base": "sinopse/descrição institucional e dados de apresentação; nenhuma síntese de conteúdo integral",
+      "trilha_proposta": "clientes",
+      "nivel_proposto": "Intermediário",
+      "rotulo": "Seleção institucional · metadados verificados",
+      "estado_editorial": "selecao_institucional",
+      "revisao_integral": false,
+      "revisao_audiovisual": false,
+      "transcricao_integral_consultada": false,
+      "evidencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=BV8AA5vXmsA",
+          "tipo": "pagina_individual_oficial_youtube",
+          "alcance": "Título, videoDetails.channelId, autoria do canal, descrição institucional, datas em microformat, duração e lista de faixas de legenda. Não assistido ou ouvido integralmente."
+        },
+        {
+          "url": "https://www.fdc.org.br/",
+          "tipo": "procedencia_do_canal",
+          "alcance": "Link público do portal ao alias oficial do YouTube, resolvido para o Channel ID informado."
+        },
+        {
+          "url": "https://posead.fdc.org.br/professores/aurea-helena-puga-ribeiro",
+          "tipo": "pagina_institucional",
+          "alcance": "Perfil, apresentação ou notícia institucional usada para qualificação dos nomes indicados; não é prova de toda fala no vídeo."
+        }
+      ],
+      "verificado_em": "2026-11-06",
+      "reaproveitado_do_corpus_anterior": true,
+      "ressalvas": [
+        "Nível e trilha são propostas editoriais a partir dos metadados, não certificação da instituição.",
+        "Sem revisão audiovisual integral; conteúdo pode incluir introduções, vinhetas e avisos institucionais.",
+        "Material de contexto anterior: distinguir fundamentos de previsões, exemplos de pandemia e informações que podem ter envelhecido."
+      ],
+      "titulo_pt": "Gestão comercial e rentabilização da base de clientes",
+      "resumo": "A sinopse apresenta uma metodologia FDC de segmentação, estrutura comercial e rentabilização de clientes B2B. É seleção da explicação institucional, sem comprovação independente de eficácia.",
+      "contexto_consultado": "Consultados título, descrição institucional, identificação do canal, datas/duração e lista de faixas de legenda na página oficial do vídeo. Perfil ou notícia institucional adicional usado para confirmar a qualificação apresentada. Não foi consultado conteúdo audiovisual ou transcrição integral; não é resenha do vídeo.",
+      "credenciais_fontes": [
+        {
+          "url": "https://www.youtube.com/watch?v=BV8AA5vXmsA",
+          "alcance": "Identifica nominalmente a equipe e os vínculos apresentados pela instituição na data do evento."
+        },
+        {
+          "url": "https://posead.fdc.org.br/professores/aurea-helena-puga-ribeiro",
+          "alcance": "Perfil/apresentação institucional consultado para a qualificação do apresentador; vínculo histórico e perfil atual não foram tratados como equivalentes automaticamente."
+        }
+      ],
+      "trilha": "clientes",
+      "nivel": "Intermediário"
+    },
+    {
+      "id": "JlIKeIlnhTo",
+      "video_id": "JlIKeIlnhTo",
+      "url": "https://www.youtube.com/watch?v=JlIKeIlnhTo",
+      "titulo": "Como aumentar o retorno sobre relacionamento com clientes",
+      "fonte": "Fundação Dom Cabral",
+      "canal": "Fundação Dom Cabral",
+      "channel_id": "UC1fHbk7N11bB8UnL4tYg26A",
+      "url_canal": "https://www.youtube.com/channel/UC1fHbk7N11bB8UnL4tYg26A",
+      "pagina_procedencia_oficial": "https://www.fdc.org.br/",
+      "procedencia": {
+        "instituicao": "Fundação Dom Cabral",
+        "pagina_oficial": "https://www.fdc.org.br/",
+        "link_youtube_publicado_no_portal": "https://www.youtube.com/user/FDCIdeas",
+        "alias_https_verificado": "https://www.youtube.com/user/FDCIdeas",
+        "channel_id_confirmado": "UC1fHbk7N11bB8UnL4tYg26A",
+        "metodo": "Portal institucional HTTP 200 contém link /user/FDCIdeas; página pública do alias retornou externalId igual ao canal aprovado.",
+        "em": "2026-11-06"
+      },
+      "data_publicacao": "2020-06-17",
+      "data_publicacao_iso": "2020-06-17T10:59:05-07:00",
+      "duracao_segundos": 229,
+      "apresentador_equipe": "Áurea Ribeiro",
+      "credenciais": "Professora e pesquisadora da FDC em marketing, estratégia e relações B2B; atuação confirmada em perfil institucional.",
+      "fonte_credenciais": "https://posead.fdc.org.br/professores/aurea-helena-puga-ribeiro",
+      "idioma": "pt",
+      "verificacao_idioma": {
+        "criterio": "Título e descrição institucional em português; faixa pt listada no player quando disponível.",
+        "faixa_portugues_listada": true,
+        "falado_conferido_por_audicao": false,
+        "conteudo_ou_qualidade_da_legenda_revisados": false
+      },
+      "descricao": "A descrição anuncia discussão sobre serviços de valor, relacionamento e retorno em mercados B2B. Não se atribuem resultados medidos nem validação causal ao conteúdo a partir desses metadados.",
+      "descricao_base": "sinopse/descrição institucional e dados de apresentação; nenhuma síntese de conteúdo integral",
+      "trilha_proposta": "clientes",
+      "nivel_proposto": "Intermediário",
+      "rotulo": "Seleção institucional · metadados verificados",
+      "estado_editorial": "selecao_institucional",
+      "revisao_integral": false,
+      "revisao_audiovisual": false,
+      "transcricao_integral_consultada": false,
+      "evidencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=JlIKeIlnhTo",
+          "tipo": "pagina_individual_oficial_youtube",
+          "alcance": "Título, videoDetails.channelId, autoria do canal, descrição institucional, datas em microformat, duração e lista de faixas de legenda. Não assistido ou ouvido integralmente."
+        },
+        {
+          "url": "https://www.fdc.org.br/",
+          "tipo": "procedencia_do_canal",
+          "alcance": "Link público do portal ao alias oficial do YouTube, resolvido para o Channel ID informado."
+        },
+        {
+          "url": "https://posead.fdc.org.br/professores/aurea-helena-puga-ribeiro",
+          "tipo": "pagina_institucional",
+          "alcance": "Perfil, apresentação ou notícia institucional usada para qualificação dos nomes indicados; não é prova de toda fala no vídeo."
+        }
+      ],
+      "verificado_em": "2026-11-06",
+      "reaproveitado_do_corpus_anterior": true,
+      "ressalvas": [
+        "Nível e trilha são propostas editoriais a partir dos metadados, não certificação da instituição.",
+        "Sem revisão audiovisual integral; conteúdo pode incluir introduções, vinhetas e avisos institucionais.",
+        "Material de contexto anterior: distinguir fundamentos de previsões, exemplos de pandemia e informações que podem ter envelhecido."
+      ],
+      "titulo_pt": "Como aumentar o retorno sobre relacionamento com clientes",
+      "resumo": "A descrição anuncia discussão sobre serviços de valor, relacionamento e retorno em mercados B2B. Não se atribuem resultados medidos nem validação causal ao conteúdo a partir desses metadados.",
+      "contexto_consultado": "Consultados título, descrição institucional, identificação do canal, datas/duração e lista de faixas de legenda na página oficial do vídeo. Perfil ou notícia institucional adicional usado para confirmar a qualificação apresentada. Não foi consultado conteúdo audiovisual ou transcrição integral; não é resenha do vídeo.",
+      "credenciais_fontes": [
+        {
+          "url": "https://www.youtube.com/watch?v=JlIKeIlnhTo",
+          "alcance": "Identifica nominalmente a equipe e os vínculos apresentados pela instituição na data do evento."
+        },
+        {
+          "url": "https://posead.fdc.org.br/professores/aurea-helena-puga-ribeiro",
+          "alcance": "Perfil/apresentação institucional consultado para a qualificação do apresentador; vínculo histórico e perfil atual não foram tratados como equivalentes automaticamente."
+        }
+      ],
+      "trilha": "clientes",
+      "nivel": "Intermediário"
+    },
+    {
+      "id": "e7DZNb81ISg",
+      "video_id": "e7DZNb81ISg",
+      "url": "https://www.youtube.com/watch?v=e7DZNb81ISg",
+      "titulo": "Estratégia Empresarial",
+      "fonte": "Fundação Dom Cabral",
+      "canal": "Fundação Dom Cabral",
+      "channel_id": "UC1fHbk7N11bB8UnL4tYg26A",
+      "url_canal": "https://www.youtube.com/channel/UC1fHbk7N11bB8UnL4tYg26A",
+      "pagina_procedencia_oficial": "https://www.fdc.org.br/",
+      "procedencia": {
+        "instituicao": "Fundação Dom Cabral",
+        "pagina_oficial": "https://www.fdc.org.br/",
+        "link_youtube_publicado_no_portal": "https://www.youtube.com/user/FDCIdeas",
+        "alias_https_verificado": "https://www.youtube.com/user/FDCIdeas",
+        "channel_id_confirmado": "UC1fHbk7N11bB8UnL4tYg26A",
+        "metodo": "Portal institucional HTTP 200 contém link /user/FDCIdeas; página pública do alias retornou externalId igual ao canal aprovado.",
+        "em": "2026-11-06"
+      },
+      "data_publicacao": "2012-05-31",
+      "data_publicacao_iso": "2012-05-31T11:44:32-07:00",
+      "duracao_segundos": 1802,
+      "apresentador_equipe": "Ricardo Abdala",
+      "credenciais": "A FDC identifica o apresentador como professor em sua descrição oficial de 2012; titulação e vínculo atual não foram conferidos.",
+      "fonte_credenciais": "https://www.youtube.com/watch?v=e7DZNb81ISg",
+      "idioma": "pt",
+      "verificacao_idioma": {
+        "criterio": "Título e descrição institucional em português; faixa pt listada no player quando disponível.",
+        "faixa_portugues_listada": false,
+        "falado_conferido_por_audicao": false,
+        "conteudo_ou_qualidade_da_legenda_revisados": false
+      },
+      "descricao": "A descrição curta da FDC identifica apresentação teórica e prática sobre estratégia empresarial. Material antigo e sem lista de legendas no registro consultado; adequação dos exemplos requer revisão posterior.",
+      "descricao_base": "sinopse/descrição institucional e dados de apresentação; nenhuma síntese de conteúdo integral",
+      "trilha_proposta": "estrategia",
+      "nivel_proposto": "Iniciante",
+      "rotulo": "Seleção institucional · metadados verificados",
+      "estado_editorial": "selecao_institucional",
+      "revisao_integral": false,
+      "revisao_audiovisual": false,
+      "transcricao_integral_consultada": false,
+      "evidencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=e7DZNb81ISg",
+          "tipo": "pagina_individual_oficial_youtube",
+          "alcance": "Título, videoDetails.channelId, autoria do canal, descrição institucional, datas em microformat, duração e lista de faixas de legenda. Não assistido ou ouvido integralmente."
+        },
+        {
+          "url": "https://www.fdc.org.br/",
+          "tipo": "procedencia_do_canal",
+          "alcance": "Link público do portal ao alias oficial do YouTube, resolvido para o Channel ID informado."
+        }
+      ],
+      "verificado_em": "2026-11-06",
+      "reaproveitado_do_corpus_anterior": true,
+      "ressalvas": [
+        "Nível e trilha são propostas editoriais a partir dos metadados, não certificação da instituição.",
+        "Sem revisão audiovisual integral; conteúdo pode incluir introduções, vinhetas e avisos institucionais.",
+        "Material de contexto anterior: distinguir fundamentos de previsões, exemplos de pandemia e informações que podem ter envelhecido.",
+        "Sem lista de legenda no registro consultado; idioma classificado pelo título/descrição e contexto brasileiro, sem confirmação por audição."
+      ],
+      "titulo_pt": "Estratégia Empresarial",
+      "resumo": "A descrição curta da FDC identifica apresentação teórica e prática sobre estratégia empresarial. Material antigo e sem lista de legendas no registro consultado; adequação dos exemplos requer revisão posterior.",
+      "contexto_consultado": "Consultados título, descrição institucional, identificação do canal, datas/duração e lista de faixas de legenda na página oficial do vídeo. Qualificação limitada à apresentação nominal feita pela própria instituição na descrição. Não foi consultado conteúdo audiovisual ou transcrição integral; não é resenha do vídeo.",
+      "credenciais_fontes": [
+        {
+          "url": "https://www.youtube.com/watch?v=e7DZNb81ISg",
+          "alcance": "Identifica nominalmente a equipe e os vínculos apresentados pela instituição na data do evento."
+        }
+      ],
+      "trilha": "estrategia",
+      "nivel": "Iniciante"
+    },
+    {
+      "id": "3iXbE1jzY2A",
+      "video_id": "3iXbE1jzY2A",
+      "url": "https://www.youtube.com/watch?v=3iXbE1jzY2A",
+      "titulo": "Digitalizando - Sétimo Episódio: Jornada do cliente!",
+      "fonte": "Fundação Dom Cabral",
+      "canal": "Fundação Dom Cabral",
+      "channel_id": "UC1fHbk7N11bB8UnL4tYg26A",
+      "url_canal": "https://www.youtube.com/channel/UC1fHbk7N11bB8UnL4tYg26A",
+      "pagina_procedencia_oficial": "https://www.fdc.org.br/",
+      "procedencia": {
+        "instituicao": "Fundação Dom Cabral",
+        "pagina_oficial": "https://www.fdc.org.br/",
+        "link_youtube_publicado_no_portal": "https://www.youtube.com/user/FDCIdeas",
+        "alias_https_verificado": "https://www.youtube.com/user/FDCIdeas",
+        "channel_id_confirmado": "UC1fHbk7N11bB8UnL4tYg26A",
+        "metodo": "Portal institucional HTTP 200 contém link /user/FDCIdeas; página pública do alias retornou externalId igual ao canal aprovado.",
+        "em": "2026-11-06"
+      },
+      "data_publicacao": "2022-02-22",
+      "data_publicacao_iso": "2022-02-22T04:58:05-08:00",
+      "duracao_segundos": 256,
+      "apresentador_equipe": "Hugo Ferreira Braga Tadeu",
+      "credenciais": "Professor e pesquisador da FDC em inovação; perfil institucional confirma doutorado em Engenharia Mecânica e pós-doutorado.",
+      "fonte_credenciais": "https://www.fdc.org.br/corpo-docente/hugo-tadeu",
+      "idioma": "pt",
+      "verificacao_idioma": {
+        "criterio": "Título e descrição institucional em português; faixa pt listada no player quando disponível.",
+        "faixa_portugues_listada": true,
+        "falado_conferido_por_audicao": false,
+        "conteudo_ou_qualidade_da_legenda_revisados": false
+      },
+      "descricao": "A descrição anuncia jornada do cliente e indicadores de engajamento na transformação digital. A síntese fica restrita ao tema apresentado pela instituição, sem extrapolar o que teria sido ensinado.",
+      "descricao_base": "sinopse/descrição institucional e dados de apresentação; nenhuma síntese de conteúdo integral",
+      "trilha_proposta": "consumidor",
+      "nivel_proposto": "Iniciante",
+      "rotulo": "Seleção institucional · metadados verificados",
+      "estado_editorial": "selecao_institucional",
+      "revisao_integral": false,
+      "revisao_audiovisual": false,
+      "transcricao_integral_consultada": false,
+      "evidencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=3iXbE1jzY2A",
+          "tipo": "pagina_individual_oficial_youtube",
+          "alcance": "Título, videoDetails.channelId, autoria do canal, descrição institucional, datas em microformat, duração e lista de faixas de legenda. Não assistido ou ouvido integralmente."
+        },
+        {
+          "url": "https://www.fdc.org.br/",
+          "tipo": "procedencia_do_canal",
+          "alcance": "Link público do portal ao alias oficial do YouTube, resolvido para o Channel ID informado."
+        },
+        {
+          "url": "https://www.fdc.org.br/corpo-docente/hugo-tadeu",
+          "tipo": "pagina_institucional",
+          "alcance": "Perfil, apresentação ou notícia institucional usada para qualificação dos nomes indicados; não é prova de toda fala no vídeo."
+        }
+      ],
+      "verificado_em": "2026-11-06",
+      "reaproveitado_do_corpus_anterior": true,
+      "ressalvas": [
+        "Nível e trilha são propostas editoriais a partir dos metadados, não certificação da instituição.",
+        "Sem revisão audiovisual integral; conteúdo pode incluir introduções, vinhetas e avisos institucionais.",
+        "Material de contexto anterior: distinguir fundamentos de previsões, exemplos de pandemia e informações que podem ter envelhecido."
+      ],
+      "titulo_pt": "Digitalizando - Sétimo Episódio: Jornada do cliente!",
+      "resumo": "A descrição anuncia jornada do cliente e indicadores de engajamento na transformação digital. A síntese fica restrita ao tema apresentado pela instituição, sem extrapolar o que teria sido ensinado.",
+      "contexto_consultado": "Consultados título, descrição institucional, identificação do canal, datas/duração e lista de faixas de legenda na página oficial do vídeo. Perfil ou notícia institucional adicional usado para confirmar a qualificação apresentada. Não foi consultado conteúdo audiovisual ou transcrição integral; não é resenha do vídeo.",
+      "credenciais_fontes": [
+        {
+          "url": "https://www.youtube.com/watch?v=3iXbE1jzY2A",
+          "alcance": "Identifica nominalmente a equipe e os vínculos apresentados pela instituição na data do evento."
+        },
+        {
+          "url": "https://www.fdc.org.br/corpo-docente/hugo-tadeu",
+          "alcance": "Perfil/apresentação institucional consultado para a qualificação do apresentador; vínculo histórico e perfil atual não foram tratados como equivalentes automaticamente."
+        }
+      ],
+      "trilha": "consumidor",
+      "nivel": "Iniciante"
+    },
+    {
+      "id": "lpKspRpDPfI",
+      "video_id": "lpKspRpDPfI",
+      "url": "https://www.youtube.com/watch?v=lpKspRpDPfI",
+      "titulo": "FGV In Company Insights | Ep 89 - Um framework para a Gestão de Estereótipos na Comunicação de Marca",
+      "fonte": "Fundação Getulio Vargas",
+      "canal": "FGV",
+      "channel_id": "UC8DhN1cJi0QklBQot5hv_kg",
+      "url_canal": "https://www.youtube.com/channel/UC8DhN1cJi0QklBQot5hv_kg",
+      "pagina_procedencia_oficial": "https://portal.fgv.br/",
+      "procedencia": {
+        "instituicao": "Fundação Getulio Vargas",
+        "pagina_oficial": "https://portal.fgv.br/",
+        "link_youtube_publicado_no_portal": "http://www.youtube.com/fgv",
+        "alias_https_verificado": "https://www.youtube.com/fgv",
+        "channel_id_confirmado": "UC8DhN1cJi0QklBQot5hv_kg",
+        "metodo": "Portal institucional HTTP 200 contém link /fgv; página pública HTTPS do alias retornou externalId igual ao canal aprovado.",
+        "em": "2026-11-06"
+      },
+      "data_publicacao": "2026-07-08",
+      "data_publicacao_iso": "2026-07-08T05:50:19-07:00",
+      "duracao_segundos": 1112,
+      "apresentador_equipe": "Delane Botelho",
+      "credenciais": "Professor titular da FGV EAESP, doutor em Administração de Empresas com área de Marketing; perfil acadêmico institucional consultado.",
+      "fonte_credenciais": "https://eaesp.fgv.br/centros/centro-desenvolvimento-ensino-e-aprendizagem/equipe/delane-botelho",
+      "idioma": "pt",
+      "verificacao_idioma": {
+        "criterio": "Título e descrição institucional em português; faixa pt listada no player quando disponível.",
+        "faixa_portugues_listada": true,
+        "falado_conferido_por_audicao": false,
+        "conteudo_ou_qualidade_da_legenda_revisados": false
+      },
+      "descricao": "A FGV apresenta conversa sobre estereótipos na publicidade e um framework gerencial de comunicação de marcas. A qualificação do convidado foi conferida; não houve revisão das proposições do episódio.",
+      "descricao_base": "sinopse/descrição institucional e dados de apresentação; nenhuma síntese de conteúdo integral",
+      "trilha_proposta": "marcas",
+      "nivel_proposto": "Intermediário",
+      "rotulo": "Seleção institucional · metadados verificados",
+      "estado_editorial": "selecao_institucional",
+      "revisao_integral": false,
+      "revisao_audiovisual": false,
+      "transcricao_integral_consultada": false,
+      "evidencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=lpKspRpDPfI",
+          "tipo": "pagina_individual_oficial_youtube",
+          "alcance": "Título, videoDetails.channelId, autoria do canal, descrição institucional, datas em microformat, duração e lista de faixas de legenda. Não assistido ou ouvido integralmente."
+        },
+        {
+          "url": "https://portal.fgv.br/",
+          "tipo": "procedencia_do_canal",
+          "alcance": "Link público do portal ao alias oficial do YouTube, resolvido para o Channel ID informado."
+        },
+        {
+          "url": "https://eaesp.fgv.br/centros/centro-desenvolvimento-ensino-e-aprendizagem/equipe/delane-botelho",
+          "tipo": "pagina_institucional",
+          "alcance": "Perfil, apresentação ou notícia institucional usada para qualificação dos nomes indicados; não é prova de toda fala no vídeo."
+        }
+      ],
+      "verificado_em": "2026-11-06",
+      "reaproveitado_do_corpus_anterior": false,
+      "ressalvas": [
+        "Nível e trilha são propostas editoriais a partir dos metadados, não certificação da instituição.",
+        "Sem revisão audiovisual integral; conteúdo pode incluir introduções, vinhetas e avisos institucionais."
+      ],
+      "titulo_pt": "FGV In Company Insights | Ep 89 - Um framework para a Gestão de Estereótipos na Comunicação de Marca",
+      "resumo": "A FGV apresenta conversa sobre estereótipos na publicidade e um framework gerencial de comunicação de marcas. A qualificação do convidado foi conferida; não houve revisão das proposições do episódio.",
+      "contexto_consultado": "Consultados título, descrição institucional, identificação do canal, datas/duração e lista de faixas de legenda na página oficial do vídeo. Perfil ou notícia institucional adicional usado para confirmar a qualificação apresentada. Não foi consultado conteúdo audiovisual ou transcrição integral; não é resenha do vídeo.",
+      "credenciais_fontes": [
+        {
+          "url": "https://www.youtube.com/watch?v=lpKspRpDPfI",
+          "alcance": "Identifica nominalmente a equipe e os vínculos apresentados pela instituição na data do evento."
+        },
+        {
+          "url": "https://eaesp.fgv.br/centros/centro-desenvolvimento-ensino-e-aprendizagem/equipe/delane-botelho",
+          "alcance": "Perfil/apresentação institucional consultado para a qualificação do apresentador; vínculo histórico e perfil atual não foram tratados como equivalentes automaticamente."
+        }
+      ],
+      "trilha": "marcas",
+      "nivel": "Intermediário"
+    },
+    {
+      "id": "fQcJ9jZegNg",
+      "video_id": "fQcJ9jZegNg",
+      "url": "https://www.youtube.com/watch?v=fQcJ9jZegNg",
+      "titulo": "Webinar | Tendências para marketing e tecnologia em 2022",
+      "fonte": "Fundação Getulio Vargas",
+      "canal": "FGV",
+      "channel_id": "UC8DhN1cJi0QklBQot5hv_kg",
+      "url_canal": "https://www.youtube.com/channel/UC8DhN1cJi0QklBQot5hv_kg",
+      "pagina_procedencia_oficial": "https://portal.fgv.br/",
+      "procedencia": {
+        "instituicao": "Fundação Getulio Vargas",
+        "pagina_oficial": "https://portal.fgv.br/",
+        "link_youtube_publicado_no_portal": "http://www.youtube.com/fgv",
+        "alias_https_verificado": "https://www.youtube.com/fgv",
+        "channel_id_confirmado": "UC8DhN1cJi0QklBQot5hv_kg",
+        "metodo": "Portal institucional HTTP 200 contém link /fgv; página pública HTTPS do alias retornou externalId igual ao canal aprovado.",
+        "em": "2026-11-06"
+      },
+      "data_publicacao": "2022-02-02",
+      "data_publicacao_iso": "2022-02-02T10:37:17-08:00",
+      "duracao_segundos": 5633,
+      "apresentador_equipe": "Juliana Ugolino; moderação de André Miceli",
+      "credenciais": "A FGV identifica Ugolino como professora, consultora e jornalista; Miceli como professor e coordenador de MBA. Titulação individual não foi inferida.",
+      "fonte_credenciais": "https://portal.fgv.br/noticias/evento-online-debate-sobre-tendencias-marketing-e-tecnologia-2022",
+      "idioma": "pt",
+      "verificacao_idioma": {
+        "criterio": "Título e descrição institucional em português; faixa pt listada no player quando disponível.",
+        "faixa_portugues_listada": true,
+        "falado_conferido_por_audicao": false,
+        "conteudo_ou_qualidade_da_legenda_revisados": false
+      },
+      "descricao": "Webinar descrito pela FGV como debate de tendências tecnológicas e marketing para 2022. Usar como registro do período; não apresentar previsões antigas como orientação atual sobre ferramentas.",
+      "descricao_base": "sinopse/descrição institucional e dados de apresentação; nenhuma síntese de conteúdo integral",
+      "trilha_proposta": "crescimento",
+      "nivel_proposto": "Intermediário",
+      "rotulo": "Seleção institucional · metadados verificados",
+      "estado_editorial": "selecao_institucional",
+      "revisao_integral": false,
+      "revisao_audiovisual": false,
+      "transcricao_integral_consultada": false,
+      "evidencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=fQcJ9jZegNg",
+          "tipo": "pagina_individual_oficial_youtube",
+          "alcance": "Título, videoDetails.channelId, autoria do canal, descrição institucional, datas em microformat, duração e lista de faixas de legenda. Não assistido ou ouvido integralmente."
+        },
+        {
+          "url": "https://portal.fgv.br/",
+          "tipo": "procedencia_do_canal",
+          "alcance": "Link público do portal ao alias oficial do YouTube, resolvido para o Channel ID informado."
+        },
+        {
+          "url": "https://portal.fgv.br/noticias/evento-online-debate-sobre-tendencias-marketing-e-tecnologia-2022",
+          "tipo": "pagina_institucional",
+          "alcance": "Perfil, apresentação ou notícia institucional usada para qualificação dos nomes indicados; não é prova de toda fala no vídeo."
+        }
+      ],
+      "verificado_em": "2026-11-06",
+      "reaproveitado_do_corpus_anterior": false,
+      "ressalvas": [
+        "Nível e trilha são propostas editoriais a partir dos metadados, não certificação da instituição.",
+        "Sem revisão audiovisual integral; conteúdo pode incluir introduções, vinhetas e avisos institucionais.",
+        "Material de contexto anterior: distinguir fundamentos de previsões, exemplos de pandemia e informações que podem ter envelhecido."
+      ],
+      "titulo_pt": "Webinar | Tendências para marketing e tecnologia em 2022",
+      "resumo": "Webinar descrito pela FGV como debate de tendências tecnológicas e marketing para 2022. Usar como registro do período; não apresentar previsões antigas como orientação atual sobre ferramentas.",
+      "contexto_consultado": "Consultados título, descrição institucional, identificação do canal, datas/duração e lista de faixas de legenda na página oficial do vídeo. Perfil ou notícia institucional adicional usado para confirmar a qualificação apresentada. Não foi consultado conteúdo audiovisual ou transcrição integral; não é resenha do vídeo.",
+      "credenciais_fontes": [
+        {
+          "url": "https://www.youtube.com/watch?v=fQcJ9jZegNg",
+          "alcance": "Identifica nominalmente a equipe e os vínculos apresentados pela instituição na data do evento."
+        },
+        {
+          "url": "https://portal.fgv.br/noticias/evento-online-debate-sobre-tendencias-marketing-e-tecnologia-2022",
+          "alcance": "Perfil/apresentação institucional consultado para a qualificação do apresentador; vínculo histórico e perfil atual não foram tratados como equivalentes automaticamente."
+        }
+      ],
+      "trilha": "crescimento",
+      "nivel": "Intermediário"
+    },
+    {
+      "id": "TblgzI2YzK0",
+      "video_id": "TblgzI2YzK0",
+      "url": "https://www.youtube.com/watch?v=TblgzI2YzK0",
+      "titulo": "Webinar | Marca Própria: Fortaleza em Tempos de Incerteza",
+      "fonte": "Fundação Getulio Vargas",
+      "canal": "FGV",
+      "channel_id": "UC8DhN1cJi0QklBQot5hv_kg",
+      "url_canal": "https://www.youtube.com/channel/UC8DhN1cJi0QklBQot5hv_kg",
+      "pagina_procedencia_oficial": "https://portal.fgv.br/",
+      "procedencia": {
+        "instituicao": "Fundação Getulio Vargas",
+        "pagina_oficial": "https://portal.fgv.br/",
+        "link_youtube_publicado_no_portal": "http://www.youtube.com/fgv",
+        "alias_https_verificado": "https://www.youtube.com/fgv",
+        "channel_id_confirmado": "UC8DhN1cJi0QklBQot5hv_kg",
+        "metodo": "Portal institucional HTTP 200 contém link /fgv; página pública HTTPS do alias retornou externalId igual ao canal aprovado.",
+        "em": "2026-11-06"
+      },
+      "data_publicacao": "2020-06-25",
+      "data_publicacao_iso": "2020-06-25T16:15:42-07:00",
+      "duracao_segundos": 6840,
+      "apresentador_equipe": "Antônio Sá; Maurício Morgado; Ana Paula Gilsogamo; Gerson Estevam da Cruz; Renato Stefanoni; Wilhelm Kauth",
+      "credenciais": "A FGV identifica Sá e Morgado como professores; Morgado coordena o FGVcev. Demais participantes são apresentados como pesquisadora da Mintel e dirigentes de Cencosud, Extrafarma e DIA, na época do evento.",
+      "fonte_credenciais": "https://www.youtube.com/watch?v=TblgzI2YzK0",
+      "idioma": "pt",
+      "verificacao_idioma": {
+        "criterio": "Título e descrição institucional em português; faixa pt listada no player quando disponível.",
+        "faixa_portugues_listada": true,
+        "falado_conferido_por_audicao": false,
+        "conteudo_ou_qualidade_da_legenda_revisados": false
+      },
+      "descricao": "O FGVcev anuncia painel sobre marcas próprias no varejo durante a pandemia. A composição acadêmica e executiva está documentada; declarações comerciais e conclusões do painel ainda precisam de exame integral.",
+      "descricao_base": "sinopse/descrição institucional e dados de apresentação; nenhuma síntese de conteúdo integral",
+      "trilha_proposta": "marcas",
+      "nivel_proposto": "Intermediário",
+      "rotulo": "Seleção institucional · metadados verificados",
+      "estado_editorial": "selecao_institucional",
+      "revisao_integral": false,
+      "revisao_audiovisual": false,
+      "transcricao_integral_consultada": false,
+      "evidencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=TblgzI2YzK0",
+          "tipo": "pagina_individual_oficial_youtube",
+          "alcance": "Título, videoDetails.channelId, autoria do canal, descrição institucional, datas em microformat, duração e lista de faixas de legenda. Não assistido ou ouvido integralmente."
+        },
+        {
+          "url": "https://portal.fgv.br/",
+          "tipo": "procedencia_do_canal",
+          "alcance": "Link público do portal ao alias oficial do YouTube, resolvido para o Channel ID informado."
+        }
+      ],
+      "verificado_em": "2026-11-06",
+      "reaproveitado_do_corpus_anterior": false,
+      "ressalvas": [
+        "Nível e trilha são propostas editoriais a partir dos metadados, não certificação da instituição.",
+        "Sem revisão audiovisual integral; conteúdo pode incluir introduções, vinhetas e avisos institucionais.",
+        "Material de contexto anterior: distinguir fundamentos de previsões, exemplos de pandemia e informações que podem ter envelhecido.",
+        "Há participação de executivos/fornecedores; preservar vínculo e possíveis interesses comerciais ao apresentar opiniões ou casos."
+      ],
+      "titulo_pt": "Webinar | Marca Própria: Fortaleza em Tempos de Incerteza",
+      "resumo": "O FGVcev anuncia painel sobre marcas próprias no varejo durante a pandemia. A composição acadêmica e executiva está documentada; declarações comerciais e conclusões do painel ainda precisam de exame integral.",
+      "contexto_consultado": "Consultados título, descrição institucional, identificação do canal, datas/duração e lista de faixas de legenda na página oficial do vídeo. Qualificação limitada à apresentação nominal feita pela própria instituição na descrição. Não foi consultado conteúdo audiovisual ou transcrição integral; não é resenha do vídeo.",
+      "credenciais_fontes": [
+        {
+          "url": "https://www.youtube.com/watch?v=TblgzI2YzK0",
+          "alcance": "Identifica nominalmente a equipe e os vínculos apresentados pela instituição na data do evento."
+        }
+      ],
+      "trilha": "marcas",
+      "nivel": "Intermediário"
+    },
+    {
+      "id": "lCrj-cRuXb4",
+      "video_id": "lCrj-cRuXb4",
+      "url": "https://www.youtube.com/watch?v=lCrj-cRuXb4",
+      "titulo": "Webinar | Inteligência artificial e marketing",
+      "fonte": "Fundação Getulio Vargas",
+      "canal": "FGV",
+      "channel_id": "UC8DhN1cJi0QklBQot5hv_kg",
+      "url_canal": "https://www.youtube.com/channel/UC8DhN1cJi0QklBQot5hv_kg",
+      "pagina_procedencia_oficial": "https://portal.fgv.br/",
+      "procedencia": {
+        "instituicao": "Fundação Getulio Vargas",
+        "pagina_oficial": "https://portal.fgv.br/",
+        "link_youtube_publicado_no_portal": "http://www.youtube.com/fgv",
+        "alias_https_verificado": "https://www.youtube.com/fgv",
+        "channel_id_confirmado": "UC8DhN1cJi0QklBQot5hv_kg",
+        "metodo": "Portal institucional HTTP 200 contém link /fgv; página pública HTTPS do alias retornou externalId igual ao canal aprovado.",
+        "em": "2026-11-06"
+      },
+      "data_publicacao": "2020-08-25",
+      "data_publicacao_iso": "2020-08-25T16:12:18-07:00",
+      "duracao_segundos": 7280,
+      "apresentador_equipe": "Rafael Coimbra; moderação de André Miceli",
+      "credenciais": "A descrição da FGV identifica Coimbra como professor do MBA em Marketing e Inteligência de Negócios Digitais e Miceli como coordenador; página institucional adicional confirma a docência de Coimbra.",
+      "fonte_credenciais": "https://portal.fgv.br/eventos/webinar-tecnologia-pos-pandemia",
+      "idioma": "pt",
+      "verificacao_idioma": {
+        "criterio": "Título e descrição institucional em português; faixa pt listada no player quando disponível.",
+        "faixa_portugues_listada": true,
+        "falado_conferido_por_audicao": false,
+        "conteudo_ou_qualidade_da_legenda_revisados": false
+      },
+      "descricao": "A sinopse do fórum anuncia impactos da IA nas atividades de marketing e colaboração entre profissionais e tecnologia. É registro de 2020; não certifica capacidades dos modelos atuais.",
+      "descricao_base": "sinopse/descrição institucional e dados de apresentação; nenhuma síntese de conteúdo integral",
+      "trilha_proposta": "gestao",
+      "nivel_proposto": "Intermediário",
+      "rotulo": "Seleção institucional · metadados verificados",
+      "estado_editorial": "selecao_institucional",
+      "revisao_integral": false,
+      "revisao_audiovisual": false,
+      "transcricao_integral_consultada": false,
+      "evidencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=lCrj-cRuXb4",
+          "tipo": "pagina_individual_oficial_youtube",
+          "alcance": "Título, videoDetails.channelId, autoria do canal, descrição institucional, datas em microformat, duração e lista de faixas de legenda. Não assistido ou ouvido integralmente."
+        },
+        {
+          "url": "https://portal.fgv.br/",
+          "tipo": "procedencia_do_canal",
+          "alcance": "Link público do portal ao alias oficial do YouTube, resolvido para o Channel ID informado."
+        },
+        {
+          "url": "https://portal.fgv.br/eventos/webinar-tecnologia-pos-pandemia",
+          "tipo": "pagina_institucional",
+          "alcance": "Perfil, apresentação ou notícia institucional usada para qualificação dos nomes indicados; não é prova de toda fala no vídeo."
+        }
+      ],
+      "verificado_em": "2026-11-06",
+      "reaproveitado_do_corpus_anterior": false,
+      "ressalvas": [
+        "Nível e trilha são propostas editoriais a partir dos metadados, não certificação da instituição.",
+        "Sem revisão audiovisual integral; conteúdo pode incluir introduções, vinhetas e avisos institucionais.",
+        "Material de contexto anterior: distinguir fundamentos de previsões, exemplos de pandemia e informações que podem ter envelhecido."
+      ],
+      "titulo_pt": "Webinar | Inteligência artificial e marketing",
+      "resumo": "A sinopse do fórum anuncia impactos da IA nas atividades de marketing e colaboração entre profissionais e tecnologia. É registro de 2020; não certifica capacidades dos modelos atuais.",
+      "contexto_consultado": "Consultados título, descrição institucional, identificação do canal, datas/duração e lista de faixas de legenda na página oficial do vídeo. Perfil ou notícia institucional adicional usado para confirmar a qualificação apresentada. Não foi consultado conteúdo audiovisual ou transcrição integral; não é resenha do vídeo.",
+      "credenciais_fontes": [
+        {
+          "url": "https://www.youtube.com/watch?v=lCrj-cRuXb4",
+          "alcance": "Identifica nominalmente a equipe e os vínculos apresentados pela instituição na data do evento."
+        },
+        {
+          "url": "https://portal.fgv.br/eventos/webinar-tecnologia-pos-pandemia",
+          "alcance": "Perfil/apresentação institucional consultado para a qualificação do apresentador; vínculo histórico e perfil atual não foram tratados como equivalentes automaticamente."
+        }
+      ],
+      "trilha": "gestao",
+      "nivel": "Intermediário"
+    },
+    {
+      "id": "h9e6DVORe1U",
+      "video_id": "h9e6DVORe1U",
+      "url": "https://www.youtube.com/watch?v=h9e6DVORe1U",
+      "titulo": "Desenvolvendo Customer Centricity agora e no futuro - Convidado: Professora Luciana Faluba",
+      "fonte": "Fundação Dom Cabral",
+      "canal": "Fundação Dom Cabral",
+      "channel_id": "UC1fHbk7N11bB8UnL4tYg26A",
+      "url_canal": "https://www.youtube.com/channel/UC1fHbk7N11bB8UnL4tYg26A",
+      "pagina_procedencia_oficial": "https://www.fdc.org.br/",
+      "procedencia": {
+        "instituicao": "Fundação Dom Cabral",
+        "pagina_oficial": "https://www.fdc.org.br/",
+        "link_youtube_publicado_no_portal": "https://www.youtube.com/user/FDCIdeas",
+        "alias_https_verificado": "https://www.youtube.com/user/FDCIdeas",
+        "channel_id_confirmado": "UC1fHbk7N11bB8UnL4tYg26A",
+        "metodo": "Portal institucional HTTP 200 contém link /user/FDCIdeas; página pública do alias retornou externalId igual ao canal aprovado.",
+        "em": "2026-11-06"
+      },
+      "data_publicacao": "2020-04-14",
+      "data_publicacao_iso": "2020-04-14T13:26:07-07:00",
+      "duracao_segundos": 3115,
+      "apresentador_equipe": "Luciana Faluba; apresentação de Thomaz Castilho",
+      "credenciais": "Professora e pesquisadora da FDC em Estratégia e Marketing, com PhD em Administração Estratégica e mestrado em Administração de Marketing pela UFMG.",
+      "fonte_credenciais": "https://www.fdc.org.br/corpo-docente/luciana-faluba",
+      "idioma": "pt",
+      "verificacao_idioma": {
+        "criterio": "Título e descrição institucional em português; faixa pt listada no player quando disponível.",
+        "faixa_portugues_listada": true,
+        "falado_conferido_por_audicao": false,
+        "conteudo_ou_qualidade_da_legenda_revisados": false
+      },
+      "descricao": "A descrição apresenta introdução à centralidade no cliente e ao início de uma estratégia digital. A escolha de nível considera a função introdutória anunciada, sem avaliar toda a profundidade do webinar.",
+      "descricao_base": "sinopse/descrição institucional e dados de apresentação; nenhuma síntese de conteúdo integral",
+      "trilha_proposta": "clientes",
+      "nivel_proposto": "Iniciante",
+      "rotulo": "Seleção institucional · metadados verificados",
+      "estado_editorial": "selecao_institucional",
+      "revisao_integral": false,
+      "revisao_audiovisual": false,
+      "transcricao_integral_consultada": false,
+      "evidencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=h9e6DVORe1U",
+          "tipo": "pagina_individual_oficial_youtube",
+          "alcance": "Título, videoDetails.channelId, autoria do canal, descrição institucional, datas em microformat, duração e lista de faixas de legenda. Não assistido ou ouvido integralmente."
+        },
+        {
+          "url": "https://www.fdc.org.br/",
+          "tipo": "procedencia_do_canal",
+          "alcance": "Link público do portal ao alias oficial do YouTube, resolvido para o Channel ID informado."
+        },
+        {
+          "url": "https://www.fdc.org.br/corpo-docente/luciana-faluba",
+          "tipo": "pagina_institucional",
+          "alcance": "Perfil, apresentação ou notícia institucional usada para qualificação dos nomes indicados; não é prova de toda fala no vídeo."
+        }
+      ],
+      "verificado_em": "2026-11-06",
+      "reaproveitado_do_corpus_anterior": false,
+      "ressalvas": [
+        "Nível e trilha são propostas editoriais a partir dos metadados, não certificação da instituição.",
+        "Sem revisão audiovisual integral; conteúdo pode incluir introduções, vinhetas e avisos institucionais.",
+        "Material de contexto anterior: distinguir fundamentos de previsões, exemplos de pandemia e informações que podem ter envelhecido."
+      ],
+      "titulo_pt": "Desenvolvendo centralidade no cliente agora e no futuro — Professora Luciana Faluba",
+      "resumo": "A descrição apresenta introdução à centralidade no cliente e ao início de uma estratégia digital. A escolha de nível considera a função introdutória anunciada, sem avaliar toda a profundidade do webinar.",
+      "contexto_consultado": "Consultados título, descrição institucional, identificação do canal, datas/duração e lista de faixas de legenda na página oficial do vídeo. Perfil ou notícia institucional adicional usado para confirmar a qualificação apresentada. Não foi consultado conteúdo audiovisual ou transcrição integral; não é resenha do vídeo.",
+      "credenciais_fontes": [
+        {
+          "url": "https://www.youtube.com/watch?v=h9e6DVORe1U",
+          "alcance": "Identifica nominalmente a equipe e os vínculos apresentados pela instituição na data do evento."
+        },
+        {
+          "url": "https://www.fdc.org.br/corpo-docente/luciana-faluba",
+          "alcance": "Perfil/apresentação institucional consultado para a qualificação do apresentador; vínculo histórico e perfil atual não foram tratados como equivalentes automaticamente."
+        }
+      ],
+      "trilha": "clientes",
+      "nivel": "Iniciante"
+    },
+    {
+      "id": "VzTxLKRR6gU",
+      "video_id": "VzTxLKRR6gU",
+      "url": "https://www.youtube.com/watch?v=VzTxLKRR6gU",
+      "titulo": "Estratégias e Riscos nos Canais de Distribuição em Tempo de Crise",
+      "fonte": "Fundação Dom Cabral",
+      "canal": "Fundação Dom Cabral",
+      "channel_id": "UC1fHbk7N11bB8UnL4tYg26A",
+      "url_canal": "https://www.youtube.com/channel/UC1fHbk7N11bB8UnL4tYg26A",
+      "pagina_procedencia_oficial": "https://www.fdc.org.br/",
+      "procedencia": {
+        "instituicao": "Fundação Dom Cabral",
+        "pagina_oficial": "https://www.fdc.org.br/",
+        "link_youtube_publicado_no_portal": "https://www.youtube.com/user/FDCIdeas",
+        "alias_https_verificado": "https://www.youtube.com/user/FDCIdeas",
+        "channel_id_confirmado": "UC1fHbk7N11bB8UnL4tYg26A",
+        "metodo": "Portal institucional HTTP 200 contém link /user/FDCIdeas; página pública do alias retornou externalId igual ao canal aprovado.",
+        "em": "2026-11-06"
+      },
+      "data_publicacao": "2020-03-30",
+      "data_publicacao_iso": "2020-03-30T13:43:59-07:00",
+      "duracao_segundos": 3732,
+      "apresentador_equipe": "Paulo Resende; Avenor Teixeira; apresentação de Bárbara Aires",
+      "credenciais": "Resende é professor de operações e logística da FDC, doutor pela University of Illinois. A descrição apresenta Teixeira como diretor de operações e logística da Martins S/A na época.",
+      "fonte_credenciais": "https://www.fdc.org.br/corpo-docente/paulo-resende",
+      "idioma": "pt",
+      "verificacao_idioma": {
+        "criterio": "Título e descrição institucional em português; faixa pt listada no player quando disponível.",
+        "faixa_portugues_listada": true,
+        "falado_conferido_por_audicao": false,
+        "conteudo_ou_qualidade_da_legenda_revisados": false
+      },
+      "descricao": "A sinopse anuncia discussão sobre distribuição, abastecimento e riscos durante a crise de 2020. O foco proposto é examinar canais e operações; diagnósticos daquele momento não são tratados como atuais.",
+      "descricao_base": "sinopse/descrição institucional e dados de apresentação; nenhuma síntese de conteúdo integral",
+      "trilha_proposta": "estrategia",
+      "nivel_proposto": "Intermediário",
+      "rotulo": "Seleção institucional · metadados verificados",
+      "estado_editorial": "selecao_institucional",
+      "revisao_integral": false,
+      "revisao_audiovisual": false,
+      "transcricao_integral_consultada": false,
+      "evidencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=VzTxLKRR6gU",
+          "tipo": "pagina_individual_oficial_youtube",
+          "alcance": "Título, videoDetails.channelId, autoria do canal, descrição institucional, datas em microformat, duração e lista de faixas de legenda. Não assistido ou ouvido integralmente."
+        },
+        {
+          "url": "https://www.fdc.org.br/",
+          "tipo": "procedencia_do_canal",
+          "alcance": "Link público do portal ao alias oficial do YouTube, resolvido para o Channel ID informado."
+        },
+        {
+          "url": "https://www.fdc.org.br/corpo-docente/paulo-resende",
+          "tipo": "pagina_institucional",
+          "alcance": "Perfil, apresentação ou notícia institucional usada para qualificação dos nomes indicados; não é prova de toda fala no vídeo."
+        }
+      ],
+      "verificado_em": "2026-11-06",
+      "reaproveitado_do_corpus_anterior": false,
+      "ressalvas": [
+        "Nível e trilha são propostas editoriais a partir dos metadados, não certificação da instituição.",
+        "Sem revisão audiovisual integral; conteúdo pode incluir introduções, vinhetas e avisos institucionais.",
+        "Material de contexto anterior: distinguir fundamentos de previsões, exemplos de pandemia e informações que podem ter envelhecido."
+      ],
+      "titulo_pt": "Estratégias e Riscos nos Canais de Distribuição em Tempo de Crise",
+      "resumo": "A sinopse anuncia discussão sobre distribuição, abastecimento e riscos durante a crise de 2020. O foco proposto é examinar canais e operações; diagnósticos daquele momento não são tratados como atuais.",
+      "contexto_consultado": "Consultados título, descrição institucional, identificação do canal, datas/duração e lista de faixas de legenda na página oficial do vídeo. Perfil ou notícia institucional adicional usado para confirmar a qualificação apresentada. Não foi consultado conteúdo audiovisual ou transcrição integral; não é resenha do vídeo.",
+      "credenciais_fontes": [
+        {
+          "url": "https://www.youtube.com/watch?v=VzTxLKRR6gU",
+          "alcance": "Identifica nominalmente a equipe e os vínculos apresentados pela instituição na data do evento."
+        },
+        {
+          "url": "https://www.fdc.org.br/corpo-docente/paulo-resende",
+          "alcance": "Perfil/apresentação institucional consultado para a qualificação do apresentador; vínculo histórico e perfil atual não foram tratados como equivalentes automaticamente."
+        }
+      ],
+      "trilha": "estrategia",
+      "nivel": "Intermediário"
+    },
+    {
+      "id": "NXx7AUksxuI",
+      "video_id": "NXx7AUksxuI",
+      "url": "https://www.youtube.com/watch?v=NXx7AUksxuI",
+      "titulo": "O impacto da pandemia na reputação das empresas brasileiras",
+      "fonte": "Fundação Dom Cabral",
+      "canal": "Fundação Dom Cabral",
+      "channel_id": "UC1fHbk7N11bB8UnL4tYg26A",
+      "url_canal": "https://www.youtube.com/channel/UC1fHbk7N11bB8UnL4tYg26A",
+      "pagina_procedencia_oficial": "https://www.fdc.org.br/",
+      "procedencia": {
+        "instituicao": "Fundação Dom Cabral",
+        "pagina_oficial": "https://www.fdc.org.br/",
+        "link_youtube_publicado_no_portal": "https://www.youtube.com/user/FDCIdeas",
+        "alias_https_verificado": "https://www.youtube.com/user/FDCIdeas",
+        "channel_id_confirmado": "UC1fHbk7N11bB8UnL4tYg26A",
+        "metodo": "Portal institucional HTTP 200 contém link /user/FDCIdeas; página pública do alias retornou externalId igual ao canal aprovado.",
+        "em": "2026-11-06"
+      },
+      "data_publicacao": "2020-06-25",
+      "data_publicacao_iso": "2020-06-25T13:06:57-07:00",
+      "duracao_segundos": 3570,
+      "apresentador_equipe": "Marcus Dias; Ana Luisa Almeida; apresentação de Thomaz Castilho",
+      "credenciais": "A descrição oficial identifica Dias como vice-presidente e líder de mercado da RepTrak no Brasil e Almeida como professora da FDC em reputação e estratégia de imagem, à época.",
+      "fonte_credenciais": "https://www.youtube.com/watch?v=NXx7AUksxuI",
+      "idioma": "pt",
+      "verificacao_idioma": {
+        "criterio": "Título e descrição institucional em português; faixa pt listada no player quando disponível.",
+        "faixa_portugues_listada": true,
+        "falado_conferido_por_audicao": false,
+        "conteudo_ou_qualidade_da_legenda_revisados": false
+      },
+      "descricao": "A FDC anuncia discussão de reputação corporativa sob a pandemia e outras mudanças sociais. Credenciais e contexto estão identificados; não houve auditoria de indicadores ou do método do fornecedor convidado.",
+      "descricao_base": "sinopse/descrição institucional e dados de apresentação; nenhuma síntese de conteúdo integral",
+      "trilha_proposta": "marcas",
+      "nivel_proposto": "Intermediário",
+      "rotulo": "Seleção institucional · metadados verificados",
+      "estado_editorial": "selecao_institucional",
+      "revisao_integral": false,
+      "revisao_audiovisual": false,
+      "transcricao_integral_consultada": false,
+      "evidencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=NXx7AUksxuI",
+          "tipo": "pagina_individual_oficial_youtube",
+          "alcance": "Título, videoDetails.channelId, autoria do canal, descrição institucional, datas em microformat, duração e lista de faixas de legenda. Não assistido ou ouvido integralmente."
+        },
+        {
+          "url": "https://www.fdc.org.br/",
+          "tipo": "procedencia_do_canal",
+          "alcance": "Link público do portal ao alias oficial do YouTube, resolvido para o Channel ID informado."
+        }
+      ],
+      "verificado_em": "2026-11-06",
+      "reaproveitado_do_corpus_anterior": false,
+      "ressalvas": [
+        "Nível e trilha são propostas editoriais a partir dos metadados, não certificação da instituição.",
+        "Sem revisão audiovisual integral; conteúdo pode incluir introduções, vinhetas e avisos institucionais.",
+        "Material de contexto anterior: distinguir fundamentos de previsões, exemplos de pandemia e informações que podem ter envelhecido.",
+        "Há participação de executivos/fornecedores; preservar vínculo e possíveis interesses comerciais ao apresentar opiniões ou casos."
+      ],
+      "titulo_pt": "O impacto da pandemia na reputação das empresas brasileiras",
+      "resumo": "A FDC anuncia discussão de reputação corporativa sob a pandemia e outras mudanças sociais. Credenciais e contexto estão identificados; não houve auditoria de indicadores ou do método do fornecedor convidado.",
+      "contexto_consultado": "Consultados título, descrição institucional, identificação do canal, datas/duração e lista de faixas de legenda na página oficial do vídeo. Qualificação limitada à apresentação nominal feita pela própria instituição na descrição. Não foi consultado conteúdo audiovisual ou transcrição integral; não é resenha do vídeo.",
+      "credenciais_fontes": [
+        {
+          "url": "https://www.youtube.com/watch?v=NXx7AUksxuI",
+          "alcance": "Identifica nominalmente a equipe e os vínculos apresentados pela instituição na data do evento."
+        }
+      ],
+      "trilha": "marcas",
+      "nivel": "Intermediário"
+    },
+    {
+      "id": "vxZNpazj-IU",
+      "video_id": "vxZNpazj-IU",
+      "url": "https://www.youtube.com/watch?v=vxZNpazj-IU",
+      "titulo": "Inovação na Prática - 4o. Episódio: Proposta de Valor",
+      "fonte": "Fundação Dom Cabral",
+      "canal": "Fundação Dom Cabral",
+      "channel_id": "UC1fHbk7N11bB8UnL4tYg26A",
+      "url_canal": "https://www.youtube.com/channel/UC1fHbk7N11bB8UnL4tYg26A",
+      "pagina_procedencia_oficial": "https://www.fdc.org.br/",
+      "procedencia": {
+        "instituicao": "Fundação Dom Cabral",
+        "pagina_oficial": "https://www.fdc.org.br/",
+        "link_youtube_publicado_no_portal": "https://www.youtube.com/user/FDCIdeas",
+        "alias_https_verificado": "https://www.youtube.com/user/FDCIdeas",
+        "channel_id_confirmado": "UC1fHbk7N11bB8UnL4tYg26A",
+        "metodo": "Portal institucional HTTP 200 contém link /user/FDCIdeas; página pública do alias retornou externalId igual ao canal aprovado.",
+        "em": "2026-11-06"
+      },
+      "data_publicacao": "2021-10-13",
+      "data_publicacao_iso": "2021-10-13T14:00:17-07:00",
+      "duracao_segundos": 257,
+      "apresentador_equipe": "Hugo Ferreira Braga Tadeu",
+      "credenciais": "Professor e pesquisador da FDC em inovação; perfil institucional confirma doutorado em Engenharia Mecânica e pós-doutorado.",
+      "fonte_credenciais": "https://www.fdc.org.br/corpo-docente/hugo-tadeu",
+      "idioma": "pt",
+      "verificacao_idioma": {
+        "criterio": "Título e descrição institucional em português; faixa pt listada no player quando disponível.",
+        "faixa_portugues_listada": true,
+        "falado_conferido_por_audicao": false,
+        "conteudo_ou_qualidade_da_legenda_revisados": false
+      },
+      "descricao": "A sinopse anuncia proposta de valor e governança para inovação em um episódio didático curto. Não se conclui pela efetividade da abordagem apenas a partir da apresentação editorial.",
+      "descricao_base": "sinopse/descrição institucional e dados de apresentação; nenhuma síntese de conteúdo integral",
+      "trilha_proposta": "fundamentos",
+      "nivel_proposto": "Iniciante",
+      "rotulo": "Seleção institucional · metadados verificados",
+      "estado_editorial": "selecao_institucional",
+      "revisao_integral": false,
+      "revisao_audiovisual": false,
+      "transcricao_integral_consultada": false,
+      "evidencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=vxZNpazj-IU",
+          "tipo": "pagina_individual_oficial_youtube",
+          "alcance": "Título, videoDetails.channelId, autoria do canal, descrição institucional, datas em microformat, duração e lista de faixas de legenda. Não assistido ou ouvido integralmente."
+        },
+        {
+          "url": "https://www.fdc.org.br/",
+          "tipo": "procedencia_do_canal",
+          "alcance": "Link público do portal ao alias oficial do YouTube, resolvido para o Channel ID informado."
+        },
+        {
+          "url": "https://www.fdc.org.br/corpo-docente/hugo-tadeu",
+          "tipo": "pagina_institucional",
+          "alcance": "Perfil, apresentação ou notícia institucional usada para qualificação dos nomes indicados; não é prova de toda fala no vídeo."
+        }
+      ],
+      "verificado_em": "2026-11-06",
+      "reaproveitado_do_corpus_anterior": false,
+      "ressalvas": [
+        "Nível e trilha são propostas editoriais a partir dos metadados, não certificação da instituição.",
+        "Sem revisão audiovisual integral; conteúdo pode incluir introduções, vinhetas e avisos institucionais.",
+        "Material de contexto anterior: distinguir fundamentos de previsões, exemplos de pandemia e informações que podem ter envelhecido."
+      ],
+      "titulo_pt": "Inovação na Prática - 4o. Episódio: Proposta de Valor",
+      "resumo": "A sinopse anuncia proposta de valor e governança para inovação em um episódio didático curto. Não se conclui pela efetividade da abordagem apenas a partir da apresentação editorial.",
+      "contexto_consultado": "Consultados título, descrição institucional, identificação do canal, datas/duração e lista de faixas de legenda na página oficial do vídeo. Perfil ou notícia institucional adicional usado para confirmar a qualificação apresentada. Não foi consultado conteúdo audiovisual ou transcrição integral; não é resenha do vídeo.",
+      "credenciais_fontes": [
+        {
+          "url": "https://www.youtube.com/watch?v=vxZNpazj-IU",
+          "alcance": "Identifica nominalmente a equipe e os vínculos apresentados pela instituição na data do evento."
+        },
+        {
+          "url": "https://www.fdc.org.br/corpo-docente/hugo-tadeu",
+          "alcance": "Perfil/apresentação institucional consultado para a qualificação do apresentador; vínculo histórico e perfil atual não foram tratados como equivalentes automaticamente."
+        }
+      ],
+      "trilha": "fundamentos",
+      "nivel": "Iniciante"
+    },
+    {
+      "id": "Rv_upDfK9xQ",
+      "video_id": "Rv_upDfK9xQ",
+      "url": "https://www.youtube.com/watch?v=Rv_upDfK9xQ",
+      "titulo": "Inovação na Prática - 5o. Episódio: Novos Modelos de Negócio",
+      "fonte": "Fundação Dom Cabral",
+      "canal": "Fundação Dom Cabral",
+      "channel_id": "UC1fHbk7N11bB8UnL4tYg26A",
+      "url_canal": "https://www.youtube.com/channel/UC1fHbk7N11bB8UnL4tYg26A",
+      "pagina_procedencia_oficial": "https://www.fdc.org.br/",
+      "procedencia": {
+        "instituicao": "Fundação Dom Cabral",
+        "pagina_oficial": "https://www.fdc.org.br/",
+        "link_youtube_publicado_no_portal": "https://www.youtube.com/user/FDCIdeas",
+        "alias_https_verificado": "https://www.youtube.com/user/FDCIdeas",
+        "channel_id_confirmado": "UC1fHbk7N11bB8UnL4tYg26A",
+        "metodo": "Portal institucional HTTP 200 contém link /user/FDCIdeas; página pública do alias retornou externalId igual ao canal aprovado.",
+        "em": "2026-11-06"
+      },
+      "data_publicacao": "2021-10-20",
+      "data_publicacao_iso": "2021-10-20T14:00:12-07:00",
+      "duracao_segundos": 273,
+      "apresentador_equipe": "Hugo Ferreira Braga Tadeu",
+      "credenciais": "Professor e pesquisador da FDC em inovação; perfil institucional confirma doutorado em Engenharia Mecânica e pós-doutorado.",
+      "fonte_credenciais": "https://www.fdc.org.br/corpo-docente/hugo-tadeu",
+      "idioma": "pt",
+      "verificacao_idioma": {
+        "criterio": "Título e descrição institucional em português; faixa pt listada no player quando disponível.",
+        "faixa_portugues_listada": true,
+        "falado_conferido_por_audicao": false,
+        "conteudo_ou_qualidade_da_legenda_revisados": false
+      },
+      "descricao": "A descrição apresenta novos modelos de negócio como tema da estratégia de inovação. O registro é de um episódio da série FDC, sem avaliação audiovisual ou exemplos empresariais revisados.",
+      "descricao_base": "sinopse/descrição institucional e dados de apresentação; nenhuma síntese de conteúdo integral",
+      "trilha_proposta": "estrategia",
+      "nivel_proposto": "Iniciante",
+      "rotulo": "Seleção institucional · metadados verificados",
+      "estado_editorial": "selecao_institucional",
+      "revisao_integral": false,
+      "revisao_audiovisual": false,
+      "transcricao_integral_consultada": false,
+      "evidencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=Rv_upDfK9xQ",
+          "tipo": "pagina_individual_oficial_youtube",
+          "alcance": "Título, videoDetails.channelId, autoria do canal, descrição institucional, datas em microformat, duração e lista de faixas de legenda. Não assistido ou ouvido integralmente."
+        },
+        {
+          "url": "https://www.fdc.org.br/",
+          "tipo": "procedencia_do_canal",
+          "alcance": "Link público do portal ao alias oficial do YouTube, resolvido para o Channel ID informado."
+        },
+        {
+          "url": "https://www.fdc.org.br/corpo-docente/hugo-tadeu",
+          "tipo": "pagina_institucional",
+          "alcance": "Perfil, apresentação ou notícia institucional usada para qualificação dos nomes indicados; não é prova de toda fala no vídeo."
+        }
+      ],
+      "verificado_em": "2026-11-06",
+      "reaproveitado_do_corpus_anterior": false,
+      "ressalvas": [
+        "Nível e trilha são propostas editoriais a partir dos metadados, não certificação da instituição.",
+        "Sem revisão audiovisual integral; conteúdo pode incluir introduções, vinhetas e avisos institucionais.",
+        "Material de contexto anterior: distinguir fundamentos de previsões, exemplos de pandemia e informações que podem ter envelhecido."
+      ],
+      "titulo_pt": "Inovação na Prática - 5o. Episódio: Novos Modelos de Negócio",
+      "resumo": "A descrição apresenta novos modelos de negócio como tema da estratégia de inovação. O registro é de um episódio da série FDC, sem avaliação audiovisual ou exemplos empresariais revisados.",
+      "contexto_consultado": "Consultados título, descrição institucional, identificação do canal, datas/duração e lista de faixas de legenda na página oficial do vídeo. Perfil ou notícia institucional adicional usado para confirmar a qualificação apresentada. Não foi consultado conteúdo audiovisual ou transcrição integral; não é resenha do vídeo.",
+      "credenciais_fontes": [
+        {
+          "url": "https://www.youtube.com/watch?v=Rv_upDfK9xQ",
+          "alcance": "Identifica nominalmente a equipe e os vínculos apresentados pela instituição na data do evento."
+        },
+        {
+          "url": "https://www.fdc.org.br/corpo-docente/hugo-tadeu",
+          "alcance": "Perfil/apresentação institucional consultado para a qualificação do apresentador; vínculo histórico e perfil atual não foram tratados como equivalentes automaticamente."
+        }
+      ],
+      "trilha": "estrategia",
+      "nivel": "Iniciante"
+    },
+    {
+      "id": "wQHGGtfZImg",
+      "video_id": "wQHGGtfZImg",
+      "url": "https://www.youtube.com/watch?v=wQHGGtfZImg",
+      "titulo": "Inovação na Prática - 10o episódio: Conclusão e métricas",
+      "fonte": "Fundação Dom Cabral",
+      "canal": "Fundação Dom Cabral",
+      "channel_id": "UC1fHbk7N11bB8UnL4tYg26A",
+      "url_canal": "https://www.youtube.com/channel/UC1fHbk7N11bB8UnL4tYg26A",
+      "pagina_procedencia_oficial": "https://www.fdc.org.br/",
+      "procedencia": {
+        "instituicao": "Fundação Dom Cabral",
+        "pagina_oficial": "https://www.fdc.org.br/",
+        "link_youtube_publicado_no_portal": "https://www.youtube.com/user/FDCIdeas",
+        "alias_https_verificado": "https://www.youtube.com/user/FDCIdeas",
+        "channel_id_confirmado": "UC1fHbk7N11bB8UnL4tYg26A",
+        "metodo": "Portal institucional HTTP 200 contém link /user/FDCIdeas; página pública do alias retornou externalId igual ao canal aprovado.",
+        "em": "2026-11-06"
+      },
+      "data_publicacao": "2021-11-24",
+      "data_publicacao_iso": "2021-11-24T13:00:10-08:00",
+      "duracao_segundos": 401,
+      "apresentador_equipe": "Hugo Ferreira Braga Tadeu",
+      "credenciais": "Professor e pesquisador da FDC em inovação; perfil institucional confirma doutorado em Engenharia Mecânica e pós-doutorado.",
+      "fonte_credenciais": "https://www.fdc.org.br/corpo-docente/hugo-tadeu",
+      "idioma": "pt",
+      "verificacao_idioma": {
+        "criterio": "Título e descrição institucional em português; faixa pt listada no player quando disponível.",
+        "faixa_portugues_listada": true,
+        "falado_conferido_por_audicao": false,
+        "conteudo_ou_qualidade_da_legenda_revisados": false
+      },
+      "descricao": "A descrição anuncia interpretação de métricas e resultados de inovação para orientar melhorias. É uma seleção introdutória pelo tema, sem alegar domínio de fórmulas ou técnicas demonstradas no vídeo.",
+      "descricao_base": "sinopse/descrição institucional e dados de apresentação; nenhuma síntese de conteúdo integral",
+      "trilha_proposta": "mensuracao",
+      "nivel_proposto": "Iniciante",
+      "rotulo": "Seleção institucional · metadados verificados",
+      "estado_editorial": "selecao_institucional",
+      "revisao_integral": false,
+      "revisao_audiovisual": false,
+      "transcricao_integral_consultada": false,
+      "evidencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=wQHGGtfZImg",
+          "tipo": "pagina_individual_oficial_youtube",
+          "alcance": "Título, videoDetails.channelId, autoria do canal, descrição institucional, datas em microformat, duração e lista de faixas de legenda. Não assistido ou ouvido integralmente."
+        },
+        {
+          "url": "https://www.fdc.org.br/",
+          "tipo": "procedencia_do_canal",
+          "alcance": "Link público do portal ao alias oficial do YouTube, resolvido para o Channel ID informado."
+        },
+        {
+          "url": "https://www.fdc.org.br/corpo-docente/hugo-tadeu",
+          "tipo": "pagina_institucional",
+          "alcance": "Perfil, apresentação ou notícia institucional usada para qualificação dos nomes indicados; não é prova de toda fala no vídeo."
+        }
+      ],
+      "verificado_em": "2026-11-06",
+      "reaproveitado_do_corpus_anterior": false,
+      "ressalvas": [
+        "Nível e trilha são propostas editoriais a partir dos metadados, não certificação da instituição.",
+        "Sem revisão audiovisual integral; conteúdo pode incluir introduções, vinhetas e avisos institucionais.",
+        "Material de contexto anterior: distinguir fundamentos de previsões, exemplos de pandemia e informações que podem ter envelhecido."
+      ],
+      "titulo_pt": "Inovação na Prática - 10o episódio: Conclusão e métricas",
+      "resumo": "A descrição anuncia interpretação de métricas e resultados de inovação para orientar melhorias. É uma seleção introdutória pelo tema, sem alegar domínio de fórmulas ou técnicas demonstradas no vídeo.",
+      "contexto_consultado": "Consultados título, descrição institucional, identificação do canal, datas/duração e lista de faixas de legenda na página oficial do vídeo. Perfil ou notícia institucional adicional usado para confirmar a qualificação apresentada. Não foi consultado conteúdo audiovisual ou transcrição integral; não é resenha do vídeo.",
+      "credenciais_fontes": [
+        {
+          "url": "https://www.youtube.com/watch?v=wQHGGtfZImg",
+          "alcance": "Identifica nominalmente a equipe e os vínculos apresentados pela instituição na data do evento."
+        },
+        {
+          "url": "https://www.fdc.org.br/corpo-docente/hugo-tadeu",
+          "alcance": "Perfil/apresentação institucional consultado para a qualificação do apresentador; vínculo histórico e perfil atual não foram tratados como equivalentes automaticamente."
+        }
+      ],
+      "trilha": "mensuracao",
+      "nivel": "Iniciante"
+    },
+    {
+      "id": "44Vp9tf0MYQ",
+      "video_id": "44Vp9tf0MYQ",
+      "url": "https://www.youtube.com/watch?v=44Vp9tf0MYQ",
+      "titulo": "Inovação na Prática - 3o. Episódio: Cultura e Gestão",
+      "fonte": "Fundação Dom Cabral",
+      "canal": "Fundação Dom Cabral",
+      "channel_id": "UC1fHbk7N11bB8UnL4tYg26A",
+      "url_canal": "https://www.youtube.com/channel/UC1fHbk7N11bB8UnL4tYg26A",
+      "pagina_procedencia_oficial": "https://www.fdc.org.br/",
+      "procedencia": {
+        "instituicao": "Fundação Dom Cabral",
+        "pagina_oficial": "https://www.fdc.org.br/",
+        "link_youtube_publicado_no_portal": "https://www.youtube.com/user/FDCIdeas",
+        "alias_https_verificado": "https://www.youtube.com/user/FDCIdeas",
+        "channel_id_confirmado": "UC1fHbk7N11bB8UnL4tYg26A",
+        "metodo": "Portal institucional HTTP 200 contém link /user/FDCIdeas; página pública do alias retornou externalId igual ao canal aprovado.",
+        "em": "2026-11-06"
+      },
+      "data_publicacao": "2021-10-06",
+      "data_publicacao_iso": "2021-10-06T14:00:12-07:00",
+      "duracao_segundos": 257,
+      "apresentador_equipe": "Hugo Ferreira Braga Tadeu",
+      "credenciais": "Professor e pesquisador da FDC em inovação; perfil institucional confirma doutorado em Engenharia Mecânica e pós-doutorado.",
+      "fonte_credenciais": "https://www.fdc.org.br/corpo-docente/hugo-tadeu",
+      "idioma": "pt",
+      "verificacao_idioma": {
+        "criterio": "Título e descrição institucional em português; faixa pt listada no player quando disponível.",
+        "faixa_portugues_listada": true,
+        "falado_conferido_por_audicao": false,
+        "conteudo_ou_qualidade_da_legenda_revisados": false
+      },
+      "descricao": "A descrição anuncia cultura, equipe e gestão de pessoas no processo de inovação. Material selecionado pela adequação administrativa e pela identificação institucional do professor.",
+      "descricao_base": "sinopse/descrição institucional e dados de apresentação; nenhuma síntese de conteúdo integral",
+      "trilha_proposta": "gestao",
+      "nivel_proposto": "Iniciante",
+      "rotulo": "Seleção institucional · metadados verificados",
+      "estado_editorial": "selecao_institucional",
+      "revisao_integral": false,
+      "revisao_audiovisual": false,
+      "transcricao_integral_consultada": false,
+      "evidencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=44Vp9tf0MYQ",
+          "tipo": "pagina_individual_oficial_youtube",
+          "alcance": "Título, videoDetails.channelId, autoria do canal, descrição institucional, datas em microformat, duração e lista de faixas de legenda. Não assistido ou ouvido integralmente."
+        },
+        {
+          "url": "https://www.fdc.org.br/",
+          "tipo": "procedencia_do_canal",
+          "alcance": "Link público do portal ao alias oficial do YouTube, resolvido para o Channel ID informado."
+        },
+        {
+          "url": "https://www.fdc.org.br/corpo-docente/hugo-tadeu",
+          "tipo": "pagina_institucional",
+          "alcance": "Perfil, apresentação ou notícia institucional usada para qualificação dos nomes indicados; não é prova de toda fala no vídeo."
+        }
+      ],
+      "verificado_em": "2026-11-06",
+      "reaproveitado_do_corpus_anterior": false,
+      "ressalvas": [
+        "Nível e trilha são propostas editoriais a partir dos metadados, não certificação da instituição.",
+        "Sem revisão audiovisual integral; conteúdo pode incluir introduções, vinhetas e avisos institucionais.",
+        "Material de contexto anterior: distinguir fundamentos de previsões, exemplos de pandemia e informações que podem ter envelhecido."
+      ],
+      "titulo_pt": "Inovação na Prática - 3o. Episódio: Cultura e Gestão",
+      "resumo": "A descrição anuncia cultura, equipe e gestão de pessoas no processo de inovação. Material selecionado pela adequação administrativa e pela identificação institucional do professor.",
+      "contexto_consultado": "Consultados título, descrição institucional, identificação do canal, datas/duração e lista de faixas de legenda na página oficial do vídeo. Perfil ou notícia institucional adicional usado para confirmar a qualificação apresentada. Não foi consultado conteúdo audiovisual ou transcrição integral; não é resenha do vídeo.",
+      "credenciais_fontes": [
+        {
+          "url": "https://www.youtube.com/watch?v=44Vp9tf0MYQ",
+          "alcance": "Identifica nominalmente a equipe e os vínculos apresentados pela instituição na data do evento."
+        },
+        {
+          "url": "https://www.fdc.org.br/corpo-docente/hugo-tadeu",
+          "alcance": "Perfil/apresentação institucional consultado para a qualificação do apresentador; vínculo histórico e perfil atual não foram tratados como equivalentes automaticamente."
+        }
+      ],
+      "trilha": "gestao",
+      "nivel": "Iniciante"
+    },
+    {
+      "id": "xJqF80vrrK0",
+      "video_id": "xJqF80vrrK0",
+      "url": "https://www.youtube.com/watch?v=xJqF80vrrK0",
+      "titulo": "Blindagem digital do cliente",
+      "fonte": "Fundação Dom Cabral",
+      "canal": "Fundação Dom Cabral",
+      "channel_id": "UC1fHbk7N11bB8UnL4tYg26A",
+      "url_canal": "https://www.youtube.com/channel/UC1fHbk7N11bB8UnL4tYg26A",
+      "pagina_procedencia_oficial": "https://www.fdc.org.br/",
+      "procedencia": {
+        "instituicao": "Fundação Dom Cabral",
+        "pagina_oficial": "https://www.fdc.org.br/",
+        "link_youtube_publicado_no_portal": "https://www.youtube.com/user/FDCIdeas",
+        "alias_https_verificado": "https://www.youtube.com/user/FDCIdeas",
+        "channel_id_confirmado": "UC1fHbk7N11bB8UnL4tYg26A",
+        "metodo": "Portal institucional HTTP 200 contém link /user/FDCIdeas; página pública do alias retornou externalId igual ao canal aprovado.",
+        "em": "2026-11-06"
+      },
+      "data_publicacao": "2020-06-17",
+      "data_publicacao_iso": "2020-06-17T11:01:41-07:00",
+      "duracao_segundos": 201,
+      "apresentador_equipe": "Áurea Ribeiro",
+      "credenciais": "Professora e pesquisadora da FDC em marketing, estratégia e relações B2B; atuação confirmada em perfil institucional.",
+      "fonte_credenciais": "https://posead.fdc.org.br/professores/aurea-helena-puga-ribeiro",
+      "idioma": "pt",
+      "verificacao_idioma": {
+        "criterio": "Título e descrição institucional em português; faixa pt listada no player quando disponível.",
+        "faixa_portugues_listada": true,
+        "falado_conferido_por_audicao": false,
+        "conteudo_ou_qualidade_da_legenda_revisados": false
+      },
+      "descricao": "A sinopse apresenta uma metodologia de relacionamento B2B apoiada em valor ao cliente, digitalização e aprendizagem. Não se promete fidelização ou retorno: esses efeitos não foram verificados.",
+      "descricao_base": "sinopse/descrição institucional e dados de apresentação; nenhuma síntese de conteúdo integral",
+      "trilha_proposta": "clientes",
+      "nivel_proposto": "Intermediário",
+      "rotulo": "Seleção institucional · metadados verificados",
+      "estado_editorial": "selecao_institucional",
+      "revisao_integral": false,
+      "revisao_audiovisual": false,
+      "transcricao_integral_consultada": false,
+      "evidencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=xJqF80vrrK0",
+          "tipo": "pagina_individual_oficial_youtube",
+          "alcance": "Título, videoDetails.channelId, autoria do canal, descrição institucional, datas em microformat, duração e lista de faixas de legenda. Não assistido ou ouvido integralmente."
+        },
+        {
+          "url": "https://www.fdc.org.br/",
+          "tipo": "procedencia_do_canal",
+          "alcance": "Link público do portal ao alias oficial do YouTube, resolvido para o Channel ID informado."
+        },
+        {
+          "url": "https://posead.fdc.org.br/professores/aurea-helena-puga-ribeiro",
+          "tipo": "pagina_institucional",
+          "alcance": "Perfil, apresentação ou notícia institucional usada para qualificação dos nomes indicados; não é prova de toda fala no vídeo."
+        }
+      ],
+      "verificado_em": "2026-11-06",
+      "reaproveitado_do_corpus_anterior": false,
+      "ressalvas": [
+        "Nível e trilha são propostas editoriais a partir dos metadados, não certificação da instituição.",
+        "Sem revisão audiovisual integral; conteúdo pode incluir introduções, vinhetas e avisos institucionais.",
+        "Material de contexto anterior: distinguir fundamentos de previsões, exemplos de pandemia e informações que podem ter envelhecido."
+      ],
+      "titulo_pt": "Blindagem digital do cliente",
+      "resumo": "A sinopse apresenta uma metodologia de relacionamento B2B apoiada em valor ao cliente, digitalização e aprendizagem. Não se promete fidelização ou retorno: esses efeitos não foram verificados.",
+      "contexto_consultado": "Consultados título, descrição institucional, identificação do canal, datas/duração e lista de faixas de legenda na página oficial do vídeo. Perfil ou notícia institucional adicional usado para confirmar a qualificação apresentada. Não foi consultado conteúdo audiovisual ou transcrição integral; não é resenha do vídeo.",
+      "credenciais_fontes": [
+        {
+          "url": "https://www.youtube.com/watch?v=xJqF80vrrK0",
+          "alcance": "Identifica nominalmente a equipe e os vínculos apresentados pela instituição na data do evento."
+        },
+        {
+          "url": "https://posead.fdc.org.br/professores/aurea-helena-puga-ribeiro",
+          "alcance": "Perfil/apresentação institucional consultado para a qualificação do apresentador; vínculo histórico e perfil atual não foram tratados como equivalentes automaticamente."
+        }
+      ],
+      "trilha": "clientes",
+      "nivel": "Intermediário"
+    },
+    {
+      "id": "Js4yaGPkTCw",
+      "video_id": "Js4yaGPkTCw",
+      "url": "https://www.youtube.com/watch?v=Js4yaGPkTCw",
+      "titulo": "Alinhamento da cadeia produtiva",
+      "fonte": "Fundação Dom Cabral",
+      "canal": "Fundação Dom Cabral",
+      "channel_id": "UC1fHbk7N11bB8UnL4tYg26A",
+      "url_canal": "https://www.youtube.com/channel/UC1fHbk7N11bB8UnL4tYg26A",
+      "pagina_procedencia_oficial": "https://www.fdc.org.br/",
+      "procedencia": {
+        "instituicao": "Fundação Dom Cabral",
+        "pagina_oficial": "https://www.fdc.org.br/",
+        "link_youtube_publicado_no_portal": "https://www.youtube.com/user/FDCIdeas",
+        "alias_https_verificado": "https://www.youtube.com/user/FDCIdeas",
+        "channel_id_confirmado": "UC1fHbk7N11bB8UnL4tYg26A",
+        "metodo": "Portal institucional HTTP 200 contém link /user/FDCIdeas; página pública do alias retornou externalId igual ao canal aprovado.",
+        "em": "2026-11-06"
+      },
+      "data_publicacao": "2020-06-17",
+      "data_publicacao_iso": "2020-06-17T11:02:33-07:00",
+      "duracao_segundos": 91,
+      "apresentador_equipe": "Áurea Ribeiro",
+      "credenciais": "Professora e pesquisadora da FDC em marketing, estratégia e relações B2B; atuação confirmada em perfil institucional.",
+      "fonte_credenciais": "https://posead.fdc.org.br/professores/aurea-helena-puga-ribeiro",
+      "idioma": "pt",
+      "verificacao_idioma": {
+        "criterio": "Título e descrição institucional em português; faixa pt listada no player quando disponível.",
+        "faixa_portugues_listada": true,
+        "falado_conferido_por_audicao": false,
+        "conteudo_ou_qualidade_da_legenda_revisados": false
+      },
+      "descricao": "A descrição da FDC apresenta alinhamento da cadeia produtiva B2B e planejamento entre clientes e fornecedores na retomada de 2020. Vídeo breve, com utilidade conceitual a conferir no player.",
+      "descricao_base": "sinopse/descrição institucional e dados de apresentação; nenhuma síntese de conteúdo integral",
+      "trilha_proposta": "estrategia",
+      "nivel_proposto": "Iniciante",
+      "rotulo": "Seleção institucional · metadados verificados",
+      "estado_editorial": "selecao_institucional",
+      "revisao_integral": false,
+      "revisao_audiovisual": false,
+      "transcricao_integral_consultada": false,
+      "evidencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=Js4yaGPkTCw",
+          "tipo": "pagina_individual_oficial_youtube",
+          "alcance": "Título, videoDetails.channelId, autoria do canal, descrição institucional, datas em microformat, duração e lista de faixas de legenda. Não assistido ou ouvido integralmente."
+        },
+        {
+          "url": "https://www.fdc.org.br/",
+          "tipo": "procedencia_do_canal",
+          "alcance": "Link público do portal ao alias oficial do YouTube, resolvido para o Channel ID informado."
+        },
+        {
+          "url": "https://posead.fdc.org.br/professores/aurea-helena-puga-ribeiro",
+          "tipo": "pagina_institucional",
+          "alcance": "Perfil, apresentação ou notícia institucional usada para qualificação dos nomes indicados; não é prova de toda fala no vídeo."
+        }
+      ],
+      "verificado_em": "2026-11-06",
+      "reaproveitado_do_corpus_anterior": false,
+      "ressalvas": [
+        "Nível e trilha são propostas editoriais a partir dos metadados, não certificação da instituição.",
+        "Sem revisão audiovisual integral; conteúdo pode incluir introduções, vinhetas e avisos institucionais.",
+        "Material de contexto anterior: distinguir fundamentos de previsões, exemplos de pandemia e informações que podem ter envelhecido."
+      ],
+      "titulo_pt": "Alinhamento da cadeia produtiva",
+      "resumo": "A descrição da FDC apresenta alinhamento da cadeia produtiva B2B e planejamento entre clientes e fornecedores na retomada de 2020. Vídeo breve, com utilidade conceitual a conferir no player.",
+      "contexto_consultado": "Consultados título, descrição institucional, identificação do canal, datas/duração e lista de faixas de legenda na página oficial do vídeo. Perfil ou notícia institucional adicional usado para confirmar a qualificação apresentada. Não foi consultado conteúdo audiovisual ou transcrição integral; não é resenha do vídeo.",
+      "credenciais_fontes": [
+        {
+          "url": "https://www.youtube.com/watch?v=Js4yaGPkTCw",
+          "alcance": "Identifica nominalmente a equipe e os vínculos apresentados pela instituição na data do evento."
+        },
+        {
+          "url": "https://posead.fdc.org.br/professores/aurea-helena-puga-ribeiro",
+          "alcance": "Perfil/apresentação institucional consultado para a qualificação do apresentador; vínculo histórico e perfil atual não foram tratados como equivalentes automaticamente."
+        }
+      ],
+      "trilha": "estrategia",
+      "nivel": "Iniciante"
+    },
+    {
+      "id": "IqWZf7yw9ck",
+      "video_id": "IqWZf7yw9ck",
+      "url": "https://www.youtube.com/watch?v=IqWZf7yw9ck",
+      "titulo": "Como inspirar e liderar estratégias de mercado em tempos de crise: o caso Magalu",
+      "fonte": "Fundação Dom Cabral",
+      "canal": "Fundação Dom Cabral",
+      "channel_id": "UC1fHbk7N11bB8UnL4tYg26A",
+      "url_canal": "https://www.youtube.com/channel/UC1fHbk7N11bB8UnL4tYg26A",
+      "pagina_procedencia_oficial": "https://www.fdc.org.br/",
+      "procedencia": {
+        "instituicao": "Fundação Dom Cabral",
+        "pagina_oficial": "https://www.fdc.org.br/",
+        "link_youtube_publicado_no_portal": "https://www.youtube.com/user/FDCIdeas",
+        "alias_https_verificado": "https://www.youtube.com/user/FDCIdeas",
+        "channel_id_confirmado": "UC1fHbk7N11bB8UnL4tYg26A",
+        "metodo": "Portal institucional HTTP 200 contém link /user/FDCIdeas; página pública do alias retornou externalId igual ao canal aprovado.",
+        "em": "2026-11-06"
+      },
+      "data_publicacao": "2020-05-21",
+      "data_publicacao_iso": "2020-05-21T14:39:14-07:00",
+      "duracao_segundos": 3685,
+      "apresentador_equipe": "Ana Paula Rodrigues; participação acadêmica de Áurea Ribeiro e Luciana Faluba",
+      "credenciais": "A descrição da FDC identifica Rodrigues como diretora de Marketing, Comunicação e Marca da Magazine Luiza e Ribeiro/Faluba como professoras e pesquisadoras, na época.",
+      "fonte_credenciais": "https://www.fdc.org.br/corpo-docente/luciana-faluba",
+      "idioma": "pt",
+      "verificacao_idioma": {
+        "criterio": "Título e descrição institucional em português; faixa pt listada no player quando disponível.",
+        "faixa_portugues_listada": true,
+        "falado_conferido_por_audicao": false,
+        "conteudo_ou_qualidade_da_legenda_revisados": false
+      },
+      "descricao": "O webinar é apresentado como relato de caso de adaptação do varejo e estratégia de mercado durante a pandemia. A narrativa de executiva é contexto empresarial, sem auditoria independente de desempenho.",
+      "descricao_base": "sinopse/descrição institucional e dados de apresentação; nenhuma síntese de conteúdo integral",
+      "trilha_proposta": "crescimento",
+      "nivel_proposto": "Intermediário",
+      "rotulo": "Seleção institucional · metadados verificados",
+      "estado_editorial": "selecao_institucional",
+      "revisao_integral": false,
+      "revisao_audiovisual": false,
+      "transcricao_integral_consultada": false,
+      "evidencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=IqWZf7yw9ck",
+          "tipo": "pagina_individual_oficial_youtube",
+          "alcance": "Título, videoDetails.channelId, autoria do canal, descrição institucional, datas em microformat, duração e lista de faixas de legenda. Não assistido ou ouvido integralmente."
+        },
+        {
+          "url": "https://www.fdc.org.br/",
+          "tipo": "procedencia_do_canal",
+          "alcance": "Link público do portal ao alias oficial do YouTube, resolvido para o Channel ID informado."
+        },
+        {
+          "url": "https://www.fdc.org.br/corpo-docente/luciana-faluba",
+          "tipo": "pagina_institucional",
+          "alcance": "Perfil, apresentação ou notícia institucional usada para qualificação dos nomes indicados; não é prova de toda fala no vídeo."
+        }
+      ],
+      "verificado_em": "2026-11-06",
+      "reaproveitado_do_corpus_anterior": false,
+      "ressalvas": [
+        "Nível e trilha são propostas editoriais a partir dos metadados, não certificação da instituição.",
+        "Sem revisão audiovisual integral; conteúdo pode incluir introduções, vinhetas e avisos institucionais.",
+        "Material de contexto anterior: distinguir fundamentos de previsões, exemplos de pandemia e informações que podem ter envelhecido.",
+        "Há participação de executivos/fornecedores; preservar vínculo e possíveis interesses comerciais ao apresentar opiniões ou casos."
+      ],
+      "titulo_pt": "Como inspirar e liderar estratégias de mercado em tempos de crise: o caso Magalu",
+      "resumo": "O webinar é apresentado como relato de caso de adaptação do varejo e estratégia de mercado durante a pandemia. A narrativa de executiva é contexto empresarial, sem auditoria independente de desempenho.",
+      "contexto_consultado": "Consultados título, descrição institucional, identificação do canal, datas/duração e lista de faixas de legenda na página oficial do vídeo. Perfil ou notícia institucional adicional usado para confirmar a qualificação apresentada. Não foi consultado conteúdo audiovisual ou transcrição integral; não é resenha do vídeo.",
+      "credenciais_fontes": [
+        {
+          "url": "https://www.youtube.com/watch?v=IqWZf7yw9ck",
+          "alcance": "Identifica nominalmente a equipe e os vínculos apresentados pela instituição na data do evento."
+        },
+        {
+          "url": "https://www.fdc.org.br/corpo-docente/luciana-faluba",
+          "alcance": "Perfil/apresentação institucional consultado para a qualificação do apresentador; vínculo histórico e perfil atual não foram tratados como equivalentes automaticamente."
+        }
+      ],
+      "trilha": "crescimento",
+      "nivel": "Intermediário"
+    },
+    {
+      "id": "0_yXsQKmdwE",
+      "video_id": "0_yXsQKmdwE",
+      "url": "https://www.youtube.com/watch?v=0_yXsQKmdwE",
+      "titulo": "Inovação na Prática - 7o episódio – Inovação e Estratégia.",
+      "fonte": "Fundação Dom Cabral",
+      "canal": "Fundação Dom Cabral",
+      "channel_id": "UC1fHbk7N11bB8UnL4tYg26A",
+      "url_canal": "https://www.youtube.com/channel/UC1fHbk7N11bB8UnL4tYg26A",
+      "pagina_procedencia_oficial": "https://www.fdc.org.br/",
+      "procedencia": {
+        "instituicao": "Fundação Dom Cabral",
+        "pagina_oficial": "https://www.fdc.org.br/",
+        "link_youtube_publicado_no_portal": "https://www.youtube.com/user/FDCIdeas",
+        "alias_https_verificado": "https://www.youtube.com/user/FDCIdeas",
+        "channel_id_confirmado": "UC1fHbk7N11bB8UnL4tYg26A",
+        "metodo": "Portal institucional HTTP 200 contém link /user/FDCIdeas; página pública do alias retornou externalId igual ao canal aprovado.",
+        "em": "2026-11-06"
+      },
+      "data_publicacao": "2021-11-03",
+      "data_publicacao_iso": "2021-11-03T14:00:16-07:00",
+      "duracao_segundos": 230,
+      "apresentador_equipe": "Hugo Ferreira Braga Tadeu",
+      "credenciais": "Professor e pesquisador da FDC em inovação; perfil institucional confirma doutorado em Engenharia Mecânica e pós-doutorado.",
+      "fonte_credenciais": "https://www.fdc.org.br/corpo-docente/hugo-tadeu",
+      "idioma": "pt",
+      "verificacao_idioma": {
+        "criterio": "Título e descrição institucional em português; faixa pt listada no player quando disponível.",
+        "faixa_portugues_listada": true,
+        "falado_conferido_por_audicao": false,
+        "conteudo_ou_qualidade_da_legenda_revisados": false
+      },
+      "descricao": "A sinopse anuncia relação entre inovação, estratégia e projetos em horizontes distintos. A seleção é temática e institucional; não afirma revisão do encadeamento ou das alegações na íntegra.",
+      "descricao_base": "sinopse/descrição institucional e dados de apresentação; nenhuma síntese de conteúdo integral",
+      "trilha_proposta": "estrategia",
+      "nivel_proposto": "Iniciante",
+      "rotulo": "Seleção institucional · metadados verificados",
+      "estado_editorial": "selecao_institucional",
+      "revisao_integral": false,
+      "revisao_audiovisual": false,
+      "transcricao_integral_consultada": false,
+      "evidencias": [
+        {
+          "url": "https://www.youtube.com/watch?v=0_yXsQKmdwE",
+          "tipo": "pagina_individual_oficial_youtube",
+          "alcance": "Título, videoDetails.channelId, autoria do canal, descrição institucional, datas em microformat, duração e lista de faixas de legenda. Não assistido ou ouvido integralmente."
+        },
+        {
+          "url": "https://www.fdc.org.br/",
+          "tipo": "procedencia_do_canal",
+          "alcance": "Link público do portal ao alias oficial do YouTube, resolvido para o Channel ID informado."
+        },
+        {
+          "url": "https://www.fdc.org.br/corpo-docente/hugo-tadeu",
+          "tipo": "pagina_institucional",
+          "alcance": "Perfil, apresentação ou notícia institucional usada para qualificação dos nomes indicados; não é prova de toda fala no vídeo."
+        }
+      ],
+      "verificado_em": "2026-11-06",
+      "reaproveitado_do_corpus_anterior": false,
+      "ressalvas": [
+        "Nível e trilha são propostas editoriais a partir dos metadados, não certificação da instituição.",
+        "Sem revisão audiovisual integral; conteúdo pode incluir introduções, vinhetas e avisos institucionais.",
+        "Material de contexto anterior: distinguir fundamentos de previsões, exemplos de pandemia e informações que podem ter envelhecido."
+      ],
+      "titulo_pt": "Inovação na Prática - 7o episódio – Inovação e Estratégia.",
+      "resumo": "A sinopse anuncia relação entre inovação, estratégia e projetos em horizontes distintos. A seleção é temática e institucional; não afirma revisão do encadeamento ou das alegações na íntegra.",
+      "contexto_consultado": "Consultados título, descrição institucional, identificação do canal, datas/duração e lista de faixas de legenda na página oficial do vídeo. Perfil ou notícia institucional adicional usado para confirmar a qualificação apresentada. Não foi consultado conteúdo audiovisual ou transcrição integral; não é resenha do vídeo.",
+      "credenciais_fontes": [
+        {
+          "url": "https://www.youtube.com/watch?v=0_yXsQKmdwE",
+          "alcance": "Identifica nominalmente a equipe e os vínculos apresentados pela instituição na data do evento."
+        },
+        {
+          "url": "https://www.fdc.org.br/corpo-docente/hugo-tadeu",
+          "alcance": "Perfil/apresentação institucional consultado para a qualificação do apresentador; vínculo histórico e perfil atual não foram tratados como equivalentes automaticamente."
+        }
+      ],
+      "trilha": "estrategia",
+      "nivel": "Iniciante"
+    }
+  ],
+  "excluidos_ou_adiados": [
+    {
+      "video_id": "NXZbG0YH-vc",
+      "titulo": "FGV EAESP | Como anda o comportamento do consumidor?",
+      "url": "https://www.youtube.com/watch?v=NXZbG0YH-vc",
+      "motivo": "Descrição é recado sobre disciplina do Mestrado e remete a conhecer disciplinas/programa; finalidade promocional predominante nos metadados."
+    },
+    {
+      "video_id": "7Pk2KZgY6Ds",
+      "titulo": "HANGOUT - EM CONTEXTO DE CRISE, RELACIONAMENTO COM CLIENTES AINDA FAZ A DIFERENÇA?",
+      "url": "https://www.youtube.com/watch?v=7Pk2KZgY6Ds",
+      "motivo": "Descrição convida explicitamente a conhecer programa de Gestão de Mercados B2B e apresenta percentuais sem fonte suficiente nesta pesquisa."
+    },
+    {
+      "video_id": "wrSeFzm1OM4",
+      "titulo": "Webinar | Reputação, atitude e propósito como pilares da comunicação em tempos de crise",
+      "url": "https://www.youtube.com/watch?v=wrSeFzm1OM4",
+      "motivo": "Descrição anuncia tema, mas não identifica participantes ou qualificação. Mantido fora do lote até demonstração institucional desses dados."
+    },
+    {
+      "video_id": "O-jVbkzkFLs",
+      "titulo": "A Coca-Cola e o Marketing",
+      "url": "https://www.youtube.com/watch?v=O-jVbkzkFLs",
+      "motivo": "A instituição informa cargo de diretora de marketing da Coca-Cola Brasil, mas não informa nome na sinopse; preferidos registros com identificação nominal verificável."
+    },
+    {
+      "video_id": "86U-UFpX1x4",
+      "titulo": "Relações com clientes em tempos de incerteza",
+      "url": "https://www.youtube.com/watch?v=86U-UFpX1x4",
+      "motivo": "Painel contém participante de agência de comunicação e múltiplos dirigentes; priorizados materiais docentes e casos com menor mistura comercial."
+    },
+    {
+      "video_id": "3Ema7aWaK5E",
+      "titulo": "Disrupção Digital - Os Próximos Passos do Marketing e dos Negócios",
+      "url": "https://www.youtube.com/watch?v=3Ema7aWaK5E",
+      "motivo": "Sinopse usa termo especialistas sem demonstrar todos os vínculos/credenciais; tema já coberto por registros mais documentados."
+    }
+  ],
+  "limites": [
+    "22 vídeos são uma seleção institucional com metadados verificados, não 22 materiais integralmente revisados.",
+    "Português é a classificação documental; não houve audição para confirmar idioma original ou dublagens.",
+    "Identidade de faixa pt e duração não garantem qualidade da legenda, reprodução regional, embutibilidade ou ausência de publicidade inserida.",
+    "Boa parte do material é de 2020–2022: útil para fundamentos e contexto histórico, exigindo cautela com previsões e recomendações tecnológicas atuais.",
+    "Nenhum resultado estatístico ou promessa de desempenho da sinopse foi incorporado como fato demonstrado."
+  ],
+  "nota_integracao": "titulo_pt, resumo, contexto_consultado, credenciais_fontes, trilha e nivel foram incluídos para integração. titulo preserva a grafia oficial. Não ampliar escopos de outras instituições: este lote usa somente FGV e FDC."
+}
