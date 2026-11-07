@@ -1,6 +1,6 @@
 {
   "ambiente": "business",
-  "atualizado_em": "2026-11-07T10:42:37.016150+00:00",
+  "atualizado_em": "2026-11-07T10:59:14.653022+00:00",
   "politica": "candidatos_sem_publicacao_automatica",
   "fontes": [
     {
@@ -8,35 +8,35 @@
       "status": "ok",
       "itens": 4,
       "mensagem": "",
-      "verificado_em": "2026-11-07T10:42:37.016150+00:00"
+      "verificado_em": "2026-11-07T10:59:14.653022+00:00"
     },
     {
       "id": "fdc",
       "status": "ok",
       "itens": 4,
       "mensagem": "",
-      "verificado_em": "2026-11-07T10:42:37.016150+00:00"
+      "verificado_em": "2026-11-07T10:59:14.653022+00:00"
     },
     {
       "id": "insead",
       "status": "erro",
       "itens": 0,
       "mensagem": "HTTPError",
-      "verificado_em": "2026-11-07T10:42:37.016150+00:00"
+      "verificado_em": "2026-11-07T10:59:14.653022+00:00"
     },
     {
       "id": "mckinsey",
       "status": "ok",
       "itens": 6,
       "mensagem": "",
-      "verificado_em": "2026-11-07T10:42:37.016150+00:00"
+      "verificado_em": "2026-11-07T10:59:14.653022+00:00"
     },
     {
       "id": "wharton",
       "status": "ok",
       "itens": 5,
       "mensagem": "",
-      "verificado_em": "2026-11-07T10:42:37.016150+00:00"
+      "verificado_em": "2026-11-07T10:59:14.653022+00:00"
     }
   ],
   "itens": [
