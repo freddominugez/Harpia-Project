@@ -1,0 +1,137 @@
+{
+  "numero": 1,
+  "titulo": "Valor e mercado: por que alguém escolheria sua oferta?",
+  "resumo": "Uma introdução a necessidades, alternativas, benefícios, preço e viabilidade do negócio, com um exemplo hipotético e um exercício de observação.",
+  "autor": "Harpya",
+  "atualizado": "2026-11-06",
+  "serie": "Como estudar marketing e tomar decisões melhores",
+  "status": "publicado",
+  "secoes": [
+    {
+      "titulo": "Comece pela situação de quem compra",
+      "paragrafos": [
+        "Imagine uma pessoa que precisa almoçar entre dois compromissos. Ela pode levar comida, comprar uma refeição, pedir uma entrega ou adiar o almoço. Antes de escolher um restaurante, precisa resolver uma situação concreta: comer dentro do tempo disponível, com um gasto aceitável e alguma confiança no que receberá. Essa cena é hipotética, mas ajuda a formular a primeira pergunta de marketing: qual problema torna uma oferta relevante?",
+        "Marketing envolve decisões sobre o que oferecer, para quem, em quais condições e como tornar a oferta compreensível e acessível. Comunicação participa desse trabalho, assim como produto, preço, distribuição e atendimento. O artigo da McKinsey sobre marketing moderno trata a experiência do cliente como responsabilidade que atravessa a empresa. Para o iniciante, isso significa observar a entrega da promessa, além da mensagem que a apresenta."
+      ]
+    },
+    {
+      "titulo": "Defina o mercado pelas alternativas",
+      "paragrafos": [
+        "Um mercado pode ser estudado como um conjunto de compradores, necessidades e alternativas de troca em determinado contexto. O recorte precisa ser explícito. O mercado de refeições para pessoas com pouco tempo num bairro é diferente do mercado nacional de restaurantes. Cada recorte muda quem concorre, quais informações procurar e quais recursos serão necessários para atender.",
+        "No exemplo, a comida levada de casa é uma alternativa, embora ninguém a venda naquele momento. Ignorá-la pode levar o restaurante a comparar somente preços de outros restaurantes. Pergunte o que a pessoa faria se sua oferta desaparecesse. A resposta amplia a compreensão da concorrência e pode mostrar que a principal dificuldade é tempo, previsibilidade ou deslocamento, em vez de variedade no cardápio."
+      ]
+    },
+    {
+      "titulo": "Diferencie característica, benefício e valor",
+      "paragrafos": [
+        "Uma característica descreve a oferta: retirada por horário marcado, embalagem reutilizável ou cardápio reduzido. Um benefício descreve uma consequência para o comprador: organizar o intervalo, transportar a refeição ou decidir com menos esforço. A ligação precisa ser demonstrada. Uma característica pode trazer benefício para uma situação e ser indiferente em outra.",
+        "Valor percebido é a avaliação que alguém faz dos benefícios e dos sacrifícios envolvidos, diante das alternativas. Dinheiro é um desses sacrifícios; tempo, esforço e incerteza também podem entrar na comparação. Essa é uma lente didática, não uma fórmula universal de medição. A cobertura da Wharton sobre posicionamento ressalta a necessidade de tornar a diferença relevante perceptível para o público. Nenhum benefício existe apenas porque a empresa o escreveu numa apresentação."
+      ]
+    },
+    {
+      "titulo": "Preço e percepção precisam ser examinados juntos",
+      "paragrafos": [
+        "Preço é uma condição monetária da troca. Percepção de preço é a interpretação que o cliente faz dessa condição. Para comparar propostas, ele pode considerar tamanho da porção, taxa de entrega, condições de pagamento e experiências anteriores. Um valor anunciado isoladamente nem sempre expressa o custo total da decisão.",
+        "O relatório da Bain sobre percepção de preços examina essa diferença no varejo. Ele serve de convite à investigação, sem autorizar uma regra de que reduzir preços sempre melhora a percepção. Num exercício real, compare ofertas equivalentes e mostre todas as condições. Também evite o erro inverso: presumir que aumentar o preço criará qualidade percebida. A resposta depende do público, da categoria e de evidências que precisam ser coletadas."
+      ]
+    },
+    {
+      "titulo": "A troca também precisa sustentar a operação",
+      "paragrafos": [
+        "Criar uma experiência desejável não basta para demonstrar viabilidade. É necessário entender os recursos usados para produzir, vender, entregar e atender. O trecho de livro publicado pela Wharton distingue o valor entregue ao cliente do valor que a relação pode gerar para a empresa. São perspectivas relacionadas, que exigem medidas diferentes.",
+        "Considere uma segunda situação hipotética: uma refeição custa R$ 20 e exige R$ 12 em custos variáveis por unidade. A contribuição unitária simplificada é R$ 8. Se forem vendidas cem unidades, a contribuição será R$ 800. Esse valor ainda precisa cobrir custos fixos e demais itens omitidos. Portanto, não é lucro. Uma venda que agrada ao comprador pode ser inviável se a operação consumir recursos que o preço não recupera."
+      ]
+    },
+    {
+      "titulo": "Transforme a proposta numa experiência coerente",
+      "paragrafos": [
+        "Voltemos ao restaurante imaginário. Sua proposta inicial seria atender pessoas que precisam retirar o almoço com horário previsível. Para testar a coerência, pense no cardápio, no processo de pedido, na produção, na fila e na informação de disponibilidade. Uma publicidade de rapidez perde sentido se a retirada depende de procurar um funcionário sem orientação.",
+        "Suponha, apenas para aprendizado, que a equipe queira oferecer cem combinações e entrega em toda a cidade. Essas escolhas podem dificultar a promessa inicial. Antes de expandir, ela precisa descobrir se consegue cumprir o serviço escolhido e se ele importa ao público. Não sabemos o resultado: trata-se de uma hipótese de negócio. A proposta só ganha credibilidade quando a experiência observada permite comparar o prometido com o entregue."
+      ]
+    },
+    {
+      "titulo": "Exercício: construa um mapa de valor",
+      "paragrafos": [
+        "Escolha uma oferta cotidiana e registre uma situação de uso, o comprador envolvido e três alternativas possíveis. Para cada alternativa, descreva benefícios esperados, gasto total, tempo necessário e dúvidas existentes. Separe observação de interpretação. Se você viu uma fila, registre a fila; não conclua automaticamente que todos consideram o atendimento lento.",
+        "Depois escreva uma proposta provisória em duas frases: para quem a oferta existe e qual resultado pretende facilitar. Faça três perguntas: que evidência mostraria que esse benefício importa? Que parte da operação precisa funcionar para entregá-lo? O que faria alguém escolher uma alternativa? Se conversar com pessoas, apresente o exercício com clareza e peça exemplos de experiências recentes, sem transformar a conversa em tentativa de venda."
+      ]
+    },
+    {
+      "titulo": "O que você pode concluir e o que continua aberto",
+      "paragrafos": [
+        "Ao terminar, você terá um recorte de mercado e hipóteses sobre valor, não uma comprovação de demanda. Uma conversa favorável não demonstra compra futura; um cálculo unitário não substitui o estudo completo da operação. As fontes desta leitura oferecem conceitos e experiências específicas, com datas e limites identificados nas referências.",
+        "Revise o mapa quando surgirem observações que contradigam sua hipótese. A pergunta útil é como melhorar a correspondência entre necessidade, oferta e capacidade de entrega. No próximo passo, a pesquisa de consumidor ajudará a decidir quais informações faltam e como procurá-las. Esse trabalho começa com perguntas verificáveis e continua com disposição para mudar a proposta quando as evidências pedirem."
+      ]
+    }
+  ],
+  "figuras": [
+    {
+      "apos_secao": 1,
+      "titulo": "Uma necessidade, várias alternativas",
+      "descricao": "Diagrama radial com a situação de almoço ao centro e quatro alternativas ao redor. Exemplo hipotético.",
+      "etapas": [
+        "Levar comida de casa",
+        "Comprar perto do trabalho",
+        "Pedir entrega",
+        "Adiar a refeição"
+      ],
+      "legenda": "Exemplo hipotético: o recorte do mercado depende da situação e das alternativas consideradas.",
+      "tipo": "radial",
+      "central": "Situação: almoçar num intervalo limitado"
+    },
+    {
+      "apos_secao": 2,
+      "titulo": "Da característica ao valor percebido",
+      "descricao": "Quadro didático com cartões sobre da característica ao valor percebido. Característica: retirada agendada; Benefício possível: organizar o intervalo; Avaliação do cliente: isso ajuda nesta situação?; Comparar dinheiro, tempo, esforço e alternativas.",
+      "etapas": [
+        "Característica: retirada agendada",
+        "Benefício possível: organizar o intervalo",
+        "Avaliação do cliente: isso ajuda nesta situação?",
+        "Comparar dinheiro, tempo, esforço e alternativas"
+      ],
+      "legenda": "Uma característica só contribui para o valor se produzir uma consequência relevante na situação de uso.",
+      "tipo": "cartoes"
+    },
+    {
+      "apos_secao": 4,
+      "titulo": "Contribuição não é lucro",
+      "descricao": "Quadro didático com cartões sobre contribuição não é lucro. Preço por unidade: R$ 20; Custo variável por unidade: R$ 12; Contribuição simplificada: R$ 8; Depois: custos fixos e outros itens.",
+      "etapas": [
+        "Preço por unidade: R$ 20",
+        "Custo variável por unidade: R$ 12",
+        "Contribuição simplificada: R$ 8",
+        "Depois: custos fixos e outros itens"
+      ],
+      "legenda": "Exemplo exclusivamente didático. A contribuição calculada ainda não representa o lucro da operação.",
+      "tipo": "cartoes"
+    }
+  ],
+  "fontes": [
+    {
+      "titulo": "Modern marketing: What it is, what it isn’t, and how to do it — McKinsey, 2020",
+      "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/modern-marketing-what-it-is-what-it-isnt-and-how-to-do-it",
+      "consultado": "Página institucional aberta consultada: introdução e seções sobre capacidades, experiência do cliente e organização de marketing. Usada somente como apoio à ligação entre marketing e operação.",
+      "limites": "Artigo executivo de consultoria; estimativas de desempenho não foram reproduzidas nem tratadas como causalidade. Não se declara revisão integral das referências citadas pela página."
+    },
+    {
+      "titulo": "Pricing and Positioning for Entrepreneurial Marketers — Knowledge at Wharton, 2005",
+      "url": "https://knowledge.wharton.upenn.edu/article/pricing-and-positioning-for-entrepreneurial-marketers/",
+      "consultado": "Página institucional aberta consultada: exposição atribuída a Leonard Lodish sobre público, alternativas, benefício percebido e posicionamento.",
+      "limites": "Cobertura de uma palestra, com recomendações e casos históricos. Esta leitura não adota como regra geral suas recomendações de preço premium nem seus exemplos numéricos."
+    },
+    {
+      "titulo": "Perception Beats Reality in Pricing — Bain & Company, copyright 2016",
+      "url": "https://www.bain.com/contentassets/9b4a1b91a99744c2a629abcf45d54b42/bain_brief_perception_beats_reality_in_pricing.pdf",
+      "consultado": "PDF institucional aberto consultado: autoria, distinção entre preços observados e percepção, desenho da pesquisa no varejo e recomendações.",
+      "limites": "Pesquisa situada em cidades dos EUA e casos de consultoria; percentuais e relações encontrados não foram transferidos para o exemplo fictício. Data exata não confirmada além do ano no PDF."
+    },
+    {
+      "titulo": "What Are Your Customers Really Worth? — Knowledge at Wharton, 2007",
+      "url": "https://knowledge.wharton.upenn.edu/article/what-are-your-customers-really-worth/",
+      "consultado": "Trecho de livro disponibilizado em página institucional aberta: distinção entre valor para o comprador e valor da relação para a empresa; seção inicial de estratégia.",
+      "limites": "Excerto de obra, não leitura integral do livro. Dados históricos e classificações de clientes do texto não foram usados como generalizações atuais. A conta do restaurante foi criada para esta leitura."
+    }
+  ],
+  "revisor": "Harpya · revisão de coerência didática e de procedência",
+  "revisado_em": "2026-11-06"
+}

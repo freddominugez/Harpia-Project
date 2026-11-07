@@ -1,5 +1,6 @@
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
+import {validateBusinessPublication} from '../../public/admin/business/editorial-validation.js';
 import { NAV } from '../config';
 
 export const TRILHAS_BUSINESS = [
@@ -14,17 +15,17 @@ export const TRILHAS_BUSINESS = [
 ] as const;
 export const SECOES_BUSINESS = [
   { slug: '', titulo: 'Harpya Business', descricao: 'Marketing, estratégia e administração com pesquisa, curadoria e fontes de referência.', nav: 'Início', principal: true },
-  { slug: 'comecando', titulo: 'Começando em marketing e gestão', descricao: 'Uma sequência de oito guias para estudar mercado, consumidor, estratégia e mensuração.', nav: 'Começando', principal: false },
+  { slug: 'comecando', titulo: 'Começando em marketing e gestão', descricao: 'Uma série ilustrada para estudar valor, pesquisa, posicionamento e mensuração.', nav: 'Começando', principal: false },
   { slug: 'origens', titulo: 'Origens do marketing e da administração', descricao: 'Conceitos, obras e perguntas que formaram as escolas de marketing e gestão.', nav: 'Origens', principal: false },
   { slug: 'aprendizado', titulo: 'Aprendizado em marketing', descricao: 'Como estudar, formular hipóteses, avaliar evidências e aprender com decisões.', nav: 'Aprendizado', principal: false },
-  { slug: 'estudos', titulo: 'Trilhas de estudo em Business', descricao: 'Oito percursos de estudo em marketing, estratégia e administração.', nav: 'Estudos', principal: true },
+  { slug: 'estudos', titulo: 'Trilhas de estudo em Business', descricao: 'Percursos de estudo em marketing, estratégia e administração.', nav: 'Estudos', principal: true },
   { slug: 'videos', titulo: 'Vídeos de marketing e gestão', descricao: 'Aulas e conferências de fontes institucionais, com procedência e revisão editorial.', nav: 'Vídeos', principal: true },
   { slug: 'videos/canais', titulo: 'Canais de vídeo em Business', descricao: 'Canais institucionais conferidos e aprovados para a curadoria de marketing e administração.', nav: 'Canais de vídeo', principal: false },
   { slug: 'biblioteca', titulo: 'Biblioteca Business', descricao: 'Leituras selecionadas de marketing, comportamento, marcas e gestão, com limites e links ao original.', nav: 'Biblioteca', principal: true },
   { slug: 'biblioteca/livros', titulo: 'Literatura de marketing e administração', descricao: 'Obras de referência com autoria, editora, edição e acesso legal para aprofundar o estudo.', nav: 'Livros', principal: false },
   { slug: 'biblioteca/fontes', titulo: 'Fontes de referência em Business', descricao: 'Instituições acadêmicas, consultorias e publicações do Brasil, dos Estados Unidos e da Europa.', nav: 'Fontes', principal: false },
   { slug: 'biblioteca/glossario', titulo: 'Glossário de marketing e gestão', descricao: 'Definições para acompanhar as trilhas de marketing, estratégia e mensuração.', nav: 'Glossário', principal: false },
-  { slug: 'metricas', titulo: 'Métricas e métodos de marketing', descricao: 'Contas, pressupostos e limites de CAC, CLV, margem, retorno e incrementalidade.', nav: 'Métricas', principal: true },
+  { slug: 'equacoes', titulo: 'Métricas e métodos de marketing', descricao: 'Contas, pressupostos e limites de CAC, CLV, margem, retorno e incrementalidade.', nav: 'Métricas', principal: true },
   { slug: 'analises', titulo: 'Análises em Business', descricao: 'Leitura crítica de perguntas, métodos e resultados em marketing e gestão.', nav: 'Análises', principal: false },
   { slug: 'noticias', titulo: 'Notícias de marketing e negócios', descricao: 'Matérias de marketing e administração publicadas após revisão de fontes e evidências.', nav: 'Notícias', principal: true },
   { slug: 'news', titulo: 'Radar de publicações Business', descricao: 'Publicações selecionadas e acesso às editorias das fontes de referência.', nav: 'Radar', principal: false },
@@ -35,13 +36,15 @@ export const businessPath = (slug = '') => `/business/${slug ? `${slug}/` : ''}`
 // Mesma ordem, ícones e visibilidade do menu original. Rotas auxiliares continuam acessíveis.
 export const BUSINESS_NAV = [
   ...NAV.map(item => {
-    const slug = item.href === '/' ? '' : item.href.replace(/^\/|\/$/g, '') === 'equacoes' ? 'metricas' : item.href.replace(/^\/|\/$/g, '');
+    const slug = item.href === '/' ? '' : item.href.replace(/^\/|\/$/g, '');
     const secao = SECOES_BUSINESS.find(s => s.slug === slug)!;
     return { ...item, href: businessPath(slug), rotulo: secao.nav, descricao: secao.descricao };
   }),
-  ...SECOES_BUSINESS.filter(s => !['', 'analises', 'comecando', 'origens', 'aprendizado', 'videos', 'estudos', 'metricas', 'biblioteca', 'noticias', 'news', 'forum', 'sobre'].includes(s.slug)).map(s => ({ href: businessPath(s.slug), rotulo: s.nav, descricao: s.descricao, icone: 'book', principal: false })),
+  ...SECOES_BUSINESS.filter(s => !['', 'analises', 'comecando', 'origens', 'aprendizado', 'videos', 'estudos', 'equacoes', 'biblioteca', 'noticias', 'news', 'forum', 'sobre'].includes(s.slug)).map(s => ({ href: businessPath(s.slug), rotulo: s.nav, descricao: s.descricao, icone: 'book', principal: false })),
 ];
-export const guiaPath = (slug: string) => businessPath(`estudos/${slug}`);
+export const guiaPath = (slug: string) => businessPath(`estudos/caminhos/${slug}`);
+export const seriePath = (slug: string) => businessPath(`comecando/${slug}`);
+export const recursoPublicadoPath = (slug:string,tipo:string) => ['noticia','analise'].includes(tipo) ? businessPath(`${tipo === 'noticia' ? 'noticias' : 'analises'}/${slug}`) : businessPath(`leituras/${slug}`);
 export const recursoPath = (slug: string) => businessPath(`leituras/${slug}`);
 export const trilhaNome = (id: string) => TRILHAS_BUSINESS.find(t => t.id === id)?.titulo ?? id;
 export function recursosDaSecao(acervo: BusinessResource[], secao: string) {
@@ -53,7 +56,7 @@ export function recursosDaSecao(acervo: BusinessResource[], secao: string) {
 }
 
 export async function getBusiness() {
-  const [allGuias, allAcervo, allFontes] = await Promise.all([getCollection('businessGuias'), getCollection('businessAcervo'), getCollection('businessFontes')]);
+  const [allGuias, allAcervo, allFontes, allSerie, allOrigens, allAprendizado, allAnalises, allInvestigacoes] = await Promise.all([getCollection('businessGuias'), getCollection('businessAcervo'), getCollection('businessFontes'), getCollection('businessSerie'),getCollection('businessOrigens'),getCollection('businessAprendizado'),getCollection('businessAnalises'),getCollection('businessInvestigacoes')]);
   const fontes = allFontes.filter(f => f.data.status === 'aprovado').sort((a,b) => a.data.nome.localeCompare(b.data.nome));
   const allowed = new Map(fontes.map(f => [f.id, f.data]));
   const acervo = allAcervo.filter(item => {
@@ -71,6 +74,24 @@ export async function getBusiness() {
   }).sort((a,b) => b.data.data.localeCompare(a.data.data));
   const guias = allGuias.filter(g => g.data.status === 'publicado').sort((a,b) => a.data.numero - b.data.numero);
   const canais = fontes.flatMap(f => f.data.canais.filter(c => c.status === 'aprovado').map(c => ({ ...c, fonte: f.id, instituicao: f.data.nome })));
-  return { guias, acervo, fontes, canais };
+  const serie = allSerie.filter(a => a.data.status === 'publicado').sort((a,b)=>a.data.numero-b.data.numero);
+  const origens=allOrigens.find(d=>d.data.status==='publicado');
+  const aprendizado=allAprendizado.filter(d=>d.data.status==='publicado').sort((a,b)=>a.data.numero-b.data.numero);
+  const analises=allAnalises.filter(a=>a.data.status==='publicado').sort((a,b)=>b.data.data.localeCompare(a.data.data));
+  const investigacao=allInvestigacoes.find(a=>a.data.status==='publicado');
+  const referenciasAprovadas=fontes.map(f=>({id:f.id,...f.data}));
+  for(const [colecao,itens] of [['business/guias',guias],['business/serie',serie],['business/aprendizado',aprendizado],['business/origens',origens?[origens]:[]],['business/investigacoes',investigacao?[investigacao]:[]],['business/analises',analises]] as const)for(const item of itens)validateBusinessPublication(colecao,item.data,referenciasAprovadas);
+  return { guias, acervo, fontes, canais, serie, origens, aprendizado, analises,investigacao };
 }
 export type BusinessResource = CollectionEntry<'businessAcervo'>;
+
+/** URLs anteriormente publicadas continuam funcionais com canonical único. */
+export async function canonicalBusinessPath(path:string) {
+ if(path==='/business/biblioteca/livros/')return '/business/biblioteca/';
+ if(path==='/business/metricas/')return '/business/equacoes/';
+ const guia=path.match(/^\/business\/estudos\/([^/]+)\/$/);
+ if(guia&&!['arquivados','a-ideia-mais-interessante'].includes(guia[1]))return guiaPath(guia[1]);
+ const recurso=path.match(/^\/business\/leituras\/([^/]+)\/$/);
+ if(recurso){const {acervo}=await getBusiness();const item=acervo.find(a=>a.id===recurso[1]);if(item)return recursoPublicadoPath(item.id,item.data.tipo);}
+ return path;
+}

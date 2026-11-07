@@ -2,7 +2,7 @@
 import raw from '../../public/data/tecnologia.json';
 import sources from '../../scripts/fontes_tecnologia.json';
 
-type TechnologyItem = { source_id: string; title: string; url: string; published_at: string; idioma?: string; fonte_nome?: string };
+type TechnologyItem = { source_id: string; title: string; url: string; published_at: string; idioma?: string; fonte_nome?: string; tituloEditorial?: boolean };
 const data = raw as unknown as { last_successful_at: string | null; sources: { id: string; status: string }[]; items: TechnologyItem[] };
 const now = Date.now();
 const recent = (value: string) => Number.isFinite(Date.parse(value)) && Date.parse(value) <= now && Date.parse(value) >= now - 45 * 86400000;
@@ -45,7 +45,7 @@ const stale = !ultimaColeta || now - Date.parse(ultimaColeta) > 24 * 3600000;
     {group.items.length ? group.items.map(item => <article class="technology-card">
       <div class="technology-meta"><span>{item.fonte_nome ?? group.nome}</span><time datetime={item.published_at}>{date(item.published_at)}</time></div>
       <h4><a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}<span aria-hidden="true"> ↗</span></a></h4>
-      <small>Título original · {item.idioma === "pt" ? "em português" : item.idioma === "es" ? "em espanhol" : "em inglês"}</small>
+      <small>{item.tituloEditorial ? 'Título editorial em português' : 'Título original'} · {item.tituloEditorial ? 'fonte no link' : item.idioma === "pt" ? "em português" : item.idioma === "es" ? "em espanhol" : "em inglês"}</small>
     </article>) : <p class="technology-empty">Sem leitura recente disponível. <a href={group.site} target="_blank" rel="noopener noreferrer">Visitar {group.nome} ↗</a></p>}
   </section>)}
   <p class="technology-note">{nota}</p>

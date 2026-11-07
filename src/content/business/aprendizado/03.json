@@ -1,0 +1,29 @@
+{
+  "numero": 3,
+  "titulo": "Pesquisa útil distingue amostra, resposta e população",
+  "texto": "Coletar muitas respostas não resolve automaticamente uma pergunta mal definida. É preciso saber quem poderia participar, quem efetivamente respondeu e que tipo de inferência o desenho permite.",
+  "contexto": "Pesquisadores que escrevem para a AMA mostram como privacidade, sensibilidade do tema e esforço cognitivo afetam respostas e abandono de questionários. Esses problemas de mensuração coexistem com o problema amostral: uma pesquisa entre compradores atuais não descreve, por si só, todos os compradores potenciais.",
+  "mecanismo": "Especifique população, lista de seleção, procedimento de recrutamento e período. Separe exploração qualitativa de estimação quantitativa. Pré-teste compreensão das perguntas e registre recusas e exclusões. Para uma proporção, a incerteza amostral pode ser ilustrada por um modelo binomial simples; ele exige condições que um formulário aberto em rede social geralmente não oferece.",
+  "equacoes": [
+    {
+      "tex": "\\widehat p=\\frac{x}{n},\\qquad \\widehat{SE}(\\widehat p)=\\sqrt{\\frac{\\widehat p(1-\\widehat p)}{n}}",
+      "texto": "x é o número de respostas positivas e n o número de observações independentes no modelo binomial. A segunda expressão estima o erro padrão da proporção. Não corrige viés de seleção, pergunta tendenciosa, não resposta, ponderação ou agrupamento; tampouco é uma margem de erro automaticamente válida para qualquer enquete."
+    }
+  ],
+  "exemplo": "Exemplo hipotético: de 100 observações independentes, 50 respondem sim. A proporção é 50/100 = 0,5 e o erro padrão estimado é √(0,5 × 0,5/100) = 0,05, ou cinco pontos percentuais. Com 400 observações, mantendo 200 respostas positivas, a proporção permanece 0,5 e o erro padrão cai a √(0,25/400) = 0,025. Quadruplicar a amostra reduziu esse erro pela metade. Entretanto, se ambas as listas excluírem pessoas sem acesso digital, aumentar n não eliminará essa exclusão. Os números são didáticos, não um levantamento realizado.",
+  "limites": "Precisão condicional ao modelo não garante representatividade. A correção depende do desenho; intervalos estreitos podem acompanhar respostas sistematicamente enviesadas.",
+  "legado": "A entrega é uma ficha metodológica curta: pergunta, população, recrutamento, instrumento, limitações e condições de generalização. Preserve a distinção entre dado observado e interpretação.",
+  "hoje": "Publique a metodologia junto da conclusão, incluindo quem ficou fora da pesquisa.",
+  "referencias": [
+    {
+      "texto": "AMA — Proven and New Survey Techniques to Obtain Sensitive Information from Consumers",
+      "url": "https://www.ama.org/marketing-news/proven-and-new-survey-techniques-to-obtain-sensitive-information-from-consumers/",
+      "consultado": "em: 2026-11-06; alcance: Texto público dos pesquisadores Marco Gregori, Martijn G. de Jong e Rik Pieters: introdução, critérios de qualidade e orientações para perguntas sensíveis.",
+      "limites": "O texto trata especialmente de viés de resposta e proteção de participantes; não fornece a fórmula binomial usada aqui. Essa fórmula elementar foi aplicada apenas sob pressupostos explicitados, sem afirmar validade de uma amostra real."
+    }
+  ],
+  "atualizado": "2026-11-06",
+  "status": "publicado",
+  "revisor": "Harpya · revisão didática e de aritmética",
+  "revisado_em": "2026-11-06"
+}

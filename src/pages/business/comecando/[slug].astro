@@ -1,0 +1,10 @@
+---
+import type {CollectionEntry} from 'astro:content';
+import Comecando from '../../../layouts/Comecando.astro';
+import BusinessBeginnerArticle from '../../../components/BusinessBeginnerArticle.astro';
+import {getBusiness} from '../../../lib/business';
+export async function getStaticPaths(){const {serie}=await getBusiness();return serie.map(artigo=>({params:{slug:artigo.id},props:{artigo,todos:serie}}));}
+interface Props {artigo:CollectionEntry<'businessSerie'>;todos:CollectionEntry<'businessSerie'>[]}
+const {artigo,todos}=Astro.props;
+---
+<Comecando titulo={artigo.data.titulo} descricao={artigo.data.resumo}><BusinessBeginnerArticle artigo={artigo} todos={todos}/></Comecando>

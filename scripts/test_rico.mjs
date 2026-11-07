@@ -1,0 +1,12 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import ts from 'typescript';
+import {pathToFileURL} from 'node:url';
+import path from 'node:path';
+const katex=pathToFileURL(path.resolve('node_modules/katex/dist/katex.mjs')).href;
+const source=fs.readFileSync('src/lib/rico.ts','utf8').replace('import { tex } from "./tex";',`import katex from '${katex}';const tex=(t,d)=>katex.renderToString(t,{displayMode:d,throwOnError:true});`);
+const js=ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText;
+const {linha}=await import('data:text/javascript,'+encodeURIComponent(js));
+test('valores em reais escapados permanecem texto, sem virar fórmulas',()=>assert.equal(linha(String.raw`R\$ 40 e R\$ 80`),'R$ 40 e R$ 80'));
+test('matemática continua renderizada e HTML continua escapado',()=>{const s=linha(String.raw`<script> $x^2$`);assert.ok(s.includes('&lt;script&gt;'));assert.ok(s.includes('class="katex"'));});

@@ -1,0 +1,37 @@
+{
+  "imagens": [
+    {
+      "pessoa": "Philip Kotler",
+      "arquivo": "/img/origens/business-philip-kotler.webp",
+      "autor": "Jack11 Poland",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Kotler-DSC_0510.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kotler-DSC_0510.jpg",
+      "licenca": "CC BY-SA 3.0",
+      "licenca_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "alteracoes": "Redução proporcional para até 600 px e conversão para WebP; enquadramento pelo layout. Adaptação distribuída sob a mesma licença da fotografia.",
+      "sha256": "122f12680bb8a7e0ca31374274ff4c7329fb9d75debebaa388affefeabf5939f"
+    },
+    {
+      "pessoa": "Robert S. Kaplan",
+      "arquivo": "/img/origens/business-robert-s-kaplan.webp",
+      "autor": "Davidpmcmillan",
+      "fonte": "https://commons.wikimedia.org/wiki/File:Robert_S._Kaplan.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Robert_S._Kaplan.jpg",
+      "licenca": "CC BY-SA 4.0",
+      "licenca_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "alteracoes": "Redução proporcional para até 600 px e conversão para WebP; enquadramento pelo layout. Adaptação distribuída sob a mesma licença da fotografia.",
+      "sha256": "bd9a0e7f9edc55279a6a4645e38f3b38166eae54a3905948852a6253d2f88739"
+    },
+    {
+      "pessoa": "David P. Norton",
+      "arquivo": "/img/origens/business-david-p-norton.webp",
+      "autor": "Davidpmcmillan",
+      "fonte": "https://commons.wikimedia.org/wiki/File:David_Norton.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/6/6e/David_Norton.jpg",
+      "licenca": "CC BY-SA 4.0",
+      "licenca_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "alteracoes": "Redução proporcional para até 600 px e conversão para WebP; enquadramento pelo layout. Adaptação distribuída sob a mesma licença da fotografia.",
+      "sha256": "8fe8afe127bcfff8233f30b16a97896b7eb9948eb9e220f3d711f32047471619"
+    }
+  ]
+}

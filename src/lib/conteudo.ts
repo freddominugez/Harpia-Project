@@ -19,7 +19,7 @@ export type Aprendizado = {
   ano: number; titulo: string; texto: string; eq?: string; autores?: string;
   contexto?: string; mecanismo?: string; equacoes?: { tex: string; texto: string }[]; exemplo?: string;
   limites?: string; legado?: string; hoje?: string;
-  referencias?: { texto: string; url: string }[]; links?: { rotulo: string; href: string }[];
+  referencias?: { texto: string; url: string; consultado?:string; limites?:string }[]; links?: { rotulo: string; href: string }[];
 };
 export type EventoLinha = { ano: number; titulo: string; texto: string; eq?: string; marco: boolean; era: string };
 

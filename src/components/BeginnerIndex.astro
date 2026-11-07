@@ -1,0 +1,24 @@
+---
+// Índice da seção "Começando": a série para quem está chegando agora.
+import { COMECANDO, SERIE, TOTAL_DA_SERIE } from "../data/comecando";
+interface Props { artigos?: {numero:number;slug:string;titulo:string;descricao:string;href?:string}[]; serie?:string; total?:number; autor?:string; lead?:string; prefixo?:string }
+const { artigos = COMECANDO, serie = SERIE, total = TOTAL_DA_SERIE, autor = 'Carlos Frederico Domínguez', prefixo = '', lead = 'Para quem está chegando agora. Uma série que explica, do concreto ao abstrato, como uma máquina aprende a falar: o que ela lê, como corta o texto, onde guarda o significado e por que erra do jeito que erra. Sem pré-requisito além de curiosidade.' } = Astro.props;
+const itens: NonNullable<Props['artigos']> = artigos;
+const n2 = (n: number) => String(n).padStart(2, "0");
+---
+  <p class="series">{serie} · série em {total} artigos</p>
+  <h1>Começando</h1>
+  <p class="byline">{autor}</p>
+  <p class="lead">{lead}</p>
+  <ol class="cm-lista">
+    {itens.map((a) => (
+      <li>
+        <a href={a.href ?? `${prefixo}/comecando/${a.slug}/`}>
+          <span class="cm-num" aria-hidden="true">{n2(a.numero)}</span>
+          <strong>{a.titulo}</strong>
+          <p>{a.descricao}</p>
+        </a>
+      </li>
+    ))}
+  </ol>
+  <p class="cm-breve">Os próximos artigos entram aqui à medida que forem publicados. Para ir além da série, veja os <a href={`${prefixo}/videos/`}>vídeos</a> por módulo e nível, o <a href={`${prefixo}/biblioteca/glossario/`}>glossário</a> e as <a href={`${prefixo}/equacoes/`}>equações</a> {prefixo ? "dos métodos de marketing e gestão." : "de cada camada."}</p>

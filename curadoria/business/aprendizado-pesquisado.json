@@ -1,0 +1,318 @@
+{
+  "schema_version": "1.0",
+  "preparado_em": "2026-11-06",
+  "estado": "corpus_editorial_pesquisado; revisao_do_responsavel_e_integracao_pendentes",
+  "escopo": "Dez etapas didáticas de aprendizagem Business; nenhuma é apresentada como ano ou marco histórico. Pesquisa e redação sem edição de runtime e sem publicação.",
+  "nota_integracao": "O tipo Aprendizado e LearningPage.astro usam ano em slug e marcador. Este arquivo preserva numero e não insere anos fictícios. O responsável deve adaptar o mapeamento e os rótulos ao integrar, preservando os componentes e a diagramação originais. Os campos adicionais consultado e limites das referências são evidência editorial e podem precisar de tratamento no esquema.",
+  "politica_editorial": [
+    "Fontes primárias das instituições ou publicações aprovadas; nenhuma fonte de coaching ou agência de marketing digital.",
+    "Trechos consultados, abstracts e textos de divulgação são distinguidos de leitura de obras completas.",
+    "Não há citação literal extensa nem reprodução de transcrições ou capítulos.",
+    "Os exemplos e equações elementares são construções didáticas próprias, com pressupostos explicitados; não são resultados empíricos das referências.",
+    "Referências históricas conservam suas datas bibliográficas; numero designa sequência pedagógica."
+  ],
+  "metrica_texto": "palavras_editoriais conta título, texto, contexto, mecanismo, explicações das equações, exemplo, limites, legado e hoje; exclui metadados e referências.",
+  "quantitativos": {
+    "entradas": 10,
+    "palavras_editoriais": 3413,
+    "equacoes": 8,
+    "fontes_distintas": 10
+  },
+  "itens": [
+    {
+      "numero": 1,
+      "titulo": "Valor começa pela decisão que o cliente precisa tomar",
+      "texto": "Antes de escolher campanha ou canal, identifique a decisão do cliente, suas alternativas e o resultado que ele procura. Valor percebido e retorno esperado da empresa são perguntas relacionadas, mas distintas.",
+      "contexto": "A jornada descrita pela McKinsey inclui consideração, avaliação, compra e experiência posterior. Isso ajuda a localizar dúvidas e atritos sem tratar todas as pessoas como se estivessem prontas para comprar. O mapa é uma hipótese de trabalho: conversar com clientes e observar o serviço continua necessário.",
+      "mecanismo": "Formule uma decisão verificável: qual problema será resolvido, para quem e em qual situação? Liste alternativas, inclusive manter a solução atual. Para comparar investimentos sob incerteza, use cenários e resultados líquidos definidos na mesma unidade. Uma média esperada organiza pressupostos; ela não mede satisfação nem transforma uma aposta em certeza.",
+      "equacoes": [
+        {
+          "tex": "\\mathbb{E}[R]=\\sum_{k=1}^{K}p_kR_k",
+          "texto": "R é o resultado líquido monetário de uma ação; R_k é esse resultado no cenário k; p_k é sua probabilidade suposta. Os cenários devem cobrir as possibilidades, ser mutuamente exclusivos e ter probabilidades cuja soma seja 1. A equação é uma definição elementar de esperança, não uma fórmula de valor psicológico."
+        }
+      ],
+      "exemplo": "Exemplo inteiramente hipotético: uma empresa avalia um piloto de atendimento. Suponha apenas dois resultados líquidos, já descontados os custos do piloto: ganho de R$ 10.000 com probabilidade 0,6 ou perda de R$ 4.000 com probabilidade 0,4. O resultado esperado é 0,6 × 10.000 + 0,4 × (−4.000) = R$ 4.400. As probabilidades foram inventadas para o exercício, não estimadas por pesquisa. Antes de aprovar, a direção precisa verificar se suporta perder R$ 4.000 e quais observações permitiriam revisar as probabilidades. O cliente pode continuar insatisfeito mesmo em um cenário financeiramente favorável.",
+      "limites": "Não converter cliques em utilidade, nem usar uma única média para esconder perdas relevantes. Os cenários simplificam a realidade e dependem de pressupostos contestáveis.",
+      "legado": "O resultado desta etapa é uma decisão explícita, com alternativas, critérios e evidências necessárias. Esse registro permite rever a escolha quando a experiência contradiz o planejamento.",
+      "hoje": "Comece cada projeto registrando problema, público, alternativa atual e critério de sucesso.",
+      "referencias": [
+        {
+          "texto": "McKinsey — The consumer decision journey",
+          "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey",
+          "consultado": {
+            "em": "2026-11-06",
+            "alcance": "Texto público: introdução e seção sobre fases da decisão, incluindo limites da metáfora do funil."
+          },
+          "limites": "Modelo editorial apoiado em pesquisa relatada pela consultoria; dados originais não reanalisados. A esperança matemática e os números são construção didática própria, não resultados do artigo."
+        }
+      ],
+      "palavras_editoriais": 340
+    },
+    {
+      "numero": 2,
+      "titulo": "Segmentar é escolher diferenças que mudam a ação",
+      "texto": "Um segmento só ajuda a gestão quando necessidades ou comportamentos justificam uma oferta, atendimento ou alocação diferente. Faixas demográficas podem descrever pessoas sem explicar o que elas procuram.",
+      "contexto": "A orientação de Wharton sobre conflitos entre segmentos recomenda examinar o valor funcional, simbólico e de identidade que públicos distintos encontram na marca. Crescer pode criar tensões: uma mudança conveniente para um grupo pode contrariar expectativas de outro. A classificação precisa orientar escolhas e permanecer revisável.",
+      "mecanismo": "Defina primeiro qual decisão a segmentação apoiará. Depois procure diferenças observáveis, estime a oportunidade e verifique se a organização consegue executar uma resposta distinta. Descreva critérios de entrada e saída; nomes atraentes para personas não substituem regras reproduzíveis. Uma conta de contribuição pode comparar cenários, desde que as taxas sejam reconhecidas como hipóteses.",
+      "equacoes": [
+        {
+          "tex": "G_s=N_sq_s(p_s-c_s)-F_s",
+          "texto": "G_s é a contribuição projetada do segmento s após um custo específico F_s; N_s é o número de pessoas elegíveis, q_s a fração compradora suposta, p_s o preço líquido e c_s o custo variável por comprador. O modelo supõe uma compra por comprador no período e não inclui custos comuns."
+        }
+      ],
+      "exemplo": "Exemplo hipotético: o segmento A tem 200 pessoas elegíveis, conversão suposta de 25%, contribuição unitária de R$ 80 e custo específico de R$ 1.000. Logo, 200 × 0,25 = 50 compras e G_A = 50 × 80 − 1.000 = R$ 3.000. O segmento B tem 500 pessoas, conversão suposta de 40%, contribuição de R$ 20 e custo específico de R$ 2.500: são 200 compras e G_B = 200 × 20 − 2.500 = R$ 1.500. B gera mais compras, mas menor contribuição no cenário. Nenhum número corresponde a uma população pesquisada.",
+      "limites": "Não inferir necessidades individuais a partir de médias de grupo. Capacidade, concorrência, acessibilidade e mudanças de comportamento podem invalidar a divisão e as contas.",
+      "legado": "A entrega é uma matriz de segmentos, necessidades, evidências e ações possíveis. Ela deve mostrar também quais grupos a proposta atual ainda não atende.",
+      "hoje": "Associe cada segmento a uma decisão concreta de produto, serviço, canal ou prioridade.",
+      "referencias": [
+        {
+          "texto": "Wharton — The Growth Equation: Avoid Customer-segment Collisions",
+          "url": "https://knowledge.wharton.upenn.edu/article/the-growth-equation-avoid-customer-segment-collisions/",
+          "consultado": {
+            "em": "2026-11-06",
+            "alcance": "Texto público: objetivo, orientação de análise do cliente, marca e mercado; autores identificados institucionalmente."
+          },
+          "limites": "Ferramenta gerencial de Annie Wilson e Ryan Hamilton; não é validação empírica dos segmentos hipotéticos aqui criados. A equação é um orçamento simplificado próprio."
+        }
+      ],
+      "palavras_editoriais": 338
+    },
+    {
+      "numero": 3,
+      "titulo": "Pesquisa útil distingue amostra, resposta e população",
+      "texto": "Coletar muitas respostas não resolve automaticamente uma pergunta mal definida. É preciso saber quem poderia participar, quem efetivamente respondeu e que tipo de inferência o desenho permite.",
+      "contexto": "Pesquisadores que escrevem para a AMA mostram como privacidade, sensibilidade do tema e esforço cognitivo afetam respostas e abandono de questionários. Esses problemas de mensuração coexistem com o problema amostral: uma pesquisa entre compradores atuais não descreve, por si só, todos os compradores potenciais.",
+      "mecanismo": "Especifique população, lista de seleção, procedimento de recrutamento e período. Separe exploração qualitativa de estimação quantitativa. Pré-teste compreensão das perguntas e registre recusas e exclusões. Para uma proporção, a incerteza amostral pode ser ilustrada por um modelo binomial simples; ele exige condições que um formulário aberto em rede social geralmente não oferece.",
+      "equacoes": [
+        {
+          "tex": "\\widehat p=\\frac{x}{n},\\qquad \\widehat{SE}(\\widehat p)=\\sqrt{\\frac{\\widehat p(1-\\widehat p)}{n}}",
+          "texto": "x é o número de respostas positivas e n o número de observações independentes no modelo binomial. A segunda expressão estima o erro padrão da proporção. Não corrige viés de seleção, pergunta tendenciosa, não resposta, ponderação ou agrupamento; tampouco é uma margem de erro automaticamente válida para qualquer enquete."
+        }
+      ],
+      "exemplo": "Exemplo hipotético: de 100 observações independentes, 50 respondem sim. A proporção é 50/100 = 0,5 e o erro padrão estimado é √(0,5 × 0,5/100) = 0,05, ou cinco pontos percentuais. Com 400 observações, mantendo 200 respostas positivas, a proporção permanece 0,5 e o erro padrão cai a √(0,25/400) = 0,025. Quadruplicar a amostra reduziu esse erro pela metade. Entretanto, se ambas as listas excluírem pessoas sem acesso digital, aumentar n não eliminará essa exclusão. Os números são didáticos, não um levantamento realizado.",
+      "limites": "Precisão condicional ao modelo não garante representatividade. A correção depende do desenho; intervalos estreitos podem acompanhar respostas sistematicamente enviesadas.",
+      "legado": "A entrega é uma ficha metodológica curta: pergunta, população, recrutamento, instrumento, limitações e condições de generalização. Preserve a distinção entre dado observado e interpretação.",
+      "hoje": "Publique a metodologia junto da conclusão, incluindo quem ficou fora da pesquisa.",
+      "referencias": [
+        {
+          "texto": "AMA — Proven and New Survey Techniques to Obtain Sensitive Information from Consumers",
+          "url": "https://www.ama.org/marketing-news/proven-and-new-survey-techniques-to-obtain-sensitive-information-from-consumers/",
+          "consultado": {
+            "em": "2026-11-06",
+            "alcance": "Texto público dos pesquisadores Marco Gregori, Martijn G. de Jong e Rik Pieters: introdução, critérios de qualidade e orientações para perguntas sensíveis."
+          },
+          "limites": "O texto trata especialmente de viés de resposta e proteção de participantes; não fornece a fórmula binomial usada aqui. Essa fórmula elementar foi aplicada apenas sob pressupostos explicitados, sem afirmar validade de uma amostra real."
+        }
+      ],
+      "palavras_editoriais": 316
+    },
+    {
+      "numero": 4,
+      "titulo": "Posicionamento liga uma promessa a uma alternativa real",
+      "texto": "Uma proposta de valor precisa dizer a quem atende, qual situação melhora e por que merece preferência frente às alternativas. Uma frase publicitária só ganha força quando a operação consegue sustentá-la.",
+      "contexto": "Zemsky e Almeida Costa, em texto autoral no INSEAD Knowledge, distinguem ampliar o valor criado e melhorar a capacidade de capturá-lo. A distinção ajuda a evitar um atalho: elevar preço ou intensificar comunicação não significa, necessariamente, resolver melhor o problema do cliente.",
+      "mecanismo": "Descreva o contexto de uso, a alternativa atual, o benefício relevante e a evidência que sustentará a promessa. Escolha diferenças que o público possa reconhecer e que a empresa consiga entregar. Trate cada expressão vaga, como rápido ou simples, como convite para definir uma condição observável. Esta etapa é qualitativa: não há uma equação universal capaz de determinar um posicionamento correto.",
+      "equacoes": [],
+      "exemplo": "Exemplo hipotético: uma empresa de manutenção atende pequenas clínicas. A alternativa atual promete apenas atendimento rápido; a proposta em teste promete confirmar o agendamento em duas horas e realizar a visita em até 24 horas, numa região delimitada. Antes de anunciar, a equipe reserva capacidade e define o que acontecerá em feriados, falta de peças e locais fora da cobertura. Suponha que preparar o piloto custe R$ 2.000 e que haja dez agendamentos simulados: R$ 2.000/10 = R$ 200 de custo de preparação por agendamento no exercício. Essa divisão não é custo recorrente nem disposição a pagar. O grupo deve entrevistar clientes sobre a relevância da promessa e verificar se a capacidade suporta a entrega. Nenhum prazo ou custo foi observado em uma empresa real.",
+      "limites": "Preferência declarada não equivale a compra. Um benefício pode ser importante e já estar bem atendido por concorrentes; uma diferenciação pode também ser facilmente copiada.",
+      "legado": "A entrega é uma hipótese de posicionamento acompanhada de condições operacionais, evidências exigidas e situações em que a proposta não atende. Documentar essas fronteiras evita promessas contraditórias.",
+      "hoje": "Faça a promessa caber na capacidade do serviço e verifique sua relevância antes de escalar comunicação.",
+      "referencias": [
+        {
+          "texto": "INSEAD Knowledge — Overcoming Competitive Pressures: “Making” vs. “Milking”",
+          "url": "https://knowledge.insead.edu/strategy/overcoming-competitive-pressures-making-vs-milking",
+          "consultado": {
+            "em": "2026-11-06",
+            "alcance": "Texto autoral público: definição das estratégias de criação e captura de valor e explicação do modelo com dois segmentos."
+          },
+          "limites": "Artigo de divulgação pelos pesquisadores; o paper associado não foi lido integralmente. A proposta e o piloto são exercício próprio, não recomendação comprovada para clínicas ou manutenção."
+        }
+      ],
+      "palavras_editoriais": 335
+    },
+    {
+      "numero": 5,
+      "titulo": "Preço precisa ser lido junto da margem e do volume",
+      "texto": "Um desconto reduz a receita por unidade, mas pode reduzir a contribuição em proporção maior. Para decidir, observe preço líquido, custo variável, quantidade e custos fixos no mesmo período.",
+      "contexto": "O texto da McKinsey sobre preços de transação chama atenção para descontos, bonificações e outras deduções entre a tabela e o valor efetivamente recebido. Essa análise é diferente de uma recomendação genérica para aumentar preços: a reação dos compradores e as condições do mercado continuam relevantes.",
+      "mecanismo": "Comece por conciliar faturamento, deduções e custos. Defina qual custo muda com cada venda e qual permanece no intervalo analisado. Compare contribuição total antes e depois da alteração; em seguida, verifique capacidade e evidência sobre demanda. Uma conta de equilíbrio informa o volume necessário, mas não demonstra que esse volume poderá ser vendido.",
+      "equacoes": [
+        {
+          "tex": "MC_u=p-v,\\qquad MC_T=q(p-v)",
+          "texto": "MC_u é a margem de contribuição unitária; p é o preço líquido, v o custo variável por unidade e q a quantidade. MC_T é a contribuição total antes de custos fixos. As unidades monetárias e o período precisam coincidir; contribuição não é sinônimo de lucro líquido."
+        }
+      ],
+      "exemplo": "Exemplo hipotético: um produto tem preço líquido de R$ 100 e custo variável de R$ 60. Cada unidade contribui com R$ 40; 100 unidades contribuem com R$ 4.000. Um desconto de 10% leva o preço a R$ 90 e a contribuição unitária a R$ 30, redução de 25% na contribuição por unidade. Para manter R$ 4.000, seriam necessárias 4.000/30 = 133⅓ unidades. Como unidades são inteiras, seriam pelo menos 134, que geram R$ 4.020; isso exige 34 unidades adicionais frente às 100 iniciais. A conta pressupõe custo variável constante, recebimento integral e capacidade disponível. Ela não prevê elasticidade nem resulta de teste comercial.",
+      "limites": "Frete, tributos, comissões, devoluções e inadimplência podem alterar o preço líquido ou o custo. Não usar médias de outros setores como promessa de ganho.",
+      "legado": "A entrega é uma ponte entre preço anunciado, receita líquida e contribuição. Decisões comerciais ganham clareza quando marketing, vendas, operações e finanças usam as mesmas definições.",
+      "hoje": "Antes de aprovar desconto, explicite a contribuição perdida e o volume adicional necessário.",
+      "referencias": [
+        {
+          "texto": "McKinsey — The power of pricing",
+          "url": "https://www.mckinsey.com/capabilities/operations/our-insights/the-power-of-pricing",
+          "consultado": {
+            "em": "2026-11-06",
+            "alcance": "Texto público: preços de transação, níveis de gestão de preços e deduções do preço; contexto de publicação identificado."
+          },
+          "limites": "Artigo histórico de consultoria; exemplos e efeitos percentuais publicados não foram transportados para esta aula. A conta de contribuição é ilustração própria, sem previsão de demanda."
+        }
+      ],
+      "palavras_editoriais": 350
+    },
+    {
+      "numero": 6,
+      "titulo": "Aquisição fica mais clara quando se acompanha a coorte",
+      "texto": "O custo médio de conquistar clientes é apenas o começo da análise. Coortes permitem acompanhar grupos adquiridos no mesmo período, comparando sua evolução em idades equivalentes.",
+      "contexto": "Na entrevista publicada por Wharton, Fader, Hardie e Ross descrevem uma auditoria da base de clientes que separa aquisição, comportamento dos clientes existentes e evolução de coortes. A participação na coorte de aquisição permanece fixa, diferentemente de um segmento comportamental que pode mudar de composição.",
+      "mecanismo": "Defina primeiro quem conta como novo cliente, a data de entrada e quais despesas compõem a aquisição. Depois observe compras, contribuição e atividade em janelas comparáveis. Uma coorte recém-criada não deve ser confrontada com outra que já teve muitos meses para repetir compras. A reconciliação precisa preservar clientes identificáveis sem duplicações.",
+      "equacoes": [
+        {
+          "tex": "CAC_c=\\frac{A_c}{N_c},\\qquad a_{c,t}=\\frac{N_{c,t}^{\\mathrm{ativo}}}{N_c}",
+          "texto": "CAC_c é o custo médio de aquisição da coorte c; A_c são despesas de aquisição incluídas no critério e N_c seus clientes novos. a_c,t é a fração ativa na idade t sob uma definição explícita. A atividade não deve ser confundida automaticamente com retenção contratual ou rentabilidade."
+        }
+      ],
+      "exemplo": "Exemplo hipotético: janeiro adquire 100 clientes com R$ 10.000 de despesas; o CAC é R$ 100. Fevereiro adquire 200 com R$ 16.000; o CAC é R$ 80. Na idade de dois meses, 40 clientes de janeiro e 60 de fevereiro fazem ao menos uma compra: as frações são 40/100 = 40% e 60/200 = 30%. Fevereiro tem mais compradores ativos em número absoluto e menor custo inicial, mas menor fração ativa nessa idade. Não é possível concluir qual coorte cria mais valor sem margem, frequência e custos posteriores. Os grupos e números foram inventados; diferenças podem refletir sazonalidade, oferta ou composição, não o efeito causal de uma campanha.",
+      "limites": "Despesas compartilhadas exigem regra de alocação. Empresas com compras raras precisam de janelas adequadas; ausência de compra em um mês não prova abandono.",
+      "legado": "A entrega é uma tabela por idade da coorte, com denominadores estáveis e critérios auditáveis. Ela torna o crescimento comparável sem esconder qualidade da base em um total agregado.",
+      "hoje": "Compare grupos no mesmo tempo desde a aquisição e acompanhe contribuição, além de volume.",
+      "referencias": [
+        {
+          "texto": "Knowledge at Wharton — How to Get the Most from Your Customer Data",
+          "url": "https://knowledge.wharton.upenn.edu/podcast/knowledge-at-wharton-podcast/how-to-get-the-most-from-your-customer-data/",
+          "consultado": {
+            "em": "2026-11-06",
+            "alcance": "Transcrição editada pública: definição de auditoria da base, cinco lentes de análise e definição de coorte de aquisição."
+          },
+          "limites": "Entrevista sobre o livro The Customer-Base Audit; o livro completo não foi consultado. Fórmulas e tabela são exercícios didáticos, não estimativas de uma base comercial."
+        }
+      ],
+      "palavras_editoriais": 352
+    },
+    {
+      "numero": 7,
+      "titulo": "Retenção e CLV exigem horizonte, margem e pressupostos",
+      "texto": "O valor do relacionamento não é a soma de receitas futuras desejadas. Uma estimativa de CLV precisa de contribuição, probabilidade de continuidade, tempo e custos de aquisição definidos.",
+      "contexto": "O trecho de Gupta e Lehmann disponibilizado por Wharton destaca os dois lados do valor: o benefício que a empresa entrega e o retorno que obtém do relacionamento. Aquisição, margem e retenção podem entrar em tensão. Um grupo que cresce rapidamente não necessariamente produz retorno maior.",
+      "mecanismo": "Escolha um horizonte e descreva o comportamento que manterá o cliente elegível para produzir contribuição em cada período. Em negócios contratuais, continuidade pode ser observável; em compras ocasionais, inferir abandono é mais difícil. Separe o custo inicial dos custos já descontados da margem para evitar dupla contagem. Teste cenários antes de interpretar um número como previsão.",
+      "equacoes": [
+        {
+          "tex": "CLV_T=\\sum_{t=1}^{T}\\frac{S_tm_t}{(1+d)^t}-CAC",
+          "texto": "T é o horizonte finito; S_t é a probabilidade suposta de o relacionamento produzir a margem condicional m_t no período t; d é a taxa de desconto por período; CAC é o custo inicial. Não há receita inicial nem valor terminal nesta definição. Todas as margens são líquidas dos custos de servir considerados."
+        }
+      ],
+      "exemplo": "Exemplo hipotético: considere dois períodos, contribuição condicional de R$ 100 no final de cada um, probabilidade de continuidade de 50% a cada passagem, taxa de desconto de 25% por período e CAC de R$ 30. Assim, S_1 = 0,5 e S_2 = 0,25. O primeiro fluxo vale 50/1,25 = R$ 40; o segundo vale 25/1,5625 = R$ 16. Logo, CLV_2 = 40 + 16 − 30 = R$ 26. A taxa de desconto foi escolhida para simplificar a aritmética, não recomendada para uma empresa. Supõem-se probabilidades constantes, margem fixa e nenhum fluxo após o segundo período.",
+      "limites": "Custos comuns, restrições de caixa, concorrência e heterogeneidade podem alterar a interpretação. Aumentar retenção mediante um benefício caro pode reduzir o retorno.",
+      "legado": "A entrega é uma estimativa acompanhada de horizonte e análise de sensibilidade. Manter parâmetros visíveis permite discutir quais observações realmente justificam investir no relacionamento.",
+      "hoje": "Use CLV como cenário auditável e confronte previsões com contribuição realizada por coorte.",
+      "referencias": [
+        {
+          "texto": "Knowledge at Wharton — What Are Your Customers Really Worth?",
+          "url": "https://knowledge.wharton.upenn.edu/article/what-are-your-customers-really-worth/",
+          "consultado": {
+            "em": "2026-11-06",
+            "alcance": "Trecho público do livro de Sunil Gupta e Donald R. Lehmann: dois lados do valor, métricas e aquisição, margem e retenção."
+          },
+          "limites": "Consultado o trecho disponibilizado, não o livro integral. A expressão finita de fluxos esperados e os números são construção didática própria; não constituem modelo estimado ou orientação financeira personalizada."
+        }
+      ],
+      "palavras_editoriais": 346
+    },
+    {
+      "numero": 8,
+      "titulo": "Atribuição organiza crédito; causalidade pergunta pelo incremento",
+      "texto": "Saber qual contato precedeu uma compra não informa, por si só, se a compra aconteceu por causa dele. A pergunta causal exige comparar o observado com uma alternativa de ausência da intervenção.",
+      "contexto": "O abstract de Gordon e coautores, publicado em Marketing Science, relata diferenças entre resultados de experimentos publicitários e estimativas observacionais, mesmo com muitas variáveis disponíveis. A lição é delimitada: riqueza de registros não elimina automaticamente seleção ou fatores não observados.",
+      "mecanismo": "Defina a intervenção e o resultado antes de olhar o painel. Em um experimento corretamente randomizado, compare grupos conforme a atribuição inicial. Não condicione a comparação apenas a quem recebeu uma impressão ou clicou depois da randomização: essas ações podem reintroduzir seleção. Um modelo de atribuição pode servir à descrição operacional sem receber o rótulo de efeito causal.",
+      "equacoes": [
+        {
+          "tex": "\\widehat\\Delta=\\frac{Y_T}{N_T}-\\frac{Y_C}{N_C}",
+          "texto": "Y_T e Y_C são compradores nos grupos atribuídos a tratamento e controle; N_T e N_C são seus tamanhos. A diferença compara taxas observadas. Sua interpretação causal requer randomização válida, observação comparável, ausência de contaminação relevante e definição consistente do resultado. A fórmula não quantifica sozinha a incerteza."
+        }
+      ],
+      "exemplo": "Exemplo hipotético: um teste aloca aleatoriamente 1.000 pessoas a cada grupo. O controle registra 80 compradores e o tratamento, 100: 8% e 10%, diferença de dois pontos percentuais. Aplicada às 1.000 pessoas tratadas, a diferença corresponde a 20 compras incrementais estimadas, não a todas as 100 compras. Se cada compra gerar R$ 40 de contribuição e a intervenção custar R$ 600, o saldo pontual será 20 × 40 − 600 = R$ 200 antes de custos comuns. Todos os números são fictícios. Ainda faltam avaliação da incerteza, verificação do experimento e eventuais efeitos posteriores antes de decidir expandir.",
+      "limites": "Nem toda comparação com grupo de controle é randomizada. Contaminação, perdas de acompanhamento e intervenções simultâneas podem comprometer a conclusão; resultados de uma plataforma não são universais.",
+      "legado": "A entrega separa três registros: contatos observados, crédito atribuído e incremento estimado. Essa separação reduz o risco de financiar ações apenas porque aparecem próximas da conversão.",
+      "hoje": "Pergunte quanto mudaria sem a ação e qual desenho sustenta essa resposta.",
+      "referencias": [
+        {
+          "texto": "Gordon, Zettelmeyer, Bhargava e Chapsky — A Comparison of Approaches to Advertising Measurement",
+          "url": "https://pubsonline.informs.org/doi/10.1287/mksc.2018.1135",
+          "consultado": {
+            "em": "2026-11-06",
+            "alcance": "Abstract oficial integral e identificação bibliográfica de Marketing Science; não o artigo completo."
+          },
+          "limites": "As conclusões relatadas pertencem ao contexto dos experimentos descritos no abstract. Não foram auditados dados, modelos ou apêndices. O exercício randomizado e a conta de saldo são próprios e hipotéticos."
+        }
+      ],
+      "palavras_editoriais": 347
+    },
+    {
+      "numero": 9,
+      "titulo": "Experimentos precisam de incerteza e de uma regra de decisão",
+      "texto": "Duas taxas diferentes são um ponto de partida, não uma autorização automática para declarar uma opção vencedora. O desenho precisa distinguir efeito, variação amostral e mudança de público.",
+      "contexto": "Braun e Schwartz explicam, em texto autoral da AMA, que a entrega otimizada de anúncios pode expor criativos a combinações diferentes de usuários. Isso limita a interpretação de comparações anunciadas como A/B. A pergunta deve esclarecer se se deseja avaliar o sistema de entrega ou o criativo sob condições comparáveis.",
+      "mecanismo": "Registre hipótese, resultado principal, unidade de randomização, duração, tamanho planejado e regra de encerramento. Evite escolher apenas o indicador mais favorável depois de testar muitos. Um erro padrão descreve variação sob um modelo; não corrige uma alocação enviesada. Mesmo um efeito estatisticamente compatível com ganho pode ser economicamente pequeno ou operacionalmente inviável.",
+      "equacoes": [
+        {
+          "tex": "\\widehat{SE}(\\widehat p_B-\\widehat p_A)=\\sqrt{\\frac{\\widehat p_A(1-\\widehat p_A)}{n_A}+\\frac{\\widehat p_B(1-\\widehat p_B)}{n_B}}",
+          "texto": "A expressão é a estimativa não agrupada do erro padrão de duas proporções sob amostras binomiais independentes. p̂_A e p̂_B são taxas observadas; n_A e n_B são tamanhos dos grupos. Dependência, agrupamento e amostragem adaptativa exigem outro tratamento. Ela não é uma receita universal para plataformas de anúncios."
+        }
+      ],
+      "exemplo": "Exemplo hipotético: A tem 50 compras em 100 pessoas, e B tem 55 em 100. A diferença observada é 55/100 − 50/100 = 0,05, ou cinco pontos percentuais; o crescimento relativo é 0,05/0,50 = 10%. São escalas diferentes para os mesmos dados. Sob o modelo independente, a variância estimada da diferença seria 0,5 × 0,5/100 + 0,55 × 0,45/100 = 0,004975; o erro padrão é a raiz desse número. Não foi calculado aqui um intervalo nem declarada significância. Se a plataforma selecionar públicos distintos, o problema passa além da variância: o contraste pode misturar composição com resposta ao criativo.",
+      "limites": "Parar assim que surgir um resultado conveniente altera propriedades de testes usuais. Replicação, efeitos adversos e relevância prática precisam entrar na decisão, além do valor pontual.",
+      "legado": "A entrega reúne efeito estimado, desenho, incerteza e decisão previamente justificada. Um resultado inconclusivo pode justificar nova coleta; não precisa ser reembalado como sucesso.",
+      "hoje": "Antes do lançamento, escreva que evidência fará continuar, revisar ou encerrar o teste.",
+      "referencias": [
+        {
+          "texto": "AMA — Can You Trust Your Ad Data?",
+          "url": "https://www.ama.org/2025/01/07/can-you-trust-your-ad-data-a-new-study-exposes-a-hidden-flaw-in-a-b-testing-on-digital-ad-platforms/",
+          "consultado": {
+            "em": "2026-11-06",
+            "alcance": "Texto público autoral de Michael Braun e Eric M. Schwartz: entrega divergente, implicações para comparações A/B e recomendações."
+          },
+          "limites": "Texto de divulgação do estudo; não foi lido o paper completo. A fórmula binomial é estatística elementar aplicada no exercício, não método validado para a entrega algorítmica descrita. Todos os números são fictícios."
+        }
+      ],
+      "palavras_editoriais": 350
+    },
+    {
+      "numero": 10,
+      "titulo": "Administração transforma testes em aprendizagem compartilhada",
+      "texto": "Uma organização não aprende apenas por acumular relatórios. Aprende quando evidências alteram decisões, responsabilidades ou rotinas e quando esse conhecimento pode ser recuperado e contestado por outras pessoas.",
+      "contexto": "No abstract de Closing the Marketing Capabilities Gap, George Day propõe capacidades de aprendizagem de mercado, experimentação adaptativa e articulação com parceiros. O argumento situa o desafio na capacidade organizacional de responder à complexidade, não apenas na quantidade de dados ou ferramentas disponíveis.",
+      "mecanismo": "Crie um ciclo de trabalho com pergunta, responsável, observação, decisão e acompanhamento. Preserve hipóteses que falharam e diferenças entre unidades; copiar uma prática sem seu contexto pode repetir um erro. Reuniões devem identificar quais conclusões sustentam mudança de processo e quais ainda precisam de evidência. Não se propõe uma equação: capacidade de aprender não se reduz a um placar único.",
+      "equacoes": [],
+      "exemplo": "Exemplo inteiramente hipotético: uma empresa recebe dez propostas mensais de melhoria. No primeiro mês testa duas e registra somente o resultado final; a fração testada é 2/10 = 20%. No segundo mês testa seis, mas quatro não têm hipótese nem critério de encerramento: 6/10 = 60% é uma contagem maior, sem demonstrar aprendizagem melhor. Para um terceiro ciclo, a direção escolhe três propostas e documenta problema, responsáveis, informação necessária e decisão possível. Reserva duas horas de reunião para cada uma, totalizando 3 × 2 = seis horas de revisão. Esse tempo é custo de processo planejado, não retorno comprovado. Ao final, o grupo deve explicar o que mudou na decisão e que evidência ainda falta, inclusive quando optar por não expandir.",
+      "limites": "Aprendizagem pode ser limitada por incentivos, falta de capacidade, dados inadequados ou silenciamento de resultados desfavoráveis. A proposta conceitual não garante desempenho e precisa ser ajustada ao contexto.",
+      "legado": "A entrega é um registro de decisões que preserva pergunta, evidência, interpretação, ação, limites e data de reavaliação. O conhecimento útil inclui explicações de por que uma solução foi recusada e das condições em que deveria ser reconsiderada.",
+      "hoje": "Dê à revisão de evidências um responsável, um prazo e uma consequência observável na gestão.",
+      "referencias": [
+        {
+          "texto": "George S. Day — Closing the Marketing Capabilities Gap, Journal of Marketing",
+          "url": "https://journals.sagepub.com/doi/10.1509/jmkg.75.4.183",
+          "consultado": {
+            "em": "2026-11-06",
+            "alcance": "Abstract oficial integral e dados bibliográficos; artigo completo não consultado."
+          },
+          "limites": "O abstract apresenta capacidades adaptativas e condições organizacionais, sem permitir examinar todas as evidências ou operacionalizações do artigo. O ciclo, o exemplo e os critérios de registro são propostas didáticas próprias."
+        }
+      ],
+      "palavras_editoriais": 339
+    }
+  ],
+  "verificacao_aritmetica": {
+    "metodo": "Contas verificadas com aritmética decimal exata em Python decimal; fração 4.000/30 expressa exatamente como 133⅓, sem arredondar o limiar para baixo.",
+    "resultados": {
+      "1_esperanca": true,
+      "2_segmentos": true,
+      "3_erro_padrao": true,
+      "5_contribuicao": true,
+      "6_coortes": true,
+      "7_clv": true,
+      "8_incremento": true,
+      "9_variancia": true,
+      "10_tempo": true
+    },
+    "dados_empiricos_utilizados": false
+  }
+}

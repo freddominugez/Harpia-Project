@@ -1,12 +1,12 @@
 ---
 import PageIntro from "./PageIntro.astro";
 import { fontesDoSite, type GrupoFontes } from '../lib/fontes-site';
-interface Props { grupos?: GrupoFontes[]; prefixo?: string }
-const { grupos = await fontesDoSite(), prefixo = '' } = Astro.props;
+interface Props { grupos?: GrupoFontes[]; prefixo?: string; titulo?:string; lead?:string }
+const { grupos = await fontesDoSite(), prefixo = '', titulo='Fontes do site', lead } = Astro.props;
 const nFontes = grupos.reduce((s, g) => s + g.itens.length, 0);
 ---
 
-  <PageIntro trilha={[{ rotulo: "Biblioteca", href: `${prefixo}/biblioteca/` }, { rotulo: "Fontes do site" }]} eyebrow="Referências e créditos" titulo="Fontes do site" lead={`${nFontes} links reunidos em um só lugar, com os nomes, créditos disponíveis e páginas em que são utilizados. Cada fonte conserva os direitos e a licença de seu titular.`} />
+  <PageIntro trilha={[{ rotulo: "Biblioteca", href: `${prefixo}/biblioteca/` }, { rotulo: "Fontes do site" }]} eyebrow="Referências e créditos" titulo={titulo} lead={lead ?? `${nFontes} links reunidos em um só lugar, com os nomes, créditos disponíveis e páginas em que são utilizados. Cada fonte conserva os direitos e a licença de seu titular.`} />
   <section class="page-body"><div class="container fontes-site">
     <p class="fontes-nota">Referências de leitura e de compra estão identificadas separadamente. Consulte os <a href="/termos-de-uso/">Termos de Uso</a> para conhecer as permissões de reutilização.</p>
     <nav class="fontes-indice" aria-label="Categorias de fontes">

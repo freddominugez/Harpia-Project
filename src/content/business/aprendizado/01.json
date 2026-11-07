@@ -1,0 +1,29 @@
+{
+  "numero": 1,
+  "titulo": "Valor começa pela decisão que o cliente precisa tomar",
+  "texto": "Antes de escolher campanha ou canal, identifique a decisão do cliente, suas alternativas e o resultado que ele procura. Valor percebido e retorno esperado da empresa são perguntas relacionadas, mas distintas.",
+  "contexto": "A jornada descrita pela McKinsey inclui consideração, avaliação, compra e experiência posterior. Isso ajuda a localizar dúvidas e atritos sem tratar todas as pessoas como se estivessem prontas para comprar. O mapa é uma hipótese de trabalho: conversar com clientes e observar o serviço continua necessário.",
+  "mecanismo": "Formule uma decisão verificável: qual problema será resolvido, para quem e em qual situação? Liste alternativas, inclusive manter a solução atual. Para comparar investimentos sob incerteza, use cenários e resultados líquidos definidos na mesma unidade. Uma média esperada organiza pressupostos; ela não mede satisfação nem transforma uma aposta em certeza.",
+  "equacoes": [
+    {
+      "tex": "\\mathbb{E}[R]=\\sum_{k=1}^{K}p_kR_k",
+      "texto": "R é o resultado líquido monetário de uma ação; R_k é esse resultado no cenário k; p_k é sua probabilidade suposta. Os cenários devem cobrir as possibilidades, ser mutuamente exclusivos e ter probabilidades cuja soma seja 1. A equação é uma definição elementar de esperança, não uma fórmula de valor psicológico."
+    }
+  ],
+  "exemplo": "Exemplo inteiramente hipotético: uma empresa avalia um piloto de atendimento. Suponha apenas dois resultados líquidos, já descontados os custos do piloto: ganho de R\\$ 10.000 com probabilidade 0,6 ou perda de R\\$ 4.000 com probabilidade 0,4. O resultado esperado é 0,6 × 10.000 + 0,4 × (−4.000) = R\\$ 4.400. As probabilidades foram inventadas para o exercício, não estimadas por pesquisa. Antes de aprovar, a direção precisa verificar se suporta perder R\\$ 4.000 e quais observações permitiriam revisar as probabilidades. O cliente pode continuar insatisfeito mesmo em um cenário financeiramente favorável.",
+  "limites": "Não converter cliques em utilidade, nem usar uma única média para esconder perdas relevantes. Os cenários simplificam a realidade e dependem de pressupostos contestáveis.",
+  "legado": "O resultado desta etapa é uma decisão explícita, com alternativas, critérios e evidências necessárias. Esse registro permite rever a escolha quando a experiência contradiz o planejamento.",
+  "hoje": "Comece cada projeto registrando problema, público, alternativa atual e critério de sucesso.",
+  "referencias": [
+    {
+      "texto": "McKinsey — The consumer decision journey",
+      "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey",
+      "consultado": "em: 2026-11-06; alcance: Texto público: introdução e seção sobre fases da decisão, incluindo limites da metáfora do funil.",
+      "limites": "Modelo editorial apoiado em pesquisa relatada pela consultoria; dados originais não reanalisados. A esperança matemática e os números são construção didática própria, não resultados do artigo."
+    }
+  ],
+  "atualizado": "2026-11-06",
+  "status": "publicado",
+  "revisor": "Harpya · revisão didática e de aritmética",
+  "revisado_em": "2026-11-06"
+}

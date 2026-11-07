@@ -1,0 +1,24 @@
+{
+  "numero": 10,
+  "titulo": "Administração transforma testes em aprendizagem compartilhada",
+  "texto": "Uma organização não aprende apenas por acumular relatórios. Aprende quando evidências alteram decisões, responsabilidades ou rotinas e quando esse conhecimento pode ser recuperado e contestado por outras pessoas.",
+  "contexto": "No abstract de Closing the Marketing Capabilities Gap, George Day propõe capacidades de aprendizagem de mercado, experimentação adaptativa e articulação com parceiros. O argumento situa o desafio na capacidade organizacional de responder à complexidade, não apenas na quantidade de dados ou ferramentas disponíveis.",
+  "mecanismo": "Crie um ciclo de trabalho com pergunta, responsável, observação, decisão e acompanhamento. Preserve hipóteses que falharam e diferenças entre unidades; copiar uma prática sem seu contexto pode repetir um erro. Reuniões devem identificar quais conclusões sustentam mudança de processo e quais ainda precisam de evidência. Não se propõe uma equação: capacidade de aprender não se reduz a um placar único.",
+  "equacoes": [],
+  "exemplo": "Exemplo inteiramente hipotético: uma empresa recebe dez propostas mensais de melhoria. No primeiro mês testa duas e registra somente o resultado final; a fração testada é 2/10 = 20%. No segundo mês testa seis, mas quatro não têm hipótese nem critério de encerramento: 6/10 = 60% é uma contagem maior, sem demonstrar aprendizagem melhor. Para um terceiro ciclo, a direção escolhe três propostas e documenta problema, responsáveis, informação necessária e decisão possível. Reserva duas horas de reunião para cada uma, totalizando 3 × 2 = seis horas de revisão. Esse tempo é custo de processo planejado, não retorno comprovado. Ao final, o grupo deve explicar o que mudou na decisão e que evidência ainda falta, inclusive quando optar por não expandir.",
+  "limites": "Aprendizagem pode ser limitada por incentivos, falta de capacidade, dados inadequados ou silenciamento de resultados desfavoráveis. A proposta conceitual não garante desempenho e precisa ser ajustada ao contexto.",
+  "legado": "A entrega é um registro de decisões que preserva pergunta, evidência, interpretação, ação, limites e data de reavaliação. O conhecimento útil inclui explicações de por que uma solução foi recusada e das condições em que deveria ser reconsiderada.",
+  "hoje": "Dê à revisão de evidências um responsável, um prazo e uma consequência observável na gestão.",
+  "referencias": [
+    {
+      "texto": "George S. Day — Closing the Marketing Capabilities Gap, Journal of Marketing",
+      "url": "https://journals.sagepub.com/doi/10.1509/jmkg.75.4.183",
+      "consultado": "em: 2026-11-06; alcance: Abstract oficial integral e dados bibliográficos; artigo completo não consultado.",
+      "limites": "O abstract apresenta capacidades adaptativas e condições organizacionais, sem permitir examinar todas as evidências ou operacionalizações do artigo. O ciclo, o exemplo e os critérios de registro são propostas didáticas próprias."
+    }
+  ],
+  "atualizado": "2026-11-06",
+  "status": "publicado",
+  "revisor": "Harpya · revisão didática e de aritmética",
+  "revisado_em": "2026-11-06"
+}

@@ -1,0 +1,307 @@
+{
+  "versao": 1,
+  "estado_editorial": "rascunho_pesquisado",
+  "pesquisado_em": "2026-11-06",
+  "nota": "Oito sínteses próprias para revisão editorial. Não houve publicação nem alteração de status do acervo. Datas correspondem às páginas consultadas, sem datar novamente estudos subjacentes. Autoria ausente permanece null.",
+  "metodo": "Consulta a páginas institucionais das fontes aprovadas, com texto efetivamente consultado e limites registrados por nota. Não se declara revisão integral de papers citados pelas páginas. Nenhum resultado de Harpya foi inventado.",
+  "resumo_quantitativo": {
+    "notas": 8,
+    "paginas_distintas": 8,
+    "fontes_distintas": 6,
+    "brasil": 3,
+    "europa": 2,
+    "eua_global": 3,
+    "autoria_individual_ou_institucional_identificada": 6,
+    "noticias_sem_assinatura_individual": 2,
+    "revisao_integral_dos_estudos_subjacentes": 0
+  },
+  "notas": [
+    {
+      "slug": "consumo-tecnologia-e-pressao-no-orcamento-2026",
+      "titulo": "McKinsey examina consumo entre tecnologia e pressão no orçamento",
+      "resumo": "Relatório relaciona descoberta, experiências e valor.",
+      "data_fonte": "2026-06-22",
+      "fonte_id": "mckinsey",
+      "url": "https://www.mckinsey.com/industries/consumer-packaged-goods/our-insights/state-of-consumer",
+      "autores": [
+        "Anna Pione",
+        "Clarisse Magnin",
+        "Danielle Bozarth",
+        "Jessica Moulton",
+        "Kari Alldredge"
+      ],
+      "natureza": "relatorio",
+      "corpo": [
+        "Em relatório publicado em junho, a McKinsey reúne tendências de consumo ligadas à tecnologia e à atenção ao orçamento. A análise organiza quatro frentes: descoberta e compra mediadas por tecnologia, saúde, experiências e maneiras de aproveitar melhor os recursos disponíveis.",
+        "A pesquisa declarada ouviu consumidores em cinco países, incluindo o Brasil. O texto discute como ferramentas digitais e inteligência artificial participam da procura por produtos, enquanto confiança e percepção de valor continuam relevantes para compreender a escolha entre ofertas.",
+        "A leitura editorial sugere investigar essas mudanças por categoria e público antes de alterar canais ou propostas. O relatório combina levantamento declarado e experiência de consultoria; suas tendências não demonstram, isoladamente, que uma iniciativa produzirá crescimento numa empresa específica."
+      ],
+      "importancia": "Ajuda a formular perguntas sobre valor, confiança e canais.",
+      "limites": "Pesquisa descritiva e interpretação de consultoria; não demonstra retorno causal de iniciativas.",
+      "referencias": [
+        {
+          "titulo": "State of the Consumer 2026: When tech acceleration and cost pressures collide",
+          "url": "https://www.mckinsey.com/industries/consumer-packaged-goods/our-insights/state-of-consumer"
+        }
+      ],
+      "evidencias_consulta": {
+        "data": "Data visível no cabeçalho.",
+        "autoria": "Cinco nomes em About the authors.",
+        "conteudo": "Introdução, metodologia declarada e jornada tecnológica consultadas.",
+        "acesso": "Página aberta; PDF integral não revisado."
+      },
+      "regiao_editorial": "EUA / global",
+      "consultado_em": "2026-11-06",
+      "estado_editorial": "rascunho_pesquisado",
+      "contagem_palavras_corpo": 118
+    },
+    {
+      "slug": "ia-e-papel-da-lideranca-de-marketing-2026",
+      "titulo": "BCG discute mudanças no papel da liderança de marketing",
+      "resumo": "Artigo aproxima IA, experiência e organização.",
+      "data_fonte": "2026-07-16",
+      "fonte_id": "bcg",
+      "url": "https://www.bcg.com/publications/2026/how-agentic-ai-transforms-marketing",
+      "autores": [
+        "Ravi Dhar",
+        "Jon Iwata",
+        "Jennie Liu",
+        "Lauren Taylor",
+        "Janet Balis"
+      ],
+      "natureza": "executivo",
+      "corpo": [
+        "Em artigo de julho, autores vinculados à Yale e à BCG discutem como agentes de inteligência artificial podem mudar a descoberta e a avaliação de ofertas. A proposta amplia a discussão de produtividade para incluir estratégia, informação sobre clientes e experiência.",
+        "O texto relaciona a promessa da marca ao desempenho observável de produto, disponibilidade, entrega e atendimento. Também argumenta que novas interações podem produzir informações úteis sobre objetivos e escolhas dos consumidores, exigindo integração entre marketing e outras áreas da empresa.",
+        "A leitura editorial destaca uma pergunta: quais capacidades operacionais sustentam o que a comunicação promete? Trata-se de uma interpretação executiva sobre um cenário em desenvolvimento. O artigo não comprova que adotar agentes produzirá resultados uniformes, nem fornece garantia de retorno para qualquer organização."
+      ],
+      "importancia": "Conecta decisões de marca à capacidade de entrega.",
+      "limites": "Ensaio executivo; projeções e recomendações não equivalem a efeitos causais demonstrados.",
+      "referencias": [
+        {
+          "titulo": "Agentic AI Will Make the CMO’s Role More Consequential",
+          "url": "https://www.bcg.com/publications/2026/how-agentic-ai-transforms-marketing"
+        }
+      ],
+      "evidencias_consulta": {
+        "data": "Cabeçalho e elemento time: 16/07/2026.",
+        "autoria": "Cinco autores na página.",
+        "conteudo": "Teses centrais e encerramento consultados.",
+        "acesso": "Página institucional aberta.",
+        "observacao": "Data visível adotada: 16/07."
+      },
+      "regiao_editorial": "EUA / global",
+      "consultado_em": "2026-11-06",
+      "estado_editorial": "rascunho_pesquisado",
+      "contagem_palavras_corpo": 124
+    },
+    {
+      "slug": "vitrines-atencao-e-percepcao-de-preco-2026",
+      "titulo": "INSEAD relaciona disposição de vitrines à percepção de preço",
+      "resumo": "Divulgação de pesquisa examina direção do olhar e posição.",
+      "data_fonte": "2026-05-18",
+      "fonte_id": "insead",
+      "url": "https://knowledge.insead.edu/marketing/how-much-display-window",
+      "autores": [
+        "INSEAD Knowledge",
+        "Abhishek Borah"
+      ],
+      "natureza": "divulgacao_cientifica",
+      "corpo": [
+        "Em maio, a INSEAD divulgou uma pesquisa sobre como o movimento do observador e a altura de produtos numa vitrine podem influenciar julgamentos de preço. O artigo apresenta experimentos controlados e descreve o uso de rastreamento do olhar dos participantes.",
+        "Segundo a divulgação, a direção do movimento altera a região que recebe atenção, enquanto a posição do produto participa da avaliação de valor. O texto também relata que a pressão de tempo enfraquece a influência das pistas espaciais no contexto examinado.",
+        "Para o varejo, a questão editorial é como avaliar exposição e circulação sem presumir um efeito universal. Os experimentos descritos envolveram estudantes e condições específicas. A nota se apoia na divulgação institucional, sem revisão integral do artigo acadêmico ou verificação de resultados em lojas brasileiras."
+      ],
+      "importancia": "Abre perguntas sobre exposição, circulação e avaliação de ofertas.",
+      "limites": "Condições experimentais específicas; aplicação comercial e validade externa exigem investigação.",
+      "referencias": [
+        {
+          "titulo": "How Much Is That Display in the Window?",
+          "url": "https://knowledge.insead.edu/marketing/how-much-display-window"
+        }
+      ],
+      "evidencias_consulta": {
+        "data": "18/05/2026 no cabeçalho.",
+        "autoria": "Assinatura institucional com Abhishek Borah.",
+        "conteudo": "Desenho resumido e takeaways consultados.",
+        "acesso": "Divulgação aberta; paper subjacente não revisado."
+      },
+      "regiao_editorial": "Europa / global",
+      "consultado_em": "2026-11-06",
+      "estado_editorial": "rascunho_pesquisado",
+      "contagem_palavras_corpo": 126
+    },
+    {
+      "slug": "rimowa-produto-canais-e-posicionamento-2026",
+      "titulo": "Caso RIMOWA aproxima posicionamento, produto e canais",
+      "resumo": "Relato executivo discute transformação de uma marca de malas.",
+      "data_fonte": "2026-05-11",
+      "fonte_id": "insead",
+      "url": "https://knowledge.insead.edu/marketing/playbook-rimowas-transformation",
+      "autores": [
+        "Frederic Godart",
+        "Hugues Bonnet-Masimbert"
+      ],
+      "natureza": "caso_executivo",
+      "corpo": [
+        "Em artigo publicado em maio, Frederic Godart e Hugues Bonnet-Masimbert apresentam uma interpretação da transformação da RIMOWA. O caso relaciona a construção de uma posição no luxo a decisões de produto, distribuição, atendimento e experiência nas lojas da marca.",
+        "Os autores destacam a aproximação com o consumidor final e a visibilidade dos serviços de reparo. Na narrativa, durabilidade e funcionalidade participam do significado da marca, junto de escolhas de canais e iniciativas destinadas a fortalecer sua presença no universo do luxo.",
+        "A leitura editorial propõe observar como uma promessa ganha forma em diferentes decisões do negócio. O texto tem coautoria de um executivo da própria RIMOWA: oferece acesso ao raciocínio empresarial, mas exige distinguir esse relato de uma avaliação independente dos efeitos da estratégia."
+      ],
+      "importancia": "Permite examinar coerência entre promessa, produto e experiência.",
+      "limites": "Relato com interesse empresarial explícito; não isola efeitos causais nem audita sustentabilidade.",
+      "referencias": [
+        {
+          "titulo": "The Playbook for RIMOWA’s Transformation",
+          "url": "https://knowledge.insead.edu/marketing/playbook-rimowas-transformation"
+        }
+      ],
+      "evidencias_consulta": {
+        "data": "11/05/2026 no cabeçalho.",
+        "autoria": "Dois nomes, com vínculo RIMOWA identificado.",
+        "conteudo": "Produto, varejo e reparabilidade consultados.",
+        "acesso": "Página institucional aberta."
+      },
+      "regiao_editorial": "Europa",
+      "consultado_em": "2026-11-06",
+      "estado_editorial": "rascunho_pesquisado",
+      "contagem_palavras_corpo": 124
+    },
+    {
+      "slug": "confianca-experiencia-e-lealdade-2026",
+      "titulo": "Wharton examina como a experiência altera a confiança do consumidor",
+      "resumo": "Pesquisa divulgada em março relaciona incerteza e escolhas.",
+      "data_fonte": "2026-03-02",
+      "fonte_id": "wharton",
+      "url": "https://knowledge.wharton.upenn.edu/article/how-confidence-changes-consumer-loyalty/",
+      "autores": [
+        "Angie Basiouny"
+      ],
+      "natureza": "divulgacao_cientifica",
+      "corpo": [
+        "Uma matéria da Wharton apresenta pesquisa sobre a relação entre experiência numa categoria e confiança nas próprias avaliações. A trajetória descrita não cresce continuamente: a confiança pode cair durante o aprendizado e se recuperar à medida que a experiência aumenta.",
+        "O texto relata análises de avaliações online em diferentes categorias e um experimento complementar. Também discute como a incerteza pode acompanhar mudanças de escolha e menor lealdade, trazendo uma dimensão adicional para estudar a relação entre consumidores e marcas.",
+        "A leitura editorial sugere distinguir experiência acumulada de segurança na decisão. Recomendações de comunicação dependem de examinar o público e o contexto. Esta nota consultou a divulgação assinada, sem leitura integral do paper; o padrão relatado não deve ser convertido numa previsão automática para qualquer cliente."
+      ],
+      "importancia": "Amplia perguntas sobre aprendizado, incerteza e relação com marcas.",
+      "limites": "Divulgação de estudo; artigo acadêmico integral não revisado e generalização requer cautela.",
+      "referencias": [
+        {
+          "titulo": "How Confidence Changes Consumer Loyalty",
+          "url": "https://knowledge.wharton.upenn.edu/article/how-confidence-changes-consumer-loyalty/"
+        }
+      ],
+      "evidencias_consulta": {
+        "data": "02/03/2026 no cabeçalho.",
+        "autoria": "Angie Basiouny em Written By.",
+        "conteudo": "Matéria e descrição metodológica consultadas.",
+        "acesso": "Texto aberto; módulo publicitário posterior excluído."
+      },
+      "regiao_editorial": "EUA",
+      "consultado_em": "2026-11-06",
+      "estado_editorial": "rascunho_pesquisado",
+      "contagem_palavras_corpo": 125
+    },
+    {
+      "slug": "fgv-estereotipos-e-comunicacao-de-marca-2026",
+      "titulo": "FGV divulga proposta para examinar estereótipos na comunicação",
+      "resumo": "Notícia apresenta etapas de identificação, avaliação e acompanhamento.",
+      "data_fonte": "2026-06-30",
+      "fonte_id": "fgv",
+      "url": "https://portal.fgv.br/noticias/pesquisa-apresenta-framework-para-orientar-marcas-gerenciar-estereotipos-na-comunicacao",
+      "autores": null,
+      "natureza": "noticia_institucional",
+      "corpo": [
+        "Em notícia de junho, a FGV apresenta um artigo da GV-executivo sobre o uso de estereótipos na comunicação de marcas. A divulgação descreve uma proposta para reconhecer essas representações, avaliar seus impactos, orientar decisões e acompanhar as percepções dos públicos.",
+        "O texto menciona linguagem, personagens, embalagens e identidade visual como elementos que podem ativar associações. A discussão relaciona a busca de identificação com consumidores aos riscos de reforçar preconceitos ou afastar pessoas que não se reconhecem nas representações utilizadas.",
+        "A leitura editorial propõe examinar quais pressupostos uma campanha adota sobre seu público e como serão avaliados. A data desta nota corresponde à notícia institucional de 2026. O artigo subjacente não foi revisado integralmente, e os exemplos citados não demonstram sozinhos resultados causais."
+      ],
+      "importancia": "Ajuda a revisar pressupostos e representações em campanhas.",
+      "limites": "Data da notícia; original da GV-executivo não revisado. Assinatura jornalística individual ausente.",
+      "referencias": [
+        {
+          "titulo": "Pesquisa apresenta framework para orientar marcas a gerenciar estereótipos na comunicação",
+          "url": "https://portal.fgv.br/noticias/pesquisa-apresenta-framework-para-orientar-marcas-gerenciar-estereotipos-na-comunicacao"
+        }
+      ],
+      "evidencias_consulta": {
+        "data": "30/06/2026 no cabeçalho.",
+        "autoria": "Sem assinatura individual; pesquisadores não atribuídos como jornalistas.",
+        "conteudo": "Notícia e link ao original consultados.",
+        "acesso": "Notícia aberta; periódico retornou 429."
+      },
+      "regiao_editorial": "Brasil",
+      "consultado_em": "2026-11-06",
+      "estado_editorial": "rascunho_pesquisado",
+      "contagem_palavras_corpo": 122
+    },
+    {
+      "slug": "fgv-consumidor-e-economia-circular-2026",
+      "titulo": "FGV destaca participação do consumidor na economia circular",
+      "resumo": "Divulgação relaciona economia circular e consumo.",
+      "data_fonte": "2026-02-11",
+      "fonte_id": "fgv",
+      "url": "https://portal.fgv.br/noticias/consumidores-ganham-papel-estrategico-na-economia-circular",
+      "autores": null,
+      "natureza": "noticia_institucional",
+      "corpo": [
+        "Em notícia de fevereiro, a FGV apresenta um artigo da GV-executivo sobre a participação dos consumidores na economia circular. A discussão procura entender como empresas podem estimular comportamentos ligados à reutilização, renovação e reciclagem, além de organizar suas próprias iniciativas.",
+        "A divulgação informa que o artigo utiliza o framework SHIFT para examinar fatores psicológicos relacionados à adesão a práticas sustentáveis. Também menciona exemplos empresariais que ajudam a formular perguntas sobre hábitos, influência social e maneiras de tornar os impactos mais compreensíveis ao público.",
+        "A leitura editorial é investigar que obstáculos existem entre a intenção de participar e a ação possível. Esta nota descreve a notícia publicada em 2026, sem assumir que essa seja a data do estudo original. Não foram auditados os resultados ambientais das empresas mencionadas nem revisado integralmente o artigo."
+      ],
+      "importancia": "Relaciona comunicação, hábitos e condições para participação do público.",
+      "limites": "Original não revisado; exemplos não equivalem a auditoria ambiental. Assinatura individual ausente.",
+      "referencias": [
+        {
+          "titulo": "Consumidores ganham papel estratégico na economia circular",
+          "url": "https://portal.fgv.br/noticias/consumidores-ganham-papel-estrategico-na-economia-circular"
+        }
+      ],
+      "evidencias_consulta": {
+        "data": "11/02/2026 no cabeçalho.",
+        "autoria": "Sem assinatura individual; autoras do artigo não atribuídas à notícia.",
+        "conteudo": "Notícia e referência ao SHIFT consultadas.",
+        "acesso": "Notícia aberta; periódico retornou 429."
+      },
+      "regiao_editorial": "Brasil",
+      "consultado_em": "2026-11-06",
+      "estado_editorial": "rascunho_pesquisado",
+      "contagem_palavras_corpo": 132
+    },
+    {
+      "slug": "fdc-mensuracao-de-reputacao-2026",
+      "titulo": "FDC discute como medir reputação entre diferentes públicos",
+      "resumo": "Matéria distingue percepção, evidências e dimensões da reputação.",
+      "data_fonte": "2026-10-20",
+      "fonte_id": "fdc",
+      "url": "https://sejarelevante.fdc.org.br/como-medir-a-reputacao-de-uma-empresa/",
+      "autores": [
+        "Nai Fachini"
+      ],
+      "natureza": "jornalismo_institucional",
+      "corpo": [
+        "Em matéria assinada por Nai Fachini, o portal da Fundação Dom Cabral discute a mensuração da reputação corporativa. O texto reúne perguntas sobre como diferentes públicos avaliam uma organização e por que uma medida de satisfação não representa todas essas perspectivas.",
+        "A abordagem usa a metodologia Merco como exemplo de combinação de percepções e indicadores. Consumidores, trabalhadores, especialistas e outros grupos podem observar dimensões distintas, tornando necessário explicitar quem foi ouvido, quais informações entraram na avaliação e como elas foram reunidas.",
+        "A leitura editorial sugere examinar a metodologia antes de interpretar um ranking como retrato completo da empresa. A matéria está situada na pauta de um evento sobre reputação. A nota consultou a explicação institucional; não auditou o ranking nem confirmou de forma independente seus dados e pesos."
+      ],
+      "importancia": "Oferece perguntas para interpretar indicadores de reputação corporativa.",
+      "limites": "Pauta institucional de evento; metodologia e ranking não auditados independentemente.",
+      "referencias": [
+        {
+          "titulo": "Como medir a reputação de uma empresa?",
+          "url": "https://sejarelevante.fdc.org.br/como-medir-a-reputacao-de-uma-empresa/"
+        }
+      ],
+      "evidencias_consulta": {
+        "data": "20/10/2026 junto à assinatura; módulo compartilhamento é dinâmico.",
+        "autoria": "Assinatura Nai Fachini.",
+        "conteudo": "Explicação de indicadores e Merco consultada.",
+        "acesso": "Matéria aberta; promoções de cursos excluídas."
+      },
+      "regiao_editorial": "Brasil",
+      "consultado_em": "2026-11-06",
+      "estado_editorial": "rascunho_pesquisado",
+      "contagem_palavras_corpo": 128
+    }
+  ]
+}

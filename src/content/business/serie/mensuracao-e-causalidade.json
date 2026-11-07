@@ -1,0 +1,145 @@
+{
+  "numero": 4,
+  "titulo": "Mensuração e causalidade: o que uma mudança realmente provocou?",
+  "resumo": "Aprenda a definir indicadores, construir comparações e interpretar um teste hipotético sem confundir vendas atribuídas com vendas adicionais.",
+  "autor": "Harpya",
+  "atualizado": "2026-11-06",
+  "serie": "Como estudar marketing e tomar decisões melhores",
+  "status": "publicado",
+  "secoes": [
+    {
+      "titulo": "Defina o resultado antes de escolher o indicador",
+      "paragrafos": [
+        "Uma campanha pode gerar visualizações, visitas, pedidos e receita. Cada medida responde a uma pergunta diferente. Antes de abrir um painel, defina qual decisão será apoiada e qual resultado importa. Se o objetivo é melhorar a retirada de refeições, contar visualizações do anúncio não informa diretamente se as pessoas encontraram seus pedidos.",
+        "Use o restaurante fictício da série para distinguir dois projetos: reorganizar o atendimento e divulgar o serviço. O primeiro pode acompanhar dúvidas e tempo de retirada; o segundo pode investigar pedidos adicionais. Métricas intermediárias ajudam a entender o caminho, mas precisam manter relação clara com o objetivo. A facilidade de obter um número não deve decidir, sozinha, qual pergunta será respondida."
+      ]
+    },
+    {
+      "titulo": "Escreva a definição e o denominador",
+      "paragrafos": [
+        "Uma taxa de conversão combina um evento e uma população de referência. “Pedidos concluídos por pessoas elegíveis ao teste” é diferente de “pedidos por cliques recebidos”. Período, unidade de análise e regras de contagem precisam ser registrados. Sem essas definições, dois painéis podem mostrar valores diferentes e ambos estar calculando corretamente medidas distintas.",
+        "Considere um exemplo numérico inteiramente hipotético: quarenta de mil pessoas fizeram um pedido num período. A taxa observada é 4%. Se cinquenta de outras mil pessoas fizeram um pedido, a taxa é 5%. A diferença é de um ponto percentual; o aumento relativo é de 25% sobre a taxa de 4%. Essas descrições são aritméticas. Ainda não explicam por que os grupos diferem nem se o resultado se repetiria."
+      ]
+    },
+    {
+      "titulo": "Uma associação permite perguntas, não resolve a causa",
+      "paragrafos": [
+        "Quem clica num anúncio pode já estar mais disposto a comprar. Um público com mais pedidos após uma campanha pode ter recebido o anúncio justamente porque demonstrou interesse antes. Nesse caso, parte da diferença observada pode refletir a seleção de pessoas, além de eventual efeito da publicidade.",
+        "O estudo de Gordon e coautores, resumido na página de Marketing Science, compara estimativas observacionais com resultados de experimentos publicitários numa plataforma. Ele mostra um problema de identificação naquele contexto; não permite afirmar que todo relatório observacional é inútil. A pergunta causal procura saber o que mudaria se a mesma população recebesse outra condição. Como não observamos simultaneamente os dois resultados para cada pessoa, precisamos construir uma comparação defensável."
+      ]
+    },
+    {
+      "titulo": "Um experimento começa pelo desenho da comparação",
+      "paragrafos": [
+        "Num teste aleatório hipotético, uma população elegível é dividida por sorteio entre uma condição com a intervenção e uma condição de comparação. A análise acompanha todos os participantes conforme a regra definida, inclusive quem não clicou ou não chegou a ver o anúncio. Selecionar depois apenas os que reagiram mudaria a comparação inicialmente planejada.",
+        "O sorteio ajuda a tornar comparáveis os grupos em expectativa; não elimina problemas de execução. É necessário verificar se o tratamento foi aplicado, se houve perdas de registros e se uma condição afetou a outra. Também se definem previamente período, resultado principal e cuidados para que a experiência das pessoas seja apropriada. O artigo sobre ghost ads descreve uma abordagem específica de experimentação publicitária. Sua implementação exige recursos que não podem ser presumidos em qualquer ferramenta."
+      ]
+    },
+    {
+      "titulo": "Interprete o exemplo com alcance e incerteza",
+      "paragrafos": [
+        "Voltemos aos mil participantes de cada grupo. Suponha, agora, que eles tenham sido sorteados corretamente, que a intervenção fosse a única diferença planejada e que os pedidos fossem registrados da mesma forma. Cinquenta pedidos no grupo com campanha e quarenta no grupo de comparação produziriam uma estimativa de dez pedidos adicionais por mil pessoas naquela comparação.",
+        "Esse número é uma estimativa do exemplo fictício, não uma comprovação estatística. Seria necessário avaliar a incerteza amostral e o desenho antes de decidir se há evidência convincente de efeito. A interpretação econômica também é separada: com contribuição hipotética de R$ 8 por pedido, dez pedidos representariam R$ 80 antes do custo da campanha e de outros efeitos. Receita atribuída, contribuição e resultado líquido não são medidas equivalentes; nenhuma delas dispensa uma comparação adequada."
+      ]
+    },
+    {
+      "titulo": "Quando o sorteio não é possível",
+      "paragrafos": [
+        "Um estudo quase experimental procura aproveitar variações que não foram criadas por sorteio planejado, mas podem sustentar uma comparação causal sob pressupostos explícitos. Goldfarb, Tucker e Wang apresentam métodos dessa família e insistem na importância das hipóteses de identificação. A técnica escolhida não transforma automaticamente qualquer base de dados numa resposta causal.",
+        "Imagine que uma loja mude seu processo e outra continue igual. Comparar a evolução de ambas pode ajudar a investigar o efeito, mas é necessário examinar por que mudariam de modo semelhante sem a intervenção, que outras alterações ocorreram e como cada medida foi produzida. Uma comparação antes e depois numa única loja pode misturar a mudança com sazonalidade, preço, estoque ou acontecimentos locais. Essas explicações precisam ser consideradas antes de atribuir o resultado."
+      ]
+    },
+    {
+      "titulo": "Exercício: escreva um plano de avaliação",
+      "paragrafos": [
+        "Escolha uma mudança pequena e descreva a pergunta causal em uma frase. Defina população elegível, intervenção, comparação, período e resultado principal. Registre como os dados seriam obtidos e o que impediria uma comparação justa. Se a proposta envolver pessoas reais, avalie a adequação da experiência e organize o uso responsável das informações antes da execução.",
+        "Depois revise um relatório ou um exemplo fictício de campanha. Pergunte: o indicador tem denominador claro? O relatório distingue atribuição de incremento? Quem ficou fora da análise? Houve mudança simultânea de preço ou disponibilidade? Que incerteza acompanha a estimativa? Escreva uma conclusão proporcional: o que foi observado, que explicações permanecem e qual evidência adicional seria necessária para mudar a decisão."
+      ]
+    },
+    {
+      "titulo": "Limites: nenhum número viaja sozinho",
+      "paragrafos": [
+        "Um efeito encontrado num público e período não é garantia para outro contexto. Também é possível medir bem um objetivo inadequado: aumentar pedidos pode piorar a experiência se a operação não conseguir entregá-los. Examine indicadores de qualidade e consequências além do resultado principal, sem escolher retrospectivamente apenas os números favoráveis.",
+        "As referências incluem uma divulgação metodológica aberta e resumos de artigos acadêmicos; os textos restritos não foram lidos integralmente nesta preparação. A meta-análise citada reúne estudos históricos e não fornece uma taxa universal de retorno para campanhas atuais. Use as fontes para orientar perguntas e limites. Um relatório útil torna a decisão mais examinável ao mostrar o resultado, o desenho da comparação e o que os dados ainda não permitem concluir."
+      ]
+    }
+  ],
+  "figuras": [
+    {
+      "apos_secao": 1,
+      "titulo": "Dois modos de expressar a mesma diferença",
+      "descricao": "Quadro didático com cartões sobre dois modos de expressar a mesma diferença. Grupo A: 40 pedidos / 1.000 pessoas = 4%; Grupo B: 50 pedidos / 1.000 pessoas = 5%; Diferença absoluta: 1 ponto percentual; Diferença relativa sobre 4%: 25%.",
+      "etapas": [
+        "Grupo A: 40 pedidos / 1.000 pessoas = 4%",
+        "Grupo B: 50 pedidos / 1.000 pessoas = 5%",
+        "Diferença absoluta: 1 ponto percentual",
+        "Diferença relativa sobre 4%: 25%"
+      ],
+      "legenda": "Números hipotéticos. A diferença aritmética não estabelece causa nem significância estatística.",
+      "tipo": "cartoes"
+    },
+    {
+      "apos_secao": 3,
+      "titulo": "Comparar condições planejadas",
+      "descricao": "Fluxo de definição da população, sorteio, dois grupos acompanhados e comparação final dos resultados.",
+      "etapas": [
+        "Definir a população elegível",
+        "Sortear as condições antes de observar a resposta",
+        "Grupo intervenção: acompanhar todos os designados",
+        "Grupo comparação: acompanhar todos os designados",
+        "Comparar resultado definido previamente e avaliar incerteza"
+      ],
+      "legenda": "Esquema didático de experimento. A validade também depende da execução, da medição e de possíveis interferências.",
+      "tipo": "experimento"
+    },
+    {
+      "apos_secao": 5,
+      "titulo": "O que pode explicar uma mudança?",
+      "descricao": "Diagrama radial de cinco explicações concorrentes para um resultado. As linhas não representam causalidade comprovada.",
+      "etapas": [
+        "Intervenção estudada",
+        "Sazonalidade",
+        "Preço e disponibilidade",
+        "Composição dos clientes",
+        "Mudanças simultâneas no atendimento"
+      ],
+      "legenda": "Mapa de explicações possíveis para investigação; a presença de uma hipótese no diagrama não comprova que ela produziu o resultado.",
+      "tipo": "radial",
+      "central": "Resultado observado"
+    }
+  ],
+  "fontes": [
+    {
+      "titulo": "The Benefits of Quasi-Experiments in Marketing — AMA, 2022",
+      "url": "https://www.ama.org/2022/03/16/conducting-research-in-marketing-with-quasi-experiments/",
+      "consultado": "Página institucional aberta consultada: explicação de comparação causal, desenho de estratégias empíricas, hipóteses de identificação e generalização. Apoio principal à seção sobre quase experimentos.",
+      "limites": "Divulgação metodológica de Goldfarb, Tucker e Wang; a página não valida o desenho fictício nem substitui o estudo das hipóteses de cada método."
+    },
+    {
+      "titulo": "Conducting Research in Marketing with Quasi-Experiments — Journal of Marketing, 2022",
+      "url": "https://journals.sagepub.com/doi/10.1177/00222429221082977",
+      "consultado": "Página do editor: título, autores, data, resumo e introdução acessíveis na consulta inicial. O editor indica open access; tentativas posteriores apresentaram timeout.",
+      "limites": "Não se declara revisão integral do artigo. A leitura se apoia no resumo, introdução e divulgação AMA; métodos específicos não são ensinados como receitas prontas."
+    },
+    {
+      "titulo": "A Comparison of Approaches to Advertising Measurement: Evidence from Big Field Experiments at Facebook — Marketing Science, 2019",
+      "url": "https://pubsonline.informs.org/doi/10.1287/mksc.2018.1135",
+      "consultado": "Landing institucional INFORMS: autoria, data online, resumo, desenho geral de comparação entre experimentos e métodos observacionais.",
+      "limites": "Somente resumo e metadados, sem revisão integral do PDF ou suplementos. Contexto de experimentos publicitários nos EUA em uma plataforma; dois autores vinculados ao Facebook."
+    },
+    {
+      "titulo": "Ghost Ads: Improving the Economics of Measuring Online Ad Effectiveness — Journal of Marketing Research, 2017",
+      "url": "https://journals.sagepub.com/doi/10.1509/jmr.15.0297",
+      "consultado": "Página do editor: metadados e resumo aberto da metodologia experimental. Usado para indicar que desenho de controle em publicidade requer infraestrutura própria.",
+      "limites": "Texto integral restrito não consultado. Não se reproduzem percentuais do caso nem se presume que a metodologia esteja disponível em qualquer plataforma de anúncios."
+    },
+    {
+      "titulo": "How Well Does Advertising Work? Generalizations from Meta-Analysis of Brand Advertising Elasticities — Journal of Marketing Research, 2011",
+      "url": "https://journals.sagepub.com/doi/10.1509/jmkr.48.3.457",
+      "consultado": "Página do editor: metadados e resumo da meta-análise, com período dos estudos-base. Publicação original em junho de 2011 confirmada na bibliografia institucional AMA.",
+      "limites": "Texto completo restrito não consultado. SAGE mostra também disponibilização online em 2018; isso não altera o ano original. Elasticidades históricas não foram apresentadas como previsão para campanhas atuais."
+    }
+  ],
+  "revisor": "Harpya · revisão de coerência didática e de procedência",
+  "revisado_em": "2026-11-06"
+}

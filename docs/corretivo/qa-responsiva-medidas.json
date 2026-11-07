@@ -1,0 +1,2094 @@
+{
+  "data": "2026-11-06",
+  "metodo": "Dois quadros same-origin por par, viewport interno medido; sem diff de pixels; imagens lazy ainda não carregadas não são consideradas falhas",
+  "larguras": [
+    360,
+    390,
+    1024,
+    1440,
+    1672
+  ],
+  "altura": 620,
+  "resultados": [
+    {
+      "template": "Home",
+      "largura": 360,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 360,
+          "documento": 344,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 360,
+          "documento": 343,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Home",
+      "largura": 390,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Home",
+      "largura": 1024,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1007,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1007,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Home",
+      "largura": 1440,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1103,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1103,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Home",
+      "largura": 1672,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1335,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1335,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Origens",
+      "largura": 360,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 360,
+          "documento": 344,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 360,
+          "documento": 343,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Origens",
+      "largura": 390,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Origens",
+      "largura": 1024,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1007,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1007,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Origens",
+      "largura": 1440,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1103,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1103,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Origens",
+      "largura": 1672,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1335,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1335,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Aprendizado",
+      "largura": 360,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 360,
+          "documento": 344,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 360,
+          "documento": 343,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Aprendizado",
+      "largura": 390,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Aprendizado",
+      "largura": 1024,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1007,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1007,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Aprendizado",
+      "largura": 1440,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1103,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1103,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Aprendizado",
+      "largura": 1672,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1335,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1335,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Estudos",
+      "largura": 360,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 360,
+          "documento": 344,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 360,
+          "documento": 343,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Estudos",
+      "largura": 390,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Estudos",
+      "largura": 1024,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1007,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1007,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Estudos",
+      "largura": 1440,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1103,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1103,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Estudos",
+      "largura": 1672,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1335,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1335,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Investigação",
+      "largura": 360,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 360,
+          "documento": 344,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 360,
+          "documento": 343,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Investigação",
+      "largura": 390,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Investigação",
+      "largura": 1024,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1007,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1007,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Investigação",
+      "largura": 1440,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1103,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1103,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Investigação",
+      "largura": 1672,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1335,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1335,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Começando",
+      "largura": 360,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 360,
+          "documento": 343,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "\"Source Serif 4 Variable\", \"Source Serif 4\", Georgia, Times New Roman, serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 360,
+          "documento": 343,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "\"Source Serif 4 Variable\", \"Source Serif 4\", Georgia, Times New Roman, serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Começando",
+      "largura": 390,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "\"Source Serif 4 Variable\", \"Source Serif 4\", Georgia, Times New Roman, serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "\"Source Serif 4 Variable\", \"Source Serif 4\", Georgia, Times New Roman, serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Começando",
+      "largura": 1024,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 720,
+          "fonte_main": "\"Source Serif 4 Variable\", \"Source Serif 4\", Georgia, Times New Roman, serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 720,
+          "fonte_main": "\"Source Serif 4 Variable\", \"Source Serif 4\", Georgia, Times New Roman, serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Começando",
+      "largura": 1440,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 720,
+          "fonte_main": "\"Source Serif 4 Variable\", \"Source Serif 4\", Georgia, Times New Roman, serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 720,
+          "fonte_main": "\"Source Serif 4 Variable\", \"Source Serif 4\", Georgia, Times New Roman, serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Começando",
+      "largura": 1672,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 720,
+          "fonte_main": "\"Source Serif 4 Variable\", \"Source Serif 4\", Georgia, Times New Roman, serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 720,
+          "fonte_main": "\"Source Serif 4 Variable\", \"Source Serif 4\", Georgia, Times New Roman, serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Artigo ilustrado",
+      "largura": 360,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 360,
+          "documento": 343,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "\"Source Serif 4 Variable\", \"Source Serif 4\", Georgia, Times New Roman, serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 360,
+          "documento": 343,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "\"Source Serif 4 Variable\", \"Source Serif 4\", Georgia, Times New Roman, serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Artigo ilustrado",
+      "largura": 390,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "\"Source Serif 4 Variable\", \"Source Serif 4\", Georgia, Times New Roman, serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "\"Source Serif 4 Variable\", \"Source Serif 4\", Georgia, Times New Roman, serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Artigo ilustrado",
+      "largura": 1024,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 720,
+          "fonte_main": "\"Source Serif 4 Variable\", \"Source Serif 4\", Georgia, Times New Roman, serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 720,
+          "fonte_main": "\"Source Serif 4 Variable\", \"Source Serif 4\", Georgia, Times New Roman, serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Artigo ilustrado",
+      "largura": 1440,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 720,
+          "fonte_main": "\"Source Serif 4 Variable\", \"Source Serif 4\", Georgia, Times New Roman, serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 720,
+          "fonte_main": "\"Source Serif 4 Variable\", \"Source Serif 4\", Georgia, Times New Roman, serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Artigo ilustrado",
+      "largura": 1672,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 720,
+          "fonte_main": "\"Source Serif 4 Variable\", \"Source Serif 4\", Georgia, Times New Roman, serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 720,
+          "fonte_main": "\"Source Serif 4 Variable\", \"Source Serif 4\", Georgia, Times New Roman, serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Análise",
+      "largura": 360,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 360,
+          "documento": 344,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 360,
+          "documento": 343,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Análise",
+      "largura": 390,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Análise",
+      "largura": 1024,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1007,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1007,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Análise",
+      "largura": 1440,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1103,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1103,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Análise",
+      "largura": 1672,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1335,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1335,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Notícias",
+      "largura": 360,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 360,
+          "documento": 344,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 360,
+          "documento": 343,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Notícias",
+      "largura": 390,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Notícias",
+      "largura": 1024,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1007,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1007,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Notícias",
+      "largura": 1440,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1103,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1103,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Notícias",
+      "largura": 1672,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1335,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1335,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Biblioteca",
+      "largura": 360,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 360,
+          "documento": 344,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 360,
+          "documento": 343,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Biblioteca",
+      "largura": 390,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Biblioteca",
+      "largura": 1024,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1007,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1007,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Biblioteca",
+      "largura": 1440,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1103,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1103,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Biblioteca",
+      "largura": 1672,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1335,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1335,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Ficha de estudo",
+      "largura": 360,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 360,
+          "documento": 344,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 360,
+          "documento": 343,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Ficha de estudo",
+      "largura": 390,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Ficha de estudo",
+      "largura": 1024,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1007,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1007,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Ficha de estudo",
+      "largura": 1440,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1103,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1103,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Ficha de estudo",
+      "largura": 1672,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1335,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1335,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Equações e métodos",
+      "largura": 360,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 360,
+          "documento": 344,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 360,
+          "documento": 343,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Equações e métodos",
+      "largura": 390,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Equações e métodos",
+      "largura": 1024,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1007,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1007,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Equações e métodos",
+      "largura": 1440,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1103,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1103,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Equações e métodos",
+      "largura": 1672,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1335,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1335,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Vídeos",
+      "largura": 360,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 360,
+          "documento": 344,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 360,
+          "documento": 343,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 343,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Vídeos",
+      "largura": 390,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 390,
+          "documento": 373,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 373,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Vídeos",
+      "largura": 1024,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1007,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1024,
+          "documento": 1007,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1007,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Vídeos",
+      "largura": 1440,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1103,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1440,
+          "documento": 1423,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1103,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    },
+    {
+      "template": "Vídeos",
+      "largura": 1672,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1335,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1672,
+          "documento": 1655,
+          "sem_excesso_horizontal": true,
+          "h1": 1,
+          "erros_katex": 0,
+          "largura_main": 1335,
+          "fonte_main": "Inter Variable, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+          "rail": "flex",
+          "preferencia_aberta": false,
+          "imagens_falhas": []
+        }
+      ]
+    }
+  ]
+}

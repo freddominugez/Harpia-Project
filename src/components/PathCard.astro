@@ -5,10 +5,10 @@ import Status from "./Status.astro";
 const { c } = Astro.props;
 const d = c.data;
 ---
-<a class="card path" href={`/estudos/caminhos/${c.id}/`}>
-  <span class="n">Caminho {String(d.numero).padStart(2, "0")}{d.principal ? " · linha principal" : ""}</span>
+<a class="card path" href={c.href ?? `/estudos/caminhos/${c.id}/`}>
+  <span class="n">{`${d.rotulo ?? "Caminho"} ${String(d.numero).padStart(2, "0")}`}{d.principal ? " · linha principal" : ""}</span>
   <h3>{d.titulo}</h3>
   <Status tipo={d.estatuto} texto={d.selo} />
   <p>{d.resumo}</p>
-  {d.equacao && <div class="eq"><M t={d.equacao} /></div>}
+  {(d.equacao || d.mecanismo) && <div class="eq">{d.equacao ? <M t={d.equacao} /> : <span>{d.mecanismo}</span>}</div>}
 </a>

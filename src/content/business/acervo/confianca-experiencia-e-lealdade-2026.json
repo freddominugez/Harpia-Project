@@ -1,0 +1,27 @@
+{
+  "titulo": "Wharton examina como a experiência altera a confiança do consumidor",
+  "resumo": "Pesquisa divulgada em março relaciona incerteza e escolhas.",
+  "fonte": "wharton",
+  "url": "https://knowledge.wharton.upenn.edu/article/how-confidence-changes-consumer-loyalty/",
+  "tipo": "noticia",
+  "trilha": "consumidor",
+  "autores": "Angie Basiouny",
+  "data": "2026-03-02",
+  "data_precisa": true,
+  "idioma": "pt",
+  "acesso": "Síntese do Harpya em português; referência institucional original com acesso e idioma próprios.",
+  "evidencia": "divulgacao_cientifica",
+  "limites": "Divulgação de estudo; artigo acadêmico integral não revisado e generalização requer cautela.",
+  "status": "publicado",
+  "justificativa": "Síntese editorial própria do Harpya após conferência de fonte, data, autoria disponível e alcance da evidência. Não representa revisão integral do estudo subjacente.",
+  "revisor": "Harpya · revisão de fonte e contexto",
+  "revisado_em": "2026-11-06",
+  "corpo": [
+    "Uma matéria da Wharton apresenta pesquisa sobre a relação entre experiência numa categoria e confiança nas próprias avaliações. A trajetória descrita não cresce continuamente: a confiança pode cair durante o aprendizado e se recuperar à medida que a experiência aumenta.",
+    "O texto relata análises de avaliações online em diferentes categorias e um experimento complementar. Também discute como a incerteza pode acompanhar mudanças de escolha e menor lealdade, trazendo uma dimensão adicional para estudar a relação entre consumidores e marcas.",
+    "A leitura editorial sugere distinguir experiência acumulada de segurança na decisão. Recomendações de comunicação dependem de examinar o público e o contexto. Esta nota consultou a divulgação assinada, sem leitura integral do paper; o padrão relatado não deve ser convertido numa previsão automática para qualquer cliente."
+  ],
+  "referencias": [
+    "https://knowledge.wharton.upenn.edu/article/how-confidence-changes-consumer-loyalty/"
+  ]
+}

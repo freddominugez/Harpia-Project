@@ -1,0 +1,27 @@
+{
+  "titulo": "McKinsey discute publicidade mediada por IA e mensuração",
+  "resumo": "Análise examina descoberta, plataformas e decisões de investimento.",
+  "fonte": "mckinsey",
+  "url": "https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-agentic-advertising-economy-from-attention-to-action",
+  "tipo": "noticia",
+  "trilha": "mensuracao",
+  "autores": "Jack Trotter; Marc Brodherson; Quentin George; Aparna Srinath",
+  "data": "2026-06-16",
+  "data_precisa": true,
+  "idioma": "pt",
+  "acesso": "Síntese do Harpya em português; referência institucional original com acesso e idioma próprios.",
+  "evidencia": "executivo",
+  "limites": "Perspectiva de junho de 2026; expectativas e cenários não são resultados causais comprovados.",
+  "status": "publicado",
+  "justificativa": "Síntese editorial própria do Harpya após conferência de fonte, data, autoria disponível e alcance da evidência. Não representa revisão integral do estudo subjacente.",
+  "revisor": "Harpya · revisão de fonte e contexto",
+  "revisado_em": "2026-11-06",
+  "corpo": [
+    "Em artigo de junho, a McKinsey examina possíveis mudanças na publicidade quando ferramentas de inteligência artificial participam da descoberta e da escolha de produtos. A análise combina pesquisa proprietária, entrevistas e um levantamento com responsáveis por decisões publicitárias nos Estados Unidos.",
+    "O texto discute a concentração de dados, recomendações, compras e mensuração em plataformas integradas. Essa configuração pode ampliar a dependência das informações fornecidas pelas próprias plataformas, colocando questões sobre visibilidade dos anúncios, interpretação de resultados e controle do investimento.",
+    "A leitura editorial recomenda distinguir expectativas dos entrevistados de resultados já demonstrados e investigar a qualidade das comparações usadas para medir impacto. O artigo declara refletir o cenário de junho de 2026. Suas trajetórias possíveis não devem ser tratadas como previsão certa do mercado."
+  ],
+  "referencias": [
+    "https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-agentic-advertising-economy-from-attention-to-action"
+  ]
+}

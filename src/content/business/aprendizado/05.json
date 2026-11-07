@@ -1,0 +1,29 @@
+{
+  "numero": 5,
+  "titulo": "Preço precisa ser lido junto da margem e do volume",
+  "texto": "Um desconto reduz a receita por unidade, mas pode reduzir a contribuição em proporção maior. Para decidir, observe preço líquido, custo variável, quantidade e custos fixos no mesmo período.",
+  "contexto": "O texto da McKinsey sobre preços de transação chama atenção para descontos, bonificações e outras deduções entre a tabela e o valor efetivamente recebido. Essa análise é diferente de uma recomendação genérica para aumentar preços: a reação dos compradores e as condições do mercado continuam relevantes.",
+  "mecanismo": "Comece por conciliar faturamento, deduções e custos. Defina qual custo muda com cada venda e qual permanece no intervalo analisado. Compare contribuição total antes e depois da alteração; em seguida, verifique capacidade e evidência sobre demanda. Uma conta de equilíbrio informa o volume necessário, mas não demonstra que esse volume poderá ser vendido.",
+  "equacoes": [
+    {
+      "tex": "MC_u=p-v,\\qquad MC_T=q(p-v)",
+      "texto": "MC_u é a margem de contribuição unitária; p é o preço líquido, v o custo variável por unidade e q a quantidade. MC_T é a contribuição total antes de custos fixos. As unidades monetárias e o período precisam coincidir; contribuição não é sinônimo de lucro líquido."
+    }
+  ],
+  "exemplo": "Exemplo hipotético: um produto tem preço líquido de R\\$ 100 e custo variável de R\\$ 60. Cada unidade contribui com R\\$ 40; 100 unidades contribuem com R\\$ 4.000. Um desconto de 10% leva o preço a R\\$ 90 e a contribuição unitária a R\\$ 30, redução de 25% na contribuição por unidade. Para manter R\\$ 4.000, seriam necessárias 4.000/30 = 133⅓ unidades. Como unidades são inteiras, seriam pelo menos 134, que geram R\\$ 4.020; isso exige 34 unidades adicionais frente às 100 iniciais. A conta pressupõe custo variável constante, recebimento integral e capacidade disponível. Ela não prevê elasticidade nem resulta de teste comercial.",
+  "limites": "Frete, tributos, comissões, devoluções e inadimplência podem alterar o preço líquido ou o custo. Não usar médias de outros setores como promessa de ganho.",
+  "legado": "A entrega é uma ponte entre preço anunciado, receita líquida e contribuição. Decisões comerciais ganham clareza quando marketing, vendas, operações e finanças usam as mesmas definições.",
+  "hoje": "Antes de aprovar desconto, explicite a contribuição perdida e o volume adicional necessário.",
+  "referencias": [
+    {
+      "texto": "McKinsey — The power of pricing",
+      "url": "https://www.mckinsey.com/capabilities/operations/our-insights/the-power-of-pricing",
+      "consultado": "em: 2026-11-06; alcance: Texto público: preços de transação, níveis de gestão de preços e deduções do preço; contexto de publicação identificado.",
+      "limites": "Artigo histórico de consultoria; exemplos e efeitos percentuais publicados não foram transportados para esta aula. A conta de contribuição é ilustração própria, sem previsão de demanda."
+    }
+  ],
+  "atualizado": "2026-11-06",
+  "status": "publicado",
+  "revisor": "Harpya · revisão didática e de aritmética",
+  "revisado_em": "2026-11-06"
+}

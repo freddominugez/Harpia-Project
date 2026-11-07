@@ -1,0 +1,544 @@
+{
+  "versao": 1,
+  "estado_editorial": "rascunho_pesquisado",
+  "revisado_em": "2026-11-06",
+  "nota": "Sínteses didáticas originais de Harpya. Rascunhos não equivalem a aceite editorial nem mudam status de acervo. Não houve publicação. A extensão de consulta e os limites estão registrados por fonte. Exemplos e números de exercícios são explicitamente hipotéticos.",
+  "convencao_figuras": "apos_secao usa índice base zero no array secoes; diagramas originais apenas descritos para implementação SVG pelo responsável.",
+  "artigos": [
+    {
+      "slug": "valor-e-mercado",
+      "numero": 1,
+      "titulo": "Valor e mercado: por que alguém escolheria sua oferta?",
+      "descricao": "Uma introdução a necessidades, alternativas, benefícios, preço e viabilidade do negócio, com um exemplo hipotético e um exercício de observação.",
+      "data": "2026-11-06",
+      "autor": "Harpya",
+      "secoes": [
+        {
+          "titulo": "Comece pela situação de quem compra",
+          "paragrafos": [
+            "Imagine uma pessoa que precisa almoçar entre dois compromissos. Ela pode levar comida, comprar uma refeição, pedir uma entrega ou adiar o almoço. Antes de escolher um restaurante, precisa resolver uma situação concreta: comer dentro do tempo disponível, com um gasto aceitável e alguma confiança no que receberá. Essa cena é hipotética, mas ajuda a formular a primeira pergunta de marketing: qual problema torna uma oferta relevante?",
+            "Marketing envolve decisões sobre o que oferecer, para quem, em quais condições e como tornar a oferta compreensível e acessível. Comunicação participa desse trabalho, assim como produto, preço, distribuição e atendimento. O artigo da McKinsey sobre marketing moderno trata a experiência do cliente como responsabilidade que atravessa a empresa. Para o iniciante, isso significa observar a entrega da promessa, além da mensagem que a apresenta."
+          ]
+        },
+        {
+          "titulo": "Defina o mercado pelas alternativas",
+          "paragrafos": [
+            "Um mercado pode ser estudado como um conjunto de compradores, necessidades e alternativas de troca em determinado contexto. O recorte precisa ser explícito. O mercado de refeições para pessoas com pouco tempo num bairro é diferente do mercado nacional de restaurantes. Cada recorte muda quem concorre, quais informações procurar e quais recursos serão necessários para atender.",
+            "No exemplo, a comida levada de casa é uma alternativa, embora ninguém a venda naquele momento. Ignorá-la pode levar o restaurante a comparar somente preços de outros restaurantes. Pergunte o que a pessoa faria se sua oferta desaparecesse. A resposta amplia a compreensão da concorrência e pode mostrar que a principal dificuldade é tempo, previsibilidade ou deslocamento, em vez de variedade no cardápio."
+          ]
+        },
+        {
+          "titulo": "Diferencie característica, benefício e valor",
+          "paragrafos": [
+            "Uma característica descreve a oferta: retirada por horário marcado, embalagem reutilizável ou cardápio reduzido. Um benefício descreve uma consequência para o comprador: organizar o intervalo, transportar a refeição ou decidir com menos esforço. A ligação precisa ser demonstrada. Uma característica pode trazer benefício para uma situação e ser indiferente em outra.",
+            "Valor percebido é a avaliação que alguém faz dos benefícios e dos sacrifícios envolvidos, diante das alternativas. Dinheiro é um desses sacrifícios; tempo, esforço e incerteza também podem entrar na comparação. Essa é uma lente didática, não uma fórmula universal de medição. A cobertura da Wharton sobre posicionamento ressalta a necessidade de tornar a diferença relevante perceptível para o público. Nenhum benefício existe apenas porque a empresa o escreveu numa apresentação."
+          ]
+        },
+        {
+          "titulo": "Preço e percepção precisam ser examinados juntos",
+          "paragrafos": [
+            "Preço é uma condição monetária da troca. Percepção de preço é a interpretação que o cliente faz dessa condição. Para comparar propostas, ele pode considerar tamanho da porção, taxa de entrega, condições de pagamento e experiências anteriores. Um valor anunciado isoladamente nem sempre expressa o custo total da decisão.",
+            "O relatório da Bain sobre percepção de preços examina essa diferença no varejo. Ele serve de convite à investigação, sem autorizar uma regra de que reduzir preços sempre melhora a percepção. Num exercício real, compare ofertas equivalentes e mostre todas as condições. Também evite o erro inverso: presumir que aumentar o preço criará qualidade percebida. A resposta depende do público, da categoria e de evidências que precisam ser coletadas."
+          ]
+        },
+        {
+          "titulo": "A troca também precisa sustentar a operação",
+          "paragrafos": [
+            "Criar uma experiência desejável não basta para demonstrar viabilidade. É necessário entender os recursos usados para produzir, vender, entregar e atender. O trecho de livro publicado pela Wharton distingue o valor entregue ao cliente do valor que a relação pode gerar para a empresa. São perspectivas relacionadas, que exigem medidas diferentes.",
+            "Considere uma segunda situação hipotética: uma refeição custa R$ 20 e exige R$ 12 em custos variáveis por unidade. A contribuição unitária simplificada é R$ 8. Se forem vendidas cem unidades, a contribuição será R$ 800. Esse valor ainda precisa cobrir custos fixos e demais itens omitidos. Portanto, não é lucro. Uma venda que agrada ao comprador pode ser inviável se a operação consumir recursos que o preço não recupera."
+          ]
+        },
+        {
+          "titulo": "Transforme a proposta numa experiência coerente",
+          "paragrafos": [
+            "Voltemos ao restaurante imaginário. Sua proposta inicial seria atender pessoas que precisam retirar o almoço com horário previsível. Para testar a coerência, pense no cardápio, no processo de pedido, na produção, na fila e na informação de disponibilidade. Uma publicidade de rapidez perde sentido se a retirada depende de procurar um funcionário sem orientação.",
+            "Suponha, apenas para aprendizado, que a equipe queira oferecer cem combinações e entrega em toda a cidade. Essas escolhas podem dificultar a promessa inicial. Antes de expandir, ela precisa descobrir se consegue cumprir o serviço escolhido e se ele importa ao público. Não sabemos o resultado: trata-se de uma hipótese de negócio. A proposta só ganha credibilidade quando a experiência observada permite comparar o prometido com o entregue."
+          ]
+        },
+        {
+          "titulo": "Exercício: construa um mapa de valor",
+          "paragrafos": [
+            "Escolha uma oferta cotidiana e registre uma situação de uso, o comprador envolvido e três alternativas possíveis. Para cada alternativa, descreva benefícios esperados, gasto total, tempo necessário e dúvidas existentes. Separe observação de interpretação. Se você viu uma fila, registre a fila; não conclua automaticamente que todos consideram o atendimento lento.",
+            "Depois escreva uma proposta provisória em duas frases: para quem a oferta existe e qual resultado pretende facilitar. Faça três perguntas: que evidência mostraria que esse benefício importa? Que parte da operação precisa funcionar para entregá-lo? O que faria alguém escolher uma alternativa? Se conversar com pessoas, apresente o exercício com clareza e peça exemplos de experiências recentes, sem transformar a conversa em tentativa de venda."
+          ]
+        },
+        {
+          "titulo": "O que você pode concluir e o que continua aberto",
+          "paragrafos": [
+            "Ao terminar, você terá um recorte de mercado e hipóteses sobre valor, não uma comprovação de demanda. Uma conversa favorável não demonstra compra futura; um cálculo unitário não substitui o estudo completo da operação. As fontes desta leitura oferecem conceitos e experiências específicas, com datas e limites identificados nas referências.",
+            "Revise o mapa quando surgirem observações que contradigam sua hipótese. A pergunta útil é como melhorar a correspondência entre necessidade, oferta e capacidade de entrega. No próximo passo, a pesquisa de consumidor ajudará a decidir quais informações faltam e como procurá-las. Esse trabalho começa com perguntas verificáveis e continua com disposição para mudar a proposta quando as evidências pedirem."
+          ]
+        }
+      ],
+      "figuras": [
+        {
+          "apos_secao": 1,
+          "titulo": "Uma necessidade, várias alternativas",
+          "descricao": "Diagrama radial original com a situação de almoço ao centro e quatro alternativas ao redor; sem marcas reais.",
+          "etapas": [
+            "Situação: almoçar num intervalo limitado",
+            "Levar comida de casa",
+            "Comprar perto do trabalho",
+            "Pedir entrega",
+            "Adiar a refeição"
+          ],
+          "legenda": "Exemplo hipotético: o recorte do mercado depende da situação e das alternativas consideradas."
+        },
+        {
+          "apos_secao": 2,
+          "titulo": "Da característica ao valor percebido",
+          "descricao": "Fluxo horizontal original com três caixas e uma faixa inferior para sacrifícios e alternativas.",
+          "etapas": [
+            "Característica: retirada agendada",
+            "Benefício possível: organizar o intervalo",
+            "Avaliação do cliente: isso ajuda nesta situação?",
+            "Comparar dinheiro, tempo, esforço e alternativas"
+          ],
+          "legenda": "Uma característica só contribui para o valor se produzir uma consequência relevante na situação de uso."
+        },
+        {
+          "apos_secao": 4,
+          "titulo": "Contribuição não é lucro",
+          "descricao": "Diagrama aritmético original, com números fictícios e uma seta para custos ainda não descontados.",
+          "etapas": [
+            "Preço por unidade: R$ 20",
+            "Custo variável por unidade: R$ 12",
+            "Contribuição simplificada: R$ 8",
+            "Depois: custos fixos e outros itens"
+          ],
+          "legenda": "Exemplo exclusivamente didático. A contribuição calculada ainda não representa o lucro da operação."
+        }
+      ],
+      "fontes": [
+        {
+          "titulo": "Modern marketing: What it is, what it isn’t, and how to do it — McKinsey, 2020",
+          "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/modern-marketing-what-it-is-what-it-isnt-and-how-to-do-it",
+          "consultado": "Página institucional aberta consultada: introdução e seções sobre capacidades, experiência do cliente e organização de marketing. Usada somente como apoio à ligação entre marketing e operação.",
+          "limites": "Artigo executivo de consultoria; estimativas de desempenho não foram reproduzidas nem tratadas como causalidade. Não se declara revisão integral das referências citadas pela página."
+        },
+        {
+          "titulo": "Pricing and Positioning for Entrepreneurial Marketers — Knowledge at Wharton, 2005",
+          "url": "https://knowledge.wharton.upenn.edu/article/pricing-and-positioning-for-entrepreneurial-marketers/",
+          "consultado": "Página institucional aberta consultada: exposição atribuída a Leonard Lodish sobre público, alternativas, benefício percebido e posicionamento.",
+          "limites": "Cobertura de uma palestra, com recomendações e casos históricos. Esta leitura não adota como regra geral suas recomendações de preço premium nem seus exemplos numéricos."
+        },
+        {
+          "titulo": "Perception Beats Reality in Pricing — Bain & Company, copyright 2016",
+          "url": "https://www.bain.com/contentassets/9b4a1b91a99744c2a629abcf45d54b42/bain_brief_perception_beats_reality_in_pricing.pdf",
+          "consultado": "PDF institucional aberto consultado: autoria, distinção entre preços observados e percepção, desenho da pesquisa no varejo e recomendações.",
+          "limites": "Pesquisa situada em cidades dos EUA e casos de consultoria; percentuais e relações encontrados não foram transferidos para o exemplo fictício. Data exata não confirmada além do ano no PDF."
+        },
+        {
+          "titulo": "What Are Your Customers Really Worth? — Knowledge at Wharton, 2007",
+          "url": "https://knowledge.wharton.upenn.edu/article/what-are-your-customers-really-worth/",
+          "consultado": "Trecho de livro disponibilizado em página institucional aberta: distinção entre valor para o comprador e valor da relação para a empresa; seção inicial de estratégia.",
+          "limites": "Excerto de obra, não leitura integral do livro. Dados históricos e classificações de clientes do texto não foram usados como generalizações atuais. A conta do restaurante foi criada para esta leitura."
+        }
+      ],
+      "contagem_palavras_corpo": 960
+    },
+    {
+      "slug": "pesquisa-e-consumidor",
+      "numero": 2,
+      "titulo": "Pesquisa e consumidor: transforme dúvidas em perguntas verificáveis",
+      "descricao": "Como escolher perguntas, pessoas e métodos sem confundir opinião com comportamento, usando um caso hipotético de retirada de refeições.",
+      "data": "2026-11-06",
+      "autor": "Harpya",
+      "secoes": [
+        {
+          "titulo": "Pesquise para tomar uma decisão definida",
+          "paragrafos": [
+            "Uma equipe quer melhorar seu serviço e decide aplicar um questionário. Antes de escrever perguntas, precisa esclarecer qual decisão mudará com as respostas. Alterar horários, reorganizar a retirada e lançar um produto são problemas diferentes. A pesquisa se torna mais útil quando conecta uma dúvida delimitada a uma ação possível e a um critério de avaliação.",
+            "Considere um restaurante inteiramente hipotético, criado para acompanhar esta série. A equipe suspeita que clientes abandonam pedidos porque a retirada é confusa. Há outras explicações: preço, cardápio, indisponibilidade ou mudança de planos. A pergunta inicial pode ser: em quais etapas e situações as pessoas desistem? Ainda não sabemos se a hipótese é correta. O objetivo da investigação é permitir que ela seja contrariada, inclusive pela descoberta de um problema diferente."
+          ]
+        },
+        {
+          "titulo": "Separe relato, observação e interpretação",
+          "paragrafos": [
+            "Um relato informa o que alguém diz sobre uma experiência. Uma observação registra um acontecimento. Uma interpretação propõe seu significado. Se a pessoa afirma que esperou muito, temos um relato relevante. Se um registro mostra quinze minutos entre chegada e retirada, temos uma medida desse intervalo. Concluir que a espera causou a desistência exige investigar mais.",
+            "Esses materiais podem ser complementares. Uma conversa ajuda a entender o que a pessoa estava tentando fazer. Um registro operacional permite localizar etapas e horários. Um teste de serviço ajuda a observar a resposta a uma mudança. Nenhum método responde sozinho a todas as perguntas. A divulgação da INSEAD sobre previsões de adoção de produtos ilustra justamente que a adequação do método depende do comportamento que se quer prever, num contexto específico."
+          ]
+        },
+        {
+          "titulo": "Pergunte sobre experiências, sem sugerir a resposta",
+          "paragrafos": [
+            "Uma pergunta como “você também acha nossa retirada muito confusa?” já apresenta a interpretação da equipe. Para o exercício do restaurante, prefira começar com “conte como foi sua última retirada”. Explore a sequência: quando decidiu pedir, como escolheu o horário, o que encontrou ao chegar e o que aconteceu depois. Pergunte o significado de palavras vagas, como rápido ou caro.",
+            "Se o participante disser que queria mais opções, procure entender uma situação em que a falta de opção fez diferença. Não transforme toda sugestão numa especificação de produto. Pessoas descrevem desejos, restrições e lembranças; cabe à equipe organizar essas informações e confrontá-las com outras evidências. Também evite prometer uma mudança durante a entrevista. Essa promessa pode alterar as respostas seguintes e criar uma expectativa que a pesquisa não tem condições de atender."
+          ]
+        },
+        {
+          "titulo": "Escolha quem ouvir e registre quem ficou de fora",
+          "paragrafos": [
+            "Ouvir apenas quem concluiu a compra deixa de fora pessoas que desistiram. Ouvir apenas quem reclamou destaca experiências negativas. Ouvir conhecidos facilita o acesso, mas pode produzir respostas influenciadas pela relação pessoal. Antes da coleta, descreva quem precisa estar representado e por qual motivo essa população importa para a decisão.",
+            "Para o exemplo, uma seleção exploratória poderia incluir compradores frequentes, compradores ocasionais e pessoas que tentaram comprar. Isso é uma proposta de investigação, sem tamanho mágico de amostra. Poucas entrevistas podem revelar dúvidas e hipóteses; não permitem, por si, estimar a proporção de todos os clientes com uma opinião. Se o objetivo for estimar uma proporção, será necessário planejar seleção, cobertura e incerteza de maneira apropriada a esse objetivo."
+          ]
+        },
+        {
+          "titulo": "Organize evidências que possam discordar",
+          "paragrafos": [
+            "Suponha que três entrevistas fictícias mencionem espera. A equipe deve guardar os contextos em que isso apareceu e procurar situações em que não apareceu. Também precisa observar os horários de retirada e verificar como os registros foram produzidos. Um pedido marcado como pronto não significa necessariamente que o cliente foi avisado ou conseguiu encontrá-lo.",
+            "Uma tabela simples pode conter pergunta, evidência, origem, explicação alternativa e próximo passo. Não una tudo num número antes de entender o significado dos registros. A matéria da FGV EAESP sobre conhecimento de marca e intenção de compra ajuda a lembrar que variáveis relacionadas não são intercambiáveis. Da mesma forma, satisfação declarada, intenção de voltar e recompra efetiva precisam ser identificadas e medidas separadamente no serviço estudado."
+          ]
+        },
+        {
+          "titulo": "Da escuta para uma mudança examinável",
+          "paragrafos": [
+            "Na divulgação de uma pesquisa realizada em Ruanda, a INSEAD distingue pedir opiniões de aprender com elas e alterar a operação. O estudo original e seus resultados pertencem àquele contexto; esta leitura não promete repetir seus ganhos. A contribuição para nosso exercício é formular uma sequência observável entre informação recebida, decisão tomada e experiência posterior.",
+            "No restaurante hipotético, a equipe pode propor uma sinalização mais clara e um ponto único de retirada. Antes de implantar, registre a hipótese: a mudança reduzirá dúvidas na chegada? Defina o que será observado, durante qual período e como problemas serão registrados. Se houver melhora depois, ainda será preciso considerar outras mudanças simultâneas. A etapa de mensuração da série explica por que uma comparação antes e depois pode ser insuficiente para atribuir o resultado à nova sinalização."
+          ]
+        },
+        {
+          "titulo": "Exercício: monte um roteiro e um registro de campo",
+          "paragrafos": [
+            "Escolha uma decisão cotidiana e escreva cinco perguntas abertas sobre uma experiência recente. Faça uma revisão: alguma pergunta elogia sua ideia, pressupõe um problema ou exige que a pessoa preveja com precisão seu comportamento futuro? Reescreva essas perguntas. Teste o roteiro com alguém que aceite participar e explique que se trata de um exercício de aprendizado.",
+            "No registro, diferencie fala, observação e hipótese. Preserve apenas informações necessárias, evite expor identidades e combine como as anotações poderão ser usadas. Depois, responda: qual dúvida ficou mais clara? Qual explicação inicial perdeu força? Quem não foi ouvido? Que observação adicional ajudaria a escolher o próximo passo? Uma boa conclusão pode ser reconhecer que ainda falta evidência para decidir."
+          ]
+        },
+        {
+          "titulo": "Limites e critérios para continuar",
+          "paragrafos": [
+            "Um depoimento marcante não representa automaticamente um mercado. Uma pesquisa mal selecionada não se torna representativa apenas por acumular respostas. Uma medida precisa de espera não explica sozinha como cada pessoa viveu aquela situação. Avalie cada informação pelo que ela efetivamente permite afirmar, mantendo explícitas as condições em que foi obtida.",
+            "As fontes desta leitura foram usadas nos trechos e resumos indicados nas referências. Os artigos acadêmicos mencionados por elas não foram todos revisados integralmente. Os procedimentos do restaurante são exemplos didáticos próprios, não um protocolo universal validado. Continue quando conseguir apresentar a pergunta, a evidência disponível, suas limitações e a razão de a próxima coleta ser adequada à decisão pretendida."
+          ]
+        }
+      ],
+      "figuras": [
+        {
+          "apos_secao": 0,
+          "titulo": "Da decisão à pergunta de pesquisa",
+          "descricao": "Fluxo original com quatro etapas, retornando à decisão quando a evidência contrariar a hipótese.",
+          "etapas": [
+            "Decisão: reorganizar a retirada?",
+            "Hipótese: clientes não encontram o pedido",
+            "Pergunta: onde e quando surgem dúvidas?",
+            "Evidência necessária: relatos e observação das etapas"
+          ],
+          "legenda": "Exemplo hipotético: primeiro se define o que a pesquisa precisa esclarecer."
+        },
+        {
+          "apos_secao": 1,
+          "titulo": "Três camadas de um registro",
+          "descricao": "Três cartões originais lado a lado, com rótulos e exemplos; não usar escala ou percentuais.",
+          "etapas": [
+            "Relato: “achei a espera longa”",
+            "Observação: quinze minutos registrados",
+            "Interpretação: a espera explica a desistência?"
+          ],
+          "legenda": "Os exemplos são fictícios. Relato e observação ajudam a formular interpretações, mas não comprovam sozinhos uma causa."
+        },
+        {
+          "apos_secao": 5,
+          "titulo": "O ciclo de escuta e aprendizado",
+          "descricao": "Diagrama circular original com cinco etapas e um ponto de decisão para retornar à investigação.",
+          "etapas": [
+            "Ouvir com uma pergunta definida",
+            "Organizar e comparar evidências",
+            "Propor uma mudança",
+            "Observar a experiência posterior",
+            "Revisar a explicação e os limites"
+          ],
+          "legenda": "Ciclo didático de trabalho; não representa uma garantia de melhoria nem reproduz o desenho de uma pesquisa específica."
+        }
+      ],
+      "fontes": [
+        {
+          "titulo": "When Brain Scans Beat Surveys (and When They Don’t) — INSEAD Knowledge, 2026",
+          "url": "https://knowledge.insead.edu/marketing/when-brain-scans-beat-surveys-and-when-they-dont",
+          "consultado": "Página institucional aberta: introdução, desenho resumido, diferença entre adoção por gestores de loja e compra final, seção sobre adequação do método à pergunta.",
+          "limites": "É divulgação de um estudo de produtos embalados no varejo alemão. O paper original não foi revisado integralmente; não se recomenda fMRI para o restaurante nem se reproduzem estimativas de ganho."
+        },
+        {
+          "titulo": "What Happens When You Actually Listen to Customers — INSEAD Knowledge, 2026",
+          "url": "https://knowledge.insead.edu/marketing/what-happens-when-you-actually-listen-customers",
+          "consultado": "Página institucional aberta: descrição do experimento, distinção entre solicitação de feedback e aprendizado, e discussão de aplicação gerencial.",
+          "limites": "O estudo resumido ocorreu com pequenas empresas de Kigali. Seus percentuais não foram transferidos para outros países, setores ou para o caso fictício. Não se declara leitura integral do paper subjacente."
+        },
+        {
+          "titulo": "Conhecimento de uma marca não é suficiente para gerar intenção de compra nos consumidores, mostra pesquisa — FGV EAESP, 2021",
+          "url": "https://eaesp.fgv.br/administracao-de-empresas/estrategias-de-marketing/conhecimento-de-uma-marca-nao-e-suficiente-para-gerar-intencao-de-compra-nos-consumidores-mostra-pesquisa",
+          "consultado": "Resumo institucional aberto: distinção entre consciência de marca, dimensões de brand equity e intenção de compra; identificação dos pesquisadores e do público estudado.",
+          "limites": "O resumo não substitui a revisão do estudo completo. Suas associações não foram apresentadas como causalidade ou generalizadas a restaurantes. Serve para distinguir conceitos medidos."
+        },
+        {
+          "titulo": "The Benefits of Quasi-Experiments in Marketing — AMA, 2022",
+          "url": "https://www.ama.org/2022/03/16/conducting-research-in-marketing-with-quasi-experiments/",
+          "consultado": "Página institucional aberta de divulgação metodológica: necessidade de hipóteses de identificação e de separar alteração observada de relação causal.",
+          "limites": "Resumo executivo de artigo metodológico; não foi usado como validação do roteiro de entrevistas criado nesta leitura. Atribuição causal exige desenho e pressupostos adicionais."
+        }
+      ],
+      "contagem_palavras_corpo": 984
+    },
+    {
+      "slug": "segmentacao-e-posicionamento",
+      "numero": 3,
+      "titulo": "Segmentação e posicionamento: escolha para quem criar valor",
+      "descricao": "Como agrupar necessidades, selecionar prioridades e construir uma diferença relevante, sem transformar públicos em estereótipos ou promessas em slogans.",
+      "data": "2026-11-06",
+      "autor": "Harpya",
+      "secoes": [
+        {
+          "titulo": "Organize três decisões relacionadas",
+          "paragrafos": [
+            "Segmentar significa procurar diferenças relevantes entre situações, necessidades ou comportamentos de compra. Selecionar um público significa decidir quais desses grupos serão prioridade. Posicionar significa definir como a oferta pretende ser compreendida por esse público diante das alternativas. Essas três decisões precisam conversar entre si e orientar o que a empresa efetivamente entrega.",
+            "O trecho de livro publicado pela Wharton apresenta essa sequência como parte de uma estrutura de estratégia de marketing. Ela ajuda a organizar perguntas, sem tornar a realidade uma fila rígida de etapas. Ao investigar a capacidade de entrega, a equipe pode descobrir que precisa rever o público escolhido. Ao conversar com clientes, pode encontrar uma necessidade que não aparecia nos agrupamentos iniciais. A utilidade está nas escolhas que o trabalho esclarece."
+          ]
+        },
+        {
+          "titulo": "Procure diferenças ligadas à decisão",
+          "paragrafos": [
+            "Considere o restaurante hipotético dos capítulos anteriores. Duas pessoas da mesma idade e renda podem escolher refeições por razões diferentes. Uma precisa retirar rapidamente entre compromissos; outra procura um lugar onde possa permanecer com colegas. A situação de uso pode ser mais esclarecedora que uma característica demográfica isolada. Isso é uma hipótese a investigar, não uma descoberta sobre clientes reais.",
+            "Variáveis como localização, frequência, restrições de horário e necessidades alimentares podem ajudar a construir agrupamentos provisórios. Só mantenha uma divisão se ela esclarecer alguma decisão de produto, preço, acesso ou experiência. Um nome criativo para cada grupo não substitui evidência de que seus integrantes compartilham necessidades relevantes. Evite deduzir preferências de identidades ou atribuir comportamentos fixos a pessoas que ainda não foram ouvidas."
+          ]
+        },
+        {
+          "titulo": "Avalie se o grupo pode ser atendido",
+          "paragrafos": [
+            "Descrever uma necessidade não demonstra que a empresa conseguirá atendê-la. Para escolher um público, examine sua relevância para o problema, a possibilidade de alcançá-lo e a capacidade operacional exigida. Investigue também as alternativas disponíveis e os recursos que o atendimento consumirá. Tamanho de público, por si só, não resolve essas perguntas.",
+            "A London Business School discute como a diferenciação entre segmentos pode acrescentar complexidade à operação. Para nosso restaurante, criar horários, embalagens, cardápios e canais exclusivos para cada grupo pode ser caro e confuso. Uma possibilidade a testar é manter uma base comum e adaptar apenas os elementos que importam em cada situação. A análise precisa mostrar quais adaptações produzem benefício percebido e quais criam trabalho sem justificativa observável."
+          ]
+        },
+        {
+          "titulo": "Escreva um posicionamento que possa ser examinado",
+          "paragrafos": [
+            "Uma formulação provisória pode explicitar o público, a situação, o benefício principal, a alternativa de comparação e a razão para acreditar na entrega. O objetivo é ajudar a equipe a tomar decisões consistentes. A apresentação comercial para clientes pode ser mais simples; o raciocínio interno precisa continuar compreensível.",
+            "No exemplo fictício: para pessoas que precisam retirar o almoço num intervalo limitado, oferecemos refeições com retirada agendada e informação clara de disponibilidade, sustentadas por uma produção planejada por horário. A proposta ainda precisa ser testada. “O melhor almoço da cidade” acrescentaria uma alegação ampla, sem esclarecer como verificá-la. A exposição de Leonard Lodish na Wharton relaciona posicionamento, valor percebido e competência da empresa; esta leitura aproveita essa ligação, sem transformar suas recomendações históricas em regras universais."
+          ]
+        },
+        {
+          "titulo": "Faça a promessa chegar ao produto e ao serviço",
+          "paragrafos": [
+            "Se a prioridade é previsibilidade de retirada, o processo de pedido deve mostrar os horários disponíveis. A produção precisa conhecer os compromissos assumidos. A equipe de atendimento deve conseguir localizar o pedido. A comunicação deve informar eventuais mudanças. Cada ligação pode ser observada, em vez de ficar restrita à interpretação de uma campanha.",
+            "O modelo de jornada do consumidor da McKinsey amplia a atenção para momentos anteriores e posteriores à compra. Aplicado como lente ao caso hipotético, ele convida a acompanhar como a pessoa descobre a oferta, avalia condições, compra, retira e decide voltar. Essa utilização é uma proposta didática própria. Não significa que toda pessoa percorra as etapas da mesma forma ou que um desenho de jornada explique sozinho o resultado de vendas."
+          ]
+        },
+        {
+          "titulo": "Compare duas propostas sem inventar uma vencedora",
+          "paragrafos": [
+            "Imagine que a equipe considere duas prioridades: retirada em intervalo curto e encontros demorados entre colegas. A primeira pode exigir agendamento, fluxo claro e regularidade. A segunda pode exigir espaço, conforto e condições para permanência. Essa comparação hipotética ajuda a visualizar escolhas que podem competir pelo mesmo espaço e pela mesma equipe.",
+            "Não é possível afirmar, apenas com essa descrição, qual proposta será mais rentável ou desejada. A equipe precisaria investigar demanda, custos, experiência e alternativas. Também poderia testar se há compatibilidade em horários diferentes. Registre a condição que tornaria cada caminho viável e a evidência que levaria ao abandono da hipótese. A decisão ganha qualidade quando inclui critérios de revisão, em vez de depender da preferência de quem apresentou a ideia."
+          ]
+        },
+        {
+          "titulo": "Exercício: monte e revise seu quadro de escolhas",
+          "paragrafos": [
+            "Escolha uma oferta conhecida e descreva três situações de uso, sem começar por idade ou renda. Para cada situação, registre a necessidade, a alternativa mais provável, o benefício esperado e uma dificuldade de atendimento. Marque o que você observou e o que imaginou. Escolha provisoriamente uma situação e explique por que ela merece investigação primeiro.",
+            "Depois escreva um posicionamento e liste três consequências operacionais dessa escolha. Pergunte: os integrantes do grupo reconhecem essa necessidade? Conseguimos chegar até eles sem supor comportamentos? A promessa pode ser demonstrada? O atendimento continuaria coerente se aumentasse a procura? Por fim, proponha uma evidência que contrariaria sua escolha. Esse último passo impede que a segmentação vire apenas uma forma organizada de defender uma decisão já tomada."
+          ]
+        },
+        {
+          "titulo": "Limites: grupos mudam e modelos simplificam",
+          "paragrafos": [
+            "Uma pessoa pode participar de situações diferentes ao longo da semana. Um agrupamento útil para definir produto pode ser insuficiente para planejar atendimento ou avaliar custos. Mantenha explícito o objetivo da segmentação e evite apresentar grupos provisórios como retratos completos das pessoas. Classificações também precisam ser revistas quando o contexto muda.",
+            "Os textos usados como referência incluem materiais executivos e um excerto de livro, com limites descritos ao final. Eles não validam os segmentos do restaurante fictício. Seu resultado nesta etapa é um conjunto de escolhas examináveis: para quem criar valor, qual diferença buscar e como entregá-la. A próxima leitura ajudará a pensar nas medidas e comparações necessárias para avaliar uma mudança sem confundir preferência, associação e efeito causal."
+          ]
+        }
+      ],
+      "figuras": [
+        {
+          "apos_secao": 0,
+          "titulo": "Três decisões que se revisam",
+          "descricao": "Fluxo original com três caixas principais e setas de retorno para indicar revisão a partir de evidências.",
+          "etapas": [
+            "Segmentar: reconhecer diferenças relevantes",
+            "Selecionar: escolher a prioridade",
+            "Posicionar: definir diferença e entrega",
+            "Revisar escolhas com pesquisa e capacidade operacional"
+          ],
+          "legenda": "Estrutura didática de decisões relacionadas; não exige que todo projeto siga uma sequência rígida."
+        },
+        {
+          "apos_secao": 2,
+          "titulo": "O que compartilhar e o que adaptar",
+          "descricao": "Diagrama original com uma base comum inferior e duas ramificações superiores, sem proporções ou marcas reais.",
+          "etapas": [
+            "Base compartilhada: cozinha e registro de pedidos",
+            "Situação A: retirada em intervalo curto",
+            "Adaptação possível A: agendamento e sinalização",
+            "Situação B: encontro entre colegas",
+            "Adaptação possível B: espaço e tempo de permanência"
+          ],
+          "legenda": "Exemplo hipotético. As adaptações precisam ser avaliadas por relevância e custo; sua eficácia não está comprovada."
+        },
+        {
+          "apos_secao": 4,
+          "titulo": "Uma promessa precisa de várias entregas",
+          "descricao": "Cadeia original de cinco momentos, com faixa inferior representando a promessa de previsibilidade.",
+          "etapas": [
+            "Descoberta: condições compreensíveis",
+            "Pedido: horário disponível visível",
+            "Produção: compromisso registrado",
+            "Retirada: pedido localizável",
+            "Pós-compra: comparar promessa e experiência"
+          ],
+          "legenda": "Aplicação didática ao restaurante fictício; cada ligação indica uma pergunta de observação, sem representar uma jornada universal."
+        }
+      ],
+      "fontes": [
+        {
+          "titulo": "What Are Your Customers Really Worth? — Knowledge at Wharton, 2007",
+          "url": "https://knowledge.wharton.upenn.edu/article/what-are-your-customers-really-worth/",
+          "consultado": "Página institucional aberta: trecho identificado como excerto de livro e seção Traditional Marketing Strategy, que apresenta segmentação, seleção de público, posicionamento e decisões de oferta.",
+          "limites": "Não houve leitura integral do livro. A sequência é usada como estrutura conceitual; dados históricos e julgamentos sobre clientes do excerto não foram reproduzidos."
+        },
+        {
+          "titulo": "Segmenting when it matters — London Business School · Think, 2010",
+          "url": "https://www.london.edu/think/segmenting-when-it-matters",
+          "consultado": "Página institucional aberta: introdução e seção Sensible segmentation, sobre número de segmentos, diferenciação e complexidade das operações.",
+          "limites": "Artigo executivo de 2010; não foi consultado integralmente o PDF de continuação. Exemplos históricos das empresas mencionadas não foram transportados para o presente nem usados como comprovação de resultado."
+        },
+        {
+          "titulo": "Pricing and Positioning for Entrepreneurial Marketers — Knowledge at Wharton, 2005",
+          "url": "https://knowledge.wharton.upenn.edu/article/pricing-and-positioning-for-entrepreneurial-marketers/",
+          "consultado": "Página institucional aberta: trechos de exposição de Leonard Lodish sobre público, valor percebido, alternativas e competência distintiva.",
+          "limites": "Cobertura de palestra, não revisão sistemática. Recomendações de preço premium e casos numéricos do palestrante não foram usados como regra. O posicionamento do restaurante é criação didática própria."
+        },
+        {
+          "titulo": "The consumer decision journey — McKinsey Quarterly, 2009",
+          "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey",
+          "consultado": "Página institucional aberta: apresentação do modelo de jornada e discussão de experiências anteriores e posteriores à compra.",
+          "limites": "Modelo executivo situado no contexto de pesquisa de 2009. Não se presume uma sequência universal nem se atribui efeito causal às etapas. O diagrama do restaurante foi descrito originalmente para este exercício."
+        }
+      ],
+      "contagem_palavras_corpo": 977
+    },
+    {
+      "slug": "mensuracao-e-causalidade",
+      "numero": 4,
+      "titulo": "Mensuração e causalidade: o que uma mudança realmente provocou?",
+      "descricao": "Aprenda a definir indicadores, construir comparações e interpretar um teste hipotético sem confundir vendas atribuídas com vendas adicionais.",
+      "data": "2026-11-06",
+      "autor": "Harpya",
+      "secoes": [
+        {
+          "titulo": "Defina o resultado antes de escolher o indicador",
+          "paragrafos": [
+            "Uma campanha pode gerar visualizações, visitas, pedidos e receita. Cada medida responde a uma pergunta diferente. Antes de abrir um painel, defina qual decisão será apoiada e qual resultado importa. Se o objetivo é melhorar a retirada de refeições, contar visualizações do anúncio não informa diretamente se as pessoas encontraram seus pedidos.",
+            "Use o restaurante fictício da série para distinguir dois projetos: reorganizar o atendimento e divulgar o serviço. O primeiro pode acompanhar dúvidas e tempo de retirada; o segundo pode investigar pedidos adicionais. Métricas intermediárias ajudam a entender o caminho, mas precisam manter relação clara com o objetivo. A facilidade de obter um número não deve decidir, sozinha, qual pergunta será respondida."
+          ]
+        },
+        {
+          "titulo": "Escreva a definição e o denominador",
+          "paragrafos": [
+            "Uma taxa de conversão combina um evento e uma população de referência. “Pedidos concluídos por pessoas elegíveis ao teste” é diferente de “pedidos por cliques recebidos”. Período, unidade de análise e regras de contagem precisam ser registrados. Sem essas definições, dois painéis podem mostrar valores diferentes e ambos estar calculando corretamente medidas distintas.",
+            "Considere um exemplo numérico inteiramente hipotético: quarenta de mil pessoas fizeram um pedido num período. A taxa observada é 4%. Se cinquenta de outras mil pessoas fizeram um pedido, a taxa é 5%. A diferença é de um ponto percentual; o aumento relativo é de 25% sobre a taxa de 4%. Essas descrições são aritméticas. Ainda não explicam por que os grupos diferem nem se o resultado se repetiria."
+          ]
+        },
+        {
+          "titulo": "Uma associação permite perguntas, não resolve a causa",
+          "paragrafos": [
+            "Quem clica num anúncio pode já estar mais disposto a comprar. Um público com mais pedidos após uma campanha pode ter recebido o anúncio justamente porque demonstrou interesse antes. Nesse caso, parte da diferença observada pode refletir a seleção de pessoas, além de eventual efeito da publicidade.",
+            "O estudo de Gordon e coautores, resumido na página de Marketing Science, compara estimativas observacionais com resultados de experimentos publicitários numa plataforma. Ele mostra um problema de identificação naquele contexto; não permite afirmar que todo relatório observacional é inútil. A pergunta causal procura saber o que mudaria se a mesma população recebesse outra condição. Como não observamos simultaneamente os dois resultados para cada pessoa, precisamos construir uma comparação defensável."
+          ]
+        },
+        {
+          "titulo": "Um experimento começa pelo desenho da comparação",
+          "paragrafos": [
+            "Num teste aleatório hipotético, uma população elegível é dividida por sorteio entre uma condição com a intervenção e uma condição de comparação. A análise acompanha todos os participantes conforme a regra definida, inclusive quem não clicou ou não chegou a ver o anúncio. Selecionar depois apenas os que reagiram mudaria a comparação inicialmente planejada.",
+            "O sorteio ajuda a tornar comparáveis os grupos em expectativa; não elimina problemas de execução. É necessário verificar se o tratamento foi aplicado, se houve perdas de registros e se uma condição afetou a outra. Também se definem previamente período, resultado principal e cuidados para que a experiência das pessoas seja apropriada. O artigo sobre ghost ads descreve uma abordagem específica de experimentação publicitária. Sua implementação exige recursos que não podem ser presumidos em qualquer ferramenta."
+          ]
+        },
+        {
+          "titulo": "Interprete o exemplo com alcance e incerteza",
+          "paragrafos": [
+            "Voltemos aos mil participantes de cada grupo. Suponha, agora, que eles tenham sido sorteados corretamente, que a intervenção fosse a única diferença planejada e que os pedidos fossem registrados da mesma forma. Cinquenta pedidos no grupo com campanha e quarenta no grupo de comparação produziriam uma estimativa de dez pedidos adicionais por mil pessoas naquela comparação.",
+            "Esse número é uma estimativa do exemplo fictício, não uma comprovação estatística. Seria necessário avaliar a incerteza amostral e o desenho antes de decidir se há evidência convincente de efeito. A interpretação econômica também é separada: com contribuição hipotética de R$ 8 por pedido, dez pedidos representariam R$ 80 antes do custo da campanha e de outros efeitos. Receita atribuída, contribuição e resultado líquido não são medidas equivalentes; nenhuma delas dispensa uma comparação adequada."
+          ]
+        },
+        {
+          "titulo": "Quando o sorteio não é possível",
+          "paragrafos": [
+            "Um estudo quase experimental procura aproveitar variações que não foram criadas por sorteio planejado, mas podem sustentar uma comparação causal sob pressupostos explícitos. Goldfarb, Tucker e Wang apresentam métodos dessa família e insistem na importância das hipóteses de identificação. A técnica escolhida não transforma automaticamente qualquer base de dados numa resposta causal.",
+            "Imagine que uma loja mude seu processo e outra continue igual. Comparar a evolução de ambas pode ajudar a investigar o efeito, mas é necessário examinar por que mudariam de modo semelhante sem a intervenção, que outras alterações ocorreram e como cada medida foi produzida. Uma comparação antes e depois numa única loja pode misturar a mudança com sazonalidade, preço, estoque ou acontecimentos locais. Essas explicações precisam ser consideradas antes de atribuir o resultado."
+          ]
+        },
+        {
+          "titulo": "Exercício: escreva um plano de avaliação",
+          "paragrafos": [
+            "Escolha uma mudança pequena e descreva a pergunta causal em uma frase. Defina população elegível, intervenção, comparação, período e resultado principal. Registre como os dados seriam obtidos e o que impediria uma comparação justa. Se a proposta envolver pessoas reais, avalie a adequação da experiência e organize o uso responsável das informações antes da execução.",
+            "Depois revise um relatório ou um exemplo fictício de campanha. Pergunte: o indicador tem denominador claro? O relatório distingue atribuição de incremento? Quem ficou fora da análise? Houve mudança simultânea de preço ou disponibilidade? Que incerteza acompanha a estimativa? Escreva uma conclusão proporcional: o que foi observado, que explicações permanecem e qual evidência adicional seria necessária para mudar a decisão."
+          ]
+        },
+        {
+          "titulo": "Limites: nenhum número viaja sozinho",
+          "paragrafos": [
+            "Um efeito encontrado num público e período não é garantia para outro contexto. Também é possível medir bem um objetivo inadequado: aumentar pedidos pode piorar a experiência se a operação não conseguir entregá-los. Examine indicadores de qualidade e consequências além do resultado principal, sem escolher retrospectivamente apenas os números favoráveis.",
+            "As referências incluem uma divulgação metodológica aberta e resumos de artigos acadêmicos; os textos restritos não foram lidos integralmente nesta preparação. A meta-análise citada reúne estudos históricos e não fornece uma taxa universal de retorno para campanhas atuais. Use as fontes para orientar perguntas e limites. Um relatório útil torna a decisão mais examinável ao mostrar o resultado, o desenho da comparação e o que os dados ainda não permitem concluir."
+          ]
+        }
+      ],
+      "figuras": [
+        {
+          "apos_secao": 1,
+          "titulo": "Dois modos de expressar a mesma diferença",
+          "descricao": "Diagrama aritmético original com dois cartões de grupos fictícios e uma área de comparação; não apresentar intervalo de confiança inexistente.",
+          "etapas": [
+            "Grupo A: 40 pedidos / 1.000 pessoas = 4%",
+            "Grupo B: 50 pedidos / 1.000 pessoas = 5%",
+            "Diferença absoluta: 1 ponto percentual",
+            "Diferença relativa sobre 4%: 25%"
+          ],
+          "legenda": "Números hipotéticos. A diferença aritmética não estabelece causa nem significância estatística."
+        },
+        {
+          "apos_secao": 3,
+          "titulo": "Comparar condições planejadas",
+          "descricao": "Fluxo original que divide uma população elegível por sorteio em dois caminhos e os reúne na análise.",
+          "etapas": [
+            "Definir a população elegível",
+            "Sortear as condições antes de observar a resposta",
+            "Grupo intervenção: acompanhar todos os designados",
+            "Grupo comparação: acompanhar todos os designados",
+            "Comparar resultado definido previamente e avaliar incerteza"
+          ],
+          "legenda": "Esquema didático de experimento. A validade também depende da execução, da medição e de possíveis interferências."
+        },
+        {
+          "apos_secao": 5,
+          "titulo": "O que pode explicar uma mudança?",
+          "descricao": "Diagrama original com resultado observado ao centro e cinco possíveis influências ao redor, sem pesos ou setas de efeito confirmado.",
+          "etapas": [
+            "Intervenção estudada",
+            "Sazonalidade",
+            "Preço e disponibilidade",
+            "Composição dos clientes",
+            "Mudanças simultâneas no atendimento"
+          ],
+          "legenda": "Mapa de explicações possíveis para investigação; a presença de uma hipótese no diagrama não comprova que ela produziu o resultado."
+        }
+      ],
+      "fontes": [
+        {
+          "titulo": "The Benefits of Quasi-Experiments in Marketing — AMA, 2022",
+          "url": "https://www.ama.org/2022/03/16/conducting-research-in-marketing-with-quasi-experiments/",
+          "consultado": "Página institucional aberta consultada: explicação de comparação causal, desenho de estratégias empíricas, hipóteses de identificação e generalização. Apoio principal à seção sobre quase experimentos.",
+          "limites": "Divulgação metodológica de Goldfarb, Tucker e Wang; a página não valida o desenho fictício nem substitui o estudo das hipóteses de cada método."
+        },
+        {
+          "titulo": "Conducting Research in Marketing with Quasi-Experiments — Journal of Marketing, 2022",
+          "url": "https://journals.sagepub.com/doi/10.1177/00222429221082977",
+          "consultado": "Página do editor: título, autores, data, resumo e introdução acessíveis na consulta inicial. O editor indica open access; tentativas posteriores apresentaram timeout.",
+          "limites": "Não se declara revisão integral do artigo. A leitura se apoia no resumo, introdução e divulgação AMA; métodos específicos não são ensinados como receitas prontas."
+        },
+        {
+          "titulo": "A Comparison of Approaches to Advertising Measurement: Evidence from Big Field Experiments at Facebook — Marketing Science, 2019",
+          "url": "https://pubsonline.informs.org/doi/10.1287/mksc.2018.1135",
+          "consultado": "Landing institucional INFORMS: autoria, data online, resumo, desenho geral de comparação entre experimentos e métodos observacionais.",
+          "limites": "Somente resumo e metadados, sem revisão integral do PDF ou suplementos. Contexto de experimentos publicitários nos EUA em uma plataforma; dois autores vinculados ao Facebook."
+        },
+        {
+          "titulo": "Ghost Ads: Improving the Economics of Measuring Online Ad Effectiveness — Journal of Marketing Research, 2017",
+          "url": "https://journals.sagepub.com/doi/10.1509/jmr.15.0297",
+          "consultado": "Página do editor: metadados e resumo aberto da metodologia experimental. Usado para indicar que desenho de controle em publicidade requer infraestrutura própria.",
+          "limites": "Texto integral restrito não consultado. Não se reproduzem percentuais do caso nem se presume que a metodologia esteja disponível em qualquer plataforma de anúncios."
+        },
+        {
+          "titulo": "How Well Does Advertising Work? Generalizations from Meta-Analysis of Brand Advertising Elasticities — Journal of Marketing Research, 2011",
+          "url": "https://journals.sagepub.com/doi/10.1509/jmkr.48.3.457",
+          "consultado": "Página do editor: metadados e resumo da meta-análise, com período dos estudos-base. Publicação original em junho de 2011 confirmada na bibliografia institucional AMA.",
+          "limites": "Texto completo restrito não consultado. SAGE mostra também disponibilização online em 2018; isso não altera o ano original. Elasticidades históricas não foram apresentadas como previsão para campanhas atuais."
+        }
+      ],
+      "contagem_palavras_corpo": 973
+    }
+  ]
+}

@@ -1,4 +1,5 @@
-export type BlocoBusiness = { titulo: string; texto: string; itens?: string[]; formula?: string };
+import complementos from './business-metodos.json';
+export type BlocoBusiness = { titulo: string; texto: string; itens?: string[]; formula?: string; equacao?:string; exemplo?:string; referencias?:{titulo:string;url:string;alcance:string;limites:string}[] };
 export const EDITORIAL_BUSINESS: Record<string, BlocoBusiness[]> = {
   origens: [
     { titulo: 'Da produção à compreensão do mercado', texto: 'O estudo do marketing envolve relações entre produção, distribuição, necessidades e trocas. Este percurso organiza perguntas para leitura histórica; não pretende estabelecer uma cronologia única nem atribuir a criação de uma ideia a uma pessoa isolada.', itens: ['Como tornar uma oferta disponível?', 'Que necessidades e alternativas orientam a decisão do cliente?', 'Como criar e sustentar valor ao longo do tempo?'] },
@@ -41,4 +42,15 @@ export const EDITORIAL_BUSINESS: Record<string, BlocoBusiness[]> = {
     { titulo: 'Preferência e privacidade', texto: 'A escolha de ambiente fica no armazenamento local deste navegador, sem exigir conta. Use “Trocar ambiente” e “Redefinir preferência” para alterá-la. Links diretos respeitam o destino. O contador apresentado no rodapé é geral do portal. Os termos e as informações de privacidade institucionais permanecem disponíveis no rodapé.' },
   ],
 };
-export const markdownEditorial = (slug: string) => (EDITORIAL_BUSINESS[slug] ?? []).map(b => `## ${b.titulo}\n\n${b.texto}${b.formula ? `\n\n${b.formula}` : ''}${b.itens ? `\n\n${b.itens.map(i => `- ${i}`).join('\n')}` : ''}`).join('\n\n');
+const equacoesIniciais = [
+  String.raw`MC=R_{\mathrm{liquida}}-C_{\mathrm{variaveis}}`,
+  String.raw`CAC=\frac{G_{\mathrm{aquisicao}}}{N_{\mathrm{novos\ clientes}}}`,
+  String.raw`CLV=\sum_{t=1}^{T}\frac{\mathbb{E}[M_t]}{(1+r)^t}`,
+  String.raw`ROAS=\frac{R_{\mathrm{atribuida}}}{G_{\mathrm{midia}}}`,
+  String.raw`\widehat{\tau}=\overline{Y}_{\mathrm{tratado}}-\overline{Y}_{\mathrm{controle}}`,
+  String.raw`\varepsilon=\frac{\Delta Q/Q}{\Delta P/P}`,
+];
+EDITORIAL_BUSINESS.metricas = [...EDITORIAL_BUSINESS.metricas.map((b,i)=>({...b,equacao:equacoesIniciais[i]})),...complementos.metricas];
+EDITORIAL_BUSINESS['biblioteca/glossario'].push(...complementos.glossario);
+const mdTexto=(texto:string)=>texto.replaceAll('$','\\$');
+export const markdownEditorial = (slug: string) => (EDITORIAL_BUSINESS[slug] ?? []).map(b => `## ${b.titulo}\n\n${mdTexto(b.texto)}${b.equacao ? `\n\n$$\n${b.equacao}\n$$` : ''}${b.formula ? `\n\n${mdTexto(b.formula)}` : ''}${b.exemplo ? `\n\n${mdTexto(b.exemplo)}` : ''}${b.itens ? `\n\n${b.itens.map(i => `- ${mdTexto(i)}`).join('\n')}` : ''}${b.referencias ? `\n\n${b.referencias.map(r=>`- [${r.titulo}](${r.url}). ${mdTexto(r.alcance)} ${mdTexto(r.limites)}`).join('\n')}` : ''}`).join('\n\n');

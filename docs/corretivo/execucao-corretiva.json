@@ -20,27 +20,37 @@
     "NoticiasPagina",
     "NewsCard",
     "SourceCatalog",
-    "StudyArticle"
+    "StudyArticle",
+    "StudyCatalog",
+    "StudyInvestigation",
+    "OriginsPage",
+    "LearningPage",
+    "BeginnerIndex",
+    "BeginnerNavigation",
+    "AnalysisArticle"
   ],
   "alteracoes_estruturais": [
     "Menu Business derivado de NAV original",
     "Remoção de tokens e overrides globais da versão azul",
     "Mesmo hero e imagens editoriais originais; poses alternativas permanecem no portal",
-    "Fontes e créditos compilados dos registros publicados"
+    "Fontes e créditos compilados dos registros publicados",
+    "Removidos BusinessPage, BusinessResourceCard e business.css divergentes.",
+    "Origens, Aprendizado, Estudos, Começando e Análises extraídos dos originais em componentes compartilhados.",
+    "Rotas físicas de Começando isolam Source Serif das páginas Base com Inter.",
+    "Alias de Métricas, livros e guias preservados com canonical e Open Graph normalizados.",
+    "CMS com as cinco novas coleções; validação editorial compartilhada entre build e painel de publicação.",
+    "Radar principal preenchido por publicações únicas por URL; lateral com três grupos e duas leituras por grupo.",
+    "Fichas bibliográficas aceitam capa, crédito, origem, condição de uso e formato do ISBN, sem associar uma capa não conferida.",
+    "Doze guias aprofundados, dez novos métodos e seis novos termos; referências dos guias agora são links nomeados para evitar overflow em 360/390 px.",
+    "Três retratos CC BY-SA com crédito, fonte, link de licença e indicação de redução/conversão; arquivos e créditos distribuídos sob as licenças originais."
   ],
   "pendencias": [
-    "Origens: template, cronologia temática documentada, retratos, capítulos e referências ainda pendentes.",
-    "Aprendizado: template e dossiês com mecanismos, exemplos e limites ainda pendentes.",
-    "Estudos: índice, investigação editorial, arquivados e aprofundamento dos 8 guias para estudos completos ainda pendentes.",
-    "Começando: série no layout original, textos ilustrados e navegação entre artigos ainda pendentes.",
-    "Análises e notícias: produção de textos completos e adaptação das páginas de detalhe ainda pendentes.",
-    "Biblioteca: completar literatura e referências; conferir capas/edições, traduções e condições de uso.",
-    "Painel de publicação: integrar escopo Business e fluxo editorial aos recursos do painel original.",
-    "Coleta e distribuição: validar curadoria, feed, busca, SEO e divulgação com todos os novos tipos de conteúdo.",
-    "Verificação final de paridade visual e funcional em todos os templates e larguras ainda pendente.",
-    "Os candidatos de vídeo exigem revisão integral, verificação de alegações e resumos próprios antes da publicação.",
-    "Rotas auxiliares de livros/canais e fichas externas ainda usam apresentação legada; migrar sem substituir os catálogos originais.",
-    "Criar as rotas canônicas temáticas restantes e preservar aliases publicados, incluindo Equações/Métricas e os detalhes de notícias e análises."
+    "Vídeos: zero publicáveis com revisão audiovisual integral concluída. Há 24 candidatos verificados por metadados, total nominal de 10 h 05 min 45 s, e duas transcrições editoriais lidas integralmente; isto não comprova a edição do YouTube. Tentativas de legendas retornaram 429.",
+    "Estudos: doze guias didáticos autorais com protocolos propostos; não são experimentos nem resultados empíricos. Revisão final da profundidade e dos estados funcionais permanece no aceite editorial e visual.",
+    "Biblioteca: ampliar e revisar o acervo. O build local tem seis referências e oito livros, frente a 63 referências e 58 livros no original; uma das seis referências é uma edição completa da Revista DOM, não um artigo individual.",
+    "Imagens temáticas: três retratos licenciados incorporados com crédito, fonte, link da licença e indicação das alterações; nove perfis ainda usam iniciais. Oito capas oficiais foram conferidas: sete correspondências bibliográficas confirmadas e How Brands Grow pendente. Condições de reutilização das capas estão registradas; os oito livros continuam usando as alternativas gráficas originais.",
+    "Aceite visual: há medição de treze templates nas cinco larguras e inspeção visual parcial; ainda faltam capturas pareadas completas e revisão de todos os estados funcionais, inclusive vídeos preenchidos.",
+    "Administração e serviços externos: testes locais do fluxo e configuração do CMS aprovados; publicação remota, autenticação real, coleta agendada em produção e discussão enviada não foram executadas neste corretivo."
   ],
   "validacao": {
     "estado": "verificacao_parcial_aprovada_sem_aceite_integral",
@@ -50,28 +60,60 @@
       "hints_preexistentes": 4
     },
     "build": {
-      "paginas": 99
+      "paginas": 136
     },
     "testes_node": {
-      "aprovados": 43
+      "aprovados": 49
     },
     "testes_python_business": {
       "aprovados": 13
     },
     "integridade_build": {
-      "pages": 41,
-      "businessPages": 39,
-      "internalReferences": 4096,
-      "businessSearchItems": 39,
+      "pages": 78,
+      "businessPages": 76,
+      "internalReferences": 8000,
+      "businessSearchItems": 62,
       "broken": [],
       "duplicateIds": [],
       "headingFailures": [],
-      "missingMeta": []
+      "missingMeta": [],
+      "fragmentReferences": 443,
+      "fragmentFailures": [],
+      "aliasesChecked": 14,
+      "canonicalFailures": []
     },
     "regressao_tecnologia": {
       "base": "bf96fafa0c883a7f5d39c5d91ca0c15355482ccd",
       "metodo": "Comparação da árvore do main, texto e atributos; ignorados scripts, atributos Astro de escopo, IDs sequenciais das capas e nomes hash de arquivos CSS. Baseline compilada em checkout limpo no mesmo momento. Não é diff de pixels.",
       "resultados": [
+        {
+          "route": "/analises/computacao-quantica-util-parte-1/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/estudos/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/origens/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/aprendizado/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/comecando/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/comecando/proxima-palavra/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/estudos/a-ideia-mais-interessante/",
+          "dom_textos_atributos_preservados": true
+        },
         {
           "route": "/tecnologia/",
           "dom_textos_atributos_preservados": true
@@ -110,7 +152,8 @@
         },
         {
           "route": "/biblioteca/fontes/",
-          "dom_textos_atributos_preservados": true
+          "dom_textos_atributos_preservados": false,
+          "mesmos_itens_e_estrutura_ignorando_ordem_da_lista": true
         },
         {
           "route": "/sobre/",
@@ -120,30 +163,133 @@
           "route": "/estudos/caminhos/certificado-inteiro/",
           "dom_textos_atributos_preservados": true
         }
-      ]
+      ],
+      "excecao_ordenacao_fontes": "18 das 19 rotas têm a árvore normalizada idêntica. Em /biblioteca/fontes/, os mesmos itens, textos, atributos e estrutura foram preservados, com ordem de inserção diferente no índice derivado de getCollection; igualdade confirmada após ordenar os li. O código do compilador de fontes técnicas não foi modificado."
     },
     "browser_local": {
       "navegador": "Safari",
+      "medicao_responsiva": {
+        "metodo": "Safari; dois iframes same-origin por par. Viewport interno medido, altura 620 px; escala externa apenas para exibição. Treze templates em cinco larguras. Não é diff de pixels nem inspeção integral de imagens lazy.",
+        "larguras": [
+          360,
+          390,
+          1024,
+          1440,
+          1672
+        ],
+        "pares": 65,
+        "renderizacoes": 130,
+        "excessos_horizontais": 0,
+        "falhas_h1": 0,
+        "erros_katex": 0,
+        "imagens_carregadas_com_falha": 0,
+        "largura_main_igual_nos_pares": true,
+        "fonte_main_igual_nos_pares": true,
+        "display_rail_igual_nos_pares": true,
+        "evidencia": "docs/corretivo/qa-responsiva-medidas.json"
+      },
       "observacoes": [
-        "Preferência de entrada exibida no Business; Agora não preserva a navegação.",
-        "Home com hero, imagens, quatro cards de trilha, três cards de guia e pautas do sistema original.",
-        "Filtro por área da biblioteca oculta livros de outras áreas.",
-        "Filtro de português mantém Marketing de Serviços; sete obras em inglês e uma em português.",
-        "Guia no layout original com metadados, índice, fontes, citação e navegação.",
-        "Relatório de 60 fichas filtra Wharton para cinco fichas."
+        "Preferência Business exibida e dispensada com Agora não.",
+        "Home com harpia, hero, grade, trilhas e barras do original.",
+        "Arquivo de notícias abre com treze registros; navegação passa de 1 de 2 para 2 de 2 e desabilita o avanço.",
+        "Artigo da série usa Source Serif e o tema original, com figuras próprias e navegação entre os quatro artigos.",
+        "Diagrama radial e legenda inspecionados no quadro de 390 px.",
+        "Nenhum comentário, mensagem, compra ou publicação externa enviado."
       ],
       "limites": [
-        "Inspeção desktop; dimensões de viewport não medidas nesta etapa.",
-        "Não há comparação de pixels pareada nas cinco larguras do contrato.",
-        "Catálogos de vídeos/notícias/análises continuam incompletos; esses estados preenchidos não foram validados em Business.",
-        "Nenhum comentário, mensagem, compra ou publicação foi enviado."
+        "Não equivale ao aceite visual integral do contrato.",
+        "Vídeos preenchidos e recursos remotos não foram validados."
       ]
     },
     "publicacao": false,
     "aceite_integral": false,
     "ancoras_business": {
-      "checked": 138,
+      "checked": 443,
       "broken": []
+    },
+    "cms": {
+      "colecoes": 22,
+      "validacao": "painel e conteúdo coerentes"
     }
+  },
+  "etapa": "templates_compartilhados_e_primeiro_ciclo_editorial",
+  "conteudo_local": {
+    "secoes_equacoes_metodos": 16,
+    "termos_glossario": 14,
+    "artigos_serie": 4,
+    "palavras_corpo_serie": [
+      973,
+      960,
+      984,
+      977
+    ],
+    "figuras_serie": 12,
+    "dossies_aprendizado": 10,
+    "blocos_equacoes_aprendizado": 8,
+    "origens": {
+      "eras": 4,
+      "capitulos": 5,
+      "eventos": 24,
+      "pessoas": 12,
+      "retratos_incorporados": 3
+    },
+    "investigacoes": 1,
+    "avaliacoes_conceituais_arquivadas": 4,
+    "analises": 1,
+    "noticias": 13,
+    "referencias_artigos_relatorios": 6,
+    "livros": 8,
+    "videos": 0,
+    "guias": [
+      {
+        "arquivo": "pesquisa-comparativa.md",
+        "palavras_corpo": 787
+      },
+      {
+        "arquivo": "clientes.md",
+        "palavras_corpo": 831
+      },
+      {
+        "arquivo": "gestao.md",
+        "palavras_corpo": 864
+      },
+      {
+        "arquivo": "estrategia.md",
+        "palavras_corpo": 849
+      },
+      {
+        "arquivo": "precificacao.md",
+        "palavras_corpo": 730
+      },
+      {
+        "arquivo": "fundamentos.md",
+        "palavras_corpo": 812
+      },
+      {
+        "arquivo": "mensuracao.md",
+        "palavras_corpo": 848
+      },
+      {
+        "arquivo": "reputacao.md",
+        "palavras_corpo": 749
+      },
+      {
+        "arquivo": "consumidor.md",
+        "palavras_corpo": 843
+      },
+      {
+        "arquivo": "canais-b2b.md",
+        "palavras_corpo": 770
+      },
+      {
+        "arquivo": "crescimento.md",
+        "palavras_corpo": 869
+      },
+      {
+        "arquivo": "marcas.md",
+        "palavras_corpo": 864
+      }
+    ],
+    "natureza": "status publicado identifica a seleção do build local. Esta correção ainda não foi implantada no site público."
   }
 }

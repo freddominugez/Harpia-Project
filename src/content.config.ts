@@ -228,13 +228,21 @@ const anuncios = defineCollection({
   }).refine(value => value.status !== 'publicado' || (value.titulo.trim().length > 0 && value.anunciante.trim().length > 0 && (!value.imagem || value.imagem_alt.trim().length > 0)), 'Anúncio publicado exige título, anunciante e descrição da imagem'),
 });
 
-import { businessFonteSchema, businessGuiaSchema, businessAcervoSchema } from './lib/business-schema';
+import { businessFonteSchema, businessGuiaSchema, businessAcervoSchema, businessSerieSchema, businessOrigensSchema, businessAprendizadoSchema, businessAnaliseSchema, businessInvestigacaoSchema } from './lib/business-schema';
 const businessFontes = defineCollection({ loader: data('business/fontes'), schema: businessFonteSchema });
 const businessGuias = defineCollection({ loader: md('business/guias'), schema: businessGuiaSchema });
 const businessAcervo = defineCollection({ loader: data('business/acervo'), schema: businessAcervoSchema });
 
+const businessSerie = defineCollection({ loader: data('business/serie'), schema: businessSerieSchema });
+
+const businessOrigens = defineCollection({loader:data('business/origens'),schema:businessOrigensSchema});
+const businessAprendizado = defineCollection({loader:data('business/aprendizado'),schema:businessAprendizadoSchema});
+
+const businessAnalises=defineCollection({loader:md('business/analises'),schema:businessAnaliseSchema});
+const businessInvestigacoes=defineCollection({loader:data('business/investigacoes'),schema:businessInvestigacaoSchema});
+
 export const collections = {
-  businessFontes, businessGuias, businessAcervo,
+  businessFontes, businessGuias, businessAcervo, businessSerie, businessOrigens, businessAprendizado, businessAnalises,businessInvestigacoes,
   caminhos, analises, videos, modulos, artigos, livros, fontes, feeds, aprendizado,
   "linha-do-tempo": linhaDoTempo, pautas, "fontes-monitoradas": fontesMonitoradas, noticias, anuncios,
 };

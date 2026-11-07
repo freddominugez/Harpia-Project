@@ -1,0 +1,29 @@
+{
+  "numero": 2,
+  "titulo": "Segmentar é escolher diferenças que mudam a ação",
+  "texto": "Um segmento só ajuda a gestão quando necessidades ou comportamentos justificam uma oferta, atendimento ou alocação diferente. Faixas demográficas podem descrever pessoas sem explicar o que elas procuram.",
+  "contexto": "A orientação de Wharton sobre conflitos entre segmentos recomenda examinar o valor funcional, simbólico e de identidade que públicos distintos encontram na marca. Crescer pode criar tensões: uma mudança conveniente para um grupo pode contrariar expectativas de outro. A classificação precisa orientar escolhas e permanecer revisável.",
+  "mecanismo": "Defina primeiro qual decisão a segmentação apoiará. Depois procure diferenças observáveis, estime a oportunidade e verifique se a organização consegue executar uma resposta distinta. Descreva critérios de entrada e saída; nomes atraentes para personas não substituem regras reproduzíveis. Uma conta de contribuição pode comparar cenários, desde que as taxas sejam reconhecidas como hipóteses.",
+  "equacoes": [
+    {
+      "tex": "G_s=N_sq_s(p_s-c_s)-F_s",
+      "texto": "G_s é a contribuição projetada do segmento s após um custo específico F_s; N_s é o número de pessoas elegíveis, q_s a fração compradora suposta, p_s o preço líquido e c_s o custo variável por comprador. O modelo supõe uma compra por comprador no período e não inclui custos comuns."
+    }
+  ],
+  "exemplo": "Exemplo hipotético: o segmento A tem 200 pessoas elegíveis, conversão suposta de 25%, contribuição unitária de R\\$ 80 e custo específico de R\\$ 1.000. Logo, 200 × 0,25 = 50 compras e G_A = 50 × 80 − 1.000 = R\\$ 3.000. O segmento B tem 500 pessoas, conversão suposta de 40%, contribuição de R\\$ 20 e custo específico de R\\$ 2.500: são 200 compras e G_B = 200 × 20 − 2.500 = R\\$ 1.500. B gera mais compras, mas menor contribuição no cenário. Nenhum número corresponde a uma população pesquisada.",
+  "limites": "Não inferir necessidades individuais a partir de médias de grupo. Capacidade, concorrência, acessibilidade e mudanças de comportamento podem invalidar a divisão e as contas.",
+  "legado": "A entrega é uma matriz de segmentos, necessidades, evidências e ações possíveis. Ela deve mostrar também quais grupos a proposta atual ainda não atende.",
+  "hoje": "Associe cada segmento a uma decisão concreta de produto, serviço, canal ou prioridade.",
+  "referencias": [
+    {
+      "texto": "Wharton — The Growth Equation: Avoid Customer-segment Collisions",
+      "url": "https://knowledge.wharton.upenn.edu/article/the-growth-equation-avoid-customer-segment-collisions/",
+      "consultado": "em: 2026-11-06; alcance: Texto público: objetivo, orientação de análise do cliente, marca e mercado; autores identificados institucionalmente.",
+      "limites": "Ferramenta gerencial de Annie Wilson e Ryan Hamilton; não é validação empírica dos segmentos hipotéticos aqui criados. A equação é um orçamento simplificado próprio."
+    }
+  ],
+  "atualizado": "2026-11-06",
+  "status": "publicado",
+  "revisor": "Harpya · revisão didática e de aritmética",
+  "revisado_em": "2026-11-06"
+}

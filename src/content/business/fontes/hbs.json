@@ -6,7 +6,8 @@
   "descricao": "Aulas e casos de administração; seleção de vídeos com revisão individual.",
   "idioma": "en",
   "hosts": [
-    "www.hbs.edu"
+    "www.hbs.edu",
+    "www.isc.hbs.edu"
   ],
   "feed": "",
   "status": "aprovado",

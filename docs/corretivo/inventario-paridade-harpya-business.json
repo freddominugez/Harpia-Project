@@ -1185,5 +1185,7 @@
     "runtime_changed": false,
     "published_changes": false
   },
-  "execution_manifest": "docs/corretivo/execucao-corretiva.json"
+  "execution_manifest": "docs/corretivo/execucao-corretiva.json",
+  "execution_note": "Os campos observed preservam o diagnóstico da versão publicada inicial. O estado atual do corretivo está no execution_manifest; não representam achados atuais da branch local.",
+  "execution_updated": "2026-11-06"
 }

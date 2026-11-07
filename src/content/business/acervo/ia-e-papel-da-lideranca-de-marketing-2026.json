@@ -1,0 +1,27 @@
+{
+  "titulo": "BCG discute mudanças no papel da liderança de marketing",
+  "resumo": "Artigo aproxima IA, experiência e organização.",
+  "fonte": "bcg",
+  "url": "https://www.bcg.com/publications/2026/how-agentic-ai-transforms-marketing",
+  "tipo": "noticia",
+  "trilha": "gestao",
+  "autores": "Ravi Dhar; Jon Iwata; Jennie Liu; Lauren Taylor; Janet Balis",
+  "data": "2026-07-16",
+  "data_precisa": true,
+  "idioma": "pt",
+  "acesso": "Síntese do Harpya em português; referência institucional original com acesso e idioma próprios.",
+  "evidencia": "executivo",
+  "limites": "Ensaio executivo; projeções e recomendações não equivalem a efeitos causais demonstrados.",
+  "status": "publicado",
+  "justificativa": "Síntese editorial própria do Harpya após conferência de fonte, data, autoria disponível e alcance da evidência. Não representa revisão integral do estudo subjacente.",
+  "revisor": "Harpya · revisão de fonte e contexto",
+  "revisado_em": "2026-11-06",
+  "corpo": [
+    "Em artigo de julho, autores vinculados à Yale e à BCG discutem como agentes de inteligência artificial podem mudar a descoberta e a avaliação de ofertas. A proposta amplia a discussão de produtividade para incluir estratégia, informação sobre clientes e experiência.",
+    "O texto relaciona a promessa da marca ao desempenho observável de produto, disponibilidade, entrega e atendimento. Também argumenta que novas interações podem produzir informações úteis sobre objetivos e escolhas dos consumidores, exigindo integração entre marketing e outras áreas da empresa.",
+    "A leitura editorial destaca uma pergunta: quais capacidades operacionais sustentam o que a comunicação promete? Trata-se de uma interpretação executiva sobre um cenário em desenvolvimento. O artigo não comprova que adotar agentes produzirá resultados uniformes, nem fornece garantia de retorno para qualquer organização."
+  ],
+  "referencias": [
+    "https://www.bcg.com/publications/2026/how-agentic-ai-transforms-marketing"
+  ]
+}

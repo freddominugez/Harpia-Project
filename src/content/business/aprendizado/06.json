@@ -1,0 +1,29 @@
+{
+  "numero": 6,
+  "titulo": "Aquisição fica mais clara quando se acompanha a coorte",
+  "texto": "O custo médio de conquistar clientes é apenas o começo da análise. Coortes permitem acompanhar grupos adquiridos no mesmo período, comparando sua evolução em idades equivalentes.",
+  "contexto": "Na entrevista publicada por Wharton, Fader, Hardie e Ross descrevem uma auditoria da base de clientes que separa aquisição, comportamento dos clientes existentes e evolução de coortes. A participação na coorte de aquisição permanece fixa, diferentemente de um segmento comportamental que pode mudar de composição.",
+  "mecanismo": "Defina primeiro quem conta como novo cliente, a data de entrada e quais despesas compõem a aquisição. Depois observe compras, contribuição e atividade em janelas comparáveis. Uma coorte recém-criada não deve ser confrontada com outra que já teve muitos meses para repetir compras. A reconciliação precisa preservar clientes identificáveis sem duplicações.",
+  "equacoes": [
+    {
+      "tex": "CAC_c=\\frac{A_c}{N_c},\\qquad a_{c,t}=\\frac{N_{c,t}^{\\mathrm{ativo}}}{N_c}",
+      "texto": "CAC_c é o custo médio de aquisição da coorte c; A_c são despesas de aquisição incluídas no critério e N_c seus clientes novos. a_c,t é a fração ativa na idade t sob uma definição explícita. A atividade não deve ser confundida automaticamente com retenção contratual ou rentabilidade."
+    }
+  ],
+  "exemplo": "Exemplo hipotético: janeiro adquire 100 clientes com R\\$ 10.000 de despesas; o CAC é R\\$ 100. Fevereiro adquire 200 com R\\$ 16.000; o CAC é R\\$ 80. Na idade de dois meses, 40 clientes de janeiro e 60 de fevereiro fazem ao menos uma compra: as frações são 40/100 = 40% e 60/200 = 30%. Fevereiro tem mais compradores ativos em número absoluto e menor custo inicial, mas menor fração ativa nessa idade. Não é possível concluir qual coorte cria mais valor sem margem, frequência e custos posteriores. Os grupos e números foram inventados; diferenças podem refletir sazonalidade, oferta ou composição, não o efeito causal de uma campanha.",
+  "limites": "Despesas compartilhadas exigem regra de alocação. Empresas com compras raras precisam de janelas adequadas; ausência de compra em um mês não prova abandono.",
+  "legado": "A entrega é uma tabela por idade da coorte, com denominadores estáveis e critérios auditáveis. Ela torna o crescimento comparável sem esconder qualidade da base em um total agregado.",
+  "hoje": "Compare grupos no mesmo tempo desde a aquisição e acompanhe contribuição, além de volume.",
+  "referencias": [
+    {
+      "texto": "Knowledge at Wharton — How to Get the Most from Your Customer Data",
+      "url": "https://knowledge.wharton.upenn.edu/podcast/knowledge-at-wharton-podcast/how-to-get-the-most-from-your-customer-data/",
+      "consultado": "em: 2026-11-06; alcance: Transcrição editada pública: definição de auditoria da base, cinco lentes de análise e definição de coorte de aquisição.",
+      "limites": "Entrevista sobre o livro The Customer-Base Audit; o livro completo não foi consultado. Fórmulas e tabela são exercícios didáticos, não estimativas de uma base comercial."
+    }
+  ],
+  "atualizado": "2026-11-06",
+  "status": "publicado",
+  "revisor": "Harpya · revisão didática e de aritmética",
+  "revisado_em": "2026-11-06"
+}

@@ -1,12 +1,12 @@
 {
-  "gerado_em": "2026-11-06T23:42:49.472Z",
+  "gerado_em": "2026-11-07T00:56:02.699Z",
   "estado": "execucao_parcial",
   "liberado_para_publicar": false,
+  "volume_original_e_referencia_nao_cota_automatica": true,
   "referencia": "939e5f75d0bb7b0fc8028471a20c31b353204ba0",
   "familias": [
     {
       "familia": "Vídeos",
-      "volume_original_e_referencia_nao_cota_automatica": true,
       "referencia": 155,
       "publicados": 0,
       "faltam_para_volume_original": 155
@@ -26,22 +26,39 @@
     {
       "familia": "Notícias",
       "referencia": 23,
-      "publicados": 0,
-      "faltam_para_volume_original": 23
+      "publicados": 13,
+      "faltam_para_volume_original": 10
     },
     {
       "familia": "Análises",
       "referencia": 1,
-      "publicados": 0,
-      "faltam_para_volume_original": 1
+      "publicados": 1,
+      "faltam_para_volume_original": 0
+    },
+    {
+      "familia": "Guias de estudo",
+      "referencia": 12,
+      "publicados": 12,
+      "faltam_para_volume_original": 0
+    },
+    {
+      "familia": "Artigos Começando",
+      "referencia": 4,
+      "publicados": 4,
+      "faltam_para_volume_original": 0
+    },
+    {
+      "familia": "Dossiês Aprendizado",
+      "referencia": 10,
+      "publicados": 10,
+      "faltam_para_volume_original": 0
     }
   ],
   "diferencas_volume": [
     "Vídeos: diferença de 155 registros em relação ao volume original; não equivale a requisito do template.",
     "Artigos e relatórios: diferença de 57 registros em relação ao volume original; não equivale a requisito do template.",
     "Livros: diferença de 50 registros em relação ao volume original; não equivale a requisito do template.",
-    "Notícias: diferença de 23 registros em relação ao volume original; não equivale a requisito do template.",
-    "Análises: diferença de 1 registros em relação ao volume original; não equivale a requisito do template."
+    "Notícias: diferença de 10 registros em relação ao volume original; não equivale a requisito do template."
   ],
   "pesquisa": {
     "artigos_candidatos": 28,
@@ -58,19 +75,11 @@
     "Vídeos: nenhum registro publicado do nível Iniciante.",
     "Vídeos: nenhum registro publicado do nível Intermediário.",
     "Vídeos: nenhum registro publicado do nível Avançado.",
-    "Notícias: faltam matérias publicadas para preencher os oito destaques do template original.",
-    "Análises: falta o texto que alimenta o card e o destaque ampliado.",
-    "Origens: template, cronologia temática documentada, retratos, capítulos e referências ainda pendentes.",
-    "Aprendizado: template e dossiês com mecanismos, exemplos e limites ainda pendentes.",
-    "Estudos: índice, investigação editorial, arquivados e aprofundamento dos 8 guias para estudos completos ainda pendentes.",
-    "Começando: série no layout original, textos ilustrados e navegação entre artigos ainda pendentes.",
-    "Análises e notícias: produção de textos completos e adaptação das páginas de detalhe ainda pendentes.",
-    "Biblioteca: completar literatura e referências; conferir capas/edições, traduções e condições de uso.",
-    "Painel de publicação: integrar escopo Business e fluxo editorial aos recursos do painel original.",
-    "Coleta e distribuição: validar curadoria, feed, busca, SEO e divulgação com todos os novos tipos de conteúdo.",
-    "Verificação final de paridade visual e funcional em todos os templates e larguras ainda pendente.",
-    "Os candidatos de vídeo exigem revisão integral, verificação de alegações e resumos próprios antes da publicação.",
-    "Rotas auxiliares de livros/canais e fichas externas ainda usam apresentação legada; migrar sem substituir os catálogos originais.",
-    "Criar as rotas canônicas temáticas restantes e preservar aliases publicados, incluindo Equações/Métricas e os detalhes de notícias e análises."
+    "Vídeos: zero publicáveis com revisão audiovisual integral concluída. Há 24 candidatos verificados por metadados, total nominal de 10 h 05 min 45 s, e duas transcrições editoriais lidas integralmente; isto não comprova a edição do YouTube. Tentativas de legendas retornaram 429.",
+    "Estudos: doze guias didáticos autorais com protocolos propostos; não são experimentos nem resultados empíricos. Revisão final da profundidade e dos estados funcionais permanece no aceite editorial e visual.",
+    "Biblioteca: ampliar e revisar o acervo. O build local tem seis referências e oito livros, frente a 63 referências e 58 livros no original; uma das seis referências é uma edição completa da Revista DOM, não um artigo individual.",
+    "Imagens temáticas: três retratos licenciados incorporados com crédito, fonte, link da licença e indicação das alterações; nove perfis ainda usam iniciais. Oito capas oficiais foram conferidas: sete correspondências bibliográficas confirmadas e How Brands Grow pendente. Condições de reutilização das capas estão registradas; os oito livros continuam usando as alternativas gráficas originais.",
+    "Aceite visual: há medição de treze templates nas cinco larguras e inspeção visual parcial; ainda faltam capturas pareadas completas e revisão de todos os estados funcionais, inclusive vídeos preenchidos.",
+    "Administração e serviços externos: testes locais do fluxo e configuração do CMS aprovados; publicação remota, autenticação real, coleta agendada em produção e discussão enviada não foram executadas neste corretivo."
   ]
 }

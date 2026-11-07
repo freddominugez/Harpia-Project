@@ -1,0 +1,29 @@
+{
+  "numero": 7,
+  "titulo": "Retenção e CLV exigem horizonte, margem e pressupostos",
+  "texto": "O valor do relacionamento não é a soma de receitas futuras desejadas. Uma estimativa de CLV precisa de contribuição, probabilidade de continuidade, tempo e custos de aquisição definidos.",
+  "contexto": "O trecho de Gupta e Lehmann disponibilizado por Wharton destaca os dois lados do valor: o benefício que a empresa entrega e o retorno que obtém do relacionamento. Aquisição, margem e retenção podem entrar em tensão. Um grupo que cresce rapidamente não necessariamente produz retorno maior.",
+  "mecanismo": "Escolha um horizonte e descreva o comportamento que manterá o cliente elegível para produzir contribuição em cada período. Em negócios contratuais, continuidade pode ser observável; em compras ocasionais, inferir abandono é mais difícil. Separe o custo inicial dos custos já descontados da margem para evitar dupla contagem. Teste cenários antes de interpretar um número como previsão.",
+  "equacoes": [
+    {
+      "tex": "CLV_T=\\sum_{t=1}^{T}\\frac{S_tm_t}{(1+d)^t}-CAC",
+      "texto": "T é o horizonte finito; S_t é a probabilidade suposta de o relacionamento produzir a margem condicional m_t no período t; d é a taxa de desconto por período; CAC é o custo inicial. Não há receita inicial nem valor terminal nesta definição. Todas as margens são líquidas dos custos de servir considerados."
+    }
+  ],
+  "exemplo": "Exemplo hipotético: considere dois períodos, contribuição condicional de R\\$ 100 no final de cada um, probabilidade de continuidade de 50% a cada passagem, taxa de desconto de 25% por período e CAC de R\\$ 30. Assim, S_1 = 0,5 e S_2 = 0,25. O primeiro fluxo vale 50/1,25 = R\\$ 40; o segundo vale 25/1,5625 = R\\$ 16. Logo, CLV_2 = 40 + 16 − 30 = R\\$ 26. A taxa de desconto foi escolhida para simplificar a aritmética, não recomendada para uma empresa. Supõem-se probabilidades constantes, margem fixa e nenhum fluxo após o segundo período.",
+  "limites": "Custos comuns, restrições de caixa, concorrência e heterogeneidade podem alterar a interpretação. Aumentar retenção mediante um benefício caro pode reduzir o retorno.",
+  "legado": "A entrega é uma estimativa acompanhada de horizonte e análise de sensibilidade. Manter parâmetros visíveis permite discutir quais observações realmente justificam investir no relacionamento.",
+  "hoje": "Use CLV como cenário auditável e confronte previsões com contribuição realizada por coorte.",
+  "referencias": [
+    {
+      "texto": "Knowledge at Wharton — What Are Your Customers Really Worth?",
+      "url": "https://knowledge.wharton.upenn.edu/article/what-are-your-customers-really-worth/",
+      "consultado": "em: 2026-11-06; alcance: Trecho público do livro de Sunil Gupta e Donald R. Lehmann: dois lados do valor, métricas e aquisição, margem e retenção.",
+      "limites": "Consultado o trecho disponibilizado, não o livro integral. A expressão finita de fluxos esperados e os números são construção didática própria; não constituem modelo estimado ou orientação financeira personalizada."
+    }
+  ],
+  "atualizado": "2026-11-06",
+  "status": "publicado",
+  "revisor": "Harpya · revisão didática e de aritmética",
+  "revisado_em": "2026-11-06"
+}

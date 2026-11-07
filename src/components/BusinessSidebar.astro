@@ -10,7 +10,7 @@ const temas = [
 const grupos = temas.map(tema => ({
   id: tema.id, nome: 'Fontes de referência', tema: tema.titulo, contexto: tema.contexto,
   site: '/business/biblioteca/fontes/', canal: '',
-  items: acervo.filter(a => ['artigo','relatorio'].includes(a.data.tipo) && a.data.data_precisa && tema.trilhas.includes(a.data.trilha)).slice(0,2).map(a => ({ source_id: a.data.fonte, title: a.data.titulo, url: a.data.url, published_at: a.data.data, idioma: a.data.idioma, fonte_nome: fontes.find(f => f.id === a.data.fonte)?.data.nome, })),
+  items: acervo.filter(a => ['artigo','relatorio','noticia'].includes(a.data.tipo) && a.data.data_precisa && tema.trilhas.includes(a.data.trilha)).slice(0,2).map(a => ({ tituloEditorial: a.data.tipo === 'noticia', source_id: a.data.fonte, title: a.data.titulo, url: a.data.url, published_at: a.data.data, idioma: a.data.idioma, fonte_nome: fontes.find(f => f.id === a.data.fonte)?.data.nome, })),
 }));
 ---
 <TechnologyCards grupos={grupos} titulo="No radar de Business" descricao="Marketing, consumidor e administração nas instituições de referência." nota="Seleção editorial com links às publicações originais. Artigos executivos e relatórios exigem análise dos seus métodos e limites." ultimaColeta={null} selecaoManual />

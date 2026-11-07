@@ -1,0 +1,40 @@
+---
+import PageIntro from "./PageIntro.astro";
+import PathCard from "./PathCard.astro";
+import IdeaCard from "./IdeaCard.astro";
+import ResponsiveGrid from "./ResponsiveGrid.astro";
+import Status from "./Status.astro";
+import { getCollection } from "astro:content";
+interface Props { caminhos?: { id:string; href?:string; data:{numero:number;titulo:string;resumo:string;estatuto:'medido'|'arte'|'lacuna'|'teste';selo?:string;equacao?:string;principal?:boolean;rotulo?:string} }[]; prefixo?:string; lead?:string; origem?:string; tituloLista?:string; criterio?:string; arquivoDescricao?:string }
+const { caminhos = (await getCollection("caminhos")).sort((a, b) => a.data.numero - b.data.numero), prefixo = '', lead,
+  origem = 'Este projeto nasceu da inferência lógica sobre o que poderia ser acionável naquilo que chamamos de cronologia de desenvolvimento da IA. Para isso, partimos de inferências lógicas para achar relações matemáticas.',
+  tituloLista = 'Caminhos válidos', criterio = 'Critério de entrada: mecanismo em equação, custo conhecido e teste refutável. Ter arte prévia não exclui; a página diz o que já existe e o que pode ser novo.',
+  arquivoDescricao = 'Linhas avaliadas e arquivadas, cada uma com o motivo em uma linha. Qualquer item volta se aparecer um mecanismo com equação, custo e teste.',
+} = Astro.props;
+---
+  <PageIntro trilha={[{ rotulo: "Estudos" }]} eyebrow="Estudos" titulo="Por que este projeto existe" lead={lead ?? `${caminhos.length} caminhos válidos, cada um com equação, custo conhecido, teste refutável e a arte prévia que já existe.`} />
+  <section class="section">
+    <div class="container">
+      <p class="origin">{origem}</p>
+    </div>
+  </section>
+  <section class="section"><div class="container"><slot name="ideia"><IdeaCard /></slot></div></section>
+  <section class="section" id="caminhos">
+    <div class="container">
+      <div class="section-head">
+        <div><h2>{tituloLista}</h2><p>{criterio}</p></div>
+        <a class="btn outline slim" href={`${prefixo}/estudos/arquivados/`}>Ver arquivados</a>
+      </div>
+      <div class="legend"><Status tipo="medido" /><Status tipo="arte" /><Status tipo="lacuna" /><Status tipo="teste" /></div>
+      <ResponsiveGrid min="300px">{caminhos.map((c) => <PathCard c={c} />)}</ResponsiveGrid>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="panel">
+        <h2>O que ficou de fora</h2>
+        <p style="margin:8px 0 14px">{arquivoDescricao}</p>
+        <a class="btn gold slim" href={`${prefixo}/estudos/arquivados/`}>Ver os arquivados →</a>
+      </div>
+    </div>
+  </section>

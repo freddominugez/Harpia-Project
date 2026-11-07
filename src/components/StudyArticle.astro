@@ -17,8 +17,8 @@ import type { render } from 'astro:content';
 type Estatuto = keyof typeof ROTULO_ESTATUTO;
 type Study = { id: string; body?: string; href?: string; markdown?: string; data: {
   numero: number; titulo: string; resumo: string; atualizado: string; estatuto: Estatuto;
-  selo?: string; principal?: boolean; equacao?: string; proximo_teste?: string; parar_se?: string;
-  arte_previa: string[]; rotulo?: string; autor?: string; referencias_descricao?: string;
+  selo?: string; principal?: boolean; equacao?: string; mecanismo?:string; proximo_teste?: string; parar_se?: string;
+  arte_previa: (string|{texto:string;url:string})[]; rotulo?: string; autor?: string; referencias_descricao?: string;
 } };
 interface Props { c: Study; todos: Study[]; ant: Study | null; prox: Study | null; Content: Awaited<ReturnType<typeof render>>['Content']; headings: { depth: number; slug: string; text: string }[]; prefixo?: string }
 const { c, todos, ant, prox, Content, headings, prefixo = '' } = Astro.props;
@@ -72,11 +72,11 @@ const relacionados: Relacionado[] = [...vizinhos, ...mesmos].map((x) => ({
 
   <div class="container page-layout">
     <article class="article">
-      {d.equacao && (
+      {(d.equacao || d.mecanismo) && (
         <div class="article-banner">
           <div>
-            <span class="kicker">Equação central do mecanismo</span>
-            <M t={d.equacao} d />
+            <span class="kicker">{d.equacao ? "Equação central do mecanismo" : "Mecanismo a investigar"}</span>
+            {d.equacao ? <M t={d.equacao} d /> : <p>{d.mecanismo}</p>}
           </div>
           <img src="/img/harpya-mark-head.webp" alt="" width="150" height="140" loading="lazy" />
         </div>
@@ -90,7 +90,7 @@ const relacionados: Relacionado[] = [...vizinhos, ...mesmos].map((x) => ({
           <>
             <h2 id="arte-previa">Arte prévia</h2>
             <p>{d.referencias_descricao ?? 'O que já existe publicado sobre este mecanismo. A ficha diz o que pode ser novo.'}</p>
-            <ul>{d.arte_previa.map((a) => <li>{a}</li>)}</ul>
+            <ul>{d.arte_previa.map((a) => <li>{typeof a === "string" ? a : <a href={a.url} target="_blank" rel="noopener noreferrer">{a.texto}</a>}</li>)}</ul>
           </>
         )}
         <p class="cite"><b>Como citar.</b> {autor} ({d.atualizado.slice(0, 4)}). <i>{d.titulo}</i>. {SITE.nome}. <a href={`https://www.harpya.org${urlCaminho(c)}`}>https://www.harpya.org{urlCaminho(c)}</a>. Texto em markdown: <a href={c.markdown ?? `${prefixo}/estudos/caminhos/${c.id}.md`}>{c.id}.md</a>. Licença CC BY 4.0.</p>
