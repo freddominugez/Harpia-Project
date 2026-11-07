@@ -1,0 +1,306 @@
+{
+  "data": "2026-11-07T01:17:35.627Z",
+  "resultados": [
+    {
+      "largura": 360,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 360,
+          "sem_excesso_horizontal": true,
+          "texto_separado_da_imagem": true,
+          "imagem_contida": true,
+          "texto_dentro_do_card": true,
+          "largura_visual": 215,
+          "largura_texto": 128,
+          "anuncios": [
+            {
+              "posicao": "topo",
+              "imagem": "/img/anuncios/vulcan-organizer-banner-superior-970x90-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=superior_970x90"
+            },
+            {
+              "posicao": "lateral-direita",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-direita-300x250-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_direita_300x250"
+            },
+            {
+              "posicao": "lateral-esquerda",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-esquerda-300x250-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_esquerda_300x250"
+            }
+          ]
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 360,
+          "sem_excesso_horizontal": true,
+          "texto_separado_da_imagem": true,
+          "imagem_contida": true,
+          "texto_dentro_do_card": true,
+          "largura_visual": 215,
+          "largura_texto": 128,
+          "anuncios": [
+            {
+              "posicao": "topo",
+              "imagem": "/img/anuncios/vulcan-organizer-banner-superior-970x90-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=superior_970x90"
+            },
+            {
+              "posicao": "lateral-direita",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-direita-300x250-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_direita_300x250"
+            },
+            {
+              "posicao": "lateral-esquerda",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-esquerda-300x250-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_esquerda_300x250"
+            }
+          ]
+        }
+      ],
+      "anuncios_iguais": true
+    },
+    {
+      "largura": 390,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 390,
+          "sem_excesso_horizontal": true,
+          "texto_separado_da_imagem": true,
+          "imagem_contida": true,
+          "texto_dentro_do_card": true,
+          "largura_visual": 245,
+          "largura_texto": 128,
+          "anuncios": [
+            {
+              "posicao": "topo",
+              "imagem": "/img/anuncios/vulcan-organizer-banner-superior-970x90-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=superior_970x90"
+            },
+            {
+              "posicao": "lateral-direita",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-direita-300x250-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_direita_300x250"
+            },
+            {
+              "posicao": "lateral-esquerda",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-esquerda-300x250-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_esquerda_300x250"
+            }
+          ]
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 390,
+          "sem_excesso_horizontal": true,
+          "texto_separado_da_imagem": true,
+          "imagem_contida": true,
+          "texto_dentro_do_card": true,
+          "largura_visual": 245,
+          "largura_texto": 128,
+          "anuncios": [
+            {
+              "posicao": "topo",
+              "imagem": "/img/anuncios/vulcan-organizer-banner-superior-970x90-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=superior_970x90"
+            },
+            {
+              "posicao": "lateral-direita",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-direita-300x250-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_direita_300x250"
+            },
+            {
+              "posicao": "lateral-esquerda",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-esquerda-300x250-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_esquerda_300x250"
+            }
+          ]
+        }
+      ],
+      "anuncios_iguais": true
+    },
+    {
+      "largura": 1024,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1024,
+          "sem_excesso_horizontal": true,
+          "texto_separado_da_imagem": true,
+          "imagem_contida": true,
+          "texto_dentro_do_card": true,
+          "largura_visual": 325,
+          "largura_texto": 140,
+          "anuncios": [
+            {
+              "posicao": "topo",
+              "imagem": "/img/anuncios/vulcan-organizer-banner-superior-970x90-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=superior_970x90"
+            },
+            {
+              "posicao": "lateral-direita",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-direita-300x250-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_direita_300x250"
+            },
+            {
+              "posicao": "lateral-esquerda",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-esquerda-300x250-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_esquerda_300x250"
+            }
+          ]
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1024,
+          "sem_excesso_horizontal": true,
+          "texto_separado_da_imagem": true,
+          "imagem_contida": true,
+          "texto_dentro_do_card": true,
+          "largura_visual": 325,
+          "largura_texto": 140,
+          "anuncios": [
+            {
+              "posicao": "topo",
+              "imagem": "/img/anuncios/vulcan-organizer-banner-superior-970x90-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=superior_970x90"
+            },
+            {
+              "posicao": "lateral-direita",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-direita-300x250-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_direita_300x250"
+            },
+            {
+              "posicao": "lateral-esquerda",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-esquerda-300x250-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_esquerda_300x250"
+            }
+          ]
+        }
+      ],
+      "anuncios_iguais": true
+    },
+    {
+      "largura": 1440,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1440,
+          "sem_excesso_horizontal": true,
+          "texto_separado_da_imagem": true,
+          "imagem_contida": true,
+          "texto_dentro_do_card": true,
+          "largura_visual": 329,
+          "largura_texto": 172,
+          "anuncios": [
+            {
+              "posicao": "topo",
+              "imagem": "/img/anuncios/vulcan-organizer-banner-superior-970x90-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=superior_970x90"
+            },
+            {
+              "posicao": "lateral-direita",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-direita-300x250-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_direita_300x250"
+            },
+            {
+              "posicao": "lateral-esquerda",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-esquerda-300x250-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_esquerda_300x250"
+            }
+          ]
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1440,
+          "sem_excesso_horizontal": true,
+          "texto_separado_da_imagem": true,
+          "imagem_contida": true,
+          "texto_dentro_do_card": true,
+          "largura_visual": 329,
+          "largura_texto": 172,
+          "anuncios": [
+            {
+              "posicao": "topo",
+              "imagem": "/img/anuncios/vulcan-organizer-banner-superior-970x90-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=superior_970x90"
+            },
+            {
+              "posicao": "lateral-direita",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-direita-300x250-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_direita_300x250"
+            },
+            {
+              "posicao": "lateral-esquerda",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-esquerda-300x250-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_esquerda_300x250"
+            }
+          ]
+        }
+      ],
+      "anuncios_iguais": true
+    },
+    {
+      "largura": 1672,
+      "medidas": [
+        {
+          "ambiente": "Tecnologia",
+          "viewport": 1672,
+          "sem_excesso_horizontal": true,
+          "texto_separado_da_imagem": true,
+          "imagem_contida": true,
+          "texto_dentro_do_card": true,
+          "largura_visual": 439,
+          "largura_texto": 172,
+          "anuncios": [
+            {
+              "posicao": "topo",
+              "imagem": "/img/anuncios/vulcan-organizer-banner-superior-970x90-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=superior_970x90"
+            },
+            {
+              "posicao": "lateral-direita",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-direita-300x250-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_direita_300x250"
+            },
+            {
+              "posicao": "lateral-esquerda",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-esquerda-300x250-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_esquerda_300x250"
+            }
+          ]
+        },
+        {
+          "ambiente": "Business",
+          "viewport": 1672,
+          "sem_excesso_horizontal": true,
+          "texto_separado_da_imagem": true,
+          "imagem_contida": true,
+          "texto_dentro_do_card": true,
+          "largura_visual": 439,
+          "largura_texto": 172,
+          "anuncios": [
+            {
+              "posicao": "topo",
+              "imagem": "/img/anuncios/vulcan-organizer-banner-superior-970x90-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=superior_970x90"
+            },
+            {
+              "posicao": "lateral-direita",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-direita-300x250-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_direita_300x250"
+            },
+            {
+              "posicao": "lateral-esquerda",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-esquerda-300x250-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_esquerda_300x250"
+            }
+          ]
+        }
+      ],
+      "anuncios_iguais": true
+    }
+  ],
+  "metodo": "Safari; dois quadros same-origin, viewports internos medidos de 360, 390, 1024, 1440 e 1672 px. Áreas de texto e ilustração separadas; imagens contidas em área com overflow hidden. Anúncios comparados por posição, imagem e URL."
+}
