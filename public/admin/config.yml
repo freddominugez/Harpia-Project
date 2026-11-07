@@ -242,6 +242,100 @@ collections:
     widget: markdown
     modes:
     - raw
+- name: business_pautas
+  label: Business · Pautas do fórum
+  label_singular: Pauta
+  folder: src/content/business/pautas
+  extension: md
+  format: frontmatter
+  create: true
+  slug: '{{year}}-{{month}}-{{day}}-{{titulo}}'
+  identifier_field: titulo
+  summary: '{{titulo}} · {{status}}'
+  sortable_fields:
+  - proposta_em
+  - titulo
+  - status
+  view_filters:
+  - label: Propostas
+    field: status
+    pattern: ^proposta$
+  - label: Aprovadas
+    field: status
+    pattern: ^aprovada$
+  - label: Criadas
+    field: status
+    pattern: ^criada$
+  fields:
+  - label: Título da discussão
+    name: titulo
+    widget: string
+  - label: Categoria no fórum
+    name: categoria
+    widget: select
+    options:
+    - Caminhos
+    - Perguntas
+    - Resultados e reproduções
+    - Propostas novas
+  - label: Caminho relacionado (slug)
+    name: caminho
+    widget: relation
+    collection: businessGuias
+    value_field: '{{slug}}'
+    search_fields:
+    - titulo
+    display_fields:
+    - titulo
+    required: false
+  - label: Links de origem
+    name: links
+    widget: list
+    field:
+      label: URL
+      name: url
+      widget: string
+    required: false
+  - label: Status
+    name: status
+    widget: select
+    options:
+    - label: Proposta (aguardando revisão)
+      value: proposta
+    - label: Aprovada (será criada no fórum)
+      value: aprovada
+    - label: Criada no fórum
+      value: criada
+    - label: Descartada
+      value: descartada
+    default: proposta
+    hint: Ao marcar Aprovada e publicar, a automação cria a discussão no GitHub.
+  - label: Link da discussão
+    name: discussao_url
+    widget: string
+    required: false
+    default: ''
+    hint: Preenchido pela automação.
+  - widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    label: Proposta em
+    name: proposta_em
+  - label: Origem
+    name: origem
+    widget: select
+    options:
+    - label: Manual
+      value: manual
+    - label: Curadoria diária
+      value: curadoria-diaria
+    default: manual
+  - label: Texto de abertura
+    name: body
+    widget: markdown
+    modes:
+    - raw
 - name: videos
   label: Vídeos
   label_singular: Vídeo

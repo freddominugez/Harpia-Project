@@ -106,6 +106,8 @@ def collect():
             # Não escrever URLs de requisição nem cabeçalhos em logs.
             results.append(([],type(error).__name__))
     data=assemble(sources,results,previous,now)
+    known={json.loads(p.read_text()).get('url','').rstrip('/') for p in (ROOT/'src/content/business/acervo').glob('*.json')}
+    data['itens']=[i for i in data['itens'] if i['url'].rstrip('/') not in known]
     OUTPUT.parent.mkdir(parents=True,exist_ok=True)
     temp=OUTPUT.with_suffix('.tmp');temp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');temp.replace(OUTPUT)
     for status in data['fontes']:

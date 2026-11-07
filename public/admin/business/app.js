@@ -19,6 +19,7 @@ function render() {
     const card=element('article',''), source=sources.get(item.fonte), title=element('h2',item.titulo), meta=element('small',`${item.tipo} · ${source?.nome||item.fonte} · ${item.data||'Data não confirmada'}`);
     const select=document.createElement('select'), label=element('label','Trilha para revisão');
     for(const [id,name] of Object.entries({fundamentos:'Fundamentos',consumidor:'Consumidor',estrategia:'Estratégia',marcas:'Marcas',clientes:'Clientes',crescimento:'Crescimento',mensuracao:'Mensuração',gestao:'Gestão'})){const option=element('option',name);option.value=id;select.append(option);}label.append(select);
+    if(item.tipo==='livro'){card.append(meta,title,link('Conferir registro bibliográfico ↗',item.url),element('p','Confirme autoria, edição e endereço específico na editora antes de cadastrar a referência no CMS.'),link('Cadastrar livro após conferência','https://www.harpya.org/admin/#/collections/businessAcervo/new'));return card;}
     const button=element('button','Encaminhar como candidato ao CMS');button.type='button';button.disabled=busy;
     button.addEventListener('click',async()=>{if(busy)return;lock(true);tell('Encaminhando candidato…');try{await importCandidate(client.api,item,source,select.value);button.textContent='Encaminhado ao CMS';button.dataset.imported='true';tell('Rascunho criado. Complete a revisão na coleção Business do CMS.');}catch(error){tell(`${error.message} Confira o CMS antes de tentar novamente.`,true);}finally{lock(false);for(const saved of $('queue').querySelectorAll('[data-imported]'))saved.disabled=true;}});
     card.append(meta,title,link('Conferir original ↗',item.url),label,button);return card;
@@ -27,9 +28,9 @@ function render() {
 async function load() {
   if(busy)return;if(!client.hasToken()){$('login').hidden=false;return tell('Entre para consultar a fila no repositório.');}lock(true);tell('Consultando filas e fontes…');
   try{
-    const [articles,videos,catalog,files]=await Promise.all([read('curadoria/business/candidatos.json'),read('curadoria/business/videos-candidatos.json'),read('curadoria/business/catalogo-proposto.json'),client.api(`${REPO}/contents/src/content/business/fontes?ref=main`)]);
+    const [articles,videos,books,catalog,files]=await Promise.all([read('curadoria/business/candidatos.json'),read('curadoria/business/videos-candidatos.json'),read('curadoria/business/livros-candidatos.json'),read('curadoria/business/catalogo-proposto.json'),client.api(`${REPO}/contents/src/content/business/fontes?ref=main`)]);
     const loaded=await Promise.all(files.filter(f=>f.name.endsWith('.json')).map(async f=>[f.name.slice(0,-5),await read(f.path)]));sources=new Map(loaded);
-    items=[...articles.itens,...videos.itens].filter(item=>item.status==='candidato');
+    items=[...articles.itens,...videos.itens,...books.itens].filter(item=>item.status==='candidato');
     $('health').hidden=false;$('health').textContent=[...articles.fontes,...videos.fontes].map(f=>`${f.id}: ${f.status} (${f.itens} candidatos)`).join(' · ')||'Não há feeds ativos. A seleção manual continua pelo CMS.';
     $('catalog-state').textContent=`Estado: ${catalog.estado}. Preparado em ${catalog.preparado_em}.${catalog.aprovado_em ? ` Aprovado em ${catalog.aprovado_em}.` : ''}`;
     $('catalog').replaceChildren(...[...catalog.fontes,...catalog.canais,...catalog.livros].map(item=>{const card=element('article','');card.append(element('small',item.codigo),element('h3',item.nome||item.titulo),link('Consultar referência ↗',item.url));if(item.autores)card.append(element('p',item.autores));if(item.restricao)card.append(element('small',item.restricao));return card;}));

@@ -1,0 +1,141 @@
+{
+  "estado": "implementado_validado_aguardando_publicacao",
+  "data": "2026-11-07",
+  "arquitetura": "docs/corretivo/arquitetura-atualizacao-business.html",
+  "resumos": {
+    "guias": 3,
+    "referencias": 6,
+    "campo_unico_editorial": "resumo",
+    "nao_truncados": true
+  },
+  "validacao": {
+    "astro_check": {
+      "erros": 0,
+      "avisos": 0,
+      "hints_preexistentes": 4
+    },
+    "build_paginas": 193,
+    "testes_node": 55,
+    "testes_python_business": 18,
+    "colecoes_cms": 23,
+    "responsividade": {
+      "casos": 20,
+      "larguras": [
+        360,
+        390,
+        1024,
+        1440,
+        1672
+      ],
+      "falhas": [],
+      "business": [
+        {
+          "width": 1024,
+          "route": "/business/",
+          "baseline": false,
+          "pageHeight": 7602,
+          "hero": 279,
+          "overflow": false,
+          "guideCards": 3,
+          "guideSummariesClipped": 0,
+          "paperSummaries": 6,
+          "heroTextClipped": false,
+          "heroAntes": 331,
+          "alturaAntes": 8179,
+          "diferencaAltura": -577
+        },
+        {
+          "width": 1440,
+          "route": "/business/",
+          "baseline": false,
+          "pageHeight": 5765,
+          "hero": 288,
+          "overflow": false,
+          "guideCards": 3,
+          "guideSummariesClipped": 0,
+          "paperSummaries": 6,
+          "heroTextClipped": false,
+          "heroAntes": 303,
+          "alturaAntes": 6227,
+          "diferencaAltura": -462
+        },
+        {
+          "width": 1672,
+          "route": "/business/",
+          "baseline": false,
+          "pageHeight": 5355,
+          "hero": 288,
+          "overflow": false,
+          "guideCards": 3,
+          "guideSummariesClipped": 0,
+          "paperSummaries": 6,
+          "heroTextClipped": false,
+          "heroAntes": 303,
+          "alturaAntes": 5833,
+          "diferencaAltura": -478
+        },
+        {
+          "width": 390,
+          "route": "/business/",
+          "baseline": false,
+          "pageHeight": 12691,
+          "hero": 459,
+          "overflow": false,
+          "guideCards": 3,
+          "guideSummariesClipped": 0,
+          "paperSummaries": 6,
+          "heroTextClipped": false,
+          "heroAntes": 606,
+          "alturaAntes": 12821,
+          "diferencaAltura": -130
+        },
+        {
+          "width": 360,
+          "route": "/business/",
+          "baseline": false,
+          "pageHeight": 13365,
+          "hero": 476,
+          "overflow": false,
+          "guideCards": 3,
+          "guideSummariesClipped": 0,
+          "paperSummaries": 6,
+          "heroTextClipped": false,
+          "heroAntes": 606,
+          "alturaAntes": 13377,
+          "diferencaAltura": -12
+        }
+      ],
+      "tecnologia_mesma_altura_em_todas_larguras": true
+    },
+    "paridade_tecnologia": "docs/corretivo/landing-paridade-tecnologia.json"
+  },
+  "dados_verificados": {
+    "radar_titulos": 17,
+    "rss_fontes_ok": 4,
+    "rss_fontes_erro": [
+      "insead"
+    ],
+    "candidatos_artigos": 19,
+    "candidatos_videos": 8,
+    "descobertas_bibliograficas": 6,
+    "livros_publicados_automaticamente": 0
+  },
+  "agendas_github": {
+    "business-news": "29 */6 * * * UTC",
+    "business-curadoria-diaria": "43 10 * * * UTC",
+    "business-curadoria-semanal": "11 12 * * 1 UTC",
+    "business-discussoes": "push nas pautas Business aprovadas",
+    "build_indexacao_lighthouse": "compartilhados"
+  },
+  "agendas_claude": {
+    "estado": "instrucoes_prontas_sem_ativacao",
+    "motivo": "Usuário interrompeu o uso da interface antes da criação das duas agendas.",
+    "configuracao": "curadoria/business/agendas-editoriais.json"
+  },
+  "limites": [
+    "A coleta automática publica metadados institucionais, não artigos completos sem revisão.",
+    "17 títulos no lote inicial não representam17 matérias novas autorais.",
+    "INSEAD retornou erro; cobertura de todas as instituições não é prometida.",
+    "Open Library serve para descoberta bibliográfica privada; confirmação da edição na editora é obrigatória."
+  ]
+}

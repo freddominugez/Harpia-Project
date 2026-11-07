@@ -1,0 +1,1048 @@
+{
+  "schema_version": 1,
+  "pesquisado_em": "2026-11-07T10:34:13.567874+00:00",
+  "objetivo": "Pesquisa de RSS/Atom oficiais para ações agendadas Business, sem alterar aplicação ou configuração.",
+  "escopo_fontes": "Somente fontes com status aprovado e hosts existentes em /tmp/harpya-business-corretivo/src/content/business/fontes.",
+  "metodo": [
+    "Descoberta em páginas oficiais e endpoints existentes; após esclarecimento do owner, também teste de /feed/ em hosts públicos sem bloqueio conhecido. RSS real HTTP 200 servido pelo próprio host aprovado, channel.link correspondente e títulos coerentes são evidência suficiente de procedência. Endpoints sem XML RSS/Atom real foram rejeitados.",
+    "GET público com requests, timeout e sem autenticação; status e Content-Type guardados. XML analisado por ElementTree e feedparser. A resposta precisa ter raiz RSS/Atom e entradas; HTTP 200 com página HTML ou SVG de erro não conta como feed.",
+    "Redirecionamentos e hosts dos itens comparados à lista da fonte. Bloqueios 403 e erros não foram contornados. Não houve geração de feeds por terceiros.",
+    "Somente amostras de títulos, URLs e datas são registradas aqui. Corpos e resumos dos feeds não serão reproduzidos em runtime; os XML temporários foram usados apenas para validação.",
+    "A funcionalidade foi testada nesta consulta; não se trata de monitoramento de disponibilidade ou garantia de cadência. Seleção editorial de cada novo item continua necessária."
+  ],
+  "resumo": {
+    "feeds_http200_xml_no_host_aprovado": 9,
+    "feeds_com_autodescoberta_comprovada_e_host_aprovado": 7,
+    "instituicoes_com_autodescoberta_comprovada": [
+      "ama",
+      "wharton"
+    ],
+    "mckinsey_configurado_funcional_mas_link_html_pendente": true,
+    "feeds_oficiais_funcionais_fora_dos_hosts_atuais": 3,
+    "feeds_brasileiros_funcionais_confirmados": 1,
+    "limitacao_principal": "Quatro instituições distintas com RSS funcional nos hosts já aprovados: McKinsey, Wharton, AMA e Fundação Dom Cabral. As cinco alternativas Wharton são recortes da mesma instituição, não novas fontes. Não se comprovou RSS utilizável de FGV, INSEAD, HBR, MITSMR ou LBS dentro das regras e dos hosts atuais. Não há garantia de cadência nem aprovação automática dos novos itens.",
+    "sobreposicao_wharton": {
+      "itens_somados_dos_seis_feeds": 60,
+      "urls_unicas": 52,
+      "excesso_por_repeticao": 8
+    },
+    "fontes_distintas_funcionais": 4,
+    "fonteIDs_funcionais": [
+      "mckinsey",
+      "wharton",
+      "ama",
+      "fdc"
+    ],
+    "feeds_principais": 4
+  },
+  "feeds_validados": [
+    {
+      "fonteID": "mckinsey",
+      "feedURL": "https://www.mckinsey.com/Insights/rss.aspx",
+      "hostname": "www.mckinsey.com",
+      "url_final": "https://www.mckinsey.com/insights/rss",
+      "hostname_final": "www.mckinsey.com",
+      "proveniencia": [
+        {
+          "pagina": "src/content/business/fontes/mckinsey.json",
+          "metodo": "endpoint_ja_configurado_no_projeto",
+          "href_exato": "https://www.mckinsey.com/Insights/rss.aspx"
+        },
+        {
+          "pagina": "https://www.mckinsey.com/featured-insights",
+          "metodo": "pagina_oficial_consultada_no_web",
+          "observacao": "Títulos e datas de itens do feed conferem com a página oficial atual; o leitor web não apresentou link RSS. As tentativas HTTP da página principal/de marketing expiraram. Não foi confirmada autodescoberta nem um link RSS nessa página."
+        },
+        {
+          "pagina": "https://www.mckinsey.com/insights/rss",
+          "metodo": "xml_servido_no_proprio_host_oficial",
+          "channel_link": "https://www.mckinsey.com/",
+          "observacao": "Critério técnico atualizado pelo owner: HTTP 200, XML RSS real no host aprovado com channel.link correspondente é evidência suficiente, mesmo sem âncora RSS na home."
+        }
+      ],
+      "resultado": {
+        "http": 200,
+        "content_type": "application/xml",
+        "xml_valido": true,
+        "raiz_xml": "rss",
+        "titulo_feed": "McKinsey Insights & Publications",
+        "entradas_na_resposta": 50,
+        "bytes": 42007,
+        "sha256_xml": "8a5dd99c4701275d78ed19c061bae238541866ae36a8d5911c8f80700fdb65d6",
+        "hosts_urls_itens_observados": [
+          "www.mckinsey.com"
+        ],
+        "host_inicial_aprovado": true,
+        "host_final_aprovado": true,
+        "hosts_itens_todos_aprovados": true,
+        "proveniencia_link_rss_ou_autodescoberta_confirmada": false,
+        "channel_link": "https://www.mckinsey.com/",
+        "idioma_declarado": "en",
+        "lastBuildDate_original": "Tue, 01 Sep 2015 08:44:43 GMT"
+      },
+      "dataamostra": [
+        {
+          "titulo": "Could aviation at last be close to earning its wings?",
+          "url": "https://www.mckinsey.com/industries/travel/our-insights/could-aviation-at-last-be-close-to-earning-its-wings",
+          "publicado_original": "Fri, 06 Nov 2026",
+          "atualizado_original": "Fri, 06 Nov 2026"
+        },
+        {
+          "titulo": "Suomen suuryritysten kasvumahdollisuus: välikatsaus",
+          "url": "https://www.mckinsey.com/fi/our-insights/suomen-suuryritysten-kasvumahdollisuus-valikatsaus",
+          "publicado_original": "Fri, 06 Nov 2026",
+          "atualizado_original": "Fri, 06 Nov 2026"
+        },
+        {
+          "titulo": "How AI is transforming automotive quality operations",
+          "url": "https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/how-ai-is-transforming-automotive-quality-operations",
+          "publicado_original": "Fri, 06 Nov 2026",
+          "atualizado_original": "Fri, 06 Nov 2026"
+        }
+      ],
+      "revisao_integral_dos_artigos": false,
+      "alcance": "HTTP público e inspeção de XML, títulos, URLs e datas. Não houve leitura integral de artigos, audição ou avaliação dos estudos citados. O uso de metadados não concede licença de reprodução dos textos.",
+      "estado": "funcional_host_oficial_configurado",
+      "tema": "negocios-geral",
+      "adequacao": "Endpoint atual do projeto funciona e mantém feed e itens no domínio oficial aprovado. Conteúdo amplo, multilíngue e multiformato; filtrar marketing/administração, autoria e promoções. pubDate de alguns itens tem apenas data sem hora/fuso; preservar essa precisão, sem inventar horário.",
+      "limite_proveniencia": "Link RSS/autodescoberta em HTML atual permanece não confirmado; isso não invalida o RSS servido pelo próprio host oficial pelo critério explicitado pelo owner.",
+      "limite_datas": "O channel.pubDate/lastBuildDate informa 2015, incompatível com as datas recentes dos itens. Usar datas individuais para descoberta e não o cabeçalho do canal como relógio de atualização; não completar horas ausentes nos pubDate dos itens."
+    },
+    {
+      "fonteID": "wharton",
+      "feedURL": "https://knowledge.wharton.upenn.edu/category/marketing/feed/",
+      "hostname": "knowledge.wharton.upenn.edu",
+      "url_final": "https://knowledge.wharton.upenn.edu/category/marketing/feed/",
+      "hostname_final": "knowledge.wharton.upenn.edu",
+      "proveniencia": [
+        {
+          "pagina": "https://knowledge.wharton.upenn.edu/category/marketing/",
+          "http_pagina": 200,
+          "metodo": "link_autodescoberta",
+          "tag": "link",
+          "rel": "alternate",
+          "tipo_declarado": "application/rss+xml",
+          "titulo_link": "Knowledge at Wharton » Marketing Category Feed",
+          "href_exato": "https://knowledge.wharton.upenn.edu/category/marketing/feed/"
+        }
+      ],
+      "resultado": {
+        "http": 200,
+        "content_type": "application/rss+xml; charset=UTF-8",
+        "xml_valido": true,
+        "raiz_xml": "rss",
+        "titulo_feed": "Marketing Archives - Knowledge at Wharton",
+        "entradas_na_resposta": 10,
+        "bytes": 10453,
+        "sha256_xml": "9b4fb0346b1cb9ee6bf90725a459ca03b0904985d8df752912e160586dc60f65",
+        "hosts_urls_itens_observados": [
+          "knowledge.wharton.upenn.edu"
+        ],
+        "host_inicial_aprovado": true,
+        "host_final_aprovado": true,
+        "hosts_itens_todos_aprovados": true,
+        "proveniencia_link_rss_ou_autodescoberta_confirmada": true,
+        "channel_link": "",
+        "idioma_declarado": "en-US",
+        "lastBuildDate_original": "Fri, 06 Nov 2026 20:13:19 +0000"
+      },
+      "dataamostra": [
+        {
+          "titulo": "Building a Modern Western Lifestyle Brand",
+          "url": "https://knowledge.wharton.upenn.edu/podcast/marketing-matters/building-a-modern-western-lifestyle-brand/",
+          "publicado_original": "Thu, 05 Nov 2026 06:14:04 +0000",
+          "atualizado_original": "Thu, 05 Nov 2026 06:14:04 +0000"
+        },
+        {
+          "titulo": "Why Record Holiday Sales May Not Tell the Whole Story",
+          "url": "https://knowledge.wharton.upenn.edu/podcast/this-week-in-business/why-record-holiday-sales-may-not-tell-the-whole-story/",
+          "publicado_original": "Wed, 28 Oct 2026 16:22:58 +0000",
+          "atualizado_original": "Wed, 28 Oct 2026 16:22:58 +0000"
+        },
+        {
+          "titulo": "Why Your Best Customers Can Be Your Best Marketers",
+          "url": "https://knowledge.wharton.upenn.edu/podcast/marketing-matters/why-your-best-customers-can-be-your-best-marketers/",
+          "publicado_original": "Thu, 22 Oct 2026 15:42:12 +0000",
+          "atualizado_original": "Thu, 22 Oct 2026 15:42:12 +0000"
+        }
+      ],
+      "revisao_integral_dos_artigos": false,
+      "alcance": "HTTP público e inspeção de XML, títulos, URLs e datas. Não houve leitura integral de artigos, audição ou avaliação dos estudos citados. O uso de metadados não concede licença de reprodução dos textos.",
+      "estado": "funcional_autodescoberto_hosts_aprovados",
+      "tema": "marketing",
+      "adequacao": "Mais aderente ao foco Business. A amostra contém predominantemente páginas de podcasts institucionais e não apenas artigos; examinar autoria/credenciais e tipo de material por item.",
+      "prioridade": "principal"
+    },
+    {
+      "fonteID": "ama",
+      "feedURL": "https://www.ama.org/feed/",
+      "hostname": "www.ama.org",
+      "url_final": "https://www.ama.org/feed/",
+      "hostname_final": "www.ama.org",
+      "proveniencia": [
+        {
+          "pagina": "https://www.ama.org/journal-of-marketing-research/",
+          "http_pagina": 200,
+          "metodo": "link_autodescoberta",
+          "tag": "link",
+          "rel": "alternate",
+          "tipo_declarado": "application/rss+xml",
+          "titulo_link": "American Marketing Association » Feed",
+          "href_exato": "https://www.ama.org/feed/"
+        },
+        {
+          "pagina": "https://www.ama.org/topics/",
+          "http_pagina": 200,
+          "metodo": "link_autodescoberta",
+          "tag": "link",
+          "rel": "alternate",
+          "tipo_declarado": "application/rss+xml",
+          "titulo_link": "American Marketing Association » Feed",
+          "href_exato": "https://www.ama.org/feed/"
+        }
+      ],
+      "resultado": {
+        "http": 200,
+        "content_type": "application/rss+xml; charset=UTF-8",
+        "xml_valido": true,
+        "raiz_xml": "rss",
+        "titulo_feed": "American Marketing Association",
+        "entradas_na_resposta": 10,
+        "bytes": 121863,
+        "sha256_xml": "a8ca91a32e887c232e9d543eb3d6880e93ce51713564cd509ef9a97af5412255",
+        "hosts_urls_itens_observados": [
+          "www.ama.org"
+        ],
+        "host_inicial_aprovado": true,
+        "host_final_aprovado": true,
+        "hosts_itens_todos_aprovados": true,
+        "proveniencia_link_rss_ou_autodescoberta_confirmada": true,
+        "channel_link": "https://www.ama.org/",
+        "idioma_declarado": "en-US",
+        "lastBuildDate_original": "Thu, 05 Nov 2026 21:54:37 +0000"
+      },
+      "dataamostra": [
+        {
+          "titulo": "Less Spending, Higher Revenue: How Mergers and Acquisitions Affect Marketing Decisions in the Biopharma Industry",
+          "url": "https://www.ama.org/2026/11/05/less-spending-higher-revenue-how-mergers-and-acquisitions-affect-marketing-decisions-in-the-biopharma-industry/",
+          "publicado_original": "Thu, 05 Nov 2026 21:13:59 +0000",
+          "atualizado_original": "Thu, 05 Nov 2026 21:13:59 +0000"
+        },
+        {
+          "titulo": "AMA on Campus: Highlights for Collegiate Advisors",
+          "url": "https://www.ama.org/2026/11/04/ama-on-campus-highlights-for-collegiate-advisors/",
+          "publicado_original": "Wed, 04 Nov 2026 18:59:47 +0000",
+          "atualizado_original": "Wed, 04 Nov 2026 18:59:47 +0000"
+        },
+        {
+          "titulo": "2026 Agency Benchmarks: See How Your Agency Stacks Up",
+          "url": "https://www.ama.org/2026/11/04/2026-agency-benchmarks-see-how-your-agency-stacks-up/",
+          "publicado_original": "Wed, 04 Nov 2026 16:54:53 +0000",
+          "atualizado_original": "Wed, 04 Nov 2026 16:54:53 +0000"
+        }
+      ],
+      "revisao_integral_dos_artigos": false,
+      "alcance": "HTTP público e inspeção de XML, títulos, URLs e datas. Não houve leitura integral de artigos, audição ou avaliação dos estudos citados. O uso de metadados não concede licença de reprodução dos textos.",
+      "estado": "funcional_autodescoberto_hosts_aprovados",
+      "tema": "marketing-pesquisa",
+      "adequacao": "Mistura divulgação de pesquisa, comunidade acadêmica e conteúdo profissional/comercial. Excluir eventos, anúncios, benchmarks promocionais e peças sem autoria/evidência conforme a restrição já existente; não publicar o feed inteiro automaticamente.",
+      "prioridade": "principal"
+    },
+    {
+      "fonteID": "fdc",
+      "feedURL": "https://sejarelevante.fdc.org.br/feed/",
+      "hostname": "sejarelevante.fdc.org.br",
+      "url_final": "https://sejarelevante.fdc.org.br/feed/",
+      "hostname_final": "sejarelevante.fdc.org.br",
+      "proveniencia": [
+        {
+          "pagina": "https://sejarelevante.fdc.org.br/",
+          "http_pagina": 200,
+          "metodo": "xml_servido_no_proprio_host_oficial_aprovado",
+          "channel_link": "https://sejarelevante.fdc.org.br/",
+          "observacao": "Teste público do endpoint /feed/ após instrução explícita do owner; validado pelo XML real. A home consultada não declarou RSS no HTML coletado. Nenhum bloqueio foi contornado."
+        }
+      ],
+      "estado": "funcional_host_oficial_channel_link_correspondente",
+      "resultado": {
+        "http": 200,
+        "content_type": "application/rss+xml; charset=UTF-8",
+        "xml_valido": true,
+        "raiz_xml": "rss",
+        "titulo_feed": "Seja Relevante",
+        "channel_link": "https://sejarelevante.fdc.org.br/",
+        "idioma_declarado": "pt-BR",
+        "entradas_na_resposta": 10,
+        "bytes": 156125,
+        "sha256_xml": "4a7bee00d3444408ce2e0e7eb65c1a978cea76041139990fe6c9a6978d00718c",
+        "hosts_urls_itens_observados": [
+          "sejarelevante.fdc.org.br"
+        ],
+        "host_inicial_aprovado": true,
+        "host_final_aprovado": true,
+        "hosts_itens_todos_aprovados": true,
+        "proveniencia_link_rss_ou_autodescoberta_confirmada": false,
+        "lastBuildDate_original": "Thu, 05 Nov 2026 20:54:15 +0000"
+      },
+      "dataamostra": [
+        {
+          "titulo": "“Reputação não se protege apenas com comunicação”, diz CEO do Magalu",
+          "url": "https://sejarelevante.fdc.org.br/reputacao-nao-se-protege-apenas-com-comunicacao-diz-ceo-do-magalu/",
+          "publicado_original": "Fri, 06 Nov 2026 11:00:00 +0000",
+          "atualizado_original": "Fri, 06 Nov 2026 11:00:00 +0000"
+        },
+        {
+          "titulo": "Nicole Goulart, do SEST SENAT, defende propósito com ação estruturada para trazer impacto social",
+          "url": "https://sejarelevante.fdc.org.br/nicole-goulart-do-sest-senat-defende-proposito-com-acao-estruturada-para-trazer-impacto-social/",
+          "publicado_original": "Thu, 05 Nov 2026 13:02:33 +0000",
+          "atualizado_original": "Thu, 05 Nov 2026 13:02:33 +0000"
+        },
+        {
+          "titulo": "Sucessão de CEOs é lacuna crítica na agenda de governança",
+          "url": "https://sejarelevante.fdc.org.br/sucessao-de-ceos-e-lacuna-critica-na-agenda-de-governanca/",
+          "publicado_original": "Wed, 04 Nov 2026 11:00:00 +0000",
+          "atualizado_original": "Wed, 04 Nov 2026 11:00:00 +0000"
+        }
+      ],
+      "tema": "administracao-reputacao-governanca",
+      "adequacao": "Cobertura institucional brasileira, reputação, governança, administração e trabalho; contém entrevistas e opiniões, não só artigos científicos. Exigir autoria/credenciais e evidências por item, separar opiniões e excluir promoção de cursos. Seleção proposta com base apenas nos títulos e metadados consultados.",
+      "revisao_integral_dos_artigos": false,
+      "alcance": "XML integral inspecionado para estrutura e metadados; corpos, entrevistas e estudos não lidos integralmente. Não reproduzir resumos/corpos do feed em publicação automática."
+    }
+  ],
+  "feeds_funcionais_inelegiveis_hosts": [
+    {
+      "fonteID": "strategy-business",
+      "feedURL": "https://www.strategy-business.com/all_updates.xml",
+      "hostname": "www.strategy-business.com",
+      "url_final": "http://feeds.feedburner.com/StrategyBusiness-AllUpdates",
+      "hostname_final": "feeds.feedburner.com",
+      "proveniencia": [
+        {
+          "pagina": "https://www.strategy-business.com/rss",
+          "http_pagina": 200,
+          "metodo": "link_publicado_validado_por_web_click",
+          "href_exato": "https://www.strategy-business.com/all_updates.xml",
+          "observacao": "Link extraído da página oficial pelo leitor web; o parser HTML simples não reteve anchors cujo rótulo não dizia RSS."
+        }
+      ],
+      "resultado": {
+        "http": 200,
+        "content_type": "text/xml; charset=utf-8",
+        "xml_valido": true,
+        "raiz_xml": "rss",
+        "titulo_feed": "strategy+business - All Updates",
+        "entradas_na_resposta": 30,
+        "bytes": 17397,
+        "sha256_xml": "46dc0d8312cbf5449e8dd74e5be27b79b787f3a74ed57c393a1737e400738df1",
+        "hosts_urls_itens_observados": [
+          "pwc.to",
+          "sb.stratbz.to",
+          "www.pwc.com",
+          "www.strategy-business.com"
+        ],
+        "host_inicial_aprovado": true,
+        "host_final_aprovado": false,
+        "hosts_itens_todos_aprovados": false
+      },
+      "dataamostra": [
+        {
+          "titulo": "How is AI transforming the career ladder?",
+          "url": "https://pwc.to/3UgGWCX?rssid=all_updates",
+          "publicado_original": "Tue, 03 Nov 2026 12:00:00 -0600",
+          "atualizado_original": "Tue, 03 Nov 2026 12:00:00 -0600"
+        },
+        {
+          "titulo": "Space, the next business frontier?",
+          "url": "https://pwc.to/4ASC33v?rssid=all_updates",
+          "publicado_original": "Tue, 20 Oct 2026 12:00:00 -0500",
+          "atualizado_original": "Tue, 20 Oct 2026 12:00:00 -0500"
+        },
+        {
+          "titulo": "How can business help us take charge of our health?",
+          "url": "https://pwc.to/4xSlWQz?rssid=all_updates",
+          "publicado_original": "Tue, 06 Oct 2026 12:00:00 -0500",
+          "atualizado_original": "Tue, 06 Oct 2026 12:00:00 -0500"
+        }
+      ],
+      "revisao_integral_dos_artigos": false,
+      "alcance": "HTTP público e inspeção de XML, títulos, URLs e datas. Não houve leitura integral de artigos, audição ou avaliação dos estudos citados. O uso de metadados não concede licença de reprodução dos textos.",
+      "estado": "funcional_mas_inelegivel_hosts_atuais",
+      "motivo": "Feed oficial retorna XML HTTP 200, mas redireciona a feeds.feedburner.com e inclui links pwc.to, sb.stratbz.to e www.pwc.com fora da lista atual. Nenhum host foi adicionado e os links encurtados não foram resolvidos."
+    },
+    {
+      "fonteID": "strategy-business",
+      "feedURL": "https://www.strategy-business.com/consumer_products.xml",
+      "hostname": "www.strategy-business.com",
+      "url_final": "https://feeds.feedburner.com/StrategyBusiness-ConsumerProducts",
+      "hostname_final": "feeds.feedburner.com",
+      "proveniencia": [
+        {
+          "pagina": "https://www.strategy-business.com/rss",
+          "http_pagina": 200,
+          "metodo": "link_publicado_validado_por_web_click",
+          "href_exato": "https://www.strategy-business.com/consumer_products.xml",
+          "observacao": "Link extraído da página oficial pelo leitor web; o parser HTML simples não reteve anchors cujo rótulo não dizia RSS."
+        }
+      ],
+      "resultado": {
+        "http": 200,
+        "content_type": "text/xml; charset=utf-8",
+        "xml_valido": true,
+        "raiz_xml": "rss",
+        "titulo_feed": "strategy+business: CONSUMER & RETAIL",
+        "entradas_na_resposta": 30,
+        "bytes": 22929,
+        "sha256_xml": "55574ab4514d1a32defa8ae506dd1fc7d28bbb2c3de5c1a48ddca5e1a8b049c8",
+        "hosts_urls_itens_observados": [
+          "pwc.to",
+          "sb.stratbz.to",
+          "www.pwc.com",
+          "www.strategy-business.com"
+        ],
+        "host_inicial_aprovado": true,
+        "host_final_aprovado": false,
+        "hosts_itens_todos_aprovados": false
+      },
+      "dataamostra": [
+        {
+          "titulo": "How can business help us take charge of our health?",
+          "url": "https://pwc.to/4xSlWQz?rssid=consumer-and-retail",
+          "publicado_original": "Tue, 06 Oct 2026 12:00:00 -0500",
+          "atualizado_original": "Tue, 06 Oct 2026 12:00:00 -0500"
+        },
+        {
+          "titulo": "Focusing on missions",
+          "url": "https://www.strategy-business.com/article/Focusing-on-missions?rssid=consumer-and-retail&gko=34e2c",
+          "publicado_original": "Wed, 01 Apr 2026 00:00:00 -0500",
+          "atualizado_original": "Wed, 01 Apr 2026 00:00:00 -0500"
+        },
+        {
+          "titulo": "Food for thought",
+          "url": "https://sb.stratbz.to/3MtcxNn?rssid=consumer-and-retail",
+          "publicado_original": "Sun, 14 Dec 2025 23:00:00 -0600",
+          "atualizado_original": "Sun, 14 Dec 2025 23:00:00 -0600"
+        }
+      ],
+      "revisao_integral_dos_artigos": false,
+      "alcance": "HTTP público e inspeção de XML, títulos, URLs e datas. Não houve leitura integral de artigos, audição ou avaliação dos estudos citados. O uso de metadados não concede licença de reprodução dos textos.",
+      "estado": "funcional_mas_inelegivel_hosts_atuais",
+      "motivo": "Feed oficial retorna XML HTTP 200, mas redireciona a feeds.feedburner.com e inclui links pwc.to, sb.stratbz.to e www.pwc.com fora da lista atual. Nenhum host foi adicionado e os links encurtados não foram resolvidos."
+    },
+    {
+      "fonteID": "strategy-business",
+      "feedURL": "https://www.strategy-business.com/strategy.xml",
+      "hostname": "www.strategy-business.com",
+      "url_final": "https://feeds.feedburner.com/StrategyBusiness-Strategy",
+      "hostname_final": "feeds.feedburner.com",
+      "proveniencia": [
+        {
+          "pagina": "https://www.strategy-business.com/rss",
+          "http_pagina": 200,
+          "metodo": "link_publicado_validado_por_web_click",
+          "href_exato": "https://www.strategy-business.com/strategy.xml",
+          "observacao": "Link extraído da página oficial pelo leitor web; o parser HTML simples não reteve anchors cujo rótulo não dizia RSS."
+        }
+      ],
+      "resultado": {
+        "http": 200,
+        "content_type": "text/xml; charset=utf-8",
+        "xml_valido": true,
+        "raiz_xml": "rss",
+        "titulo_feed": "strategy+business: STRATEGY",
+        "entradas_na_resposta": 30,
+        "bytes": 17585,
+        "sha256_xml": "f4cf38e6a32c6d7d04aa82596ac5096aed74f266261cc9630c5282c7850e4bfe",
+        "hosts_urls_itens_observados": [
+          "pwc.to",
+          "sb.stratbz.to",
+          "www.pwc.com",
+          "www.strategy-business.com"
+        ],
+        "host_inicial_aprovado": true,
+        "host_final_aprovado": false,
+        "hosts_itens_todos_aprovados": false
+      },
+      "dataamostra": [
+        {
+          "titulo": "Space, the next business frontier?",
+          "url": "https://pwc.to/4ASC33v?rssid=strategy",
+          "publicado_original": "Tue, 20 Oct 2026 12:00:00 -0500",
+          "atualizado_original": "Tue, 20 Oct 2026 12:00:00 -0500"
+        },
+        {
+          "titulo": "CEO confidence holds as AI gains shift",
+          "url": "https://www.pwc.com/gx/en/1/issues/c-suite-insights/ceo-survey/snapshot-august-2026.html?rssid=strategy",
+          "publicado_original": "Tue, 04 Aug 2026 12:00:00 -0500",
+          "atualizado_original": "Tue, 04 Aug 2026 12:00:00 -0500"
+        },
+        {
+          "titulo": "Decoding ROI from AI",
+          "url": "https://www.pwc.com/gx/en/issues/technology/ai-performance.html?rssid=strategy",
+          "publicado_original": "Thu, 16 Apr 2026 12:00:00 -0500",
+          "atualizado_original": "Thu, 16 Apr 2026 12:00:00 -0500"
+        }
+      ],
+      "revisao_integral_dos_artigos": false,
+      "alcance": "HTTP público e inspeção de XML, títulos, URLs e datas. Não houve leitura integral de artigos, audição ou avaliação dos estudos citados. O uso de metadados não concede licença de reprodução dos textos.",
+      "estado": "funcional_mas_inelegivel_hosts_atuais",
+      "motivo": "Feed oficial retorna XML HTTP 200, mas redireciona a feeds.feedburner.com e inclui links pwc.to, sb.stratbz.to e www.pwc.com fora da lista atual. Nenhum host foi adicionado e os links encurtados não foram resolvidos."
+    }
+  ],
+  "fontes_sem_feed_bom_confirmado": [
+    {
+      "fonteID": "insead",
+      "feedURL": "https://knowledge.insead.edu/rss/articles/46/rss.xml",
+      "hostname": "knowledge.insead.edu",
+      "proveniencia": {
+        "metodo": "endpoint_ja_configurado_no_projeto",
+        "pagina": "src/content/business/fontes/insead.json"
+      },
+      "resultado": {
+        "http": 403,
+        "content_type": "text/html; charset=UTF-8",
+        "xml_valido": false,
+        "titulo_resposta": "Just a moment / Cloudflare",
+        "host_aprovado": true
+      },
+      "estado": "bloqueado",
+      "dataamostra": [],
+      "limite": "Sem contorno do desafio, troca de identidade, endpoint espelho ou repetição do endpoint bloqueado. Página marketing também retornou 403."
+    },
+    {
+      "fonteID": "fgv",
+      "estado": "nao_confirmado_nas_paginas_consultadas",
+      "paginas": [
+        {
+          "url": "https://portal.fgv.br/",
+          "http": 200,
+          "erro": null,
+          "feed_rss_atom_declarado": false
+        },
+        {
+          "url": "https://periodicos.fgv.br/rae",
+          "http": 403,
+          "erro": null,
+          "feed_rss_atom_declarado": false
+        },
+        {
+          "url": "https://periodicos.fgv.br/gvexecutivo",
+          "http": 403,
+          "erro": null,
+          "feed_rss_atom_declarado": false
+        },
+        {
+          "url": "https://periodicos.fgv.br/rap",
+          "http": 403,
+          "erro": null,
+          "feed_rss_atom_declarado": false
+        }
+      ],
+      "motivo": "Home portal FGV HTTP 200 sem RSS declarado; após autorização do owner para testar /feed/ no host público, /feed/ respondeu 404 e /rss.xml respondeu HTTP 200 após redirecionar a error.svg (raiz SVG, zero itens), não RSS. Páginas RAE, GV-executivo e RAP retornaram 403; não houve tentativa de feeds nesses caminhos bloqueados.",
+      "testes_endpoints_publicos": [
+        {
+          "fonteID": "fgv",
+          "feedURL": "https://portal.fgv.br/feed/",
+          "url_final": "https://portal.fgv.br/feed/",
+          "http": 404,
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 63645,
+          "sha256": "6db66b5d7b073fb22a6c81ade4ae79984acbae4500dac5967b3340a3f930ae13"
+        },
+        {
+          "fonteID": "fgv",
+          "feedURL": "https://portal.fgv.br/rss.xml",
+          "url_final": "https://portal.fgv.br/sites/default/files/error.svg",
+          "http": 200,
+          "content_type": "image/svg+xml",
+          "bytes": 679,
+          "sha256": "d665da63811ead02f6df6ac2ce1db95dbd8969fc5dee014f905508d0e3d47e9b",
+          "raiz_xml": "{http://www.w3.org/2000/svg}svg",
+          "feed_titulo": null,
+          "entradas": 0,
+          "amostras": [],
+          "item_hosts": []
+        }
+      ]
+    },
+    {
+      "fonteID": "mit-smr",
+      "estado": "nao_confirmado_nas_paginas_consultadas",
+      "paginas": [
+        {
+          "url": "https://sloanreview.mit.edu/topic/marketing/",
+          "http": 403,
+          "erro": null,
+          "feed_rss_atom_declarado": false
+        }
+      ],
+      "motivo": "Nenhum RSS/Atom utilizável com procedência oficial foi confirmado no escopo consultado. Ausência de autodescoberta na amostra não prova inexistência universal de feed. Respostas 403 não foram contornadas; endpoints por convenção não foram inventados."
+    },
+    {
+      "fonteID": "lbs",
+      "estado": "nao_confirmado_nas_paginas_consultadas",
+      "paginas": [
+        {
+          "url": "https://www.london.edu/think",
+          "http": 200,
+          "erro": null,
+          "feed_rss_atom_declarado": false
+        }
+      ],
+      "motivo": "Nenhum RSS/Atom utilizável com procedência oficial foi confirmado no escopo consultado. Ausência de autodescoberta na amostra não prova inexistência universal de feed. Respostas 403 não foram contornadas; endpoints por convenção não foram inventados."
+    },
+    {
+      "fonteID": "bain",
+      "estado": "nao_confirmado_nas_paginas_consultadas",
+      "paginas": [
+        {
+          "url": "https://www.bain.com/insights/",
+          "http": 200,
+          "erro": null,
+          "feed_rss_atom_declarado": false
+        }
+      ],
+      "motivo": "Nenhum RSS/Atom utilizável com procedência oficial foi confirmado no escopo consultado. Ausência de autodescoberta na amostra não prova inexistência universal de feed. Respostas 403 não foram contornadas; endpoints por convenção não foram inventados."
+    },
+    {
+      "fonteID": "bcg",
+      "estado": "nao_confirmado_nas_paginas_consultadas",
+      "paginas": [
+        {
+          "url": "https://www.bcg.com/capabilities/marketing-sales/insights",
+          "http": 200,
+          "erro": null,
+          "feed_rss_atom_declarado": false
+        }
+      ],
+      "motivo": "Nenhum RSS/Atom utilizável com procedência oficial foi confirmado no escopo consultado. Ausência de autodescoberta na amostra não prova inexistência universal de feed. Respostas 403 não foram contornadas; endpoints por convenção não foram inventados."
+    },
+    {
+      "fonteID": "meio-mensagem",
+      "estado": "nao_confirmado_nas_paginas_consultadas",
+      "paginas": [
+        {
+          "url": "https://www.meioemensagem.com.br/",
+          "http": 403,
+          "erro": null,
+          "feed_rss_atom_declarado": false
+        }
+      ],
+      "motivo": "Nenhum RSS/Atom utilizável com procedência oficial foi confirmado no escopo consultado. Ausência de autodescoberta na amostra não prova inexistência universal de feed. Respostas 403 não foram contornadas; endpoints por convenção não foram inventados."
+    },
+    {
+      "fonteID": "ft",
+      "estado": "nao_confirmado_nas_paginas_consultadas",
+      "paginas": [
+        {
+          "url": "https://www.ft.com/",
+          "http": 403,
+          "erro": null,
+          "feed_rss_atom_declarado": false
+        }
+      ],
+      "motivo": "Nenhum RSS/Atom utilizável com procedência oficial foi confirmado no escopo consultado. Ausência de autodescoberta na amostra não prova inexistência universal de feed. Respostas 403 não foram contornadas; endpoints por convenção não foram inventados."
+    },
+    {
+      "fonteID": "hbr",
+      "estado": "link_oficial_fora_dos_hosts_atuais",
+      "pagina": "https://hbr.org/topic/subject/marketing",
+      "http_pagina": 200,
+      "feedURL": "https://feeds.harvardbusiness.org/harvardbusiness/",
+      "hostname": "feeds.harvardbusiness.org",
+      "proveniencia": "Anchor público Your Newsreader na página oficial; Topic Feeds leva a /my-library/topics e não é RSS público.",
+      "resultado": "Não solicitado como feed elegível: hostname fora da configuração hbr.org. Não ampliar hosts sem decisão do owner.",
+      "dataamostra": []
+    },
+    {
+      "fonteID": "hbs",
+      "estado": "links_publicados_obsoletos_ou_host_fora_da_lista",
+      "pagina": "https://www.hbs.edu/shared/ssi/rssfeeds.html",
+      "http_pagina": 200,
+      "proveniencia": "Página oficial lista RSS News, MBA, Alumni, Library, Executive Education e Working Knowledge.",
+      "resultados": [
+        {
+          "url": "https://www.hbs.edu/news/rss/rss.xml",
+          "http_web": 404
+        },
+        {
+          "url": "https://www.hbs.edu/mba/rss/rss.xml",
+          "http_web": 404
+        },
+        {
+          "url": "http://hbswk.hbs.edu/rss/rss.xml",
+          "resultado": "Link publicado; hbswk.hbs.edu não consta dos hosts atuais de hbs. Não testado como elegível."
+        }
+      ],
+      "dataamostra": []
+    }
+  ],
+  "recomendacao_ao_owner": "Usar como fontes distintas McKinsey, Wharton marketing, AMA e FDC Seja Relevante; inspecionar candidatos por autoria, tema, evidência e promoção antes de publicar. Preservar a limitação de data do cabeçalho McKinsey. Alternativas Wharton não aumentam diversidade institucional; deduplicar pela URL canônica. Não cadastrar redirecionadores externos, respostas SVG/HTML ou feeds bloqueados. Não confundir ingestão de candidatos com aprovação ou publicação automática.",
+  "alternativas_tematicas_mesma_fonte": [
+    {
+      "fonteID": "wharton",
+      "feedURL": "https://knowledge.wharton.upenn.edu/feed/",
+      "hostname": "knowledge.wharton.upenn.edu",
+      "url_final": "https://knowledge.wharton.upenn.edu/feed/",
+      "hostname_final": "knowledge.wharton.upenn.edu",
+      "proveniencia": [
+        {
+          "pagina": "https://knowledge.wharton.upenn.edu/category/marketing/",
+          "http_pagina": 200,
+          "metodo": "link_autodescoberta",
+          "tag": "link",
+          "rel": "alternate",
+          "tipo_declarado": "application/rss+xml",
+          "titulo_link": "Knowledge at Wharton » Feed",
+          "href_exato": "https://knowledge.wharton.upenn.edu/feed/"
+        },
+        {
+          "pagina": "https://knowledge.wharton.upenn.edu/category/management/",
+          "http_pagina": 200,
+          "metodo": "link_autodescoberta",
+          "tag": "link",
+          "rel": "alternate",
+          "tipo_declarado": "application/rss+xml",
+          "titulo_link": "Knowledge at Wharton » Feed",
+          "href_exato": "https://knowledge.wharton.upenn.edu/feed/"
+        },
+        {
+          "pagina": "https://knowledge.wharton.upenn.edu/category/behavioral-science/",
+          "http_pagina": 200,
+          "metodo": "link_autodescoberta",
+          "tag": "link",
+          "rel": "alternate",
+          "tipo_declarado": "application/rss+xml",
+          "titulo_link": "Knowledge at Wharton » Feed",
+          "href_exato": "https://knowledge.wharton.upenn.edu/feed/"
+        },
+        {
+          "pagina": "https://knowledge.wharton.upenn.edu/category/data-analytics/",
+          "http_pagina": 200,
+          "metodo": "link_autodescoberta",
+          "tag": "link",
+          "rel": "alternate",
+          "tipo_declarado": "application/rss+xml",
+          "titulo_link": "Knowledge at Wharton » Feed",
+          "href_exato": "https://knowledge.wharton.upenn.edu/feed/"
+        },
+        {
+          "pagina": "https://knowledge.wharton.upenn.edu/category/entrepreneurship/",
+          "http_pagina": 200,
+          "metodo": "link_autodescoberta",
+          "tag": "link",
+          "rel": "alternate",
+          "tipo_declarado": "application/rss+xml",
+          "titulo_link": "Knowledge at Wharton » Feed",
+          "href_exato": "https://knowledge.wharton.upenn.edu/feed/"
+        }
+      ],
+      "resultado": {
+        "http": 200,
+        "content_type": "application/rss+xml; charset=UTF-8",
+        "xml_valido": true,
+        "raiz_xml": "rss",
+        "titulo_feed": "Knowledge at Wharton",
+        "entradas_na_resposta": 10,
+        "bytes": 10604,
+        "sha256_xml": "cf757ec5aa5caa7ac441a9542d28e9291067224f18df0268059bb461a2c3f758",
+        "hosts_urls_itens_observados": [
+          "knowledge.wharton.upenn.edu"
+        ],
+        "host_inicial_aprovado": true,
+        "host_final_aprovado": true,
+        "hosts_itens_todos_aprovados": true,
+        "proveniencia_link_rss_ou_autodescoberta_confirmada": true,
+        "channel_link": "https://knowledge.wharton.upenn.edu/",
+        "idioma_declarado": "en-US",
+        "lastBuildDate_original": "Fri, 06 Nov 2026 20:18:22 +0000"
+      },
+      "dataamostra": [
+        {
+          "titulo": "The Hidden Consequences of Losing",
+          "url": "https://knowledge.wharton.upenn.edu/podcast/this-week-in-business/the-hidden-consequences-of-losing/",
+          "publicado_original": "Fri, 06 Nov 2026 17:15:19 +0000",
+          "atualizado_original": "Fri, 06 Nov 2026 17:15:19 +0000"
+        },
+        {
+          "titulo": "Building a Modern Western Lifestyle Brand",
+          "url": "https://knowledge.wharton.upenn.edu/podcast/marketing-matters/building-a-modern-western-lifestyle-brand/",
+          "publicado_original": "Thu, 05 Nov 2026 06:14:04 +0000",
+          "atualizado_original": "Thu, 05 Nov 2026 06:14:04 +0000"
+        },
+        {
+          "titulo": "The Limits of Prediction in Sports and Elections",
+          "url": "https://knowledge.wharton.upenn.edu/podcast/moneyball/the-limits-of-prediction-in-sports-and-elections/",
+          "publicado_original": "Wed, 04 Nov 2026 18:21:33 +0000",
+          "atualizado_original": "Wed, 04 Nov 2026 18:21:33 +0000"
+        }
+      ],
+      "revisao_integral_dos_artigos": false,
+      "alcance": "HTTP público e inspeção de XML, títulos, URLs e datas. Não houve leitura integral de artigos, audição ou avaliação dos estudos citados. O uso de metadados não concede licença de reprodução dos textos.",
+      "estado": "funcional_autodescoberto_hosts_aprovados",
+      "tema": "geral",
+      "adequacao": "Administração e negócios; mistura artigos e páginas de podcasts. Maior cobertura, maior ruído e sobreposição com os feeds temáticos.",
+      "prioridade": "principal"
+    },
+    {
+      "fonteID": "wharton",
+      "feedURL": "https://knowledge.wharton.upenn.edu/category/management/feed/",
+      "hostname": "knowledge.wharton.upenn.edu",
+      "url_final": "https://knowledge.wharton.upenn.edu/category/management/feed/",
+      "hostname_final": "knowledge.wharton.upenn.edu",
+      "proveniencia": [
+        {
+          "pagina": "https://knowledge.wharton.upenn.edu/category/management/",
+          "http_pagina": 200,
+          "metodo": "link_autodescoberta",
+          "tag": "link",
+          "rel": "alternate",
+          "tipo_declarado": "application/rss+xml",
+          "titulo_link": "Knowledge at Wharton » Management Category Feed",
+          "href_exato": "https://knowledge.wharton.upenn.edu/category/management/feed/"
+        }
+      ],
+      "resultado": {
+        "http": 200,
+        "content_type": "application/rss+xml; charset=UTF-8",
+        "xml_valido": true,
+        "raiz_xml": "rss",
+        "titulo_feed": "Management Archives - Knowledge at Wharton",
+        "entradas_na_resposta": 10,
+        "bytes": 11307,
+        "sha256_xml": "7e5c268b584a057b2a38a52aaedf82a9a2cf48652d6b1667e843c9fbc11024fb",
+        "hosts_urls_itens_observados": [
+          "knowledge.wharton.upenn.edu"
+        ],
+        "host_inicial_aprovado": true,
+        "host_final_aprovado": true,
+        "hosts_itens_todos_aprovados": true,
+        "proveniencia_link_rss_ou_autodescoberta_confirmada": true,
+        "channel_link": "",
+        "idioma_declarado": "en-US",
+        "lastBuildDate_original": "Fri, 06 Nov 2026 20:18:22 +0000"
+      },
+      "dataamostra": [
+        {
+          "titulo": "The Hidden Consequences of Losing",
+          "url": "https://knowledge.wharton.upenn.edu/podcast/this-week-in-business/the-hidden-consequences-of-losing/",
+          "publicado_original": "Fri, 06 Nov 2026 17:15:19 +0000",
+          "atualizado_original": "Fri, 06 Nov 2026 17:15:19 +0000"
+        },
+        {
+          "titulo": "When AI Makes Unacceptable Decisions Feel Normal",
+          "url": "https://knowledge.wharton.upenn.edu/article/when-ai-makes-unacceptable-decisions-feel-normal/",
+          "publicado_original": "Tue, 03 Nov 2026 16:04:55 +0000",
+          "atualizado_original": "Tue, 03 Nov 2026 16:04:55 +0000"
+        },
+        {
+          "titulo": "Don’t Abolish Business Schools. Make Them Accountable for Impact as well as Value",
+          "url": "https://knowledge.wharton.upenn.edu/article/dont-abolish-business-schools-make-them-accountable-for-impact-as-well-as-value/",
+          "publicado_original": "Tue, 27 Oct 2026 15:22:32 +0000",
+          "atualizado_original": "Tue, 27 Oct 2026 15:22:32 +0000"
+        }
+      ],
+      "revisao_integral_dos_artigos": false,
+      "alcance": "HTTP público e inspeção de XML, títulos, URLs e datas. Não houve leitura integral de artigos, audição ou avaliação dos estudos citados. O uso de metadados não concede licença de reprodução dos textos.",
+      "estado": "funcional_autodescoberto_hosts_aprovados",
+      "tema": "administracao",
+      "adequacao": "Administração, trabalho e decisões organizacionais. Há páginas de podcasts e artigos na mesma coleção.",
+      "prioridade": "principal"
+    },
+    {
+      "fonteID": "wharton",
+      "feedURL": "https://knowledge.wharton.upenn.edu/category/behavioral-science/feed/",
+      "hostname": "knowledge.wharton.upenn.edu",
+      "url_final": "https://knowledge.wharton.upenn.edu/category/behavioral-science/feed/",
+      "hostname_final": "knowledge.wharton.upenn.edu",
+      "proveniencia": [
+        {
+          "pagina": "https://knowledge.wharton.upenn.edu/category/behavioral-science/",
+          "http_pagina": 200,
+          "metodo": "link_autodescoberta",
+          "tag": "link",
+          "rel": "alternate",
+          "tipo_declarado": "application/rss+xml",
+          "titulo_link": "Knowledge at Wharton » Behavioral Science Category Feed",
+          "href_exato": "https://knowledge.wharton.upenn.edu/category/behavioral-science/feed/"
+        }
+      ],
+      "resultado": {
+        "http": 200,
+        "content_type": "application/rss+xml; charset=UTF-8",
+        "xml_valido": true,
+        "raiz_xml": "rss",
+        "titulo_feed": "Behavioral Science Archives - Knowledge at Wharton",
+        "entradas_na_resposta": 10,
+        "bytes": 10992,
+        "sha256_xml": "f41671f96ecd5ee20678bf171902b55c519b51d85cb173330a26fb73f022925d",
+        "hosts_urls_itens_observados": [
+          "knowledge.wharton.upenn.edu"
+        ],
+        "host_inicial_aprovado": true,
+        "host_final_aprovado": true,
+        "hosts_itens_todos_aprovados": true,
+        "proveniencia_link_rss_ou_autodescoberta_confirmada": true,
+        "channel_link": "",
+        "idioma_declarado": "en-US",
+        "lastBuildDate_original": "Fri, 06 Nov 2026 20:18:22 +0000"
+      },
+      "dataamostra": [
+        {
+          "titulo": "The Hidden Consequences of Losing",
+          "url": "https://knowledge.wharton.upenn.edu/podcast/this-week-in-business/the-hidden-consequences-of-losing/",
+          "publicado_original": "Fri, 06 Nov 2026 17:15:19 +0000",
+          "atualizado_original": "Fri, 06 Nov 2026 17:15:19 +0000"
+        },
+        {
+          "titulo": "Why Narcissistic Leaders Don’t Like Remote Work",
+          "url": "https://knowledge.wharton.upenn.edu/article/why-narcissistic-leaders-dont-like-remote-work/",
+          "publicado_original": "Mon, 26 Oct 2026 19:46:27 +0000",
+          "atualizado_original": "Mon, 26 Oct 2026 19:46:27 +0000"
+        },
+        {
+          "titulo": "Why Gen Z Is Choosing Sports Betting Over Retirement Savings",
+          "url": "https://knowledge.wharton.upenn.edu/podcast/this-week-in-business/why-gen-z-is-choosing-sports-betting-over-retirement-savings/",
+          "publicado_original": "Wed, 14 Oct 2026 17:08:05 +0000",
+          "atualizado_original": "Wed, 14 Oct 2026 17:08:05 +0000"
+        }
+      ],
+      "revisao_integral_dos_artigos": false,
+      "alcance": "HTTP público e inspeção de XML, títulos, URLs e datas. Não houve leitura integral de artigos, audição ou avaliação dos estudos citados. O uso de metadados não concede licença de reprodução dos textos.",
+      "estado": "funcional_autodescoberto_hosts_aprovados",
+      "tema": "comportamento",
+      "adequacao": "Ciência comportamental aplicada a decisões, liderança e escolhas; nem todo item é marketing/consumo. Filtrar pertinência por item.",
+      "prioridade": "principal"
+    },
+    {
+      "fonteID": "wharton",
+      "feedURL": "https://knowledge.wharton.upenn.edu/category/data-analytics/feed/",
+      "hostname": "knowledge.wharton.upenn.edu",
+      "url_final": "https://knowledge.wharton.upenn.edu/category/data-analytics/feed/",
+      "hostname_final": "knowledge.wharton.upenn.edu",
+      "proveniencia": [
+        {
+          "pagina": "https://knowledge.wharton.upenn.edu/category/data-analytics/",
+          "http_pagina": 200,
+          "metodo": "link_autodescoberta",
+          "tag": "link",
+          "rel": "alternate",
+          "tipo_declarado": "application/rss+xml",
+          "titulo_link": "Knowledge at Wharton » Data Analytics Category Feed",
+          "href_exato": "https://knowledge.wharton.upenn.edu/category/data-analytics/feed/"
+        }
+      ],
+      "resultado": {
+        "http": 200,
+        "content_type": "application/rss+xml; charset=UTF-8",
+        "xml_valido": true,
+        "raiz_xml": "rss",
+        "titulo_feed": "Data Analytics Archives - Knowledge at Wharton",
+        "entradas_na_resposta": 10,
+        "bytes": 10023,
+        "sha256_xml": "8c9e081a140ff083313c0a76ead87d8335601d153e2a1eef449cecc67f8c4649",
+        "hosts_urls_itens_observados": [
+          "knowledge.wharton.upenn.edu"
+        ],
+        "host_inicial_aprovado": true,
+        "host_final_aprovado": true,
+        "hosts_itens_todos_aprovados": true,
+        "proveniencia_link_rss_ou_autodescoberta_confirmada": true,
+        "channel_link": "",
+        "idioma_declarado": "en-US",
+        "lastBuildDate_original": "Wed, 04 Nov 2026 18:21:33 +0000"
+      },
+      "dataamostra": [
+        {
+          "titulo": "The Limits of Prediction in Sports and Elections",
+          "url": "https://knowledge.wharton.upenn.edu/podcast/moneyball/the-limits-of-prediction-in-sports-and-elections/",
+          "publicado_original": "Wed, 04 Nov 2026 18:21:33 +0000",
+          "atualizado_original": "Wed, 04 Nov 2026 18:21:33 +0000"
+        },
+        {
+          "titulo": "The Social Power of Sports Fandom",
+          "url": "https://knowledge.wharton.upenn.edu/podcast/moneyball/the-social-power-of-sports-fandom/",
+          "publicado_original": "Wed, 28 Oct 2026 16:26:34 +0000",
+          "atualizado_original": "Wed, 28 Oct 2026 16:26:34 +0000"
+        },
+        {
+          "titulo": "Inside MLB’s New Strike Challenge System",
+          "url": "https://knowledge.wharton.upenn.edu/podcast/moneyball/inside-mlbs-new-strike-challenge-system/",
+          "publicado_original": "Wed, 21 Oct 2026 14:44:46 +0000",
+          "atualizado_original": "Wed, 21 Oct 2026 14:44:46 +0000"
+        }
+      ],
+      "revisao_integral_dos_artigos": false,
+      "alcance": "HTTP público e inspeção de XML, títulos, URLs e datas. Não houve leitura integral de artigos, audição ou avaliação dos estudos citados. O uso de metadados não concede licença de reprodução dos textos.",
+      "estado": "funcional_autodescoberto_hosts_aprovados",
+      "tema": "metricas",
+      "adequacao": "Feed tecnicamente funcional, mas a amostra recente é dominada pelo podcast Moneyball e análise esportiva; baixa prioridade para marketing/administração. Não presumir adequação só pela categoria.",
+      "prioridade": "secundaria"
+    },
+    {
+      "fonteID": "wharton",
+      "feedURL": "https://knowledge.wharton.upenn.edu/category/entrepreneurship/feed/",
+      "hostname": "knowledge.wharton.upenn.edu",
+      "url_final": "https://knowledge.wharton.upenn.edu/category/entrepreneurship/feed/",
+      "hostname_final": "knowledge.wharton.upenn.edu",
+      "proveniencia": [
+        {
+          "pagina": "https://knowledge.wharton.upenn.edu/category/entrepreneurship/",
+          "http_pagina": 200,
+          "metodo": "link_autodescoberta",
+          "tag": "link",
+          "rel": "alternate",
+          "tipo_declarado": "application/rss+xml",
+          "titulo_link": "Knowledge at Wharton » Entrepreneurship Category Feed",
+          "href_exato": "https://knowledge.wharton.upenn.edu/category/entrepreneurship/feed/"
+        }
+      ],
+      "resultado": {
+        "http": 200,
+        "content_type": "application/rss+xml; charset=UTF-8",
+        "xml_valido": true,
+        "raiz_xml": "rss",
+        "titulo_feed": "Entrepreneurship Archives - Knowledge at Wharton",
+        "entradas_na_resposta": 10,
+        "bytes": 10607,
+        "sha256_xml": "9401596c275c3c34f54be41e8dd8862e3eefdb52cd5b7e1befd46cd25f5cfdb5",
+        "hosts_urls_itens_observados": [
+          "knowledge.wharton.upenn.edu"
+        ],
+        "host_inicial_aprovado": true,
+        "host_final_aprovado": true,
+        "hosts_itens_todos_aprovados": true,
+        "proveniencia_link_rss_ou_autodescoberta_confirmada": true,
+        "channel_link": "",
+        "idioma_declarado": "en-US",
+        "lastBuildDate_original": "Fri, 14 Aug 2026 16:00:28 +0000"
+      },
+      "dataamostra": [
+        {
+          "titulo": "Why Gen Z Is Choosing Entrepreneurship Over Traditional Careers",
+          "url": "https://knowledge.wharton.upenn.edu/podcast/this-week-in-business/why-gen-z-is-choosing-entrepreneurship-over-traditional-careers/",
+          "publicado_original": "Fri, 14 Aug 2026 16:00:28 +0000",
+          "atualizado_original": "Fri, 14 Aug 2026 16:00:28 +0000"
+        },
+        {
+          "titulo": "Why Big Companies Are Rethinking How They Work With Startups",
+          "url": "https://knowledge.wharton.upenn.edu/podcast/this-week-in-business/why-big-companies-are-rethinking-how-they-work-with-startups/",
+          "publicado_original": "Fri, 10 Jul 2026 19:29:30 +0000",
+          "atualizado_original": "Fri, 10 Jul 2026 19:29:30 +0000"
+        },
+        {
+          "titulo": "Should Universities Do More to Help Women Entrepreneurs Get Funding?",
+          "url": "https://knowledge.wharton.upenn.edu/article/should-universities-do-more-to-help-women-entrepreneurs-get-funding/",
+          "publicado_original": "Tue, 24 Mar 2026 13:55:38 +0000",
+          "atualizado_original": "Tue, 24 Mar 2026 13:55:38 +0000"
+        }
+      ],
+      "revisao_integral_dos_artigos": false,
+      "alcance": "HTTP público e inspeção de XML, títulos, URLs e datas. Não houve leitura integral de artigos, audição ou avaliação dos estudos citados. O uso de metadados não concede licença de reprodução dos textos.",
+      "estado": "funcional_autodescoberto_hosts_aprovados",
+      "tema": "empreendedorismo",
+      "adequacao": "Empreendedorismo e relações de empresas com startups. Último item em 2026-08-14: frequência menor; não prometer atualização diária.",
+      "prioridade": "secundaria"
+    }
+  ]
+}

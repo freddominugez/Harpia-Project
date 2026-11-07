@@ -56,7 +56,7 @@ export function recursosDaSecao(acervo: BusinessResource[], secao: string) {
 }
 
 export async function getBusiness() {
-  const [allGuias, allAcervo, allFontes, allSerie, allOrigens, allAprendizado, allAnalises, allInvestigacoes] = await Promise.all([getCollection('businessGuias'), getCollection('businessAcervo'), getCollection('businessFontes'), getCollection('businessSerie'),getCollection('businessOrigens'),getCollection('businessAprendizado'),getCollection('businessAnalises'),getCollection('businessInvestigacoes')]);
+  const [allGuias, allAcervo, allFontes, allSerie, allOrigens, allAprendizado, allAnalises, allInvestigacoes, allPautas] = await Promise.all([getCollection('businessGuias'), getCollection('businessAcervo'), getCollection('businessFontes'), getCollection('businessSerie'),getCollection('businessOrigens'),getCollection('businessAprendizado'),getCollection('businessAnalises'),getCollection('businessInvestigacoes'),getCollection('businessPautas')]);
   const fontes = allFontes.filter(f => f.data.status === 'aprovado').sort((a,b) => a.data.nome.localeCompare(b.data.nome));
   const allowed = new Map(fontes.map(f => [f.id, f.data]));
   const acervo = allAcervo.filter(item => {
@@ -81,7 +81,7 @@ export async function getBusiness() {
   const investigacao=allInvestigacoes.find(a=>a.data.status==='publicado');
   const referenciasAprovadas=fontes.map(f=>({id:f.id,...f.data}));
   for(const [colecao,itens] of [['business/guias',guias],['business/serie',serie],['business/aprendizado',aprendizado],['business/origens',origens?[origens]:[]],['business/investigacoes',investigacao?[investigacao]:[]],['business/analises',analises]] as const)for(const item of itens)validateBusinessPublication(colecao,item.data,referenciasAprovadas);
-  return { guias, acervo, fontes, canais, serie, origens, aprendizado, analises,investigacao };
+  return { guias, acervo, fontes, canais, serie, origens, aprendizado, analises,investigacao,pautas:allPautas };
 }
 export type BusinessResource = CollectionEntry<'businessAcervo'>;
 

@@ -1,7 +1,9 @@
 ---
 import { getBusiness } from '../lib/business';
+import {businessRadar} from '../lib/business-radar';
 import TechnologyCards from './TechnologyCards.astro';
 const { acervo, fontes } = await getBusiness();
+const live=businessRadar(fontes);
 const temas = [
   { id: 'marketing', titulo: 'Marketing e estratégia', contexto: 'Escolhas de mercado, capacidades e posicionamento.', trilhas: ['fundamentos','estrategia','marcas'] },
   { id: 'consumidor', titulo: 'Pesquisa e clientes', contexto: 'Comportamento, escuta e interpretação de evidências.', trilhas: ['consumidor','clientes','mensuracao'] },
@@ -10,7 +12,7 @@ const temas = [
 const grupos = temas.map(tema => ({
   id: tema.id, nome: 'Fontes de referência', tema: tema.titulo, contexto: tema.contexto,
   site: '/business/biblioteca/fontes/', canal: '',
-  items: acervo.filter(a => ['artigo','relatorio','noticia'].includes(a.data.tipo) && a.data.data_precisa && tema.trilhas.includes(a.data.trilha)).slice(0,2).map(a => ({ tituloEditorial: a.data.tipo === 'noticia', source_id: a.data.fonte, title: a.data.titulo, url: a.data.url, published_at: a.data.data, idioma: a.data.idioma, fonte_nome: fontes.find(f => f.id === a.data.fonte)?.data.nome, })),
+  items: [...live.items.filter(a=>tema.id==='marketing'?/market|brand|strateg|marca/i.test(a.title):tema.id==='consumidor'?/customer|consumer|client|consum/i.test(a.title):/manag|organi|growth|gest|cresci/i.test(a.title)).slice(0,2).map(a=>({...a,fonte_nome:a.company})),...acervo.filter(a => ['artigo','relatorio','noticia'].includes(a.data.tipo) && a.data.data_precisa && tema.trilhas.includes(a.data.trilha)).slice(0,2).map(a => ({ tituloEditorial: a.data.tipo === 'noticia', source_id: a.data.fonte, title: a.data.titulo, url: a.data.url, published_at: a.data.data, idioma: a.data.idioma, fonte_nome: fontes.find(f => f.id === a.data.fonte)?.data.nome, }))].filter((a,i,list)=>list.findIndex(x=>x.url===a.url)===i).slice(0,2),
 }));
 ---
-<TechnologyCards grupos={grupos} titulo="No radar de Business" descricao="Marketing, consumidor e administração nas instituições de referência." nota="Seleção editorial com links às publicações originais. Artigos executivos e relatórios exigem análise dos seus métodos e limites." ultimaColeta={null} selecaoManual />
+<TechnologyCards grupos={grupos} titulo="No radar de Business" descricao="Marketing, consumidor e administração nas instituições de referência." nota="Títulos de feeds institucionais e leituras selecionadas, com links aos originais. A coleta automática não equivale a revisão editorial do texto." ultimaColeta={live.lastSuccess} selecaoManual={!live.lastSuccess} />

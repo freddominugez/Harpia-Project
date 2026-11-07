@@ -1,0 +1,154 @@
+{
+  "ambiente": "business",
+  "atualizado_em": "2026-11-07T10:41:39.379024+00:00",
+  "politica": "descoberta_bibliografica_sem_publicacao_automatica",
+  "fontes": [
+    {
+      "id": "marketing strategy",
+      "status": "ok",
+      "verificado_em": "2026-11-07T10:41:39.379024+00:00"
+    },
+    {
+      "id": "consumer behavior",
+      "status": "ok",
+      "verificado_em": "2026-11-07T10:41:39.379024+00:00"
+    },
+    {
+      "id": "brand management",
+      "status": "ok",
+      "verificado_em": "2026-11-07T10:41:39.379024+00:00"
+    },
+    {
+      "id": "marketing management",
+      "status": "ok",
+      "verificado_em": "2026-11-07T10:41:39.379024+00:00"
+    }
+  ],
+  "itens": [
+    {
+      "id": "d7c40c346ce524726264",
+      "ambiente": "business",
+      "tipo": "livro",
+      "status": "candidato",
+      "titulo": "Digital Marketing",
+      "autores": "Dave Chaffey, Fiona Ellis-Chadwick",
+      "fonte": "editora-pearson",
+      "url": "https://openlibrary.org/works/OL20732757W",
+      "ano": 2012,
+      "editoras_catalogo": [
+        "Brand: Pearson Education",
+        "Pearson",
+        "Pearson Education",
+        "Pearson Education, Limited"
+      ],
+      "confirmacao_editora_pendente": true,
+      "revisao_editorial": false,
+      "consulta": "marketing strategy"
+    },
+    {
+      "id": "6226876c295621cc97e9",
+      "ambiente": "business",
+      "tipo": "livro",
+      "status": "candidato",
+      "titulo": "Consumer behavior",
+      "autores": "Leon G. Schiffman, Leslie Lazar Kanuk",
+      "fonte": "editora-pearson",
+      "url": "https://openlibrary.org/works/OL3350195W",
+      "ano": 1978,
+      "editoras_catalogo": [
+        "Prentice Hall",
+        "Prentice-Hall International",
+        "Prentice-Hall",
+        "Pearson Education",
+        "Pearson Prentice Hall",
+        "Prentice Hall Australia",
+        "Pearson Education, Limited",
+        "Prentice Hall College Div",
+        "Pearson Education International",
+        "prentice hall"
+      ],
+      "confirmacao_editora_pendente": true,
+      "revisao_editorial": false,
+      "consulta": "consumer behavior"
+    },
+    {
+      "id": "fc5d84b1d44d7bef1975",
+      "ambiente": "business",
+      "tipo": "livro",
+      "status": "candidato",
+      "titulo": "Consumer behavior",
+      "autores": "Michael R. Solomon",
+      "fonte": "editora-pearson",
+      "url": "https://openlibrary.org/works/OL1906373W",
+      "ano": 1992,
+      "editoras_catalogo": [
+        "Prentice Hall",
+        "Prentice-Hall International",
+        "Prentice-Hall",
+        "Pearson Prentice Hall",
+        "Allyn and Bacon",
+        "Pearson/Prentice Hall",
+        "Prentice Hall College Div",
+        "Prentice Hall Trade",
+        "Prentice Hall International"
+      ],
+      "confirmacao_editora_pendente": true,
+      "revisao_editorial": false,
+      "consulta": "consumer behavior"
+    },
+    {
+      "id": "ca1af9433e4ee0e49bc1",
+      "ambiente": "business",
+      "tipo": "livro",
+      "status": "candidato",
+      "titulo": "Consumer behavior",
+      "autores": "Michael R. Solomon",
+      "fonte": "editora-pearson",
+      "url": "https://openlibrary.org/works/OL18630543W",
+      "ano": 2011,
+      "editoras_catalogo": [
+        "Prentice Hall",
+        "Pearson",
+        "Pearson Higher Education & Professional Group"
+      ],
+      "confirmacao_editora_pendente": true,
+      "revisao_editorial": false,
+      "consulta": "consumer behavior"
+    },
+    {
+      "id": "872d02b23c70596a8e06",
+      "ambiente": "business",
+      "tipo": "livro",
+      "status": "candidato",
+      "titulo": "Kotler : Marketing Management_p4",
+      "autores": "Phil T. Kotler, Mairead Brady, Malcolm Goodman, Torben Hansen",
+      "fonte": "editora-pearson",
+      "url": "https://openlibrary.org/works/OL21639093W",
+      "ano": 2019,
+      "editoras_catalogo": [
+        "Pearson Education, Limited"
+      ],
+      "confirmacao_editora_pendente": true,
+      "revisao_editorial": false,
+      "consulta": "marketing management"
+    },
+    {
+      "id": "dfdb146b2d4afd4908e4",
+      "ambiente": "business",
+      "tipo": "livro",
+      "status": "candidato",
+      "titulo": "A framework for marketing management",
+      "autores": "Philip Kotler, Kevin Lane Keller",
+      "fonte": "editora-pearson",
+      "url": "https://openlibrary.org/works/OL1807514W",
+      "ano": 2001,
+      "editoras_catalogo": [
+        "Pearson Prentice Hall",
+        "Prentice Hall"
+      ],
+      "confirmacao_editora_pendente": true,
+      "revisao_editorial": false,
+      "consulta": "marketing management"
+    }
+  ]
+}

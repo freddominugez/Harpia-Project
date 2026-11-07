@@ -1,10 +1,10 @@
 ---
 titulo: "Marketing e criação de valor"
-resumo: "Comece pelo problema do cliente e pela proposta de valor."
+resumo: "Como transformar um problema do cliente em uma proposta de valor que possa ser investigada? A partir de uma oficina hipotética, o guia relaciona benefícios, sacrifícios, alternativas e capacidade de entrega. Propõe organizar evidências e restrições antes de prometer um serviço, distinguindo compreensão da oferta, relevância para o comprador e demanda ainda não comprovada."
 numero: 1
 trilha: "fundamentos"
 status: "publicado"
-atualizado: "2026-11-06"
+atualizado: "2026-11-07"
 fontes: ["https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/modern-marketing-what-it-is-what-it-isnt-and-how-to-do-it", "https://knowledge.wharton.upenn.edu/article/what-are-your-customers-really-worth/", "https://knowledge.wharton.upenn.edu/article/pricing-and-positioning-for-entrepreneurial-marketers/"]
 mecanismo: "O benefício depende da situação, da alternativa disponível e da capacidade de cumprir a promessa."
 proximo_teste: "Confrontar a proposta de horário reservado com relatos recentes e simular as etapas de atendimento antes de planejar um piloto."

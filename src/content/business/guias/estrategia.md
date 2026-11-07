@@ -1,10 +1,10 @@
 ---
 titulo: "Segmentação e posicionamento"
-resumo: "Escolhas de mercado, alternativas e critérios de diferenciação."
+resumo: "Quais clientes e situações de compra uma empresa pretende e consegue atender? Um serviço hipotético de entregas ajuda a investigar segmentação e posicionamento por necessidades, alternativas e exigências operacionais. O guia propõe agrupamentos provisórios, critérios de prioridade e condições para revisar a escolha, sem presumir que compreender uma mensagem comprove demanda ou viabilidade comercial."
 numero: 3
 trilha: "estrategia"
 status: "publicado"
-atualizado: "2026-11-06"
+atualizado: "2026-11-07"
 fontes: ["https://www.london.edu/think/segmenting-when-it-matters", "https://knowledge.wharton.upenn.edu/article/what-are-your-customers-really-worth/", "https://knowledge.wharton.upenn.edu/article/pricing-and-positioning-for-entrepreneurial-marketers/"]
 mecanismo: "Diferenças de necessidade orientam uma prioridade quando alteram a oferta e a capacidade exigida para entregá-la."
 proximo_teste: "Classificar episódios de entrega por restrições e confrontar uma proposta prioritária com compreensão do público e requisitos operacionais."

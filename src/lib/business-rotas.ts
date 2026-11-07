@@ -1,12 +1,14 @@
+import {temPagina} from './pautas';
 import type { Rota } from './rotas';
 import { getBusiness, SECOES_BUSINESS, businessPath, guiaPath, recursoPublicadoPath, seriePath, recursosDaSecao } from './business';
 import { markdownEditorial } from '../data/business-editorial';
 export async function businessRotas(abs: (path: string) => string): Promise<Rota[]> {
-  const { guias, acervo, fontes, canais,serie,origens,aprendizado,analises,investigacao } = await getBusiness();
+  const { guias, acervo, fontes, canais,serie,origens,aprendizado,analises,investigacao,pautas } = await getBusiness();
   const atualizado = [...guias.map(g => g.data.atualizado), ...acervo.map(a => a.data.revisado_em), ...fontes.map(f => f.data.verificado_em)].sort().at(-1) ?? '2026-11-06';
   const guideList = guias.map(g => `- [${g.data.titulo}](${abs(guiaPath(g.id))}): ${g.data.resumo}`).join('\n');
   const resourceList = (items = acervo) => items.map(a => `- [${a.data.titulo}](${abs(recursoPublicadoPath(a.id,a.data.tipo))}): ${a.data.resumo}`).join('\n');
   return [
+    ...pautas.filter(p=>temPagina(p.data.status)).map(p=>({path:businessPath(`forum/${p.id}`),titulo:p.data.titulo,descricao:(p.body??'').replace(/\s+/g,' ').slice(0,190),secao:'Harpya Business',atualizado:p.data.proposta_em,pai:'/business/forum/',markdown:()=>p.body??''})),
     ...SECOES_BUSINESS.filter(s=>s.slug!=='biblioteca/livros').map(page => ({
       path: businessPath(page.slug), titulo: page.titulo, descricao: page.descricao, secao: 'Harpya Business', atualizado,
       pai: page.slug ? '/business/' : undefined,

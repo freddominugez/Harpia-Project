@@ -6,16 +6,18 @@ import type { Video, Modulo } from './videos';
 import type { Noticia, Categoria } from './noticias';
 import type { Analise } from '../data/analises';
 import type { RadarItem, SourceStatus } from './radar';
+import {temPagina} from './pautas';
+import { businessRadar } from './business-radar';
 import type { ItemForum } from './pautas';
 
 export async function getBusinessPresentation() {
-  const { guias, acervo, fontes, serie, analises: artigosAnalise } = await getBusiness();
+  const { guias, acervo, fontes, serie, analises: artigosAnalise, pautas: pautasBusiness } = await getBusiness();
   const fonteNome = (id: string) => fontes.find(f => f.id === id)?.data.nome ?? id;
   const referencias = acervo.filter(a => ['artigo', 'relatorio'].includes(a.data.tipo));
   const artigos: ReferenciaEditorial[] = referencias.map(a => ({
     ano: a.data.ano_publicacao ?? (a.data.data ? Number(a.data.data.slice(0, 4)) : null), tipo: a.data.tipo === 'relatorio' ? 'RELATÓRIO' : 'ARTIGO', titulo: a.data.titulo, autores: a.data.autores,
     url: a.data.url, idioma: a.data.idioma, grupo: a.data.trilha,
-    selo: 'arte', rotulo: a.data.evidencia,
+    selo: 'arte', rotulo: a.data.evidencia, resumo: a.data.resumo,
   }));
   const livros: Livro[] = acervo.filter(a => a.data.tipo === 'livro').map((a,i) => ({
     titulo: a.data.titulo, autores: a.data.autores, nota: a.data.limites,
@@ -44,25 +46,22 @@ export async function getBusinessPresentation() {
   }))];
   const radarUrls = new Set<string>();
   const selecaoRadar = acervo.filter(a => ['artigo','relatorio','noticia'].includes(a.data.tipo) && a.data.data_precisa && a.data.data).filter(a => { const url = a.data.url.replace(/\/$/,''); if (radarUrls.has(url)) return false; radarUrls.add(url); return true; });
-  const radar: RadarItem[] = selecaoRadar.map(a => ({
+  const radarEditorial: RadarItem[] = selecaoRadar.map(a => ({
     id: a.id, source_id: a.data.fonte, company: fonteNome(a.data.fonte), title: a.data.titulo,
     summary: a.data.resumo, url: a.data.url, published_at: a.data.data,
     verified_at: a.data.revisado_em, impact_score: 0, topics: [a.data.trilha],
   }));
-  const fontesRadar: SourceStatus[] = fontes.filter(f => selecaoRadar.some(a => a.data.fonte === f.id)).map(f => ({
+  const fontesEditoriais: SourceStatus[] = fontes.filter(f => selecaoRadar.some(a => a.data.fonte === f.id)).map(f => ({
     id: f.id, nome: f.data.nome, site: f.data.url, canal: f.data.feed,
-    status: 'ok', item_count: selecaoRadar.filter(a => a.data.fonte === f.id).length, checked_at: f.data.verificado_em,
+    status: 'editorial', item_count: selecaoRadar.filter(a => a.data.fonte === f.id).length, checked_at: f.data.verificado_em,
   }));
-  const pautaTitulos = [
-    ['Como formular uma proposta de valor verificável?', 'Fundamentos'],
-    ['Quando entrevistas ajudam e quando precisamos de uma amostra?', 'Pesquisa e consumidor'],
-    ['Como separar crescimento observado de efeito incremental?', 'Mensuração'],
-    ['Que evidências sustentam uma decisão de posicionamento?', 'Estratégia'],
-    ['Como avaliar os limites de um caso empresarial?', 'Administração'],
-  ];
-  const pautas: ItemForum[] = pautaTitulos.map(([titulo, categoria]) => ({ titulo, categoria, iniciais: 'HB', href: '/business/forum/', criada: false, data: '' }));
+  const live=businessRadar(fontes);
+  const radarVistos=new Set<string>();
+  const radar=[...live.items,...radarEditorial].filter(item=>{const url=item.url.replace(/\/$/,'');if(radarVistos.has(url))return false;radarVistos.add(url);return true;}).sort((a,b)=>b.published_at.localeCompare(a.published_at));
+  const fontesRadar=[...live.sources,...fontesEditoriais.filter(f=>!live.sources.some(s=>s.id===f.id))];
+  const pautas:ItemForum[]=pautasBusiness.filter(p=>p.data.status!=='descartada'&&!(p.data.status==='proposta'&&p.data.origem==='curadoria-diaria')).map(p=>({titulo:p.data.titulo,categoria:p.data.categoria,iniciais:'HB',href:temPagina(p.data.status)?`/business/forum/${p.id}/`:p.data.discussao_url||'/business/forum/',criada:temPagina(p.data.status)||p.data.status==='criada',data:p.data.proposta_em}));
   const fontesBiblioteca = [{ grupo: 'Marketing e administração', itens: fontes.filter(f => f.data.escopos.includes('artigos')).map(f => [f.data.nome, f.data.url, f.data.descricao] as [string,string,string]) }];
-  const destaque = radar[0] ?? null;
+  const destaque = radarEditorial[0] ?? null;
   return {
     guias, acervo, artigos, livros, videos, modulos, noticias, analises, analise: analises[0] ?? null, pautas,
     fontesBiblioteca, categoriasLivro: TRILHAS_BUSINESS.map(t => [t.id,t.titulo] as [string,string]),
@@ -73,9 +72,9 @@ export async function getBusinessPresentation() {
       { titulo: 'Literatura para Gestão', resumo: 'Referências em marketing, estratégia e administração.', icone: 'sigma', href: '/business/biblioteca/', meta: `${livros.length} livros`, metaIcone: 'book', nivel: 'Referências' },
     ],
     estudos: guias.slice(0,3).map((g,i) => ({ href: guiaPath(g.id), imagem: ['/img/article-geometry.webp','/img/article-forest.webp','/img/article-books.webp'][i], tags: [trilhaNome(g.data.trilha), 'Guia didático'], titulo: g.data.titulo, resumo: g.data.resumo, dataISO: g.data.atualizado })),
-    hero: { sufixo: 'ya Business', subtitulo: 'Marketing. Estratégia. Administração.', descricao: 'Um espaço dedicado ao estudo, à pesquisa e à aplicação prática de marketing e administração, com fontes acadêmicas, consultorias e publicações de referência.', estudos: '/business/estudos/', videos: '/business/videos/', citacao: '“Conhecimento a serviço de melhores decisões.”' },
+    hero: { sufixo: 'ya Business', subtitulo: 'Marketing. Estratégia. Administração.', descricao: 'Estude como organizações compreendem seus mercados, criam valor e tomam decisões. Reunimos guias de marketing, estratégia e administração, artigos e livros de referência e aulas de instituições reconhecidas. Comece por uma trilha, aprofunde uma pergunta e compare métodos, evidências e limites antes de aplicar uma ideia ao seu negócio.', estudos: '/business/estudos/', videos: '/business/videos/', citacao: '“Conhecimento a serviço de melhores decisões.”' },
     start: { serie: 'Marketing e administração: por onde começar', lead: 'Do problema do cliente à interpretação dos resultados. Uma sequência de estudo com referências.', artigos: serie.map(g => ({numero:g.data.numero,titulo:g.data.titulo,descricao:g.data.resumo,slug:g.id,href:seriePath(g.id)})) },
     impact: { item: destaque, titulo: destaque?.title ?? '', resumo: destaque?.summary ?? '', motivo: '', chamada: 'Leitura em destaque em Business', sigla: 'M', legenda: 'MERCADOS · PESQUISA · ADMINISTRAÇÃO', cta: 'Ler a publicação original', nota: destaque ? `${selecaoRadar.find(a => a.id === destaque.id)!.data.tipo === 'noticia' ? 'Síntese de publicação institucional' : 'Referência editorial'}. Consulte o método e os limites na fonte original.` : '' },
-    editorial: { noticias, analise: analises[0] ?? null, artigos, radar, destaque, fontes: fontesRadar, ultimoSucesso: null, prefixo: '/business', negocios: true },
+    editorial: { noticias, analise: analises[0] ?? null, artigos, radar, destaque, fontes: fontesRadar, ultimoSucesso: live.lastSuccess, automatico: true, prefixo: '/business', negocios: true },
   };
 }

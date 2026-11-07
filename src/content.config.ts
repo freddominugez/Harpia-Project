@@ -170,9 +170,7 @@ const linhaDoTempo = defineCollection({
 
 // Pautas para o fórum: propostas pela curadoria, aprovadas no painel, criadas no
 // GitHub Discussions pela automação .github/workflows/discussoes.yml.
-const pautas = defineCollection({
-  loader: md("pautas"),
-  schema: z.object({
+const pautaSchema = z.object({
     titulo: z.string().min(8),
     categoria: z.enum(["Caminhos", "Perguntas", "Resultados e reproduções", "Propostas novas"]),
     caminho: z.string().optional(),
@@ -181,8 +179,9 @@ const pautas = defineCollection({
     discussao_url: z.string().url().or(z.literal("")).default(""),
     proposta_em: dia,
     origem: z.enum(["manual", "curadoria-diaria"]).default("manual"),
-  }),
-});
+  });
+const pautas=defineCollection({loader:md("pautas"),schema:pautaSchema});
+const businessPautas=defineCollection({loader:md("business/pautas"),schema:pautaSchema});
 
 // NotícIAs: matérias curtas escritas pelo projeto a partir de fontes citadas.
 // A tarefa "Harpya · NotícIAs" (a cada dois dias) grava sempre como rascunho;
@@ -242,7 +241,7 @@ const businessAnalises=defineCollection({loader:md('business/analises'),schema:b
 const businessInvestigacoes=defineCollection({loader:data('business/investigacoes'),schema:businessInvestigacaoSchema});
 
 export const collections = {
-  businessFontes, businessGuias, businessAcervo, businessSerie, businessOrigens, businessAprendizado, businessAnalises,businessInvestigacoes,
+  businessPautas, businessFontes, businessGuias, businessAcervo, businessSerie, businessOrigens, businessAprendizado, businessAnalises,businessInvestigacoes,
   caminhos, analises, videos, modulos, artigos, livros, fontes, feeds, aprendizado,
   "linha-do-tempo": linhaDoTempo, pautas, "fontes-monitoradas": fontesMonitoradas, noticias, anuncios,
 };

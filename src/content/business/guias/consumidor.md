@@ -1,10 +1,10 @@
 ---
 titulo: "Pesquisa e comportamento do consumidor"
-resumo: "Aprenda a escolher o método pela decisão que precisa tomar."
+resumo: "O que impede a conclusão de uma compra: prazo, preço, falta de informação ou outra situação? Com uma loja hipotética, o guia mostra como combinar relatos recentes e registros de navegação, preservar contradições e escolher o método pela decisão. Diferencia investigação exploratória, frequência na população e efeito causal, sem tratar cliques ou intenções como compras."
 numero: 2
 trilha: "consumidor"
 status: "publicado"
-atualizado: "2026-11-06"
+atualizado: "2026-11-07"
 fontes: ["https://knowledge.insead.edu/marketing/when-brain-scans-beat-surveys-and-when-they-dont", "https://knowledge.insead.edu/marketing/what-happens-when-you-actually-listen-customers", "https://knowledge.wharton.upenn.edu/article/how-confidence-changes-consumer-loyalty/"]
 mecanismo: "Um mesmo evento de navegação pode acompanhar objetivos diferentes; relatos e registros precisam ser interpretados em conjunto."
 proximo_teste: "Revisar o rastreamento e contrastar episódios de conclusão e interrupção antes de avaliar uma apresentação alternativa da entrega."
