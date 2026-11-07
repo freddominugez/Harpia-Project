@@ -1,6 +1,6 @@
 {
   "ambiente": "business",
-  "atualizado_em": "2026-11-07T10:59:16.747799+00:00",
+  "atualizado_em": "2026-11-07T16:38:05.716485+00:00",
   "politica": "candidatos_sem_publicacao_automatica",
   "fontes": [
     {
@@ -9,7 +9,7 @@
       "status": "ok",
       "itens": 0,
       "mensagem": "",
-      "verificado_em": "2026-11-07T10:59:16.747799+00:00"
+      "verificado_em": "2026-11-07T16:38:05.716485+00:00"
     },
     {
       "id": "UC8DhN1cJi0QklBQot5hv_kg",
@@ -17,7 +17,7 @@
       "status": "ok",
       "itens": 0,
       "mensagem": "",
-      "verificado_em": "2026-11-07T10:59:16.747799+00:00"
+      "verificado_em": "2026-11-07T16:38:05.716485+00:00"
     },
     {
       "id": "UCWo4IA01TXzBeGJJKWHOG9g",
@@ -25,7 +25,7 @@
       "status": "ok",
       "itens": 3,
       "mensagem": "",
-      "verificado_em": "2026-11-07T10:59:16.747799+00:00"
+      "verificado_em": "2026-11-07T16:38:05.716485+00:00"
     },
     {
       "id": "UCk8n46m74K5XWfdeBzOXDfA",
@@ -33,7 +33,7 @@
       "status": "ok",
       "itens": 0,
       "mensagem": "",
-      "verificado_em": "2026-11-07T10:59:16.747799+00:00"
+      "verificado_em": "2026-11-07T16:38:05.716485+00:00"
     },
     {
       "id": "UC9aeQQ-NqjHS3nfiod2PMSA",
@@ -41,7 +41,7 @@
       "status": "ok",
       "itens": 1,
       "mensagem": "",
-      "verificado_em": "2026-11-07T10:59:16.747799+00:00"
+      "verificado_em": "2026-11-07T16:38:05.716485+00:00"
     },
     {
       "id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
@@ -49,7 +49,7 @@
       "status": "ok",
       "itens": 3,
       "mensagem": "",
-      "verificado_em": "2026-11-07T10:59:16.747799+00:00"
+      "verificado_em": "2026-11-07T16:38:05.716485+00:00"
     },
     {
       "id": "UC0wOrSaO_sBGGU9Jderpk7g",
@@ -57,7 +57,7 @@
       "status": "ok",
       "itens": 0,
       "mensagem": "",
-      "verificado_em": "2026-11-07T10:59:16.747799+00:00"
+      "verificado_em": "2026-11-07T16:38:05.716485+00:00"
     },
     {
       "id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
@@ -65,7 +65,7 @@
       "status": "ok",
       "itens": 1,
       "mensagem": "",
-      "verificado_em": "2026-11-07T10:59:16.747799+00:00"
+      "verificado_em": "2026-11-07T16:38:05.716485+00:00"
     }
   ],
   "itens": [

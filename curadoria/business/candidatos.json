@@ -1,6 +1,6 @@
 {
   "ambiente": "business",
-  "atualizado_em": "2026-11-07T10:59:14.653022+00:00",
+  "atualizado_em": "2026-11-07T16:38:03.060933+00:00",
   "politica": "candidatos_sem_publicacao_automatica",
   "fontes": [
     {
@@ -8,35 +8,35 @@
       "status": "ok",
       "itens": 4,
       "mensagem": "",
-      "verificado_em": "2026-11-07T10:59:14.653022+00:00"
+      "verificado_em": "2026-11-07T16:38:03.060933+00:00"
     },
     {
       "id": "fdc",
       "status": "ok",
       "itens": 4,
       "mensagem": "",
-      "verificado_em": "2026-11-07T10:59:14.653022+00:00"
+      "verificado_em": "2026-11-07T16:38:03.060933+00:00"
     },
     {
       "id": "insead",
       "status": "erro",
       "itens": 0,
       "mensagem": "HTTPError",
-      "verificado_em": "2026-11-07T10:59:14.653022+00:00"
+      "verificado_em": "2026-11-07T16:38:03.060933+00:00"
     },
     {
       "id": "mckinsey",
       "status": "ok",
       "itens": 6,
       "mensagem": "",
-      "verificado_em": "2026-11-07T10:59:14.653022+00:00"
+      "verificado_em": "2026-11-07T16:38:03.060933+00:00"
     },
     {
       "id": "wharton",
       "status": "ok",
       "itens": 5,
       "mensagem": "",
-      "verificado_em": "2026-11-07T10:59:14.653022+00:00"
+      "verificado_em": "2026-11-07T16:38:03.060933+00:00"
     }
   ],
   "itens": [
@@ -65,10 +65,10 @@
       "revisao_editorial": false
     },
     {
-      "id": "63aa33c16615844d1bd4",
+      "id": "363085b1d48fd4e07aa6",
       "ambiente": "business",
-      "titulo": "Critical infrastructure is under threat. Are organizations prepared?",
-      "url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/critical-infrastructure-is-under-threat-are-organizations-prepared",
+      "titulo": "Turning executive judgment into organizational intelligence: Leveraging AI in CEO leadership",
+      "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/turning-executive-judgment-into-organizational-intelligence-leveraging-ai-in-ceo-leadership",
       "fonte": "mckinsey",
       "data": "2026-11-02",
       "verificado_em": "2026-11-07",
@@ -77,10 +77,10 @@
       "revisao_editorial": false
     },
     {
-      "id": "363085b1d48fd4e07aa6",
+      "id": "63aa33c16615844d1bd4",
       "ambiente": "business",
-      "titulo": "Turning executive judgment into organizational intelligence: Leveraging AI in CEO leadership",
-      "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/turning-executive-judgment-into-organizational-intelligence-leveraging-ai-in-ceo-leadership",
+      "titulo": "Critical infrastructure is under threat. Are organizations prepared?",
+      "url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/critical-infrastructure-is-under-threat-are-organizations-prepared",
       "fonte": "mckinsey",
       "data": "2026-11-02",
       "verificado_em": "2026-11-07",
