@@ -1,0 +1,36 @@
+{
+  "titulo": "Moonshot cumpre o prazo e publica os pesos do Kimi K3.1 Pro, modelo aberto de 2,8 trilhões de parâmetros",
+  "resumo": "Os pesos saíram no Hugging Face em 4 de novembro. A licença própria exige contrato de quem vender o modelo como serviço acima de US$ 20 milhões por ano.",
+  "data": "2026-11-04",
+  "categoria": "abertos",
+  "icone": "codigo",
+  "corpo": [
+    "A Moonshot AI publicou em 4 de novembro, no Hugging Face, os pesos completos do Kimi K3.1 Pro, modelo que a empresa havia lançado em outubro só por API, com a promessa de abrir os pesos nesta data. O repositório moonshotai/Kimi-K3.1-Pro tem cerca de 1,56 terabyte, divididos em 96 arquivos.",
+    "Segundo o cartão do modelo, descrito pelo i10x e pela Startup Fortune, são 2,8 trilhões de parâmetros no total, com cerca de 104 bilhões ativos por token, numa arquitetura de mistura de especialistas. A janela de contexto chega a pouco mais de 1 milhão de tokens, e o modelo aceita imagens além de texto.",
+    "A licença é própria da Moonshot. Ela permite usar, modificar, ajustar e redistribuir, mas quem oferecer o modelo como serviço pago com receita acima de US$ 20 milhões em 12 meses precisa assinar um contrato à parte com a empresa. Produtos muito grandes também têm de exibir o nome do modelo.",
+    "Rodar o modelo em casa não é realista: a Startup Fortune estima algo como oito GPUs de data center para servi-lo. Os resultados de desempenho divulgados são da própria empresa e ainda não foram reproduzidos por terceiros; com os pesos abertos, isso agora pode ser feito."
+  ],
+  "harpia": "Mostra a distância entre pesos abertos e uso aberto: o arquivo está disponível a todos, mas o hardware e a licença decidem quem consegue usar de fato. É um bom caso para ensinar a ler uma licença de modelo.",
+  "fontes": [
+    {
+      "veiculo": "i10x",
+      "titulo": "Kimi K3.1 Pro Open Weights: Moonshot's 2.8T MoE Explained",
+      "url": "https://i10x.ai/news/moonshot-kimi-k3-1-pro-open-weights"
+    },
+    {
+      "veiculo": "Startup Fortune",
+      "titulo": "Moonshot AI Releases Full Weights For 2.8 Trillion Parameter Kimi K3.1 Pro",
+      "url": "https://startupfortune.com/moonshot-ai-releases-full-weights-for-28-trillion-parameter-kimi-k31-pro/"
+    },
+    {
+      "veiculo": "RuntimeWire",
+      "titulo": "Moonshot AI releases Kimi K3.1 Pro weights for its 2.8-trillion-parameter model",
+      "url": "https://runtimewire.com/article/moonshot-ai-kimi-k3-1-pro-weights"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-07",
+  "verificado_em": "2026-11-07",
+  "ordem": 999
+}

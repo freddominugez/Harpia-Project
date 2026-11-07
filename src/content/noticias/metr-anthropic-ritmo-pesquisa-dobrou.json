@@ -1,0 +1,37 @@
+{
+  "titulo": "METR avalia que a Anthropic passou a melhorar seus modelos cerca de duas vezes mais rápido, mas boa parte das provas foi tarjada",
+  "resumo": "Primeira avaliação do METR com acesso interno à Anthropic estima aceleração de 1,9 vez desde outubro de 2025 e atribui a maior parte dela ao uso de IA pelos próprios pesquisadores.",
+  "data": "2026-11-05",
+  "categoria": "pesquisa",
+  "icone": "lupa",
+  "corpo": [
+    "O METR, organização sem fins lucrativos que avalia modelos de IA, publicou em 5 de novembro uma avaliação sobre o ritmo de pesquisa da Anthropic. A conclusão é que a empresa provavelmente passou a melhorar seus modelos em tarefas bem definidas a cerca do dobro da velocidade anterior.",
+    "O número central vem de um índice interno de capacidades da Anthropic, inspirado no da Epoch AI. Desde outubro de 2025, o crescimento foi 1,9 vez mais rápido do que entre março de 2024 e outubro de 2025, com intervalo de confiança de 1,5 a 2,8 vezes. A análise inclui versões de modelos que não foram lançadas ao público.",
+    "Para o METR, o uso de IA pelos pesquisadores da empresa provavelmente explica a maior parte dessa aceleração, embora o próprio relatório fale em incerteza considerável. A organização descartou que o aumento venha de mais poder de computação no treino. A IA ainda não fazia contribuições autônomas relevantes às etapas centrais do treinamento.",
+    "O trabalho durou 11 semanas, de agosto a outubro, e faz parte do acordo de outubro em que a Anthropic deu a pesquisadores do METR acesso interno e abriu mão de vetar a publicação, mantendo o direito de tarjar alguns tipos de informação. Segundo a Unite.AI e a CryptoSlate, a Anthropic tarjou a maior parte das evidências que o METR considerou mais informativas, como estimativas por etapa de treino e previsões.",
+    "Isso limita a checagem externa: quem lê o relatório não consegue refazer o raciocínio que levou às conclusões mais fortes. A Anthropic justificou as tarjas como proteção de informação que poderia acelerar concorrentes."
+  ],
+  "harpia": "É um teste real da avaliação independente dentro de um laboratório: o relatório saiu, mas com as provas principais escondidas. Ajuda a discutir o que conta como verificação externa e o que ainda é confiança na palavra da empresa.",
+  "fontes": [
+    {
+      "veiculo": "Unite.AI",
+      "titulo": "METR Estimates Anthropic's Model Capability Growth Has Nearly Doubled",
+      "url": "https://unite.ai/metr-estimates-anthropics-model-capability-growth-has-nearly-doubled"
+    },
+    {
+      "veiculo": "CryptoSlate",
+      "titulo": "METR says Anthropic's model progress is roughly twice as fast, but key evidence remains redacted",
+      "url": "https://cryptoslate.com/metr-says-anthropics-model-progress-is-roughly-twice-as-fast-but-key-evidence-remains-redacted/"
+    },
+    {
+      "veiculo": "TechCrunch",
+      "titulo": "Anthropic is letting METR researchers look under the hood with employee-level access",
+      "url": "https://techcrunch.com/?p=3178367"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-07",
+  "verificado_em": "2026-11-07",
+  "ordem": 999
+}

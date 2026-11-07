@@ -1,0 +1,36 @@
+{
+  "titulo": "Google desliga por padrão a IA nas contas de alunos, mas escola que recusar a IA perde também a busca",
+  "resumo": "Gemini e busca ficam desativados para estudantes até a escola liberar. Quem quiser a busca sem IA não terá opção: ou aceita os recursos de IA, ou fica sem a busca.",
+  "data": "2026-11-03",
+  "categoria": "letramento",
+  "icone": "escola",
+  "corpo": [
+    "O Google anunciou em 3 de novembro que o Gemini, o Gemini Notebook, o Gemini no Classroom e a busca vão ficar desligados por padrão nas contas de alunos da educação básica. Cada ferramenta só será ativada se a administração da escola decidir. A mudança começa pelos Estados Unidos e depois chega a outros países, sem data definida para o Brasil.",
+    "O recuo vem depois de críticas a uma decisão de agosto, quando a empresa abriu o Gemini no Classroom a alunos de todas as idades. Redes como as de Nova York e Los Angeles já tinham anunciado restrições ao uso de IA nos aparelhos escolares, e dois senadores americanos cobraram explicações da empresa.",
+    "A condição que gerou polêmica: a escola não pode manter a busca tradicional e bloquear só os recursos de IA. Segundo o vice-presidente de educação do Google, Chris Phillips, citado pela TNW e pelo Dinheiro Vivo, a IA está integrada à busca, e quem recusar a IA terá de desligar a busca inteira. O prefeito de Nova York, Zohran Mamdani, acusou a empresa de usar seu poder para impor IA às escolas.",
+    "No mesmo anúncio, o Google ampliou o modo de aprendizagem guiada, que faz perguntas e explica passos em vez de dar a resposta pronta. Ele já está no Classroom e será testado na busca em algumas escolas americanas ainda em novembro."
+  ],
+  "harpia": "Mostra que a decisão sobre IA na escola nem sempre é pedagógica: às vezes vem embutida no produto. Redes brasileiras que usam o Google for Education vão enfrentar a mesma escolha, e o letramento passa por entender esse tipo de condição.",
+  "fontes": [
+    {
+      "veiculo": "The Next Web",
+      "titulo": "Google will switch off Gemini for school students unless schools opt in",
+      "url": "https://thenextweb.com/news/google-guided-learning-classroom-search-k12-ai-off-by-default"
+    },
+    {
+      "veiculo": "Dinheiro Vivo",
+      "titulo": "Google desativa IA Gemini por defeito para alunos após críticas de pais e escolas",
+      "url": "https://dinheirovivo.dn.pt/empresas/google-vai-desativar-por-defeito-as-suas-ferramentas-de-ia-para-alunos"
+    },
+    {
+      "veiculo": "Gizmodo Brasil",
+      "titulo": "Google vai retirar inteligência artificial das escolas, mas uma condição inesperada provoca polêmica",
+      "url": "https://gizmodo.com.br/google-vai-retirar-inteligencia-artificial-das-escolas-mas-uma-condicao-inesperada-provoca-polemica-74204"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-07",
+  "verificado_em": "2026-11-07",
+  "ordem": 999
+}

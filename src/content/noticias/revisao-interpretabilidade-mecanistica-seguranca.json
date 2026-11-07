@@ -1,0 +1,26 @@
+{
+  "titulo": "Revisão com Bengio e Biderman faz um balanço do que a interpretabilidade mecanística já entrega para a segurança da IA",
+  "resumo": "Artigo de 27 autores pergunta se entender o funcionamento interno dos modelos os torna mais seguros e propõe critérios para julgar essas afirmações.",
+  "data": "2026-11-05",
+  "categoria": "pesquisa",
+  "icone": "lupa",
+  "corpo": [
+    "Um grupo de 27 pesquisadores, entre eles Yoshua Bengio, Stella Biderman, Mor Geva e Sara Hooker, publicou em 5 de novembro no arXiv uma revisão sobre interpretabilidade mecanística, a área que estuda as representações e os cálculos internos das redes neurais.",
+    "A pergunta central do texto é se entender como um modelo funciona por dentro o torna mais seguro. Para isso, os autores comparam a evidência mecanística com as avaliações de comportamento, que só observam entradas e saídas, e discutem o que cada uma consegue mostrar.",
+    "O artigo percorre os conceitos básicos da área, como características internas, neurônios que respondem a várias coisas ao mesmo tempo e circuitos, e os métodos para encontrá-los. Também examina usos para segurança, como editar conhecimento, direcionar o comportamento e monitorar o modelo, e lista limitações e problemas em aberto.",
+    "Os autores propõem um quadro único para julgar afirmações de interpretabilidade e seis direções de pesquisa. Junto com o texto, liberaram notebooks de código que reproduzem resultados centrais dos métodos revisados. Por ser uma revisão, o trabalho organiza o que já existe e não traz experimento novo."
+  ],
+  "harpia": "É um mapa atualizado de uma das áreas que o Harpya acompanha, escrito por nomes centrais do campo, e os notebooks abertos permitem estudar os métodos na prática em vez de só ler sobre eles.",
+  "fontes": [
+    {
+      "veiculo": "arXiv",
+      "titulo": "Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety",
+      "url": "https://arxiv.org/abs/2611.08438"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-07",
+  "verificado_em": "2026-11-07",
+  "ordem": 999
+}
