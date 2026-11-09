@@ -4,5 +4,5 @@
   "resumo_pt": "A NVIDIA publicou receitas de implantação otimizadas para o Dynamo, voltadas a quatro modelos abertos coreanos e a inferência distribuída em múltiplas GPUs e nós. A empresa afirma ganho de até 2× em GPUs B200; esse resultado não foi validado de forma independente.",
   "por_que_importa": "As receitas reduzem o trabalho de engenharia para servir modelos abertos em escala e podem acelerar sua adoção em produção, embora desempenho e custo dependam da infraestrutura e do perfil de carga.",
   "source_url": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
-  "updated_at": "2026-11-09T09:39:49.000Z"
+  "updated_at": "2026-11-09T15:43:14.000Z"
 }
