@@ -1,27 +1,27 @@
 {
   "ambiente": "business",
-  "atualizado_em": "2026-11-07T10:59:18.078053+00:00",
+  "atualizado_em": "2026-11-09T22:16:01.873984+00:00",
   "politica": "descoberta_bibliografica_sem_publicacao_automatica",
   "fontes": [
     {
       "id": "marketing strategy",
       "status": "ok",
-      "verificado_em": "2026-11-07T10:59:18.078053+00:00"
+      "verificado_em": "2026-11-09T22:16:01.873984+00:00"
     },
     {
       "id": "consumer behavior",
       "status": "ok",
-      "verificado_em": "2026-11-07T10:59:18.078053+00:00"
+      "verificado_em": "2026-11-09T22:16:01.873984+00:00"
     },
     {
       "id": "brand management",
       "status": "ok",
-      "verificado_em": "2026-11-07T10:59:18.078053+00:00"
+      "verificado_em": "2026-11-09T22:16:01.873984+00:00"
     },
     {
       "id": "marketing management",
       "status": "ok",
-      "verificado_em": "2026-11-07T10:59:18.078053+00:00"
+      "verificado_em": "2026-11-09T22:16:01.873984+00:00"
     }
   ],
   "itens": [
