@@ -1,0 +1,37 @@
+{
+  "titulo": "União Europeia vai testar um certificado de letramento em IA para alunos de 15 anos a partir de 2027",
+  "resumo": "O piloto faz parte do pacote de educação e competências apresentado pela Comissão Europeia em 5 de novembro, num momento de queda nas habilidades básicas medidas pelo PISA.",
+  "data": "2026-11-05",
+  "categoria": "letramento",
+  "icone": "escola",
+  "corpo": [
+    "A Comissão Europeia apresentou em 5 de novembro um pacote de educação e competências com quatro prioridades: recuperar as habilidades básicas, usar ferramentas digitais e de IA no ensino, fortalecer a profissão docente e melhorar a educação profissional. Dentro dele está a proposta de um certificado de letramento em IA para estudantes.",
+    "Segundo o Brussels Times, a Comissão vai definir resultados de aprendizagem adequados a cada idade e orientações de avaliação para o letramento em IA, e pretende testar o certificado a partir do ano letivo 2027/28. A Euronews informa que o público são alunos de 15 anos.",
+    "A vice-presidente da Comissão, Roxana Minzatu, disse à Euronews que o certificado vai ajudar os jovens a entender como a IA funciona, o que inclui conferir as respostas dos sistemas, perceber manipulação e saber a hora de parar de usar. A forma do certificado e o caráter obrigatório ou voluntário ainda não foram detalhados.",
+    "O contexto é o resultado do PISA 2025 na União Europeia: 33,9% dos alunos de 15 anos ficaram abaixo do nível básico em matemática e 31,3% em leitura, de acordo com o Brussels Times. O pacote também prevê alianças entre escolas de países diferentes e recomendações para tornar a carreira docente mais atraente, incluindo formação para usar IA.",
+    "A educação é competência dos Estados membros, e o bloco não pode impor currículos. Por isso a Comissão pediu ao Conselho que examine e adote as propostas, e marcou para 20 de novembro uma cúpula europeia de educação e competências para iniciar a implementação com os países."
+  ],
+  "harpia": "É a primeira tentativa de um bloco de países de transformar letramento em IA em credencial escolar avaliada. Vale acompanhar quais competências entram no certificado e como serão medidas, porque isso vai influenciar currículos fora da Europa também.",
+  "fontes": [
+    {
+      "veiculo": "Comissão Europeia",
+      "titulo": "Shaping Europe's future through education and training",
+      "url": "https://commission.europa.eu/news-and-media/news/shaping-europes-future-through-education-and-training-2026-11-05_da"
+    },
+    {
+      "veiculo": "The Brussels Times",
+      "titulo": "EU unveils sweeping reforms as student skills and teacher numbers decline",
+      "url": "https://www.brusselstimes.com/2393422/eu-unveils-sweeping-reforms-as-student-skills-and-teacher-numbers-decline"
+    },
+    {
+      "veiculo": "Euronews",
+      "titulo": "EU plans to deliver 'AI literacy' certificates to students",
+      "url": "https://euronews.com/2026/11/05/eu-plans-to-deliver-ai-literacy-certificates-to-students"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-09",
+  "verificado_em": "2026-11-09",
+  "ordem": 999
+}

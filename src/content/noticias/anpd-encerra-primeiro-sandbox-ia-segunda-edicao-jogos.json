@@ -1,0 +1,37 @@
+{
+  "titulo": "ANPD encerra o primeiro sandbox de IA e escolhe jogos digitais para crianças e adolescentes como tema da segunda edição",
+  "resumo": "A autoridade publicou os últimos relatórios parciais do piloto que testou três sistemas de IA sob a LGPD. A nova edição seguirá o ECA Digital.",
+  "data": "2026-11-08",
+  "categoria": "brasil",
+  "icone": "balanca",
+  "corpo": [
+    "A Autoridade Nacional de Proteção de Dados (ANPD) publicou o quarto, o quinto e o sexto relatórios parciais de monitoramento do seu sandbox regulatório de inteligência artificial e proteção de dados, deu por concluída a primeira edição do piloto e anunciou uma segunda, segundo a CiberLATAM, que cita os comunicados da própria autoridade.",
+    "No sandbox, três empresas testaram suas tecnologias em ambiente controlado, nos setores financeiro, de mobilidade e de saúde, com acompanhamento técnico do CIAAM, da USP. O foco foi o artigo 20 da LGPD: como transparência e explicabilidade de decisões automatizadas aparecem de fato no software, nas interfaces, nos contratos e nas conversas com o usuário. A ANPD descreve o piloto como experimental e sem fins de fiscalização.",
+    "Os relatórios anteriores já mostravam resultados desiguais. No segundo ciclo, descrito pela PPC Land em outubro, a Synapse ficou com 45 de 100 pontos, abaixo do piso de 50, e só seguiu sob condições. A Prevvine caiu de 89, nota de autoavaliação, para 60 depois da revisão da USP, e o que a empresa chamava de anonimização foi reclassificado como pseudonimização, o que mantém as obrigações da LGPD.",
+    "A segunda edição vai tratar de jogos digitais para crianças e adolescentes, alinhada ao Estatuto Digital da Criança e do Adolescente e ao decreto que o regulamenta. A ANPD ainda não detalhou quais medidas serão testadas. A avaliação institucional final da primeira edição está prevista para dezembro.",
+    "O anúncio coincide com o balanço de seis anos da autoridade, apresentado em 5 de novembro, em que a IA aparece como um dos eixos propostos para a agenda regulatória de 2027 e 2028. Segundo a autoridade, o objetivo do piloto é dar base a futuras diretrizes sobre IA no Brasil."
+  ],
+  "harpia": "O sandbox mostra, com notas e relatórios públicos, a diferença entre declarar transparência e demonstrá-la. A mudança de foco para jogos usados por crianças leva a discussão sobre IA para perto da escola e das famílias.",
+  "fontes": [
+    {
+      "veiculo": "CiberLATAM",
+      "titulo": "ANPD cierra sandbox de IA y prepara nueva edición",
+      "url": "https://ciberlatam.com/noticias/anpd-cierra-sandbox-ia-prepara"
+    },
+    {
+      "veiculo": "Legismap",
+      "titulo": "ANPD publica balanço de seis anos de atuação e o apresenta em evento nesta quinta-feira (05)",
+      "url": "https://legismap.com.br/conteudos/artigos-e-noticias/anpd-publica-balanco-de-seis-anos-de-atuacao-e-o-apresenta-em-evento-nesta-quinta-feira-05"
+    },
+    {
+      "veiculo": "PPC Land",
+      "titulo": "Brazil's ANPD keeps Synapse in AI sandbox despite scoring 45 of 100",
+      "url": "https://ppc.land/brazils-anpd-keeps-synapse-in-ai-sandbox-despite-scoring-45-of-100/"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-09",
+  "verificado_em": "2026-11-09",
+  "ordem": 999
+}

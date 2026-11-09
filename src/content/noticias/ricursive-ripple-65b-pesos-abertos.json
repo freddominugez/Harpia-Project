@@ -1,0 +1,31 @@
+{
+  "titulo": "Ricursive abre os pesos do Ripple-65B, modelo denso de 65 bilhões de parâmetros com licença Apache 2.0",
+  "resumo": "A empresa de projeto de chips publicou o modelo no Hugging Face em 4 de novembro. Os números de desempenho e o custo de US$ 32 milhões são afirmações dela, sem verificação externa.",
+  "data": "2026-11-04",
+  "categoria": "abertos",
+  "icone": "codigo",
+  "corpo": [
+    "A Ricursive Intelligence, empresa de Palo Alto que desenvolve uma plataforma de IA para projetar chips, publicou em 4 de novembro os pesos do Ripple-65B Preview no Hugging Face. É um modelo denso, sem mistura de especialistas, com 65 bilhões de parâmetros, que a empresa diz ter treinado do zero como versão de uso geral do modelo que usa internamente.",
+    "Foram liberados três arquivos: o modelo ajustado para seguir instruções em BF16, uma versão quantizada em NVFP4 e o modelo base, só com pré-treino. O cartão do modelo indica a licença Apache 2.0 e um pré-treino com 12 trilhões de tokens. O blog BrainDetox aponta que a janela de contexto aparece como 1 milhão de tokens no anúncio e 2 milhões numa tabela do cartão, sem explicação.",
+    "A Ricursive afirma que o Ripple marca 80,5 no TerminalBench 2.1, à frente de modelos abertos bem maiores, e que todo o desenvolvimento custou US$ 32 milhões. Não há reprodução independente desses números, nem intervalos de confiança ou auditoria do custo. Nos demais testes listados pela própria empresa, como SWE-bench Verified e GPQA Diamond, o modelo fica atrás de concorrentes abertos.",
+    "Rodar em casa ainda exige bastante memória: só os pesos em BF16 somam cerca de 130 GB, segundo estimativa do BrainDetox, e a versão NVFP4 reduz esse volume. Os dados de treino não foram divulgados."
+  ],
+  "harpia": "Um modelo denso de porte médio e licença permissiva é mais fácil de estudar, ajustar e auditar do que os gigantes de trilhões de parâmetros. O caso também serve para treinar a leitura crítica de benchmarks divulgados pelo próprio fabricante.",
+  "fontes": [
+    {
+      "veiculo": "RuntimeWire",
+      "titulo": "Ricursive releases Ripple-65B, a 65B coding model it says beat 975B rivals",
+      "url": "https://runtimewire.com/article/ricursive-ripple-65b-preview-open-weight-coding-model"
+    },
+    {
+      "veiculo": "BrainDetox",
+      "titulo": "Ripple-65B Preview Release: Open Weights, Benchmark Caveats",
+      "url": "https://braindetox.kr/en/posts/ripple_65b_preview_open_weights.html"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-09",
+  "verificado_em": "2026-11-09",
+  "ordem": 999
+}
