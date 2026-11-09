@@ -1,34 +1,34 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-09T15:43:14.000Z",
+  "checked_at": "2026-11-09T21:42:09.897Z",
   "last_successful_at": "2026-11-08T09:38:37.881Z",
   "publication_policy": "official_sources_automatic",
-  "featured_id": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
+  "featured_id": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
   "sources": [
     {
       "id": "openai",
       "nome": "OpenAI",
       "site": "https://openai.com/news/",
       "canal": "https://openai.com/news/rss.xml",
-      "checked_at": "2026-11-09T15:43:14.000Z",
+      "checked_at": "2026-11-09T21:42:09.897Z",
       "status": "ok",
-      "item_count": 121
+      "item_count": 122
     },
     {
       "id": "anthropic",
       "nome": "Anthropic",
       "site": "https://www.anthropic.com/news",
       "canal": "https://www.anthropic.com/news",
-      "checked_at": "2026-11-09T15:43:14.000Z",
+      "checked_at": "2026-11-09T21:42:09.897Z",
       "status": "ok",
-      "item_count": 24
+      "item_count": 25
     },
     {
       "id": "google",
       "nome": "Google DeepMind",
       "site": "https://deepmind.google/blog/",
       "canal": "https://deepmind.google/blog/rss.xml",
-      "checked_at": "2026-11-09T15:43:14.000Z",
+      "checked_at": "2026-11-09T21:42:09.897Z",
       "status": "ok",
       "item_count": 16
     },
@@ -37,7 +37,7 @@
       "nome": "Mistral AI",
       "site": "https://mistral.ai/news/",
       "canal": "https://mistral.ai/news/rss",
-      "checked_at": "2026-11-09T15:43:14.000Z",
+      "checked_at": "2026-11-09T21:42:09.897Z",
       "status": "ok",
       "item_count": 7
     },
@@ -46,7 +46,7 @@
       "nome": "Meta AI",
       "site": "https://ai.meta.com/blog/",
       "canal": "https://about.fb.com/news/feed/",
-      "checked_at": "2026-11-09T15:43:14.000Z",
+      "checked_at": "2026-11-09T21:42:09.897Z",
       "status": "ok",
       "item_count": 7
     },
@@ -55,7 +55,7 @@
       "nome": "NVIDIA",
       "site": "https://blogs.nvidia.com/",
       "canal": "https://blogs.nvidia.com/blog/category/deep-learning/feed/",
-      "checked_at": "2026-11-09T15:43:14.000Z",
+      "checked_at": "2026-11-09T21:42:09.897Z",
       "status": "ok",
       "item_count": 10
     },
@@ -64,7 +64,7 @@
       "nome": "xAI / Grok",
       "site": "https://x.ai/news",
       "canal": "https://x.ai/news",
-      "checked_at": "2026-11-09T15:43:14.000Z",
+      "checked_at": "2026-11-09T21:42:09.897Z",
       "status": "ok",
       "item_count": 6
     },
@@ -73,7 +73,7 @@
       "nome": "DeepSeek",
       "site": "https://api-docs.deepseek.com/updates/",
       "canal": "https://api-docs.deepseek.com/updates/",
-      "checked_at": "2026-11-09T15:43:14.000Z",
+      "checked_at": "2026-11-09T21:42:09.897Z",
       "status": "ok",
       "item_count": 1
     },
@@ -82,7 +82,7 @@
       "nome": "Qwen / Alibaba",
       "site": "https://qwen.ai/blog",
       "canal": "https://qwenlm.github.io/blog/index.xml",
-      "checked_at": "2026-11-09T15:43:14.000Z",
+      "checked_at": "2026-11-09T21:42:09.897Z",
       "status": "error",
       "item_count": 0
     },
@@ -91,12 +91,75 @@
       "nome": "Moonshot / Kimi",
       "site": "https://www.kimi.com/en/blog/",
       "canal": "https://www.kimi.com/en/blog/",
-      "checked_at": "2026-11-09T15:43:14.000Z",
+      "checked_at": "2026-11-09T21:42:09.897Z",
       "status": "ok",
       "item_count": 1
     }
   ],
   "items": [
+    {
+      "id": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "source_id": "anthropic",
+      "company": "Anthropic",
+      "title": "Claude Fable 5.2 and Mythos 5.2",
+      "summary": "Anthropic released Fable 5.2 and Mythos 5.2 for advanced technical work. The company reports coding, reasoning and vision gains, faster output and lower prices; claims and benchmarks are company-reported.",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "published_at": "2026-11-09T00:00:00+00:00",
+      "verified_at": "2026-11-09T21:42:09.897Z",
+      "impact_score": 80,
+      "topics": [
+        "Modelos",
+        "Segurança",
+        "APIs e ferramentas"
+      ]
+    },
+    {
+      "id": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
+      "source_id": "nvidia",
+      "company": "NVIDIA",
+      "title": "Practice Makes Precise: At CoRL, NVIDIA and Partners Reveal How Robots Rehearse Delicate Work in Simulation",
+      "summary": "NVIDIA introduced the open GR00T 2 world action model, Isaac Lab 3.0 and open robotics benchmarks at CoRL. Performance, training and adoption results are NVIDIA- and partner-reported.",
+      "url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
+      "published_at": "2026-11-09T00:00:00+00:00",
+      "verified_at": "2026-11-09T21:42:09.897Z",
+      "impact_score": 70,
+      "topics": [
+        "Modelos",
+        "Pesquisa",
+        "Código aberto",
+        "APIs e ferramentas"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/chatgpt-enterprise-aws-marketplace/",
+      "source_id": "openai",
+      "company": "OpenAI",
+      "title": "ChatGPT Enterprise now available in AWS Marketplace",
+      "summary": "OpenAI made ChatGPT Enterprise available through AWS Marketplace, enabling eligible AWS customers to purchase and manage it through existing procurement and billing relationships. Availability claims are company-reported.",
+      "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace/",
+      "published_at": "2026-11-09T00:00:00+00:00",
+      "verified_at": "2026-11-09T21:42:09.897Z",
+      "impact_score": 45,
+      "topics": [
+        "Disponibilidade",
+        "APIs e ferramentas"
+      ]
+    },
+    {
+      "id": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/",
+      "source_id": "nvidia",
+      "company": "NVIDIA",
+      "title": "NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup Partnership Forum",
+      "summary": "NVIDIA announced an investment in Point2 and planned investments in Motif Technologies, RLWRLD and Upstage, spanning AI infrastructure, open-weight models and robotics. Plans are company-reported.",
+      "url": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/",
+      "published_at": "2026-11-09T00:00:00+00:00",
+      "verified_at": "2026-11-09T21:42:09.897Z",
+      "impact_score": 30,
+      "topics": [
+        "Modelos",
+        "Pesquisa"
+      ]
+    },
     {
       "id": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
       "source_id": "nvidia",
@@ -500,20 +563,6 @@
       ]
     },
     {
-      "id": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai/",
-      "source_id": "openai",
-      "company": "OpenAI",
-      "title": "Preparing our next security sprint to harden OpenAI",
-      "summary": "OpenAI announced an internal security sprint with Cathedral researchers using its models to test defenses and prepare reviewed fixes. Outcomes and prior-sprint claims are OpenAI’s.",
-      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai/",
-      "published_at": "2026-11-02T00:00:00+00:00",
-      "verified_at": "2026-11-03T09:42:05.574Z",
-      "impact_score": 40,
-      "topics": [
-        "Segurança"
-      ]
-    },
-    {
       "id": "https://x.ai/news/data-bot",
       "source_id": "xai",
       "company": "xAI / Grok",
@@ -523,20 +572,6 @@
       "published_at": "2026-11-02T00:00:00+00:00",
       "verified_at": "2026-11-02T21:34:14.914Z",
       "impact_score": 25,
-      "topics": [
-        "APIs e ferramentas"
-      ]
-    },
-    {
-      "id": "https://blogs.nvidia.com/blog/cities-physical-agentic-ai-applications/",
-      "source_id": "nvidia",
-      "company": "NVIDIA",
-      "title": "Cities Worldwide Build and Scale AI Services With NVIDIA Physical and Agentic AI",
-      "summary": "NVIDIA described partner deployments of physical and agentic AI for public services, infrastructure planning, mobility and digital twins. Deployment results are company-reported.",
-      "url": "https://blogs.nvidia.com/blog/cities-physical-agentic-ai-applications/",
-      "published_at": "2026-11-02T00:00:00+00:00",
-      "verified_at": "2026-11-03T09:42:05.574Z",
-      "impact_score": 22,
       "topics": [
         "APIs e ferramentas"
       ]
@@ -714,20 +749,6 @@
       ]
     },
     {
-      "id": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-      "source_id": "anthropic",
-      "company": "Anthropic",
-      "title": "Open call for guest investigators in the life sciences",
-      "summary": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects.",
-      "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-      "published_at": "2026-10-22T00:00:00+00:00",
-      "verified_at": "2026-10-31T19:09:03.826519+00:00",
-      "impact_score": 22,
-      "topics": [
-        "Pesquisa"
-      ]
-    },
-    {
       "id": "https://x.ai/news/partnernetworkannouncement",
       "source_id": "xai",
       "company": "xAI / Grok",
@@ -811,21 +832,6 @@
       "impact_score": 22,
       "topics": [
         "Pesquisa"
-      ]
-    },
-    {
-      "id": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
-      "source_id": "nvidia",
-      "company": "NVIDIA",
-      "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
-      "summary": "NVIDIA today released Nemotron 3.5 Super VL, an open 120-billion-parameter model that delivers the fastest task completion and highest accuracy for specialized always-on agents. Joining it are two new edge models: Nemotron 3.5 Bolt 74B-A9B…",
-      "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
-      "published_at": "2026-10-15T15:00:24+00:00",
-      "verified_at": "2026-10-31T19:09:03.826519+00:00",
-      "impact_score": 40,
-      "topics": [
-        "Modelos",
-        "APIs e ferramentas"
       ]
     },
     {

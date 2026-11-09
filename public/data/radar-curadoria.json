@@ -1,8 +1,8 @@
 {
-  "item_id": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
-  "titulo_pt": "NVIDIA lança receitas Dynamo para levar modelos abertos coreanos à produção",
-  "resumo_pt": "A NVIDIA publicou receitas de implantação otimizadas para o Dynamo, voltadas a quatro modelos abertos coreanos e a inferência distribuída em múltiplas GPUs e nós. A empresa afirma ganho de até 2× em GPUs B200; esse resultado não foi validado de forma independente.",
-  "por_que_importa": "As receitas reduzem o trabalho de engenharia para servir modelos abertos em escala e podem acelerar sua adoção em produção, embora desempenho e custo dependam da infraestrutura e do perfil de carga.",
-  "source_url": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
-  "updated_at": "2026-11-09T15:43:14.000Z"
+  "item_id": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+  "titulo_pt": "Anthropic lança Claude Fable 5.2 e Mythos 5.2 para trabalho técnico avançado",
+  "resumo_pt": "A Anthropic lançou Claude Fable 5.2 e Mythos 5.2, variantes do mesmo modelo voltadas a tarefas técnicas complexas. Fable traz salvaguardas para uso amplo; Mythos exige programas de verificação em áreas sensíveis. Ganhos de desempenho, velocidade e preço são afirmações da empresa, sem validação independente.",
+  "por_que_importa": "O lançamento amplia as opções para programação, ciência e segurança cibernética de alta complexidade, ao mesmo tempo que separa o acesso geral do acesso controlado para capacidades mais sensíveis.",
+  "source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+  "updated_at": "2026-11-09T21:42:09.897Z"
 }
