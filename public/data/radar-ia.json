@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-10T09:43:42.958Z",
+  "checked_at": "2026-11-10T15:41:43.778Z",
   "last_successful_at": "2026-11-08T09:38:37.881Z",
   "publication_policy": "official_sources_automatic",
   "featured_id": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
@@ -10,16 +10,16 @@
       "nome": "OpenAI",
       "site": "https://openai.com/news/",
       "canal": "https://openai.com/news/rss.xml",
-      "checked_at": "2026-11-10T09:43:42.958Z",
+      "checked_at": "2026-11-10T15:41:43.778Z",
       "status": "ok",
-      "item_count": 124
+      "item_count": 126
     },
     {
       "id": "anthropic",
       "nome": "Anthropic",
       "site": "https://www.anthropic.com/news",
       "canal": "https://www.anthropic.com/news",
-      "checked_at": "2026-11-10T09:43:42.958Z",
+      "checked_at": "2026-11-10T15:41:43.778Z",
       "status": "ok",
       "item_count": 25
     },
@@ -28,7 +28,7 @@
       "nome": "Google DeepMind",
       "site": "https://deepmind.google/blog/",
       "canal": "https://deepmind.google/blog/rss.xml",
-      "checked_at": "2026-11-10T09:43:42.958Z",
+      "checked_at": "2026-11-10T15:41:43.778Z",
       "status": "ok",
       "item_count": 16
     },
@@ -37,7 +37,7 @@
       "nome": "Mistral AI",
       "site": "https://mistral.ai/news/",
       "canal": "https://mistral.ai/news/rss",
-      "checked_at": "2026-11-10T09:43:42.958Z",
+      "checked_at": "2026-11-10T15:41:43.778Z",
       "status": "ok",
       "item_count": 7
     },
@@ -46,7 +46,7 @@
       "nome": "Meta AI",
       "site": "https://ai.meta.com/blog/",
       "canal": "https://about.fb.com/news/feed/",
-      "checked_at": "2026-11-10T09:43:42.958Z",
+      "checked_at": "2026-11-10T15:41:43.778Z",
       "status": "ok",
       "item_count": 7
     },
@@ -55,7 +55,7 @@
       "nome": "NVIDIA",
       "site": "https://blogs.nvidia.com/",
       "canal": "https://blogs.nvidia.com/blog/category/deep-learning/feed/",
-      "checked_at": "2026-11-10T09:43:42.958Z",
+      "checked_at": "2026-11-10T15:41:43.778Z",
       "status": "ok",
       "item_count": 10
     },
@@ -64,7 +64,7 @@
       "nome": "xAI / Grok",
       "site": "https://x.ai/news",
       "canal": "https://x.ai/news",
-      "checked_at": "2026-11-10T09:43:42.958Z",
+      "checked_at": "2026-11-10T15:41:43.778Z",
       "status": "ok",
       "item_count": 6
     },
@@ -73,7 +73,7 @@
       "nome": "DeepSeek",
       "site": "https://api-docs.deepseek.com/updates/",
       "canal": "https://api-docs.deepseek.com/updates/",
-      "checked_at": "2026-11-10T09:43:42.958Z",
+      "checked_at": "2026-11-10T15:41:43.778Z",
       "status": "ok",
       "item_count": 1
     },
@@ -82,7 +82,7 @@
       "nome": "Qwen / Alibaba",
       "site": "https://qwen.ai/blog",
       "canal": "https://qwenlm.github.io/blog/index.xml",
-      "checked_at": "2026-11-10T09:43:42.958Z",
+      "checked_at": "2026-11-10T15:41:43.778Z",
       "status": "error",
       "item_count": 0
     },
@@ -91,12 +91,26 @@
       "nome": "Moonshot / Kimi",
       "site": "https://www.kimi.com/en/blog/",
       "canal": "https://www.kimi.com/en/blog/",
-      "checked_at": "2026-11-10T09:43:42.958Z",
+      "checked_at": "2026-11-10T15:41:43.778Z",
       "status": "ok",
       "item_count": 1
     }
   ],
   "items": [
+    {
+      "id": "https://openai.com/index/ai-effect-on-freelance-work/",
+      "source_id": "openai",
+      "company": "OpenAI",
+      "title": "Work at the Frontier: AI’s effect on freelance work",
+      "summary": "OpenAI and Upwork analyzed freelance postings and ChatGPT activity, finding shifts in demand, broader task combinations and larger budgets for AI-related projects. Results are company- and partner-reported, not economy-wide causal evidence.",
+      "url": "https://openai.com/index/ai-effect-on-freelance-work/",
+      "published_at": "2026-11-10T00:00:00+00:00",
+      "verified_at": "2026-11-10T15:41:43.778Z",
+      "impact_score": 40,
+      "topics": [
+        "Pesquisa"
+      ]
+    },
     {
       "id": "https://openai.com/index/closing-ai-guidance-gap-education/",
       "source_id": "openai",
@@ -113,6 +127,20 @@
       ]
     },
     {
+      "id": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life/",
+      "source_id": "openai",
+      "company": "OpenAI",
+      "title": "Helping caregivers use AI in everyday life",
+      "summary": "OpenAI and three caregiver organizations announced free ChatGPT workshops in five U.S. cities on practical, privacy-conscious use for caregiving tasks. Participation, usage and benefit claims are company- and partner-reported.",
+      "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life/",
+      "published_at": "2026-11-10T00:00:00+00:00",
+      "verified_at": "2026-11-10T15:41:43.778Z",
+      "impact_score": 20,
+      "topics": [
+        "Disponibilidade"
+      ]
+    },
+    {
       "id": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
       "source_id": "nvidia",
       "company": "NVIDIA",
@@ -120,7 +148,7 @@
       "summary": "NVIDIA introduced the open GR00T 2 world action model, Isaac Lab 3.0 and open robotics benchmarks at CoRL. Performance, training and adoption results are NVIDIA- and partner-reported.",
       "url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
       "published_at": "2026-11-09T00:00:00+00:00",
-      "verified_at": "2026-11-10T09:43:42.958Z",
+      "verified_at": "2026-11-10T15:41:43.778Z",
       "impact_score": 70,
       "topics": [
         "Modelos",
@@ -453,37 +481,6 @@
       "topics": [
         "Pesquisa",
         "Segurança",
-        "APIs e ferramentas"
-      ]
-    },
-    {
-      "id": "https://openai.com/index/daybreak-red-aws-govcloud/",
-      "source_id": "openai",
-      "company": "OpenAI",
-      "title": "Daybreak Red is now available in AWS GovCloud (US-East)",
-      "summary": "OpenAI made GPT-5.6 Cyber available to approved Daybreak Red customers in AWS GovCloud (US-East) for authorized vulnerability research, exploit validation and security testing, with practitioner review required.",
-      "url": "https://openai.com/index/daybreak-red-aws-govcloud/",
-      "published_at": "2026-11-04T00:00:00+00:00",
-      "verified_at": "2026-11-04T21:34:37.584Z",
-      "impact_score": 50,
-      "topics": [
-        "Modelos",
-        "Segurança",
-        "APIs e ferramentas"
-      ]
-    },
-    {
-      "id": "https://openai.com/index/introducing-images-2-6/",
-      "source_id": "openai",
-      "company": "OpenAI",
-      "title": "Introducing Images 2.6",
-      "summary": "OpenAI introduced Images 2.6 in ChatGPT, Codex and the API, with reported gains in instruction following, editing and visual reasoning. Quality and performance claims are company-reported.",
-      "url": "https://openai.com/index/introducing-images-2-6/",
-      "published_at": "2026-11-04T00:00:00+00:00",
-      "verified_at": "2026-11-05T03:38:52.951Z",
-      "impact_score": 45,
-      "topics": [
-        "Modelos",
         "APIs e ferramentas"
       ]
     },
