@@ -1,0 +1,16 @@
+{
+  "id": "1NWnSwCB4NM",
+  "titulo": "Your KV Cache Can Spot Attacks on Your AI Agents - Ari Azarafrooz, Intrinsec AI",
+  "canal": "AI Engineer",
+  "modulo": 7,
+  "nivel": "Avançado",
+  "resumo": "Mostra como usar páginas do cache KV como sinal de segurança, comparando com uma linha de base de tráfego normal para marcar entradas anômalas. Para quem opera agentes em vLLM ou SGLang.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=1NWnSwCB4NM",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-10",
+  "verificado_em": "2026-11-10"
+}
