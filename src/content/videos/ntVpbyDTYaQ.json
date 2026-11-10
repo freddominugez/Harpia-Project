@@ -1,0 +1,16 @@
+{
+  "id": "ntVpbyDTYaQ",
+  "titulo": "Your Self-Hosted LLM Needs to Say No - Harshul Jain & Parv Khatri, Audible & SAP",
+  "canal": "AI Engineer",
+  "modulo": 10,
+  "nivel": "Intermediário",
+  "resumo": "Defende controle de admissão na camada de inferência auto-hospedada, com base numa revisão de 55 artigos de sistemas e oito incidentes reais. Para quem opera LLMs servindo agentes.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=ntVpbyDTYaQ",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-10",
+  "verificado_em": "2026-11-10"
+}

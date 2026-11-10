@@ -1,0 +1,16 @@
+{
+  "id": "WJpeW9lCSUM",
+  "titulo": "NVIDIA's NemotronBolt 74B-A9B 2 Bit",
+  "canal": "Sam Witteveen",
+  "modulo": 10,
+  "nivel": "Avançado",
+  "resumo": "Analisa as técnicas que a NVIDIA usou para levar um modelo MoE de 74B a pesos de 2 bits, com referência ao relatório técnico e ao ParetoQ. Para quem estuda quantização extrema.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=WJpeW9lCSUM",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-10",
+  "verificado_em": "2026-11-10"
+}
