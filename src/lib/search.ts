@@ -36,7 +36,7 @@ function glossario(): SearchItem[] {
 export async function buildSearchIndex(): Promise<SearchItem[]> {
   const pages: SearchItem[] = NAV.map((n) => ({ title: n.rotulo, url: n.href === "/" ? "/tecnologia/" : n.href, section: "Página", description: n.descricao }));
   pages.push(
-    { title: "A ideia mais interessante que não serve para nada", url: "/estudos/a-ideia-mais-interessante/", section: "Estudos", description: "Espaço não euclidiano e geometria hiperbólica" },
+    { title: "Geometria hiperbólica: um caminho arquivado no projeto", url: "/estudos/a-ideia-mais-interessante/", section: "Estudos", description: "Espaço não euclidiano e geometria hiperbólica" },
     { title: "Arquivados", url: "/estudos/arquivados/", section: "Estudos", description: "Linhas avaliadas e arquivadas, com o motivo" },
     { title: "Glossário", url: "/biblioteca/glossario/", section: "Biblioteca", description: "Os termos do site em uma ou duas linhas" },
     { title: "Fontes de alta qualidade", url: "/biblioteca/fontes/", section: "Biblioteca", description: "Institutos, projetos, repositórios e laboratórios" },

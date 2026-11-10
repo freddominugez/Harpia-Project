@@ -4,7 +4,7 @@
   "canal": "Discover AI",
   "modulo": 8,
   "nivel": "Iniciante",
-  "resumo": "Explicação do AutoGPT e do BabyAGI, os primeiros agentes autônomos que geravam e priorizavam as próprias tarefas em loop para resolver objetivos complexos.",
+  "resumo": "Explicação do AutoGPT e do BabyAGI, projetos que popularizaram agentes baseados em LLMs em 2023 que geravam e priorizavam as próprias tarefas em loop para resolver objetivos complexos.",
   "catalogo": 68,
   "trilha": "llm",
   "ordem": 74,

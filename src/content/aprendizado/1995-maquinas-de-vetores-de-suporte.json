@@ -2,8 +2,8 @@
   "ano": 1995,
   "titulo": "Máquinas de vetores de suporte",
   "autores": "Corinna Cortes e Vladimir Vapnik",
-  "texto": "Cortes e Vapnik: separar com a maior margem possível, tolerando erros e usando núcleos.",
-  "eq": "\\min\\tfrac12\\|w\\|^2\\ \\text{s.a.}\\ y_i(w^\\top x_i+b)\\ge1",
+  "texto": "Cortes e Vapnik: margem máxima com folgas para dados não separáveis; margem rígida é o caso separável.",
+  "eq": "\\min_{w,b,\\xi\\ge0}\\tfrac12\\|w\\|^2+C\\sum_i\\xi_i\\quad\\text{s.a.}\\quad y_i(w^\\top x_i+b)\\ge1-\\xi_i",
   "contexto": "Nos Bell Labs, Vladimir Vapnik vinha desenvolvendo desde os anos 1960 uma teoria estatística do aprendizado, que relaciona o erro em dados novos à capacidade do modelo. Em 1992, com Bernhard Boser e Isabelle Guyon, mostrou como treinar classificadores de margem máxima usando núcleos. Em 1995, com Corinna Cortes, publicou a versão com margem flexível, que tolera exemplos do lado errado, com o nome *support-vector networks*.\n\nPor cerca de quinze anos, as SVMs foram um método de referência em classificação de texto, bioinformática e visão.",
   "mecanismo": "Entre todas as retas que separam duas classes, o perceptron para na primeira que encontra. A SVM escolhe a que fica mais longe dos pontos mais próximos de cada lado, a de maior margem. A intuição é que uma fronteira com folga erra menos em dados novos.\n\nSó os pontos que encostam na margem, os **vetores de suporte**, determinam a solução; os outros podem ser apagados sem mudar nada. Quando as classes não se separam por uma reta, entram dois recursos: variáveis de folga, que permitem alguns erros a um custo, e o truque do núcleo, que calcula produtos internos num espaço de dimensão muito maior sem nunca construir esse espaço.",
   "equacoes": [

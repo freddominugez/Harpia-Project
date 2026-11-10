@@ -21,14 +21,14 @@ export const eraDoAno = (ano: number) => ERAS.find((e) => ano >= e.de && ano <= 
 
 // Eclipses que entram na linha do tempo, além dos marcos de timeline.json.
 const ECLIPSES_LINHA: Omit<Evento, "era">[] = [
-  { ano: 1958, titulo: "Perceptron de Rosenblatt", texto: "A primeira máquina que aprende com os próprios erros, com ativação em degrau.", tipo: "marco" },
+  { ano: 1958, titulo: "Perceptron de Rosenblatt", texto: "Um marco dos classificadores que ajustam pesos pelos erros, com ativação em degrau.", tipo: "marco" },
   { ano: 1960, titulo: "ADALINE e a regra delta", texto: "Widrow e Hoff treinam pela saída linear e descem o gradiente do erro quadrático.", tipo: "eclipse", eq: "\\Delta w=\\eta\\,(y-w^{\\top}x)\\,x" },
   { ano: 1969, titulo: "Perceptrons, de Minsky e Papert", texto: "A prova de que uma camada só separa classes linearmente separáveis, e por isso não resolve o XOR.", tipo: "eclipse" },
   { ano: 1990, titulo: "Análise semântica latente", texto: "SVD na matriz termo-documento: o significado vira geometria em poucas dimensões.", tipo: "eclipse", eq: "A\\approx U_k\\Sigma_kV_k^{\\top}" },
   { ano: 1991, titulo: "Tese de Hochreiter: o gradiente que some", texto: "O diagnóstico do gradiente que desaparece em redes recorrentes, seis anos antes da LSTM.", tipo: "eclipse" },
   { ano: 2006, titulo: "Redes de crença profundas", texto: "Pré-treino camada a camada com RBMs reacende as redes profundas.", tipo: "eclipse" },
   { ano: 2014, titulo: "Seq2Seq e o vetor único", texto: "Sutskever, Vinyals e Le: a frase inteira comprimida num vetor de tamanho fixo.", tipo: "eclipse" },
-  { ano: 2015, titulo: "Subpalavras com BPE", texto: "Sennrich, Haddow e Birch levam o BPE para a tradução neural: nasce o token moderno.", tipo: "eclipse" },
+  { ano: 2015, titulo: "Subpalavras com BPE", texto: "Sennrich, Haddow e Birch adaptam BPE à tradução neural: preprint em 2015 e publicação em 2016.", tipo: "eclipse" },
   { ano: 2016, titulo: "FastText", texto: "Palavras como soma de n-gramas de caracteres: vetores até para palavras nunca vistas.", tipo: "eclipse" },
   { ano: 2018, titulo: "ELMo e ULMFiT", texto: "Vetores que dependem da frase e a receita de pré-treinar e depois ajustar.", tipo: "eclipse" },
   { ano: 2020, titulo: "ColBERT", texto: "Um vetor por token e interação tardia, em vez de um vetor por documento.", tipo: "eclipse" },
@@ -55,7 +55,7 @@ export const CAPITULOS: Capitulo[] = [
         ano: "1960", titulo: "ADALINE e a regra delta: o berço do gradiente", quem: "Bernard Widrow e Marcian Hoff",
         texto: [
           "Enquanto o perceptron usava uma ativação em degrau, que não tem derivada útil, Widrow e Hoff, em Stanford, treinaram o ADALINE pela saída linear, antes do limiar. A regra delta (ou LMS) minimiza o erro quadrático médio descendo o gradiente.",
-          "É a mesma ideia que a retropropagação estenderia a várias camadas em 1986.",
+          "A retropropagação aplica a regra da cadeia a várias camadas; o trabalho de 1986 popularizou essa abordagem, que tem antecedentes.",
         ],
         eq: "\\Delta w_i=\\eta\\,\\big(y-w^{\\top}x\\big)\\,x_i",
         eqLegenda: "Regra de Widrow e Hoff: o erro da saída linear corrige cada peso.",
@@ -77,7 +77,7 @@ export const CAPITULOS: Capitulo[] = [
   },
   {
     n: 2, id: "despertar-latente", periodo: "1980 a 1997", titulo: "O despertar latente e o gargalo das sequências", era: "redes",
-    abertura: "A hipótese distribucional de Firth (1957) dizia que uma palavra se conhece pela companhia. Faltava a prova de que esse significado podia ser extraído com álgebra, e o diagnóstico de por que as redes recorrentes esqueciam.",
+    abertura: "A hipótese distribucional de Firth (1957) dizia que uma palavra se conhece pela companhia. Essa hipótese diz respeito a representações textuais; não é uma explicação direta de todo embedding de imagens ou grafos. A álgebra de coocorrências e o diagnóstico das redes recorrentes acrescentariam outros mecanismos.",
     sois: ["1986 · Retropropagação", "1997 · LSTM"],
     eclipses: [
       {
@@ -92,11 +92,11 @@ export const CAPITULOS: Capitulo[] = [
       {
         ano: "1991", titulo: "A tese do gradiente que desaparece", quem: "Sepp Hochreiter, orientado por Jürgen Schmidhuber",
         texto: [
-          "Em sua tese de diplomação na TU Munique, Hochreiter mostrou por que redes recorrentes não aprendiam dependências longas: o erro propagado no tempo é multiplicado por uma cadeia de jacobianas, e encolhe (ou explode) exponencialmente.",
+          "Em sua tese de diplomação na TU Munique, Hochreiter analisou condições em que redes recorrentes têm dificuldade de aprender dependências longas: o erro propagado no tempo é multiplicado por uma cadeia de jacobianas, e encolhe (ou explode) exponencialmente.",
           "A LSTM de 1997 nasce desse diagnóstico, com o carrossel de erro constante. O portão de esquecimento só seria acrescentado em 1999, por Gers, Schmidhuber e Cummins.",
         ],
         eq: "\\Big\\|\\prod_{t=k+1}^{T}\\frac{\\partial h_t}{\\partial h_{t-1}}\\Big\\|\\ \\xrightarrow[T-k\\to\\infty]{}\\ 0",
-        eqLegenda: "Se cada fator tem norma menor que 1, o gradiente decai exponencialmente.",
+        eqLegenda: "Se todas as normas estão limitadas pela mesma constante ρ < 1, a norma do produto é no máximo ρ elevado ao número de fatores; fatores apenas menores que 1 não bastam.",
       },
     ],
     refs: [
@@ -168,7 +168,7 @@ export const CAPITULOS: Capitulo[] = [
       {
         ano: "2020", titulo: "ColBERT: além do vetor único", quem: "Omar Khattab e Matei Zaharia",
         texto: [
-          "Em vez de comprimir o documento num vetor, o ColBERT guarda um vetor por token e pontua com interação tardia: cada token da pergunta procura o token mais parecido do documento. A prova de 2025 sobre os limites do vetor único dá fundamento teórico a essa escolha.",
+          "Em vez de comprimir o documento num vetor, o ColBERT guarda um vetor por token e pontua com interação tardia: cada token da pergunta procura o token mais parecido do documento. O resultado de 2025, atualizado em 2026, estuda limitações sob margem positiva; não originou o ColBERT de 2020. Resultados posteriores distinguem expressividade exata sem margem de robustez e aprendizado.",
         ],
         eq: "S_{q,d}=\\textstyle\\sum_{i=1}^{|q|}\\ \\max_{1\\le j\\le |d|}\\ E_{q_i}\\cdot E_{d_j}",
         eqLegenda: "MaxSim: soma, sobre os tokens da pergunta, da melhor semelhança no documento.",
@@ -186,7 +186,7 @@ export const CAPITULOS: Capitulo[] = [
         ano: "2024", titulo: "A fronteira da quantização: RaBitQ e BitNet", quem: "Jianyang Gao e Cheng Long; Shuming Ma e coautores (Microsoft)",
         texto: [
           "O RaBitQ guarda um bit por dimensão e dá um estimador não viesado do produto interno, com erro que cai como O(1/√D).",
-          "O BitNet b1.58 restringe cada peso do LLM a três valores. A multiplicação de matriz vira soma e subtração, o que reduz memória e energia na inferência.",
+          "O BitNet b1.58 restringe os pesos das camadas BitLinear a três valores, com ativações INT8; embeddings permanecem em precisão completa. Os ganhos de memória e execução dependem dos componentes e núcleos usados.",
         ],
         eq: "w\\in\\{-1,\\,0,\\,1\\}\\qquad \\varepsilon=O\\!\\big(1/\\sqrt{D}\\big)",
         eqLegenda: "Pesos ternários (BitNet) e erro do RaBitQ.",
@@ -204,7 +204,7 @@ export const CAPITULOS: Capitulo[] = [
 
 const C = (arquivo: string) => `https://commons.wikimedia.org/wiki/File:${arquivo}`;
 export const PESSOAS: Pessoa[] = [
-  { nome: "Frank Rosenblatt", papel: "Criou o Perceptron, a primeira máquina que aprende com os erros.", ano: "1958", foto: "rosenblatt", credito: "Autor desconhecido", licenca: "CC BY-SA 4.0", fonte: C("Frank_Rosenblatt.jpg"), capitulo: "fundamentacao-oculta" },
+  { nome: "Frank Rosenblatt", papel: "Criou o Perceptron, um marco da aprendizagem de classificadores a partir dos erros.", ano: "1958", foto: "rosenblatt", credito: "Autor desconhecido", licenca: "CC BY-SA 4.0", fonte: C("Frank_Rosenblatt.jpg"), capitulo: "fundamentacao-oculta" },
   { nome: "Bernard Widrow", papel: "Com Marcian Hoff, criou o ADALINE e a regra delta, o berço do gradiente.", ano: "1960", foto: "widrow", credito: "Stanford Today, 1963", licenca: "Domínio público", fonte: C("Bernard_Widrow_with_ADALINE.jpg"), capitulo: "fundamentacao-oculta" },
   { nome: "Marvin Minsky", papel: "Coautor de Perceptrons, a prova dos limites da camada única.", ano: "1969", foto: "minsky", credito: "Sethwoodworth", licenca: "CC BY 3.0", fonte: C("Marvin_Minsky_at_OLPCb.jpg"), capitulo: "fundamentacao-oculta" },
   { nome: "Seymour Papert", papel: "Coautor de Perceptrons e do problema do XOR.", ano: "1969", foto: "papert", credito: "Matematicamente.it", licenca: "CC BY-SA 3.0", fonte: C("Seymour_Papert.jpg"), capitulo: "fundamentacao-oculta" },

@@ -2,7 +2,7 @@
   "ano": 1958,
   "titulo": "Perceptron de Rosenblatt",
   "autores": "Frank Rosenblatt",
-  "texto": "O primeiro classificador que aprende com os próprios erros.",
+  "texto": "Um marco dos classificadores que ajustam pesos a partir dos erros.",
   "eq": "w\\leftarrow w+\\eta\\,(y-\\hat y)\\,x",
   "contexto": "Frank Rosenblatt, psicólogo do Laboratório Aeronáutico de Cornell, descreveu o perceptron em 1958 na *Psychological Review* e o levou para o hardware no Mark I Perceptron, uma máquina que aprendia a reconhecer padrões vistos por uma grade de fotocélulas.\n\nA novidade não era o neurônio artificial, que Warren McCulloch e Walter Pitts já tinham modelado em 1943. Era a regra para ajustar os pesos a partir de exemplos com a resposta certa.",
   "mecanismo": "O perceptron soma as entradas ponderadas e compara o resultado com zero: acima, responde 1; abaixo, 0. Geometricamente, os pesos definem uma reta (em mais dimensões, um hiperplano) que divide o espaço em duas regiões.\n\nO treino mostra um exemplo por vez. Se a resposta está certa, nada muda. Se está errada, os pesos se movem na direção do exemplo, empurrando a reta para o lado certo dele. Diferente da regra de Hebb, aqui existe um professor, o rótulo correto $y$ de cada exemplo: é **aprendizado supervisionado**.",

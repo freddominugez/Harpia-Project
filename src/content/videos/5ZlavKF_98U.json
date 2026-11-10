@@ -4,7 +4,7 @@
   "canal": "Anyscale",
   "modulo": 10,
   "nivel": "Intermediário",
-  "resumo": "Palestra dos autores do vLLM sobre o PagedAttention, técnica inspirada na memória virtual paginada de sistemas operacionais que elimina o desperdício do KV cache e multiplica o throughput de LLMs em produção.",
+  "resumo": "Palestra dos autores do vLLM sobre o PagedAttention, técnica inspirada na memória virtual paginada de sistemas operacionais que reduz fortemente o desperdício do KV cache, sem eliminá-lo em todos os blocos, e pode aumentar o throughput de LLMs em produção.",
   "catalogo": 87,
   "trilha": "llm",
   "ordem": 93,

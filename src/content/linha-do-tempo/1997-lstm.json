@@ -1,12 +1,12 @@
 {
   "ano": 1997,
   "titulo": "LSTM",
-  "texto": "Hochreiter e Schmidhuber resolvem a memória de longo prazo em redes recorrentes.",
+  "texto": "Hochreiter e Schmidhuber introduzem mecanismos que mitigam o desaparecimento do gradiente e melhoram a memória em redes recorrentes.",
   "era": "Redes e sequências",
   "marco": false,
   "ordem": 8,
   "status": "publicado",
   "origem": "manual",
   "adicionado_em": "2026-10-12",
-  "verificado_em": "2026-10-12"
+  "verificado_em": "2026-10-13"
 }
