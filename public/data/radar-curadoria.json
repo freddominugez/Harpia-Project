@@ -1,8 +1,8 @@
 {
-  "item_id": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
-  "titulo_pt": "NVIDIA apresenta GR00T 2, Isaac Lab 3.0 e benchmarks abertos para robótica",
-  "resumo_pt": "A NVIDIA apresentou na CoRL o GR00T 2, modelo aberto de ação para robôs, o Isaac Lab 3.0 e novos benchmarks abertos. A empresa afirma avanços em manipulação, transferência de habilidades e simulação; os resultados são da NVIDIA e de parceiros, sem validação independente.",
-  "por_que_importa": "Modelos, simuladores e benchmarks abertos podem acelerar o treinamento e a avaliação de robôs para tarefas industriais delicadas, embora desempenho em laboratório não garanta implantação segura no mundo real.",
-  "source_url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
-  "updated_at": "2026-11-10T15:41:43.778Z"
+  "item_id": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+  "titulo_pt": "Google lança Gemini 4 Carbon para APIs, agentes, ciência e cibersegurança",
+  "resumo_pt": "O Google disponibilizou o Gemini 4 Carbon para desenvolvedores, empresas e assinantes selecionados, com foco em agentes de longa duração, programação, ciência e cibersegurança. A empresa apresenta resultados próprios e cita benchmarks externos; isso não equivale a uma avaliação independente completa.",
+  "por_que_importa": "A chegada de um novo modelo de fronteira às APIs pode alterar rapidamente a oferta para agentes, pesquisa e defesa cibernética, mas as alegações de desempenho e segurança ainda precisam de validação ampla.",
+  "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+  "updated_at": "2026-11-10T21:35:20.312Z"
 }

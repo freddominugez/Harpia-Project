@@ -1,43 +1,43 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-10T15:41:43.778Z",
+  "checked_at": "2026-11-10T21:35:20.312Z",
   "last_successful_at": "2026-11-08T09:38:37.881Z",
   "publication_policy": "official_sources_automatic",
-  "featured_id": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
+  "featured_id": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
   "sources": [
     {
       "id": "openai",
       "nome": "OpenAI",
       "site": "https://openai.com/news/",
       "canal": "https://openai.com/news/rss.xml",
-      "checked_at": "2026-11-10T15:41:43.778Z",
+      "checked_at": "2026-11-10T21:35:20.312Z",
       "status": "ok",
-      "item_count": 126
+      "item_count": 127
     },
     {
       "id": "anthropic",
       "nome": "Anthropic",
       "site": "https://www.anthropic.com/news",
       "canal": "https://www.anthropic.com/news",
-      "checked_at": "2026-11-10T15:41:43.778Z",
+      "checked_at": "2026-11-10T21:35:20.312Z",
       "status": "ok",
-      "item_count": 25
+      "item_count": 26
     },
     {
       "id": "google",
       "nome": "Google DeepMind",
       "site": "https://deepmind.google/blog/",
       "canal": "https://deepmind.google/blog/rss.xml",
-      "checked_at": "2026-11-10T15:41:43.778Z",
+      "checked_at": "2026-11-10T21:35:20.312Z",
       "status": "ok",
-      "item_count": 16
+      "item_count": 19
     },
     {
       "id": "mistral",
       "nome": "Mistral AI",
       "site": "https://mistral.ai/news/",
       "canal": "https://mistral.ai/news/rss",
-      "checked_at": "2026-11-10T15:41:43.778Z",
+      "checked_at": "2026-11-10T21:35:20.312Z",
       "status": "ok",
       "item_count": 7
     },
@@ -46,7 +46,7 @@
       "nome": "Meta AI",
       "site": "https://ai.meta.com/blog/",
       "canal": "https://about.fb.com/news/feed/",
-      "checked_at": "2026-11-10T15:41:43.778Z",
+      "checked_at": "2026-11-10T21:35:20.312Z",
       "status": "ok",
       "item_count": 7
     },
@@ -55,7 +55,7 @@
       "nome": "NVIDIA",
       "site": "https://blogs.nvidia.com/",
       "canal": "https://blogs.nvidia.com/blog/category/deep-learning/feed/",
-      "checked_at": "2026-11-10T15:41:43.778Z",
+      "checked_at": "2026-11-10T21:35:20.312Z",
       "status": "ok",
       "item_count": 10
     },
@@ -64,7 +64,7 @@
       "nome": "xAI / Grok",
       "site": "https://x.ai/news",
       "canal": "https://x.ai/news",
-      "checked_at": "2026-11-10T15:41:43.778Z",
+      "checked_at": "2026-11-10T21:35:20.312Z",
       "status": "ok",
       "item_count": 6
     },
@@ -73,7 +73,7 @@
       "nome": "DeepSeek",
       "site": "https://api-docs.deepseek.com/updates/",
       "canal": "https://api-docs.deepseek.com/updates/",
-      "checked_at": "2026-11-10T15:41:43.778Z",
+      "checked_at": "2026-11-10T21:35:20.312Z",
       "status": "ok",
       "item_count": 1
     },
@@ -82,7 +82,7 @@
       "nome": "Qwen / Alibaba",
       "site": "https://qwen.ai/blog",
       "canal": "https://qwenlm.github.io/blog/index.xml",
-      "checked_at": "2026-11-10T15:41:43.778Z",
+      "checked_at": "2026-11-10T21:35:20.312Z",
       "status": "error",
       "item_count": 0
     },
@@ -91,12 +91,76 @@
       "nome": "Moonshot / Kimi",
       "site": "https://www.kimi.com/en/blog/",
       "canal": "https://www.kimi.com/en/blog/",
-      "checked_at": "2026-11-10T15:41:43.778Z",
+      "checked_at": "2026-11-10T21:35:20.312Z",
       "status": "ok",
       "item_count": 1
     }
   ],
   "items": [
+    {
+      "id": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "source_id": "google",
+      "company": "Google DeepMind",
+      "title": "Gemini 4 Carbon is now available",
+      "summary": "Google made Gemini 4 Carbon available through paid API tiers, business products and select consumer services. Capability, safety and internal evaluation claims are Google-reported; cited external benchmarks remain third-party results.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "published_at": "2026-11-10T00:00:00+00:00",
+      "verified_at": "2026-11-10T21:35:20.312Z",
+      "impact_score": 80,
+      "topics": [
+        "Modelos",
+        "Segurança",
+        "Disponibilidade",
+        "APIs e ferramentas"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "source_id": "google",
+      "company": "Google DeepMind",
+      "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+      "summary": "Google DeepMind introduced AlphaProof Code, an agentic formal-verification framework used with human experts to prove security properties of Signal’s implementation. Results are company-reported; proof artifacts were released openly.",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "published_at": "2026-11-10T00:00:00+00:00",
+      "verified_at": "2026-11-10T21:35:20.312Z",
+      "impact_score": 75,
+      "topics": [
+        "Pesquisa",
+        "Segurança",
+        "Código aberto"
+      ]
+    },
+    {
+      "id": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "source_id": "google",
+      "company": "Google DeepMind",
+      "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+      "summary": "Google DeepMind introduced Gemini Robotics 2.5, a vision-language-action model intended to expand robot skills and speed learning for real-world tasks. Dexterity, reliability and safety improvements are company-reported.",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "published_at": "2026-11-10T00:00:00+00:00",
+      "verified_at": "2026-11-10T21:35:20.312Z",
+      "impact_score": 70,
+      "topics": [
+        "Modelos",
+        "Pesquisa",
+        "Robótica"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/introducing-businesses-chatgpt/",
+      "source_id": "openai",
+      "company": "OpenAI",
+      "title": "Introducing Businesses in ChatGPT",
+      "summary": "OpenAI launched Businesses in ChatGPT in beta, including Business Hub for verified profiles and insights plus Business Agents for eligible U.S. businesses. Availability, reach and engagement claims are company-reported.",
+      "url": "https://openai.com/index/introducing-businesses-chatgpt/",
+      "published_at": "2026-11-10T00:00:00+00:00",
+      "verified_at": "2026-11-10T21:35:20.312Z",
+      "impact_score": 60,
+      "topics": [
+        "Disponibilidade",
+        "APIs e ferramentas"
+      ]
+    },
     {
       "id": "https://openai.com/index/ai-effect-on-freelance-work/",
       "source_id": "openai",
@@ -138,6 +202,20 @@
       "impact_score": 20,
       "topics": [
         "Disponibilidade"
+      ]
+    },
+    {
+      "id": "https://www.anthropic.com/news/roadshow-launch",
+      "source_id": "anthropic",
+      "company": "Anthropic",
+      "title": "Anthropic launches roadshow for proposed initial public offering",
+      "summary": "Anthropic announced the roadshow for its proposed initial public offering, with an expected price range and a planned Nasdaq listing under ANT. The offering remains subject to the filed registration statement becoming effective.",
+      "url": "https://www.anthropic.com/news/roadshow-launch",
+      "published_at": "2026-11-10T00:00:00+00:00",
+      "verified_at": "2026-11-10T21:35:20.312Z",
+      "impact_score": 10,
+      "topics": [
+        "Atualização oficial"
       ]
     },
     {
@@ -469,22 +547,6 @@
       ]
     },
     {
-      "id": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
-      "source_id": "openai",
-      "company": "OpenAI",
-      "title": "A thousand fewer paths to root",
-      "summary": "OpenAI says an autonomous security pipeline found and validated 948 Linux privilege-escalation vulnerabilities and produced patches. The results and costs are company-reported, not independently validated.",
-      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
-      "published_at": "2026-11-04T00:00:00+00:00",
-      "verified_at": "2026-11-05T15:37:19.501Z",
-      "impact_score": 55,
-      "topics": [
-        "Pesquisa",
-        "Segurança",
-        "APIs e ferramentas"
-      ]
-    },
-    {
       "id": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
       "source_id": "anthropic",
       "company": "Anthropic",
@@ -731,20 +793,6 @@
       ]
     },
     {
-      "id": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-      "source_id": "anthropic",
-      "company": "Anthropic",
-      "title": "Open call for guest investigators in the life sciences",
-      "summary": "Today, we’re inviting members of the life sciences community to apply to work with us on special projects.",
-      "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
-      "published_at": "2026-10-22T00:00:00+00:00",
-      "verified_at": "2026-10-31T19:09:03.826519+00:00",
-      "impact_score": 22,
-      "topics": [
-        "Pesquisa"
-      ]
-    },
-    {
       "id": "https://x.ai/news/partnernetworkannouncement",
       "source_id": "xai",
       "company": "xAI / Grok",
@@ -899,48 +947,6 @@
       "topics": [
         "Modelos",
         "APIs e ferramentas"
-      ]
-    },
-    {
-      "id": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-      "source_id": "google",
-      "company": "Google DeepMind",
-      "title": "Developing Gemini 4 Argon responsibly and safely",
-      "summary": "",
-      "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-      "published_at": "2026-10-13T19:43:07+00:00",
-      "verified_at": "2026-10-31T19:09:03.826519+00:00",
-      "impact_score": 30,
-      "topics": [
-        "Modelos"
-      ]
-    },
-    {
-      "id": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
-      "source_id": "google",
-      "company": "Google DeepMind",
-      "title": "Gemini 4 Argon for Robotics",
-      "summary": "",
-      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
-      "published_at": "2026-10-13T16:01:58+00:00",
-      "verified_at": "2026-10-31T19:09:03.826519+00:00",
-      "impact_score": 30,
-      "topics": [
-        "Modelos"
-      ]
-    },
-    {
-      "id": "https://deepmind.google/blog/introducing-gemini-4-argon/",
-      "source_id": "google",
-      "company": "Google DeepMind",
-      "title": "Gemini 4 Argon: Built to solve your hardest problems",
-      "summary": "",
-      "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
-      "published_at": "2026-10-13T16:01:52+00:00",
-      "verified_at": "2026-10-31T19:09:03.826519+00:00",
-      "impact_score": 30,
-      "topics": [
-        "Modelos"
       ]
     },
     {
