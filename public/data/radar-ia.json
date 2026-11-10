@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-09T21:44:48.249Z",
+  "checked_at": "2026-11-10T03:40:13.730Z",
   "last_successful_at": "2026-11-08T09:38:37.881Z",
   "publication_policy": "official_sources_automatic",
   "featured_id": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
@@ -10,16 +10,16 @@
       "nome": "OpenAI",
       "site": "https://openai.com/news/",
       "canal": "https://openai.com/news/rss.xml",
-      "checked_at": "2026-11-09T21:44:48.249Z",
+      "checked_at": "2026-11-10T03:40:13.730Z",
       "status": "ok",
-      "item_count": 122
+      "item_count": 123
     },
     {
       "id": "anthropic",
       "nome": "Anthropic",
       "site": "https://www.anthropic.com/news",
       "canal": "https://www.anthropic.com/news",
-      "checked_at": "2026-11-09T21:44:48.249Z",
+      "checked_at": "2026-11-10T03:40:13.730Z",
       "status": "ok",
       "item_count": 25
     },
@@ -28,7 +28,7 @@
       "nome": "Google DeepMind",
       "site": "https://deepmind.google/blog/",
       "canal": "https://deepmind.google/blog/rss.xml",
-      "checked_at": "2026-11-09T21:44:48.249Z",
+      "checked_at": "2026-11-10T03:40:13.730Z",
       "status": "ok",
       "item_count": 16
     },
@@ -37,7 +37,7 @@
       "nome": "Mistral AI",
       "site": "https://mistral.ai/news/",
       "canal": "https://mistral.ai/news/rss",
-      "checked_at": "2026-11-09T21:44:48.249Z",
+      "checked_at": "2026-11-10T03:40:13.730Z",
       "status": "ok",
       "item_count": 7
     },
@@ -46,7 +46,7 @@
       "nome": "Meta AI",
       "site": "https://ai.meta.com/blog/",
       "canal": "https://about.fb.com/news/feed/",
-      "checked_at": "2026-11-09T21:44:48.249Z",
+      "checked_at": "2026-11-10T03:40:13.730Z",
       "status": "ok",
       "item_count": 7
     },
@@ -55,7 +55,7 @@
       "nome": "NVIDIA",
       "site": "https://blogs.nvidia.com/",
       "canal": "https://blogs.nvidia.com/blog/category/deep-learning/feed/",
-      "checked_at": "2026-11-09T21:44:48.249Z",
+      "checked_at": "2026-11-10T03:40:13.730Z",
       "status": "ok",
       "item_count": 10
     },
@@ -64,7 +64,7 @@
       "nome": "xAI / Grok",
       "site": "https://x.ai/news",
       "canal": "https://x.ai/news",
-      "checked_at": "2026-11-09T21:44:48.249Z",
+      "checked_at": "2026-11-10T03:40:13.730Z",
       "status": "ok",
       "item_count": 6
     },
@@ -73,7 +73,7 @@
       "nome": "DeepSeek",
       "site": "https://api-docs.deepseek.com/updates/",
       "canal": "https://api-docs.deepseek.com/updates/",
-      "checked_at": "2026-11-09T21:44:48.249Z",
+      "checked_at": "2026-11-10T03:40:13.730Z",
       "status": "ok",
       "item_count": 1
     },
@@ -82,7 +82,7 @@
       "nome": "Qwen / Alibaba",
       "site": "https://qwen.ai/blog",
       "canal": "https://qwenlm.github.io/blog/index.xml",
-      "checked_at": "2026-11-09T21:44:48.249Z",
+      "checked_at": "2026-11-10T03:40:13.730Z",
       "status": "error",
       "item_count": 0
     },
@@ -91,7 +91,7 @@
       "nome": "Moonshot / Kimi",
       "site": "https://www.kimi.com/en/blog/",
       "canal": "https://www.kimi.com/en/blog/",
-      "checked_at": "2026-11-09T21:44:48.249Z",
+      "checked_at": "2026-11-10T03:40:13.730Z",
       "status": "ok",
       "item_count": 1
     }
@@ -105,12 +105,28 @@
       "summary": "NVIDIA introduced the open GR00T 2 world action model, Isaac Lab 3.0 and open robotics benchmarks at CoRL. Performance, training and adoption results are NVIDIA- and partner-reported.",
       "url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
       "published_at": "2026-11-09T00:00:00+00:00",
-      "verified_at": "2026-11-09T21:44:48.249Z",
+      "verified_at": "2026-11-10T03:40:13.730Z",
       "impact_score": 70,
       "topics": [
         "Modelos",
         "Pesquisa",
         "Código aberto",
+        "APIs e ferramentas"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/control-room/",
+      "source_id": "openai",
+      "company": "OpenAI",
+      "title": "Control Room",
+      "summary": "OpenAI described Control Room, a fail-closed system that tracks research inference workloads and can stop model output when safety or security concerns arise. The 35-second halt time and reliability claims are company-reported.",
+      "url": "https://openai.com/index/control-room/",
+      "published_at": "2026-11-09T00:00:00+00:00",
+      "verified_at": "2026-11-10T03:40:13.730Z",
+      "impact_score": 65,
+      "topics": [
+        "Segurança",
+        "Pesquisa",
         "APIs e ferramentas"
       ]
     },
@@ -481,22 +497,6 @@
       "verified_at": "2026-11-04T15:41:13.508Z",
       "impact_score": 25,
       "topics": [
-        "APIs e ferramentas"
-      ]
-    },
-    {
-      "id": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
-      "source_id": "openai",
-      "company": "OpenAI",
-      "title": "Accelerating engineering for the physical world",
-      "summary": "OpenAI presented advances in applying its models to mechanical and electrical engineering, simulations and end-to-end hardware design. Capability and workflow results are company-reported.",
-      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
-      "published_at": "2026-11-03T00:00:00+00:00",
-      "verified_at": "2026-11-04T15:41:13.508Z",
-      "impact_score": 50,
-      "topics": [
-        "Pesquisa",
-        "Modelos",
         "APIs e ferramentas"
       ]
     },
