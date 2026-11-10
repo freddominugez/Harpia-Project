@@ -1,0 +1,19 @@
+{
+  "nome": "Valor Econômico",
+  "url": "https://valor.globo.com/",
+  "regiao": "Brasil",
+  "tipo": "jornalismo",
+  "descricao": "Empresas, gestão e negócios no Brasil.",
+  "idioma": "pt",
+  "hosts": [
+    "valor.globo.com"
+  ],
+  "feed": "",
+  "verificado_em": "2026-11-06",
+  "status": "aprovado",
+  "escopos": [
+    "artigos"
+  ],
+  "canais": [],
+  "restricao": "Somente jornalismo de mercado; excluir conteúdo patrocinado e não tratar como pesquisa científica."
+}

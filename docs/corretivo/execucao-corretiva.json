@@ -1,0 +1,495 @@
+{
+  "status": "publicado_com_pendencias_editoriais",
+  "data": "2026-11-06",
+  "branch": "codex/harpya-business-corretivo",
+  "referencia_original": "939e5f75d0bb7b0fc8028471a20c31b353204ba0",
+  "componentes_compartilhados_implementados": [
+    "EditorialHome",
+    "Hero",
+    "HomeEditorial",
+    "ImpactNews",
+    "StartCard",
+    "AnaliseCard",
+    "NoticiasCarrossel",
+    "TechnologyCards",
+    "LibraryCatalog",
+    "VideoCatalog",
+    "TextArticle",
+    "AnalysisCatalog",
+    "CommunityPage",
+    "NoticiasPagina",
+    "NewsCard",
+    "SourceCatalog",
+    "StudyArticle",
+    "StudyCatalog",
+    "StudyInvestigation",
+    "OriginsPage",
+    "LearningPage",
+    "BeginnerIndex",
+    "BeginnerNavigation",
+    "AnalysisArticle"
+  ],
+  "alteracoes_estruturais": [
+    "Menu Business derivado de NAV original",
+    "Remoção de tokens e overrides globais da versão azul",
+    "Mesmo hero e imagens editoriais originais; poses alternativas permanecem no portal",
+    "Fontes e créditos compilados dos registros publicados",
+    "Removidos BusinessPage, BusinessResourceCard e business.css divergentes.",
+    "Origens, Aprendizado, Estudos, Começando e Análises extraídos dos originais em componentes compartilhados.",
+    "Rotas físicas de Começando isolam Source Serif das páginas Base com Inter.",
+    "Alias de Métricas, livros e guias preservados com canonical e Open Graph normalizados.",
+    "CMS com as cinco novas coleções; validação editorial compartilhada entre build e painel de publicação.",
+    "Radar principal preenchido por publicações únicas por URL; lateral com três grupos e duas leituras por grupo.",
+    "Fichas bibliográficas aceitam capa, crédito, origem, condição de uso e formato do ISBN, sem associar uma capa não conferida.",
+    "Doze guias aprofundados, dez novos métodos e seis novos termos; referências dos guias agora são links nomeados para evitar overflow em 360/390 px.",
+    "Três retratos CC BY-SA com crédito, fonte, link de licença e indicação de redução/conversão; arquivos e créditos distribuídos sob as licenças originais."
+  ],
+  "pendencias": [
+    "Vídeos: 57 seleções institucionais publicadas e verificadas no domínio; zero revisões audiovisuais integrais. As fichas declaram o alcance da conferência de fonte, autoria e contexto.",
+    "Estudos: doze guias didáticos autorais com protocolos propostos; não são experimentos nem resultados empíricos. Revisão final da profundidade e dos estados funcionais permanece no aceite editorial e visual.",
+    "Biblioteca: ampliar e revisar o acervo. O build local tem seis referências e oito livros, frente a 63 referências e 58 livros no original; uma das seis referências é uma edição completa da Revista DOM, não um artigo individual.",
+    "Imagens temáticas: três retratos licenciados incorporados com crédito, fonte, link da licença e indicação das alterações; nove perfis ainda usam iniciais. Oito capas oficiais foram conferidas: sete correspondências bibliográficas confirmadas e How Brands Grow pendente. Condições de reutilização das capas estão registradas; os oito livros continuam usando as alternativas gráficas originais.",
+    "Aceite visual: há medição de treze templates nas cinco larguras e inspeção visual parcial; ainda faltam capturas pareadas completas e revisão de todos os estados funcionais, inclusive vídeos preenchidos.",
+    "Administração e serviços externos: testes locais do fluxo e configuração do CMS aprovados; publicação remota, autenticação real, coleta agendada em produção e discussão enviada não foram executadas neste corretivo."
+  ],
+  "validacao": {
+    "estado": "verificacao_parcial_aprovada_sem_aceite_integral",
+    "astro_check": {
+      "erros": 0,
+      "avisos": 0,
+      "hints_preexistentes": 4
+    },
+    "build": {
+      "paginas": 193
+    },
+    "testes_node": {
+      "aprovados": 53
+    },
+    "testes_python_business": {
+      "aprovados": 13
+    },
+    "integridade_build": {
+      "pages": 78,
+      "businessPages": 76,
+      "internalReferences": 8000,
+      "businessSearchItems": 62,
+      "broken": [],
+      "duplicateIds": [],
+      "headingFailures": [],
+      "missingMeta": [],
+      "fragmentReferences": 443,
+      "fragmentFailures": [],
+      "aliasesChecked": 14,
+      "canonicalFailures": []
+    },
+    "regressao_tecnologia": {
+      "base": "bf96fafa0c883a7f5d39c5d91ca0c15355482ccd",
+      "metodo": "Comparação da árvore do main, texto e atributos; ignorados scripts, atributos Astro de escopo, IDs sequenciais das capas e nomes hash de arquivos CSS. Baseline compilada em checkout limpo no mesmo momento. Não é diff de pixels.",
+      "resultados": [
+        {
+          "route": "/analises/computacao-quantica-util-parte-1/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/estudos/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/origens/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/aprendizado/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/comecando/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/comecando/proxima-palavra/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/estudos/a-ideia-mais-interessante/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/tecnologia/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/videos/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/biblioteca/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/analises/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/forum/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/news/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/noticias/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/equacoes/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/biblioteca/glossario/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/biblioteca/fontes/",
+          "dom_textos_atributos_preservados": false,
+          "mesmos_itens_e_estrutura_ignorando_ordem_da_lista": true
+        },
+        {
+          "route": "/sobre/",
+          "dom_textos_atributos_preservados": true
+        },
+        {
+          "route": "/estudos/caminhos/certificado-inteiro/",
+          "dom_textos_atributos_preservados": true
+        }
+      ],
+      "excecao_ordenacao_fontes": "18 das 19 rotas têm a árvore normalizada idêntica. Em /biblioteca/fontes/, os mesmos itens, textos, atributos e estrutura foram preservados, com ordem de inserção diferente no índice derivado de getCollection; igualdade confirmada após ordenar os li. O código do compilador de fontes técnicas não foi modificado."
+    },
+    "browser_local": {
+      "navegador": "Safari",
+      "medicao_responsiva": {
+        "metodo": "Safari; dois iframes same-origin por par. Viewport interno medido, altura 620 px; escala externa apenas para exibição. Treze templates em cinco larguras. Não é diff de pixels nem inspeção integral de imagens lazy.",
+        "larguras": [
+          360,
+          390,
+          1024,
+          1440,
+          1672
+        ],
+        "pares": 65,
+        "renderizacoes": 130,
+        "excessos_horizontais": 0,
+        "falhas_h1": 0,
+        "erros_katex": 0,
+        "imagens_carregadas_com_falha": 0,
+        "largura_main_igual_nos_pares": true,
+        "fonte_main_igual_nos_pares": true,
+        "display_rail_igual_nos_pares": true,
+        "evidencia": "docs/corretivo/qa-responsiva-medidas.json"
+      },
+      "observacoes": [
+        "Preferência Business exibida e dispensada com Agora não.",
+        "Home com harpia, hero, grade, trilhas e barras do original.",
+        "Arquivo de notícias abre com treze registros; navegação passa de 1 de 2 para 2 de 2 e desabilita o avanço.",
+        "Artigo da série usa Source Serif e o tema original, com figuras próprias e navegação entre os quatro artigos.",
+        "Diagrama radial e legenda inspecionados no quadro de 390 px.",
+        "Nenhum comentário, mensagem, compra ou publicação externa enviado."
+      ],
+      "limites": [
+        "Não equivale ao aceite visual integral do contrato.",
+        "Vídeos preenchidos e recursos remotos não foram validados."
+      ]
+    },
+    "publicacao": true,
+    "aceite_integral": false,
+    "ancoras_business": {
+      "checked": 443,
+      "broken": []
+    },
+    "cms": {
+      "colecoes": 22,
+      "validacao": "painel e conteúdo coerentes"
+    },
+    "ampliacao_videos": {
+      "astro_check": {
+        "erros": 0,
+        "avisos": 0,
+        "hints_preexistentes": 4
+      },
+      "build_paginas": 193,
+      "testes_node": 53,
+      "testes_python_business": 13,
+      "browser": {
+        "navegador": "Safari",
+        "casos_responsivos": 15,
+        "larguras": [
+          360,
+          390,
+          1024,
+          1440,
+          1672
+        ],
+        "paginas": [
+          "/business/videos/",
+          "/videos/",
+          "ficha de vídeo Business"
+        ],
+        "excessos_horizontais": 0,
+        "cards_business": 57,
+        "cards_tecnologia": 155,
+        "filtros_portugues": 22,
+        "filtros_portugues_avancado": 1,
+        "player_somente_apos_escolha": true,
+        "player_oficial_fgv_carregado": true,
+        "video_reproduzido_integralmente": false
+      },
+      "paridade_tecnologia": {
+        "rotas": 19,
+        "resultado": "DOM, textos e atributos preservados em todas as rotas; listas de fontes normalizadas por ordem",
+        "baseline_commit": "de1705de5de88c9583aa0ceef796ca2081cd7915",
+        "relatorio": "docs/corretivo/videos-paridade-tecnologia.json"
+      }
+    },
+    "publicacao_atual": {
+      "status": "READY",
+      "url": "https://www.harpya.org/business/",
+      "codigo_commit": "d0e1c71deb405809964e38c667d9cd8be1db3507",
+      "deployment_commit": "eb7f181ab7de6ac96bf94e4cbdb007e32cffb780",
+      "main_commit": "dad5451d325d62a55bf0fb59431748f241ca6758",
+      "deployment_id": "dpl_BAFbEZh8x6yPrUgRxNpzaNJB4jQR",
+      "deployment_url": "https://harpia-project-cxzmrlrq6-byvulcan.vercel.app",
+      "verificado_em": "2026-11-07T11:01:15.531Z",
+      "paginas_http": 135,
+      "falhas_http": [],
+      "resumos_referencias": 6,
+      "cards_guias": 3,
+      "palavras_introducao": 49,
+      "anuncios_iguais": true,
+      "atualizacao_automatica_publicada": true,
+      "radar_publico_coincide_com_workflow": true
+    },
+    "landing_atualizacao": {
+      "astro_check": {
+        "erros": 0,
+        "avisos": 0,
+        "hints_preexistentes": 4
+      },
+      "build_paginas": 193,
+      "testes_node": 55,
+      "testes_python_business": 18,
+      "colecoes_cms": 23,
+      "responsividade": {
+        "casos": 20,
+        "larguras": [
+          360,
+          390,
+          1024,
+          1440,
+          1672
+        ],
+        "falhas": [],
+        "business": [
+          {
+            "width": 1024,
+            "route": "/business/",
+            "baseline": false,
+            "pageHeight": 7602,
+            "hero": 279,
+            "overflow": false,
+            "guideCards": 3,
+            "guideSummariesClipped": 0,
+            "paperSummaries": 6,
+            "heroTextClipped": false,
+            "heroAntes": 331,
+            "alturaAntes": 8179,
+            "diferencaAltura": -577
+          },
+          {
+            "width": 1440,
+            "route": "/business/",
+            "baseline": false,
+            "pageHeight": 5765,
+            "hero": 288,
+            "overflow": false,
+            "guideCards": 3,
+            "guideSummariesClipped": 0,
+            "paperSummaries": 6,
+            "heroTextClipped": false,
+            "heroAntes": 303,
+            "alturaAntes": 6227,
+            "diferencaAltura": -462
+          },
+          {
+            "width": 1672,
+            "route": "/business/",
+            "baseline": false,
+            "pageHeight": 5355,
+            "hero": 288,
+            "overflow": false,
+            "guideCards": 3,
+            "guideSummariesClipped": 0,
+            "paperSummaries": 6,
+            "heroTextClipped": false,
+            "heroAntes": 303,
+            "alturaAntes": 5833,
+            "diferencaAltura": -478
+          },
+          {
+            "width": 390,
+            "route": "/business/",
+            "baseline": false,
+            "pageHeight": 12691,
+            "hero": 459,
+            "overflow": false,
+            "guideCards": 3,
+            "guideSummariesClipped": 0,
+            "paperSummaries": 6,
+            "heroTextClipped": false,
+            "heroAntes": 606,
+            "alturaAntes": 12821,
+            "diferencaAltura": -130
+          },
+          {
+            "width": 360,
+            "route": "/business/",
+            "baseline": false,
+            "pageHeight": 13365,
+            "hero": 476,
+            "overflow": false,
+            "guideCards": 3,
+            "guideSummariesClipped": 0,
+            "paperSummaries": 6,
+            "heroTextClipped": false,
+            "heroAntes": 606,
+            "alturaAntes": 13377,
+            "diferencaAltura": -12
+          }
+        ],
+        "tecnologia_mesma_altura_em_todas_larguras": true
+      },
+      "paridade_tecnologia": "docs/corretivo/landing-paridade-tecnologia.json",
+      "recursos_publicos": {
+        "css_business_compacto_publico": true,
+        "rss_itens": 101,
+        "rss_tipos": {
+          "noticias": true,
+          "analises": true,
+          "comecando": true,
+          "leituras": true,
+          "estudos/caminhos": true
+        }
+      },
+      "ci": {
+        "build": {
+          "conclusao": "success",
+          "url": "https://github.com/freddominugez/Harpia-Project/actions/runs/42366066650"
+        },
+        "lighthouse": {
+          "conclusao": "success",
+          "url": "https://github.com/freddominugez/Harpia-Project/actions/runs/42366066707"
+        },
+        "indexnow": {
+          "conclusao": "success",
+          "url": "https://github.com/freddominugez/Harpia-Project/actions/runs/42366105838"
+        },
+        "pautas_business": {
+          "conclusao": "success",
+          "url": "https://github.com/freddominugez/Harpia-Project/actions/runs/42366066695"
+        },
+        "radar_business": {
+          "conclusao": "success",
+          "url": "https://github.com/freddominugez/Harpia-Project/actions/runs/42366155671"
+        },
+        "curadoria_business_semanal": {
+          "conclusao": "success",
+          "url": "https://github.com/freddominugez/Harpia-Project/actions/runs/42366157705"
+        }
+      }
+    }
+  },
+  "etapa": "templates_compartilhados_e_primeiro_ciclo_editorial",
+  "conteudo_local": {
+    "secoes_equacoes_metodos": 16,
+    "termos_glossario": 14,
+    "artigos_serie": 4,
+    "palavras_corpo_serie": [
+      973,
+      960,
+      984,
+      977
+    ],
+    "figuras_serie": 12,
+    "dossies_aprendizado": 10,
+    "blocos_equacoes_aprendizado": 8,
+    "origens": {
+      "eras": 4,
+      "capitulos": 5,
+      "eventos": 24,
+      "pessoas": 12,
+      "retratos_incorporados": 3
+    },
+    "investigacoes": 1,
+    "avaliacoes_conceituais_arquivadas": 4,
+    "analises": 1,
+    "noticias": 13,
+    "referencias_artigos_relatorios": 6,
+    "livros": 8,
+    "videos": 57,
+    "guias": [
+      {
+        "arquivo": "pesquisa-comparativa.md",
+        "palavras_corpo": 787
+      },
+      {
+        "arquivo": "clientes.md",
+        "palavras_corpo": 831
+      },
+      {
+        "arquivo": "gestao.md",
+        "palavras_corpo": 864
+      },
+      {
+        "arquivo": "estrategia.md",
+        "palavras_corpo": 849
+      },
+      {
+        "arquivo": "precificacao.md",
+        "palavras_corpo": 730
+      },
+      {
+        "arquivo": "fundamentos.md",
+        "palavras_corpo": 812
+      },
+      {
+        "arquivo": "mensuracao.md",
+        "palavras_corpo": 848
+      },
+      {
+        "arquivo": "reputacao.md",
+        "palavras_corpo": 749
+      },
+      {
+        "arquivo": "consumidor.md",
+        "palavras_corpo": 843
+      },
+      {
+        "arquivo": "canais-b2b.md",
+        "palavras_corpo": 770
+      },
+      {
+        "arquivo": "crescimento.md",
+        "palavras_corpo": 869
+      },
+      {
+        "arquivo": "marcas.md",
+        "palavras_corpo": 864
+      }
+    ],
+    "natureza": "status publicado identifica a seleção do build local. Esta correção ainda não foi implantada no site público."
+  },
+  "publicacao_atual": "docs/corretivo/publicacao-integral.json",
+  "alteracoes_posteriores": "de1705d: alinhamento do lema e citação, e três anúncios idênticos nos dois ambientes, por pedido explícito do usuário.",
+  "ampliacao_videos": "docs/corretivo/ampliacao-videos.json",
+  "landing_atualizacao": "docs/corretivo/landing-atualizacao-business.json"
+}

@@ -1,0 +1,26 @@
+<span class="visit-counter" data-visit-counter title="Visualizações aproximadas, não visitantes únicos. Robôs identificáveis são filtrados.">
+  <span data-view-number>Contador carregando…</span>
+  <small data-view-since></small>
+</span>
+<script>
+  const counter = document.querySelector('[data-visit-counter]');
+  if (counter && ['www.harpya.org', 'harpya.org'].includes(location.hostname)) {
+    const eventId = crypto.randomUUID();
+    let started = false;
+    const update = async () => {
+      if (started || document.visibilityState !== 'visible') return;
+      started = true;
+      document.removeEventListener('visibilitychange', update);
+      try {
+        const response = await fetch('/api/visitas', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ event_id: eventId }), cache: 'no-store' });
+        if (!response.ok) throw new Error('counter');
+        const data = await response.json();
+        if (!Number.isSafeInteger(data.views) || data.views < 0) throw new Error('counter');
+        counter.querySelector('[data-view-number]')!.textContent = `${new Intl.NumberFormat('pt-BR').format(data.views)} visualizações`;
+        counter.querySelector('[data-view-since]')!.textContent = ` desde ${new Date(`${data.started_on}T12:00:00-03:00`).toLocaleDateString('pt-BR')}`;
+      } catch { counter.querySelector('[data-view-number]')!.textContent = 'Contador temporariamente indisponível'; }
+    };
+    document.addEventListener('visibilitychange', update); update();
+  } else if (counter) counter.querySelector('[data-view-number]')!.textContent = 'Visualizações contabilizadas no site publicado';
+</script>
+<style>.visit-counter{display:block;font:400 12px/1.6 system-ui,sans-serif;color:inherit}.visit-counter small{font:inherit;opacity:.8}</style>

@@ -1,0 +1,30 @@
+{
+  "nome": "Knowledge at Wharton",
+  "url": "https://knowledge.wharton.upenn.edu/category/marketing/",
+  "regiao": "Estados Unidos",
+  "tipo": "academica",
+  "descricao": "Marketing, comportamento e administração.",
+  "idioma": "en",
+  "hosts": [
+    "knowledge.wharton.upenn.edu",
+    "www.wharton.upenn.edu"
+  ],
+  "feed": "",
+  "verificado_em": "2026-11-06",
+  "status": "aprovado",
+  "escopos": [
+    "artigos",
+    "videos"
+  ],
+  "canais": [
+    {
+      "id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
+      "nome": "Wharton School",
+      "url": "https://www.youtube.com/channel/UCU9Z1eLsDa_meEfsmx-Ys0w",
+      "procedencia": "https://www.wharton.upenn.edu/",
+      "status": "aprovado",
+      "verificado_em": "2026-11-06"
+    }
+  ],
+  "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção."
+}

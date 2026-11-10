@@ -1,0 +1,29 @@
+{
+  "nome": "INSEAD Knowledge",
+  "url": "https://knowledge.insead.edu/marketing",
+  "regiao": "Europa / global",
+  "tipo": "academica",
+  "descricao": "Pesquisa aplicada sobre marcas, consumidores e estratégia.",
+  "idioma": "en",
+  "hosts": [
+    "knowledge.insead.edu"
+  ],
+  "feed": "https://knowledge.insead.edu/rss/articles/46/rss.xml",
+  "status": "aprovado",
+  "verificado_em": "2026-11-06",
+  "canais": [
+    {
+      "id": "UC9aeQQ-NqjHS3nfiod2PMSA",
+      "nome": "INSEAD",
+      "url": "https://www.youtube.com/channel/UC9aeQQ-NqjHS3nfiod2PMSA",
+      "procedencia": "https://blogs.insead.edu/germany-iaa/files/2015/06/Alumni-Careers-Support-Brochure-09.2017-14yc99h.pdf",
+      "status": "aprovado",
+      "verificado_em": "2026-11-06"
+    }
+  ],
+  "escopos": [
+    "artigos",
+    "videos"
+  ],
+  "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção."
+}

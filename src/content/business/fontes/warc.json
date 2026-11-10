@@ -1,0 +1,19 @@
+{
+  "nome": "WARC",
+  "url": "https://www.warc.com/en/",
+  "regiao": "Reino Unido / global",
+  "tipo": "pesquisa-mercado",
+  "descricao": "Eficácia de marketing, comunicação e estudos de caso.",
+  "idioma": "en",
+  "hosts": [
+    "www.warc.com",
+    "warc.com"
+  ],
+  "feed": "",
+  "status": "aprovado",
+  "verificado_em": "2026-11-06",
+  "escopos": [
+    "artigos"
+  ],
+  "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção."
+}

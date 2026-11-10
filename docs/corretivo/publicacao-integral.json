@@ -1,0 +1,346 @@
+{
+  "status": "READY",
+  "ambiente": "production",
+  "dominio": "https://www.harpya.org",
+  "business": "https://www.harpya.org/business/",
+  "deployment_id": "dpl_2aV36UVJPNBqZ8hcZvPejzr4RD4F",
+  "deployment_url": "https://harpia-project-cmaxy2ivx-byvulcan.vercel.app",
+  "commit": "5dc2c858e346312c0ad80840c3c2dd069cab06ce",
+  "framework": "Astro",
+  "tempo_build_ms": 28476,
+  "verificado_em": "2026-11-07T14:31:25.822Z",
+  "alteracoes": [
+    "Publicação de todo o corretivo integrado no commit 8089d87.",
+    "Lema e citação em coluna própria, separados da área da harpia, nos dois ambientes.",
+    "Mesmos três anúncios publicados, imagens e links nas mesmas posições dos dois ambientes.",
+    "57 vídeos institucionais, de sete fontes também aprovadas para artigos; 22 em português e 35 em inglês, oito trilhas e três níveis propostos.",
+    "Resumos nos3guias e6referências da home, introdução ampliada e composição compacta; RSS/radar6h, filas diárias e semanais, fluxo de pautas Business e validação/indexação compartilhadas.",
+    "Três novas peças do Vulcan Organizer com logos e capturas fornecidos; textos e URLs preservados nas seis posições de Tecnologia e Business."
+  ],
+  "validacao": {
+    "paginas_http_200": 78,
+    "falhas": [],
+    "busca_business_itens": 62,
+    "anuncios_iguais": true,
+    "hero_atualizado": true,
+    "testes_node": 49,
+    "astro_check_erros": 0,
+    "astro_check_avisos": 0,
+    "navegador": "Safari: home publicada inspecionada, preferência dispensada sem persistência e anúncios identificados.",
+    "qa_alinhamento": "10 renderizações em 360, 390, 1024, 1440 e 1672 px; sem sobreposição de áreas, texto fora do card ou excesso horizontal.",
+    "github_build": "success: https://github.com/freddominugez/Harpia-Project/actions/runs/42323314467",
+    "lighthouse": "em andamento: https://github.com/freddominugez/Harpia-Project/actions/runs/42323314535",
+    "runtime_errors": "Nenhum grupo de erro/fatal retornado para este deployment na janela de 15 minutos consultada.",
+    "ampliacao_videos": {
+      "astro_check": {
+        "erros": 0,
+        "avisos": 0,
+        "hints_preexistentes": 4
+      },
+      "build_paginas": 193,
+      "testes_node": 53,
+      "testes_python_business": 13,
+      "browser": {
+        "navegador": "Safari",
+        "casos_responsivos": 15,
+        "larguras": [
+          360,
+          390,
+          1024,
+          1440,
+          1672
+        ],
+        "paginas": [
+          "/business/videos/",
+          "/videos/",
+          "ficha de vídeo Business"
+        ],
+        "excessos_horizontais": 0,
+        "cards_business": 57,
+        "cards_tecnologia": 155,
+        "filtros_portugues": 22,
+        "filtros_portugues_avancado": 1,
+        "player_somente_apos_escolha": true,
+        "player_oficial_fgv_carregado": true,
+        "video_reproduzido_integralmente": false
+      },
+      "paridade_tecnologia": {
+        "rotas": 19,
+        "resultado": "DOM, textos e atributos preservados em todas as rotas; listas de fontes normalizadas por ordem",
+        "baseline_commit": "de1705de5de88c9583aa0ceef796ca2081cd7915",
+        "relatorio": "docs/corretivo/videos-paridade-tecnologia.json"
+      }
+    },
+    "http_atual": {
+      "status": "READY",
+      "url": "https://www.harpya.org/business/",
+      "codigo_commit": "d0e1c71deb405809964e38c667d9cd8be1db3507",
+      "deployment_commit": "eb7f181ab7de6ac96bf94e4cbdb007e32cffb780",
+      "main_commit": "dad5451d325d62a55bf0fb59431748f241ca6758",
+      "deployment_id": "dpl_BAFbEZh8x6yPrUgRxNpzaNJB4jQR",
+      "deployment_url": "https://harpia-project-cxzmrlrq6-byvulcan.vercel.app",
+      "verificado_em": "2026-11-07T11:01:15.531Z",
+      "paginas_http": 135,
+      "falhas_http": [],
+      "resumos_referencias": 6,
+      "cards_guias": 3,
+      "palavras_introducao": 49,
+      "anuncios_iguais": true,
+      "atualizacao_automatica_publicada": true,
+      "radar_publico_coincide_com_workflow": true
+    },
+    "landing_atualizacao": {
+      "astro_check": {
+        "erros": 0,
+        "avisos": 0,
+        "hints_preexistentes": 4
+      },
+      "build_paginas": 193,
+      "testes_node": 55,
+      "testes_python_business": 18,
+      "colecoes_cms": 23,
+      "responsividade": {
+        "casos": 20,
+        "larguras": [
+          360,
+          390,
+          1024,
+          1440,
+          1672
+        ],
+        "falhas": [],
+        "business": [
+          {
+            "width": 1024,
+            "route": "/business/",
+            "baseline": false,
+            "pageHeight": 7602,
+            "hero": 279,
+            "overflow": false,
+            "guideCards": 3,
+            "guideSummariesClipped": 0,
+            "paperSummaries": 6,
+            "heroTextClipped": false,
+            "heroAntes": 331,
+            "alturaAntes": 8179,
+            "diferencaAltura": -577
+          },
+          {
+            "width": 1440,
+            "route": "/business/",
+            "baseline": false,
+            "pageHeight": 5765,
+            "hero": 288,
+            "overflow": false,
+            "guideCards": 3,
+            "guideSummariesClipped": 0,
+            "paperSummaries": 6,
+            "heroTextClipped": false,
+            "heroAntes": 303,
+            "alturaAntes": 6227,
+            "diferencaAltura": -462
+          },
+          {
+            "width": 1672,
+            "route": "/business/",
+            "baseline": false,
+            "pageHeight": 5355,
+            "hero": 288,
+            "overflow": false,
+            "guideCards": 3,
+            "guideSummariesClipped": 0,
+            "paperSummaries": 6,
+            "heroTextClipped": false,
+            "heroAntes": 303,
+            "alturaAntes": 5833,
+            "diferencaAltura": -478
+          },
+          {
+            "width": 390,
+            "route": "/business/",
+            "baseline": false,
+            "pageHeight": 12691,
+            "hero": 459,
+            "overflow": false,
+            "guideCards": 3,
+            "guideSummariesClipped": 0,
+            "paperSummaries": 6,
+            "heroTextClipped": false,
+            "heroAntes": 606,
+            "alturaAntes": 12821,
+            "diferencaAltura": -130
+          },
+          {
+            "width": 360,
+            "route": "/business/",
+            "baseline": false,
+            "pageHeight": 13365,
+            "hero": 476,
+            "overflow": false,
+            "guideCards": 3,
+            "guideSummariesClipped": 0,
+            "paperSummaries": 6,
+            "heroTextClipped": false,
+            "heroAntes": 606,
+            "alturaAntes": 13377,
+            "diferencaAltura": -12
+          }
+        ],
+        "tecnologia_mesma_altura_em_todas_larguras": true
+      },
+      "paridade_tecnologia": "docs/corretivo/landing-paridade-tecnologia.json",
+      "recursos_publicos": {
+        "css_business_compacto_publico": true,
+        "rss_itens": 101,
+        "rss_tipos": {
+          "noticias": true,
+          "analises": true,
+          "comecando": true,
+          "leituras": true,
+          "estudos/caminhos": true
+        }
+      },
+      "ci": {
+        "build": {
+          "conclusao": "success",
+          "url": "https://github.com/freddominugez/Harpia-Project/actions/runs/42366066650"
+        },
+        "lighthouse": {
+          "conclusao": "success",
+          "url": "https://github.com/freddominugez/Harpia-Project/actions/runs/42366066707"
+        },
+        "indexnow": {
+          "conclusao": "success",
+          "url": "https://github.com/freddominugez/Harpia-Project/actions/runs/42366105838"
+        },
+        "pautas_business": {
+          "conclusao": "success",
+          "url": "https://github.com/freddominugez/Harpia-Project/actions/runs/42366066695"
+        },
+        "radar_business": {
+          "conclusao": "success",
+          "url": "https://github.com/freddominugez/Harpia-Project/actions/runs/42366155671"
+        },
+        "curadoria_business_semanal": {
+          "conclusao": "success",
+          "url": "https://github.com/freddominugez/Harpia-Project/actions/runs/42366157705"
+        }
+      }
+    },
+    "anuncios_v2": {
+      "commit": "5dc2c858e346312c0ad80840c3c2dd069cab06ce",
+      "deployment_id": "dpl_2aV36UVJPNBqZ8hcZvPejzr4RD4F",
+      "deployment_url": "https://harpia-project-cmaxy2ivx-byvulcan.vercel.app",
+      "status": "READY",
+      "verificado_em": "2026-11-07T14:31:25.822Z",
+      "verificacao": {
+        "verificado_em": "2026-11-07T14:31:25.822Z",
+        "paginas": [
+          {
+            "route": "/tecnologia/",
+            "status": 200,
+            "slots": [
+              {
+                "posicao": "topo",
+                "imagem": "/img/anuncios/vulcan-organizer-banner-superior-970x90-v2-2x.png",
+                "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=superior_970x90",
+                "imagem_correta": true,
+                "url_preservada": true
+              },
+              {
+                "posicao": "lateral-direita",
+                "imagem": "/img/anuncios/vulcan-organizer-lateral-direita-300x250-v2-2x.png",
+                "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_direita_300x250",
+                "imagem_correta": true,
+                "url_preservada": true
+              },
+              {
+                "posicao": "lateral-esquerda",
+                "imagem": "/img/anuncios/vulcan-organizer-lateral-esquerda-300x250-v2-2x.png",
+                "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_esquerda_300x250",
+                "imagem_correta": true,
+                "url_preservada": true
+              }
+            ]
+          },
+          {
+            "route": "/business/",
+            "status": 200,
+            "slots": [
+              {
+                "posicao": "topo",
+                "imagem": "/img/anuncios/vulcan-organizer-banner-superior-970x90-v2-2x.png",
+                "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=superior_970x90",
+                "imagem_correta": true,
+                "url_preservada": true
+              },
+              {
+                "posicao": "lateral-direita",
+                "imagem": "/img/anuncios/vulcan-organizer-lateral-direita-300x250-v2-2x.png",
+                "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_direita_300x250",
+                "imagem_correta": true,
+                "url_preservada": true
+              },
+              {
+                "posicao": "lateral-esquerda",
+                "imagem": "/img/anuncios/vulcan-organizer-lateral-esquerda-300x250-v2-2x.png",
+                "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_esquerda_300x250",
+                "imagem_correta": true,
+                "url_preservada": true
+              }
+            ]
+          }
+        ],
+        "imagens": [
+          {
+            "route": "/img/anuncios/vulcan-organizer-banner-superior-970x90-v2-2x.png",
+            "status": 200,
+            "bytes": 159453,
+            "sha256": "277ef49dcb9d6068a5a817909f60b449acf025820234a14a7f2e29e8331e4794",
+            "corresponde_ao_arquivo_salvo": true
+          },
+          {
+            "route": "/img/anuncios/vulcan-organizer-banner-superior-970x90-v2.png",
+            "status": 200,
+            "bytes": 54895,
+            "sha256": "a85fa88ed37da0b9d1e0152e0dfb0ed4843aff4c9d79e672f0a09b332596da0b",
+            "corresponde_ao_arquivo_salvo": true
+          },
+          {
+            "route": "/img/anuncios/vulcan-organizer-lateral-direita-300x250-v2-2x.png",
+            "status": 200,
+            "bytes": 116967,
+            "sha256": "b534010ea51d8dcce31101853a68d971398d72795d6cad452861960325c4568c",
+            "corresponde_ao_arquivo_salvo": true
+          },
+          {
+            "route": "/img/anuncios/vulcan-organizer-lateral-direita-300x250-v2.png",
+            "status": 200,
+            "bytes": 44543,
+            "sha256": "78da98e6d663e8d0f7b6f04798da944835094ab3c3fcb1563219ef230574e42b",
+            "corresponde_ao_arquivo_salvo": true
+          },
+          {
+            "route": "/img/anuncios/vulcan-organizer-lateral-esquerda-300x250-v2-2x.png",
+            "status": 200,
+            "bytes": 141077,
+            "sha256": "bd0e1760ad301241855f7afbad06ea35d06d772f2f42f595559a8e2cfbde559d",
+            "corresponde_ao_arquivo_salvo": true
+          },
+          {
+            "route": "/img/anuncios/vulcan-organizer-lateral-esquerda-300x250-v2.png",
+            "status": 200,
+            "bytes": 51064,
+            "sha256": "6853c2e8a71849284d2d3d8e58b76dd6497d111e98bdfe7e2de7c5a804cd87bf",
+            "corresponde_ao_arquivo_salvo": true
+          }
+        ],
+        "ok": true
+      },
+      "ci_build": "success",
+      "ci_indexnow": "success",
+      "ci_lighthouse": "in_progress"
+    }
+  },
+  "limite_editorial": "As duas tarefas editoriais externas do Claude têm instruções prontas, sem ativação após o usuário pedir interrupção do controle da interface. Vídeos continuam identificados como seleção de fonte/contexto, sem revisão audiovisual integral."
+}

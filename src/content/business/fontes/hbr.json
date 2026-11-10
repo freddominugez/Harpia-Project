@@ -1,0 +1,29 @@
+{
+  "nome": "Harvard Business Review",
+  "url": "https://hbr.org/topic/subject/marketing",
+  "regiao": "Estados Unidos",
+  "tipo": "publicacao-executiva",
+  "descricao": "Estratégia, marca e gestão.",
+  "idioma": "en",
+  "hosts": [
+    "hbr.org"
+  ],
+  "feed": "",
+  "status": "aprovado",
+  "verificado_em": "2026-11-06",
+  "canais": [
+    {
+      "id": "UCWo4IA01TXzBeGJJKWHOG9g",
+      "nome": "Harvard Business Review",
+      "url": "https://www.youtube.com/channel/UCWo4IA01TXzBeGJJKWHOG9g",
+      "procedencia": "https://www.linkedin.com/posts/harvard-business-review_the-explainer-dont-just-sell-stuff-satisfy-activity-6559809594888204288-cVVt",
+      "status": "aprovado",
+      "verificado_em": "2026-11-06"
+    }
+  ],
+  "escopos": [
+    "artigos",
+    "videos"
+  ],
+  "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção."
+}

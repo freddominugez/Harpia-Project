@@ -1,0 +1,442 @@
+{
+  "gerado_em": "2026-11-06",
+  "pedido": "Ao menos 50 vídeos das mesmas fontes aprovadas para artigos",
+  "publicados": 57,
+  "fontes": {
+    "fgv": 7,
+    "fdc": 15,
+    "insead": 6,
+    "wharton": 8,
+    "lbs": 5,
+    "hbr": 10,
+    "mit-smr": 6
+  },
+  "idiomas": {
+    "pt": 22,
+    "en": 35
+  },
+  "niveis_propostos": {
+    "Intermediário": 32,
+    "Avançado": 7,
+    "Iniciante": 18
+  },
+  "trilhas": {
+    "crescimento": 7,
+    "clientes": 8,
+    "mensuracao": 5,
+    "estrategia": 14,
+    "consumidor": 8,
+    "marcas": 6,
+    "gestao": 6,
+    "fundamentos": 3
+  },
+  "duracao_nominal_segundos": 95122,
+  "revisao_escopo": "fonte_e_contexto",
+  "revisao_audiovisual_integral_concluida": 0,
+  "observacao": "Seleção institucional e resumo próprio com base em metadados, sinopses e páginas primárias. Não equivale a ter assistido ao audiovisual integral nem a validar todas as alegações. Idiomas e níveis informados/propostos; legendas e dublagem não conferidas.",
+  "pesquisas": [
+    "curadoria/business/videos-lote-brasil.json",
+    "curadoria/business/videos-lote-escolas.json",
+    "curadoria/business/videos-lote-harvard-mit.json"
+  ],
+  "url_catalogo": "https://www.harpya.org/business/videos/",
+  "videos": [
+    {
+      "video_id": "nFqu5xY99sY",
+      "fonte": "fgv",
+      "titulo": "#48 Marketing em 2026: Inteligência Artificial e Geração de Valor",
+      "url": "https://www.youtube.com/watch?v=nFqu5xY99sY"
+    },
+    {
+      "video_id": "RAxVySzbCEM",
+      "fonte": "fgv",
+      "titulo": "Webinar | Centralidade no Cliente e Inovação Digital para Além da Crise",
+      "url": "https://www.youtube.com/watch?v=RAxVySzbCEM"
+    },
+    {
+      "video_id": "qsAX3XyRsPU",
+      "fonte": "fgv",
+      "titulo": "Webinar | Ambiente digital, métricas e operações de trade marketing no PDV de canais key accounts",
+      "url": "https://www.youtube.com/watch?v=qsAX3XyRsPU"
+    },
+    {
+      "video_id": "BV8AA5vXmsA",
+      "fonte": "fdc",
+      "titulo": "Gestão comercial e rentabilização da base de clientes",
+      "url": "https://www.youtube.com/watch?v=BV8AA5vXmsA"
+    },
+    {
+      "video_id": "JlIKeIlnhTo",
+      "fonte": "fdc",
+      "titulo": "Como aumentar o retorno sobre relacionamento com clientes",
+      "url": "https://www.youtube.com/watch?v=JlIKeIlnhTo"
+    },
+    {
+      "video_id": "e7DZNb81ISg",
+      "fonte": "fdc",
+      "titulo": "Estratégia Empresarial",
+      "url": "https://www.youtube.com/watch?v=e7DZNb81ISg"
+    },
+    {
+      "video_id": "3iXbE1jzY2A",
+      "fonte": "fdc",
+      "titulo": "Digitalizando - Sétimo Episódio: Jornada do cliente!",
+      "url": "https://www.youtube.com/watch?v=3iXbE1jzY2A"
+    },
+    {
+      "video_id": "lpKspRpDPfI",
+      "fonte": "fgv",
+      "titulo": "FGV In Company Insights | Ep 89 - Um framework para a Gestão de Estereótipos na Comunicação de Marca",
+      "url": "https://www.youtube.com/watch?v=lpKspRpDPfI"
+    },
+    {
+      "video_id": "fQcJ9jZegNg",
+      "fonte": "fgv",
+      "titulo": "Webinar | Tendências para marketing e tecnologia em 2022",
+      "url": "https://www.youtube.com/watch?v=fQcJ9jZegNg"
+    },
+    {
+      "video_id": "TblgzI2YzK0",
+      "fonte": "fgv",
+      "titulo": "Webinar | Marca Própria: Fortaleza em Tempos de Incerteza",
+      "url": "https://www.youtube.com/watch?v=TblgzI2YzK0"
+    },
+    {
+      "video_id": "lCrj-cRuXb4",
+      "fonte": "fgv",
+      "titulo": "Webinar | Inteligência artificial e marketing",
+      "url": "https://www.youtube.com/watch?v=lCrj-cRuXb4"
+    },
+    {
+      "video_id": "h9e6DVORe1U",
+      "fonte": "fdc",
+      "titulo": "Desenvolvendo centralidade no cliente agora e no futuro — Professora Luciana Faluba",
+      "url": "https://www.youtube.com/watch?v=h9e6DVORe1U"
+    },
+    {
+      "video_id": "VzTxLKRR6gU",
+      "fonte": "fdc",
+      "titulo": "Estratégias e Riscos nos Canais de Distribuição em Tempo de Crise",
+      "url": "https://www.youtube.com/watch?v=VzTxLKRR6gU"
+    },
+    {
+      "video_id": "NXx7AUksxuI",
+      "fonte": "fdc",
+      "titulo": "O impacto da pandemia na reputação das empresas brasileiras",
+      "url": "https://www.youtube.com/watch?v=NXx7AUksxuI"
+    },
+    {
+      "video_id": "vxZNpazj-IU",
+      "fonte": "fdc",
+      "titulo": "Inovação na Prática - 4o. Episódio: Proposta de Valor",
+      "url": "https://www.youtube.com/watch?v=vxZNpazj-IU"
+    },
+    {
+      "video_id": "Rv_upDfK9xQ",
+      "fonte": "fdc",
+      "titulo": "Inovação na Prática - 5o. Episódio: Novos Modelos de Negócio",
+      "url": "https://www.youtube.com/watch?v=Rv_upDfK9xQ"
+    },
+    {
+      "video_id": "wQHGGtfZImg",
+      "fonte": "fdc",
+      "titulo": "Inovação na Prática - 10o episódio: Conclusão e métricas",
+      "url": "https://www.youtube.com/watch?v=wQHGGtfZImg"
+    },
+    {
+      "video_id": "44Vp9tf0MYQ",
+      "fonte": "fdc",
+      "titulo": "Inovação na Prática - 3o. Episódio: Cultura e Gestão",
+      "url": "https://www.youtube.com/watch?v=44Vp9tf0MYQ"
+    },
+    {
+      "video_id": "xJqF80vrrK0",
+      "fonte": "fdc",
+      "titulo": "Blindagem digital do cliente",
+      "url": "https://www.youtube.com/watch?v=xJqF80vrrK0"
+    },
+    {
+      "video_id": "Js4yaGPkTCw",
+      "fonte": "fdc",
+      "titulo": "Alinhamento da cadeia produtiva",
+      "url": "https://www.youtube.com/watch?v=Js4yaGPkTCw"
+    },
+    {
+      "video_id": "IqWZf7yw9ck",
+      "fonte": "fdc",
+      "titulo": "Como inspirar e liderar estratégias de mercado em tempos de crise: o caso Magalu",
+      "url": "https://www.youtube.com/watch?v=IqWZf7yw9ck"
+    },
+    {
+      "video_id": "0_yXsQKmdwE",
+      "fonte": "fdc",
+      "titulo": "Inovação na Prática - 7o episódio – Inovação e Estratégia.",
+      "url": "https://www.youtube.com/watch?v=0_yXsQKmdwE"
+    },
+    {
+      "video_id": "bwtZb60BxlU",
+      "fonte": "insead",
+      "titulo": "Como o marketing de alimentos afeta o que comemos",
+      "url": "https://www.youtube.com/watch?v=bwtZb60BxlU"
+    },
+    {
+      "video_id": "akfnG4tEgYA",
+      "fonte": "insead",
+      "titulo": "Quando o boca a boca pode ter efeito contrário entre amigos próximos",
+      "url": "https://www.youtube.com/watch?v=akfnG4tEgYA"
+    },
+    {
+      "video_id": "nedxQh6_-9k",
+      "fonte": "insead",
+      "titulo": "Marketing distópico?",
+      "url": "https://www.youtube.com/watch?v=nedxQh6_-9k"
+    },
+    {
+      "video_id": "8rWWUxf7gHU",
+      "fonte": "insead",
+      "titulo": "O efeito momentum: mobilizar inteligência para crescer",
+      "url": "https://www.youtube.com/watch?v=8rWWUxf7gHU"
+    },
+    {
+      "video_id": "slZcYr5IxD4",
+      "fonte": "insead",
+      "titulo": "Marketing viral: contar para uma mulher?",
+      "url": "https://www.youtube.com/watch?v=slZcYr5IxD4"
+    },
+    {
+      "video_id": "N1J4imhOoZI",
+      "fonte": "insead",
+      "titulo": "Inovação no modelo de negócio com Serguei Netessine e Karan Girotra",
+      "url": "https://www.youtube.com/watch?v=N1J4imhOoZI"
+    },
+    {
+      "video_id": "Jn4xIHu0cmI",
+      "fonte": "wharton",
+      "titulo": "Barbara Kahn: marketing e percepções do consumidor",
+      "url": "https://www.youtube.com/watch?v=Jn4xIHu0cmI"
+    },
+    {
+      "video_id": "C4Rq8G10xOg",
+      "fonte": "wharton",
+      "titulo": "Paul Green: técnicas de pesquisa de mercado",
+      "url": "https://www.youtube.com/watch?v=C4Rq8G10xOg"
+    },
+    {
+      "video_id": "cX88ia-4-6o",
+      "fonte": "wharton",
+      "titulo": "Paul Green: a prática da pesquisa de mercado",
+      "url": "https://www.youtube.com/watch?v=cX88ia-4-6o"
+    },
+    {
+      "video_id": "m9zowHS79xM",
+      "fonte": "wharton",
+      "titulo": "David Bell: marcas, clientes e marketing digital",
+      "url": "https://www.youtube.com/watch?v=m9zowHS79xM"
+    },
+    {
+      "video_id": "xol3k1aBe40",
+      "fonte": "wharton",
+      "titulo": "Jonah Berger: o poder da influência",
+      "url": "https://www.youtube.com/watch?v=xol3k1aBe40"
+    },
+    {
+      "video_id": "g-jmy5Ao7Ag",
+      "fonte": "wharton",
+      "titulo": "Pinar Yildirim: a construção de uma marca pessoal",
+      "url": "https://www.youtube.com/watch?v=g-jmy5Ao7Ag"
+    },
+    {
+      "video_id": "epGXR_MY7bo",
+      "fonte": "wharton",
+      "titulo": "Muhtar Kent: crescimento e criação de valor na Coca-Cola",
+      "url": "https://www.youtube.com/watch?v=epGXR_MY7bo"
+    },
+    {
+      "video_id": "jQJBS_CWPdo",
+      "fonte": "wharton",
+      "titulo": "Beth Comstock: trajetória, inovação e decisões na GE",
+      "url": "https://www.youtube.com/watch?v=jQJBS_CWPdo"
+    },
+    {
+      "video_id": "vw9dqka3oDg",
+      "fonte": "lbs",
+      "titulo": "Marketing preparado para IA: a próxima mudança na estratégia digital",
+      "url": "https://www.youtube.com/watch?v=vw9dqka3oDg"
+    },
+    {
+      "video_id": "lcmLaRG7pI8",
+      "fonte": "lbs",
+      "titulo": "Como os preços podem entusiasmar os clientes",
+      "url": "https://www.youtube.com/watch?v=lcmLaRG7pI8"
+    },
+    {
+      "video_id": "BwKHQZfIZ4Y",
+      "fonte": "lbs",
+      "titulo": "Quando a liberdade de escolha pode gerar infelicidade?",
+      "url": "https://www.youtube.com/watch?v=BwKHQZfIZ4Y"
+    },
+    {
+      "video_id": "UkTFw1Nkuog",
+      "fonte": "lbs",
+      "titulo": "Simona Botti: consumidores e inteligência artificial",
+      "url": "https://www.youtube.com/watch?v=UkTFw1Nkuog"
+    },
+    {
+      "video_id": "RkgtsrFinvo",
+      "fonte": "lbs",
+      "titulo": "Estratégias de crescimento em mercados emergentes",
+      "url": "https://www.youtube.com/watch?v=RkgtsrFinvo"
+    },
+    {
+      "video_id": "mYF2_FBCvXw",
+      "fonte": "hbr",
+      "titulo": "As cinco forças competitivas que moldam a estratégia",
+      "url": "https://www.youtube.com/watch?v=mYF2_FBCvXw"
+    },
+    {
+      "video_id": "hw8FfogTUhU",
+      "fonte": "hbr",
+      "titulo": "Satisfazer necessidades: além da venda de produtos",
+      "url": "https://www.youtube.com/watch?v=hw8FfogTUhU"
+    },
+    {
+      "video_id": "sYdaa02CS5E",
+      "fonte": "hbr",
+      "titulo": "Estratégia do oceano azul",
+      "url": "https://www.youtube.com/watch?v=sYdaa02CS5E"
+    },
+    {
+      "video_id": "_WI3B54m6SU",
+      "fonte": "hbr",
+      "titulo": "O que é design thinking?",
+      "url": "https://www.youtube.com/watch?v=_WI3B54m6SU"
+    },
+    {
+      "video_id": "aMsvWmvTmxw",
+      "fonte": "hbr",
+      "titulo": "Como funciona a inovação disruptiva",
+      "url": "https://www.youtube.com/watch?v=aMsvWmvTmxw"
+    },
+    {
+      "video_id": "SaZcT3N6EXI",
+      "fonte": "hbr",
+      "titulo": "Como estruturar um plano de negócios",
+      "url": "https://www.youtube.com/watch?v=SaZcT3N6EXI"
+    },
+    {
+      "video_id": "qYKJwqtArPM",
+      "fonte": "hbr",
+      "titulo": "Novos produtos para mercados emergentes",
+      "url": "https://www.youtube.com/watch?v=qYKJwqtArPM"
+    },
+    {
+      "video_id": "M1kSIerx-Fg",
+      "fonte": "hbr",
+      "titulo": "Como equilibrar execução e adaptação",
+      "url": "https://www.youtube.com/watch?v=M1kSIerx-Fg"
+    },
+    {
+      "video_id": "Abl6b71H2Mc",
+      "fonte": "hbr",
+      "titulo": "Como identificar competências centrais da empresa",
+      "url": "https://www.youtube.com/watch?v=Abl6b71H2Mc"
+    },
+    {
+      "video_id": "_C-vGu2mL38",
+      "fonte": "hbr",
+      "titulo": "O que é um modelo de negócio?",
+      "url": "https://www.youtube.com/watch?v=_C-vGu2mL38"
+    },
+    {
+      "video_id": "Vf03g8Apn9M",
+      "fonte": "mit-smr",
+      "titulo": "Repensar a estratégia de marketing na era da IA",
+      "url": "https://www.youtube.com/watch?v=Vf03g8Apn9M"
+    },
+    {
+      "video_id": "2cAwSp2hERY",
+      "fonte": "mit-smr",
+      "titulo": "Marketing com IA generativa: a pesquisa de Ayelet Israeli",
+      "url": "https://www.youtube.com/watch?v=2cAwSp2hERY"
+    },
+    {
+      "video_id": "1eAAPzwx0HI",
+      "fonte": "mit-smr",
+      "titulo": "Criar valor para o cliente: da teoria à prática",
+      "url": "https://www.youtube.com/watch?v=1eAAPzwx0HI"
+    },
+    {
+      "video_id": "1c9qAOI1Z8Y",
+      "fonte": "mit-smr",
+      "titulo": "Integrar vendas e operações para criar valor ao cliente",
+      "url": "https://www.youtube.com/watch?v=1c9qAOI1Z8Y"
+    },
+    {
+      "video_id": "-gcpK1wBo2I",
+      "fonte": "mit-smr",
+      "titulo": "Como conversar com clientes para construir confiança",
+      "url": "https://www.youtube.com/watch?v=-gcpK1wBo2I"
+    },
+    {
+      "video_id": "EtlJP_FTG6g",
+      "fonte": "mit-smr",
+      "titulo": "Criação de valor, experimentos e o papel da tecnologia",
+      "url": "https://www.youtube.com/watch?v=EtlJP_FTG6g"
+    }
+  ],
+  "validacao": {
+    "astro_check": {
+      "erros": 0,
+      "avisos": 0,
+      "hints_preexistentes": 4
+    },
+    "build_paginas": 193,
+    "testes_node": 53,
+    "testes_python_business": 13,
+    "browser": {
+      "navegador": "Safari",
+      "casos_responsivos": 15,
+      "larguras": [
+        360,
+        390,
+        1024,
+        1440,
+        1672
+      ],
+      "paginas": [
+        "/business/videos/",
+        "/videos/",
+        "ficha de vídeo Business"
+      ],
+      "excessos_horizontais": 0,
+      "cards_business": 57,
+      "cards_tecnologia": 155,
+      "filtros_portugues": 22,
+      "filtros_portugues_avancado": 1,
+      "player_somente_apos_escolha": true,
+      "player_oficial_fgv_carregado": true,
+      "video_reproduzido_integralmente": false
+    },
+    "paridade_tecnologia": {
+      "rotas": 19,
+      "resultado": "DOM, textos e atributos preservados em todas as rotas; listas de fontes normalizadas por ordem",
+      "baseline_commit": "de1705de5de88c9583aa0ceef796ca2081cd7915",
+      "relatorio": "docs/corretivo/videos-paridade-tecnologia.json"
+    }
+  },
+  "estado_publicacao": "publicado_ready",
+  "publicacao": {
+    "commit": "905cc02e23f129fd9cdb1eee1cc37227c603ddc5",
+    "deployment_id": "dpl_3YKNmui14CRpH99jCr7r89nuvFhM",
+    "status": "READY",
+    "url": "https://www.harpya.org/business/videos/",
+    "verificado_em": "2026-11-07T01:39:29.698Z",
+    "paginas_http_verificadas": 135,
+    "falhas_http": 0,
+    "videos_catalogo_publico": 57,
+    "destaques_home": 3,
+    "itens_busca_business": 119,
+    "ci_build": "success",
+    "limite": "Nenhuma revisão audiovisual integral alegada; seleção por fonte, autoria e contexto institucional."
+  }
+}

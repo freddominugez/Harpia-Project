@@ -1,0 +1,22 @@
+{
+  "preparado_em": "2026-11-06",
+  "politica": "Não contém transcrições integrais nem extratos extensos. Textos completos acessados somente em /tmp para revisão. URLs, hashes, contagens e sínteses próprias permitem auditoria.",
+  "materiais": [
+    {
+      "video_id": "xdebpIumAMw",
+      "tipo": "transcricao_editorial_HTML",
+      "url": "https://hbr.org/podcast/2026/07/how-a-museum-marketing-team-used-ai-to-bring-people-closer-to-art",
+      "sha256_texto": "354faf986f31fd08f346b81292be188d2fae746dc4039961b938913c1b989d23",
+      "palavras": 5506,
+      "cobertura": "texto editorial integral lido; sincronização audiovisual não verificada"
+    },
+    {
+      "video_id": "2cAwSp2hERY",
+      "tipo": "transcricao_editorial_PDF",
+      "url": "https://web-assets.bcg.com/51/fe/0ef9bdb243cc8cb8d970d981b9d4/me-myself-and-ai-marketing-with-generative-ai-aylet-israeli-episode-transcript.pdf",
+      "sha256_texto": "16d187e8cc4775f7079be47668822d1bf639f436c413ae3a0e58ceff26f6c6ed",
+      "palavras": 5534,
+      "cobertura": "texto editorial integral lido; sincronização audiovisual não verificada"
+    }
+  ]
+}

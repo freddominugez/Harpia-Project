@@ -1,0 +1,18 @@
+{
+  "nome": "GEN Atlas / Grupo GEN",
+  "url": "https://www.grupogen.com.br/",
+  "regiao": "Brasil",
+  "tipo": "editora",
+  "descricao": "Referência bibliográfica da editora; não integra a seleção de artigos.",
+  "idioma": "pt",
+  "hosts": [
+    "www.grupogen.com.br"
+  ],
+  "feed": "",
+  "status": "aprovado",
+  "escopos": [
+    "livros"
+  ],
+  "canais": [],
+  "verificado_em": "2026-11-06"
+}

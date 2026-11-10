@@ -1,0 +1,141 @@
+{
+  "branch": "codex/harpya-business-corretivo",
+  "commit": "5dc2c858e346312c0ad80840c3c2dd069cab06ce",
+  "checkout": "/tmp/harpya-business-corretivo",
+  "status": "publicado_agendas_github_ativas_editoriais_claude_pendentes",
+  "checkout_original_preservado": true,
+  "relatorio": "docs/corretivo/landing-atualizacao-business.json",
+  "publicacao": {
+    "status": "READY",
+    "url": "https://www.harpya.org/business/",
+    "codigo_commit": "d0e1c71deb405809964e38c667d9cd8be1db3507",
+    "deployment_commit": "eb7f181ab7de6ac96bf94e4cbdb007e32cffb780",
+    "main_commit": "dad5451d325d62a55bf0fb59431748f241ca6758",
+    "deployment_id": "dpl_BAFbEZh8x6yPrUgRxNpzaNJB4jQR",
+    "deployment_url": "https://harpia-project-cxzmrlrq6-byvulcan.vercel.app",
+    "verificado_em": "2026-11-07T11:01:15.531Z",
+    "paginas_http": 135,
+    "falhas_http": [],
+    "resumos_referencias": 6,
+    "cards_guias": 3,
+    "palavras_introducao": 49,
+    "anuncios_iguais": true,
+    "atualizacao_automatica_publicada": true,
+    "radar_publico_coincide_com_workflow": true
+  },
+  "ultima_alteracao_anuncios": "docs/corretivo/anuncios-organizer-v2.json",
+  "publicacao_atual": {
+    "commit": "5dc2c858e346312c0ad80840c3c2dd069cab06ce",
+    "deployment_id": "dpl_2aV36UVJPNBqZ8hcZvPejzr4RD4F",
+    "deployment_url": "https://harpia-project-cmaxy2ivx-byvulcan.vercel.app",
+    "status": "READY",
+    "verificado_em": "2026-11-07T14:31:25.822Z",
+    "verificacao": {
+      "verificado_em": "2026-11-07T14:31:25.822Z",
+      "paginas": [
+        {
+          "route": "/tecnologia/",
+          "status": 200,
+          "slots": [
+            {
+              "posicao": "topo",
+              "imagem": "/img/anuncios/vulcan-organizer-banner-superior-970x90-v2-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=superior_970x90",
+              "imagem_correta": true,
+              "url_preservada": true
+            },
+            {
+              "posicao": "lateral-direita",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-direita-300x250-v2-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_direita_300x250",
+              "imagem_correta": true,
+              "url_preservada": true
+            },
+            {
+              "posicao": "lateral-esquerda",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-esquerda-300x250-v2-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_esquerda_300x250",
+              "imagem_correta": true,
+              "url_preservada": true
+            }
+          ]
+        },
+        {
+          "route": "/business/",
+          "status": 200,
+          "slots": [
+            {
+              "posicao": "topo",
+              "imagem": "/img/anuncios/vulcan-organizer-banner-superior-970x90-v2-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=superior_970x90",
+              "imagem_correta": true,
+              "url_preservada": true
+            },
+            {
+              "posicao": "lateral-direita",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-direita-300x250-v2-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_direita_300x250",
+              "imagem_correta": true,
+              "url_preservada": true
+            },
+            {
+              "posicao": "lateral-esquerda",
+              "imagem": "/img/anuncios/vulcan-organizer-lateral-esquerda-300x250-v2-2x.png",
+              "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_esquerda_300x250",
+              "imagem_correta": true,
+              "url_preservada": true
+            }
+          ]
+        }
+      ],
+      "imagens": [
+        {
+          "route": "/img/anuncios/vulcan-organizer-banner-superior-970x90-v2-2x.png",
+          "status": 200,
+          "bytes": 159453,
+          "sha256": "277ef49dcb9d6068a5a817909f60b449acf025820234a14a7f2e29e8331e4794",
+          "corresponde_ao_arquivo_salvo": true
+        },
+        {
+          "route": "/img/anuncios/vulcan-organizer-banner-superior-970x90-v2.png",
+          "status": 200,
+          "bytes": 54895,
+          "sha256": "a85fa88ed37da0b9d1e0152e0dfb0ed4843aff4c9d79e672f0a09b332596da0b",
+          "corresponde_ao_arquivo_salvo": true
+        },
+        {
+          "route": "/img/anuncios/vulcan-organizer-lateral-direita-300x250-v2-2x.png",
+          "status": 200,
+          "bytes": 116967,
+          "sha256": "b534010ea51d8dcce31101853a68d971398d72795d6cad452861960325c4568c",
+          "corresponde_ao_arquivo_salvo": true
+        },
+        {
+          "route": "/img/anuncios/vulcan-organizer-lateral-direita-300x250-v2.png",
+          "status": 200,
+          "bytes": 44543,
+          "sha256": "78da98e6d663e8d0f7b6f04798da944835094ab3c3fcb1563219ef230574e42b",
+          "corresponde_ao_arquivo_salvo": true
+        },
+        {
+          "route": "/img/anuncios/vulcan-organizer-lateral-esquerda-300x250-v2-2x.png",
+          "status": 200,
+          "bytes": 141077,
+          "sha256": "bd0e1760ad301241855f7afbad06ea35d06d772f2f42f595559a8e2cfbde559d",
+          "corresponde_ao_arquivo_salvo": true
+        },
+        {
+          "route": "/img/anuncios/vulcan-organizer-lateral-esquerda-300x250-v2.png",
+          "status": 200,
+          "bytes": 51064,
+          "sha256": "6853c2e8a71849284d2d3d8e58b76dd6497d111e98bdfe7e2de7c5a804cd87bf",
+          "corresponde_ao_arquivo_salvo": true
+        }
+      ],
+      "ok": true
+    },
+    "ci_build": "success",
+    "ci_indexnow": "success",
+    "ci_lighthouse": "in_progress"
+  }
+}

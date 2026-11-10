@@ -1,0 +1,63 @@
+/* Uma única coluna de publicidade e leituras, depois do conteúdo no DOM. */
+.ad-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; max-width: 1920px; margin: 0 auto; }
+.ad-layout > main { min-width: 0; width: 100%; container-type: inline-size; container-name: ad-main; }
+.ad-rail { --ink: #282d33; --gold: #c79a39; --gold-strong: #8a6214; --slate: #68717a; --border: #e4e7ea; --paper: #fff; --bg: #f8f9fa; --font: "Inter Variable", Inter, system-ui, sans-serif; min-width: 0; display: flex; flex-direction: column; gap: 24px; padding: 24px; border-top: 1px solid var(--border); background: var(--bg); color: var(--ink); font: 14px/1.6 var(--font); }
+.ad-slot { font: 400 13px/1.5 var(--font); border: 1px solid var(--border); border-radius: 8px; background: #fff; color: var(--ink); overflow: hidden; width: 100%; max-width: 300px; align-self: center; }
+.ad-label { display: block; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--slate); padding: 5px 10px; background: #f8f9fa; }
+.ad-content { display: block; color: inherit; text-decoration: none; }
+.ad-content img { display: block; width: 100%; height: auto; object-fit: contain; background: #fff; }
+.ad-slot-side .ad-image-only img { aspect-ratio: 300/250; }
+.ad-slot-horizontal { --ink: #282d33; --slate: #68717a; --border: #e4e7ea; --font: "Inter Variable", Inter, system-ui, sans-serif; width: calc(100% - 48px); max-width: 970px; margin: 32px auto; text-align: left; }
+.ad-slot-horizontal .ad-image-only img { aspect-ratio: 970/90; margin: 0; border: 0; border-radius: 0; box-shadow: none; }
+.ad-slot-horizontal .ad-placeholder { min-height: 90px; }
+.ad-slot-horizontal a { color: inherit; text-decoration: none; border: 0; }
+@media (max-width: 500px) { .ad-slot-horizontal { width: calc(100% - 24px); margin-block: 24px; } }
+.ad-copy { display: grid; gap: 5px; padding: 12px; min-width: 0; overflow-wrap: anywhere; }
+.ad-copy strong { font-size: 15px; line-height: 1.3; }
+.ad-copy small { color: var(--slate); }
+.ad-placeholder { min-height: 140px; padding: 16px; text-align: center; display: grid; align-content: center; gap: 4px; background: repeating-linear-gradient(-45deg, #fff, #fff 8px, #fafbfc 8px, #fafbfc 16px); }
+.ad-placeholder strong { font-size: 15px; }
+.ad-placeholder span { font-size: 12px; color: var(--slate); }
+.ad-sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0 !important; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.technology-feed { min-width: 0; }
+.technology-heading { padding-bottom: 18px; border-bottom: 2px solid var(--gold); }
+.technology-eyebrow { color: var(--gold-strong); font-size: 10px; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+.technology-heading h2 { margin: 6px 0 8px; font-size: 19px; line-height: 1.2; color: var(--ink); }
+.technology-heading p { margin: 0 0 8px; font-size: 12px; }
+.technology-heading small { display: block; font-size: 10px; color: var(--slate); }
+.technology-topic { padding-top: 20px; }
+.technology-topic-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.technology-topic-heading h3 { margin: 0; font-size: 14px; color: var(--ink); }
+.technology-topic-heading > a { font-size: 10px; color: var(--gold-strong); font-weight: 700; }
+.technology-context { font-size: 11px; line-height: 1.5; margin: 6px 0 10px; }
+.technology-card { margin-top: 10px; padding: 14px; border: 1px solid var(--border); border-radius: 8px; background: var(--paper); overflow-wrap: anywhere; }
+.technology-meta { display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; justify-content: space-between; color: var(--slate); font-size: 10px; }
+.technology-meta > span { color: var(--gold-strong); font-weight: 700; }
+.technology-card h4 { margin: 9px 0 8px; font-size: 13px; line-height: 1.45; letter-spacing: -.01em; color: var(--ink); }
+.technology-card a { color: inherit; text-decoration: none; }
+.technology-card a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.technology-card > small { font-size: 10px; color: var(--slate); }
+.technology-empty, .technology-note, .technology-status { font-size: 11px; line-height: 1.6; color: var(--slate); }
+.technology-empty a { text-decoration: underline; }
+.technology-note { padding-top: 16px; margin: 20px 0 0; border-top: 1px solid var(--border); }
+@media (min-width: 1280px) {
+  .ad-layout { grid-template-columns: minmax(0, 1fr) 300px; gap: 0; padding-right: 20px; }
+  .ad-rail { grid-column: 2; grid-row: 1; padding: 24px 0 24px 20px; border-top: 0; border-left: 1px solid var(--border); }
+  .ad-layout > main { grid-column: 1; grid-row: 1; }
+  .ad-layout .ref-hero-art { margin-right: 0; overflow: hidden; }
+}
+@media (min-width: 700px) and (max-width: 1279px) {
+  .technology-feed .technology-topic { display: inline-block; vertical-align: top; width: calc((100% - 40px) / 3); margin-right: 16px; }
+  .technology-feed .technology-topic:last-of-type { margin-right: 0; }
+}
+/* O conteúdo responde à largura real disponível junto à coluna. */
+@container ad-main (max-width: 1180px) {
+  .ref-columns { grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr); gap: 22px; }
+  .ref-right { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+  .ref-hero-copy h1 { font-size: clamp(2.6rem, 5.3cqw, 4rem); white-space: normal; }
+  .ref-track-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ref-track { height: auto; min-height: 118px; }
+}
+@container ad-main (max-width: 760px) {
+  .ref-columns, .ref-right { grid-template-columns: 1fr; }
+}

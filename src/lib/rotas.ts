@@ -2,6 +2,8 @@
 // gêmeos em markdown (/<rota>.md), /llms.txt, /llms-full.txt e /rss.xml.
 // Página nova: acrescente aqui. O QA (scripts/qa_redesign.py) acusa página fora do registro.
 import fs from "node:fs";
+import { businessRotas } from "./business-rotas";
+import { PORTAL_DESCRICAO } from "./ambientes";
 import { fontesDoSite, markdownDasFontes } from "./fontes-site";
 import { getCollection, type CollectionEntry } from "astro:content";
 import { SITE } from "../config";
@@ -153,7 +155,7 @@ export async function rotas(): Promise<Rota[]> {
 
   const r: Rota[] = [
     {
-      path: "/",
+      path: "/tecnologia/",
       titulo: `${SITE.nome} · ${SITE.lema}`,
       descricao: SITE.descricao,
       secao: "Pesquisa aberta",
@@ -551,6 +553,8 @@ export async function rotas(): Promise<Rota[]> {
       schema: () => [{ "@type": "AboutPage", "@id": `${abs("/sobre/")}#pagina`, url: abs("/sobre/"), name: sobre.titulo, inLanguage: "pt-BR", isPartOf: { "@id": ID.site }, about: { "@id": ID.org }, author: { "@id": ID.pessoa } }],
     },
   ];
+  r.unshift({ path: '/', titulo: 'Harpya: escolha seu ambiente', descricao: PORTAL_DESCRICAO, secao: 'Portal Harpya', atualizado: '2026-11-06', markdown: () => `${PORTAL_DESCRICAO}\n\n- [Tecnologia e Matemática](${abs('/tecnologia/')}): pesquisa aberta em IA, computação e matemática.\n- [Harpya Business](${abs('/business/')}): marketing, estratégia e administração.\n\nA preferência de entrada é salva apenas por escolha explícita no navegador. Links diretos mantêm o destino.` });
+  r.push(...await businessRotas(abs));
   cache = r;
   return r;
 }
@@ -568,7 +572,7 @@ export function entidades() {
       url: `${URL_SITE}/`,
       name: SITE.nome,
       alternateName: "Projeto Harpya",
-      description: SITE.descricao,
+      description: PORTAL_DESCRICAO,
       inLanguage: "pt-BR",
       publisher: { "@id": ID.org },
       author: { "@id": ID.pessoa },
@@ -581,7 +585,7 @@ export function entidades() {
       alternateName: "Projeto Harpya",
       url: `${URL_SITE}/`,
       logo: { "@type": "ImageObject", url: abs("/img/harpya-logo-512.png"), width: 512, height: 512 },
-      description: SITE.descricao,
+      description: PORTAL_DESCRICAO,
       founder: { "@id": ID.pessoa },
       sameAs: [SITE.repositorio],
     },

@@ -1,0 +1,20 @@
+{
+  "nome": "Bain & Company",
+  "url": "https://www.bain.com/insights/",
+  "regiao": "Estados Unidos / global",
+  "tipo": "consultoria",
+  "descricao": "Estratégia comercial, marketing, vendas e relacionamento.",
+  "idioma": "en",
+  "hosts": [
+    "www.bain.com",
+    "bain.com"
+  ],
+  "feed": "",
+  "verificado_em": "2026-11-06",
+  "status": "aprovado",
+  "escopos": [
+    "artigos"
+  ],
+  "canais": [],
+  "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção."
+}

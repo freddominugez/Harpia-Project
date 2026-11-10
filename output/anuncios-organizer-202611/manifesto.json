@@ -1,0 +1,78 @@
+{
+  "data": "2026-11-07",
+  "descricao": "Três novas peças com os textos originais, capturas reais do produto e os dois logos fornecidos.",
+  "gerador": "scripts/gerar_anuncios_organizer_202611.mjs",
+  "fontes": [
+    "assets/vulcan-logo.png",
+    "assets/organizer-icone-transparente.png",
+    "assets/calendario.jpg",
+    "assets/notas.jpg"
+  ],
+  "icone": {
+    "modo": "imagegen integrado",
+    "prompt_arquivo": "design/anuncios-organizer-202611/prompt-icone.txt",
+    "origem": "/Users/studio/Documents/github/vulcan-organizer/public/vulcanorganizer.jpg",
+    "prompt": "Recorte transparente do ícone original; remover quadriculado de fundo, preservar organizer aberto, moldura metálica, cinco argolas, páginas, notas e abas coloridas, sem redesenho ou texto."
+  },
+  "pecas": [
+    {
+      "posicao": "topo",
+      "dimensoes": [
+        970,
+        90
+      ],
+      "texto": [
+        "Vulcan Organizer",
+        "AGENDA · TAREFAS · NOTAS · IA",
+        "Seu dia inteiro num organizer de verdade.",
+        "Google Agenda e Google Tasks sincronizados. Grátis, sem cartão.",
+        "Comece grátis →"
+      ],
+      "arquivo": "public/img/anuncios/vulcan-organizer-banner-superior-970x90-v2-2x.png",
+      "arquivo_1x": "public/img/anuncios/vulcan-organizer-banner-superior-970x90-v2.png",
+      "editavel": "design/anuncios-organizer-202611/editaveis/vulcan-organizer-banner-superior-970x90-v2.svg",
+      "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=superior_970x90"
+    },
+    {
+      "posicao": "lateral-direita",
+      "dimensoes": [
+        300,
+        250
+      ],
+      "texto": [
+        "Vulcan Organizer",
+        "Tudo do seu dia num só lugar.",
+        "Calendário com Google Agenda",
+        "Tarefas com Google Tasks",
+        "Notas e cadernos",
+        "Cofre de senhas e resumo com IA",
+        "Experimente grátis →",
+        "Plano gratuito. Sem cartão de crédito."
+      ],
+      "arquivo": "public/img/anuncios/vulcan-organizer-lateral-direita-300x250-v2-2x.png",
+      "arquivo_1x": "public/img/anuncios/vulcan-organizer-lateral-direita-300x250-v2.png",
+      "editavel": "design/anuncios-organizer-202611/editaveis/vulcan-organizer-lateral-direita-300x250-v2.svg",
+      "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_direita_300x250"
+    },
+    {
+      "posicao": "lateral-esquerda",
+      "dimensoes": [
+        300,
+        250
+      ],
+      "texto": [
+        "Vulcan Organizer",
+        "sex, 31 out",
+        "Sua agenda com alma de papel.",
+        "09:00 café com a equipe",
+        "enviar proposta",
+        "revisar o orçamento",
+        "Comece grátis →"
+      ],
+      "arquivo": "public/img/anuncios/vulcan-organizer-lateral-esquerda-300x250-v2-2x.png",
+      "arquivo_1x": "public/img/anuncios/vulcan-organizer-lateral-esquerda-300x250-v2.png",
+      "editavel": "design/anuncios-organizer-202611/editaveis/vulcan-organizer-lateral-esquerda-300x250-v2.svg",
+      "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_esquerda_300x250"
+    }
+  ]
+}

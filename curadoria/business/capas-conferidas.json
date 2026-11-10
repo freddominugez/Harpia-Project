@@ -1,0 +1,566 @@
+{
+  "schema_version": "1.0",
+  "conferido_em": "2026-11-06",
+  "escopo": "Oito capas bibliográficas oficiais conferidas localmente; nenhuma leitura integral dos livros, alteração de src, commit ou publicação.",
+  "diretorio_assets": "/tmp/harpya-business-capas/",
+  "criterios": [
+    "Usar o livro/ISBN já aprovado; não substituir pela primeira capa de busca.",
+    "Conferir título, autores e edição visível com o arquivo original.",
+    "Separar número ordinal legível na capa da correspondência documental por ISBN no catálogo.",
+    "Separar procedência e correspondência bibliográfica de licença/autorização de republicação.",
+    "How Brands Grow permanece pendente por diferença entre ISBN de imagem impressa e eBook aprovado."
+  ],
+  "resumo": {
+    "capas_baixadas": 8,
+    "capas_inspecionadas_visualmente": 8,
+    "correspondencias_bibliograficas_confirmadas": 7,
+    "correspondencias_pendentes": 1,
+    "edicoes_ordinais_legiveis_e_conferidas_na_capa": 4,
+    "licencas_livres_confirmadas": 0,
+    "autorizacoes_especificas_de_republicacao_obtidas": 0
+  },
+  "itens": [
+    {
+      "id": "marketing-management",
+      "titulo_aprovado": "Marketing Management",
+      "autores_aprovados": "Philip Kotler; Kevin Lane Keller; Alexander Chernev",
+      "isbn_aprovado": "9780137344161",
+      "formato_aprovado": "eTextbook / assinatura Pearson+",
+      "edicao_catalogada": "16",
+      "editora": "Pearson",
+      "arquivo_local": "/tmp/harpya-business-capas/marketing-management-9780137344161.jpg",
+      "url_imagem": "https://www.pearson.com/store/pmccommercewebservices/v2/medias/size-W370-P1000-03-05-40-P100003054015-P100003054015-Lrg.jpg?context=bWFzdGVyfGltYWdlc3w1MTcwOHxpbWFnZS9qcGVnfHN5cy1tYXN0ZXIvaW1hZ2VzL2hmOS9oNTYvMTU1NjAwMDQ5NjAyODYvc2l6ZV9XMzcwXy9QMTAwMC8wMy8wNS80MC9QMTAwMDAzMDU0MDE1L1AxMDAwMDMwNTQwMTVfTHJnLmpwZ3w5ZmZmOWFmNDM0ZDE5NzdlNTQzM2I4NDExNmY5NmU4OTUwNTM2ZmU5MTZmMGVmNzAxOTIwYmRlNDZkNmEyMDUz&imwidth=640",
+      "pagina_editorial": "https://www.pearson.com/en-us/subject-catalog/p/marketing-management/P200000005952?view=educator",
+      "dimensoes_pixels": {
+        "largura": 370,
+        "altura": 473
+      },
+      "mime": "image/jpeg",
+      "bytes": 29090,
+      "sha256": "793cfa16262ee4e641c73207c58e95af1c3c9de581010617fbe91aa936d8201a",
+      "download_confirmado": true,
+      "inspecao_visual": {
+        "realizada": true,
+        "metodo": "view_image do JPEG baixado; inspeção da capa frontal original, sem edição da imagem.",
+        "em": "2026-11-06",
+        "titulo_visivel": "Marketing Management",
+        "autores_visiveis": [
+          "Philip Kotler",
+          "Kevin Lane Keller",
+          "Alexander Chernev"
+        ],
+        "edicao_visivel": "Sixteenth Edition",
+        "edicao_visual_confirmada": true
+      },
+      "correspondencia_bibliografica": {
+        "estado": "confirmada",
+        "fundamento": "Título, três autores e 16ª edição legíveis; a página editorial apresenta a 16ª edição e inclui o ISBN de eTextbook aprovado. A capa frontal é a imagem editorial da edição; não é prova visual de encadernação.",
+        "titulo_e_autores_compativeis": true,
+        "formato_identificavel_apenas_pela_capa": false,
+        "isbn_visivel_na_frente": false,
+        "isbn_fonte_imagem_diferente_do_aprovado": null
+      },
+      "credito_sugerido": "Capa editorial fornecida por Pearson, para identificação de Marketing Management, de Philip Kotler; Kevin Lane Keller; Alexander Chernev. Direitos dos respectivos titulares.",
+      "credito_limites": "Crédito de procedência editorial; artista ou designer da capa não identificado. Não atribui autoria gráfica à editora nem concede licença.",
+      "direitos_e_condicoes": {
+        "estado": "condicao_geral_publicada; autorizacao_especifica_nao_obtida",
+        "condicao_publicada": "O catálogo informa reserva de direitos. A página Global Rights Licensing encaminha a reutilização de textos e imagens à equipe de permissões; não apresenta licença livre para estas capas.",
+        "fontes": [
+          "https://www.pearson.com/en-us/legal-information/global-rights-licensing.html"
+        ],
+        "licenca_livre": false,
+        "autorizacao_republicacao_especifica": false,
+        "uso_local": "Arquivos obtidos para conferência bibliográfica local; não foram publicados. A existência do download não foi classificada como autorização de republicação."
+      },
+      "integracao": {
+        "runtime_alterado": false,
+        "decisao_bibliografica": "correspondencia_confirmada_para_identificacao",
+        "licenca_ou_base_de_uso_no_catalogo": "não determinada por esta conferência bibliográfica; condições publicadas registradas separadamente"
+      },
+      "evidencias_http": {
+        "pagina_http_requests": 200,
+        "imagem": {
+          "url": "https://www.pearson.com/store/pmccommercewebservices/v2/medias/size-W370-P1000-03-05-40-P100003054015-P100003054015-Lrg.jpg?context=bWFzdGVyfGltYWdlc3w1MTcwOHxpbWFnZS9qcGVnfHN5cy1tYXN0ZXIvaW1hZ2VzL2hmOS9oNTYvMTU1NjAwMDQ5NjAyODYvc2l6ZV9XMzcwXy9QMTAwMC8wMy8wNS80MC9QMTAwMDAzMDU0MDE1L1AxMDAwMDMwNTQwMTVfTHJnLmpwZ3w5ZmZmOWFmNDM0ZDE5NzdlNTQzM2I4NDExNmY5NmU4OTUwNTM2ZmU5MTZmMGVmNzAxOTIwYmRlNDZkNmEyMDUz&imwidth=640",
+          "http": 200,
+          "tipo": "image/jpeg",
+          "bytes": 29090
+        },
+        "observacao": "Imagem obtida do link declarado pelo próprio catálogo editorial."
+      }
+    },
+    {
+      "id": "marketing-research",
+      "titulo_aprovado": "Marketing Research: An Applied Orientation",
+      "autores_aprovados": "Naresh K. Malhotra",
+      "isbn_aprovado": "9780134734842",
+      "formato_aprovado": "Hardcover",
+      "edicao_catalogada": "7",
+      "editora": "Pearson",
+      "arquivo_local": "/tmp/harpya-business-capas/marketing-research-9780134734842.jpg",
+      "url_imagem": "https://www.pearson.com/store/pmccommercewebservices/v2/medias/size-W370-bigcovers-013473484X.jpg?context=bWFzdGVyfGltYWdlc3w1MzY4NXxpbWFnZS9qcGVnfHN5cy1tYXN0ZXIvaW1hZ2VzL2g4YS9oMTEvMTU1NTAwOTAzNzkyOTQvc2l6ZV9XMzcwXy9iaWdjb3ZlcnMvMDEzNDczNDg0WC5qcGd8YzU3NzhkNmQxZThhMDg4OTY5MjlkNjY2YzQxODI4MzgwZjMxY2NiYzk1YTg4YzIyOTE0NWM5N2UwMWIzMGVhMw&imwidth=3840",
+      "pagina_editorial": "https://www.pearson.com/en-us/subject-catalog/p/marketing-research-an-applied-orientation/P200000005969/9780134734842",
+      "dimensoes_pixels": {
+        "largura": 370,
+        "altura": 474
+      },
+      "mime": "image/jpeg",
+      "bytes": 27949,
+      "sha256": "301f2274bb06991fe16a16e09797f8efbfac78feceb55509b93bd0ca9b8ed5f2",
+      "download_confirmado": true,
+      "inspecao_visual": {
+        "realizada": true,
+        "metodo": "view_image do JPEG baixado; inspeção da capa frontal original, sem edição da imagem.",
+        "em": "2026-11-06",
+        "titulo_visivel": "Marketing Research: An Applied Orientation",
+        "autores_visiveis": [
+          "Naresh Malhotra"
+        ],
+        "edicao_visivel": "Seventh Edition",
+        "edicao_visual_confirmada": true
+      },
+      "correspondencia_bibliografica": {
+        "estado": "confirmada",
+        "fundamento": "Título, sobrenome e 7ª edição legíveis. Imagem da página Pearson, com ISBN-10 013473484X no recurso, equivalente ao ISBN-13 aprovado; formato Hardcover confirmado na página, não na vista frontal.",
+        "titulo_e_autores_compativeis": true,
+        "formato_identificavel_apenas_pela_capa": false,
+        "isbn_visivel_na_frente": false,
+        "isbn_fonte_imagem_diferente_do_aprovado": null
+      },
+      "credito_sugerido": "Capa editorial fornecida por Pearson, para identificação de Marketing Research: An Applied Orientation, de Naresh K. Malhotra. Direitos dos respectivos titulares.",
+      "credito_limites": "Crédito de procedência editorial; artista ou designer da capa não identificado. Não atribui autoria gráfica à editora nem concede licença.",
+      "direitos_e_condicoes": {
+        "estado": "condicao_geral_publicada; autorizacao_especifica_nao_obtida",
+        "condicao_publicada": "O catálogo informa reserva de direitos. A página Global Rights Licensing encaminha a reutilização de textos e imagens à equipe de permissões; não apresenta licença livre para estas capas.",
+        "fontes": [
+          "https://www.pearson.com/en-us/legal-information/global-rights-licensing.html"
+        ],
+        "licenca_livre": false,
+        "autorizacao_republicacao_especifica": false,
+        "uso_local": "Arquivos obtidos para conferência bibliográfica local; não foram publicados. A existência do download não foi classificada como autorização de republicação."
+      },
+      "integracao": {
+        "runtime_alterado": false,
+        "decisao_bibliografica": "correspondencia_confirmada_para_identificacao",
+        "licenca_ou_base_de_uso_no_catalogo": "não determinada por esta conferência bibliográfica; condições publicadas registradas separadamente"
+      },
+      "evidencias_http": {
+        "pagina_http_requests": 200,
+        "imagem": {
+          "url": "https://www.pearson.com/store/pmccommercewebservices/v2/medias/size-W370-bigcovers-013473484X.jpg?context=bWFzdGVyfGltYWdlc3w1MzY4NXxpbWFnZS9qcGVnfHN5cy1tYXN0ZXIvaW1hZ2VzL2g4YS9oMTEvMTU1NTAwOTAzNzkyOTQvc2l6ZV9XMzcwXy9iaWdjb3ZlcnMvMDEzNDczNDg0WC5qcGd8YzU3NzhkNmQxZThhMDg4OTY5MjlkNjY2YzQxODI4MzgwZjMxY2NiYzk1YTg4YzIyOTE0NWM5N2UwMWIzMGVhMw&imwidth=3840",
+          "http": 200,
+          "tipo": "image/jpeg",
+          "bytes": 27949
+        },
+        "observacao": "Imagem obtida do link declarado pelo próprio catálogo editorial."
+      }
+    },
+    {
+      "id": "strategic-brand-management",
+      "titulo_aprovado": "Strategic Brand Management",
+      "autores_aprovados": "Kevin Lane Keller; Vanitha Swaminathan",
+      "isbn_aprovado": "9780135641347",
+      "formato_aprovado": "Loose-Leaf + Paperback, edição impressa",
+      "edicao_catalogada": "5",
+      "editora": "Pearson",
+      "arquivo_local": "/tmp/harpya-business-capas/strategic-brand-management-9780135641347.jpg",
+      "url_imagem": "https://www.pearson.com/store/pmccommercewebservices/v2/medias/size-W370-A1030-00-06-09-A103000060920-A103000060920-Lrg.jpg?context=bWFzdGVyfGltYWdlc3wxMzQxNjB8aW1hZ2UvanBlZ3xzeXMtbWFzdGVyL2ltYWdlcy9oMWYvaDJhLzE1NDY1MjYzMzY2MTc0L3NpemVfVzM3MF8vQTEwMzAvMDAvMDYvMDkvQTEwMzAwMDA2MDkyMC9BMTAzMDAwMDYwOTIwX0xyZy5qcGd8MzRkZmRkNGI2MzBjNWExMGIwZWM1MThjODYyZTg0MjgwM2M1YjVjZTg3YTY3ZDRlNzQyYTQ4NjcyODhkYzkyZg&imwidth=3840",
+      "pagina_editorial": "https://www.pearson.com/en-us/subject-catalog/p/strategic-brand-management-building-measuring-and-managing-brand-equity/P200000005947/9780135641347",
+      "dimensoes_pixels": {
+        "largura": 370,
+        "altura": 473
+      },
+      "mime": "image/jpeg",
+      "bytes": 45267,
+      "sha256": "09d9ca721cba2a5ff25c41e02c17b87848b680d31fb3efec8e82468f797575bf",
+      "download_confirmado": true,
+      "inspecao_visual": {
+        "realizada": true,
+        "metodo": "view_image do JPEG baixado; inspeção da capa frontal original, sem edição da imagem.",
+        "em": "2026-11-06",
+        "titulo_visivel": "Strategic Brand Management: Building, Measuring, and Managing Brand Equity",
+        "autores_visiveis": [
+          "Kevin Lane Keller",
+          "Vanitha Swaminathan"
+        ],
+        "edicao_visivel": "Fifth Edition",
+        "edicao_visual_confirmada": true
+      },
+      "correspondencia_bibliografica": {
+        "estado": "confirmada",
+        "fundamento": "Título, ambos os autores e 5ª edição legíveis. A imagem foi extraída do atributo src do produto Pearson consultado no endereço do ISBN aprovado; formato Loose-Leaf + Paperback vem da ficha editorial.",
+        "titulo_e_autores_compativeis": true,
+        "formato_identificavel_apenas_pela_capa": false,
+        "isbn_visivel_na_frente": false,
+        "isbn_fonte_imagem_diferente_do_aprovado": null
+      },
+      "credito_sugerido": "Capa editorial fornecida por Pearson, para identificação de Strategic Brand Management, de Kevin Lane Keller; Vanitha Swaminathan. Direitos dos respectivos titulares.",
+      "credito_limites": "Crédito de procedência editorial; artista ou designer da capa não identificado. Não atribui autoria gráfica à editora nem concede licença.",
+      "direitos_e_condicoes": {
+        "estado": "condicao_geral_publicada; autorizacao_especifica_nao_obtida",
+        "condicao_publicada": "O catálogo informa reserva de direitos. A página Global Rights Licensing encaminha a reutilização de textos e imagens à equipe de permissões; não apresenta licença livre para estas capas.",
+        "fontes": [
+          "https://www.pearson.com/en-us/legal-information/global-rights-licensing.html"
+        ],
+        "licenca_livre": false,
+        "autorizacao_republicacao_especifica": false,
+        "uso_local": "Arquivos obtidos para conferência bibliográfica local; não foram publicados. A existência do download não foi classificada como autorização de republicação."
+      },
+      "integracao": {
+        "runtime_alterado": false,
+        "decisao_bibliografica": "correspondencia_confirmada_para_identificacao",
+        "licenca_ou_base_de_uso_no_catalogo": "não determinada por esta conferência bibliográfica; condições publicadas registradas separadamente"
+      },
+      "evidencias_http": {
+        "pagina_http_requests": 200,
+        "imagem": {
+          "url": "https://www.pearson.com/store/pmccommercewebservices/v2/medias/size-W370-A1030-00-06-09-A103000060920-A103000060920-Lrg.jpg?context=bWFzdGVyfGltYWdlc3wxMzQxNjB8aW1hZ2UvanBlZ3xzeXMtbWFzdGVyL2ltYWdlcy9oMWYvaDJhLzE1NDY1MjYzMzY2MTc0L3NpemVfVzM3MF8vQTEwMzAvMDAvMDYvMDkvQTEwMzAwMDA2MDkyMC9BMTAzMDAwMDYwOTIwX0xyZy5qcGd8MzRkZmRkNGI2MzBjNWExMGIwZWM1MThjODYyZTg0MjgwM2M1YjVjZTg3YTY3ZDRlNzQyYTQ4NjcyODhkYzkyZg&imwidth=3840",
+          "http": 200,
+          "tipo": "image/jpeg",
+          "bytes": 45267
+        },
+        "observacao": "Imagem obtida do link declarado pelo próprio catálogo editorial."
+      }
+    },
+    {
+      "id": "how-brands-grow",
+      "titulo_aprovado": "How Brands Grow: What Marketers Don’t Know",
+      "autores_aprovados": "Byron Sharp",
+      "isbn_aprovado": "9780190337889",
+      "formato_aprovado": "eBook",
+      "edicao_catalogada": null,
+      "editora": "Oxford University Press",
+      "arquivo_local": "/tmp/harpya-business-capas/how-brands-grow-capa-editorial-9780195573565-pendente.jpg",
+      "url_imagem": "https://fdslive.oup.com/covers/anz/desktop/medium/9780195573565.jpg",
+      "pagina_editorial": "https://www.oup.com.au/books/higher-education/business-marketing/9780190337889",
+      "dimensoes_pixels": {
+        "largura": 340,
+        "altura": 504
+      },
+      "mime": "image/jpeg",
+      "bytes": 33536,
+      "sha256": "67581741464e28a924e5f6eb2db638744673e0240ad9587629573caa96763f33",
+      "download_confirmado": true,
+      "inspecao_visual": {
+        "realizada": true,
+        "metodo": "view_image do JPEG baixado; inspeção da capa frontal original, sem edição da imagem.",
+        "em": "2026-11-06",
+        "titulo_visivel": "How Brands Grow: What Marketers Don’t Know",
+        "autores_visiveis": [
+          "Byron Sharp"
+        ],
+        "edicao_visivel": "10 Year Anniversary; não é um número ordinal de edição",
+        "edicao_visual_confirmada": false
+      },
+      "correspondencia_bibliografica": {
+        "estado": "pendente",
+        "fundamento": "Título e autor conferem. A página oficial do eBook 9780190337889 aponta para imagem identificada pelo ISBN impresso 9780195573565; a capa contém selo de aniversário. Não foi demonstrada equivalência exata da edição/formato da capa e do eBook aprovado. Não integrar enquanto isso permanecer pendente.",
+        "titulo_e_autores_compativeis": true,
+        "formato_identificavel_apenas_pela_capa": false,
+        "isbn_visivel_na_frente": false,
+        "isbn_fonte_imagem_diferente_do_aprovado": "9780195573565"
+      },
+      "credito_sugerido": "Capa editorial fornecida por Oxford University Press, para identificação de How Brands Grow: What Marketers Don’t Know, de Byron Sharp. Direitos dos respectivos titulares.",
+      "credito_limites": "Crédito de procedência editorial; artista ou designer da capa não identificado. Não atribui autoria gráfica à editora nem concede licença.",
+      "direitos_e_condicoes": {
+        "estado": "reserva_de_direitos_na_pagina; licenca_especifica_nao_localizada",
+        "condicao_publicada": "A página editorial OUP apresenta aviso de reserva de direitos. Não foi localizada uma condição específica que autorize republicar esta capa no catálogo Harpya.",
+        "fontes": [
+          "https://www.oup.com.au/books/higher-education/business-marketing/9780190337889"
+        ],
+        "licenca_livre": false,
+        "autorizacao_republicacao_especifica": false,
+        "uso_local": "Capa local para identificação e investigação da edição; correspondência exata permanece pendente."
+      },
+      "integracao": {
+        "runtime_alterado": false,
+        "decisao_bibliografica": "pendente; nao_integrar",
+        "licenca_ou_base_de_uso_no_catalogo": "não determinada por esta conferência bibliográfica; condições publicadas registradas separadamente"
+      },
+      "evidencias_http": {
+        "pagina_http_requests": 403,
+        "imagem": {
+          "url": "https://fdslive.oup.com/covers/anz/desktop/medium/9780195573565.jpg",
+          "http": 200,
+          "tipo": "image/jpeg",
+          "bytes": 33536
+        },
+        "observacao": "OUP e Simon & Schuster responderam 403 ao requests na página, mas foram consultadas via web e o vínculo editorial da imagem foi confirmado; imagens públicas responderam 200."
+      }
+    },
+    {
+      "id": "marketing-metrics",
+      "titulo_aprovado": "Marketing Metrics",
+      "autores_aprovados": "Paul W. Farris; Neil Bendle; Phillip Pfeifer; David Reibstein",
+      "isbn_aprovado": "9780136755241",
+      "formato_aprovado": "eBook PDF",
+      "edicao_catalogada": "4",
+      "editora": "Pearson FT Press / InformIT",
+      "arquivo_local": "/tmp/harpya-business-capas/marketing-metrics-9780136755241.jpg",
+      "url_imagem": "https://www.informit.com/ShowCover.aspx?isbn=9780136755241&type=f",
+      "pagina_editorial": "https://www.informit.com/store/marketing-metrics-9780136755241",
+      "dimensoes_pixels": {
+        "largura": 160,
+        "altura": 209
+      },
+      "mime": "image/jpeg",
+      "bytes": 16935,
+      "sha256": "a3a27ef98b2eba2184100f5aae45b665e306fbe728edc5920aab9092aeb6013e",
+      "download_confirmado": true,
+      "inspecao_visual": {
+        "realizada": true,
+        "metodo": "view_image do JPEG baixado; inspeção da capa frontal original, sem edição da imagem.",
+        "em": "2026-11-06",
+        "titulo_visivel": "Marketing Metrics: The Manager’s Guide to Measuring Marketing Performance",
+        "autores_visiveis": [
+          "Neil T. Bendle",
+          "Paul W. Farris",
+          "Phillip E. Pfeifer",
+          "David J. Reibstein"
+        ],
+        "edicao_visivel": "Fourth Edition",
+        "edicao_visual_confirmada": true
+      },
+      "correspondencia_bibliografica": {
+        "estado": "confirmada",
+        "fundamento": "Título, 4ª edição e quatro autores na capa editorial; nomes menores por ser thumbnail de 160 pixels. A página InformIT identifica o eBook PDF e o ISBN aprovado, e seu link ShowCover contém esse ISBN.",
+        "titulo_e_autores_compativeis": true,
+        "formato_identificavel_apenas_pela_capa": false,
+        "isbn_visivel_na_frente": false,
+        "isbn_fonte_imagem_diferente_do_aprovado": null
+      },
+      "credito_sugerido": "Capa editorial fornecida por Pearson FT Press / InformIT, para identificação de Marketing Metrics, de Paul W. Farris; Neil Bendle; Phillip Pfeifer; David Reibstein. Direitos dos respectivos titulares.",
+      "credito_limites": "Crédito de procedência editorial; artista ou designer da capa não identificado. Não atribui autoria gráfica à editora nem concede licença.",
+      "direitos_e_condicoes": {
+        "estado": "condicao_geral_publicada; autorizacao_especifica_nao_obtida",
+        "condicao_publicada": "O catálogo informa reserva de direitos. A página Global Rights Licensing encaminha a reutilização de textos e imagens à equipe de permissões; não apresenta licença livre para estas capas.",
+        "fontes": [
+          "https://www.pearson.com/en-us/legal-information/global-rights-licensing.html"
+        ],
+        "licenca_livre": false,
+        "autorizacao_republicacao_especifica": false,
+        "uso_local": "Arquivos obtidos para conferência bibliográfica local; não foram publicados. A existência do download não foi classificada como autorização de republicação."
+      },
+      "integracao": {
+        "runtime_alterado": false,
+        "decisao_bibliografica": "correspondencia_confirmada_para_identificacao",
+        "licenca_ou_base_de_uso_no_catalogo": "não determinada por esta conferência bibliográfica; condições publicadas registradas separadamente"
+      },
+      "evidencias_http": {
+        "pagina_http_requests": 200,
+        "imagem": {
+          "url": "https://www.informit.com/ShowCover.aspx?isbn=9780136755241&type=f",
+          "http": 200,
+          "tipo": "image/jpeg",
+          "bytes": 16935
+        },
+        "observacao": "Imagem obtida do link declarado pelo próprio catálogo editorial."
+      }
+    },
+    {
+      "id": "competitive-strategy",
+      "titulo_aprovado": "Competitive Strategy",
+      "autores_aprovados": "Michael E. Porter",
+      "isbn_aprovado": "9780684841489",
+      "formato_aprovado": "Hardcover",
+      "edicao_catalogada": "edição Free Press publicada em 1998; obra original de 1980",
+      "editora": "Free Press / Simon & Schuster",
+      "arquivo_local": "/tmp/harpya-business-capas/competitive-strategy-9780684841489.jpg",
+      "url_imagem": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9780684841489/competitive-strategy-9780684841489_lg.jpg",
+      "pagina_editorial": "https://www.simonandschuster.biz/books/Competitive-Strategy/Michael-E-Porter/9780684841489",
+      "dimensoes_pixels": {
+        "largura": 271,
+        "altura": 400
+      },
+      "mime": "image/jpeg",
+      "bytes": 48395,
+      "sha256": "5f4d705b83c20485a6d53b29f957a8a293c2dd5a3ba8812312e5d97d6f7fb0ff",
+      "download_confirmado": true,
+      "inspecao_visual": {
+        "realizada": true,
+        "metodo": "view_image do JPEG baixado; inspeção da capa frontal original, sem edição da imagem.",
+        "em": "2026-11-06",
+        "titulo_visivel": "Competitive Strategy: Techniques for Analyzing Industries and Competitors",
+        "autores_visiveis": [
+          "Michael E. Porter"
+        ],
+        "edicao_visivel": "With a new introduction; sem edição ordinal visível",
+        "edicao_visual_confirmada": false
+      },
+      "correspondencia_bibliografica": {
+        "estado": "confirmada",
+        "fundamento": "Título e autor legíveis, com chamada para nova introdução. Associação documental confirmada pelo recurso de capa oficial e pela seção Resources and Downloads, que identifica Hardcover 9780684841489. Formato/ano de 1998 vêm da ficha, não de uma leitura da capa.",
+        "titulo_e_autores_compativeis": true,
+        "formato_identificavel_apenas_pela_capa": false,
+        "isbn_visivel_na_frente": false,
+        "isbn_fonte_imagem_diferente_do_aprovado": null
+      },
+      "credito_sugerido": "Capa editorial fornecida por Free Press / Simon & Schuster, para identificação de Competitive Strategy, de Michael E. Porter. Direitos dos respectivos titulares.",
+      "credito_limites": "Crédito de procedência editorial; artista ou designer da capa não identificado. Não atribui autoria gráfica à editora nem concede licença.",
+      "direitos_e_condicoes": {
+        "estado": "download_editorial_disponivel; termos_gerais_publicados; autorizacao_especifica_nao_obtida",
+        "condicao_publicada": "A página do título disponibiliza imagem de capa em Resources and Downloads. Os termos concedem uso pessoal e não comercial limitado, com avisos preservados e sem alterações, e não estabelecem autorização geral de distribuição em outro site.",
+        "fontes": [
+          "https://www.simonandschuster.biz/books/Competitive-Strategy/Michael-E-Porter/9780684841489",
+          "https://www.simonandschuster.com/p/terms-of-use"
+        ],
+        "licenca_livre": false,
+        "autorizacao_republicacao_especifica": false,
+        "uso_local": "Download para identificação bibliográfica e conferência; não publicado."
+      },
+      "integracao": {
+        "runtime_alterado": false,
+        "decisao_bibliografica": "correspondencia_confirmada_para_identificacao",
+        "licenca_ou_base_de_uso_no_catalogo": "não determinada por esta conferência bibliográfica; condições publicadas registradas separadamente"
+      },
+      "evidencias_http": {
+        "pagina_http_requests": 403,
+        "imagem": {
+          "url": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9780684841489/competitive-strategy-9780684841489_lg.jpg",
+          "http": 200,
+          "tipo": "image/jpeg",
+          "bytes": 48395
+        },
+        "observacao": "OUP e Simon & Schuster responderam 403 ao requests na página, mas foram consultadas via web e o vínculo editorial da imagem foi confirmado; imagens públicas responderam 200."
+      }
+    },
+    {
+      "id": "good-strategy-bad-strategy",
+      "titulo_aprovado": "Good Strategy Bad Strategy",
+      "autores_aprovados": "Richard Rumelt",
+      "isbn_aprovado": "9780307886231",
+      "formato_aprovado": "Hardcover",
+      "edicao_catalogada": "publicação de 2011; ordinal não declarado na página consultada",
+      "editora": "Crown Currency / Penguin Random House",
+      "arquivo_local": "/tmp/harpya-business-capas/good-strategy-bad-strategy-9780307886231.jpg",
+      "url_imagem": "https://images3.penguinrandomhouse.com/cover/9780307886231",
+      "pagina_editorial": "https://www.penguinrandomhouse.com/books/208668/good-strategy-bad-strategy-by-richard-rumelt/",
+      "dimensoes_pixels": {
+        "largura": 296,
+        "altura": 450
+      },
+      "mime": "image/jpeg",
+      "bytes": 30512,
+      "sha256": "9ec66f4205c6a599d905fba631598e32ae142be3bf05a7414695d8dc72ae59e9",
+      "download_confirmado": true,
+      "inspecao_visual": {
+        "realizada": true,
+        "metodo": "view_image do JPEG baixado; inspeção da capa frontal original, sem edição da imagem.",
+        "em": "2026-11-06",
+        "titulo_visivel": "Good Strategy Bad Strategy: The Difference and Why It Matters",
+        "autores_visiveis": [
+          "Richard Rumelt"
+        ],
+        "edicao_visivel": null,
+        "edicao_visual_confirmada": false
+      },
+      "correspondencia_bibliografica": {
+        "estado": "confirmada",
+        "fundamento": "Título, subtítulo e autor legíveis. O elemento coverFormat da página PRH usa o ISBN aprovado na URL; o ISBN identifica Hardcover de 2011 na ficha. Sem edição ordinal impressa ou inferida.",
+        "titulo_e_autores_compativeis": true,
+        "formato_identificavel_apenas_pela_capa": false,
+        "isbn_visivel_na_frente": false,
+        "isbn_fonte_imagem_diferente_do_aprovado": null
+      },
+      "credito_sugerido": "Capa editorial fornecida por Crown Currency / Penguin Random House, para identificação de Good Strategy Bad Strategy, de Richard Rumelt. Direitos dos respectivos titulares.",
+      "credito_limites": "Crédito de procedência editorial; artista ou designer da capa não identificado. Não atribui autoria gráfica à editora nem concede licença.",
+      "direitos_e_condicoes": {
+        "estado": "termos_gerais_publicados; autorizacao_especifica_nao_obtida",
+        "condicao_publicada": "Os termos PRH distinguem consulta/download pessoal informativo não comercial de reutilização, distribuição ou publicação em outro site. A editora mantém portal de permissões para imagens e trechos; nenhuma permissão foi solicitada ou obtida nesta tarefa.",
+        "fontes": [
+          "https://www.penguinrandomhouse.com/terms/",
+          "https://permissions.penguinrandomhouse.com/"
+        ],
+        "licenca_livre": false,
+        "autorizacao_republicacao_especifica": false,
+        "uso_local": "Imagem de identificação conferida localmente; nenhuma integração no runtime."
+      },
+      "integracao": {
+        "runtime_alterado": false,
+        "decisao_bibliografica": "correspondencia_confirmada_para_identificacao",
+        "licenca_ou_base_de_uso_no_catalogo": "não determinada por esta conferência bibliográfica; condições publicadas registradas separadamente"
+      },
+      "evidencias_http": {
+        "pagina_http_requests": 200,
+        "imagem": {
+          "url": "https://images3.penguinrandomhouse.com/cover/9780307886231",
+          "http": 200,
+          "tipo": "image/jpeg",
+          "bytes": 30512
+        },
+        "observacao": "Imagem obtida do link declarado pelo próprio catálogo editorial."
+      }
+    },
+    {
+      "id": "marketing-servicos",
+      "titulo_aprovado": "Marketing de Serviços",
+      "autores_aprovados": "Marcos Cobra",
+      "isbn_aprovado": "9788597021448",
+      "formato_aprovado": "Impresso",
+      "edicao_catalogada": "1|2021",
+      "editora": "GEN Atlas / Grupo GEN",
+      "arquivo_local": "/tmp/harpya-business-capas/marketing-servicos-9788597021448.jpg",
+      "url_imagem": "https://www.grupogen.com.br/media/catalog/product/9/7/9788597021448.jpg?optimize=low&bg-color=255,255,255&fit=bounds&height=265&width=265&canvas=265:265",
+      "pagina_editorial": "https://www.grupogen.com.br/marketing-de-servicos",
+      "dimensoes_pixels": {
+        "largura": 215,
+        "altura": 287
+      },
+      "mime": "image/jpeg",
+      "bytes": 20966,
+      "sha256": "312a105ce9a941f8a3fccfe1ed77bfc9b838263b4a5829756df16c422dba6c02",
+      "download_confirmado": true,
+      "inspecao_visual": {
+        "realizada": true,
+        "metodo": "view_image do JPEG baixado; inspeção da capa frontal original, sem edição da imagem.",
+        "em": "2026-11-06",
+        "titulo_visivel": "Marketing de Serviços",
+        "autores_visiveis": [
+          "Marcos Cobra"
+        ],
+        "edicao_visivel": null,
+        "edicao_visual_confirmada": false
+      },
+      "correspondencia_bibliografica": {
+        "estado": "confirmada",
+        "fundamento": "Título e autor legíveis, marca Atlas na capa. A URL da própria imagem contém o ISBN aprovado e é a foto do produto na página GEN; edição 1|2021 e formato impresso confirmados documentalmente, sem ordinal legível na capa.",
+        "titulo_e_autores_compativeis": true,
+        "formato_identificavel_apenas_pela_capa": false,
+        "isbn_visivel_na_frente": false,
+        "isbn_fonte_imagem_diferente_do_aprovado": null
+      },
+      "credito_sugerido": "Capa editorial fornecida por GEN Atlas / Grupo GEN, para identificação de Marketing de Serviços, de Marcos Cobra. Direitos dos respectivos titulares.",
+      "credito_limites": "Crédito de procedência editorial; artista ou designer da capa não identificado. Não atribui autoria gráfica à editora nem concede licença.",
+      "direitos_e_condicoes": {
+        "estado": "licenca_especifica_nao_localizada",
+        "condicao_publicada": "A página GEN disponibiliza a foto do produto e identifica o grupo editorial; não foi localizada condição de licença para republicação da capa. Não se atribui licença livre ou autorização implícita.",
+        "fontes": [
+          "https://www.grupogen.com.br/marketing-de-servicos"
+        ],
+        "licenca_livre": false,
+        "autorizacao_republicacao_especifica": false,
+        "uso_local": "Thumbnail obtida para identificação bibliográfica local; não publicada."
+      },
+      "integracao": {
+        "runtime_alterado": false,
+        "decisao_bibliografica": "correspondencia_confirmada_para_identificacao",
+        "licenca_ou_base_de_uso_no_catalogo": "não determinada por esta conferência bibliográfica; condições publicadas registradas separadamente"
+      },
+      "evidencias_http": {
+        "pagina_http_requests": 200,
+        "imagem": {
+          "url": "https://www.grupogen.com.br/media/catalog/product/9/7/9788597021448.jpg?optimize=low&bg-color=255,255,255&fit=bounds&height=265&width=265&canvas=265:265",
+          "http": 200,
+          "tipo": "image/jpeg",
+          "bytes": 20966
+        },
+        "observacao": "Imagem obtida do link declarado pelo próprio catálogo editorial."
+      }
+    }
+  ],
+  "limites": [
+    "Capas frontais não comprovam encadernação nem ISBN visualmente; a correspondência de formato depende das fichas e dos links editoriais registrados.",
+    "A imagem Marketing Metrics é uma thumbnail de 160 × 209 pixels; adequada à identificação pequena, não a apresentação ampliada.",
+    "Imagens e marcas não foram alteradas. Identificação bibliográfica e crédito não foram descritos como licença livre.",
+    "Uso em catálogo público deve considerar a base aplicável e as condições editoriais registradas, independentemente da correspondência do livro."
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "versao": 1,
+  "estado_editorial": "rascunho_pesquisado",
+  "pesquisado_em": "2026-11-06",
+  "nota": "Cinco notas complementares para revisão editorial, sem publicação ou alteração do acervo. Nenhuma URL repete a rodada anterior; datas pertencem às páginas consultadas e respeitam o corte de 06/11/2026. Assinatura ausente permanece null.",
+  "metodo": "Consulta a fontes institucionais aprovadas, com síntese própria e limites individuais. Artigo executivo, divulgação e estudo subjacente são distinguidos. Nenhum texto restrito foi apresentado como lido integralmente.",
+  "resumo_quantitativo": {
+    "notas": 5,
+    "paginas_distintas": 5,
+    "fontes_distintas": 5,
+    "novas_fontes_em_relacao_as_oito_notas": [
+      "lbs",
+      "bain"
+    ],
+    "brasil": 1,
+    "europa": 2,
+    "eua_global": 2,
+    "assinatura_identificada": 4,
+    "noticia_sem_assinatura_individual": 1,
+    "total_com_rodada_anterior": 13
+  },
+  "notas": [
+    {
+      "slug": "lideranca-colaboracao-e-incerteza-2026",
+      "titulo": "LBS relaciona colaboração ao desempenho de equipes sob incerteza",
+      "resumo": "Artigo retoma pesquisa sobre personalidade e decisões coletivas.",
+      "data_fonte": "2026-08-21",
+      "fonte_id": "lbs",
+      "url": "https://www.london.edu/think/kill-chaos-with-kindness-why-agreeableness-pays",
+      "autores": [
+        "Randall S. Peterson"
+      ],
+      "natureza": "divulgacao_cientifica",
+      "corpo": [
+        "Em artigo de agosto, Randall Peterson discute a relação entre amabilidade, colaboração e desempenho de equipes diante de problemas incertos. O autor retoma um estudo publicado em 2023, baseado em dados de equipes de estudantes e modelagem por simulação.",
+        "A interpretação apresentada é que ouvir perspectivas diferentes pode ser especialmente útil quando uma tarefa exige julgamento e não possui uma resposta única. O texto distingue disposição para cooperar de aceitar qualquer proposta e discute o tempo dedicado à decisão e à implementação.",
+        "A leitura editorial propõe examinar como equipes compartilham informações antes de decidir. A publicação de 2026 atualiza a discussão, sem tornar novo o estudo original. Os resultados descritos e as observações do autor sobre executivos não autorizam uma regra universal de seleção ou promoção de líderes."
+      ],
+      "importancia": "Amplia perguntas sobre colaboração e qualidade das decisões.",
+      "limites": "Estudo de 2023 retomado em 2026; paper integral não revisado. Observações executivas não são experimento.",
+      "referencias": [
+        {
+          "titulo": "Why kindness is a competitive advantage",
+          "url": "https://www.london.edu/think/kill-chaos-with-kindness-why-agreeableness-pays"
+        }
+      ],
+      "evidencias_consulta": {
+        "data": "21/08/2026 no cabeçalho.",
+        "autoria": "Assinatura Randall S. Peterson.",
+        "conteudo": "Artigo e desenho resumido consultados.",
+        "acesso": "Página aberta; estudo original não revisado."
+      },
+      "regiao_editorial": "Europa",
+      "consultado_em": "2026-11-06",
+      "estado_editorial": "rascunho_pesquisado",
+      "contagem_palavras_corpo": 128
+    },
+    {
+      "slug": "compra-b2b-e-lealdade-no-mercado-de-caminhoes-2026",
+      "titulo": "Bain examina compra B2B e lealdade no mercado europeu de caminhões",
+      "resumo": "Pesquisa discute critérios de compra e disposição para trocar marcas.",
+      "data_fonte": "2026-09-08",
+      "fonte_id": "bain",
+      "url": "https://www.bain.com/insights/european-truck-market-outlook-2026/",
+      "autores": [
+        "Karl Strempel",
+        "Phillip Roberts",
+        "Eric Zayer"
+      ],
+      "natureza": "relatorio",
+      "corpo": [
+        "Em setembro, a Bain apresentou uma pesquisa sobre decisões de compra de operadores de frotas em cinco países europeus. O levantamento discute satisfação, relação com fabricantes, expectativas de renovação e interesse em tecnologias e marcas que entram nesse mercado.",
+        "A leitura mostra diferenças entre perfis de frota e destaca critérios como confiabilidade, preço e custo total de propriedade. Também apresenta disposição declarada para trocar de fabricante, permitindo investigar como necessidades operacionais e percepção de risco participam de uma decisão empresarial.",
+        "A importância editorial está em observar a segmentação B2B além do tamanho da empresa, incluindo aplicação e restrições de operação. As respostas expressam avaliações e intenções no contexto europeu. Elas não comprovam futuras compras, resultados comerciais ou a mesma dinâmica no mercado brasileiro."
+      ],
+      "importancia": "Oferece um caso de segmentação e decisão B2B.",
+      "limites": "Pesquisa de consultoria em cinco países; intenções declaradas não equivalem a compras efetivas.",
+      "referencias": [
+        {
+          "titulo": "European Truck Market Outlook 2026",
+          "url": "https://www.bain.com/insights/european-truck-market-outlook-2026/"
+        }
+      ],
+      "evidencias_consulta": {
+        "data": "Published on: 08/09/2026.",
+        "autoria": "Três autores no cabeçalho.",
+        "conteudo": "Metodologia declarada e critérios de compra consultados.",
+        "acesso": "Artigo institucional aberto."
+      },
+      "regiao_editorial": "Europa",
+      "consultado_em": "2026-11-06",
+      "estado_editorial": "rascunho_pesquisado",
+      "contagem_palavras_corpo": 123
+    },
+    {
+      "slug": "ia-generativa-e-criacao-de-valor-2026",
+      "titulo": "Wharton aproxima adoção de IA e criação de valor",
+      "resumo": "Rahul Kapoor discute tecnologia, capacidades complementares e estratégia.",
+      "data_fonte": "2026-04-13",
+      "fonte_id": "wharton",
+      "url": "https://knowledge.wharton.upenn.edu/article/generative-ai-wont-create-value-on-its-own/",
+      "autores": [
+        "Rahul Kapoor"
+      ],
+      "natureza": "executivo",
+      "corpo": [
+        "Em artigo de abril, Rahul Kapoor discute por que capacidades técnicas não bastam para criar valor numa empresa. Sua análise da inteligência artificial generativa organiza três desafios: lidar com uma tecnologia emergente, reunir recursos complementares e incorporá-la ao modelo de negócio.",
+        "O texto destaca dados, competências, infraestrutura, processos e relações com parceiros como componentes dessa transformação. Também apresenta a necessidade de aprender com experimentos e avaliar como uma aplicação poderá gerar utilidade para clientes e sustentar a captura de valor pela organização.",
+        "A leitura editorial sugere partir de um problema de negócio e examinar o conjunto de condições necessário para resolvê-lo. Trata-se de uma interpretação estratégica apoiada em pesquisas do autor. Ela não demonstra retorno universal de projetos de IA nem substitui a avaliação de cada contexto."
+      ],
+      "importancia": "Ajuda a relacionar investimento tecnológico e problema de negócio.",
+      "limites": "Ensaio estratégico; pesquisas referenciadas não revisadas integralmente. Sem garantia de retorno.",
+      "referencias": [
+        {
+          "titulo": "Generative AI Won’t Create Value on Its Own",
+          "url": "https://knowledge.wharton.upenn.edu/article/generative-ai-wont-create-value-on-its-own/"
+        }
+      ],
+      "evidencias_consulta": {
+        "data": "13/04/2026 no cabeçalho.",
+        "autoria": "Rahul Kapoor em Written By.",
+        "conteudo": "Introdução e três dimensões estratégicas consultadas.",
+        "acesso": "Texto institucional aberto."
+      },
+      "regiao_editorial": "EUA",
+      "consultado_em": "2026-11-06",
+      "estado_editorial": "rascunho_pesquisado",
+      "contagem_palavras_corpo": 127
+    },
+    {
+      "slug": "fgv-ia-e-alinhamento-estrategico-2026",
+      "titulo": "FGV divulga estudo sobre alinhamento entre IA e estratégia",
+      "resumo": "Notícia aborda governança de recomendações algorítmicas.",
+      "data_fonte": "2026-11-06",
+      "fonte_id": "fgv",
+      "url": "https://portal.fgv.br/noticias/inteligencia-artificial-pode-comprometer-decisoes-estrategicas-nas-organizacoes-aponta-estudo",
+      "autores": null,
+      "natureza": "noticia_institucional",
+      "corpo": [
+        "Em notícia de 6 de novembro, a FGV apresenta um artigo da GV-executivo sobre conflitos entre recomendações de inteligência artificial e objetivos estratégicos. A divulgação identifica Rodrigo Rocha Gimenez como autor do estudo e descreve uma revisão sistemática da literatura.",
+        "O problema discutido é que uma recomendação coerente com dados e critérios de curto prazo pode divergir de prioridades da organização. O texto relaciona esse risco à governança, à interpretação dos modelos e à responsabilidade humana por transformar previsões em decisões.",
+        "A leitura editorial propõe perguntar qual objetivo o sistema está otimizando e como ele se conecta à estratégia. A data desta nota corresponde à notícia institucional. O artigo acadêmico não foi revisado integralmente, e o framework divulgado não constitui comprovação de resultados em qualquer empresa."
+      ],
+      "importancia": "Explicita perguntas sobre objetivos e governança de decisões.",
+      "limites": "Data da notícia; original não revisado. Assinatura jornalística ausente; autoria do estudo é distinta.",
+      "referencias": [
+        {
+          "titulo": "Inteligência artificial pode comprometer decisões estratégicas nas organizações, aponta estudo",
+          "url": "https://portal.fgv.br/noticias/inteligencia-artificial-pode-comprometer-decisoes-estrategicas-nas-organizacoes-aponta-estudo"
+        }
+      ],
+      "evidencias_consulta": {
+        "data": "06/11/2026 no cabeçalho.",
+        "autoria": "Sem assinatura individual da notícia.",
+        "conteudo": "Divulgação e método resumido consultados.",
+        "acesso": "Notícia institucional aberta."
+      },
+      "regiao_editorial": "Brasil",
+      "consultado_em": "2026-11-06",
+      "estado_editorial": "rascunho_pesquisado",
+      "contagem_palavras_corpo": 126
+    },
+    {
+      "slug": "publicidade-ia-e-mensuracao-2026",
+      "titulo": "McKinsey discute publicidade mediada por IA e mensuração",
+      "resumo": "Análise examina descoberta, plataformas e decisões de investimento.",
+      "data_fonte": "2026-06-16",
+      "fonte_id": "mckinsey",
+      "url": "https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-agentic-advertising-economy-from-attention-to-action",
+      "autores": [
+        "Jack Trotter",
+        "Marc Brodherson",
+        "Quentin George",
+        "Aparna Srinath"
+      ],
+      "natureza": "executivo",
+      "corpo": [
+        "Em artigo de junho, a McKinsey examina possíveis mudanças na publicidade quando ferramentas de inteligência artificial participam da descoberta e da escolha de produtos. A análise combina pesquisa proprietária, entrevistas e um levantamento com responsáveis por decisões publicitárias nos Estados Unidos.",
+        "O texto discute a concentração de dados, recomendações, compras e mensuração em plataformas integradas. Essa configuração pode ampliar a dependência das informações fornecidas pelas próprias plataformas, colocando questões sobre visibilidade dos anúncios, interpretação de resultados e controle do investimento.",
+        "A leitura editorial recomenda distinguir expectativas dos entrevistados de resultados já demonstrados e investigar a qualidade das comparações usadas para medir impacto. O artigo declara refletir o cenário de junho de 2026. Suas trajetórias possíveis não devem ser tratadas como previsão certa do mercado."
+      ],
+      "importancia": "Amplia a discussão sobre dependência de plataformas e evidência.",
+      "limites": "Perspectiva de junho de 2026; expectativas e cenários não são resultados causais comprovados.",
+      "referencias": [
+        {
+          "titulo": "The agentic advertising economy: From attention to action",
+          "url": "https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-agentic-advertising-economy-from-attention-to-action"
+        }
+      ],
+      "evidencias_consulta": {
+        "data": "16/06/2026 no cabeçalho.",
+        "autoria": "Quatro nomes identificados no artigo.",
+        "conteudo": "Introdução, levantamento e mensuração consultados.",
+        "acesso": "Página aberta; PDF integral não revisado."
+      },
+      "regiao_editorial": "EUA / global",
+      "consultado_em": "2026-11-06",
+      "estado_editorial": "rascunho_pesquisado",
+      "contagem_palavras_corpo": 124
+    }
+  ]
+}

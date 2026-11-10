@@ -1,0 +1,502 @@
+{
+  "titulo": "Complementos matemáticos e de glossário para Harpya Business",
+  "autoria": "Harpya",
+  "data": "2026-11-06",
+  "estado": "pesquisa e derivação didática de suporte; contas conferidas; integração editorial pendente; não publicado",
+  "escopo": {
+    "metodos_existentes_informados": 6,
+    "metodos_complementares": 10,
+    "metodos_total_apos_integracao": 16,
+    "termos_existentes_informados": 8,
+    "termos_complementares": 6,
+    "termos_total_apos_integracao": 14
+  },
+  "politica_editorial": "Identidades, definições operacionais, derivação estatística e exemplos são didáticos autorais. As referências primárias já documentadas sustentam o contexto e os limites descritos, sem alegação de que todas as expressões estejam literalmente nos textos consultados. Nenhuma leitura integral de obra ou paper restrito é reivindicada.",
+  "nota_integracao": "Numeração 7–16 é proposta de acréscimo aos seis métodos informados. Equações estão sem delimitadores de dólar para renderização KaTeX. Definir unidades e nomes sem confundir proporção com percentual, churn acumulado com risco instantâneo, contribuição com lucro ou payback com CLV. Em Markdown, escapar símbolo monetário quando necessário.",
+  "substituicoes": [],
+  "metricas": [
+    {
+      "numero_proposto": 7,
+      "id": "margem-contribuicao-percentual",
+      "titulo": "Margem de contribuição percentual",
+      "texto": "A margem percentual expressa quanto da receita líquida resta após os custos e despesas variáveis definidos para o mesmo conjunto de vendas. Receita e custos devem usar o mesmo período e critério de reconhecimento. O denominador precisa ser positivo. A unidade é percentual da receita, não reais nem percentual do custo. Não confunda essa razão com markup, margem bruta ou lucro: custos fixos e outros gastos podem continuar fora do cálculo. Mudanças na composição das vendas também alteram a média.",
+      "equacao": "m_{\\%}=100\\,\\frac{R_{\\ell}-CV}{R_{\\ell}},\\qquad R_{\\ell}>0",
+      "formula": "Subtraia os custos variáveis CV da receita líquida Rℓ, divida pela mesma receita e multiplique por 100. O numerador é a contribuição absoluta; o resultado indica sua participação percentual na receita.",
+      "exemplo": "Hipótese didática: receita líquida de 10.000 reais e custos variáveis de 6.000 reais. Contribuição: 4.000 reais; margem percentual: 100 × 4.000 ÷ 10.000 = 40%.",
+      "natureza_formula": "identidade contábil didática, condicionada à classificação de custos",
+      "unidade": "percentual da receita líquida",
+      "referencias": [
+        {
+          "titulo": "McKinsey — The power of pricing",
+          "url": "https://www.mckinsey.com/capabilities/operations/our-insights/the-power-of-pricing",
+          "consultado": "2026-11-06",
+          "alcance": "Texto público sobre preço de transação, deduções e custo; já registrado em aprendizado/05.json.",
+          "limites": "Contextualiza a análise econômica. As identidades, símbolos e exemplos abaixo são didáticos autorais; não se afirma que sejam transcrição literal do artigo."
+        }
+      ],
+      "validacao_conta": {
+        "receita": 10000,
+        "custos_variaveis": 6000,
+        "contribuicao": 4000,
+        "margem_percentual": 40
+      },
+      "palavras_texto": 80
+    },
+    {
+      "numero_proposto": 8,
+      "id": "ponto-equilibrio-unidades",
+      "titulo": "Ponto de equilíbrio em unidades",
+      "texto": "O ponto de equilíbrio simplificado indica a quantidade necessária para que a contribuição cubra os custos fixos incluídos na análise. Assume uma oferta ou composição estável, preço e custo variável unitário constantes e capacidade suficiente no intervalo considerado. A contribuição unitária deve ser positiva. A unidade é produto, pedido ou contrato, conforme a definição adotada. O cálculo não prevê demanda, entrada de caixa ou rentabilidade futura. Se quantidades forem indivisíveis, uma solução fracionária exige arredondamento para cima.",
+      "equacao": "Q_{\\mathrm{eq}}=\\frac{CF}{P-CV_u},\\qquad P>CV_u",
+      "formula": "Divida os custos fixos CF do período pela contribuição unitária: preço líquido P menos custo variável por unidade CVu. O quociente é a quantidade que cobriria esses custos sob as hipóteses declaradas.",
+      "exemplo": "Exemplo hipotético: custos fixos de 12.000 reais, preço de 200 reais e custo variável de 120 reais. Contribuição unitária: 80 reais; equilíbrio: 12.000 ÷ 80 = 150 unidades.",
+      "natureza_formula": "identidade econômica sob hipótese linear; não previsão de vendas",
+      "unidade": "unidades por período analisado",
+      "referencias": [
+        {
+          "titulo": "McKinsey — The power of pricing",
+          "url": "https://www.mckinsey.com/capabilities/operations/our-insights/the-power-of-pricing",
+          "consultado": "2026-11-06",
+          "alcance": "Texto público sobre preço de transação, deduções e custo; já registrado em aprendizado/05.json.",
+          "limites": "Contextualiza a análise econômica. As identidades, símbolos e exemplos abaixo são didáticos autorais; não se afirma que sejam transcrição literal do artigo."
+        }
+      ],
+      "validacao_conta": {
+        "custos_fixos": 12000,
+        "preco": 200,
+        "custo_variavel_unitario": 120,
+        "contribuicao_unitaria": 80,
+        "quantidade_equilibrio": 150
+      },
+      "palavras_texto": 77
+    },
+    {
+      "numero_proposto": 9,
+      "id": "taxa-conversao",
+      "titulo": "Taxa de conversão de elegíveis",
+      "texto": "A conversão relaciona pessoas que cumprem um evento definido ao conjunto de pessoas elegíveis para cumpri-lo na mesma janela. Conte cada pessoa uma vez e explicite o evento, como primeira compra ou contrato assinado. O denominador precisa ser positivo e observado por critério consistente. A razão é adimensional e pode ser apresentada em percentual. Comparar taxas de públicos ou janelas diferentes exige cautela: uma mudança na composição dos elegíveis pode alterar a taxa sem demonstrar efeito causal da ação.",
+      "equacao": "\\widehat c=\\frac{N_{\\mathrm{convertidos}}}{N_{\\mathrm{elegiveis}}},\\qquad N_{\\mathrm{elegiveis}}>0",
+      "formula": "Divida o número de pessoas convertidas pelo número de pessoas elegíveis observadas. Multiplique por 100 se desejar o percentual; não troque pessoas por impressões repetidas sem redefinir a métrica.",
+      "exemplo": "Exemplo hipotético: 240 pessoas compradoras entre 4.000 elegíveis. Conversão: 240 ÷ 4.000 = 0,06, ou 6%.",
+      "natureza_formula": "definição operacional didática de uma proporção",
+      "unidade": "proporção ou percentual de pessoas elegíveis",
+      "referencias": [
+        {
+          "titulo": "Wharton — How to Get the Most from Your Customer Data",
+          "url": "https://knowledge.wharton.upenn.edu/podcast/knowledge-at-wharton-podcast/how-to-get-the-most-from-your-customer-data/",
+          "consultado": "2026-11-06",
+          "alcance": "Transcrição editada institucional sobre auditoria da base e coortes; já documentada em aprendizado/06.json.",
+          "limites": "Entrevista consultada, não livro integral. Definições operacionais, identidades e números deste material são autorais, não resultados observados na entrevista."
+        },
+        {
+          "titulo": "Marketing Science — comparação de métodos de mensuração publicitária",
+          "url": "https://pubsonline.informs.org/doi/10.1287/mksc.2018.1135",
+          "consultado": "2026-11-06",
+          "alcance": "Resumo e metadados do editor, conforme aprendizado/08.json e curadoria/investigacao-analise-pesquisada.json.",
+          "limites": "Artigo e apêndices não lidos integralmente. A referência contextualiza comparabilidade e seleção; não fornece os números hipotéticos nem valida uma campanha."
+        }
+      ],
+      "validacao_conta": {
+        "convertidos": 240,
+        "elegiveis": 4000,
+        "proporcao": 0.06,
+        "percentual": 6
+      },
+      "palavras_texto": 79
+    },
+    {
+      "numero_proposto": 10,
+      "id": "retencao-coorte",
+      "titulo": "Retenção de uma coorte",
+      "texto": "A retenção acompanha um conjunto fixo de clientes definido no início, sem incluir os adquiridos depois. Nesta versão contratual simplificada, contam-se os integrantes originais ainda ativos ao final de um intervalo, com todos os estados conhecidos e sem reativação. Defina o que significa ativo e mantenha essa regra. A razão é adimensional, apresentada por horizonte. Em negócios sem contrato, ausência temporária de compra não comprova saída; seria necessário outro critério operacional. Coortes com idades diferentes não são comparáveis automaticamente.",
+      "equacao": "r_{0,t}=\\frac{A_{0,t}}{N_0},\\qquad N_0>0",
+      "formula": "A coorte começa com N₀ clientes. A₀,ₜ é a quantidade desses mesmos clientes que permanece ativa no horizonte t. Divida A₀,ₜ por N₀; novos clientes não entram em nenhum dos dois termos.",
+      "exemplo": "Exemplo hipotético: 350 contratos iniciais e 280 deles ativos ao final de três meses. Retenção nesse horizonte: 280 ÷ 350 = 80%.",
+      "natureza_formula": "definição operacional contratual; não modelo de sobrevivência estimado",
+      "unidade": "proporção da coorte inicial no horizonte t",
+      "referencias": [
+        {
+          "titulo": "Wharton — How to Get the Most from Your Customer Data",
+          "url": "https://knowledge.wharton.upenn.edu/podcast/knowledge-at-wharton-podcast/how-to-get-the-most-from-your-customer-data/",
+          "consultado": "2026-11-06",
+          "alcance": "Transcrição editada institucional sobre auditoria da base e coortes; já documentada em aprendizado/06.json.",
+          "limites": "Entrevista consultada, não livro integral. Definições operacionais, identidades e números deste material são autorais, não resultados observados na entrevista."
+        },
+        {
+          "titulo": "Wharton — What Are Your Customers Really Worth?",
+          "url": "https://knowledge.wharton.upenn.edu/article/what-are-your-customers-really-worth/",
+          "consultado": "2026-11-06",
+          "alcance": "Trecho de livro disponibilizado pela instituição sobre aquisição, margem e retenção; já documentado em aprendizado/07.json.",
+          "limites": "Somente o trecho público, não a obra integral. O payback simplificado aqui adotado é construção didática explicitamente condicionada, não fórmula atribuída literalmente ao trecho."
+        }
+      ],
+      "validacao_conta": {
+        "coorte_inicial": 350,
+        "ativos_finais": 280,
+        "retencao": 0.8
+      },
+      "palavras_texto": 79
+    },
+    {
+      "numero_proposto": 11,
+      "id": "churn-coorte",
+      "titulo": "Churn acumulado de uma coorte",
+      "texto": "Esta versão de churn conta a fração da coorte inicial que cancelou até um horizonte definido. Só é o complemento da retenção acima quando as duas medidas usam a mesma coorte e janela, todos os estados são conhecidos e não há reativação ou categorias intermediárias. Não misture novos clientes no denominador. A unidade é proporção acumulada no horizonte, não risco instantâneo por unidade de tempo. Multiplicar um churn mensal por doze não produz automaticamente um churn anual válido.",
+      "equacao": "q_{0,t}=\\frac{D_{0,t}}{N_0}=1-r_{0,t}",
+      "formula": "D₀,ₜ é a quantidade de integrantes da coorte inicial que cancelou até t; N₀ é seu tamanho inicial positivo. O complemento só vale sob as condições de partição explicitadas no texto.",
+      "exemplo": "Exemplo hipotético: 70 cancelamentos entre 350 contratos iniciais, sem reativação e com estados completos. Churn: 70 ÷ 350 = 20%; complemento da retenção de 80%.",
+      "natureza_formula": "definição operacional de proporção acumulada; complemento condicionado",
+      "unidade": "proporção acumulada da coorte no horizonte t",
+      "referencias": [
+        {
+          "titulo": "Wharton — How to Get the Most from Your Customer Data",
+          "url": "https://knowledge.wharton.upenn.edu/podcast/knowledge-at-wharton-podcast/how-to-get-the-most-from-your-customer-data/",
+          "consultado": "2026-11-06",
+          "alcance": "Transcrição editada institucional sobre auditoria da base e coortes; já documentada em aprendizado/06.json.",
+          "limites": "Entrevista consultada, não livro integral. Definições operacionais, identidades e números deste material são autorais, não resultados observados na entrevista."
+        },
+        {
+          "titulo": "Wharton — What Are Your Customers Really Worth?",
+          "url": "https://knowledge.wharton.upenn.edu/article/what-are-your-customers-really-worth/",
+          "consultado": "2026-11-06",
+          "alcance": "Trecho de livro disponibilizado pela instituição sobre aquisição, margem e retenção; já documentado em aprendizado/07.json.",
+          "limites": "Somente o trecho público, não a obra integral. O payback simplificado aqui adotado é construção didática explicitamente condicionada, não fórmula atribuída literalmente ao trecho."
+        }
+      ],
+      "validacao_conta": {
+        "coorte_inicial": 350,
+        "cancelados": 70,
+        "churn": 0.2,
+        "retencao_complementar": 0.8
+      },
+      "palavras_texto": 78
+    },
+    {
+      "numero_proposto": 12,
+      "id": "frequencia-compra",
+      "titulo": "Frequência média entre compradores",
+      "texto": "A frequência média aqui divide pedidos concluídos pelo número de compradores distintos que realizaram ao menos um pedido na janela. Declare o período e trate cancelamentos de maneira consistente. A unidade é pedidos por comprador naquele período. Essa média é condicional a comprar: pode aumentar porque compradores de baixa frequência saíram da base, mesmo sem melhora para o conjunto original. Se o interesse for toda a coorte, use outro denominador e nomeie a versão claramente. Não confunda frequência com recência.",
+      "equacao": "f_t=\\frac{P_t}{B_t},\\qquad B_t>0",
+      "formula": "Pₜ é a quantidade de pedidos concluídos no período t; Bₜ é o número de compradores distintos desses pedidos. O quociente mede pedidos por comprador na janela, sem dividir novamente por seu número de meses.",
+      "exemplo": "Exemplo hipotético: 450 pedidos concluídos por 150 compradores distintos no trimestre. Frequência: 450 ÷ 150 = 3 pedidos por comprador no trimestre.",
+      "natureza_formula": "identidade descritiva com denominador operacional declarado",
+      "unidade": "pedidos por comprador na janela",
+      "referencias": [
+        {
+          "titulo": "Wharton — How to Get the Most from Your Customer Data",
+          "url": "https://knowledge.wharton.upenn.edu/podcast/knowledge-at-wharton-podcast/how-to-get-the-most-from-your-customer-data/",
+          "consultado": "2026-11-06",
+          "alcance": "Transcrição editada institucional sobre auditoria da base e coortes; já documentada em aprendizado/06.json.",
+          "limites": "Entrevista consultada, não livro integral. Definições operacionais, identidades e números deste material são autorais, não resultados observados na entrevista."
+        }
+      ],
+      "validacao_conta": {
+        "pedidos": 450,
+        "compradores": 150,
+        "frequencia": 3
+      },
+      "palavras_texto": 80
+    },
+    {
+      "numero_proposto": 13,
+      "id": "ticket-medio",
+      "titulo": "Ticket médio líquido por pedido",
+      "texto": "O ticket médio líquido divide a receita líquida associada aos pedidos pelo número de pedidos do mesmo conjunto. Defina previamente o tratamento de devoluções, cancelamentos, frete e descontos, preservando correspondência entre numerador e denominador. O número de pedidos deve ser positivo. A unidade é moeda por pedido, não por pessoa ou item. A média pode crescer pela composição da cesta ou pela saída de pedidos pequenos. Ela não demonstra aumento de margem, preferência ou efeito de uma campanha.",
+      "equacao": "\\overline V_t=\\frac{R_{\\ell,t}}{P_t},\\qquad P_t>0",
+      "formula": "Divida a receita líquida Rℓ,ₜ do conjunto de pedidos no período pelo número Pₜ desses mesmos pedidos. O resultado é o valor líquido médio de um pedido sob os critérios adotados.",
+      "exemplo": "Exemplo hipotético: 18.000 reais de receita líquida de 120 pedidos elegíveis. Ticket médio: 18.000 ÷ 120 = 150 reais por pedido.",
+      "natureza_formula": "identidade descritiva de valor médio",
+      "unidade": "reais por pedido",
+      "referencias": [
+        {
+          "titulo": "Wharton — How to Get the Most from Your Customer Data",
+          "url": "https://knowledge.wharton.upenn.edu/podcast/knowledge-at-wharton-podcast/how-to-get-the-most-from-your-customer-data/",
+          "consultado": "2026-11-06",
+          "alcance": "Transcrição editada institucional sobre auditoria da base e coortes; já documentada em aprendizado/06.json.",
+          "limites": "Entrevista consultada, não livro integral. Definições operacionais, identidades e números deste material são autorais, não resultados observados na entrevista."
+        },
+        {
+          "titulo": "McKinsey — The power of pricing",
+          "url": "https://www.mckinsey.com/capabilities/operations/our-insights/the-power-of-pricing",
+          "consultado": "2026-11-06",
+          "alcance": "Texto público sobre preço de transação, deduções e custo; já registrado em aprendizado/05.json.",
+          "limites": "Contextualiza a análise econômica. As identidades, símbolos e exemplos abaixo são didáticos autorais; não se afirma que sejam transcrição literal do artigo."
+        }
+      ],
+      "validacao_conta": {
+        "receita_liquida": 18000,
+        "pedidos": 120,
+        "ticket_medio": 150
+      },
+      "palavras_texto": 78
+    },
+    {
+      "numero_proposto": 14,
+      "id": "contribuicao-incremental-liquida",
+      "titulo": "Contribuição incremental líquida simplificada",
+      "texto": "Esta conta liga uma estimativa de quantidade adicional à decisão econômica. Supõe contribuição unitária constante e adequada à composição das vendas incrementais. Deduza apenas custos adicionais da intervenção que ainda não entraram nessa contribuição; evite dupla contagem. Todos os termos devem compartilhar horizonte e alternativa de comparação. A unidade é moeda. A precisão depende tanto da estimativa causal quanto das hipóteses de custo. Um saldo central positivo não demonstra rentabilidade certa nem equivale automaticamente ao lucro contábil total.",
+      "equacao": "\\widehat{\\Delta MC}_{\\mathrm{liq}}=\\widehat{\\Delta Q}\\,mc_u-C_{\\mathrm{inc}}",
+      "formula": "Multiplique a estimativa de quantidade adicional ΔQ pela contribuição unitária mcu. Depois subtraia Cinc, o custo incremental ainda não incluído. Se contribuição ou composição variar, calcule fluxos por grupo de produto ou diretamente a diferença de contribuição.",
+      "exemplo": "Exemplo hipotético: 50 pedidos adicionais estimados, contribuição de 80 reais por pedido e custo incremental de 3.000 reais. Saldo central: 50 × 80 − 3.000 = 1.000 reais.",
+      "natureza_formula": "modelo econômico didático condicionado a estimativa causal e custo unitário",
+      "unidade": "reais no horizonte e contraste declarados",
+      "referencias": [
+        {
+          "titulo": "McKinsey — The power of pricing",
+          "url": "https://www.mckinsey.com/capabilities/operations/our-insights/the-power-of-pricing",
+          "consultado": "2026-11-06",
+          "alcance": "Texto público sobre preço de transação, deduções e custo; já registrado em aprendizado/05.json.",
+          "limites": "Contextualiza a análise econômica. As identidades, símbolos e exemplos abaixo são didáticos autorais; não se afirma que sejam transcrição literal do artigo."
+        },
+        {
+          "titulo": "Marketing Science — comparação de métodos de mensuração publicitária",
+          "url": "https://pubsonline.informs.org/doi/10.1287/mksc.2018.1135",
+          "consultado": "2026-11-06",
+          "alcance": "Resumo e metadados do editor, conforme aprendizado/08.json e curadoria/investigacao-analise-pesquisada.json.",
+          "limites": "Artigo e apêndices não lidos integralmente. A referência contextualiza comparabilidade e seleção; não fornece os números hipotéticos nem valida uma campanha."
+        }
+      ],
+      "validacao_conta": {
+        "pedidos_incrementais_estimados": 50,
+        "contribuicao_unitaria": 80,
+        "custo_incremental": 3000,
+        "saldo_central": 1000
+      },
+      "palavras_texto": 78
+    },
+    {
+      "numero_proposto": 15,
+      "id": "payback-simples-cac",
+      "titulo": "Payback simples do CAC",
+      "texto": "O payback simples estima quantos meses de contribuição constante por cliente recuperariam o custo de aquisição desse cliente. Exige contribuição mensal positiva, comparabilidade de coorte e hipótese de permanência durante o prazo. Não incorpora desconto financeiro, crescimento, cancelamentos ou custos não incluídos. A unidade é mês quando o denominador usa contribuição mensal. Se os fluxos variarem, esta divisão deixa de representar o prazo: seria preciso acompanhar a contribuição acumulada ao longo do tempo. O resultado não é CLV nem garantia de recuperação.",
+      "equacao": "T_{\\mathrm{simples}}=\\frac{\\mathrm{CAC}}{mc_{\\mathrm{mensal}}},\\qquad mc_{\\mathrm{mensal}}>0",
+      "formula": "Divida o CAC em reais por cliente pela contribuição mensal constante em reais por esse mesmo cliente por mês. A unidade monetária por cliente se cancela e restam meses, sob as hipóteses de continuidade explicitadas.",
+      "exemplo": "Exemplo hipotético: CAC de 600 reais e contribuição constante de 75 reais por cliente por mês, mantida por todo o prazo. Payback simples: 600 ÷ 75 = 8 meses.",
+      "natureza_formula": "aproximação didática sob fluxo constante; não projeção validada",
+      "unidade": "meses",
+      "referencias": [
+        {
+          "titulo": "Wharton — What Are Your Customers Really Worth?",
+          "url": "https://knowledge.wharton.upenn.edu/article/what-are-your-customers-really-worth/",
+          "consultado": "2026-11-06",
+          "alcance": "Trecho de livro disponibilizado pela instituição sobre aquisição, margem e retenção; já documentado em aprendizado/07.json.",
+          "limites": "Somente o trecho público, não a obra integral. O payback simplificado aqui adotado é construção didática explicitamente condicionada, não fórmula atribuída literalmente ao trecho."
+        }
+      ],
+      "validacao_conta": {
+        "cac": 600,
+        "contribuicao_mensal": 75,
+        "payback_meses": 8
+      },
+      "palavras_texto": 82
+    },
+    {
+      "numero_proposto": 16,
+      "id": "erro-padrao-diferenca-proporcoes",
+      "titulo": "Erro-padrão da diferença de proporções",
+      "texto": "Esta estimativa do erro-padrão vale para duas proporções amostrais de grupos independentes, com observações Bernoulli independentes dentro de cada grupo. Mede variabilidade do estimador, não dispersão das respostas individuais. A unidade é a da proporção; multiplique por cem para pontos percentuais. Agrupamento, pareamento, amostragem complexa ou entrega seletiva exigem análise apropriada. Valores extremos e amostras pequenas também limitam aproximações normais. Um erro-padrão pequeno não corrige viés de seleção nem comprova que a comparação tenha interpretação causal.",
+      "equacao": "\\widehat{\\mathrm{EP}}(\\widehat p_A-\\widehat p_B)=\\sqrt{\\frac{\\widehat p_A(1-\\widehat p_A)}{n_A}+\\frac{\\widehat p_B(1-\\widehat p_B)}{n_B}}",
+      "formula": "Cada p̂ é uma proporção observada e cada n é o tamanho positivo do respectivo grupo. Some as variâncias binomiais estimadas das médias independentes e extraia a raiz. Esta é a versão não agrupada, sem assumir proporções populacionais iguais.",
+      "exemplo": "Exemplo hipotético: p̂A = 0,10, p̂B = 0,08 e nA = nB = 1.000. EP = √(0,09/1.000 + 0,0736/1.000) ≈ 0,01279, ou 1,279 ponto percentual.",
+      "natureza_formula": "estimador estatístico elementar derivado de variâncias binomiais independentes",
+      "unidade": "proporção; conversível em pontos percentuais",
+      "referencias": [
+        {
+          "titulo": "AMA — Can You Trust Your Ad Data?",
+          "url": "https://www.ama.org/2025/01/07/can-you-trust-your-ad-data-a-new-study-exposes-a-hidden-flaw-in-a-b-testing-on-digital-ad-platforms/",
+          "consultado": "2026-11-06",
+          "alcance": "Texto institucional de Braun e Schwartz sobre entrega divergente; já documentado em aprendizado/09.json.",
+          "limites": "Não houve leitura integral do paper associado. A fórmula binomial e a definição frequencista são explicações estatísticas autorais, não fórmulas extraídas desse artigo."
+        },
+        {
+          "titulo": "Marketing Science — When Less Is More: Data and Power in Advertising Experiments",
+          "url": "https://pubsonline.informs.org/doi/10.1287/mksc.2016.0998",
+          "consultado": "2026-11-06",
+          "alcance": "Resumo e metadados do editor consultados; referência já documentada em guia mensuracao.md e curadoria/investigacao-analise-pesquisada.json.",
+          "limites": "Sem leitura integral ou reanálise dos dados. Contextualiza desenho e precisão; não é fonte literal da derivação binomial apresentada aqui."
+        }
+      ],
+      "validacao_conta": {
+        "pA": 0.1,
+        "pB": 0.08,
+        "nA": 1000,
+        "nB": 1000,
+        "varianciaA": 0.00008999999999999999,
+        "varianciaB": 0.0000736,
+        "erro_padrao": 0.012790621564255585,
+        "erro_padrao_pontos_percentuais": 1.2790621564255584
+      },
+      "palavras_texto": 76
+    }
+  ],
+  "glossario": [
+    {
+      "id": "randomizacao",
+      "termo": "Randomização",
+      "definicao": "Alocação de unidades a intervenções por um mecanismo aleatório conhecido. Busca separar a formação dos grupos das propensões prévias de resultado, produzindo comparabilidade em expectativa; não garante igualdade exata numa realização. É diferente de selecionar uma amostra aleatória da população. Entrega efetiva, perdas de dados e interferência ainda precisam ser examinadas.",
+      "natureza": "definição didática autoral",
+      "referencias": [
+        {
+          "titulo": "AMA — Conducting Research in Marketing with Quasi-Experiments",
+          "url": "https://journals.sagepub.com/doi/10.1177/00222429221082977",
+          "consultado": "2026-11-06",
+          "alcance": "Resumo e trechos primários sobre pergunta causal, identificação, hipóteses e validade externa, já documentados em curadoria/investigacao-analise-pesquisada.json.",
+          "limites": "Leitura parcial; reabertura direta nesta tarefa apresentou timeout. Definições são sínteses autorais, sem alegar prova das hipóteses ou leitura de toda a bibliografia."
+        },
+        {
+          "titulo": "AMA — Can You Trust Your Ad Data?",
+          "url": "https://www.ama.org/2025/01/07/can-you-trust-your-ad-data-a-new-study-exposes-a-hidden-flaw-in-a-b-testing-on-digital-ad-platforms/",
+          "consultado": "2026-11-06",
+          "alcance": "Texto institucional de Braun e Schwartz sobre entrega divergente; já documentado em aprendizado/09.json.",
+          "limites": "Não houve leitura integral do paper associado. A fórmula binomial e a definição frequencista são explicações estatísticas autorais, não fórmulas extraídas desse artigo."
+        }
+      ],
+      "alcance": "Síntese estatística própria apoiada na discussão metodológica e no alerta institucional sobre entrega; não valida o sorteio de uma plataforma específica."
+    },
+    {
+      "id": "confundidor",
+      "termo": "Confundidor",
+      "definicao": "Variável anterior à intervenção que participa da explicação tanto de sua ocorrência ou exposição quanto do resultado, podendo tornar a associação observada diferente do efeito causal de interesse. Intenção prévia de comprar pode influenciar busca pela marca e compra posterior. Nem toda variável correlacionada é confundidora; selecionar controles exige uma hipótese sobre o processo causal.",
+      "natureza": "definição didática autoral",
+      "referencias": [
+        {
+          "titulo": "AMA — Conducting Research in Marketing with Quasi-Experiments",
+          "url": "https://journals.sagepub.com/doi/10.1177/00222429221082977",
+          "consultado": "2026-11-06",
+          "alcance": "Resumo e trechos primários sobre pergunta causal, identificação, hipóteses e validade externa, já documentados em curadoria/investigacao-analise-pesquisada.json.",
+          "limites": "Leitura parcial; reabertura direta nesta tarefa apresentou timeout. Definições são sínteses autorais, sem alegar prova das hipóteses ou leitura de toda a bibliografia."
+        },
+        {
+          "titulo": "Marketing Science — comparação de métodos de mensuração publicitária",
+          "url": "https://pubsonline.informs.org/doi/10.1287/mksc.2018.1135",
+          "consultado": "2026-11-06",
+          "alcance": "Resumo e metadados do editor, conforme aprendizado/08.json e curadoria/investigacao-analise-pesquisada.json.",
+          "limites": "Artigo e apêndices não lidos integralmente. A referência contextualiza comparabilidade e seleção; não fornece os números hipotéticos nem valida uma campanha."
+        }
+      ],
+      "alcance": "Definição própria do papel causal; exemplos lógicos não são dados de uma campanha ou diagrama causal estimado."
+    },
+    {
+      "id": "validade-externa",
+      "termo": "Validade externa",
+      "definicao": "Alcance justificado de uma conclusão para pessoas, mercados, períodos ou versões da intervenção além do contexto estudado. Uma comparação internamente convincente não demonstra que seu efeito se repete sob outro orçamento ou canal. A transferência exige discutir diferenças relevantes e pressupostos; ampliar a população por conveniência não é evidência de generalização.",
+      "natureza": "definição didática autoral",
+      "referencias": [
+        {
+          "titulo": "AMA — Conducting Research in Marketing with Quasi-Experiments",
+          "url": "https://journals.sagepub.com/doi/10.1177/00222429221082977",
+          "consultado": "2026-11-06",
+          "alcance": "Resumo e trechos primários sobre pergunta causal, identificação, hipóteses e validade externa, já documentados em curadoria/investigacao-analise-pesquisada.json.",
+          "limites": "Leitura parcial; reabertura direta nesta tarefa apresentou timeout. Definições são sínteses autorais, sem alegar prova das hipóteses ou leitura de toda a bibliografia."
+        }
+      ],
+      "alcance": "Síntese da discussão de alcance e hipóteses consultada parcialmente; não declaração de validade de um estudo local."
+    },
+    {
+      "id": "intervalo-confianca",
+      "termo": "Intervalo de confiança",
+      "definicao": "Conjunto de valores produzido por um procedimento de inferência com uma taxa de cobertura declarada. No sentido frequencista, um procedimento de 95% cobriria o parâmetro fixo em 95% das repetições sob suas condições. O intervalo observado contém ou não esse parâmetro; 95% não é probabilidade posterior de ele estar dentro. Viés e falhas de desenho não desaparecem por calcular um intervalo estreito.",
+      "natureza": "definição didática autoral",
+      "referencias": [
+        {
+          "titulo": "Marketing Science — When Less Is More: Data and Power in Advertising Experiments",
+          "url": "https://pubsonline.informs.org/doi/10.1287/mksc.2016.0998",
+          "consultado": "2026-11-06",
+          "alcance": "Resumo e metadados do editor consultados; referência já documentada em guia mensuracao.md e curadoria/investigacao-analise-pesquisada.json.",
+          "limites": "Sem leitura integral ou reanálise dos dados. Contextualiza desenho e precisão; não é fonte literal da derivação binomial apresentada aqui."
+        },
+        {
+          "titulo": "AMA — Can You Trust Your Ad Data?",
+          "url": "https://www.ama.org/2025/01/07/can-you-trust-your-ad-data-a-new-study-exposes-a-hidden-flaw-in-a-b-testing-on-digital-ad-platforms/",
+          "consultado": "2026-11-06",
+          "alcance": "Texto institucional de Braun e Schwartz sobre entrega divergente; já documentado em aprendizado/09.json.",
+          "limites": "Não houve leitura integral do paper associado. A fórmula binomial e a definição frequencista são explicações estatísticas autorais, não fórmulas extraídas desse artigo."
+        }
+      ],
+      "alcance": "Definição estatística autoral; as fontes contextualizam precisão e desenho, sem atribuir a elas esta formulação literal. Cobertura nominal não garante cobertura real sob hipóteses incorretas."
+    },
+    {
+      "id": "margem-contribuicao",
+      "termo": "Margem de contribuição",
+      "definicao": "Valor que resta da receita líquida após os custos e despesas variáveis incluídos no critério adotado. Pode ser expresso em reais totais, reais por unidade ou percentual da receita, que precisam ser nomeados. Contribui para cobrir custos fixos e outros gastos; portanto, não equivale por si só ao lucro. Comparações exigem critérios e horizontes compatíveis.",
+      "natureza": "definição didática autoral",
+      "referencias": [
+        {
+          "titulo": "McKinsey — The power of pricing",
+          "url": "https://www.mckinsey.com/capabilities/operations/our-insights/the-power-of-pricing",
+          "consultado": "2026-11-06",
+          "alcance": "Texto público sobre preço de transação, deduções e custo; já registrado em aprendizado/05.json.",
+          "limites": "Contextualiza a análise econômica. As identidades, símbolos e exemplos abaixo são didáticos autorais; não se afirma que sejam transcrição literal do artigo."
+        }
+      ],
+      "alcance": "Definição contábil didática própria; a fonte contextualiza preço efetivo e custo, sem certificação de uma classificação contábil empresarial."
+    },
+    {
+      "id": "brand-equity",
+      "termo": "Brand equity",
+      "definicao": "Valor de marca entendido como diferença de preferência ou resposta associada à identificação da marca. Pode ser examinado por percepções dos consumidores e por medidas baseadas em comportamento de mercado, que não são intercambiáveis automaticamente. Não é sinônimo de reconhecimento, reputação ou avaliação monetária da marca. O significado operacional depende da medida e do modelo utilizados.",
+      "natureza": "definição didática autoral",
+      "referencias": [
+        {
+          "titulo": "AMA — medidas de brand equity e resposta ao marketing",
+          "url": "https://www.ama.org/2019/02/05/how-well-does-consumer-based-brand-equity-align-with-sales-based-brand-equity-and-marketing-mix-response/",
+          "consultado": "2026-11-06",
+          "alcance": "Resumo institucional e referência do artigo de Datta, Ailawadi e van Heerde (2017), já registrados em curadoria/origens-pesquisadas.json.",
+          "limites": "Página de 2019 com resumo de estudo de 2017; artigo completo não reivindicado como lido. Definição própria; não apresentar associação como causalidade universal ou valor financeiro da marca."
+        }
+      ],
+      "alcance": "Definição própria apoiada no resumo institucional consultado; não se afirma que uma métrica isolada estime todo o construto ou seu valor financeiro."
+    }
+  ],
+  "derivacao_erro_padrao": {
+    "natureza": "derivação estatística elementar própria",
+    "passos": [
+      "Para uma observação Bernoulli com probabilidade p, Var(X) = p(1−p).",
+      "Para a média de n observações independentes com a mesma probabilidade, Var(p̂) = p(1−p)/n.",
+      "Para médias de grupos independentes, a variância da diferença é a soma das variâncias.",
+      "Substituir p pelos estimadores amostrais e tirar a raiz fornece o estimador de erro-padrão exibido."
+    ],
+    "limite": "Não inclui correção para população finita, agrupamento, dependência, pareamento, ponderação ou seleção; outras estratégias exigem variância apropriada."
+  },
+  "validacao": {
+    "contas": {
+      "status": "conferidas por recálculo em Python",
+      "resultados": {
+        "margem_percentual": 40,
+        "equilibrio_unidades": 150,
+        "conversao": 0.06,
+        "retencao": 0.8,
+        "churn": 0.2,
+        "frequencia": 3,
+        "ticket": 150,
+        "contribuicao_incremental_liquida": 1000,
+        "payback_meses": 8,
+        "erro_padrao": 0.012790621564255587
+      }
+    },
+    "latex": {
+      "status": "10 de 10 equações aceitas por KaTeX com throwOnError:true e strict:error",
+      "equacoes": 10,
+      "versao_katex": "0.16.47"
+    },
+    "tamanho_textos": {
+      "margem-contribuicao-percentual": 80,
+      "ponto-equilibrio-unidades": 77,
+      "taxa-conversao": 79,
+      "retencao-coorte": 79,
+      "churn-coorte": 78,
+      "frequencia-compra": 80,
+      "ticket-medio": 78,
+      "contribuicao-incremental-liquida": 78,
+      "payback-simples-cac": 82,
+      "erro-padrao-diferenca-proporcoes": 76
+    },
+    "integridade": {
+      "exemplos_hipoteticos": true,
+      "dados_reais_coletados": 0,
+      "novas_fontes_fora_do_inventario": 0,
+      "arquivos_runtime_alterados": 0,
+      "commit_realizado": false
+    }
+  }
+}

@@ -1,0 +1,951 @@
+{
+  "versao": 1,
+  "pesquisado_em": "2026-11-06",
+  "escopo": "Pesquisa editorial de candidatos para a correção Business; não altera o aplicativo, não publica conteúdos e não equivale à revisão integral do acervo.",
+  "criterios": {
+    "fontes": "Somente fontes institucionais/editoriais aprovadas. SAGE e SciELO são plataformas dos periódicos aprovados, não novas marcas editoriais.",
+    "verificacao": "Título e existência confirmados em página/PDF institucional ou metadados institucionais; nível e limites registrados por item. Autoria e datas desconhecidas permanecem null.",
+    "integridade": "Nenhum conteúdo patrocinado identificado foi selecionado. Relatos com coautoria empresarial e relações comerciais visíveis estão explicitados; não usar como evidência independente.",
+    "direitos": "Referenciar e produzir leitura crítica original; não copiar integralmente artigo, gráficos ou fotografias sem autorização.",
+    "contagem": "28 obras/matérias distintas, das quais sete são papers acadêmicos (seis principais e uma reserva); notícias de divulgação não contam como seus estudos subjacentes. Não representa 28 novos artigos já redigidos ou revisados integralmente."
+  },
+  "resumo_quantitativo": {
+    "candidatos": 28,
+    "fontes_editoriais_distintas": 16,
+    "papers_principais": 6,
+    "papers_reserva": 1,
+    "revisoes_integrais_concluidas": 0,
+    "metadados_institucionais_sem_texto_do_artigo": 1,
+    "itens_brasileiros": 7,
+    "aprovacao_editorial_final": "pendente da leitura integral, deduplicação com o acervo e seleção de adequação por seção"
+  },
+  "encaixe_editorial_proposto": {
+    "tres_estudos_home": [
+      {
+        "tema": "Jornada e mensuração de influência",
+        "referencias": [
+          "ART02",
+          "ART03",
+          "ART06",
+          "ART23",
+          "ART25"
+        ],
+        "trabalho_necessario": "Produzir estudo original em português, distinguir diagnóstico de jornada de efeito incremental e revisar os papers."
+      },
+      {
+        "tema": "Marca, experiência e percepção de valor",
+        "referencias": [
+          "ART05",
+          "ART09",
+          "ART14",
+          "ART19",
+          "ART20"
+        ],
+        "trabalho_necessario": "Cruzar fontes com interesses distintos, inserir caso brasileiro e separar ensaio, relato empresarial e pesquisa."
+      },
+      {
+        "tema": "Clientes, feedback e precificação",
+        "referencias": [
+          "ART04",
+          "ART08",
+          "ART10",
+          "ART12",
+          "ART21"
+        ],
+        "trabalho_necessario": "Escolher recorte principal; contextualizar amostras e limites; não transportar percentuais de ganho entre países."
+      }
+    ],
+    "uma_analise": {
+      "tema": "Como avaliar evidências de resultado em marketing",
+      "referencias": [
+        "ART22",
+        "ART23",
+        "ART24",
+        "ART25",
+        "ART26"
+      ],
+      "trabalho_necessario": "Leitura metodológica integral antes da redação; explicitar causalidade, seleção, contexto e validade externa."
+    },
+    "seis_papers": [
+      "ART22",
+      "ART23",
+      "ART24",
+      "ART25",
+      "ART26",
+      "ART27"
+    ],
+    "reserva_brasileira": [
+      "ART21"
+    ]
+  },
+  "lacunas": [
+    "Nenhuma revisão integral foi concluída nesta etapa: pesquisa bibliográfica e leitura parcial não devem ser rotuladas como estudo completo.",
+    "Três dos seis papers principais têm texto integral restrito na página do editor (ART24, ART25, ART26); obter acesso autorizado ou versão institucional legítima antes de análise integral.",
+    "MIT SMR foi verificado apenas no catálogo institucional; não usar sua sinopse para fabricar leitura completa.",
+    "FGV periódicos apresentou bloqueios 429; achado o PDF institucional aberto de ART20 e a publicação RAE na SciELO para ART21. Originais das notícias ART16–ART19 continuam a ser rastreados/revisados.",
+    "Não se adicionaram fontes só para preencher cotas: HBR, WARC, Bain adicional, FT/Valor/Meio & Mensagem podem ampliar a rodada seguinte, com controle de acesso e patrocínio.",
+    "Comparação com o inventário anterior e deduplicação por URL/DOI devem preceder a contagem de novos conteúdos. ART01 e ART07–ART09 podem já estar no acervo.",
+    "A oferta está mais forte em marca, consumidor e mensuração; administração geral, B2B, canais, estratégia comercial e referências brasileiras adicionais exigem complementação conforme as seções reais do original."
+  ],
+  "itens": [
+    {
+      "id": "ART01",
+      "titulo": "Modern marketing: What it is, what it isn’t, and how to do it",
+      "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/modern-marketing-what-it-is-what-it-isnt-and-how-to-do-it",
+      "fonte": "McKinsey & Company",
+      "autores": [
+        "Sarah Armstrong",
+        "Dianne Esber",
+        "Jason Heller",
+        "Björn Timelin"
+      ],
+      "data_publicacao": "2020-03-02",
+      "natureza": "executivo",
+      "tema": [
+        "organizacao de marketing",
+        "capacidades",
+        "orientacao ao cliente"
+      ],
+      "idioma": "en",
+      "acesso": "pagina aberta",
+      "consultado": "Página institucional: título, data, introdução e seções sobre capacidades e mentalidade; autoria no PDF institucional indexado.",
+      "limites": "Framework de consultoria; estimativas de ganhos e experiência dos autores não equivalem a experimento causal. Conferir acervo existente para não duplicar.",
+      "uso_proposto": [
+        "fundamentos",
+        "estudo_home_organizacao"
+      ],
+      "prioridade": "alta",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false
+    },
+    {
+      "id": "ART02",
+      "titulo": "The consumer decision journey",
+      "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey",
+      "fonte": "McKinsey Quarterly",
+      "autores": [
+        "David Court",
+        "Dave Elzinga",
+        "Susan Mulder",
+        "Ole Jørgen Vetvik"
+      ],
+      "data_publicacao": "2009-06-01",
+      "natureza": "executivo",
+      "tema": [
+        "jornada do consumidor",
+        "marca",
+        "lealdade"
+      ],
+      "idioma": "en",
+      "acesso": "pagina aberta",
+      "consultado": "Página institucional: metadados e apresentação do modelo; desenho declarado da pesquisa com consumidores. Autoria confirmada na referência institucional ao artigo.",
+      "limites": "Clássico de 2009; tecnologias e contexto de mídia históricos. Pesquisa descritiva de consultoria; não apresentar o modelo como lei universal.",
+      "uso_proposto": [
+        "fundamentos",
+        "estudo_home_jornada"
+      ],
+      "prioridade": "alta",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false
+    },
+    {
+      "id": "ART03",
+      "titulo": "The new consumer decision journey",
+      "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-new-consumer-decision-journey",
+      "fonte": "McKinsey & Company",
+      "autores": [
+        "David Edelman",
+        "Marc Singer"
+      ],
+      "data_publicacao": "2015-10-01",
+      "natureza": "executivo",
+      "tema": [
+        "jornada do consumidor",
+        "personalizacao",
+        "experiencia"
+      ],
+      "idioma": "en",
+      "acesso": "pagina aberta; PDF institucional disponível",
+      "consultado": "Página institucional: corpo sobre automação, personalização, contexto e inovação. Autoria confirmada no PDF institucional indexado.",
+      "limites": "Atualização de 2015 fundamentada em casos e entrevistas; exemplos tecnológicos precisam ser datados.",
+      "uso_proposto": [
+        "fundamentos",
+        "estudo_home_jornada"
+      ],
+      "prioridade": "normal",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false
+    },
+    {
+      "id": "ART04",
+      "titulo": "Perception Beats Reality in Pricing",
+      "url": "https://www.bain.com/contentassets/9b4a1b91a99744c2a629abcf45d54b42/bain_brief_perception_beats_reality_in_pricing.pdf",
+      "fonte": "Bain & Company",
+      "autores": [
+        "Sandeep Heda",
+        "Stephen Mewborn",
+        "Stephen Caine"
+      ],
+      "data_publicacao": null,
+      "natureza": "relatorio",
+      "tema": [
+        "precificacao",
+        "percepcao de valor",
+        "varejo"
+      ],
+      "idioma": "en",
+      "acesso": "PDF aberto de oito páginas",
+      "consultado": "PDF institucional: capa, autoria, copyright 2016, desenho da pesquisa Bain/ROI e recomendações sobre percepção de preço.",
+      "limites": "Dia e mês de publicação não confirmados no PDF; por isso data exata é null. Pesquisa de 2016 em duas cidades dos EUA; não extrapolar a preços ou consumidores brasileiros atuais.",
+      "uso_proposto": [
+        "estudo_home_precificacao",
+        "analise_inicial"
+      ],
+      "prioridade": "alta",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false,
+      "ano_publicacao_confirmado": 2016
+    },
+    {
+      "id": "ART05",
+      "titulo": "Building Lasting Brand Equity in the Age of AI",
+      "url": "https://www.bcg.com/publications/2025/building-lasting-brand-equity-in-the-age-of-ai",
+      "fonte": "Boston Consulting Group",
+      "autores": [
+        "Peter Dewey",
+        "Leonardo Fascione",
+        "Romain Faracci",
+        "Sarah Goldschmid"
+      ],
+      "data_publicacao": "2025-12-12",
+      "natureza": "executivo",
+      "tema": [
+        "brand equity",
+        "investimento em marca",
+        "mensuracao"
+      ],
+      "idioma": "en",
+      "acesso": "pagina aberta; PDF institucional disponível",
+      "consultado": "Página e texto institucional indexado: título, autores, data, seções sobre investimento em marca e descrição da pesquisa.",
+      "limites": "Dados observacionais e métricas proprietárias da consultoria; correlação com desempenho não prova causalidade nem garante retorno de investimento.",
+      "uso_proposto": [
+        "estudo_home_marca",
+        "analise_inicial"
+      ],
+      "prioridade": "alta",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false
+    },
+    {
+      "id": "ART06",
+      "titulo": "Mapping the Consumer Touchpoints That Influence Decisions",
+      "url": "https://www.bcg.com/publications/2025/mapping-consumer-touchpoints-that-influence-decisions",
+      "fonte": "Boston Consulting Group",
+      "autores": [
+        "Ray Yu",
+        "Lauren Taylor",
+        "Don Massoni",
+        "Derek Rodenhausen",
+        "Yotam Ariav",
+        "Audrey Ballard",
+        "Shubhank Goswami",
+        "Jordan Baker"
+      ],
+      "data_publicacao": "2025-06-16",
+      "natureza": "executivo",
+      "tema": [
+        "jornada do consumidor",
+        "pontos de contato",
+        "mix de midia"
+      ],
+      "idioma": "en",
+      "acesso": "pagina aberta",
+      "consultado": "Página institucional e texto indexado: metadados, conceito de mapas de influência e definição de influência.",
+      "limites": "Método e medidas proprietárias; declarações de influência e lembrança não substituem testes incrementais. Conferir vínculos comerciais/metodologia antes de usar números de canais.",
+      "uso_proposto": [
+        "estudo_home_jornada",
+        "contraponto_mensuracao"
+      ],
+      "prioridade": "alta",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false
+    },
+    {
+      "id": "ART07",
+      "titulo": "When Brain Scans Beat Surveys (and When They Don’t)",
+      "url": "https://knowledge.insead.edu/marketing/when-brain-scans-beat-surveys-and-when-they-dont",
+      "fonte": "INSEAD Knowledge",
+      "autores": [
+        "Hilke Plassmann",
+        "Paulo Albuquerque"
+      ],
+      "data_publicacao": "2026-06-22",
+      "natureza": "executivo",
+      "tema": [
+        "pesquisa de mercado",
+        "previsao de demanda",
+        "neuromarketing"
+      ],
+      "idioma": "en",
+      "acesso": "pagina aberta",
+      "consultado": "Página institucional: autoria, data, introdução e descrição das amostras de pesquisa, fMRI e varejo.",
+      "limites": "Divulgação de estudo; original citado ainda exige revisão metodológica integral. Distingue decisão do varejista e compra final; fMRI não deve ser promovida como solução universal.",
+      "uso_proposto": [
+        "pesquisa_de_mercado",
+        "leitura_orientada"
+      ],
+      "prioridade": "normal",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false
+    },
+    {
+      "id": "ART08",
+      "titulo": "What Happens When You Actually Listen to Customers",
+      "url": "https://knowledge.insead.edu/marketing/what-happens-when-you-actually-listen-customers",
+      "fonte": "INSEAD Knowledge",
+      "autores": [
+        "Rupali Kaul"
+      ],
+      "data_publicacao": "2026-03-19",
+      "natureza": "executivo",
+      "tema": [
+        "feedback do cliente",
+        "aprendizagem",
+        "pequenas empresas"
+      ],
+      "idioma": "en",
+      "acesso": "pagina aberta",
+      "consultado": "Página institucional: autoria, data, desenho resumido do experimento com 274 empresas de Kigali e mecanismos de solicitação/aprendizagem.",
+      "limites": "Resultados locais de pequenas empresas de Ruanda; não prometer percentuais de crescimento para outro contexto. O paper original foi apontado pela página, mas não revisado integralmente nesta seleção.",
+      "uso_proposto": [
+        "estudo_home_cliente",
+        "analise_inicial"
+      ],
+      "prioridade": "alta",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false
+    },
+    {
+      "id": "ART09",
+      "titulo": "The Playbook for RIMOWA’s Transformation",
+      "url": "https://knowledge.insead.edu/marketing/playbook-rimowas-transformation",
+      "fonte": "INSEAD Knowledge",
+      "autores": [
+        "Frederic Godart",
+        "Hugues Bonnet-Masimbert"
+      ],
+      "data_publicacao": "2026-05-11",
+      "natureza": "executivo",
+      "tema": [
+        "posicionamento",
+        "luxo",
+        "canais",
+        "experiencia de marca"
+      ],
+      "idioma": "en",
+      "acesso": "pagina aberta",
+      "consultado": "Página institucional: metadados, caso RIMOWA e descrição de produto, varejo, distribuição e reparabilidade.",
+      "limites": "Um coautor é executivo da empresa estudada: relato com interesse institucional, não avaliação independente nem evidência causal de sucesso.",
+      "uso_proposto": [
+        "estudo_home_marca",
+        "caso_luxo"
+      ],
+      "prioridade": "alta",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false
+    },
+    {
+      "id": "ART10",
+      "titulo": "Small Change, Big Rewards",
+      "url": "https://knowledge.insead.edu/marketing/small-change-big-rewards",
+      "fonte": "INSEAD Knowledge",
+      "autores": [
+        "Wolfgang Ulaga",
+        "Michael Mansard"
+      ],
+      "data_publicacao": "2025-10-02",
+      "natureza": "executivo",
+      "tema": [
+        "precificacao",
+        "ancoragem",
+        "arquitetura de planos"
+      ],
+      "idioma": "en",
+      "acesso": "pagina aberta",
+      "consultado": "Página institucional: título, autores, data, apresentação do experimento de ordenação de planos e limitações declaradas sobre conversão inicial.",
+      "limites": "Coautor ligado à Zuora e pesquisa inicial com serviço virtual. Não concluir retenção ou CLV de longo prazo; conferir material metodológico original, apontado fora do periódico, antes de usar percentuais.",
+      "uso_proposto": [
+        "estudo_home_precificacao",
+        "experimento_didatico"
+      ],
+      "prioridade": "normal",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false
+    },
+    {
+      "id": "ART11",
+      "titulo": "Six Steps to Create Customer Value With AI",
+      "url": "https://knowledge.insead.edu/marketing/six-steps-create-customer-value-ai",
+      "fonte": "INSEAD Knowledge",
+      "autores": [
+        "Joerg Niessing",
+        "Benni Lickfett"
+      ],
+      "data_publicacao": "2025-07-22",
+      "natureza": "executivo",
+      "tema": [
+        "inteligencia artificial",
+        "valor ao cliente",
+        "governanca de dados"
+      ],
+      "idioma": "en",
+      "acesso": "pagina aberta",
+      "consultado": "Página institucional: metadados, seções de implantação e casos Diageo/Starbucks.",
+      "limites": "Coautor é executivo da Diageo. Ganhos dos casos são relatos empresariais; exigem base e contexto antes de serem usados como evidência generalizável.",
+      "uso_proposto": [
+        "IA_aplicada",
+        "gestao_de_marketing"
+      ],
+      "prioridade": "normal",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false
+    },
+    {
+      "id": "ART12",
+      "titulo": "One Person, Many Needs: How Customer Centricity Has Changed",
+      "url": "https://knowledge.wharton.upenn.edu/article/one-person-many-needs-customer-centricity-changed/",
+      "fonte": "Knowledge at Wharton",
+      "autores": [
+        "Knowledge at Wharton Staff"
+      ],
+      "data_publicacao": "2021-11-15",
+      "natureza": "executivo",
+      "tema": [
+        "customer lifetime value",
+        "heterogeneidade",
+        "segmentacao"
+      ],
+      "idioma": "en",
+      "acesso": "pagina aberta",
+      "consultado": "Página institucional: título, autoria editorial, data e discussão de CLV com Eric Bradlow; distingue necessidades do mesmo cliente ao longo do tempo.",
+      "limites": "Cobertura de workshop realizado com Teradata; não é paper nem revisão independente do fornecedor. Não usar como prova isolada de eficácia de produto.",
+      "uso_proposto": [
+        "fundamentos",
+        "CLV"
+      ],
+      "prioridade": "normal",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false
+    },
+    {
+      "id": "ART13",
+      "titulo": "Peter Fader on Customer Centricity and Why It Matters",
+      "url": "https://knowledge.wharton.upenn.edu/article/peter-fader-on-customer-centricity-and-why-it-matters/",
+      "fonte": "Knowledge at Wharton",
+      "autores": [
+        "Knowledge at Wharton Staff"
+      ],
+      "data_publicacao": "2011-11-18",
+      "natureza": "executivo",
+      "tema": [
+        "centralidade no cliente",
+        "CLV",
+        "CRM"
+      ],
+      "idioma": "en",
+      "acesso": "pagina aberta com transcricao de entrevista",
+      "consultado": "Página institucional: metadados, apresentação de Peter Fader, identificação do entrevistador Stephen J. Kobrin e abertura da transcrição editada.",
+      "limites": "Entrevista de lançamento de livro da Wharton Digital Press; distinguir argumento executivo de comprovação empírica. Dados financeiros introdutórios são históricos.",
+      "uso_proposto": [
+        "fundamentos",
+        "ponte_literatura"
+      ],
+      "prioridade": "normal",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false
+    },
+    {
+      "id": "ART14",
+      "titulo": "Eco-chic: how to balance indulgence and responsibility",
+      "url": "https://www.london.edu/think/can-high-end-brands-balance-indulgence-and-responsibility",
+      "fonte": "London Business School · Think",
+      "autores": [
+        "Dafna Goor"
+      ],
+      "data_publicacao": "2024-10-04",
+      "natureza": "executivo",
+      "tema": [
+        "luxo",
+        "sustentabilidade",
+        "autenticidade"
+      ],
+      "idioma": "en",
+      "acesso": "pagina aberta",
+      "consultado": "Página institucional: título, autora, data e seções que discutem exemplos de luxo e limites da sustentabilidade.",
+      "limites": "Ensaio baseado em exposição docente e exemplos, não teste causal. Números ambientais gerais requerem rastrear fontes originais; casos de marcas não equivalem a auditoria ambiental.",
+      "uso_proposto": [
+        "estudo_home_marca",
+        "contraponto_sustentabilidade"
+      ],
+      "prioridade": "normal",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false
+    },
+    {
+      "id": "ART15",
+      "titulo": "Firing the Right Customers Is Good Business",
+      "url": "https://sloanreview.mit.edu/article/firing-the-right-customers-is-good-business/",
+      "fonte": "MIT Sloan Management Review",
+      "autores": [
+        "Carsten Pedersen",
+        "Thomas Ritter"
+      ],
+      "data_publicacao": "2024-01-30",
+      "natureza": "executivo",
+      "tema": [
+        "rentabilidade de clientes",
+        "CLV",
+        "gestao de carteira"
+      ],
+      "idioma": "en",
+      "acesso": "metadados na loja MIT; artigo principal restrito nesta consulta",
+      "consultado": "Título, autores, data e sinopse confirmados no catálogo institucional MIT SMR; tentativa do artigo principal foi bloqueada.",
+      "limites": "Somente metadados e sinopse, sem leitura do artigo. Não produzir resumo completo ou recomendações específicas sem acesso autorizado ao texto.",
+      "uso_proposto": [
+        "fila_de_leitura",
+        "CLV"
+      ],
+      "prioridade": "normal",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false,
+      "nivel_verificacao": "metadados_institucionais",
+      "url_verificacao": "https://shop.sloanreview.mit.edu/store/marketing?cat_id=247&offset=20"
+    },
+    {
+      "id": "ART16",
+      "titulo": "Consumidores ganham papel estratégico na economia circular",
+      "url": "https://portal.fgv.br/noticias/consumidores-ganham-papel-estrategico-na-economia-circular",
+      "fonte": "FGV Notícias",
+      "autores": null,
+      "data_publicacao": "2026-02-11",
+      "natureza": "jornalismo",
+      "tema": [
+        "economia circular",
+        "comportamento sustentavel",
+        "SHIFT"
+      ],
+      "idioma": "pt-BR",
+      "acesso": "noticia aberta; periodico original respondeu 429",
+      "consultado": "Notícia institucional consultada: título, data, exemplos e identificação dos autores do artigo referido.",
+      "limites": "Autoria da notícia não identificada; os nomes abaixo pertencem ao estudo referido, não à notícia. Não contar notícia e artigo subjacente como dois estudos. Texto original da GV-executivo pendente.",
+      "uso_proposto": [
+        "panorama_brasileiro",
+        "ponte_paper_SHIFT"
+      ],
+      "prioridade": "normal",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false,
+      "autores_estudo_referido": [
+        "Juliana Boteon de Siqueira",
+        "Juliana de Campos Maia Barbanti",
+        "Tânia Veludo-de-Oliveira"
+      ],
+      "url_estudo_referido": "https://periodicos.fgv.br/gvexecutivo/article/view/91873"
+    },
+    {
+      "id": "ART17",
+      "titulo": "Pesquisa apresenta framework para orientar marcas a gerenciar estereótipos na comunicação",
+      "url": "https://portal.fgv.br/noticias/pesquisa-apresenta-framework-para-orientar-marcas-gerenciar-estereotipos-na-comunicacao",
+      "fonte": "FGV Notícias",
+      "autores": null,
+      "data_publicacao": "2026-06-30",
+      "natureza": "jornalismo",
+      "tema": [
+        "estereotipos",
+        "comunicacao de marca",
+        "reputacao"
+      ],
+      "idioma": "pt-BR",
+      "acesso": "noticia aberta; artigo original respondeu 429",
+      "consultado": "Notícia institucional consultada: metadados, descrição das quatro etapas do framework e autores do artigo referido.",
+      "limites": "Autoria da notícia não identificada; é divulgação de pesquisa. Casos e afirmações do resumo precisam da metodologia do artigo para análise profunda.",
+      "uso_proposto": [
+        "panorama_brasileiro",
+        "comunicacao"
+      ],
+      "prioridade": "normal",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false,
+      "autores_estudo_referido": [
+        "Ramona De Luca",
+        "Delane Botelho",
+        "Vitor Azzari",
+        "Yuri Marcel Dallabrida"
+      ],
+      "url_estudo_referido": "https://periodicos.fgv.br/gvexecutivo/article/view/92191"
+    },
+    {
+      "id": "ART18",
+      "titulo": "Estudo investiga como marcas moldam a criação de valor na economia global",
+      "url": "https://portal.fgv.br/noticias/estudo-analisa-como-marcas-moldam-criacao-de-valor-na-economia-global",
+      "fonte": "FGV Notícias",
+      "autores": null,
+      "data_publicacao": "2026-05-05",
+      "natureza": "jornalismo",
+      "tema": [
+        "branding",
+        "cadeias globais de valor",
+        "ativos intangiveis"
+      ],
+      "idioma": "pt-BR",
+      "acesso": "noticia aberta",
+      "consultado": "Notícia institucional: título, data, atribuição às pesquisadoras e síntese do argumento sobre marcas e valor global.",
+      "limites": "Texto jornalístico institucional, não estudo original; título/autoria/data do paper externo não foram confirmados. Não contar como paper revisado.",
+      "uso_proposto": [
+        "panorama_brasileiro",
+        "marca_e_estrategia"
+      ],
+      "prioridade": "normal",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false,
+      "pesquisadoras_citadas": [
+        "Érica Siqueira",
+        "Isleide Fontenele"
+      ]
+    },
+    {
+      "id": "ART19",
+      "titulo": "Conhecimento de uma marca não é suficiente para gerar intenção de compra nos consumidores, mostra pesquisa",
+      "url": "https://eaesp.fgv.br/administracao-de-empresas/estrategias-de-marketing/conhecimento-de-uma-marca-nao-e-suficiente-para-gerar-intencao-de-compra-nos-consumidores-mostra-pesquisa",
+      "fonte": "FGV EAESP",
+      "autores": null,
+      "data_publicacao": "2021-08-19",
+      "natureza": "jornalismo",
+      "tema": [
+        "brand equity",
+        "intencao de compra",
+        "qualidade percebida"
+      ],
+      "idioma": "pt-BR",
+      "acesso": "resumo de pesquisa aberto; estudo original linkado",
+      "consultado": "Resumo institucional: título, data, pesquisadores e amostra declarada de 622 usuários de smartphones.",
+      "limites": "Associações/medição do modelo não demonstram causalidade universal. Autoria editorial não identificada; pesquisadores citados não são atribuídos como autores da notícia.",
+      "uso_proposto": [
+        "panorama_brasileiro",
+        "estudo_home_marca"
+      ],
+      "prioridade": "normal",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false,
+      "pesquisadores_citados": [
+        "Vitor Azzari",
+        "Anderson Pelissari"
+      ]
+    },
+    {
+      "id": "ART20",
+      "titulo": "As experiências das marcas mudaram",
+      "url": "https://periodicos.fgv.br/gvexecutivo/article/view/82934",
+      "fonte": "FGV · GV-executivo",
+      "autores": [
+        "Luiza Helena Venturini Brittes",
+        "Carlos Eduardo Lourenço"
+      ],
+      "data_publicacao": "2020-11/12",
+      "natureza": "executivo",
+      "tema": [
+        "experiencia de marca",
+        "brand equity",
+        "varejo"
+      ],
+      "idioma": "pt-BR",
+      "acesso": "PDF institucional aberto de quatro páginas",
+      "consultado": "PDF da FGV consultado: cabeçalho do volume 19, número 6, nov/dez 2020, autoria, cinco dimensões da experiência e exemplos brasileiros.",
+      "limites": "Contexto da pandemia de 2020; projeções citadas para 2023 são históricas. Estudos de fornecedores mencionados pelo artigo não foram auditados; evitar reproduzir seus percentuais como fato independente.",
+      "uso_proposto": [
+        "estudo_home_experiencia",
+        "casos_brasileiros"
+      ],
+      "prioridade": "alta",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false,
+      "url_texto_acessivel": "https://eaesp.fgv.br/sites/default/files/legacy/pesquisa-eaesp-files/arquivos/as_experiencias_das_marcas_mudaram.pdf",
+      "precisao_data": "numero_bimestral"
+    },
+    {
+      "id": "ART21",
+      "titulo": "VOCÊ QUER ENRIQUECER A EXPERIÊNCIA DOS CONSUMIDORES? DEIXE-OS NEGOCIAR",
+      "url": "https://www.scielo.br/j/rae/a/t86968jCwC3tfpwBzPTpkfP/?lang=pt",
+      "fonte": "FGV · RAE-Revista de Administração de Empresas",
+      "autores": [
+        "María Ángeles Ramón-Jerónimo",
+        "Katerina Makri",
+        "Barbara Stoettinger",
+        "Brock Smith"
+      ],
+      "data_publicacao": "2024",
+      "natureza": "academico",
+      "tema": [
+        "negociacao",
+        "experiencia do cliente",
+        "comparacao intercultural"
+      ],
+      "idioma": "pt-BR; en disponível",
+      "acesso": "texto aberto na plataforma SciELO da revista",
+      "consultado": "Página do artigo da RAE: metadados, resumos e início do texto em português; edição 64(6), DOI da tradução e link para original inglês.",
+      "limites": "Pesquisa em Áustria, Brasil e Itália; leitura integral de método, tabelas e limites ainda pendente. A tradução em português tem DOI terminado em x; distinguir do DOI do original.",
+      "uso_proposto": [
+        "paper_reserva",
+        "estudo_home_experiencia"
+      ],
+      "prioridade": "alta",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false,
+      "doi": "10.1590/S0034-759020240604x",
+      "titulo_original": "DO YOU WANT TO ENRICH CONSUMERS’ EXPERIENCE? LET THEM NEGOTIATE",
+      "url_periodico": "https://periodicos.fgv.br/rae/article/view/91886",
+      "precisao_data": "ano"
+    },
+    {
+      "id": "ART22",
+      "titulo": "Conducting Research in Marketing with Quasi-Experiments",
+      "url": "https://journals.sagepub.com/doi/10.1177/00222429221082977",
+      "fonte": "AMA · Journal of Marketing",
+      "autores": [
+        "Avi Goldfarb",
+        "Catherine Tucker",
+        "Yanwen Wang"
+      ],
+      "data_publicacao": "2022-02-10",
+      "natureza": "academico",
+      "tema": [
+        "causalidade",
+        "quase-experimentos",
+        "metodos"
+      ],
+      "idioma": "en",
+      "acesso": "open access indicado pelo editor",
+      "consultado": "Landing do editor: autoria, primeira publicação online, DOI, resumo e início do texto; divulgação AMA consultada como apoio.",
+      "limites": "Revisão metodológica; não é resultado único de campanha. Aplicação exige discutir hipóteses de identificação e validade externa; leitura integral ainda necessária.",
+      "uso_proposto": [
+        "paper_01",
+        "analise_inicial"
+      ],
+      "prioridade": "alta",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false,
+      "doi": "10.1177/00222429221082977",
+      "url_apoio": "https://www.ama.org/2022/03/16/conducting-research-in-marketing-with-quasi-experiments/"
+    },
+    {
+      "id": "ART23",
+      "titulo": "A Comparison of Approaches to Advertising Measurement: Evidence from Big Field Experiments at Facebook",
+      "url": "https://pubsonline.informs.org/doi/10.1287/mksc.2018.1135",
+      "fonte": "INFORMS · Marketing Science",
+      "autores": [
+        "Brett R. Gordon",
+        "Florian Zettelmeyer",
+        "Neha Bhargava",
+        "Dan Chapsky"
+      ],
+      "data_publicacao": "2019-04-04",
+      "natureza": "academico",
+      "tema": [
+        "mensuracao de publicidade",
+        "experimentos",
+        "inferencia causal"
+      ],
+      "idioma": "en",
+      "acesso": "resumo e metadados abertos; PDF completo não verificado",
+      "consultado": "Landing INFORMS: título, autores, data online, resumo, volume 38(2), páginas 193–225 e dados bibliográficos.",
+      "limites": "Amostra de 15 experimentos nos EUA em uma plataforma; não generalizar automaticamente a toda mídia. Dois autores ligados ao Facebook. Texto integral e suplementos ainda pendentes.",
+      "uso_proposto": [
+        "paper_02",
+        "analise_inicial"
+      ],
+      "prioridade": "alta",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false,
+      "doi": "10.1287/mksc.2018.1135"
+    },
+    {
+      "id": "ART24",
+      "titulo": "Ghost Ads: Improving the Economics of Measuring Online Ad Effectiveness",
+      "url": "https://journals.sagepub.com/doi/10.1509/jmr.15.0297",
+      "fonte": "AMA · Journal of Marketing Research",
+      "autores": [
+        "Garrett A. Johnson",
+        "Randall A. Lewis",
+        "Elmar I. Nubbemeyer"
+      ],
+      "data_publicacao": "2017-12-01",
+      "natureza": "academico",
+      "tema": [
+        "experimentos publicitarios",
+        "incrementalidade",
+        "retargeting"
+      ],
+      "idioma": "en",
+      "acesso": "resumo aberto; texto completo restrito pelo editor",
+      "consultado": "Landing do editor: título, autores, data online, DOI e resumo metodológico.",
+      "limites": "Resumo não substitui leitura integral. Implementação exige infraestrutura de entrega e grupos de controle; resultados do caso não são promessa de retorno.",
+      "uso_proposto": [
+        "paper_03",
+        "mensuracao"
+      ],
+      "prioridade": "alta",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false,
+      "doi": "10.1509/jmr.15.0297"
+    },
+    {
+      "id": "ART25",
+      "titulo": "When Does Retargeting Work? Information Specificity in Online Advertising",
+      "url": "https://journals.sagepub.com/doi/10.1509/jmr.11.0503",
+      "fonte": "AMA · Journal of Marketing Research",
+      "autores": [
+        "Anja Lambrecht",
+        "Catherine Tucker"
+      ],
+      "data_publicacao": "2013-10-01",
+      "natureza": "academico",
+      "tema": [
+        "retargeting",
+        "jornada",
+        "especificidade de informacao"
+      ],
+      "idioma": "en",
+      "acesso": "resumo aberto; texto completo restrito pelo editor",
+      "consultado": "Landing do editor: título, autores, data, DOI, volume 50(5) e resumo do experimento de turismo online.",
+      "limites": "Contexto e tecnologia de 2013; artigo integral e condições de segmentação pendentes. Não concluir que retargeting sempre falha ou sempre funciona.",
+      "uso_proposto": [
+        "paper_04",
+        "jornada_e_publicidade"
+      ],
+      "prioridade": "alta",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false,
+      "doi": "10.1509/jmr.11.0503"
+    },
+    {
+      "id": "ART26",
+      "titulo": "How Well Does Advertising Work? Generalizations from Meta-Analysis of Brand Advertising Elasticities",
+      "url": "https://journals.sagepub.com/doi/10.1509/jmkr.48.3.457",
+      "fonte": "AMA · Journal of Marketing Research",
+      "autores": [
+        "Raj Sethuraman",
+        "Gerard J. Tellis",
+        "Richard A. Briesch"
+      ],
+      "data_publicacao": "2011-06",
+      "natureza": "academico",
+      "tema": [
+        "meta-analise",
+        "elasticidade de publicidade",
+        "efeitos de longo prazo"
+      ],
+      "idioma": "en",
+      "acesso": "resumo aberto; texto completo restrito pelo editor",
+      "consultado": "Landing SAGE: título, autores e resumo da meta-análise; bibliografia institucional AMA confirma publicação em 2011, volume 48, páginas 457–471.",
+      "limites": "SAGE exibe também data de disponibilização online em 2018; não substituir o ano original de 2011 por esse registro. Estudos-base de 1960–2008: contextualizar antes de aplicar à mídia atual. Texto integral pendente.",
+      "uso_proposto": [
+        "paper_05",
+        "analise_inicial"
+      ],
+      "prioridade": "alta",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false,
+      "doi": "10.1509/jmkr.48.3.457",
+      "precisao_data": "mes",
+      "url_confirmacao_publicacao_original": "https://www.ama.org/2021/01/26/advertising-effectiveness/"
+    },
+    {
+      "id": "ART27",
+      "titulo": "How to SHIFT Consumer Behaviors to be More Sustainable: A Literature Review and Guiding Framework",
+      "url": "https://journals.sagepub.com/doi/pdf/10.1177/0022242919825649",
+      "fonte": "AMA · Journal of Marketing",
+      "autores": [
+        "Katherine White",
+        "Rishad Habib",
+        "David J. Hardisty"
+      ],
+      "data_publicacao": "2019",
+      "natureza": "academico",
+      "tema": [
+        "comportamento sustentavel",
+        "revisao de literatura",
+        "SHIFT"
+      ],
+      "idioma": "en",
+      "acesso": "PDF do editor acessível de 28 páginas",
+      "consultado": "PDF do editor: título, autores, resumo, introdução, estrutura do framework e identificação Journal of Marketing 83(3), 22–49 (2019).",
+      "limites": "Revisão de literatura e framework, não experimento único. PDF disponível não significa revisão integral concluída; leitura crítica de todas as seções/referências pendente.",
+      "uso_proposto": [
+        "paper_06",
+        "sustentabilidade",
+        "ponte_FGV"
+      ],
+      "prioridade": "alta",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false,
+      "doi": "10.1177/0022242919825649",
+      "precisao_data": "ano"
+    },
+    {
+      "id": "ART28",
+      "titulo": "Como medir a reputação de uma empresa?",
+      "url": "https://sejarelevante.fdc.org.br/como-medir-a-reputacao-de-uma-empresa/",
+      "fonte": "Fundação Dom Cabral · Seja Relevante",
+      "autores": [
+        "Nai Fachini"
+      ],
+      "data_publicacao": "2026-10-20",
+      "natureza": "jornalismo",
+      "tema": [
+        "reputacao corporativa",
+        "stakeholders",
+        "mensuracao"
+      ],
+      "idioma": "pt-BR",
+      "acesso": "pagina aberta",
+      "consultado": "Página institucional: título, assinatura, data junto à assinatura, introdução e discussão da metodologia Merco.",
+      "limites": "Página mostra outra data em módulo de compartilhamento (23/10); adotada 20/10 junto à assinatura. É explicação jornalística vinculada à pauta do Fórum Reputação, sem rótulo de patrocínio identificado na parte consultada; verificar o artigo inteiro e a fonte Merco antes de uso analítico.",
+      "uso_proposto": [
+        "panorama_brasileiro",
+        "mensuracao_de_marca"
+      ],
+      "prioridade": "normal",
+      "verificado_em": "2026-11-06",
+      "status": "candidato_pesquisado",
+      "revisao_integral": false,
+      "data_modulo_compartilhamento": "2026-10-23"
+    }
+  ]
+}

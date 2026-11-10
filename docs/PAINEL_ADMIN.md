@@ -75,6 +75,59 @@ O botão **Sign In Using Access Token** continua disponível. Crie um token *fin
 
 ## Coleções
 
+### Anúncios e contador de visualizações
+
+Na barra superior do painel, clique em **Gerenciar anúncios**. O gerenciador
+abre dentro do próprio painel, compartilha a sessão do CMS e mantém o editor
+de conteúdo aberto na aba **Conteúdos**. Link direto integrado:
+https://www.harpya.org/admin/?ferramenta=anuncios. Também é possível abrir
+https://www.harpya.org/admin/anuncios/. Escolha o banner horizontal no meio da
+página ou o primeiro ou segundo anúncio da coluna direita. Os três cartões mostram o anunciante,
+o estado e a imagem de cada posição. Clique para editar. Edite anunciante, título, texto,
+link HTTPS e imagem. Você pode enviar PNG, JPG ou WebP de até 2 MB ou informar uma
+imagem por endereço HTTPS. O upload aceita arrastar e soltar com FilePond 4.32.12
+(licença MIT), hospedado localmente em `public/admin/anuncios/vendor/`, sem
+serviço externo de upload. A licença original acompanha a distribuição.
+Preencha a descrição da imagem para acessibilidade. As peças prontas ocupam
+o espaço inteiro, com proporção preservada e sem repetir texto sobre a arte.
+
+Os dois anúncios laterais aparecem na coluna direita; em telas menores, abaixo
+do conteúdo principal. O banner horizontal aparece uma vez no meio do conteúdo
+da landing page e das subpáginas, entre blocos completos de leitura. A posição é
+definida no build; a exibição não depende de JavaScript no navegador. Os identificadores
+legados `lateral-direita` e `lateral-esquerda` representam, respectivamente, o
+primeiro e o segundo anúncio da mesma coluna, preservando as peças existentes.
+O arquivo `topo.json` é reutilizado para o horizontal (970 × 90), sem banner no
+topo da página. A arte é responsiva e mantém a proporção original. Entre os anúncios laterais há
+cards RSS de eletrônica, chips e LLMs (ver `docs/TECNOLOGIA_RSS.md`).
+
+**Publicar anúncio** grava imagem e configuração juntas, em um único commit em
+`main`. **Salvar como rascunho** e **Retirar anúncio do site** deixam a posição
+com o aviso “Seu anúncio aqui”. A hospedagem processa a alteração antes de
+atualizar o site. A tela confere o SHA do arquivo e preserva atualizações
+concorrentes. Anúncios também estão disponíveis na coleção do CMS, que segue o
+Workflow quando usada pelo editor padrão.
+
+O contador público conta visualizações, não pessoas únicas, a partir da data
+informada no rodapé. Não há números históricos inventados. O endpoint
+`api/visitas.js` usa as funções do banco em `docs/sql/harpya_views.sql`, no esquema
+isolado `harpya_stats` do projeto Supabase By Vulcan. As tabelas privadas têm RLS
+e nenhum acesso direto por visitantes; as funções públicas são invocadoras e
+as rotinas privilegiadas ficam no esquema privado. A gravação exige uma chave
+aleatória do servidor, cujo hash é guardado no banco. A leitura só expõe total
+e data inicial.
+
+Configure `HARPYA_STATS_URL`, `HARPYA_STATS_KEY` e `HARPYA_STATS_SECRET` na Vercel.
+Nunca grave a chave secreta no repositório. O rate limit usa HMAC diário do IP,
+sem guardá-lo em texto, e permite até 30 eventos por minuto por chave. Eventos
+repetidos usam o mesmo UUID e não aumentam a contagem. Identificadores técnicos
+são eliminados após sete dias, na próxima atualização do contador. Contagens são aproximadas: robôs disfarçados,
+bloqueadores e falhas de rede podem alterar os números.
+
+Em **Divulgação**, https://www.harpya.org/admin/divulgacao/, há uma pesquisa com
+fontes oficiais, regras dos canais e proposta de automação com revisão. Nenhum
+envio a comunidades externas é disparado por essa ferramenta.
+
 | Coleção | Pasta | O que é |
 |---|---|---|
 | Caminhos | `src/content/caminhos/*.md` | As fichas dos 12 caminhos (markdown com LaTeX) |
@@ -118,12 +171,23 @@ sessão não estiver disponível, oferece o mesmo login por e-mail e senha.
 Essa ação publica os rascunhos já salvos no catálogo de `main`; alterações ainda
 em revisão no Workflow continuam seguindo o fluxo editorial. Se um item mudar
 desde o carregamento da lista, a publicação é interrompida para nova revisão.
-Uma atualização concorrente de `main` também impede a gravação, sem sobrescrever
-o trabalho de outra pessoa. Erros de envio exigem atualizar a lista para conferir
+Uma atualização concorrente de `main` faz o painel reler a versão atual e
+tentar novamente, até três tentativas, sem sobrescrever o trabalho de outra
+pessoa. Os itens selecionados são conferidos novamente a cada tentativa. As
+leituras do GitHub não usam o cache do navegador, inclusive ao publicar duas
+coleções em sequência. Erros de envio exigem atualizar a lista para conferir
 o estado antes de tentar de novo.
 
 Verificações da seleção e da preservação do conteúdo:
 `node --test scripts/test_publicacao.mjs`.
+
+A tela confere a permissão de gravação antes de habilitar a publicação. Essa
+verificação usa a mesma árvore de arquivos existente e não cria commit nem
+altera `main`. Se o GitHub responder `Resource not accessible by personal access
+token`, edite o token em https://github.com/settings/personal-access-tokens e
+defina **Contents: Read and write** para `Harpia-Project`. Salve e clique em
+**Atualizar lista**. A permissão de escrita da conta, isoladamente, não garante
+que o token também tenha acesso de escrita.
 
 A tarefa agendada (ver `docs/TAREFA_CURADORIA.md`) grava direto em `main`, sempre como **rascunho**, e anota tudo em `curadoria/registro/AAAA-MM-DD.md`.
 
@@ -170,3 +234,10 @@ O Sveltia só roda em HTTPS ou em `localhost`:
 ```bash
 npm run build && npx astro preview   # http://localhost:4321/admin/
 ```
+
+
+### Harpya Business
+
+A aba **Curadoria Business** abre `/admin/business/` para conferir os candidatos de artigos e vídeos, a saúde das fontes e o catálogo proposto. Encaminhar ao CMS cria somente um candidato, sem resumo ou autoria inventados e sem publicação. A revisão e a publicação são feitas na coleção **Business · Leituras e vídeos**. A seleção integral de 17 fontes, oito canais e oito livros foi aprovada em 06/11/2026 e registrada no manifesto. As fichas bibliográficas estão disponíveis; cada novo artigo ou vídeo continua sujeito à revisão individual.
+
+O editor de anúncios agora permite escolher **Tecnologia e Matemática** ou **Harpya Business**. Cada ambiente tem três arquivos próprios. Não é necessário usar a coleção geral para editar os anúncios Business.

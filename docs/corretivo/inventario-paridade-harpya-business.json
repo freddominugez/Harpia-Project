@@ -1,0 +1,1191 @@
+{
+  "status": "corretivo_em_execucao_parcial_nao_publicado",
+  "source": {
+    "baseline_commit": "939e5f75d0bb7b0fc8028471a20c31b353204ba0",
+    "business_release_commit": "34ab18fd8dd0f37ca00ac48669326d924bde3ccc",
+    "audited_checkout_commit": "bf96fafa0c883a7f5d39c5d91ca0c15355482ccd",
+    "date": "2026-11-06",
+    "original_home_byte_identical_to_technology_home": true,
+    "reference_images_missing": [
+      "docs/referencia-home-exata.png",
+      "docs/referencia-visual-aprovada.png"
+    ],
+    "historical_screenshots": [
+      "docs/qa/home-desktop-1440.png",
+      "docs/qa/home-desktop-1672.png",
+      "docs/qa/home-tablet-1024.png",
+      "docs/qa/home-mobile-390.png",
+      "docs/qa/videos-desktop-1440.png",
+      "docs/qa/artigo-desktop-1672.png"
+    ],
+    "historical_screenshots_note": "Complementares: não substituem o código congelado e podem anteceder barras/anúncios incorporados ao original."
+  },
+  "counts": {
+    "caminhos": {
+      "files": 12,
+      "status": {
+        "publicado": 12
+      }
+    },
+    "analises": {
+      "files": 1,
+      "status": {
+        "publicado": 1
+      }
+    },
+    "videos": {
+      "files": 233,
+      "status": {
+        "publicado": 155,
+        "rascunho": 78
+      }
+    },
+    "modulos": {
+      "files": 13,
+      "status": {
+        "publicado": 13
+      }
+    },
+    "artigos": {
+      "files": 128,
+      "status": {
+        "publicado": 63,
+        "rascunho": 65
+      }
+    },
+    "livros": {
+      "files": 58,
+      "status": {
+        "publicado": 58
+      }
+    },
+    "fontes": {
+      "files": 30,
+      "status": {
+        "publicado": 30
+      }
+    },
+    "noticias": {
+      "files": 29,
+      "status": {
+        "publicado": 23,
+        "rascunho": 6
+      }
+    },
+    "aprendizado": {
+      "files": 10,
+      "status": {
+        "publicado": 10
+      }
+    },
+    "pautas": {
+      "files": 32,
+      "status": {
+        "proposta": 32
+      }
+    },
+    "business/guias": {
+      "files": 8,
+      "status": {
+        "publicado": 8
+      }
+    },
+    "business/acervo": {
+      "files": 15,
+      "status": {
+        "publicado": 14,
+        "candidato": 1
+      }
+    },
+    "business/fontes": {
+      "files": 24,
+      "status": {
+        "aprovado": 24
+      }
+    },
+    "business_formats": {
+      "artigo": 5,
+      "relatorio": 1,
+      "livro": 8
+    },
+    "business_resources_with_image": 0,
+    "comecando_html": 4,
+    "comecando_inline_svg": 14
+  },
+  "original_menu": [
+    {
+      "href": "/",
+      "label": "Início",
+      "principal": true
+    },
+    {
+      "href": "/analises/",
+      "label": "Análises",
+      "principal": false
+    },
+    {
+      "href": "/comecando/",
+      "label": "Começando",
+      "principal": false
+    },
+    {
+      "href": "/origens/",
+      "label": "Origens",
+      "principal": true
+    },
+    {
+      "href": "/aprendizado/",
+      "label": "Aprendizado de Máquina",
+      "principal": true
+    },
+    {
+      "href": "/videos/",
+      "label": "Vídeos",
+      "principal": true
+    },
+    {
+      "href": "/estudos/",
+      "label": "Estudos",
+      "principal": true
+    },
+    {
+      "href": "/equacoes/",
+      "label": "Equações",
+      "principal": true
+    },
+    {
+      "href": "/biblioteca/",
+      "label": "Biblioteca",
+      "principal": true
+    },
+    {
+      "href": "/noticias/",
+      "label": "NotícIAs",
+      "principal": false
+    },
+    {
+      "href": "/news/",
+      "label": "News",
+      "principal": false
+    },
+    {
+      "href": "/forum/",
+      "label": "Fórum",
+      "principal": true
+    },
+    {
+      "href": "/sobre/",
+      "label": "Sobre",
+      "principal": true
+    }
+  ],
+  "matrix": [
+    {
+      "id": "P01",
+      "area": "Estrutura global",
+      "original": "Base + Header + Footer",
+      "business": "Todas as páginas Business",
+      "original_features": "Cabeçalho de 63 px, navegação, busca, menu móvel, leitura, barras e rodapé. NAV: 13 entradas, nove principais.",
+      "observed": "Business usa outra seleção: 17 entradas e sete principais; altera tipografia, cores e hierarquia.",
+      "required": "Usar a mesma moldura, ordem e flags do menu original; trocar somente rótulos temáticos, dados e destinos. Retirar os overrides visuais exclusivos de Business.",
+      "evidence": [
+        "src/config.ts",
+        "src/components/Header.astro",
+        "src/components/Footer.astro",
+        "src/layouts/Base.astro",
+        "src/styles/global.css",
+        "src/lib/business.ts",
+        "src/styles/business.css"
+      ]
+    },
+    {
+      "id": "P02",
+      "area": "Hero da home",
+      "original": "/tecnologia/ → Hero",
+      "business": "/business/",
+      "original_features": "Arte original com montanhas, faixas, manifesto, título, descrição e duas ações. Grade 52,5%/47,5%; altura-base 303 px, com regras responsivas.",
+      "observed": "Hero próprio de Business, fonte serifada, outro tamanho, imagem de asas abertas e fundo azul.",
+      "required": "Reusar Hero e suas mesmas classes, arte e proporções. Nome, chamadas e links passam a Business; a pose diferente continua restrita ao card de entrada aprovado.",
+      "evidence": [
+        "src/components/Hero.astro",
+        "src/components/TechnologyHome.astro",
+        "src/components/BusinessPage.astro",
+        "src/styles/global.css"
+      ]
+    },
+    {
+      "id": "P03",
+      "area": "Destaque principal",
+      "original": "ImpactNews após Hero",
+      "business": "Mesmo ponto da home Business",
+      "original_features": "Bloco editorial com fonte, data, título, resumo, motivo para acompanhar, CTA e arte SVG.",
+      "observed": "Não há equivalente na home Business.",
+      "required": "Mesmo componente e posição, parametrizado; somente destaque real e revisado, com natureza da evidência explícita. Sem usar candidato como destaque.",
+      "evidence": [
+        "src/components/ImpactNews.astro",
+        "src/lib/radar.ts"
+      ]
+    },
+    {
+      "id": "P04",
+      "area": "Grade editorial",
+      "original": "ref-content / ref-columns",
+      "business": "Mesma grade na home Business",
+      "original_features": "Três colunas em telas com espaço suficiente; proporção-base 2,6fr/1,03fr/1fr; separador vertical. Media/container queries transformam a composição.",
+      "observed": "Grades próprias de trilhas e referências, sem a composição editorial original.",
+      "required": "Copiar a árvore estrutural de TechnologyHome em componente compartilhado. Preservar ordem de leitura, separadores, larguras e os mesmos breakpoints. Não forçar três colunas onde o original muda a grade.",
+      "evidence": [
+        "src/components/TechnologyHome.astro",
+        "src/styles/global.css",
+        "src/styles/advertising.css"
+      ]
+    },
+    {
+      "id": "P05",
+      "area": "Cards de trilhas",
+      "original": "StudyTrackCard × quatro posições",
+      "business": "Quatro posições temáticas equivalentes",
+      "original_features": "Ícone, título, descrição, metadado de nível e seta; mesmo card ref-track.",
+      "observed": "Business usa business-trail de outra dimensão e hierarquia.",
+      "required": "Mesmos quatro slots e mesmo StudyTrackCard. Os oito guias existentes não autorizam mudar o número de cards da abertura; podem alimentar o catálogo completo.",
+      "evidence": [
+        "src/components/StudyTrackCard.astro",
+        "src/data/home.ts"
+      ]
+    },
+    {
+      "id": "P06",
+      "area": "Artigos da home",
+      "original": "ArticleCard × três posições",
+      "business": "Três estudos/artigos Business completos",
+      "original_features": "Imagem editorial, chips, data quando disponível, título, resumo, próximo teste, limites/regra de parada, referências anteriores e Ler mais.",
+      "observed": "Cards genéricos de referências externas, sem imagem e sem a ficha de estudo equivalente.",
+      "required": "Mesmo ArticleCard, mesmas medidas e campos condicionais. Os três cards precisam levar a textos reais; uma URL de editora não substitui estudo interno. A imagem deve ter origem e função declaradas.",
+      "evidence": [
+        "src/components/ArticleCard.astro",
+        "src/data/home.ts",
+        "src/pages/estudos/caminhos/[slug].astro"
+      ]
+    },
+    {
+      "id": "P07",
+      "area": "Vídeos na home",
+      "original": "VideoFeature + VideoList",
+      "business": "Mesmo destaque semanal Business",
+      "original_features": "Lista vertical com miniatura real, botão gráfico de reprodução, título, canal, resumo, módulo e selo de nível. Seleção semanal de um vídeo por nível, procurando módulos diferentes.",
+      "observed": "Nenhum vídeo publicado e nenhum bloco equivalente na home.",
+      "required": "Reusar os dois componentes e a regra de seleção. Preencher os três níveis com vídeos integralmente revisados; aprovação do canal ou título coletado não basta.",
+      "evidence": [
+        "src/components/VideoFeature.astro",
+        "src/components/VideoList.astro",
+        "src/lib/videos.ts"
+      ]
+    },
+    {
+      "id": "P08",
+      "area": "Série para iniciantes",
+      "original": "StartCard",
+      "business": "Mesmo card Começando em Business",
+      "original_features": "Título da série, introdução, lista numerada, separadores e links para artigos. O original tem quatro artigos publicados de uma série anunciada de dez.",
+      "observed": "Um bloco de chamada para guias; não reproduz a lista da série.",
+      "required": "Mesmo StartCard e mesma hierarquia. Conectar artigos autorais temáticos completos, com ilustrações no modelo da série; não copiar o texto científico e só trocar palavras. Quantidades exibidas devem refletir publicações reais.",
+      "evidence": [
+        "src/components/StartCard.astro",
+        "src/data/comecando.ts",
+        "src/pages/comecando/index.astro"
+      ]
+    },
+    {
+      "id": "P09",
+      "area": "Carrossel da home",
+      "original": "NoticiasCarrossel",
+      "business": "Mesmo carrossel Business",
+      "original_features": "Até três notícias recentes, capas SVG, selo, data, pontos, setas, contador, teclado e rotação de sete segundos com pausa e movimento reduzido.",
+      "observed": "Não existe carrossel; não há notícias Business publicadas.",
+      "required": "Compartilhar o componente e o script, parametrizando o acervo. Entregar notícias efetivas para sustentar o bloco; não trocar o carrossel por uma mensagem de preparação.",
+      "evidence": [
+        "src/components/NoticiasCarrossel.astro",
+        "src/styles/noticias.css"
+      ]
+    },
+    {
+      "id": "P10",
+      "area": "Comunidade na home",
+      "original": "ForumList + JoinCommunityCard",
+      "business": "Mesmos dois blocos Business",
+      "original_features": "Lista de até cinco pautas/discussões, aviso de estado, avatar/iniciais, categoria e CTA escuro com a marca.",
+      "observed": "Business tem somente uma chamada textual; a lista não aparece.",
+      "required": "Mesmos componentes. Pautas editoriais podem existir como propostas identificadas; autores, participantes, contagens e discussões não podem ser inventados.",
+      "evidence": [
+        "src/components/ForumList.astro",
+        "src/components/JoinCommunityCard.astro",
+        "src/lib/pautas.ts"
+      ]
+    },
+    {
+      "id": "P11",
+      "area": "Card de análise",
+      "original": "AnaliseCard",
+      "business": "Mesmo card Business",
+      "original_features": "Série, parte/total, título curto, resumo, data e link de leitura.",
+      "observed": "Não há análise publicada que alimente o card.",
+      "required": "Reusar o card com análise autoral completa, fontes e limites. Não usar os parágrafos genéricos de business-editorial como se fossem uma análise publicada.",
+      "evidence": [
+        "src/components/AnaliseCard.astro",
+        "src/data/analises.ts"
+      ]
+    },
+    {
+      "id": "P12",
+      "area": "Blocos editoriais abaixo da grade",
+      "original": "HomeEditorial",
+      "business": "Mesmo conjunto em Business",
+      "original_features": "Grade de até seis notícias; grande chamada de análise com SVG; radar com fontes e até nove itens; até seis referências de artigos.",
+      "observed": "Esses blocos foram substituídos por duas chamadas e uma grade curta de leituras.",
+      "required": "Mesmos componentes, ordem, imagens/grafismos, cards e barras. Dados devem ser Business e aprovados. Preservar os limites de slots do original; quantidade final depende de itens reais disponíveis.",
+      "evidence": [
+        "src/components/HomeEditorial.astro",
+        "src/styles/home-editorial.css"
+      ]
+    },
+    {
+      "id": "P13",
+      "area": "Publicidade e barra lateral",
+      "original": "Advertisement + MidPageContent + TechnologyCards",
+      "business": "Mesmas posições e card lateral temático",
+      "original_features": "Banner horizontal 970×90; duas posições laterais 300×250. Coluna externa de 300 px a partir de 1280 px; radar lateral agrupado, metadados, RSS, data e até dois itens por grupo.",
+      "observed": "As posições de anúncios existem; o radar lateral foi substituído por três links institucionais de outro formato.",
+      "required": "Manter anúncio, moldura e algoritmo de inserção; reutilizar a apresentação do radar lateral com dados Business. Conservar os arquivos de anúncio separados. Não substituir leituras por lista simples de instituições.",
+      "evidence": [
+        "src/styles/advertising.css",
+        "src/components/TechnologyCards.astro",
+        "src/components/Advertisement.astro",
+        "src/components/MidPageContent.astro",
+        "src/components/BusinessSidebar.astro",
+        "src/lib/midpage-ad.mjs"
+      ]
+    },
+    {
+      "id": "P14",
+      "area": "Origens",
+      "original": "/origens/",
+      "business": "/business/origens/",
+      "original_features": "Faixa cronológica em movimento, hero, legenda, régua de eras, pontos, retratos com créditos, capítulos, eventos, referências expansíveis, linha completa, índice lateral e revelação ao rolar.",
+      "observed": "Três blocos textuais; não há a estrutura histórica original.",
+      "required": "Extrair/reusar o template integral de Origens, alimentando-o com história documentada de marketing/administração. Datas, marcos, pessoas, retratos e licenças precisam ser conferidos; não criar uma cronologia fictícia para preencher o desenho.",
+      "evidence": [
+        "src/pages/origens.astro",
+        "src/data/origens.ts",
+        "src/styles/global.css"
+      ]
+    },
+    {
+      "id": "P15",
+      "area": "Aprendizado",
+      "original": "/aprendizado/",
+      "business": "/business/aprendizado/",
+      "original_features": "Mapa numerado, contexto, mecanismo, equações quando aplicáveis, exemplo numérico, limites, legado, fontes e tabela de síntese, com índice lateral.",
+      "observed": "Três blocos curtos de orientação de estudo.",
+      "required": "Mesmo template e sequência editorial. Conteúdo temático de marketing/gestão com exemplos verificáveis; fórmulas somente quando pertinentes. O número de ideias não será anunciado antes de sua produção e revisão.",
+      "evidence": [
+        "src/pages/aprendizado.astro",
+        "src/components/ArticleSidebar.astro",
+        "src/lib/rico.ts",
+        "src/components/M.astro"
+      ]
+    },
+    {
+      "id": "P16",
+      "area": "Estudos — índice",
+      "original": "/estudos/",
+      "business": "/business/estudos/",
+      "original_features": "Abertura, contexto, IdeaCard, SVG, cards de caminhos, legenda de status, links para arquivados e bloco de exclusões.",
+      "observed": "Lista de guias em cards próprios, sem os demais recursos.",
+      "required": "Mesmo template. Criar estudos/casos com pergunta, método, dados ou evidências, limites e referências; adaptar os textos e rótulos científicos somente quando o sentido temático exigir, conservando os blocos.",
+      "evidence": [
+        "src/pages/estudos/index.astro",
+        "src/components/IdeaCard.astro",
+        "src/components/PathCard.astro",
+        "src/components/Status.astro"
+      ]
+    },
+    {
+      "id": "P17",
+      "area": "Estudos — ficha",
+      "original": "/estudos/caminhos/[slug]/",
+      "business": "/business/estudos/caminhos/[slug]/",
+      "original_features": "Breadcrumb, numeração, selos, autoria, data, leitura estimada, equação/banner quando aplicável, artigo, índice fixo, relacionados, limites/teste, citação, Markdown, discussão e anterior/próximo.",
+      "observed": "Guias e fichas externas usam outros templates simplificados.",
+      "required": "Compartilhar o template de ficha e seus estados. Separar artigo autoral, estudo/caso e referência externa; preservar os oito guias existentes, sem apresentá-los automaticamente como pesquisa ou resultado medido.",
+      "evidence": [
+        "src/pages/estudos/caminhos/[slug].astro",
+        "src/components/PageIntro.astro",
+        "src/components/ArticleSidebar.astro"
+      ]
+    },
+    {
+      "id": "P18",
+      "area": "Estudo editorial e arquivados",
+      "original": "/estudos/a-ideia-mais-interessante/ e /estudos/arquivados/",
+      "business": "Equivalentes sob /business/estudos/",
+      "original_features": "Página de investigação ligada ao IdeaCard; arquivo de linhas rejeitadas com motivo.",
+      "observed": "Não existem equivalentes de conteúdo e navegação.",
+      "required": "Manter os tipos de página e o percurso. Escolher somente uma investigação temática documentada; não atribuir ao projeto experimentos que não ocorreram. Registrar arquivamento apenas para propostas de fato avaliadas.",
+      "evidence": [
+        "src/pages/estudos/a-ideia-mais-interessante.astro",
+        "src/pages/estudos/arquivados.md",
+        "src/layouts/Texto.astro"
+      ]
+    },
+    {
+      "id": "P19",
+      "area": "Catálogo de vídeos",
+      "original": "/videos/",
+      "business": "/business/videos/",
+      "original_features": "PageIntro com contagens, filtros por botões de nível/idioma/dublagem, seletor de módulos, contadores vivos, módulos com ícones, três colunas de níveis, thumbnails, resumos e índice lateral.",
+      "observed": "Formulário de selects e estado vazio de outro desenho; não há módulos nem vídeos publicados.",
+      "required": "Mesmo catálogo, VideoCard, filtros e comportamento responsivo. Módulos e quantidades vêm de conteúdo Business real; dublagem/legendas só serão marcadas quando conferidas. A seleção de canais será auxiliar, sem substituir o catálogo.",
+      "evidence": [
+        "src/pages/videos.astro",
+        "src/components/VideoCard.astro",
+        "src/lib/videos.ts"
+      ]
+    },
+    {
+      "id": "P20",
+      "area": "Biblioteca",
+      "original": "/biblioteca/",
+      "business": "/business/biblioteca/",
+      "original_features": "Livros com capa/fallback original, resenha, uso, edição/idioma e acesso; botões de área/idioma; seção de artigos em linhas com ano, autoria, selo e PDF quando existente; chamada para fontes.",
+      "observed": "Cards genéricos misturam formatos; livros estão numa rota separada e não usam os cards/capas originais.",
+      "required": "Reusar a biblioteca original com adaptadores Business. Livros e artigos voltam à mesma página e às mesmas âncoras. Não marcar catálogo comercial como leitura integral gratuita nem inventar tradução, capa, PDF ou resenha de obra não lida.",
+      "evidence": [
+        "src/pages/biblioteca/index.astro",
+        "src/lib/conteudo.ts",
+        "src/styles/global.css"
+      ]
+    },
+    {
+      "id": "P21",
+      "area": "Fontes e créditos",
+      "original": "/biblioteca/fontes/",
+      "business": "/business/biblioteca/fontes/",
+      "original_features": "Índice por categorias, contagens, lista nominal, crédito, URL e páginas do site onde cada referência é utilizada.",
+      "observed": "Grade institucional com descrição, sem a rastreabilidade completa da página original.",
+      "required": "Mesmo template de fontes do site. Preservar as 17 fontes e oito canais aprovados; incluir editoras, referências e créditos de imagens com o mesmo modelo, distinguindo suas naturezas.",
+      "evidence": [
+        "src/pages/biblioteca/fontes.astro",
+        "src/lib/fontes-site.ts"
+      ]
+    },
+    {
+      "id": "P22",
+      "area": "Glossário",
+      "original": "/biblioteca/glossario/",
+      "business": "/business/biblioteca/glossario/",
+      "original_features": "Layout Texto, introdução, corpo tipográfico, índice lateral e relacionados.",
+      "observed": "Pequena lista dentro de BusinessPage, com apresentação diferente.",
+      "required": "Mesmo Texto + PageIntro + ArticleSidebar, com definições temáticas fundamentadas e os mesmos links/âncoras.",
+      "evidence": [
+        "src/pages/biblioteca/glossario.md",
+        "src/layouts/Texto.astro"
+      ]
+    },
+    {
+      "id": "P23",
+      "area": "Equações e métodos",
+      "original": "/equacoes/",
+      "business": "/business/equacoes/; /business/metricas/ preservado como alias",
+      "original_features": "Página editorial de fórmulas, notação, exemplos e índice; no original, 16 etapas técnicas efetivamente documentadas.",
+      "observed": "Métricas tem fórmulas como texto simples e não usa o template nem a renderização originais.",
+      "required": "Preservar o recurso matemático KaTeX e o layout Texto. O conteúdo passa a métricas/métodos de marketing e gestão; não copiar as 16 equações de LLM nem inventar 16 fórmulas para atingir um número. Manter os links atuais por redirecionamento/alias.",
+      "evidence": [
+        "src/pages/equacoes.md",
+        "src/layouts/Texto.astro",
+        "src/components/M.astro",
+        "src/data/business-editorial.ts"
+      ]
+    },
+    {
+      "id": "P24",
+      "area": "Começando — índice e artigos",
+      "original": "/comecando/ e /comecando/[slug]/",
+      "business": "/business/comecando/ e /business/comecando/[slug]/",
+      "original_features": "Layout próprio serifado Source Serif 4, CSS da série, HTML com figuras SVG, numeração, autoria, anterior/próximo, citação e Markdown.",
+      "observed": "A página só remete a guias em /business/estudos/; o layout e as ilustrações da série não foram clonados.",
+      "required": "Mesmo Comecando e mesmo CSS/recursos de figuras, com artigos temáticos próprios. Reaproveitar guias só após adequação editorial real, sem falsear autoria ou fabricar citações e experimentos.",
+      "evidence": [
+        "src/pages/comecando/index.astro",
+        "src/pages/comecando/[slug].astro",
+        "src/layouts/Comecando.astro",
+        "src/artigos/comecando/serie.css",
+        "src/data/comecando.ts"
+      ]
+    },
+    {
+      "id": "P25",
+      "area": "Análises — índice e texto",
+      "original": "/analises/ e /analises/[slug]/",
+      "business": "/business/analises/ e /business/analises/[slug]/",
+      "original_features": "Agrupamento por série, partes, resumo, data e artigo completo com autoria, leitura estimada, índice e relacionados.",
+      "observed": "Blocos didáticos genéricos; zero registros publicados no formato análise.",
+      "required": "Mesmos templates. Entregar análise de fato, com problema, evidências, método de leitura e limites; ficha bibliográfica não substitui artigo.",
+      "evidence": [
+        "src/pages/analises/index.astro",
+        "src/pages/analises/[slug].astro"
+      ]
+    },
+    {
+      "id": "P26",
+      "area": "Notícias — abertura, arquivo e matéria",
+      "original": "/noticias/ e /noticias/[slug]/",
+      "business": "/business/noticias/ e /business/noticias/[slug]/",
+      "original_features": "Masthead gráfico, contagens reais, até oito destaques em grade, barra Veja mais, arquivo em grupos de 12, setas/teclado, matéria completa, capa SVG, fontes, leia também e navegação.",
+      "observed": "Estado vazio em página genérica; nenhum dos recursos editoriais está implementado no Business.",
+      "required": "Reusar NoticiasPagina, NoticiaCard e noticias.css. Trocar tema e marca textual da abertura; manter barras, paginação, capas e composição. A periodicidade anunciada precisa corresponder à operação real, não copiar uma promessa sem rotina.",
+      "evidence": [
+        "src/components/NoticiasPagina.astro",
+        "src/components/NoticiaCard.astro",
+        "src/pages/noticias/index.astro",
+        "src/pages/noticias/[slug].astro",
+        "src/styles/noticias.css"
+      ]
+    },
+    {
+      "id": "P27",
+      "area": "News / manchetes RSS",
+      "original": "/news/",
+      "business": "/business/news/",
+      "original_features": "Abertura padrão e lista compacta de manchetes com fonte, data e link original.",
+      "observed": "Lista de fichas de leituras e links de instituições com outro desenho.",
+      "required": "Mesmo NewsCard e PageIntro com dados próprios. Candidatos continuam privados; a apresentação pública recebe apenas itens aprovados e distingue notícia autoral de título externo.",
+      "evidence": [
+        "src/pages/news.astro",
+        "src/components/NewsCard.astro"
+      ]
+    },
+    {
+      "id": "P28",
+      "area": "Fórum e pautas",
+      "original": "/forum/ e /forum/[slug]/",
+      "business": "/business/forum/ e /business/forum/[slug]/",
+      "original_features": "Discussão geral, ForumList, pautas com estados, referências, caminhos associados e conversa por página quando o motor/configuração permitir.",
+      "observed": "Discussão geral com texto de orientação; não há a estrutura completa de pautas.",
+      "required": "Mesmos templates e motor atual Giscus. Conversas identificadas por caminho Business; nenhum comentário/pauta real será copiado ou inventado. Waline permanece opção do código, não será anunciado como motor ativo.",
+      "evidence": [
+        "src/pages/forum.astro",
+        "src/pages/forum/[slug].astro",
+        "src/components/Forum.astro",
+        "src/components/Giscus.astro",
+        "src/config.ts"
+      ]
+    },
+    {
+      "id": "P29",
+      "area": "Sobre, termos e 404",
+      "original": "/sobre/, /termos-de-uso/, /404",
+      "business": "/business/sobre/; documentos comuns e tratamento 404",
+      "original_features": "Layout de texto, autoria/método, licença, privacidade, referências e retorno de navegação.",
+      "observed": "Sobre Business usa página genérica e outro corpo; termos são comuns.",
+      "required": "Mesmo Texto e recursos editoriais. Preservar documentos jurídicos comuns; ajustar apenas descrições verdadeiras do ambiente. Erros e retornos devem levar ao ambiente correto.",
+      "evidence": [
+        "src/pages/sobre.md",
+        "src/pages/termos-de-uso.md",
+        "src/pages/404.astro",
+        "src/layouts/Texto.astro"
+      ]
+    },
+    {
+      "id": "P30",
+      "area": "Navegação e busca",
+      "original": "Header + site.ts",
+      "business": "Mesmo fluxo com índice Business",
+      "original_features": "Menu móvel, fechamento por Escape/fora, foco, atalho Ctrl/⌘+K, busca normalizada, resultados, atalhos e âncoras.",
+      "observed": "Parte compartilhada já existe; ordem/visibilidade do menu divergem.",
+      "required": "Manter scripts, estados e acessibilidade originais; restaurar o menu equivalente e garantir que nenhum resultado ou link temático atravesse ambientes indevidamente.",
+      "evidence": [
+        "src/components/Header.astro",
+        "src/scripts/site.ts",
+        "src/lib/search.ts",
+        "src/pages/business/busca.json.ts"
+      ]
+    },
+    {
+      "id": "P31",
+      "area": "Distribuição e SEO",
+      "original": "rotas, Markdown, RSS, sitemap, OG, llms",
+      "business": "Versões correspondentes de Business",
+      "original_features": "Metadados, canonical, breadcrumbs, JSON-LD, OG, índices, RSS, sitemap, llms e texto completo.",
+      "observed": "Endpoints existem, mas uma página genérica não equivale ao modelo editorial original.",
+      "required": "Manter todos os recursos vinculados às páginas corrigidas. Preservar URLs antigas de Business por aliases/redirecionamentos, sem conteúdo duplicado com canonical conflitante. Apenas publicados entram em índices.",
+      "evidence": [
+        "src/lib/rotas.ts",
+        "src/lib/business-rotas.ts",
+        "src/pages/[...rota].md.ts",
+        "src/components/Seo.astro",
+        "src/pages/og/[...rota].png.ts"
+      ]
+    },
+    {
+      "id": "P32",
+      "area": "Painel administrativo",
+      "original": "CMS + Publicar + Anúncios + Divulgação + Radar",
+      "business": "Mesmas ferramentas com seleção de ambiente",
+      "original_features": "Coleções, autenticação GitHub, edição, publicação de selecionados, anúncios, materiais de divulgação e estado de fontes.",
+      "observed": "Business tem CMS e fila próprios, mas Publicar selecionados aceita apenas coleções técnicas; Divulgação contém orientação técnica fixa.",
+      "required": "Estender as ferramentas existentes por ambiente; manter a mesma interface e proteção a alterações concorrentes. Não contornar os campos de revisão Business. Divulgação deve refletir o tema e não enviar mensagens automaticamente.",
+      "evidence": [
+        "public/admin/index.html",
+        "public/admin/painel.js",
+        "public/admin/publicar/app.js",
+        "public/admin/anuncios/app.js",
+        "public/admin/divulgacao/index.html",
+        "public/admin/business/app.js",
+        "scripts/cms-config.fonte.yml"
+      ]
+    },
+    {
+      "id": "P33",
+      "area": "Coleta, estados e publicação",
+      "original": "Coletores e workflows técnicos",
+      "business": "Coletores temáticos e fila Business",
+      "original_features": "Consulta de fontes, HTTPS/domínios, datas, deduplicação, preservação em falhas e atualização do site.",
+      "observed": "Coleta Business existe e guarda seis candidatos de artigos e oito de vídeos; isso não popula a home pública.",
+      "required": "Preservar a infraestrutura útil e a revisão individual já acordada. Alimentar os modelos públicos com conteúdos aprovados, mantendo saúde das fontes e separando pesquisa, consultoria e jornalismo. Não transformar RSS em aprovação editorial.",
+      "evidence": [
+        "scripts/coletar_business.py",
+        "scripts/coletar_business_videos.py",
+        ".github/workflows/business.yml",
+        "curadoria/business/catalogo-proposto.json"
+      ]
+    },
+    {
+      "id": "P34",
+      "area": "Portal e preferência de entrada",
+      "original": "Portal comum já aprovado",
+      "business": "/ + destinos dos dois ambientes",
+      "original_features": "Dois cards, sépia e azul translúcido, duas poses da harpia, pergunta de preferência, troca de ambiente e preservação de links diretos.",
+      "observed": "Existe e não é o motivo da divergência da interface interna.",
+      "required": "Preservar o portal e a preferência. O azul e a pose em voo do card não autorizam redesenhar hero, cards e seções do Business. Entradas levam às versões corrigidas.",
+      "evidence": [
+        "src/components/PortalHome.astro",
+        "src/styles/portal.css",
+        "src/components/EnvironmentPreference.astro",
+        "src/lib/preferencia-ambiente.mjs"
+      ]
+    }
+  ],
+  "original_files_sha256": [
+    {
+      "path": "src/components/Advertisement.astro",
+      "sha256": "aafe02094ae0e7c41243a00a1ee3b27b3e14260da66adf7947173f210f035e70",
+      "bytes": 1417
+    },
+    {
+      "path": "src/components/AnaliseCard.astro",
+      "sha256": "7edc6f454466adb7e5b27f91850be1fc6bbc312c6f796c4102b8a91fc587437b",
+      "bytes": 569
+    },
+    {
+      "path": "src/components/ArticleCard.astro",
+      "sha256": "00a8d72bc2fefdd7a7687c6b50865819dd97e3f0f38ab350d4ebd6ebffb99be8",
+      "bytes": 1128
+    },
+    {
+      "path": "src/components/ArticleSidebar.astro",
+      "sha256": "a39e88f87c1e4b4e2482153a967579bcc34cb35831b8498950ef7e73f91be92a",
+      "bytes": 1230
+    },
+    {
+      "path": "src/components/Breadcrumb.astro",
+      "sha256": "79b259a7c01ee208e0bc4463e9dc977d6d68181c17e4a61875814cddf41efd01",
+      "bytes": 557
+    },
+    {
+      "path": "src/components/Footer.astro",
+      "sha256": "238f4ac110fb8102814089fed9e860ff069fb5b38467d5db5ff9ef09df7aabe3",
+      "bytes": 1995
+    },
+    {
+      "path": "src/components/Forum.astro",
+      "sha256": "acdb66b0eb1bb1a06cfc4920bf46d63098e22d622a25ef3129dff713297f8820",
+      "bytes": 2003
+    },
+    {
+      "path": "src/components/ForumList.astro",
+      "sha256": "44dbc58d24b54bfc626feff030e6cedcadecc6773e85b4180b25808776604d4f",
+      "bytes": 1333
+    },
+    {
+      "path": "src/components/Giscus.astro",
+      "sha256": "6901048df6f46c4a40cdd7aa29b5eb9b0370609372068e5f517139988eb971b3",
+      "bytes": 1379
+    },
+    {
+      "path": "src/components/GoogleTag.astro",
+      "sha256": "79487a58ae3fddba96897618201d8e48ffe128c0b5141947ccc227b0371bc88b",
+      "bytes": 312
+    },
+    {
+      "path": "src/components/Header.astro",
+      "sha256": "f01973ea1ee137a6a8950660e13deb232cd6df665ea2bb704e459b22517e3892",
+      "bytes": 2596
+    },
+    {
+      "path": "src/components/Hero.astro",
+      "sha256": "2f6ae9d788192d8dac3220ca5681b5ca8c4e7d116e9aa3110a5728d5918cbbdd",
+      "bytes": 1813
+    },
+    {
+      "path": "src/components/HomeEditorial.astro",
+      "sha256": "4a29cae7b8ad17e9daa16f570f216a3d381745a4e4c818d629a237a73944a65e",
+      "bytes": 5331
+    },
+    {
+      "path": "src/components/IdeaCard.astro",
+      "sha256": "ab9d91a2f806feef20c256983e26d95e329afc613530e7ace739dc20eb250d37",
+      "bytes": 2269
+    },
+    {
+      "path": "src/components/ImpactNews.astro",
+      "sha256": "21fa4d11e609e230156a9eab23c80145a6e5ec47791ea04093dab594b1bc63b7",
+      "bytes": 2158
+    },
+    {
+      "path": "src/components/JoinCommunityCard.astro",
+      "sha256": "ccbd6c36a206f804b01eda1cf6969b2182b4bd1b43f92201db53ba580817a04a",
+      "bytes": 534
+    },
+    {
+      "path": "src/components/Kpi.astro",
+      "sha256": "152818af4b3efd20c6ce3cedcd9849474fe8974fb098ac47a67386cc281a2059",
+      "bytes": 475
+    },
+    {
+      "path": "src/components/M.astro",
+      "sha256": "150f5a73e0577927975cae002f7188a0f37c9af8a813be1496cec5ce26c83b31",
+      "bytes": 301
+    },
+    {
+      "path": "src/components/MidPageContent.astro",
+      "sha256": "5e2efd523ff18b35f287d256e4e4b75a3e46a71a58e28941d0d2e9637522db0f",
+      "bytes": 323
+    },
+    {
+      "path": "src/components/NewsCard.astro",
+      "sha256": "daeff0fed0cc19cb1e15a94763138422abe0b887705e020193b43c25bba474e5",
+      "bytes": 1029
+    },
+    {
+      "path": "src/components/NoticiaCard.astro",
+      "sha256": "a76ffdb27e4cba7772adb394093aac835c7d5a6291c99e0df7fc6bfd44ae5487",
+      "bytes": 897
+    },
+    {
+      "path": "src/components/NoticiasCarrossel.astro",
+      "sha256": "9588b9dbe35ff82ff7de5d7ab7014055fab71a6cb606a56c8a0b8ddbee6d7e7b",
+      "bytes": 4208
+    },
+    {
+      "path": "src/components/NoticiasPagina.astro",
+      "sha256": "0e831f10bb486c6c2a1280ccd0131cd76546c7f9b13661394b951c2c496fd063",
+      "bytes": 11674
+    },
+    {
+      "path": "src/components/PageIntro.astro",
+      "sha256": "ffaa8c8952532ad586c17ed723a9f8a8fe087367a4e42c9bb115b2f3416072d5",
+      "bytes": 562
+    },
+    {
+      "path": "src/components/PathCard.astro",
+      "sha256": "6026bd113d60dbfc98f71c1c0da31d6b402b0f46a926c2cbd693cd4ffcee23dc",
+      "bytes": 522
+    },
+    {
+      "path": "src/components/ResponsiveGrid.astro",
+      "sha256": "90bf1f520609a7270488adf39540316878ad853c8a1f95b8325f7690d360e4f4",
+      "bytes": 265
+    },
+    {
+      "path": "src/components/Seo.astro",
+      "sha256": "b8326b3f1b3d73266392a2b5d854c4f86ee88f10482a1e525b41b16fb74721ac",
+      "bytes": 4205
+    },
+    {
+      "path": "src/components/SourceGroups.astro",
+      "sha256": "7bccc81d906f10e0727c38e16d47063486605e3372c85373c77be2b0661eacf5",
+      "bytes": 413
+    },
+    {
+      "path": "src/components/StartCard.astro",
+      "sha256": "1bd5c8de35c42cdebdedd7c91f2cbc90d56b651e1092ae46c64d51689f6950be",
+      "bytes": 704
+    },
+    {
+      "path": "src/components/Status.astro",
+      "sha256": "455ff1b6ba66b5f113b73671fe98c3a795fdb3e82e85bfc85cc401cefb55ad9a",
+      "bytes": 394
+    },
+    {
+      "path": "src/components/StudyTrackCard.astro",
+      "sha256": "4a8218af940c3673bae70cc6c1de1ebe1f478eff851d74a53dd5572a652aa94b",
+      "bytes": 663
+    },
+    {
+      "path": "src/components/Tag.astro",
+      "sha256": "bbfe7f2f5f0341ace767b09ba61f7144b99b15f3e90cfb5398bff0eb82faab07",
+      "bytes": 427
+    },
+    {
+      "path": "src/components/TechnologyCards.astro",
+      "sha256": "c81866dd4cb19ed017754f4cb8b1e0e325ec598eed714f71151ebe953578b5c6",
+      "bytes": 3477
+    },
+    {
+      "path": "src/components/Timeline.astro",
+      "sha256": "ae9322212072416e9b4149fd7bad01b3e8a2f4f863df6a8ab40af345365c8ea7",
+      "bytes": 583
+    },
+    {
+      "path": "src/components/VideoCard.astro",
+      "sha256": "567cc506ca32576e1847c6e0b7dd6b036137ce16e117ba9691ec68a50c29dd62",
+      "bytes": 1166
+    },
+    {
+      "path": "src/components/VideoFeature.astro",
+      "sha256": "1288e8f16482d6ee0c02ea811a7adefebd98f62874ed0bb7ce6386a9e094c543",
+      "bytes": 501
+    },
+    {
+      "path": "src/components/VideoList.astro",
+      "sha256": "ec4086ad526ccca00936e54eef0fd8edfe2d4331fc00ac0028c3209374a4476f",
+      "bytes": 982
+    },
+    {
+      "path": "src/components/VisitCounter.astro",
+      "sha256": "13e7986710b21caae7200e89bdfc8a6af721186ebb2020f6facf184d03abd77f",
+      "bytes": 1819
+    },
+    {
+      "path": "src/config.ts",
+      "sha256": "433809d65e2ca59bb08cc7c4ed1ec4d074c8c45c2b496ffce57ab343277a53cc",
+      "bytes": 4230
+    },
+    {
+      "path": "src/data/analises.ts",
+      "sha256": "fb0b35735b2e4741a7d61d356a98000692c426a21ef9eefdedfe60090a7b61d8",
+      "bytes": 972
+    },
+    {
+      "path": "src/data/comecando.ts",
+      "sha256": "363130857e5624b96f1f7eb33cd2fed6293a95a3505b75319815b29dd2397be5",
+      "bytes": 1912
+    },
+    {
+      "path": "src/data/home.ts",
+      "sha256": "ec8451caa9df1135d7d92f72f892fc5bf38137c11b1e3b403a3ff5d7fe16ef68",
+      "bytes": 2788
+    },
+    {
+      "path": "src/data/origens.ts",
+      "sha256": "74060bd7ca7b1256b962c2f076c91d4b32bf38bf87852ca8164a553d081f146e",
+      "bytes": 20710
+    },
+    {
+      "path": "src/layouts/Base.astro",
+      "sha256": "9635170ee99629c27d572245df5edd5e1a597ae17c8352e847f2f69c9c6d7fff",
+      "bytes": 1864
+    },
+    {
+      "path": "src/layouts/Comecando.astro",
+      "sha256": "b50e850bc867b1428d17ac6c9d6ab9d2d3a071f812bbc485566adf5dc8569d11",
+      "bytes": 2856
+    },
+    {
+      "path": "src/layouts/Texto.astro",
+      "sha256": "37f48f6939f37fdb70eaac1d6bb7add1b603740f49743e1270d8ceebd33cbeb0",
+      "bytes": 1394
+    },
+    {
+      "path": "src/lib/conteudo.ts",
+      "sha256": "ab16202ab5c087f96971b9f864f8cdc854996d6fb5e31f6b15efad5360092dcd",
+      "bytes": 3804
+    },
+    {
+      "path": "src/lib/fontes-site.ts",
+      "sha256": "65a08a5a576ad86bd6bad0048c3117c2176ae53668bf933b278d87071f34049a",
+      "bytes": 6630
+    },
+    {
+      "path": "src/lib/format.ts",
+      "sha256": "fbdbfc4bac40a9c04a11853ab70e53a8711edf40b6f13a761affe5c2820f8587",
+      "bytes": 561
+    },
+    {
+      "path": "src/lib/gemeos.ts",
+      "sha256": "4cd2b06adb814ef049d5b1a24f3a11132fd6a87323c01334cfedcceacda37b25",
+      "bytes": 778
+    },
+    {
+      "path": "src/lib/midpage-ad.mjs",
+      "sha256": "bbdde799f0dc202f30dd306f155ba08db207d594cbd7b3b88a80573d057672fa",
+      "bytes": 2376
+    },
+    {
+      "path": "src/lib/noticias.ts",
+      "sha256": "1d68ce46146265aec6842f12900166cfd2397e69a94478501dd4b25cb17efcb9",
+      "bytes": 6538
+    },
+    {
+      "path": "src/lib/pautas.ts",
+      "sha256": "315b0f7739242ddb0ce0d66eb510243e27ebb825b563faa20ec7f4fe823c87bf",
+      "bytes": 2066
+    },
+    {
+      "path": "src/lib/radar.ts",
+      "sha256": "9e4e4dda4ddaaddd2b3f7b81662648df4921e64d8f9e7b6414e495f4e58bc705",
+      "bytes": 3705
+    },
+    {
+      "path": "src/lib/rico.ts",
+      "sha256": "a2fa1c9ac868a068fa9e7b389163490f07f6120c0725b86b81c93d8a211b8daa",
+      "bytes": 1475
+    },
+    {
+      "path": "src/lib/rotas.ts",
+      "sha256": "076dbb5a69e7f04efc1e2ad65f0369a802b6b49a03b467daa884d6e6f9a4492a",
+      "bytes": 30736
+    },
+    {
+      "path": "src/lib/search.ts",
+      "sha256": "cfdd6f53d964997cfeea0acf895c54ca434a988e93968d5ddc9e5e1686be9e60",
+      "bytes": 3684
+    },
+    {
+      "path": "src/lib/tex.ts",
+      "sha256": "e9f8fc76ae8cf27b834ff5a20cd1af13b4796bd4ee6809a70950baae873e20e9",
+      "bytes": 285
+    },
+    {
+      "path": "src/lib/types.ts",
+      "sha256": "85ebd1a06e2a17ea0ecee3d4a0e0810a0c7dffccca6a83b7aa0b549ebf428133",
+      "bytes": 241
+    },
+    {
+      "path": "src/lib/videos.ts",
+      "sha256": "bc0d11f57071c0697a3ebc14b322278e9fed4814143524ea8d6f5ceb2d3b7393",
+      "bytes": 2710
+    },
+    {
+      "path": "src/pages/404.astro",
+      "sha256": "b71582ca4e65e296a2eb27653fd67adedb1dc9fbb842550c5001cea775856a63",
+      "bytes": 744
+    },
+    {
+      "path": "src/pages/[...rota].md.ts",
+      "sha256": "0c1d54c7e62e5153fc0e0650cd68b7610d589183a4b701127c4e70edf0267514",
+      "bytes": 794
+    },
+    {
+      "path": "src/pages/analises/[slug].astro",
+      "sha256": "e4adb013d99d06300ffed928324f40e61584d9714fd177b45980666d08a18924",
+      "bytes": 1964
+    },
+    {
+      "path": "src/pages/analises/index.astro",
+      "sha256": "ea87abf97dd0db25654914980d5a89c984b23302496b53c5fa4017444f405b40",
+      "bytes": 1510
+    },
+    {
+      "path": "src/pages/aprendizado.astro",
+      "sha256": "ea6d5db351d70cd1f0fc4485504a5f1c2d638a25a4b3558b3e34b25945d7cc7c",
+      "bytes": 6664
+    },
+    {
+      "path": "src/pages/biblioteca/fontes.astro",
+      "sha256": "85746283d389c670643d900d7c8a7c4faf155603c8b9be019d57b1a494ba79ac",
+      "bytes": 3365
+    },
+    {
+      "path": "src/pages/biblioteca/glossario.md",
+      "sha256": "55eee7ca015211ee2c14fb9dfeed6ebc1784de73471b7011ef38c3f506d69bbf",
+      "bytes": 2280
+    },
+    {
+      "path": "src/pages/biblioteca/index.astro",
+      "sha256": "9cffb89b445d853102fae53f8189cb930f9e6cf272e99a3e6af4c6f54265267f",
+      "bytes": 9358
+    },
+    {
+      "path": "src/pages/busca.json.ts",
+      "sha256": "20237cc8a5a49f328cfe53d70d5604324a73c960aa8ac8038958cde1a370cccf",
+      "bytes": 264
+    },
+    {
+      "path": "src/pages/comecando/[slug].astro",
+      "sha256": "936ebd5d8ccbe766ccbe0d959515e41b66fd1758c141133995ef2ecb289d00e0",
+      "bytes": 1334
+    },
+    {
+      "path": "src/pages/comecando/index.astro",
+      "sha256": "272d7ae05115f5d6fc436642330474213635e3aa731b3149e724e95c3e1567ce",
+      "bytes": 1448
+    },
+    {
+      "path": "src/pages/equacoes.md",
+      "sha256": "93dc3555b4dd89d9d9c50b8618705ed9f92f3c69ea199071bd344b1a4ab89f0a",
+      "bytes": 6471
+    },
+    {
+      "path": "src/pages/estudos/a-ideia-mais-interessante.astro",
+      "sha256": "35662dbee5438fb906b8c88cd46cbba6be51fe701639f5faccae4d69e460dd5a",
+      "bytes": 3705
+    },
+    {
+      "path": "src/pages/estudos/arquivados.md",
+      "sha256": "99837622006cd460a8a2a2ed7a7ec82e3c082f9ee910d21d0fe3b1f690156943",
+      "bytes": 2691
+    },
+    {
+      "path": "src/pages/estudos/caminhos/[slug].astro",
+      "sha256": "25a903f5d669161e6f92dc4ad9facde3635ef317a0ca7a4a2e6cf60cde1289af",
+      "bytes": 6001
+    },
+    {
+      "path": "src/pages/estudos/index.astro",
+      "sha256": "83397dc6ab1b24785ec5d070ea870b823c819a3a3b14af814844a798aec858a3",
+      "bytes": 2342
+    },
+    {
+      "path": "src/pages/forum.astro",
+      "sha256": "8b7c7b03b1d6a4d03c0823df3256ef0cefb1dcdf71457600a60d59a6d758e902",
+      "bytes": 1686
+    },
+    {
+      "path": "src/pages/forum/[slug].astro",
+      "sha256": "1ebf49ea2e97856769f921d10000e7593859793382e9b3f3be29ee75bff7ebb9",
+      "bytes": 2137
+    },
+    {
+      "path": "src/pages/index.astro",
+      "sha256": "03adac3d363c813341ba011f3db9ff11ce81123732ce13e57e41f5b20cf039de",
+      "bytes": 4509
+    },
+    {
+      "path": "src/pages/llms-full.txt.ts",
+      "sha256": "4bc7c3f362225bb04f1848140c82cf820b11c0185f060c5ee1614004d2fd28e5",
+      "bytes": 564
+    },
+    {
+      "path": "src/pages/llms.txt.ts",
+      "sha256": "876b6e70779952e5e74a2ce02bf5af0eb68008fefad0595fd50d7ae9dff16207",
+      "bytes": 2225
+    },
+    {
+      "path": "src/pages/news.astro",
+      "sha256": "87b5c9fc22ef745ff03f11e466903117fad3fc640ca9248a7337605aa480b21f",
+      "bytes": 614
+    },
+    {
+      "path": "src/pages/noticias/[slug].astro",
+      "sha256": "9b81986b4eaba8f1420ea8cba1cdcf10ae0739335da3c494a7c77957d3fa755c",
+      "bytes": 520
+    },
+    {
+      "path": "src/pages/noticias/index.astro",
+      "sha256": "58a158251ae6b303f141e02c05a8bd15ead0f14a470b701f4ff385c30a8d72e0",
+      "bytes": 779
+    },
+    {
+      "path": "src/pages/og/[...rota].png.ts",
+      "sha256": "113de0c87d4c1e1645c0cf4c28a6448bd320d33fb680821910c7648fd950295e",
+      "bytes": 2941
+    },
+    {
+      "path": "src/pages/origens.astro",
+      "sha256": "5cab694cb72fa2b4f077324d4f41108c65b6386661b9b42d429ff8c510914284",
+      "bytes": 10213
+    },
+    {
+      "path": "src/pages/robots.txt.ts",
+      "sha256": "12ad17138adc955b191138217cf2b76546efaf7962e4c50d189473278ad2da80",
+      "bytes": 1213
+    },
+    {
+      "path": "src/pages/rss.xml.ts",
+      "sha256": "5afb9fd556a314522628d0b32c04166a105caa2bcc3dba5ded68df674ede1000",
+      "bytes": 2736
+    },
+    {
+      "path": "src/pages/sitemap-index.xml.ts",
+      "sha256": "450d14202b3a0f9b314f6eba88bd5030aa2e62a8bdc0947fe4da78f742b74868",
+      "bytes": 616
+    },
+    {
+      "path": "src/pages/sitemap.xml.ts",
+      "sha256": "30cf4a23937d64cf1406a73ae598a50e3e3eb104812d58f13dcf19fbd5d674d6",
+      "bytes": 1038
+    },
+    {
+      "path": "src/pages/sobre.md",
+      "sha256": "46d7376b5a6af2e18a11f366057ec37288758b9fe4f77164ca00572d6af86887",
+      "bytes": 1956
+    },
+    {
+      "path": "src/pages/termos-de-uso.md",
+      "sha256": "4cd8bbdb6552435ccfebc37d3da313095d8521aa770774f6add1da2eb7c6cc58",
+      "bytes": 6467
+    },
+    {
+      "path": "src/pages/videos.astro",
+      "sha256": "9b13afd2fc8611f0b5ce94a3c6bd0846c1d1bc4edad964386c9c795c869417ff",
+      "bytes": 8594
+    },
+    {
+      "path": "src/scripts/site.ts",
+      "sha256": "8ad49afd3a3b514ea20a99a7e3dbb376f074f1707966a77286b1b805f5babcd5",
+      "bytes": 5280
+    },
+    {
+      "path": "src/styles/advertising.css",
+      "sha256": "dd6e15799cc1fe9c1fbef72d3f08907586912ab3fd6e2ec5d89ae01c00edb413",
+      "bytes": 5671
+    },
+    {
+      "path": "src/styles/global.css",
+      "sha256": "d839ebe01086e282da85df8b79fce16bc10b3acce800a906ddc243645c533ec2",
+      "bytes": 82822
+    },
+    {
+      "path": "src/styles/home-editorial.css",
+      "sha256": "a4bd8a18258cec12061ea7cf9790f1e83df17e1b6c16fb86345355401e2b4b1e",
+      "bytes": 6445
+    },
+    {
+      "path": "src/styles/noticias.css",
+      "sha256": "a00617b1bf7732b11c64e99a5025ef7811c5b3b02a586c4be17b2be384dbf927",
+      "bytes": 13844
+    }
+  ],
+  "rules": {
+    "new_visual_language": false,
+    "new_sources_without_approval": false,
+    "fabricated_content": false,
+    "reuse_original_components": true,
+    "publish_only_after_parity_and_content_verification": true
+  },
+  "document_validation": {
+    "matrix_items": 34,
+    "original_files_with_hash": 98,
+    "source_links_checked": 102,
+    "missing_source_links": [],
+    "duplicate_html_ids": 0,
+    "broken_internal_anchors": 0,
+    "browser_review": "Contrato aberto e conferido no Safari; cabeçalho, navegação, inventário e matriz presentes.",
+    "runtime_changed": false,
+    "published_changes": false
+  },
+  "execution_manifest": "docs/corretivo/execucao-corretiva.json",
+  "execution_note": "Os campos observed preservam o diagnóstico da versão publicada inicial. O estado atual do corretivo está no execution_manifest; não representam achados atuais da branch local.",
+  "execution_updated": "2026-11-06"
+}

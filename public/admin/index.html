@@ -6,9 +6,20 @@
     <meta name="robots" content="noindex, nofollow" />
     <title>Painel · Harpya</title>
     <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="stylesheet" href="/admin/painel.css">
   </head>
   <body>
-    <a href="/admin/publicar/" style="position:fixed;right:20px;bottom:20px;z-index:1000;padding:12px 20px;border-radius:8px;background:#282d33;color:#fff;font:600 15px system-ui,sans-serif;text-decoration:none;box-shadow:0 2px 10px #0003">Publicar conteúdos</a>
+    <nav class="admin-tools" aria-label="Ferramentas do administrador">
+      <strong>Harpya · Administração</strong>
+      <button type="button" data-tool="conteudos" aria-pressed="true">Conteúdos</button>
+      <button type="button" data-tool="anuncios" aria-pressed="false">Gerenciar anúncios</button>
+      <button type="button" data-tool="publicar" aria-pressed="false">Publicar conteúdos</button>
+      <button type="button" data-tool="divulgacao" aria-pressed="false">Divulgação</button>
+      <button type="button" data-tool="radar" aria-pressed="false">Radar IA</button>
+      <button type="button" data-tool="business" aria-pressed="false">Curadoria Business</button>
+      <a href="/" target="_blank" rel="noopener noreferrer">Ver site ↗</a>
+    </nav>
+    <script type="module" src="/admin/painel.js"></script>
     <!-- Sveltia CMS, versão fixada. Para atualizar, troque o número e teste em /admin antes de publicar. -->
     <script src="https://unpkg.com/@sveltia/cms@0.256.1/dist/sveltia-cms.js"></script>
   </body>

@@ -1,0 +1,30 @@
+{
+  "nome": "MIT Sloan Management Review",
+  "url": "https://sloanreview.mit.edu/topic/marketing/",
+  "regiao": "Estados Unidos",
+  "tipo": "publicacao-executiva",
+  "descricao": "Marketing, analytics, organização e inteligência artificial.",
+  "idioma": "en",
+  "hosts": [
+    "sloanreview.mit.edu",
+    "shop.sloanreview.mit.edu"
+  ],
+  "feed": "",
+  "status": "aprovado",
+  "verificado_em": "2026-11-06",
+  "canais": [
+    {
+      "id": "UC0wOrSaO_sBGGU9Jderpk7g",
+      "nome": "MIT Sloan Management Review",
+      "url": "https://www.youtube.com/channel/UC0wOrSaO_sBGGU9Jderpk7g",
+      "procedencia": "https://sloanreview.mit.edu/video/reimagining-marketing-strategy-for-the-ai-era/",
+      "status": "aprovado",
+      "verificado_em": "2026-11-06"
+    }
+  ],
+  "escopos": [
+    "artigos",
+    "videos"
+  ],
+  "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção."
+}

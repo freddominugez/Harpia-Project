@@ -1,0 +1,537 @@
+{
+  "schema_version": "1.0",
+  "preparado_em": "2026-11-06",
+  "objetivo": "Piloto de revisão integral a partir dos candidatos já documentados, procurando três níveis e temas distintos.",
+  "resultado": "parcial_com_obstaculos_documentados",
+  "contagens": {
+    "materiais_textuais_integrais_lidos": 2,
+    "niveis_cobertos_por_texto_integral": [
+      "intermediario",
+      "avancado"
+    ],
+    "videos_com_audiovisual_integral_revisado": 0,
+    "iniciante_integral_revisado": 0,
+    "tentativas_legendas_YouTube_com_429": 6,
+    "candidatos_com_bloqueio_detalhado_neste_arquivo": 5,
+    "meta_tres_niveis_integralmente_revisados_atingida": false
+  },
+  "interpretacao_de_revisao_integral": "Nos dois registros positivos, revisao_integral=true aplica-se exclusivamente à transcrição editorial explicitamente identificada. Nenhum vídeo foi ouvido ou assistido integralmente. Não somar esses registros como revisão audiovisual concluída, nem inferir timestamps.",
+  "privacidade_e_direitos": "Não se redistribuem transcrições integrais. Entregáveis têm somente fontes, hashes, contagens, sínteses próprias e limites. Nenhum material foi publicado.",
+  "integralmente_revisados_por_texto": [
+    {
+      "video_id": "xdebpIumAMw",
+      "titulo": "How a Museum Marketing Team Used AI to Bring People Closer to Art | Cold Call",
+      "url_youtube": "https://www.youtube.com/watch?v=xdebpIumAMw",
+      "channel_id": "UCk8n46m74K5XWfdeBzOXDfA",
+      "canal_aprovado": "Harvard Business School",
+      "duracao_youtube_segundos": 2264,
+      "data_youtube": "2026-07-21T05:00:19-07:00",
+      "nivel_proposto": "intermediario",
+      "tema": "Marca, IA e governança",
+      "justificativa_nivel": "Caso organizacional com tensão entre engajamento, autenticidade e risco reputacional.",
+      "credenciais": {
+        "registro": "Julian De Freitas, pesquisador de Marketing da HBS; John Connolly, diretor de Marketing dos Harvard Art Museums. Descrição do YouTube usa Assistant Professor; página editorial contemporânea usa Associate Professor. Evitar fixar hierarquia desatualizada.",
+        "fontes": [
+          {
+            "url": "https://www.youtube.com/watch?v=xdebpIumAMw",
+            "verifica": [
+              "titulo",
+              "video_id",
+              "channel_id",
+              "data_publicacao",
+              "duracao",
+              "descricao_institucional",
+              "lista_de_legendas"
+            ]
+          },
+          {
+            "url": "https://aiinstitute.hbs.edu/d3-associates-spotlight-series-elie-ofek-and-julian-de-freitas/",
+            "verifica": [
+              "identificacao_e_credenciais_do_especialista"
+            ]
+          }
+        ]
+      },
+      "audiovisual_assistido_integralmente": false,
+      "audio_ouvido_integralmente": false,
+      "timestamps_conferidos": null,
+      "publicado": false,
+      "estado": "transcricao_editorial_integral_revisada; validacao_da_edicao_audiovisual_pendente",
+      "revisao_integral": true,
+      "escopo_revisao_integral": "100% do texto editorial público; não significa audição, inspeção visual ou correspondência temporal com a edição YouTube.",
+      "material_integral": {
+        "tipo": "transcricao_editorial_HTML",
+        "url": "https://hbr.org/podcast/2026/07/how-a-museum-marketing-team-used-ai-to-bring-people-closer-to-art",
+        "origem": "HBR Podcast Network / Cold Call da Harvard Business School",
+        "http": 200,
+        "arquivo_temporario_revisado": "/tmp/harpya-video-research/transcripts/museum-transcript.txt",
+        "sha256_html_original": "b46fbac011ddf3d804a83739523ce10296df77ba5e3beda5a09dc028563cc54f",
+        "sha256_texto_limpo": "354faf986f31fd08f346b81292be188d2fae746dc4039961b938913c1b989d23",
+        "palavras_texto_limpo": 5506,
+        "cobertura": "Da primeira fala introdutória ao encerramento editorial; removidos navegação, descrição anterior à entrevista e rodapé posterior. Todas as falas extraídas foram lidas.",
+        "sincronia_integral_youtube_confirmada": false,
+        "transcricao_tem_timestamps": false
+      },
+      "idioma": {
+        "texto_confirmado": "en",
+        "falado_confirmado": false,
+        "observacao": "Transcrição completa em inglês. Áudio e eventuais dublagens não foram ouvidos."
+      },
+      "resumo_proprio_pt": "Caso de uso público de IA em museus examina autenticidade, governança e relacionamento com visitantes.",
+      "alegacoes_e_limites": [
+        "Relato qualitativo; resultados causais pendentes."
+      ],
+      "metodo_exato": [
+        "GET público da página HBR, sem login.",
+        "Extração HTMLParser excluindo script/style; recorte do início da entrevista ao final editorial.",
+        "Leitura sequencial integral do texto limpo em duas faixas, incluindo encerramento.",
+        "Conferência de título, convidados e tema com página YouTube já validada; nenhum alinhamento temporal assumido."
+      ],
+      "decisao": "apto_para_planejar_material_editorial_com_validacao_audiovisual_pendente",
+      "pendencias": [
+        "Verificar correspondência entre transcrição publicada e edição YouTube de 37:44.",
+        "Conferir imagens, inserções comerciais e qualidade de legendas antes de liberar o vídeo como integralmente revisado."
+      ],
+      "trechos_literais_reproduzidos": []
+    },
+    {
+      "video_id": "2cAwSp2hERY",
+      "titulo": "Marketing With Generative AI: Harvard Business School’s Ayelet Israeli",
+      "url_youtube": "https://www.youtube.com/watch?v=2cAwSp2hERY",
+      "channel_id": "UC0wOrSaO_sBGGU9Jderpk7g",
+      "canal_aprovado": "MIT Sloan Management Review",
+      "duracao_youtube_segundos": 1909,
+      "data_youtube": "2024-01-25T07:16:58-08:00",
+      "nivel_proposto": "avancado",
+      "tema": "Pesquisa de mercado e IA generativa",
+      "justificativa_nivel": "Discute limites de simulação de grupos focais e pesquisas; exige noções de validade e viés.",
+      "credenciais": {
+        "registro": "Ayelet Israeli, professora da unidade de Marketing da HBS e cofundadora do Customer Intelligence Lab; PhD em Marketing pela Kellogg, segundo biografia publicada pelo MIT SMR.",
+        "fontes": [
+          {
+            "url": "https://www.youtube.com/watch?v=2cAwSp2hERY",
+            "verifica": [
+              "titulo",
+              "video_id",
+              "channel_id",
+              "data_publicacao",
+              "duracao",
+              "descricao_institucional",
+              "lista_de_legendas"
+            ]
+          }
+        ]
+      },
+      "audiovisual_assistido_integralmente": false,
+      "audio_ouvido_integralmente": false,
+      "timestamps_conferidos": null,
+      "publicado": false,
+      "estado": "transcricao_editorial_integral_revisada; validacao_da_edicao_audiovisual_pendente",
+      "revisao_integral": true,
+      "escopo_revisao_integral": "100% das 11 páginas da transcrição oficial BCG + MIT SMR; não significa audição ou correspondência temporal com o vídeo.",
+      "material_integral": {
+        "tipo": "transcricao_editorial_PDF",
+        "url": "https://web-assets.bcg.com/51/fe/0ef9bdb243cc8cb8d970d981b9d4/me-myself-and-ai-marketing-with-generative-ai-aylet-israeli-episode-transcript.pdf",
+        "origem": "BCG, coprodutora oficial com MIT Sloan Management Review",
+        "http": 200,
+        "arquivo_temporario_revisado": "/tmp/harpya-video-research/transcripts/ayelet-bcg.txt",
+        "arquivo_pdf_temporario": "/tmp/harpya-video-research/transcripts/ayelet-bcg.pdf",
+        "sha256_pdf_original": "674c0c26587391e00e73a93c71c117422a1b4235038d49081556e8caa0e62532",
+        "sha256_texto_extraido": "16d187e8cc4775f7079be47668822d1bf639f436c413ae3a0e58ceff26f6c6ed",
+        "paginas": 11,
+        "paginas_revisadas": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "palavras_extraidas_com_marcadores_de_pagina": 5534,
+        "cobertura": "Leitura de todas as páginas, mantendo distinção entre as duas colunas e cobrindo abertura, método, debate crítico, biografia, perguntas finais e encerramento.",
+        "sincronia_integral_youtube_confirmada": false,
+        "transcricao_tem_timestamps": false
+      },
+      "idioma": {
+        "texto_confirmado": "en",
+        "falado_confirmado": false,
+        "observacao": "Texto completo em inglês; não houve audição."
+      },
+      "resumo_proprio_pt": "A entrevista examina o uso de modelos de linguagem como fonte complementar para pesquisa de preferências. Israeli relata experimentos com escolhas de produtos e análise conjunta, comparações com estudos humanos e limites de generalização. O debate separa simulação, evidência e comprovação; termina com recomendações de testar perguntas concretas e manter supervisão humana.",
+      "alegacoes_e_limites": [
+        "Os resultados descritos se concentram em produtos de consumo; aplicação B2B aparece como hipótese ainda não testada.",
+        "A pesquisadora não recomenda substituir pesquisas humanas; defasagem de treinamento e consumidores pouco representados limitam inferências.",
+        "A fala sobre maior facilidade de corrigir viés em máquinas é perspectiva da entrevistada, não comprovação de eliminação de discriminação.",
+        "Transcrição sem timestamps e episódio editorial anterior ao upload YouTube: equivalência exata das versões permanece pendente."
+      ],
+      "localizadores_sem_timestamp": [
+        {
+          "paginas_pdf": [
+            2,
+            3,
+            4
+          ],
+          "assunto": "Desenho e interpretação dos testes."
+        },
+        {
+          "paginas_pdf": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "assunto": "Representatividade, critérios de validade e supervisão."
+        },
+        {
+          "paginas_pdf": [
+            9,
+            10,
+            11
+          ],
+          "assunto": "Orientação de experimentação e discussão de viés."
+        }
+      ],
+      "metodo_exato": [
+        "A página MIT SMR retornou 403; procurada publicação primária alternativa sem contornar bloqueio.",
+        "GET público do PDF no domínio oficial web-assets.bcg.com; HTTP 200 application/pdf, 403.158 bytes.",
+        "Extração com pypdf PdfReader e extraction_mode=layout, preservando 11 páginas e duas colunas.",
+        "Leitura sequencial integral das páginas 1–11 em três faixas; conferência da estrutura com PDF oficial no navegador web.",
+        "Comparação de título, convidada e série com descrição oficial do canal MIT SMR."
+      ],
+      "decisao": "apto_para_planejar_material_editorial_com_validacao_audiovisual_pendente",
+      "pendencias": [
+        "Conferir edição YouTube de 31:49 contra a transcrição do episódio.",
+        "Revalidar exemplos sobre ferramentas e modelos com literatura atual; o upload não torna atuais todos os experimentos narrados.",
+        "Conferir reprodução, legenda e eventuais inserções antes de liberação."
+      ],
+      "trechos_literais_reproduzidos": []
+    }
+  ],
+  "bloqueados": [
+    {
+      "video_id": "3iXbE1jzY2A",
+      "titulo": "Digitalizando - Sétimo Episódio: Jornada do cliente!",
+      "url_youtube": "https://www.youtube.com/watch?v=3iXbE1jzY2A",
+      "channel_id": "UC1fHbk7N11bB8UnL4tYg26A",
+      "canal_aprovado": "Fundação Dom Cabral",
+      "duracao_youtube_segundos": 256,
+      "data_youtube": "2022-02-22T04:58:05-08:00",
+      "nivel_proposto": "iniciante",
+      "tema": "Jornada do cliente e indicadores",
+      "justificativa_nivel": "Explicação curta de jornada, engajamento e indicadores digitais.",
+      "credenciais": {
+        "registro": "Hugo Ferreira Braga Tadeu, professor e pesquisador da FDC.",
+        "fontes": [
+          {
+            "url": "https://www.youtube.com/watch?v=3iXbE1jzY2A",
+            "verifica": [
+              "titulo",
+              "video_id",
+              "channel_id",
+              "data_publicacao",
+              "duracao",
+              "descricao_institucional",
+              "lista_de_legendas"
+            ]
+          },
+          {
+            "url": "https://hotsites.fdc.org.br/hotsites/mail/fdc_day/2014/hugo.pdf",
+            "verifica": [
+              "identificacao_e_credenciais_do_especialista"
+            ]
+          }
+        ]
+      },
+      "audiovisual_assistido_integralmente": false,
+      "audio_ouvido_integralmente": false,
+      "timestamps_conferidos": null,
+      "publicado": false,
+      "estado": "bloqueado_para_revisao_integral",
+      "revisao_integral": false,
+      "escopo_revisao_integral": null,
+      "material_integral": null,
+      "idioma": {
+        "texto_integral_confirmado": null,
+        "falado_confirmado": false
+      },
+      "resumo_proprio_pt": null,
+      "alegacoes_e_limites": [],
+      "tentativa": {
+        "metodo": "GET da baseUrl de legenda listada pelo player da própria página pública YouTube; uma tentativa por vídeo, sem contornar restrição.",
+        "endpoint": "www.youtube.com/api/timedtext; parâmetros efêmeros não preservados em entregável",
+        "http": 429,
+        "bytes_resposta": 1103,
+        "tipo_resposta": "text/html; charset=UTF-8",
+        "sha256_corpo_bloqueio": "9010e5a841cf0acfb13facfaa2c3318bc8118020ec071d15de099eb9a628fd01",
+        "lingua_faixa_solicitada": "pt",
+        "automatica": true,
+        "resultado": "HTTP 429 com HTML Sorry; nenhum texto de legenda obtido."
+      },
+      "decisao": "manter_apenas_candidato; nao_usar_como_material_integralmente_revisado",
+      "proximo_passo": "Revisar pelo player autorizado em sessão com reprodução e legendas disponíveis, ou obter transcrição fornecida pela instituição."
+    },
+    {
+      "video_id": "hw8FfogTUhU",
+      "titulo": "The Explainer: Don’t Just Sell Stuff — Satisfy Needs",
+      "url_youtube": "https://www.youtube.com/watch?v=hw8FfogTUhU",
+      "channel_id": "UCWo4IA01TXzBeGJJKWHOG9g",
+      "canal_aprovado": "Harvard Business Review",
+      "duracao_youtube_segundos": 119,
+      "data_youtube": "2019-07-23T12:26:54-07:00",
+      "nivel_proposto": "iniciante",
+      "tema": "Orientação para o cliente",
+      "justificativa_nivel": "Explicação curta de necessidade do cliente e miopia de marketing, adequada à introdução.",
+      "credenciais": {
+        "registro": "Animação editorial HBR sobre Theodore Levitt; narrador não identificado, não atribuir fala ou apresentação a Levitt.",
+        "fontes": [
+          {
+            "url": "https://www.youtube.com/watch?v=hw8FfogTUhU",
+            "verifica": [
+              "titulo",
+              "video_id",
+              "channel_id",
+              "data_publicacao",
+              "duracao",
+              "descricao_institucional",
+              "lista_de_legendas"
+            ]
+          }
+        ]
+      },
+      "audiovisual_assistido_integralmente": false,
+      "audio_ouvido_integralmente": false,
+      "timestamps_conferidos": null,
+      "publicado": false,
+      "estado": "bloqueado_para_revisao_integral",
+      "revisao_integral": false,
+      "escopo_revisao_integral": null,
+      "material_integral": null,
+      "idioma": {
+        "texto_integral_confirmado": null,
+        "falado_confirmado": false
+      },
+      "resumo_proprio_pt": null,
+      "alegacoes_e_limites": [],
+      "tentativa": {
+        "metodo": "GET da baseUrl de legenda listada pelo player da própria página pública YouTube; uma tentativa por vídeo, sem contornar restrição.",
+        "endpoint": "www.youtube.com/api/timedtext; parâmetros efêmeros não preservados em entregável",
+        "http": 429,
+        "bytes_resposta": 1103,
+        "tipo_resposta": "text/html; charset=UTF-8",
+        "sha256_corpo_bloqueio": "9010e5a841cf0acfb13facfaa2c3318bc8118020ec071d15de099eb9a628fd01",
+        "lingua_faixa_solicitada": "en",
+        "automatica": false,
+        "resultado": "HTTP 429 com HTML Sorry; nenhum texto de legenda obtido."
+      },
+      "decisao": "manter_apenas_candidato; nao_usar_como_material_integralmente_revisado",
+      "proximo_passo": "Revisar pelo player autorizado em sessão com reprodução e legendas disponíveis, ou obter transcrição fornecida pela instituição."
+    },
+    {
+      "video_id": "sYdaa02CS5E",
+      "titulo": "The Explainer: Blue Ocean Strategy",
+      "url_youtube": "https://www.youtube.com/watch?v=sYdaa02CS5E",
+      "channel_id": "UCWo4IA01TXzBeGJJKWHOG9g",
+      "canal_aprovado": "Harvard Business Review",
+      "duracao_youtube_segundos": 140,
+      "data_youtube": "2019-07-16T07:26:25-07:00",
+      "nivel_proposto": "iniciante",
+      "tema": "Posicionamento e inovação de valor",
+      "justificativa_nivel": "Introduz o contraste entre mercados existentes e criação de demanda, antes de aplicação de ferramentas.",
+      "credenciais": {
+        "registro": "Animação editorial HBR; narrador não identificado, autoria da teoria não equivale a presença de seus autores.",
+        "fontes": [
+          {
+            "url": "https://www.youtube.com/watch?v=sYdaa02CS5E",
+            "verifica": [
+              "titulo",
+              "video_id",
+              "channel_id",
+              "data_publicacao",
+              "duracao",
+              "descricao_institucional",
+              "lista_de_legendas"
+            ]
+          }
+        ]
+      },
+      "audiovisual_assistido_integralmente": false,
+      "audio_ouvido_integralmente": false,
+      "timestamps_conferidos": null,
+      "publicado": false,
+      "estado": "bloqueado_para_revisao_integral",
+      "revisao_integral": false,
+      "escopo_revisao_integral": null,
+      "material_integral": null,
+      "idioma": {
+        "texto_integral_confirmado": null,
+        "falado_confirmado": false
+      },
+      "resumo_proprio_pt": null,
+      "alegacoes_e_limites": [],
+      "tentativa": {
+        "metodo": "GET da baseUrl de legenda listada pelo player da própria página pública YouTube; uma tentativa por vídeo, sem contornar restrição.",
+        "endpoint": "www.youtube.com/api/timedtext; parâmetros efêmeros não preservados em entregável",
+        "http": 429,
+        "bytes_resposta": 1103,
+        "tipo_resposta": "text/html; charset=UTF-8",
+        "sha256_corpo_bloqueio": "9010e5a841cf0acfb13facfaa2c3318bc8118020ec071d15de099eb9a628fd01",
+        "lingua_faixa_solicitada": "en",
+        "automatica": false,
+        "resultado": "HTTP 429 com HTML Sorry; nenhum texto de legenda obtido."
+      },
+      "decisao": "manter_apenas_candidato; nao_usar_como_material_integralmente_revisado",
+      "proximo_passo": "Revisar pelo player autorizado em sessão com reprodução e legendas disponíveis, ou obter transcrição fornecida pela instituição."
+    },
+    {
+      "video_id": "Vf03g8Apn9M",
+      "titulo": "Reimagining Marketing Strategy for the AI Era",
+      "url_youtube": "https://www.youtube.com/watch?v=Vf03g8Apn9M",
+      "channel_id": "UC0wOrSaO_sBGGU9Jderpk7g",
+      "canal_aprovado": "MIT Sloan Management Review",
+      "duracao_youtube_segundos": 3577,
+      "data_youtube": "2025-09-25T04:29:01-07:00",
+      "nivel_proposto": "avancado",
+      "tema": "Estratégia de marketing e IA",
+      "justificativa_nivel": "Webinar sobre seleção de oportunidades, reação do consumidor e governança de IA, requer fundamentos de marketing.",
+      "credenciais": {
+        "registro": "Oguz A. Acar, professor de Marketing e Inovação no King’s College London.",
+        "fontes": [
+          {
+            "url": "https://www.youtube.com/watch?v=Vf03g8Apn9M",
+            "verifica": [
+              "titulo",
+              "video_id",
+              "channel_id",
+              "data_publicacao",
+              "duracao",
+              "descricao_institucional",
+              "lista_de_legendas"
+            ]
+          },
+          {
+            "url": "https://kclpure.kcl.ac.uk/portal/en/persons/oguz.acar/",
+            "verifica": [
+              "identificacao_e_credenciais_do_especialista"
+            ]
+          }
+        ]
+      },
+      "audiovisual_assistido_integralmente": false,
+      "audio_ouvido_integralmente": false,
+      "timestamps_conferidos": null,
+      "publicado": false,
+      "estado": "bloqueado_para_revisao_integral",
+      "revisao_integral": false,
+      "escopo_revisao_integral": null,
+      "material_integral": null,
+      "idioma": {
+        "texto_integral_confirmado": null,
+        "falado_confirmado": false
+      },
+      "resumo_proprio_pt": null,
+      "alegacoes_e_limites": [],
+      "tentativa": {
+        "metodo": "GET da baseUrl de legenda listada pelo player da própria página pública YouTube; uma tentativa por vídeo, sem contornar restrição.",
+        "endpoint": "www.youtube.com/api/timedtext; parâmetros efêmeros não preservados em entregável",
+        "http": 429,
+        "bytes_resposta": 1103,
+        "tipo_resposta": "text/html; charset=UTF-8",
+        "sha256_corpo_bloqueio": "9010e5a841cf0acfb13facfaa2c3318bc8118020ec071d15de099eb9a628fd01",
+        "lingua_faixa_solicitada": "en",
+        "automatica": false,
+        "resultado": "HTTP 429 com HTML Sorry; nenhum texto de legenda obtido."
+      },
+      "decisao": "manter_apenas_candidato; nao_usar_como_material_integralmente_revisado",
+      "proximo_passo": "Revisar pelo player autorizado em sessão com reprodução e legendas disponíveis, ou obter transcrição fornecida pela instituição."
+    },
+    {
+      "video_id": "1eAAPzwx0HI",
+      "titulo": "Building Customer Value: From Theory to Practice",
+      "url_youtube": "https://www.youtube.com/watch?v=1eAAPzwx0HI",
+      "channel_id": "UC0wOrSaO_sBGGU9Jderpk7g",
+      "canal_aprovado": "MIT Sloan Management Review",
+      "duracao_youtube_segundos": 3569,
+      "data_youtube": "2025-04-22T02:55:05-07:00",
+      "nivel_proposto": "avancado",
+      "tema": "Valor e portfólio de clientes",
+      "justificativa_nivel": "Integra métricas, previsão e modelos causais; indicado após fundamentos de rentabilidade e retenção.",
+      "credenciais": {
+        "registro": "Michael D. Johnson, professor e dean emeritus de Cornell; Fred Selnes, professor de Marketing na BI Norwegian Business School; mediação de Abbie Lundberg.",
+        "fontes": [
+          {
+            "url": "https://www.youtube.com/watch?v=1eAAPzwx0HI",
+            "verifica": [
+              "titulo",
+              "video_id",
+              "channel_id",
+              "data_publicacao",
+              "duracao",
+              "descricao_institucional",
+              "lista_de_legendas"
+            ]
+          },
+          {
+            "url": "https://sloanreview.mit.edu/video/building-customer-value-from-theory-to-practice/",
+            "verifica": [
+              "identificacao_e_credenciais_do_especialista"
+            ]
+          }
+        ]
+      },
+      "audiovisual_assistido_integralmente": false,
+      "audio_ouvido_integralmente": false,
+      "timestamps_conferidos": null,
+      "publicado": false,
+      "estado": "bloqueado_para_revisao_integral",
+      "revisao_integral": false,
+      "escopo_revisao_integral": null,
+      "material_integral": null,
+      "idioma": {
+        "texto_integral_confirmado": null,
+        "falado_confirmado": false
+      },
+      "resumo_proprio_pt": null,
+      "alegacoes_e_limites": [],
+      "tentativa": {
+        "metodo": "GET da baseUrl de legenda listada pelo player da própria página pública YouTube; uma tentativa por vídeo, sem contornar restrição.",
+        "endpoint": "www.youtube.com/api/timedtext; parâmetros efêmeros não preservados em entregável",
+        "http": 429,
+        "bytes_resposta": 1103,
+        "tipo_resposta": "text/html; charset=UTF-8",
+        "sha256_corpo_bloqueio": "9010e5a841cf0acfb13facfaa2c3318bc8118020ec071d15de099eb9a628fd01",
+        "lingua_faixa_solicitada": "en",
+        "automatica": false,
+        "resultado": "HTTP 429 com HTML Sorry; nenhum texto de legenda obtido."
+      },
+      "decisao": "manter_apenas_candidato; nao_usar_como_material_integralmente_revisado",
+      "proximo_passo": "Revisar pelo player autorizado em sessão com reprodução e legendas disponíveis, ou obter transcrição fornecida pela instituição."
+    }
+  ],
+  "alternativa_nao_equivalente": {
+    "video_id": "BwKHQZfIZ4Y",
+    "tentativa": "Busca de transcrição oficial para nível iniciante. Localizado artigo autoral LBS em tema correspondente.",
+    "url_artigo": "https://www.london.edu/think/what-if-freedom-of-choice-spread-unhappiness",
+    "decisao": "Não contar artigo como transcrição do vídeo; equivalência integral não demonstrada.",
+    "revisao_integral_video": false
+  },
+  "bloqueios_editoriais_adicionais": [
+    {
+      "video_id": "2cAwSp2hERY",
+      "url": "https://sloanreview.mit.edu/audio/marketing-with-generative-ai-harvard-business-schools-ayelet-israeli/",
+      "http": 403,
+      "resolucao": "Usada transcrição oficial BCG, coprodutora; nenhum contorno do bloqueio MIT SMR."
+    }
+  ],
+  "manifesto": "transcricoes/manifesto-revisao-piloto.json",
+  "o_que_falta": [
+    "Obter e revisar material integral de um candidato iniciante; as tentativas de legendas falharam.",
+    "Confirmar identidade e cobertura temporal entre as transcrições editoriais e as versões específicas no YouTube.",
+    "Verificar reprodução, idioma falado, imagens, acessibilidade e predominância didática nos vídeos.",
+    "Só depois consolidar estado editorial apto à publicação e criar materiais completos de apoio."
+  ]
+}

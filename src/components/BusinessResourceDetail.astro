@@ -1,0 +1,37 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { trilhaNome } from '../lib/business';
+interface Props { item: CollectionEntry<'businessAcervo'>; fonte?: CollectionEntry<'businessFontes'> }
+const { item, fonte } = Astro.props;
+const d = item.data;
+const video = d.tipo === 'video';
+const voltar = video ? '/business/videos/' : d.tipo === 'noticia' ? '/business/noticias/' : d.tipo === 'analise' ? '/business/analises/' : d.tipo === 'livro' ? '/business/biblioteca/livros/' : '/business/biblioteca/';
+---
+<article class="container business-section business-resource-detail">
+  <dl><dt>Autoria</dt><dd>{d.autores}</dd><dt>Publicação</dt><dd>{fonte?.data.nome}</dd><dt>Trilha</dt><dd>{trilhaNome(d.trilha)}</dd><dt>Idioma e acesso</dt><dd>{d.idioma.toUpperCase()} · {d.acesso}</dd>
+    {d.data && d.data_precisa && <><dt>Data original</dt><dd>{d.data}</dd></>}
+    {d.tipo === 'livro' && <><dt>Editora</dt><dd>{d.editora}</dd>{d.edicao && <><dt>Edição</dt><dd>{d.edicao}</dd></>}{d.isbn && <><dt>ISBN da edição</dt><dd>{d.isbn}</dd></>}</>}
+    {video && <><dt>Nível</dt><dd>{d.nivel}</dd>{d.duracao_segundos > 0 && <><dt>Duração</dt><dd>{Math.floor(d.duracao_segundos/60)} min {d.duracao_segundos%60} s</dd></>}<dt>Apresentação</dt><dd>{d.palestrante}</dd><dt>Qualificação</dt><dd>{d.credenciais}</dd><dt>Canal institucional</dt><dd><a href={`https://www.youtube.com/channel/${d.channel_id}`} target="_blank" rel="noopener noreferrer">{fonte?.data.canais.find(c => c.id === d.channel_id)?.nome} ↗</a></dd></>}
+    <dt>Natureza</dt><dd>{d.evidencia}</dd><dt>Curadoria</dt><dd>{d.revisor} · {d.revisado_em}</dd>
+  </dl>
+  {video && <div class="business-video" data-business-video data-video-id={d.video_id} data-video-title={d.titulo}><p>O player do YouTube será carregado após sua escolha.</p><button class="btn gold" type="button" data-load-video>Carregar vídeo</button><noscript><p>Use o link ao original abaixo para assistir.</p></noscript></div>}
+  {d.corpo.length > 0 && <div class="business-editorial business-resource-body">{d.corpo.map(paragrafo => <p>{paragrafo}</p>)}</div>}
+  <div class="business-policy"><h2>Leia com estes limites</h2><p>{d.limites}</p><p>{d.justificativa}</p><a class="btn gold" href={d.url} target="_blank" rel="noopener noreferrer">{d.tipo === 'livro' ? 'Consultar a obra na editora' : video ? 'Assistir no YouTube' : 'Abrir o original'} ↗</a></div>
+  {(d.referencias.length > 0 || d.evidencias_revisao.length > 0) && <section class="business-reference-list"><h2>Referências e verificação</h2>{[...new Set([...d.referencias,...d.evidencias_revisao])].map(url => <a href={url} target="_blank" rel="noopener noreferrer">{url} ↗</a>)}</section>}
+  <p class="business-note business-collection-links">A ficha orienta o estudo e não substitui o original. A instituição pode exigir cadastro, compra ou assinatura. O Harpya não representa nem mantém parceria editorial com as fontes listadas.</p><a class="business-read" href={voltar}>← Voltar à coleção</a>
+</article>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-business-video]').forEach(container => {
+    container.querySelector('button')?.addEventListener('click', () => {
+      const id = container.dataset.videoId;
+      if (!id || !/^[A-Za-z0-9_-]{11}$/.test(id)) return;
+      const frame = document.createElement('iframe');
+      frame.src = `https://www.youtube-nocookie.com/embed/${id}`;
+      frame.title = container.dataset.videoTitle || 'Vídeo selecionado';
+      frame.allow = 'encrypted-media; picture-in-picture; fullscreen';
+      frame.allowFullscreen = true;
+      frame.referrerPolicy = 'strict-origin-when-cross-origin';
+      container.replaceChildren(frame);
+    }, { once: true });
+  });
+</script>

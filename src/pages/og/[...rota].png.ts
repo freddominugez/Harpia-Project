@@ -19,13 +19,14 @@ export const getStaticPaths: GetStaticPaths = async () =>
 
 export const GET: APIRoute = async ({ props }) => {
   const r = (await rotaDe(props.path as string))!;
+  const business = r.path.startsWith('/business/');
   const titulo = r.path === "/" ? SITE.lema : r.titulo;
   const desc = r.descricao.length > 150 ? `${r.descricao.slice(0, 147).replace(/\s+\S*$/, "")}...` : r.descricao;
-  const arvore = h("div", { width: 1200, height: 630, display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "64px 72px", background: "#282d33", color: "#ffffff", fontFamily: "Inter" },
+  const arvore = h("div", { width: 1200, height: 630, display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "64px 72px", background: business ? "#173b5c" : "#282d33", color: "#ffffff", fontFamily: "Inter" },
     h("div", { display: "flex", alignItems: "center", gap: 18 },
       { type: "img", props: { src: MARCA, width: 64, height: 60 } },
       h("div", { display: "flex", flexDirection: "column" },
-        h("div", { fontSize: 30, fontWeight: 800, letterSpacing: 4 }, "HARPYA"),
+        h("div", { fontSize: 30, fontWeight: 800, letterSpacing: 4 }, business ? "HARPYA BUSINESS" : "HARPYA"),
         h("div", { fontSize: 18, color: "#c79a39", letterSpacing: 3 }, r.secao.toUpperCase()))),
     h("div", { display: "flex", flexDirection: "column", gap: 22 },
       h("div", { fontSize: titulo.length > 60 ? 54 : 64, fontWeight: 800, lineHeight: 1.08, letterSpacing: -1.5 }, titulo),

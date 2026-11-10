@@ -1,0 +1,565 @@
+{
+  "versao": 1,
+  "preparado_em": "2026-11-06",
+  "estado": "aprovado",
+  "aprovado_em": "2026-11-06",
+  "fontes": [
+    {
+      "nome": "McKinsey & Company",
+      "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights",
+      "regiao": "Estados Unidos / global",
+      "tipo": "consultoria",
+      "descricao": "Marketing, crescimento, consumidor, pricing e vendas.",
+      "idioma": "en",
+      "hosts": [
+        "www.mckinsey.com",
+        "mckinsey.com"
+      ],
+      "feed": "https://www.mckinsey.com/Insights/rss.aspx",
+      "verificado_em": "2026-11-06",
+      "codigo": "A01",
+      "id": "mckinsey",
+      "proposta": "manter",
+      "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção.",
+      "status": "aprovado"
+    },
+    {
+      "nome": "Boston Consulting Group",
+      "url": "https://www.bcg.com/capabilities/marketing-sales/insights",
+      "regiao": "Estados Unidos / global",
+      "tipo": "consultoria",
+      "descricao": "Estratégia de marketing, personalização e consumer insights.",
+      "idioma": "en",
+      "hosts": [
+        "www.bcg.com",
+        "bcg.com"
+      ],
+      "feed": "",
+      "verificado_em": "2026-11-06",
+      "codigo": "A02",
+      "id": "bcg",
+      "proposta": "manter",
+      "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção.",
+      "status": "aprovado"
+    },
+    {
+      "nome": "Bain & Company",
+      "url": "https://www.bain.com/insights/",
+      "tipo": "consultoria",
+      "regiao": "Estados Unidos / global",
+      "descricao": "Estratégia comercial, marketing, vendas e relacionamento.",
+      "hosts": [
+        "www.bain.com",
+        "bain.com"
+      ],
+      "idioma": "en",
+      "feed": "",
+      "verificado_em": "2026-11-06",
+      "codigo": "A03",
+      "id": "bain",
+      "proposta": "incluir",
+      "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção.",
+      "status": "aprovado"
+    },
+    {
+      "nome": "Harvard Business Review",
+      "url": "https://hbr.org/topic/subject/marketing",
+      "regiao": "Estados Unidos",
+      "tipo": "publicacao-executiva",
+      "descricao": "Estratégia, marca e gestão.",
+      "idioma": "en",
+      "hosts": [
+        "hbr.org"
+      ],
+      "feed": "",
+      "verificado_em": "2026-11-06",
+      "codigo": "A04",
+      "id": "hbr",
+      "proposta": "manter",
+      "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção.",
+      "status": "aprovado"
+    },
+    {
+      "nome": "MIT Sloan Management Review",
+      "url": "https://sloanreview.mit.edu/topic/marketing/",
+      "regiao": "Estados Unidos",
+      "tipo": "publicacao-executiva",
+      "descricao": "Marketing, analytics, organização e inteligência artificial.",
+      "idioma": "en",
+      "hosts": [
+        "sloanreview.mit.edu",
+        "shop.sloanreview.mit.edu"
+      ],
+      "feed": "",
+      "verificado_em": "2026-11-06",
+      "codigo": "A05",
+      "id": "mit-smr",
+      "proposta": "manter",
+      "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção.",
+      "status": "aprovado"
+    },
+    {
+      "nome": "INSEAD Knowledge",
+      "url": "https://knowledge.insead.edu/marketing",
+      "regiao": "Europa / global",
+      "tipo": "academica",
+      "descricao": "Pesquisa aplicada sobre marcas, consumidores e estratégia.",
+      "idioma": "en",
+      "hosts": [
+        "knowledge.insead.edu"
+      ],
+      "feed": "https://knowledge.insead.edu/rss/articles/46/rss.xml",
+      "verificado_em": "2026-11-06",
+      "codigo": "A06",
+      "id": "insead",
+      "proposta": "manter",
+      "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção.",
+      "status": "aprovado"
+    },
+    {
+      "nome": "Knowledge at Wharton",
+      "url": "https://knowledge.wharton.upenn.edu/category/marketing/",
+      "tipo": "academica",
+      "regiao": "Estados Unidos",
+      "descricao": "Marketing, comportamento e administração.",
+      "hosts": [
+        "knowledge.wharton.upenn.edu",
+        "www.wharton.upenn.edu"
+      ],
+      "idioma": "en",
+      "feed": "",
+      "verificado_em": "2026-11-06",
+      "codigo": "A07",
+      "id": "wharton",
+      "proposta": "incluir",
+      "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção.",
+      "status": "aprovado"
+    },
+    {
+      "nome": "London Business School · Think",
+      "url": "https://www.london.edu/think",
+      "tipo": "academica",
+      "regiao": "Europa",
+      "descricao": "Estratégia e pesquisa aplicada em administração.",
+      "hosts": [
+        "www.london.edu",
+        "london.edu"
+      ],
+      "idioma": "en",
+      "feed": "",
+      "verificado_em": "2026-11-06",
+      "codigo": "A08",
+      "id": "lbs",
+      "proposta": "incluir",
+      "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção.",
+      "status": "aprovado"
+    },
+    {
+      "nome": "American Marketing Association · Journal of Marketing / Journal of Marketing Research",
+      "url": "https://www.ama.org/journal-of-marketing-research/",
+      "regiao": "Estados Unidos",
+      "tipo": "academica",
+      "descricao": "Pesquisa em marketing, mensuração e métodos.",
+      "idioma": "en",
+      "hosts": [
+        "www.ama.org",
+        "ama.org"
+      ],
+      "feed": "",
+      "verificado_em": "2026-11-06",
+      "codigo": "A09",
+      "id": "ama",
+      "proposta": "manter",
+      "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção.",
+      "status": "aprovado"
+    },
+    {
+      "nome": "Marketing Science / INFORMS",
+      "url": "https://pubsonline.informs.org/journal/mksc",
+      "tipo": "academica",
+      "regiao": "Estados Unidos / global",
+      "descricao": "Modelos, experimentos e mensuração em marketing.",
+      "hosts": [
+        "pubsonline.informs.org"
+      ],
+      "idioma": "en",
+      "feed": "",
+      "verificado_em": "2026-11-06",
+      "codigo": "A10",
+      "id": "marketing-science",
+      "proposta": "incluir",
+      "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção.",
+      "status": "aprovado"
+    },
+    {
+      "nome": "FGV / RAE / GV-executivo",
+      "url": "https://eaesp.fgv.br/disseminacao-de-conhecimento/nossas_revistas",
+      "regiao": "Brasil",
+      "tipo": "academica",
+      "descricao": "Pesquisa e aplicação do conhecimento em administração.",
+      "idioma": "pt",
+      "hosts": [
+        "eaesp.fgv.br",
+        "periodicos.fgv.br",
+        "portal.fgv.br"
+      ],
+      "feed": "",
+      "verificado_em": "2026-11-06",
+      "codigo": "A11",
+      "id": "fgv",
+      "proposta": "manter",
+      "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção.",
+      "status": "aprovado"
+    },
+    {
+      "nome": "Fundação Dom Cabral / Revista DOM",
+      "url": "https://www.fdc.org.br/conhecimento/curadoria",
+      "regiao": "Brasil",
+      "tipo": "academica",
+      "descricao": "Administração, negócios e gestão no contexto brasileiro.",
+      "idioma": "pt",
+      "hosts": [
+        "www.fdc.org.br",
+        "fdc.org.br",
+        "revistadom.fdc.org.br",
+        "sejarelevante.fdc.org.br"
+      ],
+      "feed": "",
+      "verificado_em": "2026-11-06",
+      "codigo": "A12",
+      "id": "fdc",
+      "proposta": "manter",
+      "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção.",
+      "status": "aprovado"
+    },
+    {
+      "nome": "WARC",
+      "url": "https://www.warc.com/en/",
+      "regiao": "Reino Unido / global",
+      "tipo": "pesquisa-mercado",
+      "descricao": "Eficácia de marketing, comunicação e estudos de caso.",
+      "idioma": "en",
+      "hosts": [
+        "www.warc.com",
+        "warc.com"
+      ],
+      "feed": "",
+      "verificado_em": "2026-11-06",
+      "codigo": "A13",
+      "id": "warc",
+      "proposta": "manter",
+      "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção.",
+      "status": "aprovado"
+    },
+    {
+      "nome": "strategy+business",
+      "url": "https://www.strategy-business.com/",
+      "regiao": "Global",
+      "tipo": "publicacao-executiva",
+      "descricao": "Estratégia, transformação e gestão de organizações.",
+      "idioma": "en",
+      "hosts": [
+        "www.strategy-business.com",
+        "strategy-business.com"
+      ],
+      "feed": "",
+      "verificado_em": "2026-11-06",
+      "codigo": "A14",
+      "id": "strategy-business",
+      "proposta": "manter",
+      "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção.",
+      "status": "aprovado"
+    },
+    {
+      "nome": "Financial Times",
+      "url": "https://www.ft.com/",
+      "tipo": "jornalismo",
+      "regiao": "Europa / global",
+      "descricao": "Jornalismo de empresas e mercados.",
+      "hosts": [
+        "www.ft.com",
+        "ft.com"
+      ],
+      "idioma": "en",
+      "feed": "",
+      "verificado_em": "2026-11-06",
+      "codigo": "A15",
+      "id": "ft",
+      "proposta": "incluir",
+      "restricao": "Somente jornalismo de mercado; excluir conteúdo patrocinado e não tratar como pesquisa científica.",
+      "status": "aprovado"
+    },
+    {
+      "nome": "Valor Econômico",
+      "url": "https://valor.globo.com/",
+      "tipo": "jornalismo",
+      "regiao": "Brasil",
+      "descricao": "Empresas, gestão e negócios no Brasil.",
+      "hosts": [
+        "valor.globo.com"
+      ],
+      "idioma": "pt",
+      "feed": "",
+      "verificado_em": "2026-11-06",
+      "codigo": "A16",
+      "id": "valor",
+      "proposta": "incluir",
+      "restricao": "Somente jornalismo de mercado; excluir conteúdo patrocinado e não tratar como pesquisa científica.",
+      "status": "aprovado"
+    },
+    {
+      "nome": "Meio & Mensagem",
+      "url": "https://www.meioemensagem.com.br/",
+      "tipo": "jornalismo",
+      "regiao": "Brasil",
+      "descricao": "Mercado de marketing, mídia e comunicação.",
+      "hosts": [
+        "www.meioemensagem.com.br",
+        "meioemensagem.com.br"
+      ],
+      "idioma": "pt",
+      "feed": "",
+      "verificado_em": "2026-11-06",
+      "codigo": "A17",
+      "id": "meio-mensagem",
+      "proposta": "incluir",
+      "restricao": "Somente jornalismo de mercado; excluir conteúdo patrocinado e não tratar como pesquisa científica.",
+      "status": "aprovado"
+    }
+  ],
+  "canais": [
+    {
+      "codigo": "V01",
+      "id": "hbr",
+      "nome": "Harvard Business Review",
+      "url": "https://www.youtube.com/channel/UCWo4IA01TXzBeGJJKWHOG9g",
+      "channel_id": "UCWo4IA01TXzBeGJJKWHOG9g",
+      "metadados_verificados": true,
+      "procedencia": "https://www.linkedin.com/posts/harvard-business-review_the-explainer-dont-just-sell-stuff-satisfy-activity-6559809594888204288-cVVt",
+      "verificado_em": "2026-11-06",
+      "escopo": "Somente aulas, pesquisa, casos e entrevistas fundamentadas. Excluir propaganda de cursos, coaching e material motivacional.",
+      "status": "aprovado"
+    },
+    {
+      "codigo": "V02",
+      "id": "hbs",
+      "nome": "Harvard Business School",
+      "url": "https://www.youtube.com/channel/UCk8n46m74K5XWfdeBzOXDfA",
+      "channel_id": "UCk8n46m74K5XWfdeBzOXDfA",
+      "metadados_verificados": true,
+      "procedencia": "https://www.hbs.edu/",
+      "verificado_em": "2026-11-06",
+      "escopo": "Somente aulas, pesquisa, casos e entrevistas fundamentadas. Excluir propaganda de cursos, coaching e material motivacional.",
+      "status": "aprovado"
+    },
+    {
+      "codigo": "V03",
+      "id": "mit-smr",
+      "nome": "MIT Sloan Management Review",
+      "url": "https://www.youtube.com/channel/UC0wOrSaO_sBGGU9Jderpk7g",
+      "channel_id": "UC0wOrSaO_sBGGU9Jderpk7g",
+      "metadados_verificados": true,
+      "procedencia": "https://sloanreview.mit.edu/video/reimagining-marketing-strategy-for-the-ai-era/",
+      "verificado_em": "2026-11-06",
+      "escopo": "Somente aulas, pesquisa, casos e entrevistas fundamentadas. Excluir propaganda de cursos, coaching e material motivacional.",
+      "status": "aprovado"
+    },
+    {
+      "codigo": "V04",
+      "id": "insead",
+      "nome": "INSEAD",
+      "url": "https://www.youtube.com/channel/UC9aeQQ-NqjHS3nfiod2PMSA",
+      "channel_id": "UC9aeQQ-NqjHS3nfiod2PMSA",
+      "metadados_verificados": true,
+      "procedencia": "https://blogs.insead.edu/germany-iaa/files/2015/06/Alumni-Careers-Support-Brochure-09.2017-14yc99h.pdf",
+      "verificado_em": "2026-11-06",
+      "escopo": "Somente aulas, pesquisa, casos e entrevistas fundamentadas. Excluir propaganda de cursos, coaching e material motivacional.",
+      "status": "aprovado"
+    },
+    {
+      "codigo": "V05",
+      "id": "wharton",
+      "nome": "Wharton School",
+      "url": "https://www.youtube.com/channel/UCU9Z1eLsDa_meEfsmx-Ys0w",
+      "channel_id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
+      "metadados_verificados": true,
+      "procedencia": "https://www.wharton.upenn.edu/",
+      "verificado_em": "2026-11-06",
+      "escopo": "Somente aulas, pesquisa, casos e entrevistas fundamentadas. Excluir propaganda de cursos, coaching e material motivacional.",
+      "status": "aprovado"
+    },
+    {
+      "codigo": "V06",
+      "id": "lbs",
+      "nome": "London Business School",
+      "url": "https://www.youtube.com/channel/UCRPKXKBG8n6r6vIXoxsD2pQ",
+      "channel_id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
+      "metadados_verificados": true,
+      "procedencia": "https://www.london.edu/",
+      "verificado_em": "2026-11-06",
+      "escopo": "Somente aulas, pesquisa, casos e entrevistas fundamentadas. Excluir propaganda de cursos, coaching e material motivacional.",
+      "status": "aprovado"
+    },
+    {
+      "codigo": "V07",
+      "id": "fgv",
+      "nome": "FGV",
+      "url": "https://www.youtube.com/channel/UC8DhN1cJi0QklBQot5hv_kg",
+      "channel_id": "UC8DhN1cJi0QklBQot5hv_kg",
+      "metadados_verificados": true,
+      "procedencia": "https://portal.fgv.br/",
+      "verificado_em": "2026-11-06",
+      "escopo": "Somente aulas, pesquisa, casos e entrevistas fundamentadas. Excluir propaganda de cursos, coaching e material motivacional.",
+      "status": "aprovado"
+    },
+    {
+      "codigo": "V08",
+      "id": "fdc",
+      "nome": "Fundação Dom Cabral",
+      "url": "https://www.youtube.com/channel/UC1fHbk7N11bB8UnL4tYg26A",
+      "channel_id": "UC1fHbk7N11bB8UnL4tYg26A",
+      "metadados_verificados": true,
+      "procedencia": "https://www.fdc.org.br/",
+      "verificado_em": "2026-11-06",
+      "escopo": "Somente aulas, pesquisa, casos e entrevistas fundamentadas. Excluir propaganda de cursos, coaching e material motivacional.",
+      "status": "aprovado"
+    }
+  ],
+  "livros": [
+    {
+      "codigo": "L01",
+      "id": "marketing-management",
+      "titulo": "Marketing Management",
+      "autores": "Philip Kotler; Kevin Lane Keller; Alexander Chernev",
+      "edicao": "16",
+      "editora": "Pearson",
+      "url": "https://www.pearson.com/en-us/subject-catalog/p/marketing-management/P200000005952?view=educator",
+      "isbn": "9780137344161",
+      "trilha": "fundamentos",
+      "idioma": "en",
+      "uso": "Fundamentos e gestão de marketing.",
+      "acesso": "Obra comercial; incluir ficha e acesso legal, sem compra ou reprodução integral.",
+      "status": "aprovado"
+    },
+    {
+      "codigo": "L02",
+      "id": "marketing-research",
+      "titulo": "Marketing Research: An Applied Orientation",
+      "autores": "Naresh K. Malhotra",
+      "edicao": "7",
+      "editora": "Pearson",
+      "url": "https://www.pearson.com/en-us/subject-catalog/p/marketing-research-an-applied-orientation/P200000005969/9780134734842",
+      "isbn": "9780134734842",
+      "trilha": "consumidor",
+      "idioma": "en",
+      "uso": "Pesquisa de mercado e desenho de estudos.",
+      "acesso": "Obra comercial; incluir ficha e acesso legal, sem compra ou reprodução integral.",
+      "status": "aprovado"
+    },
+    {
+      "codigo": "L03",
+      "id": "strategic-brand-management",
+      "titulo": "Strategic Brand Management",
+      "autores": "Kevin Lane Keller; Vanitha Swaminathan",
+      "edicao": "5",
+      "editora": "Pearson",
+      "url": "https://www.pearson.com/en-us/subject-catalog/p/strategic-brand-management-building-measuring-and-managing-brand-equity/P200000005947/9780135641347",
+      "isbn": "9780135641347",
+      "trilha": "marcas",
+      "idioma": "en",
+      "uso": "Gestão e mensuração de marcas.",
+      "acesso": "Obra comercial; incluir ficha e acesso legal, sem compra ou reprodução integral.",
+      "status": "aprovado"
+    },
+    {
+      "codigo": "L04",
+      "id": "how-brands-grow",
+      "titulo": "How Brands Grow: What Marketers Don’t Know",
+      "autores": "Byron Sharp",
+      "edicao": "",
+      "editora": "Oxford University Press",
+      "url": "https://www.oup.com.au/books/higher-education/business-marketing/9780190337889",
+      "isbn": "9780190337889",
+      "trilha": "crescimento",
+      "idioma": "en",
+      "uso": "Evidências e debate sobre crescimento de marcas.",
+      "acesso": "Obra comercial; incluir ficha e acesso legal, sem compra ou reprodução integral.",
+      "status": "aprovado"
+    },
+    {
+      "codigo": "L05",
+      "id": "marketing-metrics",
+      "titulo": "Marketing Metrics",
+      "autores": "Paul W. Farris; Neil Bendle; Phillip Pfeifer; David Reibstein",
+      "edicao": "4",
+      "editora": "Pearson FT Press",
+      "url": "https://www.informit.com/store/marketing-metrics-9780136755241",
+      "isbn": "9780136755241",
+      "trilha": "mensuracao",
+      "idioma": "en",
+      "uso": "Métricas de marketing e desempenho.",
+      "acesso": "Obra comercial; incluir ficha e acesso legal, sem compra ou reprodução integral.",
+      "status": "aprovado"
+    },
+    {
+      "codigo": "L06",
+      "id": "competitive-strategy",
+      "titulo": "Competitive Strategy",
+      "autores": "Michael E. Porter",
+      "edicao": "",
+      "editora": "Free Press / Simon & Schuster",
+      "url": "https://www.simonandschuster.com/books/Competitive-Strategy/Michael-E-Porter/9780684841489",
+      "isbn": "9780684841489",
+      "trilha": "estrategia",
+      "idioma": "en",
+      "uso": "Concorrência, estrutura de mercado e posicionamento.",
+      "acesso": "Obra comercial; incluir ficha e acesso legal, sem compra ou reprodução integral.",
+      "status": "aprovado"
+    },
+    {
+      "codigo": "L07",
+      "id": "good-strategy-bad-strategy",
+      "titulo": "Good Strategy Bad Strategy",
+      "autores": "Richard Rumelt",
+      "edicao": "",
+      "editora": "Crown Currency / Penguin Random House",
+      "url": "https://www.penguinrandomhouse.com/books/208668/good-strategy-bad-strategy-by-richard-rumelt/",
+      "isbn": "9780307886231",
+      "trilha": "gestao",
+      "idioma": "en",
+      "uso": "Diagnóstico e formulação de estratégia.",
+      "acesso": "Obra comercial; incluir ficha e acesso legal, sem compra ou reprodução integral.",
+      "status": "aprovado"
+    },
+    {
+      "codigo": "L08",
+      "id": "marketing-servicos",
+      "titulo": "Marketing de Serviços",
+      "autores": "Marcos Cobra",
+      "edicao": "1 (2021)",
+      "editora": "GEN Atlas / Grupo GEN",
+      "url": "https://www.grupogen.com.br/marketing-de-servicos",
+      "isbn": "9788597021448",
+      "trilha": "clientes",
+      "idioma": "pt",
+      "uso": "Serviços e aplicação em português.",
+      "acesso": "Obra comercial; incluir ficha e acesso legal, sem compra ou reprodução integral.",
+      "status": "aprovado"
+    }
+  ],
+  "regras": {
+    "revisao_individual": true,
+    "excluir_coaches": true,
+    "excluir_agencias_marketing_digital": true,
+    "excluir_patrocinado": true,
+    "publicacao_automatica": false
+  },
+  "aprovado_por": "Usuário do projeto · aprovação explícita na conversa",
+  "aprovacao": {
+    "registrada_em": "2026-11-06T19:53:51.116601+00:00",
+    "mensagem_usuario": "aproado",
+    "escopo": "17 fontes de artigos/publicações, 8 canais institucionais e 8 livros da lista apresentada.",
+    "revisao_individual_mantida": true,
+    "publicacao_automatica": false
+  }
+}

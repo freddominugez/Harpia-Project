@@ -1,0 +1,236 @@
+{
+  "pages": 41,
+  "businessPages": 39,
+  "internalReferences": 3647,
+  "businessSearchItems": 39,
+  "broken": [],
+  "duplicateIds": [],
+  "headingFailures": [],
+  "missingMeta": [],
+  "entrega": "Publicado e verificado em https://www.harpya.org/",
+  "verificacao": {
+    "astro_check": "0 erros, 0 warnings; 4 hints anteriores em arquivos do projeto",
+    "build_paginas_total": 99,
+    "testes_node": 27,
+    "testes_python": 13,
+    "cms": "17 coleções; 24 registros institucionais aprovados; 14 fichas publicadas e 1 vídeo candidato manual",
+    "browser": [
+      "cards e duas artes",
+      "diálogo e salvamento",
+      "entrada automática pela raiz",
+      "acesso direto a Tecnologia preservado mesmo com preferência Business",
+      "busca própria",
+      "filtro textual da biblioteca",
+      "reorganização em largura reduzida por zoom",
+      "páginas de livros e vídeos com filtros e estado de aprovação",
+      "painel de curadoria exige sessão e não grava ao abrir",
+      "editor de anúncios abre no ambiente Business",
+      "catálogo HTML de 33 referências exibido no Safari",
+      "oito livros publicados, filtro Kotler encontra um resultado",
+      "ficha Marketing Management com editora, ISBN e roteiro autoral",
+      "oito canais aprovados visíveis",
+      "restrições de jornalismo visíveis nas fontes FT, Valor e Meio & Mensagem"
+    ],
+    "pendencias": [
+      "revisão integral dos vídeos candidatos antes de publicar",
+      "ampliar leituras e preparar primeiras notícias",
+      "teste em dispositivos móveis reais",
+      "feed RSS INSEAD restrito"
+    ]
+  },
+  "coleta_real": [
+    {
+      "id": "insead",
+      "status": "erro",
+      "itens": 0,
+      "mensagem": "HTTPError",
+      "verificado_em": "2026-11-06T19:54:14.056245+00:00"
+    },
+    {
+      "id": "mckinsey",
+      "status": "ok",
+      "itens": 6,
+      "mensagem": "",
+      "verificado_em": "2026-11-06T19:54:14.056245+00:00"
+    }
+  ],
+  "coleta_videos_real": [
+    {
+      "id": "UC1fHbk7N11bB8UnL4tYg26A",
+      "fonte": "fdc",
+      "status": "ok",
+      "itens": 0,
+      "mensagem": "",
+      "verificado_em": "2026-11-06T19:57:41.199005+00:00"
+    },
+    {
+      "id": "UC8DhN1cJi0QklBQot5hv_kg",
+      "fonte": "fgv",
+      "status": "ok",
+      "itens": 0,
+      "mensagem": "",
+      "verificado_em": "2026-11-06T19:57:41.199005+00:00"
+    },
+    {
+      "id": "UCWo4IA01TXzBeGJJKWHOG9g",
+      "fonte": "hbr",
+      "status": "ok",
+      "itens": 3,
+      "mensagem": "",
+      "verificado_em": "2026-11-06T19:57:41.199005+00:00"
+    },
+    {
+      "id": "UCk8n46m74K5XWfdeBzOXDfA",
+      "fonte": "hbs",
+      "status": "ok",
+      "itens": 0,
+      "mensagem": "",
+      "verificado_em": "2026-11-06T19:57:41.199005+00:00"
+    },
+    {
+      "id": "UC9aeQQ-NqjHS3nfiod2PMSA",
+      "fonte": "insead",
+      "status": "ok",
+      "itens": 1,
+      "mensagem": "",
+      "verificado_em": "2026-11-06T19:57:41.199005+00:00"
+    },
+    {
+      "id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
+      "fonte": "lbs",
+      "status": "ok",
+      "itens": 3,
+      "mensagem": "",
+      "verificado_em": "2026-11-06T19:57:41.199005+00:00"
+    },
+    {
+      "id": "UC0wOrSaO_sBGGU9Jderpk7g",
+      "fonte": "mit-smr",
+      "status": "ok",
+      "itens": 0,
+      "mensagem": "",
+      "verificado_em": "2026-11-06T19:57:41.199005+00:00"
+    },
+    {
+      "id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
+      "fonte": "wharton",
+      "status": "ok",
+      "itens": 1,
+      "mensagem": "",
+      "verificado_em": "2026-11-06T19:57:41.199005+00:00"
+    }
+  ],
+  "catalogo": {
+    "estado": "aprovado",
+    "aprovado_em": "2026-11-06",
+    "fontes_artigos": 17,
+    "canais": 8,
+    "livros": 8,
+    "canais_ativos": 8,
+    "livros_publicados": 8,
+    "ativacao_automatica": false,
+    "candidatos_artigos": 6,
+    "candidatos_videos_feed": 8
+  },
+  "correcao_rss": "Cabeçalho yt:channelId com ou sem prefixo UC; endereço do autor e IDs completos de cada entrada devem corresponder ao canal aprovado.",
+  "publicacao": {
+    "verificado_em": "2026-11-06T22:52:56.053355+00:00",
+    "commit": "34ab18fd8dd0f37ca00ac48669326d924bde3ccc",
+    "deployment_id": "dpl_8QfAkmbK6RwrBxMArXCCxugmQH4E",
+    "project_id": "prj_cO7boG1xi3lFMPbsoAa7QTvuN6dF",
+    "target": "production",
+    "estado": "READY",
+    "url": "https://www.harpya.org/",
+    "url_deployment": "https://harpia-project-bh951s0u3-byvulcan.vercel.app",
+    "ci_build": "success",
+    "ci_lighthouse": "success",
+    "testes_node_release": 42,
+    "testes_python_release": 23,
+    "http": {
+      "base": "https://www.harpya.org",
+      "rotas": [
+        {
+          "path": "/?ambientes=1",
+          "status": 200,
+          "url": "https://www.harpya.org/?ambientes=1"
+        },
+        {
+          "path": "/tecnologia/",
+          "status": 200,
+          "url": "https://www.harpya.org/tecnologia/"
+        },
+        {
+          "path": "/business/",
+          "status": 200,
+          "url": "https://www.harpya.org/business/"
+        },
+        {
+          "path": "/business/biblioteca/livros/",
+          "status": 200,
+          "url": "https://www.harpya.org/business/biblioteca/livros/"
+        },
+        {
+          "path": "/business/videos/canais/",
+          "status": 200,
+          "url": "https://www.harpya.org/business/videos/canais/"
+        },
+        {
+          "path": "/business/leituras/livro-marketing-management/",
+          "status": 200,
+          "url": "https://www.harpya.org/business/leituras/livro-marketing-management/"
+        },
+        {
+          "path": "/business/busca.json",
+          "status": 200,
+          "url": "https://www.harpya.org/business/busca.json"
+        },
+        {
+          "path": "/busca.json",
+          "status": 200,
+          "url": "https://www.harpya.org/busca.json"
+        },
+        {
+          "path": "/business/rss.xml",
+          "status": 200,
+          "url": "https://www.harpya.org/business/rss.xml"
+        },
+        {
+          "path": "/business/sitemap.xml",
+          "status": 200,
+          "url": "https://www.harpya.org/business/sitemap.xml"
+        },
+        {
+          "path": "/img/ambientes/harpia-tecnologia.png",
+          "status": 200,
+          "url": "https://www.harpya.org/img/ambientes/harpia-tecnologia.png"
+        },
+        {
+          "path": "/img/ambientes/harpia-business.png",
+          "status": 200,
+          "url": "https://www.harpya.org/img/ambientes/harpia-business.png"
+        },
+        {
+          "path": "/admin/business/",
+          "status": 200,
+          "url": "https://www.harpya.org/admin/business/"
+        },
+        {
+          "path": "/admin/anuncios/?ambiente=business",
+          "status": 200,
+          "url": "https://www.harpya.org/admin/anuncios/?ambiente=business"
+        }
+      ],
+      "livros": 8,
+      "canais": 8,
+      "itens_busca_business": 39,
+      "indices_separados": true,
+      "candidato_manual_fora_do_acervo": true
+    },
+    "browser": [
+      "portal com dois cards em produção",
+      "clique Business abre pergunta de preferência",
+      "biblioteca com oito livros",
+      "filtro por Kotler encontra um resultado"
+    ]
+  }
+}

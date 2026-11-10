@@ -1,0 +1,18 @@
+{
+  "nome": "Oxford University Press",
+  "url": "https://www.oup.com.au/",
+  "regiao": "Internacional",
+  "tipo": "editora",
+  "descricao": "Referência bibliográfica da editora; não integra a seleção de artigos.",
+  "idioma": "en",
+  "hosts": [
+    "www.oup.com.au"
+  ],
+  "feed": "",
+  "status": "aprovado",
+  "escopos": [
+    "livros"
+  ],
+  "canais": [],
+  "verificado_em": "2026-11-06"
+}

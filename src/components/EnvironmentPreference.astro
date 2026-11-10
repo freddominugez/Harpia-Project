@@ -1,0 +1,39 @@
+---
+import { ambienteDaRota } from '../lib/ambientes';
+const ambiente = ambienteDaRota(Astro.url.pathname);
+---
+<dialog class="environment-dialog" data-environment-dialog data-environment={ambiente} aria-labelledby="environment-dialog-title" aria-describedby="environment-dialog-description">
+  <span class="eyebrow">Seu ambiente de preferência</span>
+  <h2 id="environment-dialog-title">{ambiente === 'business' ? 'Você gostaria de entrar diretamente no Harpya Business?' : 'Você gostaria de entrar sempre no Harpya Tecnologia e Matemática?'}</h2>
+  <p id="environment-dialog-description">Nas próximas visitas à entrada do Harpya, abriremos este ambiente para você. A escolha vale neste navegador e pode ser alterada em “Trocar ambiente”.</p>
+  <button class="btn dark" data-save-environment autofocus>Sim, salvar preferência</button>
+  <button class="btn outline" data-skip-environment>Agora não</button>
+</dialog>
+<p class="environment-toast" data-environment-message role="status" aria-live="polite" hidden></p>
+<script>
+  import { lerPreferencia, salvarPreferencia } from '../lib/preferencia-ambiente.mjs';
+  const dialog = document.querySelector<HTMLDialogElement>('[data-environment-dialog]');
+  const message = document.querySelector<HTMLElement>('[data-environment-message]');
+  const safeStorage = (type: 'localStorage' | 'sessionStorage'): Storage | null => { try { return window[type]; } catch { return null; } };
+  const local = safeStorage('localStorage'), session = safeStorage('sessionStorage');
+  const ambiente = dialog?.dataset.environment;
+  const askedKey = `harpya.perguntado.${ambiente}`;
+  let asked = false;
+  try { asked = session?.getItem(askedKey) === '1'; } catch { /* sem persistência */ }
+  if (dialog && !lerPreferencia(local) && !asked && typeof dialog.showModal === 'function') {
+    try { session?.setItem(askedKey, '1'); } catch { /* a pergunta continua funcional */ }
+    dialog.showModal();
+  }
+  function close() { dialog?.close(); const heading = document.querySelector<HTMLElement>('main h1'); heading?.setAttribute('tabindex', '-1'); heading?.focus({ preventScroll: true }); }
+  document.querySelector('[data-skip-environment]')?.addEventListener('click', close);
+  dialog?.addEventListener('cancel', event => { event.preventDefault(); close(); });
+  document.querySelector('[data-save-environment]')?.addEventListener('click', () => {
+    const saved = salvarPreferencia(local, ambiente);
+    close();
+    if (message) { message.hidden = false; message.textContent = saved ? 'Preferência salva. Use “Trocar ambiente” para mudar.' : 'Não foi possível salvar neste navegador. Você pode continuar normalmente.'; window.setTimeout(() => message.hidden = true, 6000); }
+  });
+</script>
+<style is:global>
+  h1[tabindex="-1"]:focus{outline:none}
+  .environment-dialog{width:min(470px,calc(100% - 32px));padding:30px;border:1px solid #cbd4dc;border-radius:14px;color:#282d33;background:#fff;box-shadow:0 25px 90px #12233340}.environment-dialog::backdrop{background:#142c4366;backdrop-filter:blur(5px)}.environment-dialog h2{font:30px/1.2 Georgia,serif;margin:17px 0}.environment-dialog p{font-size:13px}.environment-dialog .btn{display:flex;width:100%;margin-top:12px;white-space:normal;min-height:44px}.environment-toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#263a47;color:#fff;padding:14px 22px;border-radius:8px;max-width:calc(100% - 32px);z-index:100;font-size:13px}.environment-toast[hidden]{display:none}.environment-switch{font-size:11px;white-space:nowrap;border:1px solid #cdd2d7;border-radius:5px;padding:7px 10px;text-decoration:none}.environment-switch:hover{background:#eef1f4}@media(max-width:760px){.header-actions{gap:5px}.header-actions .btn{display:none}.environment-switch{font-size:10px;padding:7px}.header-inner{gap:7px}.wordmark-text em{font-size:.42rem}}
+</style>

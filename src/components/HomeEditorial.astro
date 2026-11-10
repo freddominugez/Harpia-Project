@@ -1,0 +1,37 @@
+---
+import NoticiaCard from './NoticiaCard.astro';
+import { NOTICIAS } from '../lib/noticias';
+import { ARTIGOS } from '../lib/conteudo';
+import { ANALISES, urlAnalise } from '../data/analises';
+import { RADAR, RADAR_FEATURED, RADAR_SOURCES, RADAR_LAST_SUCCESS, radarDate } from '../lib/radar';
+const analysis = ANALISES[0];
+const references = [...ARTIGOS].sort((a,b) => b.ano - a.ano).slice(0, 6);
+const companies = new Set<string>();
+const diverse = RADAR.filter(item => { if (item.id === RADAR_FEATURED?.id || companies.has(item.source_id)) return false; companies.add(item.source_id); return true; });
+const selected = [...diverse, ...RADAR.filter(item => item.id !== RADAR_FEATURED?.id && !diverse.some(other => other.id === item.id))].slice(0, 9);
+---
+<div class="home-editorial container wide">
+  <section class="editorial-section" aria-labelledby="latest-news-title">
+    <header class="editorial-heading"><div><span class="editorial-eyebrow">O que está acontecendo</span><h2 id="latest-news-title">Notícias para entender a mudança.</h2><p>Pesquisa, modelos abertos, educação e os próximos passos da inteligência artificial.</p></div><a href="/noticias/">Todas as notícias <span aria-hidden="true">→</span></a></header>
+    <div class="editorial-news-grid">{NOTICIAS.slice(0, 6).map(n => <NoticiaCard n={n} />)}</div>
+  </section>
+
+  {analysis && <section class="editorial-section" aria-labelledby="big-article-title">
+    <a class="big-article" href={urlAnalise(analysis)} data-big-article>
+      <div><span class="editorial-eyebrow">Leitura em profundidade · Análise</span><h2 id="big-article-title">{analysis.titulo_curto}</h2><p>{analysis.resumo}</p><span class="article-open">Abrir o artigo <span aria-hidden="true">→</span></span><small>{analysis.serie} · Parte {analysis.parte} de {analysis.total}</small></div>
+      <div class="article-art" aria-hidden="true"><span>IDEIAS QUE MERECEM<br/>MAIS ESPAÇO.</span><svg viewBox="0 0 440 350" fill="none"><g stroke="#8a6214" stroke-width="1.5"><ellipse cx="220" cy="175" rx="170" ry="66" transform="rotate(-35 220 175)"/><ellipse cx="220" cy="175" rx="170" ry="66" transform="rotate(35 220 175)"/><ellipse cx="220" cy="175" rx="170" ry="66" transform="rotate(90 220 175)"/><circle cx="220" cy="175" r="100" stroke-dasharray="4 7"/></g><circle cx="220" cy="175" r="24" fill="#282d33"/><circle cx="97" cy="256" r="11" fill="#c79a39"/><circle cx="350" cy="91" r="11" fill="#c79a39"/><circle cx="220" cy="45" r="9" fill="#282d33"/></svg><small>PESQUISA · ARGUMENTO · EVIDÊNCIA</small></div>
+    </a>
+  </section>}
+
+  <section class="editorial-section official-radar" aria-labelledby="official-radar-title" id="radar-oficial">
+    <header class="editorial-heading"><div><span class="editorial-eyebrow">Direto da fonte</span><h2 id="official-radar-title">O radar das empresas de IA.</h2><p>Dez canais oficiais monitorados. Anúncios selecionados automaticamente, com origem e data visíveis.</p></div><a href="/admin/radar/">Como o radar funciona <span aria-hidden="true">↗</span></a></header>
+    <div class="radar-companies" aria-label="Empresas monitoradas">{RADAR_SOURCES.map(source=><a href={source.site} target="_blank" rel="noopener noreferrer" title={source.status==='error'?'Última consulta sem resposta; preservamos os anúncios anteriores':source.status==='no_recent_items'?'Canal consultado sem anúncio recente verificado':'Canal oficial consultado'}><span class:list={['source-light',{'source-light-muted':source.status!=='ok'}]} aria-hidden="true"></span>{source.nome}</a>)}</div>
+    <div class="official-news-grid">{selected.map((item,index)=><article class="official-news"><div class="official-news-top"><span>{item.company}</span><span aria-hidden="true">{String(index+1).padStart(2,'0')}</span></div><h3><a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a></h3>{item.summary && <p>{item.summary}</p>}<div class="official-news-bottom"><time datetime={item.published_at}>{radarDate(item.published_at)}</time><a href={item.url} target="_blank" rel="noopener noreferrer" aria-label={`Abrir fonte oficial: ${item.title}`}>Fonte oficial ↗</a></div></article>)}</div>
+    <p class="radar-note">Títulos originais dos canais. {RADAR_LAST_SUCCESS ? `Última coleta com dados verificados: ${radarDate(RADAR_LAST_SUCCESS)}.` : 'Aguardando a primeira coleta verificada.'} Uma fonte fora do ar não é substituída por boatos.</p>
+  </section>
+
+  <section class="editorial-section" aria-labelledby="papers-title">
+    <header class="editorial-heading"><div><span class="editorial-eyebrow">Da notícia ao fundamento</span><h2 id="papers-title">Artigos para ir mais fundo.</h2><p>Referências do acervo para estudar os mecanismos por trás dos anúncios.</p></div><a href="/biblioteca/#artigos">Explorar a biblioteca <span aria-hidden="true">→</span></a></header>
+    <div class="paper-grid">{references.map((article,index)=><a class="paper-card" href={article.url} target="_blank" rel="noopener noreferrer"><span class="paper-number" aria-hidden="true">{String(index+1).padStart(2,'0')}</span><div><span class="paper-year">ARTIGO · {article.ano}</span><h3>{article.titulo}</h3><p>{article.autores}</p><span class="paper-link">Ler na fonte <span aria-hidden="true">↗</span></span></div></a>)}</div>
+  </section>
+</div>

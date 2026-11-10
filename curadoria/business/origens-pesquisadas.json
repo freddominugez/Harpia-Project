@@ -1,0 +1,1322 @@
+{
+  "titulo": "Origens Business — mercado, consumidor, marca, relacionamento e evidência",
+  "estado": "pesquisa documental de suporte concluída neste recorte; redação temática proposta para revisão editorial e adaptação ao template original; não publicada",
+  "consultado_em": "2026-11-06",
+  "escopo": "4 eras editoriais, 5 capítulos, 24 eventos e até 12 personagens; sem meta artificial de 34 marcos.",
+  "natureza_das_eras": "Periodização editorial do Harpya para organizar esta leitura; não é uma classificação histórica consensual nem uma evolução linear obrigatória de todas as empresas.",
+  "natureza_de_sol_marco_eclipse": "Categorias gráficas reutilizadas do original. Sol e marco identificam pontos de entrada documentados; eclipse destaca questões que uma síntese costuma comprimir. Não afirma que autores foram historicamente apagados ou ocultados.",
+  "metodo": "Consulta de páginas primárias institucionais, registros editoriais dos periódicos AMA e retrospectiva acadêmica hospedada em Harvard. Títulos, autores e datas possuem referências. Os parágrafos de orientação de estudo são sínteses editoriais assinaladas no texto, não resultados de experimentos do Harpya.",
+  "limites_gerais": [
+    "A seleção não é uma história exaustiva ou mundial do marketing/administração. O eixo é o repertório EUA/Europa e sua circulação brasileira documentada.",
+    "Nenhuma leitura integral de obra comercial, livro ou artigo restrito é reivindicada. Modos de consulta estão registrados por fonte.",
+    "Datas indicam publicações ou eventos documentados, não o primeiro uso absoluto de um conceito.",
+    "O artigo de marca de 2017 é distinto da página-resumo AMA de 2019; o manuscrito MIT é versão de 2016 de capítulo anunciado para 2017.",
+    "Declarações institucionais e fontes de consultoria preservam seus limites; não tornam uma métrica ou cenário causalmente comprovado.",
+    "Não foram pesquisados retratos. Pessoas usam iniciais, sem campos foto/fonte/credito/licenca; referencias guarda a evidência histórica separada."
+  ],
+  "eras": [
+    {
+      "id": "instituicoes",
+      "nome": "Gestão e instituições",
+      "de": 1922,
+      "ate": 1955,
+      "cor": "#486182",
+      "suave": "#ebf0f9"
+    },
+    {
+      "id": "consumidor",
+      "nome": "Consumidor e pesquisa",
+      "de": 1956,
+      "ate": 1979,
+      "cor": "#2d7a52",
+      "suave": "#e9f5ed"
+    },
+    {
+      "id": "estrategia",
+      "nome": "Marca e relacionamento",
+      "de": 1980,
+      "ate": 2006,
+      "cor": "#9a6f17",
+      "suave": "#f6edda"
+    },
+    {
+      "id": "dados",
+      "nome": "Dados, experimentos e IA",
+      "de": 2007,
+      "ate": 2026,
+      "cor": "#695589",
+      "suave": "#f1effa"
+    }
+  ],
+  "capitulos": [
+    {
+      "n": 1,
+      "id": "gestao-mercado",
+      "periodo": "1922 a 1954",
+      "titulo": "Gestão, mercado e instituições de conhecimento",
+      "era": "instituicoes",
+      "abertura": "Esta seleção começa por instituições que tornaram o conhecimento gerencial discutível e transmissível. HBR, AMA e FGV EAESP não assinalam uma data de nascimento do comércio ou do marketing: mostram pontos documentados de organização da pesquisa, do ensino e da prática. O recorte permite observar como decisões sobre mercados passaram a ser tratadas dentro da administração, sem reduzir o campo à publicidade.",
+      "sois": [
+        "1922 · HBR organiza uma conversa sobre gestão",
+        "1953 · Marketing mix no discurso de Neil Borden",
+        "1954 · Inauguração da FGV EAESP"
+      ],
+      "eclipses": [
+        {
+          "ano": "1922 e 1937",
+          "titulo": "Conhecimento precisa de instituições",
+          "quem": "HBR e American Marketing Association",
+          "texto": [
+            "A história de HBR situa sua fundação em 1922 e destaca a circulação de ideias entre pesquisadores e profissionais. A AMA registra sua própria formação em 1937 por fusão de duas organizações anteriores. São marcos institucionais distintos, não etapas inevitáveis de uma evolução única.",
+            "Leitura editorial proposta: ao examinar uma recomendação gerencial, identificar quem a publica, que experiência ou pesquisa a sustenta e a quais condições se aplica. A reputação da instituição é um ponto de partida para a seleção; não substitui a avaliação da evidência de cada afirmação."
+          ],
+          "ref_ids": [
+            "s01",
+            "s02"
+          ]
+        },
+        {
+          "ano": "1953 e 1954",
+          "titulo": "Combinar decisões e formar administradores",
+          "quem": "Neil Borden e FGV EAESP",
+          "texto": [
+            "A AMA associa a Borden, em 1953, a articulação do marketing mix em seu discurso presidencial. A história da EAESP registra a inauguração da escola em 1954 e diferencia esse marco do início da graduação, em 1955. Essa precisão evita converter datas próximas em um único evento imaginário.",
+            "Para estudar um negócio, a pergunta sugerida é como produto, preço, distribuição e comunicação se relacionam com capacidades e restrições da organização. Esta é uma orientação de leitura do Harpya: não uma afirmação de que Borden inventou isoladamente essas decisões, nem de que uma instituição inaugurou sozinha o marketing brasileiro."
+          ],
+          "ref_ids": [
+            "s03",
+            "s04"
+          ]
+        }
+      ],
+      "refs": [
+        {
+          "texto": "Harvard — história institucional da HBR",
+          "url": "https://www.hbs.edu/news/releases/hbr-100-anniversary"
+        },
+        {
+          "texto": "AMA — formação da associação",
+          "url": "https://www.ama.org/2026/08/10/ama-career-classroom-editors-note/"
+        },
+        {
+          "texto": "AMA — Borden e marketing mix",
+          "url": "https://www.ama.org/about-ama/"
+        },
+        {
+          "texto": "FGV — cronologia EAESP e RAE",
+          "url": "https://eaesp.fgv.br/escola"
+        }
+      ],
+      "ref_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "n": 2,
+      "id": "consumidor-segmentacao",
+      "periodo": "1956 a 1976",
+      "titulo": "Consumidor, segmentação e pesquisa aplicada",
+      "era": "consumidor",
+      "abertura": "O segundo capítulo aproxima três perguntas: para quem a oferta faz sentido, como descobrir preferências e onde termina o alcance de uma ferramenta. Os marcos registram publicações e instituições, não uma substituição instantânea de uma era de vendas por uma era de consumidor. Pesquisa, ensino e prática coexistem; a circulação no Brasil também exige atenção ao contexto local.",
+      "sois": [
+        "1956 · Segmentação como estratégia de mercado",
+        "1960 · Marketing Myopia",
+        "1969 · Marketing além das empresas comerciais",
+        "1976 · Constituição da Fundação Dom Cabral"
+      ],
+      "eclipses": [
+        {
+          "ano": "1956 e 1964",
+          "titulo": "Segmentos e decisões precisam conversar",
+          "quem": "Wendell R. Smith e Neil Borden",
+          "texto": [
+            "Smith formula segmentação e diferenciação como estratégias relacionadas. Borden sistematiza decisões interdependentes em 1964. Esses registros não demonstram invenção isolada nem uma receita válida para qualquer mercado.",
+            "Como exercício editorial, um segmento deve ser descrito por necessidades e respostas relevantes para uma decisão. Uma classificação que não altera oferta, acesso, preço ou comunicação pode ser apenas uma etiqueta. Para avaliar a utilidade de um recorte, registrar o que se espera que mude e qual observação permitiria abandonar a hipótese."
+          ],
+          "ref_ids": [
+            "s05"
+          ],
+          "nota_editorial": "O segundo parágrafo é orientação de estudo, não relato de experimento realizado pelo projeto."
+        },
+        {
+          "ano": "1969 e 1971",
+          "titulo": "Ampliar o objeto, especificar o método",
+          "quem": "Philip Kotler, Sidney J. Levy, Paul E. Green e Vithala R. Rao",
+          "texto": [
+            "O resumo de Kotler e Levy discute marketing para organizações, pessoas e ideias além da venda de bens comerciais. Green e Rao apresentam, em 1971, aplicações de mensuração conjunta ao marketing e reconhecem limites da abordagem. O registro do artigo aponta sua base em psicologia matemática; atribuir aos autores toda a invenção da técnica apagaria esse antecedente.",
+            "A conexão sugerida para o leitor é metodológica: ampliar a aplicação de um conceito não elimina a necessidade de definir o que será medido. Preferência declarada em uma tarefa e comportamento de compra são perguntas diferentes. Um estudo deve explicitar qual delas examina, quais alternativas foram oferecidas e que limites o desenho impõe à interpretação."
+          ],
+          "ref_ids": [
+            "s06",
+            "s07"
+          ]
+        },
+        {
+          "ano": "1961 e 1976",
+          "titulo": "A circulação brasileira também faz parte da história",
+          "quem": "RAE e Fundação Dom Cabral",
+          "texto": [
+            "A FGV registra a criação da Revista de Administração de Empresas em 1961. O Centro de Memória da FDC documenta sua constituição em 9 de agosto de 1976 e sua origem ligada ao Centro de Extensão da UCMG. Esses marcos mostram organizações brasileiras produzindo e difundindo conhecimento em administração.",
+            "No percurso de estudo proposto, uma aplicação brasileira deve indicar mercado, período e condições locais. Importar o nome de um modelo não é evidência de que seus pressupostos foram preservados. Comparar contextos é parte do trabalho analítico, e não uma justificativa para rejeitar ou aceitar automaticamente uma formulação estrangeira."
+          ],
+          "ref_ids": [
+            "s04",
+            "s08"
+          ]
+        }
+      ],
+      "refs": [
+        {
+          "texto": "Harvard — marcos históricos do marketing",
+          "url": "https://www.hbs.edu/research/RePEc/hbs/journl/2008Q4quelch.pdf"
+        },
+        {
+          "texto": "AMA / Journal of Marketing — ampliação do conceito (1969)",
+          "url": "https://journals.sagepub.com/doi/10.1177/002224296903300103"
+        },
+        {
+          "texto": "AMA / Journal of Marketing Research — mensuração conjunta (1971)",
+          "url": "https://journals.sagepub.com/doi/10.1177/002224377100800312"
+        },
+        {
+          "texto": "FGV — cronologia EAESP e RAE",
+          "url": "https://eaesp.fgv.br/escola"
+        },
+        {
+          "texto": "FDC — memória institucional",
+          "url": "https://centrodememoria.fdc.org.br/fdc-historia"
+        }
+      ],
+      "ref_ids": [
+        "s05",
+        "s06",
+        "s07",
+        "s04",
+        "s08"
+      ]
+    },
+    {
+      "n": 3,
+      "id": "posicionamento-marca",
+      "periodo": "1983 a 1996",
+      "titulo": "Posicionamento, marca e escolhas competitivas",
+      "era": "estrategia",
+      "abertura": "Posicionamento e marca ligam a promessa feita ao mercado à organização que precisa sustentá-la. Neste recorte, globalização, valor de marca e estratégia não são palavras intercambiáveis. Os registros permitem separar o debate sobre padronização, a construção conceitual de um ativo de marca e a escolha de como competir. A aproximação entre eles é uma síntese editorial, não uma alegação de que nasceram juntos.",
+      "sois": [
+        "1983 · Debate sobre a globalização dos mercados",
+        "1993 · Customer-Based Brand Equity",
+        "1996 · What Is Strategy?"
+      ],
+      "eclipses": [
+        {
+          "ano": "1983",
+          "titulo": "Globalização não apaga diferenças locais",
+          "quem": "Theodore Levitt e o debate sobre padronização",
+          "texto": [
+            "A retrospectiva Harvard registra a proposta de padronização global de Levitt em 1983 e a controvérsia sobre adaptação cultural.",
+            "A pergunta editorial para uma marca internacional é quais elementos podem ser compartilhados e quais exigem conhecimento local. Trata-se de uma hipótese a investigar em produto, distribuição e comunicação. Escala comercial não autoriza presumir consumidores idênticos, e a existência de diferenças também não prova que cada mercado exige uma operação inteiramente separada."
+          ],
+          "ref_ids": [
+            "s05"
+          ]
+        },
+        {
+          "ano": "1993 e 1996",
+          "titulo": "Separar percepção de marca e sistema de atividades",
+          "quem": "Kevin Lane Keller e Michael E. Porter",
+          "texto": [
+            "O arquivo AMA registra em 1993 o artigo de Keller sobre conceituar, medir e gerir Customer-Based Brand Equity. O instituto de estratégia da Harvard referencia What Is Strategy? em 1996 e reúne instrumentos sobre concorrência, valor único e escolhas empresariais. São contribuições a problemas relacionados, com objetos diferentes.",
+            "A leitura sugerida é descrever primeiro a promessa e depois as atividades necessárias para cumpri-la. Uma pesquisa de percepção pode informar a primeira pergunta; custos, processos, canais e capacidades ajudam a examinar a segunda. A descrição da marca não deve ser apresentada como prova automática de vantagem competitiva ou rentabilidade."
+          ],
+          "ref_ids": [
+            "s11",
+            "s12"
+          ]
+        }
+      ],
+      "refs": [
+        {
+          "texto": "Harvard — marcos históricos do marketing",
+          "url": "https://www.hbs.edu/research/RePEc/hbs/journl/2008Q4quelch.pdf"
+        },
+        {
+          "texto": "AMA — arquivo histórico de contribuições premiadas",
+          "url": "https://www.ama.org/shelby-d-hunt-harold-h-maynard-award/"
+        },
+        {
+          "texto": "Harvard — repertório de estratégia",
+          "url": "https://www.isc.hbs.edu/strategy/Pages/default.aspx"
+        }
+      ],
+      "ref_ids": [
+        "s05",
+        "s11",
+        "s12"
+      ]
+    },
+    {
+      "n": 4,
+      "id": "relacionamento-mensuracao",
+      "periodo": "1990 a 2004",
+      "titulo": "Relacionamento, serviço e mensuração",
+      "era": "estrategia",
+      "abertura": "Uma compra observada não descreve toda a relação com um cliente. Este capítulo reúne registros sobre orientação para mercado, gestão por medidas, recomendação e lógica de serviço. A escolha desses marcos ajuda a discutir horizontes e unidades de análise: transação, relação, carteira e organização. O percurso não supõe que uma única métrica possa representar todos esses níveis.",
+      "sois": [
+        "1990 · Orientação para mercado sob investigação",
+        "2003 · Net Promoter Score"
+      ],
+      "eclipses": [
+        {
+          "ano": "1992",
+          "titulo": "Medir para gerir exige mais de uma dimensão",
+          "quem": "Robert S. Kaplan e David P. Norton",
+          "texto": [
+            "No relato primário consultado, Kaplan remete ao artigo com Norton de 1992 e à pesquisa com múltiplas empresas que antecedeu o Balanced Scorecard. O texto descreve a preocupação com ativos intangíveis e a evolução posterior do instrumento para comunicar e implementar estratégia.",
+            "Como orientação editorial, um painel de marketing deve declarar a decisão a que serve e o horizonte de cada medida. Um indicador de resposta imediata não é, por definição, um indicador de valor futuro. A seleção das medidas deve permitir discutir divergências entre desempenho comercial, experiência e capacidade operacional, em vez de esconder tudo em uma pontuação sem interpretação."
+          ],
+          "ref_ids": [
+            "s10"
+          ]
+        },
+        {
+          "ano": "2003 e 2004",
+          "titulo": "Uma pergunta de recomendação e uma interpretação de valor",
+          "quem": "Fred Reichheld, Stephen L. Vargo e Robert F. Lusch",
+          "texto": [
+            "A Bain situa a apresentação do NPS por Reichheld em 2003. O registro AMA de 2004 e a publicação de Vargo e Lusch documentam uma lógica centrada em serviço, recursos intangíveis e relações. A primeira é uma métrica promovida por seus desenvolvedores; a segunda, uma proposição teórica sobre trocas e valor.",
+            "A conclusão editorial é manter explícito o que cada instrumento representa. Uma resposta de recomendação não observa, sozinha, todas as consequências econômicas de um relacionamento. Uma teoria pode organizar perguntas e ainda exigir investigação específica. Nesta página, nenhum dos dois é apresentado como garantia de crescimento ou como substituto universal de outras evidências."
+          ],
+          "ref_ids": [
+            "s13",
+            "s14",
+            "s11"
+          ]
+        }
+      ],
+      "refs": [
+        {
+          "texto": "AMA / Journal of Marketing — orientação para mercado (1990)",
+          "url": "https://journals.sagepub.com/doi/10.1177/002224299005400403"
+        },
+        {
+          "texto": "Harvard — fundamentos do Balanced Scorecard",
+          "url": "https://www.hbs.edu/ris/Publication%20Files/10-074_0bf3c151-f82b-4592-b885-cdde7f5d97a6.pdf"
+        },
+        {
+          "texto": "AMA — arquivo histórico de contribuições premiadas",
+          "url": "https://www.ama.org/shelby-d-hunt-harold-h-maynard-award/"
+        },
+        {
+          "texto": "Bain — histórico do NPS",
+          "url": "https://www.netpromotersystem.com/about/"
+        },
+        {
+          "texto": "AMA / Journal of Marketing — lógica de serviço (2004)",
+          "url": "https://journals.sagepub.com/doi/abs/10.1509/jmkg.68.1.1.24036"
+        }
+      ],
+      "ref_ids": [
+        "s09",
+        "s10",
+        "s11",
+        "s13",
+        "s14"
+      ]
+    },
+    {
+      "n": 5,
+      "id": "dados-experimentos-ia",
+      "periodo": "2012 a 2024",
+      "titulo": "Dados, experimentos e inteligência artificial",
+      "era": "dados",
+      "abertura": "O último capítulo não descreve a chegada de uma técnica que resolve as perguntas anteriores. Dados mais abundantes, adaptação de experiências e IA generativa aumentam possibilidades, mas também tornam mais importante distinguir observação, previsão, intervenção e cenário. Os marcos escolhidos documentam publicações e levantamentos específicos; não autorizam afirmar que todas as organizações adotaram as mesmas práticas ou obtiveram os mesmos resultados.",
+      "sois": [
+        "2012 · Big data como questão de gestão",
+        "2017 · Comparação empírica de medidas de marca",
+        "2023 · IA generativa entra nos cenários de marketing",
+        "2024 · Uso de IA generativa observado em pesquisa"
+      ],
+      "eclipses": [
+        {
+          "ano": "2012 e 2016",
+          "titulo": "Mais dados não encerram o problema de aprender",
+          "quem": "Thomas H. Davenport, Paul Barth, Randy Bean; Gui B. Liberali, John R. Hauser e Glen L. Urban",
+          "texto": [
+            "A sinopse MIT SMR de 2012 descreve big data como uma mudança na natureza e no uso dos dados, incluindo fluxos e novas fontes. O manuscrito MIT de 2016 discute experimentação online e heterogeneidade: um tratamento que funciona melhor em média pode não ser o mais adequado para cada segmento.",
+            "O exercício editorial proposto é registrar separadamente a pergunta preditiva e a pergunta de intervenção. Identificar quem tende a responder não demonstra, por si só, que uma ação provocou a resposta. Ao planejar um experimento, explicitar tratamento, comparação e medida de resultado; ao adaptar tratamentos, documentar também como o sistema continua aprendendo."
+          ],
+          "ref_ids": [
+            "s15",
+            "s16"
+          ]
+        },
+        {
+          "ano": "2016 e 2017",
+          "titulo": "Segmentos e medidas de marca continuam sob exame",
+          "quem": "Don E. Schultz; Hannes Datta, Kusum Ailawadi e Harald van Heerde",
+          "texto": [
+            "No trecho aberto da AMA, Schultz critica o uso de grupos demográficos amplos como se já fossem alvos precisos. O resumo institucional de Datta e colegas, referente a artigo de 2017, compara medidas de percepção de marca, vendas e resposta a instrumentos de marketing. Suas associações diferem conforme dimensão e contexto.",
+            "A implicação editorial é evitar a passagem automática de um nome para uma conclusão. Dar nome a um segmento não demonstra que ele responda de modo distinto; medir percepção não equivale a observar toda a força comercial da marca. As definições e o tipo de evidência devem acompanhar os gráficos e as recomendações."
+          ],
+          "ref_ids": [
+            "s17",
+            "s18"
+          ]
+        },
+        {
+          "ano": "2023 e 2024",
+          "titulo": "Potencial estimado, uso declarado e resultado são coisas diferentes",
+          "quem": "McKinsey; AMA e Lightricks",
+          "texto": [
+            "O relatório McKinsey de junho de 2023 examina potencial de IA generativa em atividades como marketing e vendas por meio de cenários. O levantamento AMA/Lightricks, divulgado em dezembro de 2024, documenta uso autorrelatado em sua amostra e preocupações dos participantes. Um é uma estimativa prospectiva; o outro, uma observação descritiva.",
+            "Para o Harpya, a proposta editorial é apresentar aplicações junto com o trabalho que será avaliado: qualidade, tempo, revisão e efeito na decisão. Popularidade da ferramenta e potencial econômico agregado não demonstram o retorno de um piloto específico. Afirmações de benefício devem preservar a distinção entre previsão, relato e resultado observado sob um desenho de avaliação."
+          ],
+          "ref_ids": [
+            "s19",
+            "s20"
+          ]
+        }
+      ],
+      "refs": [
+        {
+          "texto": "MIT SMR — gestão de big data (2012)",
+          "url": "https://shop.sloanreview.mit.edu/store/how-big-data-is-different"
+        },
+        {
+          "texto": "MIT — experimentação e heterogeneidade (2016)",
+          "url": "https://mitsloan.mit.edu/shared/ods/documents?PublicationDocumentID=4197"
+        },
+        {
+          "texto": "AMA — revisão crítica de segmentação (2016)",
+          "url": "https://www.ama.org/marketing-news/from-persuasion-to-shared-value-creation/"
+        },
+        {
+          "texto": "AMA — medidas de marca e vendas (artigo 2017)",
+          "url": "https://www.ama.org/2019/02/05/how-well-does-consumer-based-brand-equity-align-with-sales-based-brand-equity-and-marketing-mix-response/"
+        },
+        {
+          "texto": "McKinsey — cenários de IA generativa (2023)",
+          "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier"
+        },
+        {
+          "texto": "AMA — levantamento sobre IA generativa (2024)",
+          "url": "https://www.ama.org/marketing-news/generative-ai-takes-off-with-marketers/"
+        }
+      ],
+      "ref_ids": [
+        "s15",
+        "s16",
+        "s17",
+        "s18",
+        "s19",
+        "s20"
+      ]
+    }
+  ],
+  "eventos": [
+    {
+      "id": "hbr-1922",
+      "ano": 1922,
+      "titulo": "HBR organiza uma conversa sobre gestão",
+      "texto": "Harvard Business Review começa a circular, sob a liderança do dean Wallace B. Donham.",
+      "tipo": "marco",
+      "era": "instituicoes",
+      "capitulo": "gestao-mercado",
+      "ref_ids": [
+        "s01"
+      ],
+      "refs": [
+        {
+          "texto": "Harvard — história institucional da HBR",
+          "url": "https://www.hbs.edu/news/releases/hbr-100-anniversary"
+        }
+      ]
+    },
+    {
+      "id": "ama-1937",
+      "ano": 1937,
+      "titulo": "Constituição da American Marketing Association",
+      "texto": "A associação surge da união da National Association of Marketing Teachers com a American Marketing Society.",
+      "tipo": "marco",
+      "era": "instituicoes",
+      "capitulo": "gestao-mercado",
+      "ref_ids": [
+        "s02"
+      ],
+      "refs": [
+        {
+          "texto": "AMA — formação da associação",
+          "url": "https://www.ama.org/2026/08/10/ama-career-classroom-editors-note/"
+        }
+      ]
+    },
+    {
+      "id": "borden-1953",
+      "ano": 1953,
+      "titulo": "Marketing mix no discurso de Neil Borden",
+      "texto": "A AMA situa em 1953 o discurso presidencial de Borden que articula a combinação de decisões de marketing.",
+      "tipo": "sol",
+      "era": "instituicoes",
+      "capitulo": "gestao-mercado",
+      "ref_ids": [
+        "s03"
+      ],
+      "refs": [
+        {
+          "texto": "AMA — Borden e marketing mix",
+          "url": "https://www.ama.org/about-ama/"
+        }
+      ]
+    },
+    {
+      "id": "eaesp-1954",
+      "ano": 1954,
+      "titulo": "Inauguração da FGV EAESP",
+      "texto": "A história institucional registra 1954 para a inauguração da escola; a graduação aparece separadamente em 1955.",
+      "tipo": "sol",
+      "era": "instituicoes",
+      "capitulo": "gestao-mercado",
+      "ref_ids": [
+        "s04"
+      ],
+      "refs": [
+        {
+          "texto": "FGV — cronologia EAESP e RAE",
+          "url": "https://eaesp.fgv.br/escola"
+        }
+      ]
+    },
+    {
+      "id": "smith-1956",
+      "ano": 1956,
+      "titulo": "Segmentação como estratégia de mercado",
+      "texto": "Wendell R. Smith publica uma formulação de segmentação e diferenciação como alternativas estratégicas relacionadas.",
+      "tipo": "sol",
+      "era": "consumidor",
+      "capitulo": "consumidor-segmentacao",
+      "ref_ids": [
+        "s05"
+      ],
+      "refs": [
+        {
+          "texto": "Harvard — marcos históricos do marketing",
+          "url": "https://www.hbs.edu/research/RePEc/hbs/journl/2008Q4quelch.pdf"
+        }
+      ]
+    },
+    {
+      "id": "levitt-1960",
+      "ano": 1960,
+      "titulo": "Marketing Myopia",
+      "texto": "Theodore Levitt publica a crítica à definição estreita do negócio pelo produto.",
+      "tipo": "sol",
+      "era": "consumidor",
+      "capitulo": "consumidor-segmentacao",
+      "ref_ids": [
+        "s05"
+      ],
+      "refs": [
+        {
+          "texto": "Harvard — marcos históricos do marketing",
+          "url": "https://www.hbs.edu/research/RePEc/hbs/journl/2008Q4quelch.pdf"
+        }
+      ]
+    },
+    {
+      "id": "rae-1961",
+      "ano": 1961,
+      "titulo": "Criação da Revista de Administração de Empresas",
+      "texto": "A linha institucional da FGV registra o lançamento da RAE em 1961, ampliando a circulação de pesquisa em administração.",
+      "tipo": "marco",
+      "era": "consumidor",
+      "capitulo": "consumidor-segmentacao",
+      "ref_ids": [
+        "s04"
+      ],
+      "refs": [
+        {
+          "texto": "FGV — cronologia EAESP e RAE",
+          "url": "https://eaesp.fgv.br/escola"
+        }
+      ]
+    },
+    {
+      "id": "borden-1964",
+      "ano": 1964,
+      "titulo": "The Concept of the Marketing Mix",
+      "texto": "O artigo de Borden sistematiza decisões comerciais interdependentes; sua lista não é uma receita universal.",
+      "tipo": "eclipse",
+      "era": "consumidor",
+      "capitulo": "consumidor-segmentacao",
+      "ref_ids": [
+        "s05"
+      ],
+      "refs": [
+        {
+          "texto": "Harvard — marcos históricos do marketing",
+          "url": "https://www.hbs.edu/research/RePEc/hbs/journl/2008Q4quelch.pdf"
+        }
+      ]
+    },
+    {
+      "id": "kotler-levy-1969",
+      "ano": 1969,
+      "titulo": "Marketing além das empresas comerciais",
+      "texto": "Kotler e Levy discutem a aplicação de funções de marketing a organizações, pessoas e ideias.",
+      "tipo": "marco",
+      "era": "consumidor",
+      "capitulo": "consumidor-segmentacao",
+      "ref_ids": [
+        "s06"
+      ],
+      "refs": [
+        {
+          "texto": "AMA / Journal of Marketing — ampliação do conceito (1969)",
+          "url": "https://journals.sagepub.com/doi/10.1177/002224296903300103"
+        }
+      ]
+    },
+    {
+      "id": "green-rao-1971",
+      "ano": 1971,
+      "titulo": "Mensuração conjunta aplicada ao marketing",
+      "texto": "Green e Rao apresentam aplicações de conjoint measurement e discutem limites metodológicos, apoiados em desenvolvimentos da psicologia matemática.",
+      "tipo": "eclipse",
+      "era": "consumidor",
+      "capitulo": "consumidor-segmentacao",
+      "ref_ids": [
+        "s07"
+      ],
+      "refs": [
+        {
+          "texto": "AMA / Journal of Marketing Research — mensuração conjunta (1971)",
+          "url": "https://journals.sagepub.com/doi/10.1177/002224377100800312"
+        }
+      ]
+    },
+    {
+      "id": "fdc-1976",
+      "ano": 1976,
+      "titulo": "Constituição da Fundação Dom Cabral",
+      "texto": "A FDC é constituída em 9 de agosto de 1976, a partir de uma trajetória de extensão e formação executiva.",
+      "tipo": "marco",
+      "era": "consumidor",
+      "capitulo": "consumidor-segmentacao",
+      "ref_ids": [
+        "s08"
+      ],
+      "refs": [
+        {
+          "texto": "FDC — memória institucional",
+          "url": "https://centrodememoria.fdc.org.br/fdc-historia"
+        }
+      ]
+    },
+    {
+      "id": "levitt-1983",
+      "ano": 1983,
+      "titulo": "Debate sobre a globalização dos mercados",
+      "texto": "Levitt defende padronização global; a proposta abre controvérsias sobre diferenças culturais e adaptação local.",
+      "tipo": "sol",
+      "era": "estrategia",
+      "capitulo": "posicionamento-marca",
+      "ref_ids": [
+        "s05"
+      ],
+      "refs": [
+        {
+          "texto": "Harvard — marcos históricos do marketing",
+          "url": "https://www.hbs.edu/research/RePEc/hbs/journl/2008Q4quelch.pdf"
+        }
+      ]
+    },
+    {
+      "id": "orientacao-1990",
+      "ano": 1990,
+      "titulo": "Orientação para mercado sob investigação",
+      "texto": "Narver e Slater publicam The Effect of a Market Orientation on Business Profitability no Journal of Marketing.",
+      "tipo": "eclipse",
+      "era": "estrategia",
+      "capitulo": "relacionamento-mensuracao",
+      "ref_ids": [
+        "s09"
+      ],
+      "refs": [
+        {
+          "texto": "AMA / Journal of Marketing — orientação para mercado (1990)",
+          "url": "https://journals.sagepub.com/doi/10.1177/002224299005400403"
+        }
+      ]
+    },
+    {
+      "id": "scorecard-1992",
+      "ano": 1992,
+      "titulo": "Balanced Scorecard",
+      "texto": "Kaplan e Norton apresentam o Balanced Scorecard, posteriormente desenvolvido como sistema de gestão da estratégia.",
+      "tipo": "eclipse",
+      "era": "estrategia",
+      "capitulo": "relacionamento-mensuracao",
+      "ref_ids": [
+        "s10"
+      ],
+      "refs": [
+        {
+          "texto": "Harvard — fundamentos do Balanced Scorecard",
+          "url": "https://www.hbs.edu/ris/Publication%20Files/10-074_0bf3c151-f82b-4592-b885-cdde7f5d97a6.pdf"
+        }
+      ]
+    },
+    {
+      "id": "keller-1993",
+      "ano": 1993,
+      "titulo": "Customer-Based Brand Equity",
+      "texto": "O arquivo AMA registra a contribuição de Kevin Lane Keller sobre conceituar, medir e gerir o valor de marca baseado no consumidor.",
+      "tipo": "sol",
+      "era": "estrategia",
+      "capitulo": "posicionamento-marca",
+      "ref_ids": [
+        "s11"
+      ],
+      "refs": [
+        {
+          "texto": "AMA — arquivo histórico de contribuições premiadas",
+          "url": "https://www.ama.org/shelby-d-hunt-harold-h-maynard-award/"
+        }
+      ]
+    },
+    {
+      "id": "porter-1996",
+      "ano": 1996,
+      "titulo": "What Is Strategy?",
+      "texto": "A referência de Porter de 1996 integra o repertório institucional de estratégia e posicionamento competitivo da Harvard Business School.",
+      "tipo": "marco",
+      "era": "estrategia",
+      "capitulo": "posicionamento-marca",
+      "ref_ids": [
+        "s12"
+      ],
+      "refs": [
+        {
+          "texto": "Harvard — repertório de estratégia",
+          "url": "https://www.isc.hbs.edu/strategy/Pages/default.aspx"
+        }
+      ]
+    },
+    {
+      "id": "nps-2003",
+      "ano": 2003,
+      "titulo": "Net Promoter Score",
+      "texto": "Fred Reichheld apresenta em 2003 a métrica NPS, conforme a história institucional da Bain.",
+      "tipo": "sol",
+      "era": "estrategia",
+      "capitulo": "relacionamento-mensuracao",
+      "ref_ids": [
+        "s13"
+      ],
+      "refs": [
+        {
+          "texto": "Bain — histórico do NPS",
+          "url": "https://www.netpromotersystem.com/about/"
+        }
+      ]
+    },
+    {
+      "id": "servico-2004",
+      "ano": 2004,
+      "titulo": "Lógica de serviço e criação de valor",
+      "texto": "Vargo e Lusch propõem uma interpretação do marketing centrada em serviço, relações e recursos intangíveis.",
+      "tipo": "eclipse",
+      "era": "estrategia",
+      "capitulo": "relacionamento-mensuracao",
+      "ref_ids": [
+        "s11",
+        "s14"
+      ],
+      "refs": [
+        {
+          "texto": "AMA — arquivo histórico de contribuições premiadas",
+          "url": "https://www.ama.org/shelby-d-hunt-harold-h-maynard-award/"
+        },
+        {
+          "texto": "AMA / Journal of Marketing — lógica de serviço (2004)",
+          "url": "https://journals.sagepub.com/doi/abs/10.1509/jmkg.68.1.1.24036"
+        }
+      ]
+    },
+    {
+      "id": "big-data-2012",
+      "ano": 2012,
+      "titulo": "Big data como questão de gestão",
+      "texto": "Davenport, Barth e Bean discutem dados como fluxos e a necessidade de mudanças organizacionais para aproveitá-los.",
+      "tipo": "sol",
+      "era": "dados",
+      "capitulo": "dados-experimentos-ia",
+      "ref_ids": [
+        "s15"
+      ],
+      "refs": [
+        {
+          "texto": "MIT SMR — gestão de big data (2012)",
+          "url": "https://shop.sloanreview.mit.edu/store/how-big-data-is-different"
+        }
+      ]
+    },
+    {
+      "id": "morphing-2016",
+      "ano": 2016,
+      "titulo": "Experimentos e respostas heterogêneas",
+      "texto": "Liberali, Hauser e Urban documentam uma abordagem que relaciona experimentação online, segmentos e adaptação de tratamentos.",
+      "tipo": "eclipse",
+      "era": "dados",
+      "capitulo": "dados-experimentos-ia",
+      "ref_ids": [
+        "s16"
+      ],
+      "refs": [
+        {
+          "texto": "MIT — experimentação e heterogeneidade (2016)",
+          "url": "https://mitsloan.mit.edu/shared/ods/documents?PublicationDocumentID=4197"
+        }
+      ]
+    },
+    {
+      "id": "stp-2016",
+      "ano": 2016,
+      "titulo": "Uma crítica à segmentação sem contexto",
+      "texto": "Schultz questiona se grupos demográficos amplos e mídia de alcance bastam para realizar a promessa de segmentação.",
+      "tipo": "eclipse",
+      "era": "dados",
+      "capitulo": "dados-experimentos-ia",
+      "ref_ids": [
+        "s17"
+      ],
+      "refs": [
+        {
+          "texto": "AMA — revisão crítica de segmentação (2016)",
+          "url": "https://www.ama.org/marketing-news/from-persuasion-to-shared-value-creation/"
+        }
+      ]
+    },
+    {
+      "id": "marca-dados-2017",
+      "ano": 2017,
+      "titulo": "Comparação empírica de medidas de marca",
+      "texto": "Datta, Ailawadi e van Heerde relacionam medidas de percepção, vendas e resposta ao marketing em estudo publicado em 2017.",
+      "tipo": "marco",
+      "era": "dados",
+      "capitulo": "dados-experimentos-ia",
+      "ref_ids": [
+        "s18"
+      ],
+      "refs": [
+        {
+          "texto": "AMA — medidas de marca e vendas (artigo 2017)",
+          "url": "https://www.ama.org/2019/02/05/how-well-does-consumer-based-brand-equity-align-with-sales-based-brand-equity-and-marketing-mix-response/"
+        }
+      ]
+    },
+    {
+      "id": "genai-2023",
+      "ano": 2023,
+      "titulo": "IA generativa entra nos cenários de marketing",
+      "texto": "Relatório McKinsey examina potencial de IA generativa em funções como marketing e vendas; seus valores são cenários, não resultados garantidos.",
+      "tipo": "sol",
+      "era": "dados",
+      "capitulo": "dados-experimentos-ia",
+      "ref_ids": [
+        "s19"
+      ],
+      "refs": [
+        {
+          "texto": "McKinsey — cenários de IA generativa (2023)",
+          "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier"
+        }
+      ]
+    },
+    {
+      "id": "genai-2024",
+      "ano": 2024,
+      "titulo": "Uso de IA generativa observado em pesquisa",
+      "texto": "A AMA publica levantamento realizado com Lightricks em setembro de 2024 sobre uso profissional e preocupações com IA generativa.",
+      "tipo": "marco",
+      "era": "dados",
+      "capitulo": "dados-experimentos-ia",
+      "ref_ids": [
+        "s20"
+      ],
+      "refs": [
+        {
+          "texto": "AMA — levantamento sobre IA generativa (2024)",
+          "url": "https://www.ama.org/marketing-news/generative-ai-takes-off-with-marketers/"
+        }
+      ]
+    }
+  ],
+  "pessoas": [
+    {
+      "id": "neil-borden",
+      "nome": "Neil Borden",
+      "ano": "1953",
+      "papel": "Articula marketing mix em discurso presidencial da AMA.",
+      "capitulo": "gestao-mercado",
+      "ref_ids": [
+        "s03"
+      ],
+      "referencias": [
+        {
+          "texto": "AMA — Borden e marketing mix",
+          "url": "https://www.ama.org/about-ama/"
+        }
+      ],
+      "retrato_status": "iniciais; nenhum retrato pesquisado ou reivindicado",
+      "nota_data": "Ano do trabalho ou marco referido, não ano de nascimento."
+    },
+    {
+      "id": "wendell-r-smith",
+      "nome": "Wendell R. Smith",
+      "ano": "1956",
+      "papel": "Autor da formulação de segmentação e diferenciação registrada em 1956.",
+      "capitulo": "consumidor-segmentacao",
+      "ref_ids": [
+        "s05"
+      ],
+      "referencias": [
+        {
+          "texto": "Harvard — marcos históricos do marketing",
+          "url": "https://www.hbs.edu/research/RePEc/hbs/journl/2008Q4quelch.pdf"
+        }
+      ],
+      "retrato_status": "iniciais; nenhum retrato pesquisado ou reivindicado",
+      "nota_data": "Ano do trabalho ou marco referido, não ano de nascimento."
+    },
+    {
+      "id": "theodore-levitt",
+      "nome": "Theodore Levitt",
+      "ano": "1960 / 1983",
+      "papel": "Autor de Marketing Myopia e participante do debate sobre globalização.",
+      "capitulo": "posicionamento-marca",
+      "ref_ids": [
+        "s05"
+      ],
+      "referencias": [
+        {
+          "texto": "Harvard — marcos históricos do marketing",
+          "url": "https://www.hbs.edu/research/RePEc/hbs/journl/2008Q4quelch.pdf"
+        }
+      ],
+      "retrato_status": "iniciais; nenhum retrato pesquisado ou reivindicado",
+      "nota_data": "Ano do trabalho ou marco referido, não ano de nascimento."
+    },
+    {
+      "id": "philip-kotler",
+      "nome": "Philip Kotler",
+      "ano": "1969",
+      "papel": "Coautor com Sidney J. Levy de Broadening the Concept of Marketing.",
+      "capitulo": "consumidor-segmentacao",
+      "ref_ids": [
+        "s06"
+      ],
+      "referencias": [
+        {
+          "texto": "AMA / Journal of Marketing — ampliação do conceito (1969)",
+          "url": "https://journals.sagepub.com/doi/10.1177/002224296903300103"
+        }
+      ],
+      "retrato_status": "iniciais; nenhum retrato pesquisado ou reivindicado",
+      "nota_data": "Ano do trabalho ou marco referido, não ano de nascimento."
+    },
+    {
+      "id": "paul-e-green",
+      "nome": "Paul E. Green",
+      "ano": "1971",
+      "papel": "Coautor com Vithala R. Rao do artigo sobre aplicações de mensuração conjunta.",
+      "capitulo": "consumidor-segmentacao",
+      "ref_ids": [
+        "s07"
+      ],
+      "referencias": [
+        {
+          "texto": "AMA / Journal of Marketing Research — mensuração conjunta (1971)",
+          "url": "https://journals.sagepub.com/doi/10.1177/002224377100800312"
+        }
+      ],
+      "retrato_status": "iniciais; nenhum retrato pesquisado ou reivindicado",
+      "nota_data": "Ano do trabalho ou marco referido, não ano de nascimento."
+    },
+    {
+      "id": "emerson-de-almeida",
+      "nome": "Emerson de Almeida",
+      "ano": "1976",
+      "papel": "Participa da origem da FDC, documentada na história institucional.",
+      "capitulo": "consumidor-segmentacao",
+      "ref_ids": [
+        "s08",
+        "s21"
+      ],
+      "referencias": [
+        {
+          "texto": "FDC — memória institucional",
+          "url": "https://centrodememoria.fdc.org.br/fdc-historia"
+        },
+        {
+          "texto": "FDC — história e fundadores",
+          "url": "https://www.fdc.org.br/nossa-historia"
+        }
+      ],
+      "retrato_status": "iniciais; nenhum retrato pesquisado ou reivindicado",
+      "nota_data": "Ano do trabalho ou marco referido, não ano de nascimento."
+    },
+    {
+      "id": "kevin-lane-keller",
+      "nome": "Kevin Lane Keller",
+      "ano": "1993",
+      "papel": "Autor do artigo sobre Customer-Based Brand Equity registrado pela AMA.",
+      "capitulo": "posicionamento-marca",
+      "ref_ids": [
+        "s11"
+      ],
+      "referencias": [
+        {
+          "texto": "AMA — arquivo histórico de contribuições premiadas",
+          "url": "https://www.ama.org/shelby-d-hunt-harold-h-maynard-award/"
+        }
+      ],
+      "retrato_status": "iniciais; nenhum retrato pesquisado ou reivindicado",
+      "nota_data": "Ano do trabalho ou marco referido, não ano de nascimento."
+    },
+    {
+      "id": "robert-s-kaplan",
+      "nome": "Robert S. Kaplan",
+      "ano": "1992",
+      "papel": "Coautor com David P. Norton do artigo que apresentou o Balanced Scorecard.",
+      "capitulo": "relacionamento-mensuracao",
+      "ref_ids": [
+        "s10"
+      ],
+      "referencias": [
+        {
+          "texto": "Harvard — fundamentos do Balanced Scorecard",
+          "url": "https://www.hbs.edu/ris/Publication%20Files/10-074_0bf3c151-f82b-4592-b885-cdde7f5d97a6.pdf"
+        }
+      ],
+      "retrato_status": "iniciais; nenhum retrato pesquisado ou reivindicado",
+      "nota_data": "Ano do trabalho ou marco referido, não ano de nascimento."
+    },
+    {
+      "id": "david-p-norton",
+      "nome": "David P. Norton",
+      "ano": "1992",
+      "papel": "Coautor com Robert S. Kaplan na apresentação do Balanced Scorecard.",
+      "capitulo": "relacionamento-mensuracao",
+      "ref_ids": [
+        "s10"
+      ],
+      "referencias": [
+        {
+          "texto": "Harvard — fundamentos do Balanced Scorecard",
+          "url": "https://www.hbs.edu/ris/Publication%20Files/10-074_0bf3c151-f82b-4592-b885-cdde7f5d97a6.pdf"
+        }
+      ],
+      "retrato_status": "iniciais; nenhum retrato pesquisado ou reivindicado",
+      "nota_data": "Ano do trabalho ou marco referido, não ano de nascimento."
+    },
+    {
+      "id": "fred-reichheld",
+      "nome": "Fred Reichheld",
+      "ano": "2003",
+      "papel": "Apresenta a métrica NPS, segundo a história institucional da Bain.",
+      "capitulo": "relacionamento-mensuracao",
+      "ref_ids": [
+        "s13"
+      ],
+      "referencias": [
+        {
+          "texto": "Bain — histórico do NPS",
+          "url": "https://www.netpromotersystem.com/about/"
+        }
+      ],
+      "retrato_status": "iniciais; nenhum retrato pesquisado ou reivindicado",
+      "nota_data": "Ano do trabalho ou marco referido, não ano de nascimento."
+    },
+    {
+      "id": "stephen-l-vargo",
+      "nome": "Stephen L. Vargo",
+      "ano": "2004",
+      "papel": "Coautor com Robert F. Lusch de Evolving to a New Dominant Logic for Marketing.",
+      "capitulo": "relacionamento-mensuracao",
+      "ref_ids": [
+        "s11",
+        "s14"
+      ],
+      "referencias": [
+        {
+          "texto": "AMA — arquivo histórico de contribuições premiadas",
+          "url": "https://www.ama.org/shelby-d-hunt-harold-h-maynard-award/"
+        },
+        {
+          "texto": "AMA / Journal of Marketing — lógica de serviço (2004)",
+          "url": "https://journals.sagepub.com/doi/abs/10.1509/jmkg.68.1.1.24036"
+        }
+      ],
+      "retrato_status": "iniciais; nenhum retrato pesquisado ou reivindicado",
+      "nota_data": "Ano do trabalho ou marco referido, não ano de nascimento."
+    },
+    {
+      "id": "robert-f-lusch",
+      "nome": "Robert F. Lusch",
+      "ano": "2004",
+      "papel": "Coautor com Stephen L. Vargo da formulação de lógica de serviço.",
+      "capitulo": "relacionamento-mensuracao",
+      "ref_ids": [
+        "s11",
+        "s14"
+      ],
+      "referencias": [
+        {
+          "texto": "AMA — arquivo histórico de contribuições premiadas",
+          "url": "https://www.ama.org/shelby-d-hunt-harold-h-maynard-award/"
+        },
+        {
+          "texto": "AMA / Journal of Marketing — lógica de serviço (2004)",
+          "url": "https://journals.sagepub.com/doi/abs/10.1509/jmkg.68.1.1.24036"
+        }
+      ],
+      "retrato_status": "iniciais; nenhum retrato pesquisado ou reivindicado",
+      "nota_data": "Ano do trabalho ou marco referido, não ano de nascimento."
+    }
+  ],
+  "evidencias": [
+    {
+      "id": "s01",
+      "texto": "Harvard Business School — HBR Commemorates 100th Anniversary",
+      "url": "https://www.hbs.edu/news/releases/hbr-100-anniversary",
+      "instituicao_aprovada": "Harvard",
+      "limites": "Retrospectiva institucional; confirma fundação de HBR em 1922 por Wallace B. Donham. Não é leitura de todos os números da revista.",
+      "consultado": "2026-11-06",
+      "modo_consulta": "Página institucional consultada; data de 22/11/2022."
+    },
+    {
+      "id": "s02",
+      "texto": "AMA — Career & Classroom, nota editorial",
+      "url": "https://www.ama.org/2026/08/10/ama-career-classroom-editors-note/",
+      "instituicao_aprovada": "AMA",
+      "limites": "Nota institucional retrospectiva; confirma fusão e fundação da AMA em 1937. Não estabelece o nascimento universal do marketing.",
+      "consultado": "2026-11-06",
+      "modo_consulta": "Texto visível consultado; autoria Marilyn Stone, 10/08/2026."
+    },
+    {
+      "id": "s03",
+      "texto": "AMA — About AMA",
+      "url": "https://www.ama.org/about-ama/",
+      "instituicao_aprovada": "AMA",
+      "limites": "A própria associação situa o discurso de Neil Borden sobre marketing mix em 1953. Não prova invenção isolada da combinação de instrumentos comerciais.",
+      "consultado": "2026-11-06",
+      "modo_consulta": "Página institucional consultada."
+    },
+    {
+      "id": "s04",
+      "texto": "FGV EAESP — A Escola e sua linha do tempo",
+      "url": "https://eaesp.fgv.br/escola",
+      "instituicao_aprovada": "FGV",
+      "limites": "História institucional confirma inauguração em 1954 e criação da RAE em 1961. Não confundir ano da escola, da graduação e de disciplinas.",
+      "consultado": "2026-11-06",
+      "modo_consulta": "Texto e trechos da linha do tempo consultados; graduação aparece em 1955."
+    },
+    {
+      "id": "s05",
+      "texto": "Quelch, John A.; Jocz, Katherine E. Milestones in Marketing. Business History Review, 82, 2008, 827–838",
+      "url": "https://www.hbs.edu/research/RePEc/hbs/journl/2008Q4quelch.pdf",
+      "instituicao_aprovada": "Harvard",
+      "limites": "Retrospectiva acadêmica institucional permitida. Passagens pertinentes e referências consultadas; não pressupõe leitura integral das obras históricas citadas. Evita chamar Smith, Borden, Kotler, Green ou Levitt de inventores absolutos.",
+      "consultado": "2026-11-06",
+      "modo_consulta": "PDF consultado nos trechos sobre Smith, Borden, Kotler, Green, Levitt e introdução; publicação Winter 2008."
+    },
+    {
+      "id": "s06",
+      "texto": "Kotler, Philip; Levy, Sidney J. Broadening the Concept of Marketing. Journal of Marketing, 1969",
+      "url": "https://journals.sagepub.com/doi/10.1177/002224296903300103",
+      "instituicao_aprovada": "AMA",
+      "limites": "Registro da revista AMA, publicado tecnicamente pela Sage: resumo, autoria e data acessíveis; texto integral com acesso restrito. Não anunciar leitura integral.",
+      "consultado": "2026-11-06",
+      "modo_consulta": "Página do editor consultada; primeira publicação janeiro de 1969."
+    },
+    {
+      "id": "s07",
+      "texto": "Green, Paul E.; Rao, Vithala R. Conjoint Measurement for Quantifying Judgmental Data. Journal of Marketing Research, 1971",
+      "url": "https://journals.sagepub.com/doi/10.1177/002224377100800312",
+      "instituicao_aprovada": "AMA",
+      "limites": "Registro da revista AMA: resumo, autoria e referências consultados. Texto integral não lido. O artigo é expositivo e aplica técnica da psicologia matemática; não autoriza atribuir a invenção da mensuração conjunta aos autores.",
+      "consultado": "2026-11-06",
+      "modo_consulta": "Página do editor consultada; primeira publicação agosto de 1971."
+    },
+    {
+      "id": "s08",
+      "texto": "Fundação Dom Cabral — Centro de Memória, História",
+      "url": "https://centrodememoria.fdc.org.br/fdc-historia",
+      "instituicao_aprovada": "FDC",
+      "limites": "Retrospectiva institucional; constituição em 09/08/1976 e origem ligada ao Centro de Extensão da UCMG. Não estabelece prioridade da educação executiva brasileira.",
+      "consultado": "2026-11-06",
+      "modo_consulta": "Página institucional consultada, com seção Criação da Fundação Dom Cabral."
+    },
+    {
+      "id": "s09",
+      "texto": "Narver, John C.; Slater, Stanley F. The Effect of a Market Orientation on Business Profitability. Journal of Marketing, 1990",
+      "url": "https://journals.sagepub.com/doi/10.1177/002224299005400403",
+      "instituicao_aprovada": "AMA",
+      "limites": "Metadados primários retornados na busca confirmam título, autoria, outubro de 1990 e copyright AMA. A abertura direta apresentou timeout. Usado somente para registro bibliográfico; sem reproduzir resultados ou alegar causalidade.",
+      "consultado": "2026-11-06",
+      "modo_consulta": "Metadados do resultado do editor consultados; abertura integral não obtida."
+    },
+    {
+      "id": "s10",
+      "texto": "Kaplan, Robert S. Conceptual Foundations of the Balanced Scorecard. HBS Working Paper 10-074, 2010",
+      "url": "https://www.hbs.edu/ris/Publication%20Files/10-074_0bf3c151-f82b-4592-b885-cdde7f5d97a6.pdf",
+      "instituicao_aprovada": "Harvard",
+      "limites": "Relato do próprio coautor confirma artigo Kaplan/Norton de 1992 e evolução posterior. Working paper, não revisão sistemática independente; resumo e trechos iniciais consultados.",
+      "consultado": "2026-11-06",
+      "modo_consulta": "PDF primário consultado; introdução e resumo, não leitura integral das 37 páginas."
+    },
+    {
+      "id": "s11",
+      "texto": "AMA — Shelby D. Hunt/Harold H. Maynard Award, arquivo histórico",
+      "url": "https://www.ama.org/shelby-d-hunt-harold-h-maynard-award/",
+      "instituicao_aprovada": "AMA",
+      "limites": "Arquivo nominal confirma Keller em 1993 e Vargo/Lusch em 2004. A premiação não prova superioridade empírica de toda uma teoria.",
+      "consultado": "2026-11-06",
+      "modo_consulta": "Lista histórica consultada nos anos 1993 e 2004."
+    },
+    {
+      "id": "s12",
+      "texto": "Harvard Institute for Strategy & Competitiveness — Strategy",
+      "url": "https://www.isc.hbs.edu/strategy/Pages/default.aspx",
+      "instituicao_aprovada": "Harvard",
+      "limites": "Página institucional de síntese e bibliografia; vincula What Is Strategy? a 1996. Não equivale à leitura integral do artigo HBR.",
+      "consultado": "2026-11-06",
+      "modo_consulta": "Página institucional consultada; frameworks e referências listadas."
+    },
+    {
+      "id": "s13",
+      "texto": "Bain & Company — About the Net Promoter System",
+      "url": "https://www.netpromotersystem.com/about/",
+      "instituicao_aprovada": "Bain",
+      "limites": "Fonte primária dos promotores do método, com interesse institucional. Confirma apresentação por Fred Reichheld em 2003; não comprova validade universal nem vantagem causal sobre outras métricas.",
+      "consultado": "2026-11-06",
+      "modo_consulta": "Página institucional consultada; vínculo Bain explícito."
+    },
+    {
+      "id": "s14",
+      "texto": "Vargo, Stephen L.; Lusch, Robert F. Evolving to a New Dominant Logic for Marketing. Journal of Marketing, 2004",
+      "url": "https://journals.sagepub.com/doi/abs/10.1509/jmkg.68.1.1.24036",
+      "instituicao_aprovada": "AMA",
+      "limites": "Resumo primário e metadados acessíveis na indexação; texto integral restrito e não lido. Trata-se de proposição teórica sobre serviço, recursos intangíveis e relações, não demonstração causal universal.",
+      "consultado": "2026-11-06",
+      "modo_consulta": "Resumo completo e metadados do editor consultados via indexação de busca restrita a journals.sagepub.com; abertura direta retornou timeout. Autores/data corroborados no arquivo AMA."
+    },
+    {
+      "id": "s15",
+      "texto": "Davenport, Thomas H.; Barth, Paul; Bean, Randy. How Big Data Is Different. MIT Sloan Management Review, 2012",
+      "url": "https://shop.sloanreview.mit.edu/store/how-big-data-is-different",
+      "instituicao_aprovada": "MIT SMR",
+      "limites": "Página editorial da editora consultada com sinopse e autoria; data online 30/07/2012. Não representa leitura integral do artigo comercial.",
+      "consultado": "2026-11-06",
+      "modo_consulta": "Registro editorial e sinopse consultados."
+    },
+    {
+      "id": "s16",
+      "texto": "Liberali, Gui B.; Hauser, John R.; Urban, Glen L. Morphing Theory and Applications, versão maio de 2016",
+      "url": "https://mitsloan.mit.edu/shared/ods/documents?PublicationDocumentID=4197",
+      "instituicao_aprovada": "MIT",
+      "limites": "Manuscrito dos autores hospedado no MIT, versão 2016 para capítulo de 2017. Seções sobre experimentos e heterogeneidade consultadas; não confundir adaptação de tratamentos com prova de benefício em toda operação.",
+      "consultado": "2026-11-06",
+      "modo_consulta": "Capa e seções 2.1/2.2 consultadas; sem alegação de leitura integral."
+    },
+    {
+      "id": "s17",
+      "texto": "Schultz, Don E. From Persuasion to Shared Value Creation. AMA Marketing News, 2016",
+      "url": "https://www.ama.org/marketing-news/from-persuasion-to-shared-value-creation/",
+      "instituicao_aprovada": "AMA",
+      "limites": "Texto de opinião acadêmica institucional, não consenso definitivo. Apenas trecho aberto antes do login consultado; crítica a segmentação demográfica e alcance de mídia.",
+      "consultado": "2026-11-06",
+      "modo_consulta": "Trecho visível consultado; data 01/02/2016."
+    },
+    {
+      "id": "s18",
+      "texto": "Datta, Hannes; Ailawadi, Kusum; van Heerde, Harald. How Well Does Consumer-Based Brand Equity Align with Sales-Based Brand Equity and Marketing Mix Response? AMA JM Insights",
+      "url": "https://www.ama.org/2019/02/05/how-well-does-consumer-based-brand-equity-align-with-sales-based-brand-equity-and-marketing-mix-response/",
+      "instituicao_aprovada": "AMA",
+      "limites": "Resumo acadêmico institucional de artigo de 2017; página de 2019. O estudo associa medidas e respostas em categorias observadas; associação não é prova universal de causalidade.",
+      "consultado": "2026-11-06",
+      "modo_consulta": "Resumo e referência completa consultados; artigo original Journal of Marketing 81(3), 2017, 1–20."
+    },
+    {
+      "id": "s19",
+      "texto": "McKinsey — The economic potential of generative AI: The next productivity frontier",
+      "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier",
+      "instituicao_aprovada": "McKinsey",
+      "limites": "Relatório de cenários e potencial técnico, 14/06/2023; não desempenho realizado nem garantia de retorno de uma empresa. Somente seções pertinentes a marketing/vendas e premissas.",
+      "consultado": "2026-11-06",
+      "modo_consulta": "Página do relatório consultada nas seções de casos de uso, marketing/vendas e cenários."
+    },
+    {
+      "id": "s20",
+      "texto": "Cashion, Folger; OBrien, Jen. Generative AI Takes Off with Marketers. AMA Marketing News, 2024",
+      "url": "https://www.ama.org/marketing-news/generative-ai-takes-off-with-marketers/",
+      "instituicao_aprovada": "AMA",
+      "limites": "Pesquisa AMA/Lightricks, setembro de 2024, divulgada 12/12/2024. Autorrelato e parceria com fornecedor; não representa todos os profissionais nem comprova ganhos causais.",
+      "consultado": "2026-11-06",
+      "modo_consulta": "Texto e descrição da amostra consultados; cerca de mil respondentes, sem extrapolação universal."
+    },
+    {
+      "id": "s21",
+      "texto": "Fundação Dom Cabral — Nossa História e Evolução",
+      "url": "https://www.fdc.org.br/nossa-historia",
+      "instituicao_aprovada": "FDC",
+      "limites": "Retrospectiva institucional nomeia Cardeal Dom Serafim e Emerson de Almeida como participantes da origem. Não atribuir fundação exclusiva a um deles.",
+      "consultado": "2026-11-06",
+      "modo_consulta": "Página institucional consultada em resultado primário completo; confirma agosto de 1976 e nomes."
+    }
+  ],
+  "integracao_template": {
+    "source_types": "src/data/origens.ts:7-12",
+    "template": "src/pages/origens.astro:94-133",
+    "sois_format": "ANO · TÍTULO; corresponde exatamente a ano/titulo de um evento.",
+    "eventos_associacao": "Cada evento possui id próprio, capitulo existente e era compatível com o ano.",
+    "pessoas_associacao": "Cada personagem aponta para id de capítulo existente; ano identifica o marco, não nascimento.",
+    "campos_extras_de_auditoria": [
+      "id",
+      "ref_ids",
+      "refs",
+      "referencias",
+      "nota_editorial"
+    ],
+    "itens_a_adaptar_no_template": [
+      "Atualizar o período fixo 1943–2026 para o intervalo efetivo dos eventos.",
+      "Substituir o título Os arquitetos nas sombras e a afirmação de fotos Wikimedia por redação pertinente e verdadeira.",
+      "Usar bibliografia histórica nos capítulos e não no campo fonte reservado ao crédito da foto.",
+      "Preservar régua, faixa, cronologia, cards, iniciais, capítulos, referências expansíveis e índice original."
+    ],
+    "hosts_tecnicos": "Registros de Journal of Marketing e Journal of Marketing Research são das publicações AMA aprovadas; os links do editor usam journals.sagepub.com. Consulta de suporte não altera allowlist de ingestão. Conferir o mapeamento institucional ao integrar."
+  },
+  "revisao": {
+    "verificacao_documental": "concluída no nível de acesso descrito em cada evidência",
+    "revisao_editorial_final": "pendente de revisão pelo responsável pela integração; não rotular como revisão humana já realizada",
+    "pronto_para": "adaptação ao template com referências e limites preservados",
+    "publicado": false
+  },
+  "contagens_verificadas": {
+    "eras": 4,
+    "capitulos": 5,
+    "eventos": 24,
+    "pessoas": 12,
+    "fontes_consultadas": 21,
+    "blocos_eclipses": 12,
+    "retratos": 0,
+    "periodo_dos_eventos": [
+      1922,
+      2024
+    ]
+  }
+}

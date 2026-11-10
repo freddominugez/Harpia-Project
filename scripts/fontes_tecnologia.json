@@ -1,0 +1,27 @@
+[
+  {
+    "id": "mit-electronics", "nome": "MIT News", "tema": "Eletrônica",
+    "contexto": "Pesquisa em circuitos, materiais e dispositivos eletrônicos.",
+    "site": "https://news.mit.edu/topic/electronics", "tipo": "rss",
+    "canal": "https://news.mit.edu/rss/topic/electronics",
+    "hosts": ["news.mit.edu"], "prefixos": ["/"],
+    "termos": "electron|chip|semiconductor|transistor|circuit|sensor|photon|brain-inspired|neuromorphic|quantum|memory|batter(y|ies)"
+  },
+  {
+    "id": "ieee-chips", "nome": "IEEE Spectrum", "tema": "Chips",
+    "contexto": "Processadores, semicondutores e fabricação de chips.",
+    "site": "https://spectrum.ieee.org/topic/semiconductors/", "tipo": "rss",
+    "canal": "https://spectrum.ieee.org/feeds/topic/semiconductors.rss",
+    "hosts": ["spectrum.ieee.org"], "prefixos": ["/"],
+    "termos": "chip|semiconductor|processor|transistor|silicon|wafer|integrated circuit|memory|foundry"
+  },
+  {
+    "id": "huggingface-llms", "nome": "Hugging Face", "tema": "LLMs",
+    "contexto": "Modelos de linguagem, inferência e ferramentas abertas.",
+    "site": "https://huggingface.co/blog", "tipo": "rss",
+    "canal": "https://huggingface.co/blog/feed.xml",
+    "hosts": ["huggingface.co"], "prefixos": ["/blog/"],
+    "somente_blog_editorial": true,
+    "termos": "\\bllms?\\b|language model|\\bslms?\\b|mistral|llama|qwen|gemma|deepseek|token|inference|transformers|reasoning|\\b[0-9]+b\\b"
+  }
+]

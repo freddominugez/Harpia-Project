@@ -1,0 +1,984 @@
+{
+  "title": "Auditoria quantitativa do Harpya original e metas derivadas de conteúdo Business",
+  "status": "Pesquisa local concluída; não altera aplicação e não publica",
+  "date": "2026-11-06",
+  "provenance": {
+    "baseline_commit": "939e5f75d0bb7b0fc8028471a20c31b353204ba0",
+    "audited_checkout": "/tmp/harpya-business-release",
+    "audited_checkout_commit": "bf96fafa0c883a7f5d39c5d91ca0c15355482ccd",
+    "business_release_commit": "34ab18fd8dd0f37ca00ac48669326d924bde3ccc",
+    "method": "Leitura de templates, leitores, filtros e arquivos por coleção. JSON contado por glob; frontmatter Markdown lido com YAML; dados Origens avaliados por transpile TypeScript substituindo somente importação da cronologia por registros locais publicados. Nenhum número extraído de mockup.",
+    "contract_read": [
+      "docs/corretivo/contrato-corretivo-harpya-business.html",
+      "docs/corretivo/inventario-paridade-harpya-business.json"
+    ],
+    "relative_paths": "src/, public/ e scripts/ referem-se ao checkout auditado; docs/corretivo/ refere-se ao workspace original."
+  },
+  "distinctions": {
+    "slot": "posição/limite do template",
+    "published_record": "registro que passa o leitor de publicação; não inclui rascunhos/candidatos",
+    "functional_minimum": "volume/distribuição que ativa um comportamento; não mede qualidade editorial",
+    "derived_proposed_target": "recomendação de produção baseada na estrutura/volume original, explicitamente distinta de fato publicado",
+    "reuse": "Somar slots repetidos não mede conteúdos únicos. Não apresentar uma soma total que misture notícias, vídeos, referências bibliográficas, textos autorais, fontes, pessoas e imagens."
+  },
+  "original_collections": {
+    "caminhos": {
+      "files": 12,
+      "status": {
+        "sem_status": 12
+      },
+      "published_effective": 12,
+      "status_note": "Coleção Markdown sem campo de status no esquema; getCollection inclui os 12 arquivos. Publicados efetivos no catálogo, não 12 status publicado gravados em frontmatter."
+    },
+    "analises": {
+      "files": 1,
+      "status": {
+        "sem_status": 1
+      },
+      "metadata": [
+        {
+          "titulo": "Computação quântica útil, parte 1: o gargalo dos estados mágicos e o resultado do Google",
+          "titulo_curto": "O gargalo dos estados mágicos e o resultado do Google",
+          "serie": "Computação quântica útil",
+          "parte": 1,
+          "total": 2,
+          "data": "2026-10-18",
+          "resumo": "O Google cultivou no chip Willow estados mágicos cerca de 40 vezes menos errados. Por que essas peças pesam tanto no custo de um computador quântico útil."
+        }
+      ],
+      "published_effective": 1,
+      "status_note": "Um Markdown sem status explícito; leitor usa publicado por padrão (src/data/analises.ts:9)."
+    },
+    "videos": {
+      "files": 233,
+      "status": {
+        "publicado": 155,
+        "rascunho": 78
+      },
+      "levels": {
+        "Avançado": 43,
+        "Iniciante": 54,
+        "Intermediário": 58
+      },
+      "modules": {
+        "3": 13,
+        "2": 13,
+        "6": 12,
+        "10": 12,
+        "4": 11,
+        "0": 19,
+        "5": 10,
+        "1": 10,
+        "8": 12,
+        "12": 13,
+        "7": 11,
+        "9": 8,
+        "11": 11
+      },
+      "module_levels": {
+        "0": {
+          "Iniciante": 9,
+          "Avançado": 4,
+          "Intermediário": 6
+        },
+        "1": {
+          "Avançado": 2,
+          "Intermediário": 5,
+          "Iniciante": 3
+        },
+        "2": {
+          "Iniciante": 4,
+          "Avançado": 3,
+          "Intermediário": 6
+        },
+        "3": {
+          "Avançado": 4,
+          "Intermediário": 6,
+          "Iniciante": 3
+        },
+        "4": {
+          "Intermediário": 5,
+          "Avançado": 3,
+          "Iniciante": 3
+        },
+        "5": {
+          "Avançado": 3,
+          "Intermediário": 4,
+          "Iniciante": 3
+        },
+        "6": {
+          "Intermediário": 5,
+          "Avançado": 3,
+          "Iniciante": 4
+        },
+        "7": {
+          "Intermediário": 4,
+          "Avançado": 3,
+          "Iniciante": 4
+        },
+        "8": {
+          "Iniciante": 5,
+          "Intermediário": 4,
+          "Avançado": 3
+        },
+        "9": {
+          "Avançado": 2,
+          "Iniciante": 3,
+          "Intermediário": 3
+        },
+        "10": {
+          "Avançado": 3,
+          "Iniciante": 4,
+          "Intermediário": 5
+        },
+        "11": {
+          "Avançado": 4,
+          "Iniciante": 4,
+          "Intermediário": 3
+        },
+        "12": {
+          "Avançado": 6,
+          "Intermediário": 2,
+          "Iniciante": 5
+        }
+      }
+    },
+    "modulos": {
+      "files": 13,
+      "status": {
+        "sem_status": 13
+      },
+      "published_effective": 13,
+      "status_note": "13 definições sem status, todas lidas pelo catálogo; módulos vazios seriam omitidos do corpo da página. No original os 13 têm vídeos nos três níveis."
+    },
+    "artigos": {
+      "files": 128,
+      "status": {
+        "publicado": 63,
+        "rascunho": 65
+      }
+    },
+    "livros": {
+      "files": 58,
+      "status": {
+        "publicado": 58
+      },
+      "categories": {
+        "mat": 14,
+        "ml": 15,
+        "comp": 10,
+        "eng": 10,
+        "ia": 4,
+        "ling": 5
+      },
+      "covers": 56
+    },
+    "fontes": {
+      "files": 30,
+      "status": {
+        "publicado": 30
+      }
+    },
+    "noticias": {
+      "files": 29,
+      "status": {
+        "publicado": 23,
+        "rascunho": 6
+      }
+    },
+    "aprendizado": {
+      "files": 10,
+      "status": {
+        "publicado": 10
+      },
+      "array_totals": {
+        "equacoes": 41,
+        "referencias": 15,
+        "links": 13
+      }
+    },
+    "pautas": {
+      "files": 32,
+      "status": {
+        "proposta": 32
+      },
+      "visible": 5
+    }
+  },
+  "collection_count_evidence": [
+    {
+      "path": "src/lib/conteudo.ts",
+      "lines": "6-10,25-30",
+      "note": "Regra de publicação das coleções JSON"
+    },
+    {
+      "path": "src/content.config.ts",
+      "lines": "13,20-48",
+      "note": "Caminhos sem campo status no schema; análises com padrão publicado."
+    },
+    {
+      "path": "src/data/analises.ts",
+      "lines": "8-11"
+    },
+    {
+      "path": "src/lib/pautas.ts",
+      "lines": "19",
+      "note": "27 propostas diárias excluídas; ficam 5 visíveis"
+    },
+    {
+      "path": "src/content/videos/*.json",
+      "lines": "1",
+      "note": "233 arquivos; contagem de status"
+    },
+    {
+      "path": "src/content/artigos/*.json",
+      "lines": "1",
+      "note": "128 arquivos; contagem de status"
+    },
+    {
+      "path": "src/content/noticias/*.json",
+      "lines": "1",
+      "note": "29 arquivos; contagem de status"
+    }
+  ],
+  "unique_records_verified": {
+    "videos_published_distinct_youtube_ids": 155,
+    "articles_published_distinct_urls": 63,
+    "books_distinct_titles": 58,
+    "news_published_distinct_files": 23,
+    "note": "IDs de notícia derivam de arquivo/coleção; não há campo slug em todos os JSON. Não inferir unicidade contando campo inexistente."
+  },
+  "slots": [
+    {
+      "id": "home_trilhas",
+      "quantity": 4,
+      "quantity_kind": "capacidade fixa",
+      "interpretation": "4 cards de navegação; não são 4 artigos adicionais.",
+      "evidence": [
+        {
+          "path": "src/data/home.ts",
+          "lines": "22-28"
+        }
+      ],
+      "shared_dataset": "coleções de aprendizado, estudos, equações e biblioteca"
+    },
+    {
+      "id": "home_estudos_destacados",
+      "quantity": 3,
+      "quantity_kind": "capacidade fixa",
+      "interpretation": "3 estudos existentes da coleção caminhos; mesmos destinos do catálogo de 12, com 3 imagens ilustrativas.",
+      "evidence": [
+        {
+          "path": "src/components/TechnologyHome.astro",
+          "lines": "22-27,46-67"
+        }
+      ],
+      "shared_dataset": "caminhos"
+    },
+    {
+      "id": "home_videos",
+      "quantity": 3,
+      "quantity_kind": "capacidade fixa",
+      "interpretation": "Um por nível, de módulos distintos; reutiliza o catálogo, não exige 3 vídeos extras.",
+      "evidence": [
+        {
+          "path": "src/lib/videos.ts",
+          "lines": "31-46"
+        }
+      ],
+      "shared_dataset": "videos"
+    },
+    {
+      "id": "home_comecando",
+      "quantity": 4,
+      "quantity_kind": "quantidade observada; coleção/corpo variável",
+      "interpretation": "Quantidade observada de artigos publicados; StartCard faz map de todos, não impõe limite 4.",
+      "evidence": [
+        {
+          "path": "src/data/comecando.ts",
+          "lines": "9-38"
+        }
+      ],
+      "shared_dataset": "comecando"
+    },
+    {
+      "id": "home_pautas",
+      "quantity": 5,
+      "quantity_kind": "capacidade fixa",
+      "interpretation": "Limite padrão 5; corpus efetivamente visível também tem 5. São propostas, não discussões comprovadas.",
+      "evidence": [
+        {
+          "path": "src/components/ForumList.astro",
+          "lines": "6-8"
+        }
+      ],
+      "shared_dataset": "pautas"
+    },
+    {
+      "id": "home_carrossel_noticias",
+      "quantity": 3,
+      "quantity_kind": "capacidade fixa",
+      "interpretation": "3 notícias mais recentes do mesmo corpus exibido no restante do site.",
+      "evidence": [
+        {
+          "path": "src/components/NoticiasCarrossel.astro",
+          "lines": "7"
+        }
+      ],
+      "shared_dataset": "noticias"
+    },
+    {
+      "id": "home_analise_lateral",
+      "quantity": 1,
+      "quantity_kind": "capacidade fixa",
+      "interpretation": "Última análise, repetida na seção editorial inferior.",
+      "evidence": [
+        {
+          "path": "src/components/AnaliseCard.astro",
+          "lines": "1-14"
+        }
+      ],
+      "shared_dataset": "analises"
+    },
+    {
+      "id": "home_editorial_noticias",
+      "quantity": 6,
+      "quantity_kind": "capacidade fixa",
+      "interpretation": "6 notícias do mesmo corpus do carrossel, destaques e arquivo.",
+      "evidence": [
+        {
+          "path": "src/components/HomeEditorial.astro",
+          "lines": "16"
+        }
+      ],
+      "shared_dataset": "noticias"
+    },
+    {
+      "id": "home_editorial_analise",
+      "quantity": 1,
+      "quantity_kind": "capacidade fixa",
+      "interpretation": "Mesmo ANALISES[0] do card lateral; 2 posições exigem 1 análise única.",
+      "evidence": [
+        {
+          "path": "src/components/HomeEditorial.astro",
+          "lines": "7,19-24"
+        }
+      ],
+      "shared_dataset": "analises"
+    },
+    {
+      "id": "home_impacto",
+      "quantity": 1,
+      "quantity_kind": "capacidade fixa",
+      "interpretation": "Item destacado do radar; excluído dos 9 cards inferiores.",
+      "evidence": [
+        {
+          "path": "src/lib/radar.ts",
+          "lines": "28-32"
+        }
+      ],
+      "shared_dataset": "radar"
+    },
+    {
+      "id": "home_editorial_radar",
+      "quantity": 9,
+      "quantity_kind": "capacidade fixa",
+      "interpretation": "Até 9 itens distintos, excluindo o destaque; exige 10 itens para preencher as duas áreas.",
+      "evidence": [
+        {
+          "path": "src/components/HomeEditorial.astro",
+          "lines": "9-11,26-30"
+        }
+      ],
+      "shared_dataset": "radar"
+    },
+    {
+      "id": "home_editorial_referencias",
+      "quantity": 6,
+      "quantity_kind": "capacidade fixa",
+      "interpretation": "6 entradas bibliográficas mais recentes de ARTIGOS; não são 6 estudos autorais adicionais.",
+      "evidence": [
+        {
+          "path": "src/components/HomeEditorial.astro",
+          "lines": "8,33-36"
+        }
+      ],
+      "shared_dataset": "artigos"
+    },
+    {
+      "id": "noticias_destaques",
+      "quantity": 8,
+      "quantity_kind": "capacidade fixa",
+      "interpretation": "Capacidade até 8; mesmas notícias do arquivo, home e página de leitura.",
+      "evidence": [
+        {
+          "path": "src/components/NoticiasPagina.astro",
+          "lines": "19-23,60-64"
+        }
+      ],
+      "shared_dataset": "noticias"
+    },
+    {
+      "id": "noticias_arquivo_pagina",
+      "quantity": 12,
+      "quantity_kind": "capacidade fixa",
+      "interpretation": "12 por página; corpus original 23 gera 12+11.",
+      "evidence": [
+        {
+          "path": "src/components/NoticiasPagina.astro",
+          "lines": "20-21"
+        }
+      ],
+      "shared_dataset": "noticias"
+    },
+    {
+      "id": "noticias_leia_tambem",
+      "quantity": 3,
+      "quantity_kind": "capacidade fixa",
+      "interpretation": "3 outras notícias, excluindo a atual; corpus mínimo 4 para preencher.",
+      "evidence": [
+        {
+          "path": "src/components/NoticiasPagina.astro",
+          "lines": "22-23"
+        }
+      ],
+      "shared_dataset": "noticias"
+    },
+    {
+      "id": "radar_lateral",
+      "quantity": 6,
+      "quantity_kind": "capacidade fixa",
+      "interpretation": "3 fontes configuradas, até 2 cards por grupo; metadados da fonte permanecem se não houver itens elegíveis.",
+      "evidence": [
+        {
+          "path": "src/components/TechnologyCards.astro",
+          "lines": "9-20,40"
+        }
+      ],
+      "shared_dataset": "radar_lateral"
+    },
+    {
+      "id": "estudos_catalogo",
+      "quantity": 12,
+      "quantity_kind": "quantidade observada; coleção/corpo variável",
+      "interpretation": "12 observados; map de todos os caminhos, sem teto fixo 12.",
+      "evidence": [
+        {
+          "path": "src/pages/estudos/index.astro",
+          "lines": "9,19-26"
+        }
+      ],
+      "shared_dataset": "caminhos"
+    },
+    {
+      "id": "aprendizado_dossies",
+      "quantity": 10,
+      "quantity_kind": "quantidade observada; coleção/corpo variável",
+      "interpretation": "10 observados; map dinâmico de todos. Inclui 41 equações, 15 referências e 13 links internos nos dados.",
+      "evidence": [
+        {
+          "path": "src/pages/aprendizado.astro",
+          "lines": "15-21,33,55-101"
+        }
+      ],
+      "shared_dataset": "aprendizado"
+    },
+    {
+      "id": "equacoes_secoes",
+      "quantity": 16,
+      "quantity_kind": "quantidade observada; coleção/corpo variável",
+      "interpretation": "16 seções numeradas reais; Contagem total é síntese e não a seção 17.",
+      "evidence": [
+        {
+          "path": "src/pages/equacoes.md",
+          "lines": "16-150"
+        }
+      ],
+      "shared_dataset": "equacoes"
+    },
+    {
+      "id": "biblioteca_livros",
+      "quantity": 58,
+      "quantity_kind": "quantidade observada; coleção/corpo variável",
+      "interpretation": "58 publicados; map dinâmico. 56 têm campo capa e 2 usam fallback original.",
+      "evidence": [
+        {
+          "path": "src/pages/biblioteca/index.astro",
+          "lines": "38-53"
+        }
+      ],
+      "shared_dataset": "livros"
+    },
+    {
+      "id": "biblioteca_artigos",
+      "quantity": 63,
+      "quantity_kind": "quantidade observada; coleção/corpo variável",
+      "interpretation": "63 publicados de 128 arquivos; 65 rascunhos ficam fora.",
+      "evidence": [
+        {
+          "path": "src/lib/conteudo.ts",
+          "lines": "6-10,25"
+        }
+      ],
+      "shared_dataset": "artigos"
+    },
+    {
+      "id": "biblioteca_glossario",
+      "quantity": 14,
+      "quantity_kind": "quantidade observada; coleção/corpo variável",
+      "interpretation": "14 entradas iniciadas por termo em negrito; não há 14 seções h2.",
+      "evidence": [
+        {
+          "path": "src/pages/biblioteca/glossario.md",
+          "lines": "14-40"
+        }
+      ],
+      "shared_dataset": "glossario"
+    },
+    {
+      "id": "estudos_investigacao_editorial",
+      "quantity": 1,
+      "quantity_kind": "quantidade observada; coleção/corpo variável",
+      "interpretation": "Um ensaio ligado ao IdeaCard; página específica, além dos 12 caminhos.",
+      "evidence": [
+        {
+          "path": "src/pages/estudos/index.astro",
+          "lines": "18"
+        }
+      ],
+      "shared_dataset": "investigacao"
+    },
+    {
+      "id": "estudos_arquivados",
+      "quantity": 14,
+      "quantity_kind": "quantidade observada; coleção/corpo variável",
+      "interpretation": "14 linhas/bullets agrupados em 3 temas; itens podem reunir várias hipóteses. Não inventar arquivamentos Business para preencher 14.",
+      "evidence": [
+        {
+          "path": "src/pages/estudos/arquivados.md",
+          "lines": "14-35"
+        }
+      ],
+      "shared_dataset": "arquivados"
+    }
+  ],
+  "origins_actual": {
+    "eras": 4,
+    "chapters": 5,
+    "events": 34,
+    "events_types": {
+      "sol": 9,
+      "marco": 13,
+      "eclipse": 12
+    },
+    "people": 12,
+    "photos": 11,
+    "photos_exist": 11,
+    "chapter_eclipses": 11,
+    "chapter_references": 16,
+    "chapters_details": [
+      {
+        "id": "fundamentacao-oculta",
+        "number": 1,
+        "title": "A fundamentação oculta",
+        "eclipses": 2,
+        "references": 2
+      },
+      {
+        "id": "despertar-latente",
+        "number": 2,
+        "title": "O despertar latente e o gargalo das sequências",
+        "eclipses": 2,
+        "references": 2
+      },
+      {
+        "id": "resgate-estatistico",
+        "number": 3,
+        "title": "O resgate estatístico e a anatomia dos vetores",
+        "eclipses": 2,
+        "references": 3
+      },
+      {
+        "id": "dinamica-do-contexto",
+        "number": 4,
+        "title": "A dinâmica do contexto",
+        "eclipses": 2,
+        "references": 4
+      },
+      {
+        "id": "escala-hardware-geometria",
+        "number": 5,
+        "title": "Escala, hardware e geometria",
+        "eclipses": 3,
+        "references": 5
+      }
+    ],
+    "timeline_json_records": 21,
+    "timeline_additions_in_typescript": 13,
+    "note": "34 eventos finais = 21 registros da cronologia + 13 adições no TS. 12 eclipses da linha não são os 11 blocos de eclipses narrados nos capítulos. Pessoas, referências e eventos são entidades diferentes e podem se referir aos mesmos fatos.",
+    "evidence": [
+      {
+        "path": "src/data/origens.ts",
+        "lines": "14-19,23-46,48-204,206-219"
+      },
+      {
+        "path": "src/content/linha-do-tempo/*.json",
+        "lines": "1"
+      }
+    ]
+  },
+  "series_actual": {
+    "comecando": {
+      "published_articles": 4,
+      "planned_total": 10,
+      "inline_svg_total": 14,
+      "svg_per_article": {
+        "proxima-palavra": 4,
+        "tokens": 3,
+        "corpus": 3,
+        "significado-vira-espaco": 4
+      },
+      "evidence": [
+        {
+          "path": "src/data/comecando.ts",
+          "lines": "5,9-41"
+        },
+        {
+          "path": "src/artigos/comecando/*.html",
+          "lines": "1",
+          "note": "Contagem de elementos <svg> nos 4 arquivos"
+        }
+      ]
+    },
+    "analises": {
+      "published_series": 1,
+      "published_parts": 1,
+      "declared_total_parts": 2,
+      "note": "Parte 2 não existe na coleção auditada; não conta como conteúdo pronto.",
+      "evidence": [
+        {
+          "path": "src/content/analises/*.md",
+          "lines": "1"
+        },
+        {
+          "path": "src/data/analises.ts",
+          "lines": "8-11"
+        }
+      ]
+    }
+  },
+  "dynamic_radar_actual": {
+    "main_sources_configured": 10,
+    "main_raw_items": 60,
+    "sidebar_sources_configured": 3,
+    "sidebar_raw_items": 7,
+    "eligible_items_count": "Não fixado: depende da data do build, hosts/prefixos e validade de 45 dias; 60/7 são registros brutos e não prova de cards visíveis.",
+    "evidence": [
+      {
+        "path": "public/data/radar-ia.json",
+        "lines": "1"
+      },
+      {
+        "path": "scripts/fontes_ia.json",
+        "lines": "1"
+      },
+      {
+        "path": "public/data/tecnologia.json",
+        "lines": "1"
+      },
+      {
+        "path": "scripts/fontes_tecnologia.json",
+        "lines": "1"
+      },
+      {
+        "path": "src/lib/radar.ts",
+        "lines": "8-30"
+      },
+      {
+        "path": "src/components/TechnologyCards.astro",
+        "lines": "9-20"
+      }
+    ]
+  },
+  "business_at_audited_release": {
+    "guides_published": 8,
+    "holdings_files": 15,
+    "holdings_published": 14,
+    "holdings_published_types": {
+      "artigo": 5,
+      "relatorio": 1,
+      "livro": 8
+    },
+    "candidate_video": 1,
+    "published_holdings_image_or_cover_field": 0,
+    "sources_approved_records": 24,
+    "published_video_catalog_records": 0,
+    "published_news_records": 0,
+    "published_analyses": 0,
+    "note": "Os 8 guias e 14 registros publicados não garantem profundidade, direitos de imagem, adequação ao schema nem revisão dos textos; são material existente para adaptação. O vídeo candidato não conta como vídeo publicado.",
+    "evidence": [
+      {
+        "path": "src/content/business/guias/*.md",
+        "lines": "1"
+      },
+      {
+        "path": "src/content/business/acervo/*.json",
+        "lines": "1"
+      },
+      {
+        "path": "src/content/business/fontes/*.json",
+        "lines": "1"
+      },
+      {
+        "path": "docs/corretivo/inventario-paridade-harpya-business.json",
+        "lines": "25-121"
+      }
+    ]
+  },
+  "functional_minima": [
+    {
+      "area": "Notícias",
+      "layout_full": 8,
+      "functional_minimum": 13,
+      "why": "8 preenchem destaques e todas as posições menores; a 13ª exercita a segunda página do arquivo (12+1).",
+      "other_thresholds": {
+        "carousel_navigation": 2,
+        "carousel_full": 3,
+        "related_full": 4,
+        "home_grid_full": 6,
+        "two_full_archive_pages": 24
+      },
+      "evidence": [
+        {
+          "path": "src/components/NoticiasPagina.astro",
+          "lines": "19-23"
+        },
+        {
+          "path": "src/components/NoticiasCarrossel.astro",
+          "lines": "7-30"
+        }
+      ]
+    },
+    {
+      "area": "Vídeos",
+      "home_full_minimum": 3,
+      "condition": "Os três níveis, em três módulos distintos, com distribuição que a seleção semanal possa usar. Para garantir os 3 em qualquer rotação, testar as semanas com a distribuição final; a seleção é gulosa e pode escolher um módulo que contenha o único vídeo de outro nível. Uma configuração suficiente é um único nível em cada um de três módulos, ou 3 níveis disponíveis em cada módulo.",
+      "catalog_filters": "Cobrir pt, en, dublagem verdadeira quando comprovada, níveis e módulos, além de combinação vazia. Não marcar dublagem para satisfazer um teste.",
+      "three_levels_in_all_original_modules": 39,
+      "original_published": 155,
+      "evidence": [
+        {
+          "path": "src/lib/videos.ts",
+          "lines": "36-46"
+        },
+        {
+          "path": "src/pages/videos.astro",
+          "lines": "38-59,62-84,108-165"
+        }
+      ]
+    },
+    {
+      "area": "Radar principal",
+      "full_minimum_unique_items": 10,
+      "condition": "1 destaque + 9 inferiores; todos passam validade editorial, URL oficial e janela de 45 dias. Para 9 cards de fontes diversas, assegurar 9 fontes elegíveis nos inferiores. As 10 fontes configuradas são badges, não 10 artigos por fonte.",
+      "evidence": [
+        {
+          "path": "src/components/HomeEditorial.astro",
+          "lines": "9-11,26-30"
+        },
+        {
+          "path": "src/lib/radar.ts",
+          "lines": "8-30"
+        }
+      ]
+    },
+    {
+      "area": "Radar lateral",
+      "full_minimum_unique_items": 6,
+      "condition": "2 por cada um dos 3 grupos; elegibilidade de 45 dias e host/prefixo. Pode compartilhar registros elegíveis com o radar principal; não somar automaticamente 6 novos itens.",
+      "evidence": [
+        {
+          "path": "src/components/TechnologyCards.astro",
+          "lines": "9-20"
+        }
+      ]
+    },
+    {
+      "area": "Análises",
+      "home_full_minimum_unique": 1,
+      "functional_series_related_minimum": 2,
+      "condition": "Duas partes realmente publicadas da mesma série exercitam os relacionados. O original tem apenas uma parte publicada; total:2 é planejamento, não prova de dois textos.",
+      "evidence": [
+        {
+          "path": "src/data/analises.ts",
+          "lines": "8-11"
+        },
+        {
+          "path": "src/pages/analises/[slug].astro",
+          "lines": "21-22"
+        }
+      ]
+    },
+    {
+      "area": "Começando",
+      "home_observed_equivalence": 4,
+      "functional_middle_previous_next_minimum": 3,
+      "condition": "3 artigos permitem um artigo central com anterior e próximo; 4 reproduzem o volume publicado original. TOTAL_DA_SERIE=10 é planejado.",
+      "evidence": [
+        {
+          "path": "src/data/comecando.ts",
+          "lines": "5,9-38"
+        },
+        {
+          "path": "src/pages/comecando/[slug].astro",
+          "lines": "8"
+        }
+      ]
+    },
+    {
+      "area": "Estudos",
+      "home_full_minimum": 3,
+      "original_catalog_equivalence": 12,
+      "additional_editorial_investigation": 1,
+      "condition": "Os três destacados pertencem aos mesmos 12 estudos; a investigação IdeaCard é outro tipo de página. Nenhum teste/prova/resultado pode ser atribuído ao projeto sem ter ocorrido.",
+      "evidence": [
+        {
+          "path": "src/data/home.ts",
+          "lines": "31-36"
+        },
+        {
+          "path": "src/pages/estudos/index.astro",
+          "lines": "9,18-26"
+        }
+      ]
+    },
+    {
+      "area": "Referências",
+      "home_full_minimum": 6,
+      "condition": "6 entradas bibliográficas reais; a lista de fontes/canais não substitui registros com título, autoria, ano, URL e classificação. Mesmas entradas na biblioteca e home.",
+      "evidence": [
+        {
+          "path": "src/components/HomeEditorial.astro",
+          "lines": "8,33-36"
+        }
+      ]
+    },
+    {
+      "area": "Origens, aprendizado, equações e glossário",
+      "minimum_to_render": "Os templates são variáveis: não existe mínimo técnico igual a 34/10/16/14. Para aceitar profundidade editorial equivalente, usar as quantidades observadas como metas derivadas e produzir somente itens pertinentes e documentados.",
+      "condition": "Não transformar quantidades históricas em cotas de invenção de marcos, biografias ou fórmulas.",
+      "evidence": [
+        {
+          "path": "src/data/origens.ts",
+          "lines": "14-48,206"
+        },
+        {
+          "path": "src/pages/aprendizado.astro",
+          "lines": "15-21,55"
+        },
+        {
+          "path": "docs/corretivo/inventario-paridade-harpya-business.json",
+          "lines": "370-378,385-391,497-503"
+        }
+      ]
+    }
+  ],
+  "derived_proposed_targets": [
+    {
+      "label": "META PROPOSTA DERIVADA — cobertura inicial de todos os componentes",
+      "news": 13,
+      "videos": 39,
+      "video_modules": 13,
+      "video_distribution": "1 vídeo de cada nível por módulo (13×3); alvo intermediário, não equivalência aos 155 publicados",
+      "studies": 12,
+      "editorial_investigation": 1,
+      "introductory_articles": 4,
+      "analyses": 1,
+      "pautas": 5,
+      "bibliographic_articles_or_reports": 6,
+      "books": 8,
+      "main_radar_eligible_items": 10,
+      "sidebar_radar_eligible_items": 6,
+      "notes": [
+        "13 notícias é mínimo funcional, com a segunda página incompleta; 23 reproduzem o volume original e 24 dariam duas páginas cheias.",
+        "8 livros é o acervo Business existente; reutilizar apenas após adaptação ao registro original. Não representa paridade quantitativa com 58.",
+        "39 vídeos permite todos os níveis dos 13 módulos, mas 13 módulos Business precisa de taxonomia editorial real. O contrato exige mesmo template; número de módulos não é quota fixa de código.",
+        "10 dossiês, até 16 métodos pertinentes, 14 termos e estrutura histórica equivalente exigem produção/revisão separadas; fórmulas e marcos não serão criados para fechar cotas.",
+        "Este pacote é cobertura estrutural e teste funcional, não corpus completo equivalente."
+      ]
+    },
+    {
+      "label": "META PROPOSTA DERIVADA — equivalência de volume publicado do original",
+      "news": 23,
+      "videos": 155,
+      "video_modules": 13,
+      "bibliographic_articles": 63,
+      "books": 58,
+      "studies": 12,
+      "analyses": 1,
+      "introductory_articles": 4,
+      "pautas_visible": 5,
+      "learning_dossiers": 10,
+      "methods_or_equations_sections_reference": 16,
+      "glossary_terms_reference": 14,
+      "origins_reference": {
+        "eras": 4,
+        "chapters": 5,
+        "events": 34,
+        "people": 12,
+        "portraits": 11,
+        "chapter_references": 16
+      },
+      "notes": [
+        "Meta derivada dos conteúdos publicados/reais observados; não é requisito do template nem autorização para inventar itens.",
+        "78 vídeos, 65 artigos e 6 notícias rascunho não entram nesta meta.",
+        "41 equações no aprendizado são profundidade observada de IA, não exigência de 41 fórmulas de marketing.",
+        "14 arquivamentos só devem existir se houver 14 avaliações reais; o tipo de página deve permanecer mesmo se o registro estiver legitimamente vazio.",
+        "Fontes do acervo, fontes do radar e créditos rastreáveis são inventários diferentes; não reduzir a uma contagem única."
+      ]
+    }
+  ],
+  "visual_asset_research": {
+    "home_editorial_study_images": 3,
+    "introductory_article_inline_svg": 14,
+    "origins_existing_portraits": 11,
+    "book_cover_fields": 56,
+    "book_original_fallbacks": 2,
+    "youtube_thumbnails": "1 por vídeo publicado; URL derivada do ID, sem geração de capa fictícia.",
+    "news_cover": "Recurso de capa SVG por notícia reutilizada em suas várias posições; não é necessário criar arquivo de imagem diferente para cada repetição de card.",
+    "static_brand_and_layout": "Reutilizar recursos originais de logo, hero, ícones, barras, gráficos decorativos e anúncios conforme contrato. Não somar esses recursos a artigos ou vídeos.",
+    "evidence": [
+      {
+        "path": "src/data/home.ts",
+        "lines": "31-36"
+      },
+      {
+        "path": "src/lib/videos.ts",
+        "lines": "17-18"
+      },
+      {
+        "path": "src/pages/biblioteca/index.astro",
+        "lines": "38-44"
+      },
+      {
+        "path": "src/data/origens.ts",
+        "lines": "206-219"
+      },
+      {
+        "path": "src/components/NoticiaCard.astro",
+        "lines": "1-19"
+      }
+    ]
+  },
+  "important_corrections": [
+    "32 pautas em disco não são 32 pautas visíveis: apenas 5 passam filtro.",
+    "233 arquivos de vídeo não significam 233 vídeos publicados: são 155.",
+    "128 artigos não significam 128 publicados: são 63.",
+    "29 notícias não significam 29 publicadas: são 23.",
+    "TOTAL_DA_SERIE=10 não significa 10 artigos Começando publicados: são 4.",
+    "total:2 de análise não significa 2 partes publicadas: há 1.",
+    "Capacidade de 6 referências da home é atendida pelo mesmo acervo, não por 6 textos autorais novos.",
+    "Home tem função kpis definida nos dados, mas TechnologyHome não a instancia; não acrescentar faixa KPI sob pretexto de paridade.",
+    "Se o escopo for equivalência total de corpus, 13 notícias/39 vídeos/6 referências/8 livros é um estágio intermediário e deve ser apresentado como tal."
+  ]
+}

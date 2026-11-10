@@ -1,0 +1,20 @@
+{
+  "nome": "Meio & Mensagem",
+  "url": "https://www.meioemensagem.com.br/",
+  "regiao": "Brasil",
+  "tipo": "jornalismo",
+  "descricao": "Mercado de marketing, mídia e comunicação.",
+  "idioma": "pt",
+  "hosts": [
+    "www.meioemensagem.com.br",
+    "meioemensagem.com.br"
+  ],
+  "feed": "",
+  "verificado_em": "2026-11-06",
+  "status": "aprovado",
+  "escopos": [
+    "artigos"
+  ],
+  "canais": [],
+  "restricao": "Somente jornalismo de mercado; excluir conteúdo patrocinado e não tratar como pesquisa científica."
+}

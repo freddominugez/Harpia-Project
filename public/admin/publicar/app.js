@@ -27,6 +27,53 @@ export function publicationChanges(selected, current) {
   });
 }
 
+// Confere a permissão de gravação sem criar commit nem alterar o conteúdo do site.
+// Reenvia uma entrada existente, com o mesmo SHA, para produzir uma árvore idêntica.
+export async function checkPublicationAccess(api) {
+  const head = await api(`${REPO}/git/ref/heads/main`);
+  const parent = await api(`${REPO}/git/commits/${head.object.sha}`);
+  const current = await api(`${REPO}/git/trees/${parent.tree.sha}`);
+  const entry = current.tree?.find(item => item.type === 'blob');
+  if (!entry) throw new Error('Não foi possível verificar a gravação. Nenhum arquivo foi alterado.');
+  const { path, mode, type, sha } = entry;
+  await api(`${REPO}/git/trees`, { method: 'POST', body: JSON.stringify({
+    base_tree: parent.tree.sha, tree: [{ path, mode, type, sha }],
+  }) });
+}
+
+export async function publishSelection(api, fetchDrafts, collection, selected, { branch = 'main', onRetry = () => {} } = {}) {
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const head = await api(`${REPO}/git/ref/heads/${branch}`);
+    const revision = head.object.sha;
+    const current = await fetchDrafts(collection, revision);
+    const changes = publicationChanges(selected, current);
+    const parent = await api(`${REPO}/git/commits/${revision}`);
+    const tree = await api(`${REPO}/git/trees`, { method: 'POST', body: JSON.stringify({ base_tree: parent.tree.sha, tree: changes }) });
+    const commit = await api(`${REPO}/git/commits`, { method: 'POST', body: JSON.stringify({
+      message: `Painel: publica ${selected.length} itens de ${collection}`,
+      tree: tree.sha, parents: [revision],
+    }) });
+    try {
+      await api(`${REPO}/git/refs/heads/${branch}`, { method: 'PATCH', body: JSON.stringify({ sha: commit.sha, force: false }) });
+      return commit;
+    } catch (error) {
+      if (![409, 422].includes(error.status)) throw error;
+      const latest = await api(`${REPO}/git/ref/heads/${branch}`);
+      // Só repete se houve avanço da branch. Outros erros 422 continuam sendo erros.
+      if (latest.object.sha === revision) throw error;
+      if (attempt === 2) throw new Error('Outras alterações continuam chegando ao site. Tente publicar novamente em alguns instantes.');
+      onRetry();
+    }
+  }
+}
+
+export function githubError(status, data = {}) {
+  const advice = status === 401 ? 'Entre novamente para continuar.' :
+    status === 409 || status === 422 ? `O GitHub recusou a publicação${data.message ? `: ${data.message}` : ''}.` :
+    'Não foi possível acessar o repositório. Verifique sua conexão e a permissão de publicação.';
+  return Object.assign(new Error(advice), { status, githubMessage: data.message });
+}
+
 if (typeof document !== 'undefined') initialize();
 
 function initialize() {
@@ -35,6 +82,7 @@ function initialize() {
   let entries = [];
   const selection = new Set();
   let busy = false;
+  let writeAllowed = false;
   let popup;
   let loginTimer;
   let loadVersion = 0;
@@ -48,7 +96,7 @@ function initialize() {
   }
 
   function controls() {
-    $('publish').disabled = busy || !selection.size;
+    $('publish').disabled = busy || !writeAllowed || !selection.size;
     $('publish').textContent = busy ? 'Aguarde…' : `Publicar selecionados${selection.size ? ` (${selection.size})` : ''}`;
     $('count').textContent = `${selection.size} selecionado${selection.size === 1 ? '' : 's'}`;
     $('all').disabled = busy || !entries.length;
@@ -62,15 +110,18 @@ function initialize() {
 
   async function api(path, options = {}) {
     const response = await fetch(`https://api.github.com${path}`, {
-      ...options, headers: { Accept: 'application/vnd.github+json', Authorization: `Bearer ${token}`,
+      ...options, cache: 'no-store', headers: { Accept: 'application/vnd.github+json', Authorization: `Bearer ${token}`,
         'Content-Type': 'application/json', ...options.headers },
     });
     if (!response.ok) {
       if (response.status === 401) { token = ''; $('login').hidden = false; }
-      const advice = response.status === 401 ? 'Entre novamente para continuar.' :
-        response.status === 409 || response.status === 422 ? 'O conteúdo mudou ou a publicação não foi permitida. Atualize a lista e tente novamente.' :
-        'Não foi possível acessar o repositório. Verifique sua conexão e a permissão de publicação.';
-      throw new Error(advice);
+      const data = await response.json().catch(() => ({}));
+      if (response.status === 403 && data.message === 'Resource not accessible by personal access token' && options.method === 'POST' && path.endsWith('/git/trees')) {
+        writeAllowed = false;
+        $('permission-help').hidden = false;
+        throw new Error('O token do painel permite leitura, mas não tem permissão para publicar. No GitHub, ajuste Contents para Read and write e clique em Atualizar lista.');
+      }
+      throw githubError(response.status, data);
     }
     return response.json();
   }
@@ -108,12 +159,15 @@ function initialize() {
   async function load() {
     if (!token || busy) return;
     const version = ++loadVersion;
-    selection.clear(); entries = []; render();
+    selection.clear(); entries = []; writeAllowed = false; $('permission-help').hidden = true; render();
     busy = true; controls(); message('Carregando rascunhos…');
     try {
       const drafts = await fetchDrafts($('collection').value);
       if (version !== loadVersion) return;
       entries = drafts; render();
+      message('Verificando permissão de publicação…');
+      await checkPublicationAccess(api);
+      writeAllowed = true;
       message(entries.length ? `${entries.length} rascunhos disponíveis. Marque os itens que deseja publicar.` : 'Nenhum rascunho nesta coleção.');
     } catch (error) { message(error.message, true); }
     finally { busy = false; controls(); }
@@ -149,7 +203,7 @@ function initialize() {
     controls();
   });
   $('publish').addEventListener('click', () => {
-    if (busy || !selection.size) return;
+    if (busy || !writeAllowed || !selection.size) return;
     $('confirmation-items').replaceChildren(...entries.filter(entry => selection.has(entry.path)).map(entry => {
       const item = document.createElement('li'); item.textContent = entry.title; return item;
     }));
@@ -157,22 +211,14 @@ function initialize() {
   });
   $('cancel').addEventListener('click', () => $('confirmation').close());
   $('confirm').addEventListener('click', async () => {
-    if (busy || !selection.size) return;
+    if (busy || !writeAllowed || !selection.size) return;
     $('confirmation').close(); busy = true; controls(); message('Publicando os itens selecionados…');
     let committed = false;
     try {
       const selected = entries.filter(entry => selection.has(entry.path));
-      const head = await api(`${REPO}/git/ref/heads/main`);
-      const revision = head.object.sha;
-      const current = await fetchDrafts($('collection').value, revision);
-      const changes = publicationChanges(selected, current);
-      const parent = await api(`${REPO}/git/commits/${revision}`);
-      const tree = await api(`${REPO}/git/trees`, { method: 'POST', body: JSON.stringify({ base_tree: parent.tree.sha, tree: changes }) });
-      const commit = await api(`${REPO}/git/commits`, { method: 'POST', body: JSON.stringify({
-        message: `Painel: publica ${selected.length} itens de ${$('collection').selectedOptions[0].textContent}`,
-        tree: tree.sha, parents: [revision],
-      }) });
-      await api(`${REPO}/git/refs/heads/main`, { method: 'PATCH', body: JSON.stringify({ sha: commit.sha, force: false }) });
+      await publishSelection(api, fetchDrafts, $('collection').value, selected, {
+        onRetry: () => message('O site recebeu outra atualização. Conferindo os itens e retomando a publicação…'),
+      });
       committed = true;
       entries = entries.filter(entry => !selection.has(entry.path)); selection.clear(); render();
       message(`${selected.length} itens enviados para publicação. O site será atualizado quando a hospedagem concluir o processamento.`);

@@ -1,0 +1,22 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Anúncios · Harpya</title><link rel="stylesheet" href="/admin/anuncios/vendor/filepond-4.32.12/filepond.min.css"><link rel="stylesheet" href="/admin/anuncios/style.css"></head><body><main>
+<nav><a href="/admin/" target="_top">← Painel</a><a href="/admin/publicar/">Publicar conteúdos</a><a href="/admin/divulgacao/">Divulgação</a></nav>
+<h1>Anúncios do site</h1><p>Um banner horizontal no meio da landing page e das subpáginas, além de dois anúncios na coluna direita. Em telas menores, a coluna aparece abaixo do conteúdo. Publique aqui para enviar a alteração diretamente ao site.</p>
+<button id="login" hidden>Entrar com e-mail e senha</button><p id="message" role="status" aria-live="polite">Carregando…</p>
+<label>Ambiente<select id="environment"><option value="tecnologia">Harpya Tecnologia e Matemática</option><option value="business">Harpya Business</option></select></label>
+<section aria-label="Resumo das posições" id="ad-overview" class="ad-overview"></section>
+<label>Posição<select id="slot"><option value="topo">Banner horizontal · meio da página</option><option value="lateral-direita">Coluna direita · primeiro anúncio</option><option value="lateral-esquerda">Coluna direita · segundo anúncio</option></select></label>
+<button id="reload" type="button">Recarregar posição</button>
+<form id="ad-form"><fieldset id="fields" disabled><legend>Conteúdo do anúncio</legend>
+<label>Anunciante<input name="anunciante" maxlength="100" autocomplete="organization"></label>
+<label>Título<input name="titulo" maxlength="80"></label>
+<label>Texto curto<textarea name="texto" maxlength="240" rows="3"></textarea></label>
+<label>Link de destino (HTTPS)<input name="url" type="url" placeholder="https://exemplo.com"></label>
+<label>Imagem por endereço HTTPS<input name="imagem" placeholder="https://exemplo.com/banner.png ou envie um arquivo abaixo"></label>
+<label>Ou enviar imagem (PNG, JPG ou WebP, até 2 MB)<input id="upload" type="file" accept="image/png,image/jpeg,image/webp"></label>
+<small>Formatos sugeridos: horizontal 970 × 90 px; laterais 300 × 250 px. A imagem é ajustada ao espaço sem distorção.</small>
+<label>Descrição da imagem<input name="imagem_alt" maxlength="160" placeholder="Texto para leitores de tela"></label>
+<div class="preview" aria-label="Prévia do anúncio"><small>Publicidade</small><img id="preview-image" alt="" hidden><strong id="preview-title"></strong><p id="preview-text"></p><span id="preview-advertiser"></span></div>
+<div class="actions"><button type="submit" id="publish">Publicar anúncio</button><button type="button" id="draft">Salvar como rascunho</button><button type="button" id="remove">Retirar anúncio do site</button></div>
+</fieldset></form><p>Quando não houver anúncio publicado, o site mostra “Seu anúncio aqui”. A hospedagem precisa concluir a atualização para a mudança aparecer.</p>
+<small>Upload com <a href="https://github.com/pqina/filepond" target="_blank" rel="noopener noreferrer">FilePond</a> · <a href="/admin/anuncios/vendor/filepond-4.32.12/LICENSE">licença MIT</a>.</small>
+</main><script type="module" src="/admin/anuncios/app.js"></script></body></html>

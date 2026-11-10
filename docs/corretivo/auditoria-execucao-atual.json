@@ -1,0 +1,85 @@
+{
+  "gerado_em": "2026-11-07T00:56:02.699Z",
+  "estado": "execucao_parcial",
+  "liberado_para_publicar": false,
+  "volume_original_e_referencia_nao_cota_automatica": true,
+  "referencia": "939e5f75d0bb7b0fc8028471a20c31b353204ba0",
+  "familias": [
+    {
+      "familia": "Vídeos",
+      "referencia": 155,
+      "publicados": 0,
+      "faltam_para_volume_original": 155
+    },
+    {
+      "familia": "Artigos e relatórios",
+      "referencia": 63,
+      "publicados": 6,
+      "faltam_para_volume_original": 57
+    },
+    {
+      "familia": "Livros",
+      "referencia": 58,
+      "publicados": 8,
+      "faltam_para_volume_original": 50
+    },
+    {
+      "familia": "Notícias",
+      "referencia": 23,
+      "publicados": 13,
+      "faltam_para_volume_original": 10
+    },
+    {
+      "familia": "Análises",
+      "referencia": 1,
+      "publicados": 1,
+      "faltam_para_volume_original": 0
+    },
+    {
+      "familia": "Guias de estudo",
+      "referencia": 12,
+      "publicados": 12,
+      "faltam_para_volume_original": 0
+    },
+    {
+      "familia": "Artigos Começando",
+      "referencia": 4,
+      "publicados": 4,
+      "faltam_para_volume_original": 0
+    },
+    {
+      "familia": "Dossiês Aprendizado",
+      "referencia": 10,
+      "publicados": 10,
+      "faltam_para_volume_original": 0
+    }
+  ],
+  "diferencas_volume": [
+    "Vídeos: diferença de 155 registros em relação ao volume original; não equivale a requisito do template.",
+    "Artigos e relatórios: diferença de 57 registros em relação ao volume original; não equivale a requisito do template.",
+    "Livros: diferença de 50 registros em relação ao volume original; não equivale a requisito do template.",
+    "Notícias: diferença de 10 registros em relação ao volume original; não equivale a requisito do template."
+  ],
+  "pesquisa": {
+    "artigos_candidatos": 28,
+    "artigos_urls_novas": 24,
+    "artigos_ja_no_acervo": 4,
+    "videos_candidatos": 24,
+    "canais_verificados": 8,
+    "duracao_video_segundos": 36345,
+    "videos_integralmente_revisados": 0,
+    "livros_existentes_conferidos": 8
+  },
+  "bloqueios": [
+    "Vídeos: os três destaques da home ainda não podem ser preenchidos.",
+    "Vídeos: nenhum registro publicado do nível Iniciante.",
+    "Vídeos: nenhum registro publicado do nível Intermediário.",
+    "Vídeos: nenhum registro publicado do nível Avançado.",
+    "Vídeos: zero publicáveis com revisão audiovisual integral concluída. Há 24 candidatos verificados por metadados, total nominal de 10 h 05 min 45 s, e duas transcrições editoriais lidas integralmente; isto não comprova a edição do YouTube. Tentativas de legendas retornaram 429.",
+    "Estudos: doze guias didáticos autorais com protocolos propostos; não são experimentos nem resultados empíricos. Revisão final da profundidade e dos estados funcionais permanece no aceite editorial e visual.",
+    "Biblioteca: ampliar e revisar o acervo. O build local tem seis referências e oito livros, frente a 63 referências e 58 livros no original; uma das seis referências é uma edição completa da Revista DOM, não um artigo individual.",
+    "Imagens temáticas: três retratos licenciados incorporados com crédito, fonte, link da licença e indicação das alterações; nove perfis ainda usam iniciais. Oito capas oficiais foram conferidas: sete correspondências bibliográficas confirmadas e How Brands Grow pendente. Condições de reutilização das capas estão registradas; os oito livros continuam usando as alternativas gráficas originais.",
+    "Aceite visual: há medição de treze templates nas cinco larguras e inspeção visual parcial; ainda faltam capturas pareadas completas e revisão de todos os estados funcionais, inclusive vídeos preenchidos.",
+    "Administração e serviços externos: testes locais do fluxo e configuração do CMS aprovados; publicação remota, autenticação real, coleta agendada em produção e discussão enviada não foram executadas neste corretivo."
+  ]
+}

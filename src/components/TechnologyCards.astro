@@ -1,0 +1,47 @@
+---
+import raw from '../../public/data/tecnologia.json';
+import sources from '../../scripts/fontes_tecnologia.json';
+
+type TechnologyItem = { source_id: string; title: string; url: string; published_at: string };
+const data = raw as unknown as { last_successful_at: string | null; sources: { id: string; status: string }[]; items: TechnologyItem[] };
+const now = Date.now();
+const recent = (value: string) => Number.isFinite(Date.parse(value)) && Date.parse(value) <= now && Date.parse(value) >= now - 45 * 86400000;
+const groups = sources.map(source => ({
+  ...source,
+  health: data.sources.find(status => status.id === source.id),
+  items: data.items.filter(item => {
+    try {
+      const url = new URL(item.url);
+      return item.source_id === source.id && typeof item.title === 'string' && item.title.length >= 5 && item.title.length <= 190 &&
+        recent(item.published_at) && url.protocol === 'https:' && !url.username && !url.password && (!url.port || url.port === '443') &&
+        source.hosts.includes(url.hostname) && source.prefixos.some(prefix => url.pathname.startsWith(prefix) && url.pathname.length > prefix.length) &&
+        (!source.somente_blog_editorial || url.pathname.split('/').filter(Boolean).length === 2);
+    } catch { return false; }
+  }).sort((a, b) => b.published_at.localeCompare(a.published_at)).slice(0, 2),
+}));
+const date = (value: string) => new Date(value).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'UTC' });
+const stale = !data.last_successful_at || now - Date.parse(data.last_successful_at) > 24 * 3600000;
+---
+<section class="technology-feed" aria-labelledby="technology-heading" data-technology-feed>
+  <header class="technology-heading">
+    <span class="technology-eyebrow">Para acompanhar</span>
+    <h2 id="technology-heading">No radar da tecnologia</h2>
+    <p>Eletrônica, chips e LLMs direto de fontes de referência.</p>
+    {data.last_successful_at && <small>Última coleta: <time datetime={data.last_successful_at}>{date(data.last_successful_at)}</time></small>}
+    {stale && <small>Exibindo as últimas leituras disponíveis.</small>}
+  </header>
+  {groups.map(group => <section class="technology-topic" aria-labelledby={`technology-${group.id}`}>
+    <div class="technology-topic-heading">
+      <h3 id={`technology-${group.id}`}>{group.tema}</h3>
+      <a href={group.canal} target="_blank" rel="noopener noreferrer" aria-label={`Feed RSS de ${group.nome}: ${group.tema}`}>RSS ↗</a>
+    </div>
+    <p class="technology-context">{group.contexto}</p>
+    {group.health?.status === 'error' && <small class="technology-status">Fonte temporariamente indisponível. Mantemos as leituras anteriores.</small>}
+    {group.items.length ? group.items.map(item => <article class="technology-card">
+      <div class="technology-meta"><span>{group.nome}</span><time datetime={item.published_at}>{date(item.published_at)}</time></div>
+      <h4><a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}<span aria-hidden="true"> ↗</span></a></h4>
+      <small>Título original · em inglês</small>
+    </article>) : <p class="technology-empty">Sem leitura recente disponível. <a href={group.site} target="_blank" rel="noopener noreferrer">Visitar {group.nome} ↗</a></p>}
+  </section>)}
+  <p class="technology-note">Seleção por tema. Pesquisa do MIT, jornalismo do IEEE Spectrum e blog da Hugging Face. Cada card leva à publicação original.</p>
+</section>

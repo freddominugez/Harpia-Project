@@ -1,0 +1,396 @@
+{
+  "versao": 1,
+  "pesquisado_em": "2026-11-06",
+  "estado": "pesquisa_concluida_com_pendencias",
+  "nota": "Pesquisa de assets, sem alteração de src/, publicação ou commit. Só três imagens com autoria, origem e licença confirmadas foram baixadas. Fotos institucionais sem licença explícita permanecem como candidatas não utilizáveis. As identidades são verificadas por metadados e contexto documental, sem reconhecimento facial.",
+  "diretorio_assets": "/tmp/harpya-business-retratos/",
+  "resumo_quantitativo": {
+    "pessoas_no_dossie": 12,
+    "imagens_baixadas": 3,
+    "licencas_confirmadas": 3,
+    "pendentes": 9
+  },
+  "criterios": [
+    "Origem e fotógrafo ou conta autora identificáveis na página do arquivo.",
+    "Licença específica da imagem, com termos de atribuição e adaptação registrados.",
+    "Correspondência nominal e contextual com a pessoa do dossiê; homônimos excluídos.",
+    "Nenhuma foto institucional, selo, assinatura, gráfico, documento ou retrato de homônimo usado para preencher uma lacuna.",
+    "Pesquisa delimitada: ausência de candidato aprovado não afirma inexistência de retrato licenciado em todo o mundo."
+  ],
+  "retratos": [
+    {
+      "pessoa_id": "neil-borden",
+      "pessoa": "Neil Borden",
+      "status": "pendente_autorizacao_reproducao",
+      "fonte_primaria": "https://npg.si.edu/object/npg_MA992160",
+      "url_arquivo": null,
+      "autoria": null,
+      "licenca": null,
+      "credito": null,
+      "identificacao": "O catálogo identifica o retratado como Neil Hopper Borden. Registro de pintura de Patricia Marshall Tate; reprodução não aprovada para uso.",
+      "identificacao_confirmada": false,
+      "arquivo_local": null,
+      "edicao_realizada": "Nenhuma; imagem não baixada.",
+      "pendencias": [
+        "O registro exige permissão do proprietário do retrato.",
+        "Confirmar titular atual e autorização de reprodução ou localizar imagem com licença aberta."
+      ],
+      "evidencias_consulta": [
+        "Metadados institucionais NPG indexados: sitter, artista, crédito e restrições.",
+        "Consulta direta falhou; restrições foram lidas no resultado institucional indexado.",
+        "Busca Commons por Neil Borden não forneceu retrato verificável."
+      ],
+      "verificado_em": "2026-11-06",
+      "artista_obra": "Patricia Marshall Tate",
+      "credito_obra": "Owner: Private collection",
+      "identificacao_nominal_na_fonte": true
+    },
+    {
+      "pessoa_id": "wendell-r-smith",
+      "pessoa": "Wendell R. Smith",
+      "status": "pendente_identificacao_e_licenca",
+      "fonte_primaria": null,
+      "url_arquivo": null,
+      "autoria": null,
+      "licenca": null,
+      "credito": null,
+      "identificacao": "Não foi confirmada uma correspondência fotográfica com o autor de marketing citado no dossiê.",
+      "identificacao_confirmada": false,
+      "arquivo_local": null,
+      "edicao_realizada": "Nenhuma; imagem não baixada.",
+      "pendencias": [
+        "Localizar retrato do pesquisador com identificação contextual e licença de reutilização.",
+        "Manter iniciais enquanto não houver correspondência comprovada."
+      ],
+      "evidencias_consulta": [
+        "Commons: busca nominal retornou um documento PDF sem retrato identificado.",
+        "Resultados de artista e profissional de mobiliário homônimos foram descartados; não representam o pesquisador do dossiê."
+      ],
+      "verificado_em": "2026-11-06",
+      "consulta_commons": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Wendell+R.+Smith%22&gsrnamespace=6&gsrlimit=5"
+    },
+    {
+      "pessoa_id": "theodore-levitt",
+      "pessoa": "Theodore Levitt",
+      "status": "pendente_retrato_licenciado",
+      "fonte_primaria": "https://news.harvard.edu/gazette/story/2006/07/professor-theodore-levitt-legendary-marketing-scholar-and-former-harvard-business-review-editor-dead-at-81/",
+      "url_arquivo": null,
+      "autoria": null,
+      "licenca": null,
+      "credito": null,
+      "identificacao": "A matéria institucional identifica o professor, mas a imagem de destaque é de um edifício; não foi tratada como retrato.",
+      "identificacao_confirmada": false,
+      "arquivo_local": null,
+      "edicao_realizada": "Nenhuma; imagem não baixada.",
+      "pendencias": [
+        "Localizar um retrato com fotógrafo, origem e licença explícita, ou obter autorização do titular."
+      ],
+      "evidencias_consulta": [
+        "Busca Commons por Theodore Levitt retornou PDFs e imagens sem correspondência de retrato.",
+        "Matéria institucional Harvard Gazette consultada por metadados indexados; foto de Weld Hall descartada.",
+        "Retratos reproduzidos em PDFs de terceiros não foram baixados por ausência de licença verificável."
+      ],
+      "verificado_em": "2026-11-06"
+    },
+    {
+      "pessoa_id": "philip-kotler",
+      "pessoa": "Philip Kotler",
+      "status": "baixado_com_licenca_verificada",
+      "fonte_primaria": "https://commons.wikimedia.org/wiki/File:Kotler-DSC_0510.jpg",
+      "url_arquivo": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kotler-DSC_0510.jpg",
+      "titulo_arquivo": "File:Kotler-DSC 0510.jpg",
+      "autoria": "Jack11 Poland",
+      "origem_declarada": "Own work",
+      "licenca": {
+        "nome": "CC BY-SA 3.0",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "condicoes": [
+          "atribuição",
+          "link para licença",
+          "indicação de alterações",
+          "ShareAlike para adaptações"
+        ]
+      },
+      "credito": "Jack11 Poland / Wikimedia Commons / CC BY-SA 3.0",
+      "data_imagem_declarada": "2009-09-14",
+      "identificacao": "Descrição nominal do arquivo e categoria Philip Kotler. Não usada comparação biométrica.",
+      "arquivo_local": "/tmp/harpya-business-retratos/philip-kotler.jpg",
+      "largura": 1533,
+      "altura": 2119,
+      "mime": "image/jpeg",
+      "bytes": 2616674,
+      "sha256": "aed46deb1de479d7b3572c3a095de5b0a666893060a9138c427a2554da3f45cd",
+      "revisao_pagina": {
+        "revid": 1270470772,
+        "parentid": 1083949118,
+        "timestamp": "2026-08-31T18:43:13Z"
+      },
+      "edicao_realizada": "Nenhuma; arquivo do Commons preservado byte a byte, apenas nome local alterado.",
+      "pendencias": [
+        "Implementar crédito visível e link da licença no uso final.",
+        "Qualquer novo recorte deve ser identificado e observar ShareAlike."
+      ],
+      "verificado_em": "2026-11-06",
+      "autoria_verificacao": "Autoria declarada no upload de obra própria e na seção Summary da página de arquivo.",
+      "identificacao_confirmada": true,
+      "evidencias_consulta": [
+        "Página Commons: Summary, Licensing e histórico do arquivo.",
+        "API Commons imageinfo: URL, tamanho, autoria e licença.",
+        "Arquivo local visualizado para conferir enquadramento e integridade; identidade baseada nos metadados e contexto do registro, não em reconhecimento facial."
+      ],
+      "edicao_previa_no_commons": "Nenhuma edição específica reivindicada pelo agente; consultar histórico da fonte.",
+      "limite_qualidade": "1533 × 2119 px; retrato vertical com microfone no enquadramento original.",
+      "credito_completo": "Jack11 Poland — Kotler-DSC 0510.jpg — Wikimedia Commons — CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0). Sem alterações pelo Harpya."
+    },
+    {
+      "pessoa_id": "paul-e-green",
+      "pessoa": "Paul E. Green",
+      "status": "pendente_retrato_licenciado",
+      "fonte_primaria": "https://connect.informs.org/isms/in-memoriam/paul-green",
+      "url_arquivo": null,
+      "autoria": null,
+      "licenca": null,
+      "credito": null,
+      "identificacao": "Página institucional confirma Paul E. Green, pesquisador de marketing; não foi identificado nela um arquivo de retrato com licença aberta.",
+      "identificacao_confirmada": false,
+      "arquivo_local": null,
+      "edicao_realizada": "Nenhuma; imagem não baixada.",
+      "pendencias": [
+        "Obter uma imagem identificada com origem, autor e licença; não extrair fotografia de publicação por presumir liberdade de uso."
+      ],
+      "evidencias_consulta": [
+        "Página memorial INFORMS consultada; rodapé reserva direitos.",
+        "Busca Commons nominal retornou documentos, sem retrato aprovado.",
+        "Obituários com foto em terceiros não forneceram cadeia de licença verificada."
+      ],
+      "verificado_em": "2026-11-06"
+    },
+    {
+      "pessoa_id": "emerson-de-almeida",
+      "pessoa": "Emerson de Almeida",
+      "status": "pendente_licenca",
+      "fonte_primaria": "https://www.fdc.org.br/diretorias-conselhos",
+      "url_arquivo": "https://images.ctfassets.net/1kwz2rqywq00/FI9D4NJynZAq6ChkHwAFe/ae360e05b18fd2f67d5cca521feb10a2/Emerson-de-Almeida.png?w=300&h=300&fit=fill&fm=webp&q=85&f=faces",
+      "autoria": null,
+      "licenca": null,
+      "credito": null,
+      "identificacao": "Imagem identificada nominalmente no alt e no bloco do cofundador da FDC.",
+      "identificacao_confirmada": false,
+      "arquivo_local": null,
+      "edicao_realizada": "Nenhuma; imagem não baixada.",
+      "pendencias": [
+        "Confirmar autoria da fotografia e licença ou autorização expressa do titular.",
+        "Foto institucional disponível não foi considerada livre nem baixada."
+      ],
+      "evidencias_consulta": [
+        "Página institucional e atributo alt Foto de Emerson de Almeida consultados.",
+        "URL extraída do HTML; nenhuma licença de reutilização foi confirmada.",
+        "Busca Commons nominal sem retrato aprovado."
+      ],
+      "verificado_em": "2026-11-06",
+      "identificacao_nominal_na_fonte": true,
+      "fonte_alternativa_creditada": "https://sejarelevante.fdc.org.br/empreender-e-risco-e-paixao-mostram-empresarios-durante-forum-da-fdc/",
+      "nota_alternativa": "A matéria alternativa credita fotos a Homero Xavier/FDC; o crédito não constitui licença e essas imagens não foram baixadas."
+    },
+    {
+      "pessoa_id": "kevin-lane-keller",
+      "pessoa": "Kevin Lane Keller",
+      "status": "pendente_licenca",
+      "fonte_primaria": "https://tuck.dartmouth.edu/marketing-symposium/speakers",
+      "url_arquivo": "https://tuck.dartmouth.edu/uploads/content/Kevin-Keller-175.jpg?v=1603303168",
+      "autoria": null,
+      "licenca": null,
+      "credito": null,
+      "identificacao": "Página de palestrantes Tuck associa nome, biografia e alt Kevin Lane Keller à imagem.",
+      "identificacao_confirmada": false,
+      "arquivo_local": null,
+      "edicao_realizada": "Nenhuma; imagem não baixada.",
+      "pendencias": [
+        "Confirmar fotógrafo e licença específica ou obter autorização.",
+        "Não confundir o pesquisador com a personagem de quadrinhos Kevin Keller ou fotógrafos homônimos."
+      ],
+      "evidencias_consulta": [
+        "Página Tuck e HTML da imagem consultados.",
+        "Rodapé informa All rights reserved; nenhuma licença aberta confirmada para a foto.",
+        "Busca Commons nominal não forneceu retrato aprovado."
+      ],
+      "verificado_em": "2026-11-06",
+      "identificacao_nominal_na_fonte": true
+    },
+    {
+      "pessoa_id": "robert-s-kaplan",
+      "pessoa": "Robert S. Kaplan",
+      "status": "baixado_com_licenca_verificada",
+      "fonte_primaria": "https://commons.wikimedia.org/wiki/File:Robert_S._Kaplan.jpg",
+      "url_arquivo": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Robert_S._Kaplan.jpg",
+      "titulo_arquivo": "File:Robert S. Kaplan.jpg",
+      "autoria": "Davidpmcmillan",
+      "origem_declarada": "Own work",
+      "licenca": {
+        "nome": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "condicoes": [
+          "atribuição",
+          "link para licença",
+          "indicação de alterações",
+          "ShareAlike para adaptações"
+        ]
+      },
+      "credito": "Davidpmcmillan / Wikimedia Commons / CC BY-SA 4.0",
+      "data_imagem_declarada": "2017-03-21",
+      "identificacao": "Nome com inicial S. no título; descrição do Palladium Positive Impact Summit; uso listado na página Robert S. Kaplan. Homônimo Robert D. Kaplan excluído.",
+      "arquivo_local": "/tmp/harpya-business-retratos/robert-s-kaplan.jpg",
+      "largura": 513,
+      "altura": 444,
+      "mime": "image/jpeg",
+      "bytes": 14726,
+      "sha256": "7e3dd83d3ec2f35ca9ded5ec435e389e3f4f1e321ce06fa77b0adba63c4e5bfa",
+      "revisao_pagina": {
+        "revid": 1014410384,
+        "parentid": 920515846,
+        "timestamp": "2025-03-28T02:54:27Z"
+      },
+      "edicao_realizada": "Nenhuma; arquivo do Commons preservado byte a byte, apenas nome local alterado.",
+      "pendencias": [
+        "Implementar crédito visível e link da licença no uso final.",
+        "Qualquer novo recorte deve ser identificado e observar ShareAlike."
+      ],
+      "verificado_em": "2026-11-06",
+      "autoria_verificacao": "Autoria declarada no upload de obra própria e na seção Summary da página de arquivo.",
+      "identificacao_confirmada": true,
+      "evidencias_consulta": [
+        "Página Commons: Summary, Licensing e histórico do arquivo.",
+        "API Commons imageinfo: URL, tamanho, autoria e licença.",
+        "Arquivo local visualizado para conferir enquadramento e integridade; identidade baseada nos metadados e contexto do registro, não em reconhecimento facial."
+      ],
+      "edicao_previa_no_commons": "Histórico registra recorte de borda por Beao em 15/09/2023; o arquivo atual foi baixado sem nova edição.",
+      "limite_qualidade": "513 × 444 px; fotografia em palestra, com rosto pequeno no enquadramento. Avaliar legibilidade no card sem presumir qualidade de headshot.",
+      "credito_completo": "Davidpmcmillan — Robert S. Kaplan.jpg — Wikimedia Commons — CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0). Sem alterações pelo Harpya."
+    },
+    {
+      "pessoa_id": "david-p-norton",
+      "pessoa": "David P. Norton",
+      "status": "baixado_com_licenca_verificada",
+      "fonte_primaria": "https://commons.wikimedia.org/wiki/File:David_Norton.jpg",
+      "url_arquivo": "https://upload.wikimedia.org/wikipedia/commons/6/6e/David_Norton.jpg",
+      "titulo_arquivo": "File:David Norton.jpg",
+      "autoria": "Davidpmcmillan",
+      "origem_declarada": "Own work",
+      "licenca": {
+        "nome": "CC BY-SA 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "condicoes": [
+          "atribuição",
+          "link para licença",
+          "indicação de alterações",
+          "ShareAlike para adaptações"
+        ]
+      },
+      "credito": "Davidpmcmillan / Wikimedia Commons / CC BY-SA 4.0",
+      "data_imagem_declarada": "2010-12-31",
+      "identificacao": "Descrição de Dr. David Norton e histórico de upload enquanto editava David P. Norton; usos listados nessa biografia. Homônimos futebolista e oficial naval excluídos.",
+      "arquivo_local": "/tmp/harpya-business-retratos/david-p-norton.jpg",
+      "largura": 300,
+      "altura": 323,
+      "mime": "image/jpeg",
+      "bytes": 28733,
+      "sha256": "24ce915387f195be279769515dea697244f348fec1492b40c2185655d42fcf7f",
+      "revisao_pagina": {
+        "revid": 1032495798,
+        "parentid": 886810275,
+        "timestamp": "2025-05-17T11:55:58Z"
+      },
+      "edicao_realizada": "Nenhuma; arquivo do Commons preservado byte a byte, apenas nome local alterado.",
+      "pendencias": [
+        "Implementar crédito visível e link da licença no uso final.",
+        "Qualquer novo recorte deve ser identificado e observar ShareAlike."
+      ],
+      "verificado_em": "2026-11-06",
+      "autoria_verificacao": "Autoria declarada no upload de obra própria e na seção Summary da página de arquivo.",
+      "identificacao_confirmada": true,
+      "evidencias_consulta": [
+        "Página Commons: Summary, Licensing e histórico do arquivo.",
+        "API Commons imageinfo: URL, tamanho, autoria e licença.",
+        "Arquivo local visualizado para conferir enquadramento e integridade; identidade baseada nos metadados e contexto do registro, não em reconhecimento facial."
+      ],
+      "edicao_previa_no_commons": "Nenhuma edição específica reivindicada pelo agente; consultar histórico da fonte.",
+      "limite_qualidade": "300 × 323 px; adequado apenas a uso pequeno, sem supor ganho de detalhe por ampliação.",
+      "credito_completo": "Davidpmcmillan — David Norton.jpg — Wikimedia Commons — CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0). Sem alterações pelo Harpya."
+    },
+    {
+      "pessoa_id": "fred-reichheld",
+      "pessoa": "Fred Reichheld",
+      "status": "pendente_licenca",
+      "fonte_primaria": "https://www.bain.com/our-team/fred-reichheld/",
+      "url_arquivo": "https://www.bain.com/contentassets/b9c4f65a09984606816e11ca2ca50068/reichheld-fred-3_1.jpg?width=1950&height=650&rmode=crop&rsampler=bicubic&compand=true",
+      "autoria": null,
+      "licenca": null,
+      "credito": null,
+      "identificacao": "Perfil institucional Bain identifica Fred Reichheld; alt do arquivo diz Headshot of Fred Reichheld.",
+      "identificacao_confirmada": false,
+      "arquivo_local": null,
+      "edicao_realizada": "Nenhuma; imagem não baixada.",
+      "pendencias": [
+        "Confirmar autoria e licença ou autorização específica para reutilização.",
+        "Arquivo mencionado como Fred-Reichheld-207.jpg em discussão Commons não teve licença recuperada; não foi utilizado."
+      ],
+      "evidencias_consulta": [
+        "Perfil Bain e HTML da imagem consultados; nenhuma licença aberta confirmada.",
+        "Commons não retornou retrato aprovado nas buscas.",
+        "Tentativas do arquivo mencionado em discussão tiveram bloqueio de acesso; não se presumiu licença ou exclusão."
+      ],
+      "verificado_em": "2026-11-06",
+      "identificacao_nominal_na_fonte": true
+    },
+    {
+      "pessoa_id": "stephen-l-vargo",
+      "pessoa": "Stephen L. Vargo",
+      "status": "pendente_licenca",
+      "fonte_primaria": "https://shidler.hawaii.edu/news/2020/12/07/vargo-listed-among-the-worlds-highly-cited-researchers-for-2020",
+      "url_arquivo": "https://shidler.hawaii.edu/sites/shidler.hawaii.edu/files/styles/large_1280/public/2020/12/vargostephen-1.jpg?itok=Qzdnc870",
+      "autoria": null,
+      "licenca": null,
+      "credito": null,
+      "identificacao": "Matéria Shidler identifica Stephen Vargo e sua posição em marketing; alt nomeia o retratado.",
+      "identificacao_confirmada": false,
+      "arquivo_local": null,
+      "edicao_realizada": "Nenhuma; imagem não baixada.",
+      "pendencias": [
+        "Confirmar fotógrafo e licença ou autorização de reutilização.",
+        "Não usar imagens de músicos, outras pessoas chamadas Vargo ou localidades."
+      ],
+      "evidencias_consulta": [
+        "Página Shidler e HTML da imagem consultados.",
+        "Rodapé informa All rights reserved; não foi confirmada licença aberta da foto.",
+        "Busca Commons por Vargo e por nome completo não forneceu retrato aprovado; homônimos descartados."
+      ],
+      "verificado_em": "2026-11-06",
+      "identificacao_nominal_na_fonte": true
+    },
+    {
+      "pessoa_id": "robert-f-lusch",
+      "pessoa": "Robert F. Lusch",
+      "status": "pendente_licenca",
+      "fonte_primaria": "https://eller.arizona.edu/news/2017/02/eller-college-and-department-marketing-announce-lusch-endowed-initiative",
+      "url_arquivo": "https://eller.arizona.edu/sites/default/files/styles/az_large/public/bob-lusch-smiling.jpg.webp?itok=Sc068SIN",
+      "autoria": null,
+      "licenca": null,
+      "credito": null,
+      "identificacao": "Matéria Eller identifica Robert Lusch e a imagem possui alt Bob Lusch, no mesmo contexto institucional.",
+      "identificacao_confirmada": false,
+      "arquivo_local": null,
+      "edicao_realizada": "Nenhuma; imagem não baixada.",
+      "pendencias": [
+        "Confirmar autoria e licença ou obter autorização do titular.",
+        "Não usar retrato de Heinz Lüsch ou arquivos de outros homônimos."
+      ],
+      "evidencias_consulta": [
+        "Página Eller e HTML da imagem consultados.",
+        "Nenhuma licença explícita de reutilização foi confirmada.",
+        "Busca Commons por Lusch e nome completo não forneceu retrato aprovado."
+      ],
+      "verificado_em": "2026-11-06",
+      "identificacao_nominal_na_fonte": true
+    }
+  ]
+}

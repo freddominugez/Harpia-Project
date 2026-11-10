@@ -1,0 +1,19 @@
+---
+import { getEntry } from 'astro:content';
+interface Props { posicao: 'topo' | 'lateral-esquerda' | 'lateral-direita'; ambiente?: 'tecnologia' | 'business' }
+const { posicao, ambiente = 'tecnologia' } = Astro.props;
+const entry = await getEntry('anuncios', ambiente === 'business' ? `business-${posicao}` : posicao);
+const ad = entry?.data.status === 'publicado' ? entry.data : null;
+const top = posicao === 'topo';
+---
+<section class:list={['ad-slot', { 'ad-slot-horizontal': top, 'ad-slot-side': !top }]} aria-label={`Publicidade: ${top ? 'banner horizontal no conteúdo' : posicao === 'lateral-esquerda' ? 'coluna direita, segundo anúncio' : 'coluna direita, primeiro anúncio'}`} data-ad-slot={posicao} data-ad-environment={ambiente} data-ad-placement={top ? 'midpage' : 'right-rail'}>
+  <span class="ad-label">Publicidade</span>
+  {ad ? (
+    <a class:list={['ad-content', { 'ad-image-only': !!ad.imagem }]} href={ad.url || undefined} target={ad.url ? '_blank' : undefined} rel={ad.url ? 'sponsored nofollow noopener noreferrer' : undefined}>
+      {ad.imagem && <img src={ad.imagem} alt={ad.imagem_alt} width={top ? 970 : 300} height={top ? 90 : 250} loading="lazy" decoding="async" />}
+      <span class:list={['ad-copy', { 'ad-sr-only': !!ad.imagem }]}><small>{ad.anunciante}</small><strong>{ad.titulo}</strong>{ad.texto && <span>{ad.texto}</span>}</span>
+    </a>
+  ) : (
+    <div class="ad-placeholder"><strong>Seu anúncio aqui</strong><span>{top ? 'Banner horizontal' : 'Espaço lateral'} · {ambiente === 'business' ? 'Apoie o conhecimento em marketing e gestão' : 'Apoie a pesquisa aberta'}</span></div>
+  )}
+</section>

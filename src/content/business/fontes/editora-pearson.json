@@ -1,0 +1,18 @@
+{
+  "nome": "Pearson",
+  "url": "https://www.pearson.com/",
+  "regiao": "Internacional",
+  "tipo": "editora",
+  "descricao": "Referência bibliográfica da editora; não integra a seleção de artigos.",
+  "idioma": "en",
+  "hosts": [
+    "www.pearson.com"
+  ],
+  "feed": "",
+  "status": "aprovado",
+  "escopos": [
+    "livros"
+  ],
+  "canais": [],
+  "verificado_em": "2026-11-06"
+}

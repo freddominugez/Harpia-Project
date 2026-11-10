@@ -1,0 +1,1197 @@
+{
+  "resumos_referencias": 6,
+  "cards_guias": 3,
+  "palavras_introducao": 49,
+  "videos_publicos": 57,
+  "destaques_home": 3,
+  "anuncios_iguais": true,
+  "anuncios": {
+    "/tecnologia/": [
+      {
+        "posicao": "topo",
+        "imagem": "/img/anuncios/vulcan-organizer-banner-superior-970x90-2x.png",
+        "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=superior_970x90"
+      },
+      {
+        "posicao": "lateral-direita",
+        "imagem": "/img/anuncios/vulcan-organizer-lateral-direita-300x250-2x.png",
+        "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_direita_300x250"
+      },
+      {
+        "posicao": "lateral-esquerda",
+        "imagem": "/img/anuncios/vulcan-organizer-lateral-esquerda-300x250-2x.png",
+        "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_esquerda_300x250"
+      }
+    ],
+    "/business/": [
+      {
+        "posicao": "topo",
+        "imagem": "/img/anuncios/vulcan-organizer-banner-superior-970x90-2x.png",
+        "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=superior_970x90"
+      },
+      {
+        "posicao": "lateral-direita",
+        "imagem": "/img/anuncios/vulcan-organizer-lateral-direita-300x250-2x.png",
+        "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_direita_300x250"
+      },
+      {
+        "posicao": "lateral-esquerda",
+        "imagem": "/img/anuncios/vulcan-organizer-lateral-esquerda-300x250-2x.png",
+        "url": "https://www.vulcanorganizer.com/?utm_source=harpya&utm_medium=display&utm_campaign=organizer_banners&utm_content=lateral_esquerda_300x250"
+      }
+    ]
+  },
+  "hero_atualizado": true,
+  "verificado_em": "2026-11-07T11:01:15.531Z",
+  "url": "https://www.harpya.org",
+  "commit": "eb7f181ab7de6ac96bf94e4cbdb007e32cffb780",
+  "deployment": "dpl_BAFbEZh8x6yPrUgRxNpzaNJB4jQR",
+  "paginas": 135,
+  "falhas": [],
+  "recursos": [
+    {
+      "route": "/business/busca.json",
+      "status": 200,
+      "bytes": 35590,
+      "itens": 119,
+      "somente_business": true
+    },
+    {
+      "route": "/business/rss.xml",
+      "status": 200,
+      "bytes": 48886
+    },
+    {
+      "route": "/business/sitemap.xml",
+      "status": 200,
+      "bytes": 13650
+    },
+    {
+      "route": "/business/llms.txt",
+      "status": 200,
+      "bytes": 31486
+    },
+    {
+      "route": "/business/llms-full.txt",
+      "status": 200,
+      "bytes": 406210
+    },
+    {
+      "route": "/business/comecando/valor-e-mercado.md",
+      "status": 200,
+      "bytes": 11303
+    },
+    {
+      "route": "/business/estudos/caminhos/fundamentos.md",
+      "status": 200,
+      "bytes": 7779
+    },
+    {
+      "route": "/business/equacoes.md",
+      "status": 200,
+      "bytes": 20269
+    },
+    {
+      "route": "/img/origens/business-philip-kotler.webp",
+      "status": 200,
+      "bytes": 45928
+    },
+    {
+      "route": "/img/origens/business-robert-s-kaplan.webp",
+      "status": 200,
+      "bytes": 18688
+    },
+    {
+      "route": "/img/origens/business-david-p-norton.webp",
+      "status": 200,
+      "bytes": 13270
+    },
+    {
+      "route": "/img/origens/business-creditos.json",
+      "status": 200,
+      "bytes": 2044
+    }
+  ],
+  "resultados": [
+    {
+      "route": "/",
+      "status": 200,
+      "h1": "Dois horizontes.O mesmo rigor.",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/",
+      "status": 200,
+      "h1": "Harpya Business",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/analises/",
+      "status": 200,
+      "h1": "Resultados recentes, lidos com calma",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/analises/atribuicao-incrementalidade/",
+      "status": 200,
+      "h1": "Atribuição, incrementalidade e decisões de marketing",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/aprendizado/",
+      "status": 200,
+      "h1": "Como aprender com mercados, clientes e resultados",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/biblioteca/",
+      "status": 200,
+      "h1": "Livros, artigos e onde pesquisar",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/biblioteca/fontes/",
+      "status": 200,
+      "h1": "Fontes do site",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/biblioteca/glossario/",
+      "status": 200,
+      "h1": "Glossário de marketing e gestão",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/biblioteca/livros/",
+      "status": 200,
+      "h1": "Livros, artigos e onde pesquisar",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/comecando/",
+      "status": 200,
+      "h1": "Começando",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/comecando/mensuracao-e-causalidade/",
+      "status": 200,
+      "h1": "Mensuração e causalidade: o que uma mudança realmente provocou?",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/comecando/pesquisa-e-consumidor/",
+      "status": 200,
+      "h1": "Pesquisa e consumidor: transforme dúvidas em perguntas verificáveis",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/comecando/segmentacao-e-posicionamento/",
+      "status": 200,
+      "h1": "Segmentação e posicionamento: escolha para quem criar valor",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/comecando/valor-e-mercado/",
+      "status": 200,
+      "h1": "Valor e mercado: por que alguém escolheria sua oferta?",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/equacoes/",
+      "status": 200,
+      "h1": "Métricas e métodos de marketing",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/",
+      "status": 200,
+      "h1": "Por que este projeto existe",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/a-ideia-mais-interessante/",
+      "status": 200,
+      "h1": "Quem compraria mesmo sem o anúncio?",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/arquivados/",
+      "status": 200,
+      "h1": "Arquivados",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/caminhos/canais-b2b/",
+      "status": 200,
+      "h1": "Investigar conflito e complementaridade de canais B2B",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/caminhos/clientes/",
+      "status": 200,
+      "h1": "Experiência, relacionamento e fidelização",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/caminhos/consumidor/",
+      "status": 200,
+      "h1": "Pesquisa e comportamento do consumidor",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/caminhos/crescimento/",
+      "status": 200,
+      "h1": "Pricing, canais e crescimento B2B",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/caminhos/estrategia/",
+      "status": 200,
+      "h1": "Segmentação e posicionamento",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/caminhos/fundamentos/",
+      "status": 200,
+      "h1": "Marketing e criação de valor",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/caminhos/gestao/",
+      "status": 200,
+      "h1": "Administração e organização de marketing",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/caminhos/marcas/",
+      "status": 200,
+      "h1": "Marca, reputação e comunicação",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/caminhos/mensuracao/",
+      "status": 200,
+      "h1": "Métricas, experimentos e retorno",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/caminhos/pesquisa-comparativa/",
+      "status": 200,
+      "h1": "Comparar ofertas sem transformar intenção em compra",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/caminhos/precificacao/",
+      "status": 200,
+      "h1": "Testar preço sem confundir faturamento e contribuição",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/caminhos/reputacao/",
+      "status": 200,
+      "h1": "Investigar reputação sem confundir percepção e evidência",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/canais-b2b/",
+      "status": 200,
+      "h1": "Investigar conflito e complementaridade de canais B2B",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/clientes/",
+      "status": 200,
+      "h1": "Experiência, relacionamento e fidelização",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/consumidor/",
+      "status": 200,
+      "h1": "Pesquisa e comportamento do consumidor",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/crescimento/",
+      "status": 200,
+      "h1": "Pricing, canais e crescimento B2B",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/estrategia/",
+      "status": 200,
+      "h1": "Segmentação e posicionamento",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/fundamentos/",
+      "status": 200,
+      "h1": "Marketing e criação de valor",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/gestao/",
+      "status": 200,
+      "h1": "Administração e organização de marketing",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/marcas/",
+      "status": 200,
+      "h1": "Marca, reputação e comunicação",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/mensuracao/",
+      "status": 200,
+      "h1": "Métricas, experimentos e retorno",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/pesquisa-comparativa/",
+      "status": 200,
+      "h1": "Comparar ofertas sem transformar intenção em compra",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/precificacao/",
+      "status": 200,
+      "h1": "Testar preço sem confundir faturamento e contribuição",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/estudos/reputacao/",
+      "status": 200,
+      "h1": "Investigar reputação sem confundir percepção e evidência",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/forum/",
+      "status": 200,
+      "h1": "Discuta, reproduza, conteste",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/branding-promessa/",
+      "status": 200,
+      "h1": "The Right Way to Build Your Brand",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/dom-pensamento-estrategico/",
+      "status": 200,
+      "h1": "Revista DOM: pensamento estratégico e gestão",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/escuta-clientes/",
+      "status": 200,
+      "h1": "What Happens When You Actually Listen to Customers",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/hbr-orientacao-cliente/",
+      "status": 200,
+      "h1": "Satisfazer necessidades: além da venda de produtos",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/livro-competitive-strategy/",
+      "status": 200,
+      "h1": "Competitive Strategy",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/livro-good-strategy-bad-strategy/",
+      "status": 200,
+      "h1": "Good Strategy Bad Strategy",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/livro-how-brands-grow/",
+      "status": 200,
+      "h1": "How Brands Grow: What Marketers Don’t Know",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/livro-marketing-management/",
+      "status": 200,
+      "h1": "Marketing Management",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/livro-marketing-metrics/",
+      "status": 200,
+      "h1": "Marketing Metrics",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/livro-marketing-research/",
+      "status": 200,
+      "h1": "Marketing Research: An Applied Orientation",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/livro-marketing-servicos/",
+      "status": 200,
+      "h1": "Marketing de Serviços",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/livro-strategic-brand-management/",
+      "status": 200,
+      "h1": "Strategic Brand Management",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/marketing-moderno/",
+      "status": 200,
+      "h1": "Modern marketing: What it is, what it isn’t, and how to do it",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/pesquisa-consumidor/",
+      "status": 200,
+      "h1": "When Brain Scans Beat Surveys (and When They Don’t)",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/transformacao-rimowa/",
+      "status": 200,
+      "h1": "The Playbook for RIMOWA’s Transformation",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-fdc-0_yxsqkmdwe/",
+      "status": 200,
+      "h1": "Inovação na Prática - 7o episódio – Inovação e Estratégia.",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-fdc-3ixbe1jzy2a/",
+      "status": 200,
+      "h1": "Digitalizando - Sétimo Episódio: Jornada do cliente!",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-fdc-44vp9tf0myq/",
+      "status": 200,
+      "h1": "Inovação na Prática - 3o. Episódio: Cultura e Gestão",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-fdc-bv8aa5vxmsa/",
+      "status": 200,
+      "h1": "Gestão comercial e rentabilização da base de clientes",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-fdc-e7dznb81isg/",
+      "status": 200,
+      "h1": "Estratégia Empresarial",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-fdc-h9e6dvore1u/",
+      "status": 200,
+      "h1": "Desenvolvendo centralidade no cliente agora e no futuro — Professora Luciana Faluba",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-fdc-iqwzf7yw9ck/",
+      "status": 200,
+      "h1": "Como inspirar e liderar estratégias de mercado em tempos de crise: o caso Magalu",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-fdc-jlikeilnhto/",
+      "status": 200,
+      "h1": "Como aumentar o retorno sobre relacionamento com clientes",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-fdc-js4yagpktcw/",
+      "status": 200,
+      "h1": "Alinhamento da cadeia produtiva",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-fdc-nxx7auksxui/",
+      "status": 200,
+      "h1": "O impacto da pandemia na reputação das empresas brasileiras",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-fdc-rv_updfk9xq/",
+      "status": 200,
+      "h1": "Inovação na Prática - 5o. Episódio: Novos Modelos de Negócio",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-fdc-vxznpazj-iu/",
+      "status": 200,
+      "h1": "Inovação na Prática - 4o. Episódio: Proposta de Valor",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-fdc-vztxlkrr6gu/",
+      "status": 200,
+      "h1": "Estratégias e Riscos nos Canais de Distribuição em Tempo de Crise",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-fdc-wqhggtfzimg/",
+      "status": 200,
+      "h1": "Inovação na Prática - 10o episódio: Conclusão e métricas",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-fdc-xjqf80vrrk0/",
+      "status": 200,
+      "h1": "Blindagem digital do cliente",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-fgv-fqcj9jzegng/",
+      "status": 200,
+      "h1": "Webinar | Tendências para marketing e tecnologia em 2022",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-fgv-lcrj-cruxb4/",
+      "status": 200,
+      "h1": "Webinar | Inteligência artificial e marketing",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-fgv-lpksprpdpfi/",
+      "status": 200,
+      "h1": "FGV In Company Insights | Ep 89 - Um framework para a Gestão de Estereótipos na Comunicação de Marca",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-fgv-nfqu5xy99sy/",
+      "status": 200,
+      "h1": "#48 Marketing em 2026: Inteligência Artificial e Geração de Valor",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-fgv-qsax3xyrspu/",
+      "status": 200,
+      "h1": "Webinar | Ambiente digital, métricas e operações de trade marketing no PDV de canais key accounts",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-fgv-raxvyszbcem/",
+      "status": 200,
+      "h1": "Webinar | Centralidade no Cliente e Inovação Digital para Além da Crise",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-fgv-tblgzi2yzk0/",
+      "status": 200,
+      "h1": "Webinar | Marca Própria: Fortaleza em Tempos de Incerteza",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-hbr-_c-vgu2ml38/",
+      "status": 200,
+      "h1": "O que é um modelo de negócio?",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-hbr-_wi3b54m6su/",
+      "status": 200,
+      "h1": "O que é design thinking?",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-hbr-abl6b71h2mc/",
+      "status": 200,
+      "h1": "Como identificar competências centrais da empresa",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-hbr-amsvwmvtmxw/",
+      "status": 200,
+      "h1": "Como funciona a inovação disruptiva",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-hbr-m1ksierx-fg/",
+      "status": 200,
+      "h1": "Como equilibrar execução e adaptação",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-hbr-myf2_fbcvxw/",
+      "status": 200,
+      "h1": "As cinco forças competitivas que moldam a estratégia",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-hbr-qykjwqtarpm/",
+      "status": 200,
+      "h1": "Novos produtos para mercados emergentes",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-hbr-sazct3n6exi/",
+      "status": 200,
+      "h1": "Como estruturar um plano de negócios",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-hbr-sydaa02cs5e/",
+      "status": 200,
+      "h1": "Estratégia do oceano azul",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-insead-8rwwuxf7ghu/",
+      "status": 200,
+      "h1": "O efeito momentum: mobilizar inteligência para crescer",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-insead-akfng4tegya/",
+      "status": 200,
+      "h1": "Quando o boca a boca pode ter efeito contrário entre amigos próximos",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-insead-bwtzb60bxlu/",
+      "status": 200,
+      "h1": "Como o marketing de alimentos afeta o que comemos",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-insead-n1j4imhoozi/",
+      "status": 200,
+      "h1": "Inovação no modelo de negócio com Serguei Netessine e Karan Girotra",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-insead-nedxqh6_-9k/",
+      "status": 200,
+      "h1": "Marketing distópico?",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-insead-slzcyr5ixd4/",
+      "status": 200,
+      "h1": "Marketing viral: contar para uma mulher?",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-lbs-bwkhqzfiz4y/",
+      "status": 200,
+      "h1": "Quando a liberdade de escolha pode gerar infelicidade?",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-lbs-lcmlarg7pi8/",
+      "status": 200,
+      "h1": "Como os preços podem entusiasmar os clientes",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-lbs-rkgtsrfinvo/",
+      "status": 200,
+      "h1": "Estratégias de crescimento em mercados emergentes",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-lbs-uktfw1nkuog/",
+      "status": 200,
+      "h1": "Simona Botti: consumidores e inteligência artificial",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-lbs-vw9dqka3odg/",
+      "status": 200,
+      "h1": "Marketing preparado para IA: a próxima mudança na estratégia digital",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-mit-smr--gcpk1wbo2i/",
+      "status": 200,
+      "h1": "Como conversar com clientes para construir confiança",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-mit-smr-1c9qaoi1z8y/",
+      "status": 200,
+      "h1": "Integrar vendas e operações para criar valor ao cliente",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-mit-smr-1eaapzwx0hi/",
+      "status": 200,
+      "h1": "Criar valor para o cliente: da teoria à prática",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-mit-smr-2cawsp2hery/",
+      "status": 200,
+      "h1": "Marketing com IA generativa: a pesquisa de Ayelet Israeli",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-mit-smr-etljp_ftg6g/",
+      "status": 200,
+      "h1": "Criação de valor, experimentos e o papel da tecnologia",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-mit-smr-vf03g8apn9m/",
+      "status": 200,
+      "h1": "Repensar a estratégia de marketing na era da IA",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-wharton-c4rq8g10xog/",
+      "status": 200,
+      "h1": "Paul Green: técnicas de pesquisa de mercado",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-wharton-cx88ia-4-6o/",
+      "status": 200,
+      "h1": "Paul Green: a prática da pesquisa de mercado",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-wharton-epgxr_my7bo/",
+      "status": 200,
+      "h1": "Muhtar Kent: crescimento e criação de valor na Coca-Cola",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-wharton-g-jmy5ao7ag/",
+      "status": 200,
+      "h1": "Pinar Yildirim: a construção de uma marca pessoal",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-wharton-jn4xihu0cmi/",
+      "status": 200,
+      "h1": "Barbara Kahn: marketing e percepções do consumidor",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-wharton-jqjbs_cwpdo/",
+      "status": 200,
+      "h1": "Beth Comstock: trajetória, inovação e decisões na GE",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-wharton-m9zowhs79xm/",
+      "status": 200,
+      "h1": "David Bell: marcas, clientes e marketing digital",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/leituras/video-wharton-xol3k1abe40/",
+      "status": 200,
+      "h1": "Jonah Berger: o poder da influência",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/metricas/",
+      "status": 200,
+      "h1": "Métricas e métodos de marketing",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/news/",
+      "status": 200,
+      "h1": "O que saiu sobre marketing e administração",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/noticias/",
+      "status": 200,
+      "h1": "NotíciasNotícias",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/noticias/compra-b2b-e-lealdade-no-mercado-de-caminhoes-2026/",
+      "status": 200,
+      "h1": "Bain examina compra B2B e lealdade no mercado europeu de caminhões",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/noticias/confianca-experiencia-e-lealdade-2026/",
+      "status": 200,
+      "h1": "Wharton examina como a experiência altera a confiança do consumidor",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/noticias/consumo-tecnologia-e-pressao-no-orcamento-2026/",
+      "status": 200,
+      "h1": "McKinsey examina consumo entre tecnologia e pressão no orçamento",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/noticias/fdc-mensuracao-de-reputacao-2026/",
+      "status": 200,
+      "h1": "FDC discute como medir reputação entre diferentes públicos",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/noticias/fgv-consumidor-e-economia-circular-2026/",
+      "status": 200,
+      "h1": "FGV destaca participação do consumidor na economia circular",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/noticias/fgv-estereotipos-e-comunicacao-de-marca-2026/",
+      "status": 200,
+      "h1": "FGV divulga proposta para examinar estereótipos na comunicação",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/noticias/fgv-ia-e-alinhamento-estrategico-2026/",
+      "status": 200,
+      "h1": "FGV divulga estudo sobre alinhamento entre IA e estratégia",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/noticias/ia-e-papel-da-lideranca-de-marketing-2026/",
+      "status": 200,
+      "h1": "BCG discute mudanças no papel da liderança de marketing",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/noticias/ia-generativa-e-criacao-de-valor-2026/",
+      "status": 200,
+      "h1": "Wharton aproxima adoção de IA e criação de valor",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/noticias/lideranca-colaboracao-e-incerteza-2026/",
+      "status": 200,
+      "h1": "LBS relaciona colaboração ao desempenho de equipes sob incerteza",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/noticias/publicidade-ia-e-mensuracao-2026/",
+      "status": 200,
+      "h1": "McKinsey discute publicidade mediada por IA e mensuração",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/noticias/rimowa-produto-canais-e-posicionamento-2026/",
+      "status": 200,
+      "h1": "Caso RIMOWA aproxima posicionamento, produto e canais",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/noticias/vitrines-atencao-e-percepcao-de-preco-2026/",
+      "status": 200,
+      "h1": "INSEAD relaciona disposição de vitrines à percepção de preço",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/origens/",
+      "status": 200,
+      "h1": "De escolhas de mercado à aprendizagem com evidências",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/sobre/",
+      "status": 200,
+      "h1": "Sobre o Harpya Business",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/videos/",
+      "status": 200,
+      "h1": "Marketing e administração, em vídeo",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/business/videos/canais/",
+      "status": 200,
+      "h1": "Canais institucionais de vídeo",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    },
+    {
+      "route": "/tecnologia/",
+      "status": 200,
+      "h1": "Harpya",
+      "h1_corresponde": true,
+      "canonical_corresponde": true,
+      "tipo_html": true
+    }
+  ]
+}

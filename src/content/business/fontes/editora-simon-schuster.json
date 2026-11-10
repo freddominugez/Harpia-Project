@@ -1,0 +1,18 @@
+{
+  "nome": "Free Press / Simon & Schuster",
+  "url": "https://www.simonandschuster.com/",
+  "regiao": "Internacional",
+  "tipo": "editora",
+  "descricao": "Referência bibliográfica da editora; não integra a seleção de artigos.",
+  "idioma": "en",
+  "hosts": [
+    "www.simonandschuster.com"
+  ],
+  "feed": "",
+  "status": "aprovado",
+  "escopos": [
+    "livros"
+  ],
+  "canais": [],
+  "verificado_em": "2026-11-06"
+}

@@ -1,0 +1,32 @@
+{
+  "nome": "Fundação Dom Cabral / Revista DOM",
+  "url": "https://www.fdc.org.br/conhecimento/curadoria",
+  "regiao": "Brasil",
+  "tipo": "academica",
+  "descricao": "Administração, negócios e gestão no contexto brasileiro.",
+  "idioma": "pt",
+  "hosts": [
+    "www.fdc.org.br",
+    "fdc.org.br",
+    "revistadom.fdc.org.br",
+    "sejarelevante.fdc.org.br"
+  ],
+  "feed": "",
+  "status": "aprovado",
+  "verificado_em": "2026-11-06",
+  "canais": [
+    {
+      "id": "UC1fHbk7N11bB8UnL4tYg26A",
+      "nome": "Fundação Dom Cabral",
+      "url": "https://www.youtube.com/channel/UC1fHbk7N11bB8UnL4tYg26A",
+      "procedencia": "https://www.fdc.org.br/",
+      "status": "aprovado",
+      "verificado_em": "2026-11-06"
+    }
+  ],
+  "escopos": [
+    "artigos",
+    "videos"
+  ],
+  "restricao": "Somente conteúdo editorial com autoria, contexto e evidência; excluir promoção."
+}
