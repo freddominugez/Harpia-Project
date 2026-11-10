@@ -1,0 +1,26 @@
+{
+  "titulo": "Várzea Grande (MT) torna obrigatório a partir de 2027 o ensino sobre inteligência artificial e segurança digital",
+  "resumo": "Resolução do Conselho Municipal de Educação inclui IA, algoritmos, segurança na internet e programação nos currículos das escolas públicas e particulares do município.",
+  "data": "2026-10-29",
+  "categoria": "brasil",
+  "icone": "escola",
+  "corpo": [
+    "O Conselho Municipal de Educação de Várzea Grande, em Mato Grosso, publicou em 29 de outubro a Resolução Normativa nº 004/2026, aprovada pelo colegiado em 13 de outubro. O texto inclui conteúdos de educação digital, midiática e computacional nos currículos do município, entre eles inteligência artificial, algoritmos, segurança na internet e programação.",
+    "Segundo o VGN, os currículos serão elaborados ao longo de 2026 e a implementação passa a ser obrigatória a partir de 2027. A regra vale para a rede municipal, sob responsabilidade da Secretaria Municipal de Educação, Cultura, Esporte e Lazer, e para as escolas particulares, por meio de suas mantenedoras.",
+    "Na educação infantil, a resolução manda priorizar atividades sem telas e trata o uso de telas como exceção. O texto também prevê formação continuada de professores e ações de saúde mental ligadas ao uso excessivo de tecnologia.",
+    "As informações vêm da reportagem do VGN, que cita o artigo da resolução sobre a obrigatoriedade. O Harpya não localizou a íntegra publicada no diário oficial; a matéria não detalha carga horária, materiais nem orçamento para a formação dos professores."
+  ],
+  "harpia": "Enquanto as diretrizes nacionais sobre IA na educação aguardam homologação do MEC, municípios começam a escrever as próprias regras. O Harpya registra esses casos para entender como o letramento em IA chega à escola pública brasileira e com que apoio aos professores.",
+  "fontes": [
+    {
+      "veiculo": "VGN",
+      "titulo": "Escolas de VG terão ensino obrigatório sobre inteligência artificial e segurança digital em 2027",
+      "url": "https://www.vgnoticias.com.br/cidades/escolas-de-vg-terao-ensino-obrigatorio-sobre-inteligencia-artificial-e-seguranca-digital-em-2027/154364"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-03",
+  "verificado_em": "2026-11-03",
+  "ordem": 999
+}

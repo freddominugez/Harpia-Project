@@ -1,6 +1,18 @@
 ---
 import { getBusiness } from '../lib/business';
-const { fontes } = await getBusiness();
-const escolhidas = ['fdc', 'insead', 'mit-smr'];
+import {businessRadar} from '../lib/business-radar';
+import TechnologyCards from './TechnologyCards.astro';
+const { acervo, fontes } = await getBusiness();
+const live=businessRadar(fontes);
+const temas = [
+  { id: 'marketing', titulo: 'Marketing e estratégia', contexto: 'Escolhas de mercado, capacidades e posicionamento.', trilhas: ['fundamentos','estrategia','marcas'] },
+  { id: 'consumidor', titulo: 'Pesquisa e clientes', contexto: 'Comportamento, escuta e interpretação de evidências.', trilhas: ['consumidor','clientes','mensuracao'] },
+  { id: 'gestao', titulo: 'Administração e crescimento', contexto: 'Organização, inovação e decisões de negócio.', trilhas: ['gestao','crescimento'] },
+];
+const grupos = temas.map(tema => ({
+  id: tema.id, nome: 'Fontes de referência', tema: tema.titulo, contexto: tema.contexto,
+  site: '/business/biblioteca/fontes/', canal: '',
+  items: [...live.items.filter(a=>tema.id==='marketing'?/market|brand|strateg|marca/i.test(a.title):tema.id==='consumidor'?/customer|consumer|client|consum/i.test(a.title):/manag|organi|growth|gest|cresci/i.test(a.title)).slice(0,2).map(a=>({...a,fonte_nome:a.company})),...acervo.filter(a => ['artigo','relatorio','noticia'].includes(a.data.tipo) && a.data.data_precisa && tema.trilhas.includes(a.data.trilha)).slice(0,2).map(a => ({ tituloEditorial: a.data.tipo === 'noticia', source_id: a.data.fonte, title: a.data.titulo, url: a.data.url, published_at: a.data.data, idioma: a.data.idioma, fonte_nome: fontes.find(f => f.id === a.data.fonte)?.data.nome, }))].filter((a,i,list)=>list.findIndex(x=>x.url===a.url)===i).slice(0,2),
+}));
 ---
-<section class="business-sidebar" aria-labelledby="business-sidebar-title"><span class="eyebrow">Leituras de referência</span><h2 id="business-sidebar-title">Fontes de negócios</h2>{escolhidas.map(id => { const fonte = fontes.find(f => f.id === id); return fonte && <a href={fonte.data.url} target="_blank" rel="noopener noreferrer"><small>{fonte.data.regiao}</small><strong>{fonte.data.nome} ↗</strong><span>{fonte.data.descricao}</span></a>; })}<a class="business-sidebar-all" href="/business/biblioteca/fontes/">Conhecer todas as fontes →</a></section>
+<TechnologyCards grupos={grupos} titulo="No radar de Business" descricao="Marketing, consumidor e administração nas instituições de referência." nota="Títulos de feeds institucionais e leituras selecionadas, com links aos originais. A coleta automática não equivale a revisão editorial do texto." ultimaColeta={live.lastSuccess} selecaoManual={!live.lastSuccess} />

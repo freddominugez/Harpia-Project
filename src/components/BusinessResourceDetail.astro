@@ -1,37 +1,24 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import { trilhaNome } from '../lib/business';
-interface Props { item: CollectionEntry<'businessAcervo'>; fonte?: CollectionEntry<'businessFontes'> }
-const { item, fonte } = Astro.props;
-const d = item.data;
-const video = d.tipo === 'video';
-const voltar = video ? '/business/videos/' : d.tipo === 'noticia' ? '/business/noticias/' : d.tipo === 'analise' ? '/business/analises/' : d.tipo === 'livro' ? '/business/biblioteca/livros/' : '/business/biblioteca/';
+import type {CollectionEntry} from 'astro:content';
+import TextArticle from './TextArticle.astro';
+import {trilhaNome} from '../lib/business';
+interface Props {item:CollectionEntry<'businessAcervo'>;fonte?:CollectionEntry<'businessFontes'>}
+const {item,fonte}=Astro.props;const d=item.data;const video=d.tipo==='video';
+const referenciaNome=(url:string,index:number)=>url===d.url?`Publicação original · ${fonte?.data.nome ?? new URL(url).hostname}`:url===`https://www.youtube.com/channel/${d.channel_id}`?'Canal institucional no YouTube':`Evidência ${index+1} · ${new URL(url).hostname}`;
+const headings=[{depth:2,slug:'ficha',text:'Ficha de leitura'},{depth:2,slug:'limites',text:'Limites e contexto'},{depth:2,slug:'referencias',text:'Referências'}];
 ---
-<article class="container business-section business-resource-detail">
-  <dl><dt>Autoria</dt><dd>{d.autores}</dd><dt>Publicação</dt><dd>{fonte?.data.nome}</dd><dt>Trilha</dt><dd>{trilhaNome(d.trilha)}</dd><dt>Idioma e acesso</dt><dd>{d.idioma.toUpperCase()} · {d.acesso}</dd>
-    {d.data && d.data_precisa && <><dt>Data original</dt><dd>{d.data}</dd></>}
-    {d.tipo === 'livro' && <><dt>Editora</dt><dd>{d.editora}</dd>{d.edicao && <><dt>Edição</dt><dd>{d.edicao}</dd></>}{d.isbn && <><dt>ISBN da edição</dt><dd>{d.isbn}</dd></>}</>}
-    {video && <><dt>Nível</dt><dd>{d.nivel}</dd>{d.duracao_segundos > 0 && <><dt>Duração</dt><dd>{Math.floor(d.duracao_segundos/60)} min {d.duracao_segundos%60} s</dd></>}<dt>Apresentação</dt><dd>{d.palestrante}</dd><dt>Qualificação</dt><dd>{d.credenciais}</dd><dt>Canal institucional</dt><dd><a href={`https://www.youtube.com/channel/${d.channel_id}`} target="_blank" rel="noopener noreferrer">{fonte?.data.canais.find(c => c.id === d.channel_id)?.nome} ↗</a></dd></>}
-    <dt>Natureza</dt><dd>{d.evidencia}</dd><dt>Curadoria</dt><dd>{d.revisor} · {d.revisado_em}</dd>
-  </dl>
-  {video && <div class="business-video" data-business-video data-video-id={d.video_id} data-video-title={d.titulo}><p>O player do YouTube será carregado após sua escolha.</p><button class="btn gold" type="button" data-load-video>Carregar vídeo</button><noscript><p>Use o link ao original abaixo para assistir.</p></noscript></div>}
-  {d.corpo.length > 0 && <div class="business-editorial business-resource-body">{d.corpo.map(paragrafo => <p>{paragrafo}</p>)}</div>}
-  <div class="business-policy"><h2>Leia com estes limites</h2><p>{d.limites}</p><p>{d.justificativa}</p><a class="btn gold" href={d.url} target="_blank" rel="noopener noreferrer">{d.tipo === 'livro' ? 'Consultar a obra na editora' : video ? 'Assistir no YouTube' : 'Abrir o original'} ↗</a></div>
-  {(d.referencias.length > 0 || d.evidencias_revisao.length > 0) && <section class="business-reference-list"><h2>Referências e verificação</h2>{[...new Set([...d.referencias,...d.evidencias_revisao])].map(url => <a href={url} target="_blank" rel="noopener noreferrer">{url} ↗</a>)}</section>}
-  <p class="business-note business-collection-links">A ficha orienta o estudo e não substitui o original. A instituição pode exigir cadastro, compra ou assinatura. O Harpya não representa nem mantém parceria editorial com as fontes listadas.</p><a class="business-read" href={voltar}>← Voltar à coleção</a>
-</article>
+<TextArticle prefixo="/business" frontmatter={{titulo:d.titulo,kicker:d.evidencia,lead:d.resumo,relacionados:[{href:video?'/business/videos/':'/business/biblioteca/',titulo:video?'Catálogo de vídeos':'Biblioteca',icone:'book'}]}} headings={headings}>
+  <h2 id="ficha">Ficha de leitura</h2>
+  <table><tbody><tr><th>Autoria</th><td>{d.autores}</td></tr><tr><th>Publicação</th><td>{fonte?.data.nome}</td></tr><tr><th>Trilha</th><td>{trilhaNome(d.trilha)}</td></tr><tr><th>Idioma e acesso</th><td>{d.idioma.toUpperCase()} · {d.acesso}</td></tr>{d.data&&d.data_precisa&&<tr><th>{video?'Publicação no YouTube':'Data original'}</th><td><time datetime={d.data}>{d.data}</time></td></tr>}{d.tipo==='livro'&&<><tr><th>Editora e edição</th><td>{d.editora} · {d.edicao||'não informada'}</td></tr><tr><th>Formato do ISBN</th><td>{d.formato_isbn||'não confirmado'}</td></tr><tr><th>ISBN desta edição</th><td>{d.isbn||'não informado'}</td></tr></>}{video&&<><tr><th>Apresentação</th><td>{d.palestrante} · {d.credenciais}</td></tr><tr><th>Nível e duração</th><td>{d.nivel} · {Math.floor(d.duracao_segundos/60)}:{String(d.duracao_segundos%60).padStart(2,'0')} (min:s)</td></tr></>}<tr><th>Curadoria</th><td>{d.revisor} · {d.revisado_em}</td></tr></tbody></table>
+  {video&&<p class="cite">{d.revisao_escopo==='fonte_e_contexto'?'Seleção institucional: fonte, autoria e contexto conferidos. O conteúdo audiovisual integral não foi revisado. Idioma conforme a descrição da fonte; legendas e dublagem não conferidas.':'Conteúdo integral revisado conforme as evidências registradas nesta ficha.'}</p>}
+  {video&&<div class="panel" data-business-video data-video-id={d.video_id} data-video-title={d.titulo}><p>O player será carregado após sua escolha.</p><button class="btn gold" type="button">Carregar vídeo</button><noscript><p>Use o link ao original abaixo para assistir.</p></noscript></div>}
+  {video&&d.contexto_editorial&&<p>{d.contexto_editorial}</p>}
+  {d.corpo.map(p=><p>{p}</p>)}
+  <h2 id="limites">Limites e contexto</h2><p>{d.limites}</p><p>{d.justificativa}</p>
+  <p><a class="btn gold" href={d.url} target="_blank" rel="noopener noreferrer">{d.tipo==='livro'?'Consultar na editora':video?'Assistir no YouTube':'Abrir a publicação original'} ↗</a></p>
+  <h2 id="referencias">Referências</h2><ul>{[...new Set([d.url,...d.referencias,...d.evidencias_revisao])].map((url,i)=><li><a href={url} target="_blank" rel="noopener noreferrer">{referenciaNome(url,i)}</a></li>)}</ul>
+  <p class="cite">Esta ficha orienta a leitura. Cada publicação conserva seus direitos, idioma e condições de acesso. Uma referência bibliográfica não equivale a revisão integral da obra.</p>
+</TextArticle>
 <script>
-  document.querySelectorAll<HTMLElement>('[data-business-video]').forEach(container => {
-    container.querySelector('button')?.addEventListener('click', () => {
-      const id = container.dataset.videoId;
-      if (!id || !/^[A-Za-z0-9_-]{11}$/.test(id)) return;
-      const frame = document.createElement('iframe');
-      frame.src = `https://www.youtube-nocookie.com/embed/${id}`;
-      frame.title = container.dataset.videoTitle || 'Vídeo selecionado';
-      frame.allow = 'encrypted-media; picture-in-picture; fullscreen';
-      frame.allowFullscreen = true;
-      frame.referrerPolicy = 'strict-origin-when-cross-origin';
-      container.replaceChildren(frame);
-    }, { once: true });
-  });
+ for(const container of document.querySelectorAll<HTMLElement>('[data-business-video]'))container.querySelector('button')?.addEventListener('click',()=>{const id=container.dataset.videoId;if(!id||!/^[A-Za-z0-9_-]{11}$/.test(id))return;const f=document.createElement('iframe');f.src=`https://www.youtube-nocookie.com/embed/${id}`;f.title=container.dataset.videoTitle||'Vídeo';f.allow='encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;f.referrerPolicy='strict-origin-when-cross-origin';f.style.cssText='width:100%;aspect-ratio:16/9;border:0';container.replaceChildren(f);},{once:true});
 </script>

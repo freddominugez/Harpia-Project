@@ -2,15 +2,17 @@
 // Card "Notícias" da home: as três publicadas mais recentes em carrossel.
 // Cada slide abre a matéria inteira na página NotícIAs.
 import "../styles/noticias.css";
-import { NOTICIAS, capa, cat, icone, urlNoticia } from "../lib/noticias";
+import { NOTICIAS, capa, cat, icone, urlNoticia, type Noticia } from "../lib/noticias";
 import { dataCurta } from "../lib/format";
-const top = NOTICIAS.slice(0, 3);
+interface Props { noticias?: Noticia[]; indice?: string }
+const { noticias = NOTICIAS, indice = '/noticias/' } = Astro.props;
+const top = noticias.slice(0, 3);
 ---
 {top.length > 0 && (
   <section class="ref-section" aria-labelledby="h-noticias">
     <div class="ref-section-title">
       <div><h2 id="h-noticias">Notícias</h2></div>
-      <a href="/noticias/">Ver todas <span aria-hidden="true">→</span></a>
+      <a href={indice}>Ver todas <span aria-hidden="true">→</span></a>
     </div>
     <div class="ncar" data-ncar aria-roledescription="carrossel" aria-label="Últimas notícias">
       <div class="ncar-trilho" data-ncar-trilho tabindex="0" aria-label="Use as setas do teclado para trocar de notícia">

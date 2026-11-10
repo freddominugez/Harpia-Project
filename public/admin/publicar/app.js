@@ -1,12 +1,14 @@
+import {validateBusinessPublication} from '../business/editorial-validation.js';
 const REPO = '/repos/freddominugez/Harpia-Project';
-const COLLECTIONS = new Set(['noticias', 'videos', 'artigos', 'livros', 'fontes', 'linha-do-tempo', 'aprendizado']);
+const COLLECTIONS = new Set(['noticias', 'videos', 'artigos', 'livros', 'fontes', 'linha-do-tempo', 'aprendizado','business/acervo','business/serie','business/origens','business/aprendizado','business/investigacoes']);
 
-export function readDrafts(entries, collection) {
+export function readDrafts(entries, collection, sources = []) {
+  const business=collection.startsWith('business/');
   if (!COLLECTIONS.has(collection)) throw new Error('Coleção inválida.');
   return entries.filter(entry => entry.type === 'blob' && entry.name.endsWith('.json')).flatMap(entry => {
     const content = JSON.parse(entry.object.text);
-    if (content.status !== 'rascunho') return [];
-    return [{ path: `src/content/${collection}/${entry.name}`, oid: entry.object.oid, content,
+    if (content.status !== (business?'aprovado':'rascunho')) return [];
+    return [{ path: `src/content/${collection}/${entry.name}`, oid: entry.object.oid, content, collection, ...(business?{sources}:{}),
       title: content.titulo || content.nome || entry.name,
       summary: content.resumo || content.descricao || '', url: content.fonte_url || content.url || '' }];
   });
@@ -18,9 +20,10 @@ export function publicationChanges(selected, current) {
   const paths = new Set();
   return selected.map(entry => {
     const fresh = byPath.get(entry.path);
-    if (paths.has(entry.path) || !fresh || fresh.oid !== entry.oid || fresh.content.status !== 'rascunho') {
+    if (paths.has(entry.path) || !fresh || fresh.oid !== entry.oid || fresh.content.status !== (fresh.collection?.startsWith('business/')?'aprovado':'rascunho')) {
       throw new Error('Um item foi alterado desde sua revisão. Atualize a lista e confira a seleção novamente.');
     }
+    if(fresh.collection?.startsWith('business/'))validateBusinessPublication(fresh.collection,fresh.content,fresh.sources);
     paths.add(entry.path);
     return { path: entry.path, mode: '100644', type: 'blob',
       content: `${JSON.stringify({ ...fresh.content, status: 'publicado' }, null, 2)}\n` };
@@ -133,7 +136,13 @@ function initialize() {
     }) });
     const files = result.data?.repository?.object?.entries;
     if (result.errors || !files) throw new Error('Não foi possível carregar os rascunhos. Atualize a lista.');
-    return readDrafts(files, collection);
+    let sources=[];
+    if(collection.startsWith('business/')){
+      const result=await api('/graphql',{method:'POST',body:JSON.stringify({query:'query($expression:String!){repository(owner:"freddominugez",name:"Harpia-Project"){object(expression:$expression){... on Tree{entries{name type object{... on Blob{text oid}}}}}}}',variables:{expression:`${revision}:src/content/business/fontes`}})});
+      const rows=result.data?.repository?.object?.entries;if(result.errors||!rows)throw Error('Não foi possível conferir as fontes da revisão.');
+      sources=rows.filter(x=>x.type==='blob'&&x.name.endsWith('.json')).map(x=>({id:x.name.slice(0,-5),...JSON.parse(x.object.text)}));
+    }
+    return readDrafts(files, collection, sources);
   }
 
   function render() {

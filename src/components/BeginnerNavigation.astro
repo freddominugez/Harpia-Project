@@ -1,0 +1,13 @@
+---
+import { SITE } from '../config';
+import { SERIE } from '../data/comecando';
+type Item = {numero:number;slug:string;titulo:string;data:string};
+interface Props {a:Item;ant?:Item|null;prox?:Item|null;prefixo?:string;autor?:string;serie?:string}
+const {a,ant=null,prox=null,prefixo='',autor=SITE.autor,serie=SERIE} = Astro.props;
+const url = `https://www.harpya.org${prefixo}/comecando/${a.slug}/`;
+---
+  <nav class="cm-nav" aria-label="Artigos da série">
+    {ant ? <a href={`${prefixo}/comecando/${ant.slug}/`}><small>← Artigo {ant.numero}</small>{ant.titulo}</a> : <a href={`${prefixo}/comecando/`}><small>← Começando</small>Todos os artigos</a>}
+    {prox ? <a class="cm-prox" href={`${prefixo}/comecando/${prox.slug}/`}><small>Artigo {prox.numero} →</small>{prox.titulo}</a> : <span class="cm-prox"><small>Próximo</small>Artigo {a.numero + 1} em breve</span>}
+  </nav>
+  <p class="cm-cite">Como citar: {autor} ({a.data.slice(0, 4)}). {a.titulo}. {serie}, artigo {a.numero}. {SITE.nome}. <a href={url}>{url}</a>. Texto em markdown: <a href={`${prefixo}/comecando/${a.slug}.md`}>{a.slug}.md</a>. Licença CC BY 4.0.</p>

@@ -10,7 +10,8 @@ const lista = <T extends Status>(mods: Record<string, unknown>, todos = false): 
     .sort((a, b) => Number(a.ordem ?? 999) - Number(b.ordem ?? 999));
 
 export type Artigo = { ano: number; titulo: string; autores: string; url: string; pdf_url?: string; idioma?: string; grupo: string; selo: "medido" | "arte" | "lacuna" | "teste"; rotulo: string };
-export type Livro = { titulo: string; autores: string; nota: string; uso: string; url: string; cor: string; ano?: number; resenha?: string; categoria?: string; capa?: string; compra_url?: string; idioma?: string; edicao_pt?: { titulo: string; editora: string; ano?: number } };
+export type ReferenciaEditorial = Omit<Artigo, 'ano'> & { ano: number | null; tipo?: string; resumo?: string };
+export type Livro = { titulo: string; autores: string; nota: string; uso: string; url: string; cor: string; ano?: number; resenha?: string; categoria?: string; capa?: string; compra_url?: string; compra_rotulo?: string; idioma?: string; edicao_pt?: { titulo: string; editora: string; ano?: number } };
 export const CATEGORIAS_LIVRO: [string, string][] = [["mat", "Matemática e estatística"], ["ml", "Aprendizado de máquina"], ["ling", "Linguagem e informação"], ["ia", "IA e sociedade"], ["comp", "Ciência da computação"], ["eng", "Engenharia de software e dados"]];
 export type Fonte = { nome: string; url: string; descricao: string; grupo: string; grupo_ordem: number };
 export type Feed = { nome: string; url: string; nota?: string; so_titulo?: boolean };
@@ -18,7 +19,7 @@ export type Aprendizado = {
   ano: number; titulo: string; texto: string; eq?: string; autores?: string;
   contexto?: string; mecanismo?: string; equacoes?: { tex: string; texto: string }[]; exemplo?: string;
   limites?: string; legado?: string; hoje?: string;
-  referencias?: { texto: string; url: string }[]; links?: { rotulo: string; href: string }[];
+  referencias?: { texto: string; url: string; consultado?:string; limites?:string }[]; links?: { rotulo: string; href: string }[];
 };
 export type EventoLinha = { ano: number; titulo: string; texto: string; eq?: string; marco: boolean; era: string };
 

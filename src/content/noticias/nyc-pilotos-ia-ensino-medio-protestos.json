@@ -1,0 +1,32 @@
+{
+  "titulo": "Nova York mantém pilotos de IA no ensino médio, apesar de protesto que pede estender a moratória",
+  "resumo": "A rede pública da cidade proíbe IA generativa para alunos até o 8º ano em 2026-2027, mas vai testar cinco pilotos no ensino médio. Estudantes e famílias pedem o cancelamento.",
+  "data": "2026-10-28",
+  "categoria": "letramento",
+  "icone": "escola",
+  "corpo": [
+    "Cerca de duas dezenas de estudantes, professores e ativistas protestaram em 28 de outubro, antes da reunião mensal do Panel for Educational Policy, contra os pilotos de inteligência artificial que a rede pública de Nova York prepara para o ensino médio. Eles pediram que a moratória já em vigor para os alunos mais novos seja estendida aos adolescentes.",
+    "Para o ano letivo 2026-2027, a cidade proíbe ferramentas de IA generativa voltadas a estudantes da pré-escola ao 8º ano. No ensino médio, a prefeitura anunciou em setembro cinco programas piloto. Segundo a NY1, a previsão é começar em novembro, com cerca de 5% dos alunos da rede.",
+    "Uma estudante da Hunter College High School entregou um abaixo-assinado com mais de mil assinaturas contra o uso de IA nas escolas. Liat Olenick, da organização Climate Families NYC, pediu ao prefeito e ao secretário de educação que estendam a moratória aos alunos do ensino médio.",
+    "A primeira vice-secretária de educação, Danielle Giunta, disse que a rede mantém os pilotos neste ano e que vai avaliar o efeito sobre a aprendizagem, ouvindo estudantes e professores. Segundo fonte da rede ouvida pela NY1, as famílias serão avisadas por escrito antes do uso de cada ferramenta e poderão pedir tarefas alternativas com os mesmos objetivos.",
+    "Em nota à PIX11, a rede afirmou que a prioridade é proteger os alunos mais novos, enquanto leva pilotos e módulos de letramento em IA ao ensino médio. As reportagens não informam quais ferramentas serão usadas nem quantas escolas participam."
+  ],
+  "harpia": "A maior rede escolar dos Estados Unidos separou por idade o que proíbe e o que testa. O Harpya acompanha esse desenho porque ele põe à prova uma pergunta central do letramento em IA: a partir de quando, e com que garantias, o aluno deve usar a ferramenta.",
+  "fontes": [
+    {
+      "veiculo": "NY1",
+      "titulo": "Advocates call for AI moratorium to extend to New York high schools",
+      "url": "https://ny1.com/nyc/all-boroughs/news/2026/10/29/advocates-call-for-ai-moratorium-to-extend-to-new-york-high-schools"
+    },
+    {
+      "veiculo": "PIX11",
+      "titulo": "AI pilot programs in NYC face protests as education advocates raise alarms",
+      "url": "https://pix11.com/news/local-news/ai-pilot-programs-in-nyc-face-protests-as-education-advocates-raise-alarms/amp/"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-03",
+  "verificado_em": "2026-11-03",
+  "ordem": 999
+}

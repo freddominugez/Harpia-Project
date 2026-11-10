@@ -1,0 +1,26 @@
+{
+  "titulo": "Malásia diz ter formado 329 mil professores em IA e leva noções da tecnologia ao currículo primário de 2027",
+  "resumo": "Ministra da Educação informou ao Parlamento que 329.414 professores receberam formação em IA e que fundamentos do tema entram na disciplina de tecnologia digital do primário.",
+  "data": "2026-10-29",
+  "categoria": "letramento",
+  "icone": "escola",
+  "corpo": [
+    "A ministra da Educação da Malásia, Fadhlina Sidek, informou em 29 de outubro, durante a sessão de perguntas aos ministros na Dewan Rakyat, a câmara baixa do Parlamento, que 329.414 professores já receberam formação em inteligência artificial. A informação foi publicada pela Bernama, a agência de notícias estatal do país.",
+    "Segundo a ministra, a formação é feita pela plataforma DELIMa 2.0, mantida pelo ministério, e continuará até que todos os professores tenham passado por ela. Não foi divulgada data para concluir essa meta.",
+    "Ela disse ainda que fundamentos de IA vão entrar na disciplina de tecnologia digital do ensino primário a partir do Currículo Escolar de 2027, com reforço posterior no ensino secundário, sem prazo informado para essa segunda etapa. O ministério também montou 27 salas de aula piloto com recursos de IA.",
+    "Outro número citado foi o de 1,5 milhão de estudantes expostos a conteúdos de ciência, programação, robótica e inovação digital. Os dados são do próprio ministério e foram apresentados em resposta a um deputado; a reportagem não traz avaliação independente sobre a qualidade ou a profundidade da formação."
+  ],
+  "harpia": "Formação de professores em escala nacional é uma das frentes de letramento em IA que o Harpya acompanha. O caso malaio oferece um ponto de comparação para o Brasil, que discute regras de IA na educação, e mostra a diferença entre contar pessoas formadas e medir o que elas aprenderam.",
+  "fontes": [
+    {
+      "veiculo": "Bernama",
+      "titulo": "329,414 Teachers, 1.5 Mln Students Receive AI Training - Fadhlina",
+      "url": "https://bernama.com/en/general/news.php?id=2627252"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-01",
+  "verificado_em": "2026-11-01",
+  "ordem": 999
+}

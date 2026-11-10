@@ -1,0 +1,32 @@
+{
+  "titulo": "Edge0 publica modelo aberto de síntese de voz com 0,6 bilhão de parâmetros que clona vozes em 23 línguas, incluindo português",
+  "resumo": "O Audio8-TTS-Realistic tem pesos e código sob licença Apache 2.0. Os resultados de qualidade divulgados vêm do relatório técnico dos próprios autores.",
+  "data": "2026-10-29",
+  "categoria": "abertos",
+  "icone": "onda",
+  "corpo": [
+    "A Edge0 publicou em 29 de outubro, no Hugging Face, o Audio8-TTS-Realistic, um modelo de conversão de texto em fala que imita uma voz a partir de um único trecho de áudio de referência e da sua transcrição. Pesos e código saíram sob a licença Apache 2.0, que permite uso comercial.",
+    "O modelo principal tem cerca de 601 milhões de parâmetros, sem contar o codec de áudio distribuído à parte. Ele parte da versão Preview, lançada antes, e passa de 11 para 23 línguas suportadas. O português está entre as 12 novas, e a própria página avisa que a qualidade varia de uma língua para outra.",
+    "Para rodar, o cartão do modelo recomenda Python 3.10 ou mais recente e uma placa de vídeo compatível com CUDA. Os testes de execução descritos foram feitos numa GPU NVIDIA H20.",
+    "Os números de qualidade apresentados vêm do relatório técnico dos autores, e a tabela de comparação com outros modelos mistura resultados de terceiros com reavaliações próprias. A página admite que as métricas medem inteligibilidade e semelhança com o falante, não o realismo percebido da fala.",
+    "Sobre uso responsável, o cartão pede que se obtenha permissão antes de clonar uma voz e que o áudio sintético seja identificado quando for o caso. Não descreve proteções técnicas, como marca d'água ou verificação de consentimento."
+  ],
+  "harpia": "Clonar uma voz com um modelo pequeno e livre ficou ao alcance de qualquer pessoa, também em português. O Harpya registra esses lançamentos para discutir o que muda no letramento em IA quando ouvir já não basta para saber quem está falando.",
+  "fontes": [
+    {
+      "veiculo": "Hugging Face",
+      "titulo": "Edge0/Audio8-TTS-Realistic-0.6b",
+      "url": "https://huggingface.co/Edge0/Audio8-TTS-Realistic-0.6b"
+    },
+    {
+      "veiculo": "Artiverse",
+      "titulo": "Open audio models push voice cloning and transcription forward",
+      "url": "https://www.artiverse.ca/open-audio-models-push-voice-cloning-and-transcription-forward/"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-03",
+  "verificado_em": "2026-11-03",
+  "ordem": 999
+}

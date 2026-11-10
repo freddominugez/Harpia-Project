@@ -1,0 +1,18 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BeginnerNavigation from './BeginnerNavigation.astro';
+import DidacticFigure from './DidacticFigure.astro';
+interface Props { artigo:CollectionEntry<'businessSerie'>; todos:CollectionEntry<'businessSerie'>[] }
+const {artigo,todos}=Astro.props;
+const a=artigo.data;
+const index=todos.findIndex(x=>x.id===artigo.id);
+const nav=(x:CollectionEntry<'businessSerie'>|undefined)=>x?{numero:x.data.numero,slug:x.id,titulo:x.data.titulo,data:x.data.atualizado}:null;
+const anterior=nav(todos[index-1]),proximo=nav(todos[index+1]);
+---
+<p class="series">{a.serie} · artigo {a.numero} de {todos.length}</p>
+<h1>{a.titulo}</h1>
+<p class="byline">{a.autor} · <time datetime={a.atualizado}>{new Date(`${a.atualizado}T12:00:00Z`).toLocaleDateString('pt-BR',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'})}</time></p>
+<p class="lead">{a.resumo}</p>
+{a.secoes.map((secao,i)=><section><h2>{secao.titulo}</h2>{secao.paragrafos.map(p=><p>{p}</p>)}{a.figuras.filter(f=>f.apos_secao===i+1).map(f=><DidacticFigure {...f} id={`${artigo.id}-${a.figuras.indexOf(f)}`} numero={a.figuras.indexOf(f)+1} />)}</section>)}
+<section><h2>Referências e alcance da leitura</h2><ol>{a.fontes.map(f=><li><a href={f.url} target="_blank" rel="noopener noreferrer">{f.titulo}</a><p>{f.consultado}</p><p>{f.limites}</p></li>)}</ol></section>
+<BeginnerNavigation a={{numero:a.numero,slug:artigo.id,titulo:a.titulo,data:a.atualizado}} ant={anterior} prox={proximo} prefixo="/business" autor={a.autor} serie={a.serie} />

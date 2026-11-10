@@ -1,0 +1,8 @@
+---
+import IdeaCard from './IdeaCard.astro';
+interface Props { completo?:boolean }
+const {completo=false}=Astro.props;
+---
+<IdeaCard completo={completo} etiqueta="Uma pergunta de mensuração" titulo="Quem compraria mesmo sem o anúncio?" pergunta="Se uma pessoa viu uma campanha e comprou, que parte da compra pode ser atribuída à intervenção?" resposta="A sequência de eventos ajuda a formular a pergunta. Uma comparação adequada é necessária para estimar o efeito." explicacao="Este é um exercício de raciocínio causal. Observar exposição e compra não revela, sozinho, o resultado que ocorreria sem a campanha. Nenhum experimento foi realizado pelo Harpya neste exemplo." registro="Atribuição distribui crédito por uma regra; incrementalidade investiga a diferença causada por uma intervenção, sob um desenho e pressupostos explícitos." href="/business/estudos/a-ideia-mais-interessante/" cta="Ler a investigação">
+  <svg slot="arte" viewBox="0 0 300 300" role="presentation"><rect x="12" y="30" width="276" height="240" rx="12" fill="#141a1e" /><g fill="none" stroke="#e0b866" stroke-width="1.4"><rect x="32" y="68" width="102" height="62" rx="6"/><rect x="166" y="68" width="102" height="62" rx="6"/><path d="M83 130v44h134v-44M150 174v35"/></g><g fill="#ece9e2" font-family="system-ui" text-anchor="middle" font-size="12"><text x="83" y="92">Com campanha</text><text x="83" y="112">o que observamos?</text><text x="217" y="92">Sem campanha</text><text x="217" y="112">como comparar?</text><text x="150" y="231">Comparação + pressupostos</text><text x="150" y="252" fill="#e0b866">Uma pergunta causal</text></g></svg>
+</IdeaCard>

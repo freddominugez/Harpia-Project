@@ -1,0 +1,16 @@
+{
+  "id": "7WUzHIF32vA",
+  "titulo": "If Your AI Scores 100%, Your Eval Is Wrong - Ramakrishnan Lokanathan, eslams.com",
+  "canal": "AI Engineer",
+  "modulo": 7,
+  "nivel": "Intermediário",
+  "resumo": "Mostra como montar avaliações para aplicações de risco: testar cada etapa do fluxo, somar checagem automática, revisão humana e testes adversariais, e manter testes de regressão. Para quem coloca LLM em produção.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=7WUzHIF32vA",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-01",
+  "verificado_em": "2026-11-01"
+}

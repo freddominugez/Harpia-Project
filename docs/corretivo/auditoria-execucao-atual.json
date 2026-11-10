@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-07T00:56:02.699Z",
+  "gerado_em": "2026-11-07T01:38:08.123Z",
   "estado": "execucao_parcial",
   "liberado_para_publicar": false,
   "volume_original_e_referencia_nao_cota_automatica": true,
@@ -8,8 +8,8 @@
     {
       "familia": "Vídeos",
       "referencia": 155,
-      "publicados": 0,
-      "faltam_para_volume_original": 155
+      "publicados": 57,
+      "faltam_para_volume_original": 98
     },
     {
       "familia": "Artigos e relatórios",
@@ -55,7 +55,7 @@
     }
   ],
   "diferencas_volume": [
-    "Vídeos: diferença de 155 registros em relação ao volume original; não equivale a requisito do template.",
+    "Vídeos: diferença de 98 registros em relação ao volume original; não equivale a requisito do template.",
     "Artigos e relatórios: diferença de 57 registros em relação ao volume original; não equivale a requisito do template.",
     "Livros: diferença de 50 registros em relação ao volume original; não equivale a requisito do template.",
     "Notícias: diferença de 10 registros em relação ao volume original; não equivale a requisito do template."
@@ -70,12 +70,13 @@
     "videos_integralmente_revisados": 0,
     "livros_existentes_conferidos": 8
   },
+  "publicacao_videos": {
+    "publicados": 57,
+    "selecao_institucional": 57,
+    "revisao_integral": 0
+  },
   "bloqueios": [
-    "Vídeos: os três destaques da home ainda não podem ser preenchidos.",
-    "Vídeos: nenhum registro publicado do nível Iniciante.",
-    "Vídeos: nenhum registro publicado do nível Intermediário.",
-    "Vídeos: nenhum registro publicado do nível Avançado.",
-    "Vídeos: zero publicáveis com revisão audiovisual integral concluída. Há 24 candidatos verificados por metadados, total nominal de 10 h 05 min 45 s, e duas transcrições editoriais lidas integralmente; isto não comprova a edição do YouTube. Tentativas de legendas retornaram 429.",
+    "Vídeos: 57 seleções institucionais publicadas no build, de sete fontes também aprovadas para artigos. Fonte, autoria e contexto conferidos; zero revisões audiovisuais integrais concluídas. O catálogo e as fichas declaram esse alcance. Detalhes em docs/corretivo/ampliacao-videos.json.",
     "Estudos: doze guias didáticos autorais com protocolos propostos; não são experimentos nem resultados empíricos. Revisão final da profundidade e dos estados funcionais permanece no aceite editorial e visual.",
     "Biblioteca: ampliar e revisar o acervo. O build local tem seis referências e oito livros, frente a 63 referências e 58 livros no original; uma das seis referências é uma edição completa da Revista DOM, não um artigo individual.",
     "Imagens temáticas: três retratos licenciados incorporados com crédito, fonte, link da licença e indicação das alterações; nove perfis ainda usam iniciais. Oito capas oficiais foram conferidas: sete correspondências bibliográficas confirmadas e How Brands Grow pendente. Condições de reutilização das capas estão registradas; os oito livros continuam usando as alternativas gráficas originais.",

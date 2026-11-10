@@ -1,0 +1,29 @@
+{
+  "numero": 8,
+  "titulo": "Atribuição organiza crédito; causalidade pergunta pelo incremento",
+  "texto": "Saber qual contato precedeu uma compra não informa, por si só, se a compra aconteceu por causa dele. A pergunta causal exige comparar o observado com uma alternativa de ausência da intervenção.",
+  "contexto": "O abstract de Gordon e coautores, publicado em Marketing Science, relata diferenças entre resultados de experimentos publicitários e estimativas observacionais, mesmo com muitas variáveis disponíveis. A lição é delimitada: riqueza de registros não elimina automaticamente seleção ou fatores não observados.",
+  "mecanismo": "Defina a intervenção e o resultado antes de olhar o painel. Em um experimento corretamente randomizado, compare grupos conforme a atribuição inicial. Não condicione a comparação apenas a quem recebeu uma impressão ou clicou depois da randomização: essas ações podem reintroduzir seleção. Um modelo de atribuição pode servir à descrição operacional sem receber o rótulo de efeito causal.",
+  "equacoes": [
+    {
+      "tex": "\\widehat\\Delta=\\frac{Y_T}{N_T}-\\frac{Y_C}{N_C}",
+      "texto": "Y_T e Y_C são compradores nos grupos atribuídos a tratamento e controle; N_T e N_C são seus tamanhos. A diferença compara taxas observadas. Sua interpretação causal requer randomização válida, observação comparável, ausência de contaminação relevante e definição consistente do resultado. A fórmula não quantifica sozinha a incerteza."
+    }
+  ],
+  "exemplo": "Exemplo hipotético: um teste aloca aleatoriamente 1.000 pessoas a cada grupo. O controle registra 80 compradores e o tratamento, 100: 8% e 10%, diferença de dois pontos percentuais. Aplicada às 1.000 pessoas tratadas, a diferença corresponde a 20 compras incrementais estimadas, não a todas as 100 compras. Se cada compra gerar R\\$ 40 de contribuição e a intervenção custar R\\$ 600, o saldo pontual será 20 × 40 − 600 = R\\$ 200 antes de custos comuns. Todos os números são fictícios. Ainda faltam avaliação da incerteza, verificação do experimento e eventuais efeitos posteriores antes de decidir expandir.",
+  "limites": "Nem toda comparação com grupo de controle é randomizada. Contaminação, perdas de acompanhamento e intervenções simultâneas podem comprometer a conclusão; resultados de uma plataforma não são universais.",
+  "legado": "A entrega separa três registros: contatos observados, crédito atribuído e incremento estimado. Essa separação reduz o risco de financiar ações apenas porque aparecem próximas da conversão.",
+  "hoje": "Pergunte quanto mudaria sem a ação e qual desenho sustenta essa resposta.",
+  "referencias": [
+    {
+      "texto": "Gordon, Zettelmeyer, Bhargava e Chapsky — A Comparison of Approaches to Advertising Measurement",
+      "url": "https://pubsonline.informs.org/doi/10.1287/mksc.2018.1135",
+      "consultado": "em: 2026-11-06; alcance: Abstract oficial integral e identificação bibliográfica de Marketing Science; não o artigo completo.",
+      "limites": "As conclusões relatadas pertencem ao contexto dos experimentos descritos no abstract. Não foram auditados dados, modelos ou apêndices. O exercício randomizado e a conta de saldo são próprios e hipotéticos."
+    }
+  ],
+  "atualizado": "2026-11-06",
+  "status": "publicado",
+  "revisor": "Harpya · revisão didática e de aritmética",
+  "revisado_em": "2026-11-06"
+}

@@ -1,0 +1,27 @@
+{
+  "titulo": "FGV divulga estudo sobre alinhamento entre IA e estratégia",
+  "resumo": "Notícia aborda governança de recomendações algorítmicas.",
+  "fonte": "fgv",
+  "url": "https://portal.fgv.br/noticias/inteligencia-artificial-pode-comprometer-decisoes-estrategicas-nas-organizacoes-aponta-estudo",
+  "tipo": "noticia",
+  "trilha": "gestao",
+  "autores": "Redação institucional; assinatura individual não informada",
+  "data": "2026-11-06",
+  "data_precisa": true,
+  "idioma": "pt",
+  "acesso": "Síntese do Harpya em português; referência institucional original com acesso e idioma próprios.",
+  "evidencia": "noticia_institucional",
+  "limites": "Data da notícia; original não revisado. Assinatura jornalística ausente; autoria do estudo é distinta.",
+  "status": "publicado",
+  "justificativa": "Síntese editorial própria do Harpya após conferência de fonte, data, autoria disponível e alcance da evidência. Não representa revisão integral do estudo subjacente.",
+  "revisor": "Harpya · revisão de fonte e contexto",
+  "revisado_em": "2026-11-06",
+  "corpo": [
+    "Em notícia de 6 de novembro, a FGV apresenta um artigo da GV-executivo sobre conflitos entre recomendações de inteligência artificial e objetivos estratégicos. A divulgação identifica Rodrigo Rocha Gimenez como autor do estudo e descreve uma revisão sistemática da literatura.",
+    "O problema discutido é que uma recomendação coerente com dados e critérios de curto prazo pode divergir de prioridades da organização. O texto relaciona esse risco à governança, à interpretação dos modelos e à responsabilidade humana por transformar previsões em decisões.",
+    "A leitura editorial propõe perguntar qual objetivo o sistema está otimizando e como ele se conecta à estratégia. A data desta nota corresponde à notícia institucional. O artigo acadêmico não foi revisado integralmente, e o framework divulgado não constitui comprovação de resultados em qualquer empresa."
+  ],
+  "referencias": [
+    "https://portal.fgv.br/noticias/inteligencia-artificial-pode-comprometer-decisoes-estrategicas-nas-organizacoes-aponta-estudo"
+  ]
+}

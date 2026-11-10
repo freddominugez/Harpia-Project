@@ -116,6 +116,32 @@ collections:
       - *origem
       - { label: "Texto de abertura", name: body, widget: markdown, modes: [raw] }
 
+  - name: business_pautas
+    label: "Business · Pautas do fórum"
+    label_singular: "Pauta"
+    folder: src/content/business/pautas
+    extension: md
+    format: frontmatter
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{titulo}}"
+    identifier_field: titulo
+    summary: "{{titulo}} · {{status}}"
+    sortable_fields: [proposta_em, titulo, status]
+    view_filters:
+      - { label: "Propostas", field: status, pattern: "^proposta$" }
+      - { label: "Aprovadas", field: status, pattern: "^aprovada$" }
+      - { label: "Criadas", field: status, pattern: "^criada$" }
+    fields:
+      - { label: "Título da discussão", name: titulo, widget: string }
+      - { label: "Categoria no fórum", name: categoria, widget: select, options: ["Caminhos", "Perguntas", "Resultados e reproduções", "Propostas novas"] }
+      - { label: "Caminho relacionado (slug)", name: caminho, widget: relation, collection: businessGuias, value_field: "{{slug}}", search_fields: [titulo], display_fields: [titulo], required: false }
+      - { label: "Links de origem", name: links, widget: list, field: { label: "URL", name: url, widget: string }, required: false }
+      - { label: "Status", name: status, widget: select, options: [{ label: "Proposta (aguardando revisão)", value: proposta }, { label: "Aprovada (será criada no fórum)", value: aprovada }, { label: "Criada no fórum", value: criada }, { label: "Descartada", value: descartada }], default: proposta, hint: "Ao marcar Aprovada e publicar, a automação cria a discussão no GitHub." }
+      - { label: "Link da discussão", name: discussao_url, widget: string, required: false, default: "", hint: "Preenchido pela automação." }
+      - { label: "Proposta em", name: proposta_em, <<: *dia }
+      - *origem
+      - { label: "Texto de abertura", name: body, widget: markdown, modes: [raw] }
+
   # ---------------------------------------------------------------- vídeos
   - name: videos
     label: "Vídeos"
@@ -417,7 +443,7 @@ collections:
     extension: md
     format: frontmatter
     create: true
-    slug: "{{trilha}}"
+    slug: "{{slug}}"
     identifier_field: titulo
     summary: "{{numero}}. {{titulo}} · {{status}}"
     fields:
@@ -428,6 +454,10 @@ collections:
       - { label: Status, name: status, widget: select, options: [candidato, em-revisao, aprovado, publicado, rejeitado, arquivado], default: candidato }
       - { label: Atualizado, name: atualizado, <<: *dia }
       - { label: Referências HTTPS, name: fontes, widget: list, field: { name: url, label: URL, widget: string } }
+      - { label: Mecanismo qualitativo, name: mecanismo, widget: text, required: false, default: '' }
+      - { label: Equação explicada no guia, name: equacao, widget: text, required: false, default: '' }
+      - { label: Próximo teste proposto, name: proximo_teste, widget: text, required: false, default: '' }
+      - { label: Condição para interromper ou rever, name: parar_se, widget: text, required: false, default: '' }
       - { label: Guia, name: body, widget: markdown, modes: [raw] }
 
   - name: businessFontes
@@ -488,6 +518,7 @@ collections:
       - { label: Autoria, name: autores, widget: string }
       - { label: Data original confirmada, name: data, widget: string, required: false, default: "", hint: "AAAA-MM-DD. Deixe vazio se não for conhecida; não invente dia e mês." }
       - { label: A data é precisa, name: data_precisa, widget: boolean, default: true }
+      - { label: Ano confirmado quando o dia é desconhecido, name: ano_publicacao, widget: number, value_type: int, required: false, min: 1400, max: 2100 }
       - { label: Idioma, name: idioma, widget: select, options: [pt, en, es] }
       - { label: Condição de acesso, name: acesso, widget: string }
       - { label: Natureza da evidência, name: evidencia, widget: string }
@@ -498,6 +529,8 @@ collections:
       - { label: Revisado em AAAA-MM-DD, name: revisado_em, widget: string, required: false, default: "" }
       - { label: ID do YouTube (apenas vídeos), name: video_id, widget: string, required: false }
       - { label: Channel ID verificado (apenas vídeos), name: channel_id, widget: string, required: false, default: "" }
+      - { label: Escopo da conferência (vídeos), name: revisao_escopo, widget: select, options: [integral, fonte_e_contexto], default: integral }
+      - { label: Contexto institucional documentado (vídeos), name: contexto_editorial, widget: text, required: false, default: "" }
       - { label: Conteúdo integral revisado (vídeos), name: revisao_integral, widget: boolean, default: false }
       - { label: Nível, name: nivel, widget: select, options: [Iniciante, Intermediário, Avançado], default: Iniciante }
       - { label: Duração do vídeo em segundos, name: duracao_segundos, widget: number, value_type: int, min: 0, default: 0, required: false }
@@ -506,6 +539,828 @@ collections:
       - { label: Evidências da revisão HTTPS, name: evidencias_revisao, widget: list, required: false, field: { name: url, label: URL, widget: string } }
       - { label: Editora, name: editora, widget: string, required: false, default: "" }
       - { label: Edição confirmada, name: edicao, widget: string, required: false, default: "" }
+      - { label: Formato deste ISBN, name: formato_isbn, widget: string, required: false, default: "" }
+      - { label: Capa da edição, name: capa, widget: image, required: false, default: "" }
+      - { label: Crédito da capa, name: capa_credito, widget: string, required: false, default: "" }
+      - { label: Fonte HTTPS da capa, name: capa_fonte, widget: string, required: false, default: "" }
+      - { label: Licença ou condição de uso da capa, name: capa_licenca, widget: text, required: false, default: "" }
       - { label: ISBN da edição (sem hífens), name: isbn, widget: string, required: false, default: "" }
       - { label: Texto autoral (notícias e análises), name: corpo, widget: list, required: false, field: { name: paragrafo, label: Parágrafo, widget: text } }
       - { label: Referências HTTPS, name: referencias, widget: list, required: false, field: { name: url, label: URL, widget: string } }
+
+  - name: businessSerie
+    label: Business · Série Começando
+    folder: src/content/business/serie
+    extension: json
+    format: json
+    create: true
+    slug: '{{titulo}}'
+    identifier_field: titulo
+    summary: '{{titulo}} · {{status}}'
+    fields:
+    - label: Número
+      name: numero
+      required: true
+      widget: number
+      value_type: int
+    - label: Título
+      name: titulo
+      required: true
+      widget: string
+    - label: Resumo
+      name: resumo
+      required: true
+      widget: text
+    - label: Autoria
+      name: autor
+      required: true
+      widget: string
+    - label: Atualizado em
+      name: atualizado
+      required: true
+      widget: string
+    - label: Serie
+      name: serie
+      required: true
+      widget: string
+    - label: Estado editorial
+      name: status
+      required: true
+      widget: select
+      options:
+      - candidato
+      - em-revisao
+      - aprovado
+      - publicado
+      - rejeitado
+      - arquivado
+      default: candidato
+    - label: Seções do artigo
+      name: secoes
+      required: true
+      widget: list
+      fields:
+      - label: Título
+        name: titulo
+        required: true
+        widget: string
+      - label: Parágrafos
+        name: paragrafos
+        required: true
+        widget: list
+        field:
+          label: Item
+          name: item
+          widget: text
+    - label: Figuras didáticas
+      name: figuras
+      required: true
+      widget: list
+      fields:
+      - label: Depois da seção
+        name: apos_secao
+        required: true
+        widget: number
+        value_type: int
+      - label: Título
+        name: titulo
+        required: true
+        widget: string
+      - label: Descrição acessível
+        name: descricao
+        required: true
+        widget: text
+      - label: Elementos do diagrama
+        name: etapas
+        required: true
+        widget: list
+        field:
+          label: Item
+          name: item
+          widget: text
+      - label: Legenda
+        name: legenda
+        required: true
+        widget: string
+      - label: Tipo
+        name: tipo
+        required: true
+        widget: select
+        options:
+        - cartoes
+        - radial
+        - experimento
+        default: cartoes
+      - label: Texto central
+        name: central
+        required: false
+        widget: string
+    - label: Fontes e consulta
+      name: fontes
+      required: true
+      widget: list
+      fields:
+      - label: Título
+        name: titulo
+        required: true
+        widget: string
+      - label: URL HTTPS
+        name: url
+        required: true
+        widget: string
+      - label: Material consultado
+        name: consultado
+        required: true
+        widget: text
+      - label: Limites
+        name: limites
+        required: true
+        widget: text
+    - label: Responsável pela revisão
+      name: revisor
+      required: false
+      widget: string
+      default: ''
+    - label: Revisado em
+      name: revisado_em
+      required: false
+      widget: string
+      default: ''
+
+  - name: businessOrigens
+    label: Business · Origens
+    folder: src/content/business/origens
+    extension: json
+    format: json
+    create: true
+    slug: '{{titulo}}'
+    identifier_field: titulo
+    summary: '{{titulo}} · {{status}}'
+    fields:
+    - label: Título
+      name: titulo
+      required: true
+      widget: string
+    - label: Eras
+      name: eras
+      required: true
+      widget: list
+      fields:
+      - label: Id
+        name: id
+        required: true
+        widget: string
+      - label: Nome
+        name: nome
+        required: true
+        widget: string
+      - label: De
+        name: de
+        required: true
+        widget: number
+        value_type: int
+      - label: Ate
+        name: ate
+        required: true
+        widget: number
+        value_type: int
+      - label: Cor
+        name: cor
+        required: true
+        widget: string
+      - label: Suave
+        name: suave
+        required: true
+        widget: string
+    - label: Eventos
+      name: eventos
+      required: true
+      widget: list
+      fields:
+      - label: Id
+        name: id
+        required: true
+        widget: string
+      - label: Ano
+        name: ano
+        required: true
+        widget: number
+        value_type: int
+      - label: Título
+        name: titulo
+        required: true
+        widget: string
+      - label: Texto
+        name: texto
+        required: true
+        widget: string
+      - label: Tipo
+        name: tipo
+        required: true
+        widget: string
+      - label: Era
+        name: era
+        required: true
+        widget: string
+      - label: Capitulo
+        name: capitulo
+        required: true
+        widget: string
+      - label: Ref ids
+        name: ref_ids
+        required: true
+        widget: list
+        field:
+          label: Item
+          name: item
+          widget: text
+      - label: Refs
+        name: refs
+        required: true
+        widget: list
+        fields:
+        - label: Texto
+          name: texto
+          required: true
+          widget: string
+        - label: URL HTTPS
+          name: url
+          required: true
+          widget: string
+    - label: Capítulos
+      name: capitulos
+      required: true
+      widget: list
+      fields:
+      - label: N
+        name: n
+        required: true
+        widget: number
+        value_type: int
+      - label: Id
+        name: id
+        required: true
+        widget: string
+      - label: Periodo
+        name: periodo
+        required: true
+        widget: string
+      - label: Título
+        name: titulo
+        required: true
+        widget: string
+      - label: Era
+        name: era
+        required: true
+        widget: string
+      - label: Abertura
+        name: abertura
+        required: true
+        widget: text
+      - label: Sois
+        name: sois
+        required: true
+        widget: list
+        field:
+          label: Item
+          name: item
+          widget: text
+      - label: Eclipses
+        name: eclipses
+        required: true
+        widget: list
+        fields:
+        - label: Ano
+          name: ano
+          required: true
+          widget: string
+        - label: Título
+          name: titulo
+          required: true
+          widget: string
+        - label: Quem
+          name: quem
+          required: true
+          widget: string
+        - label: Texto
+          name: texto
+          required: true
+          widget: list
+          field:
+            label: Item
+            name: item
+            widget: text
+        - label: Ref ids
+          name: ref_ids
+          required: true
+          widget: list
+          field:
+            label: Item
+            name: item
+            widget: text
+        - label: Nota editorial
+          name: nota_editorial
+          required: false
+          widget: string
+      - label: Refs
+        name: refs
+        required: true
+        widget: list
+        fields:
+        - label: Texto
+          name: texto
+          required: true
+          widget: string
+        - label: URL HTTPS
+          name: url
+          required: true
+          widget: string
+      - label: Ref ids
+        name: ref_ids
+        required: true
+        widget: list
+        field:
+          label: Item
+          name: item
+          widget: text
+    - label: Pessoas
+      name: pessoas
+      required: true
+      widget: list
+      fields:
+      - label: Id
+        name: id
+        required: true
+        widget: string
+      - label: Nome
+        name: nome
+        required: true
+        widget: string
+      - label: Ano
+        name: ano
+        required: true
+        widget: string
+      - label: Papel
+        name: papel
+        required: true
+        widget: string
+      - label: Capitulo
+        name: capitulo
+        required: true
+        widget: string
+      - label: Ref ids
+        name: ref_ids
+        required: true
+        widget: list
+        field:
+          label: Item
+          name: item
+          widget: text
+      - label: Referências
+        name: referencias
+        required: true
+        widget: list
+        fields:
+        - label: Texto
+          name: texto
+          required: true
+          widget: string
+        - label: URL HTTPS
+          name: url
+          required: true
+          widget: string
+      - label: Retrato status
+        name: retrato_status
+        required: true
+        widget: string
+      - label: Nota data
+        name: nota_data
+        required: true
+        widget: string
+      - name: foto
+        label: Nome do retrato local sem extensão
+        widget: string
+        required: false
+      - name: credito
+        label: Crédito e alterações da imagem
+        widget: string
+        required: false
+      - name: licenca
+        label: Licença da imagem
+        widget: string
+        required: false
+      - name: licenca_url
+        label: URL HTTPS da licença
+        widget: string
+        required: false
+      - name: fonte
+        label: Página primária da imagem
+        widget: string
+        required: false
+    - label: Resumo
+      name: resumo
+      required: true
+      widget: text
+    - label: Atualizado em
+      name: atualizado
+      required: true
+      widget: string
+    - label: Estado editorial
+      name: status
+      required: true
+      widget: select
+      options:
+      - candidato
+      - em-revisao
+      - aprovado
+      - publicado
+      - rejeitado
+      - arquivado
+      default: candidato
+    - label: Nota de interpretação
+      name: nota
+      required: true
+      widget: text
+    - label: Responsável pela revisão
+      name: revisor
+      required: false
+      widget: string
+      default: ''
+    - label: Revisado em
+      name: revisado_em
+      required: false
+      widget: string
+      default: ''
+
+  - name: businessAprendizado
+    label: Business · Aprendizado
+    folder: src/content/business/aprendizado
+    extension: json
+    format: json
+    create: true
+    slug: '{{titulo}}'
+    identifier_field: titulo
+    summary: '{{titulo}} · {{status}}'
+    fields:
+    - label: Número
+      name: numero
+      required: true
+      widget: number
+      value_type: int
+    - label: Título
+      name: titulo
+      required: true
+      widget: string
+    - label: Texto
+      name: texto
+      required: true
+      widget: text
+    - label: Contexto
+      name: contexto
+      required: true
+      widget: text
+    - label: Como funciona
+      name: mecanismo
+      required: true
+      widget: text
+    - label: Equações
+      name: equacoes
+      required: true
+      widget: list
+      fields:
+      - label: LaTeX
+        name: tex
+        required: true
+        widget: string
+      - label: Texto
+        name: texto
+        required: true
+        widget: text
+    - label: Exemplo hipotético
+      name: exemplo
+      required: true
+      widget: text
+    - label: Limites
+      name: limites
+      required: true
+      widget: text
+    - label: Aplicação
+      name: legado
+      required: true
+      widget: text
+    - label: Síntese
+      name: hoje
+      required: true
+      widget: string
+    - label: Referências
+      name: referencias
+      required: true
+      widget: list
+      fields:
+      - label: Texto
+        name: texto
+        required: true
+        widget: string
+      - label: URL HTTPS
+        name: url
+        required: true
+        widget: string
+      - label: Material consultado
+        name: consultado
+        required: true
+        widget: text
+      - label: Limites
+        name: limites
+        required: true
+        widget: text
+    - label: Atualizado em
+      name: atualizado
+      required: true
+      widget: string
+    - label: Estado editorial
+      name: status
+      required: true
+      widget: select
+      options:
+      - candidato
+      - em-revisao
+      - aprovado
+      - publicado
+      - rejeitado
+      - arquivado
+      default: candidato
+    - label: Responsável pela revisão
+      name: revisor
+      required: false
+      widget: string
+      default: ''
+    - label: Revisado em
+      name: revisado_em
+      required: false
+      widget: string
+      default: ''
+
+  - name: businessInvestigacoes
+    label: Business · Investigações
+    folder: src/content/business/investigacoes
+    extension: json
+    format: json
+    create: true
+    slug: '{{titulo}}'
+    identifier_field: titulo
+    summary: '{{titulo}} · {{status}}'
+    fields:
+    - label: Título
+      name: titulo
+      required: true
+      widget: string
+    - label: Resumo
+      name: resumo
+      required: true
+      widget: text
+    - label: Seções do artigo
+      name: secoes
+      required: true
+      widget: list
+      fields:
+      - label: Título
+        name: titulo
+        required: true
+        widget: string
+      - label: Parágrafos
+        name: paragrafos
+        required: true
+        widget: list
+        field:
+          label: Item
+          name: item
+          widget: text
+      - label: Ref ids
+        name: ref_ids
+        required: true
+        widget: list
+        field:
+          label: Item
+          name: item
+          widget: text
+    - label: Fontes e consulta
+      name: fontes
+      required: true
+      widget: list
+      fields:
+      - label: Id
+        name: id
+        required: true
+        widget: string
+      - label: Título
+        name: titulo
+        required: true
+        widget: string
+      - label: Titulo original
+        name: titulo_original
+        required: true
+        widget: string
+      - label: URL HTTPS
+        name: url
+        required: true
+        widget: string
+      - label: Fonte aprovada
+        name: fonte_aprovada
+        required: true
+        widget: string
+      - label: Material consultado
+        name: consultado
+        required: true
+        widget: text
+      - label: Escopo consulta
+        name: escopo_consulta
+        required: true
+        widget: string
+      - label: Limites
+        name: limites
+        required: true
+        widget: text
+      - label: Uso
+        name: uso
+        required: true
+        widget: string
+      - label: Apoio institucional
+        name: apoio_institucional
+        required: false
+        widget: string
+    - label: Atualizado em
+      name: atualizado
+      required: true
+      widget: string
+    - label: Estado editorial
+      name: status
+      required: true
+      widget: select
+      options:
+      - candidato
+      - em-revisao
+      - aprovado
+      - publicado
+      - rejeitado
+      - arquivado
+      default: candidato
+    - label: Avaliações arquivadas
+      name: arquivados
+      required: true
+      widget: list
+      fields:
+      - label: Id
+        name: id
+        required: true
+        widget: string
+      - label: Título
+        name: titulo
+        required: true
+        widget: string
+      - label: Proposta
+        name: proposta
+        required: true
+        widget: string
+      - label: Motivo
+        name: motivo
+        required: true
+        widget: text
+      - label: Reabrir se
+        name: reabrir_se
+        required: true
+        widget: text
+      - label: Referencia
+        name: referencia
+        required: true
+        widget: object
+        fields:
+        - label: Título
+          name: titulo
+          required: true
+          widget: string
+        - label: URL HTTPS
+          name: url
+          required: true
+          widget: string
+      - label: Ref ids
+        name: ref_ids
+        required: true
+        widget: list
+        field:
+          label: Item
+          name: item
+          widget: text
+      - label: Natureza
+        name: natureza
+        required: true
+        widget: string
+      - label: Data avaliacao
+        name: data_avaliacao
+        required: true
+        widget: string
+      - label: Autoria
+        name: autoria
+        required: true
+        widget: string
+      - label: Estado editorial
+        name: status
+        required: true
+        widget: string
+      - label: Limite referencia
+        name: limite_referencia
+        required: false
+        widget: text
+    - label: Responsável pela revisão
+      name: revisor
+      required: false
+      widget: string
+      default: ''
+    - label: Revisado em
+      name: revisado_em
+      required: false
+      widget: string
+      default: ''
+
+  - name: businessAnalises
+    label: Business · Análises autorais
+    folder: src/content/business/analises
+    extension: md
+    format: frontmatter
+    create: true
+    slug: '{{titulo}}'
+    identifier_field: titulo
+    summary: '{{titulo}} · {{status}}'
+    fields:
+    - label: Título
+      name: titulo
+      required: true
+      widget: string
+    - label: Titulo curto
+      name: titulo_curto
+      required: true
+      widget: string
+    - label: Resumo
+      name: resumo
+      required: true
+      widget: text
+    - label: Serie
+      name: serie
+      required: true
+      widget: string
+    - label: Parte
+      name: parte
+      required: true
+      widget: number
+      value_type: int
+    - label: Total
+      name: total
+      required: true
+      widget: number
+      value_type: int
+    - label: Data
+      name: data
+      required: true
+      widget: string
+    - label: Atualizado em
+      name: atualizado
+      required: true
+      widget: string
+    - label: Autoria
+      name: autor
+      required: true
+      widget: string
+    - label: Estado editorial
+      name: status
+      required: true
+      widget: select
+      options:
+      - candidato
+      - em-revisao
+      - aprovado
+      - publicado
+      - rejeitado
+      - arquivado
+      default: candidato
+    - label: Fontes e consulta
+      name: fontes
+      required: true
+      widget: list
+      field:
+        label: Item
+        name: item
+        widget: text
+    - label: Responsável pela revisão
+      name: revisor
+      required: false
+      widget: string
+      default: ''
+    - label: Revisado em
+      name: revisado_em
+      required: false
+      widget: string
+      default: ''
+    - label: Artigo em Markdown
+      name: body
+      widget: markdown
+      modes:
+      - raw

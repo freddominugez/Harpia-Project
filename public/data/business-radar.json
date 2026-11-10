@@ -1,0 +1,230 @@
+{
+  "ambiente": "business",
+  "publication_policy": "trusted_institutional_rss_metadata_only",
+  "checked_at": "2026-11-10T07:39:26.898763+00:00",
+  "last_successful_at": "2026-11-10T07:39:26.898763+00:00",
+  "sources": [
+    {
+      "id": "ama",
+      "status": "ok",
+      "item_count": 4,
+      "checked_at": "2026-11-10T07:39:26.898763+00:00"
+    },
+    {
+      "id": "fdc",
+      "status": "ok",
+      "item_count": 5,
+      "checked_at": "2026-11-10T07:39:26.898763+00:00"
+    },
+    {
+      "id": "insead",
+      "status": "error",
+      "item_count": 0,
+      "checked_at": "2026-11-10T07:39:26.898763+00:00"
+    },
+    {
+      "id": "mckinsey",
+      "status": "ok",
+      "item_count": 7,
+      "checked_at": "2026-11-10T07:39:26.898763+00:00"
+    },
+    {
+      "id": "wharton",
+      "status": "ok",
+      "item_count": 5,
+      "checked_at": "2026-11-10T07:39:26.898763+00:00"
+    }
+  ],
+  "items": [
+    {
+      "id": "fdaad43758f5fb9a20dd",
+      "source_id": "fdc",
+      "title": "O custo invisível da sub-representação feminina na alta gestão pública",
+      "summary": "",
+      "url": "https://sejarelevante.fdc.org.br/o-custo-invisivel-da-sub-representacao-feminina-na-alta-gestao/",
+      "published_at": "2026-11-09T00:00:00+00:00",
+      "verified_at": "2026-11-10T07:39:26.898763+00:00",
+      "idioma": "pt"
+    },
+    {
+      "id": "0bdc2e57ca9ffd6c8264",
+      "source_id": "mckinsey",
+      "title": "Beyond agency boundaries: Building a statewide approach to customer experience",
+      "summary": "",
+      "url": "https://www.mckinsey.com/industries/public-sector/our-insights/beyond-agency-boundaries-building-a-statewide-approach-to-customer-experience",
+      "published_at": "2026-11-09T00:00:00+00:00",
+      "verified_at": "2026-11-10T07:39:26.898763+00:00",
+      "idioma": "en"
+    },
+    {
+      "id": "c58c9689551a0072c79a",
+      "source_id": "ama",
+      "title": "Less Spending, Higher Revenue: How Mergers and Acquisitions Affect Marketing Decisions in the Biopharma Industry",
+      "summary": "",
+      "url": "https://www.ama.org/2026/11/05/less-spending-higher-revenue-how-mergers-and-acquisitions-affect-marketing-decisions-in-the-biopharma-industry/",
+      "published_at": "2026-11-05T00:00:00+00:00",
+      "verified_at": "2026-11-10T07:39:26.898763+00:00",
+      "idioma": "en"
+    },
+    {
+      "id": "695011ee696e7d45385f",
+      "source_id": "wharton",
+      "title": "Building a Modern Western Lifestyle Brand",
+      "summary": "",
+      "url": "https://knowledge.wharton.upenn.edu/podcast/marketing-matters/building-a-modern-western-lifestyle-brand/",
+      "published_at": "2026-11-05T00:00:00+00:00",
+      "verified_at": "2026-11-10T07:39:26.898763+00:00",
+      "idioma": "en"
+    },
+    {
+      "id": "363085b1d48fd4e07aa6",
+      "source_id": "mckinsey",
+      "title": "Turning executive judgment into organizational intelligence: Leveraging AI in CEO leadership",
+      "summary": "",
+      "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/turning-executive-judgment-into-organizational-intelligence-leveraging-ai-in-ceo-leadership",
+      "published_at": "2026-11-02T00:00:00+00:00",
+      "verified_at": "2026-11-10T07:39:26.898763+00:00",
+      "idioma": "en"
+    },
+    {
+      "id": "63aa33c16615844d1bd4",
+      "source_id": "mckinsey",
+      "title": "Critical infrastructure is under threat. Are organizations prepared?",
+      "summary": "",
+      "url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/critical-infrastructure-is-under-threat-are-organizations-prepared",
+      "published_at": "2026-11-02T00:00:00+00:00",
+      "verified_at": "2026-11-10T07:39:26.898763+00:00",
+      "idioma": "en"
+    },
+    {
+      "id": "5b6288ade6ce1b30a621",
+      "source_id": "fdc",
+      "title": "Modelos de gestão precisam evoluir para acompanhar mudanças no trabalho",
+      "summary": "",
+      "url": "https://sejarelevante.fdc.org.br/modelos-de-gestao-precisam-evoluir-para-acompanhar-trabalho/",
+      "published_at": "2026-10-30T00:00:00+00:00",
+      "verified_at": "2026-11-10T07:39:26.898763+00:00",
+      "idioma": "pt"
+    },
+    {
+      "id": "78f9d057c5b027d978be",
+      "source_id": "mckinsey",
+      "title": "Author Talks: Why you can’t separate strategy from value—and vice versa",
+      "summary": "",
+      "url": "https://www.mckinsey.com/featured-insights/mckinsey-on-books/author-talks-why-you-cant-separate-strategy-from-value-and-vice-versa",
+      "published_at": "2026-10-30T00:00:00+00:00",
+      "verified_at": "2026-11-10T07:39:26.898763+00:00",
+      "idioma": "en"
+    },
+    {
+      "id": "bf47b75e4bc68232f3b4",
+      "source_id": "fdc",
+      "title": "O CEO virou parte da marca? Veja como a reputação dos líderes influencia as empresas",
+      "summary": "",
+      "url": "https://sejarelevante.fdc.org.br/o-ceo-virou-parte-da-marca-veja-como-a-reputacao-dos-lideres-influencia-as-empresas/",
+      "published_at": "2026-10-29T00:00:00+00:00",
+      "verified_at": "2026-11-10T07:39:26.898763+00:00",
+      "idioma": "pt"
+    },
+    {
+      "id": "732ab7a3b0e0f971bcf1",
+      "source_id": "mckinsey",
+      "title": "Banking on AI: How a new operating model can transform distressed credit management",
+      "summary": "",
+      "url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/banking-on-ai-how-a-new-operating-model-can-transform-distressed-credit-management",
+      "published_at": "2026-10-29T00:00:00+00:00",
+      "verified_at": "2026-11-10T07:39:26.898763+00:00",
+      "idioma": "en"
+    },
+    {
+      "id": "31b5fde52d05bb73df33",
+      "source_id": "fdc",
+      "title": "Na era da IA, o diferencial está na capacidade de pensar estrategicamente",
+      "summary": "",
+      "url": "https://sejarelevante.fdc.org.br/na-era-da-ia-o-diferencial-e-pensar-estrategicamente/",
+      "published_at": "2026-10-28T00:00:00+00:00",
+      "verified_at": "2026-11-10T07:39:26.898763+00:00",
+      "idioma": "pt"
+    },
+    {
+      "id": "ceeaad28215b8e6e992a",
+      "source_id": "mckinsey",
+      "title": "Agentic AI in strategic sourcing: Hype or hero?",
+      "summary": "",
+      "url": "https://www.mckinsey.com/capabilities/operations/our-insights/agentic-ai-in-strategic-sourcing-hype-or-hero",
+      "published_at": "2026-10-28T00:00:00+00:00",
+      "verified_at": "2026-11-10T07:39:26.898763+00:00",
+      "idioma": "en"
+    },
+    {
+      "id": "1aa553b27e80a476fc20",
+      "source_id": "wharton",
+      "title": "Why Record Holiday Sales May Not Tell the Whole Story",
+      "summary": "",
+      "url": "https://knowledge.wharton.upenn.edu/podcast/this-week-in-business/why-record-holiday-sales-may-not-tell-the-whole-story/",
+      "published_at": "2026-10-28T00:00:00+00:00",
+      "verified_at": "2026-11-10T07:39:26.898763+00:00",
+      "idioma": "en"
+    },
+    {
+      "id": "dec3ad50e692d10598ae",
+      "source_id": "fdc",
+      "title": "Novo CHRO deve transformar influência estratégica em capacidade organizacional",
+      "summary": "",
+      "url": "https://sejarelevante.fdc.org.br/novo-chro-deve-desenvolver-capacidade-organizacional/",
+      "published_at": "2026-10-27T00:00:00+00:00",
+      "verified_at": "2026-11-10T07:39:26.898763+00:00",
+      "idioma": "pt"
+    },
+    {
+      "id": "748f38db09c2da2dfa70",
+      "source_id": "ama",
+      "title": "Weigh Your Options: How Price Format Can Boost Sales Without Changing the Price",
+      "summary": "",
+      "url": "https://www.ama.org/2026/10/22/weigh-your-options-how-price-format-can-boost-sales-without-changing-the-price/",
+      "published_at": "2026-10-22T00:00:00+00:00",
+      "verified_at": "2026-11-10T07:39:26.898763+00:00",
+      "idioma": "en"
+    },
+    {
+      "id": "8bde3941afad2dc2c96d",
+      "source_id": "mckinsey",
+      "title": "The State of Grocery Retail Europe: Implications for packaging players",
+      "summary": "",
+      "url": "https://www.mckinsey.com/industries/packaging-and-paper/our-insights/the-state-of-grocery-retail-europe-implications-for-packaging-players",
+      "published_at": "2026-10-22T00:00:00+00:00",
+      "verified_at": "2026-11-10T07:39:26.898763+00:00",
+      "idioma": "en"
+    },
+    {
+      "id": "8117dfee2e52b1ab7f92",
+      "source_id": "wharton",
+      "title": "Why Your Best Customers Can Be Your Best Marketers",
+      "summary": "",
+      "url": "https://knowledge.wharton.upenn.edu/podcast/marketing-matters/why-your-best-customers-can-be-your-best-marketers/",
+      "published_at": "2026-10-22T00:00:00+00:00",
+      "verified_at": "2026-11-10T07:39:26.898763+00:00",
+      "idioma": "en"
+    },
+    {
+      "id": "61d28668af6a8e662bfc",
+      "source_id": "ama",
+      "title": "Team Up or Take Over? Strategic Drivers of Firms’ Alliance and Acquisition Decisions",
+      "summary": "",
+      "url": "https://www.ama.org/2026/10/16/team-up-or-take-over-strategic-drivers-of-firms-alliance-and-acquisition-decisions/",
+      "published_at": "2026-10-16T00:00:00+00:00",
+      "verified_at": "2026-11-10T07:39:26.898763+00:00",
+      "idioma": "en"
+    },
+    {
+      "id": "65fd92e84d1c8a113480",
+      "source_id": "ama",
+      "title": "Call for Nominations – Editor in Chief | Journal of International Marketing",
+      "summary": "",
+      "url": "https://www.ama.org/2026/10/15/call-for-nominations-editor-in-chief-journal-of-international-marketing/",
+      "published_at": "2026-10-16T00:00:00+00:00",
+      "verified_at": "2026-11-10T07:39:26.898763+00:00",
+      "idioma": "en"
+    }
+  ]
+}

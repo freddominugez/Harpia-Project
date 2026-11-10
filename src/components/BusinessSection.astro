@@ -1,0 +1,38 @@
+---
+import {getBusinessPresentation} from '../lib/business-presentation';
+import {getBusiness} from '../lib/business';
+import {businessFontesDoSite} from '../lib/business-fontes-site';
+import LibraryCatalog from './LibraryCatalog.astro';
+import VideoCatalog from './VideoCatalog.astro';
+import BusinessTextPage from './BusinessTextPage.astro';
+import AnalysisCatalog from './AnalysisCatalog.astro';
+import CommunityPage from './CommunityPage.astro';
+import NoticiasPagina from './NoticiasPagina.astro';
+import PageIntro from './PageIntro.astro';
+import NewsCard from './NewsCard.astro';
+import SourceCatalog from './SourceCatalog.astro';
+import BusinessStudyIndex from './BusinessStudyIndex.astro';
+import BusinessInvestigation from './BusinessInvestigation.astro';
+import OriginsPage from './OriginsPage.astro';
+import BusinessLearningPage from './BusinessLearningPage.astro';
+interface Props {secao:string}
+const {secao}=Astro.props;
+const m=await getBusinessPresentation();
+const {origens,canais}=await getBusiness();
+const grupos=['biblioteca/fontes','videos/canais'].includes(secao)?await businessFontesDoSite():[];
+const d=origens?.data;
+---
+{['biblioteca','biblioteca/livros'].includes(secao)&&<LibraryCatalog livros={m.livros} artigos={m.artigos} fontes={m.fontesBiblioteca} categorias={m.categoriasLivro} grupos={m.categoriasLivro} prefixo="/business" lead={`${m.livros.length} livros de referência e ${m.artigos.length} artigos e relatórios selecionados. Autoria, natureza da evidência e links às fontes originais.`} livrosDescricao="Marketing, consumidor, marcas, estratégia e administração. Páginas comerciais das editoras não são classificadas como leitura gratuita." artigosTitulo="Artigos e relatórios" artigosDescricao="Referências acadêmicas e análises executivas identificadas pela sua natureza. O título abre a publicação original; acesso e idioma podem variar." fontesDescricao="Instituições acadêmicas, consultorias e publicações de referência do Brasil, dos Estados Unidos e da Europa." />}
+{secao==='videos'&&<VideoCatalog videos={m.videos} modulos={m.modulos} titulo="Marketing e administração, em vídeo" lead={`${m.videos.length} vídeos de instituições também presentes em nossas fontes de artigos. Explore marketing, estratégia e administração por tema, nível e idioma.`} criterios={['Seleção institucional: canal, autoria e contexto conferidos nas páginas das fontes. O conteúdo audiovisual integral ainda não foi revisado; as fichas indicam o alcance da conferência.','Três níveis de estudo propostos a partir do tema e da apresentação institucional: fundamentos; aplicação e métodos; pesquisa e análise avançada.','Idioma conforme os metadados da fonte. Legendas e dublagem dependem da disponibilidade no YouTube e não foram verificadas integralmente.','Clique no card para consultar a ficha, as referências e o vídeo original. A reputação da instituição não substitui a avaliação crítica das alegações.']} />}
+{['equacoes','biblioteca/glossario','sobre'].includes(secao)&&<BusinessTextPage secao={secao==='equacoes'?'metricas':secao} />}
+{secao==='analises'&&<AnalysisCatalog analises={m.analises} lead="Leituras críticas de marketing e administração: a pergunta, o método, as evidências e os limites de aplicação." />}
+{secao==='forum'&&<CommunityPage pautas={m.pautas} path="/business/forum/" lead="Discuta decisões de marketing e administração com fontes e contexto. Cada página possui uma conversa identificada pelo seu endereço; este é o espaço geral de Business." propostas="Temas propostos pelo Harpya para iniciar a conversa. São perguntas para debate, sem autores, respostas ou contagens de discussões inventadas." />}
+{secao==='noticias'&&(m.noticias[0]?<NoticiasPagina atual={m.noticias[0]} noticias={m.noticias} prefixo="/business" negocios lead="Marketing e administração com fontes, contexto e limites da evidência." periodicidade="após revisão editorial" />:<PageIntro trilha={[{rotulo:'Notícias'}]} titulo="Notícias" lead="Nenhuma notícia publicada ainda." />)}
+{secao==='news'&&<><PageIntro trilha={[{rotulo:'Radar'}]} eyebrow="News" titulo="O que saiu sobre marketing e administração" lead="Leituras selecionadas nas instituições de referência. Cada título leva à publicação original."/><section class="page-body"><div class="container"><NewsCard limite={40} manchetes={m.editorial.radar.map(a=>({fonte:a.company,titulo:a.title,url:a.url,data:a.published_at.slice(0,10)}))} chamada="Publicações selecionadas sobre marketing, estratégia e administração" /></div></section></>}
+{secao==='biblioteca/fontes'&&<SourceCatalog grupos={grupos} prefixo="/business" />}
+{secao==='videos/canais'&&<SourceCatalog grupos={grupos.filter(g=>g.id==='canais')} prefixo="/business" titulo="Canais institucionais de vídeo" lead={`${canais.length} canais aprovados e suas referências de procedência. Cada vídeo exige revisão individual antes de integrar o catálogo.`} />}
+{secao==='estudos'&&<BusinessStudyIndex />}
+{secao==='estudos/a-ideia-mais-interessante'&&<BusinessInvestigation />}
+{secao==='estudos/arquivados'&&<BusinessInvestigation arquivo />}
+{secao==='origens'&&d&&<OriginsPage eras={d.eras} eventos={d.eventos} capitulos={d.capitulos} pessoas={d.pessoas} titulo="De escolhas de mercado à aprendizagem com evidências" lead={d.resumo} intervalo={`eventos de ${Math.min(...d.eventos.map(e=>e.ano))} a ${Math.max(...d.eventos.map(e=>e.ano))}`} pessoasTitulo="Autores e praticantes" pessoasDescricao="Contribuições situadas nos capítulos e fontes. As datas indicam os marcos referidos, não nascimento. Retratos com fonte, autoria e licença explícitas; os demais perfis usam iniciais." nota={d.nota} continuar={{href:'/business/aprendizado/',titulo:'Conceitos e métodos para estudar →'}} negocios />}
+{secao==='aprendizado'&&<BusinessLearningPage />}

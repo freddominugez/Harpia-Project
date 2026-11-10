@@ -1,0 +1,10 @@
+---
+import {getBusiness,guiaPath} from '../lib/business';
+import StudyCatalog from './StudyCatalog.astro';
+import BusinessStudyIdea from './BusinessStudyIdea.astro';
+const {guias}=await getBusiness();
+const caminhos=guias.map(g=>({id:g.id,href:guiaPath(g.id),data:{...g.data,rotulo:'Guia',estatuto:'teste' as const,selo:'Guia didático'}}));
+---
+<StudyCatalog caminhos={caminhos} prefixo="/business" lead={`${guias.length} guias para formular perguntas, escolher métodos e examinar evidências em marketing e administração.`} origem="Este ambiente organiza o estudo de decisões de mercado: compreender o cliente, formular uma proposta de valor, escolher como entregar e avaliar o que mudou. Os guias são textos didáticos; não representam experimentos realizados pelo projeto." tituloLista="Percursos de estudo" criterio="Cada percurso identifica sua pergunta, conceitos e referências. Ao aplicar um método, explicite a população, a comparação, as medidas e os limites da conclusão." arquivoDescricao="O registro distingue propostas de investigação de resultados medidos. Só entram nos arquivados avaliações efetivamente realizadas, acompanhadas da justificativa e das condições para reconsideração.">
+  <BusinessStudyIdea slot="ideia" />
+</StudyCatalog>

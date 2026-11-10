@@ -1,0 +1,27 @@
+{
+  "titulo": "Wharton aproxima adoção de IA e criação de valor",
+  "resumo": "Rahul Kapoor discute tecnologia, capacidades complementares e estratégia.",
+  "fonte": "wharton",
+  "url": "https://knowledge.wharton.upenn.edu/article/generative-ai-wont-create-value-on-its-own/",
+  "tipo": "noticia",
+  "trilha": "gestao",
+  "autores": "Rahul Kapoor",
+  "data": "2026-04-13",
+  "data_precisa": true,
+  "idioma": "pt",
+  "acesso": "Síntese do Harpya em português; referência institucional original com acesso e idioma próprios.",
+  "evidencia": "executivo",
+  "limites": "Ensaio estratégico; pesquisas referenciadas não revisadas integralmente. Sem garantia de retorno.",
+  "status": "publicado",
+  "justificativa": "Síntese editorial própria do Harpya após conferência de fonte, data, autoria disponível e alcance da evidência. Não representa revisão integral do estudo subjacente.",
+  "revisor": "Harpya · revisão de fonte e contexto",
+  "revisado_em": "2026-11-06",
+  "corpo": [
+    "Em artigo de abril, Rahul Kapoor discute por que capacidades técnicas não bastam para criar valor numa empresa. Sua análise da inteligência artificial generativa organiza três desafios: lidar com uma tecnologia emergente, reunir recursos complementares e incorporá-la ao modelo de negócio.",
+    "O texto destaca dados, competências, infraestrutura, processos e relações com parceiros como componentes dessa transformação. Também apresenta a necessidade de aprender com experimentos e avaliar como uma aplicação poderá gerar utilidade para clientes e sustentar a captura de valor pela organização.",
+    "A leitura editorial sugere partir de um problema de negócio e examinar o conjunto de condições necessário para resolvê-lo. Trata-se de uma interpretação estratégica apoiada em pesquisas do autor. Ela não demonstra retorno universal de projetos de IA nem substitui a avaliação de cada contexto."
+  ],
+  "referencias": [
+    "https://knowledge.wharton.upenn.edu/article/generative-ai-wont-create-value-on-its-own/"
+  ]
+}

@@ -1,0 +1,19 @@
+---
+import TextArticle from './TextArticle.astro';
+import M from './M.astro';
+import { EDITORIAL_BUSINESS } from '../data/business-editorial';
+import { SECOES_BUSINESS } from '../lib/business';
+interface Props { secao: string }
+const { secao } = Astro.props;
+const page = SECOES_BUSINESS.find(s => s.slug === (secao==='metricas'?'equacoes':secao))!;
+const blocos = EDITORIAL_BUSINESS[secao] ?? [];
+const headings = blocos.map((b,i) => ({ depth: 2, slug: `secao-${i+1}`, text: b.titulo }));
+const frontmatter = { titulo: page.titulo, descricao: page.descricao, kicker: 'Marketing e administração', lead: page.descricao, relacionados: [
+  { href: '/business/estudos/', titulo: 'Estudos', sub: 'Guias de marketing e administração', icone: 'file' },
+  { href: '/business/biblioteca/', titulo: 'Biblioteca', sub: 'Referências para aprofundamento', icone: 'book' },
+] };
+---
+<TextArticle frontmatter={frontmatter} headings={headings} prefixo="/business">
+  {blocos.map((b,i) => <section><h2 id={`secao-${i+1}`}>{b.titulo}</h2><p>{b.texto}</p>{secao === 'metricas' && <M t={b.equacao!} d />}{b.formula && <p>{b.formula}</p>}{secao === 'metricas' && i === 2 && <p>Nesta notação, a contribuição esperada de cada período já incorpora a probabilidade de permanência e os custos definidos para a coorte. O horizonte T e a taxa r devem ser explícitos; o custo de aquisição é tratado separadamente.</p>}{b.exemplo && <p>{b.exemplo}</p>}{b.referencias && <ul>{b.referencias.map(r=><li><a href={r.url} target="_blank" rel="noopener noreferrer">{r.titulo}</a><p>{r.alcance} {r.limites}</p></li>)}</ul>}{b.itens && <ul>{b.itens.map(item => <li>{item}</li>)}</ul>}</section>)}
+  <p class="cite">Texto didático do Harpya. As equações apresentam definições e pressupostos de análise; não descrevem resultados medidos pelo projeto. Consulte a <a href="/business/biblioteca/">biblioteca</a> e os limites das fontes originais.</p>
+</TextArticle>

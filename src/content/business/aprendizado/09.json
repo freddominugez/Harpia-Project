@@ -1,0 +1,29 @@
+{
+  "numero": 9,
+  "titulo": "Experimentos precisam de incerteza e de uma regra de decisão",
+  "texto": "Duas taxas diferentes são um ponto de partida, não uma autorização automática para declarar uma opção vencedora. O desenho precisa distinguir efeito, variação amostral e mudança de público.",
+  "contexto": "Braun e Schwartz explicam, em texto autoral da AMA, que a entrega otimizada de anúncios pode expor criativos a combinações diferentes de usuários. Isso limita a interpretação de comparações anunciadas como A/B. A pergunta deve esclarecer se se deseja avaliar o sistema de entrega ou o criativo sob condições comparáveis.",
+  "mecanismo": "Registre hipótese, resultado principal, unidade de randomização, duração, tamanho planejado e regra de encerramento. Evite escolher apenas o indicador mais favorável depois de testar muitos. Um erro padrão descreve variação sob um modelo; não corrige uma alocação enviesada. Mesmo um efeito estatisticamente compatível com ganho pode ser economicamente pequeno ou operacionalmente inviável.",
+  "equacoes": [
+    {
+      "tex": "\\widehat{SE}(\\widehat p_B-\\widehat p_A)=\\sqrt{\\frac{\\widehat p_A(1-\\widehat p_A)}{n_A}+\\frac{\\widehat p_B(1-\\widehat p_B)}{n_B}}",
+      "texto": "A expressão é a estimativa não agrupada do erro padrão de duas proporções sob amostras binomiais independentes. p̂_A e p̂_B são taxas observadas; n_A e n_B são tamanhos dos grupos. Dependência, agrupamento e amostragem adaptativa exigem outro tratamento. Ela não é uma receita universal para plataformas de anúncios."
+    }
+  ],
+  "exemplo": "Exemplo hipotético: A tem 50 compras em 100 pessoas, e B tem 55 em 100. A diferença observada é 55/100 − 50/100 = 0,05, ou cinco pontos percentuais; o crescimento relativo é 0,05/0,50 = 10%. São escalas diferentes para os mesmos dados. Sob o modelo independente, a variância estimada da diferença seria 0,5 × 0,5/100 + 0,55 × 0,45/100 = 0,004975; o erro padrão é a raiz desse número. Não foi calculado aqui um intervalo nem declarada significância. Se a plataforma selecionar públicos distintos, o problema passa além da variância: o contraste pode misturar composição com resposta ao criativo.",
+  "limites": "Parar assim que surgir um resultado conveniente altera propriedades de testes usuais. Replicação, efeitos adversos e relevância prática precisam entrar na decisão, além do valor pontual.",
+  "legado": "A entrega reúne efeito estimado, desenho, incerteza e decisão previamente justificada. Um resultado inconclusivo pode justificar nova coleta; não precisa ser reembalado como sucesso.",
+  "hoje": "Antes do lançamento, escreva que evidência fará continuar, revisar ou encerrar o teste.",
+  "referencias": [
+    {
+      "texto": "AMA — Can You Trust Your Ad Data?",
+      "url": "https://www.ama.org/2025/01/07/can-you-trust-your-ad-data-a-new-study-exposes-a-hidden-flaw-in-a-b-testing-on-digital-ad-platforms/",
+      "consultado": "em: 2026-11-06; alcance: Texto público autoral de Michael Braun e Eric M. Schwartz: entrega divergente, implicações para comparações A/B e recomendações.",
+      "limites": "Texto de divulgação do estudo; não foi lido o paper completo. A fórmula binomial é estatística elementar aplicada no exercício, não método validado para a entrega algorítmica descrita. Todos os números são fictícios."
+    }
+  ],
+  "atualizado": "2026-11-06",
+  "status": "publicado",
+  "revisor": "Harpya · revisão didática e de aritmética",
+  "revisado_em": "2026-11-06"
+}

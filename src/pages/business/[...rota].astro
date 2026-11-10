@@ -1,37 +1,46 @@
 ---
-import { render } from 'astro:content';
-import type { CollectionEntry } from 'astro:content';
+import {render,type CollectionEntry} from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import EditorialHome from '../../components/EditorialHome.astro';
+import BusinessSection from '../../components/BusinessSection.astro';
+import StudyArticle from '../../components/StudyArticle.astro';
+import AnalysisArticle from '../../components/AnalysisArticle.astro';
+import NoticiasPagina from '../../components/NoticiasPagina.astro';
 import BusinessResourceDetail from '../../components/BusinessResourceDetail.astro';
-import BusinessPage from '../../components/BusinessPage.astro';
-import { getBusiness, SECOES_BUSINESS, guiaPath, trilhaNome } from '../../lib/business';
-export async function getStaticPaths() {
-  const { guias, acervo } = await getBusiness();
-  return [
-    ...SECOES_BUSINESS.map(page => ({ params: { rota: page.slug || undefined }, props: { tipo: 'secao' as const, secao: page.slug } })),
-    ...guias.map(guia => ({ params: { rota: `estudos/${guia.id}` }, props: { tipo: 'guia' as const, guia } })),
-    ...acervo.map(item => ({ params: { rota: `leituras/${item.id}` }, props: { tipo: 'recurso' as const, item } })),
-  ];
+import {getBusiness,SECOES_BUSINESS,guiaPath,recursoPublicadoPath} from '../../lib/business';
+import {getBusinessPresentation} from '../../lib/business-presentation';
+export async function getStaticPaths(){
+ const {guias,acervo,analises}=await getBusiness();
+ return [
+  ...SECOES_BUSINESS.filter(s=>s.slug!=='comecando').map(s=>({params:{rota:s.slug||undefined},props:{tipo:'secao',secao:s.slug}})),
+  {params:{rota:'metricas'},props:{tipo:'secao',secao:'equacoes'}},
+  ...['estudos/a-ideia-mais-interessante','estudos/arquivados'].map(secao=>({params:{rota:secao},props:{tipo:'secao',secao}})),
+  ...guias.flatMap(guia=>[guiaPath(guia.id),`/business/estudos/${guia.id}/`].map(path=>({params:{rota:path.replace(/^\/business\/|\/$/g,'')},props:{tipo:'guia',guia}}))),
+  ...analises.map(analise=>({params:{rota:`analises/${analise.id}`},props:{tipo:'analise',analise}})),
+  ...acervo.map(item=>({params:{rota:recursoPublicadoPath(item.id,item.data.tipo).replace(/^\/business\/|\/$/g,'')},props:{tipo:'recurso',item}})),
+ ];
 }
-interface Props { tipo: 'secao' | 'guia' | 'recurso'; secao?: string; guia?: CollectionEntry<'businessGuias'>; item?: CollectionEntry<'businessAcervo'> }
-const { tipo, secao = '', guia, item } = Astro.props;
-const page = SECOES_BUSINESS.find(p => p.slug === secao);
-const titulo = tipo === 'guia' ? guia!.data.titulo : tipo === 'recurso' ? item!.data.titulo : page!.titulo;
-const descricao = tipo === 'guia' ? guia!.data.resumo : tipo === 'recurso' ? item!.data.resumo : page!.descricao;
-const rendered = guia ? await render(guia) : null;
-const Content = rendered?.Content;
-const { guias, fontes } = await getBusiness();
-const fonte = item ? fontes.find(f => f.id === item.data.fonte) : undefined;
-const indice = guia ? guias.findIndex(g => g.id === guia.id) : -1;
+interface Props {tipo:'secao'|'guia'|'analise'|'recurso';secao?:string;guia?:CollectionEntry<'businessGuias'>;analise?:CollectionEntry<'businessAnalises'>;item?:CollectionEntry<'businessAcervo'>}
+const {tipo,secao='',guia,analise,item}=Astro.props;
+const {guias,fontes}=await getBusiness();
+const page=SECOES_BUSINESS.find(s=>s.slug===secao);
+const especiais:Record<string,{titulo:string;descricao:string}>={
+ 'estudos/arquivados':{titulo:'Arquivados',descricao:'Propostas de medição avaliadas conceitualmente, com motivos e condições para reconsideração.'},
+ 'estudos/a-ideia-mais-interessante':{titulo:'Quem compraria mesmo sem o anúncio?',descricao:'Uma investigação didática da comparação necessária para estimar efeito incremental.'},
+};
+const titulo=guia?.data.titulo??analise?.data.titulo??item?.data.titulo??page?.titulo??especiais[secao]?.titulo;
+const descricao=guia?.data.resumo??analise?.data.resumo??item?.data.resumo??page?.descricao??especiais[secao]?.descricao;
+const leitura=guia?await render(guia):analise?await render(analise):null;
+const Content=leitura?.Content;
+const nomeReferencia=(body:string|undefined,url:string)=>[...(body??'').matchAll(/\[([^\]]+)\]\((https:\/\/[^\s)]+)\)/g)].find(m=>m[2]===url)?.[1]??new URL(url).hostname;
+const fichas=guias.map(g=>({id:g.id,href:guiaPath(g.id),markdown:`${guiaPath(g.id).replace(/\/$/,'')}.md`,body:g.body,data:{...g.data,autor:'Harpya',rotulo:'Guia',estatuto:'teste' as const,selo:'Guia didático',principal:false,arte_previa:g.data.fontes.map(url=>({texto:nomeReferencia(g.body,url),url})),referencias_descricao:'Fontes indicadas neste guia. Verifique contexto e limites na publicação original.'}}));
+const indice=guia?guias.findIndex(g=>g.id===guia.id):-1;
+const m=item?.data.tipo==='noticia'?await getBusinessPresentation():null;
 ---
-<Base titulo={titulo} descricao={descricao} home={tipo === 'secao' && secao === ''}>
-  {tipo === 'secao' && <BusinessPage secao={secao} />}
-  {tipo === 'guia' && guia && <>
-    <header class="container business-page-intro"><nav aria-label="Caminho da página"><a href="/business/">Harpya Business</a> / <a href="/business/estudos/">Estudos</a> / Guia {guia.data.numero}</nav><span class="eyebrow">{trilhaNome(guia.data.trilha)}</span><h1 tabindex="-1">{guia.data.titulo}</h1><p>{guia.data.resumo}</p></header>
-    <div class="container business-section business-guide"><div class="business-guide-layout"><article class="article">{Content && <Content />}<div class="business-reference-list"><strong>Referências para aprofundamento</strong>{guia.data.fontes.map(url => <a href={url} target="_blank" rel="noopener noreferrer">{url} ↗</a>)}<p style="margin-top:12px">Guia didático do Harpya · Atualizado em {guia.data.atualizado}. Os links levam aos originais; idioma e disponibilidade podem variar.</p></div><nav class="business-pagination" aria-label="Sequência de estudo">{indice > 0 ? <a href={guiaPath(guias[indice-1].id)}>← Guia anterior</a> : <a href="/business/comecando/">← Ver a sequência</a>}{indice < guias.length-1 && <a href={guiaPath(guias[indice+1].id)}>Próximo guia →</a>}</nav><div class="business-policy"><h2>Continue a investigação</h2><p>Consulte leituras relacionadas, compare contextos e leve uma pergunta fundamentada à comunidade.</p><a href={`/business/biblioteca/?trilha=${guia.data.trilha}`}>Leituras desta trilha →</a> · <a href="/business/forum/">Discutir na comunidade →</a></div></article><nav class="business-guide-toc toc" aria-label="Neste guia"><strong>Neste guia</strong>{rendered?.headings.map(h => <a href={`#${h.slug}`}>{h.text}</a>)}</nav></div></div>
-  </>}
-  {tipo === 'recurso' && item && <>
-    <header class="container business-page-intro"><nav aria-label="Caminho da página"><a href="/business/">Harpya Business</a> / <a href="/business/biblioteca/">Biblioteca</a></nav><span class="eyebrow">{item.data.evidencia}</span><h1 tabindex="-1">{item.data.titulo}</h1><p>{item.data.resumo}</p></header>
-    <BusinessResourceDetail item={item} fonte={fonte} />
-  </>}
-</Base>
+{tipo==='secao'&&secao===''?<EditorialHome business />:
+ <Base titulo={titulo} descricao={descricao}>
+  {tipo==='secao'&&<BusinessSection secao={secao}/>}
+  {tipo==='guia'&&leitura&&<StudyArticle c={fichas[indice]} todos={fichas} ant={fichas[indice-1]??null} prox={fichas[indice+1]??null} Content={leitura.Content} headings={leitura.headings} prefixo="/business"/>}
+  {tipo==='analise'&&analise&&leitura&&Content&&<AnalysisArticle d={analise.data} minutos={Math.max(1,Math.round((analise.body??'').split(/\s+/).length/200))} toc={leitura.headings.filter(h=>h.depth===2).map(h=>({id:h.slug,texto:h.text}))} relacionados={[]} autor={analise.data.autor} prefixo="/business"><Content/></AnalysisArticle>}
+  {tipo==='recurso'&&item&&(m?<NoticiasPagina atual={m.noticias.find(n=>n.slug===item.id)!} noticias={m.noticias} tituloNoH1 negocios prefixo="/business" lead="Marketing e administração com fontes, contexto e limites da evidência." periodicidade="após revisão editorial"/>:<BusinessResourceDetail item={item} fonte={fontes.find(f=>f.id===item.data.fonte)}/>)}
+ </Base>}

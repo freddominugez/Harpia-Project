@@ -1,0 +1,25 @@
+{
+  "titulo": "Estudo mostra que, em avaliações de IA na África, quem controla a infraestrutura ainda está fora do continente",
+  "resumo": "Artigo no arXiv propõe um quadro para medir independência na avaliação de IA e o aplica a 12 projetos africanos e à rede internacional de institutos de segurança.",
+  "data": "2026-11-05",
+  "categoria": "pesquisa",
+  "icone": "globo",
+  "corpo": [
+    "Um artigo publicado em 5 de novembro no arXiv pergunta quem consegue, de fato, avaliar modelos de IA de forma independente. Os autores, entre eles Robert Trager, Benjamin Rosman e Marina Jirotka, propõem um quadro com quatro eixos: poder, acesso, adequação e independência.",
+    "Aplicado a 12 projetos de avaliação de IA na África, o quadro mostra um padrão: atores africanos costumam fornecer dados, conhecimento das línguas e o desenho das tarefas, enquanto instituições de fora ficam com a infraestrutura e com a autoridade sobre o método. Segundo o estudo, ter o desenho das tarefas, sozinho, nunca levou a mais do que independência parcial.",
+    "O mesmo padrão aparece nos três exercícios conjuntos de teste da rede internacional de institutos de segurança de IA. Os institutos que lideraram cada exercício também rodaram os modelos. O Quênia, único membro africano da rede, contribuiu com tarefas e anotação, mas não há registro de que tenha executado modelos."
+  ],
+  "harpia": "Toca num ponto central para o Brasil: contribuir com dados e língua portuguesa não basta para ter voz sobre como os modelos são avaliados. O quadro serve para olhar iniciativas brasileiras de avaliação com a mesma pergunta.",
+  "fontes": [
+    {
+      "veiculo": "arXiv",
+      "titulo": "Who Can Evaluate AI Independently? A Framework for Analysing Evaluation Infrastructure",
+      "url": "https://arxiv.org/html/2611.08134"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-07",
+  "verificado_em": "2026-11-07",
+  "ordem": 999
+}

@@ -14,18 +14,19 @@
     <a href="/admin/">← Voltar ao painel</a>
     <h1>Publicar conteúdos</h1>
     <p>Marque os rascunhos que já revisou e clique em <strong>Publicar selecionados</strong>.</p>
-    <p>Os itens serão publicados no site após o processamento da hospedagem.</p>
+    <p>Os itens serão publicados no site após o processamento da hospedagem. No Business, a lista mostra apenas registros aprovados; os campos de revisão e as fontes são conferidos novamente antes da publicação.</p>
     <button id="login" hidden>Entrar com e-mail e senha</button>
     <section aria-label="Seleção de conteúdos">
       <div class="toolbar">
         <label>Coleção <select id="collection">
-          <option value="noticias">NotícIAs</option>
+          <optgroup label="Tecnologia e Matemática"><option value="noticias">NotícIAs</option>
           <option value="videos">Vídeos</option>
           <option value="artigos">Artigos acadêmicos</option>
           <option value="livros">Livros</option>
           <option value="fontes">Fontes de pesquisa</option>
           <option value="linha-do-tempo">Linha do tempo</option>
-          <option value="aprendizado">Aprendizado de máquina</option>
+          <option value="aprendizado">Aprendizado de máquina</option></optgroup>
+          <optgroup label="Harpya Business"><option value="business/acervo">Leituras, notícias e vídeos aprovados</option><option value="business/serie">Série Começando aprovada</option><option value="business/origens">Dossiê de Origens aprovado</option><option value="business/aprendizado">Aprendizado aprovado</option><option value="business/investigacoes">Investigações aprovadas</option></optgroup>
         </select></label>
         <button id="reload">Atualizar lista</button>
       </div>

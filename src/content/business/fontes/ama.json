@@ -7,11 +7,12 @@
   "idioma": "en",
   "hosts": [
     "www.ama.org",
-    "ama.org"
+    "ama.org",
+    "journals.sagepub.com"
   ],
-  "feed": "",
+  "feed": "https://www.ama.org/feed/",
   "status": "aprovado",
-  "verificado_em": "2026-11-06",
+  "verificado_em": "2026-11-07",
   "escopos": [
     "artigos"
   ],

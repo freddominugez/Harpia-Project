@@ -1,0 +1,31 @@
+{
+  "titulo": "Filipinas e Microsoft começam a formar 2 mil professores da rede pública em letramento em IA",
+  "resumo": "Programa com o Departamento de Educação vai até maio de 2027, dá certificado gratuito e inclui material sobre privacidade, decisões guiadas por IA e apego emocional a chatbots.",
+  "data": "2026-11-05",
+  "categoria": "letramento",
+  "icone": "escola",
+  "corpo": [
+    "A Microsoft e o Departamento de Educação das Filipinas lançaram em 5 de novembro um programa para formar e certificar 2 mil professores da rede pública em letramento em IA. A formação é conduzida pela academia nacional de educadores do país, com uma empresa local de treinamento.",
+    "O calendário prevê duas sessões virtuais em novembro, oito encontros ao vivo entre janeiro e maio de 2027 e um dia de reconhecimento em maio. O certificado é gratuito e foi feito com a associação americana ISTE+ASCD. No lançamento, cerca de 100 professores do ensino médio passaram um dia em oficina prática em Makati.",
+    "O material trata de onde a IA pode ajudar no ensino e onde a supervisão humana continua necessária. Um dos recursos, chamado Behind the Chat, acompanha três jovens fictícios em situações de exposição de dados pessoais, decisões tomadas com ajuda de IA e apego emocional a chatbots, com perguntas para conversa em sala.",
+    "O programa se apoia num acordo de agosto pelo qual a Microsoft vai dar acesso ao Copilot a 1 milhão de professores filipinos. Os números e o conteúdo vêm do anúncio da empresa, reproduzido pela imprensa filipina; não há ainda avaliação externa dos resultados."
+  ],
+  "harpia": "É um modelo de formação docente em escala nacional feito com uma empresa que também vende a ferramenta. Vale comparar com programas brasileiros: quem define o conteúdo, quem certifica e como se mede o efeito na sala de aula.",
+  "fontes": [
+    {
+      "veiculo": "Microsoft Source Asia",
+      "titulo": "Microsoft and DepEd to credential 2,000 Filipino teachers in AI literacy and equip classrooms for safe, responsible AI use",
+      "url": "https://news.microsoft.com/source/asia/2026/11/05/microsoft-and-deped-to-credential-2000-filipino-teachers-in-ai-literacy-and-equip-classrooms-for-safe-responsible-ai-use/"
+    },
+    {
+      "veiculo": "Daily Tribune",
+      "titulo": "Microsoft, DepEd train 2,000 teachers in A.I. literacy",
+      "url": "https://tribune.net.ph/2026/11/06/microsoft-deped-train-2000-teachers-in-ai-literacy"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-07",
+  "verificado_em": "2026-11-07",
+  "ordem": 999
+}

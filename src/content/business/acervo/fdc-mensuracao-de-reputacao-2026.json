@@ -1,0 +1,27 @@
+{
+  "titulo": "FDC discute como medir reputação entre diferentes públicos",
+  "resumo": "Matéria distingue percepção, evidências e dimensões da reputação.",
+  "fonte": "fdc",
+  "url": "https://sejarelevante.fdc.org.br/como-medir-a-reputacao-de-uma-empresa/",
+  "tipo": "noticia",
+  "trilha": "gestao",
+  "autores": "Nai Fachini",
+  "data": "2026-10-20",
+  "data_precisa": true,
+  "idioma": "pt",
+  "acesso": "Síntese do Harpya em português; referência institucional original com acesso e idioma próprios.",
+  "evidencia": "jornalismo_institucional",
+  "limites": "Pauta institucional de evento; metodologia e ranking não auditados independentemente.",
+  "status": "publicado",
+  "justificativa": "Síntese editorial própria do Harpya após conferência de fonte, data, autoria disponível e alcance da evidência. Não representa revisão integral do estudo subjacente.",
+  "revisor": "Harpya · revisão de fonte e contexto",
+  "revisado_em": "2026-11-06",
+  "corpo": [
+    "Em matéria assinada por Nai Fachini, o portal da Fundação Dom Cabral discute a mensuração da reputação corporativa. O texto reúne perguntas sobre como diferentes públicos avaliam uma organização e por que uma medida de satisfação não representa todas essas perspectivas.",
+    "A abordagem usa a metodologia Merco como exemplo de combinação de percepções e indicadores. Consumidores, trabalhadores, especialistas e outros grupos podem observar dimensões distintas, tornando necessário explicitar quem foi ouvido, quais informações entraram na avaliação e como elas foram reunidas.",
+    "A leitura editorial sugere examinar a metodologia antes de interpretar um ranking como retrato completo da empresa. A matéria está situada na pauta de um evento sobre reputação. A nota consultou a explicação institucional; não auditou o ranking nem confirmou de forma independente seus dados e pesos."
+  ],
+  "referencias": [
+    "https://sejarelevante.fdc.org.br/como-medir-a-reputacao-de-uma-empresa/"
+  ]
+}

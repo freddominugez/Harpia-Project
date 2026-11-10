@@ -9,7 +9,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "astro check"
+    "check": "astro check",
+    "audit:business": "node scripts/auditar_business_corretivo.mjs",
+    "prebuild": "node scripts/gerar_business_validator.mjs"
   },
   "engines": {
     "node": ">=20.3.0"
@@ -32,6 +34,8 @@
   "devDependencies": {
     "@astrojs/check": "0.9.10",
     "@types/node": "22.20.5",
-    "typescript": "5.9.3"
+    "esbuild": "0.27.7",
+    "typescript": "5.9.3",
+    "zod": "4.6.6"
   }
 }

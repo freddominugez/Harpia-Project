@@ -145,14 +145,15 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fo
 .ref-hero-cta .btn { min-height: 39px; padding: 9px 16px; font-size: .78rem; border-radius: 4px; }
 .ref-hero-cta .icon { width: 15px; height: 15px; }
 .ref-hero { --gutter: max(24px, calc((100vw - 1440px) / 2)); }
-.ref-hero-art { position: relative; height: 100%; min-width: 0; margin-right: calc(-1 * var(--gutter)); background: linear-gradient(120deg, rgba(247, 247, 246, .1), rgba(223, 225, 229, .55)); }
+.ref-hero-art { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 172px; height: 100%; min-width: 0; margin-right: calc(-1 * var(--gutter)); background: linear-gradient(120deg, rgba(247, 247, 246, .1), rgba(223, 225, 229, .55)); }
+.ref-hero-visual { position: relative; min-width: 0; height: 100%; overflow: hidden; }
 .ref-mountain { position: absolute; inset: 0 0 0 auto; width: 62%; opacity: .84; background: linear-gradient(90deg, rgba(246, 247, 248, 1), rgba(246, 247, 248, .3) 38%, rgba(255, 255, 255, .05)), url("/img/hero-mountains.webp") center right / cover no-repeat; }
 .ref-angle { position: absolute; inset: 0; z-index: 1; background:
   linear-gradient(138deg, transparent 21%, rgba(206, 161, 73, .13) 21%, rgba(206, 161, 73, .13) 28%, transparent 28%),
   linear-gradient(150deg, transparent 57%, rgba(183, 188, 195, .18) 57%, rgba(183, 188, 195, .18) 67%, transparent 67%); }
-.ref-eagle { position: absolute; z-index: 2; width: 700px; left: -300px; bottom: -372px; pointer-events: none; }
+.ref-eagle { position: absolute; z-index: 2; width: 700px; left: calc(50% - 460px); bottom: -372px; pointer-events: none; }
 .ref-eagle img { width: 100%; height: auto; max-width: none; }
-.ref-manifesto { position: absolute; z-index: 3; right: calc(var(--gutter) + 100px); top: 47px; display: flex; flex-direction: column; gap: 14px; max-width: 172px; color: #323a43; }
+.ref-manifesto { position: relative; z-index: 3; align-self: center; display: flex; flex-direction: column; gap: 14px; min-width: 0; padding: 24px 20px; color: #323a43; }
 .ref-manifesto b { font-size: .78rem; font-weight: 500; line-height: 1.7; letter-spacing: .27em; text-transform: uppercase; }
 .ref-manifesto > span { display: block; width: 31px; height: 2px; background: #ce9f3b; }
 .ref-manifesto small { font-size: .74rem; line-height: 1.55; color: #5f6873; }
@@ -699,7 +700,6 @@ a.cover:hover { transform: translateY(-3px); }
   .ref-columns { grid-template-columns: minmax(0, 2.15fr) minmax(0, 1fr) minmax(0, .96fr); gap: 22px; }
   .ref-middle::before { left: -11px; }
   .ref-hero { --gutter: max(18px, calc((100vw - 1440px) / 2)); }
-  .ref-eagle { left: -300px; }
   .ref-hero-copy h1 { font-size: 4.4rem; }
   .ref-track { height: 136px; }
   .ref-track-head { grid-template-columns: 26px minmax(0, 1fr); gap: 8px; }
@@ -722,8 +722,9 @@ a.cover:hover { transform: translateY(-3px); }
   .ref-hero-wrap { grid-template-columns: 54% 46%; min-height: 330px; }
   .ref-hero-copy { padding: 40px 0 30px; }
   .ref-hero-copy h1 { font-size: clamp(3rem, 5.8vw, 4rem); white-space: normal; }
-  .ref-eagle { width: 600px; left: -250px; bottom: -330px; }
-  .ref-manifesto { top: 34px; right: calc(var(--gutter) + 10px); max-width: 128px; gap: 10px; }
+  .ref-eagle { width: 600px; left: calc(50% - 395px); bottom: -330px; }
+  .ref-hero-art { grid-template-columns: minmax(0, 1fr) 140px; }
+  .ref-manifesto { gap: 10px; padding-right: 18px; }
   .ref-manifesto b { font-size: .66rem; letter-spacing: .2em; }
   .ref-manifesto small { font-size: .66rem; }
   .ref-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
@@ -761,9 +762,8 @@ a.cover:hover { transform: translateY(-3px); }
   .ref-hero-wrap { grid-template-columns: 1fr; min-height: 0; }
   .ref-hero-copy { padding: 30px 0 22px; }
   .ref-hero-copy h1 { font-size: clamp(3rem, 12vw, 4.4rem); margin: 14px 0 8px; }
-  .ref-hero-art { height: 270px; margin: 0 -16px; overflow: hidden; }
-  .ref-eagle { width: 470px; left: 2%; bottom: -260px; }
-  .ref-manifesto { right: 18px; top: 28px; }
+  .ref-hero-art { height: 270px; grid-template-columns: minmax(0, 1fr) 128px; margin: 0 -16px; overflow: hidden; }
+  .ref-eagle { width: 470px; left: calc(50% - 310px); bottom: -260px; }
   .ref-stat-section { padding: 12px 0; }
   .ref-stats { gap: 9px; }
   .ref-stat { height: auto; min-height: 78px; padding: 10px 12px; gap: 10px; }
@@ -820,8 +820,8 @@ a.cover:hover { transform: translateY(-3px); }
   .ref-eyebrow { font-size: .56rem; letter-spacing: .15em; }
   .ref-hero-copy h1 { font-size: clamp(2.7rem, 13vw, 3.65rem); }
   .ref-hero-cta .btn { padding: 10px 12px; font-size: .74rem; }
-  .ref-eagle { width: 400px; left: calc(100% - 365px); bottom: -150px; }
-  .ref-manifesto { width: 116px; right: auto; left: 16px; top: 22px; gap: 7px; }
+  .ref-eagle { width: 400px; left: calc(50% - 263px); bottom: -150px; }
+  .ref-manifesto { gap: 7px; }
   .ref-manifesto b { font-size: .6rem; letter-spacing: .14em; }
   .ref-manifesto small { font-size: .64rem; }
   .ref-track-grid { gap: 8px; }

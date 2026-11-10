@@ -8,7 +8,13 @@
         "http://localhost/videos/index.html",
         "http://localhost/origens/index.html",
         "http://localhost/biblioteca/index.html",
-        "http://localhost/comecando/tokens/index.html"
+        "http://localhost/comecando/tokens/index.html",
+        "http://localhost/tecnologia/index.html",
+        "http://localhost/business/index.html",
+        "http://localhost/business/videos/index.html",
+        "http://localhost/business/biblioteca/index.html",
+        "http://localhost/business/origens/index.html",
+        "http://localhost/business/comecando/valor-e-mercado/index.html"
       ],
       "numberOfRuns": 1,
       "settings": {

@@ -1,0 +1,24 @@
+{
+  "numero": 4,
+  "titulo": "Posicionamento liga uma promessa a uma alternativa real",
+  "texto": "Uma proposta de valor precisa dizer a quem atende, qual situação melhora e por que merece preferência frente às alternativas. Uma frase publicitária só ganha força quando a operação consegue sustentá-la.",
+  "contexto": "Zemsky e Almeida Costa, em texto autoral no INSEAD Knowledge, distinguem ampliar o valor criado e melhorar a capacidade de capturá-lo. A distinção ajuda a evitar um atalho: elevar preço ou intensificar comunicação não significa, necessariamente, resolver melhor o problema do cliente.",
+  "mecanismo": "Descreva o contexto de uso, a alternativa atual, o benefício relevante e a evidência que sustentará a promessa. Escolha diferenças que o público possa reconhecer e que a empresa consiga entregar. Trate cada expressão vaga, como rápido ou simples, como convite para definir uma condição observável. Esta etapa é qualitativa: não há uma equação universal capaz de determinar um posicionamento correto.",
+  "equacoes": [],
+  "exemplo": "Exemplo hipotético: uma empresa de manutenção atende pequenas clínicas. A alternativa atual promete apenas atendimento rápido; a proposta em teste promete confirmar o agendamento em duas horas e realizar a visita em até 24 horas, numa região delimitada. Antes de anunciar, a equipe reserva capacidade e define o que acontecerá em feriados, falta de peças e locais fora da cobertura. Suponha que preparar o piloto custe R\\$ 2.000 e que haja dez agendamentos simulados: R\\$ 2.000/10 = R\\$ 200 de custo de preparação por agendamento no exercício. Essa divisão não é custo recorrente nem disposição a pagar. O grupo deve entrevistar clientes sobre a relevância da promessa e verificar se a capacidade suporta a entrega. Nenhum prazo ou custo foi observado em uma empresa real.",
+  "limites": "Preferência declarada não equivale a compra. Um benefício pode ser importante e já estar bem atendido por concorrentes; uma diferenciação pode também ser facilmente copiada.",
+  "legado": "A entrega é uma hipótese de posicionamento acompanhada de condições operacionais, evidências exigidas e situações em que a proposta não atende. Documentar essas fronteiras evita promessas contraditórias.",
+  "hoje": "Faça a promessa caber na capacidade do serviço e verifique sua relevância antes de escalar comunicação.",
+  "referencias": [
+    {
+      "texto": "INSEAD Knowledge — Overcoming Competitive Pressures: “Making” vs. “Milking”",
+      "url": "https://knowledge.insead.edu/strategy/overcoming-competitive-pressures-making-vs-milking",
+      "consultado": "em: 2026-11-06; alcance: Texto autoral público: definição das estratégias de criação e captura de valor e explicação do modelo com dois segmentos.",
+      "limites": "Artigo de divulgação pelos pesquisadores; o paper associado não foi lido integralmente. A proposta e o piloto são exercício próprio, não recomendação comprovada para clínicas ou manutenção."
+    }
+  ],
+  "atualizado": "2026-11-06",
+  "status": "publicado",
+  "revisor": "Harpya · revisão didática e de aritmética",
+  "revisado_em": "2026-11-06"
+}

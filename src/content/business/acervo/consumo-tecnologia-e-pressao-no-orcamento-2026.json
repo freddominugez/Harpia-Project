@@ -1,0 +1,27 @@
+{
+  "titulo": "McKinsey examina consumo entre tecnologia e pressão no orçamento",
+  "resumo": "Relatório relaciona descoberta, experiências e valor.",
+  "fonte": "mckinsey",
+  "url": "https://www.mckinsey.com/industries/consumer-packaged-goods/our-insights/state-of-consumer",
+  "tipo": "noticia",
+  "trilha": "consumidor",
+  "autores": "Anna Pione; Clarisse Magnin; Danielle Bozarth; Jessica Moulton; Kari Alldredge",
+  "data": "2026-06-22",
+  "data_precisa": true,
+  "idioma": "pt",
+  "acesso": "Síntese do Harpya em português; referência institucional original com acesso e idioma próprios.",
+  "evidencia": "relatorio",
+  "limites": "Pesquisa descritiva e interpretação de consultoria; não demonstra retorno causal de iniciativas.",
+  "status": "publicado",
+  "justificativa": "Síntese editorial própria do Harpya após conferência de fonte, data, autoria disponível e alcance da evidência. Não representa revisão integral do estudo subjacente.",
+  "revisor": "Harpya · revisão de fonte e contexto",
+  "revisado_em": "2026-11-06",
+  "corpo": [
+    "Em relatório publicado em junho, a McKinsey reúne tendências de consumo ligadas à tecnologia e à atenção ao orçamento. A análise organiza quatro frentes: descoberta e compra mediadas por tecnologia, saúde, experiências e maneiras de aproveitar melhor os recursos disponíveis.",
+    "A pesquisa declarada ouviu consumidores em cinco países, incluindo o Brasil. O texto discute como ferramentas digitais e inteligência artificial participam da procura por produtos, enquanto confiança e percepção de valor continuam relevantes para compreender a escolha entre ofertas.",
+    "A leitura editorial sugere investigar essas mudanças por categoria e público antes de alterar canais ou propostas. O relatório combina levantamento declarado e experiência de consultoria; suas tendências não demonstram, isoladamente, que uma iniciativa produzirá crescimento numa empresa específica."
+  ],
+  "referencias": [
+    "https://www.mckinsey.com/industries/consumer-packaged-goods/our-insights/state-of-consumer"
+  ]
+}

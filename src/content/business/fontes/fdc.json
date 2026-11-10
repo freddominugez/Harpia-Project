@@ -9,11 +9,12 @@
     "www.fdc.org.br",
     "fdc.org.br",
     "revistadom.fdc.org.br",
-    "sejarelevante.fdc.org.br"
+    "sejarelevante.fdc.org.br",
+    "centrodememoria.fdc.org.br"
   ],
-  "feed": "",
+  "feed": "https://sejarelevante.fdc.org.br/feed/",
   "status": "aprovado",
-  "verificado_em": "2026-11-06",
+  "verificado_em": "2026-11-07",
   "canais": [
     {
       "id": "UC1fHbk7N11bB8UnL4tYg26A",

@@ -66,10 +66,13 @@ def gql(token: str, query: str, variaveis: dict) -> dict:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--simular", action="store_true", help="lista o que seria criado, sem criar")
+    ap.add_argument("--ambiente", choices=["tecnologia","business"], default="tecnologia")
     args = ap.parse_args()
+    pasta = RAIZ/"src/content/business/pautas" if args.ambiente=="business" else PAUTAS
+    prefixo = "/business" if args.ambiente=="business" else ""
 
     pendentes = []
-    for arq in sorted(PAUTAS.glob("*.md")):
+    for arq in sorted(pasta.glob("*.md")):
         campos, corpo = frontmatter(arq.read_text(encoding="utf-8"))
         if campos.get("status") == "aprovada" and not campos.get("discussao_url"):
             pendentes.append((arq, campos, corpo))
@@ -99,7 +102,7 @@ def main() -> int:
         if campos.get("_links"):
             partes.append("**Referências**\n\n" + "\n".join(f"- {u}" for u in campos["_links"].splitlines()))
         if campos.get("caminho"):
-            partes.append(f"Caminho no site: {SITE}/estudos/caminhos/{campos['caminho']}/")
+            partes.append(f"Caminho no site: {SITE}{prefixo}/estudos/caminhos/{campos['caminho']}/")
         partes.append("_Pauta proposta no Harpya e aprovada pelo mantenedor. Traga medida, contraexemplo ou referência._")
         criada = gql(token, """mutation($r:ID!,$c:ID!,$t:String!,$b:String!){createDiscussion(input:{repositoryId:$r,categoryId:$c,title:$t,body:$b}){discussion{url}}}""",
                      {"r": repo_id, "c": cat, "t": campos["titulo"], "b": "\n\n".join(partes)})

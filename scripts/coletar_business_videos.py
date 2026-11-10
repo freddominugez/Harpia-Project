@@ -98,6 +98,8 @@ def collect():
             results.append(([],type(error).__name__))
     previous=json.loads(OUTPUT.read_text()) if OUTPUT.exists() else {}
     data=assemble(channels,results,previous,now)
+    known={json.loads(p.read_text()).get('video_id') for p in (ROOT/'src/content/business/acervo').glob('*.json')}
+    data['itens']=[i for i in data['itens'] if i['video_id'] not in known]
     OUTPUT.parent.mkdir(parents=True,exist_ok=True)
     temp=OUTPUT.with_suffix('.tmp');temp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');temp.replace(OUTPUT)
     for state in data['fontes']:

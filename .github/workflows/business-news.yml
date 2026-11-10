@@ -1,0 +1,37 @@
+name: business-news
+on:
+  schedule:
+    - cron: '29 */6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: business-content
+  cancel-in-progress: false
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r scripts/requirements.txt
+      - run: python -m unittest discover -s scripts -p 'test_business*.py'
+      - run: python scripts/coletar_business_radar.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: node scripts/test_business_build.mjs
+      - name: Publicar somente metadados verificados
+        run: |
+          git config user.name 'harpya-bot'
+          git config user.email 'harpya-bot@users.noreply.github.com'
+          git add public/data/business-radar.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'business: atualizar radar institucional'
+          git pull --rebase origin main
+          git push

@@ -9,8 +9,8 @@
     "knowledge.wharton.upenn.edu",
     "www.wharton.upenn.edu"
   ],
-  "feed": "",
-  "verificado_em": "2026-11-06",
+  "feed": "https://knowledge.wharton.upenn.edu/category/marketing/feed/",
+  "verificado_em": "2026-11-07",
   "status": "aprovado",
   "escopos": [
     "artigos",

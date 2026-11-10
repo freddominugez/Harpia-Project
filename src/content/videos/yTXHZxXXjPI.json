@@ -1,0 +1,16 @@
+{
+  "id": "yTXHZxXXjPI",
+  "titulo": "It’s von Neumann’s fault | GPU · TPU · LPU",
+  "canal": "Julia Turc",
+  "modulo": 10,
+  "nivel": "Intermediário",
+  "resumo": "Explica o gargalo de von Neumann e compara GPU, TPU e LPU na inferência: matrizes sistólicas e escalonamento estático. Para quem quer entender de onde vem o custo de servir um LLM.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=yTXHZxXXjPI",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-03",
+  "verificado_em": "2026-11-03"
+}

@@ -15,8 +15,8 @@ function marcas(s: string): string {
 /** Uma linha: alterna texto e $matemática$. */
 export function linha(s: string): string {
   return s
-    .split(/(\$[^$]+\$)/g)
-    .map((p) => (p.startsWith("$") && p.endsWith("$") && p.length > 2 ? tex(p.slice(1, -1), false) : marcas(p)))
+    .split(/(\\\$|\$(?:\\.|[^$\\])+\$)/g)
+    .map((p) => (p === "\\$" ? "$" : p.startsWith("$") && p.endsWith("$") && p.length > 2 ? tex(p.slice(1, -1), false) : marcas(p)))
     .join("");
 }
 

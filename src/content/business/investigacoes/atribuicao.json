@@ -1,0 +1,188 @@
+{
+  "titulo": "Quem compraria mesmo sem o anúncio?",
+  "resumo": "Uma investigação didática sobre a comparação necessária para distinguir vendas associadas de efeito incremental, com exemplo próprio inteiramente hipotético.",
+  "secoes": [
+    {
+      "titulo": "Pergunta: quem compraria de qualquer maneira?",
+      "paragrafos": [
+        "Uma campanha encontra mil compradores e o relatório os associa ao anúncio. Antes de comemorar, falta uma pergunta: quantos comprariam mesmo se aquela campanha não existisse? O registro de uma venda depois de uma impressão informa uma sequência. Para avaliar o efeito da decisão de anunciar, precisamos estimar também o resultado de uma alternativa comparável.",
+        "Esta investigação didática, assinada por Harpya, usa números próprios inteiramente hipotéticos. Não descreve uma empresa, uma campanha executada ou dados coletados pelo projeto. O objetivo é construir uma comparação que possa ser discutida e recalculada. A unidade será a pessoa elegível, com no máximo uma compra observada no período."
+      ],
+      "ref_ids": [
+        "F3"
+      ]
+    },
+    {
+      "titulo": "Comparação: conservar o sorteio e os denominadores",
+      "paragrafos": [
+        "Suponha 20 mil pessoas elegíveis, sorteadas antes da campanha em dois grupos de 10 mil. Para o primeiro, a campanha fica habilitada; para o segundo, é suprimida. As demais condições devem permanecer tão semelhantes quanto o desenho permitir. Ao final da mesma janela, observamos 1.200 compradores no primeiro grupo e 1.000 no segundo. Não retiramos do primeiro as pessoas às quais o anúncio habilitado acabou não sendo entregue.",
+        "As taxas são 12% e 10%. A diferença é de 2 pontos percentuais, equivalente a 20% da taxa do controle. Aplicada às 10 mil pessoas do grupo da campanha, ela corresponde a uma estimativa de 200 compradores adicionais. São duas maneiras de expressar a mesma comparação; 2 pontos percentuais e 20% não são números intercambiáveis.",
+        "As 1.200 compras do grupo habilitado não são, portanto, a estimativa do acréscimo. O controle fornece uma aproximação do que ocorreria sob a política de supressão. Isso não permite identificar quais 200 indivíduos foram persuadidos, nem afirmar que exatamente mil pessoas específicas comprariam nos dois cenários. A comparação estima uma diferença média entre políticas para aquele público."
+      ],
+      "ref_ids": [
+        "F2"
+      ]
+    },
+    {
+      "titulo": "Explicações concorrentes: o anúncio encontra intenção",
+      "paragrafos": [
+        "Agora troque o sorteio por uma comparação entre pessoas que viram o anúncio e pessoas que não viram. Talvez as primeiras tenham visitado a loja, procurado a marca ou iniciado um carrinho. Essas condições podem afetar tanto a entrega quanto a compra. Uma taxa maior entre expostos pode misturar o efeito da campanha com uma diferença que já existia antes dela.",
+        "No resumo consultado de Gordon e colegas, métodos observacionais frequentemente divergem dos resultados experimentais naquele conjunto de campanhas, apesar de controles detalhados. Isso sustenta uma cautela específica: muitos atributos disponíveis não garantem uma comparação causal adequada. O estudo não autoriza concluir que qualquer modelo observacional será inútil.",
+        "Há outras explicações que o exemplo precisa enfrentar. Uma promoção restrita ao grupo habilitado, diferenças de estoque ou mensuração incompleta de um dos grupos alterariam a interpretação. Se a decisão mudar também preço e disponibilidade, estaremos avaliando esse pacote. Não poderemos atribuir automaticamente toda a diferença à peça publicitária."
+      ],
+      "ref_ids": [
+        "F1",
+        "F3"
+      ]
+    },
+    {
+      "titulo": "Limites: uma diferença estimada ainda contém incerteza",
+      "paragrafos": [
+        "Os números hipotéticos tornam a conta fácil, não eliminam a variação amostral. Uma nova alocação poderia produzir outra diferença. Antes de executar um estudo real, seria necessário planejar amostra, duração e medida principal em função da decisão e da precisão desejada. Um resultado impreciso não demonstra ausência de efeito.",
+        "Também é preciso definir a alternativa com cuidado. Suprimir uma campanha em um canal pode deixar outras comunicações ativas. Nesse caso, o efeito estimado é o acréscimo daquela campanha nesse ambiente, não o efeito de toda a publicidade da empresa. Compras adiadas ou antecipadas podem mudar o resultado conforme a janela escolhida.",
+        "O ensaio termina com uma proposta de investigação, não com um teste concluído: preservar uma comparação defensável e confrontar explicações concorrentes antes de chamar vendas associadas de vendas geradas. A conta das 200 compras serve para entender a pergunta; não é um parâmetro para prometer resultados a outro negócio."
+      ],
+      "ref_ids": [
+        "F5"
+      ]
+    },
+    {
+      "titulo": "Fontes e natureza do trabalho",
+      "paragrafos": [
+        "As referências ao final indicam exatamente o acesso realizado: resumos de artigos, trechos metodológicos e material institucional. O raciocínio e o exemplo são autorais. Não houve execução de campanha, coleta de dados ou reprodução dos experimentos citados. A próxima etapa de uma pesquisa real seria especificar o desenho e examinar sua viabilidade no contexto pretendido."
+      ],
+      "ref_ids": [
+        "F1",
+        "F2",
+        "F3",
+        "F5"
+      ]
+    }
+  ],
+  "fontes": [
+    {
+      "id": "F1",
+      "titulo": "Gordon, Zettelmeyer, Bhargava e Chapsky — comparação de métodos de mensuração publicitária (2019)",
+      "titulo_original": "A Comparison of Approaches to Advertising Measurement: Evidence from Big Field Experiments at Facebook",
+      "url": "https://pubsonline.informs.org/doi/10.1287/mksc.2018.1135",
+      "fonte_aprovada": "Marketing Science / INFORMS",
+      "consultado": "2026-11-06",
+      "escopo_consulta": "Página do editor: resumo, autoria, afiliações, DOI, data online e referência bibliográfica.",
+      "limites": "Não houve leitura integral do artigo nem dos suplementos. Resumo descreve 15 experimentos dos EUA numa plataforma; dois autores tinham afiliação Facebook. Não generalizar o resultado a toda mídia ou campanha.",
+      "uso": "Evidência delimitada de que modelos observacionais podem divergir de experimentos mesmo com muitos controles."
+    },
+    {
+      "id": "F2",
+      "titulo": "Johnson, Lewis e Nubbemeyer — desenho com ghost ads (2017)",
+      "titulo_original": "Ghost Ads: Improving the Economics of Measuring Online Ad Effectiveness",
+      "url": "https://journals.sagepub.com/doi/10.1509/jmr.15.0297",
+      "fonte_aprovada": "AMA / Journal of Marketing Research",
+      "consultado": "2026-11-06",
+      "escopo_consulta": "Resumo e metadados do editor consultados via resultados indexados restritos à Sage; a abertura direta retornou timeout.",
+      "limites": "Artigo restrito; não lido integralmente. A menção descreve o propósito metodológico de identificar contrapartes no controle, sem instrução de implementação nem reprodução de estimativas.",
+      "uso": "Distinguir sorteio, oportunidade de exposição e anúncio efetivamente entregue."
+    },
+    {
+      "id": "F3",
+      "titulo": "Goldfarb, Tucker e Wang — pesquisa com quase experimentos (2022)",
+      "titulo_original": "Conducting Research in Marketing with Quasi-Experiments",
+      "url": "https://journals.sagepub.com/doi/10.1177/00222429221082977",
+      "fonte_aprovada": "AMA / Journal of Marketing",
+      "consultado": "2026-11-06",
+      "escopo_consulta": "Resumo e trechos do editor sobre pergunta causal, estratégia de identificação, hipóteses, placebos e limites; divulgação institucional AMA consultada como apoio.",
+      "limites": "Leitura parcial explicitamente delimitada; não revisão integral de métodos ou aplicações. Não tratar testes de robustez como prova das hipóteses não observáveis.",
+      "uso": "Organizar pergunta, comparação e justificativa de uma interpretação causal.",
+      "apoio_institucional": "https://www.ama.org/2022/03/16/conducting-research-in-marketing-with-quasi-experiments/"
+    },
+    {
+      "id": "F5",
+      "titulo": "Johnson, Lewis e Reiley — dados e precisão em experimentos publicitários (online 2016; fascículo 2017)",
+      "titulo_original": "When Less Is More: Data and Power in Advertising Experiments",
+      "url": "https://pubsonline.informs.org/doi/10.1287/mksc.2016.0998",
+      "fonte_aprovada": "Marketing Science / INFORMS",
+      "consultado": "2026-11-06",
+      "escopo_consulta": "Resumo e metadados do editor, incluindo distinção entre data online de 26/07/2016 e fascículo 36(1), 2017.",
+      "limites": "Sem leitura integral ou reanálise dos dados. Um estudo específico não oferece um tamanho universal de amostra nem garante precisão semelhante em outra campanha.",
+      "uso": "Precisão depende de desenho e variabilidade; mais registros não resolvem automaticamente a mensuração."
+    }
+  ],
+  "atualizado": "2026-11-06",
+  "status": "publicado",
+  "arquivados": [
+    {
+      "id": "comparar-expostos-nao-expostos",
+      "titulo": "Comparar expostos e não expostos como se fossem grupos equivalentes",
+      "proposta": "Estimar efeito publicitário pela diferença bruta de compras entre quem recebeu impressão e quem não recebeu.",
+      "motivo": "Rejeitado nesta avaliação conceitual: intenção, elegibilidade e oportunidade de entrega podem explicar simultaneamente exposição e compra. A diferença bruta não separa essas relações do efeito do anúncio.",
+      "reabrir_se": "Houver alocação válida anterior à entrega ou uma estratégia de identificação que justifique a comparabilidade e explicite sua hipótese causal.",
+      "referencia": {
+        "titulo": "Gordon e colegas — comparação experimental (2019)",
+        "url": "https://pubsonline.informs.org/doi/10.1287/mksc.2018.1135"
+      },
+      "ref_ids": [
+        "F1"
+      ],
+      "natureza": "avaliação metodológica autoral; sem experimento",
+      "data_avaliacao": "2026-11-06",
+      "autoria": "Harpya",
+      "status": "rejeitada_como_desenho_causal_isolado"
+    },
+    {
+      "id": "antes-depois-isolado",
+      "titulo": "Atribuir toda mudança depois da campanha à campanha",
+      "proposta": "Comparar vendas do mês anterior e posterior, sem grupo de comparação ou justificativa para a evolução esperada.",
+      "motivo": "Rejeitado nesta avaliação conceitual: sazonalidade, preço, disponibilidade ou mudança de demanda podem produzir a mesma variação. O antes isolado não estima o contrafactual do depois.",
+      "reabrir_se": "For construída comparação temporal defensável, com controles, hipóteses explícitas e exame de mudanças concomitantes; adotar o método apropriado à origem da variação.",
+      "referencia": {
+        "titulo": "AMA — comparação quase experimental (2024)",
+        "url": "https://www.ama.org/marketing-news/causal-inference-with-quasi-experimental-data/"
+      },
+      "ref_ids": [
+        "F4"
+      ],
+      "natureza": "avaliação metodológica autoral; sem experimento",
+      "data_avaliacao": "2026-11-06",
+      "autoria": "Harpya",
+      "status": "rejeitada_como_desenho_causal_isolado"
+    },
+    {
+      "id": "retirar-nao-expostos-apos-sorteio",
+      "titulo": "Excluir do tratamento os sorteados que não receberam impressão",
+      "proposta": "Sortear pessoas, mas calcular o efeito somente sobre as que receberam anúncio, comparando-as ao controle inteiro.",
+      "motivo": "Rejeitado nesta avaliação conceitual: o recorte posterior à alocação altera a composição e rompe a comparação original. O efeito da habilitação não equivale automaticamente ao efeito entre expostos.",
+      "reabrir_se": "A análise preservar o contraste originalmente definido ou existir desenho e estimador específico para exposição, com condições de validade justificadas; não basta eliminar observações.",
+      "referencia": {
+        "titulo": "AMA / JMR — desenho de ghost ads (2017)",
+        "url": "https://journals.sagepub.com/doi/10.1509/jmr.15.0297"
+      },
+      "ref_ids": [
+        "F2"
+      ],
+      "natureza": "avaliação metodológica autoral; sem experimento",
+      "data_avaliacao": "2026-11-06",
+      "autoria": "Harpya",
+      "status": "rejeitada_como_desenho_causal_isolado"
+    },
+    {
+      "id": "escolher-janela-apos-resultado",
+      "titulo": "Escolher a janela mais favorável depois de ver os resultados",
+      "proposta": "Avaliar muitas durações e publicar apenas aquela em que a estimativa parece mais convincente, como se fosse a única análise prevista.",
+      "motivo": "Rejeitado nesta avaliação conceitual: a escolha seletiva do resultado oculta o processo de análise e impede interpretar a incerteza como a de uma comparação previamente definida.",
+      "reabrir_se": "A pergunta e a janela principal forem justificadas previamente; análises exploratórias e alternativas forem identificadas como tais e a inferência considerar o procedimento de seleção.",
+      "referencia": {
+        "titulo": "Marketing Science — desenho e precisão experimental",
+        "url": "https://pubsonline.informs.org/doi/10.1287/mksc.2016.0998"
+      },
+      "ref_ids": [
+        "F5"
+      ],
+      "natureza": "avaliação metodológica autoral; sem experimento",
+      "data_avaliacao": "2026-11-06",
+      "autoria": "Harpya",
+      "status": "rejeitada_como_desenho_confirmatorio_isolado",
+      "limite_referencia": "Referência sustenta a importância do desenho/precisão; a rejeição da seleção retrospectiva é raciocínio estatístico autoral, não resultado específico atribuído ao artigo."
+    }
+  ],
+  "revisor": "Harpya · revisão documental e conceitual",
+  "revisado_em": "2026-11-06"
+}

@@ -1,0 +1,7 @@
+---
+import Comecando from '../../../layouts/Comecando.astro';
+import BeginnerIndex from '../../../components/BeginnerIndex.astro';
+import {getBusiness} from '../../../lib/business';
+const {serie}=await getBusiness();
+---
+<Comecando titulo="Começando em marketing e gestão" descricao="Uma série ilustrada para estudar valor, pesquisa, posicionamento e mensuração."><BeginnerIndex artigos={serie.map(a=>({numero:a.data.numero,slug:a.id,titulo:a.data.titulo,descricao:a.data.resumo}))} serie="Como estudar marketing e tomar decisões melhores" total={serie.length} autor="Harpya" prefixo="/business" lead="Quatro leituras ilustradas: valor e mercado, pesquisa de consumidor, posicionamento e mensuração. Exemplos hipotéticos, exercícios e referências com limites explícitos."/></Comecando>

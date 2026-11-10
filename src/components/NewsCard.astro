@@ -2,15 +2,16 @@
 // Lê public/data/news.json no build. O robô (scripts/coletar_news.py) atualiza o arquivo
 // a cada 6 horas pelo GitHub Actions, e cada commit dispara um novo deploy na Vercel.
 import fs from "node:fs";
-interface Props { limite?: number }
-const { limite = 6 } = Astro.props;
+type Manchete = { fonte: string; titulo: string; url: string; data: string };
+interface Props { limite?: number; manchetes?: Manchete[]; chamada?: string }
+const { limite = 6, manchetes, chamada = 'Manchetes recentes sobre embeddings, busca vetorial, quantização e eficiência' } = Astro.props;
 let itens: { fonte: string; titulo: string; url: string; data: string }[] = [];
 try { itens = JSON.parse(fs.readFileSync("public/data/news.json", "utf-8")); } catch (e) { itens = []; }
-const lista = itens.slice(0, limite);
+const lista = (manchetes ?? itens).slice(0, limite);
 ---
 <div class="news single">
   <div class="surface news-list">
-    <div style="padding:16px 0 6px"><span class="live"><i></i>Manchetes recentes sobre embeddings, busca vetorial, quantização e eficiência</span></div>
+    <div style="padding:16px 0 6px"><span class="live"><i></i>{chamada}</span></div>
     {lista.length ? lista.map((n) => (
       <a class="ni" href={n.url} target="_blank" rel="noopener noreferrer"><small>{n.fonte}{n.data && ` · ${n.data}`}</small><b>{n.titulo}</b></a>
     )) : (

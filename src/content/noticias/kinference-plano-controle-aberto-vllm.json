@@ -1,0 +1,31 @@
+{
+  "titulo": "Buoyant abre o Kinference, camada de controle para quem serve modelos abertos com vLLM em Kubernetes",
+  "resumo": "O projeto, sob licença Apache 2.0, distribui pedidos entre GPUs, controla cotas por equipe e aplica regras de roteamento. Os ganhos de desempenho divulgados foram medidos pela própria empresa.",
+  "data": "2026-11-04",
+  "categoria": "abertos",
+  "icone": "maquina",
+  "corpo": [
+    "A Buoyant lançou em 4 de novembro o Kinference, um projeto de código aberto sob licença Apache 2.0 que funciona como camada de controle à frente do vLLM, o motor de inferência aberto criado em Berkeley. O anúncio saiu no blog do próprio vLLM, e a empresa diz que o projeto nasceu da dificuldade de seus clientes para rodar modelos de pesos abertos.",
+    "O Kinference recebe pedidos no formato das APIs da OpenAI ou da Anthropic e decide para qual servidor mandar cada um, levando em conta a fila das GPUs, o histórico de desempenho e o que já está no cache de cada máquina. Também limita o consumo de tokens por equipe, registra custos e permite regras escritas em YAML, como manter dados pessoais em servidores locais ou recorrer a um provedor de nuvem quando as GPUs próprias estão lotadas.",
+    "Nos testes publicados pela Buoyant, o tempo até o primeiro token caiu 95% na mediana em relação ao balanceamento padrão do Kubernetes, e a capacidade dentro da meta de latência foi cerca de 7,4 vezes maior numa carga com prefixos compartilhados. São números da empresa, para um conjunto restrito de cargas, sem detalhes de hardware nem comparação com outros roteadores.",
+    "A instalação exige Kubernetes e a Gateway API, e a documentação avisa que os passos ainda vão mudar, o que indica um projeto em fase inicial."
+  ],
+  "harpia": "Rodar modelos abertos em infraestrutura própria depende de peças como esta, que costumam ficar presas a serviços pagos. Uma camada aberta para dividir GPUs e manter dados sensíveis em casa interessa a universidades e órgãos públicos.",
+  "fontes": [
+    {
+      "veiculo": "vLLM Blog",
+      "titulo": "Introducing Kinference: An Open Source Inference Control Plane for vLLM and Kubernetes",
+      "url": "https://vllm.ai/blog/2026-11-04-introducing-kinference"
+    },
+    {
+      "veiculo": "Cloud Native Now",
+      "titulo": "Buoyant Unveils Open Source Control Plane for AI Workloads Running on Kubernetes",
+      "url": "https://cloudnativenow.com/features/buoyant-unveils-open-source-control-plane-for-ai-workloads-running-on-kubernetes/"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-09",
+  "verificado_em": "2026-11-09",
+  "ordem": 999
+}

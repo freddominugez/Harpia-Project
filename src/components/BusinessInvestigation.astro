@@ -1,0 +1,19 @@
+---
+import {getBusiness} from '../lib/business';
+import StudyInvestigation from './StudyInvestigation.astro';
+import BusinessStudyIdea from './BusinessStudyIdea.astro';
+import TextArticle from './TextArticle.astro';
+interface Props {arquivo?:boolean}
+const {arquivo=false}=Astro.props;
+const {investigacao}=await getBusiness();
+if(!investigacao)throw new Error('Investigação Business publicada não encontrada.');
+const d=investigacao.data;
+const toc=d.secoes.map((s,i)=>({id:`secao-${i+1}`,texto:s.titulo}));
+const relacionados=[{href:'/business/estudos/arquivados/',titulo:'Arquivados',sub:'Propostas avaliadas e condições para revisão',icone:'file'},{href:'/business/estudos/',titulo:'Percursos de estudo',sub:'Guias temáticos',icone:'network'},{href:'/business/biblioteca/',titulo:'Biblioteca',sub:'Referências e leitura crítica',icone:'book'}];
+---
+{arquivo?<TextArticle prefixo="/business" frontmatter={{titulo:'Arquivados',kicker:'Estudos',lead:'Propostas de medição avaliadas conceitualmente, com motivo e condições para reconsideração. Não são experimentos executados.',relacionados}} headings={d.arquivados.map(x=>({depth:2,slug:x.id,text:x.titulo}))}>
+  {d.arquivados.map(x=><section><h2 id={x.id}>{x.titulo}</h2><p><b>Proposta.</b> {x.proposta}</p><p><b>Avaliação.</b> {x.motivo}</p><p><b>Reabrir se.</b> {x.reabrir_se}</p><p><a href={x.referencia.url} target="_blank" rel="noopener noreferrer">{x.referencia.titulo}</a></p><p class="cite">{x.natureza} · {x.data_avaliacao}</p></section>)}
+</TextArticle>:<StudyInvestigation titulo={d.titulo} lead={d.resumo} prefixo="/business" eyebrow="Estudos · investigação didática" temas={['Exemplo hipotético','Mensuração','Comparação causal']} toc={[...toc,{id:'fontes',texto:'Fontes'},{id:'discussao',texto:'Discussão'}]} relacionados={relacionados}>
+  <BusinessStudyIdea slot="ideia" completo />
+  <Fragment slot="texto">{d.secoes.map((s,i)=><section><h2 id={`secao-${i+1}`}>{s.titulo}</h2>{s.paragrafos.map(p=><p>{p}</p>)}</section>)}<h2 id="fontes">Fontes e alcance da consulta</h2><ul>{d.fontes.map(f=><li><a href={f.url} target="_blank" rel="noopener noreferrer">{f.titulo}</a><p>{f.consultado} {f.limites}</p></li>)}</ul><h2 id="discussao">Discussão</h2></Fragment>
+</StudyInvestigation>}

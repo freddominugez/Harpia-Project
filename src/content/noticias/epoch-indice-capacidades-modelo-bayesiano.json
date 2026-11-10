@@ -1,0 +1,27 @@
+{
+  "titulo": "Epoch AI refaz seu índice de capacidades de IA e passa a dizer com que probabilidade um modelo supera outro",
+  "resumo": "Com 252 modelos e 59 benchmarks, o novo método bayesiano mostra quanta incerteza existe na comparação entre os modelos de ponta.",
+  "data": "2026-11-04",
+  "categoria": "pesquisa",
+  "icone": "lupa",
+  "corpo": [
+    "A Epoch AI, instituto independente que acompanha o avanço da IA, mudou em 4 de novembro o método do Epoch Capabilities Index, que junta resultados de vários benchmarks numa única escala de capacidade. O índice usa teoria de resposta ao item e está ancorado em dois modelos: Claude 3.5 Sonnet vale 130 e GPT-5 vale 150.",
+    "O ajuste antigo usava mínimos quadrados e calculava a incerteza por reamostragem. Os autores, Emilia Álvarez e Alexander Barry, dizem que isso não se sustentava, porque a maioria dos modelos tem poucas notas publicadas: a mediana é 10, e há casos com só 4. O novo modelo bayesiano estima um nível de ruído para cada benchmark e mantém as notas previstas entre 0% e 100%.",
+    "A base reúne 252 modelos, 59 benchmarks e 2.810 notas. O ruído varia mais de quatro vezes entre os testes. Para os modelos mais fortes, as estimativas mudaram cerca de 1 ponto e os intervalos de 90% ficaram 13% mais estreitos. Os modelos fracos e antigos perderam em média 13,7 pontos.",
+    "A novidade prática é comparar pares. Pelo novo cálculo, o GPT-6 Astra tem 72% de probabilidade de ser mais capaz que o Claude Opus 5.5, e os intervalos dos dois se sobrepõem bastante. A tendência de avanço na era dos modelos de raciocínio ficou em 16,6 pontos por ano, com intervalo de 14,6 a 18,7.",
+    "Os próprios autores listam limites: o método supõe uma única dimensão de capacidade, depende de dois modelos de referência tratados como exatos e erra mais perto de 0% e 100%."
+  ],
+  "harpia": "Ranking de IA costuma ser lido como placar exato. Um índice independente que mostra a incerteza e a sobreposição entre modelos ajuda a ensinar que diferença pequena em benchmark não quer dizer modelo melhor.",
+  "fontes": [
+    {
+      "veiculo": "Epoch AI",
+      "titulo": "Updating the Epoch Capabilities Index methodology to use a Bayesian model",
+      "url": "https://epoch.ai/publications/eci-bayesian-methodology"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-09",
+  "verificado_em": "2026-11-09",
+  "ordem": 999
+}
