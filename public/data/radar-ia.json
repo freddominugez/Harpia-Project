@@ -161,6 +161,22 @@
       ]
     },
     {
+      "id": "https://blogs.nvidia.com/blog/ai-recycling-startups/",
+      "source_id": "nvidia",
+      "company": "NVIDIA",
+      "title": "How AI Helps Recyclers Turn Mixed Waste Into Reusable Material",
+      "summary": "NVIDIA profiled four startups using computer vision and robotics to sort plastics, household recyclables and textiles. Deployment, capacity, efficiency and emissions figures are reported by the companies featured.",
+      "url": "https://blogs.nvidia.com/blog/ai-recycling-startups/",
+      "published_at": "2026-11-10T00:00:00+00:00",
+      "verified_at": "2026-11-11T21:39:45.000Z",
+      "impact_score": 35,
+      "topics": [
+        "Robótica",
+        "Pesquisa",
+        "Sustentabilidade"
+      ]
+    },
+    {
       "id": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
       "source_id": "nvidia",
       "company": "NVIDIA",
@@ -262,22 +278,6 @@
       "impact_score": 10,
       "topics": [
         "Atualização oficial"
-      ]
-    },
-    {
-      "id": "https://blogs.nvidia.com/blog/ai-recycling-startups/",
-      "source_id": "nvidia",
-      "company": "NVIDIA",
-      "title": "How AI Helps Recyclers Turn Mixed Waste Into Reusable Material",
-      "summary": "NVIDIA profiled four startups using computer vision and robotics to sort plastics, household recyclables and textiles. Deployment, capacity, efficiency and emissions figures are reported by the companies featured.",
-      "url": "https://blogs.nvidia.com/blog/ai-recycling-startups/",
-      "published_at": "2026-11-10T00:00:00+00:00",
-      "verified_at": "2026-11-11T21:39:45.000Z",
-      "impact_score": 35,
-      "topics": [
-        "Robótica",
-        "Pesquisa",
-        "Sustentabilidade"
       ]
     },
     {
