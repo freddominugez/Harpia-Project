@@ -1,8 +1,8 @@
 {
-  "item_id": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
-  "titulo_pt": "Google lança Gemini 4 Carbon para APIs, agentes, ciência e cibersegurança",
-  "resumo_pt": "O Google disponibilizou o Gemini 4 Carbon para desenvolvedores, empresas e assinantes selecionados, com foco em agentes de longa duração, programação, ciência e cibersegurança. A empresa apresenta resultados próprios e cita benchmarks externos; isso não equivale a uma avaliação independente completa.",
-  "por_que_importa": "A chegada de um novo modelo de fronteira às APIs pode alterar rapidamente a oferta para agentes, pesquisa e defesa cibernética, mas as alegações de desempenho e segurança ainda precisam de validação ampla.",
-  "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
-  "updated_at": "2026-11-11T09:39:32.065Z"
+  "item_id": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+  "titulo_pt": "Google lança AlphaGenome 2 para prever efeitos de variantes de DNA em tipos celulares",
+  "resumo_pt": "O Google DeepMind apresentou o AlphaGenome 2, modelo que estima como sequências e variantes de DNA afetam tipos celulares humanos específicos. A ferramenta está disponível para pesquisa não comercial via API e em prévia privada para uso comercial. As métricas divulgadas são da empresa, sem avaliação independente completa.",
+  "por_que_importa": "O modelo aproxima genética humana e biologia de célula única, podendo ajudar a priorizar variantes ligadas a doenças e orientar experimentos. Não foi validado nem aprovado para uso clínico ou diagnóstico.",
+  "source_url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+  "updated_at": "2026-11-11T15:34:24.977Z"
 }
