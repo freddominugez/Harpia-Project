@@ -1,0 +1,42 @@
+{
+  "titulo": "MEC homologa as diretrizes de IA na educação: sem uso autônomo até o 5º ano e nota sempre com o professor",
+  "resumo": "O ministro Leonardo Barchini homologou em 10 de novembro o parecer do CNE. As vedações valem com a publicação da resolução, e as redes têm 12 meses para se adaptar.",
+  "data": "2026-11-10",
+  "categoria": "brasil",
+  "icone": "escola",
+  "corpo": [
+    "O Ministério da Educação homologou em 10 de novembro o parecer do Conselho Nacional de Educação que cria diretrizes para o uso de inteligência artificial em escolas, universidades e sistemas de ensino, públicos e privados. O texto havia sido aprovado pelo CNE em setembro e esperava a assinatura do ministro Leonardo Barchini. Segundo O Tempo, a publicação da resolução no Diário Oficial da União estava prevista para 11 de novembro.",
+    "As regras mudam conforme a etapa, segundo a Agência Brasil. Na educação infantil, os alunos não usam IA, nem com mediação; os professores podem usá-la para planejar e como recurso de acessibilidade. Do 1º ao 5º ano, não há acesso autônomo a ferramentas generativas ou conversacionais, e qualquer uso precisa ser planejado e conduzido por um educador. Do 6º ao 9º ano, o uso pelos alunos depende de mediação docente. No ensino médio não há restrição específica, e no ensino superior a IA pode apoiar ensino, pesquisa e extensão.",
+    "Sobre a correção de redações, Agência Brasil, O Tempo e Times Brasil relatam que a IA pode servir de apoio, mas a nota e a decisão de aprovar ou reprovar ficam com o professor. O relator Israel Batista resumiu ao Times Brasil: \"O que a norma proíbe é a atribuição automática de notas\". O Tempo acrescenta que a correção automática de provas foi classificada como alto risco e exige avaliação prévia, auditoria e supervisão contínua. O resumo da Agência Gov descreve a regra das redações em termos de vedação, e o texto publicado no Diário Oficial deve encerrar a dúvida.",
+    "O documento divide os usos em quatro níveis de risco: baixo, moderado, alto e excessivo ou incompatível com a educação. Ficam proibidos, entre outros, pontuação social, reconhecimento automatizado de emoções, vigilância biométrica contínua, decisões exclusivamente automatizadas que afetem a trajetória escolar e uso de dados educacionais para publicidade. Também não pode haver punição baseada apenas em detector de texto gerado por IA.",
+    "As vedações passam a valer com a publicação da resolução, e sistemas de ensino e instituições têm 12 meses para ajustar políticas, práticas e contratos. As licenciaturas deverão incluir letramento digital docente, e as redes deverão oferecer formação continuada. O CNE prevê revisar as diretrizes de preferência a cada dois anos. Na nota oficial, Barchini disse que \"a inteligência artificial já faz parte da nossa realidade\"."
+  ],
+  "harpia": "Fecha o processo que o Harpya acompanha desde setembro: o país passa a ter regra nacional que trata compreender a IA como parte da formação de alunos e professores. O próximo passo é ver o texto no Diário Oficial e como as redes vão cumprir o prazo de 12 meses.",
+  "fontes": [
+    {
+      "veiculo": "Agência Brasil",
+      "titulo": "MEC aprova diretrizes para uso de IA em cada etapa da educação",
+      "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/mec-aprova-diretrizes-para-uso-de-ia-em-cada-etapa-da-educacao"
+    },
+    {
+      "veiculo": "Agência Gov",
+      "titulo": "Governo do Brasil estabelece diretrizes para uso responsável da IA na educação",
+      "url": "https://agenciagov.ebc.com.br/noticias/202611/governo-federal-estabelece-diretrizes-para-uso-responsavel-da-ia-na-educacao"
+    },
+    {
+      "veiculo": "O Tempo",
+      "titulo": "MEC proíbe uso de inteligência artificial sem supervisão por alunos até o 5º ano",
+      "url": "https://www.otempo.com.br/educacao/2026/11/10/mec-proibe-uso-de-inteligencia-artificial-sem-supervisao-por-alunos-ate-o-5-ano"
+    },
+    {
+      "veiculo": "Times Brasil",
+      "titulo": "Inteligência artificial nas escolas: veja o que muda com as novas regras do MEC",
+      "url": "https://timesbrasil.com.br/brasil/inteligencia-artificial-nas-escolas-veja-o-que-muda-com-as-novas-regras-do-mec/"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-11",
+  "verificado_em": "2026-11-11",
+  "ordem": 999
+}

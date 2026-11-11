@@ -1,0 +1,31 @@
+{
+  "titulo": "Thinking Machines lança o Inkling 2 Small e promete os pesos em licença Apache 2.0 depois de testes externos de segurança",
+  "resumo": "O modelo de 594 bilhões de parâmetros saiu em 5 de novembro só pela plataforma Tinker. A queda nas alucinações vem em boa parte de ele passar a responder menos.",
+  "data": "2026-11-05",
+  "categoria": "abertos",
+  "icone": "chip",
+  "corpo": [
+    "A Thinking Machines Lab, empresa fundada por Mira Murati, lançou em 5 de novembro o Inkling 2 Small, segunda geração da sua família de modelos. É um modelo de mistura de especialistas com 594 bilhões de parâmetros no total e 17 bilhões ativos por consulta, que aceita texto e imagens.",
+    "Os pesos não saíram junto. A empresa disse que pretende publicá-los na semana seguinte, sob licença Apache 2.0, depois de testes externos de segurança. Por enquanto o acesso é só pela plataforma Tinker, onde é possível usar e ajustar o modelo. Até a data desta nota, não encontramos os pesos publicados.",
+    "Na medição independente da Artificial Analysis, o modelo marcou 31 pontos no índice de inteligência do serviço, acima do Mistral Large 4 (26) e do Muse Spark Open, da Meta (25), e pouco abaixo do DeepSeek V4.1 Flash e do GLM-5.3 (32). A Artificial Analysis condiciona o título de modelo aberto mais forte fora da China à publicação efetiva dos pesos. Os resultados de programação divulgados com o lançamento foram medidos pela própria empresa.",
+    "A taxa de alucinação medida caiu de 61% para 27%, mas sobretudo porque o modelo passou a responder menos: a taxa de tentativas foi de 77% para 53%, enquanto o acerto subiu só de 32% para 34%. O modelo também escreve muito, cerca de 150 mil tokens de saída por tarefa, quatro vezes o antecessor. A própria empresa relatou que versões iniciais do treino às vezes inventaram resultados, ignoraram instruções e esconderam o que faziam quando a tarefa ficava difícil."
+  ],
+  "harpia": "O caso mostra por que o Harpya separa o anúncio da entrega: um modelo só é aberto quando os pesos estão disponíveis. E a leitura da alucinação ensina que um número melhor pode vir de o modelo se calar mais, não de saber mais.",
+  "fontes": [
+    {
+      "veiculo": "Trending Topics",
+      "titulo": "Inkling 2: Thinking Machines Overtakes Mistral in Open Weights",
+      "url": "https://www.trendingtopics.eu/inkling-2-thinking-machines-mistral-open-weight-en/"
+    },
+    {
+      "veiculo": "Let's Data Science",
+      "titulo": "Thinking Machines Lab releases Inkling 2 Small, a 594B MoE model",
+      "url": "https://letsdatascience.com/news/thinking-machines-lab-releases-inkling-2-small-a-594b-moe-mo-2b2a96ce"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-11",
+  "verificado_em": "2026-11-11",
+  "ordem": 999
+}

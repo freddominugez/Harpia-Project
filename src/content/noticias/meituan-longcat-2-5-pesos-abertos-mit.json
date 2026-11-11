@@ -1,0 +1,41 @@
+{
+  "titulo": "Meituan publica os pesos do LongCat-2.5, modelo multimodal de 1,6 trilhão de parâmetros, sob licença MIT",
+  "resumo": "Uma semana depois do lançamento por API, os pesos chegaram ao Hugging Face em 9 de novembro. Os resultados de desempenho são da própria Meituan, e há pouca avaliação externa.",
+  "data": "2026-11-09",
+  "categoria": "abertos",
+  "icone": "maquina",
+  "corpo": [
+    "A Meituan, empresa chinesa de entregas e serviços locais, publicou em 9 de novembro no Hugging Face os pesos do LongCat-2.5, sob licença MIT, que permite uso comercial, modificação e redistribuição. O modelo tinha sido lançado em 2 de novembro apenas pelo chat e pela API da empresa, com a promessa de liberar os arquivos depois.",
+    "É um modelo de mistura de especialistas com 1,6 trilhão de parâmetros no total, dos quais cerca de 48 bilhões trabalham em cada token, segundo o cartão do modelo. A VentureBeat notou que os metadados do Hugging Face indicam 1,8 trilhão, uma divergência ainda sem explicação. O modelo recebe texto, imagens e vídeo, este por meio de um endereço, e responde em texto. A Meituan o apresenta como voltado a agentes de programação com componente visual e a tarefas longas.",
+    "Para quem quer rodar o modelo, a empresa publicou também uma versão comprimida para 4 bits e um guia de instalação voltado a processadores neurais, com foco em aceleradores chineses. Mesmo assim, o tamanho coloca o LongCat-2.5 fora do alcance de computadores domésticos.",
+    "Os números de desempenho vêm da tabela da própria Meituan: 88,4 no Terminal Bench 2.1 e 64,6 no DeepSWE 1.1. Na mesma tabela, o DeepSeek V4.1 Flash supera o LongCat-2.5 em várias linhas de programação, e o Claude Opus 5 fica à frente no Terminal Bench 4.0, com 53,9 contra 38,5. A própria empresa diz que as comparações são apenas indicativas, e até a publicação dos pesos havia poucas medições independentes do modelo."
+  ],
+  "harpia": "Mais um modelo de fronteira com licença das mais permissivas, o que amplia o que pesquisadores podem estudar e adaptar. Mas o tamanho mostra que pesos abertos não são o mesmo que acesso doméstico: estudar esse modelo ainda exige infraestrutura de centro de dados.",
+  "fontes": [
+    {
+      "veiculo": "VentureBeat",
+      "titulo": "Meituan releases the open weights of its LongCat-2.5 LLM with vision under a permissive MIT license",
+      "url": "https://venturebeat.com/technology/meituan-releases-the-open-weights-of-its-longcat-2-5-llm-with-vision-under-a-permissive-mit-license"
+    },
+    {
+      "veiculo": "Hugging Face",
+      "titulo": "meituan-longcat",
+      "url": "https://huggingface.co/meituan-longcat"
+    },
+    {
+      "veiculo": "TechNode",
+      "titulo": "Meituan launches LongCat-2.5 multimodal AI model for extended coding tasks",
+      "url": "https://technode.com/2026/11/02/meituan-launches-longcat-2-5-multimodal-ai-model-for-extended-coding-tasks/"
+    },
+    {
+      "veiculo": "eesel AI",
+      "titulo": "LongCat 2.5: Meituan's new multimodal coding model, explained",
+      "url": "https://www.eesel.ai/blog/longcat-2-5"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-11",
+  "verificado_em": "2026-11-11",
+  "ordem": 999
+}

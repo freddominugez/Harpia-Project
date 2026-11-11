@@ -1,0 +1,31 @@
+{
+  "titulo": "VulnCheck conta 442 falhas atribuídas ao projeto de caça a vulnerabilidades da Anthropic, e só duas foram exploradas",
+  "resumo": "A empresa de segurança também mediu 55,9% de alarmes falsos nos relatos enviados ao curl, contra 94,2% de acerto declarado pela Anthropic. A amostra do curl é pequena.",
+  "data": "2026-11-09",
+  "categoria": "pesquisa",
+  "icone": "lupa",
+  "corpo": [
+    "A VulnCheck, empresa de inteligência sobre vulnerabilidades, publicou em 9 de novembro um balanço independente do Project Glasswing, iniciativa que a Anthropic lançou em abril para usar seus modelos na busca de falhas de segurança em software. O analista Patrick Garrity cruzou registros de CVE, alertas do GitHub, commits do kernel Linux e o próprio registro público da Anthropic, além de revisões manuais.",
+    "Desde 17 de abril, a VulnCheck atribui à Anthropic 442 CVEs, cerca de 63 por mês e aproximadamente 0,5% das 93.450 vulnerabilidades catalogadas no ano. Dessas 442, apenas duas aparecem na lista da empresa de falhas com exploração confirmada.",
+    "A medição mais dura vem do curl, ferramenta de transferência de dados presente em quase todo sistema. Dos 34 relatos publicados pelo projeto, 19 foram classificados como \"não é uma vulnerabilidade\", uma taxa de falsos positivos de 55,9%. Só 17,6% foram confirmados, todos de baixa gravidade, e 9 ainda esperavam avaliação. O registro da Anthropic declara 94,2% de acerto. A amostra do curl é pequena e vem de um único projeto, então não mede o programa inteiro.",
+    "O contraste repete o que outros veículos já tinham visto. Em setembro, a TechTarget relatou que só 10,5% das 26.153 descobertas anunciadas pela Anthropic tinham chegado ao registro de divulgação, e que o próprio registro aponta a triagem humana como o gargalo."
+  ],
+  "harpia": "É uma avaliação externa de uma afirmação de empresa, do tipo que o Harpya valoriza: quando mantenedores conferem os achados de um modelo, o acerto medido fica bem abaixo do declarado. Também lembra que o custo de checar o que a IA produz recai sobre pessoas.",
+  "fontes": [
+    {
+      "veiculo": "VulnCheck",
+      "titulo": "Anthropic Glasswing November update",
+      "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update"
+    },
+    {
+      "veiculo": "TechTarget",
+      "titulo": "Glasswing results put AI 'vulnpocalypse' to the test",
+      "url": "https://www.techtarget.com/it-infrastructure/news/366651381/Glasswing-results-put-AI-vulnpocalypse-to-the-test"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-11",
+  "verificado_em": "2026-11-11",
+  "ordem": 999
+}
