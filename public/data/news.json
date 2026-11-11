@@ -141,6 +141,13 @@
  },
  {
   "fonte": "Hugging Face",
+  "titulo": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+  "url": "https://huggingface.co/blog/token-pooling",
+  "data": "11/11/2026",
+  "ts": 1794355200
+ },
+ {
+  "fonte": "Hugging Face",
   "titulo": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
   "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
   "data": "21/10/2026",
