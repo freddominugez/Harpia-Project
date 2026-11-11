@@ -1,6 +1,6 @@
 {
   "ambiente": "business",
-  "atualizado_em": "2026-11-10T18:17:04.629809+00:00",
+  "atualizado_em": "2026-11-11T18:04:04.533385+00:00",
   "politica": "candidatos_sem_publicacao_automatica",
   "fontes": [
     {
@@ -8,38 +8,50 @@
       "status": "ok",
       "itens": 4,
       "mensagem": "",
-      "verificado_em": "2026-11-10T18:17:04.629809+00:00"
+      "verificado_em": "2026-11-11T18:04:04.533385+00:00"
     },
     {
       "id": "fdc",
       "status": "ok",
       "itens": 5,
       "mensagem": "",
-      "verificado_em": "2026-11-10T18:17:04.629809+00:00"
+      "verificado_em": "2026-11-11T18:04:04.533385+00:00"
     },
     {
       "id": "insead",
       "status": "erro",
       "itens": 0,
       "mensagem": "HTTPError",
-      "verificado_em": "2026-11-10T18:17:04.629809+00:00"
+      "verificado_em": "2026-11-11T18:04:04.533385+00:00"
     },
     {
       "id": "mckinsey",
       "status": "ok",
       "itens": 8,
       "mensagem": "",
-      "verificado_em": "2026-11-10T18:17:04.629809+00:00"
+      "verificado_em": "2026-11-11T18:04:04.533385+00:00"
     },
     {
       "id": "wharton",
       "status": "ok",
       "itens": 5,
       "mensagem": "",
-      "verificado_em": "2026-11-10T18:17:04.629809+00:00"
+      "verificado_em": "2026-11-11T18:04:04.533385+00:00"
     }
   ],
   "itens": [
+    {
+      "id": "b4158fe51bf2a009cfd7",
+      "ambiente": "business",
+      "titulo": "“Cliente e resultado não são objetivos concorrentes”, destaca CEO da XP",
+      "url": "https://sejarelevante.fdc.org.br/cliente-e-resultado-nao-sao-objetivos-concorrentes-diz-ceo-da-xp/",
+      "fonte": "fdc",
+      "data": "2026-11-11",
+      "verificado_em": "2026-11-11",
+      "tipo": "artigo",
+      "status": "candidato",
+      "revisao_editorial": false
+    },
     {
       "id": "fa6a571155181287dde7",
       "ambiente": "business",
@@ -47,7 +59,7 @@
       "url": "https://www.mckinsey.com/industries/retail/our-insights/the-new-realities-of-grocery-retail-in-the-americas-and-europe",
       "fonte": "mckinsey",
       "data": "2026-11-10",
-      "verificado_em": "2026-11-10",
+      "verificado_em": "2026-11-11",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -59,7 +71,7 @@
       "url": "https://sejarelevante.fdc.org.br/o-custo-invisivel-da-sub-representacao-feminina-na-alta-gestao/",
       "fonte": "fdc",
       "data": "2026-11-09",
-      "verificado_em": "2026-11-10",
+      "verificado_em": "2026-11-11",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -71,7 +83,7 @@
       "url": "https://www.mckinsey.com/industries/public-sector/our-insights/beyond-agency-boundaries-building-a-statewide-approach-to-customer-experience",
       "fonte": "mckinsey",
       "data": "2026-11-09",
-      "verificado_em": "2026-11-10",
+      "verificado_em": "2026-11-11",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -83,7 +95,7 @@
       "url": "https://www.ama.org/2026/11/05/less-spending-higher-revenue-how-mergers-and-acquisitions-affect-marketing-decisions-in-the-biopharma-industry/",
       "fonte": "ama",
       "data": "2026-11-05",
-      "verificado_em": "2026-11-10",
+      "verificado_em": "2026-11-11",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -95,7 +107,7 @@
       "url": "https://knowledge.wharton.upenn.edu/podcast/marketing-matters/building-a-modern-western-lifestyle-brand/",
       "fonte": "wharton",
       "data": "2026-11-05",
-      "verificado_em": "2026-11-10",
+      "verificado_em": "2026-11-11",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -107,7 +119,7 @@
       "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/turning-executive-judgment-into-organizational-intelligence-leveraging-ai-in-ceo-leadership",
       "fonte": "mckinsey",
       "data": "2026-11-02",
-      "verificado_em": "2026-11-10",
+      "verificado_em": "2026-11-11",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -119,7 +131,7 @@
       "url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/critical-infrastructure-is-under-threat-are-organizations-prepared",
       "fonte": "mckinsey",
       "data": "2026-11-02",
-      "verificado_em": "2026-11-10",
+      "verificado_em": "2026-11-11",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -131,7 +143,7 @@
       "url": "https://sejarelevante.fdc.org.br/modelos-de-gestao-precisam-evoluir-para-acompanhar-trabalho/",
       "fonte": "fdc",
       "data": "2026-10-30",
-      "verificado_em": "2026-11-10",
+      "verificado_em": "2026-11-11",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -143,7 +155,7 @@
       "url": "https://www.mckinsey.com/featured-insights/mckinsey-on-books/author-talks-why-you-cant-separate-strategy-from-value-and-vice-versa",
       "fonte": "mckinsey",
       "data": "2026-10-30",
-      "verificado_em": "2026-11-10",
+      "verificado_em": "2026-11-11",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -155,7 +167,7 @@
       "url": "https://sejarelevante.fdc.org.br/o-ceo-virou-parte-da-marca-veja-como-a-reputacao-dos-lideres-influencia-as-empresas/",
       "fonte": "fdc",
       "data": "2026-10-29",
-      "verificado_em": "2026-11-10",
+      "verificado_em": "2026-11-11",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -167,7 +179,7 @@
       "url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/banking-on-ai-how-a-new-operating-model-can-transform-distressed-credit-management",
       "fonte": "mckinsey",
       "data": "2026-10-29",
-      "verificado_em": "2026-11-10",
+      "verificado_em": "2026-11-11",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -179,7 +191,7 @@
       "url": "https://sejarelevante.fdc.org.br/na-era-da-ia-o-diferencial-e-pensar-estrategicamente/",
       "fonte": "fdc",
       "data": "2026-10-28",
-      "verificado_em": "2026-11-10",
+      "verificado_em": "2026-11-11",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -191,7 +203,7 @@
       "url": "https://www.mckinsey.com/capabilities/operations/our-insights/agentic-ai-in-strategic-sourcing-hype-or-hero",
       "fonte": "mckinsey",
       "data": "2026-10-28",
-      "verificado_em": "2026-11-10",
+      "verificado_em": "2026-11-11",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -203,19 +215,7 @@
       "url": "https://knowledge.wharton.upenn.edu/podcast/this-week-in-business/why-record-holiday-sales-may-not-tell-the-whole-story/",
       "fonte": "wharton",
       "data": "2026-10-28",
-      "verificado_em": "2026-11-10",
-      "tipo": "artigo",
-      "status": "candidato",
-      "revisao_editorial": false
-    },
-    {
-      "id": "dec3ad50e692d10598ae",
-      "ambiente": "business",
-      "titulo": "Novo CHRO deve transformar influência estratégica em capacidade organizacional",
-      "url": "https://sejarelevante.fdc.org.br/novo-chro-deve-desenvolver-capacidade-organizacional/",
-      "fonte": "fdc",
-      "data": "2026-10-27",
-      "verificado_em": "2026-11-10",
+      "verificado_em": "2026-11-11",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -227,7 +227,7 @@
       "url": "https://www.ama.org/2026/10/22/weigh-your-options-how-price-format-can-boost-sales-without-changing-the-price/",
       "fonte": "ama",
       "data": "2026-10-22",
-      "verificado_em": "2026-11-10",
+      "verificado_em": "2026-11-11",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -239,7 +239,7 @@
       "url": "https://www.mckinsey.com/industries/packaging-and-paper/our-insights/the-state-of-grocery-retail-europe-implications-for-packaging-players",
       "fonte": "mckinsey",
       "data": "2026-10-22",
-      "verificado_em": "2026-11-10",
+      "verificado_em": "2026-11-11",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -251,7 +251,7 @@
       "url": "https://knowledge.wharton.upenn.edu/podcast/marketing-matters/why-your-best-customers-can-be-your-best-marketers/",
       "fonte": "wharton",
       "data": "2026-10-22",
-      "verificado_em": "2026-11-10",
+      "verificado_em": "2026-11-11",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -263,7 +263,7 @@
       "url": "https://www.ama.org/2026/10/16/team-up-or-take-over-strategic-drivers-of-firms-alliance-and-acquisition-decisions/",
       "fonte": "ama",
       "data": "2026-10-16",
-      "verificado_em": "2026-11-10",
+      "verificado_em": "2026-11-11",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -275,7 +275,7 @@
       "url": "https://www.ama.org/2026/10/15/call-for-nominations-editor-in-chief-journal-of-international-marketing/",
       "fonte": "ama",
       "data": "2026-10-16",
-      "verificado_em": "2026-11-10",
+      "verificado_em": "2026-11-11",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -287,7 +287,7 @@
       "url": "https://knowledge.wharton.upenn.edu/podcast/this-week-in-business/why-retailers-are-rethinking-risk/",
       "fonte": "wharton",
       "data": "2026-09-23",
-      "verificado_em": "2026-11-10",
+      "verificado_em": "2026-11-11",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -299,7 +299,7 @@
       "url": "https://knowledge.wharton.upenn.edu/podcast/marketing-matters/how-fast-casual-brands-build-loyalty/",
       "fonte": "wharton",
       "data": "2026-08-13",
-      "verificado_em": "2026-11-10",
+      "verificado_em": "2026-11-11",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
