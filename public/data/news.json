@@ -1,255 +1,143 @@
 [
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "Yuanbao-Reranker: Document-Grounded Synthesis and Preference Distillation for Text Reranking",
-  "url": "https://arxiv.org/abs/2611.10405",
-  "data": "10/11/2026",
-  "ts": 1794286800
+  "titulo": "Ontology-Guided Knowledge Graph Construction and Robust Evidence Retrieval for Indian Knowledge Systems",
+  "url": "https://arxiv.org/abs/2611.14050",
+  "data": "11/11/2026",
+  "ts": 1794373200
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "A Tool for Anonymized Clinical Knowledge Retrieval and Speaker Interaction Analysis of Healthcare Tele-mentoring Sessions",
-  "url": "https://arxiv.org/abs/2611.10922",
-  "data": "10/11/2026",
-  "ts": 1794286800
+  "titulo": "FERN: Cross-Benchmark Table Retrieval for Text-to-SQL with Frozen Retrievers and Learned Ranking",
+  "url": "https://arxiv.org/abs/2611.14477",
+  "data": "11/11/2026",
+  "ts": 1794373200
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "RoutingTrie: Metadata Routing for Constrained Generative Retrieval",
-  "url": "https://arxiv.org/abs/2611.11016",
-  "data": "10/11/2026",
-  "ts": 1794286800
+  "titulo": "Activation-Guided Graph Retrieval for Cognitive Memory Reconstruction in Language Model Systems",
+  "url": "https://arxiv.org/abs/2611.13127",
+  "data": "11/11/2026",
+  "ts": 1794373200
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "PCG-RAG: Progressive Compositional Grounding for Retrieval-Augmented Generation in Complex Web Question Answering",
-  "url": "https://arxiv.org/abs/2611.11113",
-  "data": "10/11/2026",
-  "ts": 1794286800
+  "titulo": "StaRSE: Compact Russian Sentence Embeddings with a Sign-Coded Static Encoder",
+  "url": "https://arxiv.org/abs/2611.14236",
+  "data": "11/11/2026",
+  "ts": 1794373200
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "Dhara: Evidence-Oriented Retrieval for Indian Knowledge Systems",
-  "url": "https://arxiv.org/abs/2611.11197",
-  "data": "10/11/2026",
-  "ts": 1794286800
+  "titulo": "DOTRAG: Retrieval-Time Reasoning Along Paths",
+  "url": "https://arxiv.org/abs/2605.18760",
+  "data": "11/11/2026",
+  "ts": 1794373200
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "TS-GEAR: Taobao Shangou GEnerative Ad Retrieval",
-  "url": "https://arxiv.org/abs/2611.12180",
-  "data": "10/11/2026",
-  "ts": 1794286800
+  "titulo": "Fairness-Aware Retrieval Optimization for Retrieval-Augmented Generation",
+  "url": "https://arxiv.org/abs/2605.15790",
+  "data": "11/11/2026",
+  "ts": 1794373200
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "NIFT-SQL: Customer-Supervised Table Scoring for Enterprise Text-to-SQL Retrieval",
-  "url": "https://arxiv.org/abs/2611.12731",
-  "data": "10/11/2026",
-  "ts": 1794286800
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "Lightfoot: Graph Retrieval-Augmented Generation with Exact, Model-Free Document Deletion",
-  "url": "https://arxiv.org/abs/2611.11010",
-  "data": "10/11/2026",
-  "ts": 1794286800
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "Hybrid Product Search Without the Copy: Lexical, Semantic and Filtered Retrieval Served Directly from a Data Lake",
-  "url": "https://arxiv.org/abs/2611.11031",
-  "data": "10/11/2026",
-  "ts": 1794286800
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "Search-by-Answer Bias in Retrieval Models",
-  "url": "https://arxiv.org/abs/2611.11396",
-  "data": "10/11/2026",
-  "ts": 1794286800
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "Calibrating Document-Local Boundaries for Contextual Chunk Retrieval",
-  "url": "https://arxiv.org/abs/2611.12097",
-  "data": "10/11/2026",
-  "ts": 1794286800
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "JU\\'A -- A Benchmark for Information Retrieval in Brazilian Legal Text Collections",
-  "url": "https://arxiv.org/abs/2604.06098",
-  "data": "10/11/2026",
-  "ts": 1794286800
+  "titulo": "SpectRAG: Weighted Chunk Graphs for Token-Budgeted Context Selection in Multi-Hop Retrieval-Augmented Generation",
+  "url": "https://arxiv.org/abs/2610.36991",
+  "data": "11/11/2026",
+  "ts": 1794373200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Process then Retrieve: Investigating the Origins of the Modality Gap in Vision-Language Models",
-  "url": "https://arxiv.org/abs/2611.09897",
-  "data": "10/11/2026",
-  "ts": 1794286800
+  "titulo": "Looping Deeper Without Growing the KV Cache: Recurrent Depth for Causal Encoder-Decoders",
+  "url": "https://arxiv.org/abs/2611.13378",
+  "data": "11/11/2026",
+  "ts": 1794373200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Coordinated Mixed-Precision KV Cache Quantization for Efficient LLM-based Multi-agent Systems",
-  "url": "https://arxiv.org/abs/2611.10096",
-  "data": "10/11/2026",
-  "ts": 1794286800
+  "titulo": "Partition, Refine, and Detect: Preserving Novel Category Capacity in Open-Vocabulary Object Detection",
+  "url": "https://arxiv.org/abs/2611.12976",
+  "data": "11/11/2026",
+  "ts": 1794373200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "PACE: Keeping the Right Tokens in the KV Cache Is Not Enough for Long-Horizon LLM Agents",
-  "url": "https://arxiv.org/abs/2611.10240",
-  "data": "10/11/2026",
-  "ts": 1794286800
+  "titulo": "SteerDistill: Quantizing LLM Agents via Closed-Loop Teacher Steering",
+  "url": "https://arxiv.org/abs/2611.13410",
+  "data": "11/11/2026",
+  "ts": 1794373200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Two-Sided Conformal Evidence Sets for Retrieval-Augmented Generation",
-  "url": "https://arxiv.org/abs/2611.10335",
-  "data": "10/11/2026",
-  "ts": 1794286800
+  "titulo": "Beyond local reconstruction: Geometry-preserving output alignment for binary LLM quantization",
+  "url": "https://arxiv.org/abs/2512.21651",
+  "data": "11/11/2026",
+  "ts": 1794373200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "TripletAD: Weakly Supervised Anomaly Detection in Embedding Space with Rare Anomalies and Scarce Labels",
-  "url": "https://arxiv.org/abs/2611.10352",
-  "data": "10/11/2026",
-  "ts": 1794286800
+  "titulo": "Binary Quantized Neural Network Training Is W[1]-Hard Parameterized by Input and Output Dimensions",
+  "url": "https://arxiv.org/abs/2609.27932",
+  "data": "11/11/2026",
+  "ts": 1794373200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "CALFA-KV: Joint Calibration and Fisher-Guided Anchors for 1-Bit KV Cache Compression",
-  "url": "https://arxiv.org/abs/2611.10511",
-  "data": "10/11/2026",
-  "ts": 1794286800
- },
- {
-  "fonte": "arXiv cs.LG",
-  "titulo": "MACaQ: Fast, Model Agnostic Calibrated Quantization for Low-Precision Weights and Activations",
-  "url": "https://arxiv.org/abs/2611.10649",
-  "data": "10/11/2026",
-  "ts": 1794286800
- },
- {
-  "fonte": "arXiv cs.LG",
-  "titulo": "Elastic Representations via Hyperbolic Geometry",
-  "url": "https://arxiv.org/abs/2611.11001",
-  "data": "10/11/2026",
-  "ts": 1794286800
- },
- {
-  "fonte": "arXiv cs.LG",
-  "titulo": "When Calibration Data Matter in Sub-4-Bit Language Model Quantization",
-  "url": "https://arxiv.org/abs/2611.11079",
-  "data": "10/11/2026",
-  "ts": 1794286800
- },
- {
-  "fonte": "arXiv cs.LG",
-  "titulo": "A Hierarchical Tokenization Framework for Voxel-Level fMRI Representation Learning",
-  "url": "https://arxiv.org/abs/2611.11081",
-  "data": "10/11/2026",
-  "ts": 1794286800
- },
- {
-  "fonte": "arXiv cs.LG",
-  "titulo": "When gene summaries reveal the answers: Gene Ontology circularity in gene embedding benchmarks",
-  "url": "https://arxiv.org/abs/2611.11118",
-  "data": "10/11/2026",
-  "ts": 1794286800
- },
- {
-  "fonte": "arXiv cs.LG",
-  "titulo": "SGA-Sparse: Training Native SwiGLU Gates for Activation-Sparse and Low-Bit LLMs",
-  "url": "https://arxiv.org/abs/2611.11223",
-  "data": "10/11/2026",
-  "ts": 1794286800
+  "titulo": "LeapQuant: Efficient Linear Attention with Accurate Recurrent State Quantization",
+  "url": "https://arxiv.org/abs/2609.38166",
+  "data": "11/11/2026",
+  "ts": 1794373200
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "on\\'ona: Twin Embeddings with Tied Unembeddings",
-  "url": "https://arxiv.org/abs/2611.10556",
-  "data": "10/11/2026",
-  "ts": 1794286800
+  "titulo": "The Indic Token Tax in 2026: Measuring Tokenizer. Disparity and Its Cost for the Languages of India",
+  "url": "https://arxiv.org/abs/2611.13058",
+  "data": "11/11/2026",
+  "ts": 1794373200
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "TransMem: Transition-Aware Retrieval for Evolving Personal Memory",
-  "url": "https://arxiv.org/abs/2611.10683",
-  "data": "10/11/2026",
-  "ts": 1794286800
+  "titulo": "A Multi-Word Tokenizer for 204 Languages That Needs Fewer Tokens Than GPT-4o's, Including on English",
+  "url": "https://arxiv.org/abs/2611.13059",
+  "data": "11/11/2026",
+  "ts": 1794373200
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "Cascading Circle Loss: Order-Preserving Contrastive Learning for Graded Legal Retrieval",
-  "url": "https://arxiv.org/abs/2611.10765",
-  "data": "10/11/2026",
-  "ts": 1794286800
+  "titulo": "Inherited Weights: Measuring the Tokenization Premium and the Sovereignty Cost of Language Models for the Global South",
+  "url": "https://arxiv.org/abs/2611.13441",
+  "data": "11/11/2026",
+  "ts": 1794373200
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "MoTo: Mixture of Tokenizers Towards Fair Multilingual Language Modeling",
-  "url": "https://arxiv.org/abs/2611.11027",
-  "data": "10/11/2026",
-  "ts": 1794286800
+  "titulo": "OpticalRAG: Pixel-Space Compression for Token-Efficient Retrieval-Augmented Generation",
+  "url": "https://arxiv.org/abs/2611.13675",
+  "data": "11/11/2026",
+  "ts": 1794373200
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "Saidzoda-Tajik-EmbeddingGemma-300M: Knowing Every Letter Is Not Reading Tajik",
-  "url": "https://arxiv.org/abs/2611.11243",
-  "data": "10/11/2026",
-  "ts": 1794286800
+  "titulo": "GSQ: Highly-Accurate Low-Precision Scalar Quantization for LLMs via Gumbel-Softmax Sampling",
+  "url": "https://arxiv.org/abs/2604.18556",
+  "data": "11/11/2026",
+  "ts": 1794373200
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "Saidzoda-CA-EmbeddingGemma-300M: One Small Embedder for Tajik, Kazakh, Uzbek and Kyrgyz",
-  "url": "https://arxiv.org/abs/2611.11471",
-  "data": "10/11/2026",
-  "ts": 1794286800
+  "titulo": "StateRAG: Typed State Contracts for Complex Retrieval-Augmented Generation",
+  "url": "https://arxiv.org/abs/2605.25379",
+  "data": "11/11/2026",
+  "ts": 1794373200
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "BridgeKV: Large-Model Prefill and Small-Model Decoding for LLM Inference via KV Cache Translation",
-  "url": "https://arxiv.org/abs/2611.11761",
-  "data": "10/11/2026",
-  "ts": 1794286800
- },
- {
-  "fonte": "arXiv cs.CL",
-  "titulo": "Adapting Small Language Models to Romanized Nepali: Tokenizer Fertility, Reference Likelihood, and Generation Metrics",
-  "url": "https://arxiv.org/abs/2611.12628",
-  "data": "10/11/2026",
-  "ts": 1794286800
- },
- {
-  "fonte": "arXiv cs.CL",
-  "titulo": "How Far Does Second-Order Linear Response Predict Quantization Mismatch? Pre-Registered Measurements on Five Language Models",
-  "url": "https://arxiv.org/abs/2611.12634",
-  "data": "10/11/2026",
-  "ts": 1794286800
- },
- {
-  "fonte": "arXiv cs.CL",
-  "titulo": "A Lattice-Based HMM Approach to Aruz Scansion of Ottoman Poetry",
-  "url": "https://arxiv.org/abs/2611.12691",
-  "data": "10/11/2026",
-  "ts": 1794286800
- },
- {
-  "fonte": "arXiv cs.CL",
-  "titulo": "ViCLIP-OT: The First Foundation Vision-Language Model for Vietnamese Image-Text Retrieval with Optimal Transport",
-  "url": "https://arxiv.org/abs/2602.22678",
-  "data": "10/11/2026",
-  "ts": 1794286800
- },
- {
-  "fonte": "arXiv cs.CL",
-  "titulo": "Improving Large Audio-Language Model Embedding Baselines for Instruction-Aware Speech Retrieval",
-  "url": "https://arxiv.org/abs/2611.09122",
-  "data": "10/11/2026",
-  "ts": 1794286800
+  "titulo": "Text Generation in Low-Resource Languages Using Human-Curated Vocabularies",
+  "url": "https://arxiv.org/abs/2610.37105",
+  "data": "11/11/2026",
+  "ts": 1794373200
  },
  {
   "fonte": "Hugging Face",
