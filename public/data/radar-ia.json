@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-11T15:34:24.977Z",
+  "checked_at": "2026-11-11T21:39:45.000Z",
   "last_successful_at": "2026-11-08T09:38:37.881Z",
   "publication_policy": "official_sources_automatic",
   "featured_id": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
@@ -10,7 +10,7 @@
       "nome": "OpenAI",
       "site": "https://openai.com/news/",
       "canal": "https://openai.com/news/rss.xml",
-      "checked_at": "2026-11-11T15:34:24.977Z",
+      "checked_at": "2026-11-11T21:39:45.000Z",
       "status": "ok",
       "item_count": 128
     },
@@ -19,7 +19,7 @@
       "nome": "Anthropic",
       "site": "https://www.anthropic.com/news",
       "canal": "https://www.anthropic.com/news",
-      "checked_at": "2026-11-11T15:34:24.977Z",
+      "checked_at": "2026-11-11T21:39:45.000Z",
       "status": "ok",
       "item_count": 26
     },
@@ -28,7 +28,7 @@
       "nome": "Google DeepMind",
       "site": "https://deepmind.google/blog/",
       "canal": "https://deepmind.google/blog/rss.xml",
-      "checked_at": "2026-11-11T15:34:24.977Z",
+      "checked_at": "2026-11-11T21:39:45.000Z",
       "status": "ok",
       "item_count": 20
     },
@@ -37,7 +37,7 @@
       "nome": "Mistral AI",
       "site": "https://mistral.ai/news/",
       "canal": "https://mistral.ai/news/rss",
-      "checked_at": "2026-11-11T15:34:24.977Z",
+      "checked_at": "2026-11-11T21:39:45.000Z",
       "status": "ok",
       "item_count": 7
     },
@@ -46,7 +46,7 @@
       "nome": "Meta AI",
       "site": "https://ai.meta.com/blog/",
       "canal": "https://about.fb.com/news/feed/",
-      "checked_at": "2026-11-11T15:34:24.977Z",
+      "checked_at": "2026-11-11T21:39:45.000Z",
       "status": "ok",
       "item_count": 7
     },
@@ -55,16 +55,16 @@
       "nome": "NVIDIA",
       "site": "https://blogs.nvidia.com/",
       "canal": "https://blogs.nvidia.com/blog/category/deep-learning/feed/",
-      "checked_at": "2026-11-11T15:34:24.977Z",
+      "checked_at": "2026-11-11T21:39:45.000Z",
       "status": "ok",
-      "item_count": 11
+      "item_count": 12
     },
     {
       "id": "xai",
       "nome": "xAI / Grok",
       "site": "https://x.ai/news",
       "canal": "https://x.ai/news",
-      "checked_at": "2026-11-11T15:34:24.977Z",
+      "checked_at": "2026-11-11T21:39:45.000Z",
       "status": "ok",
       "item_count": 6
     },
@@ -73,7 +73,7 @@
       "nome": "DeepSeek",
       "site": "https://api-docs.deepseek.com/updates/",
       "canal": "https://api-docs.deepseek.com/updates/",
-      "checked_at": "2026-11-11T15:34:24.977Z",
+      "checked_at": "2026-11-11T21:39:45.000Z",
       "status": "ok",
       "item_count": 1
     },
@@ -82,7 +82,7 @@
       "nome": "Qwen / Alibaba",
       "site": "https://qwen.ai/blog",
       "canal": "https://qwenlm.github.io/blog/index.xml",
-      "checked_at": "2026-11-11T15:34:24.977Z",
+      "checked_at": "2026-11-11T21:39:45.000Z",
       "status": "error",
       "item_count": 0
     },
@@ -91,7 +91,7 @@
       "nome": "Moonshot / Kimi",
       "site": "https://www.kimi.com/en/blog/",
       "canal": "https://www.kimi.com/en/blog/",
-      "checked_at": "2026-11-11T15:34:24.977Z",
+      "checked_at": "2026-11-11T21:39:45.000Z",
       "status": "ok",
       "item_count": 1
     }
@@ -262,6 +262,22 @@
       "impact_score": 10,
       "topics": [
         "Atualização oficial"
+      ]
+    },
+    {
+      "id": "https://blogs.nvidia.com/blog/ai-recycling-startups/",
+      "source_id": "nvidia",
+      "company": "NVIDIA",
+      "title": "How AI Helps Recyclers Turn Mixed Waste Into Reusable Material",
+      "summary": "NVIDIA profiled four startups using computer vision and robotics to sort plastics, household recyclables and textiles. Deployment, capacity, efficiency and emissions figures are reported by the companies featured.",
+      "url": "https://blogs.nvidia.com/blog/ai-recycling-startups/",
+      "published_at": "2026-11-10T00:00:00+00:00",
+      "verified_at": "2026-11-11T21:39:45.000Z",
+      "impact_score": 35,
+      "topics": [
+        "Robótica",
+        "Pesquisa",
+        "Sustentabilidade"
       ]
     },
     {
@@ -561,20 +577,6 @@
       "impact_score": 30,
       "topics": [
         "Modelos",
-        "APIs e ferramentas"
-      ]
-    },
-    {
-      "id": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
-      "source_id": "nvidia",
-      "company": "NVIDIA",
-      "title": "More Performance From Every Byte: How Full-Stack Codesign Solves AI’s Memory Challenge",
-      "summary": "NVIDIA described a full-stack memory hierarchy for agentic inference, spanning HBM, CPU memory, storage and Dynamo. Efficiency and throughput comparisons are company-reported.",
-      "url": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
-      "published_at": "2026-11-05T00:00:00+00:00",
-      "verified_at": "2026-11-05T21:42:09.674Z",
-      "impact_score": 30,
-      "topics": [
         "APIs e ferramentas"
       ]
     },
