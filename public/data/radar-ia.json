@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-12T15:39:03.637Z",
+  "checked_at": "2026-11-12T21:38:05.723Z",
   "last_successful_at": "2026-11-08T09:38:37.881Z",
   "publication_policy": "official_sources_automatic",
   "featured_id": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
@@ -10,7 +10,7 @@
       "nome": "OpenAI",
       "site": "https://openai.com/news/",
       "canal": "https://openai.com/news/rss.xml",
-      "checked_at": "2026-11-12T15:39:03.637Z",
+      "checked_at": "2026-11-12T21:38:05.723Z",
       "status": "ok",
       "item_count": 128
     },
@@ -19,7 +19,7 @@
       "nome": "Anthropic",
       "site": "https://www.anthropic.com/news",
       "canal": "https://www.anthropic.com/news",
-      "checked_at": "2026-11-12T15:39:03.637Z",
+      "checked_at": "2026-11-12T21:38:05.723Z",
       "status": "ok",
       "item_count": 26
     },
@@ -28,7 +28,7 @@
       "nome": "Google DeepMind",
       "site": "https://deepmind.google/blog/",
       "canal": "https://deepmind.google/blog/rss.xml",
-      "checked_at": "2026-11-12T15:39:03.637Z",
+      "checked_at": "2026-11-12T21:38:05.723Z",
       "status": "ok",
       "item_count": 20
     },
@@ -37,7 +37,7 @@
       "nome": "Mistral AI",
       "site": "https://mistral.ai/news/",
       "canal": "https://mistral.ai/news/rss",
-      "checked_at": "2026-11-12T15:39:03.637Z",
+      "checked_at": "2026-11-12T21:38:05.723Z",
       "status": "ok",
       "item_count": 7
     },
@@ -46,16 +46,16 @@
       "nome": "Meta AI",
       "site": "https://ai.meta.com/blog/",
       "canal": "https://about.fb.com/news/feed/",
-      "checked_at": "2026-11-12T15:39:03.637Z",
+      "checked_at": "2026-11-12T21:38:05.723Z",
       "status": "ok",
-      "item_count": 7
+      "item_count": 8
     },
     {
       "id": "nvidia",
       "nome": "NVIDIA",
       "site": "https://blogs.nvidia.com/",
       "canal": "https://blogs.nvidia.com/blog/category/deep-learning/feed/",
-      "checked_at": "2026-11-12T15:39:03.637Z",
+      "checked_at": "2026-11-12T21:38:05.723Z",
       "status": "ok",
       "item_count": 12
     },
@@ -64,7 +64,7 @@
       "nome": "xAI / Grok",
       "site": "https://x.ai/news",
       "canal": "https://x.ai/news",
-      "checked_at": "2026-11-12T15:39:03.637Z",
+      "checked_at": "2026-11-12T21:38:05.723Z",
       "status": "ok",
       "item_count": 6
     },
@@ -73,7 +73,7 @@
       "nome": "DeepSeek",
       "site": "https://api-docs.deepseek.com/updates/",
       "canal": "https://api-docs.deepseek.com/updates/",
-      "checked_at": "2026-11-12T15:39:03.637Z",
+      "checked_at": "2026-11-12T21:38:05.723Z",
       "status": "ok",
       "item_count": 1
     },
@@ -82,7 +82,7 @@
       "nome": "Qwen / Alibaba",
       "site": "https://qwen.ai/blog",
       "canal": "https://qwenlm.github.io/blog/index.xml",
-      "checked_at": "2026-11-12T15:39:03.637Z",
+      "checked_at": "2026-11-12T21:38:05.723Z",
       "status": "error",
       "item_count": 0
     },
@@ -91,12 +91,27 @@
       "nome": "Moonshot / Kimi",
       "site": "https://www.kimi.com/en/blog/",
       "canal": "https://www.kimi.com/en/blog/",
-      "checked_at": "2026-11-12T15:39:03.637Z",
+      "checked_at": "2026-11-12T21:38:05.723Z",
       "status": "ok",
       "item_count": 1
     }
   ],
   "items": [
+    {
+      "id": "https://about.fb.com/news/2026/11/meta-new-agreements-clean-manufacturing-data-center-supply-chains/",
+      "source_id": "meta",
+      "company": "Meta AI",
+      "title": "Meta’s New Agreements Bring Clean Manufacturing to Data Center Supply Chains",
+      "summary": "Meta announced multi-year purchase agreements for lower-carbon cement, near-zero-emission steel, electric trucking and recycled plastics for data-center supply chains. Volumes, jobs and emissions benefits are company- and partner-reported.",
+      "url": "https://about.fb.com/news/2026/11/meta-new-agreements-clean-manufacturing-data-center-supply-chains/",
+      "published_at": "2026-11-12T00:00:00+00:00",
+      "verified_at": "2026-11-12T21:38:05.723Z",
+      "impact_score": 25,
+      "topics": [
+        "Infraestrutura de IA",
+        "Sustentabilidade"
+      ]
+    },
     {
       "id": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
       "source_id": "google",
@@ -105,7 +120,7 @@
       "summary": "Google DeepMind announced AlphaGenome 2, a DNA-sequence model for predicting variant effects in specific human cell types. It is available for non-commercial research via API and in private commercial preview; results are company-reported.",
       "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
       "published_at": "2026-11-11T00:00:00+00:00",
-      "verified_at": "2026-11-12T15:39:03.637Z",
+      "verified_at": "2026-11-12T21:38:05.723Z",
       "impact_score": 75,
       "topics": [
         "Modelos",
