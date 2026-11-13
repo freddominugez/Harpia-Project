@@ -1,6 +1,6 @@
 {
   "ambiente": "business",
-  "atualizado_em": "2026-11-12T18:36:33.482370+00:00",
+  "atualizado_em": "2026-11-13T18:04:06.673397+00:00",
   "politica": "candidatos_sem_publicacao_automatica",
   "fontes": [
     {
@@ -9,7 +9,7 @@
       "status": "ok",
       "itens": 0,
       "mensagem": "",
-      "verificado_em": "2026-11-12T18:36:33.482370+00:00"
+      "verificado_em": "2026-11-13T18:04:06.673397+00:00"
     },
     {
       "id": "UC8DhN1cJi0QklBQot5hv_kg",
@@ -17,7 +17,7 @@
       "status": "ok",
       "itens": 0,
       "mensagem": "",
-      "verificado_em": "2026-11-12T18:36:33.482370+00:00"
+      "verificado_em": "2026-11-13T18:04:06.673397+00:00"
     },
     {
       "id": "UCWo4IA01TXzBeGJJKWHOG9g",
@@ -25,7 +25,7 @@
       "status": "ok",
       "itens": 3,
       "mensagem": "",
-      "verificado_em": "2026-11-12T18:36:33.482370+00:00"
+      "verificado_em": "2026-11-13T18:04:06.673397+00:00"
     },
     {
       "id": "UCk8n46m74K5XWfdeBzOXDfA",
@@ -33,7 +33,7 @@
       "status": "ok",
       "itens": 0,
       "mensagem": "",
-      "verificado_em": "2026-11-12T18:36:33.482370+00:00"
+      "verificado_em": "2026-11-13T18:04:06.673397+00:00"
     },
     {
       "id": "UC9aeQQ-NqjHS3nfiod2PMSA",
@@ -41,7 +41,7 @@
       "status": "ok",
       "itens": 3,
       "mensagem": "",
-      "verificado_em": "2026-11-12T18:36:33.482370+00:00"
+      "verificado_em": "2026-11-13T18:04:06.673397+00:00"
     },
     {
       "id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
@@ -49,7 +49,7 @@
       "status": "ok",
       "itens": 3,
       "mensagem": "",
-      "verificado_em": "2026-11-12T18:36:33.482370+00:00"
+      "verificado_em": "2026-11-13T18:04:06.673397+00:00"
     },
     {
       "id": "UC0wOrSaO_sBGGU9Jderpk7g",
@@ -57,7 +57,7 @@
       "status": "ok",
       "itens": 0,
       "mensagem": "",
-      "verificado_em": "2026-11-12T18:36:33.482370+00:00"
+      "verificado_em": "2026-11-13T18:04:06.673397+00:00"
     },
     {
       "id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
@@ -65,7 +65,7 @@
       "status": "ok",
       "itens": 1,
       "mensagem": "",
-      "verificado_em": "2026-11-12T18:36:33.482370+00:00"
+      "verificado_em": "2026-11-13T18:04:06.673397+00:00"
     }
   ],
   "itens": [
@@ -79,7 +79,7 @@
       "video_id": "evQcbeOlvWc",
       "channel_id": "UCWo4IA01TXzBeGJJKWHOG9g",
       "data": "2026-11-10",
-      "verificado_em": "2026-11-12",
+      "verificado_em": "2026-11-13",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -94,7 +94,7 @@
       "video_id": "UzjGCg0W67w",
       "channel_id": "UC9aeQQ-NqjHS3nfiod2PMSA",
       "data": "2026-11-10",
-      "verificado_em": "2026-11-12",
+      "verificado_em": "2026-11-13",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -109,7 +109,7 @@
       "video_id": "DLtfpIeAPrc",
       "channel_id": "UC9aeQQ-NqjHS3nfiod2PMSA",
       "data": "2026-11-09",
-      "verificado_em": "2026-11-12",
+      "verificado_em": "2026-11-13",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -124,7 +124,7 @@
       "video_id": "aS4Y6DeK0wI",
       "channel_id": "UC9aeQQ-NqjHS3nfiod2PMSA",
       "data": "2026-11-04",
-      "verificado_em": "2026-11-12",
+      "verificado_em": "2026-11-13",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -139,7 +139,7 @@
       "video_id": "gmmvzYJZMGs",
       "channel_id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
       "data": "2026-10-30",
-      "verificado_em": "2026-11-12",
+      "verificado_em": "2026-11-13",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -154,7 +154,7 @@
       "video_id": "bcPJfRL94Qw",
       "channel_id": "UCWo4IA01TXzBeGJJKWHOG9g",
       "data": "2026-10-21",
-      "verificado_em": "2026-11-12",
+      "verificado_em": "2026-11-13",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -169,7 +169,7 @@
       "video_id": "9f3qnX6aiIE",
       "channel_id": "UCWo4IA01TXzBeGJJKWHOG9g",
       "data": "2026-10-09",
-      "verificado_em": "2026-11-12",
+      "verificado_em": "2026-11-13",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -184,7 +184,7 @@
       "video_id": "b8duDcufp8g",
       "channel_id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
       "data": "2026-08-11",
-      "verificado_em": "2026-11-12",
+      "verificado_em": "2026-11-13",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -199,7 +199,7 @@
       "video_id": "rMdBQNrHO8U",
       "channel_id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
       "data": "2026-08-11",
-      "verificado_em": "2026-11-12",
+      "verificado_em": "2026-11-13",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -214,7 +214,7 @@
       "video_id": "sXCyIsc2oj8",
       "channel_id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
       "data": "2026-07-29",
-      "verificado_em": "2026-11-12",
+      "verificado_em": "2026-11-13",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
