@@ -1,5 +1,243 @@
 [
  {
+  "fonte": "arXiv cs.IR",
+  "titulo": "When Direction Matters: Diagnosing Relational Instruction Following in Dense Retrieval",
+  "url": "https://arxiv.org/abs/2611.15417",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "CURATOR: Scalable Fine-grained Evidence Selection for Retrieval-Augmented Generation using Decision Models",
+  "url": "https://arxiv.org/abs/2611.16366",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "ReSID: Rethinking Long-Tail Retrieval in Generative Recommendation through Item Reachability",
+  "url": "https://arxiv.org/abs/2611.16404",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "AntEmbed: Dual-Mode Multimodal Embedding Model for Efficient and Fine-Grained Retrieval",
+  "url": "https://arxiv.org/abs/2611.16405",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "RMIT-ADM+S at TREC RAG 2026: Research Agents, Retriever Ablations, and Open-Weight Replication",
+  "url": "https://arxiv.org/abs/2611.16425",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Active Learning of Approximate LLM Ranking for Energy-Efficient Retrieval of Long Queries",
+  "url": "https://arxiv.org/abs/2611.16488",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Evaluation of Music Version Retrieval Methods for Setlist Identification in Live Concerts",
+  "url": "https://arxiv.org/abs/2611.17070",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Vision-Grounded Semantic Learning and Alignment for Scalable Multilingual Text-Based Person Retrieval",
+  "url": "https://arxiv.org/abs/2611.15328",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Predicting the Needle in a Petabyte Scale Haystack: Open-Vocabulary Event Anticipation in Satellite Imagery",
+  "url": "https://arxiv.org/abs/2611.16000",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Calibrated Early Termination with Bounded Optimality Gaps for Constrained Vector Search",
+  "url": "https://arxiv.org/abs/2611.16148",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "HyperPage: Learned Page Layouts for Disk-Resident Graph Vector Indexes",
+  "url": "https://arxiv.org/abs/2611.16149",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Similar but Not Redundant: Embedding-Gated Refinement for High-Granularity Topic Models",
+  "url": "https://arxiv.org/abs/2611.17030",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Machine Learning Moment Closure for the Boltzmann Transport Equation: Enforcing Hyperbolicity",
+  "url": "https://arxiv.org/abs/2611.14894",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "The Noise Floor of a Quantization Comparison: Engine, restart, batch and kernel drift, measured against 8-bit and 4-bit effects in two decision models",
+  "url": "https://arxiv.org/abs/2611.15671",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "SAME: Semantic Watermark Embedding for Open-Source Large Pretrained Models",
+  "url": "https://arxiv.org/abs/2611.15771",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Vocabulary-Free Next-Event Prediction on Temporal Graphs",
+  "url": "https://arxiv.org/abs/2611.16063",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Tokenized Reward Systems for Federated Learning: The Privacy vs. Fairness Tradeoff",
+  "url": "https://arxiv.org/abs/2611.16065",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Few-Shot Cross-Subject Neural--Image Retrieval via Stimulus-Anchored Latent Bias Calibration",
+  "url": "https://arxiv.org/abs/2611.16257",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "SoScale: Second-Order Scale Search for FP4 Quantization",
+  "url": "https://arxiv.org/abs/2611.16426",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Helgason-Fourier Random Features for Scalable Hyperbolic Latent Variables",
+  "url": "https://arxiv.org/abs/2611.16461",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "What Do Tokenizer Comparisons Measure? Disentangling Granularity, Root Assignment, and Word-Level Readout across Amharic and Hausa",
+  "url": "https://arxiv.org/abs/2611.14818",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "What Does Each Part of Speech Need? Contexts, Subspaces and Dimensions in Static Word Embeddings",
+  "url": "https://arxiv.org/abs/2611.15114",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Communication-Efficient Federated Multi-View Clustering via View-Aware Quantization",
+  "url": "https://arxiv.org/abs/2611.15270",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "TraceKV: Policy-Preserving Low-Rank KV Cache Compression for Reasoning Vision-Language Models",
+  "url": "https://arxiv.org/abs/2611.15569",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Where Language-Model Vocabulary Rose on Stack Exchange",
+  "url": "https://arxiv.org/abs/2611.15172",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Saidzoda-Kazakh-EmbeddingGemma-300M: How Far One Epoch of Generated Questions Takes a Small Kazakh Embedder",
+  "url": "https://arxiv.org/abs/2611.16399",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Optimal Single-History Tokenization Disambiguation for Provably Secure Linguistic Steganography",
+  "url": "https://arxiv.org/abs/2611.17091",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "When Failures Propagate: Causal Failure Attribution in Agentic Retrieval-Augmented Generation",
+  "url": "https://arxiv.org/abs/2608.20627",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "SAG2: Embedding-Free Multi-Hop Retrieval with BM25 and Decision Models",
+  "url": "https://arxiv.org/abs/2610.22588",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Adaptive Retrieval, Selective Answers: Evaluating Conformal Factuality in Agentic RAG",
+  "url": "https://arxiv.org/abs/2610.34872",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "An Experimental Study of Hybrid Retrieval, NLI and Open-source LLMs for Scientific Claim Verification",
+  "url": "https://arxiv.org/abs/2611.03093",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "OpticalRAG: Pixel-Space Compression for Token-Efficient Retrieval-Augmented Generation",
+  "url": "https://arxiv.org/abs/2611.13675",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "CRINN: Contrastive Reinforcement Learning for Approximate Nearest Neighbor Search",
+  "url": "https://arxiv.org/abs/2508.02091",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "MarsRetrieval: Benchmarking Vision-Language Models for Planetary-Scale Geospatial Retrieval on Mars",
+  "url": "https://arxiv.org/abs/2602.13961",
+  "data": "13/11/2026",
+  "ts": 1794546000
+ },
+ {
   "fonte": "Hugging Face",
   "titulo": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
   "url": "https://huggingface.co/blog/token-pooling",
