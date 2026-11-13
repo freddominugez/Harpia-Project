@@ -1,0 +1,36 @@
+{
+  "titulo": "Thinking Machines cumpre a promessa e publica os pesos do Inkling 2 Small, mas sem os resultados dos testes de segurança",
+  "resumo": "Uma semana depois do lançamento, os pesos do modelo de 594 bilhões de parâmetros chegaram ao Hugging Face. Rodar em casa segue fora de alcance: pede cerca de 500 GB de memória de GPU.",
+  "data": "2026-11-12",
+  "categoria": "abertos",
+  "icone": "chip",
+  "corpo": [
+    "A Thinking Machines Lab publicou em 12 de novembro os pesos do Inkling 2 Small no Hugging Face. O modelo tinha sido lançado em 5 de novembro só para uso hospedado, pela plataforma Tinker, com a promessa de que os pesos viriam na semana seguinte, depois de testes externos de segurança.",
+    "O modelo é uma mistura de especialistas com 594 bilhões de parâmetros no total e cerca de 17 bilhões ativos por token. Aceita texto e imagens e tem janela de contexto de até 1 milhão de tokens. A licença declarada na ficha do modelo é a Apache 2.0, que permite uso comercial. O site OrcaRouter, que analisou o repositório, observou que ele não traz um arquivo de licença separado.",
+    "O tamanho afasta o uso doméstico. Segundo a mesma análise, o arquivo principal, no formato NVFP4, ocupa cerca de 394 GB e pede pelo menos 500 GB de memória de GPU somados, o que significa várias placas de data center. Na data da publicação, o suporte nos servidores de inferência abertos SGLang e vLLM ainda estava só em versões de desenvolvimento.",
+    "A empresa não divulgou os resultados dos testes externos de segurança que justificaram a espera, nem nomeou quem os fez. Os números de desempenho divulgados no lançamento continuam sendo da própria empresa; a medição independente disponível é a da Artificial Analysis, que pôs o modelo em quarto lugar entre 28 modelos de pesos abertos no seu índice."
+  ],
+  "harpia": "A promessa virou entrega, e isso conta. Mas a abertura ficou pela metade: o modelo é aberto e pesado demais para quase todo mundo rodar, e a justificativa do atraso, os testes de segurança, não veio a público.",
+  "fontes": [
+    {
+      "veiculo": "Superpower Daily",
+      "titulo": "Thinking Machines publishes Inkling 2 Small weights after hosted-only debut",
+      "url": "https://superpowerdaily.com/posts/thinking-machines-publishes-inkling-2-small-weights-after-hosted-only-debut"
+    },
+    {
+      "veiculo": "OrcaRouter",
+      "titulo": "Inkling 2 Small Weights: 394 GB, Apache 2.0, No Stack",
+      "url": "https://www.orcarouter.ai/blog/inkling-2-small-open-weights-download"
+    },
+    {
+      "veiculo": "AlphaSignal",
+      "titulo": "Thinking Machines Opens Inkling 2 Small's 594B Weights to Developers",
+      "url": "https://alphasignal.ai/news/thinking-machines-opens-inkling-2-small-s-594b-weights-to-developers"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-13",
+  "verificado_em": "2026-11-13",
+  "ordem": 999
+}

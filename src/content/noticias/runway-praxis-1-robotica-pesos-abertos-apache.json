@@ -1,0 +1,26 @@
+{
+  "titulo": "Runway abre os pesos do Praxis-1, modelo de 27 bilhões de parâmetros para controlar robôs, sob licença Apache 2.0",
+  "resumo": "O modelo prevê vídeo e ações ao mesmo tempo e vem com código de inferência e de ajuste fino. Os resultados de desempenho divulgados são da própria empresa e de um placar da NVIDIA.",
+  "data": "2026-11-11",
+  "categoria": "abertos",
+  "icone": "maquina",
+  "corpo": [
+    "A Runway, empresa conhecida por modelos de geração de vídeo, publicou em 11 de novembro os pesos do Praxis-1, um modelo para robótica apresentado em setembro. Os pesos, o código de inferência e o código de ajuste fino saíram sob licença Apache 2.0, que permite uso comercial, no Hugging Face e no GitHub.",
+    "O Praxis-1 tem 27 bilhões de parâmetros e usa arquitetura de mistura de especialistas. A empresa o descreve como um modelo de ações sobre o mundo: a partir do mesmo pré-treino em vídeo dos seus outros modelos, ele prevê ao mesmo tempo o que a câmera vai ver e quais movimentos o robô deve fazer. Aceita ajuste fino completo ou pela técnica LoRA.",
+    "Segundo a Runway, o modelo roda em placas NVIDIA de data center, em placas de estação de trabalho como a RTX 5090 e no módulo Jetson Thor, montado no próprio robô. Há suporte nativo à biblioteca aberta LeRobot e ao servidor vLLM-Omni.",
+    "A empresa afirma que o Praxis-1 lidera o placar RoboLab-120, da NVIDIA, com 46,2% de sucesso em 1.200 episódios, e que, ajustado a um robô que não estava no treino, chegou a 80% no teste SimplerEnv. Esses números foram divulgados pela própria Runway; o anúncio não cita verificação independente."
+  ],
+  "harpia": "Modelos de robótica costumam ficar fechados nos laboratórios. Pesos e código de ajuste fino abertos permitem que universidades e grupos pequenos testem por conta própria o que a empresa afirma.",
+  "fontes": [
+    {
+      "veiculo": "Runway",
+      "titulo": "Praxis-1 Is Now Available",
+      "url": "https://runway.com/news/company-news/praxis-1-is-now-available"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-13",
+  "verificado_em": "2026-11-13",
+  "ordem": 999
+}

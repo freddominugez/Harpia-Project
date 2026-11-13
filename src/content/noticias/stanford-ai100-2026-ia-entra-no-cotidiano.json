@@ -1,0 +1,32 @@
+{
+  "titulo": "Estudo centenário de Stanford sobre IA diz que o crescimento por escala está perto do limite e que a tecnologia ainda não se paga",
+  "resumo": "O terceiro relatório do AI100, escrito por um painel de 12 especialistas, lista 12 conclusões e admite que já estará desatualizado quando for lido.",
+  "data": "2026-11-10",
+  "categoria": "pesquisa",
+  "icone": "leitura",
+  "corpo": [
+    "O Estudo de Cem Anos sobre Inteligência Artificial (AI100), projeto da Universidade Stanford iniciado em 2014 e administrado pelo seu Instituto de IA Centrada no Humano, publicou em 10 de novembro o seu terceiro relatório, com o título \"AI Goes Mainstream\". Os relatórios saem a cada cinco anos. Este foi escrito por um painel de 12 especialistas presidido por Michael Wooldridge, professor da Universidade de Oxford.",
+    "A primeira conclusão é que o avanço recente veio sobretudo da escala, ou seja, de mais computação e mais dados, e que esse caminho esbarra na falta de dados de boa qualidade e no custo de treinar os maiores modelos. O painel espera que o progresso dependa mais de algoritmos melhores, modelos menores e mais tempo de raciocínio.",
+    "Na economia, o relatório afirma que os efeitos da IA ainda não aparecem nos dados macroeconômicos nem no retorno das empresas, e resume: a IA \"is not yet paying its way\" (ainda não se paga). Também registra a pressão dos data centers sobre energia e água.",
+    "Entre os riscos, o documento cita a concentração do desenvolvimento em poucas empresas, o uso militar, ataques feitos por agentes de IA e a perda de confiança em gravações por causa de imagens, áudios e vídeos gerados. Diz ainda que o público teve pouca voz sobre como a IA é feita e usada e que a governança global está fragmentada.",
+    "O próprio painel avisa, na última das 12 conclusões, que o relatório estará desatualizado quando for lido. E informa que usou ferramentas de IA para transcrever reuniões, revisar rascunhos e comparar o texto com edições anteriores, mas que o texto foi escrito por pessoas."
+  ],
+  "harpia": "É um balanço de especialistas, não uma medição nova, mas tem peso por vir de um projeto acadêmico de longo prazo. A frase sobre o público ter pouca voz na IA conversa diretamente com a razão de existir de uma pesquisa aberta como o Harpya.",
+  "fontes": [
+    {
+      "veiculo": "The Next Web",
+      "titulo": "Stanford's 100-year AI study says scaling is running out of road",
+      "url": "https://thenextweb.com/news/stanford-ai100-report-2026-ai-goes-mainstream"
+    },
+    {
+      "veiculo": "The Register",
+      "titulo": "Stanford's century-long AI study admits it's already out of date",
+      "url": "https://www.theregister.com/a/5308574"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-13",
+  "verificado_em": "2026-11-13",
+  "ordem": 999
+}
