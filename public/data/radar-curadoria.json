@@ -1,8 +1,8 @@
 {
-  "item_id": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
-  "titulo_pt": "Google lança Gemini 4 Hydrogen para ampliar acesso a fluxos de trabalho agênticos",
-  "resumo_pt": "O Google lançou o Gemini 4 Hydrogen, modelo rápido para código e fluxos de trabalho agênticos, com distribuição no AI Studio, API Gemini, produtos empresariais, app Gemini e Busca. Segundo a empresa, o modelo combina execução eficiente, contexto de 1 milhão de tokens e novos níveis de raciocínio; métricas de desempenho e segurança ainda são declarações do Google.",
-  "por_que_importa": "O lançamento leva a geração Gemini 4 a usuários gratuitos e pagos e amplia seu uso em APIs, empresas e produtos de consumo. A disponibilidade imediata pode acelerar adoção, embora o desempenho ainda exija validação independente.",
-  "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
-  "updated_at": "2026-11-13T09:39:42.002Z"
+  "item_id": "https://openai.com/index/introducing-chatgpt-wallet/",
+  "titulo_pt": "OpenAI lança ChatGPT Wallet para pagamentos aprovados por usuários em agentes",
+  "resumo_pt": "A OpenAI lançou o ChatGPT Wallet, carteira para compras feitas por agentes com aprovação do usuário e tokenização que evita expor os dados reais do cartão. O recurso começa no dots para assinantes ChatGPT Pro adultos nos EUA, com cartões elegíveis. Segurança, alcance e funcionamento descritos são afirmações da empresa e de seus parceiros de pagamento.",
+  "por_que_importa": "A carteira conecta agentes de IA a pagamentos reais usando redes existentes e autenticação por compra. O lançamento pode acelerar o comércio agêntico, mas estreia de forma limitada e ainda precisa de validação operacional independente.",
+  "source_url": "https://openai.com/index/introducing-chatgpt-wallet/",
+  "updated_at": "2026-11-13T15:35:45.811Z"
 }
