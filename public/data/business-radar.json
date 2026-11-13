@@ -1,41 +1,51 @@
 {
   "ambiente": "business",
   "publication_policy": "trusted_institutional_rss_metadata_only",
-  "checked_at": "2026-11-13T07:06:05.675608+00:00",
-  "last_successful_at": "2026-11-13T07:06:05.675608+00:00",
+  "checked_at": "2026-11-13T19:57:51.362791+00:00",
+  "last_successful_at": "2026-11-13T19:57:51.362791+00:00",
   "sources": [
     {
       "id": "ama",
       "status": "ok",
       "item_count": 3,
-      "checked_at": "2026-11-13T07:06:05.675608+00:00"
+      "checked_at": "2026-11-13T19:57:51.362791+00:00"
     },
     {
       "id": "fdc",
       "status": "ok",
-      "item_count": 4,
-      "checked_at": "2026-11-13T07:06:05.675608+00:00"
+      "item_count": 3,
+      "checked_at": "2026-11-13T19:57:51.362791+00:00"
     },
     {
       "id": "insead",
       "status": "error",
       "item_count": 0,
-      "checked_at": "2026-11-13T07:06:05.675608+00:00"
+      "checked_at": "2026-11-13T19:57:51.362791+00:00"
     },
     {
       "id": "mckinsey",
       "status": "ok",
-      "item_count": 7,
-      "checked_at": "2026-11-13T07:06:05.675608+00:00"
+      "item_count": 8,
+      "checked_at": "2026-11-13T19:57:51.362791+00:00"
     },
     {
       "id": "wharton",
       "status": "ok",
       "item_count": 5,
-      "checked_at": "2026-11-13T07:06:05.675608+00:00"
+      "checked_at": "2026-11-13T19:57:51.362791+00:00"
     }
   ],
   "items": [
+    {
+      "id": "22c03607adb8b68dc2a2",
+      "source_id": "mckinsey",
+      "title": "Always orbiting: How consumers plan travel experiences now",
+      "summary": "",
+      "url": "https://www.mckinsey.com/industries/travel/our-insights/always-orbiting-how-consumers-plan-travel-experiences-now",
+      "published_at": "2026-11-13T00:00:00+00:00",
+      "verified_at": "2026-11-13T19:57:51.362791+00:00",
+      "idioma": "en"
+    },
     {
       "id": "b4158fe51bf2a009cfd7",
       "source_id": "fdc",
@@ -43,7 +53,7 @@
       "summary": "",
       "url": "https://sejarelevante.fdc.org.br/cliente-e-resultado-nao-sao-objetivos-concorrentes-diz-ceo-da-xp/",
       "published_at": "2026-11-11T00:00:00+00:00",
-      "verified_at": "2026-11-13T07:06:05.675608+00:00",
+      "verified_at": "2026-11-13T19:57:51.362791+00:00",
       "idioma": "pt"
     },
     {
@@ -53,7 +63,7 @@
       "summary": "",
       "url": "https://www.mckinsey.com/industries/retail/our-insights/the-new-realities-of-grocery-retail-in-the-americas-and-europe",
       "published_at": "2026-11-10T00:00:00+00:00",
-      "verified_at": "2026-11-13T07:06:05.675608+00:00",
+      "verified_at": "2026-11-13T19:57:51.362791+00:00",
       "idioma": "en"
     },
     {
@@ -63,7 +73,7 @@
       "summary": "",
       "url": "https://sejarelevante.fdc.org.br/o-custo-invisivel-da-sub-representacao-feminina-na-alta-gestao/",
       "published_at": "2026-11-09T00:00:00+00:00",
-      "verified_at": "2026-11-13T07:06:05.675608+00:00",
+      "verified_at": "2026-11-13T19:57:51.362791+00:00",
       "idioma": "pt"
     },
     {
@@ -73,7 +83,7 @@
       "summary": "",
       "url": "https://www.mckinsey.com/industries/public-sector/our-insights/beyond-agency-boundaries-building-a-statewide-approach-to-customer-experience",
       "published_at": "2026-11-09T00:00:00+00:00",
-      "verified_at": "2026-11-13T07:06:05.675608+00:00",
+      "verified_at": "2026-11-13T19:57:51.362791+00:00",
       "idioma": "en"
     },
     {
@@ -83,7 +93,7 @@
       "summary": "",
       "url": "https://www.ama.org/2026/11/05/less-spending-higher-revenue-how-mergers-and-acquisitions-affect-marketing-decisions-in-the-biopharma-industry/",
       "published_at": "2026-11-05T00:00:00+00:00",
-      "verified_at": "2026-11-13T07:06:05.675608+00:00",
+      "verified_at": "2026-11-13T19:57:51.362791+00:00",
       "idioma": "en"
     },
     {
@@ -93,7 +103,7 @@
       "summary": "",
       "url": "https://knowledge.wharton.upenn.edu/podcast/marketing-matters/building-a-modern-western-lifestyle-brand/",
       "published_at": "2026-11-05T00:00:00+00:00",
-      "verified_at": "2026-11-13T07:06:05.675608+00:00",
+      "verified_at": "2026-11-13T19:57:51.362791+00:00",
       "idioma": "en"
     },
     {
@@ -103,7 +113,7 @@
       "summary": "",
       "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/turning-executive-judgment-into-organizational-intelligence-leveraging-ai-in-ceo-leadership",
       "published_at": "2026-11-02T00:00:00+00:00",
-      "verified_at": "2026-11-13T07:06:05.675608+00:00",
+      "verified_at": "2026-11-13T19:57:51.362791+00:00",
       "idioma": "en"
     },
     {
@@ -113,7 +123,7 @@
       "summary": "",
       "url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/critical-infrastructure-is-under-threat-are-organizations-prepared",
       "published_at": "2026-11-02T00:00:00+00:00",
-      "verified_at": "2026-11-13T07:06:05.675608+00:00",
+      "verified_at": "2026-11-13T19:57:51.362791+00:00",
       "idioma": "en"
     },
     {
@@ -123,7 +133,7 @@
       "summary": "",
       "url": "https://sejarelevante.fdc.org.br/modelos-de-gestao-precisam-evoluir-para-acompanhar-trabalho/",
       "published_at": "2026-10-30T00:00:00+00:00",
-      "verified_at": "2026-11-13T07:06:05.675608+00:00",
+      "verified_at": "2026-11-13T19:57:51.362791+00:00",
       "idioma": "pt"
     },
     {
@@ -133,18 +143,8 @@
       "summary": "",
       "url": "https://www.mckinsey.com/featured-insights/mckinsey-on-books/author-talks-why-you-cant-separate-strategy-from-value-and-vice-versa",
       "published_at": "2026-10-30T00:00:00+00:00",
-      "verified_at": "2026-11-13T07:06:05.675608+00:00",
+      "verified_at": "2026-11-13T19:57:51.362791+00:00",
       "idioma": "en"
-    },
-    {
-      "id": "bf47b75e4bc68232f3b4",
-      "source_id": "fdc",
-      "title": "O CEO virou parte da marca? Veja como a reputação dos líderes influencia as empresas",
-      "summary": "",
-      "url": "https://sejarelevante.fdc.org.br/o-ceo-virou-parte-da-marca-veja-como-a-reputacao-dos-lideres-influencia-as-empresas/",
-      "published_at": "2026-10-29T00:00:00+00:00",
-      "verified_at": "2026-11-13T07:06:05.675608+00:00",
-      "idioma": "pt"
     },
     {
       "id": "732ab7a3b0e0f971bcf1",
@@ -153,7 +153,7 @@
       "summary": "",
       "url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/banking-on-ai-how-a-new-operating-model-can-transform-distressed-credit-management",
       "published_at": "2026-10-29T00:00:00+00:00",
-      "verified_at": "2026-11-13T07:06:05.675608+00:00",
+      "verified_at": "2026-11-13T19:57:51.362791+00:00",
       "idioma": "en"
     },
     {
@@ -163,7 +163,7 @@
       "summary": "",
       "url": "https://www.mckinsey.com/capabilities/operations/our-insights/agentic-ai-in-strategic-sourcing-hype-or-hero",
       "published_at": "2026-10-28T00:00:00+00:00",
-      "verified_at": "2026-11-13T07:06:05.675608+00:00",
+      "verified_at": "2026-11-13T19:57:51.362791+00:00",
       "idioma": "en"
     },
     {
@@ -173,7 +173,7 @@
       "summary": "",
       "url": "https://knowledge.wharton.upenn.edu/podcast/this-week-in-business/why-record-holiday-sales-may-not-tell-the-whole-story/",
       "published_at": "2026-10-28T00:00:00+00:00",
-      "verified_at": "2026-11-13T07:06:05.675608+00:00",
+      "verified_at": "2026-11-13T19:57:51.362791+00:00",
       "idioma": "en"
     },
     {
@@ -183,7 +183,7 @@
       "summary": "",
       "url": "https://www.ama.org/2026/10/22/weigh-your-options-how-price-format-can-boost-sales-without-changing-the-price/",
       "published_at": "2026-10-22T00:00:00+00:00",
-      "verified_at": "2026-11-13T07:06:05.675608+00:00",
+      "verified_at": "2026-11-13T19:57:51.362791+00:00",
       "idioma": "en"
     },
     {
@@ -193,7 +193,7 @@
       "summary": "",
       "url": "https://knowledge.wharton.upenn.edu/podcast/marketing-matters/why-your-best-customers-can-be-your-best-marketers/",
       "published_at": "2026-10-22T00:00:00+00:00",
-      "verified_at": "2026-11-13T07:06:05.675608+00:00",
+      "verified_at": "2026-11-13T19:57:51.362791+00:00",
       "idioma": "en"
     },
     {
@@ -203,7 +203,7 @@
       "summary": "",
       "url": "https://www.ama.org/2026/10/16/team-up-or-take-over-strategic-drivers-of-firms-alliance-and-acquisition-decisions/",
       "published_at": "2026-10-16T00:00:00+00:00",
-      "verified_at": "2026-11-13T07:06:05.675608+00:00",
+      "verified_at": "2026-11-13T19:57:51.362791+00:00",
       "idioma": "en"
     }
   ]
