@@ -14,7 +14,7 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci
-      - run: node --test scripts/test_midpage_ad.mjs scripts/test_anuncios.mjs scripts/test_ambientes.mjs scripts/test_business_schema.mjs scripts/test_business_admin.mjs
+      - run: node --test scripts/test_midpage_ad.mjs scripts/test_anuncios.mjs scripts/test_ambientes.mjs scripts/test_business_schema.mjs scripts/test_business_admin.mjs scripts/test_login_link.mjs
       - run: npm run build
       - run: node scripts/test_business_build.mjs
       - run: npx astro check

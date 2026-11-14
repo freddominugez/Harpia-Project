@@ -11,7 +11,7 @@ O painel é o [Sveltia CMS](https://github.com/sveltia/sveltia-cms) 0.256.1, uma
 | `public/admin/config.yml` | Configuração gerada a partir da fonte. Não edite à mão |
 | `scripts/gerar_config_cms.py` | Gera `config.yml` a partir da fonte |
 | `scripts/validar_cms.py` | Confere que todo campo dos arquivos de conteúdo existe no painel e vice-versa |
-| `api/_oauth.js`, `api/auth.js`, `api/callback.js` | Login por e-mail e senha ou pelo GitHub (funções da Vercel em `/auth` e `/callback`) |
+| `api/_oauth.js`, `api/auth.js`, `api/callback.js` | Login por link enviado por e-mail, por e-mail e senha ou pelo GitHub (funções da Vercel em `/auth` e `/callback`) |
 | `scripts/gerar_hash_senha.mjs` | Gera o hash da senha do painel |
 
 O painel não é indexado: meta `noindex`, cabeçalho `X-Robots-Tag: noindex, nofollow` (em `vercel.json`) e `Disallow: /admin/` no `robots.txt`.
@@ -28,7 +28,27 @@ Quando as três variáveis abaixo existem na Vercel, o botão **Sign In with Git
 
 A senha em texto nunca vai para o repositório nem para a Vercel: só o hash scrypt. Erro de e-mail ou senha leva 1 segundo para responder (freio contra tentativas em sequência), e o formulário só aceita envio vindo de `harpya.org`. Depois de criar ou trocar uma variável, faça **Redeploy**.
 
-Para trocar a senha: gere um hash novo e substitua `ADMIN_PASSWORD_HASH`. Para cortar o acesso: apague `GITHUB_CMS_TOKEN` na Vercel e revogue o token no GitHub. Sem as três variáveis, o login volta a ser pelo GitHub, descrito a seguir.
+Para trocar a senha: gere um hash novo e substitua `ADMIN_PASSWORD_HASH`. Para cortar o acesso: apague `GITHUB_CMS_TOKEN` na Vercel e revogue o token no GitHub. Sem as três variáveis e sem o login por link, a entrada volta a ser pelo GitHub, descrito mais abaixo.
+
+## Entrar com link enviado por e-mail
+
+Com as variáveis abaixo, a tela de entrada mostra **Receber link de acesso**. Digite o e-mail, abra a mensagem recebida (remetente "Anne By Vulcan", assunto "Your Magic Link") e clique em **Log In** no mesmo navegador. A janela do painel, que ficou aberta, entra sozinha; se ela tiver sido fechada, a aba do link abre o painel já logado. O link vale por 1 hora e só funciona uma vez.
+
+| Variável (Vercel, ambiente Production) | Valor |
+|---|---|
+| `ADMIN_MAGIC_EMAILS` | os e-mails autorizados, separados por vírgula (maiúsculas não importam) |
+| `HARPYA_AUTH_URL` | endereço do projeto Supabase By Vulcan (`https://<ref>.supabase.co`) |
+| `HARPYA_AUTH_KEY` | chave *publishable* desse projeto (não é segredo) |
+| `GITHUB_CMS_TOKEN` | o mesmo token do login por senha |
+
+Quem envia o e-mail e confere o clique é o Supabase Auth do projeto By Vulcan. Para o link funcionar:
+
+- O e-mail precisa **ter conta** nesse Supabase (o painel não cria conta) **e** estar em `ADMIN_MAGIC_EMAILS`. Ter conta na By Vulcan, sozinho, não dá acesso: a lista é conferida de novo no servidor depois do clique.
+- `https://www.harpya.org/callback/` precisa estar em **Authentication → URL Configuration → Redirect URLs** do projeto.
+
+Para dar acesso a outra pessoa: confirme que ela tem conta na By Vulcan, acrescente o e-mail em `ADMIN_MAGIC_EMAILS` e faça **Redeploy**. Para tirar: remova o e-mail da variável e faça **Redeploy**. Todos entram com o mesmo `GITHUB_CMS_TOKEN`, então os commits do painel saem em nome do dono do token.
+
+Proteções: o pedido guarda um verificador (PKCE) em cookie `HttpOnly` por 1 hora, então o link só conclui o login no navegador que o pediu; e-mail fora da lista vê a mesma tela, sem envio; a sessão criada no Supabase é encerrada logo depois de provar o e-mail; o Supabase limita novos pedidos para o mesmo e-mail a um por minuto. Testes: `node --test scripts/test_login_link.mjs`.
 
 ## Entrar pelo GitHub
 
