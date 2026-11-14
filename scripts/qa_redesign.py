@@ -21,6 +21,17 @@ from playwright.sync_api import sync_playwright
 
 VIEWPORTS = [(1672, 941), (1440, 900), (1280, 800), (1024, 768), (768, 1024), (430, 932), (390, 844), (360, 780), (320, 720)]
 DIST = Path("dist")
+# A página inicial é uma porta de entrada sem o cabeçalho do site; menu e busca são testados numa página interna.
+PAGINA_COM_MENU = "/estudos/"
+# A pergunta "Seu ambiente de preferência" abre na primeira visita e cobre a página; nas capturas e nas
+# interações ela é marcada como já feita, como numa segunda visita da mesma sessão.
+SEM_PERGUNTA = "try{sessionStorage.setItem('harpya.perguntado.tecnologia','1');sessionStorage.setItem('harpya.perguntado.business','1')}catch(e){}"
+
+
+def pagina(browser, w, h):
+    pg = browser.new_page(viewport={"width": w, "height": h})
+    pg.add_init_script(SEM_PERGUNTA)
+    return pg
 
 
 class Links(HTMLParser):
@@ -232,7 +243,7 @@ def main():
                  ("/estudos/caminhos/certificado-inteiro/", 1672, 941, "artigo-desktop-1672.png", False),
                  ("/estudos/caminhos/certificado-inteiro/", 390, 844, "artigo-mobile-390.png", True)]
         for r, w, h, name, full in shots:
-            pg = browser.new_page(viewport={"width": w, "height": h})
+            pg = pagina(browser, w, h)
             pg.goto(args.base + r, wait_until="load")
             pg.evaluate("async()=>{for(let y=0;y<document.body.scrollHeight;y+=600){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,40))}window.scrollTo(0,0)}")
             pg.wait_for_timeout(400)
@@ -241,8 +252,8 @@ def main():
 
         # Interações: menu móvel, busca e índice lateral.
         it = {}
-        pg = browser.new_page(viewport={"width": 390, "height": 844})
-        pg.goto(args.base + "/", wait_until="load")
+        pg = pagina(browser, 390, 844)
+        pg.goto(args.base + PAGINA_COM_MENU, wait_until="load")
         btn = pg.locator("[data-menu]")
         it["menu_visivel_no_celular"] = btn.is_visible()
         btn.click()
@@ -257,8 +268,8 @@ def main():
         it["menu_navega_para_news"] = pg.url.endswith("/news/")
         pg.close()
 
-        pg = browser.new_page(viewport={"width": 1440, "height": 900})
-        pg.goto(args.base + "/", wait_until="load")
+        pg = pagina(browser, 1440, 900)
+        pg.goto(args.base + PAGINA_COM_MENU, wait_until="load")
         it["nav_desktop_visivel"] = pg.locator(".nav-links").is_visible()
         pg.keyboard.press("Control+k")
         it["busca_abre_ctrl_k"] = pg.locator("[data-search-overlay]").is_visible()

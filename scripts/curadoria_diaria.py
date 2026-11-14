@@ -74,8 +74,9 @@ def id_youtube(link: str) -> str | None:
 def oembed(video_id: str) -> dict | None:
     try:
         r = requests.get("https://www.youtube.com/oembed", params={"url": f"https://www.youtube.com/watch?v={video_id}", "format": "json"}, timeout=20, headers={"User-Agent": UA})
-        return r.json() if r.status_code == 200 else None
-    except requests.RequestException:
+        dados = r.json() if r.status_code == 200 else None
+        return dados if isinstance(dados, dict) else None
+    except (requests.RequestException, ValueError):
         return None
 
 
@@ -153,9 +154,9 @@ def main() -> None:
                     "url": link, "data": time.strftime("%Y-%m-%d", time.gmtime(ts)) if ts else "", "resumo_feed": resumo}
             if vid:
                 o = oembed(vid)
-                if not o:
-                    continue  # privado, removido ou sem incorporação: não entra
-                item.update({"video_id": vid, "titulo": o["title"], "canal": o["author_name"], "verificado": True})
+                if not o or not o.get("title"):
+                    continue  # privado, removido, sem incorporação ou sem título: não entra
+                item.update({"video_id": vid, "titulo": o["title"], "canal": o.get("author_name") or f["nome"], "verificado": True})
             else:
                 # Autores vêm do próprio feed (no arXiv, dc:creator), para a tarefa não precisar abrir a página.
                 nomes = [a.get("name", "") for a in e.get("authors", []) if a.get("name")] or [e.get("author", "")]

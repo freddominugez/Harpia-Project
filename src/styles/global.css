@@ -842,6 +842,13 @@ a.cover:hover { transform: translateY(-3px); }
   .ref-stat { flex-direction: column; align-items: flex-start; gap: 6px; }
   .ref-article-image { width: 34%; }
   .ref-hero-cta .btn { width: 100%; }
+  /* Em telas de 320 px o cabeçalho passava da largura por causa de "Trocar ambiente". */
+  .header-inner { gap: 8px; }
+  .header-actions { gap: 4px; }
+  .wordmark { gap: 6px; }
+  .wordmark img { width: 36px; height: 36px; }
+  .wordmark-text em { letter-spacing: .08em; }
+  .search-trigger { width: 36px; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
