@@ -158,7 +158,7 @@ envio a comunidades externas é disparado por essa ferramenta.
 | Linha do tempo, Aprendizado | `src/content/{linha-do-tempo,aprendizado}/` | Origens e Aprendizado de Máquina |
 | Fontes monitoradas | `src/content/fontes-monitoradas/` | Sites e canais que a curadoria diária lê |
 | Feeds de news | `src/content/feeds/` | Feeds do robô de news (a cada 6 horas) |
-| NotícIAs | `src/content/noticias/*.json` | Matérias curtas com fontes. A tarefa "Harpya · NotícIAs" grava como rascunho a cada dois dias (ver `docs/TAREFA_NOTICIAS.md`) |
+| NotícIAs | `src/content/noticias/*.json` | Matérias curtas com fontes. A tarefa "Harpya · NotícIAs" grava rascunhos todo dia e o robô publica as 2 de melhor nota (ver `docs/TAREFA_NOTICIAS.md`) |
 | Páginas de texto | `sobre.md`, `glossario.md`, `arquivados.md`, `equacoes.md` | Textos longos |
 
 Todo item curado tem `status` (rascunho ou publicado), `origem` (manual ou curadoria diária), `adicionado_em`, `verificado_em` e `ordem`. **Rascunho não aparece em nenhuma página, busca, sitemap, RSS ou llms.txt.**
@@ -218,10 +218,14 @@ A tarefa agendada (ver `docs/TAREFA_CURADORIA.md`) grava direto em `main`, sempr
 
 ## Revisar as NotícIAs
 
-1. Abra **NotícIAs** e use o filtro **Rascunhos**.
-2. Confira o texto contra as fontes listadas na própria matéria e corrija o que quiser.
-3. Troque **Status** para **Publicado** e salve. A matéria entra no card da home, na página `/noticias/`, no sitemap, no RSS e na busca.
-4. Para recusar, apague pelo painel. A URL fica em `curadoria/noticias/` e a tarefa não volta a propor.
+Aba **NotícIAs** do painel, ou https://www.harpya.org/admin/noticias/. A página lista os rascunhos pela nota de qualidade (0 a 100), mostra por que cada um recebeu a nota, o texto completo e as fontes, e marca os dois que o robô publica na próxima rodada, todo dia às 7h23.
+
+- **Publicar agora:** a matéria entra no card da home, em `/noticias/`, no sitemap, no RSS e na busca.
+- **Descartar:** apaga o arquivo. A URL fica em `curadoria/noticias/` e a curadoria não volta a propor.
+- **Voltar para rascunho** (lista **No ar**): tira a notícia do site; o robô não a republica.
+- **Editar texto no CMS:** abre a matéria no editor do Sveltia.
+
+Cada ação é um commit direto em `main`, conferido pelo SHA do arquivo: se a matéria mudou desde que a lista foi carregada, a página pede para atualizar. A nota, os bloqueios e o robô estão descritos em `docs/TAREFA_NOTICIAS.md`.
 
 ## Aprovar pautas e criar discussões
 

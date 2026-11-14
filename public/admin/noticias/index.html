@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="same-origin">
+  <title>NotícIAs · Harpya</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/admin/noticias/style.css">
+</head>
+<body>
+  <main>
+    <a href="/admin/">← Voltar ao painel</a>
+    <h1>NotícIAs</h1>
+    <p class="lead">Os rascunhos aparecem da melhor nota para a pior. Todo dia, às 7h23, o robô publica sozinho as <strong id="meta">2</strong> melhores que alcançam a nota <strong id="minimo">60</strong>. Você pode publicar antes, voltar uma notícia para rascunho ou descartar a que não deve sair.</p>
+    <button id="login" class="primary" hidden>Entrar no painel</button>
+    <p id="message" role="status" aria-live="polite"></p>
+    <section id="resumo" class="cards" aria-label="Situação da fila" hidden>
+      <div><strong id="n-aptos">0</strong><span>rascunhos aptos</span></div>
+      <div><strong id="n-dias">0</strong><span>dias de reserva</span></div>
+      <div><strong id="n-fora">0</strong><span>abaixo da nota ou bloqueados</span></div>
+      <div><strong id="n-ar">0</strong><span>no ar</span></div>
+    </section>
+    <nav class="tabs" aria-label="Listas" hidden id="tabs">
+      <button data-tab="fila" aria-pressed="true">Fila de rascunhos</button>
+      <button data-tab="ar" aria-pressed="false">No ar</button>
+      <button id="reload" class="right">Atualizar</button>
+    </nav>
+    <div id="lista"></div>
+    <dialog id="confirmation" aria-labelledby="confirmation-title">
+      <h2 id="confirmation-title"></h2>
+      <p id="confirmation-text"></p>
+      <div class="actions"><button id="cancel">Voltar</button><button id="confirm" class="primary"></button></div>
+    </dialog>
+  </main>
+  <script type="module" src="/admin/noticias/app.js"></script>
+</body>
+</html>

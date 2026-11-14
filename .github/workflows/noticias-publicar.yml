@@ -1,0 +1,38 @@
+# Publica todo dia as 2 melhores NotícIAs em rascunho, pela nota de qualidade
+# (public/admin/noticias/score.js). O commit dispara um novo deploy. Ver docs/TAREFA_NOTICIAS.md.
+name: noticias-publicar
+on:
+  schedule:
+    - cron: "23 10 * * *" # 7h23 em Fortaleza
+  workflow_dispatch:
+    inputs:
+      quantidade:
+        description: "Quantas publicar hoje (total do dia)"
+        default: "2"
+permissions:
+  contents: write
+concurrency:
+  group: noticias-publicar
+  cancel-in-progress: false
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - run: node --test scripts/test_noticias_score.mjs
+      - id: robo
+        env:
+          QUANTIDADE: ${{ inputs.quantidade || '2' }}
+        run: node scripts/publicar_noticias.mjs --quantidade "$QUANTIDADE"
+      - name: Commit se houver publicação
+        run: |
+          git config user.name "harpya-bot"
+          git config user.email "harpya-bot@users.noreply.github.com"
+          git add src/content/noticias curadoria/noticias/publicacao
+          git diff --cached --quiet && echo "nada a publicar" && exit 0
+          git commit -m "NotícIAs: publica ${{ steps.robo.outputs.publicadas }} pela nota de qualidade"
+          git pull --rebase origin main
+          git push
