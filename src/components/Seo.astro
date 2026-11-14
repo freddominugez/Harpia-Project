@@ -6,9 +6,11 @@ import { SITE, VERIFICACAO } from "../config";
 import { canonicalBusinessPath } from '../lib/business';
 import { ambienteDaRota } from '../lib/ambientes';
 import { rotaDe, entidades, trilha, abs, ogDe, mdDe } from "../lib/rotas";
+import { descricaoSeo } from "../lib/descricao-seo.mjs";
 
 interface Props { titulo?: string; descricao?: string; noindex?: boolean; tituloCompleto?: string }
-const { titulo, descricao = SITE.descricao, noindex = false, tituloCompleto } = Astro.props;
+const { titulo, descricao: descricaoBruta = SITE.descricao, noindex = false, tituloCompleto } = Astro.props;
+const descricao = descricaoSeo(descricaoBruta, titulo);
 const path = Astro.url.pathname;
 const business = ambienteDaRota(path) === 'business';
 const nomeSite = business ? 'Harpya Business' : SITE.nome;

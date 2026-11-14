@@ -85,6 +85,16 @@ def seo_checks():
                 prob.append("404: falta noindex")
             continue
         url = SITE + rota
+        # Atalho: página que declara outra como canônica (ex.: /business/estudos/x/ para /business/estudos/caminhos/x/).
+        # Fica fora do sitemap e repete título e descrição de propósito; só se confere se o destino existe e está no sitemap.
+        can = re.search(r'<link rel="canonical" href="([^"]+)">', head)
+        if can and can.group(1) != url and can.group(1).startswith(SITE + "/"):
+            destino = can.group(1)
+            if destino not in no_sitemap or not (DIST / urlparse(destino).path.lstrip("/") / "index.html").exists():
+                prob.append(f"{rota}: canonical aponta para página que não existe ou está fora do sitemap ({destino})")
+            if url in no_sitemap:
+                prob.append(f"{rota}: atalho com outra canônica não deveria estar no sitemap")
+            continue
         t = re.findall(r"<title>(.*?)</title>", head)
         d = meta("name", "description")
         if len(t) != 1:
@@ -180,7 +190,8 @@ def static_checks():
             if not target.exists():
                 broken.append((here, h))
                 continue
-            if u.fragment and target.suffix == ".html":
+            # "#/..." é rota interna do CMS (ex.: /admin/#/collections/x), não âncora da página.
+            if u.fragment and not u.fragment.startswith("/") and target.suffix == ".html":
                 tp = parsed.get(target)
                 if tp and u.fragment not in tp.ids:
                     broken.append((here, h + " (âncora)"))
