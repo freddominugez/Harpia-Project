@@ -1,0 +1,16 @@
+{
+  "id": "KgktK_DfW5U",
+  "titulo": "NEW AI Quantization w/ Distillation for Local LLMs",
+  "canal": "Discover AI",
+  "modulo": 10,
+  "nivel": "Avançado",
+  "resumo": "Comenta o artigo SteerDistill: um agente quantizado em 4 bits refaz decisões erradas com dica de um professor em BF16 e depois é treinado a reproduzir essa saída sem a dica. Para quem estuda quantização e destilação.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=KgktK_DfW5U",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-15",
+  "verificado_em": "2026-11-15"
+}

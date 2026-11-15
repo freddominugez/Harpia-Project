@@ -1,0 +1,16 @@
+{
+  "id": "Ci0_spso-go",
+  "titulo": "Building Cost-Efficient Mixture-of-Models on AMD GPUs with vLLM Semantic Router - Mahdi Ghodsi",
+  "canal": "PyTorch Foundation",
+  "modulo": 10,
+  "nivel": "Intermediário",
+  "resumo": "Mostra como o vLLM Semantic Router escolhe, escala ou combina modelos de tamanhos diferentes por requisição para reduzir custo e latência, em GPUs AMD. Para quem opera inferência.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=Ci0_spso-go",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-15",
+  "verificado_em": "2026-11-15"
+}

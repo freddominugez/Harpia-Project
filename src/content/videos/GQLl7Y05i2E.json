@@ -1,0 +1,16 @@
+{
+  "id": "GQLl7Y05i2E",
+  "titulo": "AI agent evals - a complete guide",
+  "canal": "AI Bites",
+  "modulo": 8,
+  "nivel": "Iniciante",
+  "resumo": "Explica como avaliar agentes: métricas, rastros de execução, tipos de avaliadores e a diferença entre pass@k e pass^k para medir confiabilidade. Para quem começa a testar agentes.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=GQLl7Y05i2E",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-15",
+  "verificado_em": "2026-11-15"
+}

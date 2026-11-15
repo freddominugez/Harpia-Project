@@ -1,0 +1,16 @@
+{
+  "id": "-rQT4AaZXKI",
+  "titulo": "The KV Cache: Why LLMs Store Keys and Values | The attention family series - Lecture 11",
+  "canal": "Vizuara",
+  "modulo": 10,
+  "nivel": "Intermediário",
+  "resumo": "Explica por que chaves e valores de tokens anteriores não mudam, como o cache KV evita recomputá-los e quanto ele ocupa de memória de GPU num modelo real. Para quem já conhece a atenção.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=-rQT4AaZXKI",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-15",
+  "verificado_em": "2026-11-15"
+}

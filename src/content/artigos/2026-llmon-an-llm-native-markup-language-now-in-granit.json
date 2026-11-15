@@ -1,0 +1,15 @@
+{
+  "ano": 2026,
+  "titulo": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+  "autores": "Daniels, Shbita, DeLuca, Gutfreund, Hind, A · Hugging Face",
+  "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+  "grupo": "fund",
+  "selo": "medido",
+  "rotulo": "tokens especiais e estrutura do contexto · módulo 1",
+  "ordem": 999,
+  "fonte_url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-15",
+  "verificado_em": "2026-11-15"
+}
