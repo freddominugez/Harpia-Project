@@ -1,0 +1,38 @@
+{
+  "titulo": "llama.cpp chega à versão 1.0 depois de três anos e meio e promete avisar quando uma mudança quebrar programas",
+  "resumo": "O motor aberto que roda modelos de linguagem em computadores comuns adotou versionamento semântico e removeu funções antigas da sua API em C.",
+  "data": "2026-11-13",
+  "categoria": "abertos",
+  "icone": "codigo",
+  "corpo": [
+    "O llama.cpp, programa aberto em C e C++ que permite rodar modelos de linguagem em computadores pessoais e celulares, lançou em 13 de novembro a versão 1.0.0. A biblioteca ggml, que faz os cálculos por baixo dele, chegou à 1.0.0 no mesmo dia. O projeto é mantido pela organização ggml-org, cuja equipe trabalha hoje na Hugging Face, e usa licença MIT.",
+    "A mudança principal é de regra, não de recurso. A partir de agora os dois projetos seguem versionamento semântico: mudança que quebre a interface pública em C ou a compatibilidade binária sobe o primeiro número da versão; recursos novos, suporte a modelos e atualizações de hardware sobem o segundo; correções sobem o terceiro. Segundo o anúncio, citado pelo boletim Superpower Daily, incompatibilidades passarão a ser marcadas \"with major-version bumps\".",
+    "A versão também remove da API pública funções que já estavam marcadas como obsoletas, entre elas llama_set_warmup. Programas que ainda chamam essas funções deixam de compilar com a 1.0.0. Os relatos sobre a quantidade exata de funções removidas variam entre 35 e 36, conforme o veículo.",
+    "Entre as novidades listadas nas notas da versão, segundo os veículos consultados, estão um cache de memória em FP8, que reduz o espaço ocupado durante a geração de texto, e um endereço no servidor compatível com a API de fala da OpenAI. O servidor recebeu ainda correções de segurança contra ataques do tipo SSRF e DNS rebinding.",
+    "O projeto diz suportar mais de 150 variantes de arquitetura de modelos e roda em placas e processadores de NVIDIA, AMD, Intel, Qualcomm, Arm e IBM. É distribuído por canais como Docker, Debian, Homebrew e Winget.",
+    "Para quem só usa aplicativos montados sobre o llama.cpp, nada muda de imediato. A promessa é indireta: as ferramentas que dependem dele devem quebrar menos a cada atualização."
+  ],
+  "harpia": "Boa parte das ferramentas para rodar IA em casa, como as que o Harpya recomenda para quem quer testar modelos sem depender de serviço pago, usa o llama.cpp por baixo. Uma regra clara de versões torna esse caminho mais previsível para escolas e bibliotecas que montam seus próprios computadores de teste.",
+  "fontes": [
+    {
+      "veiculo": "Superpower Daily",
+      "titulo": "Hugging Face releases llama.cpp 1.0 with clearer rules for breaking changes",
+      "url": "https://superpowerdaily.com/posts/hugging-face-releases-llama-cpp-1-0-with-clearer-rules-for-breaking-changes"
+    },
+    {
+      "veiculo": "AI TL;DR",
+      "titulo": "llama.cpp v1.0.0, first stable release, with semantic versioning",
+      "url": "https://ai-tldr.dev/releases/llama-cpp-v1-0-0/"
+    },
+    {
+      "veiculo": "tbreak",
+      "titulo": "llama.cpp 1.0 reaches stable release for local AI",
+      "url": "https://tbreak.com/llama-cpp-1-0-stable-release/"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-15",
+  "verificado_em": "2026-11-15",
+  "ordem": 999
+}

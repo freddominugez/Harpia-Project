@@ -1,0 +1,32 @@
+{
+  "titulo": "NVIDIA, AMD, Intel, Google e Meta entram em consórcio para desenvolver o SGLang, motor aberto que serve modelos de IA",
+  "resumo": "A LMSYS criou um consórcio de oito empresas para orientar o SGLang, mas os mantenedores continuam decidindo o que entra no código. Não há metas de desempenho anunciadas.",
+  "data": "2026-11-12",
+  "categoria": "abertos",
+  "icone": "chip",
+  "corpo": [
+    "A LMSYS Org, organização sem fins lucrativos que mantém o SGLang, anunciou em 12 de novembro a criação do SGLang Consortium. O anúncio foi feito no primeiro SGLang Summit, em San Francisco. O SGLang é um programa aberto, sob licença Apache 2.0, usado para servir modelos de linguagem, de visão e de difusão, ou seja, para responder a pedidos de muitos usuários ao mesmo tempo depois que o modelo já foi treinado.",
+    "Os oito membros fundadores são NVIDIA, AMD, Intel, Google, Meta, Cloudflare, Modal e RadixArk. Cada um indica um representante técnico, e o grupo faz duas reuniões de planejamento por ano. Grupos de trabalho podem colaborar entre essas reuniões e devem publicar atualizações.",
+    "Segundo a descrição da governança, os mantenedores do projeto continuam responsáveis pelas decisões técnicas e pela aceitação de código. As empresas contribuem com engenharia, testes, recursos e relatos de uso em produção.",
+    "As prioridades anunciadas são suporte a modelos de fronteira, cargas de raciocínio e multimodais, inferência distribuída entre várias máquinas e otimização para diferentes tipos de hardware. Hoje o SGLang roda em placas da NVIDIA e da AMD, nos chips TPU do Google e em processadores e placas da Intel, com parte dessas integrações ainda em andamento.",
+    "A LMSYS afirma que o SGLang roda em centenas de milhares de placas de vídeo, número que não foi verificado de forma independente. O anúncio cria uma estrutura de colaboração, mas não traz prazos, metas nem medições de ganho de desempenho."
+  ],
+  "harpia": "Quando fabricantes rivais de chips passam a investir no mesmo software aberto, cresce a chance de que modelos abertos rodem bem em hardware variado, e não só no de um fornecedor. Isso interessa ao Harpya, que acompanha quem controla a infraestrutura por trás da IA aberta.",
+  "fontes": [
+    {
+      "veiculo": "CASRAI",
+      "titulo": "SGLang Consortium: founders and governance",
+      "url": "https://casrai.org/news/lmsys-sglang-consortium-open-inference-2026"
+    },
+    {
+      "veiculo": "XenoSpectrum",
+      "titulo": "SGLang Consortium Launches With NVIDIA, AMD, Intel, Google and Four Other Members",
+      "url": "https://xenospectrum.com/en/sglang-consortium-inference-development/"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-15",
+  "verificado_em": "2026-11-15",
+  "ordem": 999
+}

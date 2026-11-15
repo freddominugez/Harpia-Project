@@ -1,0 +1,27 @@
+{
+  "titulo": "UNESCO lança guia para professores ensinarem a avaliar informação que chega por respostas de IA",
+  "resumo": "O guia AI Answers. You Decide. complementa o currículo de alfabetização midiática da UNESCO e organiza o tema em cinco áreas, do uso cotidiano aos direitos humanos.",
+  "data": "2026-11-10",
+  "categoria": "letramento",
+  "icone": "leitura",
+  "corpo": [
+    "A UNESCO publicou em 10 de novembro o guia AI Answers. You Decide., voltado a ensinar alfabetização midiática e informacional num ambiente em que boa parte da informação chega mediada por sistemas de IA. O material foi apresentado durante a Semana Global de Alfabetização Midiática e Informacional, que aconteceu de 24 a 31 de outubro.",
+    "O público são educadores, instituições de formação de professores e quem desenha currículos. O guia complementa o currículo da UNESCO lançado em 2021, Think Critically, Click Wisely!, que segundo a organização foi adaptado e testado em mais de 40 países.",
+    "O conteúdo é dividido em cinco áreas: a IA no cotidiano e o papel dos dados pessoais; a IA na mídia e no jornalismo; a relação entre IA, pensamento crítico e avaliação de conteúdo gerado por máquina; IA, poder e direitos humanos, incluindo viés e desigualdade; e a participação das pessoas na construção do futuro da tecnologia.",
+    "Em vez de módulos fechados, o guia traz explicações, perguntas para debate, atividades práticas e exemplos que podem ser adaptados a cada contexto. A autora é Anne Leppäjärvi; o texto teve contribuição de oito especialistas internacionais e revisão de outros dez.",
+    "Por enquanto, a página da UNESCO informa apenas a versão em inglês. Não há menção a tradução para o português."
+  ],
+  "harpia": "O guia trata a IA como fonte de informação a ser avaliada, não só como ferramenta, que é o mesmo ponto de partida do letramento que o Harpya defende. É um material aberto que professores brasileiros podem adaptar, mesmo antes de uma tradução.",
+  "fontes": [
+    {
+      "veiculo": "UNESCO",
+      "titulo": "AI Answers. You Decide: UNESCO launches a new Media and Information Literacy curriculum",
+      "url": "https://www.unesco.org/en/articles/ai-answers-you-decide-unesco-launches-new-media-and-information-literacy-curriculum"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-15",
+  "verificado_em": "2026-11-15",
+  "ordem": 999
+}

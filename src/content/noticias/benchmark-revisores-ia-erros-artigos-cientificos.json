@@ -1,0 +1,33 @@
+{
+  "titulo": "Teste com erros plantados em artigos científicos mostra que o prompt pesa tanto quanto o modelo na revisão feita por IA",
+  "resumo": "Pesquisadores inseriram erros em preprints de astrofísica e mediram 12 revisores automáticos. A diferença entre modelos de ponta chegou a 48,6 pontos com o mesmo pedido.",
+  "data": "2026-11-12",
+  "categoria": "pesquisa",
+  "icone": "lupa",
+  "corpo": [
+    "Um grupo de pesquisadores formado por Íñigo Zubeldia, Boris Bolliet, Francisco Villaescusa, Pablo Villanueva-Domingo e Miles Cranmer publicou um teste para medir quão bem sistemas de IA encontram erros em artigos científicos e quantas vezes acusam erros que não existem. O trabalho foi aceito como pôster no NeurIPS 2026 e, segundo o site CASRAI, a versão em preprint saiu no arXiv em 12 de novembro.",
+    "No resumo apresentado ao NeurIPS, os autores pegaram 15 preprints de astrofísica e inseriram neles 177 erros de tipos diferentes: lógica, matemática, cálculos numéricos e citações. Doze revisores automáticos foram avaliados, entre modelos de três empresas usados sozinhos, duas configurações do Claude Code e três revisores externos já publicados. Segundo o CASRAI, a versão no arXiv amplia o corpus para 30 artigos, incluindo aprendizado de máquina.",
+    "O resultado que mais chama atenção é o peso do pedido. Com o mesmo prompt em texto livre, três modelos de fronteira tiveram taxas de detecção que diferiram em 48,6 pontos percentuais. Um prompt estruturado, com as categorias de erro descritas, reduziu essa distância pela metade. No Claude Code, só a troca de prompt aumentou a detecção em 32,2 pontos.",
+    "O sistema com maior taxa geral foi o skepthical, criado pelos próprios autores, com 70,6% dos erros encontrados. Ele lê os artigos citados, confere matemática com álgebra computacional e checa números com código. Em erros numéricos, porém, o Claude Code com prompt estruturado foi melhor, com 91,1%. Erros de citação continuaram difíceis: o melhor resultado foi 46,7%.",
+    "Nos falsos alarmes, o Claude Opus 4.7 com texto livre teve a menor taxa, 1,0%, e o skepthical ficou em 2,8%. Segundo o resumo do CASRAI, dois revisores externos encontraram menos de 3% dos erros.",
+    "Há limites registrados: os erros foram plantados de propósito, o que pode não refletir as falhas de artigos reais; o corpus é pequeno; e o sistema que ficou em primeiro foi feito pelos mesmos autores do teste. O benchmark mede erros verificáveis e não avalia julgamentos como originalidade ou importância de um trabalho."
+  ],
+  "harpia": "O estudo mostra, com números, que o resultado de uma IA depende muito de como se pede, e que a mesma ferramenta pode acertar ou falhar conforme o prompt. É um exemplo concreto para discutir em formação de pesquisadores e professores.",
+  "fontes": [
+    {
+      "veiculo": "NeurIPS 2026",
+      "titulo": "Auditing AI peer reviewers: a dose-response and false-positive benchmark on real scientific papers",
+      "url": "https://neurips.cc/virtual/2026/poster/152885"
+    },
+    {
+      "veiculo": "CASRAI",
+      "titulo": "Auditing AI Peer Reviewers: 2026 Error Benchmark",
+      "url": "https://casrai.org/news/auditing-ai-peer-reviewers-error-injection-benchmark-2026"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-15",
+  "verificado_em": "2026-11-15",
+  "ordem": 999
+}
