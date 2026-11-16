@@ -1,5 +1,124 @@
 [
  {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Towards High-Performance Multimodal Discovery: Evaluating Retrieval Efficacy and Operational Scalability in Digital Libraries",
+  "url": "https://arxiv.org/abs/2611.17726",
+  "data": "16/11/2026",
+  "ts": 1794805200
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Explanations that Transfer: Interpreting Medical Retrieval with Sparse AutoEncoders",
+  "url": "https://arxiv.org/abs/2611.18179",
+  "data": "16/11/2026",
+  "ts": 1794805200
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "StreamEmbed: Real-Time Indexing from Pixels for Screenshot Retrieval",
+  "url": "https://arxiv.org/abs/2611.18516",
+  "data": "16/11/2026",
+  "ts": 1794805200
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Federated Vector Retrieval across Heterogeneous VectorDBs",
+  "url": "https://arxiv.org/abs/2611.01514",
+  "data": "16/11/2026",
+  "ts": 1794805200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Emulating physics-based XCO2 retrievals across OCO-2 viewing modes with compact neural networks",
+  "url": "https://arxiv.org/abs/2611.18333",
+  "data": "16/11/2026",
+  "ts": 1794805200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Asymptotic Margins and Feature Confinement in Conic Classification Heads under Softmax Cross-Entropy",
+  "url": "https://arxiv.org/abs/2611.18507",
+  "data": "16/11/2026",
+  "ts": 1794805200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "User-Schedulable Approximations for Quantized Tensor Programs",
+  "url": "https://arxiv.org/abs/2611.17526",
+  "data": "16/11/2026",
+  "ts": 1794805200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Choosing Quantized Code LLMs by File Size and Energy per Solved Task",
+  "url": "https://arxiv.org/abs/2611.17605",
+  "data": "16/11/2026",
+  "ts": 1794805200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Provable Cross-Modal Transfer of Hierarchical Concept Structure in CLIP Embeddings",
+  "url": "https://arxiv.org/abs/2611.17671",
+  "data": "16/11/2026",
+  "ts": 1794805200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Retrieval of Coastal Biogeochemical Parameters From Near-Surface Hyperspectral Remote Sensing Reflectance Using Physics-Aware Meta-Learning",
+  "url": "https://arxiv.org/abs/2605.05623",
+  "data": "16/11/2026",
+  "ts": 1794805200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Beyond Embedding Transfer: Architectural Interfaces, Iso-Parameter Scaling, and Preconditioner-Governed Consolidation in Grokking",
+  "url": "https://arxiv.org/abs/2609.18078",
+  "data": "16/11/2026",
+  "ts": 1794805200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Nearly Optimal Fixed-Confidence Best-Arm Identification with 1-Bit Feedback",
+  "url": "https://arxiv.org/abs/2610.02771",
+  "data": "16/11/2026",
+  "ts": 1794805200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "SA-RAG: Structuring Noisy Conversations for Retrieval-Augmented Generation",
+  "url": "https://arxiv.org/abs/2605.24366",
+  "data": "16/11/2026",
+  "ts": 1794805200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Learning to Read Out: Unembedding Dynamics in Language Model Pretraining",
+  "url": "https://arxiv.org/abs/2610.21025",
+  "data": "16/11/2026",
+  "ts": 1794805200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "on\\'ona: Twin Embeddings with Tied Unembeddings",
+  "url": "https://arxiv.org/abs/2611.10556",
+  "data": "16/11/2026",
+  "ts": 1794805200
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "SpecHop: Continuous Speculation for Accelerating Multi-Hop Retrieval Agents",
+  "url": "https://arxiv.org/abs/2605.21965",
+  "data": "16/11/2026",
+  "ts": 1794805200
+ },
+ {
+  "fonte": "OpenAI",
+  "titulo": "A step toward defining the Standard Model on a lattice",
+  "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+  "data": "15/11/2026",
+  "ts": 1794780001
+ },
+ {
   "fonte": "Hugging Face",
   "titulo": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
   "url": "https://huggingface.co/blog/token-pooling",
