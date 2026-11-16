@@ -1,0 +1,16 @@
+{
+  "id": "LElQ0yhTGL8",
+  "titulo": "Can we just switch AI off? | AI alignment",
+  "canal": "Julia Turc",
+  "modulo": 7,
+  "nivel": "Intermediário",
+  "resumo": "Apresenta o jogo do desligamento de Stuart Russell e discute por que RLHF e DPO não bastam para que um modelo aceite ser desligado. Para quem estuda alinhamento.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=LElQ0yhTGL8",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-16",
+  "verificado_em": "2026-11-16"
+}

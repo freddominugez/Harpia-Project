@@ -1,0 +1,16 @@
+{
+  "id": "4XqexiQSx_Y",
+  "titulo": "Reinforcement Learning with GRPO, Clearly Explained!!!",
+  "canal": "StatQuest with Josh Starmer",
+  "modulo": 7,
+  "nivel": "Intermediário",
+  "resumo": "Explica passo a passo o GRPO, aprendizado por reforço que compara respostas de um mesmo grupo para ajustar o modelo sem um crítico separado. Para quem conhece o básico de RLHF.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=4XqexiQSx_Y",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-16",
+  "verificado_em": "2026-11-16"
+}

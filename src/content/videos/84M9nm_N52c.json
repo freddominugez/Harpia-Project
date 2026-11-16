@@ -1,0 +1,16 @@
+{
+  "id": "84M9nm_N52c",
+  "titulo": "NVIDIA: New AI Technology",
+  "canal": "Discover AI",
+  "modulo": 10,
+  "nivel": "Avançado",
+  "resumo": "Comenta um trabalho da NVIDIA sobre destilação de modelos de raciocínio: quanto da incerteza do professor sobre as próximas palavras um modelo menor precisa aprender.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=84M9nm_N52c",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-16",
+  "verificado_em": "2026-11-16"
+}

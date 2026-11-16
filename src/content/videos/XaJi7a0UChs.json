@@ -1,0 +1,16 @@
+{
+  "id": "XaJi7a0UChs",
+  "titulo": "Recursive Harness: Self-Improving Agents Without Training",
+  "canal": "Prompt Engineering",
+  "modulo": 8,
+  "nivel": "Intermediário",
+  "resumo": "Mostra como montar um harness de agente que parte de três ferramentas (shell, leitura e escrita) e cria as próprias ferramentas, ganchos e memória. Para quem desenvolve agentes.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=XaJi7a0UChs",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-16",
+  "verificado_em": "2026-11-16"
+}
