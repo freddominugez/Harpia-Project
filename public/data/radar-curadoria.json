@@ -1,8 +1,8 @@
 {
-  "item_id": "https://www.anthropic.com/research/building-strong-safety-evaluations",
-  "titulo_pt": "Anthropic propõe padrão mais rigoroso para avaliações de segurança de IA",
-  "resumo_pt": "A Anthropic publicou recomendações para projetar, executar e relatar avaliações de segurança de IA, com ênfase em validade do construto, pré-registro, estatísticas completas e testes em ambiente isolado. As orientações e os incidentes citados são relatos da própria empresa, não uma validação independente.",
-  "por_que_importa": "O guia tenta elevar a qualidade e a auditabilidade de testes usados para decidir limites de implantação. Se adotado amplamente, pode reduzir avaliações frágeis, embora as recomendações ainda precisem de escrutínio independente.",
-  "source_url": "https://www.anthropic.com/research/building-strong-safety-evaluations",
-  "updated_at": "2026-11-14T03:44:44.037Z"
+  "item_id": "https://openai.com/index/step-toward-defining-the-standard-model/",
+  "titulo_pt": "OpenAI relata avanço com GPT-6 Astra na definição do Modelo Padrão em uma rede",
+  "resumo_pt": "Em artigo assinado pelo físico Nathaniel Craig, a OpenAI descreve uma construção candidata para definir o Modelo Padrão de modo não perturbativo em uma rede, desenvolvida com apoio do GPT‑6 Astra. O próprio texto ressalta que o resultado precisa de debate e verificação por especialistas; não é validação independente.",
+  "por_que_importa": "O trabalho mostra IA participando de uma prova teórica de alta complexidade, mas ainda como resultado candidato. Seu peso dependerá da revisão da comunidade e de demonstrar propriedades matemáticas adicionais.",
+  "source_url": "https://openai.com/index/step-toward-defining-the-standard-model/",
+  "updated_at": "2026-11-16T03:39:11.983Z"
 }

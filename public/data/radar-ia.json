@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-15T21:37:42.365Z",
+  "checked_at": "2026-11-16T03:39:11.983Z",
   "last_successful_at": "2026-11-08T09:38:37.881Z",
   "publication_policy": "official_sources_automatic",
-  "featured_id": "https://www.anthropic.com/research/building-strong-safety-evaluations",
+  "featured_id": "https://openai.com/index/step-toward-defining-the-standard-model/",
   "sources": [
     {
       "id": "openai",
       "nome": "OpenAI",
       "site": "https://openai.com/news/",
       "canal": "https://openai.com/news/rss.xml",
-      "checked_at": "2026-11-15T21:37:42.365Z",
+      "checked_at": "2026-11-16T03:39:11.983Z",
       "status": "ok",
-      "item_count": 129
+      "item_count": 131
     },
     {
       "id": "anthropic",
       "nome": "Anthropic",
       "site": "https://www.anthropic.com/news",
       "canal": "https://www.anthropic.com/news",
-      "checked_at": "2026-11-15T21:37:42.365Z",
+      "checked_at": "2026-11-16T03:39:11.983Z",
       "status": "ok",
       "item_count": 27
     },
@@ -28,7 +28,7 @@
       "nome": "Google DeepMind",
       "site": "https://deepmind.google/blog/",
       "canal": "https://deepmind.google/blog/rss.xml",
-      "checked_at": "2026-11-15T21:37:42.365Z",
+      "checked_at": "2026-11-16T03:39:11.983Z",
       "status": "ok",
       "item_count": 22
     },
@@ -37,7 +37,7 @@
       "nome": "Mistral AI",
       "site": "https://mistral.ai/news/",
       "canal": "https://mistral.ai/news/rss",
-      "checked_at": "2026-11-15T21:37:42.365Z",
+      "checked_at": "2026-11-16T03:39:11.983Z",
       "status": "ok",
       "item_count": 7
     },
@@ -46,7 +46,7 @@
       "nome": "Meta AI",
       "site": "https://ai.meta.com/blog/",
       "canal": "https://about.fb.com/news/feed/",
-      "checked_at": "2026-11-15T21:37:42.365Z",
+      "checked_at": "2026-11-16T03:39:11.983Z",
       "status": "ok",
       "item_count": 8
     },
@@ -55,16 +55,16 @@
       "nome": "NVIDIA",
       "site": "https://blogs.nvidia.com/",
       "canal": "https://blogs.nvidia.com/blog/category/deep-learning/feed/",
-      "checked_at": "2026-11-15T21:37:42.365Z",
+      "checked_at": "2026-11-16T03:39:11.983Z",
       "status": "ok",
-      "item_count": 13
+      "item_count": 14
     },
     {
       "id": "xai",
       "nome": "xAI / Grok",
       "site": "https://x.ai/news",
       "canal": "https://x.ai/news",
-      "checked_at": "2026-11-15T21:37:42.365Z",
+      "checked_at": "2026-11-16T03:39:11.983Z",
       "status": "ok",
       "item_count": 6
     },
@@ -73,7 +73,7 @@
       "nome": "DeepSeek",
       "site": "https://api-docs.deepseek.com/updates/",
       "canal": "https://api-docs.deepseek.com/updates/",
-      "checked_at": "2026-11-15T21:37:42.365Z",
+      "checked_at": "2026-11-16T03:39:11.983Z",
       "status": "ok",
       "item_count": 2
     },
@@ -82,7 +82,7 @@
       "nome": "Qwen / Alibaba",
       "site": "https://qwen.ai/blog",
       "canal": "https://qwenlm.github.io/blog/index.xml",
-      "checked_at": "2026-11-15T21:37:42.365Z",
+      "checked_at": "2026-11-16T03:39:11.983Z",
       "status": "error",
       "item_count": 0
     },
@@ -91,12 +91,57 @@
       "nome": "Moonshot / Kimi",
       "site": "https://www.kimi.com/en/blog/",
       "canal": "https://www.kimi.com/en/blog/",
-      "checked_at": "2026-11-15T21:37:42.365Z",
+      "checked_at": "2026-11-16T03:39:11.983Z",
       "status": "ok",
       "item_count": 1
     }
   ],
   "items": [
+    {
+      "id": "https://openai.com/index/step-toward-defining-the-standard-model/",
+      "source_id": "openai",
+      "company": "OpenAI",
+      "title": "A step toward defining the Standard Model on a lattice",
+      "summary": "OpenAI published physicist Nathaniel Craig’s account of a candidate lattice definition of the Standard Model developed with GPT‑6 Astra. The article says expert scrutiny and further mathematical work are still needed.",
+      "url": "https://openai.com/index/step-toward-defining-the-standard-model/",
+      "published_at": "2026-11-15T00:00:00+00:00",
+      "verified_at": "2026-11-16T03:39:11.983Z",
+      "impact_score": 85,
+      "topics": [
+        "Pesquisa",
+        "Modelos"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/our-new-blog-for-science/",
+      "source_id": "openai",
+      "company": "OpenAI",
+      "title": "Our new blog for science",
+      "summary": "OpenAI launched a science blog for research results, methods and accounts from scientists using AI. Its stated goal and examples are company-reported; future posts will need independent scrutiny where relevant.",
+      "url": "https://openai.com/index/our-new-blog-for-science/",
+      "published_at": "2026-11-15T00:00:00+00:00",
+      "verified_at": "2026-11-16T03:39:11.983Z",
+      "impact_score": 35,
+      "topics": [
+        "Pesquisa",
+        "Disponibilidade"
+      ]
+    },
+    {
+      "id": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/",
+      "source_id": "nvidia",
+      "company": "NVIDIA",
+      "title": "AI Day Seoul Brings Together Korea’s Industry Leaders, Startups and Developer Communities",
+      "summary": "NVIDIA reported on AI Day Seoul, including agentic AI, robotics, developer training and startup showcases. Attendance, ecosystem activity and examples are company-reported rather than independently evaluated.",
+      "url": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/",
+      "published_at": "2026-11-15T00:00:00+00:00",
+      "verified_at": "2026-11-16T03:39:11.983Z",
+      "impact_score": 25,
+      "topics": [
+        "Disponibilidade",
+        "APIs e ferramentas"
+      ]
+    },
     {
       "id": "https://openai.com/index/introducing-chatgpt-wallet/",
       "source_id": "openai",
@@ -500,21 +545,6 @@
       ]
     },
     {
-      "id": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/",
-      "source_id": "openai",
-      "company": "OpenAI",
-      "title": "Measuring how AI agents handle everyday wet-lab science",
-      "summary": "OpenAI introduced BioBasicsBench, a 100-task benchmark for interpreting raw wet-lab evidence. Scores and model comparisons are company-reported; the article also documents remaining errors and limitations.",
-      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/",
-      "published_at": "2026-11-06T00:00:00+00:00",
-      "verified_at": "2026-11-07T03:38:57.988Z",
-      "impact_score": 45,
-      "topics": [
-        "Pesquisa",
-        "Modelos"
-      ]
-    },
-    {
       "id": "https://www.anthropic.com/research/components-of-agent-memory",
       "source_id": "anthropic",
       "company": "Anthropic",
@@ -530,17 +560,16 @@
       ]
     },
     {
-      "id": "https://openai.com/index/partnering-with-hacktron/",
-      "source_id": "openai",
-      "company": "OpenAI",
-      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
-      "summary": "OpenAI announced a partnership with Hacktron to test high-priority areas of its systems, especially third-party service integrations, using expanded Daybreak Red access. Scope and expected benefits are company-reported.",
-      "url": "https://openai.com/index/partnering-with-hacktron/",
+      "id": "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models",
+      "source_id": "anthropic",
+      "company": "Anthropic",
+      "title": "Teaching AI to build scientific models",
+      "summary": "Anthropic published a guest article on using AI to build, constrain and interpret scientific models, emphasizing that fitting data is not sufficient for scientific understanding. Examples reflect the authors’ analysis.",
+      "url": "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models",
       "published_at": "2026-11-06T00:00:00+00:00",
-      "verified_at": "2026-11-06T21:35:11.585Z",
+      "verified_at": "2026-11-07T03:38:57.988Z",
       "impact_score": 35,
       "topics": [
-        "Segurança",
         "Pesquisa"
       ]
     },
@@ -558,20 +587,6 @@
         "Pesquisa",
         "Código aberto",
         "APIs e ferramentas"
-      ]
-    },
-    {
-      "id": "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models",
-      "source_id": "anthropic",
-      "company": "Anthropic",
-      "title": "Teaching AI to build scientific models",
-      "summary": "Anthropic published a guest article on using AI to build, constrain and interpret scientific models, emphasizing that fitting data is not sufficient for scientific understanding. Examples reflect the authors’ analysis.",
-      "url": "https://www.anthropic.com/research/teaching-ai-to-build-scientific-models",
-      "published_at": "2026-11-06T00:00:00+00:00",
-      "verified_at": "2026-11-07T03:38:57.988Z",
-      "impact_score": 35,
-      "topics": [
-        "Pesquisa"
       ]
     },
     {
@@ -629,21 +644,6 @@
       "impact_score": 40,
       "topics": [
         "APIs e ferramentas"
-      ]
-    },
-    {
-      "id": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
-      "source_id": "nvidia",
-      "company": "NVIDIA",
-      "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
-      "summary": "NVIDIA described developers using frontier AI agents with Omniverse libraries to build and test editable 3D assets, robotic disassembly and simulation workflows. Examples and outcomes are company-reported.",
-      "url": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
-      "published_at": "2026-11-05T00:00:00+00:00",
-      "verified_at": "2026-11-06T09:42:40.694Z",
-      "impact_score": 35,
-      "topics": [
-        "APIs e ferramentas",
-        "Pesquisa"
       ]
     },
     {
