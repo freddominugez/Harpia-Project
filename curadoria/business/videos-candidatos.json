@@ -1,6 +1,6 @@
 {
   "ambiente": "business",
-  "atualizado_em": "2026-11-16T20:40:42.829335+00:00",
+  "atualizado_em": "2026-11-16T21:56:51.925770+00:00",
   "politica": "candidatos_sem_publicacao_automatica",
   "fontes": [
     {
@@ -9,7 +9,7 @@
       "status": "ok",
       "itens": 0,
       "mensagem": "",
-      "verificado_em": "2026-11-16T20:40:42.829335+00:00"
+      "verificado_em": "2026-11-16T21:56:51.925770+00:00"
     },
     {
       "id": "UC8DhN1cJi0QklBQot5hv_kg",
@@ -17,15 +17,15 @@
       "status": "ok",
       "itens": 0,
       "mensagem": "",
-      "verificado_em": "2026-11-16T20:40:42.829335+00:00"
+      "verificado_em": "2026-11-16T21:56:51.925770+00:00"
     },
     {
       "id": "UCWo4IA01TXzBeGJJKWHOG9g",
       "fonte": "hbr",
       "status": "ok",
-      "itens": 3,
+      "itens": 2,
       "mensagem": "",
-      "verificado_em": "2026-11-16T20:40:42.829335+00:00"
+      "verificado_em": "2026-11-16T21:56:51.925770+00:00"
     },
     {
       "id": "UCk8n46m74K5XWfdeBzOXDfA",
@@ -33,7 +33,7 @@
       "status": "ok",
       "itens": 0,
       "mensagem": "",
-      "verificado_em": "2026-11-16T20:40:42.829335+00:00"
+      "verificado_em": "2026-11-16T21:56:51.925770+00:00"
     },
     {
       "id": "UC9aeQQ-NqjHS3nfiod2PMSA",
@@ -41,7 +41,7 @@
       "status": "ok",
       "itens": 3,
       "mensagem": "",
-      "verificado_em": "2026-11-16T20:40:42.829335+00:00"
+      "verificado_em": "2026-11-16T21:56:51.925770+00:00"
     },
     {
       "id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
@@ -49,7 +49,7 @@
       "status": "ok",
       "itens": 2,
       "mensagem": "",
-      "verificado_em": "2026-11-16T20:40:42.829335+00:00"
+      "verificado_em": "2026-11-16T21:56:51.925770+00:00"
     },
     {
       "id": "UC0wOrSaO_sBGGU9Jderpk7g",
@@ -57,7 +57,7 @@
       "status": "ok",
       "itens": 0,
       "mensagem": "",
-      "verificado_em": "2026-11-16T20:40:42.829335+00:00"
+      "verificado_em": "2026-11-16T21:56:51.925770+00:00"
     },
     {
       "id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
@@ -65,7 +65,7 @@
       "status": "ok",
       "itens": 1,
       "mensagem": "",
-      "verificado_em": "2026-11-16T20:40:42.829335+00:00"
+      "verificado_em": "2026-11-16T21:56:51.925770+00:00"
     }
   ],
   "itens": [
@@ -154,21 +154,6 @@
       "video_id": "bcPJfRL94Qw",
       "channel_id": "UCWo4IA01TXzBeGJJKWHOG9g",
       "data": "2026-10-21",
-      "verificado_em": "2026-11-16",
-      "status": "candidato",
-      "revisao_editorial": false,
-      "revisao_integral": false
-    },
-    {
-      "id": "30f8d399567f38225375",
-      "ambiente": "business",
-      "tipo": "video",
-      "titulo": "How AI Is Changing Strategy—and 4 Skills Leaders Need Next",
-      "url": "https://www.youtube.com/watch?v=9f3qnX6aiIE",
-      "fonte": "hbr",
-      "video_id": "9f3qnX6aiIE",
-      "channel_id": "UCWo4IA01TXzBeGJJKWHOG9g",
-      "data": "2026-10-09",
       "verificado_em": "2026-11-16",
       "status": "candidato",
       "revisao_editorial": false,

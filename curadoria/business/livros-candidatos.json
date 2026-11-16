@@ -1,27 +1,27 @@
 {
   "ambiente": "business",
-  "atualizado_em": "2026-11-09T22:16:01.873984+00:00",
+  "atualizado_em": "2026-11-16T21:56:54.598687+00:00",
   "politica": "descoberta_bibliografica_sem_publicacao_automatica",
   "fontes": [
     {
       "id": "marketing strategy",
       "status": "ok",
-      "verificado_em": "2026-11-09T22:16:01.873984+00:00"
+      "verificado_em": "2026-11-16T21:56:54.598687+00:00"
     },
     {
       "id": "consumer behavior",
       "status": "ok",
-      "verificado_em": "2026-11-09T22:16:01.873984+00:00"
+      "verificado_em": "2026-11-16T21:56:54.598687+00:00"
     },
     {
       "id": "brand management",
       "status": "ok",
-      "verificado_em": "2026-11-09T22:16:01.873984+00:00"
+      "verificado_em": "2026-11-16T21:56:54.598687+00:00"
     },
     {
       "id": "marketing management",
       "status": "ok",
-      "verificado_em": "2026-11-09T22:16:01.873984+00:00"
+      "verificado_em": "2026-11-16T21:56:54.598687+00:00"
     }
   ],
   "itens": [
@@ -56,16 +56,16 @@
       "url": "https://openlibrary.org/works/OL3350195W",
       "ano": 1978,
       "editoras_catalogo": [
-        "Prentice Hall",
-        "Prentice-Hall International",
-        "Prentice-Hall",
-        "Pearson Education",
-        "Pearson Prentice Hall",
-        "Prentice Hall Australia",
-        "Pearson Education, Limited",
         "Prentice Hall College Div",
-        "Pearson Education International",
-        "prentice hall"
+        "Pearson Education, Limited",
+        "Pearson College Div",
+        "Prentice-Hall International",
+        "Prentice Hall Australia",
+        "Prentice Hall",
+        "Pearson",
+        "prentice hall",
+        "Pearson Education",
+        "Pearson Prentice Hall"
       ],
       "confirmacao_editora_pendente": true,
       "revisao_editorial": false,
