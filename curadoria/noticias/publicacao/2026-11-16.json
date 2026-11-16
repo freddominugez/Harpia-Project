@@ -1,0 +1,138 @@
+{
+  "dia": "2026-11-16",
+  "meta": 2,
+  "nota_minima": 60,
+  "publicadas": [
+    {
+      "slug": "mbzuai-pan-2-modelo-de-mundo-pesos-abertos-apache",
+      "titulo": "MBZUAI abre os pesos do PAN 2, modelo de mundo de 29 bilhões de parâmetros, sob licença Apache 2.0",
+      "categoria": "abertos",
+      "nota": 88,
+      "criterios": {
+        "fontes": 30,
+        "atualidade": 12,
+        "substancia": 20,
+        "rigor": 15,
+        "forma": 10,
+        "variedade": 1
+      }
+    },
+    {
+      "slug": "epoch-agentes-ia-tentaram-invadir-site-durante-avaliacao",
+      "titulo": "Epoch AI relata que agentes de IA em teste de outra empresa se passaram por funcionários e tentaram invadir seu site",
+      "categoria": "pesquisa",
+      "nota": 78,
+      "criterios": {
+        "fontes": 15,
+        "atualidade": 16,
+        "substancia": 20,
+        "rigor": 13,
+        "forma": 10,
+        "variedade": 4
+      }
+    }
+  ],
+  "fila": [
+    {
+      "slug": "mgi-autoavaliacao-etica-ia-versao-web-orgaos-sisp",
+      "nota": 77,
+      "apto": true
+    },
+    {
+      "slug": "benchmark-revisores-ia-erros-artigos-cientificos",
+      "nota": 76,
+      "apto": true
+    },
+    {
+      "slug": "vulncheck-mede-falsos-positivos-glasswing-anthropic",
+      "nota": 76,
+      "apto": true
+    },
+    {
+      "slug": "rand-pais-renda-alta-ia-dever-de-casa",
+      "nota": 74,
+      "apto": true
+    },
+    {
+      "slug": "sglang-ganha-consorcio-nvidia-amd-intel-google-meta",
+      "nota": 73,
+      "apto": true
+    },
+    {
+      "slug": "unesco-guia-letramento-midiatico-respostas-de-ia",
+      "nota": 73,
+      "apto": true
+    },
+    {
+      "slug": "stanford-ai100-2026-ia-entra-no-cotidiano",
+      "nota": 72,
+      "apto": true
+    },
+    {
+      "slug": "scale-umsl-curso-gratuito-ia-professores",
+      "nota": 70,
+      "apto": true
+    },
+    {
+      "slug": "openai-quatro-camadas-monitoramento-desalinhamento",
+      "nota": 69,
+      "apto": true
+    },
+    {
+      "slug": "ricursive-ripple-65b-pesos-abertos",
+      "nota": 66,
+      "apto": true
+    },
+    {
+      "slug": "nyc-pilotos-ia-ensino-medio-protestos",
+      "nota": 65,
+      "apto": true
+    },
+    {
+      "slug": "runway-praxis-1-robotica-pesos-abertos-apache",
+      "nota": 64,
+      "apto": true
+    },
+    {
+      "slug": "revisao-interpretabilidade-mecanistica-seguranca",
+      "nota": 64,
+      "apto": true
+    },
+    {
+      "slug": "thinking-machines-inkling-2-small-pesos-prometidos",
+      "nota": 64,
+      "apto": true
+    },
+    {
+      "slug": "edge0-audio8-tts-clonagem-voz-pesos-abertos",
+      "nota": 62,
+      "apto": true
+    },
+    {
+      "slug": "quem-pode-avaliar-ia-independente-africa",
+      "nota": 60,
+      "apto": true
+    },
+    {
+      "slug": "epoch-indice-capacidades-modelo-bayesiano",
+      "nota": 58,
+      "apto": false
+    },
+    {
+      "slug": "malasia-329-mil-professores-formacao-ia",
+      "nota": 58,
+      "apto": false
+    },
+    {
+      "slug": "filipinas-microsoft-2-mil-professores-letramento-ia",
+      "nota": 57,
+      "apto": false
+    },
+    {
+      "slug": "varzea-grande-ia-curriculo-obrigatorio-2027",
+      "nota": 52,
+      "apto": false
+    }
+  ],
+  "faltaram": 0
+}
