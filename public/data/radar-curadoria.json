@@ -1,8 +1,8 @@
 {
-  "item_id": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare/",
-  "titulo_pt": "OpenAI amplia ChatGPT para saúde com agentes de computador e mais de 20 plugins",
-  "resumo_pt": "A OpenAI anunciou agentes de computador para fluxos clínicos e administrativos, melhorias na busca clínica com citações e mais de 20 plugins no ChatGPT for Healthcare. Os recursos estão disponíveis sob controles de acesso, revisão humana e requisitos de conformidade. Resultados de segurança e desempenho citados no anúncio são da própria empresa.",
-  "por_que_importa": "A atualização leva agentes além da consulta para operar sistemas de saúde, um ambiente regulado e de alto risco. O impacto dependerá da supervisão humana, dos controles de acesso e da validação independente.",
-  "source_url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare/",
-  "updated_at": "2026-11-16T15:41:02.165Z"
+  "item_id": "https://openai.com/index/strengthening-online-child-safety/",
+  "titulo_pt": "OpenAI lança classificador para detectar abuso sexual infantil, inclusive material gerado por IA",
+  "resumo_pt": "A OpenAI anunciou um classificador de imagens para detectar material de abuso sexual infantil, inclusive conteúdo gerado por IA, além de intervenções para interromper comportamento nocivo e recursos para desenvolvedores e investigadores. A eficácia e o alcance são afirmações da empresa; decisões continuam dependentes de revisão humana.",
+  "por_que_importa": "É uma aplicação direta de IA na segurança infantil e pode ampliar a triagem de conteúdo ainda desconhecido. O valor real dependerá de validação independente, taxas de erro, governança e revisão humana.",
+  "source_url": "https://openai.com/index/strengthening-online-child-safety/",
+  "updated_at": "2026-11-16T21:43:06.703Z"
 }

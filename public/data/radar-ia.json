@@ -1,34 +1,34 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-16T15:41:02.165Z",
+  "checked_at": "2026-11-16T21:43:06.703Z",
   "last_successful_at": "2026-11-08T09:38:37.881Z",
   "publication_policy": "official_sources_automatic",
-  "featured_id": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare/",
+  "featured_id": "https://openai.com/index/strengthening-online-child-safety/",
   "sources": [
     {
       "id": "openai",
       "nome": "OpenAI",
       "site": "https://openai.com/news/",
       "canal": "https://openai.com/news/rss.xml",
-      "checked_at": "2026-11-16T15:41:02.165Z",
+      "checked_at": "2026-11-16T21:43:06.703Z",
       "status": "ok",
-      "item_count": 135
+      "item_count": 138
     },
     {
       "id": "anthropic",
       "nome": "Anthropic",
       "site": "https://www.anthropic.com/news",
       "canal": "https://www.anthropic.com/news",
-      "checked_at": "2026-11-16T15:41:02.165Z",
+      "checked_at": "2026-11-16T21:43:06.703Z",
       "status": "ok",
-      "item_count": 27
+      "item_count": 28
     },
     {
       "id": "google",
       "nome": "Google DeepMind",
       "site": "https://deepmind.google/blog/",
       "canal": "https://deepmind.google/blog/rss.xml",
-      "checked_at": "2026-11-16T15:41:02.165Z",
+      "checked_at": "2026-11-16T21:43:06.703Z",
       "status": "ok",
       "item_count": 22
     },
@@ -37,7 +37,7 @@
       "nome": "Mistral AI",
       "site": "https://mistral.ai/news/",
       "canal": "https://mistral.ai/news/rss",
-      "checked_at": "2026-11-16T15:41:02.165Z",
+      "checked_at": "2026-11-16T21:43:06.703Z",
       "status": "ok",
       "item_count": 7
     },
@@ -46,25 +46,25 @@
       "nome": "Meta AI",
       "site": "https://ai.meta.com/blog/",
       "canal": "https://about.fb.com/news/feed/",
-      "checked_at": "2026-11-16T15:41:02.165Z",
+      "checked_at": "2026-11-16T21:43:06.703Z",
       "status": "ok",
-      "item_count": 8
+      "item_count": 10
     },
     {
       "id": "nvidia",
       "nome": "NVIDIA",
       "site": "https://blogs.nvidia.com/",
       "canal": "https://blogs.nvidia.com/blog/category/deep-learning/feed/",
-      "checked_at": "2026-11-16T15:41:02.165Z",
+      "checked_at": "2026-11-16T21:43:06.703Z",
       "status": "ok",
-      "item_count": 14
+      "item_count": 17
     },
     {
       "id": "xai",
       "nome": "xAI / Grok",
       "site": "https://x.ai/news",
       "canal": "https://x.ai/news",
-      "checked_at": "2026-11-16T15:41:02.165Z",
+      "checked_at": "2026-11-16T21:43:06.703Z",
       "status": "ok",
       "item_count": 6
     },
@@ -73,7 +73,7 @@
       "nome": "DeepSeek",
       "site": "https://api-docs.deepseek.com/updates/",
       "canal": "https://api-docs.deepseek.com/updates/",
-      "checked_at": "2026-11-16T15:41:02.165Z",
+      "checked_at": "2026-11-16T21:43:06.703Z",
       "status": "ok",
       "item_count": 2
     },
@@ -82,7 +82,7 @@
       "nome": "Qwen / Alibaba",
       "site": "https://qwen.ai/blog",
       "canal": "https://qwenlm.github.io/blog/index.xml",
-      "checked_at": "2026-11-16T15:41:02.165Z",
+      "checked_at": "2026-11-16T21:43:06.703Z",
       "status": "error",
       "item_count": 0
     },
@@ -91,12 +91,28 @@
       "nome": "Moonshot / Kimi",
       "site": "https://www.kimi.com/en/blog/",
       "canal": "https://www.kimi.com/en/blog/",
-      "checked_at": "2026-11-16T15:41:02.165Z",
+      "checked_at": "2026-11-16T21:43:06.703Z",
       "status": "ok",
       "item_count": 1
     }
   ],
   "items": [
+    {
+      "id": "https://openai.com/index/strengthening-online-child-safety/",
+      "source_id": "openai",
+      "company": "OpenAI",
+      "title": "Strengthening the fight against online child sexual abuse with new tools and support",
+      "summary": "OpenAI released a classifier for child sexual abuse material, including AI-generated content, plus user interventions and developer resources. Availability and effectiveness claims are company-reported; human review remains required.",
+      "url": "https://openai.com/index/strengthening-online-child-safety/",
+      "published_at": "2026-11-16T00:00:00+00:00",
+      "verified_at": "2026-11-16T21:43:06.703Z",
+      "impact_score": 97,
+      "topics": [
+        "Segurança",
+        "APIs e ferramentas",
+        "Disponibilidade"
+      ]
+    },
     {
       "id": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare/",
       "source_id": "openai",
@@ -133,6 +149,84 @@
       ]
     },
     {
+      "id": "https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines",
+      "source_id": "anthropic",
+      "company": "Anthropic",
+      "title": "Updating our coordinated vulnerability disclosure policy timelines",
+      "summary": "Anthropic shortened its coordinated vulnerability disclosure windows to 30 days for high- and critical-severity issues and 45 days for others, effective Jan. 1, 2027. The policy and rediscovery rationale are company-reported.",
+      "url": "https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines",
+      "published_at": "2026-11-16T00:00:00+00:00",
+      "verified_at": "2026-11-16T21:43:06.703Z",
+      "impact_score": 90,
+      "topics": [
+        "Segurança",
+        "Pesquisa"
+      ]
+    },
+    {
+      "id": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+      "source_id": "nvidia",
+      "company": "NVIDIA",
+      "title": "NVIDIA Sweeps MLPerf Training and Endpoints as Vera Rubin Debuts With Leading Performance",
+      "summary": "NVIDIA reported Vera Rubin results across MLPerf Training and Endpoints, including agentic workloads. Benchmark entries include verified and provisional results; performance comparisons and conclusions are NVIDIA-reported.",
+      "url": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+      "published_at": "2026-11-16T00:00:00+00:00",
+      "verified_at": "2026-11-16T21:43:06.703Z",
+      "impact_score": 85,
+      "topics": [
+        "Infraestrutura de IA",
+        "Avaliações",
+        "Pesquisa"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/expanding-chatgpt-for-academic-researchers/",
+      "source_id": "openai",
+      "company": "OpenAI",
+      "title": "Broadening access to AI for scientists",
+      "summary": "OpenAI expanded ChatGPT for Academic Researchers, targeting up to 200,000 researchers and 50,000 new grants. Participation, usage and productivity figures are company-reported; access details apply to the announced program.",
+      "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers/",
+      "published_at": "2026-11-16T00:00:00+00:00",
+      "verified_at": "2026-11-16T21:43:06.703Z",
+      "impact_score": 80,
+      "topics": [
+        "Pesquisa",
+        "Disponibilidade",
+        "Educação"
+      ]
+    },
+    {
+      "id": "https://openai.com/index/science-at-the-frontier/",
+      "source_id": "openai",
+      "company": "OpenAI",
+      "title": "Science at the frontier",
+      "summary": "OpenAI reported findings from 580,186 scientific messages by 1,819 researchers and a survey of 251 participants. Usage and time-savings estimates come from the company’s study and participant reports, not an independent evaluation.",
+      "url": "https://openai.com/index/science-at-the-frontier/",
+      "published_at": "2026-11-16T00:00:00+00:00",
+      "verified_at": "2026-11-16T21:43:06.703Z",
+      "impact_score": 75,
+      "topics": [
+        "Pesquisa",
+        "Ciência"
+      ]
+    },
+    {
+      "id": "https://blogs.nvidia.com/blog/slurm-quantum-computing-supercomputing/",
+      "source_id": "nvidia",
+      "company": "NVIDIA",
+      "title": "NVIDIA Expands Slurm to Bring Quantum Computing Into Supercomputing",
+      "summary": "NVIDIA described integrations between the community-built Slurm workload manager and its quantum platform for hybrid quantum-supercomputing workflows. Adoption and capability claims are company- and partner-reported.",
+      "url": "https://blogs.nvidia.com/blog/slurm-quantum-computing-supercomputing/",
+      "published_at": "2026-11-16T00:00:00+00:00",
+      "verified_at": "2026-11-16T21:43:06.703Z",
+      "impact_score": 60,
+      "topics": [
+        "APIs e ferramentas",
+        "Pesquisa",
+        "Computação quântica"
+      ]
+    },
+    {
       "id": "https://openai.com/index/lvmh-media-division-partnership/",
       "source_id": "openai",
       "company": "OpenAI",
@@ -165,6 +259,21 @@
       ]
     },
     {
+      "id": "https://blogs.nvidia.com/blog/20-years-cuda/",
+      "source_id": "nvidia",
+      "company": "NVIDIA",
+      "title": "CUDA at 20: How the Platform Transformed Scientific Computing",
+      "summary": "NVIDIA marked CUDA’s 20th anniversary at SC26 and reviewed its role in scientific computing and AI. Developer counts, historical impact and examples are company-reported, with some links to external institutions.",
+      "url": "https://blogs.nvidia.com/blog/20-years-cuda/",
+      "published_at": "2026-11-16T00:00:00+00:00",
+      "verified_at": "2026-11-16T21:43:06.703Z",
+      "impact_score": 35,
+      "topics": [
+        "Infraestrutura de IA",
+        "Pesquisa"
+      ]
+    },
+    {
       "id": "https://openai.com/index/step-toward-defining-the-standard-model/",
       "source_id": "openai",
       "company": "OpenAI",
@@ -177,6 +286,22 @@
       "topics": [
         "Pesquisa",
         "Modelos"
+      ]
+    },
+    {
+      "id": "https://about.fb.com/news/2026/11/94-of-singapore-small-business-owners-surveyed-say-more-ai-guidance-is-needed/",
+      "source_id": "meta",
+      "company": "Meta AI",
+      "title": "94% of Singapore Small Business Owners Surveyed Say More AI Guidance Is Needed",
+      "summary": "Meta reported YouGov survey results and launched training on Business Agent and Dream Render for Singapore small businesses. Survey, productivity and time-savings figures are company-, partner- or participant-reported.",
+      "url": "https://about.fb.com/news/2026/11/94-of-singapore-small-business-owners-surveyed-say-more-ai-guidance-is-needed/",
+      "published_at": "2026-11-15T00:00:00+00:00",
+      "verified_at": "2026-11-16T21:43:06.703Z",
+      "impact_score": 45,
+      "topics": [
+        "Pesquisa",
+        "APIs e ferramentas",
+        "Disponibilidade"
       ]
     },
     {
@@ -337,20 +462,6 @@
       ]
     },
     {
-      "id": "https://openai.com/index/chatgpt-plus-for-veterans/",
-      "source_id": "openai",
-      "company": "OpenAI",
-      "title": "ChatGPT Plus for veterans and servicemembers",
-      "summary": "OpenAI reported that more than 20,000 transitioning servicemembers and veterans claimed a free year of ChatGPT Plus, alongside training programs and upcoming events. Participation and outcome figures are company-reported.",
-      "url": "https://openai.com/index/chatgpt-plus-for-veterans/",
-      "published_at": "2026-11-11T00:00:00+00:00",
-      "verified_at": "2026-11-11T09:39:32.065Z",
-      "impact_score": 20,
-      "topics": [
-        "Disponibilidade"
-      ]
-    },
-    {
       "id": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
       "source_id": "google",
       "company": "Google DeepMind",
@@ -416,35 +527,6 @@
       ]
     },
     {
-      "id": "https://openai.com/index/introducing-businesses-chatgpt/",
-      "source_id": "openai",
-      "company": "OpenAI",
-      "title": "Introducing Businesses in ChatGPT",
-      "summary": "OpenAI launched Businesses in ChatGPT in beta, including Business Hub for verified profiles and insights plus Business Agents for eligible U.S. businesses. Availability, reach and engagement claims are company-reported.",
-      "url": "https://openai.com/index/introducing-businesses-chatgpt/",
-      "published_at": "2026-11-10T00:00:00+00:00",
-      "verified_at": "2026-11-10T21:35:20.312Z",
-      "impact_score": 60,
-      "topics": [
-        "Disponibilidade",
-        "APIs e ferramentas"
-      ]
-    },
-    {
-      "id": "https://openai.com/index/ai-effect-on-freelance-work/",
-      "source_id": "openai",
-      "company": "OpenAI",
-      "title": "Work at the Frontier: AI’s effect on freelance work",
-      "summary": "OpenAI and Upwork analyzed freelance postings and ChatGPT activity, finding shifts in demand, broader task combinations and larger budgets for AI-related projects. Results are company- and partner-reported, not economy-wide causal evidence.",
-      "url": "https://openai.com/index/ai-effect-on-freelance-work/",
-      "published_at": "2026-11-10T00:00:00+00:00",
-      "verified_at": "2026-11-10T15:41:43.778Z",
-      "impact_score": 40,
-      "topics": [
-        "Pesquisa"
-      ]
-    },
-    {
       "id": "https://blogs.nvidia.com/blog/ai-recycling-startups/",
       "source_id": "nvidia",
       "company": "NVIDIA",
@@ -492,6 +574,22 @@
       ]
     },
     {
+      "id": "https://about.fb.com/news/2026/11/expanding-teen-account-protections-to-teens-around-the-world/",
+      "source_id": "meta",
+      "company": "Meta AI",
+      "title": "Expanding Teen Account Protections to Teens Around the World",
+      "summary": "Meta expanded AI age estimation globally for Instagram Teen Accounts and described additional age signals and parent notices. Reach, accuracy and protection benefits are company-reported; implementation varies by market.",
+      "url": "https://about.fb.com/news/2026/11/expanding-teen-account-protections-to-teens-around-the-world/",
+      "published_at": "2026-11-09T00:00:00+00:00",
+      "verified_at": "2026-11-16T21:43:06.703Z",
+      "impact_score": 55,
+      "topics": [
+        "Segurança",
+        "Disponibilidade",
+        "Aplicações de IA"
+      ]
+    },
+    {
       "id": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/",
       "source_id": "nvidia",
       "company": "NVIDIA",
@@ -522,36 +620,6 @@
       ]
     },
     {
-      "id": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/",
-      "source_id": "nvidia",
-      "company": "NVIDIA",
-      "title": "Korea’s AI Ecosystem Advances and Secures Agentic AI With NVIDIA",
-      "summary": "NVIDIA says Hyundai Motor Group and AIM Intelligence are exploring NemoClaw and OpenShell for secure agents, while LG AI Research is opening API access to K-EXAONE-2.5. Availability and security claims are company-reported.",
-      "url": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/",
-      "published_at": "2026-11-08T00:00:00+00:00",
-      "verified_at": "2026-11-09T09:39:49.000Z",
-      "impact_score": 55,
-      "topics": [
-        "Segurança",
-        "APIs e ferramentas"
-      ]
-    },
-    {
-      "id": "https://blogs.nvidia.com/blog/korea-physical-ai-ecosystem/",
-      "source_id": "nvidia",
-      "company": "NVIDIA",
-      "title": "Korea Advances Physical AI Across Industries With NVIDIA",
-      "summary": "NVIDIA detailed collaborations with Samsung, Kakao Mobility and LG Electronics spanning AI-accelerated chip engineering, autonomous-driving development and factory robotics. Performance figures are company-reported.",
-      "url": "https://blogs.nvidia.com/blog/korea-physical-ai-ecosystem/",
-      "published_at": "2026-11-08T00:00:00+00:00",
-      "verified_at": "2026-11-09T09:39:49.000Z",
-      "impact_score": 50,
-      "topics": [
-        "Pesquisa",
-        "APIs e ferramentas"
-      ]
-    },
-    {
       "id": "https://www.anthropic.com/research/components-of-agent-memory",
       "source_id": "anthropic",
       "company": "Anthropic",
@@ -578,22 +646,6 @@
       "impact_score": 35,
       "topics": [
         "Pesquisa"
-      ]
-    },
-    {
-      "id": "https://blogs.nvidia.com/blog/telco-open-source-tools-research-6g-networks/",
-      "source_id": "nvidia",
-      "company": "NVIDIA",
-      "title": "How NVIDIA Open Source Tools Are Helping Researchers Build Next-Generation 6G Networks",
-      "summary": "NVIDIA described open-source 5G/6G tools used to research wireless systems for robotics, signal reception and capacity planning. Adoption, download and performance figures are company- and partner-reported.",
-      "url": "https://blogs.nvidia.com/blog/telco-open-source-tools-research-6g-networks/",
-      "published_at": "2026-11-06T00:00:00+00:00",
-      "verified_at": "2026-11-06T21:35:11.585Z",
-      "impact_score": 35,
-      "topics": [
-        "Pesquisa",
-        "Código aberto",
-        "APIs e ferramentas"
       ]
     },
     {
@@ -829,21 +881,6 @@
       ]
     },
     {
-      "id": "https://www.anthropic.com/news/expanding-partnership-gsa",
-      "source_id": "anthropic",
-      "company": "Anthropic",
-      "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
-      "summary": "We are expanding our partnership with the General Services Administration (GSA) through a new agreement that gives government partners a 40% discount on Claude Enterprise, Claude for Government, and the Claude API.",
-      "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
-      "published_at": "2026-10-27T00:00:00+00:00",
-      "verified_at": "2026-10-31T19:09:03.826519+00:00",
-      "impact_score": 40,
-      "topics": [
-        "Modelos",
-        "APIs e ferramentas"
-      ]
-    },
-    {
       "id": "https://x.ai/news/grok-bot-sales",
       "source_id": "xai",
       "company": "xAI / Grok",
@@ -1015,21 +1052,6 @@
       ]
     },
     {
-      "id": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/",
-      "source_id": "meta",
-      "company": "Meta AI",
-      "title": "Introducing Muse Wonder and Muse Wonder Full: Frontier Models for Agents",
-      "summary": "Meta introduced Muse Wonder and Muse Wonder Full for agentic tasks in law, finance, health and coding, with access through Meta Model API and Muse Code. Performance claims are Meta’s.",
-      "url": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/",
-      "published_at": "2026-10-12T00:00:00+00:00",
-      "verified_at": "2026-11-02T15:48:14.762Z",
-      "impact_score": 40,
-      "topics": [
-        "Modelos",
-        "APIs e ferramentas"
-      ]
-    },
-    {
       "id": "https://x.ai/news/x-subscription",
       "source_id": "xai",
       "company": "xAI / Grok",
@@ -1055,21 +1077,6 @@
       "impact_score": 45,
       "topics": [
         "Modelos"
-      ]
-    },
-    {
-      "id": "https://mistral.ai/news/hallo-deutschland/",
-      "source_id": "mistral",
-      "company": "Mistral AI",
-      "title": "Hallo, Deutschland!",
-      "summary": "Mistral opens a Munich hub for Physics AI and Industrial AI research, partnering with German industry.",
-      "url": "https://mistral.ai/news/hallo-deutschland/",
-      "published_at": "2026-09-28T15:57:59+00:00",
-      "verified_at": "2026-10-31T19:09:03.826519+00:00",
-      "impact_score": 42,
-      "topics": [
-        "Modelos",
-        "Pesquisa"
       ]
     }
   ]
