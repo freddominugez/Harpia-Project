@@ -1,0 +1,32 @@
+{
+  "titulo": "RAND: uso de IA no dever de casa passa a variar com a renda da família, e o incentivo dos pais pesa",
+  "resumo": "Em um ano, adolescentes de famílias mais ricas foram de 39% para 57% de uso de IA no dever de casa; nas famílias de menor renda, de 39% para 43%.",
+  "data": "2026-11-12",
+  "categoria": "letramento",
+  "icone": "escola",
+  "corpo": [
+    "O centro de pesquisa americano RAND publicou em 12 de novembro um relatório sobre como pais e filhos usam inteligência artificial. O estudo, de Heather L. Schwartz e Melissa Kay Diliberti, com financiamento da Fundação Gates, ouviu cerca de 1.000 pais e 1.800 adolescentes de 12 a 18 anos em 2025 e 2026.",
+    "Segundo o relatório, na primavera americana de 2026, 57% dos adolescentes de famílias com renda de 150 mil dólares ou mais disseram usar IA no dever de casa. Entre famílias com menos de 50 mil dólares, foram 43%. Um ano antes, os dois grupos estavam empatados em 39%.",
+    "Entre os pais, o uso de IA no trabalho ou na vida pessoal subiu de 54% em 2025 para 72% em 2026. Em 2026, chegou a 84% nas famílias de renda mais alta e a 63% nas de renda mais baixa. Dos pais de renda mais alta, 67% incentivam o uso de IA nas tarefas escolares, contra 45% dos de renda mais baixa.",
+    "Num subconjunto de 533 adolescentes cujos pais também responderam, 81% dos que se sentiam incentivados usavam IA no dever de casa, contra 38% dos que se sentiam desencorajados. Os números são autodeclarados e a análise por família vale só para esse subconjunto.",
+    "Os pesquisadores recomendam que as escolas ajudem pais e alunos a separar a IA que apoia o aprendizado da IA que pensa no lugar do aluno. Para Schwartz, citada pela RAND, \"os adolescentes precisam de orientação sobre quando a IA pode apoiar o aprendizado\"."
+  ],
+  "harpia": "Mostra que o letramento em IA também se forma em casa e que a diferença de renda aparece primeiro no hábito dos pais. Uma política de letramento que olhe só para a escola deixa essa desigualdade de fora.",
+  "fontes": [
+    {
+      "veiculo": "RAND",
+      "titulo": "Higher-Income Parents More Likely to Use AI, Encourage Teens to Do the Same",
+      "url": "https://www.rand.org/news/press/2026/11/higher-income-parents-more-likely-to-use-ai-encourage.html"
+    },
+    {
+      "veiculo": "CASRAI",
+      "titulo": "RAND: Teen AI Homework Use Splits by Income",
+      "url": "https://casrai.org/news/rand-teen-ai-schoolwork-income-gap-2026"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-16",
+  "verificado_em": "2026-11-16",
+  "ordem": 999
+}

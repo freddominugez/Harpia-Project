@@ -1,0 +1,37 @@
+{
+  "titulo": "Governo federal põe na internet a autoavaliação de impacto ético em IA para mais de 250 órgãos",
+  "resumo": "O MGI lançou em 13 de novembro a versão web da Autoavaliação de Impacto Ético em IA, antes só off-line, com código aberto e consultoria do Banco Mundial.",
+  "data": "2026-11-13",
+  "categoria": "brasil",
+  "icone": "balanca",
+  "corpo": [
+    "O Ministério da Gestão e da Inovação em Serviços Públicos (MGI), por meio da Secretaria de Governo Digital, lançou em 13 de novembro a versão web da Autoavaliação de Impacto Ético em Inteligência Artificial (AIE). O instrumento já existia, mas só podia ser aplicado off-line.",
+    "A ferramenta está disponível para os mais de 250 órgãos federais do Sistema de Administração dos Recursos de Tecnologia da Informação (SISP). Segundo o Capital Digital, ela avalia critérios como transparência, supervisão humana, justiça, segurança, privacidade e responsabilização.",
+    "O órgão identifica riscos no desenvolvimento ou no uso de um sistema de IA, compara suas práticas de ética e governança com o esperado e recebe recomendações para corrigir lacunas. A iniciativa faz parte do Plano Brasileiro de Inteligência Artificial (PBIA) e teve consultoria do Banco Mundial.",
+    "O governo informa que o sistema foi liberado como software de código aberto e pode ser reutilizado por outras instituições, inclusive de outros países. A Secretaria de Governo Digital também prepara guias práticos para aplicar princípios de IA responsável.",
+    "A autoavaliação é voluntária e feita pelo próprio órgão: as fontes não mencionam auditoria externa dos resultados nem a publicação das avaliações feitas."
+  ],
+  "harpia": "Enquanto o PL 2338/2023 não é votado, ferramentas como esta definem na prática como o Estado brasileiro avalia o risco da IA que usa. Por ser aberta, permite que pesquisadores e cidadãos vejam os critérios.",
+  "fontes": [
+    {
+      "veiculo": "Crypto ID",
+      "titulo": "Governo lança versão web da Autoavaliação de Impacto Ético em Inteligência Artificial para os órgãos do SISP",
+      "url": "https://cryptoid.com.br/inteligencia-artificial/governo-lanca-versao-web-da-autoavaliacao-de-impacto-etico-em-inteligencia-artificial-para-os-orgaos-do-sisp/"
+    },
+    {
+      "veiculo": "Capital Digital",
+      "titulo": "Governo lança sistema on-line para avaliar riscos éticos no uso de inteligência artificial",
+      "url": "https://capitaldigital.com.br/governo-lanca-sistema-on-line-para-avaliar-riscos-eticos-no-uso-de-inteligencia-artificial/"
+    },
+    {
+      "veiculo": "TV Sim Brasil",
+      "titulo": "Governo lança ferramenta on-line para avaliar ética da IA em 250 órgãos",
+      "url": "https://tvsimbrasil.com.br/brasil/tecnologia/noticia/2026/11/16/governo-lanca-ferramenta-etica-ia-250-orgaos"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-16",
+  "verificado_em": "2026-11-16",
+  "ordem": 999
+}

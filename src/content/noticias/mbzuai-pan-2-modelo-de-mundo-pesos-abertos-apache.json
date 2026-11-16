@@ -1,0 +1,42 @@
+{
+  "titulo": "MBZUAI abre os pesos do PAN 2, modelo de mundo de 29 bilhões de parâmetros, sob licença Apache 2.0",
+  "resumo": "O modelo gera até 20 segundos de vídeo prevendo o resultado de uma ação. Pesos e código de treino saíram em Apache 2.0; os resultados de ranking são do próprio instituto.",
+  "data": "2026-11-11",
+  "categoria": "abertos",
+  "icone": "maquina",
+  "corpo": [
+    "O Instituto de Modelos Fundacionais (IFM) da universidade MBZUAI, de Abu Dhabi, anunciou o PAN 2, um modelo de mundo: a partir de uma cena inicial e de uma ação descrita em texto, ele gera um vídeo com o resultado previsto. O anúncio saiu entre 10 e 11 de novembro, conforme o veículo.",
+    "Segundo a ficha no Hugging Face e o repositório no GitHub, o núcleo é um modelo de difusão de 29 bilhões de parâmetros que produz vídeo em 704 por 1248 pixels, a 24 quadros por segundo, com até 20 segundos. O código e os pesos do próprio PAN 2 estão sob licença Apache 2.0. Componentes de terceiros, como o Wan 2.2 e o Qwen3.5-9B, seguem com suas próprias licenças.",
+    "O repositório traz código de treino e de inferência. O aprendizado por recompensa e a combinação de modelos usada na versão final, segundo o próprio repositório, estão descritos no relatório técnico e não fazem parte do código liberado. A página não informa quanta memória de GPU é preciso para rodar o modelo.",
+    "O IFM afirma que o PAN 2 é o terceiro colocado geral e o primeiro entre modelos abertos no ranking Physics-IQ Verified. A afirmação é do instituto e não foi verificada por terceiros nas fontes consultadas.",
+    "A própria ficha registra limites: cerca de dois em cada três planos simulados têm ao menos um passo que não acontece, o resultado muda com a redação do pedido, a aparência deriva em interações longas e o modelo pode violar regras da física. O vídeo gerado também pode ser confundido com filmagem real."
+  ],
+  "harpia": "Modelos de mundo eram quase todos fechados. Com pesos e código abertos e limites declarados na própria ficha, pesquisadores podem testar por conta própria o que um modelo assim entende de física, em vez de confiar no ranking do fabricante.",
+  "fontes": [
+    {
+      "veiculo": "Hugging Face",
+      "titulo": "IFM/PAN2",
+      "url": "https://huggingface.co/IFM/PAN2"
+    },
+    {
+      "veiculo": "GitHub",
+      "titulo": "ifm-ai/PAN2",
+      "url": "https://github.com/ifm-ai/PAN2"
+    },
+    {
+      "veiculo": "CASRAI",
+      "titulo": "MBZUAI PAN 2 Open World Model: Apache 2.0",
+      "url": "https://casrai.org/news/mbzuai-pan-2-world-model-open-source-2026"
+    },
+    {
+      "veiculo": "Peepals",
+      "titulo": "PAN 2 world model: MBZUAI releases open AI that predicts physical outcomes",
+      "url": "https://peepalsglobal.com/tech/article/pan-2-world-model-mbzuai-open-release-physical-ai-2026-11-14"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-16",
+  "verificado_em": "2026-11-16",
+  "ordem": 999
+}
