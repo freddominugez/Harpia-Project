@@ -1,0 +1,15 @@
+{
+  "ano": 2026,
+  "titulo": "Quantize, Qualify, Rerank: A Recipe for Compressing LLMs Without Losing Quality",
+  "autores": "Gowda · arXiv",
+  "url": "https://arxiv.org/abs/2611.18587",
+  "grupo": "fund",
+  "selo": "medido",
+  "rotulo": "quantização int8 e int4 · módulo 10",
+  "ordem": 999,
+  "fonte_url": "https://arxiv.org/abs/2611.18587",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-17",
+  "verificado_em": "2026-11-17"
+}

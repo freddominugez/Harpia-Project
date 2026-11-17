@@ -1,0 +1,16 @@
+{
+  "id": "7Yx_7byZiFU",
+  "titulo": "Using Hugging Face Jobs to train a NanoGPT model",
+  "canal": "Hugging Face",
+  "modulo": 4,
+  "nivel": "Iniciante",
+  "resumo": "Mostra como treinar um NanoGPT com o serviço Jobs do Hugging Face quando a GPU local não basta, do código do modelo ao script e aos resultados. Para quem quer rodar o primeiro treino.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=7Yx_7byZiFU",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-17",
+  "verificado_em": "2026-11-17"
+}
