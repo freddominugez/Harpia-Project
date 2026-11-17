@@ -1,0 +1,153 @@
+{
+  "dia": "2026-11-17",
+  "meta": 2,
+  "nota_minima": 60,
+  "publicadas": [
+    {
+      "slug": "brasil-adere-compromisso-antalia-ia-cop31",
+      "titulo": "Brasil adere na COP31 ao Compromisso de Antália sobre IA, texto voluntário sobre data centers, clima e empregos",
+      "categoria": "brasil",
+      "nota": 85,
+      "criterios": {
+        "fontes": 20,
+        "atualidade": 20,
+        "substancia": 16,
+        "rigor": 15,
+        "forma": 10,
+        "variedade": 4
+      }
+    },
+    {
+      "slug": "openai-avaliadores-externos-embutidos-apollo-metr-goodfire",
+      "titulo": "OpenAI põe quatro grupos externos para avaliar seus modelos por dentro, mas pode tarjar o que eles publicam",
+      "categoria": "pesquisa",
+      "nota": 80,
+      "criterios": {
+        "fontes": 15,
+        "atualidade": 20,
+        "substancia": 16,
+        "rigor": 15,
+        "forma": 10,
+        "variedade": 4
+      }
+    }
+  ],
+  "fila": [
+    {
+      "slug": "mgi-autoavaliacao-etica-ia-versao-web-orgaos-sisp",
+      "nota": 79,
+      "apto": true
+    },
+    {
+      "slug": "fraudbench-modelos-fraude-agentes-autonomia",
+      "nota": 74,
+      "apto": true
+    },
+    {
+      "slug": "unesco-guia-letramento-midiatico-respostas-de-ia",
+      "nota": 73,
+      "apto": true
+    },
+    {
+      "slug": "edweek-dois-tercos-educadores-formacao-ia",
+      "nota": 72,
+      "apto": true
+    },
+    {
+      "slug": "benchmark-revisores-ia-erros-artigos-cientificos",
+      "nota": 72,
+      "apto": true
+    },
+    {
+      "slug": "salesforce-sov-transcribe-1-transcricao-pesos-abertos",
+      "nota": 72,
+      "apto": true
+    },
+    {
+      "slug": "stanford-ai100-2026-ia-entra-no-cotidiano",
+      "nota": 72,
+      "apto": true
+    },
+    {
+      "slug": "vulncheck-mede-falsos-positivos-glasswing-anthropic",
+      "nota": 72,
+      "apto": true
+    },
+    {
+      "slug": "rand-pais-renda-alta-ia-dever-de-casa",
+      "nota": 70,
+      "apto": true
+    },
+    {
+      "slug": "scale-umsl-curso-gratuito-ia-professores",
+      "nota": 70,
+      "apto": true
+    },
+    {
+      "slug": "openai-quatro-camadas-monitoramento-desalinhamento",
+      "nota": 69,
+      "apto": true
+    },
+    {
+      "slug": "sglang-ganha-consorcio-nvidia-amd-intel-google-meta",
+      "nota": 68,
+      "apto": true
+    },
+    {
+      "slug": "ricursive-ripple-65b-pesos-abertos",
+      "nota": 65,
+      "apto": true
+    },
+    {
+      "slug": "nyc-pilotos-ia-ensino-medio-protestos",
+      "nota": 65,
+      "apto": true
+    },
+    {
+      "slug": "revisao-interpretabilidade-mecanistica-seguranca",
+      "nota": 64,
+      "apto": true
+    },
+    {
+      "slug": "runway-praxis-1-robotica-pesos-abertos-apache",
+      "nota": 63,
+      "apto": true
+    },
+    {
+      "slug": "thinking-machines-inkling-2-small-pesos-prometidos",
+      "nota": 63,
+      "apto": true
+    },
+    {
+      "slug": "edge0-audio8-tts-clonagem-voz-pesos-abertos",
+      "nota": 61,
+      "apto": true
+    },
+    {
+      "slug": "quem-pode-avaliar-ia-independente-africa",
+      "nota": 60,
+      "apto": true
+    },
+    {
+      "slug": "epoch-indice-capacidades-modelo-bayesiano",
+      "nota": 58,
+      "apto": false
+    },
+    {
+      "slug": "malasia-329-mil-professores-formacao-ia",
+      "nota": 58,
+      "apto": false
+    },
+    {
+      "slug": "filipinas-microsoft-2-mil-professores-letramento-ia",
+      "nota": 57,
+      "apto": false
+    },
+    {
+      "slug": "varzea-grande-ia-curriculo-obrigatorio-2027",
+      "nota": 54,
+      "apto": false
+    }
+  ],
+  "faltaram": 0
+}
