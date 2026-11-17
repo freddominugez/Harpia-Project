@@ -1,5 +1,250 @@
 [
  {
+  "fonte": "arXiv cs.IR",
+  "titulo": "LMEG-Doc: Layout-Grounded Multi-View Evidence Graphs for Multimodal Long-Document Retrieval",
+  "url": "https://arxiv.org/abs/2611.18901",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "When the Bill Falls: Reusing the Old Index Defers,Never Avoids, Re-encoding in Complete Embedding-Model Migration",
+  "url": "https://arxiv.org/abs/2611.20702",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "CARE: Contrastive-Anchored Residual Encoding with Listwise Reconstruction for Retrieval-Oriented Semantic IDs",
+  "url": "https://arxiv.org/abs/2611.20721",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "UniGraph: A Unified Graph-based Index for Dynamic Hybrid Dense-Sparse Vector Retrieval",
+  "url": "https://arxiv.org/abs/2611.20758",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Intrinsic Attention as Navigator: A Non-Generative Retrieval Method for Multi-Hop Queries",
+  "url": "https://arxiv.org/abs/2611.18617",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "StaleBench: Isolating Stale Retrieval in Agent Memory, and Pricing the Fix",
+  "url": "https://arxiv.org/abs/2611.19752",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Exact Sparse Assignment with Costly Target Embeddings: Fixed-Realization Certificates and an Empirical Audit",
+  "url": "https://arxiv.org/abs/2611.19770",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Attribute or Abstain: Evaluating Evidence-Grounded Retrieval on the Low-Resource African Business Web",
+  "url": "https://arxiv.org/abs/2611.19900",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Adaptive-Elbow Graph Traversal for Schema Retrieval in Text-to-SQL",
+  "url": "https://arxiv.org/abs/2611.20979",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Revela: Dense Retriever Learning via Language Modeling",
+  "url": "https://arxiv.org/abs/2506.16552",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Unified Ranking Across Retrieval Channels: A Large-Scale E-Commerce Approach",
+  "url": "https://arxiv.org/abs/2602.23530",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Beyond Text: Text-Image Fusion for Scalable Two-Tower Retrieval",
+  "url": "https://arxiv.org/abs/2603.04836",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Quantize, Qualify, Rerank: A Recipe for Compressing LLMs Without Losing Quality",
+  "url": "https://arxiv.org/abs/2611.18587",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "RSIMed: Scaling Medical Foundation Models beyond Limited Clinical Data via Retrieval-Grounded Self-Evolution",
+  "url": "https://arxiv.org/abs/2611.18646",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "MeltKV: Memory-Aligned KV Cache Compression via Variable-Bit Packed Vector Quantization for Long-Context LLMs",
+  "url": "https://arxiv.org/abs/2611.18652",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Factorized Self-Supervised Speech Tokenization",
+  "url": "https://arxiv.org/abs/2611.18898",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "LENS: Replacing LayerNorm and Softmax in Transformers with Learnable Normalization States",
+  "url": "https://arxiv.org/abs/2611.20331",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "JointQ: Joint Scale-and-Integer Quantization for Large Language Models",
+  "url": "https://arxiv.org/abs/2611.20384",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Memory-Efficient Speculative Decoding with Quantized Draft KV Cache",
+  "url": "https://arxiv.org/abs/2611.20565",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Calibrate Once, Grow the Vocabulary: Candidate-Independent Scores for Conformal Risk Control in Open-Vocabulary Segmentation",
+  "url": "https://arxiv.org/abs/2611.20715",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "MiSTiQ: MicroScaling Trellis Quantization for Extreme KV Cache Compression",
+  "url": "https://arxiv.org/abs/2611.21216",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Do Embedding-Map Distances Guide LLM Ideation? Four Tests Against What Came Next",
+  "url": "https://arxiv.org/abs/2611.21408",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Latent Lattice Language Models",
+  "url": "https://arxiv.org/abs/2611.21608",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Retrieval-Augmented Generation for Clinical Decision Support in Gait Analysis: A Proof-of-Concept",
+  "url": "https://arxiv.org/abs/2611.18603",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "NYUAD at ArGuard Shared Tasks: Multimodal Embedding Models for Detecting Arabic Hateful Memes and Unsafe Prompts",
+  "url": "https://arxiv.org/abs/2611.18608",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "GPBam: A Retrieval-Aware German Public Law Exam Benchmark",
+  "url": "https://arxiv.org/abs/2611.18981",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "When Does Label-Free Deconfounding of Document Embeddings Work?",
+  "url": "https://arxiv.org/abs/2611.19350",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Bioformer-RetroMAE: retrieval-oriented pretraining of a compact biomedical language model for literature search",
+  "url": "https://arxiv.org/abs/2611.19862",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "The Vocabulary Tax: Safely Trimming Unused Tokens from LLMs for On-Device Use",
+  "url": "https://arxiv.org/abs/2611.19913",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Offline-First Quantized AI: Design and Evaluation of an On-Device Maternal-Health Assistant for Low-Connectivity Environments",
+  "url": "https://arxiv.org/abs/2611.20012",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "A Corpus-Driven SentencePiece Unigram Tokenizer for Sindhi: Design and Benchmark Against Fourteen Existing Tokenizers",
+  "url": "https://arxiv.org/abs/2611.20126",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "FIDEL: Abugida-Aware Pre-tokenization for Ethiopic Languages",
+  "url": "https://arxiv.org/abs/2611.20216",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Augmenting Pretrained Language Models with N-gram Embeddings through Incremental Training",
+  "url": "https://arxiv.org/abs/2611.20415",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Jetriever: Shifting Agent Memory Retrieval from Similarity to Utility",
+  "url": "https://arxiv.org/abs/2611.21478",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Embedding Cosine Measures Text Length Before It Measures Homogenization",
+  "url": "https://arxiv.org/abs/2611.21519",
+  "data": "17/11/2026",
+  "ts": 1794891600
+ },
+ {
   "fonte": "OpenAI",
   "titulo": "A step toward defining the Standard Model on a lattice",
   "url": "https://openai.com/index/step-toward-defining-the-standard-model",
