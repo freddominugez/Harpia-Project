@@ -1,0 +1,31 @@
+{
+  "titulo": "Salesforce abre os pesos do SOV-Transcribe-1, que transcreve sete línguas, incluindo português",
+  "resumo": "O modelo tem 26,6 bilhões de parâmetros, 4,6 bilhões ativos por token, e transcreve até 30 minutos de áudio localmente. Os números de desempenho são da própria empresa e de um ranking externo.",
+  "data": "2026-11-12",
+  "categoria": "abertos",
+  "icone": "onda",
+  "corpo": [
+    "A Salesforce publicou em 12 de novembro, no Hugging Face, os pesos do SOV-Transcribe-1, modelo de reconhecimento de fala da sua divisão Sovereign Intelligence. A licença é Apache 2.0, que permite uso comercial.",
+    "O modelo junta o codificador de áudio do Whisper large-v3 a um decodificador de texto Gemma 4 do tipo mistura de especialistas. São 26,6 bilhões de parâmetros no total, com cerca de 4,6 bilhões ativos por token. Ele aceita áudio de até 30 minutos e transcreve inglês, francês, alemão, espanhol, italiano, português e holandês. Instruções em linguagem natural controlam o estilo da saída, da transcrição literal ao texto limpo.",
+    "No ranking de transcrição sem streaming da Artificial Analysis, o modelo aparece com taxa de erro de palavras de 2,3%, em sétimo lugar entre 44 sistemas, segundo a AlphaSignal. Outros números, como os de testes com termos técnicos e telefones, foram divulgados pela própria Salesforce e não têm verificação independente.",
+    "Há limites práticos. Todos os pesos precisam ficar na memória: só em BF16 são cerca de 53 GB, o que exclui computadores comuns. Os autores relatam laços raros de repetição na saída e recomendam dividir gravações longas em trechos. O carregamento pelo Transformers executa código do próprio repositório, que deve ser revisado antes do uso."
+  ],
+  "harpia": "Transcrever entrevistas e aulas sem mandar o áudio para a nuvem de terceiros é uma necessidade real de pesquisa e de escolas, e o português está entre as línguas. O peso de 53 GB lembra que aberto não quer dizer leve.",
+  "fontes": [
+    {
+      "veiculo": "CASRAI",
+      "titulo": "Salesforce Releases SOV-Transcribe-1 Open-Weight Speech Recognition Model",
+      "url": "https://casrai.org/news/salesforce-sov-transcribe-1-open-weight-asr-2026"
+    },
+    {
+      "veiculo": "AlphaSignal",
+      "titulo": "Salesforce's SOV-Transcribe-1 Beats Every Open-Weight Speech Model at 2.3% Error Rate",
+      "url": "https://alphasignal.ai/news/salesforce-s-sov-transcribe-1-beats-every-open-weight-speech-model-at-2-3-error"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-17",
+  "verificado_em": "2026-11-17",
+  "ordem": 999
+}

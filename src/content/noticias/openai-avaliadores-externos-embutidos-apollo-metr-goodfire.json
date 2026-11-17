@@ -1,0 +1,32 @@
+{
+  "titulo": "OpenAI põe quatro grupos externos para avaliar seus modelos por dentro, mas pode tarjar o que eles publicam",
+  "resumo": "Apollo Research, METR, Transluce e Goodfire terão acesso a dados de treino e pontos intermediários dos modelos. A OpenAI pode tarjar informação e pedir adiamento.",
+  "data": "2026-11-16",
+  "categoria": "pesquisa",
+  "icone": "lupa",
+  "corpo": [
+    "A OpenAI anunciou em 16 de novembro a primeira fase do que chama de avaliações embutidas: quatro organizações de fora passam a examinar seus modelos durante o desenvolvimento, e não só às vésperas do lançamento. Até aqui, segundo o TechCrunch, avaliadores externos costumavam testar os modelos apenas depois do pós-treino.",
+    "Segundo o resumo do anúncio publicado pelo Unite.AI, cada grupo tem uma tarefa. A Apollo Research vai investigar se os modelos podem agir às escondidas contra a intenção dos desenvolvedores e se as salvaguardas pegariam isso. O METR avalia o que a OpenAI descreve como sua maior rodada de aprendizado por reforço. A Transluce examina a qualidade das avaliações de alinhamento da empresa, e a Goodfire coloca pesquisadores de interpretabilidade para analisar o funcionamento interno dos modelos durante o treino.",
+    "O acesso, de acordo com o TechCrunch, pode incluir código e dados de treino, rodadas de reforço com o raciocínio do modelo e consultas a pontos intermediários do treinamento. A Apollo terá seis avaliadores embutidos. A OpenAI pode reter informação por inviabilidade técnica, risco de segurança ou proteção de propriedade intelectual, e se comprometeu a não reter algo apenas por ser desfavorável.",
+    "Os grupos podem publicar conclusões próprias, mas a OpenAI pode tarjar informação confidencial e pedir adiamento para divulgação responsável. Apollo e Goodfire recebem pagamento que não depende do resultado; METR e Transluce não aceitam pagamento, segundo o Unite.AI, mas podem receber créditos de uso ou capacidade de computação.",
+    "A própria Apollo disse ao TechCrunch que ainda não tem o acesso necessário para uma avaliação de fato independente. A avaliação de monitoramento do METR ainda depende de acordo sobre o escopo, e uma segunda fase de cerca de oito semanas no começo de 2027 é apenas uma intenção, não um compromisso firme."
+  ],
+  "harpia": "Avaliação independente é o que permite saber o que um modelo faz sem depender da palavra de quem o vende. O desenho do acordo, com acesso amplo mas direito de tarja da empresa, mostra até onde essa independência vai e é um bom caso para ensinar a ler relatórios de segurança.",
+  "fontes": [
+    {
+      "veiculo": "TechCrunch",
+      "titulo": "OpenAI will embed safety researchers to investigate AI subversion",
+      "url": "https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion/"
+    },
+    {
+      "veiculo": "Unite.AI",
+      "titulo": "OpenAI Signs Four Independent Assessors for Embedded Safety Reviews",
+      "url": "https://www.unite.ai/openai-signs-four-independent-assessors-for-embedded-safety-reviews/"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-17",
+  "verificado_em": "2026-11-17",
+  "ordem": 999
+}

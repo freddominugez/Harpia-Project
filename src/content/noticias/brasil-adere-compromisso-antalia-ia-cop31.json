@@ -1,0 +1,36 @@
+{
+  "titulo": "Brasil adere na COP31 ao Compromisso de Antália sobre IA, texto voluntário sobre data centers, clima e empregos",
+  "resumo": "O Ministério das Comunicações assinou o compromisso em 16 de novembro, na Turquia. O texto pede atenção ao consumo de energia e água dos data centers e não cria obrigações.",
+  "data": "2026-11-16",
+  "categoria": "brasil",
+  "icone": "globo",
+  "corpo": [
+    "O governo brasileiro aderiu em 16 de novembro ao Compromisso de Antália sobre Inteligência Artificial, durante a COP31, conferência do clima da ONU realizada em Antália, na Turquia. Segundo a Agência Brasil, reproduzida pelo Money Times, quem assinou foi Hermano Tercius, secretário de Telecomunicações do Ministério das Comunicações.",
+    "De acordo com a Agência Brasil, o texto foi lançado pela presidência turca da conferência com a União Internacional de Telecomunicações e a Unesco. Ele pede uso responsável da IA, atenção ao impacto ambiental dos data centers, em especial ao consumo de energia e de água, e atenção às mudanças no mercado de trabalho causadas pela automação.",
+    "O compromisso é voluntário. Quando o texto foi apresentado, em outubro, a agência AFP registrou que os organizadores o descreveram como sem obrigações novas e adaptável à situação de cada país. Na mesma reportagem, o World Resources Institute criticou a falta de mecanismos de cobrança. As fontes não informam quantos países aderiram.",
+    "Ao SBT News, Tercius disse que o governo está defendendo \"a garantia e a manutenção desses postos de trabalho\". Em painel da Anatel na conferência, foi discutida a criação de um Instituto de Inteligência Artificial para Mudanças Climáticas com sede no Brasil, ainda em debate."
+  ],
+  "harpia": "O custo ambiental e social da IA entra numa agenda oficial do Brasil, mas por um texto sem metas nem cobrança. Vale acompanhar se a adesão vira regra, por exemplo no PL 2338 ou na política de data centers.",
+  "fontes": [
+    {
+      "veiculo": "SBT News",
+      "titulo": "Brasil assina acordo para uso sustentável da IA na COP31",
+      "url": "https://sbtnews.sbt.com.br/noticia/politica/brasil-assina-acordo-para-uso-sustentavel-da-ia-na-cop-31"
+    },
+    {
+      "veiculo": "Money Times (Agência Brasil)",
+      "titulo": "Brasil assina na COP31 pacto global por IA sustentável e empregos",
+      "url": "https://www.moneytimes.com.br/brasil-assina-na-cop31-pacto-global-por-ia-sustentavel-e-empregos-fets/"
+    },
+    {
+      "veiculo": "Connaissance des Énergies (AFP)",
+      "titulo": "« Antalya Artificial Intelligence Pledge » : la COP31 appelle à une « IA responsable pour le climat »",
+      "url": "https://www.connaissancedesenergies.org/afp/la-cop31-appelle-a-des-engagements-volontaires-sur-les-enjeux-climatiques-de-lia-261028"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-17",
+  "verificado_em": "2026-11-17",
+  "ordem": 999
+}

@@ -1,0 +1,26 @@
+{
+  "titulo": "Dois terços dos educadores americanos já tiveram formação em IA, mas dizem que falta prática e debate sobre riscos",
+  "resumo": "Pesquisa do EdWeek Research Center com 852 educadores mostra alta de 11 pontos em um ano. Professores pedem menos demonstração e mais uso em sala.",
+  "data": "2026-11-16",
+  "categoria": "letramento",
+  "icone": "escola",
+  "corpo": [
+    "Cerca de dois terços dos professores, diretores e gestores de redes escolares dos Estados Unidos disseram ter participado de ao menos uma sessão de formação sobre o uso de IA no trabalho. O dado é de uma pesquisa nacional do EdWeek Research Center, publicada pela Education Week em 16 de novembro.",
+    "A pesquisa ouviu 852 educadores entre 26 de agosto e 6 de outubro. No ano anterior, 56% deram a mesma resposta, o que representa uma alta de 11 pontos percentuais. A reportagem não informa margem de erro.",
+    "Os educadores entrevistados apontam o que falta nessas formações: participação obrigatória, prática com as ferramentas e discussão dos problemas da IA, como cola, efeito ambiental, impacto sobre empregos e sobre o pensamento crítico. Uma professora de ciências da Virgínia Ocidental, Jaime Moss, resumiu: \"Os professores não querem outra demonstração do que a IA pode fazer\".",
+    "A reportagem também ouviu um professor de matemática de Dallas que recebe treinamento da rede e repassa aos colegas da escola, modelo de multiplicadores que vem sendo adotado por distritos americanos."
+  ],
+  "harpia": "Formar professores não é mostrar ferramenta. A pesquisa dá números a uma queixa que o Harpya também ouve: o letramento em IA precisa incluir prática, limites e riscos, e não só o que a tecnologia promete.",
+  "fontes": [
+    {
+      "veiculo": "Education Week",
+      "titulo": "Teachers Pinpoint What's Missing in Professional Development About AI",
+      "url": "https://edweek.org/technology/teachers-pinpoint-whats-missing-in-professional-development-about-ai/2026/11"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-17",
+  "verificado_em": "2026-11-17",
+  "ordem": 999
+}
