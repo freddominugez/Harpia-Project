@@ -58,6 +58,7 @@ export const NAV: NavItem[] = [
   { href: "/origens/", rotulo: "Origens", icone: "globe", descricao: "Linha do tempo das LLMs", principal: true },
   { href: "/aprendizado/", rotulo: "Aprendizado de Máquina", icone: "brain", descricao: "As primeiras tentativas de fazer a máquina aprender", principal: true },
   { href: "/videos/", rotulo: "Vídeos", icone: "play", descricao: "Curadoria de matemática, redes neurais e LLMs", principal: true },
+  { href: "/filmes/", rotulo: "Filmes", icone: "play", descricao: "Filmes e documentários relacionados à tecnologia e à IA", principal: false },
   { href: "/estudos/", rotulo: "Estudos", icone: "file", descricao: "Os 12 caminhos válidos de pesquisa", principal: true },
   { href: "/equacoes/", rotulo: "Equações", icone: "sigma", descricao: "As 16 etapas e componentes de um LLM e suas equações", principal: true },
   { href: "/biblioteca/", rotulo: "Biblioteca", icone: "book", descricao: "Livros, artigos acadêmicos e fontes", principal: true },

@@ -1,0 +1,50 @@
+{
+  "data": "2026-11-18",
+  "timezone": "America/Fortaleza",
+  "items": [
+    {
+      "path": "src/content/business/acervo/2026-11-18-insead-ideias-rejeitadas-agentes-ia.json",
+      "sha256": "19f3ed98053030f6410563cb94c75a1813c039b6a966016314463ff12496457a",
+      "sha256_publicado": "1465170306360ffcb824d2cb494210a8784c3bef22bbd73ffcf41bd5e47f04d2",
+      "verificacao": {
+        "responsavel": "Comitê Harpya Business · verificação independente",
+        "consultado_em": "2026-11-18",
+        "escopo": "Artigo institucional integral em HTML; registros de negociação subjacentes não revisados.",
+        "evidencias": [
+          "https://knowledge.insead.edu/economics-finance/why-leaders-should-keep-ideas-ai-rejects"
+        ],
+        "alegacoes": [
+          {
+            "texto": "O artigo é assinado por Ben Charoenwong e Joshua Dawe e datado de 16 de novembro de 2026.",
+            "url": "https://knowledge.insead.edu/economics-finance/why-leaders-should-keep-ideas-ai-rejects",
+            "resultado": "confirmada",
+            "local": "Cabeçalho do artigo."
+          },
+          {
+            "texto": "O caso descrito usa três modelos para propor, debater e votar, preservando propostas rejeitadas e objeções.",
+            "url": "https://knowledge.insead.edu/economics-finance/why-leaders-should-keep-ideas-ai-rejects",
+            "resultado": "confirmada",
+            "local": "Seção Preserve the alternatives."
+          },
+          {
+            "texto": "Cálculos de indicadores e limites de risco são feitos em código Python determinístico; os modelos interpretam evidências e formulam hipóteses.",
+            "url": "https://knowledge.insead.edu/economics-finance/why-leaders-should-keep-ideas-ai-rejects",
+            "resultado": "confirmada",
+            "local": "Seção Keep the record grounded."
+          },
+          {
+            "texto": "Os logs subjacentes não foram revisados independentemente e os exemplos são ilustrativos; o texto não comprova melhora de retornos.",
+            "url": "https://knowledge.insead.edu/economics-finance/why-leaders-should-keep-ideas-ai-rejects",
+            "resultado": "qualificada",
+            "local": "Nota final do artigo e ausência de comparação de desempenho publicada."
+          }
+        ]
+      },
+      "selecao": {
+        "responsavel": "Comitê Harpya Business · seleção editorial",
+        "nota": 8.4,
+        "justificativa": "Fonte institucional aprovada para artigos, pertinência à governança de agentes de IA e limites do caso declarados no texto."
+      }
+    }
+  ]
+}

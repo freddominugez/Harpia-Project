@@ -1,0 +1,14 @@
+---
+interface Props { titulo: string; imagem?: string; credito?: string }
+const { titulo, imagem = '', credito = '' } = Astro.props;
+---
+<div class="filme-capa">
+  {imagem ? <img src={imagem} alt={`Imagem de ${titulo}. ${credito}`} loading="lazy" decoding="async" width="640" height="360" /> :
+    <svg viewBox="0 0 640 360" role="img" aria-label={`Ilustração geométrica para ${titulo}`} preserveAspectRatio="xMidYMid slice">
+      <circle cx="472" cy="180" r="103" fill="none" stroke="currentColor" stroke-width="2" opacity=".65" />
+      <circle cx="472" cy="180" r="50" fill="none" stroke="currentColor" stroke-width="2" opacity=".75" />
+      <circle cx="472" cy="180" r="10" fill="currentColor" />
+      <path d="M0 310 212 68l99 111 73-65 256 224M0 90l200 150 110-40 330 87" fill="none" stroke="currentColor" stroke-width="2" opacity=".4" />
+      <path d="M83 65h170M83 82h123M83 99h149" stroke="currentColor" stroke-width="3" opacity=".75" />
+    </svg>}
+</div>

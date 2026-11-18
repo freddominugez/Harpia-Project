@@ -20,6 +20,7 @@ export const SECOES_BUSINESS = [
   { slug: 'aprendizado', titulo: 'Aprendizado em marketing', descricao: 'Como estudar, formular hipóteses, avaliar evidências e aprender com decisões.', nav: 'Aprendizado', principal: false },
   { slug: 'estudos', titulo: 'Trilhas de estudo em Business', descricao: 'Percursos de estudo em marketing, estratégia e administração.', nav: 'Estudos', principal: true },
   { slug: 'videos', titulo: 'Vídeos de marketing e gestão', descricao: 'Aulas e conferências de fontes institucionais, com procedência e revisão editorial.', nav: 'Vídeos', principal: true },
+  { slug: 'filmes', titulo: 'Filmes e documentários de Business', descricao: 'Obras relacionadas a mercados, organizações e decisões, com fonte e limites da indicação.', nav: 'Filmes', principal: false },
   { slug: 'videos/canais', titulo: 'Canais de vídeo em Business', descricao: 'Canais institucionais conferidos e aprovados para a curadoria de marketing e administração.', nav: 'Canais de vídeo', principal: false },
   { slug: 'biblioteca', titulo: 'Biblioteca Business', descricao: 'Leituras selecionadas de marketing, comportamento, marcas e gestão, com limites e links ao original.', nav: 'Biblioteca', principal: true },
   { slug: 'biblioteca/livros', titulo: 'Literatura de marketing e administração', descricao: 'Obras de referência com autoria, editora, edição e acesso legal para aprofundar o estudo.', nav: 'Livros', principal: false },
@@ -40,7 +41,7 @@ export const BUSINESS_NAV = [
     const secao = SECOES_BUSINESS.find(s => s.slug === slug)!;
     return { ...item, href: businessPath(slug), rotulo: secao.nav, descricao: secao.descricao };
   }),
-  ...SECOES_BUSINESS.filter(s => !['', 'analises', 'comecando', 'origens', 'aprendizado', 'videos', 'estudos', 'equacoes', 'biblioteca', 'noticias', 'news', 'forum', 'sobre'].includes(s.slug)).map(s => ({ href: businessPath(s.slug), rotulo: s.nav, descricao: s.descricao, icone: 'book', principal: false })),
+  ...SECOES_BUSINESS.filter(s => !['', 'analises', 'comecando', 'origens', 'aprendizado', 'videos', 'filmes', 'estudos', 'equacoes', 'biblioteca', 'noticias', 'news', 'forum', 'sobre'].includes(s.slug)).map(s => ({ href: businessPath(s.slug), rotulo: s.nav, descricao: s.descricao, icone: 'book', principal: false })),
 ];
 export const guiaPath = (slug: string) => businessPath(`estudos/caminhos/${slug}`);
 export const seriePath = (slug: string) => businessPath(`comecando/${slug}`);

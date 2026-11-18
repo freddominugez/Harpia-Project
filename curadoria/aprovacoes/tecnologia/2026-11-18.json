@@ -1,0 +1,58 @@
+{
+  "data": "2026-11-18",
+  "items": [
+    {
+      "path": "src/content/noticias/2026-11-18-fastkvcomp-cache-kv-inferencia-distribuida.json",
+      "sha256": "8087a70b4c62c9c0864dfa6b757563b7b169096462ea10ec60244d0b5f21ff63",
+      "verificacao": {
+        "responsavel": "editorial_round",
+        "evidencias": [
+          "https://arxiv.org/abs/2611.04382",
+          "https://arxiv.org/html/2611.04382v2"
+        ],
+        "alegacoes": [
+          {
+            "texto": "Os autores informam aceitação do paper na NPC 2026.",
+            "url": "https://arxiv.org/abs/2611.04382",
+            "resultado": "qualificada"
+          },
+          {
+            "texto": "FastKVComp combina um kernel TileLang fundido e operadores de compressão LC escolhidos antes da execução.",
+            "url": "https://arxiv.org/html/2611.04382v2",
+            "resultado": "confirmada"
+          },
+          {
+            "texto": "Os testes locais usaram duas RTX 5090 e os remotos, RTX PRO 6000, H100 e InfiniBand de 200 Gb/s.",
+            "url": "https://arxiv.org/html/2611.04382v2",
+            "resultado": "confirmada"
+          },
+          {
+            "texto": "O tempo de conclusão caiu 45,3%–51,1% localmente e 30,2%–38,6% remotamente frente à transferência sem compressão, nas configurações estudadas.",
+            "url": "https://arxiv.org/html/2611.04382v2",
+            "resultado": "confirmada"
+          },
+          {
+            "texto": "Cada configuração teve 50 solicitações e excluiu compilação, inicialização e aquecimento.",
+            "url": "https://arxiv.org/html/2611.04382v2",
+            "resultado": "confirmada"
+          }
+        ],
+        "escopo": "Resumo e texto HTML integral do paper v2 consultados. Resultados não reproduzidos pelo Harpya."
+      },
+      "selecao": {
+        "responsavel": "tech_pipeline",
+        "nota": 4.7,
+        "justificativa": "Relação direta com eficiência de inferência e cache KV; texto contextualiza hardware, comparação e limites sem apresentar os resultados como reprodução do Harpya.",
+        "criterios": {
+          "rigor": 4.5,
+          "relevancia": 5,
+          "utilidade": 5,
+          "originalidade": 4,
+          "clareza_da_fonte": 5,
+          "atualidade": 4.5
+        }
+      },
+      "sha256_publicado": "86ff01b643878a62336180cf34fd6e6621e59a538f5f806ebef85894c4359e3e"
+    }
+  ]
+}

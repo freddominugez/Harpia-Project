@@ -1,0 +1,28 @@
+{
+  "titulo": "INSEAD propõe guardar ideias rejeitadas para avaliar decisões de agentes de IA",
+  "resumo": "Artigo do INSEAD descreve como registrar propostas, votos e objeções de agentes de IA. O caso ilustra um método de auditoria; seus resultados ainda não foram validados.",
+  "fonte": "insead",
+  "url": "https://knowledge.insead.edu/economics-finance/why-leaders-should-keep-ideas-ai-rejects",
+  "tipo": "noticia",
+  "trilha": "gestao",
+  "autores": "Ben Charoenwong e Joshua Dawe",
+  "data": "2026-11-16",
+  "data_precisa": true,
+  "idioma": "en",
+  "acesso": "Artigo institucional aberto em inglês; síntese original do Harpya em português.",
+  "evidencia": "Análise de caso ilustrativo baseada em projeto independente de MBA; registros operacionais não revisados externamente.",
+  "limites": "Os registros do projeto de negociação não foram auditados de forma independente. Os exemplos são ilustrativos e não demonstram que o comitê de agentes melhora retornos ou a qualidade das decisões em outras organizações.",
+  "status": "publicado",
+  "justificativa": "Fonte institucional aprovada, texto autoral acessível e limites explicitados. O caso oferece uma pergunta prática sobre auditoria de decisões, sem apresentar desempenho não medido como resultado comprovado.",
+  "revisor": "Comitê Harpya Business · verificação independente",
+  "revisado_em": "2026-11-18",
+  "corpo": [
+    "Ben Charoenwong e Joshua Dawe, do INSEAD, publicaram em 16 de novembro uma análise sobre o registro de alternativas rejeitadas por agentes de IA. O exemplo é uma mesa experimental de negociação de moedas em que três modelos propõem operações, discutem opções e votam. O sistema conserva as propostas descartadas e as objeções para revisão posterior.",
+    "A proposta editorial é fixar antes do resultado os critérios de cada decisão: direção da operação, evento esperado, prazo e condição que invalidaria a hipótese. Guardar apenas a operação executada deixaria de fora as alternativas e a razão de sua rejeição. Os autores sugerem comparar mais tarde propostas aceitas e rejeitadas sob as mesmas regras de risco.",
+    "No caso descrito, cálculos de indicadores e limites de risco ficam em código determinístico, enquanto os modelos interpretam dados e apresentam hipóteses. Isso permite conferir números em registros anteriores à narrativa gerada. O artigo não demonstra melhora de retornos: afirma expressamente que os registros da mesa não foram revisados de modo independente e que os exemplos são ilustrativos.",
+    "Para organizações que testam agentes em decisões relevantes, a leitura sugere uma prática verificável: preservar entradas, alternativas, votos, regras e aprovações humanas no momento da decisão. Avaliar se essa prática melhora resultados exigiria uma comparação própria, com critérios definidos antes da observação dos desfechos."
+  ],
+  "referencias": [
+    "https://knowledge.insead.edu/economics-finance/why-leaders-should-keep-ideas-ai-rejects"
+  ]
+}

@@ -88,6 +88,7 @@ let cache: Rota[] | null = null;
 export async function rotas(): Promise<Rota[]> {
   if (cache) return cache;
   const caminhos = (await getCollection("caminhos")).sort((a, b) => a.data.numero - b.data.numero);
+  const filmes = (await getCollection("filmes")).filter(item => item.data.status === "publicado");
   const pautasComPagina = (await getCollection("pautas")).filter((p) => temPagina(p.data.status));
   const sobre = paginaMd("src/pages/sobre.md");
   const termosDeUso = paginaMd("src/pages/termos-de-uso.md");
@@ -167,6 +168,7 @@ export async function rotas(): Promise<Rota[]> {
         `## Seções\n\n${lista([
           `[Origens](${abs("/origens/")}): linha do tempo das LLMs, de 1943 a 2026`,
           `[Vídeos](${abs("/videos/")}): ${VIDEOS.length} vídeos em ${MODULOS.length} módulos`,
+          `[Filmes](${abs("/filmes/")}): documentários e obras audiovisuais selecionados`,
           `[Equações](${abs("/equacoes/")}): as 16 etapas e componentes de um LLM`,
           `[Biblioteca](${abs("/biblioteca/")}): ${LIVROS.length} livros e ${ARTIGOS.length} artigos`,
           `[Fórum](${abs("/forum/")}): discussões no GitHub Discussions`,
@@ -315,6 +317,18 @@ export async function rotas(): Promise<Rota[]> {
       schema: () => [colecao("/videos/", "Vídeos", `Catálogo de ${VIDEOS.length} vídeos sobre LLMs.`,
         itemList("Catálogo de vídeos", VIDEOS.map((v) => ({ name: v.titulo, url: urlVideo(v.id) }))))],
     },
+    {
+      path: "/filmes/",
+      titulo: "Filmes e documentários",
+      descricao: "Obras selecionadas sobre tecnologia, inteligência artificial e computação, com fontes e limites claros.",
+      secao: "Filmes",
+      atualizado: maior(...filmes.map(item => item.data.verificado_em)),
+      markdown: () => filmes.length ? filmes.map(item => `- [${item.data.titulo}](${abs(`/filmes/${item.id}/`)}): ${item.data.resumo}`).join("\n") : "Ainda não há obras aprovadas para esta seção.",
+    },
+    ...filmes.map(item => ({
+      path: `/filmes/${item.id}/`, titulo: item.data.titulo, descricao: item.data.resumo, secao: "Filmes", pai: "/filmes/", atualizado: item.data.revisado_em,
+      markdown: () => `${item.data.resumo}\n\n## Por que está no Harpya\n\n${item.data.porque_ver}\n\n## Limites\n\n${item.data.limites}\n\n[Fonte oficial](${item.data.url})${item.data.assistir_url ? `\n\n[Onde assistir](${item.data.assistir_url})` : ""}`,
+    })),
     {
       path: "/estudos/",
       titulo: "Estudos",

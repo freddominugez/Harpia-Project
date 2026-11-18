@@ -1,9 +1,11 @@
 import {temPagina} from './pautas';
+import {getCollection} from 'astro:content';
 import type { Rota } from './rotas';
 import { getBusiness, SECOES_BUSINESS, businessPath, guiaPath, recursoPublicadoPath, seriePath, recursosDaSecao } from './business';
 import { markdownEditorial } from '../data/business-editorial';
 export async function businessRotas(abs: (path: string) => string): Promise<Rota[]> {
   const { guias, acervo, fontes, canais,serie,origens,aprendizado,analises,investigacao,pautas } = await getBusiness();
+  const filmes = (await getCollection('businessFilmes')).filter(item => item.data.status === 'publicado');
   const atualizado = [...guias.map(g => g.data.atualizado), ...acervo.map(a => a.data.revisado_em), ...fontes.map(f => f.data.verificado_em)].sort().at(-1) ?? '2026-11-06';
   const guideList = guias.map(g => `- [${g.data.titulo}](${abs(guiaPath(g.id))}): ${g.data.resumo}`).join('\n');
   const resourceList = (items = acervo) => items.map(a => `- [${a.data.titulo}](${abs(recursoPublicadoPath(a.id,a.data.tipo))}): ${a.data.resumo}`).join('\n');
@@ -18,6 +20,7 @@ export async function businessRotas(abs: (path: string) => string): Promise<Rota
         page.slug==='aprendizado'?aprendizado.map(x=>`## ${x.data.titulo}\n\n${x.data.texto}\n\n${[x.data.contexto,x.data.mecanismo,...x.data.equacoes.map(e=>`$$\n${e.tex}\n$$\n\n${e.texto}`),x.data.exemplo,x.data.limites,x.data.legado,x.data.hoje].join('\n\n')}\n\n${x.data.referencias.map(r=>`- [${r.texto}](${r.url}): ${r.consultado} ${r.limites}`).join('\n')}`).join('\n\n'):'',
         ['', 'estudos'].includes(page.slug) ? `## Guias de estudo\n\n${guideList}` : '',
         ['', 'biblioteca', 'biblioteca/livros', 'news', 'analises', 'noticias', 'videos'].includes(page.slug) ? `## Leituras selecionadas\n\n${resourceList(page.slug === '' ? acervo : recursosDaSecao(acervo,page.slug))}` : '',
+        page.slug === 'filmes' ? filmes.length ? filmes.map(item => `- [${item.data.titulo}](${abs(businessPath(`filmes/${item.id}`))}): ${item.data.resumo}`).join('\n') : 'Ainda não há obras aprovadas para esta seção.' : '',
         page.slug === 'biblioteca/fontes' ? fontes.filter(f => f.data.escopos.includes('artigos')).map(f => `- [${f.data.nome}](${f.data.url}): ${f.data.descricao} (${f.data.regiao})`).join('\n') : '',
         page.slug === 'videos' && !recursosDaSecao(acervo,'videos').length ? 'Nenhum vídeo selecionado para publicação. Candidatos não integram o acervo público.' : '',
         page.slug === 'analises' ? analises.map(a=>`- [${a.data.titulo}](${abs(`/business/analises/${a.id}/`)})`).join('\n'):'',
@@ -52,6 +55,10 @@ export async function businessRotas(abs: (path: string) => string): Promise<Rota
       schema: () => [{ '@type': 'WebPage', name: a.data.titulo, description: a.data.resumo, url: abs(recursoPublicadoPath(a.id,a.data.tipo)), citation: [a.data.url,...a.data.referencias],
         ...(a.data.tipo === 'livro' ? { mainEntity: { '@type': 'Book', name: a.data.titulo, author: { '@type': 'Person', name: a.data.autores }, publisher: { '@type': 'Organization', name: a.data.editora }, ...(a.data.edicao ? { bookEdition: a.data.edicao } : {}), ...(a.data.isbn ? { isbn: a.data.isbn } : {}), url: a.data.url } } : {}),
       }],
+    })),
+    ...filmes.map(item => ({
+      path: businessPath(`filmes/${item.id}`), titulo: item.data.titulo, descricao: item.data.resumo, secao: 'Business · Filmes', pai: '/business/filmes/', atualizado: item.data.revisado_em,
+      markdown: () => `${item.data.resumo}\n\n## Por que está no Harpya\n\n${item.data.porque_ver}\n\n## Limites\n\n${item.data.limites}\n\n[Fonte oficial](${item.data.url})${item.data.assistir_url ? `\n\n[Onde assistir](${item.data.assistir_url})` : ''}`,
     })),
   ];
 }

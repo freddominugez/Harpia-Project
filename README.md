@@ -13,6 +13,7 @@ Pesquisa aberta sobre eficiência de LLMs: embeddings, tokens, pesos e busca vet
 | Catálogo de vídeos, módulos, livros, artigos, fontes, feeds, linha do tempo, pautas: um arquivo por item | `src/content/*/` (esquemas em `src/content.config.ts`) |
 | Painel de conteúdo (Sveltia CMS) em `/admin` | `public/admin/`, `docs/PAINEL_ADMIN.md` |
 | Curadoria diária (tarefa agendada do Claude) e lista de fontes monitoradas | `scripts/curadoria_diaria.py`, `src/content/fontes-monitoradas/`, `docs/TAREFA_CURADORIA.md` |
+| Comitês editoriais e publicação automática após verificação independente | `docs/COMITES_EDITORIAIS_AUTOMATICOS.md`, `scripts/publicar_curadoria_tecnologia.py`, `scripts/publicar_curadoria_business.mjs` |
 | Robô de discussões (pauta aprovada vira discussão no GitHub) | `scripts/criar_discussoes.py`, `.github/workflows/discussoes.yml` |
 | SEO técnico e GEO (sitemap, robots, JSON-LD, OG, RSS, llms.txt, gêmeos .md, IndexNow, Lighthouse CI) | `src/lib/rotas.ts`, `docs/SEO_GEO.md`, `docs/GEO_MONITORAMENTO.md` |
 | Equações das 16 camadas (KaTeX renderizado no build) | `src/pages/equacoes.md` |

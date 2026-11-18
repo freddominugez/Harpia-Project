@@ -1,0 +1,26 @@
+{
+  "titulo": "Estudo mostra que comprimir cache KV exige olhar além da taxa de redução",
+  "resumo": "Em testes relatados pelos autores, a compressão mais rápida do cache KV reduziu o tempo de conclusão em inferência distribuída.",
+  "data": "2026-11-18",
+  "categoria": "pesquisa",
+  "icone": "chip",
+  "corpo": [
+    "Um estudo que os autores informam ter sido aceito na conferência NPC 2026 examinou a compressão do cache KV em sistemas que separam etapas da inferência de modelos de linguagem entre GPUs ou nós de rede. Os autores argumentam que reduzir o volume transferido só ajuda quando o tempo economizado na comunicação supera o custo de codificar e reconstruir o cache.",
+    "A implementação chamada FastKVComp combina transformação e quantização em um único kernel TileLang e troca o estágio de compressão sem perdas por um conjunto de operadores selecionado antes da execução. A proposta mantém as políticas de compressão do sistema KVServe usado como base, concentrando a comparação no custo de executar essas políticas.",
+    "Nos experimentos descritos pelos autores, duas RTX 5090 foram usadas em um cenário local e uma RTX PRO 6000 com uma H100 em dois nós ligados por InfiniBand de 200 Gb/s em outro. A avaliação usou Llama 3.1 8B e Qwen 2.5 7B em três conjuntos de tarefas. Em relação à transferência sem compressão, o tempo de conclusão caiu de 45,3% a 51,1% no cenário local e de 30,2% a 38,6% no remoto.",
+    "Esses resultados são medidos nas configurações dos autores, com 50 solicitações por configuração e custos de compilação, inicialização e aquecimento excluídos. O estudo não demonstra o mesmo ganho para qualquer modelo, GPU ou rede. O Harpya não reproduziu os experimentos."
+  ],
+  "harpia": "Para avaliar uma técnica de cache KV, registre tanto os bytes transferidos quanto o tempo de compressão, reconstrução e conclusão da tarefa. Uma taxa de compressão maior pode perder para um caminho que executa mais rápido.",
+  "fontes": [
+    {
+      "veiculo": "arXiv · paper aceito na NPC 2026",
+      "titulo": "Beyond Compression Ratio: High-Throughput KV Compression for Disaggregated LLM Serving",
+      "url": "https://arxiv.org/abs/2611.04382"
+    }
+  ],
+  "status": "publicado",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-18",
+  "verificado_em": "2026-11-18",
+  "ordem": 999
+}

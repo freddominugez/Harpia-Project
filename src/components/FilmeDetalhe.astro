@@ -1,0 +1,25 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PageIntro from './PageIntro.astro';
+import FilmeCapa from './FilmeCapa.astro';
+import '../styles/filmes.css';
+interface Props { filme: CollectionEntry<'filmes'> | CollectionEntry<'businessFilmes'>; business?: boolean }
+const { filme, business = false } = Astro.props;
+const d = filme.data;
+const prefixo = business ? '/business' : '';
+---
+<Base titulo={d.titulo} descricao={d.resumo}>
+  <PageIntro trilha={[{rotulo:'Filmes e documentários',href:`${prefixo}/filmes/`},{rotulo:d.titulo}]} eyebrow={business ? 'Harpya Business' : 'Harpya Tecnologia'} titulo={d.titulo} lead={d.resumo} />
+  <article class="filme-detalhe"><div class="container filme-detalhe-grid">
+    <div>
+      <p><strong>Direção:</strong> {d.direcao} · <strong>Ano:</strong> {d.ano}{d.duracao_minutos ? ` · ${d.duracao_minutos} minutos` : ''}</p>
+      {d.titulo_original && d.titulo_original !== d.titulo && <p><strong>Título original:</strong> {d.titulo_original}</p>}
+      <h2>Por que está no Harpya</h2><p>{d.porque_ver}</p>
+      <h2>Limites desta indicação</h2><p>{d.limites}</p>
+      <div class="filme-links"><a class="btn gold" href={d.url} target="_blank" rel="noopener noreferrer">Consultar fonte oficial ↗</a>{d.assistir_url && <a class="btn" href={d.assistir_url} target="_blank" rel="noopener noreferrer">Onde assistir ↗</a>}</div>
+      <p class="filme-creditos">Revisão editorial: {d.revisor}, {d.revisado_em}. A indicação não pressupõe revisão integral da obra, salvo declaração explícita no texto.</p>
+    </div>
+    <aside><FilmeCapa titulo={d.titulo} imagem={d.imagem} credito={d.imagem_credito} />{d.imagem && <p class="filme-creditos">Imagem: {d.imagem_credito}. <a href={d.imagem_fonte} target="_blank" rel="noopener noreferrer">Fonte e licença</a>: {d.imagem_licenca}.</p>}</aside>
+  </div></article>
+</Base>

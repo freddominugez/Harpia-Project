@@ -110,6 +110,35 @@ const livros = defineCollection({
   }),
 });
 
+// Recomendações audiovisuais ficam separadas das aulas do YouTube.
+// A imagem de capa é opcional: sem licença documentada, a página gera arte temática própria.
+const filmeSchema = z.object({
+  titulo: z.string().min(5),
+  titulo_original: z.string().default(""),
+  direcao: z.string().min(2),
+  ano: z.coerce.number().int().min(1895).max(2100),
+  duracao_minutos: z.coerce.number().int().positive().optional(),
+  resumo: z.string().min(60).max(200),
+  porque_ver: z.string().min(40),
+  limites: z.string().min(20),
+  url: z.string().url().refine(value => value.startsWith("https://")),
+  assistir_url: z.string().url().refine(value => value.startsWith("https://")).or(z.literal("")).default(""),
+  imagem: z.string().regex(/^\/img\/filmes\/[A-Za-z0-9._-]+$/).or(z.literal("")).default(""),
+  imagem_credito: z.string().default(""),
+  imagem_fonte: z.string().url().refine(value => value.startsWith("https://")).or(z.literal("")).default(""),
+  imagem_licenca: z.string().default(""),
+  revisor: z.string().default(""),
+  revisado_em: dia.or(z.literal("")).default(""),
+  ...curadoria,
+}).superRefine((item, context) => {
+  if (item.imagem && (!item.imagem_credito || !item.imagem_fonte || !item.imagem_licenca))
+    context.addIssue({ code: z.ZodIssueCode.custom, message: "Imagem de filme exige origem, crédito e licença." });
+  if (item.status === "publicado" && (!item.revisor || !item.revisado_em))
+    context.addIssue({ code: z.ZodIssueCode.custom, message: "Filme publicado exige revisão e data." });
+});
+const filmes = defineCollection({ loader: data("filmes"), schema: filmeSchema });
+const businessFilmes = defineCollection({ loader: data("business/filmes"), schema: filmeSchema });
+
 const fontes = defineCollection({
   loader: data("fontes"),
   schema: z.object({
@@ -241,7 +270,7 @@ const businessAnalises=defineCollection({loader:md('business/analises'),schema:b
 const businessInvestigacoes=defineCollection({loader:data('business/investigacoes'),schema:businessInvestigacaoSchema});
 
 export const collections = {
-  businessPautas, businessFontes, businessGuias, businessAcervo, businessSerie, businessOrigens, businessAprendizado, businessAnalises,businessInvestigacoes,
-  caminhos, analises, videos, modulos, artigos, livros, fontes, feeds, aprendizado,
+  businessPautas, businessFontes, businessGuias, businessAcervo, businessFilmes, businessSerie, businessOrigens, businessAprendizado, businessAnalises,businessInvestigacoes,
+  caminhos, analises, videos, modulos, artigos, livros, filmes, fontes, feeds, aprendizado,
   "linha-do-tempo": linhaDoTempo, pautas, "fontes-monitoradas": fontesMonitoradas, noticias, anuncios,
 };

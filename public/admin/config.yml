@@ -918,6 +918,122 @@ collections:
     value_type: int
     default: 999
     hint: Posição na lista (menor aparece primeiro).
+- name: filmes
+  label: Filmes e documentários · Tecnologia
+  folder: src/content/filmes
+  extension: json
+  format: json
+  create: true
+  slug: '{{titulo}}'
+  identifier_field: titulo
+  summary: '{{ano}} · {{titulo}} · {{status}}'
+  fields:
+  - label: Título
+    name: titulo
+    widget: string
+  - label: Título original
+    name: titulo_original
+    widget: string
+    required: false
+    default: ''
+  - label: Direção
+    name: direcao
+    widget: string
+  - label: Ano
+    name: ano
+    widget: number
+    value_type: int
+  - label: Duração em minutos
+    name: duracao_minutos
+    widget: number
+    value_type: int
+    required: false
+  - label: Resumo do card (60 a 200 caracteres)
+    name: resumo
+    widget: text
+  - label: Por que ver no Harpya
+    name: porque_ver
+    widget: text
+  - label: Limites da indicação
+    name: limites
+    widget: text
+  - label: Fonte oficial HTTPS
+    name: url
+    widget: string
+  - label: Onde assistir (opcional)
+    name: assistir_url
+    widget: string
+    required: false
+    default: ''
+  - label: Imagem licenciada (opcional)
+    name: imagem
+    widget: image
+    required: false
+    default: ''
+    media_folder: /public/img/filmes
+    public_folder: /img/filmes
+  - label: Crédito da imagem
+    name: imagem_credito
+    widget: string
+    required: false
+    default: ''
+  - label: Fonte da imagem HTTPS
+    name: imagem_fonte
+    widget: string
+    required: false
+    default: ''
+  - label: Licença ou autorização da imagem
+    name: imagem_licenca
+    widget: text
+    required: false
+    default: ''
+  - label: Responsável pela revisão
+    name: revisor
+    widget: string
+    required: false
+    default: ''
+  - label: Revisado em
+    name: revisado_em
+    widget: string
+    required: false
+    default: ''
+  - label: Status
+    name: status
+    widget: select
+    options:
+    - label: Rascunho (não aparece no site)
+      value: rascunho
+    - label: Publicado
+      value: publicado
+    default: rascunho
+  - label: Origem
+    name: origem
+    widget: select
+    options:
+    - label: Manual
+      value: manual
+    - label: Curadoria diária
+      value: curadoria-diaria
+    default: manual
+  - widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    label: Adicionado em
+    name: adicionado_em
+  - widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    label: Link verificado em
+    name: verificado_em
+    hint: Data em que o link foi conferido.
+  - label: Ordem
+    name: ordem
+    widget: number
+    value_type: int
+    default: 999
+    hint: Posição na lista (menor aparece primeiro).
 - name: fontes
   label: Fontes de pesquisa
   label_singular: Fonte
@@ -1929,6 +2045,122 @@ collections:
       name: url
       label: URL
       widget: string
+- name: businessFilmes
+  label: Filmes e documentários · Business
+  folder: src/content/business/filmes
+  extension: json
+  format: json
+  create: true
+  slug: '{{titulo}}'
+  identifier_field: titulo
+  summary: '{{ano}} · {{titulo}} · {{status}}'
+  fields:
+  - label: Título
+    name: titulo
+    widget: string
+  - label: Título original
+    name: titulo_original
+    widget: string
+    required: false
+    default: ''
+  - label: Direção
+    name: direcao
+    widget: string
+  - label: Ano
+    name: ano
+    widget: number
+    value_type: int
+  - label: Duração em minutos
+    name: duracao_minutos
+    widget: number
+    value_type: int
+    required: false
+  - label: Resumo do card (60 a 200 caracteres)
+    name: resumo
+    widget: text
+  - label: Por que ver no Harpya
+    name: porque_ver
+    widget: text
+  - label: Limites da indicação
+    name: limites
+    widget: text
+  - label: Fonte oficial HTTPS
+    name: url
+    widget: string
+  - label: Onde assistir (opcional)
+    name: assistir_url
+    widget: string
+    required: false
+    default: ''
+  - label: Imagem licenciada (opcional)
+    name: imagem
+    widget: image
+    required: false
+    default: ''
+    media_folder: /public/img/filmes
+    public_folder: /img/filmes
+  - label: Crédito da imagem
+    name: imagem_credito
+    widget: string
+    required: false
+    default: ''
+  - label: Fonte da imagem HTTPS
+    name: imagem_fonte
+    widget: string
+    required: false
+    default: ''
+  - label: Licença ou autorização da imagem
+    name: imagem_licenca
+    widget: text
+    required: false
+    default: ''
+  - label: Responsável pela revisão
+    name: revisor
+    widget: string
+    required: false
+    default: ''
+  - label: Revisado em
+    name: revisado_em
+    widget: string
+    required: false
+    default: ''
+  - label: Status
+    name: status
+    widget: select
+    options:
+    - label: Rascunho (não aparece no site)
+      value: rascunho
+    - label: Publicado
+      value: publicado
+    default: rascunho
+  - label: Origem
+    name: origem
+    widget: select
+    options:
+    - label: Manual
+      value: manual
+    - label: Curadoria diária
+      value: curadoria-diaria
+    default: manual
+  - widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    label: Adicionado em
+    name: adicionado_em
+  - widget: datetime
+    date_format: YYYY-MM-DD
+    time_format: false
+    format: YYYY-MM-DD
+    label: Link verificado em
+    name: verificado_em
+    hint: Data em que o link foi conferido.
+  - label: Ordem
+    name: ordem
+    widget: number
+    value_type: int
+    default: 999
+    hint: Posição na lista (menor aparece primeiro).
 - name: businessSerie
   label: Business · Série Começando
   folder: src/content/business/serie

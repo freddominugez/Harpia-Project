@@ -1,0 +1,21 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import PageIntro from './PageIntro.astro';
+import FilmeCapa from './FilmeCapa.astro';
+import '../styles/filmes.css';
+interface Props { business?: boolean }
+const { business = false } = Astro.props;
+type Filme = CollectionEntry<'filmes'> | CollectionEntry<'businessFilmes'>;
+const itens = (business ? await getCollection('businessFilmes') : await getCollection('filmes')) as Filme[];
+const filmes = itens.filter(item => item.data.status === 'publicado').sort((a,b) => b.data.adicionado_em.localeCompare(a.data.adicionado_em));
+const prefixo = business ? '/business' : '';
+---
+<PageIntro trilha={[{rotulo:'Filmes e documentários'}]} eyebrow={business ? 'Harpya Business' : 'Harpya Tecnologia'} titulo="Filmes e documentários" lead="Obras selecionadas pela relação com os temas do Harpya. Cada ficha explica o alcance da recomendação e aponta para uma fonte oficial." />
+<section class="section"><div class="container">
+  {filmes.length ? <ul class="filmes-grid">
+    {filmes.map(item => <li><a class="filme-card" href={`${prefixo}/filmes/${item.id}/`}>
+      <FilmeCapa titulo={item.data.titulo} imagem={item.data.imagem} credito={item.data.imagem_credito} />
+      <div class="filme-corpo"><small>{item.data.ano} · {item.data.direcao}</small><h2>{item.data.titulo}</h2><p>{item.data.resumo}</p></div>
+    </a></li>)}
+  </ul> : <p>Ainda não há obras aprovadas para esta seção.</p>}
+</div></section>

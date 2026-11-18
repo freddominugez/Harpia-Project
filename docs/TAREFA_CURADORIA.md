@@ -1,5 +1,7 @@
 # Tarefa agendada: curadoria diária
 
+> Este documento registra a rotina anterior de preparação de rascunhos. A publicação automática sob comitês independentes está descrita em `docs/COMITES_EDITORIAIS_AUTOMATICOS.md`. Os estados e comandos abaixo permanecem como referência do coletor e do fluxo legado.
+
 Uma tarefa agendada do Claude roda todo dia às 06:43 (horário de Fortaleza). Ela lê a lista curada de fontes, separa o que é novo e ligado ao tema, confere cada link, escreve um resumo em português, grava os itens como **rascunho** e propõe até 3 pautas para o fórum. Nada vai ao ar sem Carlos Frederico trocar o status para `publicado` no painel (`/admin`).
 
 ## Como a tarefa se conecta

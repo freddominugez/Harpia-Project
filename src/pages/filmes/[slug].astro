@@ -1,0 +1,10 @@
+---
+import { getCollection } from 'astro:content';
+import FilmeDetalhe from '../../components/FilmeDetalhe.astro';
+export async function getStaticPaths() {
+  const itens = await getCollection('filmes');
+  return itens.filter(item => item.data.status === 'publicado').map(filme => ({ params: { slug: filme.id }, props: { filme } }));
+}
+const { filme } = Astro.props;
+---
+<FilmeDetalhe filme={filme} />
