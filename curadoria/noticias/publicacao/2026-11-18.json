@@ -1,0 +1,163 @@
+{
+  "dia": "2026-11-18",
+  "meta": 2,
+  "nota_minima": 60,
+  "publicadas": [
+    {
+      "slug": "eua-exigem-licenca-chips-ia-brasil-data-centers",
+      "titulo": "EUA passam a exigir licença para enviar chips avançados de IA ao Brasil, citando risco de desvio para a China",
+      "categoria": "brasil",
+      "nota": 95,
+      "criterios": {
+        "fontes": 30,
+        "atualidade": 20,
+        "substancia": 18,
+        "rigor": 13,
+        "forma": 10,
+        "variedade": 4
+      }
+    },
+    {
+      "slug": "minimax-h3-image-pesos-licenca-restrita",
+      "titulo": "MiniMax publica os pesos do H3-Image, gerador de imagens em 4K, mas com licença que exclui EUA, União Europeia e Reino Unido",
+      "categoria": "abertos",
+      "nota": 86,
+      "criterios": {
+        "fontes": 30,
+        "atualidade": 12,
+        "substancia": 20,
+        "rigor": 15,
+        "forma": 8,
+        "variedade": 1
+      }
+    }
+  ],
+  "fila": [
+    {
+      "slug": "china-letramento-ia-escolas-2030-reuters",
+      "nota": 83,
+      "apto": true
+    },
+    {
+      "slug": "metr-agentes-distinguem-testes-de-alinhamento",
+      "nota": 80,
+      "apto": true
+    },
+    {
+      "slug": "mgi-autoavaliacao-etica-ia-versao-web-orgaos-sisp",
+      "nota": 75,
+      "apto": true
+    },
+    {
+      "slug": "salesforce-sov-transcribe-1-transcricao-pesos-abertos",
+      "nota": 73,
+      "apto": true
+    },
+    {
+      "slug": "edweek-dois-tercos-educadores-formacao-ia",
+      "nota": 72,
+      "apto": true
+    },
+    {
+      "slug": "benchmark-revisores-ia-erros-artigos-cientificos",
+      "nota": 70,
+      "apto": true
+    },
+    {
+      "slug": "rand-pais-renda-alta-ia-dever-de-casa",
+      "nota": 70,
+      "apto": true
+    },
+    {
+      "slug": "vulncheck-mede-falsos-positivos-glasswing-anthropic",
+      "nota": 70,
+      "apto": true
+    },
+    {
+      "slug": "scale-umsl-curso-gratuito-ia-professores",
+      "nota": 70,
+      "apto": true
+    },
+    {
+      "slug": "sglang-ganha-consorcio-nvidia-amd-intel-google-meta",
+      "nota": 69,
+      "apto": true
+    },
+    {
+      "slug": "unesco-guia-letramento-midiatico-respostas-de-ia",
+      "nota": 69,
+      "apto": true
+    },
+    {
+      "slug": "fraudbench-modelos-fraude-agentes-autonomia",
+      "nota": 68,
+      "apto": true
+    },
+    {
+      "slug": "openai-quatro-camadas-monitoramento-desalinhamento",
+      "nota": 67,
+      "apto": true
+    },
+    {
+      "slug": "stanford-ai100-2026-ia-entra-no-cotidiano",
+      "nota": 66,
+      "apto": true
+    },
+    {
+      "slug": "ricursive-ripple-65b-pesos-abertos",
+      "nota": 66,
+      "apto": true
+    },
+    {
+      "slug": "nyc-pilotos-ia-ensino-medio-protestos",
+      "nota": 65,
+      "apto": true
+    },
+    {
+      "slug": "runway-praxis-1-robotica-pesos-abertos-apache",
+      "nota": 64,
+      "apto": true
+    },
+    {
+      "slug": "thinking-machines-inkling-2-small-pesos-prometidos",
+      "nota": 64,
+      "apto": true
+    },
+    {
+      "slug": "revisao-interpretabilidade-mecanistica-seguranca",
+      "nota": 62,
+      "apto": true
+    },
+    {
+      "slug": "edge0-audio8-tts-clonagem-voz-pesos-abertos",
+      "nota": 62,
+      "apto": true
+    },
+    {
+      "slug": "quem-pode-avaliar-ia-independente-africa",
+      "nota": 58,
+      "apto": false
+    },
+    {
+      "slug": "malasia-329-mil-professores-formacao-ia",
+      "nota": 58,
+      "apto": false
+    },
+    {
+      "slug": "filipinas-microsoft-2-mil-professores-letramento-ia",
+      "nota": 57,
+      "apto": false
+    },
+    {
+      "slug": "epoch-indice-capacidades-modelo-bayesiano",
+      "nota": 56,
+      "apto": false
+    },
+    {
+      "slug": "varzea-grande-ia-curriculo-obrigatorio-2027",
+      "nota": 54,
+      "apto": false
+    }
+  ],
+  "faltaram": 0
+}
