@@ -1,0 +1,16 @@
+{
+  "id": "qbsb9DpdZ6s",
+  "titulo": "How to compress text to 1 bit per character | Compression is Intelligence Part 3",
+  "canal": "3Blue1Brown",
+  "modulo": 0,
+  "nivel": "Intermediário",
+  "resumo": "Explica a codificação aritmética e como um modelo que prevê bem o próximo símbolo comprime texto perto de 1 bit por caractere. Para quem quer ligar probabilidade, entropia e modelos de linguagem.",
+  "catalogo": null,
+  "trilha": "mat",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=qbsb9DpdZ6s",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-18",
+  "verificado_em": "2026-11-18"
+}

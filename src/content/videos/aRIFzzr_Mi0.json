@@ -1,0 +1,16 @@
+{
+  "id": "aRIFzzr_Mi0",
+  "titulo": "EmbeddingGemma 2: How natively multimodal embeddings work",
+  "canal": "Google for Developers",
+  "modulo": 2,
+  "nivel": "Intermediário",
+  "resumo": "Mostra como codificadores por modalidade e um transformer bidirecional levam texto, código, imagem, vídeo e áudio a um único espaço de embeddings, e a receita de treino com destilação e perdas contrastivas.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=aRIFzzr_Mi0",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-18",
+  "verificado_em": "2026-11-18"
+}

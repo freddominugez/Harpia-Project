@@ -1,0 +1,16 @@
+{
+  "id": "e_m99aR7_3Q",
+  "titulo": "Optimizing AI Agents: Prompts vs. Weights (GEPA, GRPO) | Stanford CS329Z Lecture 9 with Michael Ryan",
+  "canal": "Stanford Online",
+  "modulo": 8,
+  "nivel": "Avançado",
+  "resumo": "Aula que compara otimizar o prompt de um agente (MIPROv2, TextGrad, GEPA) com ajustar os pesos (SFT, PPO, GRPO, destilação on-policy) e quando cada opção compensa.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=e_m99aR7_3Q",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-18",
+  "verificado_em": "2026-11-18"
+}
