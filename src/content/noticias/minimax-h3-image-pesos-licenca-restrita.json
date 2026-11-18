@@ -1,0 +1,37 @@
+{
+  "titulo": "MiniMax publica os pesos do H3-Image, gerador de imagens em 4K, mas com licença que exclui EUA, União Europeia e Reino Unido",
+  "resumo": "O modelo de 33,1 bilhões de parâmetros está no Hugging Face. A licença pede autorização a empresas maiores e proíbe usar as imagens para treinar outros modelos.",
+  "data": "2026-11-11",
+  "categoria": "abertos",
+  "icone": "codigo",
+  "corpo": [
+    "A chinesa MiniMax publicou em 11 de novembro os pesos do H3-Image, modelo que gera e edita imagens a partir de texto e aceita até 16 imagens de referência. Os arquivos estão no Hugging Face, com instruções para rodar no SGLang, no vLLM-Omni, no diffusers e no ComfyUI.",
+    "Segundo a ficha do modelo, o transformador de difusão tem 33,1 bilhões de parâmetros e ocupa 68,65 GB em BF16. O codificador de texto, herdado do modelo de vídeo H3, soma mais 66,7 GB e fica em outro repositório. O modelo roda em uma GPU e espera instruções detalhadas em inglês.",
+    "A licença é própria, a MiniMax-H3-Image Community License. De acordo com a análise da NeuroHive, empresas com receita anual acima de US$ 1 milhão ou que ofereçam serviço a terceiros precisam de autorização escrita, é proibido usar as imagens geradas para melhorar outros modelos, e a licença não cobre União Europeia, Reino Unido, Coreia do Sul e Estados Unidos.",
+    "A empresa afirma gerar uma imagem 4K em menos de 10 segundos e ter a melhor aderência ao pedido entre os modelos abertos, sem citar benchmark. Não saíram relatório técnico, métricas de qualidade nem dados de treino. Os testes independentes até agora são informais: um usuário levou 55,79 segundos para gerar uma imagem 4K numa RTX 3090 com pesos em INT8, segundo a NeuroHive.",
+    "Os mesmos relatos apontam falhas com texto pequeno nas imagens, como legendas sem sentido em infográficos."
+  ],
+  "harpia": "Pesos publicados não são sinônimo de modelo aberto. O caso ajuda a ler licenças com atenção: quem pode usar, onde, e o que se pode fazer com o resultado.",
+  "fontes": [
+    {
+      "veiculo": "MiniMax",
+      "titulo": "MiniMax H3-Image: Bringing 4K Image Generation into the 10-Second Era",
+      "url": "https://minimax.io/blog/minimax-h3-image"
+    },
+    {
+      "veiculo": "Hugging Face",
+      "titulo": "MiniMaxAI/minimax-h3-image",
+      "url": "https://huggingface.co/MiniMaxAI/minimax-h3-image"
+    },
+    {
+      "veiculo": "NeuroHive",
+      "titulo": "MiniMax H3-Image: Open-Weight Model Generates Native 4K Images in 10-16 Seconds",
+      "url": "https://neurohive.io/en/news/minimax-h3-image-4k-image-generation/"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-18",
+  "verificado_em": "2026-11-18",
+  "ordem": 999
+}

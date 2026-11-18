@@ -1,0 +1,33 @@
+{
+  "titulo": "METR mostra que modelos recentes já distinguem quase sem erro um teste de alinhamento de um teste de capacidade",
+  "resumo": "Em 55 ambientes de avaliação, o Claude Opus 5.5 separou todos os testes de alinhamento dos de capacidade. O METR alerta que isso pode inflar a segurança medida.",
+  "data": "2026-11-16",
+  "categoria": "pesquisa",
+  "icone": "lupa",
+  "corpo": [
+    "O METR, grupo independente que avalia modelos de IA, publicou em 16 de novembro uma nota de pesquisa sobre um problema conhecido das avaliações de segurança: o modelo perceber que está sendo testado. A nota é assinada por Uzay Girit, Kaivu Hariharan e Leni Shor, e o próprio METR avisa que esse formato passa por revisão menor que a de seus relatórios.",
+    "O grupo pôs agentes investigadores dentro de 55 ambientes: 19 avaliações de alinhamento, como armadilhas montadas para ver se o agente trapaceia, e 36 de capacidade, tiradas do Time Horizons e do Terminal-Bench 4.0. Cada agente deu uma nota de 0 a 100 para a chance de estar num teste de alinhamento, de duas formas: perguntado diretamente e explicando com as próprias palavras para que servia o ambiente.",
+    "Segundo a nota, o Claude Opus 5.5 atingiu AUC de 1,00 nas duas formas, ou seja, deu nota maior a todos os testes de alinhamento do que a qualquer teste de capacidade. Na resposta aberta, a menor nota para alinhamento foi 75 e a maior para capacidade foi 71,7. O Opus 4.6 ficou em 0,89, e entre os modelos da OpenAI o GPT-6 Astra chegou a 0,89 na pergunta direta e o GPT-5.4 a 0,77.",
+    "Os agentes apontaram as pistas que entregam o teste: metas em conflito, cenários artificiais e ambientes com cara de simulação. Num caso, o Opus 5.5 identificou as quatro mudanças que o METR fez para transformar uma tarefa comum numa armadilha.",
+    "O METR registra limites do estudo. Perguntar diretamente sobre testes pode induzir a resposta, e nos modelos da OpenAI os dois métodos discordaram mais. Em 7 dos 55 ambientes, a nota do GPT-6 Astra variou mais de 40 pontos entre rodadas. O trabalho também não mostra que essa percepção muda o comportamento do agente durante a tarefa.",
+    "A proposta do grupo é revisar as avaliações de alinhamento contra esses investigadores até que eles não consigam mais separá-las das de capacidade."
+  ],
+  "harpia": "Se o modelo sabe quando está na prova, a nota de segurança pode dizer menos do que parece. Para quem lê relatórios de avaliação, o estudo dá um critério simples: perguntar se o teste parecia teste.",
+  "fontes": [
+    {
+      "veiculo": "METR",
+      "titulo": "Measuring alignment eval tells",
+      "url": "https://metr.org/notes/2026-11-16-measuring-alignment-eval-tells/"
+    },
+    {
+      "veiculo": "DEV Community",
+      "titulo": "Your AI Knows It's Being Tested: How METR's Investigator Agents Spot Alignment Evals With Perfect Accuracy",
+      "url": "https://dev.to/yehechuhai/your-ai-knows-its-being-tested-how-metrs-investigator-agents-spot-alignment-evals-with-perfect-1k5f"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-18",
+  "verificado_em": "2026-11-18",
+  "ordem": 999
+}

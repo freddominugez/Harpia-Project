@@ -1,0 +1,41 @@
+{
+  "titulo": "EUA passam a exigir licença para enviar chips avançados de IA ao Brasil, citando risco de desvio para a China",
+  "resumo": "Regra do Departamento de Comércio põe o Brasil ao lado de Indonésia, Malásia, Singapura e Tailândia. Não é proibição, mas cada pedido será analisado caso a caso.",
+  "data": "2026-11-16",
+  "categoria": "brasil",
+  "icone": "chip",
+  "corpo": [
+    "O Escritório de Indústria e Segurança (BIS), do Departamento de Comércio dos Estados Unidos, divulgou em 16 de novembro uma regra provisória sobre o acesso remoto a chips e servidores avançados de IA. Segundo o órgão, o objetivo é impedir que as restrições americanas sejam contornadas por meio de data centers em outros países que alugam capacidade de computação.",
+    "De acordo com o Teletime e o Rio Times, o texto da regra lista cinco países com risco de desvio \"superior ao normal\": Brasil, Indonésia, Malásia, Singapura e Tailândia. Para eles, exportar, reexportar ou transferir chips de IA de alta capacidade passa a depender de licença. A medida não proíbe a compra. O comunicado do BIS não nomeia os países; a lista aparece no texto da regra.",
+    "A exigência não vale para empresas com sede nos Estados Unidos ou com controladora final americana. Data centers que fornecem grande volume de computação a empresas sediadas na China ou em países sob embargo de armas dos EUA terão 90 dias para obter licença, segundo o Teletime. O South China Morning Post informa que o alvo são instalações a partir de 12 milhões de unidades de desempenho de processamento (TPP).",
+    "Até a publicação das reportagens, o governo brasileiro não havia se manifestado. A Abes, associação das empresas de software, disse ao Teletime que acompanha o tema e vê risco de desigualdade entre provedores de nuvem de capital nacional e os ligados a empresas americanas, além de dificuldade para atrair investimento estrangeiro em data centers."
+  ],
+  "harpia": "A infraestrutura de IA no Brasil passa a depender também de uma licença decidida em Washington. Para o debate sobre soberania e sobre o Plano Brasileiro de IA, a regra muda quem pode treinar e servir modelos no país e a que custo.",
+  "fontes": [
+    {
+      "veiculo": "Teletime",
+      "titulo": "EUA vão dificultar compra de chips de IA para data centers no Brasil",
+      "url": "https://teletime.com.br/16/11/2026/eua-chips-ia-data-centers-brasil/"
+    },
+    {
+      "veiculo": "Bureau of Industry and Security",
+      "titulo": "BIS issues rule addressing remote access American super-intelligence technology",
+      "url": "https://bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology"
+    },
+    {
+      "veiculo": "The Rio Times",
+      "titulo": "US Rule Targets AI Chip Shipments to Brazil",
+      "url": "https://www.riotimesonline.com/us-requires-licences-ai-chips-brazil-data-centers-commerce-rule/"
+    },
+    {
+      "veiculo": "South China Morning Post",
+      "titulo": "US tightens AI chip export curbs to close China's overseas data centre loophole",
+      "url": "https://www.scmp.com/tech/article/3374639/us-tightens-ai-chip-export-curbs-close-chinas-overseas-data-centre-loophole"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-18",
+  "verificado_em": "2026-11-18",
+  "ordem": 999
+}

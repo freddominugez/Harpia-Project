@@ -1,0 +1,32 @@
+{
+  "titulo": "Reuters mostra como a China quer ensinar IA a quase 200 milhões de alunos até 2030, com estudos que pedem cautela",
+  "resumo": "Quase metade das províncias chinesas tem planos obrigatórios de letramento em IA. Pesquisas citadas pela agência ligam o uso intenso a notas menores em provas.",
+  "data": "2026-11-16",
+  "categoria": "letramento",
+  "icone": "escola",
+  "corpo": [
+    "Uma investigação da Reuters, assinada por Laurie Chen e Xiuyuan Ning e divulgada em 16 de novembro, descreve o esforço da China para que todos os alunos do ensino fundamental e médio, perto de 200 milhões de crianças e adolescentes, tenham letramento em IA até 2030.",
+    "Segundo a agência, quase metade das províncias e municípios do país já adotou planos obrigatórios. Xangai exige ao menos 30 horas de ensino de IA por ano em todas as séries, Pequim prevê 100 escolas-piloto, Ningxia e Gansu planejam incluir letramento em IA em exames de ingresso até 2027 e Yunnan quer usar IA para gravar e analisar aulas em 14 mil salas.",
+    "A Reuters diz ter visitado escolas, ouvido mais de uma dúzia de educadores, pais e especialistas, lido mais de 100 artigos acadêmicos e consultado registros de compras públicas. Esses registros somam pelo menos US$ 31 milhões em equipamentos, formação e plataformas no último ano, valor que a própria agência considera subestimado. O Ministério da Educação chinês não respondeu ao pedido de comentário.",
+    "A reportagem cita dois estudos que pedem cautela. Um, com quase 27 mil adolescentes, associou o uso de IA a notas 18% maiores no dever de casa e 20% menores nas provas mensais em seis meses. Outro, com mais de 320 mil alunos, encontrou desempenho menor em memória, compreensão e análise entre quem usa IA ao menos três vezes por semana. Os dois mostram correlação, não causa.",
+    "A agência também registra que não há definição comum de letramento em IA nem forma padronizada de ensinar ou medir o que os alunos aprendem."
+  ],
+  "harpia": "A maior experiência de letramento em IA em curso ainda não sabe medir o que ensina. Para o Harpya, o caso chinês mostra que escala sem definição clara do que é saber IA pode trocar aprendizagem por nota no dever de casa.",
+  "fontes": [
+    {
+      "veiculo": "The Next Web (Reuters)",
+      "titulo": "China wants every pupil AI-literate by 2030, a Reuters investigation finds",
+      "url": "https://thenextweb.com/news/china-ai-education-schools-2030-reuters"
+    },
+    {
+      "veiculo": "Gizmodo Brasil",
+      "titulo": "China está colocando inteligência artificial nas escolas e os primeiros estudos levantam um alerta",
+      "url": "https://gizmodo.com.br/china-esta-colocando-inteligencia-artificial-nas-escolas-e-os-primeiros-estudos-levantam-um-alerta-75725"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-18",
+  "verificado_em": "2026-11-18",
+  "ordem": 999
+}
