@@ -1,0 +1,176 @@
+{
+  "dia": "2026-11-19",
+  "meta": 2,
+  "nota_minima": 60,
+  "publicadas": [
+    {
+      "slug": "reson8-rumble-2-flash-transcricao-pesos-abertos",
+      "titulo": "Reson8 abre os pesos do Rumble-2-Flash, transcritor de 500 milhões de parâmetros que inclui o português",
+      "categoria": "abertos",
+      "nota": 95,
+      "criterios": {
+        "fontes": 25,
+        "atualidade": 20,
+        "substancia": 20,
+        "rigor": 15,
+        "forma": 10,
+        "variedade": 5
+      }
+    },
+    {
+      "slug": "anatel-r-375-milhoes-data-center-ia-telebras",
+      "titulo": "Anatel formaliza R$ 375 milhões do 5G para data center de IA do governo, mas operação ainda não tem custeio",
+      "categoria": "brasil",
+      "nota": 82,
+      "criterios": {
+        "fontes": 15,
+        "atualidade": 20,
+        "substancia": 20,
+        "rigor": 15,
+        "forma": 10,
+        "variedade": 2
+      }
+    }
+  ],
+  "fila": [
+    {
+      "slug": "uk-aisi-gpt-6-2-astra-jailbreak-mais-facil",
+      "nota": 80,
+      "apto": true
+    },
+    {
+      "slug": "china-letramento-ia-escolas-2030-reuters",
+      "nota": 79,
+      "apto": true
+    },
+    {
+      "slug": "salesforce-sov-transcribe-1-transcricao-pesos-abertos",
+      "nota": 77,
+      "apto": true
+    },
+    {
+      "slug": "alibaba-qwen4-max-sem-pesos-abertos",
+      "nota": 76,
+      "apto": true
+    },
+    {
+      "slug": "metr-agentes-distinguem-testes-de-alinhamento",
+      "nota": 74,
+      "apto": true
+    },
+    {
+      "slug": "mgi-autoavaliacao-etica-ia-versao-web-orgaos-sisp",
+      "nota": 73,
+      "apto": true
+    },
+    {
+      "slug": "sglang-ganha-consorcio-nvidia-amd-intel-google-meta",
+      "nota": 73,
+      "apto": true
+    },
+    {
+      "slug": "rand-pais-renda-alta-ia-dever-de-casa",
+      "nota": 70,
+      "apto": true
+    },
+    {
+      "slug": "scale-umsl-curso-gratuito-ia-professores",
+      "nota": 70,
+      "apto": true
+    },
+    {
+      "slug": "unesco-guia-letramento-midiatico-respostas-de-ia",
+      "nota": 69,
+      "apto": true
+    },
+    {
+      "slug": "edweek-dois-tercos-educadores-formacao-ia",
+      "nota": 68,
+      "apto": true
+    },
+    {
+      "slug": "benchmark-revisores-ia-erros-artigos-cientificos",
+      "nota": 68,
+      "apto": true
+    },
+    {
+      "slug": "vulncheck-mede-falsos-positivos-glasswing-anthropic",
+      "nota": 68,
+      "apto": true
+    },
+    {
+      "slug": "thinking-machines-inkling-2-small-pesos-prometidos",
+      "nota": 68,
+      "apto": true
+    },
+    {
+      "slug": "ricursive-ripple-65b-pesos-abertos",
+      "nota": 67,
+      "apto": true
+    },
+    {
+      "slug": "fraudbench-modelos-fraude-agentes-autonomia",
+      "nota": 66,
+      "apto": true
+    },
+    {
+      "slug": "edge0-audio8-tts-clonagem-voz-pesos-abertos",
+      "nota": 66,
+      "apto": true
+    },
+    {
+      "slug": "openai-quatro-camadas-monitoramento-desalinhamento",
+      "nota": 65,
+      "apto": true
+    },
+    {
+      "slug": "runway-praxis-1-robotica-pesos-abertos-apache",
+      "nota": 64,
+      "apto": true
+    },
+    {
+      "slug": "stanford-ai100-2026-ia-entra-no-cotidiano",
+      "nota": 64,
+      "apto": true
+    },
+    {
+      "slug": "nyc-pilotos-ia-ensino-medio-protestos",
+      "nota": 63,
+      "apto": false,
+      "bloqueios": [
+        "Fato de 22 dias atrás (limite: 21)."
+      ]
+    },
+    {
+      "slug": "revisao-interpretabilidade-mecanistica-seguranca",
+      "nota": 60,
+      "apto": true
+    },
+    {
+      "slug": "malasia-329-mil-professores-formacao-ia",
+      "nota": 58,
+      "apto": false
+    },
+    {
+      "slug": "filipinas-microsoft-2-mil-professores-letramento-ia",
+      "nota": 57,
+      "apto": false
+    },
+    {
+      "slug": "quem-pode-avaliar-ia-independente-africa",
+      "nota": 56,
+      "apto": false
+    },
+    {
+      "slug": "varzea-grande-ia-curriculo-obrigatorio-2027",
+      "nota": 52,
+      "apto": false
+    },
+    {
+      "slug": "epoch-indice-capacidades-modelo-bayesiano",
+      "nota": 51,
+      "apto": false
+    }
+  ],
+  "faltaram": 0
+}
