@@ -1,206 +1,157 @@
 [
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "Beyond Bitwidth: Deployment-Constrained Mixed-Precision Quantization for Multilingual LLM Inference on NVIDIA Blackwell",
-  "url": "https://arxiv.org/abs/2611.21974",
-  "data": "18/11/2026",
-  "ts": 1794978000
+  "titulo": "LusoClin: A Synthetic Clinical Note Dataset for Medical Information Retrieval in European Portuguese",
+  "url": "https://arxiv.org/abs/2611.23454",
+  "data": "19/11/2026",
+  "ts": 1795064400
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "NONSENSE: Non-Semantic Strings Expose Semanticity Gaps in Dense Retrieval",
-  "url": "https://arxiv.org/abs/2611.22353",
-  "data": "18/11/2026",
-  "ts": 1794978000
+  "titulo": "VIBRA: Backward-Compatible Cross-Modal Retrieval with Consensus Barycenters",
+  "url": "https://arxiv.org/abs/2611.23606",
+  "data": "19/11/2026",
+  "ts": 1795064400
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "Deal With It: On Better Schedules for Listwise Reranking",
-  "url": "https://arxiv.org/abs/2611.22392",
-  "data": "18/11/2026",
-  "ts": 1794978000
+  "titulo": "Learning Binary Codes with Spiking Neural Networks for Cross-Modal Hashing Retrieval",
+  "url": "https://arxiv.org/abs/2606.00740",
+  "data": "19/11/2026",
+  "ts": 1795064400
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "MIPR: A Benchmark for Reasoning-Intensive Multimodal Intent-to-Product Retrieval with Multi-Category Solutions",
-  "url": "https://arxiv.org/abs/2611.22509",
-  "data": "18/11/2026",
-  "ts": 1794978000
+  "titulo": "Know Before You Fetch: When Does Confidence-Based Retrieval-Budget Allocation Pay Off?",
+  "url": "https://arxiv.org/abs/2606.29959",
+  "data": "19/11/2026",
+  "ts": 1795064400
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "IntentGR: Enhancing Intent for End-to-End Personalized Generative Retrieval in Search",
-  "url": "https://arxiv.org/abs/2611.22788",
-  "data": "18/11/2026",
-  "ts": 1794978000
+  "titulo": "Explanations that Transfer: Interpreting Medical Retrieval with Sparse AutoEncoders",
+  "url": "https://arxiv.org/abs/2611.18179",
+  "data": "19/11/2026",
+  "ts": 1795064400
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "Better Rankers, Worse Retrievers: The Hidden Cost of RL Post-Training in Generative Recommendation",
-  "url": "https://arxiv.org/abs/2611.22838",
-  "data": "18/11/2026",
-  "ts": 1794978000
+  "titulo": "LLM-Assisted Reranking to Operationalize Nuanced Objectives in Recommender Systems",
+  "url": "https://arxiv.org/abs/2606.02883",
+  "data": "19/11/2026",
+  "ts": 1795064400
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "CARE: Conversational Affective Response Retrieval for Internet Memes",
-  "url": "https://arxiv.org/abs/2611.23005",
-  "data": "18/11/2026",
-  "ts": 1794978000
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "Evaluating AST-Derived Knowledge Graph Retrieval for AIOps Incident Diagnosis in Apache Kafka",
-  "url": "https://arxiv.org/abs/2611.21625",
-  "data": "18/11/2026",
-  "ts": 1794978000
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "Complexity and precision in quantum associative retrieval",
-  "url": "https://arxiv.org/abs/2611.21941",
-  "data": "18/11/2026",
-  "ts": 1794978000
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "Efficient Generative Retrieval for E-commerce Search with Semantic Cluster IDs and Expert-Guided RL",
-  "url": "https://arxiv.org/abs/2605.14434",
-  "data": "18/11/2026",
-  "ts": 1794978000
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "Beyond Retrieval: Learning Compact User Representations for Scalable LLM Personalization",
-  "url": "https://arxiv.org/abs/2606.04547",
-  "data": "18/11/2026",
-  "ts": 1794978000
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "CodeHID: Learning an Addressable Hierarchical Code Index for Generative Code Retrieval",
-  "url": "https://arxiv.org/abs/2608.24089",
-  "data": "18/11/2026",
-  "ts": 1794978000
+  "titulo": "Toward Agentic Retrieval-Augmented Generation for Enterprise Retail Workflows over Heterogeneous Data Sources",
+  "url": "https://arxiv.org/abs/2610.25096",
+  "data": "19/11/2026",
+  "ts": 1795064400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "WM-Quant: Rollout-Aware Post-Training Quantization for JEPA-Style World Models",
-  "url": "https://arxiv.org/abs/2611.21882",
-  "data": "18/11/2026",
-  "ts": 1794978000
+  "titulo": "QDA: Closed-Loop LLM Quantization Design with Agents",
+  "url": "https://arxiv.org/abs/2611.23388",
+  "data": "19/11/2026",
+  "ts": 1795064400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "TempQuant: Learning Adaptive Temperatures for Quantized Language Models",
-  "url": "https://arxiv.org/abs/2611.22128",
-  "data": "18/11/2026",
-  "ts": 1794978000
+  "titulo": "OMNIS+: Semantic RAN Slicing and Quantization for Dynamic Split Neural Networks",
+  "url": "https://arxiv.org/abs/2611.23977",
+  "data": "19/11/2026",
+  "ts": 1795064400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "BQ-LoRA: Binary-Quantized Low-Rank Adapters as Implicit Regularizers for Parameter-Efficient Fine-Tuning",
-  "url": "https://arxiv.org/abs/2611.22334",
-  "data": "18/11/2026",
-  "ts": 1794978000
+  "titulo": "Zonotopic Analysis of Quantization Error in Neural Networks",
+  "url": "https://arxiv.org/abs/2611.24648",
+  "data": "19/11/2026",
+  "ts": 1795064400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "HADVQ: Hessian Aware Directional Vector Quantization",
-  "url": "https://arxiv.org/abs/2611.22721",
-  "data": "18/11/2026",
-  "ts": 1794978000
+  "titulo": "Sparse designs via quantization of the uniform measure on high-dimensional hypercubes",
+  "url": "https://arxiv.org/abs/2611.24507",
+  "data": "19/11/2026",
+  "ts": 1795064400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "The Kernel Reality Check: Benchmarking and Distilling Efficient Attention at Scale",
-  "url": "https://arxiv.org/abs/2611.22947",
-  "data": "18/11/2026",
-  "ts": 1794978000
+  "titulo": "CoreQ: Mismatch-Corrected Successive Rounding for LLM Quantization",
+  "url": "https://arxiv.org/abs/2602.05902",
+  "data": "19/11/2026",
+  "ts": 1795064400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "The Illusion of Grounding: Do Vision-Language Models Weigh Retrieved Text and Images Like an Ideal Observer?",
-  "url": "https://arxiv.org/abs/2611.23127",
-  "data": "18/11/2026",
-  "ts": 1794978000
+  "titulo": "Embedding Foundation Model Predictions in Discrete-Choice Models with Structural Guarantees",
+  "url": "https://arxiv.org/abs/2606.26432",
+  "data": "19/11/2026",
+  "ts": 1795064400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Modeling Document and Section Hierarchies in Embedding Space",
-  "url": "https://arxiv.org/abs/2611.21980",
-  "data": "18/11/2026",
-  "ts": 1794978000
+  "titulo": "SharQ: Bridging Activation Sparsity and FP4 Quantization for LLM Inference",
+  "url": "https://arxiv.org/abs/2606.26587",
+  "data": "19/11/2026",
+  "ts": 1795064400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Computed Permutation Trellis Coding: Near-Optimal Quantization from Two Multiplications and a 64-Byte Table",
-  "url": "https://arxiv.org/abs/2611.22019",
-  "data": "18/11/2026",
-  "ts": 1794978000
+  "titulo": "CommitKV: Commit-Aligned KV Cache Compression for Multimodal Agents",
+  "url": "https://arxiv.org/abs/2608.07855",
+  "data": "19/11/2026",
+  "ts": 1795064400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "LoCaR: Localized Canvas Retrieval With Frozen Vision-Language Model",
-  "url": "https://arxiv.org/abs/2611.22131",
-  "data": "18/11/2026",
-  "ts": 1794978000
- },
- {
-  "fonte": "arXiv cs.LG",
-  "titulo": "Balancing Exploration and Exploitation in Constrained Combinatorial Optimization with U(1)-Symmetric Tensor Trains",
-  "url": "https://arxiv.org/abs/2611.22557",
-  "data": "18/11/2026",
-  "ts": 1794978000
- },
- {
-  "fonte": "arXiv cs.LG",
-  "titulo": "DAQ: Decision-Aligned Post-Training Quantization for Spiking Transformers",
-  "url": "https://arxiv.org/abs/2611.22611",
-  "data": "18/11/2026",
-  "ts": 1794978000
- },
- {
-  "fonte": "arXiv cs.LG",
-  "titulo": "Where Root Cause Analysis Fails: A Retrieval-Reranking Decomposition",
-  "url": "https://arxiv.org/abs/2609.36686",
-  "data": "18/11/2026",
-  "ts": 1794978000
+  "titulo": "Think Before You Distill: Generalization Recovery in Quantized VLAs via Selective Policy Distillation",
+  "url": "https://arxiv.org/abs/2610.05745",
+  "data": "19/11/2026",
+  "ts": 1795064400
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "LMMR: Learned Multigranular Memory Retrieval for Small Language Model Agents",
-  "url": "https://arxiv.org/abs/2611.22425",
-  "data": "18/11/2026",
-  "ts": 1794978000
+  "titulo": "Chorus: Shared N-gram Embeddings with Layer-wise Adaptation",
+  "url": "https://arxiv.org/abs/2611.23386",
+  "data": "19/11/2026",
+  "ts": 1795064400
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "Visibility Graph Representations of Word Embeddings for Text Classification",
-  "url": "https://arxiv.org/abs/2611.22685",
-  "data": "18/11/2026",
-  "ts": 1794978000
+  "titulo": "A Hybrid RAG Framework for Deceptive Review Detection: Integrating RoBERTa-LoRA, FAISS-Based Retrieval, and LLM Reasoning",
+  "url": "https://arxiv.org/abs/2611.24049",
+  "data": "19/11/2026",
+  "ts": 1795064400
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "Is 4-Bit Quantization More Than Noise to a Chat Model's Safety Behaviour? Attributing Behavioural Shifts with Matched Perturbations",
-  "url": "https://arxiv.org/abs/2611.22186",
-  "data": "18/11/2026",
-  "ts": 1794978000
+  "titulo": "HYPER: Hypothesis-Guided Planning for Evidence-Seeking Retrieval",
+  "url": "https://arxiv.org/abs/2603.19008",
+  "data": "19/11/2026",
+  "ts": 1795064400
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "RICE-PO: Turning Retrieval Interactions into Credit Signals for Reasoning Agents",
-  "url": "https://arxiv.org/abs/2605.26352",
-  "data": "18/11/2026",
-  "ts": 1794978000
+  "titulo": "Jetriever: Shifting Agent Memory Retrieval from Similarity to Utility",
+  "url": "https://arxiv.org/abs/2611.21478",
+  "data": "19/11/2026",
+  "ts": 1795064400
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "In-Context Optimization for Retrieval-Augmented Generation: A Gradient-Descent Perspective",
-  "url": "https://arxiv.org/abs/2605.26356",
-  "data": "18/11/2026",
-  "ts": 1794978000
+  "titulo": "Embedding Cosine Measures Text Length Before It Measures Homogenization",
+  "url": "https://arxiv.org/abs/2611.21519",
+  "data": "19/11/2026",
+  "ts": 1795064400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Quicksviewer: An LMM with Early Video Compression using Annealed Gumbel-Softmax",
+  "url": "https://arxiv.org/abs/2504.15270",
+  "data": "19/11/2026",
+  "ts": 1795064400
  },
  {
   "fonte": "OpenAI",
