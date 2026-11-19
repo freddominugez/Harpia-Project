@@ -1,0 +1,176 @@
+{
+  "data": "2026-11-19",
+  "timezone": "America/Fortaleza",
+  "items": [
+    {
+      "path": "src/content/artigos/2026-can-programs-replace-llm-judges-executable-program.json",
+      "sha256": "aca6fdbf7ddd537109b0748355417493d41035b2ca62536d823c537e4e53b0ef",
+      "pauta": {
+        "responsavel": "tech_pipeline",
+        "justificativa": "Preprint recente e original sobre avaliação de relevância de sistemas de busca, tema direto do Harpya."
+      },
+      "verificacao": {
+        "responsavel": "editorial_round",
+        "consultado_em": "2026-11-19",
+        "evidencias": [
+          "https://arxiv.org/abs/2611.24849",
+          "https://arxiv.org/html/2611.24849v1"
+        ],
+        "alegacoes": [
+          {
+            "texto": "O preprint arXiv 2611.24849v1 foi submetido em 18 de novembro de 2026 por Agichtein, Clarke, Dhole e Stern.",
+            "url": "https://arxiv.org/html/2611.24849v1",
+            "resultado": "confirmada",
+            "local": "Cabeçalho e autoria, linhas 68–72."
+          },
+          {
+            "texto": "ExecJudges usa um modelo para gerar programas executáveis por tópico, que rotulam documentos sem nova chamada ao modelo por documento.",
+            "url": "https://arxiv.org/html/2611.24849v1",
+            "resultado": "confirmada",
+            "local": "Resumo e seção 3, linhas 75–80 e 123–160."
+          },
+          {
+            "texto": "O método foi avaliado em sete coleções TREC contra rótulos NIST, juízes LLM e classificadores por tópico.",
+            "url": "https://arxiv.org/html/2611.24849v1",
+            "resultado": "confirmada",
+            "local": "Resumo e seção 4.1, linhas 78 e 172–178."
+          },
+          {
+            "texto": "Sem rótulos humanos, a concordância foi próxima à do juiz Sonnet em DL 2019–2021, mas menor em DL 2023, Robust04 e TREC-COVID.",
+            "url": "https://arxiv.org/html/2611.24849v1",
+            "resultado": "qualificada",
+            "local": "Seção 5.1, linhas 208–216."
+          },
+          {
+            "texto": "A variante ExecJudges-L com 16 rótulos humanos por tópico superou classificadores com a mesma quantidade de rótulos nas sete coleções.",
+            "url": "https://arxiv.org/html/2611.24849v1",
+            "resultado": "confirmada",
+            "local": "Resumo, seção 5.3 e limitações, linhas 79, 218–235, 361–362."
+          },
+          {
+            "texto": "Para todas as execuções oficiais DL, o acordo de ranking Kendall tau foi 0,87–0,94; ordenar os dez melhores sistemas foi menos confiável.",
+            "url": "https://arxiv.org/html/2611.24849v1",
+            "resultado": "qualificada",
+            "local": "Seção 5.4, linhas 238–245; seção 6.4, linhas 364–366."
+          },
+          {
+            "texto": "O custo inicial de escrever os programas foi US$ 0,17–0,49 por tópico e o ponto de equilíbrio de API, cerca de 200–350 documentos por tópico nas condições estudadas.",
+            "url": "https://arxiv.org/html/2611.24849v1",
+            "resultado": "qualificada",
+            "local": "Seção 5.5, linhas 247–252; preços de outubro de 2026 na seção 4."
+          },
+          {
+            "texto": "Os autores não testaram gaming nem usabilidade e usaram sobretudo uma família de modelos; os rótulos da variante forte foram escolhidos com conhecimento das notas.",
+            "url": "https://arxiv.org/html/2611.24849v1",
+            "resultado": "confirmada",
+            "local": "Seção 6.4, linhas 357–372."
+          }
+        ],
+        "escopo": "Resumo e HTML integral do preprint v1 examinados; resultados dos autores não reproduzidos pelo Harpya."
+      },
+      "selecao": {
+        "responsavel": "tech_select_19",
+        "nota": 4.5,
+        "justificativa": "Método de avaliação de busca reproduzível em princípio, comparação em sete coleções e limitações explícitas; útil para pesquisa do Harpya sem generalizar desempenho ou economia.",
+        "criterios": {
+          "rigor": 4.0,
+          "relevancia": 5.0,
+          "utilidade": 4.7,
+          "originalidade": 4.6,
+          "clareza_da_fonte": 4.6,
+          "atualidade": 4.9
+        }
+      },
+      "publicacao": {
+        "responsavel": "tech_edit_19",
+        "status": "aguardando_portao"
+      },
+      "sha256_publicado": "5d643dd58e87bd55eedf28a7c92da6e6f111b0f8f9c88e9350d468a213e4b4ef"
+    },
+    {
+      "path": "src/content/noticias/2026-11-19-execjudges-programas-avaliam-busca.json",
+      "sha256": "d4a5b75b41fb15fc082ca0eebecd73b492e4b6976aeb79094ca03462267ceec9",
+      "pauta": {
+        "responsavel": "tech_pipeline",
+        "justificativa": "Preprint recente e original sobre avaliação de relevância de sistemas de busca, tema direto do Harpya."
+      },
+      "verificacao": {
+        "responsavel": "editorial_round",
+        "consultado_em": "2026-11-19",
+        "evidencias": [
+          "https://arxiv.org/abs/2611.24849",
+          "https://arxiv.org/html/2611.24849v1"
+        ],
+        "alegacoes": [
+          {
+            "texto": "O preprint arXiv 2611.24849v1 foi submetido em 18 de novembro de 2026 por Agichtein, Clarke, Dhole e Stern.",
+            "url": "https://arxiv.org/html/2611.24849v1",
+            "resultado": "confirmada",
+            "local": "Cabeçalho e autoria, linhas 68–72."
+          },
+          {
+            "texto": "ExecJudges usa um modelo para gerar programas executáveis por tópico, que rotulam documentos sem nova chamada ao modelo por documento.",
+            "url": "https://arxiv.org/html/2611.24849v1",
+            "resultado": "confirmada",
+            "local": "Resumo e seção 3, linhas 75–80 e 123–160."
+          },
+          {
+            "texto": "O método foi avaliado em sete coleções TREC contra rótulos NIST, juízes LLM e classificadores por tópico.",
+            "url": "https://arxiv.org/html/2611.24849v1",
+            "resultado": "confirmada",
+            "local": "Resumo e seção 4.1, linhas 78 e 172–178."
+          },
+          {
+            "texto": "Sem rótulos humanos, a concordância foi próxima à do juiz Sonnet em DL 2019–2021, mas menor em DL 2023, Robust04 e TREC-COVID.",
+            "url": "https://arxiv.org/html/2611.24849v1",
+            "resultado": "qualificada",
+            "local": "Seção 5.1, linhas 208–216."
+          },
+          {
+            "texto": "A variante ExecJudges-L com 16 rótulos humanos por tópico superou classificadores com a mesma quantidade de rótulos nas sete coleções.",
+            "url": "https://arxiv.org/html/2611.24849v1",
+            "resultado": "confirmada",
+            "local": "Resumo, seção 5.3 e limitações, linhas 79, 218–235, 361–362."
+          },
+          {
+            "texto": "Para todas as execuções oficiais DL, o acordo de ranking Kendall tau foi 0,87–0,94; ordenar os dez melhores sistemas foi menos confiável.",
+            "url": "https://arxiv.org/html/2611.24849v1",
+            "resultado": "qualificada",
+            "local": "Seção 5.4, linhas 238–245; seção 6.4, linhas 364–366."
+          },
+          {
+            "texto": "O custo inicial de escrever os programas foi US$ 0,17–0,49 por tópico e o ponto de equilíbrio de API, cerca de 200–350 documentos por tópico nas condições estudadas.",
+            "url": "https://arxiv.org/html/2611.24849v1",
+            "resultado": "qualificada",
+            "local": "Seção 5.5, linhas 247–252; preços de outubro de 2026 na seção 4."
+          },
+          {
+            "texto": "Os autores não testaram gaming nem usabilidade e usaram sobretudo uma família de modelos; os rótulos da variante forte foram escolhidos com conhecimento das notas.",
+            "url": "https://arxiv.org/html/2611.24849v1",
+            "resultado": "confirmada",
+            "local": "Seção 6.4, linhas 357–372."
+          }
+        ],
+        "escopo": "Resumo e HTML integral do preprint v1 examinados; resultados dos autores não reproduzidos pelo Harpya."
+      },
+      "selecao": {
+        "responsavel": "tech_select_19",
+        "nota": 4.5,
+        "justificativa": "Método de avaliação de busca reproduzível em princípio, comparação em sete coleções e limitações explícitas; útil para pesquisa do Harpya sem generalizar desempenho ou economia.",
+        "criterios": {
+          "rigor": 4.0,
+          "relevancia": 5.0,
+          "utilidade": 4.7,
+          "originalidade": 4.6,
+          "clareza_da_fonte": 4.6,
+          "atualidade": 4.9
+        }
+      },
+      "publicacao": {
+        "responsavel": "tech_edit_19",
+        "status": "aguardando_portao"
+      },
+      "sha256_publicado": "4e09b506ae4d0b6225032200c7e9218149a42c0dd54f161b34b703ff575eb9db"
+    }
+  ]
+}

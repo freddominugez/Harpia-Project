@@ -1,0 +1,67 @@
+{
+  "data": "2026-11-19",
+  "timezone": "America/Fortaleza",
+  "items": [
+    {
+      "path": "src/content/business/acervo/2026-11-19-wharton-accenture-custo-agentes-ia.json",
+      "sha256": "2d0e832203511514aab062a9cb2dce960a54edbdbcf3fe3b5a6b4faab8a4c8b1",
+      "sha256_publicado": "566fc6e0cbf0dafc532d3248d23b4628304d5a293a1fb0cc30253c3c62222353",
+      "pauta": "business_pipeline",
+      "verificacao": {
+        "responsavel": "business_verify_19",
+        "consultado_em": "2026-11-19",
+        "escopo": "Página institucional e PDF integral de 18 páginas consultados; custos reais e retorno de projetos não observados.",
+        "evidencias": [
+          "https://knowledge.wharton.upenn.edu/special-report/wharton-accenture-agentic-cost-framework/",
+          "https://knowledge.wharton.upenn.edu/wp-content/uploads/2026/11/Wharton%E2%80%93Accenture-Agentic-Cost-Framework-2026.pdf"
+        ],
+        "alegacoes": [
+          {
+            "texto": "A página institucional data o relatório em 16 de novembro de 2026 e o PDF identifica seis autores da Wharton e da Accenture.",
+            "url": "https://knowledge.wharton.upenn.edu/wp-content/uploads/2026/11/Wharton%E2%80%93Accenture-Agentic-Cost-Framework-2026.pdf",
+            "resultado": "confirmada",
+            "local": "Página institucional, cabeçalho; PDF p. 2, Authors."
+          },
+          {
+            "texto": "A base usa mais de 18 mil tarefas e atividades do O*NET distribuídas por 923 ocupações.",
+            "url": "https://knowledge.wharton.upenn.edu/wp-content/uploads/2026/11/Wharton%E2%80%93Accenture-Agentic-Cost-Framework-2026.pdf",
+            "resultado": "confirmada",
+            "local": "PDF p. 4, introdução e metodologia."
+          },
+          {
+            "texto": "Após a triagem, 11.339 tarefas aptas a agentes foram avaliadas por modelos de linguagem em cinco dimensões de complexidade.",
+            "url": "https://knowledge.wharton.upenn.edu/wp-content/uploads/2026/11/Wharton%E2%80%93Accenture-Agentic-Cost-Framework-2026.pdf",
+            "resultado": "confirmada",
+            "local": "PDF p. 13, Task Complexity Scoring."
+          },
+          {
+            "texto": "O modelo calcula 13 componentes de custo: oito iniciais, quatro operacionais e computação separada.",
+            "url": "https://knowledge.wharton.upenn.edu/wp-content/uploads/2026/11/Wharton%E2%80%93Accenture-Agentic-Cost-Framework-2026.pdf",
+            "resultado": "confirmada",
+            "local": "PDF pp. 12 e 15, Methods e Agent Cost Components."
+          },
+          {
+            "texto": "A estimativa é descrita como piso para organização sofisticada e exclui transformação, adoção e infraestrutura inicial; não mede custos reais nem comprova retorno.",
+            "url": "https://knowledge.wharton.upenn.edu/wp-content/uploads/2026/11/Wharton%E2%80%93Accenture-Agentic-Cost-Framework-2026.pdf",
+            "resultado": "qualificada",
+            "local": "PDF p. 17, Limitations; distinção editorial entre cenário modelado e gasto observado."
+          }
+        ]
+      },
+      "selecao": {
+        "responsavel": "business_select_19",
+        "nota": 8.2,
+        "justificativa": "Fonte acadêmica aprovada e relatório integral com método e limites úteis para decisões de orçamento; a coautoria comercial e o caráter estimado dos custos aparecem explicitamente na matéria.",
+        "criterios": {
+          "rigor": 7.5,
+          "relevancia": 9.5,
+          "utilidade": 8.5,
+          "atualidade": 9.5,
+          "clareza": 8,
+          "conflitos": 6.5
+        }
+      },
+      "publicacao": "business_edit_19"
+    }
+  ]
+}

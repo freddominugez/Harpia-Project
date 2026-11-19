@@ -37,7 +37,7 @@ export async function getBusinessPresentation() {
   const noticias: Noticia[] = acervo.filter(a => a.data.tipo === 'noticia').map(a => ({
     slug: a.id, href: recursoPublicadoPath(a.id,a.data.tipo), titulo: a.data.titulo, resumo: a.data.resumo,
     data: a.data.data, categoria: categorias[a.data.trilha], icone: 'leitura', corpo: a.data.corpo,
-    harpia: a.data.limites, fontes: [{ veiculo: fonteNome(a.data.fonte), titulo: a.data.titulo, url: a.data.url }, ...a.data.referencias.filter(url => url !== a.data.url).map(url => ({ veiculo: 'Referência', titulo: url, url }))],
+    harpia: a.data.limites, fontes: [{ veiculo: fonteNome(a.data.fonte), titulo: a.data.titulo, url: a.data.url }, ...a.data.referencias.filter(url => url !== a.data.url).map(url => ({ veiculo: 'Referência', titulo: new URL(url).pathname.toLowerCase().endsWith('.pdf') ? 'Relatório integral (PDF)' : url, url }))],
   }));
   const analises: Analise[] = [...artigosAnalise.map(a=>({...a.data,slug:a.id,href:`/business/analises/${a.id}/`,corpo:a.body??''})), ... acervo.filter(a => a.data.tipo === 'analise').map(a => ({
     slug: a.id, href: recursoPublicadoPath(a.id,a.data.tipo), titulo: a.data.titulo, titulo_curto: a.data.titulo,

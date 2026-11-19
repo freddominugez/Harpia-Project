@@ -1,0 +1,26 @@
+{
+  "titulo": "Programas escritos por IA podem avaliar buscas sem chamar um modelo para cada documento",
+  "resumo": "Em sete coleções TREC, os autores testaram programas gerados por IA para classificar relevância. O ganho depende do tipo de consulta e de rótulos humanos.",
+  "data": "2026-11-18",
+  "categoria": "pesquisa",
+  "icone": "lupa",
+  "corpo": [
+    "Um preprint publicado em 18 de novembro por Eugene Agichtein, Charles L. A. Clarke, Kaustubh Dhole e William Stern propõe o ExecJudges para avaliar sistemas de busca. Em vez de pedir a um modelo de linguagem um julgamento para cada documento, o método usa um modelo para escrever três programas por tópico. Depois, esses programas classificam passagens com regras executáveis, sem novas chamadas ao modelo por documento.",
+    "Os autores compararam os rótulos com avaliações de especialistas do NIST, juízes baseados em modelos e classificadores por tópico em sete coleções TREC. Sem exemplos humanos, a concordância do ExecJudges ficou no nível do juiz Claude Sonnet nas coleções de desenvolvimento e piloto DL 2019 a 2021, mas abaixo dele em DL 2023, Robust04 e TREC-COVID. Com 16 rótulos humanos por tópico, a variante ExecJudges-L superou classificadores treinados com a mesma quantidade de exemplos nas sete coleções.",
+    "Para ordenar todas as execuções oficiais de busca nas coleções DL avaliadas, os autores relatam Kendall τ de 0,87 a 0,94, conforme a variante. A ordenação dos dez melhores sistemas foi menos confiável. Escrever os programas custou de US$ 0,17 a US$ 0,49 por tópico nos preços usados no estudo; acima de cerca de 200 a 350 documentos por tópico, o custo de API ficou abaixo do juiz LLM comparado. A execução posterior dispensa novas chamadas de API, mas ainda usa processamento local e não elimina o custo de criar rótulos humanos quando necessários.",
+    "O trabalho ainda é um preprint e o Harpya não reproduziu os experimentos. A variante mais forte depende de 16 rótulos humanos selecionados com conhecimento das notas reais, condição difícil de repetir na prática. Os autores não testaram se um sistema de busca poderia explorar as regras publicadas nem a facilidade de revisão dos programas por pessoas; os resultados vêm sobretudo de uma família de modelos."
+  ],
+  "harpia": "Na avaliação de uma busca, compare concordância com avaliadores humanos e a ordem dos sistemas, inclusive entre os melhores. Programas por tópico podem reduzir chamadas de API em conjuntos grandes, mas exigem medir custo de escrita, processamento local, rótulos humanos e risco de otimização para a regra.",
+  "fontes": [
+    {
+      "veiculo": "arXiv · preprint",
+      "titulo": "Can Programs Replace LLM Judges? Executable Program Judges for Scalable and Efficient Relevance Labeling",
+      "url": "https://arxiv.org/abs/2611.24849"
+    }
+  ],
+  "status": "publicado",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-19",
+  "verificado_em": "2026-11-19",
+  "ordem": 999
+}

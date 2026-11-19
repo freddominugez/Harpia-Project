@@ -1,0 +1,29 @@
+{
+  "titulo": "Wharton e Accenture estimam custos de agentes de IA por tarefa e apontam despesas fora da conta",
+  "resumo": "Relatório usa dados de 923 ocupações para estimar custos de agentes de IA. A conta é um piso teórico e deixa de fora despesas de transformação e adoção.",
+  "fonte": "wharton",
+  "url": "https://knowledge.wharton.upenn.edu/special-report/wharton-accenture-agentic-cost-framework/",
+  "tipo": "noticia",
+  "trilha": "gestao",
+  "autores": "Eric Bradlow, James Crowley, Ken Munie, Selen Karaca-Griffin, Liz Beard e Russel Walters",
+  "data": "2026-11-16",
+  "data_precisa": true,
+  "idioma": "en",
+  "acesso": "Página institucional e relatório integral de 18 páginas abertos em inglês; síntese original do Harpya em português.",
+  "evidencia": "Modelo de estimativa por tarefa baseado no O*NET, com classificação e pontuação de complexidade por modelos de linguagem; não são custos observados de implantação.",
+  "limites": "Os custos são estimativas de piso para organizações sofisticadas, não gastos reais nem retorno comprovado. O modelo exclui transformação, integração ampla, treinamento, gestão da mudança e infraestrutura inicial. Há coautoria da Accenture, que atua comercialmente em consultoria de IA.",
+  "status": "publicado",
+  "justificativa": "Fonte acadêmica aprovada, método e exclusões descritos no relatório integral; a matéria distingue estimativa de gasto observado e explicita a coautoria comercial.",
+  "revisor": "business_verify_19",
+  "revisado_em": "2026-11-19",
+  "corpo": [
+    "A Wharton School e a Accenture publicaram em 16 de novembro um relatório sobre o custo de agentes de IA em empresas. Os seis autores partiram de dados do O*NET que reúnem mais de 18 mil tarefas e atividades em 923 ocupações. O objetivo é estimar como o tipo de trabalho, o volume de tarefas e o desenho dos agentes afetam a conta de implantação e operação.",
+    "Depois de classificar quais atividades poderiam ser executadas por agentes, a equipe pontuou 11.339 tarefas consideradas aptas em cinco dimensões, entre elas complexidade do fluxo, exigências regulatórias e acesso a dados. A pontuação foi feita com modelos de linguagem, segundo o apêndice. O modelo de custos reúne 13 componentes: oito de implantação, quatro operacionais e computação, apresentada separadamente.",
+    "O relatório sustenta que não há preço único para um agente: empresas semelhantes podem ter tarefas, volumes e requisitos de supervisão diferentes. Para uma decisão concreta, a proposta é mapear o trabalho da própria organização, estimar a frequência de cada tarefa e comparar arquiteturas e capacidades de modelos. Os exemplos numéricos do estudo são cenários modelados, não faturas de projetos acompanhados em operação.",
+    "Os autores descrevem a estimativa como um piso para uma organização sofisticada que já constrói seu enésimo agente. Ficam fora custos de transformação, consultoria e integração ampla, treinamento, mudança organizacional e infraestrutura inicial. O relatório também tem coautoria da Accenture, empresa que vende serviços nessa área. Por isso, a análise ajuda a formular perguntas de orçamento, mas não comprova economia nem retorno sobre o investimento."
+  ],
+  "referencias": [
+    "https://knowledge.wharton.upenn.edu/special-report/wharton-accenture-agentic-cost-framework/",
+    "https://knowledge.wharton.upenn.edu/wp-content/uploads/2026/11/Wharton%E2%80%93Accenture-Agentic-Cost-Framework-2026.pdf"
+  ]
+}
