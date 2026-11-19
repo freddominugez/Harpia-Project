@@ -1,0 +1,15 @@
+{
+  "nome": "IDEAS/RePEc · Registros bibliográficos",
+  "url": "https://ideas.repec.org/",
+  "regiao": "Global",
+  "tipo": "academica",
+  "descricao": "Metadados e resumos bibliográficos de pesquisa econômica e administrativa.",
+  "idioma": "en",
+  "hosts": ["ideas.repec.org"],
+  "feed": "",
+  "status": "aprovado",
+  "verificado_em": "2026-11-19",
+  "canais": [],
+  "escopos": ["artigos"],
+  "restricao": "Aprovar apenas como registro e resumo verificável; não substituir o artigo científico integral."
+}

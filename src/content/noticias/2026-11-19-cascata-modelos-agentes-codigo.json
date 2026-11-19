@@ -1,0 +1,26 @@
+{
+  "titulo": "Estudo simula modelo menor antes do maior para reduzir custo de agentes de programação",
+  "resumo": "Em tarefas SWE-bench, uma cascata reduziu em 16,4% o custo estimado em GPU-h sob alocação exclusiva, mas aumentou a duração por tarefa.",
+  "data": "2026-11-18",
+  "categoria": "pesquisa",
+  "icone": "chip",
+  "corpo": [
+    "Um preprint de Boxi Zhou, German Sviridov, Dmitrii Ustiugov e Haris Javaid, enviado ao arXiv em 18 de novembro, avalia uma forma de reduzir o custo de agentes que corrigem código. Os autores executaram 36 modelos com o mesmo agente mini-swe-agent no SWE-bench Verified e mediram se as correções passavam nos testes. Na análise principal, o modelo menor GLM-4.7-Flash recebe a tarefa primeiro; caso falhe ou exceda o prazo, GLM-4.7 recomeça do estado inicial.",
+    "A comparação da cascata usou 466 tarefas com trajetórias completas dos dois modelos. Segundo os autores, no melhor ponto de custo da simulação, as horas de GPU caíram de 2.585 para 2.160, redução de 16,4% frente ao uso exclusivo do modelo maior. Nas tarefas fáceis, a redução chegou a 33,5%. A taxa de resolução observada foi de 73,4% na cascata e 71,2% no modelo maior isolado, mas os autores advertem que a pequena diferença de acerto pode refletir variação entre execuções.",
+    "A economia de GPU veio acompanhada de mais tempo por tarefa: com prazo de 120 minutos para o modelo menor, a duração sequencial média foi de 84,5 minutos, ante 41,6 minutos com o modelo maior isolado. Por isso, a proposta se ajusta melhor a tarefas assíncronas. O custo foi expresso em horas de GPU sob alocação exclusiva por tarefa, não em preço de API nem no consumo físico total do cluster.",
+    "O resultado ainda é de um preprint, baseado em simulação a partir de trajetórias já coletadas, um par principal de modelos e um benchmark. Cada combinação de modelo e tarefa teve uma execução, sem teste de repetibilidade. O Harpya não reproduziu os experimentos; outros tipos de tarefa, pares de modelos e custos de operação podem alterar o equilíbrio entre economia e demora."
+  ],
+  "harpia": "Para agentes de programação, a escolha do modelo pode depender do prazo de entrega e do custo de GPU por tarefa resolvida. Antes de adotar uma cascata, convém medir a distribuição de dificuldade e o tempo de espera no próprio trabalho, sem tratar a redução de 16,4% deste estudo como garantia geral.",
+  "fontes": [
+    {
+      "veiculo": "arXiv · preprint",
+      "titulo": "Reducing Inference Cost of Coding Agents with Timeout Cascades",
+      "url": "https://arxiv.org/abs/2611.24324"
+    }
+  ],
+  "status": "publicado",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-19",
+  "verificado_em": "2026-11-19",
+  "ordem": 999
+}

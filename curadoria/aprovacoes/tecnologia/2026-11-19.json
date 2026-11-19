@@ -171,6 +171,85 @@
         "status": "aguardando_portao"
       },
       "sha256_publicado": "4e09b506ae4d0b6225032200c7e9218149a42c0dd54f161b34b703ff575eb9db"
+    },
+    {
+      "path": "src/content/noticias/2026-11-19-cascata-modelos-agentes-codigo.json",
+      "sha256": "d984f08bc4ac11ed551d22d6cd13b1d9c4747ddc492904a82befe87ca9917217",
+      "pauta": {
+        "responsavel": "tech_pipeline",
+        "justificativa": "Preprint original sobre custo e latência de agentes de programação, publicado após a coleta da manhã; método e limitações acessíveis no texto integral."
+      },
+      "verificacao": {
+        "responsavel": "editorial_round",
+        "consultado_em": "2026-11-19",
+        "evidencias": [
+          "https://arxiv.org/abs/2611.24324",
+          "https://arxiv.org/html/2611.24324v1"
+        ],
+        "escopo": "Resumo e HTML integral do preprint v1 conferidos; experimentos não reproduzidos pelo Harpya.",
+        "alegacoes": [
+          {
+            "texto": "O preprint v1 foi submetido em 18 de novembro de 2026 pelos quatro autores identificados na matéria.",
+            "url": "https://arxiv.org/html/2611.24324v1",
+            "resultado": "confirmada",
+            "local": "Cabeçalho e autoria, linhas 46–49."
+          },
+          {
+            "texto": "Os autores avaliaram 36 modelos com mini-swe-agent e SWE-bench Verified em GPU AMD MI300X.",
+            "url": "https://arxiv.org/html/2611.24324v1",
+            "resultado": "confirmada",
+            "local": "Resumo, introdução e metodologia, linhas 52–65 e 122–162."
+          },
+          {
+            "texto": "A simulação principal usa 466 tarefas com trajetórias completas de GLM-4.7-Flash e GLM-4.7, com reinício a frio na escalada.",
+            "url": "https://arxiv.org/html/2611.24324v1",
+            "resultado": "confirmada",
+            "local": "Metodologia, linhas 173–182."
+          },
+          {
+            "texto": "No prazo de 120 minutos, o custo efetivo somado cai de 2585 para 2160 GPU-h, 16,4%, e nas tarefas fáceis cai 33,5%.",
+            "url": "https://arxiv.org/html/2611.24324v1",
+            "resultado": "qualificada",
+            "local": "Resultados, linhas 202–210; GPU-h é custo por tarefa sob alocação exclusiva, não horas físicas totais, linhas 163–171."
+          },
+          {
+            "texto": "A resolução observada é 71,2% no modelo maior e 73,4% na cascata; a diferença pode refletir variação entre execuções.",
+            "url": "https://arxiv.org/html/2611.24324v1",
+            "resultado": "qualificada",
+            "local": "Tabela I e discussão, linhas 219–225 e 248–252."
+          },
+          {
+            "texto": "A duração sequencial média sobe de 41,6 para 84,5 minutos por tarefa no cenário de 120 minutos.",
+            "url": "https://arxiv.org/html/2611.24324v1",
+            "resultado": "confirmada",
+            "local": "Seção V-E, linhas 226–232."
+          },
+          {
+            "texto": "A análise de cascata é simulada a partir de trajetórias e limitada por um benchmark, um par principal de modelos e uma execução por par modelo–tarefa.",
+            "url": "https://arxiv.org/html/2611.24324v1",
+            "resultado": "confirmada",
+            "local": "Seções IV-F, VI-C e VI-D, linhas 173–177, 248–261."
+          }
+        ]
+      },
+      "selecao": {
+        "responsavel": "tech_select_now",
+        "nota": 4.4,
+        "justificativa": "Método verificável e utilidade direta para custo de agentes; a redução de 16,4% é explicitamente simulada e não extrapolada para custo físico ou API. Um par principal, um benchmark e uma execução por par limitam a generalização.",
+        "criterios": {
+          "rigor": 3.8,
+          "relevancia": 5.0,
+          "utilidade": 4.6,
+          "originalidade": 4.1,
+          "clareza_da_fonte": 4.7,
+          "atualidade": 5.0
+        }
+      },
+      "publicacao": {
+        "responsavel": "root",
+        "status": "aguardando_portao"
+      },
+      "sha256_publicado": "fca2f0540e44a3ac454db4e2a49286e74789751961e6b2d29d1c19c00a57166e"
     }
   ]
 }

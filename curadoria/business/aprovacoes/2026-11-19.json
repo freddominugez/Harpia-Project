@@ -62,6 +62,68 @@
         }
       },
       "publicacao": "business_edit_19"
+    },
+    {
+      "path": "src/content/business/acervo/2026-11-19-fdc-lideranca-aprendizagem-organizacional.json",
+      "sha256": "32a31d7891e1ea676d8c6dd90e68407fccca741d162f1b28c770f729945621af",
+      "sha256_publicado": "7165da781609762d9ff72c0387a25335f50474a62ded18cfd50e83ffbeb57332",
+      "pauta": "business_pipeline",
+      "verificacao": {
+        "responsavel": "business_verify_now",
+        "consultado_em": "2026-11-19",
+        "escopo": "Artigo institucional FDC e resumos públicos dos estudos de 2023 e 2015 examinados; integral de 2023 na editora retornou HTTP 403; dados e efeitos fora dos resumos não foram verificados.",
+        "evidencias": [
+          "https://sejarelevante.fdc.org.br/quando-liderancas-aprendem-empresas-mudam/",
+          "https://ideas.repec.org/a/eee/jbrese/v158y2023ics0148296323000085.html",
+          "https://dare.uva.nl/id/a337e8d7-529b-49d8-b798-9b6182eb66a1"
+        ],
+        "alegacoes": [
+          {
+            "texto": "Luciana Ferreira assina a síntese da FDC publicada em 19 de novembro de 2026.",
+            "url": "https://sejarelevante.fdc.org.br/quando-liderancas-aprendem-empresas-mudam/",
+            "resultado": "confirmada",
+            "local": "Cabeçalho e autoria da página FDC."
+          },
+          {
+            "texto": "O estudo de 2023 analisou 509 questionários pareados em 157 pequenas e médias empresas de tecnologia.",
+            "url": "https://ideas.repec.org/a/eee/jbrese/v158y2023ics0148296323000085.html",
+            "resultado": "confirmada",
+            "local": "Resumo bibliográfico do Journal of Business Research."
+          },
+          {
+            "texto": "O resumo de 2023 relata mediação pela aprendizagem organizacional e moderação em direções opostas por estilos de liderança.",
+            "url": "https://ideas.repec.org/a/eee/jbrese/v158y2023ics0148296323000085.html",
+            "resultado": "confirmada",
+            "local": "Abstract do estudo de 2023 no RePEc."
+          },
+          {
+            "texto": "O estudo de 2015 usa dois estudos qualitativos em organizações baseadas em projetos para examinar práticas de liderança.",
+            "url": "https://dare.uva.nl/id/a337e8d7-529b-49d8-b798-9b6182eb66a1",
+            "resultado": "confirmada",
+            "local": "Resumo do registro da Universidade de Amsterdã."
+          },
+          {
+            "texto": "Os resultados descritos são associações e interpretação qualitativa, sem demonstração de causalidade universal.",
+            "url": "https://sejarelevante.fdc.org.br/quando-liderancas-aprendem-empresas-mudam/",
+            "resultado": "qualificada",
+            "local": "Inferência editorial limitada pelos métodos descritos na síntese e nos resumos públicos."
+          }
+        ]
+      },
+      "selecao": {
+        "responsavel": "business_select_now",
+        "nota": 7.7,
+        "justificativa": "Fonte Business aprovada, autoria e data explícitas, pesquisas identificáveis e utilidade para gestão. A notícia distingue associação de causalidade e registra que o integral de 2023 não foi consultado.",
+        "criterios": {
+          "rigor": 7,
+          "relevancia": 8.5,
+          "utilidade": 8,
+          "atualidade": 8.5,
+          "clareza": 8,
+          "conflitos": 6
+        }
+      },
+      "publicacao": "root"
     }
   ]
 }

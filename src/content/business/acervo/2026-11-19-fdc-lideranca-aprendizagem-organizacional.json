@@ -1,0 +1,30 @@
+{
+  "titulo": "FDC relaciona aprendizagem organizacional a práticas de liderança no trabalho",
+  "resumo": "Professora da Fundação Dom Cabral reúne dois estudos sobre feedback, aprendizagem e capacidade de explorar novas ideias sem perder a execução do negócio atual.",
+  "fonte": "fdc",
+  "url": "https://sejarelevante.fdc.org.br/quando-liderancas-aprendem-empresas-mudam/",
+  "tipo": "noticia",
+  "trilha": "gestao",
+  "autores": "Luciana Ferreira",
+  "data": "2026-11-19",
+  "data_precisa": true,
+  "idioma": "pt",
+  "acesso": "Artigo institucional aberto em português; resumo do estudo de 2023 acessível via RePEc e texto integral restrito na editora; registro e resumo do estudo de 2015 abertos na Universidade de Amsterdã.",
+  "evidencia": "Síntese assinada por professora da FDC, publicada em 19/11/2026, com links para um estudo quantitativo de 157 pequenas e médias empresas de tecnologia e um estudo qualitativo sobre práticas de liderança em organizações baseadas em projetos.",
+  "limites": "O estudo de 2023 usa questionários pareados de empresas chinesas e testa associações e mediação estatística; não demonstra que um treinamento causará inovação em outras empresas. O estudo de 2015 é qualitativo, em organizações de projetos. O texto integral do artigo de 2023 não estava acessível; detalhes além do resumo público não foram verificados pelo Harpya.",
+  "status": "publicado",
+  "justificativa": "Tema atual de administração com autora identificada, fonte aprovada, pesquisas citadas e limites metodológicos verificáveis.",
+  "revisor": "business_verify_now",
+  "revisado_em": "2026-11-19",
+  "corpo": [
+    "Em artigo publicado em 19 de novembro, a professora Luciana Ferreira, da Fundação Dom Cabral, pergunta o que acontece depois que uma organização investe em formação. Sua síntese desloca a atenção do volume de treinamentos para as decisões cotidianas dos líderes: dar retorno útil, abrir espaço para testar ideias e incorporar o que foi aprendido à rotina.",
+    "Um dos estudos discutidos, publicado em 2023 no Journal of Business Research, analisou 509 questionários pareados de gestores e subordinados em 157 pequenas e médias empresas de tecnologia. Os autores associaram o feedback de desenvolvimento à capacidade de conciliar inovação exploratória e melhoria das operações existentes. No modelo estatístico relatado, a aprendizagem organizacional mediou essa associação; estilos de liderança transformacional e transacional tiveram efeitos moderadores em direções opostas.",
+    "O segundo estudo, publicado em 2015 no Human Resource Management, examinou qualitativamente práticas de liderança em organizações baseadas em projetos. Seu registro na Universidade de Amsterdã descreve líderes que alternavam práticas para estimular exploração ou execução conforme as condições do trabalho. A leitura conjunta proposta pela FDC sugere observar como reuniões, prioridades e respostas a erros ajudam ou dificultam a aplicação do conhecimento.",
+    "Os trabalhos têm métodos e contextos distintos. Questionários e entrevistas ajudam a formular hipóteses de gestão, mas não estabelecem uma receita universal nem provam que uma intervenção isolada elevará o desempenho de outra empresa. Antes de transformar a pauta em recomendação, é preciso conferir o artigo científico integral de 2023 e especificar como medir aprendizagem e inovação no contexto analisado."
+  ],
+  "referencias": [
+    "https://sejarelevante.fdc.org.br/quando-liderancas-aprendem-empresas-mudam/",
+    "https://ideas.repec.org/a/eee/jbrese/v158y2023ics0148296323000085.html",
+    "https://dare.uva.nl/id/a337e8d7-529b-49d8-b798-9b6182eb66a1"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "nome": "Universidade de Amsterdã · Repositório acadêmico",
+  "url": "https://dare.uva.nl/",
+  "regiao": "Europa",
+  "tipo": "academica",
+  "descricao": "Registro institucional de trabalhos acadêmicos da Universidade de Amsterdã.",
+  "idioma": "en",
+  "hosts": ["dare.uva.nl"],
+  "feed": "",
+  "status": "aprovado",
+  "verificado_em": "2026-11-19",
+  "canais": [],
+  "escopos": ["artigos"],
+  "restricao": "Usar o registro e o resumo acessíveis; não alegar leitura integral quando indisponível."
+}
