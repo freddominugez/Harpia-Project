@@ -19,6 +19,7 @@ import { trilhas, ARTIGOS_DESTAQUE } from "../data/home";
 import { PAUTAS } from "../lib/pautas";
 import { VIDEOS, selecaoDaSemana } from "../lib/videos";
 import { dataCurta, ROTULO_ESTATUTO } from "../lib/format";
+import { NOTICIAS } from '../lib/noticias';
 
 const caminhos = await getCollection("caminhos");
 const porSlug = new Map(caminhos.map((c) => [c.id, c]));
@@ -40,7 +41,7 @@ const destaque = model ? selecaoDaSemana(new Date(), 3, model.videos, model.modu
 ---
 <Base home titulo={business ? "Harpya Business" : undefined} descricao={business ? "Marketing, estratégia e administração com pesquisa e fontes de referência." : undefined}>
   <Hero {...model?.hero} />
-  <ImpactNews {...model?.impact} />
+  <ImpactNews {...model?.impact} noticia={model ? model.noticias[0] : NOTICIAS[0]} />
 
   <section class="ref-content">
     <div class="container wide ref-columns">

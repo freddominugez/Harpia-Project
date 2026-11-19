@@ -11,7 +11,7 @@
     "preview": "astro preview",
     "check": "astro check",
     "audit:business": "node scripts/auditar_business_corretivo.mjs",
-    "prebuild": "node scripts/limpar_cache_conteudo.mjs && node scripts/gerar_business_validator.mjs"
+    "prebuild": "node scripts/limpar_cache_conteudo.mjs && node scripts/gerar_business_validator.mjs && node scripts/verificar_publicacoes_editoriais.mjs"
   },
   "engines": {
     "node": ">=20.3.0"

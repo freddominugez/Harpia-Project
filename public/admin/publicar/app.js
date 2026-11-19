@@ -24,6 +24,9 @@ export function publicationChanges(selected, current) {
       throw new Error('Um item foi alterado desde sua revisão. Atualize a lista e confira a seleção novamente.');
     }
     if(fresh.collection?.startsWith('business/'))validateBusinessPublication(fresh.collection,fresh.content,fresh.sources);
+    if ((fresh.collection?.startsWith('business/') ? fresh.content.revisado_em : fresh.content.adicionado_em) >= '2026-11-19') {
+      throw new Error('Publicações recentes exigem verificação, seleção e manifesto do comitê editorial. Use o portão de curadoria.');
+    }
     paths.add(entry.path);
     return { path: entry.path, mode: '100644', type: 'blob',
       content: `${JSON.stringify({ ...fresh.content, status: 'publicado' }, null, 2)}\n` };

@@ -1,7 +1,7 @@
 // Página /admin/noticias/: fila de rascunhos ordenada pela nota de qualidade, com leitura
 // completa, publicação, volta a rascunho e descarte. Cada ação é um commit em main.
 import { createGitHubClient } from '../session.js';
-import { escolher, pontuar, NOTA_MINIMA, POR_DIA } from './score.js';
+import { escolher, pontuar, NOTA_MINIMA } from './score.js';
 
 const REPO = '/repos/freddominugez/Harpia-Project';
 const PASTA = 'src/content/noticias';
@@ -31,6 +31,7 @@ export function pedido(acao, noticia) {
   if (acao === 'descartar') return { method: 'DELETE', body: { message: `Painel: descarta noticias ${slug}`, sha, branch: 'main' } };
   const status = acao === 'publicar' ? 'publicado' : acao === 'recolher' ? 'rascunho' : null;
   if (!status) throw new Error('Ação inválida.');
+  if (acao === 'publicar' && conteudo.adicionado_em >= '2026-11-19') throw new Error('Esta matéria exige aprovação e manifesto do comitê editorial.');
   if (conteudo.status === status) throw new Error('A notícia já está nesse estado. Atualize a lista.');
   return { method: 'PUT', body: {
     message: `Painel: ${acao === 'publicar' ? 'publica' : 'volta a rascunho'} noticias ${slug}`, sha, branch: 'main',
@@ -49,7 +50,7 @@ function iniciar() {
   let aba = 'fila';
   let ocupado = false;
   let pendente = null;
-  $('meta').textContent = POR_DIA; $('minimo').textContent = NOTA_MINIMA;
+  $('minimo').textContent = NOTA_MINIMA;
 
   const mensagem = (texto, erro = false) => { $('message').textContent = texto; $('message').dataset.error = String(erro); };
   const travar = (valor) => { ocupado = valor; document.body.setAttribute('aria-busy', String(valor)); document.querySelectorAll('#lista button, #reload').forEach((b) => { b.disabled = valor; }); };
@@ -81,10 +82,11 @@ function iniciar() {
     const nivel = nota.bloqueios.length ? 'baixa' : nota.total >= 75 ? 'alta' : nota.total >= NOTA_MINIMA ? 'media' : 'baixa';
     const publicada = noticia.status === 'publicado';
     const selos = [novo('span', { className: 'selo', textContent: TEMAS[noticia.categoria] ?? noticia.categoria }), novo('span', { textContent: `Fato de ${noticia.data.split('-').reverse().join('/')}` })];
-    if (proxima) selos.push(novo('span', { className: 'selo robo', textContent: 'O robô publica na próxima rodada' }));
+    if (proxima && noticia.adicionado_em < '2026-11-19') selos.push(novo('span', { className: 'selo robo', textContent: 'Seleção histórica do robô' }));
+    if (!publicada && noticia.adicionado_em >= '2026-11-19') selos.push(novo('span', { className: 'selo', textContent: 'Aguardando verificação do comitê' }));
     if (!publicada && doRobo.includes(noticia.slug)) selos.push(novo('span', { className: 'selo', textContent: 'Voltou a rascunho: o robô não republica' }));
     for (const b of nota.bloqueios) selos.push(novo('span', { className: 'selo bloqueio', textContent: b }));
-    if (!publicada && !nota.bloqueios.length && !apto && nota.total < NOTA_MINIMA) selos.push(novo('span', { className: 'selo bloqueio', textContent: `Abaixo da nota ${NOTA_MINIMA}: só sai se você publicar` }));
+    if (!publicada && !nota.bloqueios.length && !apto && nota.total < NOTA_MINIMA) selos.push(novo('span', { className: 'selo bloqueio', textContent: `Abaixo da nota textual ${NOTA_MINIMA}` }));
 
     const criterios = novo('ul', { className: 'criterios' }, ...nota.criterios.map((c) => {
       const barra = novo('i', {}, Object.assign(novo('u'), { style: `width:${Math.round(100 * c.pontos / c.max)}%` }));
@@ -97,7 +99,7 @@ function iniciar() {
     const acoes = novo('div', { className: 'acoes' });
     const botao = (rotulo, acao, classe = '') => { const b = novo('button', { textContent: rotulo, className: classe }); b.addEventListener('click', () => confirmar(acao, noticia)); acoes.append(b); };
     if (publicada) { botao('Voltar para rascunho', 'recolher'); acoes.append(novo('a', { href: `/noticias/${noticia.slug}/`, target: '_blank', rel: 'noopener', textContent: 'Ver no site ↗' })); }
-    else { botao('Publicar agora', 'publicar', 'primary'); botao('Descartar', 'descartar', 'danger'); }
+    else { if (noticia.adicionado_em < '2026-11-19') botao('Publicar agora', 'publicar', 'primary'); botao('Descartar', 'descartar', 'danger'); }
     acoes.append(novo('a', { href: `/admin/#/collections/noticias/entries/${noticia.slug}`, target: '_top', textContent: 'Editar texto no CMS' }));
 
     return novo('article', { className: `item${proxima ? ' proxima' : ''}` },
@@ -107,19 +109,18 @@ function iniciar() {
 
   function desenhar() {
     const hoje = hojeEmFortaleza();
-    const { fila, escolhidos } = escolher(noticias, { hoje, excluir: doRobo });
+    const { fila } = escolher(noticias, { hoje, excluir: doRobo });
     const publicadas = noticias.filter((n) => n.status === 'publicado').sort((a, b) => b.data.localeCompare(a.data));
     const aptos = fila.filter((r) => r.apto).length;
-    $('n-aptos').textContent = aptos; $('n-dias').textContent = Math.floor(aptos / POR_DIA);
+    $('n-aptos').textContent = aptos; $('n-dias').textContent = fila.length;
     $('n-fora').textContent = fila.length - aptos; $('n-ar').textContent = publicadas.length;
-    $('n-aptos').parentElement.dataset.alerta = String(aptos < POR_DIA * 2);
+    $('n-aptos').parentElement.dataset.alerta = 'false';
     document.querySelectorAll('#tabs [data-tab]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.tab === aba)));
-    const proximas = new Set(escolhidos.map((r) => r.item.slug));
     const itens = aba === 'fila'
-      ? fila.map((r) => cartao(r.item, r, { proxima: proximas.has(r.item.slug), apto: r.apto }))
+      ? fila.map((r) => cartao(r.item, r, { apto: r.apto }))
       : publicadas.map((n) => cartao(n, pontuar(n, { hoje, publicadas: publicadas.filter((p) => p !== n) })));
-    $('lista').replaceChildren(...(itens.length ? itens : [novo('p', { className: 'vazio', textContent: aba === 'fila' ? 'Nenhum rascunho na fila. O robô não terá o que publicar até a curadoria gravar novos.' : 'Nenhuma notícia no ar.' })]));
-    if (aba === 'fila' && aptos < POR_DIA * 2) mensagem(`Fila curta: ${aptos} rascunho${aptos === 1 ? '' : 's'} apto${aptos === 1 ? '' : 's'} para uma meta de ${POR_DIA} por dia.`, true);
+    $('lista').replaceChildren(...(itens.length ? itens : [novo('p', { className: 'vazio', textContent: aba === 'fila' ? 'Nenhum rascunho na fila.' : 'Nenhuma notícia no ar.' })]));
+    if (aba === 'fila') mensagem('Rascunhos recentes aguardam verificação, seleção e manifesto do comitê. A nota textual não autoriza publicação.');
   }
 
   const TEXTOS = {

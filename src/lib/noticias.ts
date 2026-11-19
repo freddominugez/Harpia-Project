@@ -10,6 +10,9 @@ export type Noticia = {
   titulo: string;
   resumo: string;
   data: string;
+  curadoria_em?: string;
+  verificado_em?: string;
+  adicionado_em?: string;
   categoria: Categoria;
   icone: string;
   corpo: string[];
@@ -102,11 +105,14 @@ export function capa(n: Pick<Noticia, "slug" | "categoria" | "icone">): string {
 type Mod = { default?: Omit<Noticia, "slug"> } & Omit<Noticia, "slug">;
 const mods = import.meta.glob("../content/noticias/*.json", { eager: true }) as Record<string, Mod>;
 
-/** Publicadas, da mais recente à mais antiga (empate: menor "ordem" primeiro). */
+/** Data em que a matéria entrou na curadoria; a data original da fonte permanece em data. */
+export const dataEditorial = (n: Noticia) => n.curadoria_em ?? n.adicionado_em ?? n.verificado_em ?? n.data;
+
+/** Publicadas, da curadoria mais recente à mais antiga. */
 export const NOTICIAS: Noticia[] = Object.entries(mods)
   .map(([arquivo, m]) => ({ ...((m.default ?? m) as Omit<Noticia, "slug">), slug: arquivo.split("/").pop()!.replace(/\.json$/, "") }))
   .filter((n) => (n.status ?? "publicado") === "publicado")
-  .sort((a, b) => b.data.localeCompare(a.data) || Number(a.ordem ?? 999) - Number(b.ordem ?? 999) || a.slug.localeCompare(b.slug));
+  .sort((a, b) => dataEditorial(b).localeCompare(dataEditorial(a)) || Number(a.ordem ?? 999) - Number(b.ordem ?? 999) || a.slug.localeCompare(b.slug));
 
 export const urlNoticia = (n: { slug: string; href?: string }) => n.href ?? `/noticias/${n.slug}/`;
 

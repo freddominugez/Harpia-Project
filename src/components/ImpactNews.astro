@@ -1,19 +1,24 @@
 ---
 import { RADAR_FEATURED, FEATURED_TITLE, FEATURED_SUMMARY, FEATURED_WHY, radarDate, type RadarItem } from '../lib/radar';
-interface Props { item?: RadarItem | null; titulo?: string; resumo?: string; motivo?: string; chamada?: string; nota?: string; sigla?: string; legenda?: string; cta?: string }
-const { item = RADAR_FEATURED, titulo = FEATURED_TITLE, resumo = FEATURED_SUMMARY, motivo = FEATURED_WHY,
+import { dataEditorial, urlNoticia, type Noticia } from '../lib/noticias';
+interface Props { item?: RadarItem | null; noticia?: Noticia; titulo?: string; resumo?: string; motivo?: string; chamada?: string; nota?: string; sigla?: string; legenda?: string; cta?: string }
+const { item = RADAR_FEATURED, noticia, titulo = FEATURED_TITLE, resumo = FEATURED_SUMMARY, motivo = FEATURED_WHY,
   chamada = 'Em destaque no mundo da IA', sigla = 'IA', legenda = 'MODELOS · PESQUISA · NOVAS FRONTEIRAS',
   cta = 'Ler o anúncio original', nota = 'Anúncio da empresa. A seleção considera atualidade e relevância; resultados de desempenho não foram auditados pelo Harpya.' } = Astro.props;
+const href = noticia ? urlNoticia(noticia) : item?.url;
+const data = noticia ? dataEditorial(noticia) : item?.published_at;
+const tituloExibido = noticia?.titulo ?? titulo;
+const resumoExibido = noticia?.resumo ?? resumo;
 ---
-{item && <section class="home-impact" aria-labelledby="impact-title" data-impact-news>
+{(item || noticia) && <section class="home-impact" aria-labelledby="impact-title" data-impact-news>
   <div class="impact-copy">
-    <div class="editorial-eyebrow"><span class="editorial-dot" aria-hidden="true"></span> {chamada}</div>
-    <div class="impact-meta"><span>{item.company}</span><time datetime={item.published_at}>{radarDate(item.published_at)}</time><span>Fonte oficial</span></div>
-    <h2 id="impact-title"><a href={item.url} target="_blank" rel="noopener noreferrer">{titulo}</a></h2>
-    {resumo && <p class="impact-summary">{resumo}</p>}
-    {motivo && <p class="impact-why"><strong>Por que acompanhar:</strong>{' '}{motivo}</p>}
-    <a class="impact-cta" href={item.url} target="_blank" rel="noopener noreferrer">{cta} <span aria-hidden="true">↗</span></a>
-    <small>{nota}</small>
+    <div class="editorial-eyebrow"><span class="editorial-dot" aria-hidden="true"></span> {noticia ? 'Mais recente na curadoria' : chamada}</div>
+    <div class="impact-meta"><span>{noticia ? 'Harpya' : item?.company}</span><time datetime={data}>{noticia ? `Curadoria: ${radarDate(data!)}` : radarDate(data!)}</time><span>{noticia ? 'Matéria verificada' : 'Fonte oficial'}</span></div>
+    <h2 id="impact-title"><a href={href} target={noticia ? undefined : '_blank'} rel={noticia ? undefined : 'noopener noreferrer'}>{tituloExibido}</a></h2>
+    {resumoExibido && <p class="impact-summary">{resumoExibido}</p>}
+    {!noticia && motivo && <p class="impact-why"><strong>Por que acompanhar:</strong>{' '}{motivo}</p>}
+    <a class="impact-cta" href={href} target={noticia ? undefined : '_blank'} rel={noticia ? undefined : 'noopener noreferrer'}>{noticia ? 'Ler a matéria' : cta} <span aria-hidden="true">↗</span></a>
+    <small>{noticia ? `Fonte original de ${radarDate(noticia.data)}. Evidências e limites estão na matéria.` : nota}</small>
   </div>
   <div class="impact-art" aria-hidden="true">
     <svg viewBox="0 0 540 540" fill="none"><defs><radialGradient id="impact-glow"><stop stop-color="#c79a39" stop-opacity=".5"/><stop offset="1" stop-color="#c79a39" stop-opacity="0"/></radialGradient></defs><circle cx="270" cy="270" r="265" fill="url(#impact-glow)"/><g stroke="#c79a39" stroke-opacity=".5"><circle cx="270" cy="270" r="190"/><circle cx="270" cy="270" r="142"/><circle cx="270" cy="270" r="94"/><path d="M80 270h380M270 80v380M135 135l270 270M135 405l270-270"/><path d="m270 80 134 55 56 135-56 135-134 55-135-55-55-135 55-135Z"/></g><g fill="#f2d898">{[[270,80],[404,135],[460,270],[404,405],[270,460],[135,405],[80,270],[135,135]].map(([x,y])=><circle cx={x} cy={y} r="6"/>)}</g><rect x="207" y="207" width="126" height="126" rx="24" fill="#282d33" stroke="#e3bd68"/><text x="270" y="288" text-anchor="middle" fill="#f2d898" font-size="52" font-family="system-ui" font-weight="700">{sigla}</text></svg>

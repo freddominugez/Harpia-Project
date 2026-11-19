@@ -218,14 +218,14 @@ A tarefa agendada (ver `docs/TAREFA_CURADORIA.md`) grava direto em `main`, sempr
 
 ## Revisar as NotícIAs
 
-Aba **NotícIAs** do painel, ou https://www.harpya.org/admin/noticias/. A página lista os rascunhos pela nota de qualidade (0 a 100), mostra por que cada um recebeu a nota, o texto completo e as fontes, e marca os dois que o robô publica na próxima rodada, todo dia às 7h23.
+Aba **NotícIAs** do painel, ou https://www.harpya.org/admin/noticias/. A página lista os rascunhos pela nota textual (0 a 100), mostra o texto completo e as fontes. Para matérias recentes, a nota apenas ajuda na triagem: a publicação exige verificação, seleção e manifesto do comitê.
 
-- **Publicar agora:** a matéria entra no card da home, em `/noticias/`, no sitemap, no RSS e na busca.
+- **Publicar agora:** disponível apenas para registros anteriores ao portão editorial de 19/11/2026.
 - **Descartar:** apaga o arquivo. A URL fica em `curadoria/noticias/` e a curadoria não volta a propor.
-- **Voltar para rascunho** (lista **No ar**): tira a notícia do site; o robô não a republica.
+- **Voltar para rascunho** (lista **No ar**): tira a notícia do site.
 - **Editar texto no CMS:** abre a matéria no editor do Sveltia.
 
-Cada ação é um commit direto em `main`, conferido pelo SHA do arquivo: se a matéria mudou desde que a lista foi carregada, a página pede para atualizar. A nota, os bloqueios e o robô estão descritos em `docs/TAREFA_NOTICIAS.md`.
+Cada ação disponível é um commit direto em `main`, conferido pelo SHA do arquivo: se a matéria mudou desde que a lista foi carregada, a página pede para atualizar. O fluxo de publicação atual está em `docs/COMITES_EDITORIAIS_AUTOMATICOS.md`.
 
 ## Aprovar pautas e criar discussões
 

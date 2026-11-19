@@ -6,7 +6,7 @@
 import "../styles/noticias.css";
 import Breadcrumb from "./Breadcrumb.astro";
 import NoticiaCard from "./NoticiaCard.astro";
-import { NOTICIAS as DEFAULT_NOTICIAS, capa, cat, icone, urlNoticia, minutosDeLeitura, type Noticia } from "../lib/noticias";
+import { NOTICIAS as DEFAULT_NOTICIAS, capa, cat, dataEditorial, icone, urlNoticia, minutosDeLeitura, type Noticia } from "../lib/noticias";
 import { dataCurta } from "../lib/format";
 import { SITE } from "../config";
 
@@ -50,7 +50,7 @@ const raios = Array.from({ length: 9 }, (_, k) => {
         <p class="nmast-lead">{lead}</p>
         <dl class="nmast-dados">
           <div><dt>Publicadas</dt><dd>{NOTICIAS.length}</dd></div>
-          <div><dt>Mais recente</dt><dd>{NOTICIAS[0] ? dataCurta(NOTICIAS[0].data) : ""}</dd></div>
+          <div><dt>Curadoria mais recente</dt><dd>{NOTICIAS[0] ? dataCurta(dataEditorial(NOTICIAS[0])) : ""}</dd></div>
           <div><dt>Atualização</dt><dd>{periodicidade}</dd></div>
         </dl>
         <a class="nmast-lendo" href="#materia"><span>Lendo agora</span><b>{atual.titulo}</b><Fragment set:html={icone("abaixo")} /></a>
@@ -106,7 +106,7 @@ const raios = Array.from({ length: 9 }, (_, k) => {
     <article class="nart">
       <div class="nart-grade">
         <div class="nart-principal">
-          <div class="nmeta"><span class={`tag ${c.tag}`}><Fragment set:html={icone(c.icone)} />{c.nome}</span><time datetime={atual.data}>{dataCurta(atual.data)}</time><span>{minutosDeLeitura(atual)} min de leitura</span></div>
+          <div class="nmeta"><span class={`tag ${c.tag}`}><Fragment set:html={icone(c.icone)} />{c.nome}</span><time datetime={atual.data}>Fonte: {dataCurta(atual.data)}</time><span>{minutosDeLeitura(atual)} min de leitura</span></div>
           <Titulo class="nart-titulo">{atual.titulo}</Titulo>
           <p class="nart-linha-fina">{atual.resumo}</p>
           <div class="nart-texto">{atual.corpo.map((p) => <p>{p}</p>)}</div>

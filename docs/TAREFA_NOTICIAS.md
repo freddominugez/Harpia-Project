@@ -1,6 +1,6 @@
 # Tarefa agendada: Harpya · NotícIAs
 
-Roda todo dia, às 5h47 (horário de Fortaleza), numa sessão nova do Claude. Pesquisa o que saiu nos últimos dias sobre os temas do projeto, escreve matérias curtas com fontes e grava tudo como **rascunho** em `main`. A tarefa nunca publica: quem publica é o robô descrito em "Publicação automática", às 7h23, ou Fred pelo painel.
+Esta tarefa histórica do Claude prepara matérias como **rascunho**. A publicação diária atual é orquestrada pela tarefa do Codex às 08h30 de Fortaleza, conforme `docs/COMITES_EDITORIAIS_AUTOMATICOS.md`. Cada item precisa de verificação das fontes, seleção e manifesto antes de entrar no site.
 
 ## Temas
 
@@ -16,7 +16,7 @@ Roda todo dia, às 5h47 (horário de Fortaleza), numa sessão nova do Claude. Pe
 1. **Preparo.** `git checkout main && git pull --ff-only origin main`. Se `src/content/noticias/` ou `src/lib/noticias.ts` não existirem, pare e responda "NotícIAs ainda não está em main".
 2. **O que já existe.** Leia os títulos e as URLs de fonte de `src/content/noticias/*.json` e todas as URLs de `curadoria/noticias/*.md`. Nenhuma delas pode virar matéria de novo.
 3. **Coleta.** Pesquise na web os quatro temas, com consultas separadas por tema e em português e inglês. Janela: o que foi publicado desde a última execução, até 7 dias atrás.
-4. **Julgamento.** Abra cada fonte com WebFetch antes de escrever. Aceite só o que tem fato verificável numa fonte primária ou num veículo reconhecido. Recuse: anúncio sem fato novo, número sem origem, boato, conteúdo pago, repetição. Entre 0 e 6 matérias por execução; o site publica 2 por dia, então procure entregar pelo menos 3 boas, de temas diferentes. Sem novidade boa, não grave matéria: só o registro. Quantidade nunca justifica matéria fraca: o robô não publica o que fica abaixo da nota mínima.
+4. **Julgamento.** Abra cada fonte antes de escrever. Aceite só o que tem fato verificável numa fonte primária ou num veículo reconhecido. Recuse: anúncio sem fato novo, número sem origem, boato, conteúdo pago, repetição. Entre 0 e 6 matérias por execução. Sem novidade boa, não grave matéria: só o registro. Quantidade nunca justifica matéria fraca.
 5. **Escrita.** Um arquivo por matéria em `src/content/noticias/<slug>.json`. O slug é o endereço da página (`/noticias/<slug>/`): minúsculas sem acento, números e hífens, até 60 caracteres, sem repetir um existente.
 
 ```json
@@ -45,7 +45,7 @@ Roda todo dia, às 5h47 (horário de Fortaleza), numa sessão nova do Claude. Pe
 
 ## Limites
 
-Não altera páginas, componentes, estilos nem configuração. A tarefa de curadoria nunca grava `status: "publicado"`: só o robô de publicação e o painel fazem isso. Não expõe tokens nem chaves.
+Não altera páginas, componentes, estilos nem configuração. Esta tarefa de preparação nunca grava `status: "publicado"`. Não expõe tokens nem chaves.
 
 ## Nota de qualidade
 
@@ -62,21 +62,10 @@ Cada rascunho recebe uma nota de 0 a 100, calculada por `public/admin/noticias/s
 
 Bloqueios, que impedem a publicação automática com qualquer nota: sem fonte, fonte sem `https`, data inválida ou no futuro, fato com mais de 21 dias, mesma URL de fonte de uma notícia que já está no ar.
 
-A nota mede sinais do texto e das fontes. Ela não abre as fontes nem confere se o fato é verdadeiro: essa checagem continua sendo da tarefa de curadoria (passo 4) e de quem revisa na página.
+A nota mede sinais do texto e das fontes. Ela não abre as fontes nem confere se o fato é verdadeiro. Por isso não autoriza publicação.
 
-## Publicação automática
+## Publicação pelo comitê
 
-O workflow `.github/workflows/noticias-publicar.yml` roda todo dia às 7h23 (Fortaleza) e executa `scripts/publicar_noticias.mjs`:
+O workflow antigo `.github/workflows/noticias-publicar.yml` foi removido. Ele publicava rascunhos com base apenas em pontuação textual, sem conferir as fontes nem exigir aprovação de verificação e seleção. A tarefa diária do Codex segue o ciclo e os portões em `docs/COMITES_EDITORIAIS_AUTOMATICOS.md`. O build recusa matérias recentes sem manifesto aprovado e hash do arquivo publicado.
 
-1. Pontua todos os rascunhos e descarta os que têm bloqueio ou nota abaixo de **60**.
-2. Publica os **2** melhores. Se o segundo colocado for do mesmo tema do primeiro e houver outro tema até 5 pontos abaixo, entra o outro tema.
-3. Grava `curadoria/noticias/publicacao/<dia>.json` com o que publicou, a nota de cada critério e a fila que sobrou.
-4. Faz o commit em `main`; a Vercel publica em cerca de um minuto.
-
-Se não houver 2 rascunhos aptos, publica os que houver e o resumo da execução (aba **Actions** do GitHub) avisa quantos faltaram. O robô não baixa a régua para cumprir a meta. Rodar de novo no mesmo dia só completa o que faltou. Uma notícia que o robô publicou e que voltou a rascunho não é republicada por ele.
-
-Para mudar a meta de um dia, rode o workflow à mão (**Run workflow**) informando a quantidade. Para mudar a meta permanente ou a nota mínima, edite `POR_DIA` e `NOTA_MINIMA` em `score.js`. Para pausar, desative o workflow em **Actions → noticias-publicar → Disable workflow**. Simulação local, sem gravar nada: `node scripts/publicar_noticias.mjs --simular`. Testes: `node --test scripts/test_noticias_score.mjs`.
-
-## Revisar e publicar
-
-No painel, abra a aba **NotícIAs** (https://www.harpya.org/admin/noticias/). A fila mostra os rascunhos da melhor nota para a pior, com a nota de cada critério, o texto completo, as fontes e a marca das duas que o robô publica na próxima rodada. **Publicar agora** antecipa a publicação, **Descartar** apaga a matéria e **Voltar para rascunho**, na lista **No ar**, tira uma notícia do site. Para corrigir o texto, use **Editar texto no CMS**. Depois de publicada, a matéria entra no card da home (as três mais recentes), nos destaques da página `/noticias/` (as oito mais recentes) e no arquivo, além do sitemap, do RSS e da busca. Para recusar, descarte a matéria na página: a URL continua no registro e não volta.
+Rascunhos recentes aparecem no painel para leitura e descarte. Sua promoção é feita pelos scripts `scripts/publicar_curadoria_tecnologia.py` e `scripts/publicar_curadoria_business.mjs`, após verificação das alegações e registro do manifesto. O painel não oferece publicação direta para essas matérias. A data no card e na vitrine é a da curadoria; a data da fonte original aparece na matéria.

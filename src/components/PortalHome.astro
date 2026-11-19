@@ -5,6 +5,13 @@ import '../styles/portal.css';
 import Seo from './Seo.astro';
 import GoogleTag from './GoogleTag.astro';
 import { PORTAL_DESCRICAO } from '../lib/ambientes';
+import { NOTICIAS, dataEditorial, urlNoticia } from '../lib/noticias';
+import { getBusinessPresentation } from '../lib/business-presentation';
+import { dataCurta } from '../lib/format';
+const recentes = [
+  { ambiente: 'Tecnologia e Matemática', noticia: NOTICIAS[0] },
+  { ambiente: 'Business', noticia: (await getBusinessPresentation()).noticias[0] },
+].filter(item => item.noticia);
 ---
 <!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><GoogleTag /><Seo tituloCompleto="Harpya · Dois horizontes, o mesmo rigor" descricao={PORTAL_DESCRICAO} /><link rel="preload" as="image" href="/img/ambientes/harpia-tecnologia.png" /><link rel="preload" as="image" href="/img/ambientes/harpia-business.png" /></head>
@@ -26,6 +33,10 @@ import { PORTAL_DESCRICAO } from '../lib/ambientes';
         <div class="portal-tags"><span>Marketing</span><span>Estratégia</span><span>Gestão</span></div><span class="portal-card-action"><span>Entrar no Harpya Business</span><b aria-hidden="true">↗</b></span>
       </a>
     </div>
+    <section class="portal-recentes" aria-labelledby="portal-recentes-titulo">
+      <div class="portal-recentes-cabecalho"><div><span class="eyebrow">Publicações verificadas</span><h2 id="portal-recentes-titulo">Últimas da curadoria</h2></div><p>Data da curadoria editorial. A data da publicação original aparece na matéria.</p></div>
+      <div class="portal-recentes-grade">{recentes.map(({ ambiente, noticia }) => <a class="portal-recente" href={urlNoticia(noticia)}><span>{ambiente}</span><time datetime={dataEditorial(noticia)}>Curadoria: {dataCurta(dataEditorial(noticia))}</time><h3>{noticia.titulo}</h3><p>{noticia.resumo}</p><b>Leia a matéria <span aria-hidden="true">↗</span></b></a>)}</div>
+    </section>
     <div class="portal-preference"><p>Ao entrar, você pode escolher um ambiente para abrir automaticamente nas próximas visitas. Use “Trocar ambiente” para voltar a esta página.</p><button id="reset-environment">Redefinir preferência de entrada</button></div><p class="portal-status" id="portal-status" role="status" aria-live="polite"></p>
     <section class="portal-about" id="sobre-ambientes" aria-label="Sobre os ambientes"><div><h2>Uma plataforma. Dois acervos.</h2><p>Os mesmos recursos de estudo, leitura e comunidade, com conteúdos e fontes próprios de cada área.</p></div><div><h2>Curadoria com procedência</h2><p>Autoria, referências e limites visíveis. No Business, fontes acadêmicas e executivas do Brasil, dos Estados Unidos e da Europa.</p></div><div><h2>Conhecimento para continuar</h2><p>Trilhas, vídeos, biblioteca e discussões organizados para aprofundar o estudo e formular perguntas melhores.</p></div></section>
   </main>

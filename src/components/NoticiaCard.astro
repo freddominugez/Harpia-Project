@@ -2,7 +2,7 @@
 // Card resumo de uma notícia (destaques e arquivo da página NotícIAs): capa gerada,
 // selo do tema com ícone, data, título e resumo. "atual" marca a matéria aberta.
 import "../styles/noticias.css";
-import { capa, cat, icone, urlNoticia, type Noticia } from "../lib/noticias";
+import { capa, cat, dataEditorial, icone, urlNoticia, type Noticia } from "../lib/noticias";
 import { dataCurta } from "../lib/format";
 interface Props { n: Noticia; atual?: boolean }
 const { n, atual = false } = Astro.props;
@@ -12,7 +12,7 @@ const c = cat(n.categoria);
   {atual && <span class="ncard-lendo">Lendo</span>}
   <div class="ncard-capa" set:html={capa(n)} />
   <div class="ncard-corpo">
-    <div class="nmeta"><span class={`tag ${c.tag}`}><Fragment set:html={icone(c.icone)} />{c.nome}</span><time datetime={n.data}>{dataCurta(n.data)}</time></div>
+    <div class="nmeta"><span class={`tag ${c.tag}`}><Fragment set:html={icone(c.icone)} />{c.nome}</span><time datetime={dataEditorial(n)}>Curadoria: {dataCurta(dataEditorial(n))}</time></div>
     <h3>{n.titulo}</h3>
     <p>{n.resumo}</p>
   </div>

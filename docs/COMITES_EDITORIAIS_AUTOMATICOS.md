@@ -1,6 +1,6 @@
 # Comitês editoriais e publicação automática
 
-Esta é a rotina editorial atual do Harpya. Uma tarefa agendada no Codex executa diariamente, às 08h30 no horário de Fortaleza, os comitês de Tecnologia e Business. Os coletores existentes de GitHub Actions continuam alimentando os radares e filas de candidatos; eles não transformam manchetes de feeds em matérias editoriais.
+Esta é a rotina editorial atual do Harpya. Uma tarefa agendada no Codex está configurada para executar diariamente, às 08h30 no horário de Fortaleza, os comitês de Tecnologia e Business. É uma automação do aplicativo Codex associada à sessão e ao computador que a executa; não é um serviço hospedado com garantia de execução. Confira o resultado de cada dia no histórico da tarefa e no GitHub. Os coletores existentes de GitHub Actions continuam alimentando os radares e filas de candidatos; eles não transformam manchetes de feeds em matérias editoriais.
 
 ## Papéis e independência
 
@@ -25,6 +25,8 @@ Todos os cards devem ser conferidos em 320, 768 e 1440 px. O corte visual de CSS
 7. Após promover, execute os testes, build, validação do CMS, QA visual e verificação de links. Se qualquer portão falhar, reverta apenas os arquivos da execução antes de enviar ao GitHub.
 8. Faça commit dos arquivos de conteúdo e manifestos no mesmo commit, envie a `main`, espere o deploy de produção ficar `READY` e confira as URLs públicas. Se o deploy não ficar pronto, trate a rodada como incompleta e investigue.
 9. Relate fontes consultadas, candidatos, recusas, itens publicados, URLs e falhas. Dia sem item qualificado não gera publicação fictícia nem commit vazio.
+
+O build executa `scripts/verificar_publicacoes_editoriais.mjs`: publicações recentes de notícias, artigos e acervo Business só entram no site quando o arquivo publicado corresponde ao hash de um manifesto com verificação, evidências, seleção e edição. O antigo workflow `noticias-publicar.yml` foi removido porque promovia rascunhos por pontuação textual sem essa aprovação. A página de entrada e os cards mostram a data da curadoria; a data da fonte original continua na matéria. A tarefa busca todas as seções, mas só publica formatos com fonte e revisão suficientes. A ausência de filmes aprovados é registrada, sem preenchimento artificial.
 
 ## Comandos dos portões
 
