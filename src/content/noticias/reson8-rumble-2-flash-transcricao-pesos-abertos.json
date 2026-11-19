@@ -1,0 +1,31 @@
+{
+  "titulo": "Reson8 abre os pesos do Rumble-2-Flash, transcritor de 500 milhões de parâmetros que inclui o português",
+  "resumo": "A startup holandesa publicou no Hugging Face um modelo de reconhecimento de fala para mais de 40 línguas. Os números de desempenho foram divulgados pela própria empresa.",
+  "data": "2026-11-18",
+  "categoria": "abertos",
+  "icone": "onda",
+  "corpo": [
+    "A Reson8, startup de reconhecimento de fala sediada em Amsterdã, liberou em 18 de novembro os pesos do Rumble-2-Flash, modelo que transforma áudio gravado em texto. A ficha no Hugging Face informa 0,5 bilhão de parâmetros e licença Apache 2.0, que permite uso comercial e modificação.",
+    "Segundo a SiliconANGLE, o modelo cobre mais de 40 línguas; a ficha no Hugging Face fala em 45. O português aparece na tabela de resultados, com taxa de erro de palavras de 5,31% no conjunto FLEURS e 7,61% no MLS, média de 6,46%.",
+    "A ficha diz que os resultados vêm da versão de 18 de novembro do Open ASR Leaderboard, executada numa GPU H200 com vLLM, mas não informa quem rodou a avaliação. A SiliconANGLE atribui à Reson8 os números citados, entre eles a média de 7,09% de erro em sete línguas e a comparação com o Whisper Large V3 da OpenAI em línguas com poucos dados. Nenhum teste independente foi publicado até agora.",
+    "Os próprios dados mostram onde o modelo vai pior: 13,14% de erro na conversa espontânea do conjunto privado da empresa e 10,25% no URGENT24. A empresa diz que a precisão cai em termos técnicos fora do inglês, como nomes de remédios, e vários pares de língua e conjunto de dados estão sem resultado na tabela."
+  ],
+  "harpia": "Um transcritor pequeno, aberto e com português medido pode rodar em computador comum e servir a pesquisa, acessibilidade e arquivos de áudio. Vale testar com gravações brasileiras antes de confiar nos números da empresa.",
+  "fontes": [
+    {
+      "veiculo": "Hugging Face",
+      "titulo": "Reson8/Rumble-2-Flash",
+      "url": "https://huggingface.co/Reson8/Rumble-2-Flash"
+    },
+    {
+      "veiculo": "SiliconANGLE",
+      "titulo": "Reson8 releases Rumble-2-Flash speech model as a free open-weights download",
+      "url": "https://siliconangle.com/2026/11/18/reson8-releases-rumble-2-flash-speech-model-as-a-free-open-weights-download/"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-19",
+  "verificado_em": "2026-11-19",
+  "ordem": 999
+}

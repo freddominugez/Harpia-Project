@@ -1,0 +1,32 @@
+{
+  "titulo": "Anatel formaliza R$ 375 milhões do 5G para data center de IA do governo, mas operação ainda não tem custeio",
+  "resumo": "Acórdão publicado no Diário Oficial destina recursos do leilão do 5G a uma estrutura de IA operada pela Telebras e exige que o dinheiro da operação seja identificado antes de contratar.",
+  "data": "2026-11-18",
+  "categoria": "brasil",
+  "icone": "maquina",
+  "corpo": [
+    "A Anatel formalizou a destinação de R$ 375 milhões para um data center de inteligência artificial que será operado pela Telebras. Segundo a Convergência Digital, a decisão está no Acórdão nº 325/2026, aprovado pelo Conselho Diretor em 4 de novembro e publicado no Diário Oficial da União em 18 de novembro.",
+    "O dinheiro vem das sobras do leilão do 5G. De acordo com o Teletime, quem constrói é a Entidade Administradora da Faixa de 3,5 GHz (EAF), que depois transfere a estrutura à União, e a Telebras cuida da operação e da manutenção. A finalidade é processar dados e rodar aplicações de IA do governo federal.",
+    "O projeto de referência descrito pelo Teletime prevê dois módulos, um de IA com 20 racks e outro de TI tradicional com 10, com 48 GPUs e 2 MW de potência inicial. Uma expansão para 10 MW em dois a três anos depende de nova autorização da Anatel. O prazo de 12 meses é tratado como meta de planejamento, não como garantia.",
+    "A principal condição é financeira: antes de qualquer contratação, a fonte de recursos para a operação permanente precisa ser identificada, porque as sobras do 5G pagam a implantação, mas não energia, manutenção e segurança. A conselheira substituta Suzana Rodrigues alertou, segundo o Teletime, que sem custeio garantido a estrutura vira \"passivo operacional\".",
+    "A Convergência Digital lembra que a Telebras teve prejuízo de R$ 90,7 milhões nos nove primeiros meses de 2026 e recebeu R$ 169,9 milhões em subvenções no período. Nenhuma das fontes informa quanto custará operar o data center."
+  ],
+  "harpia": "Capacidade pública de computação é uma das bases de uma política de IA com alguma autonomia. O caso mostra que a conta não termina na compra das GPUs: sem orçamento para operar, a infraestrutura pode ficar parada.",
+  "fontes": [
+    {
+      "veiculo": "Convergência Digital",
+      "titulo": "Anatel confirma data center de IA com investimento de R$ 375 milhões na Telebras",
+      "url": "https://convergenciadigital.com.br/governo/anatel-confirma-data-center-de-ia-com-investimento-de-r-375-milhoes-na-telebras/"
+    },
+    {
+      "veiculo": "Teletime",
+      "titulo": "Anatel aprova data center de R$ 375 milhões; operação ficará com Telebras",
+      "url": "https://teletime.com.br/04/11/2026/anatel-data-center-telebras/"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-19",
+  "verificado_em": "2026-11-19",
+  "ordem": 999
+}

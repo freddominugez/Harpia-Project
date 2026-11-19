@@ -1,0 +1,31 @@
+{
+  "titulo": "Alibaba lança o Qwen4-Max sem pesos abertos e promete liberar só os modelos menores, ainda sem data",
+  "resumo": "O principal modelo da família Qwen 4, com 2,4 trilhões de parâmetros, fica disponível apenas por API, em mudança em relação a lançamentos anteriores da linha.",
+  "data": "2026-11-16",
+  "categoria": "abertos",
+  "icone": "chip",
+  "corpo": [
+    "A Alibaba apresentou em 16 de novembro o Qwen4-Max, novo modelo principal da família Qwen. Segundo o comunicado da empresa, ele tem 2,4 trilhões de parâmetros no total, com cerca de 71 bilhões ativos por token numa arquitetura de mistura de especialistas, e aceita até um milhão de tokens de contexto.",
+    "Os pesos não foram publicados. De acordo com a The Next Web, o acesso é pela API da QwenCloud, a US$ 1,50 por milhão de tokens de entrada e US$ 4,50 por milhão de saída, e pelos aplicativos da empresa. Ninguém pode baixar ou modificar o modelo, o que se afasta de vários lançamentos anteriores da linha.",
+    "O comunicado da Alibaba diz que modelos menores da série Qwen4, com pesos abertos, serão liberados em breve para desenvolvedores, sem informar data, tamanho ou licença. A The Next Web cita reportagem da Bloomberg segundo a qual a Qwen é a família de pesos abertos mais baixada do mundo, e lembra que Tencent e Moonshot tomaram decisões parecidas.",
+    "Os resultados de desempenho divulgados são da própria Alibaba e não foram verificados pela The Next Web. Pela leitura dos gráficos da empresa feita pela FourWeekMBA e citada pelo veículo, o modelo fica à frente em um teste de programação e atrás de concorrentes em outro."
+  ],
+  "harpia": "Boa parte do ecossistema aberto, inclusive no Brasil, foi construída sobre modelos Qwen. Se o topo da linha passa a ser fechado, quem depende de pesos abertos precisa acompanhar o que de fato será liberado, com que tamanho e com qual licença.",
+  "fontes": [
+    {
+      "veiculo": "Alibaba Cloud",
+      "titulo": "Alibaba Unveils Qwen4-Max: New AI Teammate for Work, Creativity, and Discovery",
+      "url": "https://alibabacloud.com/en/press-room/alibaba-unveils-qwen4-max"
+    },
+    {
+      "veiculo": "The Next Web",
+      "titulo": "Alibaba launches Qwen4-Max flagship AI model without open weights",
+      "url": "https://thenextweb.com/news/alibaba-launches-qwen4-max-flagship-ai-model-without-open-weights"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-19",
+  "verificado_em": "2026-11-19",
+  "ordem": 999
+}
