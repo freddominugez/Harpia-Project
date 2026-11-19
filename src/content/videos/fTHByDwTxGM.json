@@ -1,0 +1,16 @@
+{
+  "id": "fTHByDwTxGM",
+  "titulo": "Post-Training Gemini 4 for Real Engineering Work — Melvin Johnson, Google DeepMind",
+  "canal": "AI Engineer",
+  "modulo": 7,
+  "nivel": "Intermediário",
+  "resumo": "Palestra sobre pós-treino com aprendizado por reforço para código: avaliação por rubrica, ambientes isolados e reward hacking. Para quem estuda alinhamento e RL aplicados a agentes.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=fTHByDwTxGM",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-19",
+  "verificado_em": "2026-11-19"
+}

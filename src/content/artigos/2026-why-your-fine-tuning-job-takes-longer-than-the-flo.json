@@ -1,0 +1,15 @@
+{
+  "ano": 2026,
+  "titulo": "Why your fine-tuning job takes longer than the FLOPs say",
+  "autores": "Duarte, Cardoso, Carvalho, Beleza, Lima · Hugging Face",
+  "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+  "grupo": "fund",
+  "selo": "medido",
+  "rotulo": "fundamento · módulo 6",
+  "ordem": 999,
+  "fonte_url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-19",
+  "verificado_em": "2026-11-19"
+}
