@@ -1,0 +1,16 @@
+{
+  "id": "H2tmNDX9FnQ",
+  "titulo": "Full Course: AI Coding Workflows From Cloud to Local",
+  "canal": "DeepLearningAI",
+  "modulo": 8,
+  "nivel": "Intermediário",
+  "resumo": "Curso que reconstrói o mesmo app com agentes de código em nuvem, híbrido e local, dividindo tarefas entre subagentes e modelos mais baratos. Para quem usa agentes de código e quer controlar custo e onde o modelo roda.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=H2tmNDX9FnQ",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-20",
+  "verificado_em": "2026-11-20"
+}
