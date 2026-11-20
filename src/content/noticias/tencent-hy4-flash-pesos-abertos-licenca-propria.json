@@ -1,0 +1,32 @@
+{
+  "titulo": "Tencent publica os pesos do Hy4 flash, modelo de 220 bilhões de parâmetros, mas com licença própria e notas modestas em teste externo",
+  "resumo": "A Tencent liberou no Hugging Face o Hy4 flash, que aceita texto e imagem e lê até 1 milhão de tokens. O custo baixo é medido pela empresa; no Vals Index ficou em 35º de 41.",
+  "data": "2026-11-18",
+  "categoria": "abertos",
+  "icone": "chip",
+  "corpo": [
+    "A Tencent publicou no Hugging Face, no ModelScope e no GitCode os pesos do Hy4 flash, o modelo mais barato da sua família Hy. Saíram três versões: o modelo ajustado para conversa, uma versão quantizada em FP8 e o modelo base, sem ajuste de instruções. A ficha técnica informa 220 bilhões de parâmetros no total, dos quais cerca de 12 bilhões ficam ativos a cada token, entrada de texto e imagem e contexto de até 1 milhão de tokens.",
+    "A licença não é uma das licenças abertas conhecidas, como Apache 2.0 ou MIT. É a Tencent Hy License, escrita pela própria empresa, e quem for usar o modelo precisa ler as condições antes. A ficha traz também um roteiro completo para ajuste fino e instruções para servir o modelo com vLLM e SGLang.",
+    "Os números de custo e qualidade divulgados vêm da própria Tencent. Num teste interno chamado WorkIndex, com tarefas de escritório como slides e planilhas, o Hy4 flash marcou 42,1, contra 39,7 do Hy4 preview e 51,4 do Hy4 completo, e a empresa diz que cada tarefa custa 20 vezes menos do que no Hy4. Numa avaliação cega com 85 usuários internos, a satisfação ficou em 2,79 de 4.",
+    "A reportagem da Neurohive, de 18 de novembro, cruzou esses dados com medições externas da Vals AI. No Vals Index, o Hy4 flash fez 50,8% e ficou em 35º lugar entre 41 modelos, 10,5 pontos abaixo do DeepSeek-V4.1-Flash, também de pesos abertos. No Terminal-Bench 4.0, que mede trabalho de agente no terminal, marcou 15,2%. Em compensação, uma rodada do Vals Index custou 0,07 dólar, contra 0,66 dólar do DeepSeek.",
+    "Rodar em casa ainda é difícil. Segundo a Neurohive, os pesos em BF16 ocupam 440 GB e os exemplos oficiais usam 8 GPUs. Há uma versão compactada em GGUF, de 135 a 168 GB, que a Tencent rodou num computador com 128 GB de memória, mas o suporte no llama.cpp oficial ainda depende de uma mudança que não foi incorporada."
+  ],
+  "harpia": "O caso mostra por que o Harpya separa pesos abertos de licença aberta e número da empresa de número medido por terceiros. O modelo é barato de usar, mas a licença é proprietária e a avaliação externa ficou bem abaixo da propaganda de custo.",
+  "fontes": [
+    {
+      "veiculo": "Hugging Face",
+      "titulo": "tencent/Hy4-flash",
+      "url": "https://huggingface.co/tencent/Hy4-flash"
+    },
+    {
+      "veiculo": "Neurohive",
+      "titulo": "Hy4 flash: Tencent Releases Open Weights and Claims 20x Lower Cost per Task Than Hy4",
+      "url": "https://neurohive.io/en/news/tencent-hy4-flash-open-weights/"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-20",
+  "verificado_em": "2026-11-20",
+  "ordem": 999
+}

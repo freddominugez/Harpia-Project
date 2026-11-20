@@ -1,0 +1,32 @@
+{
+  "titulo": "SenseTime abre o SenseNova-Loop-9B, modelo de 9 bilhões de parâmetros que repete camadas e cabe em placa de 16 GB",
+  "resumo": "O modelo multimodal sai com licença Apache 2.0 e executa duas vezes um bloco de camadas para ganhar profundidade sem crescer. Os resultados de desempenho são da própria empresa.",
+  "data": "2026-11-17",
+  "categoria": "abertos",
+  "icone": "codigo",
+  "corpo": [
+    "A SenseTime publicou em 17 de novembro os pesos e o código do SenseNova-Loop-9B, versão final de um modelo cuja prévia saiu em 31 de outubro. O modelo tem cerca de 9 bilhões de parâmetros, recebe texto e imagem, responde em texto e aceita contexto de até 512 mil tokens. A licença é Apache 2.0, que permite uso comercial, mas a página no Hugging Face pede que o usuário aceite condições e compartilhe dados da conta antes de baixar os arquivos.",
+    "A ideia central é reaproveitar camadas. O modelo tem 32 camadas de decodificação, mas um bloco de 24 delas roda duas vezes em sequência, o que dá 56 passagens por camada a cada token. Segundo a ficha técnica, o custo de computação equivale ao de um modelo de cerca de 14,6 bilhões de parâmetros, enquanto a memória guarda só os pesos de 9 bilhões.",
+    "Os números de desempenho vêm da SenseTime. A empresa diz que a versão final supera a prévia nos sete testes que mostra, com o AutomationBench subindo de 14,33 para 36,67, e que fica perto do Qwen3.8-27B: 65,31 contra 65,01 no AIDABench e 41,36 contra 44,60 no NL2Repo. A TechNode, que noticiou o lançamento em 18 de novembro, repete esses dados atribuindo-os à empresa. Não há avaliação independente publicada.",
+    "Para quem quer rodar em casa, a ficha informa que a versão quantizada em 4 bits ocupa cerca de 4,9 GB e que, com cache em 8 bits, o modelo precisa de aproximadamente 10 GiB de memória de vídeo para 64 mil tokens de contexto e 15 GiB para 256 mil. Há versões AWQ e GGUF, mas o suporte no vLLM e no SGLang ainda depende de ramos de código não incorporados.",
+    "A própria SenseTime lista limites: o modelo pode errar quando recebe muitas ferramentas ou restrições ao mesmo tempo, oscila em tarefas longas de programação e às vezes precisa de duas ou três rodadas para concluir páginas web complexas."
+  ],
+  "harpia": "Repetir camadas é uma forma de ganhar raciocínio sem exigir mais memória, o que interessa a quem quer IA em computador comum. A licença Apache ajuda, mas os ganhos ainda precisam de teste fora da empresa.",
+  "fontes": [
+    {
+      "veiculo": "Hugging Face",
+      "titulo": "sensenova/SenseNova-Loop-9B",
+      "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B"
+    },
+    {
+      "veiculo": "TechNode",
+      "titulo": "SenseTime releases open-weight Loop-9B model that reuses layers for deeper computation",
+      "url": "https://technode.com/2026/11/18/sensetime-releases-open-weight-loop-9b-model-that-reuses-layers-for-deeper-computation/"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-20",
+  "verificado_em": "2026-11-20",
+  "ordem": 999
+}

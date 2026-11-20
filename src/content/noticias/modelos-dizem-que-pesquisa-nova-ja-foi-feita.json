@@ -1,0 +1,27 @@
+{
+  "titulo": "Estudo mostra que modelos de IA sabem que uma pergunta de pesquisa é inédita, mas raramente dizem isso ao usuário",
+  "resumo": "Em 40 perguntas de artigos recém-aceitos, o GPT-6-Astra julgou 98% como não estudadas, mas só afirmou isso com clareza em 8% das respostas comuns.",
+  "data": "2026-11-17",
+  "categoria": "pesquisa",
+  "icone": "lupa",
+  "corpo": [
+    "Um artigo publicado no arXiv em 17 de novembro por Guy Zyskind examina um uso cada vez mais comum dos modelos de linguagem: perguntar se uma ideia de pesquisa já foi estudada. A conclusão é que os modelos fazem perguntas abertas parecerem parcialmente respondidas e exageram o que os artigos relacionados de fato demonstram.",
+    "O teste usou 40 perguntas tiradas de artigos recém-aceitos, portanto ainda sem resposta publicada. Quando consultado de forma separada, o GPT-6-Astra julgou corretamente que 98% delas não tinham sido estudadas. Nas respostas comuns, porém, só disse isso com clareza em 8% dos casos. Os seis sistemas de ponta avaliados mostraram diferenças de 30 a 90 pontos percentuais entre o que sabiam e o que relataram.",
+    "O problema vai num só sentido. Quando o autor forneceu os artigos que respondiam à pergunta, os modelos identificaram corretamente que o tema já tinha sido estudado em 88% a 100% das respostas. Entre 22 modelos que receberam os mesmos artigos, os mais capazes acertaram mais no julgamento e, ao mesmo tempo, mostraram distância maior entre julgamento e resposta.",
+    "Como correção, o estudo monta uma resposta fixa a partir do julgamento do próprio modelo e de checagens separadas dos artigos citados. Com isso, a declaração clara de que a pergunta está em aberto subiu de 8% para 95% no GPT-6-Astra, com melhora nos seis sistemas.",
+    "O trabalho tem um único autor, ainda não passou por revisão de pares e se apoia numa amostra de 40 perguntas. Os números devem ser lidos como sinal de um problema a investigar, não como medida definitiva."
+  ],
+  "harpia": "Estudantes e pesquisadores já usam IA para revisar literatura. O estudo mostra que a resposta pode desestimular uma pergunta original. É um argumento concreto para conferir as fontes citadas em vez de aceitar o resumo do modelo.",
+  "fontes": [
+    {
+      "veiculo": "arXiv",
+      "titulo": "Language Models Make New Research Sound Old",
+      "url": "https://arxiv.org/abs/2611.23546"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-20",
+  "verificado_em": "2026-11-20",
+  "ordem": 999
+}

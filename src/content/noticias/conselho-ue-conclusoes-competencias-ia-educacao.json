@@ -1,0 +1,32 @@
+{
+  "titulo": "Ministros da educação da União Europeia aprovam conclusões que pedem ensino de IA com pensamento crítico desde a escola",
+  "resumo": "O texto do Conselho da UE, aprovado em 19 de novembro, inclui saber quando não usar IA entre as competências a ensinar e pede mais formação para professores.",
+  "data": "2026-11-19",
+  "categoria": "letramento",
+  "icone": "escola",
+  "corpo": [
+    "Os ministros de educação e juventude da União Europeia aprovaram em 19 de novembro conclusões do Conselho sobre as competências necessárias para lidar com inteligência artificial. O texto foi negociado no Comitê de Educação e enviado para aprovação na reunião daquele dia, com publicação prevista no Jornal Oficial da UE, segundo o documento 14902/26 do secretariado do Conselho. A adoção foi noticiada pelo EU Perspectives.",
+    "As conclusões descrevem o que conta como competência em IA. Além de saber escrever comandos, a lista inclui avaliar e verificar o que a máquina produz, entender o impacto da tecnologia na sociedade e no ambiente e reconhecer quando não usar IA. O documento diz que essas habilidades se apoiam em leitura, matemática e ciências, tratadas como base de todo o resto.",
+    "O texto também enumera riscos que as escolas devem observar, entre eles a dependência excessiva de ferramentas, a desinformação, os vieses dos algoritmos, a perda de aprendizagem, o repasse de esforço mental para a máquina e problemas de proteção de dados. Pede ainda que os países reduzam a dependência de ferramentas de IA desenvolvidas fora da Europa.",
+    "Segundo o EU Perspectives, os países são chamados a incluir essas competências nos currículos nacionais e a reforçar a formação inicial e continuada de professores. A comissária Roxana Mînzatu disse após a reunião: \"Quanto mais usamos tecnologia, mais precisamos de humanidade\".",
+    "Conclusões do Conselho não obrigam os países: orientam políticas. O documento cita como referência o marco de letramento em IA para o ensino fundamental e médio feito pela OCDE com a Comissão Europeia, e o certificado europeu de letramento em IA, já anunciado, segue com teste previsto para o ano letivo de 2027/28."
+  ],
+  "harpia": "A lista europeia coincide com o que o Harpya defende: ensinar a duvidar da resposta, a conferir e a decidir quando a IA não serve. É uma referência útil para comparar com as diretrizes brasileiras homologadas pelo MEC.",
+  "fontes": [
+    {
+      "veiculo": "Conselho da União Europeia",
+      "titulo": "Draft Council conclusions on skills and competences to engage with artificial intelligence (AI): Approval (14902/26)",
+      "url": "https://data.consilium.europa.eu/doc/document/ST-14902-2026-INIT/en/pdf"
+    },
+    {
+      "veiculo": "EU Perspectives",
+      "titulo": "From classrooms to workplaces: EU ministers push for AI skills across generations",
+      "url": "https://euperspectives.eu/2026/11/from-classrooms-to-workplaces-eu-ministers-push-for-ai-skills-across-generations/"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-20",
+  "verificado_em": "2026-11-20",
+  "ordem": 999
+}
