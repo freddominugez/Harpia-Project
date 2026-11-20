@@ -1,14 +1,14 @@
 {
   "ano": 2026,
   "titulo": "Global Importance Estimation for KV Cache Eviction",
-  "autores": "Kim, Park · arXiv",
+  "autores": "Seojin Kim, Noseong Park · KAIST",
   "url": "https://arxiv.org/abs/2611.24969",
-  "grupo": "busca",
+  "grupo": "fund",
   "selo": "medido",
-  "rotulo": "compressão do cache KV",
+  "rotulo": "inferência · cache KV",
   "ordem": 999,
   "fonte_url": "https://arxiv.org/abs/2611.24969",
-  "status": "rascunho",
+  "status": "publicado",
   "origem": "curadoria-diaria",
   "adicionado_em": "2026-11-20",
   "verificado_em": "2026-11-20"

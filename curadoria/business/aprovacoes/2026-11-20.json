@@ -1,0 +1,67 @@
+{
+  "data": "2026-11-20",
+  "timezone": "America/Fortaleza",
+  "items": [
+    {
+      "path": "src/content/business/acervo/2026-11-20-wharton-solar-conflitos-paises-frageis.json",
+      "sha256": "934b9da4d13530d4f34b4129d761086e4ec48ac733c72d33f3069b8192cb3c3f",
+      "sha256_publicado": "d7523efd4648474c274a44945d22ff8d60e3998eeb9e94450896ae9b9fedd03b",
+      "pauta": "business_research",
+      "verificacao": {
+        "responsavel": "business_verify",
+        "consultado_em": "2026-11-20",
+        "escopo": "Página da Wharton e artigo científico integral abertos; dados e modelo não reproduzidos pelo Harpya.",
+        "evidencias": [
+          "https://knowledge.wharton.upenn.edu/article/can-renewable-energy-make-conflict-worse/",
+          "https://link.springer.com/article/10.1007/s10551-026-06323-7"
+        ],
+        "alegacoes": [
+          {
+            "texto": "Wharton publicou a síntese de Seb Murray em 16 de novembro de 2026, citando estudo de Henisz e coautores.",
+            "url": "https://knowledge.wharton.upenn.edu/article/can-renewable-energy-make-conflict-worse/",
+            "resultado": "confirmada",
+            "local": "Cabeçalho e parágrafos iniciais da notícia."
+          },
+          {
+            "texto": "O estudo usa painel geográfico de projetos solares comerciais em 104 países classificados como frágeis em algum momento de 1994 a 2020.",
+            "url": "https://link.springer.com/article/10.1007/s10551-026-06323-7",
+            "resultado": "confirmada",
+            "local": "Resumo e seção de métodos do artigo."
+          },
+          {
+            "texto": "O modelo principal estima 0,0279 morte adicional por célula geográfica e ano, ou 144,1% sobre média pequena, após início do projeto em contexto frágil.",
+            "url": "https://link.springer.com/article/10.1007/s10551-026-06323-7",
+            "resultado": "qualificada",
+            "local": "Seção Findings, Table 2 e descrição do coeficiente."
+          },
+          {
+            "texto": "Não apareceu resultado correspondente nos contextos não frágeis, e a divisão por tamanho de projeto não chegou à significância convencional.",
+            "url": "https://link.springer.com/article/10.1007/s10551-026-06323-7",
+            "resultado": "confirmada",
+            "local": "Seção Findings, comparação com coluna não frágil e análise de heterogeneidade."
+          },
+          {
+            "texto": "Wharton propõe incorporar consulta comunitária e avaliação de risco de conflito ao planejamento e financiamento dos projetos.",
+            "url": "https://knowledge.wharton.upenn.edu/article/can-renewable-energy-make-conflict-worse/",
+            "resultado": "confirmada",
+            "local": "Seções Why Good Projects Go Wrong e The Missing Risk."
+          }
+        ]
+      },
+      "selecao": {
+        "responsavel": "business_selection",
+        "nota": 8.5,
+        "justificativa": "Estudo acadêmico original aberto e síntese institucional de fonte aprovada; resultado relevante à diligência de projetos, com efeito absoluto, recorte geográfico e limitações estatísticas explícitos.",
+        "criterios": {
+          "rigor": 8.5,
+          "relevancia": 8.5,
+          "utilidade": 8.5,
+          "atualidade": 8.0,
+          "clareza": 9.0,
+          "conflitos": 8.5
+        }
+      },
+      "publicacao": "editorial_round"
+    }
+  ]
+}

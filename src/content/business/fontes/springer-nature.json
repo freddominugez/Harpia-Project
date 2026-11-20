@@ -1,0 +1,15 @@
+{
+  "nome": "Springer Nature Link · artigos científicos",
+  "url": "https://link.springer.com/",
+  "regiao": "Global",
+  "tipo": "academica",
+  "descricao": "Textos integrais e registros de artigos científicos publicados pela Springer Nature.",
+  "idioma": "en",
+  "hosts": ["link.springer.com"],
+  "feed": "",
+  "status": "aprovado",
+  "verificado_em": "2026-11-20",
+  "canais": [],
+  "escopos": ["artigos"],
+  "restricao": "Usar apenas o artigo original identificado, com método, limitações e condição de acesso conferidos; não inferir revisão por pares a partir de preprints."
+}

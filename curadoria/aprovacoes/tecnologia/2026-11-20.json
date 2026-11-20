@@ -1,0 +1,124 @@
+{
+  "data": "2026-11-20",
+  "timezone": "America/Fortaleza",
+  "items": [
+    {
+      "path": "src/content/artigos/2026-global-importance-estimation-for-kv-cache-eviction.json",
+      "sha256": "0dbc1d6dacaa95bfe0bdfaf650f7c537dbfb4d84a44d0c46ce7da1d119a06bd1",
+      "pauta": {
+        "responsavel": "tech_research",
+        "justificativa": "Estudo original da KAIST relevante para memória e inferência de modelos de linguagem."
+      },
+      "verificacao": {
+        "responsavel": "tech_research",
+        "consultado_em": "2026-11-20",
+        "evidencias": [
+          "https://arxiv.org/abs/2611.24969",
+          "https://arxiv.org/html/2611.24969v1"
+        ],
+        "alegacoes": [
+          {
+            "texto": "Seojin Kim e Noseong Park, da KAIST, submeteram o artigo em 16 de novembro de 2026; o registro cita NeurIPS 2026.",
+            "url": "https://arxiv.org/abs/2611.24969",
+            "resultado": "confirmada",
+            "local": "Cabeçalho, autoria, data e Comments do registro arXiv."
+          },
+          {
+            "texto": "PRKV usa Personalized PageRank sobre grafo de atenção para escolher entradas do cache KV sem treinamento adicional.",
+            "url": "https://arxiv.org/html/2611.24969v1",
+            "resultado": "confirmada",
+            "local": "Resumo e seções 1 e 4."
+          },
+          {
+            "texto": "Duas variantes incorporam sinais de atenção, recência e magnitude dos valores antes do descarte.",
+            "url": "https://arxiv.org/html/2611.24969v1",
+            "resultado": "confirmada",
+            "local": "Seções 4.2 e 4.3."
+          },
+          {
+            "texto": "Os autores testaram RULER, LongBench, Needle-in-a-Haystack, AIME25 e MATH-500 com compressões de até 90%; o desempenho variou por modelo e tarefa.",
+            "url": "https://arxiv.org/html/2611.24969v1",
+            "resultado": "qualificada",
+            "local": "Seção 5, Tabelas 1 e 2 e experimentos de decodificação."
+          },
+          {
+            "texto": "O método depende da qualidade da atenção observada, acrescenta custo de pontuação e ainda requer otimização para frameworks como vLLM.",
+            "url": "https://arxiv.org/html/2611.24969v1",
+            "resultado": "confirmada",
+            "local": "Apêndice J, limitações e trabalho futuro."
+          }
+        ],
+        "escopo": "Resumo e texto integral HTML v1 examinados; experimentos não reproduzidos pelo Harpya."
+      },
+      "selecao": {
+        "responsavel": "tech_selection",
+        "nota": 4.3,
+        "justificativa": "Pesquisa de conferência com cinco benchmarks e três famílias de modelos, aplicação direta ao custo de contexto longo e limitações declaradas; resultados apresentados como testes dos autores."
+      },
+      "publicacao": {
+        "responsavel": "editorial_round",
+        "status": "aguardando_portao"
+      },
+      "sha256_publicado": "a57e28030efdb72f6849d307306e65c20354f199f4da7b110dcc3baafb1a18e4"
+    },
+    {
+      "path": "src/content/noticias/2026-11-20-kaist-prkv-cache-contexto-longo.json",
+      "sha256": "b23cbd7a1e2c9409b8cc8645e02cc6d0aab9bb834ff92342453a038e22b907ec",
+      "pauta": {
+        "responsavel": "tech_research",
+        "justificativa": "Estudo original da KAIST relevante para memória e inferência de modelos de linguagem."
+      },
+      "verificacao": {
+        "responsavel": "tech_research",
+        "consultado_em": "2026-11-20",
+        "evidencias": [
+          "https://arxiv.org/abs/2611.24969",
+          "https://arxiv.org/html/2611.24969v1"
+        ],
+        "alegacoes": [
+          {
+            "texto": "Seojin Kim e Noseong Park, da KAIST, submeteram o artigo em 16 de novembro de 2026; o registro cita NeurIPS 2026.",
+            "url": "https://arxiv.org/abs/2611.24969",
+            "resultado": "confirmada",
+            "local": "Cabeçalho, autoria, data e Comments do registro arXiv."
+          },
+          {
+            "texto": "PRKV usa Personalized PageRank sobre grafo de atenção para escolher entradas do cache KV sem treinamento adicional.",
+            "url": "https://arxiv.org/html/2611.24969v1",
+            "resultado": "confirmada",
+            "local": "Resumo e seções 1 e 4."
+          },
+          {
+            "texto": "Duas variantes incorporam sinais de atenção, recência e magnitude dos valores antes do descarte.",
+            "url": "https://arxiv.org/html/2611.24969v1",
+            "resultado": "confirmada",
+            "local": "Seções 4.2 e 4.3."
+          },
+          {
+            "texto": "Os autores testaram RULER, LongBench, Needle-in-a-Haystack, AIME25 e MATH-500 com compressões de até 90%; o desempenho variou por modelo e tarefa.",
+            "url": "https://arxiv.org/html/2611.24969v1",
+            "resultado": "qualificada",
+            "local": "Seção 5, Tabelas 1 e 2 e experimentos de decodificação."
+          },
+          {
+            "texto": "O método depende da qualidade da atenção observada, acrescenta custo de pontuação e ainda requer otimização para frameworks como vLLM.",
+            "url": "https://arxiv.org/html/2611.24969v1",
+            "resultado": "confirmada",
+            "local": "Apêndice J, limitações e trabalho futuro."
+          }
+        ],
+        "escopo": "Resumo e texto integral HTML v1 examinados; experimentos não reproduzidos pelo Harpya."
+      },
+      "selecao": {
+        "responsavel": "tech_selection",
+        "nota": 4.3,
+        "justificativa": "Pesquisa de conferência com cinco benchmarks e três famílias de modelos, aplicação direta ao custo de contexto longo e limitações declaradas; resultados apresentados como testes dos autores."
+      },
+      "publicacao": {
+        "responsavel": "editorial_round",
+        "status": "aguardando_portao"
+      },
+      "sha256_publicado": "ff5743b27c5865f832571ef62be05569e62c45494fd3265fed735d68024376e5"
+    }
+  ]
+}

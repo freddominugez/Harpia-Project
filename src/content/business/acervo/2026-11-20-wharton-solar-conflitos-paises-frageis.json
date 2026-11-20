@@ -1,0 +1,29 @@
+{
+  "titulo": "Pesquisa liga projetos solares comerciais a conflitos em países frágeis",
+  "resumo": "Estudo divulgado pela Wharton associa usinas solares comerciais a mais mortes ligadas a conflitos em países frágeis. A estimativa absoluta é pequena e não se repete em países estáveis.",
+  "fonte": "wharton",
+  "url": "https://knowledge.wharton.upenn.edu/article/can-renewable-energy-make-conflict-worse/",
+  "tipo": "noticia",
+  "trilha": "estrategia",
+  "autores": "Seb Murray; pesquisa de Witold Henisz, Anne Jamison, Brian Ganson e Joseph Bettles",
+  "data": "2026-11-16",
+  "data_precisa": true,
+  "idioma": "en",
+  "acesso": "Síntese institucional da Wharton e artigo científico integral aberto em inglês no Journal of Business Ethics.",
+  "evidencia": "Síntese da Wharton de estudo observacional sobre projetos solares e conflitos em 104 países classificados como frágeis, entre 1994 e 2020.",
+  "limites": "O estudo usa dados observacionais, pareamento estatístico e recorte geográfico específico; a associação não prova que cada usina isoladamente causou violência. O resultado não foi observado em países mais estáveis. Os experimentos e dados não foram reproduzidos pelo Harpya.",
+  "status": "publicado",
+  "justificativa": "Pesquisa acadêmica com autoria e contexto identificados, publicada em fonte aprovada; a matéria separa associação observacional de causalidade e descreve limites de acesso.",
+  "revisor": "business_verify",
+  "revisado_em": "2026-11-20",
+  "corpo": [
+    "Um estudo divulgado pela Knowledge at Wharton em 16 de novembro examina a relação entre projetos solares comerciais e conflitos em países frágeis. A reportagem de Seb Murray resume pesquisa de Anne Spencer Jamison, Brian Ganson, Witold Henisz e Joseph Bettles publicada no Journal of Business Ethics. Os autores usaram um painel geográfico de projetos e conflitos em 104 países classificados como frágeis em algum momento entre 1994 e 2020.",
+    "No modelo principal do artigo científico, a chegada de um projeto solar foi associada a uma média 144,1% maior de mortes ligadas a conflitos na área local no ano seguinte. Esse aumento relativo corresponde à estimativa de cerca de 0,0279 morte adicional por célula geográfica e ano, sobre uma base pequena. Os autores não encontraram resultado comparável em contextos não frágeis. O percentual, isoladamente, exageraria a escala absoluta do achado.",
+    "Para empresas, investidores e governos, a implicação proposta é avaliar riscos sociais e de conflito no planejamento, no financiamento e no acompanhamento dos projetos. A reportagem recomenda ouvir as comunidades sobre suas preocupações concretas, em vez de presumir que o benefício climático ou a oferta de empregos resolverá todas as disputas locais.",
+    "A análise usa dados observacionais e pareamento estatístico; não permite prever que um projeto específico causará violência. O recorte de países frágeis não deve ser generalizado a outras regiões. A divisão por tamanho dos projetos também não apresentou evidência estatística conclusiva na análise separada. A notícia serve como alerta para diligência social, e o Harpya não reproduziu os dados ou o modelo."
+  ],
+  "referencias": [
+    "https://knowledge.wharton.upenn.edu/article/can-renewable-energy-make-conflict-worse/",
+    "https://link.springer.com/article/10.1007/s10551-026-06323-7"
+  ]
+}

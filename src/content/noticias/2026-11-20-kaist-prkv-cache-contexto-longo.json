@@ -1,0 +1,26 @@
+{
+  "titulo": "Pesquisadores da KAIST testam PageRank para reduzir o cache de modelos de IA",
+  "resumo": "O método PRKV escolhe quais partes do contexto manter na memória. Em testes dos autores, reduziu o cache com desempenho variável entre modelos e tarefas.",
+  "data": "2026-11-16",
+  "categoria": "pesquisa",
+  "icone": "lupa",
+  "corpo": [
+    "Seojin Kim e Noseong Park, da KAIST, apresentaram o PRKV, método para decidir quais entradas do cache de chaves e valores de um modelo de linguagem devem continuar na memória durante a inferência. O trabalho, submetido ao arXiv em 16 de novembro e identificado como artigo da NeurIPS 2026, trata do custo de manter contextos extensos sem exigir novo treinamento do modelo.",
+    "A proposta interpreta a atenção entre tokens como um grafo e usa uma aproximação de Personalized PageRank para estimar quais posições podem influenciar etapas posteriores. Duas variantes agregam esses sinais de maneiras diferentes. A seleção considera também informações recentes e a magnitude dos valores armazenados, antes de remover entradas até atingir o orçamento de cache.",
+    "Os autores compararam PRKV com métodos de descarte existentes em tarefas de compreensão de contexto longo, recuperação de informação esparsa e raciocínio matemático. Os experimentos incluem RULER, LongBench, Needle-in-a-Haystack, AIME25 e MATH-500, em diferentes famílias de modelos. As variantes foram competitivas em várias condições, inclusive com compressão de até 90%, mas a melhor variante e a perda de qualidade variaram conforme o modelo, a tarefa e o orçamento. O número de 90% descreve uma condição experimental, não uma redução garantida para qualquer aplicação.",
+    "O estudo é uma avaliação dos próprios autores; o Harpya não reproduziu os testes. O método depende da qualidade dos sinais de atenção disponíveis e acrescenta computação para atualizar as pontuações. Os pesquisadores ainda apontam a necessidade de implementações mais eficientes em frameworks de inferência e de limites teóricos que prevejam melhor a qualidade da tarefa após a compressão."
+  ],
+  "harpia": "Ao escolher uma política de cache para contexto longo, compare qualidade da resposta, memória de pico e latência no mesmo modelo e carga de trabalho. Resultados de benchmark não substituem medição em produção.",
+  "fontes": [
+    {
+      "veiculo": "arXiv · artigo de pesquisa",
+      "titulo": "Global Importance Estimation for KV Cache Eviction",
+      "url": "https://arxiv.org/abs/2611.24969"
+    }
+  ],
+  "status": "publicado",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-20",
+  "verificado_em": "2026-11-20",
+  "ordem": 999
+}
