@@ -1,0 +1,36 @@
+{
+  "titulo": "Thinking Machines abre o Inkling 2 Mini, modelo de 26 bilhões de parâmetros que repete camadas e roda em notebook",
+  "resumo": "Pesos sob licença Apache 2.0 ocupam cerca de 20 GB. A empresa também liberou uma versão de pesquisa para estudar se repetir camadas atrapalha o monitoramento do raciocínio.",
+  "data": "2026-11-20",
+  "categoria": "abertos",
+  "icone": "maquina",
+  "corpo": [
+    "A Thinking Machines Lab publicou em 20 de novembro os pesos do Inkling 2 Mini no Hugging Face, sob licença Apache 2.0. É um modelo de mistura de especialistas com 26,4 bilhões de parâmetros no total e 3,4 bilhões ativos por token. Chega depois do Inkling 2 Small, de 594 bilhões de parâmetros, que parte dos usuários achou grande demais para rodar por conta própria.",
+    "O modelo tem 24 camadas, e as 12 do meio são executadas três vezes a cada token, com os mesmos pesos. A ideia é fazer mais conta por dentro antes de escrever a resposta. Os pesos já vêm treinados em precisões reduzidas (NVFP4 e MXFP8) e somam cerca de 20 GB. A ficha do modelo indica Macs com 32 GB de memória ou mais, ou placas com 32 GB de memória de vídeo, entre outras opções.",
+    "Segundo a empresa, o Inkling 2 Mini lidera entre os modelos abertos com menos de 100 bilhões de parâmetros em testes de programação como o DeepSWE v1.1 (48,2%). A Artificial Analysis, que mede modelos de forma independente, o colocou com nota 20 em seu índice, empatado com o Qwen3.8-27B, de acordo com a TestingCatalog. A própria empresa diz que o modelo fica atrás em conversa com várias rodadas e em instruções com muitas restrições.",
+    "Junto, a empresa liberou um modelo de pesquisa que aceita de uma a cinco repetições, para estudar um risco: repetir camadas permite raciocinar mais sem escrever o raciocínio, o que dificultaria acompanhar o que o modelo pensa. A Thinking Machines afirma que, nesse tamanho, a cadeia de raciocínio ficou mais curta mas continuou legível, e que testes de sabotagem não pioraram com mais repetições. São análises da própria empresa; o laboratório Goodfire recebeu acesso antecipado para estudar esses modelos por dentro."
+  ],
+  "harpia": "Um modelo aberto, com licença permissiva, que cabe num computador pessoal e chega com material para pesquisa de interpretabilidade. Bom caso para mostrar que rodar IA em casa é possível e que a forma de construir o modelo muda o quanto conseguimos ver do seu raciocínio.",
+  "fontes": [
+    {
+      "veiculo": "Thinking Machines Lab",
+      "titulo": "Introducing Inkling 2 Mini",
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini/"
+    },
+    {
+      "veiculo": "Hugging Face",
+      "titulo": "thinkingmachines/Inkling-2-Mini",
+      "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini"
+    },
+    {
+      "veiculo": "TestingCatalog",
+      "titulo": "Thinking Machines releases Inkling 2 Mini open-weight model",
+      "url": "https://www.testingcatalog.com/thinking-machines-releases-inkling-2-mini-looped-open-model/"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-21",
+  "verificado_em": "2026-11-21",
+  "ordem": 999
+}

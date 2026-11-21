@@ -1,0 +1,27 @@
+{
+  "titulo": "METR diz que capacidade de agentes de IA para pesquisa dobra a cada 3,6 meses e que medir isso ficou mais difícil",
+  "resumo": "Relatório trimestral do METR avaliou 15 modelos públicos: agentes já superam especialistas recrutados em tarefas de código, mas julgam pior quando falta retorno rápido.",
+  "data": "2026-11-20",
+  "categoria": "pesquisa",
+  "icone": "lupa",
+  "corpo": [
+    "O METR, organização independente que avalia modelos de IA, publicou em 20 de novembro uma atualização sobre capacidades ligadas à aceleração da própria pesquisa em IA. O relatório cobre 15 modelos públicos, de GPT-4o a Opus 5.5 e GPT-6 Astra, rodados com o mesmo conjunto de ferramentas e o maior nível de raciocínio disponível.",
+    "A conta principal: somando o conjunto antigo de tarefas (TH1.1, com 222 tarefas) e um novo e mais difícil (TH2, com 36 tarefas em 12 famílias), o horizonte de tempo dos agentes, isto é, a duração de tarefa humana que eles completam com 50% de sucesso, dobra a cada 3,6 meses, segundo o METR. A organização diz que o ritmo é parecido com o que a OpenAI relatou para tarefas internas de pesquisa.",
+    "Em tarefas de código e otimização com nota automática, os modelos em geral igualaram ou superaram os especialistas que o METR contratou, a até US$ 350 por hora. Onde havia muitos competidores humanos para comparar, como 15 concursos de otimização de Al Zimmermann, os modelos mais fortes ficaram em mediana entre os percentis 96 e 98, mas cerca de quatro pessoas ainda os superaram no concurso mediano.",
+    "O limite medido está no julgamento. Nas tarefas em que o retorno é lento ou o teste não garante que a solução generaliza, os agentes se saíram pior que especialistas humanos. Em uma delas, modelos usados como juízes superestimaram a qualidade de trabalhos feitos por modelos tão fortes quanto eles ou mais fortes.",
+    "O METR também registra uma dúvida sobre o próprio método: avaliações baratas e automáticas se parecem cada vez mais com os ambientes usados para treinar os modelos, o que pode inflar resultados. Tarefas que custariam mais para virar ambiente de treino tiveram desempenho pior, embora o ritmo de melhora fosse parecido. A organização afirma que a evidência pública atual não basta para descartar uma aceleração drástica nos próximos anos."
+  ],
+  "harpia": "É uma das poucas medições independentes e repetidas sobre o avanço dos agentes, e vem com os próprios limites explicados. Mostra também onde a máquina ainda erra: julgar trabalho sem prova rápida, inclusive o de outras máquinas, o que pesa para quem usa IA para corrigir ou avaliar.",
+  "fontes": [
+    {
+      "veiculo": "METR",
+      "titulo": "AI R&D-relevant model capabilities are improving rapidly and are getting harder to measure",
+      "url": "https://metr.org/blog/2026-11-20-q4-2026-capability-update/"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-21",
+  "verificado_em": "2026-11-21",
+  "ordem": 999
+}
