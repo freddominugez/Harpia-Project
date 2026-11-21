@@ -1,213 +1,87 @@
 [
  {
-  "fonte": "arXiv cs.IR",
-  "titulo": "LSP-RAG: Latent Scoring Perspectives for Knowledge Graph Retrieval-Augmented Generation",
-  "url": "https://arxiv.org/abs/2611.25229",
-  "data": "20/11/2026",
-  "ts": 1795150800
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "Retrieving Patristic References and Modelling Topics in Bullinger's Reformation Correspondence",
-  "url": "https://arxiv.org/abs/2611.25247",
-  "data": "20/11/2026",
-  "ts": 1795150800
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "LQ-Rec: Late Quantization for Sequential Recommendation",
-  "url": "https://arxiv.org/abs/2611.25256",
-  "data": "20/11/2026",
-  "ts": 1795150800
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "CACO: Coverage-Aware Coordinated Optimization for Continuous Generative Retrieval",
-  "url": "https://arxiv.org/abs/2611.25738",
-  "data": "20/11/2026",
-  "ts": 1795150800
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "LINEAGE: A Benchmark for Empirical Lineage Retrieval in AI Scientific Literature",
-  "url": "https://arxiv.org/abs/2611.25845",
-  "data": "20/11/2026",
-  "ts": 1795150800
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "A Task-Level Bias Taxonomy for Historical Image Retrieval",
-  "url": "https://arxiv.org/abs/2611.26019",
-  "data": "20/11/2026",
-  "ts": 1795150800
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "From Sessions to Serving: Integrating LLM-Based Embeddings into Retrieval for Production Content Recommendation",
-  "url": "https://arxiv.org/abs/2611.26096",
-  "data": "20/11/2026",
-  "ts": 1795150800
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "FinVeriQA: Financial Research Agents for Question Answering: Routing, Retrieval, MCP Tool Use, and Provenance-Aware Evidence Verification",
-  "url": "https://arxiv.org/abs/2611.25071",
-  "data": "20/11/2026",
-  "ts": 1795150800
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "Beyond Dimensionality: Domain Shift and Catastrophic Forgetting in Single- vs. Multi-Vector Retrieval",
-  "url": "https://arxiv.org/abs/2603.29519",
-  "data": "20/11/2026",
-  "ts": 1795150800
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "When Is Additional Retrieval Worthwhile? A Cost-Aware Study of Evidence Gain and Answer Reliability in RAG",
-  "url": "https://arxiv.org/abs/2610.37358",
-  "data": "20/11/2026",
-  "ts": 1795150800
- },
- {
   "fonte": "arXiv cs.LG",
   "titulo": "Intelligent Embedding Pruning for Large-Scale Recommendation Models",
   "url": "https://arxiv.org/abs/2611.25288",
-  "data": "20/11/2026",
-  "ts": 1795150800
+  "data": "21/11/2026",
+  "ts": 1795237200
  },
  {
   "fonte": "arXiv cs.LG",
   "titulo": "Explainability of genotype embedding models through observed cohort paths",
   "url": "https://arxiv.org/abs/2611.25681",
-  "data": "20/11/2026",
-  "ts": 1795150800
+  "data": "21/11/2026",
+  "ts": 1795237200
  },
  {
   "fonte": "arXiv cs.LG",
   "titulo": "NariQ: Sub-3-Bit Quantization for Long-Horizon Agentic Tasks",
   "url": "https://arxiv.org/abs/2611.26157",
-  "data": "20/11/2026",
-  "ts": 1795150800
+  "data": "21/11/2026",
+  "ts": 1795237200
  },
  {
   "fonte": "arXiv cs.LG",
   "titulo": "Sequential Anytime Valid Tests for Efficient Inference-Time Alignment",
   "url": "https://arxiv.org/abs/2611.26413",
-  "data": "20/11/2026",
-  "ts": 1795150800
+  "data": "21/11/2026",
+  "ts": 1795237200
  },
  {
   "fonte": "arXiv cs.LG",
   "titulo": "Hybrid Retrieval for Government Scheme Search in English and Marathi",
   "url": "https://arxiv.org/abs/2611.26514",
-  "data": "20/11/2026",
-  "ts": 1795150800
+  "data": "21/11/2026",
+  "ts": 1795237200
  },
  {
   "fonte": "arXiv cs.LG",
   "titulo": "MADJEPA: Enhanced Multi-Stage Joint-Embedding Predictive Architecture for Medical Anomaly Detection",
   "url": "https://arxiv.org/abs/2611.25194",
-  "data": "20/11/2026",
-  "ts": 1795150800
+  "data": "21/11/2026",
+  "ts": 1795237200
  },
  {
   "fonte": "arXiv cs.LG",
   "titulo": "Erasing the Wrong Thing: Conditional Attribute Leakage and Concept Erasure in Shared Foundation-Model Embeddings",
   "url": "https://arxiv.org/abs/2611.25640",
-  "data": "20/11/2026",
-  "ts": 1795150800
+  "data": "21/11/2026",
+  "ts": 1795237200
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "From Sessions to Serving: Integrating LLM-Based Embeddings into Retrieval for Production Content Recommendation",
+  "url": "https://arxiv.org/abs/2611.26096",
+  "data": "21/11/2026",
+  "ts": 1795237200
  },
  {
   "fonte": "arXiv cs.LG",
   "titulo": "Deterministic Temporal Embedding for Calcium Imaging Trace Extraction",
   "url": "https://arxiv.org/abs/2611.26522",
-  "data": "20/11/2026",
-  "ts": 1795150800
+  "data": "21/11/2026",
+  "ts": 1795237200
  },
  {
   "fonte": "arXiv cs.LG",
   "titulo": "BrainPro: Process-conditioned Pretraining with Topographic Retrieval for Large EEG Models",
   "url": "https://arxiv.org/abs/2509.22050",
-  "data": "20/11/2026",
-  "ts": 1795150800
+  "data": "21/11/2026",
+  "ts": 1795237200
  },
  {
   "fonte": "arXiv cs.LG",
   "titulo": "TriAxialKV: Toward Extreme Low-Precision KV-Cache Quantization for Agentic Inference Tasks",
   "url": "https://arxiv.org/abs/2605.17170",
-  "data": "20/11/2026",
-  "ts": 1795150800
+  "data": "21/11/2026",
+  "ts": 1795237200
  },
  {
   "fonte": "arXiv cs.LG",
   "titulo": "Tetra: Serving Leech-Lattice Quantized LLMs at 2.7 Bits per Parameter",
   "url": "https://arxiv.org/abs/2609.35465",
-  "data": "20/11/2026",
-  "ts": 1795150800
- },
- {
-  "fonte": "arXiv cs.CL",
-  "titulo": "Global Importance Estimation for KV Cache Eviction",
-  "url": "https://arxiv.org/abs/2611.24969",
-  "data": "20/11/2026",
-  "ts": 1795150800
- },
- {
-  "fonte": "arXiv cs.CL",
-  "titulo": "RoCoKV: Accelerating LLM Inference Serving through Uncertainty and Redundancy Aware KV Cache Compression",
-  "url": "https://arxiv.org/abs/2611.25433",
-  "data": "20/11/2026",
-  "ts": 1795150800
- },
- {
-  "fonte": "arXiv cs.CL",
-  "titulo": "VR-SparseQuant: Accurate FP4 Quantization with 2:4 Sparsity on Vera Rubin",
-  "url": "https://arxiv.org/abs/2611.25717",
-  "data": "20/11/2026",
-  "ts": 1795150800
- },
- {
-  "fonte": "arXiv cs.CL",
-  "titulo": "The Linguistic Structure of Dependency-Conditioned Embeddings",
-  "url": "https://arxiv.org/abs/2611.25909",
-  "data": "20/11/2026",
-  "ts": 1795150800
- },
- {
-  "fonte": "arXiv cs.CL",
-  "titulo": "DEO: Training-Free Direct Embedding Optimization for Negation-Aware Retrieval",
-  "url": "https://arxiv.org/abs/2603.09185",
-  "data": "20/11/2026",
-  "ts": 1795150800
- },
- {
-  "fonte": "arXiv cs.CL",
-  "titulo": "SPARK: Adaptive Parametric Knowledge Participation for Faithful Retrieval-Augmented Generation",
-  "url": "https://arxiv.org/abs/2606.27786",
-  "data": "20/11/2026",
-  "ts": 1795150800
- },
- {
-  "fonte": "arXiv cs.CL",
-  "titulo": "STEPQuant: When and Where Errors Matter in Delta-Rule Recurrent State Quantization",
-  "url": "https://arxiv.org/abs/2609.38169",
-  "data": "20/11/2026",
-  "ts": 1795150800
- },
- {
-  "fonte": "arXiv cs.CL",
-  "titulo": "From Fragmentation to Fusion: A Survey and Roadmap for Omnimodal Embeddings",
-  "url": "https://arxiv.org/abs/2611.00172",
-  "data": "20/11/2026",
-  "ts": 1795150800
- },
- {
-  "fonte": "arXiv cs.CL",
-  "titulo": "Chorus: Shared N-gram Embeddings with Layer-wise Adaptation",
-  "url": "https://arxiv.org/abs/2611.23386",
-  "data": "20/11/2026",
-  "ts": 1795150800
+  "data": "21/11/2026",
+  "ts": 1795237200
  },
  {
   "fonte": "OpenAI",
