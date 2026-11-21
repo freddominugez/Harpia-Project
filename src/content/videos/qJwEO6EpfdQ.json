@@ -1,0 +1,16 @@
+{
+  "id": "qJwEO6EpfdQ",
+  "titulo": "Don't start using local AI before you watch this video",
+  "canal": "Matt Williams",
+  "modulo": 10,
+  "nivel": "Iniciante",
+  "resumo": "Mostra como rodar modelos localmente com Ollama em Mac, Windows e Linux, escolher o modelo e diferenciar os formatos GGUF e MLX. Para quem vai sair de modelos hospedados para inferência local.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=qJwEO6EpfdQ",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-21",
+  "verificado_em": "2026-11-21"
+}

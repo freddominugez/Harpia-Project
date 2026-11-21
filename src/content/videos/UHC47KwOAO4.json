@@ -1,0 +1,16 @@
+{
+  "id": "UHC47KwOAO4",
+  "titulo": "How are Trillion Parameter Models Served",
+  "canal": "Vizuara",
+  "modulo": 10,
+  "nivel": "Intermediário",
+  "resumo": "Calcula no quadro a memória de um modelo de 1 trilhão de parâmetros, o limite de memória contra computação, prefill e decode e a redução do cache KV. Para quem quer entender o custo de servir modelos grandes.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=UHC47KwOAO4",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-21",
+  "verificado_em": "2026-11-21"
+}

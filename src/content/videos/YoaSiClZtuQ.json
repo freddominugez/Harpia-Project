@@ -1,0 +1,16 @@
+{
+  "id": "YoaSiClZtuQ",
+  "titulo": "Lecture 123: Larger Fusions and Consistent RL: Recent Work in FlashInfer on Blackwell and Rubin",
+  "canal": "GPU MODE",
+  "modulo": 10,
+  "nivel": "Avançado",
+  "resumo": "Apresenta o trabalho recente do FlashInfer em GPUs Blackwell e Rubin: fusões maiores de kernels para inferência e garantias numéricas para aprendizado por reforço. Para quem já escreve ou ajusta kernels de atenção.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=YoaSiClZtuQ",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-21",
+  "verificado_em": "2026-11-21"
+}
