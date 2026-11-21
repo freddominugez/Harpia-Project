@@ -1,0 +1,26 @@
+{
+  "titulo": "Meta testa poda de embeddings para usar menos memória no treino de recomendadores",
+  "resumo": "Método usa a importância de cada atributo para decidir onde reduzir embeddings. Nos testes dos autores, poupou memória e GPUs, com custos e ganhos que variam por modelo.",
+  "data": "2026-11-18",
+  "categoria": "pesquisa",
+  "icone": "chip",
+  "corpo": [
+    "Doze pesquisadores da Meta apresentaram em 18 de novembro o FI-ITEP, uma forma de reduzir tabelas de embeddings durante o treinamento de sistemas de recomendação. Essas tabelas guardam vetores para variáveis com muitos valores possíveis e podem ocupar grande parte da memória das GPUs. O trabalho está disponível como preprint no arXiv.",
+    "O método mede a importância de cada atributo para o resultado do modelo e atribui taxas maiores de poda às tabelas menos importantes. Os autores testaram duas formas de estimar essa importância, por permutação dos dados e por amostragem de valores de Shapley. A comparação principal é com uma estratégia que decide quanto podar pelo tamanho de cada tabela, sem considerar sua contribuição para a qualidade.",
+    "Em três modelos internos de recomendação, a equipe relata redução total de memória de 20% a 40%, com qualidade comparável ou superior à estratégia baseada no tamanho das tabelas. Em um exemplo operacional, o número de GPUs de treino caiu de 112 para 80. O processamento por GPU subiu 8%, mas a vazão global de treinamento medida pelos autores, P90 em QPS, caiu de 985 mil para 760 mil. Os autores estimam economia equivalente a cerca de 108 horas de GPU por execução; a cifra superior a mil horas soma vários retreinos de um lançamento, não uma única execução.",
+    "Os autores também encontraram tendência favorável em um DLRM aberto usando o dia 3 do conjunto Criteo 1TB, sob orçamentos de memória comparáveis. Calcular a importância acrescentou cerca de 4% a 11% ao tempo de treino, segundo o estudo. Os três modelos industriais e seus dados não são públicos, e o Harpya não reproduziu os experimentos. O resultado não demonstra economia igual em outros recomendadores ou em modelos de linguagem."
+  ],
+  "harpia": "Ao avaliar compressão de embeddings, compare a qualidade na mesma memória, o tempo de cálculo da importância e o custo total de treinamento. Menos GPUs podem reduzir capacidade global de processamento.",
+  "fontes": [
+    {
+      "veiculo": "arXiv · preprint da Meta",
+      "titulo": "Intelligent Embedding Pruning for Large-Scale Recommendation Models",
+      "url": "https://arxiv.org/abs/2611.25288"
+    }
+  ],
+  "status": "publicado",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-21",
+  "verificado_em": "2026-11-21",
+  "ordem": 999
+}

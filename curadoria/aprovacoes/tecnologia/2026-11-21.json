@@ -1,0 +1,150 @@
+{
+  "data": "2026-11-21",
+  "timezone": "America/Fortaleza",
+  "items": [
+    {
+      "path": "src/content/artigos/2026-intelligent-embedding-pruning-for-large-scale-reco.json",
+      "sha256": "5c5c94fd377bd3179b1ec8011dcacb1fcbfb8abca1f54126b938bcebd10987ef",
+      "pauta": {
+        "responsavel": "tech_pauta_21",
+        "justificativa": "Preprint original sobre eficiência de memória de sistemas de recomendação, relevante ao custo de hardware e IA."
+      },
+      "verificacao": {
+        "responsavel": "tech_verify_21",
+        "consultado_em": "2026-11-21",
+        "evidencias": [
+          "https://arxiv.org/abs/2611.25288",
+          "https://arxiv.org/html/2611.25288v1"
+        ],
+        "alegacoes": [
+          {
+            "texto": "Doze autores da Meta submeteram o preprint em 18 de novembro de 2026.",
+            "url": "https://arxiv.org/abs/2611.25288",
+            "resultado": "confirmada",
+            "local": "Registro arXiv, título, autoria e histórico de submissão."
+          },
+          {
+            "texto": "FI-ITEP usa importância de atributos por permutação ou amostragem de Shapley para atribuir poda a tabelas de embeddings durante o treino.",
+            "url": "https://arxiv.org/html/2611.25288v1",
+            "resultado": "confirmada",
+            "local": "Seção 2, método e mecanismo."
+          },
+          {
+            "texto": "Em três recomendadores internos, autores relatam redução total de memória de 20% a 40% e qualidade comparável ou superior à poda por tamanho.",
+            "url": "https://arxiv.org/html/2611.25288v1",
+            "resultado": "qualificada",
+            "local": "Resumo, seção 3 e Tabela 1; comparação com baseline percentile ITEP."
+          },
+          {
+            "texto": "No exemplo operacional, 112 para 80 GPUs elevaram a vazão por GPU em 8%, reduziram a vazão global P90 de 985 mil a 760 mil QPS e economizaram aproximadamente 108 GPU-h por execução.",
+            "url": "https://arxiv.org/html/2611.25288v1",
+            "resultado": "confirmada",
+            "local": "Seção 5 e Tabela 4."
+          },
+          {
+            "texto": "A cifra acima de mil horas de GPU soma retreinos; calcular importância acrescentou cerca de 4% a 11% ao tempo de treino.",
+            "url": "https://arxiv.org/html/2611.25288v1",
+            "resultado": "qualificada",
+            "local": "Seção 5, discussão e Tabela 5."
+          },
+          {
+            "texto": "Os autores testaram o DLRM aberto com o dia 3 do Criteo 1TB; modelos internos e dados não são públicos.",
+            "url": "https://arxiv.org/html/2611.25288v1",
+            "resultado": "confirmada",
+            "local": "Seções 3 e 4."
+          }
+        ],
+        "escopo": "Resumo e artigo integral HTML v1 examinados; dados internos e experimentos não reproduzidos pelo Harpya."
+      },
+      "selecao": {
+        "responsavel": "tech_select_21",
+        "nota": 4.4,
+        "justificativa": "Método detalhado, três modelos internos e benchmark aberto, com economia de memória e custo operacional mensurados; limites comerciais e de generalização explícitos.",
+        "criterios": {
+          "rigor": 4.1,
+          "relevancia": 4.5,
+          "utilidade": 4.7,
+          "atualidade": 4.6,
+          "clareza": 4.5
+        }
+      },
+      "publicacao": {
+        "responsavel": "editorial_round_21",
+        "status": "aguardando_portao"
+      },
+      "sha256_publicado": "5f1c47d664bfa35e1535f03a3c65f435f063e810b51c0766ffeb112b7bdb8d1c"
+    },
+    {
+      "path": "src/content/noticias/2026-11-21-meta-poda-embeddings-memoria-gpus.json",
+      "sha256": "d5711d713dbc5aa03327c09a1dedaa5911083e9bdf1c8bde700ef893172b9c70",
+      "pauta": {
+        "responsavel": "tech_pauta_21",
+        "justificativa": "Preprint original sobre eficiência de memória de sistemas de recomendação, relevante ao custo de hardware e IA."
+      },
+      "verificacao": {
+        "responsavel": "tech_verify_21",
+        "consultado_em": "2026-11-21",
+        "evidencias": [
+          "https://arxiv.org/abs/2611.25288",
+          "https://arxiv.org/html/2611.25288v1"
+        ],
+        "alegacoes": [
+          {
+            "texto": "Doze autores da Meta submeteram o preprint em 18 de novembro de 2026.",
+            "url": "https://arxiv.org/abs/2611.25288",
+            "resultado": "confirmada",
+            "local": "Registro arXiv, título, autoria e histórico de submissão."
+          },
+          {
+            "texto": "FI-ITEP usa importância de atributos por permutação ou amostragem de Shapley para atribuir poda a tabelas de embeddings durante o treino.",
+            "url": "https://arxiv.org/html/2611.25288v1",
+            "resultado": "confirmada",
+            "local": "Seção 2, método e mecanismo."
+          },
+          {
+            "texto": "Em três recomendadores internos, autores relatam redução total de memória de 20% a 40% e qualidade comparável ou superior à poda por tamanho.",
+            "url": "https://arxiv.org/html/2611.25288v1",
+            "resultado": "qualificada",
+            "local": "Resumo, seção 3 e Tabela 1; comparação com baseline percentile ITEP."
+          },
+          {
+            "texto": "No exemplo operacional, 112 para 80 GPUs elevaram a vazão por GPU em 8%, reduziram a vazão global P90 de 985 mil a 760 mil QPS e economizaram aproximadamente 108 GPU-h por execução.",
+            "url": "https://arxiv.org/html/2611.25288v1",
+            "resultado": "confirmada",
+            "local": "Seção 5 e Tabela 4."
+          },
+          {
+            "texto": "A cifra acima de mil horas de GPU soma retreinos; calcular importância acrescentou cerca de 4% a 11% ao tempo de treino.",
+            "url": "https://arxiv.org/html/2611.25288v1",
+            "resultado": "qualificada",
+            "local": "Seção 5, discussão e Tabela 5."
+          },
+          {
+            "texto": "Os autores testaram o DLRM aberto com o dia 3 do Criteo 1TB; modelos internos e dados não são públicos.",
+            "url": "https://arxiv.org/html/2611.25288v1",
+            "resultado": "confirmada",
+            "local": "Seções 3 e 4."
+          }
+        ],
+        "escopo": "Resumo e artigo integral HTML v1 examinados; dados internos e experimentos não reproduzidos pelo Harpya."
+      },
+      "selecao": {
+        "responsavel": "tech_select_21",
+        "nota": 4.4,
+        "justificativa": "Método detalhado, três modelos internos e benchmark aberto, com economia de memória e custo operacional mensurados; limites comerciais e de generalização explícitos.",
+        "criterios": {
+          "rigor": 4.1,
+          "relevancia": 4.5,
+          "utilidade": 4.7,
+          "atualidade": 4.6,
+          "clareza": 4.5
+        }
+      },
+      "publicacao": {
+        "responsavel": "editorial_round_21",
+        "status": "aguardando_portao"
+      },
+      "sha256_publicado": "7000f35707c02834ea21483bee95ca6a6d3a12cc19a98f407265a96ade82ac70"
+    }
+  ]
+}

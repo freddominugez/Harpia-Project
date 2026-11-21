@@ -1,0 +1,72 @@
+{
+  "data": "2026-11-21",
+  "timezone": "America/Fortaleza",
+  "items": [
+    {
+      "path": "src/content/business/acervo/2026-11-21-bcg-cmos-ia-agentica-marketing.json",
+      "sha256": "3b04e9cf9060c554e0da04b84c4ea46f455b1fdc81480ca518125fcbc7f57223",
+      "sha256_publicado": "6ebe8cbc155bade3c5ab05b9871222f7a3cb28a593491e69575b038270841140",
+      "pauta": "business_pauta_21",
+      "verificacao": {
+        "responsavel": "business_verify_21",
+        "consultado_em": "2026-11-21",
+        "escopo": "Artigo original da BCG lido integralmente; amostra e percentuais são declarações dos entrevistados, não resultados experimentais.",
+        "evidencias": [
+          "https://www.bcg.com/publications/2026/agentic-ai-reshaping-marketing-team"
+        ],
+        "alegacoes": [
+          {
+            "texto": "Janet Balis, Vas Bakopoulos e Lauren Wiener assinam artigo de 20 de novembro de 2026.",
+            "url": "https://www.bcg.com/publications/2026/agentic-ai-reshaping-marketing-team",
+            "resultado": "confirmada",
+            "local": "Cabeçalho da página BCG."
+          },
+          {
+            "texto": "BCG e Global Marketing and Media Alliance entrevistaram cerca de 60 CMOs de maio a julho de 2026.",
+            "url": "https://www.bcg.com/publications/2026/agentic-ai-reshaping-marketing-team",
+            "resultado": "confirmada",
+            "local": "Introdução e descrição da pesquisa."
+          },
+          {
+            "texto": "Sessenta e quatro por cento disseram que acelerar a transformação com IA ocupa parte maior de sua função.",
+            "url": "https://www.bcg.com/publications/2026/agentic-ai-reshaping-marketing-team",
+            "resultado": "confirmada",
+            "local": "Seção Shifting CMO Leadership Roles."
+          },
+          {
+            "texto": "Eficácia do marketing e eficiência operacional foram citadas separadamente por 73 por cento como áreas de impacto esperado.",
+            "url": "https://www.bcg.com/publications/2026/agentic-ai-reshaping-marketing-team",
+            "resultado": "qualificada",
+            "local": "Seção The C-Suite Rallies Around Enterprise Value."
+          },
+          {
+            "texto": "Entrevistados estimaram participação atual de IA agêntica de sete por cento no mix da equipe e projetaram 27 por cento em dois a três anos.",
+            "url": "https://www.bcg.com/publications/2026/agentic-ai-reshaping-marketing-team",
+            "resultado": "qualificada",
+            "local": "Seção Agentic AI Demands a New Talent and Partnership Model e gráfico 7."
+          },
+          {
+            "texto": "Cerca de três quartos dos CMOs avaliaram agências criativas como despreparadas para ampliar uso de IA.",
+            "url": "https://www.bcg.com/publications/2026/agentic-ai-reshaping-marketing-team",
+            "resultado": "confirmada",
+            "local": "Seção Accountability Is Shifting Among People, Technology, and Partners."
+          }
+        ]
+      },
+      "selecao": {
+        "responsavel": "business_select_21",
+        "nota": 7.8,
+        "justificativa": "Pauta recente e relevante a gestão de marketing, fonte aprovada e amostra descrita; publicação distingue percepções e projeções de resultados medidos e informa interesse comercial da consultoria.",
+        "criterios": {
+          "rigor": 6.8,
+          "relevancia": 9,
+          "utilidade": 8.2,
+          "atualidade": 9.7,
+          "clareza": 8.4,
+          "conflitos": 6.5
+        }
+      },
+      "publicacao": "editorial_round_21"
+    }
+  ]
+}
