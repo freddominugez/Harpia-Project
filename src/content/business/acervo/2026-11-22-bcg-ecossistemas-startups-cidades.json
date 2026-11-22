@@ -1,0 +1,28 @@
+{
+  "titulo": "BCG analisa como cidades constroem ecossistemas de startups",
+  "resumo": "Em cerca de 100 cidades, a BCG relaciona pesquisa, clientes e capital ao amadurecimento de startups. São Paulo levou 16 anos até o marco adotado; as relações são observacionais.",
+  "fonte": "bcg",
+  "url": "https://www.bcg.com/publications/2026/cities-build-startup-ecosystems-faster",
+  "tipo": "noticia",
+  "trilha": "crescimento",
+  "autores": "Parmeet Grover, Ryan Kelly e Vladislav Boutenko",
+  "data": "2026-11-19",
+  "data_precisa": true,
+  "idioma": "en",
+  "acesso": "Artigo institucional integral aberto em inglês; descreve o recorte de cidades, as fontes de dados e associações entre indicadores.",
+  "evidencia": "Análise observacional da BCG de cerca de 100 cidades ao longo de quatro décadas, com dados de rodadas de investimento da PitchBook e indicadores de patentes.",
+  "limites": "Os resultados dependem da seleção de cidades, dos indicadores e dos modelos usados. Associações temporais não provam causalidade nem uma receita replicável. A BCG presta consultoria em estratégia e inovação, interesse institucional a considerar.",
+  "status": "publicado",
+  "justificativa": "Fonte aprovada e método identificável, tema atual de empreendedorismo e relevância para São Paulo; a notícia delimita o marco financeiro e os limites da evidência.",
+  "revisor": "business_verify_22",
+  "revisado_em": "2026-11-22",
+  "corpo": [
+    "Parmeet Grover, Ryan Kelly e Vladislav Boutenko publicaram em 19 de novembro uma análise da BCG sobre o amadurecimento de ecossistemas de startups. O estudo acompanha cerca de 100 cidades ao longo de quatro décadas, com dados de rodadas de investimento da PitchBook. A consultoria compara pesquisa, formação de empresas, clientes e disponibilidade de capital em diferentes momentos da trajetória de cada cidade.",
+    "Para medir a velocidade, a BCG define como marco a captação acumulada de US$ 10 bilhões em rodadas de estágio avançado. A soma inclui todo o capital dessas rodadas, inclusive aportes de fundos de private equity, empresas e fundos soberanos; não se limita a venture capital. O relógio começa no primeiro ano em que a cidade atraiu US$ 20 milhões em investimento de venture. Entre as cidades que atingiram o marco, o quartil mais rápido levou em média 16,5 anos e o mais lento, 28,8. São Paulo aparece com 16 anos.",
+    "Em uma análise de 96 cidades, a duplicação da intensidade de patentes em um ano esteve associada a 17,5% mais investimento de venture em estágio inicial no ano seguinte. Esse número descreve uma associação entre indicadores, não demonstra que patentes causaram o aumento de capital. A BCG interpreta a sequência como sinal de que pesquisa e clientes podem preceder a entrada de capital em escala, mas o desenho observacional não isola todos os fatores que poderiam explicar a diferença entre cidades.",
+    "Os recortes estatísticos do estudo variam conforme o indicador, e o marco de US$ 10 bilhões é uma escolha metodológica dos autores. A BCG também tem interesse comercial em consultoria de estratégia e inovação. Para gestores públicos e investidores, a leitura oferece perguntas úteis sobre pesquisa aplicada, demanda corporativa e financiamento, mas não prova que repetir uma única medida produzirá o mesmo percurso de São Paulo ou de outra cidade."
+  ],
+  "referencias": [
+    "https://www.bcg.com/publications/2026/cities-build-startup-ecosystems-faster"
+  ]
+}

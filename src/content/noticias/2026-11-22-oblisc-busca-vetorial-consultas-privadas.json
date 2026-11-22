@@ -1,0 +1,26 @@
+{
+  "titulo": "ObliSC propõe busca vetorial com consultas privadas em bases públicas",
+  "resumo": "Preprint combina busca por subespaços e acesso oblivious para ocultar consultas a vetores públicos. Os testes usam ambiente confiável e não comprovam privacidade geral.",
+  "data": "2026-11-19",
+  "categoria": "pesquisa",
+  "icone": "lupa",
+  "corpo": [
+    "Lyu Xu, Guozhong Li e Qichen Wang apresentaram em 19 de novembro o ObliSC, um método de busca aproximada por vizinhos mais próximos em bases vetoriais públicas. O problema tratado é permitir que alguém consulte essa base sem revelar ao servidor o vetor pesquisado nem o padrão de acessos produzido pela busca. O trabalho está disponível como preprint no arXiv.",
+    "O método divide os vetores em subespaços e combina a busca com operações oblivious: a sequência observável de acessos não deve depender da consulta, conforme o modelo de segurança apresentado pelos autores. A proteção do valor da consulta também depende de um ambiente de execução confiável. No protótipo, os pesquisadores usaram AMD SEV; a proposta não torna a base de dados privada.",
+    "Os autores avaliaram o protótipo em seis conjuntos de dados, com 100 consultas por conjunto. Nos comparadores privados escolhidos pelo estudo, ObliSC apresentou resultados de desempenho competitivos. Essa comparação não equivale a vantagem universal: uma alternativa sem a mesma proteção, SuCo, continuou mais rápida, e o recall de ObliSC ficou abaixo do dela em quatro dos seis conjuntos.",
+    "O artigo ainda não passou por revisão por pares indicada no registro consultado. O Harpya não reproduziu os experimentos nem auditou a implementação ou as garantias formais. Para adoção real, seria preciso verificar o modelo de ameaça, a configuração do ambiente confiável, a qualidade das respostas e o custo de execução na própria base."
+  ],
+  "harpia": "Busca privada exige definir o que será ocultado. Neste estudo, a base é pública, enquanto a consulta e seus acessos recebem proteção sob hipóteses específicas de segurança e de hardware.",
+  "fontes": [
+    {
+      "veiculo": "arXiv · preprint",
+      "titulo": "Efficient Privacy-Preserving High-Dimensional Approximate Nearest Neighbor Search",
+      "url": "https://arxiv.org/abs/2611.25374"
+    }
+  ],
+  "status": "publicado",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-22",
+  "verificado_em": "2026-11-22",
+  "ordem": 999
+}

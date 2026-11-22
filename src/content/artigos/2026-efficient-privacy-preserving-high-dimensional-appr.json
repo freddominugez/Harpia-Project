@@ -1,15 +1,15 @@
 {
   "ano": 2026,
   "titulo": "Efficient Privacy-Preserving High-Dimensional Approximate Nearest Neighbor Search",
-  "autores": "Xu, Li, Wang · arXiv",
+  "autores": "Lyu Xu, Guozhong Li e Qichen Wang · arXiv",
   "url": "https://arxiv.org/abs/2611.25374",
   "grupo": "busca",
   "selo": "medido",
   "rotulo": "busca vetorial",
   "ordem": 999,
   "fonte_url": "https://arxiv.org/abs/2611.25374",
-  "status": "rascunho",
+  "status": "publicado",
   "origem": "curadoria-diaria",
   "adicionado_em": "2026-11-20",
-  "verificado_em": "2026-11-20"
+  "verificado_em": "2026-11-22"
 }

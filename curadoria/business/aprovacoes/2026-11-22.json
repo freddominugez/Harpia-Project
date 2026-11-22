@@ -1,0 +1,72 @@
+{
+  "data": "2026-11-22",
+  "timezone": "America/Fortaleza",
+  "items": [
+    {
+      "path": "src/content/business/acervo/2026-11-22-bcg-ecossistemas-startups-cidades.json",
+      "sha256": "0aa66a5a7d60cfc3d822752367973d3ba27d179eaee559ee2bd0d86d4dda915a",
+      "sha256_publicado": "6556c2ba132bf5ad2d0ea7b10a4bee27bc9743196815d4543e581c5f47039244",
+      "pauta": "business_pauta_22",
+      "verificacao": {
+        "responsavel": "business_verify_22",
+        "consultado_em": "2026-11-22",
+        "escopo": "Artigo original da BCG lido integralmente; números atribuídos à consultoria e associações separadas de inferências causais.",
+        "evidencias": [
+          "https://www.bcg.com/publications/2026/cities-build-startup-ecosystems-faster"
+        ],
+        "alegacoes": [
+          {
+            "texto": "Parmeet Grover, Ryan Kelly e Vladislav Boutenko assinam análise da BCG de 19 de novembro de 2026.",
+            "url": "https://www.bcg.com/publications/2026/cities-build-startup-ecosystems-faster",
+            "resultado": "confirmada",
+            "local": "Cabeçalho da publicação."
+          },
+          {
+            "texto": "A BCG examinou cerca de cem cidades ao longo de quatro décadas, usando dados PitchBook para rodadas de capital.",
+            "url": "https://www.bcg.com/publications/2026/cities-build-startup-ecosystems-faster",
+            "resultado": "confirmada",
+            "local": "Introdução e descrição de dados."
+          },
+          {
+            "texto": "O marco de maturidade é US$ 10 bilhões acumulados em rodadas late-stage, inclusive capital de private equity, empresas e fundos soberanos.",
+            "url": "https://www.bcg.com/publications/2026/cities-build-startup-ecosystems-faster",
+            "resultado": "confirmada",
+            "local": "Seção How We Identified the Fastest-Maturing Cities."
+          },
+          {
+            "texto": "O ponto inicial é o primeiro ano com US$ 20 milhões em venture investment; São Paulo levou 16 anos até o marco.",
+            "url": "https://www.bcg.com/publications/2026/cities-build-startup-ecosystems-faster",
+            "resultado": "confirmada",
+            "local": "Seção How We Identified the Fastest-Maturing Cities e gráfico de cidades."
+          },
+          {
+            "texto": "Entre cidades que chegaram ao marco, quartis rápido e lento tiveram médias de 16,5 e 28,8 anos.",
+            "url": "https://www.bcg.com/publications/2026/cities-build-startup-ecosystems-faster",
+            "resultado": "qualificada",
+            "local": "Seção How We Identified the Fastest-Maturing Cities."
+          },
+          {
+            "texto": "Em 96 cidades, duplicação da intensidade de patentes se associou a 17,5% mais VC inicial no ano seguinte.",
+            "url": "https://www.bcg.com/publications/2026/cities-build-startup-ecosystems-faster",
+            "resultado": "qualificada",
+            "local": "Seção Step 1. IP and Talent Create Promising Businesses."
+          }
+        ]
+      },
+      "selecao": {
+        "responsavel": "business_select_22",
+        "nota": 8.7,
+        "justificativa": "Pesquisa recente, recorte e dados identificáveis, relevância brasileira via São Paulo e limites observacionais explicitados.",
+        "criterios": {
+          "rigor": 8.2,
+          "relevancia": 9.2,
+          "utilidade": 8.8,
+          "atualidade": 9.5,
+          "clareza": 8.7,
+          "conflitos": 7.7
+        }
+      },
+      "publicacao": "editorial_round_22"
+    }
+  ]
+}

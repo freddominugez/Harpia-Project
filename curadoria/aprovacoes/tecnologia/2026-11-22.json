@@ -1,0 +1,150 @@
+{
+  "data": "2026-11-22",
+  "timezone": "America/Fortaleza",
+  "items": [
+    {
+      "path": "src/content/artigos/2026-efficient-privacy-preserving-high-dimensional-appr.json",
+      "sha256": "acdd8b9dacee133e31daf3e5bb504cffe030cb0ed7342eb58398cc71afed93ae",
+      "pauta": {
+        "responsavel": "tech_pauta_22",
+        "justificativa": "Preprint recente de pesquisa em busca vetorial e privacidade, com método e avaliação identificáveis."
+      },
+      "verificacao": {
+        "responsavel": "tech_verify_22",
+        "consultado_em": "2026-11-22",
+        "evidencias": [
+          "https://arxiv.org/abs/2611.25374",
+          "https://arxiv.org/html/2611.25374v1"
+        ],
+        "alegacoes": [
+          {
+            "texto": "O preprint de Lyu Xu, Guozhong Li e Qichen Wang foi submetido em 19 de novembro de 2026.",
+            "url": "https://arxiv.org/abs/2611.25374",
+            "resultado": "confirmada",
+            "local": "Registro arXiv, autoria e histórico."
+          },
+          {
+            "texto": "ObliSC pesquisa consultas privadas de vizinhos aproximados sobre uma base vetorial pública.",
+            "url": "https://arxiv.org/html/2611.25374v1",
+            "resultado": "confirmada",
+            "local": "Resumo e seção 1, modelo assimétrico."
+          },
+          {
+            "texto": "O método combina busca por subespaços e acessos oblivious sob modelo formal de segurança.",
+            "url": "https://arxiv.org/html/2611.25374v1",
+            "resultado": "confirmada",
+            "local": "Seções 3 e 4, algoritmo e definição de segurança."
+          },
+          {
+            "texto": "A confidencialidade do valor da consulta depende de ambiente de execução confiável; os testes usaram AMD SEV.",
+            "url": "https://arxiv.org/html/2611.25374v1",
+            "resultado": "qualificada",
+            "local": "Modelo de ameaça e seção experimental."
+          },
+          {
+            "texto": "O protótipo foi avaliado em seis benchmarks com cem consultas por conjunto.",
+            "url": "https://arxiv.org/html/2611.25374v1",
+            "resultado": "confirmada",
+            "local": "Seção de avaliação experimental."
+          },
+          {
+            "texto": "SuCo sem a mesma privacidade foi mais rápido; ObliSC apresentou recall menor em quatro dos seis conjuntos.",
+            "url": "https://arxiv.org/html/2611.25374v1",
+            "resultado": "qualificada",
+            "local": "Tabelas de desempenho e recall, comparadores da avaliação."
+          }
+        ],
+        "escopo": "Registro e artigo integral arXiv examinados; implementação e experimentos não reproduzidos pelo Harpya."
+      },
+      "selecao": {
+        "responsavel": "tech_select_22",
+        "nota": 4.3,
+        "justificativa": "Pauta original e relevante para IA e privacidade, com seis benchmarks e limites de TEE e de comparação claramente expostos.",
+        "criterios": {
+          "rigor": 4.2,
+          "relevancia": 4.5,
+          "utilidade": 4.2,
+          "atualidade": 4.6,
+          "clareza": 4
+        }
+      },
+      "publicacao": {
+        "responsavel": "editorial_round_22",
+        "status": "aguardando_portao"
+      },
+      "sha256_publicado": "57a5f8c46c40725e50ce96e638ed5142a45c2ffcf6697659b2cc514ad52a7bc8"
+    },
+    {
+      "path": "src/content/noticias/2026-11-22-oblisc-busca-vetorial-consultas-privadas.json",
+      "sha256": "a7251f619e38ca222e53187fed52cd73572f30f224a2ee431909882060146943",
+      "pauta": {
+        "responsavel": "tech_pauta_22",
+        "justificativa": "Preprint recente de pesquisa em busca vetorial e privacidade, com método e avaliação identificáveis."
+      },
+      "verificacao": {
+        "responsavel": "tech_verify_22",
+        "consultado_em": "2026-11-22",
+        "evidencias": [
+          "https://arxiv.org/abs/2611.25374",
+          "https://arxiv.org/html/2611.25374v1"
+        ],
+        "alegacoes": [
+          {
+            "texto": "O preprint de Lyu Xu, Guozhong Li e Qichen Wang foi submetido em 19 de novembro de 2026.",
+            "url": "https://arxiv.org/abs/2611.25374",
+            "resultado": "confirmada",
+            "local": "Registro arXiv, autoria e histórico."
+          },
+          {
+            "texto": "ObliSC pesquisa consultas privadas de vizinhos aproximados sobre uma base vetorial pública.",
+            "url": "https://arxiv.org/html/2611.25374v1",
+            "resultado": "confirmada",
+            "local": "Resumo e seção 1, modelo assimétrico."
+          },
+          {
+            "texto": "O método combina busca por subespaços e acessos oblivious sob modelo formal de segurança.",
+            "url": "https://arxiv.org/html/2611.25374v1",
+            "resultado": "confirmada",
+            "local": "Seções 3 e 4, algoritmo e definição de segurança."
+          },
+          {
+            "texto": "A confidencialidade do valor da consulta depende de ambiente de execução confiável; os testes usaram AMD SEV.",
+            "url": "https://arxiv.org/html/2611.25374v1",
+            "resultado": "qualificada",
+            "local": "Modelo de ameaça e seção experimental."
+          },
+          {
+            "texto": "O protótipo foi avaliado em seis benchmarks com cem consultas por conjunto.",
+            "url": "https://arxiv.org/html/2611.25374v1",
+            "resultado": "confirmada",
+            "local": "Seção de avaliação experimental."
+          },
+          {
+            "texto": "SuCo sem a mesma privacidade foi mais rápido; ObliSC apresentou recall menor em quatro dos seis conjuntos.",
+            "url": "https://arxiv.org/html/2611.25374v1",
+            "resultado": "qualificada",
+            "local": "Tabelas de desempenho e recall, comparadores da avaliação."
+          }
+        ],
+        "escopo": "Registro e artigo integral arXiv examinados; implementação e experimentos não reproduzidos pelo Harpya."
+      },
+      "selecao": {
+        "responsavel": "tech_select_22",
+        "nota": 4.3,
+        "justificativa": "Pauta original e relevante para IA e privacidade, com seis benchmarks e limites de TEE e de comparação claramente expostos.",
+        "criterios": {
+          "rigor": 4.2,
+          "relevancia": 4.5,
+          "utilidade": 4.2,
+          "atualidade": 4.6,
+          "clareza": 4
+        }
+      },
+      "publicacao": {
+        "responsavel": "editorial_round_22",
+        "status": "aguardando_portao"
+      },
+      "sha256_publicado": "4afc33b28a086538fd724a3679635812333470f1525d68b17d94da6179f4c64f"
+    }
+  ]
+}
