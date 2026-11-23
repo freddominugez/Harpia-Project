@@ -1,5 +1,173 @@
 [
  {
+  "fonte": "arXiv cs.IR",
+  "titulo": "ERA: Embed, Route, Adapt for Cold-Start Cross-Model Latent Retrieval",
+  "url": "https://arxiv.org/abs/2611.26919",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Decision Columns as an Index: Interpretable Embeddings for Explainable Entity Matching and Search",
+  "url": "https://arxiv.org/abs/2611.27910",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Which Dwarf Is This? Doppeldwarf-306 and Near-Identical Instance Retrieval",
+  "url": "https://arxiv.org/abs/2611.27490",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "DiTraR: Diverse Scorers and Transcript-Guided Re-ranking for Video Corpus Moment Retrieval",
+  "url": "https://arxiv.org/abs/2611.27931",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "TS-GEAR: Taobao Shangou GEnerative Ad Retrieval",
+  "url": "https://arxiv.org/abs/2611.12180",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Depth-Linked Residual Tokens for Multimodal Retrieval and Generation",
+  "url": "https://arxiv.org/abs/2611.26752",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "PLoQ: A Prompt-Specific Low-Rank Basis for 4-bit Quantization of LLM Activations",
+  "url": "https://arxiv.org/abs/2611.27092",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "The Vulnerability Window: Decision Instability in Quantized Reward Models",
+  "url": "https://arxiv.org/abs/2611.27155",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "BusemannFormer: Horospherical Self-Attention for Hyperbolic Graph Transformers",
+  "url": "https://arxiv.org/abs/2611.27167",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "A Continuous Relaxation of Quantization-Aware Training",
+  "url": "https://arxiv.org/abs/2611.27056",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Can pretrained Transformers deliver semiparametrically efficient inference?",
+  "url": "https://arxiv.org/abs/2611.27666",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Sampling non-abelian lattice gauge theories with diffusion models",
+  "url": "https://arxiv.org/abs/2611.27821",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Efficient Inference for Inverse Reinforcement Learning and Dynamic Discrete Choice Models",
+  "url": "https://arxiv.org/abs/2512.24407",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "SaturQ: Saturation-Aware Mixed-Precision Quantization",
+  "url": "https://arxiv.org/abs/2607.12266",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Approximating Softmax in Pretrained LLMs: Model Sensitivity and Kernel Acceleration",
+  "url": "https://arxiv.org/abs/2609.33586",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Pretraining Transformers with Quantized Softmax in Attention",
+  "url": "https://arxiv.org/abs/2609.33591",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.LG",
+  "titulo": "Softmax-Free Attention in Spiking Transformers as Zero-Temperature Two-Level Systems: Applications to XAI",
+  "url": "https://arxiv.org/abs/2610.15968",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "How Far Does Lossless Re-tokenization Move an RLVR Update?",
+  "url": "https://arxiv.org/abs/2611.27083",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "LongCat Recall Sparse Attention: Co-Designing Key Organization and Retrieval for Long-Context Inference",
+  "url": "https://arxiv.org/abs/2611.27233",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Alignment without Transfer: Tokenization Impacts Cross-lingual Representations during Multilingual Language Model Pretraining",
+  "url": "https://arxiv.org/abs/2611.27491",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "How Many Bytes Has a BPE Model Seen? Estimating Byte-Token Exposure in Pretraining from Corpus Statistics and Embedding Norms",
+  "url": "https://arxiv.org/abs/2611.27506",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Compute Optimal Tokenization",
+  "url": "https://arxiv.org/abs/2605.01188",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Probing the Prompt KV Cache: Where It Becomes Dispensable",
+  "url": "https://arxiv.org/abs/2605.30574",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "The Linguistic Structure of Dependency-Conditioned Embeddings",
+  "url": "https://arxiv.org/abs/2611.25909",
+  "data": "23/11/2026",
+  "ts": 1795410000
+ },
+ {
   "fonte": "OpenAI",
   "titulo": "A step toward defining the Standard Model on a lattice",
   "url": "https://openai.com/index/step-toward-defining-the-standard-model",
