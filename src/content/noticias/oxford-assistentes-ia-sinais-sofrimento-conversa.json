@@ -1,0 +1,27 @@
+{
+  "titulo": "Estudo de Oxford mostra que assistentes de IA reconhecem menos o sofrimento quando os sinais aparecem aos poucos na conversa",
+  "resumo": "Em mais de 7.400 conversas, quatro de seis modelos quase deixaram de proteger o usuário quando os sinais de depressão, psicose ou violência doméstica vieram espalhados.",
+  "data": "2026-11-19",
+  "categoria": "pesquisa",
+  "icone": "lupa",
+  "corpo": [
+    "Pesquisadores do Oxford Internet Institute, da Universidade de Oxford, publicaram em 19 de novembro no arXiv um estudo sobre como assistentes de IA reagem a sinais de sofrimento. A pergunta era simples: o modelo responde do mesmo jeito quando a pessoa conta tudo de uma vez e quando os sinais aparecem aos poucos, no meio de uma conversa comum?",
+    "O trabalho foi feito com três profissionais de apoio comunitário em saúde mental. Eles ajudaram a montar nove cenários com sinais ligados a depressão, psicose ou violência doméstica e definiram, para cada um, a resposta esperada, que vai de indicar um serviço de apoio até interromper a tarefa em curso para tratar do risco. Os mesmos cinco sinais foram apresentados juntos numa só mensagem ou espalhados por uma conversa de 21 turnos.",
+    "Foram mais de 7.400 conversas com seis modelos de cinco empresas. Segundo os autores, GPT-5.5, Grok 4.3, DeepSeek V4 e Llama 4 Maverick atingiram o padrão dos profissionais em 26% a 59% das conversas com sinais concentrados e em apenas 3% a 6% quando os sinais vinham espalhados. Claude Sonnet 5 e Claude Opus 5 caíram menos: de 68% a 97% para 59% a 87%. Mesmo o melhor resultado ficou abaixo do padrão em 13% das conversas com sinais dispersos.",
+    "O estudo tem limites que os próprios autores registram. As respostas foram coletadas pela API em junho e julho de 2026, sem instrução de sistema e com o raciocínio desligado, o que pode diferir dos aplicativos que o público usa. O lado do usuário era um roteiro fixo, em inglês e na voz de uma só pessoa. A classificação das respostas foi feita por outro modelo, conferida pela primeira autora numa amostra de 80 respostas.",
+    "A conclusão dos autores é que avaliações de segurança baseadas em pedidos explícitos podem superestimar a proteção oferecida. Para eles, quem anuncia melhora nesse tipo de salvaguarda precisa testá-la do jeito como as pessoas de fato falam."
+  ],
+  "harpia": "Muita gente usa assistentes de IA para desabafar, e os testes das empresas costumam usar pedidos claros. Este estudo independente mostra um limite medido: o modelo que acerta no teste direto pode falhar quando o sofrimento aparece aos poucos. É uma boa pauta para letramento sobre o que esperar e o que não esperar dessas ferramentas.",
+  "fontes": [
+    {
+      "veiculo": "arXiv",
+      "titulo": "Evaluating safeguarding in multi-turn conversations with AI assistants",
+      "url": "https://arxiv.org/abs/2611.26009"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-23",
+  "verificado_em": "2026-11-23",
+  "ordem": 999
+}

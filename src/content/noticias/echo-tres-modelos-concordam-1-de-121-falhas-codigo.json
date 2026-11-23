@@ -1,0 +1,32 @@
+{
+  "titulo": "Três modelos de IA caçam falhas no mesmo código aberto e concordam em apenas 1 de 121 problemas, segundo a Echo",
+  "resumo": "Teste da empresa de segurança Echo com Claude Mythos 5.1, GPT-5.6 Sol e o modelo aberto GLM-5.3 mostra resultados quase sem sobreposição. Cada modelo rodou uma vez.",
+  "data": "2026-11-18",
+  "categoria": "pesquisa",
+  "icone": "codigo",
+  "corpo": [
+    "A Echo, empresa de segurança de software, divulgou em 18 de novembro uma comparação entre três modelos de IA usados para encontrar vulnerabilidades: Claude Mythos 5.1, da Anthropic, GPT-5.6 Sol, da OpenAI, e GLM-5.3, da Z.ai, que tem pesos abertos. Os três analisaram o mesmo código de três projetos de código aberto, duas bibliotecas Maven e um pacote npm, com a mesma ferramenta de busca e o mesmo processo de validação da Echo.",
+    "As nove execuções produziram 446 achados iniciais. Depois de retirar repetições, falsos positivos e comportamentos documentados, sobraram 121 problemas potenciais distintos. Segundo a Echo, 100 deles (83%) foram apontados por um único modelo, 20 por dois e apenas 1 pelos três.",
+    "Os modelos também divergiram na gravidade. Em uma falha num pacote npm com mais de 350 milhões de downloads mensais, o GLM-5.3 classificou o problema como crítico, o Claude Mythos como alto e o GPT-5.6 Sol tratou como comportamento documentado, conforme relato da Infosecurity Magazine. O custo informado das buscas foi de cerca de US$ 303 para o Mythos, US$ 30 para o GPT-5.6 Sol e US$ 22 para o GLM-5.3, valores que a Echo diz refletirem suas próprias condições de acesso.",
+    "Os números são da própria Echo e não foram verificados de forma independente. A empresa descreve o exercício como uma comparação controlada, e não como benchmark completo: cada modelo rodou uma só vez, a validação automática não equivale à confirmação pelos mantenedores dos projetos e achados de gravidade média ou baixa não foram testados. Os projetos não foram nomeados até que os mantenedores sejam avisados.",
+    "O pesquisador Yuval Saggie, da Echo, disse à Infosecurity Magazine que perguntar qual é o melhor modelo é \"the wrong question\" (a pergunta errada): se atacante e defensor usam modelos diferentes, um pode ver a falha que o outro não vê."
+  ],
+  "harpia": "O teste incluiu um modelo de pesos abertos ao lado de dois fechados e mostra que, em segurança, cada modelo enxerga uma parte diferente do problema. Para quem mantém código aberto, a lição é desconfiar de uma varredura única por IA como garantia.",
+  "fontes": [
+    {
+      "veiculo": "Infosecurity Magazine",
+      "titulo": "Three AI Models Agree on Just One of 121 Potential Code Flaws",
+      "url": "https://www.infosecurity-magazine.com/news/ai-models-vulnerability-findings/"
+    },
+    {
+      "veiculo": "GlobeNewswire (comunicado da Echo)",
+      "titulo": "Three Leading AI Models Hunted the Same Code for Vulnerabilities and Agreed on Just 1 in 121",
+      "url": "https://www.globenewswire.com/news-release/2026/11/18/3405402/0/en/three-leading-ai-models-hunted-the-same-code-for-vulnerabilities-and-agreed-on-just-1-in-121.html"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-23",
+  "verificado_em": "2026-11-23",
+  "ordem": 999
+}

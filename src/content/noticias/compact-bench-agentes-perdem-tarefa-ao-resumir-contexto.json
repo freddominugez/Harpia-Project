@@ -1,0 +1,27 @@
+{
+  "titulo": "CompAct-Bench mede quanto agentes de IA perdem ao resumir o próprio histórico para continuar uma tarefa longa",
+  "resumo": "Com o histórico cortado a 10% do tamanho, tarefas que o agente já sabia resolver caíram para 56,7% de acerto em média, segundo pesquisadores de Fudan, Tencent e Tsinghua.",
+  "data": "2026-11-19",
+  "categoria": "pesquisa",
+  "icone": "chip",
+  "corpo": [
+    "Agentes de IA que trabalham por muitas etapas acumulam histórico: comandos, resultados de ferramentas, decisões e pendências. Quando esse histórico fica grande demais, uma saída comum é pedir a um modelo que o resuma e seguir a partir do resumo. Um preprint publicado no arXiv em 19 de novembro, de autores da Universidade Fudan, da equipe Hunyuan da Tencent e da Universidade Tsinghua, propõe um teste para medir o custo dessa compactação.",
+    "O CompAct-Bench parte de 200 tarefas de busca de informação (BrowseComp), programação (SWE-bench) e um conjunto interno de tarefas de escritório chamado CompanyBench. Só entraram tarefas que o agente executor resolveu nas três tentativas de base. Em pontos do meio da execução, o histórico é resumido pelo modelo avaliado e o mesmo executor tenta terminar o trabalho a partir do resumo.",
+    "Com o histórico reduzido a cerca de 10% do tamanho original, a taxa média de conclusão entre os 12 modelos compactadores caiu para 56,7%, e o melhor chegou a 68,5%, segundo os autores. Os modelos das famílias Claude e GPT tiveram os melhores resultados, mas todos perderam desempenho com compactação agressiva.",
+    "A análise das falhas aponta que o problema não é só esquecer informação. Os resumos às vezes distorcem o estado da tarefa, por exemplo transformando uma questão ainda aberta em conclusão aparente ou apagando resultados já obtidos, o que leva a decisões erradas ou a trabalho repetido.",
+    "Há ressalvas. Como as tarefas foram escolhidas entre as que o agente já resolvia, o teste mede quanto de uma capacidade demonstrada se perde, e não a taxa de sucesso em tarefas quaisquer. Parte do conjunto, o CompanyBench, é interna e não pode ser conferida por terceiros. O trabalho ainda não passou por revisão por pares."
+  ],
+  "harpia": "Resumir o próprio contexto é uma etapa invisível para quem usa agentes, mas pode mudar o resultado. O estudo dá números para um limite que raramente aparece nas propagandas e ajuda a explicar por que um agente às vezes repete trabalho ou dá por resolvido o que não estava.",
+  "fontes": [
+    {
+      "veiculo": "arXiv",
+      "titulo": "CompAct-Bench: A Benchmark for Working-Context Compaction in Long-Horizon Agent Tasks",
+      "url": "https://arxiv.org/abs/2611.25673"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-23",
+  "verificado_em": "2026-11-23",
+  "ordem": 999
+}
