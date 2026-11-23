@@ -1,0 +1,15 @@
+{
+  "ano": 2026,
+  "titulo": "Non-Expanding Gated Continued Fraction Architecture for Feedforward Layers in Language Models",
+  "autores": "Dhurandhar, Chenthamarakshan, Ramamurthy, Wei, Nair · NeurIPS 2026",
+  "url": "https://arxiv.org/abs/2611.26835",
+  "grupo": "fund",
+  "selo": "medido",
+  "rotulo": "camada feedforward eficiente · módulo 4",
+  "ordem": 999,
+  "fonte_url": "https://arxiv.org/abs/2611.26835",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-23",
+  "verificado_em": "2026-11-23"
+}

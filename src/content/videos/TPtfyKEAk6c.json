@@ -1,0 +1,16 @@
+{
+  "id": "TPtfyKEAk6c",
+  "titulo": "This New AI Architecture Makes Local Models Smarter",
+  "canal": "Prompt Engineering",
+  "modulo": 11,
+  "nivel": "Intermediário",
+  "resumo": "Explica transformers em laço com o Inkling 2 Mini, que repete 12 camadas centrais três vezes por token: o que as passagens extras melhoram e quanto custam. Para quem acompanha raciocínio com profundidade variável.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=TPtfyKEAk6c",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-23",
+  "verificado_em": "2026-11-23"
+}

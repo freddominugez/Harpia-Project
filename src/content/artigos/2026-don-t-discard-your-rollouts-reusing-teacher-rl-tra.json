@@ -1,0 +1,15 @@
+{
+  "ano": 2026,
+  "titulo": "Don't Discard Your Rollouts: Reusing Teacher RL Traces for Student Distillation",
+  "autores": "Tiwari, Strubell, Kolter · NeurIPS 2026",
+  "url": "https://arxiv.org/abs/2611.26803",
+  "grupo": "fund",
+  "selo": "medido",
+  "rotulo": "destilação sem custo extra de inferência · módulo 7",
+  "ordem": 999,
+  "fonte_url": "https://arxiv.org/abs/2611.26803",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-23",
+  "verificado_em": "2026-11-23"
+}
