@@ -1,139 +1,139 @@
 {
- "gerado_em": "2026-11-09",
+ "gerado_em": "2026-11-23",
  "candidatos": [
   {
    "tipo": "artigo",
-   "titulo": "e-means: outperforming k-means (in one-tenth the epochs)",
-   "autores": "Swann Bessa, Pierre-Emmanuel Mazaré, Gergely Szilvasy, Hugo Touvron, David Picard, Matthijs Douze",
+   "titulo": "Rethinking ANNS on Commodity PIM: PIM-Native Vector Search with Cooperative Filtering",
+   "autores": "Dawei Guo, Yizou Chen, Fan Yang, Hui Li, Ming-Chang Yang",
    "ano": 2026,
-   "url": "https://arxiv.org/abs/2611.09501v1",
-   "resumo": "Lloyd's k-means algorithm is a long-running standard for clustering, with applications in data analysis, retrieval, quantization and data curation. In this paper, we introduce an exponential moving average optimization procedure for k-means with mini-batch updates, powered by modern deep learning machinery and new insights. We also establish scaling laws on how decay rate and batch size impact final performance. This gives us a formulaic rule to fix them for multiple problem sizes and embedding datasets, without the need for any hyperparameter sweep. The resulting clustering algorithm, coined ",
+   "url": "https://arxiv.org/abs/2611.27010v1",
+   "resumo": "Approximate nearest neighbor search (ANNS) is a key primitive in modern data-intensive systems, and its memory-bound vector-scanning stage makes processing-in-memory (PIM) a promising acceleration platform. Existing PIM-based ANNS systems largely transplant CPU-oriented distance evaluation and top-$k$ selection onto PIM, introducing arithmetic- and state-heavy operations that poorly match lightweight, isolated PIM cores. To address these mismatches, we present PIVOT, a PIM-native vector search system with cooperative filtering, which thoroughly rethinks how ANNS should be executed on commodity",
    "consulta": "abs:\"embedding\" AND abs:\"quantization\""
   },
   {
    "tipo": "artigo",
-   "titulo": "Robust Deep Prototype Classifiers via Lipschitz Training",
-   "autores": "Adia Khalid Khan, Lukas Gehring, Benjamin Paaßen",
+   "titulo": "CarrierKV: An Edge LLM Accelerator with Positional Carrier Decomposition for Low-Bit KV Cache",
+   "autores": "Junyi Luo, Xinting Jiang, Ruichen Qi, Gregory Kielian, Quan Cheng, Mehdi Saligane",
    "ano": 2026,
-   "url": "https://arxiv.org/abs/2611.09327v1",
-   "resumo": "Robustness and interpretability are interrelated and desirable properties of machine learning models. A model that changes its prediction under imperceptible perturbations behaves inconsistently with human-recognizable features and, hence, is not interpretable. Prototype-based classifiers such as Generalized Learning Vector Quantization address both at once. They are interpretable by construction because they make the decision by comparing the input to the prototypical example; and their hypothesis margin yields a closed form robustness certificate. However, on high-dimensional data, these sha",
+   "url": "https://arxiv.org/abs/2611.26857v1",
+   "resumo": "Long-context decoding on edge devices is limited by DRAM, because every generated token reads the whole, growing KV cache. 4-bit block-scaled formats such as NVFP4 reduce this traffic but degrade accuracy: on Qwen3-4B, NVFP4 lowers 32K RULER (seven tasks) from 92.6 to 79.4, and a Hadamard rotation lowers it further to 57.7. We observe that most of the key energy is a positional carrier, one per-head vector that rotary position embedding (RoPE) rotates with position. In NVFP4, it sets the shared scale of most key blocks and lowers the signal-to-quantization-noise ratio of the content by about 5",
    "consulta": "abs:\"embedding\" AND abs:\"quantization\""
   },
   {
    "tipo": "artigo",
-   "titulo": "MV-IVF: Multi-Vector Retrieval via Multi-Vector Clustering",
-   "autores": "Kishen N Gowda, Laxman Dhulipala, Lars Gottesbüren, Rajesh Jayaram",
+   "titulo": "PCRG: Training-Free Pruning and Caching of Reference Tokens for Video Generation",
+   "autores": "Siyuan Wang, Haoran Li, Yi Yue, Tak L. Fung, Quan Chen",
    "ano": 2026,
-   "url": "https://arxiv.org/abs/2611.09040v1",
-   "resumo": "Multi-vector retrieval represents each query and document as a set of embeddings and scores relevance via fine-grained set-to-set interactions such as MaxSim (Chamfer similarity). This expressiveness improves retrieval quality over single-vector representations, but makes search substantially more expensive. Existing systems address this challenge primarily through proxy representations or filter-and-rerank pipelines that reduce candidate generation to single-vector search. We study the complementary direction of building a native IVF-style index directly over multi-vector data. We introduce M",
+   "url": "https://arxiv.org/abs/2611.22717v3",
+   "resumo": "Reference-to-video diffusion transformers pack the variational autoencoder (VAE) latents of all references and the generated tokens into one full-attention sequence, in which reference tokens make up about half. Because attention cost grows quadratically with sequence length, these tokens take up an even larger share of the attention computation, yet most of them are static, smooth or irrelevant to the output. To accelerate reference-conditioned generation, we propose pruning and caching of reference tokens for video generation (PCRG), a training-free, plug-and-play method that uses two signal",
    "consulta": "abs:\"embedding\" AND abs:\"quantization\""
   },
   {
    "tipo": "artigo",
-   "titulo": "Enhancing Local and Global Structure in Compressed AI Agent Memory",
-   "autores": "Henry Han",
+   "titulo": "Pelorus: Warped-Product Graph Indexing for Hyperbolic Vector Search",
+   "autores": "Wenxuan Xiao, Xu Cao",
    "ano": 2026,
-   "url": "https://arxiv.org/abs/2611.08341v1",
-   "resumo": "AI agents store text as embedding vectors and compress them at scale. A compression is accepted when each item's nearest neighbors survive, but agents also consolidate, delete, and compare memories, tasks that depend on which items lie far apart. We evaluate both ends with two label-free fidelities from our prior work: the local fidelity $L$ at 10 neighbors and the global fidelity $G$ at 30 to 50 percent of the memory. At 96 bytes per passage, rescored binary codes reach an $L$ of 0.97 yet move 10.1 percent of passages to another theme; PCA with 8-bit codes, at an $L$ of 0.77, moves 1.7 percen",
+   "url": "https://arxiv.org/abs/2611.22159v1",
+   "resumo": "Hyperbolic embeddings capture hierarchical relations, but million-scale approximate nearest neighbor search must reconcile geodesic fidelity with memory efficiency. Flat inner-product indices distort order across radial shells, while native hyperbolic graphs repeatedly access full-precision vectors or quantize coordinates with singular conformal scales. We present Pelorus, a warped-product proximity-graph index for hyperbolic vector search. Pelorus separates unquantized FP32 radial and conformal scalars from scale-invariant 2-bit spherical directional codes and defers full-vector FP64 evaluati",
    "consulta": "abs:\"embedding\" AND abs:\"quantization\""
   },
   {
    "tipo": "artigo",
-   "titulo": "GINGER: Spicing Up Graph-Based Vector Search",
-   "autores": "Daniel Salwasser, Lars Gottesbüren, Laxman Dhulipala, Jakub Łącki, Guy Blelloch, Rajesh Jayaram",
+   "titulo": "Leveraging Binary Hashing for Scalable Index Assignment in Semantic Communications",
+   "autores": "Leonardo Roque, Kuangyun Zhu, Louis-Adrien Dufrène, Quentin Lampin, Grégoire Lefebvre, Mohamad Assaad",
    "ano": 2026,
-   "url": "https://arxiv.org/abs/2611.08306v1",
-   "resumo": "We present \\textsc{Ginger}, a state-of-the-art open-source C++ library for graph-based approximate nearest neighbor search (ANNS). We developed \\textsc{Ginger} at Google to push the speed and memory efficiency of graph search on large and high-dimensional embedding datasets. \\textsc{Ginger} surpasses existing ANNS libraries with regards to query throughput and indexing time while matching the memory footprint of the most space-efficient competitors. \\textsc{Ginger} builds upon recent advances in proximity graph construction (PiPNN) and vector quantization (TurboQuant). We introduce Nested Turb",
+   "url": "https://arxiv.org/abs/2611.21260v1",
+   "resumo": "Transmitting semantically structured embedding vectors over digital channels is costly in bit rate, while conven- tional vector quantization approaches face limitations in scalabil- ity, encoding complexity, and index assignment. This paper inves- tigates binary hashing techniques from the information retrieval literature as semantic indexing strategies for general-purpose networks. We study random Locality-Sensitive Hashing (LSH) along with Principal Component Analysis (PCA)-, Canonical Correlation Analysis (CCA)-, and ITQ (Iterative Quantization)- based variants in a semantic communication p",
    "consulta": "abs:\"embedding\" AND abs:\"quantization\""
   },
   {
    "tipo": "artigo",
-   "titulo": "Balancing hierarchical representation and quantization: A performance trade-off in text embeddings",
-   "autores": "Kai Ponel, Marco Polignano, Erasmo Purificato, Aylin Julia Temizkan, Marco Levantesi, Giovanni Semeraro",
+   "titulo": "Recursive Spectral Graph Partitioning Coding for Index Assignment in Semantic Communications",
+   "autores": "Leonardo Roque, Louis-Adrien Dufrène, Quentin Lampin, Grégoire Lefebvre, Mohamad Assaad",
    "ano": 2026,
-   "url": "https://arxiv.org/abs/2611.06859v1",
-   "resumo": "Hierarchical text embedding models offer variable-length representations, while quantization reduces numerical precision; both aim to improve computational efficiency. This work is an empirical benchmark study of how these two orthogonal, already-established techniques interact. We evaluate 38 tasks from the Massive Text Embedding Benchmark (MTEB) using four transformer-based embedding models, covering 1D and 2D hierarchical representations combined with 32-bit, 8-bit, and binary quantization, for 168 configurations per task. We report each efficiency dimension separately: theoretical per-vect",
+   "url": "https://arxiv.org/abs/2611.21238v1",
+   "resumo": "Transmitting quantized semantic embeddings over a bit-flip channel requires a binary mapping that minimizes expected reconstruction distortion. The classical Binary Switching Algorithm (BSA) ($\\mathcal{O}(K^3 \\log K)$ for $K$ centroids) yields locally optimal assignments but ignores hierarchical bit significance, making it incompatible with Unequal Error Protection (UEP). We propose Recursive Spectral Graph Partitioning (RSGP), which recursively bisects the centroid affinity graph along the Fiedler eigenvector so that early bits separate semantically distant groups while later bits refine loca",
    "consulta": "abs:\"embedding\" AND abs:\"quantization\""
   },
   {
    "tipo": "artigo",
-   "titulo": "Enabling AWS Cloud FPGA Development Using High-Level Vitis HLS",
-   "autores": "David Rostcheck",
+   "titulo": "Practical Semantic Communication for General-Purpose Networks: Compression of High-Dimensional Embeddings Under Quantization",
+   "autores": "Leonardo Roque, Louis-Adrien Dufrène, Quentin Lampin, Grégoire Lefebvre, Mohamad Assaad",
    "ano": 2026,
-   "url": "https://arxiv.org/abs/2611.06829v1",
-   "resumo": "We present a toolchain for development of ML models on AWS EC2 F2 cloud FPGA infrastructure from high-level language, implementing a complete Vitis HLS to HDK bridge to AFI workflow that has been absent from the academic literature despite eight years of AWS FPGA availability. We introduce a four-level methodology (FP32 PyTorch, bit-accurate quantized Python, HLS C-simulation, physical FPGA) to aid in localizing errors, including FPGA-specific circuit errors. Together these tools allow coding agents to effectively implement FPGA designs from user directions, testing and debugging as needed. We",
+   "url": "https://arxiv.org/abs/2611.20863v1",
+   "resumo": "This paper introduces a practical framework for semantic communication over wireless channels, focusing on the compression of high-dimensional embeddings under quantization and channel errors. Building upon a relaxed Gaussian Information Bottleneck (GIB) model, the approach provides analytical solutions for task-relevant information preservation, even with non-Gaussian targets. The framework relaxes traditional Gaussian assumptions, enabling effective compression for discrete and complex data such as text embeddings. It derives closed-form gradients for optimizing the compression matrix and es",
    "consulta": "abs:\"embedding\" AND abs:\"quantization\""
   },
   {
    "tipo": "artigo",
-   "titulo": "Semantic Residual Vector Quantization for Sign Language Generation",
-   "autores": "Chang Liu, Ke Han, Niccolò Biondi, Gloria Isotton, Elisa Ricci, Davide Talon",
+   "titulo": "CARE: Contrastive-Anchored Residual Encoding with Listwise Reconstruction for Retrieval-Oriented Semantic IDs",
+   "autores": "Yuan Xu, Dawei Chen, Xiaoguang Lin, Xin Chen, Yulong Ou, Haijun Wu",
    "ano": 2026,
-   "url": "https://arxiv.org/abs/2611.06781v1",
-   "resumo": "Sign language generation (SLG) maps written sentences into signing motion while preserving both lexical content and fine-grained articulation. This requires a model to decide what signs should be expressed and to realize them through precise handshape, trajectory, facial expression and body coordination. Existing pose-based systems and reconstruction-only motion tokenizers often entangle these two decisions, leaving the generator without an explicit text-aligned intermediate target for what to sign before refining how to sign it. To address this issue, we introduce Semantic Residual Vector Qua",
+   "url": "https://arxiv.org/abs/2611.20721v1",
+   "resumo": "Generative retrieval replaces nearest-neighbor search with the generation of a document's semantic ID (SID), so the SID tokenizer bounds what the retriever can recall. Common SID constructions (residual k-means, RQ-VAE, finite scalar quantization, capacity balancing) optimize criteria defined on document embeddings alone and do not control whether a query can still find its relevant documents after quantization. We propose two retrieval-oriented SID tokenizers. CARE-SID (Contrastive-Anchored Residual Encoding for Semantic IDs) quantizes in a retrieval-aligned space: a zero-initialized residual",
    "consulta": "abs:\"embedding\" AND abs:\"quantization\""
   },
   {
    "tipo": "artigo",
-   "titulo": "Where Is VLA Inference Time Spent? Bottlenecks and Optimization Interactions Across GPUs",
-   "autores": "Muhammad Danish Waseem, Ahmed Ali-Eldin Hassan",
+   "titulo": "Cyber-Secure Wearable, Ultra-Low-Power Networked Sensors for Soldier Health Monitoring: Insights from the CAPSARII project",
+   "autores": "Luciano Bozzi, Christian Celidonio, Umberto Nuzzi, Massimo Biagini, Stefano Cherubin, Asbjørn Djupdal",
    "ano": 2026,
-   "url": "https://arxiv.org/abs/2611.06710v1",
-   "resumo": "Vision-language-action (VLA) models map camera observations and language instructions to robot actions. However, their large backbones and repeated action generation can make inference take longer than the robot's real-time requirements for its next action. To reduce the load of VLA computations, researchers have proposed multiple optimization approaches, including quantization and pruning. These optimizations can be combined with other general optimizations such as better kernel compilation or using CUDA graphs instead of the eager mode. However, most of these optimization results are usually",
+   "url": "https://arxiv.org/abs/2611.20187v1",
+   "resumo": "The CAPSARII project advances a cyber-secure, ultra-low-power wearable platform and Internet of Battlefield Things (IoBT) framework to support real-time monitoring of military personnel and data-driven decision support. The architecture integrates smart-textile sensing, a body/squad area mesh, edge-deployed AI on secure RISC-V microcontrollers, and cloud/federated analytics for cross-mission learning and comparative studies. Two representative use cases--pilot fatigue and warfighters operating in harsh environments--guide requirements, validation, and interface design (including HUD and haptic",
    "consulta": "abs:\"embedding\" AND abs:\"quantization\""
   },
   {
    "tipo": "artigo",
-   "titulo": "Item Representations Matter: Bridging Hard Semantic IDs and Soft Prototype Mixtures for Generative Retrieval",
-   "autores": "Vicente Balmaseda, Dongqi Fu, Jiarui Feng, Ren chen, Hanqing Zeng, Tianxin Wei",
+   "titulo": "CapCover Filter: Semantic Approximate Membership Queries over Embeddings",
+   "autores": "Dvir David Biton, Shay Hahiashvili, Nadav Keren, Gil Einziger, Roy Friedman",
    "ano": 2026,
-   "url": "https://arxiv.org/abs/2611.05799v1",
-   "resumo": "Modern recommender systems rely on generative retrieval techniques to predict the next item either as discrete codes or as a continuous vector. On the one hand, Semantic IDs (SIDs) give discrete models shared parameters and pretrained semantic structure, but discretizing items into hard codes discards some information from the original content embeddings. On the other hand, continuous models avoid quantization, yet typically use flat item lookup tables with no explicit parameter tying across items. We ask whether a continuous recommender can introduce shared structure without making it a discr",
+   "url": "https://arxiv.org/abs/2611.20132v1",
+   "resumo": "Determining whether an embedding is sufficiently similar to any vector in a vector store without performing a nearest-neighbor search can substantially improve query throughput in vector-store systems. We study Semantic Approximate Membership Queries (SAMQs), which allow queries to be rejected when no indexed vector meets the requested similarity threshold, while guaranteeing no false negatives. We introduce CapCover Filter, a geometric data structure that summarizes a set of embeddings using spherical caps. Its representation is independent of the query threshold, allowing a single filter to ",
    "consulta": "abs:\"embedding\" AND abs:\"quantization\""
   },
   {
    "tipo": "artigo",
-   "titulo": "TEMPO: Time Series Understanding via Discrete Tokenization",
-   "autores": "Riccardo Maggioni",
+   "titulo": "Lens: Training-Free Semantic Search for Cross-Tile Object and Scene Retrieval in Satellite Imagery",
+   "autores": "Ata Akbari Asanjan, Anit Upadhyaya, Jeremy Kravitz, Subash Yeggina",
    "ano": 2026,
-   "url": "https://arxiv.org/abs/2611.04482v1",
-   "resumo": "Time-series interpretation often requires both numerical observations and textual context. Integrating these inputs into a pretrained language model raises a representation question: how should a signal enter the model's token sequence? We present TEMPO, which extends an LLM's vocabulary with discrete codes from a context-aware Transformer tokenizer using finite scalar quantization. A frozen tokenizer maps four-step patches to a 625-code vocabulary; signal tokens, scale statistics, and text are then processed by the LLM's existing self-attention layers. Adaptation updates the new token embeddi",
+   "url": "https://arxiv.org/abs/2611.18251v1",
+   "resumo": "We developed Lens, a training-free system for semantic object and scene search across large satellite mosaics that requires no detector trained for the class of interest. Lens represents each tile with a frozen, self-supervised vision transformer (DINOv3), removes the positional bias in its dense features by projecting them onto the subspace orthogonal to a positional basis estimated once from a constant image, and centers the debiased features on the mean feature computed across the whole area before comparison. Lens forms a query by averaging the centered features of a small neighborhood of ",
    "consulta": "abs:\"embedding\" AND abs:\"quantization\""
   },
   {
    "tipo": "artigo",
-   "titulo": "Modular and Efficient Approximate Nearest Neighbors Search with Vectorium and kANNolo",
-   "autores": "Silvio Martinico, Franco Maria Nardini, Cosimo Rulli, Rossano Venturini",
+   "titulo": "Cracks in Embeddings: Robustness and Stability of JEPA-Based Chest X-Ray Representations",
+   "autores": "Zahid Mansur, Kalpana Yadav, Deepak Mishra",
    "ano": 2026,
-   "url": "https://arxiv.org/abs/2611.03927v1",
-   "resumo": "Approximate Nearest Neighbors (ANN) search over neural embeddings powers modern retrieval systems such as Retrieval-Augmented Generation. Embeddings come in three representations (dense, sparse and multi-vector), and efficient search combines an index structure, a similarity function and a quantization scheme. Existing libraries fix one combination, hard-code each one separately, or factor only one side of the problem, and none covers all three representations. We present Vectorium and kANNolo, two open-source Rust libraries that split this design space into a data-management layer and an inde",
+   "url": "https://arxiv.org/abs/2611.17905v1",
+   "resumo": "Self-supervised Joint Embedding Predictive Architecture (JEPA) models are increasingly used for medical imaging, however there is a limited understanding about robustness of these models toward real-world image changes. We test four JEPA-based chest X-ray encoders, trained on 78,468 NIH ChestX-ray14 images, under six tests: two black-box adversarial attacks (SPSA, Boundary Attack), three image corruptions (Gaussian noise, brightness shift, contrast shift), and a label-scarcity test, measuring embedding change and classification AUROC. These perturbations cause severe, model-dependent damage: e",
    "consulta": "abs:\"embedding\" AND abs:\"quantization\""
   },
   {
    "tipo": "artigo",
-   "titulo": "Utility-Aware Generative Recommendation: Utility-Enriched Semantic Codes and Utility-Guided Decoding",
-   "autores": "Yang Hu, Duo Wang, Ning Li, Kang Li, Junda She, Chengcheng Guo",
+   "titulo": "ScrewSense: Mapping the Invisible - Anomaly Detection and Error Classification in Screwdriving Processes",
+   "autores": "Tobias Lettner, Tatyana Ivanovska, Anwar Al Assadi, Christian Bergler",
    "ano": 2026,
-   "url": "https://arxiv.org/abs/2611.02981v1",
-   "resumo": "Generative recommendation has been widely adopted in large-scale industrial recommendation systems, where multimodal item embeddings are quantized into offline semantic identifiers (SIDs) and items are retrieved by autoregressively generating their SIDs. However, conventional SID construction often underrepresents item utility reflected in post-exposure behaviors such as shares, long views, and video completion, making semantically similar items with different utility insufficiently distinguishable while struggling to accommodate rapidly changing utility signals. Moreover, generation likelihoo",
+   "url": "https://arxiv.org/abs/2611.16789v1",
+   "resumo": "The growing volume of process data generated by screwdriving systems, combined with advancements in computing power, data storage, and algorithms, is facilitating the application of artificial intelligence in this field. Accurately detecting and classifying screwdriving errors is crucial for ensuring product quality, avoiding costly rework in manufacturing, and supporting sustainability by facilitating the maintenance, reuse, and recycling of screw-connected products. In this context, machine learning approaches offer a promising alternative to traditional monitoring techniques, such as window",
    "consulta": "abs:\"embedding\" AND abs:\"quantization\""
   },
   {
    "tipo": "artigo",
-   "titulo": "SANAI: Secure ECC Distributed Keyed Parity Embedded in Weights for Protecting Neural Networks against Bit-Flip Attacks",
-   "autores": "Habibur Rahaman, Daniel Lobo, Md Rezoan Ferdous, Swarup Bhunia",
+   "titulo": "Authenticated Approximate Nearest Neighbor Search in Outsourced Vector Databases",
+   "autores": "Yuanhang Zhou, Xinyi Zhang, Cheng Xu, Jianliang Xu",
    "ano": 2026,
-   "url": "https://arxiv.org/abs/2611.02042v1",
-   "resumo": "Quantized neural networks store weights in dense memory, where bit flips caused by voltage scaling, aging, radiation, or deliberate attacks such as RowHammer can severely degrade model behavior. A single corrupted high-order bit can cause misclassifications or nonsensical language-model outputs. Embedded error-correcting codes (ECC) avoid dedicated parity storage by hiding parity within model weights, but existing schemes embed uniformly across layers and bit planes, leave parity unsecured, and tolerate bit-error rates (BERs) only up to about 6%. An adversary aware of sensitive weights and the",
+   "url": "https://arxiv.org/abs/2611.16516v1",
+   "resumo": "Approximate Nearest Neighbor (ANN) search has become a fundamental query primitive in modern vector databases for managing large-scale embedding data. To support growing vector collections, organizations increasingly outsource database management and query processing to third-party clouds. However, untrusted service providers may return suboptimal or fabricated results, posing a serious threat to ANN search integrity. Existing authenticated ANN approaches face substantial scalability challenges. They typically require transmitting high-dimensional vectors for distance verification and rely on ",
    "consulta": "abs:\"embedding\" AND abs:\"quantization\""
   },
   {
    "tipo": "artigo",
-   "titulo": "Context-Shielded Backdoor Attack against Large Vision-Language Models",
-   "autores": "Zhifang Zhang, Qiang Huang, Chenpeng Wang, Weitong Chen, Olaf Maennel, Wei Emma Zhang",
+   "titulo": "SeqFold: Timestamp-Addressable Compressed States for User Action Sequence Backbones",
+   "autores": "Mianwei Zhou, Duo Zhang, Henry Tsai, Yuqi Zheng, Jian Li, Juexin Lin",
    "ano": 2026,
-   "url": "https://arxiv.org/abs/2611.01252v1",
-   "resumo": "Large vision-language models (LVLMs) routinely use inference-time visual-token compression to prune hundreds of patch tokens down to a compact budget. Existing LVLM backdoors fire whenever a triggered image appears, whereas prior deployment-triggered attacks activate only when model weights are quantized or pruned. However, conventional LVLM backdoors exhibit nearly 100% attack success rate (ASR) under full-token inference, immediately exposing compromised checkpoints during pre-deployment auditing. We reveal context stripping: surrounding clean visual tokens suppress an embedded trigger at fu",
+   "url": "https://arxiv.org/abs/2611.13704v1",
+   "resumo": "Existing sequential user modeling methods mainly focus on improving the backbone encoder or learning task-specific user representations for a single prediction objective. We instead study how to export the multi-layer user states of a frozen long-history backbone as compact, timestamp-addressable representations for downstream training backfill and serving. In this setting, the user state at a given timestamp summarizes the user's actions before that time, so downstream systems need only the state aligned to each target timestamp rather than the full hidden-state timeline. To this end, we pres",
    "consulta": "abs:\"embedding\" AND abs:\"quantization\""
   },
   {
@@ -273,6 +273,15 @@
   },
   {
    "tipo": "artigo",
+   "titulo": "Instant-LIVO: Efficient LiDAR-Inertial-Visual Odometry with Compact Geometry and a Bounded Single-Reference-Frame Map",
+   "autores": "Xinrui Wang, Ziwei Lan, Wenbin He, Mingjing Yang, Yihan Zhang, Yilin Liu",
+   "ano": 2026,
+   "url": "https://arxiv.org/abs/2611.27633v1",
+   "resumo": "LiDAR-Inertial-Visual Odometry (LIVO) is a fundamental technology for autonomous systems; however, deployment on resource-constrained platforms remains challenging due to physical limitations. This paper presents Instant-LIVO, a tightly coupled, high-speed, real-time LIVO system. The system introduces a compact geometric map based on spatial-hashed OctVox and accelerates local-neighborhood retrieval and plane fitting through cache-assisted heuristic staged K-nearest-neighbor searches. It also employs a bounded single-reference-frame visual map that adaptively updates the reference frame accord",
+   "consulta": "abs:\"nearest neighbor search\" AND abs:\"bound\""
+  },
+  {
+   "tipo": "artigo",
    "titulo": "Implicit Additively Weighted Geodesic Voronoi Diagrams and Applications",
    "autores": "Bruce W. Brewer, Haitao Wang",
    "ano": 2026,
@@ -345,11 +354,11 @@
   },
   {
    "tipo": "artigo",
-   "titulo": "Exploiting Residual Reachability for Cross-Model Migration of Graph-Based Indexes in Approximate Nearest Neighbor Search",
-   "autores": "Baoyuan Gu, Xiaoyao Zhong, Jiabao Jin, Peng Cheng, Wangze Ni, Haotian Li",
+   "titulo": "ResGraph: Cross-Model Graph-based Index Migration via Residual Reachability in ANN Search",
+   "autores": "Baoyuan Gu, Xiaoyao Zhong, Jiabao Jin, Peng Cheng, Wangze Ni, Haoyang Li",
    "ano": 2026,
-   "url": "https://arxiv.org/abs/2609.23036v1",
-   "resumo": "Approximate nearest neighbor search (ANNS) underpins large-scale vector retrieval in search, recommendation, and retrieval-augmented generation. Graph-based indexes have demonstrated state-of-the-art search performance for ANNS. They connect each corpus vector to a small set of nearby or navigationally useful vertices and answer queries by traversing the resulting graph. Because these edges are selected using construction-time distances, the graph index is tied to the embedding model. Re-encoding a corpus with a new model may change distances and neighborhoods of the vectors. Reconstructing th",
+   "url": "https://arxiv.org/abs/2609.23036v2",
+   "resumo": "Approximate nearest neighbor search (ANNS) underpins large-scale vector retrieval in search, recommendation, and retrieval-augmented generation. Graph-based indexes have demonstrated state-of-the-art search performance for ANNS: they connect each corpus vector to a small set of nearby or navigationally useful vertices and answer queries by traversing the resulting graph. Because these edges are selected using construction-time distances, the graph index is tied to the embedding model; re-encoding a corpus with a new model may change distances and neighborhoods of the vectors, and reconstructin",
    "consulta": "abs:\"nearest neighbor search\" AND abs:\"bound\""
   },
   {
@@ -381,30 +390,12 @@
   },
   {
    "tipo": "artigo",
-   "titulo": "InSituANN: Revisiting IVF for PCIe-Efficient Billion-Scale Vector Search",
-   "autores": "Yuemeng Xu, Zongxi Liu, Junyu Long, Yiming Huang, Jiarui Guo, Yangyujia Wang",
+   "titulo": "Structure-Preserving Leaky Integrate-and-Fire Dynamics on Arbitrary Time Scales",
+   "autores": "Billur Kaymakçalan, Behiye İlayda Selçuk",
    "ano": 2026,
-   "url": "https://arxiv.org/abs/2608.08751v1",
-   "resumo": "Approximate nearest neighbor search (ANNS) over billion-scale vector datasets has become a foundational operator for modern retrieval systems, powering large-scale recommendation, semantic search, and LLM/RAG workloads. Although GPUs offer massive parallelism and high-bandwidth memory for batched vector search, their limited VRAM capacity makes fully GPU-resident billion-scale indexes difficult to deploy. In CPU-GPU heterogeneous designs, keeping the base vectors in host memory avoids this capacity limit, but naively offloading fine search to the GPU introduces a new bottleneck: large volumes ",
-   "consulta": "abs:\"nearest neighbor search\" AND abs:\"bound\""
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "MERIT: Efficient In-Place Deletion for Dynamic Graph-Based Approximate Nearest Neighbor Indexes",
-   "autores": "Zekai Wu, Jiabao Jin, Peng Cheng, Wangze Ni, Haoyang Li, Lei Chen",
-   "ano": 2026,
-   "url": "https://arxiv.org/abs/2607.29173v3",
-   "resumo": "Graph-based indexes have become the dominant approach to approximate nearest neighbor search (ANNS) over high-dimensional data and play a crucial role in real-world applications such as retrieval-augmented generation, recommendation systems, and vector databases. Despite extensive progress in static graph construction and search, efficient in-place deletion remains challenging because obsolete vectors must be removed without allowing stale incoming edges to consume search capacity or expensive graph-wide maintenance to interrupt online services, e.g., retrieval-augmented generation (RAG) and r",
-   "consulta": "abs:\"nearest neighbor search\" AND abs:\"bound\""
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "Differentiable Approximations for Distance Queries",
-   "autores": "Ahmed Abdelkader, David M. Mount",
-   "ano": 2026,
-   "url": "https://arxiv.org/abs/2607.28886v1",
-   "resumo": "The widespread use of gradient-based optimization has motivated the adaptation of various classical algorithms into differentiable solvers compatible with learning pipelines. In this paper, we investigate the enhancement of traditional geometric query problems such that the result consists of both the geometric function as well as its gradient. Specifically, we study the fundamental problem of distance queries against a set of points $P$ in $\\mathbb{R}^d$, which also underlies various similarity measures for learning algorithms. The main result of this paper is a multiplicative $(1+\\varepsilon",
-   "consulta": "abs:\"nearest neighbor search\" AND abs:\"bound\""
+   "url": "https://arxiv.org/abs/2611.17219v1",
+   "resumo": "The leaky integrate-and-fire (LIF) neuron combines a passive membrane law with threshold-triggered firing and reset. We formulate this hybrid neuron model, under constant input, on an arbitrary Hilger time scale $\\mathbb{T}$. Our central result is that, after the first spike, the firing times satisfy $t_{n+1}=Π_{\\mathbb{T}}^{+}(t_n+T_c)$, where $T_c$ is the classical reset-to-threshold travel time. This recursion requires no periodicity, homogeneity, or translation invariance of $\\mathbb{T}$; it holds for every time scale that is unbounded above. To preserve the passive membrane physics, we us",
+   "consulta": "abs:\"lattice quantization\""
   },
   {
    "tipo": "artigo",
@@ -429,7 +420,7 @@
    "titulo": "Tetra: Serving Leech-Lattice Quantized LLMs at 2.7 Bits per Parameter",
    "autores": "Pier-Jean Malandrino",
    "ano": 2026,
-   "url": "https://arxiv.org/abs/2609.35465v1",
+   "url": "https://arxiv.org/abs/2609.35465v2",
    "resumo": "Leech-lattice quantization gives good quality at two bits per weight, but its codebooks hold more than 10^14 points, too many for a lookup table. Our earlier kernel expanded the codes at load time and read 4.804 bits per weight from GPU memory for 2 bits of code. We present Tetra, a new codebook on the same lattice. A 24-weight block still takes 48 bits, most of which index a 64-state trellis of the Golay code and one shared 16 KiB table. The kernel decodes a block with six table loads and two small lookups inside the matrix-vector product, and reads 2.148 bits per weight. For full models, we ",
    "consulta": "abs:\"lattice quantization\""
   },
@@ -530,15 +521,6 @@
    "ano": 2024,
    "url": "https://arxiv.org/abs/2402.03030v2",
    "resumo": "We construct a randomized vector quantizer which has a smaller maximum error compared to all known lattice quantizers with the same entropy for dimensions 5, 6, ..., 48, and also has a smaller mean squared error compared to known lattice quantizers with the same entropy for dimensions 35, ..., 47, in the high resolution limit. Moreover, our randomized quantizer has a desirable property that the quantization error is always uniform over the ball and independent of the input. Our construction is based on applying rejection sampling on universal quantization, which allows us to shape the error di",
-   "consulta": "abs:\"lattice quantization\""
-  },
-  {
-   "tipo": "artigo",
-   "titulo": "CRYSTALS-Kyber With Lattice Quantizer",
-   "autores": "Shuiyin Liu, Amin Sakzad",
-   "ano": 2024,
-   "url": "https://arxiv.org/abs/2401.15534v1",
-   "resumo": "Module Learning with Errors (M-LWE) based key reconciliation mechanisms (KRM) can be viewed as quantizing an M-LWE sample according to a lattice codebook. This paper describes a generic M-LWE-based KRM framework, valid for any dimensional lattices and any modulus $q$ without a dither. Our main result is an explicit upper bound on the decryption failure rate (DFR) of M-LWE-based KRM. This bound allows us to construct optimal lattice quantizers to reduce the DFR and communication cost simultaneously. Moreover, we present a KRM scheme using the same security parameters $(q,k,η_1,η_2)$ as in Kyber",
    "consulta": "abs:\"lattice quantization\""
   },
   {
@@ -675,118 +657,6 @@
    "url": "https://arxiv.org/abs/1902.11269v1",
    "resumo": "Contextual representation models have achieved great success in improving various downstream tasks. However, these language-model-based encoders are difficult to train due to the large parameter sizes and high computational complexity. By carefully examining the training procedure, we find that the softmax layer (the output layer) causes significant inefficiency due to the large vocabulary size. Therefore, we redesign the learning objective and propose an efficient framework for training contextual representation models. Specifically, the proposed approach bypasses the softmax layer by perform",
    "consulta": "abs:\"softmax\" AND abs:\"vocabulary\" AND abs:\"efficient\""
-  },
-  {
-   "tipo": "livro",
-   "titulo": "Natural language processing and information retrieval",
-   "autores": "Tanveer Siddiqui, U. S. Tiwary",
-   "ano": 2008,
-   "url": "https://openlibrary.org/works/OL13650817W",
-   "consulta": "information retrieval"
-  },
-  {
-   "tipo": "livro",
-   "titulo": "Information retrieval",
-   "autores": "David A. Grossman, Ophir Frieder",
-   "ano": 1998,
-   "url": "https://openlibrary.org/works/OL1927691W",
-   "consulta": "information retrieval"
-  },
-  {
-   "tipo": "livro",
-   "titulo": "Introduction to modern information retrieval",
-   "autores": "Gerard Salton",
-   "ano": 1983,
-   "url": "https://openlibrary.org/works/OL5090840W",
-   "consulta": "information retrieval"
-  },
-  {
-   "tipo": "livro",
-   "titulo": "Information retrieval",
-   "autores": "Ayse Goker, J. Davies",
-   "ano": 2007,
-   "url": "https://openlibrary.org/works/OL18599397W",
-   "consulta": "information retrieval"
-  },
-  {
-   "tipo": "livro",
-   "titulo": "Modern information retrieval",
-   "autores": "R. Baeza-Yates",
-   "ano": 1999,
-   "url": "https://openlibrary.org/works/OL443265W",
-   "consulta": "information retrieval"
-  },
-  {
-   "tipo": "livro",
-   "titulo": "Information retrieval",
-   "autores": "William B. Frakes, R. Baeza-Yates, Ricardo Baeza-Yates",
-   "ano": 1992,
-   "url": "https://openlibrary.org/works/OL18320872W",
-   "consulta": "information retrieval"
-  },
-  {
-   "tipo": "livro",
-   "titulo": "Introduction to modern information retrieval",
-   "autores": "G. G. Chowdhury",
-   "ano": 1999,
-   "url": "https://openlibrary.org/works/OL5776902W",
-   "consulta": "information retrieval"
-  },
-  {
-   "tipo": "livro",
-   "titulo": "3D Imaging Technologies - Multidimensional Signal Processing and Deep Learning",
-   "autores": "Lakhmi C. Jain, Roumen Kountchev, Yonghang Tai",
-   "ano": 2021,
-   "url": "https://openlibrary.org/works/OL25329619W",
-   "consulta": "deep learning mathematics"
-  },
-  {
-   "tipo": "livro",
-   "titulo": "Mathematics of Deep Learning",
-   "autores": "Leonid Berlyand, Pierre-Emmanuel Jabin",
-   "ano": 2023,
-   "url": "https://openlibrary.org/works/OL34023954W",
-   "consulta": "deep learning mathematics"
-  },
-  {
-   "tipo": "livro",
-   "titulo": "Intelligent System for COVID-19 , Machine Learning, Deep Learning, Intelligent System",
-   "autores": "Dani Wade",
-   "ano": 2021,
-   "url": "https://openlibrary.org/works/OL35792373W",
-   "consulta": "deep learning mathematics"
-  },
-  {
-   "tipo": "livro",
-   "titulo": "Machine Learning Mathematics",
-   "autores": "Samuel Hack",
-   "ano": 2019,
-   "url": "https://openlibrary.org/works/OL21881660W",
-   "consulta": "deep learning mathematics"
-  },
-  {
-   "tipo": "livro",
-   "titulo": "Mathematical Aspects of Deep Learning",
-   "autores": "Philipp Grohs, Gitta Kutyniok",
-   "ano": 2022,
-   "url": "https://openlibrary.org/works/OL28798246W",
-   "consulta": "deep learning mathematics"
-  },
-  {
-   "tipo": "livro",
-   "titulo": "Deep learning fundamentals",
-   "autores": "Chao Pan",
-   "ano": 2016,
-   "url": "https://openlibrary.org/works/OL28951846W",
-   "consulta": "deep learning mathematics"
-  },
-  {
-   "tipo": "livro",
-   "titulo": "Deep Learning with R",
-   "autores": "Francois Chollet, J. J. Allaire, Tomasz Kalinowski",
-   "ano": 2018,
-   "url": "https://openlibrary.org/works/OL19542557W",
-   "consulta": "deep learning mathematics"
   },
   {
    "tipo": "livro",
