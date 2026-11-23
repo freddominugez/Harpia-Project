@@ -1,0 +1,73 @@
+{
+  "data": "2026-11-23",
+  "timezone": "America/Fortaleza",
+  "items": [
+    {
+      "path": "src/content/business/acervo/2026-11-23-wharton-seguradoras-private-equity-afiliadas.json",
+      "sha256": "a35c2c6d09f27a7358edb63298b27f3e5421f5298d7c421f023724a96fe905b7",
+      "sha256_publicado": "d1676a90cd332ca3dab45bbfd2142407298d0406fe90d65b9be690373353a0ac",
+      "pauta": "business_pauta_23",
+      "verificacao": {
+        "responsavel": "business_verify_23",
+        "consultado_em": "2026-11-23",
+        "escopo": "Entrevista institucional e estudo original PDF conferidos; números observados separados de projeção de estresse e recorte definido.",
+        "evidencias": [
+          "https://knowledge.wharton.upenn.edu/article/how-private-equity-ownership-puts-insurers-at-risk/",
+          "https://wffi.wharton.upenn.edu/wp-content/uploads/2026/09/Huber2SZ_InsurancePE_Sept2026.pdf"
+        ],
+        "alegacoes": [
+          {
+            "texto": "Finance at Wharton publicou entrevista em 16 de novembro de 2026 com três pesquisadores sobre o estudo.",
+            "url": "https://knowledge.wharton.upenn.edu/article/how-private-equity-ownership-puts-insurers-at-risk/",
+            "resultado": "confirmada",
+            "local": "Cabeçalho, autoria institucional e apresentação da entrevista."
+          },
+          {
+            "texto": "O estudo original tem quatro autores: Amy W. Huber, Stefan Huber, Bella Shan e Christina Zhu.",
+            "url": "https://wffi.wharton.upenn.edu/wp-content/uploads/2026/09/Huber2SZ_InsurancePE_Sept2026.pdf",
+            "resultado": "confirmada",
+            "local": "Capa do PDF; Bella Shan não consta na chamada da entrevista."
+          },
+          {
+            "texto": "O painel usa dados NAIC dos EUA entre 2009 e 2024 e define PE-owned como controle direto majoritário da gestora.",
+            "url": "https://wffi.wharton.upenn.edu/wp-content/uploads/2026/09/Huber2SZ_InsurancePE_Sept2026.pdf",
+            "resultado": "confirmada",
+            "local": "Introdução e seção de dados e amostra."
+          },
+          {
+            "texto": "Em 2024, títulos estruturados eram mais de 40% dos novos investimentos das seguradoras controladas por PE e mais de 60% deles foram emitidos por afiliadas.",
+            "url": "https://wffi.wharton.upenn.edu/wp-content/uploads/2026/09/Huber2SZ_InsurancePE_Sept2026.pdf",
+            "resultado": "confirmada",
+            "local": "Resultados de composição dos novos investimentos."
+          },
+          {
+            "texto": "Na comparação do mesmo título no mesmo dia, compras de emissões afiliadas por seguradoras PE tiveram preços maiores.",
+            "url": "https://wffi.wharton.upenn.edu/wp-content/uploads/2026/09/Huber2SZ_InsurancePE_Sept2026.pdf",
+            "resultado": "qualificada",
+            "local": "Análise de transações e regressões de preço."
+          },
+          {
+            "texto": "Cenário de estresse extrapolado estima perda adicional de aproximadamente 4 pontos percentuais da carteira de renda fixa, ante patrimônio de 7,6% da carteira em 2024.",
+            "url": "https://wffi.wharton.upenn.edu/wp-content/uploads/2026/09/Huber2SZ_InsurancePE_Sept2026.pdf",
+            "resultado": "qualificada",
+            "local": "Seção de estresse, pp. 26–28; projeção com hipóteses, não perda realizada."
+          }
+        ]
+      },
+      "selecao": {
+        "responsavel": "business_select_23",
+        "nota": 8.5,
+        "justificativa": "Pesquisa acadêmica com dados NAIC e relevância para governança de investimentos; limites de extrapolação e recorte explicitados.",
+        "criterios": {
+          "rigor": 8.7,
+          "relevancia": 8.2,
+          "utilidade": 8.6,
+          "atualidade": 7.8,
+          "clareza": 8.4,
+          "conflitos": 8.9
+        }
+      },
+      "publicacao": "editorial_round_23"
+    }
+  ]
+}

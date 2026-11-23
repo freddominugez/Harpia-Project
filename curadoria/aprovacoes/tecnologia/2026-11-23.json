@@ -1,0 +1,150 @@
+{
+  "data": "2026-11-23",
+  "timezone": "America/Fortaleza",
+  "items": [
+    {
+      "path": "src/content/artigos/2026-compact-bench-working-context-compaction-agents.json",
+      "sha256": "4f98ffeb56739e5382d9745047efc22ac4f4842c0c428e2b8aecdbda77bc756d",
+      "pauta": {
+        "responsavel": "tech_pauta_23",
+        "justificativa": "Preprint recente com benchmark mensurável de compactação de contexto, questão central para agentes de longa duração."
+      },
+      "verificacao": {
+        "responsavel": "tech_verify_23",
+        "consultado_em": "2026-11-23",
+        "evidencias": [
+          "https://arxiv.org/abs/2611.25673",
+          "https://arxiv.org/html/2611.25673v1"
+        ],
+        "alegacoes": [
+          {
+            "texto": "Registro arXiv de 19 de novembro de 2026 identifica o preprint e autores ligados a Fudan, Tencent Hunyuan e Tsinghua.",
+            "url": "https://arxiv.org/abs/2611.25673",
+            "resultado": "confirmada",
+            "local": "Registro arXiv e cabeçalho do artigo."
+          },
+          {
+            "texto": "O benchmark reúne 200 tarefas: 79 BrowseComp, 96 SWE-bench e 25 CompanyBench interno, triadas por três execuções bem-sucedidas.",
+            "url": "https://arxiv.org/html/2611.25673v1",
+            "resultado": "confirmada",
+            "local": "Seção 2.1, construção do benchmark."
+          },
+          {
+            "texto": "Doze modelos comprimem o histórico com alvo de retenção de 10% dos caracteres compressíveis, sem reduzir instruções de sistema e da tarefa.",
+            "url": "https://arxiv.org/html/2611.25673v1",
+            "resultado": "confirmada",
+            "local": "Seções 2.2 e A.2, protocolo e retenção."
+          },
+          {
+            "texto": "Um executor fixo retoma o ambiente com orçamento de ações correspondente ao restante da trajetória original; são três continuações por resumo.",
+            "url": "https://arxiv.org/html/2611.25673v1",
+            "resultado": "confirmada",
+            "local": "Seções 2.2 e 3.1, protocolo de avaliação."
+          },
+          {
+            "texto": "No protocolo, média dos compactadores é 56,7%; Claude Opus 5 alcança 68,5%, seguido por Gemini 3.8 Flash e Kimi K3.",
+            "url": "https://arxiv.org/html/2611.25673v1",
+            "resultado": "confirmada",
+            "local": "Seção 3.2, resultados por modelo."
+          },
+          {
+            "texto": "Análise relata omissões associadas a trabalho repetido e distorções de estado associadas a término prematuro.",
+            "url": "https://arxiv.org/html/2611.25673v1",
+            "resultado": "qualificada",
+            "local": "Seção 3.5, análise de falhas; associação observacional."
+          }
+        ],
+        "escopo": "Registro e artigo integral arXiv examinados; CompanyBench é interno e experimentos não foram reproduzidos pelo Harpya."
+      },
+      "selecao": {
+        "responsavel": "tech_select_23",
+        "nota": 4.5,
+        "justificativa": "Relevância alta para confiabilidade de agentes, método com executor fixo e números claros; texto delimita protocolo e base interna.",
+        "criterios": {
+          "rigor": 4.4,
+          "relevancia": 4.8,
+          "utilidade": 4.6,
+          "atualidade": 4.6,
+          "clareza": 4.2
+        }
+      },
+      "publicacao": {
+        "responsavel": "editorial_round_23",
+        "status": "aguardando_portao"
+      },
+      "sha256_publicado": "deeb1c18f774d8ee9994e73a1ad76efb9252a5139feeccb7711e9b1b72a200cd"
+    },
+    {
+      "path": "src/content/noticias/compact-bench-agentes-perdem-tarefa-ao-resumir-contexto.json",
+      "sha256": "eb622e40040719de9e8456e0884beff26f9e58f14d01515c55f0011c0ed4346e",
+      "pauta": {
+        "responsavel": "tech_pauta_23",
+        "justificativa": "Preprint recente com benchmark mensurável de compactação de contexto, questão central para agentes de longa duração."
+      },
+      "verificacao": {
+        "responsavel": "tech_verify_23",
+        "consultado_em": "2026-11-23",
+        "evidencias": [
+          "https://arxiv.org/abs/2611.25673",
+          "https://arxiv.org/html/2611.25673v1"
+        ],
+        "alegacoes": [
+          {
+            "texto": "Registro arXiv de 19 de novembro de 2026 identifica o preprint e autores ligados a Fudan, Tencent Hunyuan e Tsinghua.",
+            "url": "https://arxiv.org/abs/2611.25673",
+            "resultado": "confirmada",
+            "local": "Registro arXiv e cabeçalho do artigo."
+          },
+          {
+            "texto": "O benchmark reúne 200 tarefas: 79 BrowseComp, 96 SWE-bench e 25 CompanyBench interno, triadas por três execuções bem-sucedidas.",
+            "url": "https://arxiv.org/html/2611.25673v1",
+            "resultado": "confirmada",
+            "local": "Seção 2.1, construção do benchmark."
+          },
+          {
+            "texto": "Doze modelos comprimem o histórico com alvo de retenção de 10% dos caracteres compressíveis, sem reduzir instruções de sistema e da tarefa.",
+            "url": "https://arxiv.org/html/2611.25673v1",
+            "resultado": "confirmada",
+            "local": "Seções 2.2 e A.2, protocolo e retenção."
+          },
+          {
+            "texto": "Um executor fixo retoma o ambiente com orçamento de ações correspondente ao restante da trajetória original; são três continuações por resumo.",
+            "url": "https://arxiv.org/html/2611.25673v1",
+            "resultado": "confirmada",
+            "local": "Seções 2.2 e 3.1, protocolo de avaliação."
+          },
+          {
+            "texto": "No protocolo, média dos compactadores é 56,7%; Claude Opus 5 alcança 68,5%, seguido por Gemini 3.8 Flash e Kimi K3.",
+            "url": "https://arxiv.org/html/2611.25673v1",
+            "resultado": "confirmada",
+            "local": "Seção 3.2, resultados por modelo."
+          },
+          {
+            "texto": "Análise relata omissões associadas a trabalho repetido e distorções de estado associadas a término prematuro.",
+            "url": "https://arxiv.org/html/2611.25673v1",
+            "resultado": "qualificada",
+            "local": "Seção 3.5, análise de falhas; associação observacional."
+          }
+        ],
+        "escopo": "Registro e artigo integral arXiv examinados; CompanyBench é interno e experimentos não foram reproduzidos pelo Harpya."
+      },
+      "selecao": {
+        "responsavel": "tech_select_23",
+        "nota": 4.5,
+        "justificativa": "Relevância alta para confiabilidade de agentes, método com executor fixo e números claros; texto delimita protocolo e base interna.",
+        "criterios": {
+          "rigor": 4.4,
+          "relevancia": 4.8,
+          "utilidade": 4.6,
+          "atualidade": 4.6,
+          "clareza": 4.2
+        }
+      },
+      "publicacao": {
+        "responsavel": "editorial_round_23",
+        "status": "aguardando_portao"
+      },
+      "sha256_publicado": "1fc7eff1078bece9edd0ec5969e3a891ee16741485d575b64aa790f372757ba3"
+    }
+  ]
+}

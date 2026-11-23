@@ -7,10 +7,11 @@
   "idioma": "en",
   "hosts": [
     "knowledge.wharton.upenn.edu",
-    "www.wharton.upenn.edu"
+    "www.wharton.upenn.edu",
+    "wffi.wharton.upenn.edu"
   ],
   "feed": "https://knowledge.wharton.upenn.edu/category/marketing/feed/",
-  "verificado_em": "2026-11-07",
+  "verificado_em": "2026-11-23",
   "status": "aprovado",
   "escopos": [
     "artigos",

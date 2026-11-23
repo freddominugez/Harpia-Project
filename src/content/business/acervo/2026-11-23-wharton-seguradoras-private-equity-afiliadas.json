@@ -1,0 +1,29 @@
+{
+  "titulo": "Estudo da Wharton examina riscos de títulos comprados por seguradoras ligadas a private equity",
+  "resumo": "Em seguradoras dos EUA controladas por private equity, estudo da Wharton encontra mais compras de títulos de afiliadas e projeta perda adicional sob estresse. Não é perda observada.",
+  "fonte": "wharton",
+  "url": "https://knowledge.wharton.upenn.edu/article/how-private-equity-ownership-puts-insurers-at-risk/",
+  "tipo": "noticia",
+  "trilha": "gestao",
+  "autores": "Finance at Wharton; estudo de Amy W. Huber, Stefan Huber, Bella Shan e Christina Zhu",
+  "data": "2026-11-16",
+  "data_precisa": true,
+  "idioma": "en",
+  "acesso": "Entrevista institucional aberta em inglês e estudo original aberto em PDF; dados dos EUA provenientes da NAIC, com recorte de seguradoras diretamente controladas por gestoras de private equity.",
+  "evidencia": "Estudo de Amy W. Huber, Stefan Huber, Bella Shan e Christina Zhu, com dados de propriedade, carteiras, transações e testes regulatórios de estresse de seguradoras dos EUA de 2009 a 2024.",
+  "limites": "Os resultados observacionais não se aplicam automaticamente a toda seguradora. A perda adicional é uma extrapolação de projeções de estresse de CLOs para outros títulos estruturados, depende de hipóteses e não foi realizada. A entrevista da Wharton apresenta três dos quatro autores do estudo.",
+  "status": "publicado",
+  "justificativa": "Fonte acadêmica aprovada e paper original disponível, com dados identificados; a matéria distingue comportamento observado de cenário financeiro projetado e delimita o recorte das seguradoras.",
+  "revisor": "business_verify_23",
+  "revisado_em": "2026-11-23",
+  "corpo": [
+    "A Finance at Wharton publicou em 16 de novembro uma entrevista com três pesquisadores sobre investimentos feitos por seguradoras controladas por gestoras de private equity. O estudo original, assinado por Amy W. Huber, Stefan Huber, Bella Shan e Christina Zhu, usa dados de propriedade, carteiras e transações de seguradoras dos Estados Unidos, além de projeções regulatórias de estresse. O recorte de propriedade é controle direto majoritário pela gestora, não qualquer participação de um fundo na seguradora.",
+    "Segundo os autores, em 2024 títulos estruturados representaram mais de 40% dos novos investimentos dessas seguradoras. Mais de 60% desses títulos estruturados foram emitidos por empresas afiliadas ao mesmo grupo; entre seguradoras independentes, a proporção correspondente ficou abaixo de 2%. Os percentuais descrevem compras novas naquele ano, não toda a carteira nem todas as seguradoras dos EUA.",
+    "Nas transações comparáveis do mesmo título no mesmo dia, seguradoras controladas por private equity pagaram preços maiores quando compraram emissões de afiliadas. O paper também relata desempenho posterior mais fraco desses ativos. Os dados levantam uma questão de governança: quando o grupo influencia tanto a origem do investimento quanto um grande comprador, os incentivos podem diferir dos de uma negociação entre partes independentes. A análise não permite atribuir a mesma diferença de preços a toda operação de crédito privado.",
+    "Os pesquisadores ainda estimam, para um cenário de estresse semelhante ao de 2008, uma perda adicional equivalente a cerca de 4 pontos percentuais da carteira de renda fixa dessas seguradoras, ante um colchão patrimonial de 7,6% medido sobre a mesma carteira em 2024. O cálculo extrapola projeções regulatórias de perdas em CLOs para outros títulos estruturados. É uma estimativa sujeita a hipóteses, não uma perda ocorrida nem uma previsão de falência."
+  ],
+  "referencias": [
+    "https://knowledge.wharton.upenn.edu/article/how-private-equity-ownership-puts-insurers-at-risk/",
+    "https://wffi.wharton.upenn.edu/wp-content/uploads/2026/09/Huber2SZ_InsurancePE_Sept2026.pdf"
+  ]
+}
