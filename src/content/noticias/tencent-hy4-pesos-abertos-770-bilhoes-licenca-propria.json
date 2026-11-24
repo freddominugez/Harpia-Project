@@ -1,0 +1,32 @@
+{
+  "titulo": "Tencent publica os pesos do Hy4, modelo de 770 bilhões de parâmetros, sob licença própria",
+  "resumo": "O modelo principal da família Hy chegou ao Hugging Face com versões FP8 e base. Lê texto, imagem e vídeo, mas exige servidor com oito GPUs e não usa licença aberta padrão.",
+  "data": "2026-11-20",
+  "categoria": "abertos",
+  "icone": "chip",
+  "corpo": [
+    "A Tencent publicou no Hugging Face, no ModelScope e no GitCode os pesos do Hy4, o modelo principal da sua família Hy. Saíram três versões: o modelo ajustado para conversa, uma versão quantizada em FP8 e o modelo base, sem ajuste de instruções. Os arquivos do repositório no Hugging Face foram atualizados pela última vez em 20 de novembro, segundo os metadados da plataforma.",
+    "De acordo com a ficha técnica, o Hy4 é um modelo de mistura de especialistas com 770 bilhões de parâmetros no total, dos quais 49 bilhões ficam ativos a cada token. Ele entende texto, imagem e vídeo e aceita contexto de até cerca de 1 milhão de tokens. A ficha descreve ainda um módulo auxiliar de 3,3 bilhões de parâmetros, o DFly2, usado para acelerar a geração por decodificação especulativa.",
+    "A licença é a Tencent Hy License, escrita pela própria empresa, e não uma licença aberta conhecida como Apache 2.0 ou MIT. O Trendblog lembra que o Hy4 preview e o Hy3 tinham saído sob Apache 2.0 e relata que a nova licença traz condições comerciais, mas diz que as reportagens divergem sobre os limites exatos. Quem pretende usar o modelo num produto precisa ler o arquivo LICENSE antes.",
+    "Os resultados de desempenho divulgados vêm da Tencent. Numa avaliação com 213 profissionais de finanças e 579 tarefas, a empresa diz que o Hy4 teve nota média de 3,04 em 4, à frente de outros modelos de pesos abertos. A própria ficha reconhece que ainda há distância em relação aos melhores modelos fechados em matemática de nível de pesquisa, programação de longo prazo e perguntas visuais difíceis.",
+    "Rodar em casa não é viável. As receitas oficiais usam vLLM ou SGLang com paralelismo em oito GPUs, e o repositório completo ocupa cerca de 1,5 TB. A Tencent oferece uma versão GGUF compactada, que ela mesma descreve como destinada a testes. Para quem quer experimentar localmente, o Hy4 flash, publicado dias antes, continua sendo a opção menor da família."
+  ],
+  "harpia": "Mais um modelo grande com pesos publicados, mas com licença escrita pela empresa e exigência de servidor. Ajuda a separar duas perguntas que costumam vir juntas: o que pode ser baixado e o que pode, de fato, ser usado e rodado por quem não é uma grande empresa.",
+  "fontes": [
+    {
+      "veiculo": "Hugging Face · ficha do modelo (Tencent)",
+      "titulo": "tencent/Hy4",
+      "url": "https://huggingface.co/tencent/Hy4"
+    },
+    {
+      "veiculo": "Trendblog",
+      "titulo": "Tencent Publishes Hy4, a 770B Open-Weight Model With a 1M-Token Context, Under a Custom Licence",
+      "url": "https://trendblog.net/tencent-publishes-hy4-a-770b-open-weight-model-with-a-1m-token-context-under-a-custom-licence/"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-24",
+  "verificado_em": "2026-11-24",
+  "ordem": 999
+}

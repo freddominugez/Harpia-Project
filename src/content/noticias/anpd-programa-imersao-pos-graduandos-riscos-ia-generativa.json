@@ -1,0 +1,32 @@
+{
+  "titulo": "ANPD abre imersão para pós-graduandos proporem métodos de avaliar riscos da IA generativa",
+  "resumo": "Programa com o PNUD oferece dez vagas a mestrandos e doutorandos, com prêmios de até R$ 10 mil. Inscrições vão até 11 de janeiro de 2027.",
+  "data": "2026-11-23",
+  "categoria": "brasil",
+  "icone": "balanca",
+  "corpo": [
+    "A Agência Nacional de Proteção de Dados (ANPD) lançou em 23 de novembro o Programa de Imersão ANPD, voltado a estudantes de mestrado e doutorado. A primeira edição foi feita em parceria com o Programa das Nações Unidas para o Desenvolvimento (PNUD) e tem dez vagas. As inscrições ficam abertas até 11 de janeiro de 2027, segundo o Convergência Digital e o Guia de TI.",
+    "O tema desta edição é IA generativa aplicada à proteção de dados pessoais e à proteção de mulheres, crianças e adolescentes em ambientes digitais. Os candidatos devem propor processos ou metodologias que ajudem a agência a identificar, avaliar e monitorar riscos do tratamento de dados pessoais por sistemas de IA generativa, dentro das suas funções de regulação e fiscalização.",
+    "Podem participar alunos matriculados em mestrado ou doutorado reconhecidos pelo MEC. As vagas serão divididas igualmente entre as cinco regiões do país, e pelo menos cinco são reservadas a candidatas. Quem não mora em Brasília recebe passagens e ajuda para a estadia durante a fase presencial. O resultado está previsto para 15 de março de 2027, com início das atividades em abril.",
+    "Ao fim da imersão, cada participante apresenta sua proposta a uma comissão julgadora num Demo Day previsto para 11 de junho de 2027. Os prêmios vão de R$ 1 mil a R$ 10 mil, conforme a classificação, para quem cumprir as atividades e tiver nota mínima de 60 pontos. Segundo a agência, as soluções poderão servir de subsídio técnico para a regulação e a fiscalização.",
+    "O programa não cria regra nova nem muda o que as empresas precisam fazer hoje. É um canal para a ANPD buscar métodos na pesquisa acadêmica enquanto o PL 2338/2023, que define o papel da agência na regulação da IA, segue em discussão na Câmara."
+  ],
+  "harpia": "A ANPD está pedindo à universidade um método para medir risco de IA generativa, o que mostra que essa ferramenta ainda não existe pronta. Para quem pesquisa IA no Brasil, é uma porta concreta para levar avaliação independente para dentro do órgão regulador.",
+  "fontes": [
+    {
+      "veiculo": "Convergência Digital",
+      "titulo": "ANPD lança programa para intercâmbio de estudantes para desafios de proteção de dados e IA",
+      "url": "https://convergenciadigital.com.br/governo/anpd-lanca-programa-para-intercambio-de-estudantes-para-desafios-de-protecao-de-dados-e-ia/"
+    },
+    {
+      "veiculo": "Guia de TI",
+      "titulo": "ANPD lança imersão sobre riscos de IA generativa e proteção de dados",
+      "url": "https://guiadeti.com.br/noticias/anpd-programa-imersao-ia-generativa-protecao-dados/"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-24",
+  "verificado_em": "2026-11-24",
+  "ordem": 999
+}

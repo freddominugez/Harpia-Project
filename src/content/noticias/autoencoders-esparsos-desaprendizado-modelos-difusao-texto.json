@@ -1,0 +1,27 @@
+{
+  "titulo": "Estudo usa autoencoders esparsos para auditar o esquecimento em modelos de linguagem por difusão",
+  "resumo": "Preprint mostra que as pistas internas do que deve ser esquecido mudam a cada etapa da geração, mas acompanhar essa mudança não melhorou o desaprendizado nos testes feitos.",
+  "data": "2026-11-20",
+  "categoria": "pesquisa",
+  "icone": "lupa",
+  "corpo": [
+    "Yunha Seo e Changhoon Kim publicaram em 20 de novembro no arXiv um estudo sobre desaprendizado de máquina em modelos de linguagem por difusão. Desaprender, nesse contexto, é tentar remover a influência de um conjunto de dados sobre o modelo sem estragar o restante do que ele sabe. O trabalho foi aceito num workshop da NeurIPS 2026 sobre privacidade em inferência, segundo o registro do arXiv.",
+    "Modelos por difusão não escrevem uma palavra de cada vez. Eles partem de um texto mascarado e o refinam em várias etapas, e as representações internas mudam ao longo desse processo. A pergunta dos autores foi se seria possível esquecer melhor identificando os traços internos ligados ao conteúdo a apagar e ajustando a supressão deles a cada etapa.",
+    "Os testes foram feitos no LLaDA-8B-Instruct, usando o WMDP como conjunto do que deveria ser esquecido. Para enxergar o que acontece dentro do modelo, os autores usaram autoencoders esparsos, ferramenta de interpretabilidade que decompõe as ativações em traços mais fáceis de rastrear. Depois compararam uma supressão fixa com outra que se adapta à etapa da geração.",
+    "O resultado tem duas partes. Os traços associados ao conteúdo a esquecer mudam bastante de uma etapa para outra. Mesmo assim, seguir essa mudança não melhorou de forma confiável o equilíbrio entre esquecer o que se pedia e preservar o resto, nos pontos de operação avaliados. Os autores apresentam o trabalho como uma base inicial, não como solução.",
+    "O estudo usa um único modelo e um único conjunto de teste, e o Harpya não reproduziu os experimentos. O valor está em mostrar, com medição, que ver uma mudança dentro do modelo não basta para controlá-la."
+  ],
+  "harpia": "Interpretabilidade costuma ser vendida como caminho para consertar modelos. Este estudo registra um limite: os autoencoders esparsos mostraram onde a informação mudava, mas usar esse mapa não trouxe ganho claro. Resultado negativo bem medido também é conhecimento.",
+  "fontes": [
+    {
+      "veiculo": "arXiv · preprint",
+      "titulo": "Auditing Post-Training Unlearning in Diffusion Language Models using Sparse Autoencoders",
+      "url": "https://arxiv.org/abs/2611.27652"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-24",
+  "verificado_em": "2026-11-24",
+  "ordem": 999
+}
