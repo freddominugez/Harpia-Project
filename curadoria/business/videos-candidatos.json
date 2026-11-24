@@ -1,6 +1,6 @@
 {
   "ambiente": "business",
-  "atualizado_em": "2026-11-23T23:48:01.305898+00:00",
+  "atualizado_em": "2026-11-24T20:52:48.195468+00:00",
   "politica": "candidatos_sem_publicacao_automatica",
   "fontes": [
     {
@@ -9,15 +9,15 @@
       "status": "ok",
       "itens": 2,
       "mensagem": "",
-      "verificado_em": "2026-11-23T23:48:01.305898+00:00"
+      "verificado_em": "2026-11-24T20:52:48.195468+00:00"
     },
     {
       "id": "UC8DhN1cJi0QklBQot5hv_kg",
       "fonte": "fgv",
       "status": "ok",
-      "itens": 3,
+      "itens": 2,
       "mensagem": "",
-      "verificado_em": "2026-11-23T23:48:01.305898+00:00"
+      "verificado_em": "2026-11-24T20:52:48.195468+00:00"
     },
     {
       "id": "UCWo4IA01TXzBeGJJKWHOG9g",
@@ -25,7 +25,7 @@
       "status": "ok",
       "itens": 3,
       "mensagem": "",
-      "verificado_em": "2026-11-23T23:48:01.305898+00:00"
+      "verificado_em": "2026-11-24T20:52:48.195468+00:00"
     },
     {
       "id": "UCk8n46m74K5XWfdeBzOXDfA",
@@ -33,7 +33,7 @@
       "status": "ok",
       "itens": 0,
       "mensagem": "",
-      "verificado_em": "2026-11-23T23:48:01.305898+00:00"
+      "verificado_em": "2026-11-24T20:52:48.195468+00:00"
     },
     {
       "id": "UC9aeQQ-NqjHS3nfiod2PMSA",
@@ -41,7 +41,7 @@
       "status": "ok",
       "itens": 3,
       "mensagem": "",
-      "verificado_em": "2026-11-23T23:48:01.305898+00:00"
+      "verificado_em": "2026-11-24T20:52:48.195468+00:00"
     },
     {
       "id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
@@ -49,7 +49,7 @@
       "status": "ok",
       "itens": 2,
       "mensagem": "",
-      "verificado_em": "2026-11-23T23:48:01.305898+00:00"
+      "verificado_em": "2026-11-24T20:52:48.195468+00:00"
     },
     {
       "id": "UC0wOrSaO_sBGGU9Jderpk7g",
@@ -57,7 +57,7 @@
       "status": "ok",
       "itens": 0,
       "mensagem": "",
-      "verificado_em": "2026-11-23T23:48:01.305898+00:00"
+      "verificado_em": "2026-11-24T20:52:48.195468+00:00"
     },
     {
       "id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
@@ -65,10 +65,25 @@
       "status": "ok",
       "itens": 1,
       "mensagem": "",
-      "verificado_em": "2026-11-23T23:48:01.305898+00:00"
+      "verificado_em": "2026-11-24T20:52:48.195468+00:00"
     }
   ],
   "itens": [
+    {
+      "id": "99b106a45d3becea7e3b",
+      "ambiente": "business",
+      "tipo": "video",
+      "titulo": "What to Do When You Disagree with the Company's Strategy",
+      "url": "https://www.youtube.com/watch?v=-cZob5-S_k8",
+      "fonte": "hbr",
+      "video_id": "-cZob5-S_k8",
+      "channel_id": "UCWo4IA01TXzBeGJJKWHOG9g",
+      "data": "2026-11-24",
+      "verificado_em": "2026-11-24",
+      "status": "candidato",
+      "revisao_editorial": false,
+      "revisao_integral": false
+    },
     {
       "id": "fd6a6dbb32b2205fbea9",
       "ambiente": "business",
@@ -79,7 +94,7 @@
       "video_id": "pypPBmN_G0E",
       "channel_id": "UC8DhN1cJi0QklBQot5hv_kg",
       "data": "2026-11-23",
-      "verificado_em": "2026-11-23",
+      "verificado_em": "2026-11-24",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -94,7 +109,7 @@
       "video_id": "mNb7b32HIiQ",
       "channel_id": "UC8DhN1cJi0QklBQot5hv_kg",
       "data": "2026-11-23",
-      "verificado_em": "2026-11-23",
+      "verificado_em": "2026-11-24",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -109,7 +124,7 @@
       "video_id": "MAZjMtCiZtU",
       "channel_id": "UC9aeQQ-NqjHS3nfiod2PMSA",
       "data": "2026-11-21",
-      "verificado_em": "2026-11-23",
+      "verificado_em": "2026-11-24",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -124,7 +139,7 @@
       "video_id": "mbK4fMHMf4g",
       "channel_id": "UC1fHbk7N11bB8UnL4tYg26A",
       "data": "2026-11-19",
-      "verificado_em": "2026-11-23",
+      "verificado_em": "2026-11-24",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -139,7 +154,7 @@
       "video_id": "5blTvdIla7g",
       "channel_id": "UC1fHbk7N11bB8UnL4tYg26A",
       "data": "2026-11-19",
-      "verificado_em": "2026-11-23",
+      "verificado_em": "2026-11-24",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -154,7 +169,7 @@
       "video_id": "xwalFe0v49o",
       "channel_id": "UCWo4IA01TXzBeGJJKWHOG9g",
       "data": "2026-11-18",
-      "verificado_em": "2026-11-23",
+      "verificado_em": "2026-11-24",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -169,22 +184,7 @@
       "video_id": "BzspzfjwNEU",
       "channel_id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
       "data": "2026-11-18",
-      "verificado_em": "2026-11-23",
-      "status": "candidato",
-      "revisao_editorial": false,
-      "revisao_integral": false
-    },
-    {
-      "id": "4746286d74080f2f79bd",
-      "ambiente": "business",
-      "tipo": "video",
-      "titulo": "Senado debate ajuste fiscal, dólar tem maior alta do ano, EUA restringem venda de chips para Brasil",
-      "url": "https://www.youtube.com/watch?v=BKwXDTxfkuQ",
-      "fonte": "fgv",
-      "video_id": "BKwXDTxfkuQ",
-      "channel_id": "UC8DhN1cJi0QklBQot5hv_kg",
-      "data": "2026-11-17",
-      "verificado_em": "2026-11-23",
+      "verificado_em": "2026-11-24",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -199,7 +199,7 @@
       "video_id": "evQcbeOlvWc",
       "channel_id": "UCWo4IA01TXzBeGJJKWHOG9g",
       "data": "2026-11-10",
-      "verificado_em": "2026-11-23",
+      "verificado_em": "2026-11-24",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -214,7 +214,7 @@
       "video_id": "UzjGCg0W67w",
       "channel_id": "UC9aeQQ-NqjHS3nfiod2PMSA",
       "data": "2026-11-10",
-      "verificado_em": "2026-11-23",
+      "verificado_em": "2026-11-24",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -229,7 +229,7 @@
       "video_id": "DLtfpIeAPrc",
       "channel_id": "UC9aeQQ-NqjHS3nfiod2PMSA",
       "data": "2026-11-09",
-      "verificado_em": "2026-11-23",
+      "verificado_em": "2026-11-24",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -244,22 +244,7 @@
       "video_id": "gmmvzYJZMGs",
       "channel_id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
       "data": "2026-10-30",
-      "verificado_em": "2026-11-23",
-      "status": "candidato",
-      "revisao_editorial": false,
-      "revisao_integral": false
-    },
-    {
-      "id": "9dbfab309d1f6c812df1",
-      "ambiente": "business",
-      "tipo": "video",
-      "titulo": "How to Manage AI Adoption Across Your Organization",
-      "url": "https://www.youtube.com/watch?v=bcPJfRL94Qw",
-      "fonte": "hbr",
-      "video_id": "bcPJfRL94Qw",
-      "channel_id": "UCWo4IA01TXzBeGJJKWHOG9g",
-      "data": "2026-10-21",
-      "verificado_em": "2026-11-23",
+      "verificado_em": "2026-11-24",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -274,7 +259,7 @@
       "video_id": "b8duDcufp8g",
       "channel_id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
       "data": "2026-08-11",
-      "verificado_em": "2026-11-23",
+      "verificado_em": "2026-11-24",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
