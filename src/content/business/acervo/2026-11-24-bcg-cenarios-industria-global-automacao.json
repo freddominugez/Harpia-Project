@@ -1,0 +1,28 @@
+{
+  "titulo": "BCG simula como tecnologia, comércio e energia podem mudar a indústria global",
+  "resumo": "Modelo da BCG para 54 países estima que, sem ganhos de produtividade, polos industriais podem perder US$ 1,8 trilhão em valor adicionado. É cenário, não previsão com prazo.",
+  "fonte": "bcg",
+  "url": "https://www.bcg.com/publications/2026/ai-automation-reshape-manufacturing",
+  "tipo": "noticia",
+  "trilha": "estrategia",
+  "autores": "Daniel Küpper, Nikolaus Lang, Alex Yurek e Romain Pavy-Biraud",
+  "data": "2026-11-23",
+  "data_precisa": true,
+  "idioma": "en",
+  "acesso": "Artigo institucional integral aberto em inglês, com descrição dos cenários, da pesquisa com executivos e das hipóteses do modelo.",
+  "evidencia": "Simulação da BCG Institute sobre aproximadamente US$ 16 trilhões de valor adicionado industrial de 2025, cobrindo 54 países e 47 setores; parte dos parâmetros vem de pesquisa com 1.000 executivos industriais.",
+  "limites": "Os números são cenários condicionais, não perdas realizadas ou previsão de quando fábricas se mudarão. O modelo supõe deslocamento imediato da produção transferível, não projeta crescimento industrial global e mantém câmbio e desequilíbrios comerciais constantes. A BCG vende consultoria em estratégia industrial.",
+  "status": "publicado",
+  "justificativa": "Fonte aprovada, autores e método identificados, tema atual de estratégia industrial; o texto define a base de comparação e as hipóteses que limitam as simulações.",
+  "revisor": "business_verify_24",
+  "revisado_em": "2026-11-24",
+  "corpo": [
+    "Daniel Küpper, Nikolaus Lang, Alex Yurek e Romain Pavy-Biraud publicaram em 23 de novembro uma análise da BCG sobre a localização da produção industrial. O modelo da consultoria redistribui, sob diferentes hipóteses, cerca de US$ 16 trilhões de valor adicionado industrial registrado em 2025. Ele cobre 54 países e 47 setores, responsáveis por mais de 95% do total mundial considerado pelos autores.",
+    "Se as desvantagens competitivas atuais persistirem sem ganhos de produtividade, o modelo indica que cerca de US$ 1,8 trilhão em valor adicionado industrial hoje produzido nos Estados Unidos, na Europa Ocidental e no Japão poderia migrar para outras regiões. A BCG estima 26 milhões de empregos industriais e relacionados em risco nesse cenário. Esses valores representam uma redistribuição possível da atividade existente, não uma perda já observada nem uma previsão com prazo para ocorrer.",
+    "A simulação avalia quais atividades poderiam mudar de lugar e compara destinos por 42 fatores de custo e qualidade. Uma pesquisa com 1.000 executivos industriais ajudou a estimar a parcela transferível e os pesos desses fatores. O cálculo supõe que toda produção capaz de migrar o faria imediatamente para um destino mais competitivo; não modela crescimento global nem mudanças futuras de câmbio e desequilíbrios comerciais. Por isso, o resultado depende fortemente das hipóteses escolhidas.",
+    "A BCG também simula ganhos de produtividade com automação. Na Europa Ocidental, o emprego industrial direto e indireto iria de cerca de 42 milhões hoje a 27,6 milhões sem avanço de produtividade; com fábricas 2,5 vezes mais produtivas, o cenário sobe para 34,9 milhões, ainda abaixo do nível atual. Aproximadamente 40 milhões só aparecem na hipótese extrema de produtividade cinco vezes maior, acima do patamar que a própria BCG considera geralmente alcançável. A consultoria presta serviços nessa área; os cenários servem para comparar sensibilidades, não para prometer preservação de empregos."
+  ],
+  "referencias": [
+    "https://www.bcg.com/publications/2026/ai-automation-reshape-manufacturing"
+  ]
+}

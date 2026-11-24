@@ -1,0 +1,72 @@
+{
+  "data": "2026-11-24",
+  "timezone": "America/Fortaleza",
+  "items": [
+    {
+      "path": "src/content/business/acervo/2026-11-24-bcg-cenarios-industria-global-automacao.json",
+      "sha256": "0d91834c63ac848a7148fe3aad8acb2902b8a3576a3b08eb1ce5379b595fefc1",
+      "sha256_publicado": "07f49ac58c349e2a8c79871bafe744f78812036cd34db2d21f4be995ed8e9c28",
+      "pauta": "business_pauta_24",
+      "verificacao": {
+        "responsavel": "business_verify_24",
+        "consultado_em": "2026-11-24",
+        "escopo": "Artigo BCG integral consultado; hipóteses e resultados de simulação separados de observações e previsão temporal.",
+        "evidencias": [
+          "https://www.bcg.com/publications/2026/ai-automation-reshape-manufacturing"
+        ],
+        "alegacoes": [
+          {
+            "texto": "Daniel Küpper, Nikolaus Lang, Alex Yurek e Romain Pavy-Biraud assinam artigo da BCG de 23 de novembro de 2026.",
+            "url": "https://www.bcg.com/publications/2026/ai-automation-reshape-manufacturing",
+            "resultado": "confirmada",
+            "local": "Cabeçalho da publicação."
+          },
+          {
+            "texto": "Modelo da BCG redistribui aproximadamente US$ 16 trilhões de MVA de 2025 em 54 países e 47 setores, mais de 95 por cento do total mundial.",
+            "url": "https://www.bcg.com/publications/2026/ai-automation-reshape-manufacturing",
+            "resultado": "confirmada",
+            "local": "How the Manufacturing Competitiveness Advisor Tool Works."
+          },
+          {
+            "texto": "Pesquisa de mil executivos industriais informa a parcela móvel e os pesos de 42 fatores de competitividade.",
+            "url": "https://www.bcg.com/publications/2026/ai-automation-reshape-manufacturing",
+            "resultado": "confirmada",
+            "local": "How the Model Works."
+          },
+          {
+            "texto": "Sem ganhos de produtividade, a simulação põe US$ 1,8 trilhão de MVA e 26 milhões de empregos relacionados à indústria dos EUA, Europa Ocidental e Japão em risco de deslocamento.",
+            "url": "https://www.bcg.com/publications/2026/ai-automation-reshape-manufacturing",
+            "resultado": "qualificada",
+            "local": "The Evolution of Manufacturing Competitiveness; cenário condicional."
+          },
+          {
+            "texto": "O modelo supõe migração imediata da produção transferível, não prevê crescimento nem momento da mudança e mantém câmbio e desequilíbrios comerciais constantes.",
+            "url": "https://www.bcg.com/publications/2026/ai-automation-reshape-manufacturing",
+            "resultado": "confirmada",
+            "local": "How to Interpret the Results."
+          },
+          {
+            "texto": "Na Europa Ocidental, cenários de emprego são cerca de 27,6 milhões sem ganho, 34,9 milhões com produtividade 2,5 vezes e 40 milhões apenas na hipótese extrema 5 vezes.",
+            "url": "https://www.bcg.com/publications/2026/ai-automation-reshape-manufacturing",
+            "resultado": "qualificada",
+            "local": "How the Factory of the Future May Impact Jobs."
+          }
+        ]
+      },
+      "selecao": {
+        "responsavel": "business_select_24",
+        "nota": 8.2,
+        "justificativa": "Pauta recente e relevante para estratégia industrial, com escopo e hipóteses do modelo descritos e interesse comercial da consultoria explicitado.",
+        "criterios": {
+          "rigor": 7.8,
+          "relevancia": 8.7,
+          "utilidade": 8.3,
+          "atualidade": 9.6,
+          "clareza": 8.3,
+          "conflitos": 6.8
+        }
+      },
+      "publicacao": "editorial_round_24"
+    }
+  ]
+}

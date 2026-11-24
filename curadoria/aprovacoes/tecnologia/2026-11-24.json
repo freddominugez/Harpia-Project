@@ -1,0 +1,150 @@
+{
+  "data": "2026-11-24",
+  "timezone": "America/Fortaleza",
+  "items": [
+    {
+      "path": "src/content/artigos/2026-grammar-as-a-draft-more-tokens-per-speculative-dec.json",
+      "sha256": "3f731f73040c5c11f415a4a28bf1283ab16f2fa4a96bdf193572911538a56e1c",
+      "pauta": {
+        "responsavel": "tech_pauta_24",
+        "justificativa": "Preprint recente de pesquisadores da Google com técnica mensurada para decodificação especulativa em saídas estruturadas."
+      },
+      "verificacao": {
+        "responsavel": "tech_verify_24",
+        "consultado_em": "2026-11-24",
+        "evidencias": [
+          "https://arxiv.org/abs/2611.28349",
+          "https://arxiv.org/html/2611.28349v1"
+        ],
+        "alegacoes": [
+          {
+            "texto": "Registro arXiv identifica John Zhang e Silky Arora, da Google, em preprint submetido em 20 de novembro de 2026.",
+            "url": "https://arxiv.org/abs/2611.28349",
+            "resultado": "confirmada",
+            "local": "Registro arXiv, título, autoria e histórico."
+          },
+          {
+            "texto": "GaaD usa tokens forçados pela gramática como segundo proponente, combina-os ao rascunho e aceita esses slots sem calcular logits.",
+            "url": "https://arxiv.org/html/2611.28349v1",
+            "resultado": "confirmada",
+            "local": "Seções 3 e 4, método e implementação."
+          },
+          {
+            "texto": "Implementações em vllm-torchtpu e runtime Rust foram avaliadas em perfil JSON com campos fixos, geração gulosa e TPU v7x.",
+            "url": "https://arxiv.org/html/2611.28349v1",
+            "resultado": "confirmada",
+            "local": "Seções 4 e 5.1, desenho experimental."
+          },
+          {
+            "texto": "No benchmark TPU, a decodificação foi 2,66 a 2,81 vezes mais rápida com lote um e 1,14 a 1,70 vez com lote 64 frente ao mesmo proponente sem GaaD.",
+            "url": "https://arxiv.org/html/2611.28349v1",
+            "resultado": "confirmada",
+            "local": "Seção 5.2 e Tabela 1, melhor configuração isolada de cada drafter."
+          },
+          {
+            "texto": "Em tráfego misto, pedidos de texto livre no mesmo lote tiveram tempo por token de saída de sete a quarenta e dois por cento maior.",
+            "url": "https://arxiv.org/html/2611.28349v1",
+            "resultado": "qualificada",
+            "local": "Seções 5.6 e 7, efeito em tráfego misto."
+          },
+          {
+            "texto": "A gramática continua válida, mas a técnica não preserva a distribuição de saída do modelo e pode alterar valores; acurácia da tarefa não foi medida.",
+            "url": "https://arxiv.org/html/2611.28349v1",
+            "resultado": "qualificada",
+            "local": "Seções 3.5, 5.4 e 7, equivalência e limitações."
+          }
+        ],
+        "escopo": "Registro e artigo integral arXiv examinados; benchmark restrito a JSON e resultados não reproduzidos pelo Harpya."
+      },
+      "selecao": {
+        "responsavel": "tech_select_24",
+        "nota": 4.3,
+        "justificativa": "Método claro e implementação em dois runtimes, com ganhos medidos e perda da equivalência de saída explicitada no texto.",
+        "criterios": {
+          "rigor": 4.1,
+          "relevancia": 4.6,
+          "utilidade": 4.5,
+          "atualidade": 4.6,
+          "clareza": 4.2
+        }
+      },
+      "publicacao": {
+        "responsavel": "editorial_round_24",
+        "status": "aguardando_portao"
+      },
+      "sha256_publicado": "990b872e88ef1e8a89bc875a6c0ccdaad5feb58c5325fbdfe5b54472fb8f7560"
+    },
+    {
+      "path": "src/content/noticias/2026-11-24-google-gramatica-json-decodificacao-especulativa.json",
+      "sha256": "05af192d8af8b8bd5bfa1700e3d366abf9db4bef73f2508bb04f654640eb42e1",
+      "pauta": {
+        "responsavel": "tech_pauta_24",
+        "justificativa": "Preprint recente de pesquisadores da Google com técnica mensurada para decodificação especulativa em saídas estruturadas."
+      },
+      "verificacao": {
+        "responsavel": "tech_verify_24",
+        "consultado_em": "2026-11-24",
+        "evidencias": [
+          "https://arxiv.org/abs/2611.28349",
+          "https://arxiv.org/html/2611.28349v1"
+        ],
+        "alegacoes": [
+          {
+            "texto": "Registro arXiv identifica John Zhang e Silky Arora, da Google, em preprint submetido em 20 de novembro de 2026.",
+            "url": "https://arxiv.org/abs/2611.28349",
+            "resultado": "confirmada",
+            "local": "Registro arXiv, título, autoria e histórico."
+          },
+          {
+            "texto": "GaaD usa tokens forçados pela gramática como segundo proponente, combina-os ao rascunho e aceita esses slots sem calcular logits.",
+            "url": "https://arxiv.org/html/2611.28349v1",
+            "resultado": "confirmada",
+            "local": "Seções 3 e 4, método e implementação."
+          },
+          {
+            "texto": "Implementações em vllm-torchtpu e runtime Rust foram avaliadas em perfil JSON com campos fixos, geração gulosa e TPU v7x.",
+            "url": "https://arxiv.org/html/2611.28349v1",
+            "resultado": "confirmada",
+            "local": "Seções 4 e 5.1, desenho experimental."
+          },
+          {
+            "texto": "No benchmark TPU, a decodificação foi 2,66 a 2,81 vezes mais rápida com lote um e 1,14 a 1,70 vez com lote 64 frente ao mesmo proponente sem GaaD.",
+            "url": "https://arxiv.org/html/2611.28349v1",
+            "resultado": "confirmada",
+            "local": "Seção 5.2 e Tabela 1, melhor configuração isolada de cada drafter."
+          },
+          {
+            "texto": "Em tráfego misto, pedidos de texto livre no mesmo lote tiveram tempo por token de saída de sete a quarenta e dois por cento maior.",
+            "url": "https://arxiv.org/html/2611.28349v1",
+            "resultado": "qualificada",
+            "local": "Seções 5.6 e 7, efeito em tráfego misto."
+          },
+          {
+            "texto": "A gramática continua válida, mas a técnica não preserva a distribuição de saída do modelo e pode alterar valores; acurácia da tarefa não foi medida.",
+            "url": "https://arxiv.org/html/2611.28349v1",
+            "resultado": "qualificada",
+            "local": "Seções 3.5, 5.4 e 7, equivalência e limitações."
+          }
+        ],
+        "escopo": "Registro e artigo integral arXiv examinados; benchmark restrito a JSON e resultados não reproduzidos pelo Harpya."
+      },
+      "selecao": {
+        "responsavel": "tech_select_24",
+        "nota": 4.3,
+        "justificativa": "Método claro e implementação em dois runtimes, com ganhos medidos e perda da equivalência de saída explicitada no texto.",
+        "criterios": {
+          "rigor": 4.1,
+          "relevancia": 4.6,
+          "utilidade": 4.5,
+          "atualidade": 4.6,
+          "clareza": 4.2
+        }
+      },
+      "publicacao": {
+        "responsavel": "editorial_round_24",
+        "status": "aguardando_portao"
+      },
+      "sha256_publicado": "eb6897301f3f954bed7678ed1b12d4b730038eab6dc88bc9bfd2c86f90bd0f44"
+    }
+  ]
+}

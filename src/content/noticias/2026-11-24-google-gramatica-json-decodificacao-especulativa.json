@@ -1,0 +1,26 @@
+{
+  "titulo": "Pesquisadores da Google usam gramática do JSON para acelerar decodificação especulativa",
+  "resumo": "GaaD usa tokens obrigatórios do formato para acelerar um teste de geração JSON em TPU. A saída segue válida, mas seus valores e sua distribuição podem mudar.",
+  "data": "2026-11-20",
+  "categoria": "pesquisa",
+  "icone": "chip",
+  "corpo": [
+    "John Zhang e Silky Arora, da Google, apresentaram em 20 de novembro o Grammar-as-a-Draft (GaaD), método para acelerar a geração de saídas estruturadas por modelos de linguagem. Na decodificação especulativa, um proponente barato sugere tokens e o modelo principal verifica vários de uma vez. Quando a resposta precisa obedecer a um esquema JSON, esse proponente pode desperdiçar propostas em chaves e sinais que a gramática já determina. O trabalho está disponível como preprint no arXiv.",
+    "GaaD usa a própria gramática como segundo proponente. Antes da verificação, o sistema combina os tokens sugeridos pelo proponente com aqueles que o formato obriga, como nomes de campos e delimitadores. Os tokens impostos pela gramática são aceitos sem calcular seus logits. Os autores implementaram a técnica em vllm-torchtpu e também em um runtime escrito em Rust.",
+    "Num benchmark de um único perfil JSON, com campos fixos e geração gulosa, a implementação em TPU v7x decodificou de 2,66 a 2,81 vezes mais rápido com lote de uma requisição e de 1,14 a 1,70 vez mais rápido em lote de 64, frente à melhor configuração de cada proponente sem GaaD. Em tráfego misto, pedidos de texto livre no mesmo lote tiveram tempo por token de saída de 7% a 42% maior. Os números são dos testes dos autores e não demonstram ganho semelhante em texto livre ou em outros formatos.",
+    "Há uma troca importante: aceitar os tokens impostos pela gramática altera a distribuição de saída em relação à decodificação usual do modelo. O JSON continua válido, mas a tokenização e até os valores gerados podem mudar. O estudo não mediu acurácia de tarefa nem avaliou amostragem estocástica. O Harpya não reproduziu os experimentos; antes de adotar a técnica, seria preciso avaliar qualidade e latência no formato, modelo e carga de trabalho reais."
+  ],
+  "harpia": "Em saídas estruturadas, parte do texto já está decidida pelo esquema. GaaD explora essa informação para reduzir verificações, mas a aceleração medida vem com mudança possível nos valores produzidos pelo modelo.",
+  "fontes": [
+    {
+      "veiculo": "arXiv · preprint da Google",
+      "titulo": "Grammar-as-a-Draft: More Tokens per Speculative Decoding Step on Grammar-Constrained Structured Outputs",
+      "url": "https://arxiv.org/abs/2611.28349"
+    }
+  ],
+  "status": "publicado",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-24",
+  "verificado_em": "2026-11-24",
+  "ordem": 999
+}
