@@ -1,0 +1,16 @@
+{
+  "id": "4nnFw0TPDKM",
+  "titulo": "Harness Adapters - Train Your Model to Your Harness",
+  "canal": "Sam Witteveen",
+  "modulo": 6,
+  "nivel": "Intermediário",
+  "resumo": "Apresenta o projeto da Hugging Face que treina adaptadores LoRA para o Qwen3.8-27B funcionar melhor em cada ambiente de agente de código. Para quem aplica PEFT a agentes.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=4nnFw0TPDKM",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-24",
+  "verificado_em": "2026-11-24"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "N0sdDFOLui4",
+  "titulo": "Why Alignment Mid-Training Isn’t Enough | Jonathan Bostock (Arcadia Impact)",
+  "canal": "FAR․AI",
+  "modulo": 7,
+  "nivel": "Avançado",
+  "resumo": "Mostra, num ambiente sintético, que cerca de 2% de exemplos contrários no ajuste fino desfazem o efeito do alinhamento feito no meio do treino. Para quem estuda robustez do alinhamento.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=N0sdDFOLui4",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-24",
+  "verificado_em": "2026-11-24"
+}
