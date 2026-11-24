@@ -1,171 +1,255 @@
 [
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "ERA: Embed, Route, Adapt for Cold-Start Cross-Model Latent Retrieval",
-  "url": "https://arxiv.org/abs/2611.26919",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "DM-Lab at TREC 2026 RAG: Multi-Query Retrieval, Ensemble Judging, and Claim-Pack Generation",
+  "url": "https://arxiv.org/abs/2611.28233",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "Decision Columns as an Index: Interpretable Embeddings for Explainable Entity Matching and Search",
-  "url": "https://arxiv.org/abs/2611.27910",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "Beyond Relevance: An Empirical Study of Multimodal LLMs for Diversity-Aware Recommendation Reranking",
+  "url": "https://arxiv.org/abs/2611.28379",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "Which Dwarf Is This? Doppeldwarf-306 and Near-Identical Instance Retrieval",
-  "url": "https://arxiv.org/abs/2611.27490",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "The abc index: Exact Retrieval for Learned Sparse Representations",
+  "url": "https://arxiv.org/abs/2611.28555",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "DiTraR: Diverse Scorers and Transcript-Guided Re-ranking for Video Corpus Moment Retrieval",
-  "url": "https://arxiv.org/abs/2611.27931",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "PROSPER: LLMs as Sparse Retrievers for First-Stage Product Search",
+  "url": "https://arxiv.org/abs/2611.28645",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "TS-GEAR: Taobao Shangou GEnerative Ad Retrieval",
-  "url": "https://arxiv.org/abs/2611.12180",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "Structure-Exploiting Hierarchical Retrieval for Long Narrative Documents: A Precision-Oriented Alternative to Learned Abstraction Trees",
+  "url": "https://arxiv.org/abs/2611.29966",
+  "data": "24/11/2026",
+  "ts": 1795496400
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Can Search Agents Correct Their Own Errors? Evaluating Retrieval, Evidence Delivery, and Answer Completion",
+  "url": "https://arxiv.org/abs/2611.30243",
+  "data": "24/11/2026",
+  "ts": 1795496400
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Close the Loop on the Retrievability Gap",
+  "url": "https://arxiv.org/abs/2611.28146",
+  "data": "24/11/2026",
+  "ts": 1795496400
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "GERF: A Token-Efficient Multimodal Retrieval Framework for Schema-Guided Scientific Information Extraction",
+  "url": "https://arxiv.org/abs/2611.28295",
+  "data": "24/11/2026",
+  "ts": 1795496400
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Zarc: Exact Nearest Neighbors over a Billion Vectors in Seconds",
+  "url": "https://arxiv.org/abs/2611.29252",
+  "data": "24/11/2026",
+  "ts": 1795496400
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Where Do Fact-Checking Errors Arise? Separating Retrieval, Search Control and Judgement in Evidence-Grounded Verification",
+  "url": "https://arxiv.org/abs/2611.29697",
+  "data": "24/11/2026",
+  "ts": 1795496400
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Look Before You Leap: Re-Architecting Disk-Resident Vector Search with TriVS",
+  "url": "https://arxiv.org/abs/2611.29948",
+  "data": "24/11/2026",
+  "ts": 1795496400
+ },
+ {
+  "fonte": "arXiv cs.IR",
+  "titulo": "Pixel as the Common Language: Unified Multimodal Embedding via Visual Rendering",
+  "url": "https://arxiv.org/abs/2611.30069",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Depth-Linked Residual Tokens for Multimodal Retrieval and Generation",
-  "url": "https://arxiv.org/abs/2611.26752",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "RefineKV: Query-Adaptive KV Cache Compression via Attention-Error Bounds",
+  "url": "https://arxiv.org/abs/2611.28171",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "PLoQ: A Prompt-Specific Low-Rank Basis for 4-bit Quantization of LLM Activations",
-  "url": "https://arxiv.org/abs/2611.27092",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "RadAG: Reward-Adversarial Attention Guidance for Efficient Inference-Time Alignment of Diffusion Models",
+  "url": "https://arxiv.org/abs/2611.28809",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "The Vulnerability Window: Decision Instability in Quantized Reward Models",
-  "url": "https://arxiv.org/abs/2611.27155",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "S$^2$LMR: Supervised Sequential Long-Context Multi-Step Retriever",
+  "url": "https://arxiv.org/abs/2611.28995",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "BusemannFormer: Horospherical Self-Attention for Hyperbolic Graph Transformers",
-  "url": "https://arxiv.org/abs/2611.27167",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "Tissot indicatrix for location encoders: Characterizing local distortion in learned geographic embeddings",
+  "url": "https://arxiv.org/abs/2611.29249",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "A Continuous Relaxation of Quantization-Aware Training",
-  "url": "https://arxiv.org/abs/2611.27056",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "BQDNA: Multi-Head Binary Spherical Quantization for Genomic Sequence Modeling",
+  "url": "https://arxiv.org/abs/2611.29395",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Can pretrained Transformers deliver semiparametrically efficient inference?",
-  "url": "https://arxiv.org/abs/2611.27666",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "Randomized Weighted Distance Nearest Neighbor Classification",
+  "url": "https://arxiv.org/abs/2611.29720",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Sampling non-abelian lattice gauge theories with diffusion models",
-  "url": "https://arxiv.org/abs/2611.27821",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "Fast 4-bit KV-Cache Decoding on Hopper GPUs: Why Existing Kernels Are Slow and How to Fix Them",
+  "url": "https://arxiv.org/abs/2611.30027",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Efficient Inference for Inverse Reinforcement Learning and Dynamic Discrete Choice Models",
-  "url": "https://arxiv.org/abs/2512.24407",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "LambdaLens: Auditing a Representation-Changing Hyperparameter in Graph Neighbor Embedding",
+  "url": "https://arxiv.org/abs/2611.30140",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "SaturQ: Saturation-Aware Mixed-Precision Quantization",
-  "url": "https://arxiv.org/abs/2607.12266",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "Composing Independently Distilled Memory and Retrieval Policies for Long-Term Agents",
+  "url": "https://arxiv.org/abs/2611.30230",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Approximating Softmax in Pretrained LLMs: Model Sensitivity and Kernel Acceleration",
-  "url": "https://arxiv.org/abs/2609.33586",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "Near-Far Attention: Region-Aware Sparse Retrieval for Long-Context LLM Decoding",
+  "url": "https://arxiv.org/abs/2611.30554",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Pretraining Transformers with Quantized Softmax in Attention",
-  "url": "https://arxiv.org/abs/2609.33591",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "PVFormer: Proper Velocity Transformer for Stable and Scalable Hyperbolic Representation Learning",
+  "url": "https://arxiv.org/abs/2611.30785",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Softmax-Free Attention in Spiking Transformers as Zero-Temperature Two-Level Systems: Applications to XAI",
-  "url": "https://arxiv.org/abs/2610.15968",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "RoFE: Rotated Frozen Embeddings for Low-Data Multimodal Tabular Learning",
+  "url": "https://arxiv.org/abs/2611.31049",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "How Far Does Lossless Re-tokenization Move an RLVR Update?",
-  "url": "https://arxiv.org/abs/2611.27083",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "NoHairCache: Calibrate-Once KV Cache Eviction with One Power-Law Exponent",
+  "url": "https://arxiv.org/abs/2611.29006",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "LongCat Recall Sparse Attention: Co-Designing Key Organization and Retrieval for Long-Context Inference",
-  "url": "https://arxiv.org/abs/2611.27233",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "HGDNA: Overlapping k-mer Tokenization for Efficient Autoregressive Genomic Language Models",
+  "url": "https://arxiv.org/abs/2611.29400",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "Alignment without Transfer: Tokenization Impacts Cross-lingual Representations during Multilingual Language Model Pretraining",
-  "url": "https://arxiv.org/abs/2611.27491",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "GraphSeer: Multimodal Knowledge Graph Relational Image Retrieval with MLLMs",
+  "url": "https://arxiv.org/abs/2611.29470",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "How Many Bytes Has a BPE Model Seen? Estimating Byte-Token Exposure in Pretraining from Corpus Statistics and Embedding Norms",
-  "url": "https://arxiv.org/abs/2611.27506",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "Estimating Silenced Tokens in Quantized LLMs",
+  "url": "https://arxiv.org/abs/2611.29536",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "Compute Optimal Tokenization",
-  "url": "https://arxiv.org/abs/2605.01188",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "How Relations Impose Embedding-Space Structure",
+  "url": "https://arxiv.org/abs/2611.29986",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "Probing the Prompt KV Cache: Where It Becomes Dispensable",
-  "url": "https://arxiv.org/abs/2605.30574",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "Parameter-Efficient Vocabulary Expansion via Cross-Lingual Embedding Alignment",
+  "url": "https://arxiv.org/abs/2611.30123",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "The Linguistic Structure of Dependency-Conditioned Embeddings",
-  "url": "https://arxiv.org/abs/2611.25909",
-  "data": "23/11/2026",
-  "ts": 1795410000
+  "titulo": "Retrieval-Augmented Generation in the Agentic Era: Tradition, Present, and Prospect",
+  "url": "https://arxiv.org/abs/2611.30181",
+  "data": "24/11/2026",
+  "ts": 1795496400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Quantizing Diffusion LLMs under Parallel Decoding: Commitment Risk and the Parallelism Tax",
+  "url": "https://arxiv.org/abs/2611.30587",
+  "data": "24/11/2026",
+  "ts": 1795496400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "DKnown-Jev-2: Article-Level Answer-Evidence Classification and Efficient Inference with a Pre-trained Language Model",
+  "url": "https://arxiv.org/abs/2611.31056",
+  "data": "24/11/2026",
+  "ts": 1795496400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "MemVanta: Memory-Efficient CPU Inference for Quantized GGUF Language Models",
+  "url": "https://arxiv.org/abs/2611.27997",
+  "data": "24/11/2026",
+  "ts": 1795496400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Fine-Tuning Large Language Models for Relation Extraction within a Retrieval-Augmented Generation Framework",
+  "url": "https://arxiv.org/abs/2406.14745",
+  "data": "24/11/2026",
+  "ts": 1795496400
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "The Token Tax: Systematic Bias in Multilingual Tokenization",
+  "url": "https://arxiv.org/abs/2509.05486",
+  "data": "24/11/2026",
+  "ts": 1795496400
  },
  {
   "fonte": "OpenAI",
