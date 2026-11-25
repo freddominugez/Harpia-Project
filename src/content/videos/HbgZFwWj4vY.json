@@ -1,0 +1,16 @@
+{
+  "id": "HbgZFwWj4vY",
+  "titulo": "What Data Do AI Agents Need? | Stanford CS329Z Lecture 10 with John Yang",
+  "canal": "Stanford Online",
+  "modulo": 8,
+  "nivel": "Intermediário",
+  "resumo": "Aula de Stanford sobre os dados de que agentes precisam: rastros, demonstrações e feedback, dados para otimizar e para avaliar, e por que agentes pedem ambientes. Para quem treina ou avalia agentes.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=HbgZFwWj4vY",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-25",
+  "verificado_em": "2026-11-25"
+}
