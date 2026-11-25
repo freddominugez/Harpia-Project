@@ -1,0 +1,78 @@
+{
+  "data": "2026-11-25",
+  "timezone": "America/Fortaleza",
+  "items": [
+    {
+      "path": "src/content/noticias/anthropic-neuronios-legiveis-interpretabilidade.json",
+      "sha256": "c5caa9c88ec7d988997850914ac75166fe46c60e17e7822dcde1f0081fc686b4",
+      "pauta": {
+        "responsavel": "tech_pauta_25",
+        "justificativa": "Dois estudos primários recentes sobre leitura de neurônios e limites de intervenções em modelos abertos."
+      },
+      "verificacao": {
+        "responsavel": "tech_verify_25",
+        "consultado_em": "2026-11-25",
+        "evidencias": [
+          "https://alignment.anthropic.com/2026/neuron-basis-theory/",
+          "https://alignment.anthropic.com/2026/neuron-basis-applications/"
+        ],
+        "alegacoes": [
+          {
+            "texto": "Jasmine Shone e Lisa Dunlap publicaram as duas partes no blog de ciência de alinhamento da Anthropic em 23 de novembro de 2026.",
+            "url": "https://alignment.anthropic.com/2026/neuron-basis-theory/",
+            "resultado": "confirmada",
+            "local": "Cabeçalho e autoria."
+          },
+          {
+            "texto": "Em amostras de modelos abertos de 8 a 32 bilhões de parâmetros, no máximo cerca de 1% dos casos de disparo envolveu conceitos não relacionados.",
+            "url": "https://alignment.anthropic.com/2026/neuron-basis-theory/",
+            "resultado": "qualificada",
+            "local": "Parte 1, primeira objeção e escopo dos modelos."
+          },
+          {
+            "texto": "Intervir em 44 a 273 neurônios fez o modelo errar uma resposta em 15 de 18 casos; isso não equivale a apagar o fato.",
+            "url": "https://alignment.anthropic.com/2026/neuron-basis-theory/",
+            "resultado": "qualificada",
+            "local": "Parte 1, análise da distribuição de fatos."
+          },
+          {
+            "texto": "Na detecção de conceitos AxBench com Llama-3.1-8B, a abordagem de neurônios atingiu AUROC 0,903 frente a 0,888 de SAE e 0,875 de embeddings.",
+            "url": "https://alignment.anthropic.com/2026/neuron-basis-applications/",
+            "resultado": "confirmada",
+            "local": "Parte 2, Neurons as zero-shot detectors."
+          },
+          {
+            "texto": "Em 74 modelos experimentais com backdoors, 54% das palavras gatilho ficaram entre as 50 primeiras candidatas em média.",
+            "url": "https://alignment.anthropic.com/2026/neuron-basis-applications/",
+            "resultado": "qualificada",
+            "local": "Parte 2, backdoor models."
+          },
+          {
+            "texto": "Em 14 de 23 checkpoints WMDP-cyber avaliados, cloze scoring ainda colocou a resposta correta no topo na maioria das questões previamente acertadas.",
+            "url": "https://alignment.anthropic.com/2026/neuron-basis-applications/",
+            "resultado": "qualificada",
+            "local": "Parte 2, unlearning e limites."
+          }
+        ],
+        "escopo": "Dois textos técnicos originais consultados; números declarados pelas autoras, sem reprodução independente; resultados limitados aos modelos e tarefas estudados."
+      },
+      "selecao": {
+        "responsavel": "tech_select_25",
+        "nota": 4.2,
+        "justificativa": "Pauta técnica recente com metodologia e limites explicitados; texto corrigido após verificação independente.",
+        "criterios": {
+          "rigor": 4,
+          "relevancia": 4.6,
+          "utilidade": 4.2,
+          "atualidade": 4.6,
+          "clareza": 3.6
+        }
+      },
+      "publicacao": {
+        "responsavel": "editorial_round_25",
+        "status": "aguardando_portao"
+      },
+      "sha256_publicado": "ef0520ee50e7d646cb00907d1a1fd87f54ef35ccb65337d1ef259639730fc6e4"
+    }
+  ]
+}

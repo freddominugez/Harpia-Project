@@ -1,0 +1,33 @@
+{
+  "titulo": "Professores da Wharton questionam proposta de relatórios semestrais nos EUA",
+  "resumo": "Cinco professores questionam a proposta da SEC de permitir relatórios financeiros semestrais: a economia é incerta e menos informação pode afetar investidores.",
+  "fonte": "wharton",
+  "url": "https://knowledge.wharton.upenn.edu/article/how-would-semi-annual-reporting-affect-firms-investors-and-capital-formation/",
+  "tipo": "noticia",
+  "trilha": "mensuracao",
+  "autores": "Shankar Parameshwaran",
+  "data": "2026-11-24",
+  "data_precisa": true,
+  "idioma": "en",
+  "acesso": "Reportagem integral aberta em inglês; carta dos professores e proposta da SEC consultadas em suas fontes originais.",
+  "evidencia": "Reportagem de Knowledge at Wharton de 24 de novembro, carta de 6 de julho de cinco docentes à SEC e texto da proposta S7-2026-15.",
+  "limites": "A proposta da SEC ainda não é regra aprovada. A carta apresenta argumentos econômicos e hipóteses sobre efeitos futuros, sem medir impacto causal da mudança. Os professores escrevem em caráter individual e não representam posição oficial da Wharton ou da Universidade da Pensilvânia.",
+  "status": "publicado",
+  "justificativa": "Debate regulatório atual com fontes institucionais originais, relevância para transparência empresarial e limites das conclusões explícitos.",
+  "revisor": "business_verify_25",
+  "revisado_em": "2026-11-25",
+  "corpo": [
+    "A SEC propôs permitir que empresas listadas nos Estados Unidos escolham apresentar relatórios financeiros semestrais pelo formulário 10-S em vez dos atuais relatórios trimestrais 10-Q. A mudança ainda está em discussão e não é regra aprovada. A justificativa da agência inclui dar flexibilidade às companhias e reduzir possíveis custos de preparação e divulgação.",
+    "Em carta enviada à SEC, os professores Paul Fischer, Richard Lambert, Rongchen Li, Catherine Schrand e Christina Zhu contestam a dimensão da economia esperada. Eles argumentam que grande parte da produção de informações financeiras continuaria necessária para a gestão da empresa e que trocar uma divulgação a cada três meses por uma a cada seis meses apenas deslocaria o horizonte de atenção de curto prazo. Os cinco assinam em caráter individual, sem falar oficialmente pela Wharton.",
+    "Os autores também sustentam que intervalos maiores entre relatórios podem ampliar a diferença de informação entre administradores e investidores. Em sua análise, isso poderia aumentar spreads de negociação e custo de capital. São mecanismos e efeitos potenciais apresentados à consulta pública, não perdas medidas nem uma previsão quantificada para todas as companhias.",
+    "A SEC apresenta um contraponto na proposta: as empresas poderiam optar pelo formato que melhor atenda suas circunstâncias, e investidores continuariam recebendo informações por outros canais, como comunicados e relatórios eventuais. O debate coloca uma pergunta prática para companhias e investidores: quanto da economia operacional compensaria uma frequência menor de informação padronizada? A resposta depende da adoção e dos efeitos ainda não observados."
+  ],
+  "referencias": [
+    "https://knowledge.wharton.upenn.edu/article/how-would-semi-annual-reporting-affect-firms-investors-and-capital-formation/"
+  ],
+  "evidencias_revisao": [
+    "https://www.sec.gov/comments/S7-2026-15/s7202615-947459-2921308.pdf",
+    "https://www.sec.gov/files/rules/proposed/2026/33-11414.pdf",
+    "https://www.sec.gov/rules-regulations/2026/05/s7-2026-15"
+  ]
+}

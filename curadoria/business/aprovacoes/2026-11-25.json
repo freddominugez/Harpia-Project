@@ -1,0 +1,75 @@
+{
+  "data": "2026-11-25",
+  "timezone": "America/Fortaleza",
+  "items": [
+    {
+      "path": "src/content/business/acervo/2026-11-25-wharton-relatorios-semestrais-sec.json",
+      "sha256": "1181dc6864ff9033aec83bac94e586b9f9d2eacb8045fdfc210641340e62f7d7",
+      "sha256_publicado": "c673e3a152768dc3f9fca17e6cf18741776fc7d87e6928017561d9899e4d1f53",
+      "pauta": "business_pauta_25",
+      "verificacao": {
+        "responsavel": "business_verify_25",
+        "consultado_em": "2026-11-25",
+        "escopo": "Reportagem Wharton, carta original à SEC e proposta regulatória consultadas; argumentos separados de fatos e efeitos ainda não observados.",
+        "evidencias": [
+          "https://knowledge.wharton.upenn.edu/article/how-would-semi-annual-reporting-affect-firms-investors-and-capital-formation/",
+          "https://www.sec.gov/comments/S7-2026-15/s7202615-947459-2921308.pdf",
+          "https://www.sec.gov/files/rules/proposed/2026/33-11414.pdf",
+          "https://www.sec.gov/rules-regulations/2026/05/s7-2026-15"
+        ],
+        "alegacoes": [
+          {
+            "texto": "Reportagem Knowledge at Wharton de 24 de novembro de 2026 apresenta a carta dos cinco professores.",
+            "url": "https://knowledge.wharton.upenn.edu/article/how-would-semi-annual-reporting-affect-firms-investors-and-capital-formation/",
+            "resultado": "confirmada",
+            "local": "Cabeçalho e corpo da reportagem."
+          },
+          {
+            "texto": "A SEC propôs opção de relatórios semestrais 10-S em vez dos trimestrais 10-Q, sem regra final aprovada nesta consulta.",
+            "url": "https://www.sec.gov/files/rules/proposed/2026/33-11414.pdf",
+            "resultado": "confirmada",
+            "local": "Texto da proposta S7-2026-15; status Proposed Rule em página da SEC."
+          },
+          {
+            "texto": "Paul Fischer, Richard Lambert, Rongchen Li, Catherine Schrand e Christina Zhu assinam em caráter individual, sem representar oficialmente Wharton ou UPenn.",
+            "url": "https://www.sec.gov/comments/S7-2026-15/s7202615-947459-2921308.pdf",
+            "resultado": "confirmada",
+            "local": "Carta de 6 de julho de 2026, página 1."
+          },
+          {
+            "texto": "A carta questiona a economia esperada e argumenta que as empresas continuariam produzindo informação contábil para gestão e outros fins.",
+            "url": "https://www.sec.gov/comments/S7-2026-15/s7202615-947459-2921308.pdf",
+            "resultado": "confirmada",
+            "local": "Carta, páginas 1 e 2."
+          },
+          {
+            "texto": "A carta argumenta que menor frequência pode ampliar assimetria de informação, spreads e custo de capital; são efeitos potenciais, não resultados medidos.",
+            "url": "https://www.sec.gov/comments/S7-2026-15/s7202615-947459-2921308.pdf",
+            "resultado": "qualificada",
+            "local": "Carta, páginas 2 e 3."
+          },
+          {
+            "texto": "A SEC discute flexibilidade, redução de ônus e outros meios de divulgação, como 8-K e chamadas de resultados.",
+            "url": "https://www.sec.gov/files/rules/proposed/2026/33-11414.pdf",
+            "resultado": "qualificada",
+            "local": "Justificativa e discussão de canais alternativos na proposta."
+          }
+        ]
+      },
+      "selecao": {
+        "responsavel": "business_select_25",
+        "nota": 8.1,
+        "justificativa": "Discussão regulatória recente e verificável com contraponto da SEC e limites de causalidade explicitados.",
+        "criterios": {
+          "rigor": 8.2,
+          "relevancia": 8.2,
+          "utilidade": 8.1,
+          "atualidade": 9.4,
+          "clareza": 8.4,
+          "conflitos": 7.5
+        }
+      },
+      "publicacao": "editorial_round_25"
+    }
+  ]
+}
