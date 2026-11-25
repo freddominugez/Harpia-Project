@@ -1,0 +1,33 @@
+{
+  "titulo": "Pesquisa da Anthropic defende que neurônios de modelos de linguagem são mais legíveis do que a área supunha",
+  "resumo": "Em dois textos de 23/11, pesquisadoras testam três objeções clássicas à leitura de neurônios e relatam que o desaprendizado mais esconde do que apaga.",
+  "data": "2026-11-23",
+  "categoria": "pesquisa",
+  "icone": "lupa",
+  "corpo": [
+    "A equipe de ciência de alinhamento da Anthropic publicou em 23 de novembro dois textos assinados por Jasmine Shone, do programa Anthropic Fellows, e Lisa Dunlap. A proposta é voltar a estudar modelos de linguagem pelos neurônios individuais, abordagem que a área de interpretabilidade vinha trocando por ferramentas como os autoencoders esparsos.",
+    "O primeiro texto examina três objeções: um neurônio dispararia para coisas sem relação entre si, o sentido de um conceito mudaria de uma camada para outra e os fatos estariam espalhados por muitos neurônios. Nos modelos testados, de 8 a 32 bilhões de parâmetros (Llama 3.1, Qwen3 e OLMo 3), as autoras relatam que um neurônio contribui com dois conceitos sem relação em cerca de 1% ou menos dos casos amostrados.",
+    "Sobre as camadas, o estudo afirma que a saída de um neurônio mantém aproximadamente o mesmo sentido ao longo da maior parte do modelo. Sobre os fatos, a conclusão é mista: apagar um fato exigiu mexer em 44 a 273 neurônios em 15 dos 18 casos testados, mas, segundo as autoras, os neurônios envolvidos costumam representar conceitos ligados àquele fato.",
+    "O segundo texto aplica o método a tarefas de segurança. Na detecção de conteúdo nocivo, sondas montadas a partir de neurônios, sem nenhum exemplo rotulado, chegaram a AUROC de 0,903, contra 0,888 do melhor autoencoder esparso e 0,875 da busca por embeddings. Em 74 modelos com portas dos fundos plantadas, o método pôs em média 54% das palavras-gatilho entre as 50 primeiras candidatas.",
+    "O achado mais relevante para quem acompanha políticas de segurança é sobre desaprendizado. Em 14 de 23 modelos submetidos a técnicas para esquecer conhecimento perigoso, a resposta correta continuou sendo a mais provável na maioria das perguntas que o modelo original acertava, mesmo com o desempenho no teste WMDP perto do acaso. Para as autoras, o desaprendizado mascara o conhecimento em vez de removê-lo.",
+    "Os próprios textos registram limites: os resultados valem para modelos de 8 a 32 bilhões de parâmetros, dependem de uma lente de leitura chamada J-lens, que é só um indicador de interpretabilidade, e os modelos com ajustes testados passaram por treinos curtos. Trata-se de pesquisa da própria empresa, publicada em blog e ainda sem revisão por pares."
+  ],
+  "harpia": "Interpretabilidade é um dos eixos do Harpya, e o resultado sobre desaprendizado toca numa promessa comum de segurança: a de que um modelo pode esquecer o que é perigoso. Como a pesquisa é da própria Anthropic e saiu em blog, vale acompanhar se grupos independentes reproduzem os números em modelos abertos.",
+  "fontes": [
+    {
+      "veiculo": "Anthropic Alignment Science Blog",
+      "titulo": "Returning to the Neuron Basis for Interpretability, Part 1: Answering Three Objections",
+      "url": "https://alignment.anthropic.com/2026/neuron-basis-theory/"
+    },
+    {
+      "veiculo": "Anthropic Alignment Science Blog",
+      "titulo": "Returning to the Neuron Basis for Interpretability, Part 2: Using Neurons For Safety Applications",
+      "url": "https://alignment.anthropic.com/2026/neuron-basis-applications/"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-25",
+  "verificado_em": "2026-11-25",
+  "ordem": 999
+}

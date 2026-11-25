@@ -1,0 +1,26 @@
+{
+  "titulo": "Revisão do instituto britânico de segurança em IA encontra pouca evidência para os alertas mais fortes sobre IA e pessoas",
+  "resumo": "Artigo na Nature Human Behaviour avalia oito preocupações, de perda cognitiva a dependência emocional, e conclui que a pesquisa ainda é incipiente.",
+  "data": "2026-11-24",
+  "categoria": "letramento",
+  "icone": "leitura",
+  "corpo": [
+    "A revista Nature Human Behaviour publicou em 24 de novembro uma revisão assinada por 19 pesquisadores do AI Security Institute, órgão do governo britânico, com Christopher Summerfield como autor correspondente. O artigo pergunta se as evidências disponíveis sustentam os alertas mais comuns sobre o efeito da IA em quem a usa.",
+    "Segundo o resumo, os autores avaliam oito preocupações. O texto cita entre os temores populares a perda de capacidade cognitiva, a poluição do ecossistema de informação, o desgaste das relações humanas, danos à saúde mental e a vulnerabilidade a persuasão, manipulação, dependência emocional e engenharia social.",
+    "A base revisada reúne avaliações de modelos, estudos com usuários, análises de conversas reais e simulações com agentes. A conclusão do resumo é de evidência limitada para as narrativas mais fortes e apoio modesto às afirmações mais alarmantes. Os autores também dizem que a pesquisa é incipiente e que muitas incertezas seguem abertas.",
+    "O artigo é de acesso pago, e esta nota se baseia no resumo publicado pela revista. Na declaração de conflitos, os autores informam que são funcionários do instituto e que as opiniões são deles, não necessariamente do governo britânico. O texto pede investigação mais aprofundada do impacto humano da IA."
+  ],
+  "harpia": "Letramento em IA também é saber separar medo e evidência. Uma revisão que mapeia o que já foi medido sobre efeitos cognitivos e emocionais ajuda professores e famílias a calibrar o debate, sem tomar a falta de prova como prova de que não há risco.",
+  "fontes": [
+    {
+      "veiculo": "Nature Human Behaviour",
+      "titulo": "Empirical evidence for eight ways that AI is impacting people",
+      "url": "https://www.nature.com/articles/s41562-026-02615-0"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-25",
+  "verificado_em": "2026-11-25",
+  "ordem": 999
+}

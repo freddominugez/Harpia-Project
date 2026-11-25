@@ -1,0 +1,32 @@
+{
+  "titulo": "Rede presidida pela ANPD aprova padrões ibero-americanos para o uso de dados pessoais em sistemas de IA",
+  "resumo": "Documento da RIPD diz que dado público não autoriza, por si só, treinar IA, e pede explicações compreensíveis a quem é afetado. O texto é orientador.",
+  "data": "2026-11-18",
+  "categoria": "brasil",
+  "icone": "balanca",
+  "corpo": [
+    "A Rede Ibero-Americana de Proteção de Dados (RIPD), presidida pela ANPD no biênio 2025 a 2027, aprovou por unanimidade os Padrões Ibero-Americanos sobre o Uso de Dados Pessoais em Sistemas de Inteligência Artificial. A ANPD divulgou a aprovação em 18 de novembro. O documento está disponível em espanhol.",
+    "O texto tem caráter orientador e complementar: não cria obrigação legal por si só. Segundo a ANPD, o objetivo é harmonizar a aplicação das leis de proteção de dados na região com uma abordagem baseada em risco, e entre os temas estão limitação de finalidade, minimização de dados, transparência, explicabilidade e proteção de dados inferidos.",
+    "Um dos pontos destacados pela agência é que o fato de um dado pessoal estar disponível publicamente não autoriza, sozinho, seu uso para desenvolver ou treinar sistemas de IA. Esse uso exigiria base jurídica adequada, respeito à finalidade original e atenção às expectativas razoáveis das pessoas.",
+    "Na transparência, o documento diz que não basta informar de forma genérica que uma organização usa IA. As pessoas deveriam receber informação compreensível sobre a finalidade do sistema, a origem dos dados, o grau de intervenção humana e as consequências possíveis, além de explicação sobre os fatores do resultado quando necessário.",
+    "O texto também traz orientações para IA generativa e agêntica, biometria, reconhecimento de emoções, neurodados e sistemas que selecionam ou priorizam pessoas, com configurações protetivas por padrão para grupos vulneráveis. A elaboração foi financiada pela União Europeia, com a fundação espanhola FIAP, no âmbito da Aliança Digital UE-ALC."
+  ],
+  "harpia": "Enquanto o PL 2338/2023 segue na Câmara, documentos orientadores como este mostram como a ANPD pode ler a LGPD diante da IA. A regra de que dado público não libera o treino de modelos interessa a quem ensina e pesquisa IA no Brasil.",
+  "fontes": [
+    {
+      "veiculo": "ANPD (gov.br)",
+      "titulo": "Rede Ibero-Americana de Proteção de Dados, presidida pela ANPD, aprova padrões para uso de IA",
+      "url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/rede-ibero-americana-de-protecao-de-dados-presidida-pela-anpd-aprova-padroes-para-uso-de-ia"
+    },
+    {
+      "veiculo": "RIPD",
+      "titulo": "Estándares Iberoamericanos sobre el Uso de Datos Personales en Sistemas de IA",
+      "url": "https://www.redipd.org/documento/estandares-iberoamericanos-sobre-uso-de-datos-personales-en-sistemas-ia.pdf"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-25",
+  "verificado_em": "2026-11-25",
+  "ordem": 999
+}

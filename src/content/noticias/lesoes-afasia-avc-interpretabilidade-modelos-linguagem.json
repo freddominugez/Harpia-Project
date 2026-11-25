@@ -1,0 +1,31 @@
+{
+  "titulo": "Pesquisadores usam mapas de lesão de pacientes com afasia para testar o que partes de um modelo de linguagem fazem",
+  "resumo": "Estudo da Universidade da Carolina do Sul na revista Patterns danifica camadas de modelos e compara os erros com os de pessoas após AVC.",
+  "data": "2026-11-19",
+  "categoria": "pesquisa",
+  "icone": "lupa",
+  "corpo": [
+    "Um grupo da Universidade da Carolina do Sul publicou em 19 de novembro, na revista Patterns, do grupo Cell Press, um método que usa dados de pacientes com afasia após AVC como referência externa para a interpretabilidade de modelos de linguagem. O trabalho é liderado por Julius Fridriksson, pesquisador de distúrbios de linguagem.",
+    "A equipe treinou modelos que preveem onde está a lesão cerebral a partir dos erros de fala dos pacientes. Depois perturbou camadas de modelos de linguagem, aplicou a eles os mesmos testes clínicos de nomear figuras e completar frases e projetou os erros resultantes no mapa de lesões humanas.",
+    "Segundo o resumo do artigo, as lesões previstas a partir dos erros do modelo coincidiram com as de pacientes com erros parecidos acima do acaso em 67% das condições de nomeação de figuras e 68,3% das de completar frases. Erros de sentido se associaram a danos na via ventral do cérebro e erros de som à via dorsal, como a neurologia descreve para humanos.",
+    "O comunicado da Cell Press faz uma ressalva: o resultado mostra correspondência entre padrões de falha, não entre estruturas do modelo e do cérebro. Depois de retirar um padrão de lesão comum a todo o grupo, a correlação específica de cada condição fica em 0,32 e 0,30, segundo o resumo. Parte dos autores também declara vínculo com a empresa ALLT.AI."
+  ],
+  "harpia": "A interpretabilidade costuma julgar um modelo só com medidas internas a ele. Usar dados clínicos humanos como régua externa é uma ideia nova para conferir o que as camadas fazem, e a ressalva dos próprios autores ajuda a não ler o modelo como um cérebro.",
+  "fontes": [
+    {
+      "veiculo": "Patterns (Cell Press)",
+      "titulo": "Human lesion maps from aphasia provide an anatomical framework for language model interpretability",
+      "url": "https://www.cell.com/patterns/fulltext/S2666-3899(26)00229-1"
+    },
+    {
+      "veiculo": "EurekAlert!",
+      "titulo": "Brain researchers afflict LLMs with \"injuries\" similar to those of stroke victims to unpack AI language mechanisms",
+      "url": "https://www.eurekalert.org/news-releases/1151164"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-25",
+  "verificado_em": "2026-11-25",
+  "ordem": 999
+}

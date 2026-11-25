@@ -1,0 +1,36 @@
+{
+  "titulo": "Ant Group abre os pesos de dois modelos médicos LingSante sob licença MIT, com aviso de que não servem para diagnóstico",
+  "resumo": "O LingSante-3.1-flash tem 560 bilhões de parâmetros e o air-VL, 124 bilhões. As fichas os limitam a pesquisa e avaliação com revisão humana.",
+  "data": "2026-11-23",
+  "categoria": "abertos",
+  "icone": "maquina",
+  "corpo": [
+    "O Ant Group, dono do Alipay, publicou no Hugging Face os pesos de dois modelos médicos da família LingSante, por meio do inclusionAI, sua iniciativa de código aberto. O anúncio formal foi em 23 de novembro, mas os repositórios foram criados em 19 de novembro, segundo os metadados do Hugging Face. Os dois trazem licença MIT, que permite uso comercial.",
+    "O LingSante-3.1-flash é um modelo de texto com 560 bilhões de parâmetros no total, dos quais cerca de 25 bilhões ficam ativos por token, e janela de até 1 milhão de tokens. O LingSante-3.1-air-VL lê texto e imagem, tem 124 bilhões de parâmetros e 5,5 bilhões ativos, com janela de 256 mil tokens, segundo a TNGlobal.",
+    "A ficha do modelo maior é explícita sobre os limites. Diz que ele não é um dispositivo médico e não deve ser base independente para diagnóstico, prescrição, tratamento ou triagem. Também avisa que respostas podem estar erradas ou desatualizadas e que resultados em testes e ambientes simulados não comprovam eficácia clínica.",
+    "Os resultados de desempenho divulgados vêm da própria empresa. No teste InclusionMed, criado pelo mesmo grupo, o modelo ficou em quinto lugar entre 23 configurações avaliadas, segundo a ficha. A TNGlobal registra que os números de uso do aplicativo de saúde Afu, como 150 milhões de usuários, foram informados pelo Ant Group e não passaram por auditoria independente."
+  ],
+  "harpia": "Modelos médicos abertos permitem que hospitais e pesquisadores, inclusive no Brasil, testem o sistema nos próprios dados sem depender de uma API. As fichas deixam claro o que ainda falta: avaliação clínica independente antes de qualquer uso com pacientes.",
+  "fontes": [
+    {
+      "veiculo": "TNGlobal",
+      "titulo": "Ant Group releases open-weight LingSante medical AI models",
+      "url": "https://technode.global/2026/11/24/ant-group-open-weight-lingsante-medical-ai-models/"
+    },
+    {
+      "veiculo": "Hugging Face",
+      "titulo": "inclusionAI/LingSante-3.1-flash",
+      "url": "https://huggingface.co/inclusionAI/LingSante-3.1-flash"
+    },
+    {
+      "veiculo": "Hugging Face",
+      "titulo": "inclusionAI/LingSante-3.1-air-VL",
+      "url": "https://huggingface.co/inclusionAI/LingSante-3.1-air-VL"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-25",
+  "verificado_em": "2026-11-25",
+  "ordem": 999
+}

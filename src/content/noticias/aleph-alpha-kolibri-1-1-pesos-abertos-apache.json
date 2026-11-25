@@ -1,0 +1,32 @@
+{
+  "titulo": "Aleph Alpha publica o Kolibri 1.1 sob Apache 2.0, modelo alemão de 75 bilhões de parâmetros com 3,4 bilhões ativos",
+  "resumo": "Sete semanas após a primeira versão, a empresa de Heidelberg libera os pesos no Hugging Face. Os ganhos de eficiência e segurança são números da própria empresa.",
+  "data": "2026-11-23",
+  "categoria": "abertos",
+  "icone": "maquina",
+  "corpo": [
+    "A empresa alemã Aleph Alpha liberou em 23 de novembro os pesos do Kolibri 1.1 no Hugging Face, sob a licença Apache 2.0. É a segunda versão do modelo, sete semanas depois do Kolibri 1.0, lançado em 5 de outubro. A ficha técnica informa 75 bilhões de parâmetros no total, dos quais cerca de 3,44 bilhões ficam ativos a cada token.",
+    "Segundo o comunicado da empresa, a nova versão usa atenção esparsa e gasta 3,4 vezes menos tempo de GPU por tarefa que a anterior, gerando em média 41% menos tokens de saída. A Aleph Alpha também afirma que o modelo cita corretamente os trechos de apoio em 89,1% dos casos e resiste a até 99,1% das injeções de comando escondidas em ferramentas externas. Esses números são da empresa e não foram verificados por terceiros.",
+    "A ficha no Hugging Face lista alemão e inglês como idiomas, janela nativa de 262.144 tokens que pode chegar a cerca de 1 milhão, e recomenda o limite menor para tarefas complexas. Há versões quantizadas no formato GGUF, usado pelo llama.cpp em CPU, CUDA e Metal.",
+    "Existe uma diferença entre os dois textos da empresa sobre o hardware. O comunicado diz que o modelo pode rodar em GPUs de 24 GB de memória, enquanto a ficha técnica informa ocupação de cerca de 77,6 GB e pede no mínimo duas H100 ou uma B200 para os pesos completos. A ficha não detalha qual versão quantizada caberia em 24 GB.",
+    "A licença Apache 2.0 permite uso comercial, mas a ficha acrescenta uma lista de usos proibidos, com referência ao artigo 5 do AI Act europeu. A empresa diz que o modelo foi treinado na Alemanha e na Finlândia."
+  ],
+  "harpia": "Mostra um caminho europeu de modelo aberto com licença permissiva e foco em soberania de dados, tema que também pesa no debate brasileiro. A diferença entre o hardware anunciado e o da ficha técnica é um bom exemplo de por que o Harpya confere a documentação antes de repetir a promessa.",
+  "fontes": [
+    {
+      "veiculo": "Aleph Alpha",
+      "titulo": "Aleph Alpha releases Kolibri 1.1: sovereign open-weight AI model with 3.4 times higher cost efficiency",
+      "url": "https://aleph-alpha.com/en/news/kolibri-1-1-release/"
+    },
+    {
+      "veiculo": "Hugging Face",
+      "titulo": "Aleph-Alpha/Kolibri-1.1",
+      "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-25",
+  "verificado_em": "2026-11-25",
+  "ordem": 999
+}
