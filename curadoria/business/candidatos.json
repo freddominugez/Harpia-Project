@@ -1,6 +1,6 @@
 {
   "ambiente": "business",
-  "atualizado_em": "2026-11-24T20:52:44.976073+00:00",
+  "atualizado_em": "2026-11-25T20:12:22.961512+00:00",
   "politica": "candidatos_sem_publicacao_automatica",
   "fontes": [
     {
@@ -8,38 +8,50 @@
       "status": "ok",
       "itens": 2,
       "mensagem": "",
-      "verificado_em": "2026-11-24T20:52:44.976073+00:00"
+      "verificado_em": "2026-11-25T20:12:22.961512+00:00"
     },
     {
       "id": "fdc",
       "status": "ok",
-      "itens": 2,
+      "itens": 1,
       "mensagem": "",
-      "verificado_em": "2026-11-24T20:52:44.976073+00:00"
+      "verificado_em": "2026-11-25T20:12:22.961512+00:00"
     },
     {
       "id": "insead",
       "status": "erro",
       "itens": 0,
       "mensagem": "HTTPError",
-      "verificado_em": "2026-11-24T20:52:44.976073+00:00"
+      "verificado_em": "2026-11-25T20:12:22.961512+00:00"
     },
     {
       "id": "mckinsey",
       "status": "ok",
       "itens": 5,
       "mensagem": "",
-      "verificado_em": "2026-11-24T20:52:44.976073+00:00"
+      "verificado_em": "2026-11-25T20:12:22.961512+00:00"
     },
     {
       "id": "wharton",
       "status": "ok",
-      "itens": 4,
+      "itens": 5,
       "mensagem": "",
-      "verificado_em": "2026-11-24T20:52:44.976073+00:00"
+      "verificado_em": "2026-11-25T20:12:22.961512+00:00"
     }
   ],
   "itens": [
+    {
+      "id": "afe8fbbf65549e5faa84",
+      "ambiente": "business",
+      "titulo": "Jensen Huang’s Return and the Power of a CEO’s Brand",
+      "url": "https://knowledge.wharton.upenn.edu/podcast/this-week-in-business/jensen-huangs-return-and-the-power-of-a-ceos-brand/",
+      "fonte": "wharton",
+      "data": "2026-11-25",
+      "verificado_em": "2026-11-25",
+      "tipo": "artigo",
+      "status": "candidato",
+      "revisao_editorial": false
+    },
     {
       "id": "fca980d075d773f9139d",
       "ambiente": "business",
@@ -47,7 +59,7 @@
       "url": "https://sejarelevante.fdc.org.br/forum-merco-reputacao-depende-de-discurso-lideranca-e-pratica/",
       "fonte": "fdc",
       "data": "2026-11-23",
-      "verificado_em": "2026-11-24",
+      "verificado_em": "2026-11-25",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -59,7 +71,7 @@
       "url": "https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-new-consolidation-m-and-a-shifts-in-european-consumer-tech-and-media",
       "fonte": "mckinsey",
       "data": "2026-11-20",
-      "verificado_em": "2026-11-24",
+      "verificado_em": "2026-11-25",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -71,19 +83,7 @@
       "url": "https://www.mckinsey.com/featured-insights/mckinsey-on-books/author-talks-defining-customer-needs-locally-to-create-global-value",
       "fonte": "mckinsey",
       "data": "2026-11-19",
-      "verificado_em": "2026-11-24",
-      "tipo": "artigo",
-      "status": "candidato",
-      "revisao_editorial": false
-    },
-    {
-      "id": "b4158fe51bf2a009cfd7",
-      "ambiente": "business",
-      "titulo": "“Cliente e resultado não são objetivos concorrentes”, destaca CEO da XP",
-      "url": "https://sejarelevante.fdc.org.br/cliente-e-resultado-nao-sao-objetivos-concorrentes-diz-ceo-da-xp/",
-      "fonte": "fdc",
-      "data": "2026-11-11",
-      "verificado_em": "2026-11-24",
+      "verificado_em": "2026-11-25",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -95,7 +95,7 @@
       "url": "https://www.mckinsey.com/industries/retail/our-insights/the-new-realities-of-grocery-retail-in-the-americas-and-europe",
       "fonte": "mckinsey",
       "data": "2026-11-10",
-      "verificado_em": "2026-11-24",
+      "verificado_em": "2026-11-25",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -107,7 +107,7 @@
       "url": "https://www.mckinsey.com/industries/public-sector/our-insights/beyond-agency-boundaries-building-a-statewide-approach-to-customer-experience",
       "fonte": "mckinsey",
       "data": "2026-11-09",
-      "verificado_em": "2026-11-24",
+      "verificado_em": "2026-11-25",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -119,7 +119,7 @@
       "url": "https://www.ama.org/2026/11/05/less-spending-higher-revenue-how-mergers-and-acquisitions-affect-marketing-decisions-in-the-biopharma-industry/",
       "fonte": "ama",
       "data": "2026-11-05",
-      "verificado_em": "2026-11-24",
+      "verificado_em": "2026-11-25",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -131,7 +131,7 @@
       "url": "https://knowledge.wharton.upenn.edu/podcast/marketing-matters/building-a-modern-western-lifestyle-brand/",
       "fonte": "wharton",
       "data": "2026-11-05",
-      "verificado_em": "2026-11-24",
+      "verificado_em": "2026-11-25",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -143,7 +143,7 @@
       "url": "https://knowledge.wharton.upenn.edu/podcast/this-week-in-business/why-record-holiday-sales-may-not-tell-the-whole-story/",
       "fonte": "wharton",
       "data": "2026-10-28",
-      "verificado_em": "2026-11-24",
+      "verificado_em": "2026-11-25",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -155,7 +155,7 @@
       "url": "https://www.ama.org/2026/10/22/weigh-your-options-how-price-format-can-boost-sales-without-changing-the-price/",
       "fonte": "ama",
       "data": "2026-10-22",
-      "verificado_em": "2026-11-24",
+      "verificado_em": "2026-11-25",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -167,7 +167,7 @@
       "url": "https://knowledge.wharton.upenn.edu/podcast/marketing-matters/why-your-best-customers-can-be-your-best-marketers/",
       "fonte": "wharton",
       "data": "2026-10-22",
-      "verificado_em": "2026-11-24",
+      "verificado_em": "2026-11-25",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
@@ -179,7 +179,7 @@
       "url": "https://knowledge.wharton.upenn.edu/podcast/this-week-in-business/why-retailers-are-rethinking-risk/",
       "fonte": "wharton",
       "data": "2026-09-23",
-      "verificado_em": "2026-11-24",
+      "verificado_em": "2026-11-25",
       "tipo": "artigo",
       "status": "candidato",
       "revisao_editorial": false
