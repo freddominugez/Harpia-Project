@@ -1,0 +1,16 @@
+{
+  "id": "Di5jcllgS8s",
+  "titulo": "One Trick Makes LLM Outliers Vanish",
+  "canal": "Jia-Bin Huang",
+  "modulo": 10,
+  "nivel": "Intermediário",
+  "resumo": "Explica por que um único valor atípico estraga a quantização em 4 bits e como rotações (Hadamard, QuaRot, SpinQuant, QuIP#) espalham esse valor. Para quem já conhece quantização de pesos e cache KV.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=Di5jcllgS8s",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-26",
+  "verificado_em": "2026-11-26"
+}
