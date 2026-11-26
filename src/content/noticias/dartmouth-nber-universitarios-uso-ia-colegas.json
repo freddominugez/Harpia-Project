@@ -1,0 +1,32 @@
+{
+  "titulo": "Universitários dizem usar IA para entender a matéria, mas atribuem aos colegas o uso que atrapalha o aprendizado",
+  "resumo": "Estudo de economistas de Dartmouth com 1.003 universitários dos EUA mostra distância grande entre o uso de IA que cada um admite e o que diz ver nos colegas.",
+  "data": "2026-11-16",
+  "categoria": "letramento",
+  "icone": "escola",
+  "corpo": [
+    "Os economistas Bruce Sacerdote e Mason Parris-Bacon, de Dartmouth College, publicaram em novembro no NBER o texto de discussão \"Impacts of AI in Higher Education: A Panel Survey of Undergraduates\". É a primeira rodada de um painel que vai acompanhar estudantes ao longo do tempo. O trabalho não passou por revisão por pares.",
+    "Segundo a reportagem do Inside Higher Ed de 25 de novembro, a coleta foi feita pela empresa College Pulse entre junho e setembro, com três grupos: 1.201 alunos de graduação de Dartmouth, 332 calouros da mesma faculdade e uma amostra de 1.003 universitários dos Estados Unidos descrita como representativa.",
+    "Na amostra nacional, 23% dizem usar IA para rascunhar redações, mas 54% afirmam que os colegas fazem isso. Copiar texto da IA para trabalhos com pouca edição aparece em 8% das respostas sobre o próprio uso e em 50% das respostas sobre os colegas. Resolver listas de exercícios sem entender a resposta: 11% contra 49%.",
+    "O uso que tende a ajudar o estudo aparece de forma parecida nos dois lados: 61% usam IA para explicar conceitos difíceis e 58% dizem que os colegas também usam. Segundo o resumo no site do NBER, 92% dos estudantes concordam que o uso de IA prejudica a escrita, e os alunos se descrevem como autodidatas no assunto, mas querem a IA no currículo.",
+    "Os autores apontam limites. A diferença entre o próprio uso e o dos colegas pode indicar que a fraude é subdeclarada ou que os alunos superestimam o que os outros fazem. Eles também admitem que o estudante pode estar relatando o pior caso que viu, e não o comportamento típico. Todos os dados são autodeclarados."
+  ],
+  "harpia": "Para quem ensina letramento em IA, o estudo separa o uso que apoia o aprendizado do uso que o substitui e mostra que os próprios alunos fazem essa distinção. A demanda por IA no currículo, vinda de estudantes que aprenderam sozinhos, reforça a necessidade de formação organizada.",
+  "fontes": [
+    {
+      "veiculo": "NBER",
+      "titulo": "Impacts of AI in Higher Education: A Panel Survey of Undergraduates",
+      "url": "https://www.nber.org/papers/w36021"
+    },
+    {
+      "veiculo": "Inside Higher Ed",
+      "titulo": "Students Say They Don't Use AI in 'Harmful' Ways, but Their Peers Do",
+      "url": "https://www.insidehighered.com/news/students/academics/2026/11/25/students-say-they-dont-use-ai-harmful-ways-peers-do"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-26",
+  "verificado_em": "2026-11-26",
+  "ordem": 999
+}
