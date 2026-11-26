@@ -1,6 +1,6 @@
 {
   "ambiente": "business",
-  "atualizado_em": "2026-11-25T20:12:25.460455+00:00",
+  "atualizado_em": "2026-11-26T19:49:50.881465+00:00",
   "politica": "candidatos_sem_publicacao_automatica",
   "fontes": [
     {
@@ -9,7 +9,7 @@
       "status": "ok",
       "itens": 2,
       "mensagem": "",
-      "verificado_em": "2026-11-25T20:12:25.460455+00:00"
+      "verificado_em": "2026-11-26T19:49:50.881465+00:00"
     },
     {
       "id": "UC8DhN1cJi0QklBQot5hv_kg",
@@ -17,15 +17,15 @@
       "status": "ok",
       "itens": 1,
       "mensagem": "",
-      "verificado_em": "2026-11-25T20:12:25.460455+00:00"
+      "verificado_em": "2026-11-26T19:49:50.881465+00:00"
     },
     {
       "id": "UCWo4IA01TXzBeGJJKWHOG9g",
       "fonte": "hbr",
       "status": "ok",
-      "itens": 3,
+      "itens": 4,
       "mensagem": "",
-      "verificado_em": "2026-11-25T20:12:25.460455+00:00"
+      "verificado_em": "2026-11-26T19:49:50.881465+00:00"
     },
     {
       "id": "UCk8n46m74K5XWfdeBzOXDfA",
@@ -33,23 +33,23 @@
       "status": "ok",
       "itens": 0,
       "mensagem": "",
-      "verificado_em": "2026-11-25T20:12:25.460455+00:00"
+      "verificado_em": "2026-11-26T19:49:50.881465+00:00"
     },
     {
       "id": "UC9aeQQ-NqjHS3nfiod2PMSA",
       "fonte": "insead",
       "status": "ok",
-      "itens": 2,
+      "itens": 1,
       "mensagem": "",
-      "verificado_em": "2026-11-25T20:12:25.460455+00:00"
+      "verificado_em": "2026-11-26T19:49:50.881465+00:00"
     },
     {
       "id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
       "fonte": "lbs",
       "status": "ok",
-      "itens": 2,
+      "itens": 1,
       "mensagem": "",
-      "verificado_em": "2026-11-25T20:12:25.460455+00:00"
+      "verificado_em": "2026-11-26T19:49:50.881465+00:00"
     },
     {
       "id": "UC0wOrSaO_sBGGU9Jderpk7g",
@@ -57,7 +57,7 @@
       "status": "ok",
       "itens": 0,
       "mensagem": "",
-      "verificado_em": "2026-11-25T20:12:25.460455+00:00"
+      "verificado_em": "2026-11-26T19:49:50.881465+00:00"
     },
     {
       "id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
@@ -65,10 +65,25 @@
       "status": "ok",
       "itens": 1,
       "mensagem": "",
-      "verificado_em": "2026-11-25T20:12:25.460455+00:00"
+      "verificado_em": "2026-11-26T19:49:50.881465+00:00"
     }
   ],
   "itens": [
+    {
+      "id": "5bef7cc1e6728cdf81a8",
+      "ambiente": "business",
+      "tipo": "video",
+      "titulo": "Are You Promoting the Wrong People into Management?",
+      "url": "https://www.youtube.com/watch?v=ctEoY7hGYb0",
+      "fonte": "hbr",
+      "video_id": "ctEoY7hGYb0",
+      "channel_id": "UCWo4IA01TXzBeGJJKWHOG9g",
+      "data": "2026-11-26",
+      "verificado_em": "2026-11-26",
+      "status": "candidato",
+      "revisao_editorial": false,
+      "revisao_integral": false
+    },
     {
       "id": "5471e1e77a51d0d0ca0e",
       "ambiente": "business",
@@ -79,7 +94,7 @@
       "video_id": "AuCfNy32BjY",
       "channel_id": "UC8DhN1cJi0QklBQot5hv_kg",
       "data": "2026-11-25",
-      "verificado_em": "2026-11-25",
+      "verificado_em": "2026-11-26",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -94,7 +109,7 @@
       "video_id": "-cZob5-S_k8",
       "channel_id": "UCWo4IA01TXzBeGJJKWHOG9g",
       "data": "2026-11-24",
-      "verificado_em": "2026-11-25",
+      "verificado_em": "2026-11-26",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -109,7 +124,7 @@
       "video_id": "MAZjMtCiZtU",
       "channel_id": "UC9aeQQ-NqjHS3nfiod2PMSA",
       "data": "2026-11-21",
-      "verificado_em": "2026-11-25",
+      "verificado_em": "2026-11-26",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -124,7 +139,7 @@
       "video_id": "mbK4fMHMf4g",
       "channel_id": "UC1fHbk7N11bB8UnL4tYg26A",
       "data": "2026-11-19",
-      "verificado_em": "2026-11-25",
+      "verificado_em": "2026-11-26",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -139,7 +154,7 @@
       "video_id": "5blTvdIla7g",
       "channel_id": "UC1fHbk7N11bB8UnL4tYg26A",
       "data": "2026-11-19",
-      "verificado_em": "2026-11-25",
+      "verificado_em": "2026-11-26",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -154,7 +169,7 @@
       "video_id": "xwalFe0v49o",
       "channel_id": "UCWo4IA01TXzBeGJJKWHOG9g",
       "data": "2026-11-18",
-      "verificado_em": "2026-11-25",
+      "verificado_em": "2026-11-26",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -169,7 +184,7 @@
       "video_id": "BzspzfjwNEU",
       "channel_id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
       "data": "2026-11-18",
-      "verificado_em": "2026-11-25",
+      "verificado_em": "2026-11-26",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -184,22 +199,7 @@
       "video_id": "evQcbeOlvWc",
       "channel_id": "UCWo4IA01TXzBeGJJKWHOG9g",
       "data": "2026-11-10",
-      "verificado_em": "2026-11-25",
-      "status": "candidato",
-      "revisao_editorial": false,
-      "revisao_integral": false
-    },
-    {
-      "id": "1a862d61e6a53e94ad24",
-      "ambiente": "business",
-      "tipo": "video",
-      "titulo": "Why One-Size-Fits-All Sustainability Strategies Fail | INSEAD",
-      "url": "https://www.youtube.com/watch?v=UzjGCg0W67w",
-      "fonte": "insead",
-      "video_id": "UzjGCg0W67w",
-      "channel_id": "UC9aeQQ-NqjHS3nfiod2PMSA",
-      "data": "2026-11-10",
-      "verificado_em": "2026-11-25",
+      "verificado_em": "2026-11-26",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
@@ -214,22 +214,7 @@
       "video_id": "gmmvzYJZMGs",
       "channel_id": "UCU9Z1eLsDa_meEfsmx-Ys0w",
       "data": "2026-10-30",
-      "verificado_em": "2026-11-25",
-      "status": "candidato",
-      "revisao_editorial": false,
-      "revisao_integral": false
-    },
-    {
-      "id": "7689bc2a726286b632b2",
-      "ambiente": "business",
-      "tipo": "video",
-      "titulo": "Why 90% of employees don't know the strategy",
-      "url": "https://www.youtube.com/watch?v=b8duDcufp8g",
-      "fonte": "lbs",
-      "video_id": "b8duDcufp8g",
-      "channel_id": "UCRPKXKBG8n6r6vIXoxsD2pQ",
-      "data": "2026-08-11",
-      "verificado_em": "2026-11-25",
+      "verificado_em": "2026-11-26",
       "status": "candidato",
       "revisao_editorial": false,
       "revisao_integral": false
