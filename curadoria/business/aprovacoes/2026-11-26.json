@@ -1,0 +1,66 @@
+{
+  "data": "2026-11-26",
+  "timezone": "America/Fortaleza",
+  "items": [
+    {
+      "path": "src/content/business/acervo/2026-11-26-bcg-ia-estrategia-crescimento.json",
+      "sha256": "cbbe4f85f6027d39c50539b589de14b80b3678e7d7986d61c095271f28e54bed",
+      "sha256_publicado": "a3ea02a61b0e3a87391cf40b1e9bc2309fe485ff704eb2f4983e62bbdbbbdb9d",
+      "pauta": "business_pauta_26",
+      "verificacao": {
+        "responsavel": "business_verify_26",
+        "consultado_em": "2026-11-26",
+        "escopo": "Artigo BCG integral consultado; amostra, período, percentuais, autoria e natureza opinativa da matriz conferidos; associação não tratada como causalidade.",
+        "evidencias": [
+          "https://www.bcg.com/publications/2026/ai-reshaping-corporate-growth-strategy"
+        ],
+        "alegacoes": [
+          {
+            "texto": "Justin Manly, Jeremy Kuriloff, Ketil Gjerstad, Stepan Andriyakhin e Vladimir Lukic assinam o artigo de 25 de novembro de 2026.",
+            "url": "https://www.bcg.com/publications/2026/ai-reshaping-corporate-growth-strategy",
+            "resultado": "confirmada",
+            "local": "Cabeçalho, data e seção Authors."
+          },
+          {
+            "texto": "A amostra inclui 3.669 empresas públicas globais com receita de ao menos US$ 1 bilhão em 2025 e crescimento acima da média setorial em um ou ambos os períodos analisados.",
+            "url": "https://www.bcg.com/publications/2026/ai-reshaping-corporate-growth-strategy",
+            "resultado": "confirmada",
+            "local": "Seção Businesses Are Already Embracing AI for Growth."
+          },
+          {
+            "texto": "A parcela das empresas que mencionou IA em iniciativas de crescimento passou de 4,9 por cento em 2017–22 a 12,7 por cento em 2023–25.",
+            "url": "https://www.bcg.com/publications/2026/ai-reshaping-corporate-growth-strategy",
+            "resultado": "qualificada",
+            "local": "Seção Businesses Are Already Embracing AI for Growth; mede comunicação corporativa."
+          },
+          {
+            "texto": "A BCG organiza quatro abordagens estratégicas: capturar demanda, reinventar núcleo, migrar além do núcleo e acelerar execução.",
+            "url": "https://www.bcg.com/publications/2026/ai-reshaping-corporate-growth-strategy",
+            "resultado": "confirmada",
+            "local": "Seção Four Growth Strategy Approaches for the AI Era."
+          },
+          {
+            "texto": "As menções não demonstram implantação, efeito causal ou retorno financeiro atribuível à IA; a BCG oferece consultoria na área.",
+            "url": "https://www.bcg.com/publications/2026/ai-reshaping-corporate-growth-strategy",
+            "resultado": "qualificada",
+            "local": "Método de análise de comunicações e descrição da atividade comercial da BCG."
+          }
+        ]
+      },
+      "selecao": {
+        "responsavel": "business_select_26",
+        "nota": 8.2,
+        "justificativa": "Pauta recente e relevante para estratégia, com método descrito, limites da associação e conflito comercial apresentados.",
+        "criterios": {
+          "rigor": 7.7,
+          "relevancia": 8.7,
+          "utilidade": 8.4,
+          "atualidade": 9.6,
+          "clareza": 8.6,
+          "conflitos": 6.8
+        }
+      },
+      "publicacao": "editorial_round_26"
+    }
+  ]
+}

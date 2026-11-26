@@ -1,0 +1,174 @@
+{
+  "data": "2026-11-26",
+  "timezone": "America/Fortaleza",
+  "items": [
+    {
+      "path": "src/content/artigos/2026-contra-a-training-framework-for-effective-contextu.json",
+      "sha256": "605f804d02c367a461c6b620696a288c40be931e95db83424470a30dc0ba7f75",
+      "pauta": {
+        "responsavel": "tech_pauta_26",
+        "justificativa": "Preprint de 25 de novembro com método verificável para busca contextual, comparações mensuradas e código apontado pelos autores."
+      },
+      "verificacao": {
+        "responsavel": "tech_verify_26",
+        "consultado_em": "2026-11-26",
+        "evidencias": [
+          "https://arxiv.org/abs/2611.34366",
+          "https://arxiv.org/html/2611.34366v1"
+        ],
+        "alegacoes": [
+          {
+            "texto": "Jiajun Hou e Jingbang Chen submeteram o preprint ConTra em 25 de novembro de 2026.",
+            "url": "https://arxiv.org/abs/2611.34366",
+            "resultado": "confirmada",
+            "local": "Registro arXiv, autoria e histórico."
+          },
+          {
+            "texto": "ConTra treina por reforço um gerador de prefixos para trechos, com recompensa de embedding, reranking, checagem factual automatizada e controle de comprimento.",
+            "url": "https://arxiv.org/html/2611.34366v1",
+            "resultado": "confirmada",
+            "local": "Seção 4, método de treinamento e indexação."
+          },
+          {
+            "texto": "O prefixo textual gerado por trecho é reutilizado pela busca vetorial e pelo reranker depois de armazenado no índice.",
+            "url": "https://arxiv.org/html/2611.34366v1",
+            "resultado": "confirmada",
+            "local": "Seções 1 e 4, pipeline de indexação e consulta."
+          },
+          {
+            "texto": "No ConTEB de oito tarefas, o ConTra-2B alcançou nDCG@10 final após reranking de 0,8525, ante 0,8279 do gerador 9B não treinado e 0,7310 do PPLX-4B.",
+            "url": "https://arxiv.org/html/2611.34366v1",
+            "resultado": "qualificada",
+            "local": "Seção 5.2 e Tabela 2; comparação apenas após reranking."
+          },
+          {
+            "texto": "Na etapa apenas de embeddings no ConTEB, PPLX-4B superou ConTra-2B; a vantagem do ConTra depende da etapa de reranking.",
+            "url": "https://arxiv.org/html/2611.34366v1",
+            "resultado": "qualificada",
+            "local": "Seção 5.2 e Tabela 2."
+          },
+          {
+            "texto": "No RealContextBench criado pelos autores, a pontuação final foi 0,6692 para ConTra-2B e 0,6632 para o gerador 9B.",
+            "url": "https://arxiv.org/html/2611.34366v1",
+            "resultado": "qualificada",
+            "local": "Seção 6.2 e Tabela 6; benchmark próprio."
+          },
+          {
+            "texto": "Na indexação de 342 trechos curtos em uma H100 de 80 GB, as medianas de três execuções foram 3,75, 29,02 e 8,08 segundos para ConTra-2B, gerador 9B e PPLX-4B, sem custo de treinamento.",
+            "url": "https://arxiv.org/html/2611.34366v1",
+            "resultado": "qualificada",
+            "local": "Seção 7.1–7.2 e Tabela 8; cenário de documentos curtos."
+          },
+          {
+            "texto": "O preprint mede recuperação, reranking e indexação, sem avaliação de acerto de respostas finais nem reprodução independente dos resultados.",
+            "url": "https://arxiv.org/html/2611.34366v1",
+            "resultado": "qualificada",
+            "local": "Seções 5–9 e escopo experimental."
+          }
+        ],
+        "escopo": "Registro arXiv e preprint integral consultados; números dos autores, benchmark próprio e ausência de reprodução independente declarados."
+      },
+      "selecao": {
+        "responsavel": "tech_select_26",
+        "nota": 4.2,
+        "justificativa": "Método claro e atual para recuperar trechos de documentos; texto restringe ganhos ao benchmark e ao hardware testados.",
+        "criterios": {
+          "rigor": 3.9,
+          "relevancia": 4.7,
+          "utilidade": 4.4,
+          "atualidade": 4.8,
+          "clareza": 4.1
+        }
+      },
+      "publicacao": {
+        "responsavel": "editorial_round_26",
+        "status": "aguardando_portao"
+      },
+      "sha256_publicado": "d4ed9015289fef2bd0f5ab928137798fdb61ac935f5be1d9cdfb9f14d33c5c01"
+    },
+    {
+      "path": "src/content/noticias/2026-11-26-contra-prefixos-contextuais-busca.json",
+      "sha256": "9559b1c5af442eb3c244d0d0f10ed243eee800384e0530bc62d39e444c4e8224",
+      "pauta": {
+        "responsavel": "tech_pauta_26",
+        "justificativa": "Preprint de 25 de novembro com método verificável para busca contextual, comparações mensuradas e código apontado pelos autores."
+      },
+      "verificacao": {
+        "responsavel": "tech_verify_26",
+        "consultado_em": "2026-11-26",
+        "evidencias": [
+          "https://arxiv.org/abs/2611.34366",
+          "https://arxiv.org/html/2611.34366v1"
+        ],
+        "alegacoes": [
+          {
+            "texto": "Jiajun Hou e Jingbang Chen submeteram o preprint ConTra em 25 de novembro de 2026.",
+            "url": "https://arxiv.org/abs/2611.34366",
+            "resultado": "confirmada",
+            "local": "Registro arXiv, autoria e histórico."
+          },
+          {
+            "texto": "ConTra treina por reforço um gerador de prefixos para trechos, com recompensa de embedding, reranking, checagem factual automatizada e controle de comprimento.",
+            "url": "https://arxiv.org/html/2611.34366v1",
+            "resultado": "confirmada",
+            "local": "Seção 4, método de treinamento e indexação."
+          },
+          {
+            "texto": "O prefixo textual gerado por trecho é reutilizado pela busca vetorial e pelo reranker depois de armazenado no índice.",
+            "url": "https://arxiv.org/html/2611.34366v1",
+            "resultado": "confirmada",
+            "local": "Seções 1 e 4, pipeline de indexação e consulta."
+          },
+          {
+            "texto": "No ConTEB de oito tarefas, o ConTra-2B alcançou nDCG@10 final após reranking de 0,8525, ante 0,8279 do gerador 9B não treinado e 0,7310 do PPLX-4B.",
+            "url": "https://arxiv.org/html/2611.34366v1",
+            "resultado": "qualificada",
+            "local": "Seção 5.2 e Tabela 2; comparação apenas após reranking."
+          },
+          {
+            "texto": "Na etapa apenas de embeddings no ConTEB, PPLX-4B superou ConTra-2B; a vantagem do ConTra depende da etapa de reranking.",
+            "url": "https://arxiv.org/html/2611.34366v1",
+            "resultado": "qualificada",
+            "local": "Seção 5.2 e Tabela 2."
+          },
+          {
+            "texto": "No RealContextBench criado pelos autores, a pontuação final foi 0,6692 para ConTra-2B e 0,6632 para o gerador 9B.",
+            "url": "https://arxiv.org/html/2611.34366v1",
+            "resultado": "qualificada",
+            "local": "Seção 6.2 e Tabela 6; benchmark próprio."
+          },
+          {
+            "texto": "Na indexação de 342 trechos curtos em uma H100 de 80 GB, as medianas de três execuções foram 3,75, 29,02 e 8,08 segundos para ConTra-2B, gerador 9B e PPLX-4B, sem custo de treinamento.",
+            "url": "https://arxiv.org/html/2611.34366v1",
+            "resultado": "qualificada",
+            "local": "Seção 7.1–7.2 e Tabela 8; cenário de documentos curtos."
+          },
+          {
+            "texto": "O preprint mede recuperação, reranking e indexação, sem avaliação de acerto de respostas finais nem reprodução independente dos resultados.",
+            "url": "https://arxiv.org/html/2611.34366v1",
+            "resultado": "qualificada",
+            "local": "Seções 5–9 e escopo experimental."
+          }
+        ],
+        "escopo": "Registro arXiv e preprint integral consultados; números dos autores, benchmark próprio e ausência de reprodução independente declarados."
+      },
+      "selecao": {
+        "responsavel": "tech_select_26",
+        "nota": 4.2,
+        "justificativa": "Método claro e atual para recuperar trechos de documentos; texto restringe ganhos ao benchmark e ao hardware testados.",
+        "criterios": {
+          "rigor": 3.9,
+          "relevancia": 4.7,
+          "utilidade": 4.4,
+          "atualidade": 4.8,
+          "clareza": 4.1
+        }
+      },
+      "publicacao": {
+        "responsavel": "editorial_round_26",
+        "status": "aguardando_portao"
+      },
+      "sha256_publicado": "7740012643bce1f1bc179b5e1c65a124ea1ad53d7260433c5636291df279732b"
+    }
+  ]
+}

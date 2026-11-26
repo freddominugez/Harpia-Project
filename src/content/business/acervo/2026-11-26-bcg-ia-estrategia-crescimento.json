@@ -1,0 +1,28 @@
+{
+  "titulo": "BCG examina como grandes empresas associam IA ao crescimento",
+  "resumo": "Em 3.669 companhias, menções à IA em iniciativas de crescimento passaram de 4,9% para 12,7%; a análise observa comunicações, não ganhos causados pela tecnologia.",
+  "fonte": "bcg",
+  "url": "https://www.bcg.com/publications/2026/ai-reshaping-corporate-growth-strategy",
+  "tipo": "noticia",
+  "trilha": "crescimento",
+  "autores": "Justin Manly, Jeremy Kuriloff, Ketil Gjerstad, Stepan Andriyakhin e Vladimir Lukic",
+  "data": "2026-11-25",
+  "data_precisa": true,
+  "idioma": "en",
+  "acesso": "Artigo institucional integral aberto em inglês, com descrição da seleção de empresas e das comunicações examinadas.",
+  "evidencia": "Análise da BCG de comunicados corporativos e comunicações a acionistas de 3.669 empresas públicas com receita de pelo menos US$ 1 bilhão em 2025 e crescimento acima da média setorial em pelo menos um dos períodos comparados.",
+  "limites": "Menções à IA nas comunicações não demonstram implantação efetiva, receita atribuível à tecnologia nem relação causal com crescimento. A amostra seleciona grandes companhias públicas por porte e desempenho relativo, sem representar todas as empresas. Os quatro caminhos são uma estrutura estratégica da consultoria, que também vende serviços de estratégia e IA.",
+  "status": "publicado",
+  "justificativa": "Fonte aprovada, método e recorte identificados, tema atual para estratégia corporativa e distinção explícita entre comunicação e resultado econômico.",
+  "revisor": "business_verify_26",
+  "revisado_em": "2026-11-26",
+  "corpo": [
+    "A BCG examinou como empresas de capital aberto passaram a falar de inteligência artificial em seus planos de crescimento. A amostra reúne 3.669 companhias de vários países com receita de ao menos US$ 1 bilhão em 2025 e crescimento superior à média de seu setor em pelo menos um dos períodos de 2017 a 2022 ou de 2023 a 2025. Os autores analisaram anúncios corporativos e comunicações a acionistas; não fizeram um experimento de adoção de IA.",
+    "Nesse conjunto, a parcela de empresas que mencionava IA ligada a iniciativas de crescimento passou de 4,9% no período anterior à popularização da IA generativa para 12,7% no período posterior. A BCG observa mais menções entre companhias com crescimento acima da média, mas o indicador registra o que as empresas comunicaram. Ele não permite atribuir seu crescimento à IA nem comprova que os projetos anunciados foram implantados ou deram retorno.",
+    "A partir dessa leitura, os consultores organizam quatro caminhos estratégicos conforme a exposição da empresa à demanda e à ruptura geradas pela IA: atender ao crescimento da infraestrutura, reinventar o negócio principal, migrar para atividades adjacentes quando a vantagem atual estiver ameaçada ou usar IA para acelerar inovação, vendas e execução. Essa matriz é uma proposta de decisão da BCG, não uma classificação validada por teste causal.",
+    "Para uma equipe de gestão, o uso prático da análise é formular hipóteses sobre onde a IA pode ampliar demanda ou enfraquecer vantagens existentes e depois medir resultados próprios. A amostra não representa pequenas empresas nem prova que um dos quatro caminhos seja superior. A BCG presta consultoria em estratégia e IA; suas recomendações devem ser avaliadas à luz desse interesse comercial e de evidência operacional específica de cada negócio."
+  ],
+  "referencias": [
+    "https://www.bcg.com/publications/2026/ai-reshaping-corporate-growth-strategy"
+  ]
+}

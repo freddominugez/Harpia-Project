@@ -1,0 +1,27 @@
+{
+  "titulo": "ConTra treina prefixos para melhorar a busca em documentos divididos",
+  "resumo": "Preprint propõe gerar contexto para cada trecho indexado; após reranking, o método superou comparações em dois testes, com limites de avaliação.",
+  "data": "2026-11-25",
+  "categoria": "pesquisa",
+  "icone": "lupa",
+  "corpo": [
+    "Jiajun Hou e Jingbang Chen, da CUHK-Shenzhen, apresentaram em 25 de novembro o preprint ConTra. O problema é conhecido de quem usa busca em documentos longos: um trecho isolado pode conter uma tabela ou resposta, mas deixar fora o título que identifica empresa, período ou assunto. Sem esse contexto, o índice e o sistema que reorganiza os resultados podem escolher o trecho errado.",
+    "O ConTra treina um modelo menor para escrever um prefixo curto e específico para cada trecho na fase de indexação. O prefixo acompanha o texto tanto no vetor usado para recuperar candidatos quanto no texto lido pelo reranker. O treinamento por reforço combina retorno de modelos de embedding e reranking congelados, uma checagem factual automatizada e uma penalidade de comprimento. O prefixo é gerado uma vez e reutilizado nas consultas.",
+    "No ConTEB, conjunto de oito tarefas de busca contextual, o ConTra-2B alcançou nDCG@10 de 0,8525 após reranking, contra 0,8279 de um gerador de prefixos Qwen3.5-9B sem esse treinamento e 0,7310 do codificador contextual PPLX-4B na mesma etapa final. A vantagem não vale para toda medida: antes do reranking, na etapa apenas de embeddings, o PPLX-4B ficou à frente do ConTra-2B.",
+    "Os autores também criaram o RealContextBench, com cinco coleções de aplicação e condições controladas de interferência no contexto. Nessa avaliação, o ConTra-2B marcou 0,6692 no resultado final, ante 0,6632 do gerador 9B. No teste de indexação de 342 trechos de documentos curtos em uma única GPU H100 de 80 GB, os tempos medianos de três execuções foram 3,75 segundos para ConTra-2B, 29,02 para o gerador 9B e 8,08 para PPLX-4B. Os fatores de 7,74 e 2,15 vezes referem-se apenas a essa configuração de indexação, sem incluir o custo de treinamento.",
+    "O estudo mede qualidade de recuperação e ordenação, não se uma resposta final gerada por IA está correta. RealContextBench foi construído pelos próprios autores e inclui distratores sintéticos. O texto é um preprint sem revisão por pares; código, dados e modelos são indicados no artigo, mas o Harpya não reproduziu os resultados."
+  ],
+  "harpia": "Busca em documentos é a ponte entre o texto de origem e a resposta de um sistema com recuperação. O ConTra ajuda a testar uma decisão concreta de projeto: guardar contexto legível junto de cada trecho para que a busca vetorial e o reranker possam usá-lo.",
+  "fontes": [
+    {
+      "veiculo": "arXiv",
+      "titulo": "ConTra: A Training Framework for Effective Contextual Retrieval via Prefix Generation",
+      "url": "https://arxiv.org/html/2611.34366v1"
+    }
+  ],
+  "status": "publicado",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-26",
+  "verificado_em": "2026-11-26",
+  "ordem": 999
+}
