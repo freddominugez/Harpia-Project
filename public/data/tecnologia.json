@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-25T21:42:42.341813+00:00",
-  "last_successful_at": "2026-11-25T21:42:42.341813+00:00",
+  "checked_at": "2026-11-26T08:18:29.584721+00:00",
+  "last_successful_at": "2026-11-26T08:18:29.584721+00:00",
   "publication_policy": "trusted_technology_rss",
   "sources": [
     {
@@ -9,7 +9,7 @@
       "nome": "MIT News",
       "site": "https://news.mit.edu/topic/electronics",
       "canal": "https://news.mit.edu/rss/topic/electronics",
-      "checked_at": "2026-11-25T21:42:42.341813+00:00",
+      "checked_at": "2026-11-26T08:18:29.584721+00:00",
       "status": "ok",
       "item_count": 4
     },
@@ -18,7 +18,7 @@
       "nome": "IEEE Spectrum",
       "site": "https://spectrum.ieee.org/topic/semiconductors/",
       "canal": "https://spectrum.ieee.org/feeds/topic/semiconductors.rss",
-      "checked_at": "2026-11-25T21:42:42.341813+00:00",
+      "checked_at": "2026-11-26T08:18:29.584721+00:00",
       "status": "ok",
       "item_count": 6
     },
@@ -27,7 +27,7 @@
       "nome": "Hugging Face",
       "site": "https://huggingface.co/blog",
       "canal": "https://huggingface.co/blog/feed.xml",
-      "checked_at": "2026-11-25T21:42:42.341813+00:00",
+      "checked_at": "2026-11-26T08:18:29.584721+00:00",
       "status": "ok",
       "item_count": 44
     }
@@ -41,7 +41,7 @@
       "summary": "",
       "url": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb",
       "published_at": "2026-11-25T00:00:00+00:00",
-      "verified_at": "2026-11-25T21:42:42.341813+00:00",
+      "verified_at": "2026-11-26T08:18:29.584721+00:00",
       "tema": "LLMs"
     },
     {
@@ -52,7 +52,7 @@
       "summary": "",
       "url": "https://news.mit.edu/2026/ai-driven-technique-could-help-engineers-design-analog-chips-faster-and-less-expensive-1123",
       "published_at": "2026-11-23T05:00:00+00:00",
-      "verified_at": "2026-11-25T21:42:42.341813+00:00",
+      "verified_at": "2026-11-26T08:18:29.584721+00:00",
       "tema": "Eletrônica"
     },
     {
@@ -63,7 +63,7 @@
       "summary": "",
       "url": "https://spectrum.ieee.org/sram-memory-z2ram",
       "published_at": "2026-11-21T14:00:02+00:00",
-      "verified_at": "2026-11-25T21:42:42.341813+00:00",
+      "verified_at": "2026-11-26T08:18:29.584721+00:00",
       "tema": "Chips"
     },
     {
@@ -74,7 +74,7 @@
       "summary": "",
       "url": "https://news.mit.edu/2026/featherweight-flying-robot-carries-its-own-sensors-and-computers-1118",
       "published_at": "2026-11-18T19:00:00+00:00",
-      "verified_at": "2026-11-25T21:42:42.341813+00:00",
+      "verified_at": "2026-11-26T08:18:29.584721+00:00",
       "tema": "Eletrônica"
     },
     {
@@ -85,7 +85,7 @@
       "summary": "",
       "url": "https://huggingface.co/blog/rumble-2-flash",
       "published_at": "2026-11-18T00:00:00+00:00",
-      "verified_at": "2026-11-25T21:42:42.341813+00:00",
+      "verified_at": "2026-11-26T08:18:29.584721+00:00",
       "tema": "LLMs"
     },
     {
@@ -96,7 +96,7 @@
       "summary": "",
       "url": "https://huggingface.co/blog/moe-expert-streaming",
       "published_at": "2026-11-18T00:00:00+00:00",
-      "verified_at": "2026-11-25T21:42:42.341813+00:00",
+      "verified_at": "2026-11-26T08:18:29.584721+00:00",
       "tema": "LLMs"
     },
     {
@@ -107,7 +107,7 @@
       "summary": "",
       "url": "https://huggingface.co/blog/token-pooling",
       "published_at": "2026-11-11T00:00:00+00:00",
-      "verified_at": "2026-11-25T21:42:42.341813+00:00",
+      "verified_at": "2026-11-26T08:18:29.584721+00:00",
       "tema": "LLMs"
     },
     {
@@ -118,7 +118,7 @@
       "summary": "",
       "url": "https://spectrum.ieee.org/find-my-ai-chip",
       "published_at": "2026-11-09T13:00:02+00:00",
-      "verified_at": "2026-11-25T21:42:42.341813+00:00",
+      "verified_at": "2026-11-26T08:18:29.584721+00:00",
       "tema": "Chips"
     },
     {
@@ -129,7 +129,7 @@
       "summary": "",
       "url": "https://huggingface.co/blog/transformers-mic",
       "published_at": "2026-11-03T00:00:00+00:00",
-      "verified_at": "2026-11-25T21:42:42.341813+00:00",
+      "verified_at": "2026-11-26T08:18:29.584721+00:00",
       "tema": "LLMs"
     },
     {
@@ -140,7 +140,7 @@
       "summary": "",
       "url": "https://huggingface.co/blog/mistral-large4",
       "published_at": "2026-10-29T00:00:00+00:00",
-      "verified_at": "2026-11-25T21:42:42.341813+00:00",
+      "verified_at": "2026-11-26T08:18:29.584721+00:00",
       "tema": "LLMs"
     },
     {
@@ -151,7 +151,7 @@
       "summary": "",
       "url": "https://spectrum.ieee.org/preethi-ashwath-chip-designer",
       "published_at": "2026-10-23T18:00:03+00:00",
-      "verified_at": "2026-11-25T21:42:42.341813+00:00",
+      "verified_at": "2026-11-26T08:18:29.584721+00:00",
       "tema": "Chips"
     },
     {
@@ -162,7 +162,7 @@
       "summary": "",
       "url": "https://spectrum.ieee.org/community-college-semiconductors",
       "published_at": "2026-10-20T13:00:02+00:00",
-      "verified_at": "2026-11-25T21:42:42.341813+00:00",
+      "verified_at": "2026-11-26T08:18:29.584721+00:00",
       "tema": "Chips"
     },
     {
@@ -173,7 +173,7 @@
       "summary": "",
       "url": "https://huggingface.co/blog/reflection-beam",
       "published_at": "2026-10-16T00:00:00+00:00",
-      "verified_at": "2026-11-25T21:42:42.341813+00:00",
+      "verified_at": "2026-11-26T08:18:29.584721+00:00",
       "tema": "LLMs"
     },
     {
@@ -184,7 +184,7 @@
       "summary": "",
       "url": "https://spectrum.ieee.org/semiconductor-research",
       "published_at": "2026-10-13T11:00:05+00:00",
-      "verified_at": "2026-11-25T21:42:42.341813+00:00",
+      "verified_at": "2026-11-26T08:18:29.584721+00:00",
       "tema": "Chips"
     }
   ]

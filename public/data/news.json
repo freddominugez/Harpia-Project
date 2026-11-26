@@ -1,199 +1,227 @@
 [
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "Query Obfuscation with Embedding-Optimized Noise (EON): A Representational Blindspot in Agentic Retrieval",
-  "url": "https://arxiv.org/abs/2611.31344",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "Structure-Aware Multimodal Retrieval Under Data Scarcity, Privacy Constraints and Out-of-Domain Content",
+  "url": "https://arxiv.org/abs/2611.33649",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "OmniEVIE: Evidence-Vector-Informed Embedding for Multi-modal Retrieval",
-  "url": "https://arxiv.org/abs/2611.32203",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "Privacy-Aware Adaptive Client Selection for Federated Retrieval-Augmented Generation",
+  "url": "https://arxiv.org/abs/2611.33890",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "LazUnirec: Unifying Retrieval and Ranking in Multi-scenario Industrial Recommendation",
-  "url": "https://arxiv.org/abs/2611.32590",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "RecField: Embedding Recommendations into Spatial Movie Organization as Affordances for Serendipitous Encounters",
+  "url": "https://arxiv.org/abs/2611.34330",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "SOARS: System One Assisted Reranking for Agentic Search",
-  "url": "https://arxiv.org/abs/2611.32917",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "ConTra: A Training Framework for Effective Contextual Retrieval via Prefix Generation",
+  "url": "https://arxiv.org/abs/2611.34366",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "Small Learned Projections for Semantic-Reversal-Aware Retrieval with Spectral Acceleration: A Four-Domain Empirical Study",
-  "url": "https://arxiv.org/abs/2611.31442",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "CA-RAG: Constraint-Aligned Retrieval for Structurally Faithful Long-Form Generation",
+  "url": "https://arxiv.org/abs/2611.33497",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "A dataset of clinically similar image pairs from citation-linked case reports for medical image retrieval",
-  "url": "https://arxiv.org/abs/2611.31465",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "NSFL: A Post-Training Neuro-Symbolic Fuzzy Logic Framework for Boolean Operators in Neural Embeddings",
+  "url": "https://arxiv.org/abs/2604.10604",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "See the Answer, Learn to Embed: Learning Universal Multimodal Embeddings from Hindsight",
-  "url": "https://arxiv.org/abs/2611.32439",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "NONSENSE: Non-Semantic Strings Expose Semanticity Gaps in Dense Retrieval",
+  "url": "https://arxiv.org/abs/2611.22353",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.IR",
-  "titulo": "MMEB-V3: Measuring the Performance Gaps of Omni-Modality Embedding Models",
-  "url": "https://arxiv.org/abs/2604.23321",
-  "data": "25/11/2026",
-  "ts": 1795582800
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "EXCISE: Query-Side Exclusion for Late-Interaction Retrieval",
-  "url": "https://arxiv.org/abs/2608.05497",
-  "data": "25/11/2026",
-  "ts": 1795582800
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "CACO: Coverage-Aware Coordinated Optimization for Continuous Generative Retrieval",
-  "url": "https://arxiv.org/abs/2611.25738",
-  "data": "25/11/2026",
-  "ts": 1795582800
- },
- {
-  "fonte": "arXiv cs.IR",
-  "titulo": "GEM: A Generative Embedding Model Bridging Reasoning and Retrieval",
-  "url": "https://arxiv.org/abs/2608.13200",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "VulCPE: Context-Aware Cybersecurity Vulnerability Retrieval and Management",
+  "url": "https://arxiv.org/abs/2505.13895",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "ECLIPSE: Embedding-Centered Foundation-Model Federated Knowledge Transfer for Data-Free Edge Intelligence",
-  "url": "https://arxiv.org/abs/2611.31527",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "BReD: Block Replay Dithering for Stable Low-Bit EMA Optimizer States",
+  "url": "https://arxiv.org/abs/2611.33951",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Tokenization and Architecture Jointly Allocate Component Roles in Time Series Transformers",
-  "url": "https://arxiv.org/abs/2611.31730",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "Assessing the Physical Interpretability of AlphaEarth Foundation Embeddings Through Multi-Sensor Satellite Time-Series Benchmarking for Agricultural Mapping",
+  "url": "https://arxiv.org/abs/2611.34019",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Metric-Dependent Scaling Laws for Sketched Multiclass Softmax Regression",
-  "url": "https://arxiv.org/abs/2611.31995",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "RAP: Radial-Angular Random Projection for Hyperbolic Representations",
+  "url": "https://arxiv.org/abs/2611.34298",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "HiCal: Offline Calibration for Hierarchical Scale Encoding in Accurate HiF4 Quantization",
-  "url": "https://arxiv.org/abs/2611.32624",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "Any-Rate: Half-Bit Multi-Precision LLM Quantization with Coded Bit-Planes",
+  "url": "https://arxiv.org/abs/2611.34402",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "MXFP4 for LLM Inference: Complementary Post-Training Quantization Techniques and Their Interactions",
-  "url": "https://arxiv.org/abs/2611.32873",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "Generalizable Equivariant Diffusion Models for Non-Abelian Lattice Gauge Theory: Analytical Foundations and Numerical Scaling Tests",
+  "url": "https://arxiv.org/abs/2611.03530",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "AVQ-Attention-2: Adaptive Vector-Quantized Attention with Exact Local Blocks and Linear-Cost Training",
-  "url": "https://arxiv.org/abs/2611.32989",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "Same Tokenizer, Better Tokens: Choosing Image Tokens by MAP Inference",
+  "url": "https://arxiv.org/abs/2611.33261",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Can a Frontier LLM Repair a Quantized Network by Tool-Free Weight-Space Programming?",
-  "url": "https://arxiv.org/abs/2611.33031",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "Verifiable but Not Predictable: What Sentence Embeddings Know About Propositional Decomposition",
+  "url": "https://arxiv.org/abs/2611.33668",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Shifter Quantization: Compact Representations for Native Integer Computation",
-  "url": "https://arxiv.org/abs/2611.33080",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "Music Similarity Estimation from Jukebox Embeddings",
+  "url": "https://arxiv.org/abs/2611.34346",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Bit-Flip Attacks on Quantized Neural Networks without Knowledge of Model Parameters",
-  "url": "https://arxiv.org/abs/2611.32128",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "One Representation to Rule Them All -- Open-Vocabulary Change Detection from Text or Visual Examples",
+  "url": "https://arxiv.org/abs/2611.34430",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "ReQOR: Operator-Discrepancy Subspace Repair for Quantization-Conditioned Backdoors in Large Language Models",
-  "url": "https://arxiv.org/abs/2611.32755",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "Conditional Independence Graph Learning from Dependent Data Via Time-Delay Embedding",
+  "url": "https://arxiv.org/abs/2611.34616",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "What Does a Skill Vocabulary Cost? A Closed-Loop Decomposition over Demonstrated Motions",
-  "url": "https://arxiv.org/abs/2611.32858",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "CoDeQ: Compression with a Dead-Zone Quantizer for Differentiable Joint Pruning--Quantization",
+  "url": "https://arxiv.org/abs/2512.12981",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.LG",
-  "titulo": "Efficient Video Retrieval Augmented Generation via Token Allocation",
-  "url": "https://arxiv.org/abs/2611.32938",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "Neural Isomorphic Fields: A Transformer-based Algebraic Numerical Embedding",
+  "url": "https://arxiv.org/abs/2601.12095",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "Agentic Systems Need Multi-Run Evaluation: A Study of Retrieval and Response Variability in a Deployed Enterprise RAG System",
-  "url": "https://arxiv.org/abs/2611.31266",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "Focus On Facts: Stylistically Invariant and Factually Sensitive Text Embeddings",
+  "url": "https://arxiv.org/abs/2611.33250",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "What If Chinese Were Latinized? A Counterfactual Study of Input Representation, Tokenization, and Language Modeling",
-  "url": "https://arxiv.org/abs/2611.32525",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "When Rerankers Work Together: Better and Faster Reranking without Joint Training",
+  "url": "https://arxiv.org/abs/2611.33844",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "EEG-MedRAG: Enhancing EEG-based Clinical Decision-Making via Hierarchical Hypergraph Retrieval-Augmented Generation",
-  "url": "https://arxiv.org/abs/2508.13735",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "Familiar Words, Unfamiliar Minds: Conventionalization without Calibration in the Vocabulary of Mind",
+  "url": "https://arxiv.org/abs/2611.34179",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "Grounding Text Embeddings in Stakeholder Associations",
-  "url": "https://arxiv.org/abs/2605.27168",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "MINE: A Training-Free Defense against Indirect Prompt Injection via Mutual Information and Embedding Variance",
+  "url": "https://arxiv.org/abs/2611.34188",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "arXiv cs.CL",
-  "titulo": "Offline-First Quantized AI: Design and Evaluation of an On-Device Maternal-Health Assistant for Low-Connectivity Environments",
-  "url": "https://arxiv.org/abs/2611.20012",
-  "data": "25/11/2026",
-  "ts": 1795582800
+  "titulo": "Mitigating Hallucinations in Medical Question Answering on ESC Cardiology Guidelines: Evaluation and Retrieval Optimization",
+  "url": "https://arxiv.org/abs/2611.34427",
+  "data": "26/11/2026",
+  "ts": 1795669200
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Aligned Machine: A Benchmark for Evaluating Multimodal Embedding Similarity via Human Comparative Judgements",
+  "url": "https://arxiv.org/abs/2611.33594",
+  "data": "26/11/2026",
+  "ts": 1795669200
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Luxical: High-Speed Lexical-Dense Text Embeddings",
+  "url": "https://arxiv.org/abs/2512.09015",
+  "data": "26/11/2026",
+  "ts": 1795669200
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Beyond Relevance-Centric Retrieval: Rubric-Oriented Document Set Selection and Ranking",
+  "url": "https://arxiv.org/abs/2607.19747",
+  "data": "26/11/2026",
+  "ts": 1795669200
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "AdaTutoRank: Learning to Rerank Document Sets via Adaptive Tutoring Optimization for RAG and Deep Research",
+  "url": "https://arxiv.org/abs/2609.32472",
+  "data": "26/11/2026",
+  "ts": 1795669200
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "Do Language Models Need a Trainable Input Embedding Table? Fixed Minimal Token Codes at 1.7B-Class Scale",
+  "url": "https://arxiv.org/abs/2610.04002",
+  "data": "26/11/2026",
+  "ts": 1795669200
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "GlitchPatch: Repairing Glitch Tokens in Frozen Language Models via Local Retokenization",
+  "url": "https://arxiv.org/abs/2610.04399",
+  "data": "26/11/2026",
+  "ts": 1795669200
+ },
+ {
+  "fonte": "arXiv cs.CL",
+  "titulo": "FIDEL: Abugida-Aware Pre-tokenization for Ethiopic Languages",
+  "url": "https://arxiv.org/abs/2611.20216",
+  "data": "26/11/2026",
+  "ts": 1795669200
  },
  {
   "fonte": "OpenAI",
