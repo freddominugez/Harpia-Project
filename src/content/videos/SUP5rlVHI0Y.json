@@ -1,0 +1,16 @@
+{
+  "id": "SUP5rlVHI0Y",
+  "titulo": "Simple Scaling of Swarms viaCooperative Multi-agent RL",
+  "canal": "Hugging Face",
+  "modulo": 8,
+  "nivel": "Avançado",
+  "resumo": "A equipe de pesquisa do Hugging Face apresenta uma extensão simples do GRPO para treinar vários agentes a colaborar. Para quem estuda aprendizado por reforço em sistemas multiagente.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=SUP5rlVHI0Y",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-27",
+  "verificado_em": "2026-11-27"
+}

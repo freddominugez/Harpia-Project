@@ -1,0 +1,16 @@
+{
+  "id": "_iVIugwpiUI",
+  "titulo": "How to Evaluate AI Agents: Benchmark Design | Stanford CS329Z Lecture 12 with John Yang",
+  "canal": "Stanford Online",
+  "modulo": 8,
+  "nivel": "Intermediário",
+  "resumo": "Aula de Stanford sobre como montar benchmarks de agentes: pedido, ambiente, critério de parada e avaliador, além das dimensões de confiabilidade. Para quem avalia agentes.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=_iVIugwpiUI",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-27",
+  "verificado_em": "2026-11-27"
+}
