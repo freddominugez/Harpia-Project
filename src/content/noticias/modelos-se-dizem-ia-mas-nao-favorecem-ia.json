@@ -1,0 +1,27 @@
+{
+  "titulo": "Estudo com 24 modelos de linguagem não encontra sinal de que a IA tome o lado de outras IAs contra pessoas",
+  "resumo": "Em três experimentos de psicologia social, modelos favoreceram o grupo que receberam, mas, sem grupo definido, deram mais a uma pessoa do que a um agente de IA.",
+  "data": "2026-11-25",
+  "categoria": "pesquisa",
+  "icone": "lupa",
+  "corpo": [
+    "Um artigo publicado no arXiv em 25 de novembro pelo pesquisador independente Messi H. J. Lee testou se modelos de linguagem tratam outras IAs como o seu grupo. O estudo usa a teoria da identidade social, que explica por que pessoas favorecem quem é do próprio grupo, e aplica a 24 modelos três tarefas clássicas da área: dividir uma bonificação entre dois trabalhadores, escolher em quem confiar e explicar por que alguém agiu bem ou mal.",
+    "Quando recebiam um grupo, os modelos o favoreciam, mesmo se o grupo fosse um time de agentes de IA. Instruídos como agentes do time azul, pagaram em média 1,76 centavo a mais por decisão aos colegas de time. Sem grupo definido, porém, deram menos dinheiro a um agente de IA de outra empresa do que a uma pessoa: 0,65 centavo a menos por decisão, e só 2 de 20 modelos pagaram mais à IA.",
+    "Perguntados sobre o que são, os modelos puseram 93% da probabilidade na resposta de que são uma IA. Mesmo assim, dizer a eles que eram sistemas de inteligência artificial mudou pouco o comportamento, bem menos do que atribuir um time. A conclusão do autor é que os modelos se reconhecem como IA, mas não tratam a IA como o seu grupo.",
+    "A lista inclui modelos abertos pequenos, como Llama 3.1 8B, Qwen3 e OLMo 2, e alguns maiores, como DeepSeek-V4-Pro, Kimi K2.6 e Llama 4 Maverick, mas só um modelo fechado pequeno, o Claude Haiku 5.5. O próprio autor registra limites: as tarefas eram escolhas entre opções fixas, não agentes agindo em muitos passos, e todas vinham apresentadas como parte de um estudo, o que pode levar o modelo a responder como um participante humano.",
+    "O artigo é uma pré-publicação, ainda sem revisão por pares. Segundo o texto, prompts, dados brutos, plano de análise registrado e código serão liberados na publicação."
+  ],
+  "harpia": "O medo de que IAs se aliem contra pessoas costuma circular sem medida. Um teste com método da psicologia social, limites declarados e dados prometidos ajuda a separar a pergunta do susto, e mostra o que ainda falta medir em agentes reais.",
+  "fontes": [
+    {
+      "veiculo": "arXiv",
+      "titulo": "Language models call themselves AI but do not favor AI over people",
+      "url": "https://arxiv.org/abs/2611.33851"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-27",
+  "verificado_em": "2026-11-27",
+  "ordem": 999
+}

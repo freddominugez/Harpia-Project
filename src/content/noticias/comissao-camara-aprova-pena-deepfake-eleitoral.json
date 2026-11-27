@@ -1,0 +1,32 @@
+{
+  "titulo": "Comissão da Câmara aprova pena de detenção para quem divulgar deepfake em campanha eleitoral",
+  "resumo": "Substitutivo ao PL 212/2026 reduz a pena prevista no texto original, tira prazos de remoção para plataformas e segue para a Comissão de Constituição e Justiça.",
+  "data": "2026-11-26",
+  "categoria": "brasil",
+  "icone": "balanca",
+  "corpo": [
+    "A Comissão de Comunicação da Câmara dos Deputados aprovou o substitutivo do deputado Julio Cesar Ribeiro (Republicanos-DF) ao Projeto de Lei 212/2026, do deputado Rubens Pereira Júnior (PT-MA). O texto cria o crime de divulgar em campanha ou propaganda eleitoral conteúdo adulterado por inteligência artificial, o chamado deepfake. A aprovação foi noticiada em 26 de novembro pela Agência Câmara.",
+    "O projeto original previa reclusão de 2 a 6 anos e multa para quem produzisse, editasse ou veiculasse deepfakes contra candidatos, partidos ou agentes públicos para alterar a vontade do eleitor. O substitutivo baixa a pena para detenção de 1 a 2 anos e multa, mantém o aumento de um terço entre o registro das candidaturas e a votação e restringe o crime à divulgação em propaganda ou período de campanha.",
+    "O relator justificou a redução comparando com os crimes eleitorais contra a honra, como calúnia e difamação, que têm penas de 2 a 6 meses de detenção. Segundo ele, uma pena muito maior para o deepfake dificilmente seria aplicada na prática.",
+    "O substitutivo também retira do texto as regras que obrigavam as plataformas a remover deepfakes eleitorais em 24 horas após notificação, sob pena de responsabilidade solidária. No lugar, altera o Marco Civil da Internet para deixar claro que os provedores respondem quando não retiram, após aviso da vítima, imagens íntimas manipuladas por IA. As mudanças propostas na LGPD foram descartadas, porque, segundo o relator, a lei já tem exceção para investigação criminal.",
+    "O projeto ainda passa pela Comissão de Constituição e Justiça e pelo Plenário da Câmara, e depois precisa ser aprovado pelo Senado para virar lei."
+  ],
+  "harpia": "O caso mostra como o Congresso tem tratado IA por partes, crime a crime, enquanto o PL 2338/2023 segue em discussão. A troca de prazos de remoção por regras mais estreitas também revela a dificuldade de definir o papel das plataformas.",
+  "fontes": [
+    {
+      "veiculo": "Agência Tocantins (reprodução da Agência Câmara de Notícias)",
+      "titulo": "Comissão aprova punição para divulgação de deepfakes em campanha eleitoral",
+      "url": "https://www.agenciatocantins.com.br/noticia/113313/comissao-aprova-punicao-para-divulgacao-de-deepfakes-em-campanha-eleitoral"
+    },
+    {
+      "veiculo": "Câmara dos Deputados",
+      "titulo": "Enquete do PL 212/2026",
+      "url": "https://www.camara.leg.br/enquetes/2600618"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-27",
+  "verificado_em": "2026-11-27",
+  "ordem": 999
+}

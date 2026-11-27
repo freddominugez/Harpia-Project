@@ -1,0 +1,32 @@
+{
+  "titulo": "Sarvam publica os pesos do Sarvam-105B-1711, versão de 105 bilhões de parâmetros feita para agentes de atendimento",
+  "resumo": "Startup indiana lança nova versão aberta do seu modelo de 105 bilhões de parâmetros; os ganhos em testes de agentes e idiomas indianos são medidos pela própria empresa.",
+  "data": "2026-11-22",
+  "categoria": "abertos",
+  "icone": "chip",
+  "corpo": [
+    "A Sarvam AI, empresa indiana de IA, publicou em 22 de novembro o Sarvam-105B-1711, uma nova versão do modelo de 105 bilhões de parâmetros que ela havia aberto em fevereiro. Os pesos estão no Hugging Face em duas versões: uma em BF16 e outra comprimida em NVFP4, de cerca de 65 GB, que segundo a empresa cabe numa única placa de vídeo de estação de trabalho.",
+    "A ficha do modelo no Hugging Face descreve uma arquitetura de mistura de especialistas, com 10,3 bilhões de parâmetros ativos por token e contexto de 131.072 tokens. A empresa apresenta o modelo como uma opção barata para atendimento ao cliente, agentes de voz e tarefas em que o modelo chama ferramentas ao longo de várias trocas de mensagens.",
+    "Segundo o blog da Sarvam, a média do modelo em oito testes de conversa com agentes subiu de 42,6 na versão de fevereiro para 73,9. No IFBench, que mede se o modelo segue instruções, a nota passou de 32,5 para 82,5, e no conjunto de testes em idiomas indianos, criado pela própria empresa, de 30,1 para 79,1. A Sarvam diz ainda que o modelo resolveu 69,5% das tarefas do Tau2 nas quatro tentativas seguidas.",
+    "Todas essas comparações foram feitas no ambiente de avaliação da própria Sarvam, inclusive as que colocam o modelo ao lado do Gemini 3.5 Flash-Lite e do Gemma 4 31B. Até a publicação desta nota, nenhuma avaliação independente tinha sido encontrada. O preço de US$ 0,15 por milhão de tokens também é o informado pela empresa para o seu próprio serviço.",
+    "As páginas consultadas, o blog e a ficha no Hugging Face, não informam a licença dos pesos. Um rastreador de lançamentos lista Apache 2.0, mas a informação não foi confirmada na fonte primária, e quem pretende usar o modelo deve conferir os termos antes."
+  ],
+  "harpia": "Um modelo grande que roda numa só placa e foi treinado para idiomas pouco atendidos pelas empresas americanas é um caso útil para discutir soberania e uso local de IA. A ausência de licença clara e de testes independentes mostra por que pesos abertos não bastam para avaliar um modelo.",
+  "fontes": [
+    {
+      "veiculo": "Sarvam AI",
+      "titulo": "Sarvam-105B-1711: a new Sarvam 105B checkpoint",
+      "url": "https://www.sarvam.ai/blogs/sarvam-105b-1711"
+    },
+    {
+      "veiculo": "Hugging Face",
+      "titulo": "sarvamai/sarvam-105b-1711",
+      "url": "https://huggingface.co/sarvamai/sarvam-105b-1711"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-27",
+  "verificado_em": "2026-11-27",
+  "ordem": 999
+}

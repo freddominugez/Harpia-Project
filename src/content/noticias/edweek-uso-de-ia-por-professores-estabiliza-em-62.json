@@ -1,0 +1,27 @@
+{
+  "titulo": "Pesquisa da EdWeek mostra que o uso de IA por professores americanos parou de crescer e ficou em 62%",
+  "resumo": "Levantamento com 590 professores dos Estados Unidos registra 62% de uso de IA em sala, só um ponto acima de 2025, depois de quase dobrar entre 2023 e 2025.",
+  "data": "2026-11-25",
+  "categoria": "letramento",
+  "icone": "escola",
+  "corpo": [
+    "O EdWeek Research Center, braço de pesquisa da Education Week, ouviu 590 professores dos Estados Unidos entre agosto e outubro de 2026, numa amostra que o centro descreve como representativa do país. Dos entrevistados, 62% disseram usar ferramentas de IA em sala, seja pouco, de vez em quando ou muito, neste ano letivo.",
+    "O número é só um ponto percentual maior que o de 2025, quando 61% deram a mesma resposta. A grande mudança veio antes: entre 2023 e 2025, a parcela de professores que usam IA em aula quase dobrou, de 34% para 61%, segundo os dados do próprio centro.",
+    "Especialistas ouvidos pela reportagem leem a estabilidade como saturação, e não como freio. Damian Bebell, do Boston College, afirma que restam menos professores que nunca usaram IA e prevê que o grupo dos que não usam deve cair devagar até 10% a 15% e parar aí, mas ressalva que mudanças de tecnologia e de política escolar podem alterar esse quadro.",
+    "A reportagem aponta outros dois fatores possíveis. Um é a reação contra o excesso de telas: Los Angeles e Nova York anunciaram em setembro pausas no uso de ferramentas de IA por alunos. O outro é a falta de orientação e de formação: segundo o mesmo centro, 64% dos professores tinham recebido ao menos uma sessão de formação sobre IA até outubro.",
+    "Outras pesquisas mostram movimento diferente. A reportagem cita levantamento da RAND segundo o qual o uso de IA no ensino de matemática passou de 45% para 74% entre 2025 e 2026, o que indica que a frequência e o tipo de uso podem estar mudando mesmo com a parcela de usuários estável."
+  ],
+  "harpia": "Para quem pensa letramento em IA, o dado sugere que a fase de adoção espontânea acabou nos Estados Unidos e que o próximo passo depende de formação e de regras claras. Professores que ainda não usam tendem a esperar orientação, não novidade.",
+  "fontes": [
+    {
+      "veiculo": "GovTech (Education Week, via Tribune Content Agency)",
+      "titulo": "Proportion of Teachers Using AI-Powered Tools Plateaus Around 62%",
+      "url": "https://www.govtech.com/education/k-12/proportion-of-teachers-using-ai-powered-tools-plateaus-around-62"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-27",
+  "verificado_em": "2026-11-27",
+  "ordem": 999
+}
