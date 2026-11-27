@@ -1,0 +1,29 @@
+{
+  "titulo": "Pesquisa da McKinsey mostra uso de IA em tarefas bancárias",
+  "resumo": "Pesquisa da McKinsey em 13 países aponta que 23% usam IA generativa para tarefas bancárias; o dado é autorrelatado e não mede migração de clientes.",
+  "fonte": "mckinsey",
+  "url": "https://www.mckinsey.com/featured-insights/charts/customers-beat-banks-to-ai",
+  "tipo": "noticia",
+  "trilha": "clientes",
+  "autores": "Akshay Kapoor, Brian Ledbetter, Javier Martínez Arroyo, Klaus Dallerup, Marco Vettori, Marti Riba, Miklós Dietz, Saptarshi Ganguly, Sid Tiwari e Vik Sohoni",
+  "data": "2026-11-25",
+  "data_precisa": true,
+  "idioma": "en",
+  "acesso": "Gráfico de 25 de novembro e trechos abertos do relatório Global Banking Annual Review 2026, de 17 de novembro, consultados em inglês.",
+  "evidencia": "Pesquisa de consumidores bancários de 2026 declarada pela McKinsey, com cerca de 46 mil entrevistados em 13 países; o gráfico mostra conhecimento e uso de IA generativa, e o relatório traz perguntas adicionais sobre canais e preferência.",
+  "limites": "As respostas são autodeclaradas. As páginas abertas não detalham seleção da amostra, ponderação, margem de erro nem formulação completa das perguntas. Os percentuais descrevem os entrevistados apresentados, sem comprovar representatividade da população, mudança efetiva de banco ou retorno financeiro. A McKinsey presta consultoria ao setor bancário.",
+  "status": "publicado",
+  "justificativa": "Fonte aprovada com gráfico e relatório originais, amostra e denominadores identificados, além de limites de inferência explícitos para uma pauta de relacionamento com clientes.",
+  "revisor": "business_verify_27",
+  "revisado_em": "2026-11-27",
+  "corpo": [
+    "Uma pesquisa apresentada pela McKinsey ouviu cerca de 46 mil clientes bancários em 13 países em 2026. No total exibido no gráfico de 25 de novembro, 92% disseram conhecer ferramentas de IA generativa, 58% afirmaram usá-las para alguma finalidade e 23% para tarefas bancárias. A nota metodológica do gráfico informa aproximadamente 2.700 entrevistados no Brasil, mas não detalha como os participantes foram selecionados ou ponderados.",
+    "O relatório original, publicado em 17 de novembro, acrescenta que 74% dos entrevistados que usam IA para tarefas bancárias recorrem a ChatGPT, Claude ou Gemini. Esse percentual tem como base apenas o grupo que declarou esse uso bancário; não significa 74% de todos os clientes pesquisados. A constatação sugere que parte da conversa sobre produtos financeiros acontece fora dos canais dos bancos, embora a pesquisa não meça quantas decisões ou transações vieram dessas consultas.",
+    "Em outra pergunta, 62% dos usuários de IA afirmaram que prefeririam obter serviços e orientação de IA de seu banco principal. Aqui o grupo de referência é o de usuários de IA, diferente do grupo que usa IA para tarefas bancárias. Preferência declarada não é escolha observada: o resultado mostra uma oportunidade de relacionamento para bancos, mas não demonstra que clientes tenham trocado de instituição ou que um serviço de IA gere receita.",
+    "Para equipes de experiência do cliente, o estudo ajuda a formular testes sobre quando oferecer comparação de produtos, orientação e suporte dentro do próprio banco. A McKinsey não expõe nas páginas abertas margem de erro, ponderação ou questionário completo, e a consultoria presta serviços ao setor. Os números devem ser lidos como resultados da pesquisa declarada, não como previsão de mercado ou prova de retorno de investimento."
+  ],
+  "referencias": [
+    "https://www.mckinsey.com/featured-insights/charts/customers-beat-banks-to-ai",
+    "https://www.mckinsey.com/industries/financial-services/our-insights/global-banking-annual-review"
+  ]
+}

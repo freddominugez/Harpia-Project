@@ -1,0 +1,27 @@
+{
+  "titulo": "Estudo testa como reduzir modelos de linguagem por difusão",
+  "resumo": "Preprint compara a destilação convencional com treino em duas fases; melhora a perplexidade em dois testes, mas exige computação elevada e não mede segurança.",
+  "data": "2026-11-25",
+  "categoria": "pesquisa",
+  "icone": "chip",
+  "corpo": [
+    "Yuxuan Sun e sete coautores publicaram em 25 de novembro um preprint sobre destilação de modelos de linguagem por difusão. Destilar significa treinar um modelo menor, o aluno, a partir do comportamento de outro maior, o professor. O trabalho testa dois pares de modelos de difusão mascarada: MDLM com 110 milhões de parâmetros para um aluno de 10,5 milhões e Dream com 7 bilhões para um aluno de 93 milhões.",
+    "Nos experimentos, a destilação convencional por divergência forward-KL apresentou duas falhas. Acrescentar mais texto gerado pelo professor não melhorou a perplexidade do aluno de modo contínuo. Além disso, no mesmo conjunto de dados sintéticos, esse objetivo ficou atrás de treinar o aluno com o objetivo original de remoção de ruído. Os autores associam a diferença ao fato de o aluno encontrar, durante a geração, estados diferentes dos usados no treino convencional.",
+    "A proposta usa duas fases. Primeiro, o aluno aprende com um conjunto fixo de textos produzidos pelo professor. Depois, o treinamento acompanha etapas da própria geração do aluno, pondera a contribuição de cada token pela confiança do professor e usa uma âncora para estabilizar as atualizações. Os autores chamam o processo de treino sem dados, no sentido de dispensar um corpus de texto real: ele ainda usa amostras sintéticas geradas pelo professor.",
+    "No teste com MDLM, a perplexidade medida por um avaliador GPT-2 foi 24,75 para o aluno final, ante 27,04 do professor; nessa métrica, menor é melhor. Com Dream, a perplexidade medida por Qwen-2.5 caiu de 25,23 no aluno treinado apenas com forward-KL para 19,83 com o método completo. O professor Dream, porém, marcou 12,07: o aluno não o superou. As métricas usam avaliadores diferentes nos dois experimentos e não devem ser comparadas diretamente entre eles.",
+    "O estudo abrange apenas esses dois regimes de difusão mascarada, mantendo família de arquitetura e tokenizador entre professor e aluno. A tabela de computação informa 102 horas de GPU A100 para o experimento MDLM e 1.827 horas de GPU H100 para Dream, incluindo as duas fases. O treinamento com trajetórias requer consultas adicionais ao professor; segurança e uso em produção não foram avaliados. É um preprint sem revisão por pares nem reprodução independente dos resultados."
+  ],
+  "harpia": "Modelos menores podem reduzir o custo de uso, mas o custo para treiná-los também importa. Este estudo mostra por que testar somente a perda durante o treino pode esconder problemas que aparecem quando o aluno gera texto por conta própria.",
+  "fontes": [
+    {
+      "veiculo": "arXiv",
+      "titulo": "Rethinking Knowledge Distillation for Diffusion Language Models",
+      "url": "https://arxiv.org/html/2611.33670v1"
+    }
+  ],
+  "status": "publicado",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-27",
+  "verificado_em": "2026-11-27",
+  "ordem": 999
+}

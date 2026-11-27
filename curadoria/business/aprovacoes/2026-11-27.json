@@ -1,0 +1,73 @@
+{
+  "data": "2026-11-27",
+  "timezone": "America/Fortaleza",
+  "items": [
+    {
+      "path": "src/content/business/acervo/2026-11-27-mckinsey-clientes-ia-servicos-bancarios.json",
+      "sha256": "689e64377fe531e2196a3db38e72a138b637f72a85eb220e0b13da67eacc35ff",
+      "sha256_publicado": "9202fac2a0ed0c20934f38217c86831b2402cafd1d5d10174bf0a2c85b4d5a20",
+      "pauta": "business_pauta_27",
+      "verificacao": {
+        "responsavel": "business_verify_27",
+        "consultado_em": "2026-11-27",
+        "escopo": "Gráfico de 25/11 e relatório original de 17/11 consultados; pesquisa declarada, denominadores e limites metodológicos separados de inferências de mercado.",
+        "evidencias": [
+          "https://www.mckinsey.com/featured-insights/charts/customers-beat-banks-to-ai",
+          "https://www.mckinsey.com/industries/financial-services/our-insights/global-banking-annual-review"
+        ],
+        "alegacoes": [
+          {
+            "texto": "O gráfico McKinsey de 25 de novembro de 2026 apresenta pesquisa de cerca de 46 mil consumidores em 13 países.",
+            "url": "https://www.mckinsey.com/featured-insights/charts/customers-beat-banks-to-ai",
+            "resultado": "confirmada",
+            "local": "Cabeçalho, descrição do gráfico e nota de amostra."
+          },
+          {
+            "texto": "Na amostra apresentada, 92 por cento conhecem IA generativa, 58 por cento usam para qualquer finalidade e 23 por cento para tarefas bancárias.",
+            "url": "https://www.mckinsey.com/featured-insights/charts/customers-beat-banks-to-ai",
+            "resultado": "confirmada",
+            "local": "Descrição do gráfico de 2026."
+          },
+          {
+            "texto": "A nota do gráfico lista cerca de 2.700 respondentes no Brasil e não apresenta seleção da amostra, ponderação ou margem de erro.",
+            "url": "https://www.mckinsey.com/industries/financial-services/our-insights/global-banking-annual-review",
+            "resultado": "qualificada",
+            "local": "Exhibit 4 e nota metodológica do relatório."
+          },
+          {
+            "texto": "Entre os consumidores que usam IA para tarefas bancárias, 74 por cento recorrem a ChatGPT, Claude ou Gemini.",
+            "url": "https://www.mckinsey.com/industries/financial-services/our-insights/global-banking-annual-review",
+            "resultado": "confirmada",
+            "local": "Seção Customers are moving faster than banks."
+          },
+          {
+            "texto": "Entre usuários de IA, 62 por cento prefeririam obter serviços e orientação de IA do banco principal; é preferência declarada de grupo distinto.",
+            "url": "https://www.mckinsey.com/industries/financial-services/our-insights/global-banking-annual-review",
+            "resultado": "qualificada",
+            "local": "Seção Customers are moving faster than banks."
+          },
+          {
+            "texto": "As páginas publicadas relatam respostas de pesquisa, sem medir troca de banco, retorno financeiro ou representatividade populacional.",
+            "url": "https://www.mckinsey.com/industries/financial-services/our-insights/global-banking-annual-review",
+            "resultado": "qualificada",
+            "local": "Escopo da pesquisa e ausência de medidas de comportamento observado."
+          }
+        ]
+      },
+      "selecao": {
+        "responsavel": "business_select_27",
+        "nota": 8.1,
+        "justificativa": "Pesquisa atual de relacionamento bancário com amostra e denominadores identificados, limites da inferência e interesse comercial explícitos.",
+        "criterios": {
+          "rigor": 7.5,
+          "relevancia": 8.6,
+          "utilidade": 8.1,
+          "atualidade": 9.2,
+          "clareza": 8.6,
+          "conflitos": 6.8
+        }
+      },
+      "publicacao": "editorial_round_27"
+    }
+  ]
+}

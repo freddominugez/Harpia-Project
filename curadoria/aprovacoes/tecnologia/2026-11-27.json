@@ -1,0 +1,174 @@
+{
+  "data": "2026-11-27",
+  "timezone": "America/Fortaleza",
+  "items": [
+    {
+      "path": "src/content/artigos/2026-rethinking-knowledge-distillation-for-diffusion-la.json",
+      "sha256": "70ab5556d9cff8ee7d48d37f1d81d75fe60cb89b3d15e69666fd39635cd55148",
+      "pauta": {
+        "responsavel": "tech_pauta_27",
+        "justificativa": "Preprint recente com experimento verificável sobre compressão de modelos de difusão mascarada e limites de custo explícitos."
+      },
+      "verificacao": {
+        "responsavel": "tech_verify_27",
+        "consultado_em": "2026-11-27",
+        "evidencias": [
+          "https://arxiv.org/abs/2611.33670",
+          "https://arxiv.org/html/2611.33670v1"
+        ],
+        "alegacoes": [
+          {
+            "texto": "O preprint de Yuxuan Sun e sete coautores foi submetido em 25 de novembro de 2026.",
+            "url": "https://arxiv.org/abs/2611.33670",
+            "resultado": "confirmada",
+            "local": "Registro arXiv, autoria e histórico."
+          },
+          {
+            "texto": "O estudo destila professores MDLM de 110 milhões e Dream de 7 bilhões de parâmetros para alunos de 10,5 e 93 milhões, respectivamente.",
+            "url": "https://arxiv.org/html/2611.33670v1",
+            "resultado": "confirmada",
+            "local": "Seções 1, 3 e 5, modelos avaliados."
+          },
+          {
+            "texto": "Em ambos os pares, mais dados gerados pelo professor não melhoraram monotonamente a destilação forward-KL, e o objetivo original de denoising a superou no mesmo conjunto de dados.",
+            "url": "https://arxiv.org/html/2611.33670v1",
+            "resultado": "qualificada",
+            "local": "Seção 3, Figura 1 e Tabela 2."
+          },
+          {
+            "texto": "O método em duas fases usa dados sintéticos gerados pelo professor e depois trajetórias produzidas pelo aluno, com ponderação por confiança e âncora de estabilidade.",
+            "url": "https://arxiv.org/html/2611.33670v1",
+            "resultado": "confirmada",
+            "local": "Seção 4, método; data-free exclui corpus real, não todo dado."
+          },
+          {
+            "texto": "No MDLM, perplexidade medida com GPT-2 foi 24,75 para o aluno final frente a 27,04 do professor.",
+            "url": "https://arxiv.org/html/2611.33670v1",
+            "resultado": "qualificada",
+            "local": "Seção 5.3 e Tabela 3; vantagem restrita à métrica."
+          },
+          {
+            "texto": "No Dream, perplexidade medida com Qwen-2.5 foi 19,83 no aluno final, 25,23 no baseline forward-KL e 12,07 no professor; o aluno não superou o professor.",
+            "url": "https://arxiv.org/html/2611.33670v1",
+            "resultado": "qualificada",
+            "local": "Seção 5.3 e Tabela 3."
+          },
+          {
+            "texto": "A tabela de custo relata 102 horas de GPU A100 para MDLM e 1.827 horas de GPU H100 para Dream, somando as duas fases.",
+            "url": "https://arxiv.org/html/2611.33670v1",
+            "resultado": "confirmada",
+            "local": "Apêndice B.4, Tabela 11."
+          },
+          {
+            "texto": "Os testes cobrem dois regimes de difusão mascarada com arquitetura e tokenizador correspondentes; segurança não foi avaliada e resultados não foram reproduzidos independentemente.",
+            "url": "https://arxiv.org/html/2611.33670v1",
+            "resultado": "qualificada",
+            "local": "Apêndices E e F, limites e impacto."
+          }
+        ],
+        "escopo": "Registro e preprint integral consultados; métricas dos autores delimitadas por modelo, avaliador e custo, sem reprodução independente."
+      },
+      "selecao": {
+        "responsavel": "tech_select_27",
+        "nota": 4.1,
+        "justificativa": "Pauta técnica nova, rigor experimental e utilidade para eficiência; notícia delimita os ganhos e ressalta custo e segurança não avaliada.",
+        "criterios": {
+          "rigor": 4,
+          "relevancia": 4.4,
+          "utilidade": 4.1,
+          "atualidade": 4.5,
+          "clareza": 3.6
+        }
+      },
+      "publicacao": {
+        "responsavel": "editorial_round_27",
+        "status": "aguardando_portao"
+      },
+      "sha256_publicado": "b865ecb760f91f4f2607147a96374d8caa8f5c06065b5a29c26333300e2d328d"
+    },
+    {
+      "path": "src/content/noticias/2026-11-27-destilacao-modelos-linguagem-difusao.json",
+      "sha256": "0ff0f887f0d6af8dd838fc6774837836924ab033f4d6c534c97ffe3f5b58451a",
+      "pauta": {
+        "responsavel": "tech_pauta_27",
+        "justificativa": "Preprint recente com experimento verificável sobre compressão de modelos de difusão mascarada e limites de custo explícitos."
+      },
+      "verificacao": {
+        "responsavel": "tech_verify_27",
+        "consultado_em": "2026-11-27",
+        "evidencias": [
+          "https://arxiv.org/abs/2611.33670",
+          "https://arxiv.org/html/2611.33670v1"
+        ],
+        "alegacoes": [
+          {
+            "texto": "O preprint de Yuxuan Sun e sete coautores foi submetido em 25 de novembro de 2026.",
+            "url": "https://arxiv.org/abs/2611.33670",
+            "resultado": "confirmada",
+            "local": "Registro arXiv, autoria e histórico."
+          },
+          {
+            "texto": "O estudo destila professores MDLM de 110 milhões e Dream de 7 bilhões de parâmetros para alunos de 10,5 e 93 milhões, respectivamente.",
+            "url": "https://arxiv.org/html/2611.33670v1",
+            "resultado": "confirmada",
+            "local": "Seções 1, 3 e 5, modelos avaliados."
+          },
+          {
+            "texto": "Em ambos os pares, mais dados gerados pelo professor não melhoraram monotonamente a destilação forward-KL, e o objetivo original de denoising a superou no mesmo conjunto de dados.",
+            "url": "https://arxiv.org/html/2611.33670v1",
+            "resultado": "qualificada",
+            "local": "Seção 3, Figura 1 e Tabela 2."
+          },
+          {
+            "texto": "O método em duas fases usa dados sintéticos gerados pelo professor e depois trajetórias produzidas pelo aluno, com ponderação por confiança e âncora de estabilidade.",
+            "url": "https://arxiv.org/html/2611.33670v1",
+            "resultado": "confirmada",
+            "local": "Seção 4, método; data-free exclui corpus real, não todo dado."
+          },
+          {
+            "texto": "No MDLM, perplexidade medida com GPT-2 foi 24,75 para o aluno final frente a 27,04 do professor.",
+            "url": "https://arxiv.org/html/2611.33670v1",
+            "resultado": "qualificada",
+            "local": "Seção 5.3 e Tabela 3; vantagem restrita à métrica."
+          },
+          {
+            "texto": "No Dream, perplexidade medida com Qwen-2.5 foi 19,83 no aluno final, 25,23 no baseline forward-KL e 12,07 no professor; o aluno não superou o professor.",
+            "url": "https://arxiv.org/html/2611.33670v1",
+            "resultado": "qualificada",
+            "local": "Seção 5.3 e Tabela 3."
+          },
+          {
+            "texto": "A tabela de custo relata 102 horas de GPU A100 para MDLM e 1.827 horas de GPU H100 para Dream, somando as duas fases.",
+            "url": "https://arxiv.org/html/2611.33670v1",
+            "resultado": "confirmada",
+            "local": "Apêndice B.4, Tabela 11."
+          },
+          {
+            "texto": "Os testes cobrem dois regimes de difusão mascarada com arquitetura e tokenizador correspondentes; segurança não foi avaliada e resultados não foram reproduzidos independentemente.",
+            "url": "https://arxiv.org/html/2611.33670v1",
+            "resultado": "qualificada",
+            "local": "Apêndices E e F, limites e impacto."
+          }
+        ],
+        "escopo": "Registro e preprint integral consultados; métricas dos autores delimitadas por modelo, avaliador e custo, sem reprodução independente."
+      },
+      "selecao": {
+        "responsavel": "tech_select_27",
+        "nota": 4.1,
+        "justificativa": "Pauta técnica nova, rigor experimental e utilidade para eficiência; notícia delimita os ganhos e ressalta custo e segurança não avaliada.",
+        "criterios": {
+          "rigor": 4,
+          "relevancia": 4.4,
+          "utilidade": 4.1,
+          "atualidade": 4.5,
+          "clareza": 3.6
+        }
+      },
+      "publicacao": {
+        "responsavel": "editorial_round_27",
+        "status": "aguardando_portao"
+      },
+      "sha256_publicado": "f467fd4a2cfa88ec7fc13dfbbbf2d1e78256dc2bca0952e1f0d9c7064dadb0c3"
+    }
+  ]
+}
