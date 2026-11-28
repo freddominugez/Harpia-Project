@@ -1,0 +1,16 @@
+{
+  "id": "uKNZjas7tJw",
+  "titulo": "RL vs JEPA #ai",
+  "canal": "Discover AI",
+  "modulo": 8,
+  "nivel": "Avançado",
+  "resumo": "Comenta um artigo que troca aprendizado por reforço por síntese de política: o agente lê o código do modelo de mundo e escreve a política. Para quem estuda agentes e controle.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=uKNZjas7tJw",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-28",
+  "verificado_em": "2026-11-28"
+}

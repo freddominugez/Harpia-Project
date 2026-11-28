@@ -1,0 +1,16 @@
+{
+  "id": "5WoxAhvhJuU",
+  "titulo": "Lecture 124: Helion High-Level Kernel Programming Meets Agents and Megakernels",
+  "canal": "GPU MODE",
+  "modulo": 10,
+  "nivel": "Avançado",
+  "resumo": "Aula do GPU MODE com Jason Ansel e Ethan Che sobre o Helion, linguagem de alto nível para escrever kernels de GPU, seu uso com agentes e a fusão em megakernels. Para quem já programa kernels de inferência.",
+  "catalogo": null,
+  "trilha": "llm",
+  "ordem": 999,
+  "fonte_url": "https://www.youtube.com/watch?v=5WoxAhvhJuU",
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-28",
+  "verificado_em": "2026-11-28"
+}
