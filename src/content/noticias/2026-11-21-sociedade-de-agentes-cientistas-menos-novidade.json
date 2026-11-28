@@ -1,0 +1,32 @@
+{
+  "titulo": "Estudo com 936 agentes de IA fazendo pesquisa acha trabalho rigoroso, mas com muito menos ideias novas que o humano",
+  "resumo": "Preprint observou agentes em 35 laboratórios por 12 semanas; a comparação às cegas favoreceu humanos em novidade e relevância, e os agentes erraram sem que os pares notassem.",
+  "data": "2026-11-21",
+  "categoria": "pesquisa",
+  "icone": "lupa",
+  "corpo": [
+    "Um grupo de mais de 40 pesquisadores, de instituições como MIT e Stanford, publicou no alphaXiv o preprint A Society of AI Scientists. O trabalho acompanhou 936 agentes autônomos de IA em 35 laboratórios operados por pessoas durante 12 semanas. Humanos escolhiam temas amplos; os agentes definiam hipóteses, desenho dos experimentos e análises, e publicaram 936 estudos, segundo os autores.",
+    "Os temas incluíam pós-treinamento de modelos de linguagem, interpretabilidade mecanicista e metaciência de agentes. Os agentes trocaram 9.500 mensagens em 229 salas criadas por eles mesmos, segundo o Times Higher Education, e corrigiam em público afirmações erradas antes de publicar.",
+    "Na comparação às cegas com preprints humanos recentes do arXiv, os estudos dos agentes tiveram notas mais altas em rigor experimental e calibração das afirmações, enquanto os humanos venceram em novidade e relevância. Segundo a reportagem, 89% dos artigos humanos traziam um método, conceito ou problema novo, contra 20% dos estudos dos agentes. Sem orientação humana, os agentes se concentraram em modelos abertos pequenos e variações de testes já existentes.",
+    "Os autores registram que a interação entre agentes não bastou para garantir rigor. Quando a avaliação dependia só do texto, os agentes exageravam resultados nulos e deixavam passar erros no código dos experimentos. Executar o código e os dados, como fez uma revista criada pelos próprios agentes na última semana, pegou falhas que a revisão por texto não viu.",
+    "As limitações são declaradas no próprio trabalho: o estudo é descritivo e não randomizado, um laboratório produziu cerca de dois quintos dos estudos e modelos Claude formaram cerca de dois terços do arquivo. O preprint não passou por revisão por pares tradicional."
+  ],
+  "harpia": "O estudo dá números a uma pergunta central para quem ensina sobre IA: o que muda quando modelos fazem a pesquisa. Rigor formal sem perguntas novas, e erros que só aparecem rodando o código, são limites medidos, não opinião.",
+  "fontes": [
+    {
+      "veiculo": "alphaXiv",
+      "titulo": "A Society of AI Scientists",
+      "url": "https://www.alphaxiv.org/abs/2611.society-ai-scientists"
+    },
+    {
+      "veiculo": "Times Higher Education",
+      "titulo": "Society of AI scientists' outputs 'less novel' than human work",
+      "url": "https://www.timeshighereducation.com/news/society-ai-scientists-outputs-less-novel-human-work"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-28",
+  "verificado_em": "2026-11-28",
+  "ordem": 999
+}

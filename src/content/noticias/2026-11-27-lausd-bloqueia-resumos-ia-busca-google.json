@@ -1,0 +1,27 @@
+{
+  "titulo": "Los Angeles bloqueia os resumos de IA do Google nos computadores dos alunos, mesmo após o Google dizer que não daria opção",
+  "resumo": "Distrito escolar usou filtro de outra empresa para desligar os AI Overviews nos aparelhos dos estudantes; o próprio distrito chama a medida de temporária.",
+  "data": "2026-11-27",
+  "categoria": "letramento",
+  "icone": "escola",
+  "corpo": [
+    "O distrito escolar de Los Angeles (LAUSD), o segundo maior dos Estados Unidos, bloqueou a maior parte do acesso dos alunos aos AI Overviews, os resumos gerados por IA que aparecem no topo das buscas do Google. Segundo reportagem do Los Angeles Times de 27 de novembro, o bloqueio foi feito com um filtro fornecido por outra empresa, cujo nome o distrito não divulgou, e vale para os aparelhos entregues aos estudantes.",
+    "A medida contraria uma política anunciada pelo Google: a empresa disse que não ofereceria às escolas um jeito de desligar o resumo por IA, porque considera a IA parte da própria busca. O modo de pesquisa mais aprofundado, chamado AI Mode, já estava desativado nos computadores do distrito. Em nota ao jornal, o LAUSD afirmou que o recurso foi \"temporariamente suspenso\" e que o Google não teve papel na mudança.",
+    "O bloqueio faz parte da moratória que o distrito adotou para este ano letivo: os alunos aprendem sobre IA, mas não devem usá-la em aula nem nas tarefas. Segundo o jornal, Nova York tem uma moratória semelhante até o oitavo ano, e o chanceler das escolas da cidade chamou de ultimato a política do Google, prevista para o início do próximo ano.",
+    "O Google não respondeu às perguntas sobre o bloqueio, mas disse em nota que compartilha com pais e professores o objetivo de ajudar os alunos a aprender. A empresa defende ferramentas como o Guided Learning, que, segundo ela, conduz o estudante por perguntas em vez de entregar a resposta; essa avaliação é da própria empresa.",
+    "Há limites claros. O distrito não explicou como o filtro funciona, não controla o uso de IA nos aparelhos pessoais dos alunos, e um membro do conselho escolar disse ao jornal que não sabe se a solução vai durar dias, semanas ou de forma indefinida."
+  ],
+  "harpia": "O caso mostra que decidir quando o aluno usa IA depende também de quem controla a ferramenta. Para quem trabalha com letramento em IA, a escolha entre ensinar sobre a tecnologia e permitir seu uso passa a esbarrar no desenho dos produtos.",
+  "fontes": [
+    {
+      "veiculo": "Los Angeles Times",
+      "titulo": "LAUSD blocks Google AI, despite tech giant's move to pressure schools to go all in",
+      "url": "https://www.latimes.com/california/story/2026-11-27/lausd-blocks-google-ai-search"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-28",
+  "verificado_em": "2026-11-28",
+  "ordem": 999
+}

@@ -1,0 +1,27 @@
+{
+  "titulo": "ANPD e reguladores de 11 países assinam declaração contra abuso sexual infantil e imagens íntimas geradas por IA",
+  "resumo": "Documento aprovado na rede global de reguladores de segurança online pede responsabilização das empresas, travas nos sistemas de IA e ação coordenada entre países.",
+  "data": "2026-11-25",
+  "categoria": "brasil",
+  "icone": "balanca",
+  "corpo": [
+    "A Agência Nacional de Proteção de Dados (ANPD) e os outros 11 membros da Rede Global de Reguladores de Segurança Online (GOSRN) aprovaram em 25 de novembro, em Sydney, na Austrália, um posicionamento conjunto sobre material de abuso sexual infantil e imagens íntimas não consentidas criados com inteligência artificial. O texto da declaração, em inglês, foi publicado pela ANPD.",
+    "Segundo a agência, a declaração defende três frentes: maior responsabilização das empresas de tecnologia, salvaguardas que impeçam o uso de sistemas de IA para produzir esse material e ação regulatória coordenada entre os países. A rede tem ainda 30 países observadores e, de acordo com a ANPD, planeja para 2027 novos debates e medidas de cooperação técnica.",
+    "Na mesma reunião, a ANPD foi eleita para a vice-presidência da rede, função que vai dividir com a ATKM, autoridade dos Países Baixos, de janeiro de 2027 a janeiro de 2028. A agência brasileira entrou na GOSRN em julho deste ano e foi a primeira reguladora da América Latina a integrar o grupo.",
+    "O diretor-presidente interino, Iagê Miola, apresentou o monitoramento que a ANPD faz de plataformas, lojas de aplicativos e ferramentas de IA generativa que atuam no Brasil, ligado ao ECA Digital e ao Marco Civil da Internet. A agência lembrou que, em janeiro, recomendou com o MPF e a Senacon que a plataforma X impedisse a geração de conteúdo sexualizado indevido pelo Grok, e que em fevereiro determinou medidas técnicas imediatas.",
+    "Para justificar a urgência, a ANPD cita a Internet Watch Foundation, organização britânica, segundo a qual os vídeos de abuso sexual infantil gerados por IA passaram de 13 em 2024 para 3.443 em 2025. A declaração é um compromisso político: não cria por si só obrigações novas para as empresas no Brasil."
+  ],
+  "harpia": "A regulação brasileira de IA não depende só do PL 2338/2023. A ANPD já age sobre ferramentas generativas por meio do ECA Digital e do Marco Civil, e acompanhar esses caminhos ajuda a entender onde as regras já valem.",
+  "fontes": [
+    {
+      "veiculo": "ANPD",
+      "titulo": "ANPD e reguladores de outros 11 países firmam compromisso contra abuso sexual infantil e imagens íntimas geradas por IA",
+      "url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-e-reguladores-de-outros-11-paises-firmam-compromisso-contra-abuso-sexual-infantil-e-imagens-intimas-geradas-por-ia"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-28",
+  "verificado_em": "2026-11-28",
+  "ordem": 999
+}

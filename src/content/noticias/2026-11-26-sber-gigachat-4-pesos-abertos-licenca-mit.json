@@ -1,0 +1,37 @@
+{
+  "titulo": "Sber publica pesos do GigaChat 4, modelo de 708 bilhões de parâmetros com licença MIT; versão menor proíbe uso comercial",
+  "resumo": "Banco russo abre o modelo principal com janela de 1 milhão de tokens; os resultados de avaliação são da própria equipe e ainda não foram repetidos por terceiros.",
+  "data": "2026-11-26",
+  "categoria": "abertos",
+  "icone": "codigo",
+  "corpo": [
+    "A equipe ai-sage, responsável pela família GigaChat do banco russo Sber, publicou no Hugging Face os pesos do GigaChat 4. O modelo principal tem 708 bilhões de parâmetros no total e usa 41 bilhões por token, numa arquitetura de mistura de especialistas. O repositório no GitHub, com relatório técnico, traz o anúncio datado de 26 de novembro; a ficha no Hugging Face lista russo e inglês como idiomas.",
+    "As licenças são diferentes entre os tamanhos. O modelo de 708 bilhões sai sob a licença MIT, que permite uso comercial. O irmão menor, com 37 bilhões de parâmetros e 4 bilhões ativos, usa uma licença não comercial para pessoas físicas. Quem pretende usar a versão pequena num produto precisa ler esse termo antes.",
+    "Segundo a ficha do modelo, a janela de contexto chega a 1.048.576 tokens e um mesmo checkpoint responde no modo rápido ou no modo de raciocínio. Além das versões FP8 e BF16, foram publicados arquivos GGUF, um modelo base e checkpoints intermediários do treino, material que costuma ficar fechado e serve a quem estuda como modelos grandes aprendem.",
+    "A equipe informa 80,89 pontos no SWE-bench Verified, teste de correção de código, no modo de raciocínio e com limite de sete horas por tarefa. É um número autodeclarado: não encontramos avaliação independente que o repita. A mesma tabela da equipe mostra o modelo atrás de concorrentes abertos em testes de conhecimento científico, como o GPQA Diamond.",
+    "Rodar o modelo principal não é coisa de computador doméstico. A documentação indica dois servidores com oito GPUs H100 de 80 GB cada para a versão FP8. A versão de 37 bilhões cabe numa única H100, segundo o mesmo repositório."
+  ],
+  "harpia": "Licença é parte da abertura. Aqui o mesmo lançamento traz um modelo grande com licença permissiva e um pequeno com restrição de uso comercial, e só a leitura de cada arquivo de licença mostra o que cada um permite.",
+  "fontes": [
+    {
+      "veiculo": "Hugging Face",
+      "titulo": "ai-sage/GigaChat4-708B-A41B",
+      "url": "https://huggingface.co/ai-sage/GigaChat4-708B-A41B"
+    },
+    {
+      "veiculo": "GitHub",
+      "titulo": "salute-developers/gigachat4",
+      "url": "https://github.com/salute-developers/gigachat4"
+    },
+    {
+      "veiculo": "explainx.ai",
+      "titulo": "GigaChat 4: Sber Releases a 708B Open-Weight MoE Under MIT With a 1M-Token Window",
+      "url": "https://explainx.ai/blog/gigachat-4-708b-a41b-sber-open-weights-mit-1m-context-swe-bench-81-2026"
+    }
+  ],
+  "status": "rascunho",
+  "origem": "curadoria-diaria",
+  "adicionado_em": "2026-11-28",
+  "verificado_em": "2026-11-28",
+  "ordem": 999
+}
