@@ -1,0 +1,66 @@
+{
+  "data": "2026-11-28",
+  "timezone": "America/Fortaleza",
+  "items": [
+    {
+      "path": "src/content/business/acervo/2026-11-28-fdc-arcos-vendas-trabalho-pmes.json",
+      "sha256": "f36ba683abaf4445ec7e2ebb60f610928685a450e6a6c2bdcf46d0621f761702",
+      "sha256_publicado": "947ef5bf4f82b66a1617465d6cb8ad60b599fd9998d9442e735b8667c756873e",
+      "pauta": "business_pauta_28",
+      "verificacao": {
+        "responsavel": "business_verify_28",
+        "consultado_em": "2026-11-28",
+        "escopo": "Artigo original integral consultado; autoria, datas divergentes, estrutura ARCOS, indicadores e limites da evidência conferidos.",
+        "evidencias": [
+          "https://sejarelevante.fdc.org.br/o-futuro-do-trabalho-das-pmes-pode-estar-no-funil-de-vendas/"
+        ],
+        "alegacoes": [
+          {
+            "texto": "Juliano Martins é professor associado da FDC e assina a página em 27 de novembro, enquanto o cabeçalho marca 28 de novembro de 2026.",
+            "url": "https://sejarelevante.fdc.org.br/o-futuro-do-trabalho-das-pmes-pode-estar-no-funil-de-vendas/",
+            "resultado": "confirmada",
+            "local": "Cabeçalho, assinatura e nota biográfica."
+          },
+          {
+            "texto": "ARCOS reúne Ancoragem, Resistência, Conexão, Organização e Sustentação.",
+            "url": "https://sejarelevante.fdc.org.br/o-futuro-do-trabalho-das-pmes-pode-estar-no-funil-de-vendas/",
+            "resultado": "confirmada",
+            "local": "Seção ARCOS, descrição das cinco dimensões."
+          },
+          {
+            "texto": "O autor sugere plano de 90 dias e seis indicadores, três de negócio e três de trabalho decente.",
+            "url": "https://sejarelevante.fdc.org.br/o-futuro-do-trabalho-das-pmes-pode-estar-no-funil-de-vendas/",
+            "resultado": "confirmada",
+            "local": "Seção Sustentação e lista de indicadores exemplificativos."
+          },
+          {
+            "texto": "A página menciona observação de dezenas de PMEs, mas não fornece amostra precisa, método comparativo ou impacto medido.",
+            "url": "https://sejarelevante.fdc.org.br/o-futuro-do-trabalho-das-pmes-pode-estar-no-funil-de-vendas/",
+            "resultado": "qualificada",
+            "local": "Parágrafo de origem do ARCOS e ausência de resultados no artigo."
+          },
+          {
+            "texto": "O autor afirma que o ARCOS integra sua tese de mestrado, sem disponibilizar a tese na página.",
+            "url": "https://sejarelevante.fdc.org.br/o-futuro-do-trabalho-das-pmes-pode-estar-no-funil-de-vendas/",
+            "resultado": "confirmada",
+            "local": "Nota biográfica final."
+          }
+        ]
+      },
+      "selecao": {
+        "responsavel": "business_select_28",
+        "nota": 7.8,
+        "justificativa": "Proposta aplicável à gestão de PMEs, inédita no acervo e recente; texto explicita ausência de teste de impacto e interesse do proponente.",
+        "criterios": {
+          "rigor": 6.0,
+          "relevancia": 8.3,
+          "utilidade": 8.1,
+          "atualidade": 9.3,
+          "clareza": 8.7,
+          "conflitos": 6.4
+        }
+      },
+      "publicacao": "editorial_round_28"
+    }
+  ]
+}

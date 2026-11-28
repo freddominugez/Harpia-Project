@@ -1,0 +1,71 @@
+{
+  "data": "2026-11-28",
+  "timezone": "America/Fortaleza",
+  "items": [
+    {
+      "path": "src/content/noticias/2026-11-27-modelos-gguf-maliciosos-hugging-face.json",
+      "sha256": "004b4d80b6f3ddefcb6dd3399ee75ad36fcad5891ebaec22ec4429546f06a432",
+      "pauta": {
+        "responsavel": "tech_pauta_28",
+        "justificativa": "Achado recente de segurança em arquivos GGUF, com método e limites públicos, novo no acervo e útil a quem executa modelos locais."
+      },
+      "verificacao": {
+        "responsavel": "tech_verify_28",
+        "consultado_em": "2026-11-28",
+        "evidencias": [
+          "https://malspark.com/blog/malicious-gguf-models-hugging-face/"
+        ],
+        "alegacoes": [
+          {
+            "texto": "A Malspark afirma ter examinado 3.273.389 repositórios públicos e encontrado cinco GGUF maliciosos.",
+            "url": "https://malspark.com/blog/malicious-gguf-models-hugging-face/",
+            "resultado": "qualificada",
+            "local": "Método e resumo da varredura; a equipe editorial não repetiu a varredura."
+          },
+          {
+            "texto": "Os cinco repositórios somavam 2.428 downloads até 27 de novembro, não pessoas ou infecções comprovadas.",
+            "url": "https://malspark.com/blog/malicious-gguf-models-hugging-face/",
+            "resultado": "qualificada",
+            "local": "Tabela e nota sobre downloads; o título da fonte usa a palavra vítimas sem prova correspondente."
+          },
+          {
+            "texto": "Em dois modelos Mir2k havia programa de acesso remoto para Windows após o último tensor e template que sugeria PowerShell.",
+            "url": "https://malspark.com/blog/malicious-gguf-models-hugging-face/",
+            "resultado": "confirmada",
+            "local": "Seção da campanha Mir2k e análise dos arquivos."
+          },
+          {
+            "texto": "Nos três repositórios timdedid, o template tentava induzir um agente a baixar script; o segundo estágio não foi recuperado.",
+            "url": "https://malspark.com/blog/malicious-gguf-models-hugging-face/",
+            "resultado": "confirmada",
+            "local": "Seção da campanha timdedid."
+          },
+          {
+            "texto": "O template de conversa não executa malware por si; o risco depende de comando rodado pelo usuário ou pelo agente.",
+            "url": "https://malspark.com/blog/malicious-gguf-models-hugging-face/",
+            "resultado": "qualificada",
+            "local": "Explicação técnica do template Jinja e recomendações; síntese editorial do mecanismo."
+          }
+        ],
+        "escopo": "Artigo técnico original lido integralmente e repositórios conferidos pelo verificador; números e mecanismo atribuídos à Malspark, sem reprodução independente da análise de malware."
+      },
+      "selecao": {
+        "responsavel": "tech_select_28",
+        "nota": 4.3,
+        "justificativa": "Pauta nova de segurança de modelos locais, com utilidade prática e método explícito; texto distingue downloads, execução e infecção.",
+        "criterios": {
+          "rigor": 4.0,
+          "relevancia": 4.5,
+          "utilidade": 4.7,
+          "atualidade": 5.0,
+          "clareza": 3.8
+        }
+      },
+      "publicacao": {
+        "responsavel": "editorial_round_28",
+        "status": "aguardando_portao"
+      },
+      "sha256_publicado": "0ee6d61ea11e1caf3701b04cfb04cb606445cee2259eaa8c60880a093c0b439d"
+    }
+  ]
+}

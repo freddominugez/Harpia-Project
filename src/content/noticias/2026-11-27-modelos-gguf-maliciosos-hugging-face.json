@@ -1,15 +1,15 @@
 {
-  "titulo": "Varredura acha cinco modelos GGUF com malware escondido no Hugging Face, baixados 2.428 vezes",
-  "resumo": "Pesquisa da Malspark descreve modelos que escondem um programa no fim do arquivo e usam o modelo de chat para levar o usuário ou o agente a executá-lo.",
+  "titulo": "Varredura encontra cinco modelos GGUF maliciosos no Hugging Face, com 2.428 downloads",
+  "resumo": "Análise da Malspark achou um programa oculto em dois arquivos; nos outros três, instruções escondidas tentavam fazer agentes baixar e executar um script.",
   "data": "2026-11-27",
   "categoria": "abertos",
   "icone": "lupa",
   "corpo": [
     "Uma varredura de 3.273.389 repositórios públicos de modelos no Hugging Face encontrou cinco modelos maliciosos no formato GGUF, usado por ferramentas que rodam IA no próprio computador, como llama.cpp e Ollama. Segundo a análise publicada pela Malspark em 27 de novembro, os arquivos tinham sido baixados 2.428 vezes. A própria publicação ressalta que o site conta downloads, não pessoas, e que baixar não significa ter sido infectado.",
-    "O ataque combina duas técnicas. A primeira altera o modelo de chat, um pequeno programa guardado dentro do arquivo que monta o texto entregue ao modelo. O usuário não vê essas instruções extras, que podem levar o modelo a sugerir um comando perigoso ou a mandar um agente com acesso ao terminal baixar e rodar um script.",
-    "A segunda aproveita o fato de que os programas de inferência só leem os trechos do arquivo declarados como pesos. Bytes colocados depois do último tensor ficam invisíveis para o modelo, mas continuam no disco. Na campanha chamada Mir2k, com dois repositórios, ali estava um trojan de acesso remoto para Windows; o modelo de chat fazia a resposta começar com uma linha de PowerShell que extraía e executava esse programa.",
-    "A outra campanha, timdedid, com três repositórios, mirava agentes com acesso ao terminal. Segundo a Malspark, os cinco repositórios ainda estavam no ar em 27 de novembro; a publicação não informa se o Hugging Face foi notificado. O autor liberou uma ferramenta de verificação, a gguf-radar, com licença MIT, que inspeciona os arquivos sem executá-los.",
-    "A recomendação principal é tratar como não confiável qualquer comando sugerido por um modelo da comunidade. Quem usa agentes pode trocar o modelo de chat embutido por um revisado, opção prevista no llama.cpp e no Ollama, e não deixar o agente executar sozinho comandos gerados pelo modelo."
+    "O ataque usa o template de conversa guardado nos metadados do arquivo GGUF. Esse conjunto de instruções formata o diálogo entregue ao modelo. Um template adulterado pode induzir uma resposta que sugira um comando perigoso ou orientar um agente com acesso ao terminal a baixar e rodar um script; o template não executa código por si só.",
+    "Em dois repositórios da campanha chamada Mir2k, a Malspark também encontrou um programa de acesso remoto para Windows escondido depois do último tensor do arquivo. O template adulterado fazia a resposta começar com uma linha de PowerShell que poderia extrair e executar o programa se o usuário a rodasse. O simples carregamento do modelo não comprova execução do malware.",
+    "A outra campanha, timdedid, tinha três repositórios e mirava agentes com acesso ao terminal. A Malspark não conseguiu recuperar o segundo estágio do script, portanto não demonstrou uma infecção nesse grupo. Segundo a pesquisa, os cinco repositórios ainda estavam no ar em 27 de novembro. O autor liberou uma ferramenta de verificação, a gguf-radar, que inspeciona arquivos sem executar os comandos neles sugeridos.",
+    "A recomendação principal é tratar como não confiável qualquer comando sugerido por um modelo da comunidade. Quem usa agentes pode substituir o template de conversa embutido por um revisado e impedir que o agente execute sozinho comandos gerados pelo modelo."
   ],
   "harpia": "Rodar modelos abertos em casa dá autonomia, mas transfere para o usuário a conferência do que baixa. Entender que um arquivo de pesos também carrega instruções e dados extras faz parte do letramento de quem usa IA local.",
   "fontes": [
@@ -17,14 +17,9 @@
       "veiculo": "Malspark",
       "titulo": "GGUF LLM Models with Hidden Malware on Hugging Face Reached 2400+ Victims",
       "url": "https://malspark.com/blog/malicious-gguf-models-hugging-face/"
-    },
-    {
-      "veiculo": "explainx.ai",
-      "titulo": "GGUF Malware on Hugging Face: Hidden Payloads and Chat-Template Poisoning",
-      "url": "https://explainx.ai/blog/gguf-malware-hugging-face-chat-template-gguf-radar-november-2026"
     }
   ],
-  "status": "rascunho",
+  "status": "publicado",
   "origem": "curadoria-diaria",
   "adicionado_em": "2026-11-28",
   "verificado_em": "2026-11-28",
